@@ -479,7 +479,7 @@
   - type: Construction # Corvax-Change
     graph: FoodMeatRad
     node: MeatCooked
-    defaultTarget: MeatCooked
+    defaultTarget: null
   - type: Solution
     solution:
       maxVol: 20
@@ -519,7 +519,7 @@
   - type: Construction
     graph: MeatSteakBrahmin
     node: SteakCooked
-    defaultTarget: SteakCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -549,7 +549,7 @@
   - type: Construction
     graph: MeatSteakBighorner
     node: SteakCooked
-    defaultTarget: SteakCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -579,7 +579,7 @@
   - type: Construction
     graph: MeatSteakRadstag
     node: SteakCooked
-    defaultTarget: SteakCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -608,7 +608,7 @@
   - type: Construction
     graph: MeatSteakRadhog
     node: SteakCooked
-    defaultTarget: SteakCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -633,7 +633,7 @@
   - type: Construction
     graph: MeatSteakPigrat
     node: SteakCooked
-    defaultTarget: SteakCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -663,7 +663,7 @@
   - type: Construction
     graph: MeatSteakYaoguai
     node: SteakCooked
-    defaultTarget: SteakCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -693,7 +693,7 @@
   - type: Construction
     graph: MeatSteakRadscorpion
     node: SteakCooked
-    defaultTarget: SteakCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -724,7 +724,7 @@
   - type: Construction
     graph: MeatSteakRadchicken
     node: SteakCooked
-    defaultTarget: SteakCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -750,7 +750,7 @@
   - type: Construction
     graph: MeatSteakGecko
     node: SteakCooked
-    defaultTarget: SteakCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -776,7 +776,7 @@
   - type: Construction
     graph: MeatSteakGeckoFire
     node: SteakCooked
-    defaultTarget: SteakCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -802,7 +802,7 @@
   - type: Construction
     graph: MeatSteakGeckoGolden
     node: SteakCooked
-    defaultTarget: SteakCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -827,7 +827,7 @@
   - type: Construction
     graph: MeatIguana
     node: MeatCooked
-    defaultTarget: MeatCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -851,7 +851,7 @@
   - type: Construction
     graph: MeatMorsels
     node: MeatCooked
-    defaultTarget: MeatCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -876,7 +876,7 @@
   - type: Construction
     graph: MeatRadroach
     node: MeatCooked
-    defaultTarget: MeatCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -901,7 +901,7 @@
   - type: Construction
     graph: MeatMirelurkClaw
     node: MeatCooked
-    defaultTarget: MeatCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -926,7 +926,7 @@
   - type: Construction
     graph: MeatRadlurkClaw
     node: MeatCooked
-    defaultTarget: MeatCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -953,7 +953,7 @@
   - type: Construction
     graph: MeatRadscorpionLeg
     node: MeatCooked
-    defaultTarget: MeatCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -1208,7 +1208,7 @@
   - type: Construction
     graph: MeatRadCutlet
     node: CutletCooked
-    defaultTarget: CutletCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -1226,7 +1226,7 @@
   - type: Construction
     graph: MeatBrahminCutlet
     node: CutletCooked
-    defaultTarget: CutletCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -1244,7 +1244,7 @@
   - type: Construction
     graph: MeatBighornerCutlet
     node: CutletCooked
-    defaultTarget: CutletCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -1262,7 +1262,7 @@
   - type: Construction
     graph: MeatRadstagCutlet
     node: CutletCooked
-    defaultTarget: CutletCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -1280,7 +1280,7 @@
   - type: Construction
     graph: MeatRadhogCutlet
     node: CutletCooked
-    defaultTarget: CutletCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -1298,7 +1298,7 @@
   - type: Construction
     graph: MeatYaoguaiCutlet
     node: CutletCooked
-    defaultTarget: CutletCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -1314,7 +1314,7 @@
   - type: Construction
     graph: MeatRadchickenCutlet
     node: CutletCooked
-    defaultTarget: CutletCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -1333,7 +1333,7 @@
   - type: Construction
     graph: MeatRadscorpionCutlet
     node: CutletCooked
-    defaultTarget: CutletCooked
+    defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
@@ -1367,7 +1367,7 @@
   - type: Construction
     graph: HumanMeatCutlet
     node: human meat cutlet
-    defaultTarget: human meat cutlet
+    defaultTarget: null
   - type: StaticPrice
     price: 1
 
@@ -1387,7 +1387,7 @@
   - type: Construction
     graph: HumanMeatSteak
     node: human meat steak
-    defaultTarget: human meat steak
+    defaultTarget: null
   - type: FlavorProfile # tastes meaty, oily, and like people
     flavors:
     - meaty
@@ -1433,7 +1433,7 @@
   - type: Construction
     graph: SupermutantMeatCutlet
     node: supermutant meat cutlet
-    defaultTarget: supermutant meat cutlet
+    defaultTarget: null
   - type: StaticPrice
     price: 1
 
@@ -1453,7 +1453,7 @@
   - type: Construction
     graph: SupermutantMeatSteak
     node: supermutant meat steak
-    defaultTarget: supermutant meat steak
+    defaultTarget: null
   - type: FlavorProfile # tastes meaty, and like people. supermutants are a lean meat! no fat!
     flavors:
     - meaty

@@ -27,6 +27,16 @@
   name: VMHE suit
   description: A versatile and advanced development of the Vault-Tec Radsuit, the Volatile Materials and Hazardous Environments suit is designed to keep its user alive through a variety of circumstances. Built with lightweight impact jel underneath a layer of treated polybenzimidazole, its efficacy is proven against acid rains, radiation, and chemical explosions. "DO NOT PUNCTURE".
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      storagebase: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      toggleable-clothing: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Sprite
     sprite: Nuclear14/Clothing/OuterClothing/Coats/falloutvolmatsuit.rsi
   - type: Clothing
@@ -55,6 +65,16 @@
   name: prototype vault security suit
   description: A modernized development of the armor designed for the security team of Vault-63, it's life preservation system has been repurposed to now passively injects a potent stimpak-derived combat stimulant formulated from the blood of the user, allowing them to carry the heat-resistant steel alloy without any significant loss of mobility.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      storagebase: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      toggleable-clothing: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Sprite
     sprite: Misfits/Clothing/OuterClothing/Armor/vaultscoutsuit.rsi
   - type: Clothing

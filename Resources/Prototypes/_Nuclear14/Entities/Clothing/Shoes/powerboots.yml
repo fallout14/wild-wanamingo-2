@@ -8,6 +8,9 @@
   description: A pair of mechanical boots made from durable materials.
   categories: [ HideSpawnMenu ]
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      item: !type:ContainerSlot {}
   - type: Appearance
   - type: Sprite
     sprite: Nuclear14/Clothing/Shoes/PowerBoots/basic.rsi
@@ -46,6 +49,9 @@
   description: A pair of mechanical boots made from durable materials.
   categories: [ HideSpawnMenu ]
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      item: !type:ContainerSlot {}
   - type: Sprite
     sprite: Nuclear14/Clothing/Shoes/PowerBoots/dark.rsi
   - type: Tag
@@ -59,6 +65,9 @@
   description: A pair of mechanical boots made from durable materials.
   categories: [ HideSpawnMenu ]
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      item: !type:ContainerSlot {}
   - type: Sprite
     sprite: Nuclear14/Clothing/Shoes/PowerBoots/midwest.rsi
   - type: Armor

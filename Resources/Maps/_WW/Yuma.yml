@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 10/10/2026 21:21:05
-  entityCount: 11742
+  entityCount: 11789
 maps:
 - 2
 grids:
@@ -142493,5 +142493,334 @@ entities:
     components:
     - type: Transform
       pos: 529.5,-29.5
+      parent: 2
+- proto: MisfitsSpawnPointNCRCaptain
+  entities:
+  - uid: 14323
+    components:
+    - type: Transform
+      pos: 534.5,-31.5
+      parent: 2
+- proto: N14SpawnPointNCRPlatoonLeader
+  entities:
+  - uid: 14324
+    components:
+    - type: Transform
+      pos: 536.5,-31.5
+      parent: 2
+- proto: MisfitsSpawnPointNCRDoctor
+  entities:
+  - uid: 14325
+    components:
+    - type: Transform
+      pos: 538.5,-31.5
+      parent: 2
+- proto: MisfitsSpawnPointNCRRO
+  entities:
+  - uid: 14326
+    components:
+    - type: Transform
+      pos: 532.5,-33.5
+      parent: 2
+- proto: MisfitsSpawnPointNCRSGT
+  entities:
+  - uid: 14327
+    components:
+    - type: Transform
+      pos: 534.5,-33.5
+      parent: 2
+- proto: MisfitsSpawnPointNCRWS
+  entities:
+  - uid: 14328
+    components:
+    - type: Transform
+      pos: 540.5,-33.5
+      parent: 2
+- proto: MisfitsSpawnPointNCRMedic
+  entities:
+  - uid: 14329
+    components:
+    - type: Transform
+      pos: 530.5,-35.5
+      parent: 2
+- proto: MisfitsSpawnPointNCRCadet
+  entities:
+  - uid: 14330
+    components:
+    - type: Transform
+      pos: 532.5,-35.5
+      parent: 2
+- proto: F14SpawnPointNCRGarrisonTrooper
+  entities:
+  - uid: 14331
+    components:
+    - type: Transform
+      pos: 534.5,-35.5
+      parent: 2
+- proto: N14SpawnPointNCRRangerVeteran
+  entities:
+  - uid: 14332
+    components:
+    - type: Transform
+      pos: 536.5,-35.5
+      parent: 2
+- proto: N14SpawnPointRangerRecruit
+  entities:
+  - uid: 14333
+    components:
+    - type: Transform
+      pos: 538.5,-35.5
+      parent: 2
+- proto: N14SpawnPointCenturion
+  entities:
+  - uid: 14334
+    components:
+    - type: Transform
+      pos: 540.5,-35.5
+      parent: 2
+- proto: N14SpawnPointVexillarius
+  entities:
+  - uid: 14335
+    components:
+    - type: Transform
+      pos: 542.5,-35.5
+      parent: 2
+- proto: N14SpawnPointExplorer
+  entities:
+  - uid: 14336
+    components:
+    - type: Transform
+      pos: 526.5,-37.5
+      parent: 2
+- proto: N14SpawnPointHoundmaster
+  entities:
+  - uid: 14337
+    components:
+    - type: Transform
+      pos: 528.5,-37.5
+      parent: 2
+- proto: N14SpawnPointForgemaster
+  entities:
+  - uid: 14338
+    components:
+    - type: Transform
+      pos: 530.5,-37.5
+      parent: 2
+- proto: N14SpawnPointDean
+  entities:
+  - uid: 14339
+    components:
+    - type: Transform
+      pos: 532.5,-37.5
+      parent: 2
+- proto: N14SpawnPointLegionnaireRecruit
+  entities:
+  - uid: 14340
+    components:
+    - type: Transform
+      pos: 534.5,-37.5
+      parent: 2
+- proto: N14SpawnPointLegionnaireWarrior
+  entities:
+  - uid: 14341
+    components:
+    - type: Transform
+      pos: 540.5,-37.5
+      parent: 2
+- proto: N14SpawnPointLegionnaireVeteran
+  entities:
+  - uid: 14342
+    components:
+    - type: Transform
+      pos: 542.5,-37.5
+      parent: 2
+- proto: N14SpawnPointAuxilia
+  entities:
+  - uid: 14343
+    components:
+    - type: Transform
+      pos: 544.5,-37.5
+      parent: 2
+- proto: SpawnPointCaesarLegionSlave
+  entities:
+  - uid: 14344
+    components:
+    - type: Transform
+      pos: 546.5,-37.5
+      parent: 2
+- proto: MisfitsSpawnPointBoSWestElderCommander
+  entities:
+  - uid: 14345
+    components:
+    - type: Transform
+      pos: 528.5,-39.5
+      parent: 2
+- proto: MisfitsSpawnPointBoSMidPaladinCommander
+  entities:
+  - uid: 14346
+    components:
+    - type: Transform
+      pos: 530.5,-39.5
+      parent: 2
+- proto: MisfitsSpawnPointBoSHeadKnight
+  entities:
+  - uid: 14347
+    components:
+    - type: Transform
+      pos: 532.5,-39.5
+      parent: 2
+- proto: MisfitsSpawnPointBoSWestScribe
+  entities:
+  - uid: 14348
+    components:
+    - type: Transform
+      pos: 534.5,-39.5
+      parent: 2
+- proto: MisfitsSpawnPointBoSScribe
+  entities:
+  - uid: 14349
+    components:
+    - type: Transform
+      pos: 536.5,-39.5
+      parent: 2
+- proto: MisfitsSpawnPointBoSPaladin
+  entities:
+  - uid: 14350
+    components:
+    - type: Transform
+      pos: 538.5,-39.5
+      parent: 2
+- proto: MisfitsSpawnPointBoSKnight
+  entities:
+  - uid: 14351
+    components:
+    - type: Transform
+      pos: 540.5,-39.5
+      parent: 2
+- proto: MisfitsSpawnPointBoSInitiate
+  entities:
+  - uid: 14352
+    components:
+    - type: Transform
+      pos: 542.5,-39.5
+      parent: 2
+- proto: N14SpawnPointTownsfolkTownMayor
+  entities:
+  - uid: 14353
+    components:
+    - type: Transform
+      pos: 544.5,-39.5
+      parent: 2
+- proto: N14SpawnPointTownsfolkTownSheriff
+  entities:
+  - uid: 14354
+    components:
+    - type: Transform
+      pos: 530.5,-41.5
+      parent: 2
+- proto: N14SpawnPointTownsfolkTownDeputy
+  entities:
+  - uid: 14355
+    components:
+    - type: Transform
+      pos: 532.5,-41.5
+      parent: 2
+- proto: N14SpawnPointWastelandBartender
+  entities:
+  - uid: 14356
+    components:
+    - type: Transform
+      pos: 534.5,-41.5
+      parent: 2
+- proto: N14SpawnPointWastelandFarmer
+  entities:
+  - uid: 14357
+    components:
+    - type: Transform
+      pos: 536.5,-41.5
+      parent: 2
+- proto: N14SpawnPointTownsfolkTownMechanic
+  entities:
+  - uid: 14358
+    components:
+    - type: Transform
+      pos: 538.5,-41.5
+      parent: 2
+- proto: N14SpawnPointTownsfolkTownShopkeeper
+  entities:
+  - uid: 14359
+    components:
+    - type: Transform
+      pos: 540.5,-41.5
+      parent: 2
+- proto: N14SpawnPointTownsfolkTownsperson
+  entities:
+  - uid: 14360
+    components:
+    - type: Transform
+      pos: 542.5,-41.5
+      parent: 2
+- proto: N14SpawnPointTribalElder
+  entities:
+  - uid: 14361
+    components:
+    - type: Transform
+      pos: 532.5,-43.5
+      parent: 2
+- proto: N14SpawnPointTribal
+  entities:
+  - uid: 14362
+    components:
+    - type: Transform
+      pos: 534.5,-43.5
+      parent: 2
+- proto: N14SpawnPointTribalFarmer
+  entities:
+  - uid: 14363
+    components:
+    - type: Transform
+      pos: 536.5,-43.5
+      parent: 2
+- proto: N14SpawnPointTribalHealer
+  entities:
+  - uid: 14364
+    components:
+    - type: Transform
+      pos: 538.5,-43.5
+      parent: 2
+- proto: MisfitsSpawnPointFollowerDirector
+  entities:
+  - uid: 14365
+    components:
+    - type: Transform
+      pos: 540.5,-43.5
+      parent: 2
+- proto: MisfitsSpawnPointFollowerHead
+  entities:
+  - uid: 14366
+    components:
+    - type: Transform
+      pos: 534.5,-45.5
+      parent: 2
+- proto: MisfitsSpawnPointFollowerDoctor
+  entities:
+  - uid: 14367
+    components:
+    - type: Transform
+      pos: 536.5,-45.5
+      parent: 2
+- proto: MisfitsSpawnPointFollowerGuard
+  entities:
+  - uid: 14368
+    components:
+    - type: Transform
+      pos: 538.5,-45.5
+      parent: 2
+- proto: N14SpawnPointFollowers
+  entities:
+  - uid: 14369
+    components:
+    - type: Transform
+      pos: 536.5,-47.5
       parent: 2
 ...

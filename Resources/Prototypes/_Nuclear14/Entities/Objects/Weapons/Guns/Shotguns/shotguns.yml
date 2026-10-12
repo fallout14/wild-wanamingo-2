@@ -670,6 +670,17 @@
   id: N14WeaponShotgunTrench
   description: A military pump-action shotgun with a bayonet lug and slam-fire capability. Hold the cycle-firearm key and pull the trigger repeatedly to slam-fire.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: ManualAction
     slamFire: true
   - type: Clothing

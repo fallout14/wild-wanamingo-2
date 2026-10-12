@@ -613,6 +613,8 @@
   name: junk pile
   description: Could be something useful in here.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: Junk_1
 
@@ -620,6 +622,8 @@
   parent: N14JunkPile1
   id: N14JunkPile2
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: Junk_2
 
@@ -627,6 +631,8 @@
   parent: N14JunkPile1
   id: N14JunkPile3
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: Junk_3
 
@@ -634,6 +640,8 @@
   parent: N14JunkPile1
   id: N14JunkPile4
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: Junk_4
 
@@ -641,6 +649,8 @@
   parent: N14JunkPile1
   id: N14JunkPile5
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: Junk_5
 
@@ -648,6 +658,8 @@
   parent: N14JunkPile1
   id: N14JunkPile6
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: Junk_6
 
@@ -655,6 +667,8 @@
   parent: N14JunkPile1
   id: N14JunkPile7
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: Junk_7
 
@@ -662,6 +676,8 @@
   parent: N14JunkPile1
   id: N14JunkPile8
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: Junk_8
 
@@ -669,6 +685,8 @@
   parent: N14JunkPile1
   id: N14JunkPile9
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: Junk_9
 
@@ -676,6 +694,8 @@
   parent: N14JunkPile1
   id: N14JunkPile10
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: Junk_10
 
@@ -683,6 +703,8 @@
   parent: N14JunkPile1
   id: N14JunkPile11
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: Junk_11
 
@@ -690,6 +712,8 @@
   parent: N14JunkPile1
   id: N14JunkPile12
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: Junk_12
 

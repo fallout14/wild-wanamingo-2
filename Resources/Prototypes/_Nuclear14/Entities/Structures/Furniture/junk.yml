@@ -129,6 +129,8 @@
   name: broken bench
   description: If only I could have rested here. Junk.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     snapCardinals: false
     state: junk_bench
@@ -203,6 +205,8 @@
   name: broken bed
   description: An old bed with a holey mattress. Now it's junk.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: junk_bed1
 
@@ -212,6 +216,8 @@
   name: broken bed
   description: A rusty bed frame. Now it's junk.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: junk_bed2
 
@@ -239,6 +245,8 @@
   name: broken urinal
   description: A broken stinky urinal.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: junk_urinal
 
@@ -250,6 +258,9 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      stash: !type:ContainerSlot {}
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/junk.rsi
     state: junk_toilet
@@ -264,6 +275,8 @@
   name: broken shower
   description: No showering here, it's junk.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: junk_shower
     snapCardinals: false
@@ -276,6 +289,8 @@
   name: broken sink
   description: This basin won't hold water anymore.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: junk_sink
     snapCardinals: false
@@ -299,6 +314,8 @@
   name: broken clock
   description: Out of time!
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: junk_clock
     drawdepth: Overdoors
@@ -312,6 +329,8 @@
   name: stack of tires
   description: A stack of old, unusable tires.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/tires.rsi
     state: junktire1
@@ -323,6 +342,8 @@
   name: a pile of tires
   description: A pile of old, unusable tires spread on the ground.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/tires.rsi
     state: junktire2
@@ -334,6 +355,8 @@
   name: a pile of tires
   description: A pile of old, unusable tires spread on the ground.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/tires.rsi
     state: junktire3
@@ -345,6 +368,8 @@
   name: a pile of tires
   description: A pile of old, unusable tires spread on the ground.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/tires.rsi
     state: junktire4
@@ -356,6 +381,8 @@
   name: a pile of tires
   description: A pile of old, unusable tires spread on the ground.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/tires.rsi
     state: junktire5

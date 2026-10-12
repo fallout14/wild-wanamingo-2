@@ -7,6 +7,21 @@
   name: mysterious revolver
   description: A finely kept revolver with an unsettling air about it. Uses .44 magnum ammo.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      revolver-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Revolvers/mysterious44.rsi
   - type: Clothing

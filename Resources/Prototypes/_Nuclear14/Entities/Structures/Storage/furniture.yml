@@ -7,6 +7,8 @@
   name: washing machine
   description: wishy washy.
   components:
+  - type: Physics  # spawn state
+    bodyType: Static
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/Furniture/washingmachine.rsi
     layers:
@@ -27,6 +29,8 @@
   id: N14FurnitureWashingmachineIndustrial
   suffix: Industrial
   components:
+  - type: Physics  # spawn state
+    bodyType: Static
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/Furniture/washingmachine_industrial.rsi
 

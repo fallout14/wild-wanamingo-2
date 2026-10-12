@@ -32,6 +32,20 @@
   id: N14WeaponSMG10mm
   description: Fully automatic submachine gun chambered in 10mm. # TODO: Need to create projectiles, magazines and boxes for 10mm.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     muzzleSlot:
       name: Suppressor
@@ -105,6 +119,20 @@
   id: N14WeaponSMG10mmSuppressed
   description: A unique, permanently suppressed 10mm submachine gun. Quiet, compact, and built for work after dark.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     showMuzzleVisual: false
     muzzleSlot:
@@ -385,6 +413,20 @@
   id: N14WeaponSMG12mmAdvanced
   description: A bulky submachine gun with a top-fed magazine system, it uses 12mm ammo.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     muzzleSlot:
       name: Suppressor
@@ -453,6 +495,20 @@
   id: N14WeaponSMG45GreaseGun
   description: 'An M3 "grease gun": a cheap, stamped-steel .45 ACP submachine gun with a slow, controllable rate of fire and a threaded muzzle for a suppressor.'
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     muzzleSlot:
       name: Suppressor
@@ -761,6 +817,20 @@
   id: N14WeaponSMG12mmAdvancedChinese
   description: An advanced pre-war chinese submachine gun intended for special forces, chambered in 12.7mm ammo.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     muzzleSlot:
       name: Suppressor

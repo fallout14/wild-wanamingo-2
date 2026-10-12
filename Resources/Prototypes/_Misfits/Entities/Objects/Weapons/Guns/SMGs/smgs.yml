@@ -6,6 +6,20 @@
   id: N14WeaponSMGUzi
   description: A compact 9mm submachine gun with a folding stock and a detachable magazine.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     muzzleSlot:
       name: Suppressor
@@ -80,6 +94,20 @@
   name: MP5SD
   description: A 9mm submachine gun with an integral suppressor and a smooth automatic action.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     showMuzzleVisual: false
     muzzleSlot:

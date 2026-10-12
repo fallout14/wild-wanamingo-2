@@ -6,6 +6,8 @@
   name: wild zoybean plant
   description: A wild zoybean plant. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Misfits/Objects/Specific/Hydroponics/zoybeans.rsi
     state: harvest

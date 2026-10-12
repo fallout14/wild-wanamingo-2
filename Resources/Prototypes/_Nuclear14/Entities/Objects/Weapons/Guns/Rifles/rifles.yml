@@ -56,6 +56,20 @@
   id: N14WeaponRifle556R91
   description: An old-fashioned assault rifle chambered in 5.56 munitions.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Rifles/r91.rsi
     quickEquip: false
@@ -103,6 +117,20 @@
   id: N14WeaponRifle556Chinese
   description: An old foreign assault rifle with strange symbols on it, it is chambered in 5.56mm ammunition.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: GunDamageModifier
     damage:
       types:
@@ -155,6 +183,24 @@
   id: N14WeaponRifle5mmCarbine
   description: A sleek black compact assault rifle, uses 5mm ammo.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     visualOrientation: Diagonal
     muzzleVisualOffset: 0.8125, 0.875
@@ -241,6 +287,20 @@
   id: N14WeaponRifle556Marksman
   description: A heavy semiautomatic rifle with a scope, uses 5.56 ammo.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     visualOrientation: Diagonal
     muzzleVisualOffset: 0.78125, 0.84375
@@ -308,6 +368,24 @@
   id: N14WeaponRifle556Service
   description: A cheaply mass-produced post-war rifle made by the NCR, chambered in 5.56 ammo.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Item
     sprite: Nuclear14/Objects/Weapons/Guns/Rifles/servicerifle.rsi
   - type: Clothing
@@ -395,6 +473,20 @@
   id: N14WeaponRifle556ServiceScoped
   description: A cheaply mass-produced post-war rifle made by the NCR, chambered in 5.56 ammo. This one features an optic mounted on the carry handle.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Item
     sprite: Nuclear14/Objects/Weapons/Guns/Rifles/scopedservicerifle.rsi
   - type: Clothing
@@ -464,6 +556,24 @@
   id: N14WeaponRifle556Scout
   description: A modified version of the service rifle made by Rangers in the field. It is capable of using larger 5.56 magazines than its predecessor.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     visualOrientation: Diagonal
     muzzleVisualOffset: 0.78125, 0.78125
@@ -535,6 +645,24 @@
   id: N14WeaponRifle308Battle
   description: A long semi-automatic rifle fed by clips, chambered in the powerful 308.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     enableOpticSlot: true
     opticSlot:
@@ -622,6 +750,20 @@
   id: N14WeaponRifle10mmSkirmisher
   description: A compact pre-war M1 carbine with a fixed stock, rechambered for detachable 10mm magazines. A handy personal defense weapon for skirmishers.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: GunDamageModifier
     damage:
       types:
@@ -680,6 +822,20 @@
   id: N14WeaponRifle762Canadian
   description: A pre-war canadian assault rifle chambered in 7.62mm, surprisingly in good state for being 200 a years old rifle
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Rifles/canadianrifle.rsi
     quickEquip: false
@@ -740,6 +896,20 @@
   id: N14WeaponRifle556EM2
   description: A long bullpup assault rifle, uses 5.56 ammo.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Rifles/em2.rsi
     quickEquip: false
@@ -792,6 +962,20 @@
   id: N14WeaponRifle308Fal
   description: A pre-war battle rifle chambered in .308, strong and reliable. It was once called "the right arm of the free world", but there is not much left of the world to confirm it.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Rifles/fal.rsi
     quickEquip: false
@@ -844,6 +1028,24 @@
   id: N14WeaponRifle308M14
   description: A pre-war designated marksman rifle chambered in .308. Built to replace the M1 Garand, it was soon superseded by the R91 in general service, but it stayed on as a precise semi-automatic marksman's rifle.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     enableOpticSlot: true
     opticSlot:
@@ -925,6 +1127,20 @@
   id: N14WeaponRifle762MarksmanCanadian
   description: A pre-war canadian marksman rifle chambered in 7.62mm.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Rifles/canadianmarksman.rsi
     quickEquip: false
@@ -979,6 +1195,20 @@
   id: N14WeaponRifle9mmMarksmanChinese
   description: 'A pre-war Chinese suppressed marksman rifle in the mold of the VSS Vintorez. Fires a heavy subsonic 9mm load from a 24-round magazine: hits hard at close and medium range, but the rounds lose their punch quickly beyond that.'
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     showMuzzleVisual: false
     muzzleSlot:
@@ -1060,6 +1290,21 @@
   id: N14WeaponRifle762SKS
   description: A pre-war chinese rifle chambered in 7.62mm with a fixed internal 10-round magazine. Cheap, simple and easy to use, perfect to arm commie militias from around the world.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     enableOpticSlot: true
     opticSlot:
@@ -1144,6 +1389,20 @@
   id: N14WeaponRifle556Pipe
   description: A rusty pipe automatic rifle, light and extremely cheap, chambered in 5.56mm
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Rifles/pipeassaultrifle.rsi
     quickEquip: false
@@ -1195,6 +1454,20 @@
   id: N14WeaponSniper556Tribal
   description: A surprisingly decent piece of a gun for being made by tribals, this rustic but trusty rifle accepts detachable 25-round 5.56mm magazines.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -1255,6 +1528,20 @@
   id: N14WeaponSniper556TribalUpgraded
   description: A surprisingly decent piece of a gun for being made by tribals, this rustic but trusty rifle accepts detachable 25-round 5.56mm magazines.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -1316,6 +1603,20 @@
   id: N14WeaponRifle556Butchered
   description: A cheaply mass-produced NCR service rifle that has been hacked down into a crude full-auto "carbine". Cheap, wild and unreliable, but it throws a lot of 5.56.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Rifles/butcheredrifle.rsi
     quickEquip: false
@@ -1382,6 +1683,24 @@
   id: N14WeaponRifleM1GarandOldGlory
   description: An M1 Garand with Old Glory herself painted down the stock. "This Machine kills communists!" is scratched into the receiver. Don't let it out of your sight.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: ChamberMagazineAmmoProvider
     soundAutoEject:
       path: /Audio/Nuclear14/Weapons/Guns/Rifles/N14WeaponM1Garand/garand_ping.ogg
@@ -1420,6 +1739,24 @@
   id: N14WeaponRifleM1GarandPawolskis
   description: An NCR veteran's M1 Garand, engraved with the motto "I am your rifle, you are on guard duty." Named after the first NCR soldier to fall at Hoover Dam.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: ChamberMagazineAmmoProvider
     soundAutoEject:
       path: /Audio/Nuclear14/Weapons/Guns/Rifles/N14WeaponM1Garand/garand_ping.ogg
@@ -1458,6 +1795,20 @@
   id: N14WeaponRifleM1GarandRepublicsPride
   description: A well-tuned scoped M1C rifle crafted by a master gunsmith from the Gunrunners. Modified to accept standard 21-round magazines. Proudly issued to NCR Scout Captains. Chambered in .308 and fitted with a long-range optic.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -1533,6 +1884,20 @@
   id: N14WeaponRifleM1GarandRepublicsDemise
   description: A well-tuned scoped M1C rifle looted from a dead NCR lieutenant by the Legion. The NCR star on the stock has been crudely replaced with a Legion bull. Chambered in 7.62x51.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/hunting.rsi # #Misfits Tweak: hunting rifle RSI back-slot placeholder, same as base Garand
     quickEquip: false
@@ -1575,6 +1940,21 @@
   id: N14WeaponRifle308SVT40
   description: An old hunting rifle taken from discovered stockpiles and refurbished in Legion workshops. The standard heavy rifle of the Legion, still rare. An SVT-40 rebuilt for .308 ammunition, semi-auto only, with a fixed internal 10-round magazine and a mount for an optional scope.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Item
     size: Large
   - type: Wieldable
@@ -1660,6 +2040,20 @@
   id: N14WeaponRifleInfiltrator
   description: A heavily modified R91 assault rifle with an integrated suppressor, a fixed scope and polymer furniture. It has no official designation; whoever built it just started calling it the Infiltrator.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Gun
     fireRate: 5 # #Misfits Tweak - R91 rate; was 8 with a wield bonus that zeroed spread
     angleIncrease: 3

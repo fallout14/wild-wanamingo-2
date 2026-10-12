@@ -64,6 +64,12 @@
   name: seed extractor
   description: Extracts seeds from produce.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      machine_board: !type:Container
+        ents: []
+      machine_parts: !type:Container
+        ents: []
   - type: Sprite
     sprite: Nuclear14/Objects/Specific/Hydroponics/equipment.rsi
     snapCardinals: true

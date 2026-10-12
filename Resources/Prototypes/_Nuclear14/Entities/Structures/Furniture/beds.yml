@@ -133,6 +133,8 @@
   id: N14BedrollFolded
   suffix: rolled
   components:
+  - type: Strap  # spawn state
+    enabled: False
   - type: Foldable
     folded: true
 

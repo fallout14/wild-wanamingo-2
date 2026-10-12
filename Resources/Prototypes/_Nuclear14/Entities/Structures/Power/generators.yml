@@ -240,6 +240,10 @@
   description: A dirty old generator that uses fuel to run.
   name: pre-war generator
   components:
+  - type: Physics  # spawn state
+    bodyType: Static
+  - type: FuelGenerator  # spawn state
+    on: False
   - type: Transform
     anchored: true
   - type: Sprite
@@ -286,6 +290,10 @@
   description: A dirty old generator that uses raw uranium to run.
   name: pre-war uranium generator
   components:
+  - type: Physics  # spawn state
+    bodyType: Static
+  - type: FuelGenerator  # spawn state
+    on: False
   - type: Transform
     anchored: true
   - type: Sprite

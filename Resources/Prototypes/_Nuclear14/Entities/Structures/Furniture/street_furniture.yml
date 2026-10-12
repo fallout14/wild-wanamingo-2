@@ -171,6 +171,8 @@
   suffix: bazaar
   description: A sign for a bazaar. How bizarre!
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/signs_64x64.rsi
     state: bazaar
@@ -222,6 +224,8 @@
   suffix: 6 directions
   description: An old interstate road sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: interstate
 
@@ -232,6 +236,8 @@
   suffix: shot
   description: An old interstate road sign that's been shot.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: interstate80_shot
 
@@ -242,6 +248,8 @@
   suffix: 4 directions
   description: An old road stop sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: stop
 
@@ -252,6 +260,8 @@
   suffix: 4 directions
   description: An old no turning sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: noturn
 
@@ -261,6 +271,8 @@
   name: no parking sign
   description: An old no parking sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: noparking
 
@@ -270,6 +282,8 @@
   name: street sign
   description: An old street sign
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: street
 
@@ -280,6 +294,8 @@
   suffix: 2 directions
   description: An old one way road sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: direction
 
@@ -289,6 +305,8 @@
   name: bus stop sign
   description: An old bus stop sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: busstop
 
@@ -298,6 +316,8 @@
   name: rail crossing sign
   description: An old rail crossing sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: railcrossing
 
@@ -308,6 +328,8 @@
   suffix: 4 directions
   description: An old one direction sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: onlydir
 
@@ -318,6 +340,8 @@
   suffix: 4 directions
   description: An old speed limit sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: speed
 
@@ -328,6 +352,8 @@
   suffix: 4 directions
   description: An old road warning sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: warnings
 
@@ -338,6 +364,8 @@
   suffix: 6 directions
   description: An old road turn sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: turn
 
@@ -348,6 +376,8 @@
   suffix: 2 directions
   description: An old road exit sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     snapCardinals: false
     state: exit
@@ -358,6 +388,8 @@
   name: no pedestrians sign
   description: An old no pedestrians sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: nopedestrian
 
@@ -367,6 +399,8 @@
   name: merge ahead sign
   description: An old merge ahead sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: merge
 
@@ -376,6 +410,8 @@
   name: snake ahead sign
   description: An old road curves ahead sign.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: snake
 
@@ -388,6 +424,8 @@
   suffix: right
   description: An old wooden post mounted transformer for power distribution.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/powerpole.rsi
     state: powerpole1
@@ -397,6 +435,8 @@
   id: N14StreetPowerPoleRightLeft
   suffix: left
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: powerpole2
 
@@ -425,6 +465,8 @@
   id: N14LightStreetLampPostAlwaysPoweredRight
   suffix: Always Powered, Right
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight1_right.rsi
     layers:
@@ -444,6 +486,8 @@
   description: This light doesn't have an obvious power source.
   suffix: Always Powered, Left
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight1_left.rsi
     layers:
@@ -457,6 +501,8 @@
   id: N14LightStreetLampPostPoweredEmptyRight
   suffix: Empty, Right
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight1_right.rsi
     state: off
@@ -478,6 +524,8 @@
   id: N14LightStreetLampPostPoweredEmptyLeft
   suffix: Empty, Left
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight1_left.rsi
     state: off
@@ -488,6 +536,8 @@
   suffix: Powered, Right
   description: A light fixture. Draws power and produces light when equipped with a light tube.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     layers:
     - state: off
@@ -502,6 +552,8 @@
   suffix: Powered, Left
   description: A light fixture. Draws power and produces light when equipped with a light tube.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     layers:
     - state: off
@@ -515,6 +567,8 @@
   id: N14LightStreetLampPostRaiderAlwaysPoweredRight
   suffix: Always Powered, Right
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight1_raider_right.rsi
 
@@ -523,6 +577,8 @@
   id: N14LightStreetLampPostRaiderAlwaysPoweredLeft
   suffix: Always Powered, Left
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight1_raider_left.rsi
 
@@ -531,6 +587,8 @@
   id: N14LightStreetLampPostRaiderPoweredEmptyRight
   suffix: Empty, Right
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight1_raider_right.rsi
     state: off
@@ -540,6 +598,8 @@
   id: N14LightStreetLampPostRaiderPoweredEmptyLeft
   suffix: Empty, Left
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight1_raider_left.rsi
     state: off
@@ -549,6 +609,8 @@
   id: N14LightStreetLampPostRaiderPoweredRight
   suffix: Powered, Right
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     layers:
     - state: off
@@ -560,6 +622,8 @@
   id: N14LightStreetLampPostRaiderPoweredLeft
   suffix: Powered, Left
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     layers:
     - state: off
@@ -571,6 +635,8 @@
   id: N14LightStreetLampPostAlwaysPoweredRight2
   suffix: Always Powered, Right
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_right.rsi
 
@@ -579,6 +645,8 @@
   id: N14LightStreetLampPostAlwaysPoweredLeft2
   suffix: Always Powered, Left
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_left.rsi
 
@@ -587,6 +655,8 @@
   id: N14LightStreetLampPostPoweredEmptyRight2
   suffix: Empty, Right
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_right.rsi
     state: off
@@ -596,6 +666,8 @@
   id: N14LightStreetLampPostPoweredEmptyLeft2
   suffix: Empty, Left
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_left.rsi
     state: off
@@ -605,6 +677,8 @@
   id: N14LightStreetLampPostPoweredRight2
   suffix: Powered, Right
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_right.rsi
     layers:
@@ -617,6 +691,8 @@
   id: N14LightStreetLampPostPoweredLeft2
   suffix: Powered, Left
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_left.rsi
     layers:
@@ -629,6 +705,8 @@
   id: N14LightStreetLampPostRaiderAlwaysPoweredRight2
   suffix: Always Powered, Right
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_raider_right.rsi
 
@@ -637,6 +715,8 @@
   id: N14LightStreetLampPostRaiderAlwaysPoweredLeft2
   suffix: Always Powered, Left
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_raider_left.rsi
 
@@ -645,6 +725,8 @@
   id: N14LightStreetLampPostRaiderPoweredEmptyRight2
   suffix: Empty, Right
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_raider_right.rsi
     state: off
@@ -654,6 +736,8 @@
   id: N14LightStreetLampPostRaiderPoweredEmptyLeft2
   suffix: Empty, Left
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_raider_left.rsi
     state: off
@@ -663,6 +747,8 @@
   id: N14LightStreetLampPostRaiderPoweredRight2
   suffix: Powered, Right
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_raider_right.rsi
     layers:
@@ -675,6 +761,8 @@
   id: N14LightStreetLampPostRaiderPoweredLeft2
   suffix: Powered, Left
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_raider_left.rsi
     layers:

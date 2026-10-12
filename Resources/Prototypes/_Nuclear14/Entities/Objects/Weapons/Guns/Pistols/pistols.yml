@@ -131,6 +131,20 @@
   id: N14WeaponPistol9mm
   description: The cheap and ubiquitous sidearm, chambered in 9mm ammo.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     muzzleSlot:
       name: Suppressor
@@ -182,6 +196,20 @@
   id: N14WeaponPistol10mm
   description: A cheap, ubiquitous sidearm, chambered in 10mm munitions. # TODO: Need to create projectiles, magazines and boxes for 10mm.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     muzzleSlot:
       name: Suppressor
@@ -281,7 +309,17 @@
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
       gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: StaticPrice
     price: 45
 
@@ -339,7 +377,17 @@
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
       gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: StaticPrice
     price: 50
 
@@ -412,6 +460,20 @@
   id: N14WeaponPistol9mmChinese
   description: A foreign long-barrel pistol with an integrated magazine, chambered in 9mm.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
   - type: Tag
     tags:
     - Sidearm
@@ -449,6 +511,20 @@
   id: N14WeaponPistol9mmSpy
   description: A modified version of the common chinese pistol with a integrated silencer, extended magazine, and full-auto conversion. This gun was designed with passion, chambered in 9mm.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Pistols/thespy.rsi
     layers:

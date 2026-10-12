@@ -83,6 +83,16 @@
   name: black robe
   description: robe tinted in black with some gold lining.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      storagebase: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      toggleable-clothing: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Sprite
     sprite: Nuclear14/Clothing/OuterClothing/Coats/falloutblackrobes.rsi
   - type: Clothing
@@ -97,6 +107,16 @@
   name: leather robe
   description: A robe made of leather, with a mystic symbol in the chest.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      storagebase: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      toggleable-clothing: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Sprite
     sprite: Nuclear14/Clothing/OuterClothing/Coats/falloutleatherrobes.rsi
   - type: Clothing
@@ -613,6 +633,16 @@
   name: Engineer Scribe Coat # #Misfits Tweak - Renamed from "Scribe Quilted Armor" for role clarity
   description: A piece of quilted cloth with Brotherhood of Steel marks and metal plates, it has some pouches for tools storage.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      storagebase: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      toggleable-clothing: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Sprite
     sprite: Nuclear14/Clothing/OuterClothing/Coats/midwestbosscribe.rsi
   - type: Clothing

@@ -6,6 +6,9 @@
   parent: N14ClothingBootsLeather
   suffix: Filled
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      item: !type:ContainerSlot {}
   - type: ContainerFill
     containers:
       item:

@@ -108,11 +108,19 @@
   components:
   - type: RevolverAmmoProvider
     proto: null
-    chambers: [ null, null, null, null, null, null ]
     whitelist:
       tags:
       - N14CartridgePistol10
       - SpeedLoader10
+    chambers:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
 
 - type: entity
   name: magnum revolver
@@ -120,6 +128,21 @@
   id: N14WeaponRevolver44Magnum
   description: The Big Iron. Uses .44 magnum ammo.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      revolver-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Wieldable
   - type: FirearmAttachmentHost
     enableOpticSlot: true
@@ -183,6 +206,21 @@
   id: N14WeaponRevolver45-70Hunter
   description: A heavy revolver with a long barrel designed to hunt small animals, but it also works for people. Uses .45-70 gov't ammo.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      revolver-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Wieldable
   - type: FirearmAttachmentHost
     enableOpticSlot: true

@@ -24,6 +24,20 @@
   name: Ranger power armor pistol
   description: A rugged 10mm sidearm modified for NCR Ranger power armor gauntlets.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Misfits/Objects/Weapons/Guns/Pistols/ranger_pistol.rsi
   - type: Sprite

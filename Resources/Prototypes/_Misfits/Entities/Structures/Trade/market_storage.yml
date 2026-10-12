@@ -4,6 +4,10 @@
   id: MarketDepositStorage
   name: Market Deposit Storage
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      storagebase: !type:Container
+        ents: []
   - type: Transform
     noRot: true
   - type: Storage

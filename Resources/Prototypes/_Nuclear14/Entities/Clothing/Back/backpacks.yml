@@ -66,6 +66,13 @@
   - type: ContainerContainer
     containers:
       key_slots: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      storagebase: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
   - type: ContainerFill
     containers:
       key_slots:

@@ -35,6 +35,7 @@
     anchored: true
   - type: Physics
     bodyType: Static
+    canCollide: False
   - type: Clickable
   - type: SpriteFade
 
@@ -43,6 +44,8 @@
   id: N14DecorationFlagFlammable
   categories: [ HideSpawnMenu ]
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Reactive
     groups:
       Flammable: [ Touch ]
@@ -91,6 +94,8 @@
   name: Flag of the New California Republic
   description: The banner of the New California Republic, a nation that despite enemies within and without, has done its best to provide comfort and equality to its citizens.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/flags.rsi
     state: ncrflag
@@ -101,6 +106,8 @@
   name: Flag of the Oasis Tribe
   description: The banner of the Oasis Tribe, originating in the remains of Pahrump, Nevada. The tribe was incorporated into the New California Republic, yet its members still remember their roots as they settle new lands.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/flags.rsi
     state: oasisflag
@@ -111,6 +118,8 @@
   name: Flag of the Washington Brotherhood of Steel
   description: The banner of the Washington Brotherhood of Steel, a chapter that split off from the Midwest Brotherhood and settled into Seattle, turning to conscription, slavery, and violent oppression of the locals under the rule of the Elder Immortal.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/flags2.rsi
     state: wbosflag
@@ -121,6 +130,8 @@
   name: Flag of the Brotherhood of Steel
   description: The banner of the Brotherhood of Steel, descendents of the United States military who now attempt to confiscate and safeguard dangerous technology to prevent another apocalypse.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/flags2.rsi
     state: mbosflag
@@ -131,6 +142,8 @@
   name: Flag of the Followers of the Apocalypse
   description: The banner of the Followers of the Apocalypse, a humanitarian organization with the goal of providing medical services to those in need and a distinct disinterest in taking power, they are rarely a target and often protected by others.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/flags.rsi
     state: followersflag
@@ -141,6 +154,8 @@
   name: Flag of the U.S. Army
   description: The banner of the U.S. Army, the descendents of America's elite who claim to be the true inheritors of the United States federal government.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/flags.rsi
     state: enclaveflag
@@ -151,6 +166,8 @@
   name: Flag of the Gunner Mercenary Corps
   description: The banner of the Gunners, a mercenary company from deeper in the unknown United States territory. They act without any moral limitations, but will not murder or pillage any more than the employer has ordered.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/flags.rsi
     state: gunnerflag
@@ -161,6 +178,8 @@
   name: Flag of the Locust Tribe
   description: The banner of the Locusts, a tribe of raiders native to Wendover, Utah. When the bombs first dropped, Wendover split into three survivor communities, the Locusts, Vultures and Willowers. The Locust Tribe believed the survivors should raid outsiders and take what they could through strength. After the first few years, they turned on the two other tribes as well.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/flags.rsi
     state: locustflag
@@ -171,6 +190,8 @@
   name: Flag of High Valley Hills
   description: The banner of High Valley Hills, a settlement that cropped up around Vault City in the New California Republic from those who were not permitted entry; it is a mix of a slum and work camp for the desperate.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/flags.rsi
     state: hvhflag
@@ -181,6 +202,8 @@
   name: Flag of Vault City
   description: The banner of Vault City, a major settlement that evolved from Vault 8 in what remains of the west coast of the United States. They are a notable exporter of medical technology.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/flags.rsi
     state: vtccflag
@@ -191,6 +214,8 @@
   name: Flag of Yuma City
   description: The banner of the city of Yuma, Arizona. It serves as both an important source of food for tributes to Caesar's Legion, and an important waterway between Arizona and California's southern edge.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/flags.rsi
     state: cornflag
@@ -204,6 +229,8 @@
   name:  Flag of the Great Khans Tribe
   description: The banner of the Great Khans Tribe, weathered and worn from a long cherished history of raiding the helpless. The decorated skull smiles with mockery at those who would challenge it.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/flags.rsi
     state: khanflag
@@ -214,6 +241,8 @@
   name: Flag of the Church of Renewal
   description: The banner of the Church of Renewal, a cult that believes the nuclear apocalypse was a gift of creation, and that forced evolution of humanity is not only our one path to survival, but our sacred destiny.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/flags.rsi
     state: cotc

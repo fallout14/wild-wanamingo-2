@@ -45,6 +45,8 @@
   name: wild agave plant
   description: An agave plant growing wild. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: wild_agave
   - type: OreVein
@@ -70,6 +72,8 @@
     layers:
     - state: yucca1
       map: [ "plant" ]
+  - type: Physics  # spawn state
+    canCollide: False
   - type: OreVein
     currentOre: WildBananaYucca
   - type: Gatherable
@@ -99,6 +103,8 @@
         barrelc1: ""
         barrelc2: ""
         barrelc3: ""
+  - type: Physics  # spawn state
+    canCollide: False
   - type: OreVein
     currentOre: WildBarrelCactus
   - type: Gatherable
@@ -128,6 +134,8 @@
         blackberry1: ""
         blackberry2: ""
         blackberry3: ""
+  - type: Physics  # spawn state
+    canCollide: False
   - type: OreVein
     currentOre: WildBlackberries
   - type: Gatherable
@@ -156,6 +164,8 @@
     - plant:
         brocflower1: ""
         brocflower2: ""
+  - type: Physics  # spawn state
+    canCollide: False
   - type: OreVein
     currentOre: WildBrocFlower
   - type: Gatherable
@@ -174,6 +184,8 @@
   name: wild buffalo gourd
   description: A wild buffalo gourd plant. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: wild_gourd
   - type: OreVein
@@ -194,6 +206,8 @@
   name: wild cabbage plant
   description: A wild cabbage plant. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Objects/Specific/Hydroponics/cabbage.rsi
     layers:
@@ -217,6 +231,8 @@
   name: wild carrot plant
   description: A wild carrot plant. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Objects/Specific/Hydroponics/cabbage.rsi
     state: harvest
@@ -253,6 +269,8 @@
         shroom1: ""
         shroom2: ""
         shroom3: ""
+  - type: Physics  # spawn state
+    canCollide: False
   - type: OreVein
     currentOre: WildCaveFungus
   - type: Gatherable
@@ -282,6 +300,8 @@
         glowshroom1: ""
         glowshroom2: ""
         glowshroom3: ""
+  - type: Physics  # spawn state
+    canCollide: False
   - type: OreVein
     currentOre: WildCaveFungusRad
   - type: PointLight
@@ -309,6 +329,8 @@
   name: wild cotton plant
   description: A cotton plant growing wild. It's healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/cotton.rsi
     state: harvest
@@ -330,6 +352,8 @@
   name: wild coyote plant
   description: A coyote plant growing wild. It's healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: wild_coyote
   - type: OreVein
@@ -350,6 +374,8 @@
   name: wild cannabis plant
   description: A cannabis plant growing wild. It's healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: wild_cannabis
   - type: OreVein
@@ -370,6 +396,8 @@
   name: wild datura plant
   description: A datura plant growing wild. It's healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: wild_datura
   - type: OreVein
@@ -390,6 +418,8 @@
   name: wild glowpepper plant #N14 change
   description: A glowpepper plant GLOWING wild. AH HA HA HA... it's healthy. #N14 change
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Objects/Specific/Hydroponics/jalapeno.rsi #I DON'T KNOW WHERE THIS IS
     state: harvest
@@ -417,6 +447,8 @@
   name: wild maize plant
   description: A wild maize plant. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Objects/Specific/Hydroponics/maize.rsi
     state: harvest
@@ -438,6 +470,8 @@
   name: wild mesquite plant
   description: A wild mesquite plant. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: wild_mesquite
   - type: OreVein
@@ -469,6 +503,8 @@
         mutfruit1: ""
         mutfruit2: ""
         mutfruit3: ""
+  - type: Physics  # spawn state
+    canCollide: False
   - type: OreVein
     currentOre: WildMutfruit
   - type: Gatherable
@@ -487,6 +523,8 @@
   name: wild nettles
   description: A wild nettle plant. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/nettle.rsi
     state: harvest
@@ -508,6 +546,8 @@
   name: wild onion plant
   description: A wild onion plant. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Objects/Specific/Hydroponics/onion.rsi
     state: harvest
@@ -529,6 +569,8 @@
   name: wild pinyon plant
   description: A wild pinyon plant. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: wild_pinyon
   - type: OreVein
@@ -549,6 +591,8 @@
   name: wild prickly pear cactus
   description: A wild prickly pear plant. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: wild_prickly
   - type: OreVein
@@ -569,6 +613,8 @@
   name: wild razorgrain plant
   description: A razorgrain plant. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Objects/Specific/Hydroponics/razorgrain.rsi
     state: harvest
@@ -590,6 +636,8 @@
   name: wild starlight berry plant
   description: A wild starlight berry plant. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Objects/Specific/Hydroponics/starlight.rsi
     state: harvest
@@ -622,6 +670,8 @@
         tarberry1: ""
         tarberry2: ""
         tarberry3: ""
+  - type: Physics  # spawn state
+    canCollide: False
   - type: OreVein
     currentOre: WildTarberries
   - type: Gatherable
@@ -640,6 +690,8 @@
   name: wild tato plant
   description: A wild tato plant. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: wild_tato
   - type: OreVein
@@ -660,6 +712,8 @@
   name: wild horsenettle plant
   description: A wild horsenettle plant. It looks healthy.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     state: wild_horsenettle
   - type: OreVein
@@ -690,6 +744,8 @@
     - plant:
         xander1: ""
         xander2: ""
+  - type: Physics  # spawn state
+    canCollide: False
   - type: OreVein
     currentOre: WildXander
   - type: Gatherable

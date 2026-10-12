@@ -147,6 +147,12 @@
   id: N14SubstationBasic
   suffix: Basic, 2.5MJ
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      machine_board: !type:Container
+        ents: []
+      machine_parts: !type:Container
+        ents: []
   - type: Battery
     maxCharge: 2500000
     startingCharge: 2500000
@@ -156,6 +162,12 @@
   id: N14SubstationBasicEmpty
   suffix: Empty
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      machine_board: !type:Container
+        ents: []
+      machine_parts: !type:Container
+        ents: []
   - type: Battery
     startingCharge: 0
 
@@ -166,6 +178,12 @@
   id: N14SubstationBasicRusty
   suffix: Basic, 2.5MJ
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      machine_board: !type:Container
+        ents: []
+      machine_parts: !type:Container
+        ents: []
   - type: Sprite
     sprite: Nuclear14/Structures/Power/32x48_machines.rsi
     state: substation_rust
@@ -206,6 +224,12 @@
   id: N14SubstationBasicRustyEmpty
   suffix: Empty
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      machine_board: !type:Container
+        ents: []
+      machine_parts: !type:Container
+        ents: []
   - type: Battery
     startingCharge: 0
 

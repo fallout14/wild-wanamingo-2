@@ -76,6 +76,9 @@
   name: leather boots
   description: Brown leather boots, that's all.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      item: !type:ContainerSlot {}
   - type: Sprite
     sprite: Nuclear14/Clothing/Shoes/FalloutBoots/leatherboots.rsi
   - type: Clothing

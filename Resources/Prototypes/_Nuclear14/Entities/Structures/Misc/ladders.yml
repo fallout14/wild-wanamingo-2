@@ -163,6 +163,8 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Nuclear14/Structures/Misc/laddersms13.rsi
     state: bunker_closed
@@ -181,6 +183,8 @@
   suffix: closed
   description: A closed up entrance to a bunker.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     drawdepth: FloorTiles
     state: manhole_closed

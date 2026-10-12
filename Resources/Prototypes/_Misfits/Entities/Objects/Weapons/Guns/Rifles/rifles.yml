@@ -6,6 +6,20 @@
   id: N14WeaponAutoRifle556Legion
   description: A makeshift automatic rifle of legion origin, light and extremely cheap, chambered in 5.56mm
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Misfits/Objects/Weapons/Guns/Rifles/legionautorifle.rsi
     quickEquip: false
@@ -125,6 +139,20 @@
   id: N14WeaponRifle556HeavyAssault
   description: An assault rifle chambered for 5.56 that was designed pre-war for power armored units. It's large and unwieldy, but boasts an impressive fire rate and magazine capacity.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Misfits/Objects/Weapons/Guns/Rifles/t60heavyrifle.rsi
     quickEquip: false

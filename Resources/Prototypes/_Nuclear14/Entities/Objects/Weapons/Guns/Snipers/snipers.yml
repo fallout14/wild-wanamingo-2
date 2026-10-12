@@ -7,6 +7,21 @@
   id: N14WeaponSniperHunting
   description: A rugged bolt action rifle. Uses .308 ammo.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     enableOpticSlot: true
     opticSlot:
@@ -71,6 +86,21 @@
   id: N14WeaponSniperEnfield
   description: A classic bolt-action service rifle. Uses .303 British ammo.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     enableOpticSlot: true
     opticSlot:
@@ -292,6 +322,21 @@
   id: N14WeaponSniper357TrailCarbine
   description: A short, entry-level lever action carbine. Uses .357 magnum ammo, and will also chamber .38 special.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Misfits/Objects/Weapons/Guns/Snipers/trailcarbine.rsi
   - type: Sprite
@@ -333,6 +378,21 @@
   id: N14WeaponSniper10mmLeverRifle
   description: A long lever action repeater rifle. Its long barrel gets a little more out of each round. Uses 10mm ammo.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/leverrifle.rsi
   - type: Sprite
@@ -365,6 +425,21 @@
   id: N14WeaponSniper45-70BrushGun
   description: A powerful lever action carbine. Uses .45-70 gov't ammo.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/brushgun.rsi
   - type: Sprite
@@ -399,6 +474,21 @@
   id: N14WeaponSniper308PipeRifle
   description: A piece of metal pipe with a wooden stock, barely works as a gun and uses .308 ammo.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/piperifle.rsi
   - type: Sprite
@@ -509,6 +599,21 @@
   id: N14WeaponSniper44LeverShortCarbine
   description: An extra short lever action carbine. Uses .44 ammo.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/shortlevercarbine.rsi
     slots:
@@ -594,6 +699,21 @@
   id: N14WeaponSniper308Tribal
   description: A tribal lever action rifle. Uses .308 ammo.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/tribalhuntstick.rsi
   - type: Sprite
@@ -626,6 +746,21 @@
   id: N14WeaponSniper308TribalUpgraded
   description: A tribal decorated lever action rifle. Uses .308 ammo and has a fixed variable-power scope.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: GunDamageModifier
     damage:
       types:
@@ -673,6 +808,21 @@
   id: N14WeaponSniper308Canadian
   description: A pre-war bolt action canadian sniper rifle. Uses .308 ammo.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/canadiansniper.rsi
   - type: Sprite
@@ -715,6 +865,21 @@
   id: N14WeaponSniper303Ross
   description: A well-preserved bolt action canadian service rifle. Uses .303 British ammo.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: FirearmAttachmentHost
     bayonetVisualOffset: 0.75, 0.75
     enableOpticSlot: true
@@ -767,6 +932,20 @@
   id: N14WeaponRifle308SniperRifle
   description:  sniper rifle chambered in .308, its chamber can handle overpressured .308 ammo.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/308SniperRifle.rsi
     quickEquip: false
@@ -848,6 +1027,21 @@
   id: N14WeaponSniperCowboyRepeater
   description: A lever-action rifle in .357 Magnum with worn brown furniture. The weapon of gunslingers and honest wastelanders. Holds twelve rounds in the tubular magazine and cycles fast enough to feel semi-automatic.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/cowboyrepeater.rsi
     quickEquip: false
@@ -900,6 +1094,21 @@
   id: N14WeaponSniperPaciencia
   description: A bolt-action hunting rifle with a Mexican flag hand-painted on the stock. Only three rounds in the chamber, but each shot hits like a freight train. The name means patience. You will need it.
   components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/paciencia.rsi
   - type: Sprite
@@ -971,6 +1180,20 @@
   id: N14WeaponRifle10mmM1Carbine
   description: A lightweight semi-automatic 10mm carbine with a skeletonized folding stock and detachable magazines. Fold the stock for compact storage and reduced recoil.
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Foldable
     canFoldInsideContainer: true
     foldVerbText: gun-fold-stock
@@ -1046,6 +1269,24 @@
   id: N14WeaponRifle556Rangemaster
   description: 'A Colt Rangemaster semi-automatic hunting rifle in .223 with a long barrel and a mount for an optional scope. The classic wasteland hunting rifle: slow and deliberate, but it reaches out and holds its punch at range.'
   components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: MagazineVisuals
     magState: mag
     steps: 1

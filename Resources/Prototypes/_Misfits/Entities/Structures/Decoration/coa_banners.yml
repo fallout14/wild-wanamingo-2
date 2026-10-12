@@ -21,6 +21,8 @@
   name: Flag of the Children of Atom
   description: The banner of the Children of Atom, it proudly stands against a world that would refuse the teachings of its acolytes. Where this flag is planted, so too will come the gift of Atom's radiant glow.
   components:
+  - type: Physics  # spawn state
+    canCollide: False
   - type: Sprite
     sprite: Misfits/Structures/Decoration/coa_banner_big.rsi
     state: banner
