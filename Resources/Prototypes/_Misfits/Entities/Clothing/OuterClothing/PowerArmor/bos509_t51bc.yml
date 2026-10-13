@@ -1,0 +1,38 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/OuterClothing/PowerArmor/bos509_t51bc.yml
+
+- type: entity
+  parent: N14ClothingOuterPowerArmorT51BC
+  id: MisfitsClothingOuterPowerArmorBoS509Elder
+  name: 509th BoS Elder T-51bc Power Armor
+  description: The personal T-51bc of the 509th Brotherhood of Steel Elder. Painted in the chapter's Bonneville colors, its servos hum with the authority of a decade of salt-flat command.
+  components:
+  - type: Sprite
+    sprite: Misfits/Clothing/OuterClothing/PowerArmor/bos509_elder_t51bc.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/OuterClothing/PowerArmor/bos509_elder_t51bc.rsi
+
+# --- 509th BoS Head Paladin T-51bc ---
+
+- type: entity
+  parent: N14ClothingOuterPowerArmorT51BC
+  id: MisfitsClothingOuterPowerArmorBoS509HeadPaladin
+  name: 509th BoS Head Paladin T-51bc Power Armor
+  description: The T-51bc worn by the 509th Brotherhood of Steel Head Paladin. Scored with the scars of vanguard action on the Bonneville salt flats, it is a badge of the chapter's senior sword.
+  components:
+  - type: Sprite
+    sprite: Misfits/Clothing/OuterClothing/PowerArmor/bos509_headpaladin_t51bc.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/OuterClothing/PowerArmor/bos509_headpaladin_t51bc.rsi
+
+# --- 509th BoS Honor Guard T-51bc ---
+
+- type: entity
+  parent: N14ClothingOuterPowerArmorT51BC
+  id: MisfitsClothingOuterPowerArmorBoS509HonorGuard
+  name: 509th BoS Honor Guard T-51bc Power Armor
+  description: The personal T-51bc of a 509th Brotherhood of Steel Honor Guard, sworn to stand between the chapter and its Elder. Painted in the chapter's Bonneville colors, it carries the scars of vanguard action on the salt flats.
+  components:
+  - type: Sprite
+    sprite: Misfits/Clothing/OuterClothing/PowerArmor/bos509_headpaladin_t51bc.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/OuterClothing/PowerArmor/bos509_headpaladin_t51bc.rsi

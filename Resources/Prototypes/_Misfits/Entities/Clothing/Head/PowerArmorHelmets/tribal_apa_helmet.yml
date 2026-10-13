@@ -1,0 +1,11 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Head/PowerArmorHelmets/tribal_apa_helmet.yml
+
+- type: entity
+  parent: N14ClothingHeadHelmetPowerArmorX01
+  id: N14ClothingHeadHelmetPowerArmorTribalAPA
+  name: tribal advanced power armor helmet
+  description: An APA MK I helmet retrofitted with Ug-Qualtoth tribal markings. Ceremonial bones and ancient sigils coat the surface — the heads-up display still functions beneath them.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Misfits/Clothing/Head/PowerArmorHelmets/tribal_apa_helmet.rsi

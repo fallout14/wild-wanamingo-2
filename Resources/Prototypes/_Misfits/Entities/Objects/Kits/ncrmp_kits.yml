@@ -1,0 +1,116 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Kits/ncrmp_kits.yml
+
+- type: thiefBackpackSet
+  id: MPStandardKit
+  name: n14-loadout-kit-mpstandardkit-name
+  description: n14-loadout-kit-mpstandardkit-description
+  sprite:
+    sprite: Nuclear14/Objects/Misc/kits.rsi
+    state: rifleman
+  content:
+  - KitStandardMP
+
+- type: thiefBackpackSet
+  id: MPMedicalKit
+  name: n14-loadout-kit-mpmedicalkit-name
+  description: n14-loadout-kit-mpmedicalkit-description
+  sprite:
+    sprite: Nuclear14/Objects/Misc/kits.rsi
+    state: medic
+  content:
+  - KitMedicalMP
+
+- type: thiefBackpackSet
+  id: MPEnforcerKit
+  name: n14-loadout-kit-mpenforcerkit-name
+  description: n14-loadout-kit-mpenforcerkit-description
+  sprite:
+    sprite: Nuclear14/Objects/Misc/kits.rsi
+    state: rifleman
+  content:
+  - KitEnforcerMP
+
+- type: entity
+  name: Standard Military Police Kit
+  parent: KitBase
+  id: KitStandardMP
+  description: A crate containing a set of standard-issue military police equipment.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/kits.rsi
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponShotgunBlowback
+      - id: MisfitsMagazineBox12GaugeBeanbag
+      - id: BoxHandcuff
+      - id: N14PoliceBaton
+      - id: ForensicScanner
+      - id: N14CleanGauze10
+      - id: GrenadeFlashBang
+      - id: SmokeGrenade
+
+- type: entity
+  name: Medical Military Police Kit
+  parent: KitBase
+  id: KitMedicalMP
+  description: A crate for when someone gets hurt.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/kits.rsi
+    state: medic
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+     - id: ClothingBackpackDuffelSurgeryFilled
+     - id: N14Stimpak
+     - id: N14Stimpak
+     - id: N14SuperStimpak
+     - id: N14Antidote
+     - id: N14CleanGauze10
+     - id: N14PoliceBaton
+     - id: Handcuffs
+     - id: N14WeaponRevolverWebley
+     - id: N14SpeedLoader45
+
+- type: entity
+  name: Enforcer Military Police Kit
+  parent: KitBase
+  id: KitEnforcerMP
+  description: A crate for when someone needs to get hurt.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/kits.rsi
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+     - id: N14WeaponShotgunRiot
+     - id: MagazineBox12gauge
+     - id: FalloutNCRmilitarypoliceHelmet
+     - id: ExGrenade
+     - id: ExGrenade
+     - id: Handcuffs
+     - id: MisfitsNCRMPShockBaton
+     - id: RiotShield
+
+- type: entity
+  id: NCRMPKit_Set
+  name: Undecided NCR Military Police Kit
+  parent: BaseLoadoutKit
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/kits.rsi
+    state: rifleman
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    toolName: n14-loadout-kit-window-title
+    toolDesc: n14-loadout-kit-window-description
+    possibleSets:
+    - MPStandardKit
+    - MPMedicalKit
+    - MPEnforcerKit

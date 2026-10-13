@@ -1,0 +1,9 @@
+# Deploys/retracts the pieces of a multi-piece suit (power armor), via MultiToggleableClothing.
+- type: entity
+  parent: ActionToggleSuitPiece
+  id: F14ActionToggleSuitPieces
+  name: Toggle Suit Pieces
+  description: Deploy or retract your suit's helmet, gauntlets, boots and power pack.
+  components:
+  - type: InstantAction
+    event: !type:MultiToggleClothingEvent

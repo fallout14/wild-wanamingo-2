@@ -2,6 +2,15 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Lathes/identification.yml
 
 - type: latheRecipe
+  id: HolotagMidwestScribe
+  result: N14IDBrotherhoodHolotag
+  categories:
+  - N14Identification
+  completetime: 5
+  materials:
+    Steel: 100
+
+- type: latheRecipe
   id: DogtagNCR
   result: N14IDNCRDogtag
   categories:

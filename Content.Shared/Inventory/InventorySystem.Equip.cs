@@ -213,6 +213,9 @@ public abstract partial class InventorySystem
         // in that case, we check accesibility for the owner-entity instead.
         if (TryComp(itemUid, out AttachedClothingComponent? attachedComp))
             itemUid = attachedComp.AttachedUid;
+        // WW Change - same for the pieces of multi-piece suits (power armor)
+        else if (TryComp(itemUid, out Content.Shared._Misfits.Clothing.Legacy.MultiAttachedClothingComponent? multiAttached))
+            itemUid = multiAttached.AttachedUid;
 
         // Can the actor reach the target?
         if (actor != target && !(_interactionSystem.InRangeUnobstructed(actor, target) && _containerSystem.IsInSameOrParentContainer(actor, target)))

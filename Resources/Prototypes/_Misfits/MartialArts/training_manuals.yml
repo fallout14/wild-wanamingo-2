@@ -1,0 +1,29 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/MartialArts/training_manuals.yml
+
+- type: entity
+  name: "wasteland power armor manual"
+  id: WastelandPowerArmor
+  parent: BaseItem
+  description: "This kind of teaches you how to maybe walk in power armor..."
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#6B4F2E"
+    - state: decor_wingette
+      color: "#4A3518"
+    - state: icon_text
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+      - Book
+  - type: EmitSoundOnPickup
+    sound: /Audio/Misfits/Legacy/SimpleStation14/Items/Handling/book_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/Misfits/Legacy/SimpleStation14/Items/Handling/book_drop.ogg
+  - type: GrantPowerArmorTraining
+    soundOnUse:
+      path: /Audio/Misfits/Legacy/Items/Handling/book_pickup.ogg

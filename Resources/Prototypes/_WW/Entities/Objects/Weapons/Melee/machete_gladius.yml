@@ -1,0 +1,18 @@
+# A machete gladius (Fallout: New Vegas) with the Mojave Sun 13 sprite. Misfits only had Corvax's plain gladius,
+# which this keeps the stats of. MS13's sheet has no back/suit-storage sprites, so it only goes on the belt.
+- type: entity
+  parent: N14Gladius
+  id: F14MacheteGladius
+  name: machete gladius
+  description: A machete reforged into a short sword in the Legion's forges.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/machete_gladius.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/machete_gladius.rsi
+  - type: Clothing
+    sprite: MojaveSun/Objects/Weapons/Melee/machete_gladius.rsi
+    quickEquip: false
+    slots:
+    - Belt

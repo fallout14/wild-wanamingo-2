@@ -1,0 +1,22 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Actions/powerarmor_shield.yml
+
+- type: entity
+  id: ActionTogglePowerArmorBrace
+  parent: BaseAction
+  name: Brace Stance
+  description: Lock your power armor's servos into a stationary firing position. You cannot move, but gain extra damage resistance. 5-second cooldown between stance changes.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    useDelay: 5
+  - type: Sprite
+    layers:
+    - sprite: Objects/Weapons/Melee/shields.rsi
+      state: teleriot-icon
+      map: [ "enum.ActionVisuals.Icon" ]
+    - sprite: Objects/Weapons/Melee/shields.rsi
+      state: teleriot-on
+      map: [ "enum.ActionVisuals.IconToggled" ]
+      visible: false
+  - type: InstantAction
+    event: !type:ToggleActionEvent

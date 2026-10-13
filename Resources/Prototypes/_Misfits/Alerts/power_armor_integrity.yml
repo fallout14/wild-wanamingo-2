@@ -1,0 +1,23 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Alerts/power_armor_integrity.yml
+
+- type: alertCategory
+  id: PowerArmorIntegrity
+
+- type: alert
+  id: PowerArmorIntegrity
+  category: PowerArmorIntegrity
+  icons:
+  - sprite: /Textures/Interface/Alerts/battery.rsi
+    state: battery0
+  - sprite: /Textures/Interface/Alerts/battery.rsi
+    state: battery3
+  - sprite: /Textures/Interface/Alerts/battery.rsi
+    state: battery5
+  - sprite: /Textures/Interface/Alerts/battery.rsi
+    state: battery8
+  - sprite: /Textures/Interface/Alerts/battery.rsi
+    state: battery10
+  name: alerts-power-armor-integrity-name
+  description: alerts-power-armor-integrity-desc
+  minSeverity: 0
+  maxSeverity: 4

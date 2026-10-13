@@ -20,6 +20,7 @@
       - type: NpcFactionMember
         factions:
           - BrotherhoodOfSteel
+      - type: PowerArmorProficiency
 
 - type: startingGear
   id: BoSWestElderCommanderGear
@@ -53,6 +54,7 @@
       - type: NpcFactionMember
         factions:
           - BrotherhoodOfSteel
+      - type: PowerArmorProficiency
 
 - type: startingGear
   id: BoSMidPaladinCommanderGear
@@ -61,8 +63,10 @@
     back: N14ClothingBackpackMilitary
     shoes: N14ClothingBootsLeatherFilled
     head: N14ClothingPaladinBeret
+    outerClothing: N14ClothingOuterPowerArmorWashT51Elite
     hands: N14ClothingHandsGlovesCombat
     pocket1: BoSBrotherhoodHeadPaladinKits
+    id: N14HeadPaladin_PipBoy
     ears: N14ClothingHeadsetBrotherhoodOfSteel
     belt: MisfitsClothingBeltPaladinWebbing
   storage:
@@ -98,6 +102,7 @@
     outerClothing: MisfitsBoSHeadKnightArmor
     hands: N14ClothingHandsGlovesCombat
     pocket1: BoSBrotherhoodHeadKnightKits
+    id: N14HeadKnight_PipBoy
     ears: N14ClothingHeadsetBrotherhoodOfSteel
     belt: ClothingBeltBoSWebbing
   storage:
@@ -130,6 +135,7 @@
     shoes: N14ClothingBootsLeatherFilled
     head: N14ClothingScribeBeret
     pocket1: BoSBrotherhoodHeadScribeKits
+    id: N14HeadScribe_PipBoy
     ears: N14ClothingHeadsetBrotherhoodOfSteelScribe
     belt: ClothingBeltMilitary
   storage:
@@ -183,6 +189,7 @@
       - type: NpcFactionMember
         factions:
           - BrotherhoodOfSteel
+      - type: PowerArmorProficiency
 
 - type: startingGear
   id: BoSPaladinGear
@@ -191,6 +198,7 @@
     back: N14ClothingBackpackMilitary
     shoes: N14ClothingBootsLeatherFilled
     head: N14ClothingHeadHatCapkhighBoS
+    outerClothing: MisfitsT45ClothingOuterPowerArmorBoS
     hands: N14ClothingHandsGlovesCombat
     pocket1: BoSBrotherhoodPaladinKits
     id: N14IDBrotherhoodOfSteelHolotagPaladin

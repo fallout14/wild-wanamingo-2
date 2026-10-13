@@ -1,0 +1,32 @@
+# Caesar's Legion loadout choices for Yuma (weapons from the server roster, support gear from Misfits' kits).
+
+f14-kit-legioncenturion-sledge-name = Super Sledge
+f14-kit-legioncenturion-sledge-description = Ripper, four dynamite and a super sledgehammer.
+f14-kit-legioncenturion-lance-name = Thermic Lance
+f14-kit-legioncenturion-lance-description = Ripper, four dynamite and a thermic lance.
+f14-kit-legioncenturion-amr-name = Anti-Materiel Rifle
+f14-kit-legioncenturion-amr-description = Ripper, four dynamite and an anti-materiel rifle.
+f14-kit-legioncenturion-launcher-name = Grenade Launcher
+f14-kit-legioncenturion-launcher-description = Ripper, four dynamite and a grenade launcher with 40mm rounds.
+f14-kit-legionvexillarius-sniper-name = Sniper Rifle
+f14-kit-legionvexillarius-sniper-description = Ripper, two dynamite and a sniper rifle.
+f14-kit-legionvexillarius-smg-name = 12.7mm SMG
+f14-kit-legionvexillarius-smg-description = Ripper, two dynamite and a 12.7mm SMG.
+f14-kit-legiondecanus-lmg-name = Light Machine Gun
+f14-kit-legiondecanus-lmg-description = Machete, throwing spears, 12.7mm pistol and an LMG.
+f14-kit-legiondecanus-marksman-name = Marksman Carbine
+f14-kit-legiondecanus-marksman-description = Machete, throwing spears, 12.7mm pistol and a marksman carbine.
+f14-kit-legiondecanus-smg-name = 12.7mm SMG
+f14-kit-legiondecanus-smg-description = Machete, throwing spears, 12.7mm pistol and a 12.7mm SMG.
+f14-kit-legionveteran-fist-name = Power Fist
+f14-kit-legionveteran-fist-description = Machete, throwing spears, 12.7mm pistol and a power fist.
+f14-kit-legionveteran-smg-name = .45 SMG
+f14-kit-legionveteran-smg-description = Machete, throwing spears, 12.7mm pistol and a .45 SMG.
+f14-kit-legionveteran-brushgun-name = Brush Gun
+f14-kit-legionveteran-brushgun-description = Machete, throwing spears, 12.7mm pistol and a brush gun.
+f14-kit-legionprime-axe-name = Fireaxe
+f14-kit-legionprime-axe-description = Machete, throwing spears, 10mm pistol and a fireaxe.
+f14-kit-legionprime-greasegun-name = Grease Gun
+f14-kit-legionprime-greasegun-description = Machete, throwing spears, 10mm pistol and a grease gun.
+f14-kit-legionprime-repeater-name = Cowboy Repeater
+f14-kit-legionprime-repeater-description = Machete, throwing spears, 10mm pistol and a cowboy repeater.

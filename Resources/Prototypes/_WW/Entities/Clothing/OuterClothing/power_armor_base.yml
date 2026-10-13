@@ -1,0 +1,29 @@
+# Base for multi-piece power armor: Wizden's hardsuit base without its single-piece ToggleableClothing (and container),
+# since power armor deploys several pieces through MultiToggleableClothing.
+- type: entity
+  abstract: true
+  parent: [ ClothingOuterEVASuitBase, GeigerCounterClothing ]
+  id: F14ClothingOuterPowerArmorBase
+  components:
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+  - type: ClothingSpeedModifier
+    walkModifier: 0.6
+    sprintModifier: 0.6
+  - type: Item
+    size: Ginormous
+    shape:
+    - 0,0,4,5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.95
+        Heat: 0.90
+        Radiation: 0.25
+  - type: GroupExamine
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon

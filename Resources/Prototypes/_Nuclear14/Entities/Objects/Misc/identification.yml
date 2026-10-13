@@ -312,6 +312,19 @@
 
 - type: entity
   parent: N14IDNCRDogtag
+  id: N14IDNCRDogtagEngineer
+  name: engineer's dogtags
+  description: An ID dogtag worn by decently ranking members of the NCR.
+  suffix: Engineer
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/identification.rsi
+    state: ncrdogtag
+  - type: PresetIdCard
+    job: NCREngineer
+
+- type: entity
+  parent: N14IDNCRDogtag
   id: N14IDNCRDogtagNCO
   name: sergeant's dogtags
   description: An ID dogtag worn by decently ranking members of the NCR.
@@ -334,6 +347,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: ncrdogtag
   - type: PresetIdCard
+    job: NCRExecutiveOfficer
 
 #MARK: Desert Rangers
 
@@ -357,6 +371,50 @@
     tags:
     - IdCardNCR
     - IdCardNCRRanger
+
+- type: entity
+  parent: N14IDBadgeNCRDesertRangerRecruit
+  id: N14IDBadgeNCRDesertRanger
+  name: ranger badge
+  description: An ID badge worn by Desert Rangers.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/identification.rsi
+    state: ranger
+  - type: PresetIdCard
+    job: NCRFieldRanger #Misfits Change - was NCRRanger
+
+- type: entity
+  parent: N14IDBadgeNCRDesertRangerRecruit
+  id: N14IDBadgeNCRDesertRangerElite
+  name: ranger elite badge
+  description: An ID badge worn by Elite Desert Rangers.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/identification.rsi
+    state: ranger_elite
+  - type: PresetIdCard
+    job: NCRVeteranRanger #Misfits Change - was NCRRangerVeteran
+
+- type: entity
+  parent: N14IDBadgeNCRDesertRangerRecruit
+  id: N14IDBadgeNCRDesertRangerChief
+  name: ranger chief badge
+  description: An ID badge worn by the Chief Desert Ranger.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/identification.rsi
+    state: ranger_chief
+  - type: PresetIdCard
+    job: NCRVeteranRanger #Misfits Change - was NCRRangerVeteran
+
+#MARK: NCR Rangers
+
+- type: entity
+  parent: N14IDBadgeNCRDesertRanger
+  id: N14IDBadgeNCRRanger
+  description: An ID badge worn by Republic Rangers. Inscribed on it reads; "Quieter than a shadow and more ferocious than a deathclaw."
+  suffix: NCR
 
 - type: entity
   parent: N14IDPassportPhoto

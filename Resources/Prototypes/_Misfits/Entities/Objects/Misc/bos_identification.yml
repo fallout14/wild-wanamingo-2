@@ -2,6 +2,38 @@
 
 - type: entity
   parent: N14IDPassportBlank
+  id: N14IDBrotherhoodHolotag
+  name: senior scribe's holotags
+  description: An ID holotag worn by the Brotherhood of Steel.
+  suffix: Senior Scribe
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/identification.rsi
+    state: bos_holotag
+  - type: IdCard
+    nameLocId: n14-id-holotag-name
+    fullNameLocId: n14-id-holotag-full-name
+  - type: PresetIdCard
+  - type: Tag
+    tags:
+    - IdCardBrotherhood
+  - type: ClothingAddFaction
+    faction: BrotherhoodOfSteel
+
+- type: entity
+  parent: N14IDBrotherhoodHolotag
+  id: N14IDBrotherhoodHolotagCommander
+  name: head paladin's holotags
+  description: An ID holotag worn by the Head Paladin of the Brotherhood of Steel.
+  suffix: Head Paladin
+  components:
+  - type: PresetIdCard
+    job: BoSMidPaladinCommander
+
+##MARK: Brotherhood Unified Live Jobs
+
+- type: entity
+  parent: N14IDPassportBlank
   id: N14IDBrotherhoodOfSteelHolotagBase
   name: Brotherhood holotags
   description: An ID holotag worn by the Brotherhood of Steel.
@@ -50,6 +82,16 @@
 
 - type: entity
   parent: N14IDBrotherhoodOfSteelHolotagBase
+  id: N14IDBrotherhoodOfSteelHolotagHeadScribe
+  name: head scribe's holotags
+  description: An ID holotag worn by the Head Scribe of the Brotherhood of Steel.
+  suffix: Head Scribe
+  components:
+  - type: PresetIdCard
+    job: BoSWestScribe
+
+- type: entity
+  parent: N14IDBrotherhoodOfSteelHolotagBase
   id: N14IDBrotherhoodOfSteelHolotagKnight
   name: knight's holotags
   description: An ID holotag worn by a Brotherhood knight.
@@ -57,6 +99,16 @@
   components:
   - type: PresetIdCard
     job: BoSKnight  #Misfits Change /Tweak/: Updated to new consolidated BoS Knight job
+
+- type: entity
+  parent: N14IDBrotherhoodOfSteelHolotagBase
+  id: N14IDBrotherhoodOfSteelHolotagHeadKnight
+  name: head knight's holotags
+  description: An ID holotag worn by the Head Knight of the Brotherhood of Steel.
+  suffix: Head Knight
+  components:
+  - type: PresetIdCard
+    job: BoSHeadKnight  #Misfits Change /Tweak/: Updated to new consolidated BoS Head Knight job
 
 - type: entity
   parent: N14IDBrotherhoodOfSteelHolotagBase
