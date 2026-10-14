@@ -1,28 +1,28 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier2Weapon/Tier2WeaponTables/Tier2WeaponBallistic/TwoHanded/Tier2WeaponBallisticRifleTable.yml
 
 - type: entityTable
-  id: M14WeaponLootTier2_GunsBulletRifleAuto
+  id: MisfitsM14WeaponLootTier2_GunsBulletRifleAuto
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: N14WeaponRifle556Butchered # #Misfits Add - cheap 5.56 carbine
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle10mmSkirmisher
+      id: MisfitsWeaponRifle10mmSkirmisher
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle556Pipe
       weight: 4
 
 - type: entityTable
-  id: M14WeaponLootTier2_GunsBulletRifleSemi
+  id: MisfitsM14WeaponLootTier2_GunsBulletRifleSemi
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: N14WeaponSniper308PipeRifle
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle10mmM1Carbine
+      id: MisfitsWeaponRifle10mmM1Carbine
       weight: 4
     - !type:EntSelector
       id: N14WeaponSniper556VarmintRifle
@@ -31,8 +31,8 @@
       id: N14WeaponRifle556Service
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniper10mmLeverRifle # #Misfits Add - mid-tier 10mm lever action
+      id: MisfitsWeaponSniper10mmLeverRifle # #Misfits Add - mid-tier 10mm lever action
       weight: 5
     - !type:EntSelector
-      id: N14WeaponSniper357TrailCarbine # #Misfits Add - entry-level lever action
+      id: MisfitsWeaponSniper357TrailCarbine # #Misfits Add - entry-level lever action
       weight: 5

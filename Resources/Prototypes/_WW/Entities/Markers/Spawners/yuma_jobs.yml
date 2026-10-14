@@ -1,0 +1,15 @@
+# Wild Wanamingo prototypes generated alongside yuma_jobs.yml (Yuma roster).
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRGarrisonTrooper
+  name: n c r garrison trooper spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRGarrisonTrooper
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: soldier
+

@@ -1,0 +1,17 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Reagents/Consumable/food.yml
+
+- type: reagent
+  id: MisfitsBloatflyMilk
+  group: Wasteland
+  name: reagent-name-bloatflymilk
+  desc: reagent-desc-bloatflymilk
+  physicalDesc: reagent-physical-desc-thick-and-grainy
+  color: "#CBFF00"
+  recognizable: true
+  flavor: pilk
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 4

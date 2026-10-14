@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: BaseMagazineBox50
+  id: N14BaseMagazineBox50
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -28,8 +28,8 @@
   - type: FoldableAmmoBox #Misfits Change /Add/: Empty cardboard ammo boxes can fold back into one cardboard sheet.
 
 - type: entity
-  parent: BaseMagazineBox50
-  id: MagazineBox50
+  parent: N14BaseMagazineBox50
+  id: N14MagazineBox50
   name: ammunition box (.50 anti materiel)
   components:
   - type: BallisticAmmoProvider
@@ -40,8 +40,8 @@
       map: ["enum.GunVisualLayers.Base"]
 
 - type: entity
-  parent: BaseMagazineBox50
-  id: MagazineBox50HEIAP
+  parent: N14BaseMagazineBox50
+  id: N14MagazineBox50HEIAP
   name: ammunition box (.50 anti materiel)
   suffix: HEIAP
   components:

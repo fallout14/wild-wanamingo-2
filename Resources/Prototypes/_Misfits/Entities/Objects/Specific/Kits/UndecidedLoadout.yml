@@ -1,10 +1,10 @@
-# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Kits/UndecidedLoadout.yml
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Kits/UndecidedLoadout.yml, Resources/Prototypes/_Nuclear14/Entities/Objects/Specific/Kits/UndecidedLoadout.yml
 
 - type: entity
-  id: LegionPriestessLoadoutKits
+  id: MisfitsLegionPriestessLoadoutKits
   name: kit
   description: "please only take one."
-  parent: LegionCenturionloadoutkits
+  parent: CorvaxLegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -26,7 +26,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitPriestessHealing
+  - MisfitsKitPriestessHealing
 
 - type: thiefBackpackSet
   id: PriestessZealotSet
@@ -36,7 +36,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitPriestessZealot
+  - MisfitsKitPriestessZealot
 
 - type: thiefBackpackSet
   id: PriestessPurifierSet
@@ -46,15 +46,15 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitPriestessPurifier
+  - MisfitsKitPriestessPurifier
 
   # acolyte kits
 
 - type: entity
-  id: LegionAcolyteLoadoutKits
+  id: MisfitsLegionAcolyteLoadoutKits
   name: kit
   description: "please only take one."
-  parent: LegionCenturionloadoutkits
+  parent: CorvaxLegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -76,7 +76,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitAcolyteHealing
+  - MisfitsKitAcolyteHealing
 
 - type: thiefBackpackSet
   id: AcolyteZealotSet
@@ -86,7 +86,26 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitAcolyteZealot
+  - MisfitsKitAcolyteZealot
+
+- type: entity
+  id: MisfitsNCRstaffsergeantloadoutkits
+  name: Undecided NCRA Staff Sergeant Loadout Kit
+  parent: N14NCRcadetloadoutkits
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/kits.rsi
+    state: rifleman
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    toolName: n14-loadout-kit-window-title
+    toolDesc: n14-loadout-kit-window-description
+    possibleSets:
+    - NCRA_SGTGunnerSet
+    - NCRA_SGTScoutSet
+    - NCRA_SGTPointSet
+    - NCRA_StaffSergeantLineSet
+    - NCRA_FirstSergeantVeteranSet
 
 - type: thiefBackpackSet
   id: AcolyteSlaverSet
@@ -96,15 +115,15 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitAcolyteSlaver
+  - MisfitsKitAcolyteSlaver
 
 # temple guard kits
 
 - type: entity
-  id: LegionTempleGuardLoadoutKits
+  id: MisfitsLegionTempleGuardLoadoutKits
   name: kit
   description: "please only take one."
-  parent: LegionCenturionloadoutkits
+  parent: CorvaxLegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -118,6 +137,24 @@
     - TempleGuardEnforcerSet
     - TempleGuardExecutorSet
 
+- type: entity
+  id: MisfitsNCRfirstsergeantloadoutkits
+  name: Undecided NCRA Sergeant First Class Loadout Kit
+  parent: N14NCRcadetloadoutkits
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/kits.rsi
+    state: pointman
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    toolName: n14-loadout-kit-window-title
+    toolDesc: n14-loadout-kit-window-description
+    possibleSets:
+    - NCRA_SGTRiflemanSet
+    - NCRA_SGTPointSet
+    - NCRA_StaffSergeantLineSet
+    - NCRA_FirstSergeantVeteranSet
+
 - type: thiefBackpackSet
   id: TempleGuardProtectorSet
   name: n14-loadout-kit-templeguardprotectorset-name
@@ -126,7 +163,27 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitTempleGuardProtector
+  - MisfitsKitTempleGuardProtector
+
+- type: entity
+  id: MisfitsNCRcaptainloadoutkits
+  name: Undecided NCRA Captain Loadout Kit
+  parent: N14NCRcadetloadoutkits
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/kits.rsi
+    state: pointman
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    toolName: n14-loadout-kit-window-title
+    toolDesc: n14-loadout-kit-window-description
+    possibleSets:
+    - NCRA_CaptainCommandSet
+    - NCRA_CaptainMarksmanSet
+    - NCRA_CaptainServiceRifleSet
+  - type: ActivatableUI
+
+# New California Republic Rangers
 
 - type: thiefBackpackSet
   id: TempleGuardEnforcerSet
@@ -136,7 +193,23 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitTempleGuardEnforcer
+  - MisfitsKitTempleGuardEnforcer
+
+- type: entity
+  id: MisfitsNCRpatrolrangerloadoutkits
+  name: Undecided NCR Patrol Ranger Loadout Kit
+  parent: N14NCRcadetloadoutkits
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    toolName: n14-loadout-kit-window-title
+    toolDesc: n14-loadout-kit-window-description
+    possibleSets:
+    - RangerServiceSet
+    - RangerRiflemanSet
+    - RangerCQBSet
 
 - type: thiefBackpackSet
   id: TempleGuardExecutorSet
@@ -146,4 +219,20 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitTempleGuardExecutor
+  - MisfitsKitTempleGuardExecutor
+
+- type: entity
+  id: MisfitsNCRfieldrangerloadoutkits
+  name: Undecided NCR Field Ranger Loadout Kit
+  parent: N14NCRcadetloadoutkits
+  components:
+  - type: Sprite
+    state: marksman
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    toolName: n14-loadout-kit-window-title
+    toolDesc: n14-loadout-kit-window-description
+    possibleSets:
+    - RangerTrailmanSet
+    - RangerMarksmanSet
+    - RangerSniperSet

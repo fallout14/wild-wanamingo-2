@@ -45,13 +45,3 @@
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Structures/Decoration/world.rsi
-
-- type: entity
-  parent: DecorFloorWorldBase
-  id: DecorFloorBrickrubble
-  name: brick rubble
-  description: brick rubble
-  suffix: "6 states"
-  components:
-  - type: Sprite
-    state: brickrubble

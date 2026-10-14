@@ -8,7 +8,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - KitStandardMP
+  - MisfitsKitStandardMP
 
 - type: thiefBackpackSet
   id: MPMedicalKit
@@ -18,7 +18,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: medic
   content:
-  - KitMedicalMP
+  - MisfitsKitMedicalMP
 
 - type: thiefBackpackSet
   id: MPEnforcerKit
@@ -28,12 +28,12 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - KitEnforcerMP
+  - MisfitsKitEnforcerMP
 
 - type: entity
   name: Standard Military Police Kit
-  parent: KitBase
-  id: KitStandardMP
+  parent: N14KitBase
+  id: MisfitsKitStandardMP
   description: A crate containing a set of standard-issue military police equipment.
   components:
   - type: Sprite
@@ -43,7 +43,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponShotgunBlowback
+      - id: MisfitsWeaponShotgunBlowback
       - id: MisfitsMagazineBox12GaugeBeanbag
       - id: BoxHandcuff
       - id: N14PoliceBaton
@@ -54,8 +54,8 @@
 
 - type: entity
   name: Medical Military Police Kit
-  parent: KitBase
-  id: KitMedicalMP
+  parent: N14KitBase
+  id: MisfitsKitMedicalMP
   description: A crate for when someone gets hurt.
   components:
   - type: Sprite
@@ -74,12 +74,12 @@
      - id: N14PoliceBaton
      - id: Handcuffs
      - id: N14WeaponRevolverWebley
-     - id: N14SpeedLoader45
+     - id: MisfitsSpeedLoader45
 
 - type: entity
   name: Enforcer Military Police Kit
-  parent: KitBase
-  id: KitEnforcerMP
+  parent: N14KitBase
+  id: MisfitsKitEnforcerMP
   description: A crate for when someone needs to get hurt.
   components:
   - type: Sprite
@@ -90,8 +90,8 @@
   - type: SpawnItemsOnUse
     items:
      - id: N14WeaponShotgunRiot
-     - id: MagazineBox12gauge
-     - id: FalloutNCRmilitarypoliceHelmet
+     - id: N14MagazineBox12gauge
+     - id: MisfitsFalloutNCRmilitarypoliceHelmet
      - id: ExGrenade
      - id: ExGrenade
      - id: Handcuffs
@@ -99,9 +99,9 @@
      - id: RiotShield
 
 - type: entity
-  id: NCRMPKit_Set
+  id: MisfitsNCRMPKit_Set
   name: Undecided NCR Military Police Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi

@@ -5,7 +5,7 @@
 # are whitelisted to SuperMutantWearable-tagged items only.
 # Utility slots (eyes, ears, belt, back, pockets, id, etc.) remain unrestricted.
 - type: inventoryTemplate
-  id: supermutant
+  id: MisfitsSupermutant
   slots:
     - name: shoes
       slotTexture: shoes
@@ -16,7 +16,7 @@
       displayName: Shoes
       whitelist:
         tags:
-          - SuperMutantWearable
+          - MisfitsSuperMutantWearable
     - name: jumpsuit
       slotTexture: uniform
       slotFlags: INNERCLOTHING
@@ -26,7 +26,7 @@
       displayName: Jumpsuit
       whitelist:
         tags:
-          - SuperMutantWearable
+          - MisfitsSuperMutantWearable
     - name: outerClothing
       slotTexture: suit
       slotFlags: OUTERCLOTHING
@@ -36,7 +36,7 @@
       displayName: Suit
       whitelist:
         tags:
-          - SuperMutantWearable
+          - MisfitsSuperMutantWearable
     - name: gloves
       slotTexture: gloves
       slotFlags: GLOVES
@@ -45,7 +45,7 @@
       displayName: Gloves
       whitelist:
         tags:
-          - SuperMutantWearable
+          - MisfitsSuperMutantWearable
     - name: neck
       slotTexture: neck
       slotFlags: NECK
@@ -54,7 +54,7 @@
       displayName: Neck
       whitelist:
         tags:
-          - SuperMutantWearable
+          - MisfitsSuperMutantWearable
     - name: mask
       slotTexture: mask
       slotFlags: MASK
@@ -63,7 +63,7 @@
       displayName: Mask
       whitelist:
         tags:
-          - SuperMutantWearable
+          - MisfitsSuperMutantWearable
     - name: eyes
       slotTexture: glasses
       slotFlags: EYES
@@ -86,7 +86,7 @@
       displayName: Head
       whitelist:
         tags:
-          - SuperMutantWearable
+          - MisfitsSuperMutantWearable
     - name: pocket1
       slotTexture: pocket
       fullTextureName: template_small

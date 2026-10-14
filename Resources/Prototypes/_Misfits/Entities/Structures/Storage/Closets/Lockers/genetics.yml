@@ -2,9 +2,9 @@
 
 - type: entity
   parent: LockerScientist
-  id: LockerGeneticist
+  id: MisfitsLockerGeneticist
   name: geneticist's locker
   components:
   # TODO: unique sprite
   - type: AccessReader
-    access: [["Genetics"]]
+    access: [["MisfitsGenetics"]]

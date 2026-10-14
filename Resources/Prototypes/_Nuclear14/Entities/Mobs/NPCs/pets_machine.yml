@@ -159,7 +159,7 @@
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: RadioSpeaker
     channels:
-    - PBS
+    - N14PBS
     enabled: true
     toggleOnInteract: true
   - type: IntrinsicRadioReceiver # Misfits Add - Eyebot speaks binary on the Binary radio channel
@@ -232,7 +232,7 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: N14EyebotIdle
+      collection: MisfitsEyebotIdle
       params:
         volume: -5
         maxDistance: 5

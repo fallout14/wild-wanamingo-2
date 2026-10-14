@@ -1,0 +1,70 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Structures/Power/generators.yml
+
+- type: entity
+  abstract: true
+  parent: PortableGeneratorBase
+  id: MisfitsBasePortableGeneratorFuel
+  components:
+    - type: AmbientSound
+      range: 4
+      volume: -8
+    - type: PortableGenerator
+      startChance: 0.5
+    - type: FuelGenerator
+      on: true #Misfits Change - generators start on at round start
+      targetPower: 5000
+      minTargetPower: 1000
+      optimalPower: 8000
+      maxTargetPower: 8000
+      # ~2 hours at a full 250u tank. #Misfits Tweak: reduced burn rate from 0.11111111 for longer runtime.
+      optimalBurnRate: 0.01388889
+      fuelEfficiencyConstant: 0.3
+    - type: ChemicalFuelGeneratorAdapter
+      solution: tank
+      reagents:
+        WeldingFuel: 1
+    - type: Solution
+      id: tank
+      solution:
+        maxVol: 250
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 250
+    - type: RefillableSolution
+      solution: tank
+    - type: GeneratorExhaustGas
+      gasType: CarbonDioxide
+      moleRatio: 0.5
+    - type: Explosive
+      #Misfits Change - use the structural-capable N14 explosion profile.
+      explosionType: MisfitsDefaultStructural
+      tileBreakScale: 0
+
+- type: entity
+  abstract: true
+  parent: PortableGeneratorBase
+  id: MisfitsBasePortableGeneratorUranium
+  components:
+    - type: PortableGenerator
+      startChance: 0.7
+    - type: FuelGenerator
+      on: true #Misfits Change - generators start on at round start
+      targetPower: 5000
+      minTargetPower: 1000
+      optimalPower: 5000
+      maxTargetPower: 5000
+      # Roughly two hours on a full 30-sheet hopper. #Misfits Tweak: halved burn rate from 0.008333333 to reduce fuel consumption.
+      optimalBurnRate: 0.004166667
+      fuelEfficiencyConstant: 0.2
+    - type: SolidFuelGeneratorAdapter
+      fuelMaterial: Uranium
+      multiplier: 0.01
+    - type: MaterialStorage
+      storageLimit: 3000
+      materialWhiteList: [Uranium]
+      storage:
+        Uranium: 3000
+    - type: Explosive
+      #Misfits Change - use the structural-capable N14 explosion profile.
+      explosionType: MisfitsDefaultStructural
+      tileBreakScale: 0

@@ -5,7 +5,7 @@
 - type: entity
   name: wood common
   parent: FloorTileItemBase
-  id: FloorTilesItemMS13WoodCommon
+  id: CorvaxFloorTilesItemMS13WoodCommon
   components:
   - type: Sprite
     state: wood
@@ -13,17 +13,17 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - FloorMS13WoodCommon
+      - N14FloorMS13WoodCommon
   - type: Stack
-    stackType: FloorTilesItemMS13WoodCommon
+    stackType: CorvaxFloorTilesItemMS13WoodCommon
   - type: Construction
-    graph: N14TilesWood
+    graph: CorvaxTilesWood
     node: WoodCommon
 
 - type: entity
   name: wood fancy
   parent: FloorTileItemBase
-  id: FloorTilesItemMS13WoodFancy
+  id: CorvaxFloorTilesItemMS13WoodFancy
   components:
   - type: Sprite
     state: wood
@@ -31,17 +31,17 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - FloorMS13WoodFancy
+      - N14FloorMS13WoodFancy
   - type: Stack
-    stackType: FloorTilesItemMS13WoodFancy
+    stackType: CorvaxFloorTilesItemMS13WoodFancy
   - type: Construction
-    graph: N14TilesWood
+    graph: CorvaxTilesWood
     node: WoodFancy
 
 - type: entity
   name: wood mosaic
   parent: FloorTileItemBase
-  id: FloorTilesItemMS13WoodMosaic
+  id: CorvaxFloorTilesItemMS13WoodMosaic
   components:
   - type: Sprite
     state: wood
@@ -49,17 +49,17 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - FloorMS13WoodMosaic
+      - N14FloorMS13WoodMosaic
   - type: Stack
-    stackType: FloorTilesItemMS13WoodMosaic
+    stackType: CorvaxFloorTilesItemMS13WoodMosaic
   - type: Construction
-    graph: N14TilesWood
+    graph: CorvaxTilesWood
     node: WoodMosaic
 
 - type: entity
   name: wood wide
   parent: FloorTileItemBase
-  id: FloorTilesItemMS13WoodWide
+  id: CorvaxFloorTilesItemMS13WoodWide
   components:
   - type: Sprite
     state: wood
@@ -67,9 +67,9 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - FloorMS13WoodWide
+      - N14FloorMS13WoodWide
   - type: Stack
-    stackType: FloorTilesItemMS13WoodWide
+    stackType: CorvaxFloorTilesItemMS13WoodWide
   - type: Construction
-    graph: N14TilesWood
+    graph: CorvaxTilesWood
     node: WoodWide

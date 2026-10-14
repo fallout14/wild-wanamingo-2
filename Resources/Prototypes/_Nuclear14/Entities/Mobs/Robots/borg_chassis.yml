@@ -7,13 +7,13 @@
   components:
   - type: NpcFactionMember
     factions:
-      - BrotherhoodOfSteel
+      - MisfitsBrotherhoodOfSteel
   - type: IntrinsicRadioTransmitter
     channels:
-    - BrotherhoodOfSteel
+    - MisfitsBrotherhoodOfSteel
   - type: ActiveRadio
     channels:
-    - BrotherhoodOfSteel
+    - MisfitsBrotherhoodOfSteel
   # - type: AccessReader
     # access: [["BOSMidwest"]
   # - type: ContainerFill
@@ -32,7 +32,7 @@
   - type: Access
     enabled: false
     groups:
-    - BOS
+    - MisfitsBOS
     
 
 - type: entity
@@ -41,13 +41,13 @@
   components:
   - type: NpcFactionMember
     factions:
-      - BrotherhoodOfSteel
+      - MisfitsBrotherhoodOfSteel
   - type: IntrinsicRadioTransmitter
     channels:
-    - BrotherhoodOfSteel
+    - MisfitsBrotherhoodOfSteel
   - type: ActiveRadio
     channels:
-    - BrotherhoodOfSteel
+    - MisfitsBrotherhoodOfSteel
   # - type: AccessReader
     # access: [["BOSWashington"]
   # - type: ContainerFill
@@ -66,5 +66,5 @@
   - type: Access
     enabled: false
     groups:
-    - BOS
+    - MisfitsBOS
     

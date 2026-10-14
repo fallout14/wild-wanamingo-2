@@ -2,27 +2,27 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Doors/door_autolink.yml
 
 - type: entity
-  id: BlastDoorBos
+  id: N14BlastDoorBos
   parent: BlastDoor
   suffix: Autolink, BoS
   components:
     - type: AccessReader
-      access: [["BOS"]]
+      access: [["MisfitsBOS"]]
     - type: AutoLinkReceiver
       channel: BoS
 
 - type: entity
-  id: BlastDoorBosOpen
+  id: N14BlastDoorBosOpen
   parent: BlastDoor
   suffix: Autolink, BoS, Open
   components:
     - type: AccessReader
-      access: [["BOS"]]
+      access: [["MisfitsBOS"]]
     - type: AutoLinkReceiver
       channel: BoS
 
 - type: entity
-  id: ShuttersNormalExt1
+  id: N14ShuttersNormalExt1
   parent: BlastDoor
   suffix: Autolink, Ext1
   components:
@@ -30,7 +30,7 @@
       channel: Ext1
 
 - type: entity
-  id: ShuttersNormalOpenExt1
+  id: N14ShuttersNormalOpenExt1
   parent: BlastDoor
   suffix: Autolink, Ext1, Open
   components:
@@ -38,7 +38,7 @@
       channel: Ext1
 
 - type: entity
-  id: ShuttersNormalExt2
+  id: N14ShuttersNormalExt2
   parent: BlastDoor
   suffix: Autolink, Ext2
   components:
@@ -46,7 +46,7 @@
       channel: Ext2
 
 - type: entity
-  id: ShuttersNormalOpenExt2
+  id: N14ShuttersNormalOpenExt2
   parent: BlastDoor
   suffix: Autolink, Ext2, Open
   components:
@@ -54,7 +54,7 @@
       channel: Ext2
 
 - type: entity
-  id: ShuttersNormalExt3
+  id: N14ShuttersNormalExt3
   parent: BlastDoor
   suffix: Autolink, Ext3
   components:
@@ -62,7 +62,7 @@
       channel: Ext3
 
 - type: entity
-  id: ShuttersNormalOpenExt3
+  id: N14ShuttersNormalOpenExt3
   parent: BlastDoor
   suffix: Autolink, Ext3, Open
   components:

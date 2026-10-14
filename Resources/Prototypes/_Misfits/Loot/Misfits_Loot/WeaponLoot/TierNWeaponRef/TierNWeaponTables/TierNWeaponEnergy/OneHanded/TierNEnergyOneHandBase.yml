@@ -1,12 +1,12 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/TierNWeaponRef/TierNWeaponTables/TierNWeaponEnergy/OneHanded/TierNEnergyOneHandBase.yml
 
 - type: entityTable
-  id: M14WeaponLootTierN_EnergyPistol
+  id: MisfitsM14WeaponLootTierN_EnergyPistol
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTierN_LaserPistol
+          tableId: MisfitsM14WeaponLootTierN_LaserPistol
       - !type:NestedSelector
-          tableId: M14WeaponLootTierN_PlasmaPistol
+          tableId: MisfitsM14WeaponLootTierN_PlasmaPistol
       - !type:NestedSelector
-          tableId: M14WeaponLootTierN_OtherPistol
+          tableId: MisfitsM14WeaponLootTierN_OtherPistol

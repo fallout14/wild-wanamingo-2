@@ -1,0 +1,25 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Clothing/Head/hoods.yml
+
+- type: entity
+  parent: ClothingHeadBase
+  id: CorvaxClothingHeadHatLegionHood
+  name: vexillarius helmet #Misfits Change /Rename/: Repurposed as the Vexillarius standard-bearer helmet
+  description: The distinctive crested hood-helm of the Legion's Vexillarius standard bearer.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/Head/Hoods/vexillariushood.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/Head/Hoods/vexillariushood.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+#Misfits Change /Uncomment/: Re-enabled BoS recon hood — required by NCClothingOuterBosReconArmor toggleable clothing.

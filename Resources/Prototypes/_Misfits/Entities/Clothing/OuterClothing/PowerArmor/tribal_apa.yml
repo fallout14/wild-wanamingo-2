@@ -2,7 +2,7 @@
 
 - type: entity
   parent: N14ClothingOuterPowerArmorAdvanced1
-  id: N14ClothingOuterPowerArmorTribalAPA
+  id: MisfitsClothingOuterPowerArmorTribalAPA
   name: tribal advanced power armor
   description: A suit of APA MK I power armor adorned with Ug-Qualtoth tribal markings. Ancient script and sacred bones have been grafted into the plating — its protection remains entirely undiminished by the decoration.
   components:
@@ -15,7 +15,7 @@
   - type: MultiToggleableClothing
     # Override only to point head at the tribal helmet; gloves/shoes/back unchanged from APA MK I
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorTribalAPA
+      head: MisfitsClothingHeadHelmetPowerArmorTribalAPA
       gloves: N14ClothingPAGauntletsDark
       shoes: N14ClothingPABootsDark
       back: N14ClothingPowerSystemsBack

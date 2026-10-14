@@ -1,0 +1,9 @@
+# Recipes switched off for Wild Wanamingo. Add a recipe's ID under the right list; Wizden's and ours both work.
+# construction: crafting menu (hidden). lathe: workbenches/lathes (not offered). microwave: cooking (never made).
+# The linter checks every ID, so a typo fails the lint.
+
+- type: disabledRecipes
+  id: F14DisabledRecipes
+  construction: []
+  lathe: []
+  microwave: []

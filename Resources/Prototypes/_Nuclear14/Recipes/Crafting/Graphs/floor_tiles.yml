@@ -3,7 +3,7 @@
 # Tile graphs split out of the materials graphs.
 
 - type: constructionGraph
-  id: N14FloorTileWoodOak
+  id: MisfitsFloorTileWoodOak
   start: start
   graph:
     - node: start
@@ -14,10 +14,10 @@
               amount: 2
               doAfter: 1
     - node: woodtileoak
-      entity: FloorTileItemWoodOak
+      entity: N14FloorTileItemWoodOak
 
 - type: constructionGraph
-  id: N14FloorTileWoodHouse
+  id: MisfitsFloorTileWoodHouse
   start: start
   graph:
     - node: start
@@ -28,10 +28,10 @@
               amount: 2
               doAfter: 1
     - node: woodtilehouse
-      entity: FloorTileItemWoodHouse
+      entity: N14FloorTileItemWoodHouse
 
 - type: constructionGraph
-  id: N14FloorTileWoodMaple
+  id: MisfitsFloorTileWoodMaple
   start: start
   graph:
     - node: start
@@ -42,12 +42,12 @@
               amount: 2
               doAfter: 1
     - node: woodtilemaple
-      entity: FloorTileItemWoodMaple
+      entity: N14FloorTileItemWoodMaple
 
 # Metal Floor Tiles
 
 - type: constructionGraph
-  id: N14FloorTileMetalBlue
+  id: MisfitsFloorTileMetalBlue
   start: start
   graph:
     - node: start
@@ -58,10 +58,10 @@
               amount: 1
               doAfter: 1
     - node: metaltileblue
-      entity: FloorTileItemMetalBlue
+      entity: N14FloorTileItemMetalBlue
 
 - type: constructionGraph
-  id: N14FloorTileMetalRed
+  id: MisfitsFloorTileMetalRed
   start: start
   graph:
     - node: start
@@ -72,10 +72,10 @@
               amount: 1
               doAfter: 1
     - node: metaltilered
-      entity: FloorTileItemMetalRed
+      entity: N14FloorTileItemMetalRed
 
 - type: constructionGraph
-  id: N14FloorTileMetalGreen
+  id: MisfitsFloorTileMetalGreen
   start: start
   graph:
     - node: start
@@ -86,12 +86,12 @@
               amount: 1
               doAfter: 1
     - node: metaltilegreen
-      entity: FloorTileItemMetalGreen
+      entity: N14FloorTileItemMetalGreen
 
 # Concrete Floor Tiles
 
 - type: constructionGraph
-  id: N14TilesWood
+  id: CorvaxTilesWood
   start: start
   graph:
     - node: start
@@ -126,13 +126,13 @@
               amount: 2
 
     - node: WoodCommon
-      entity: FloorTilesItemMS13WoodCommon
+      entity: CorvaxFloorTilesItemMS13WoodCommon
 
     - node: WoodFancy
-      entity: FloorTilesItemMS13WoodFancy
+      entity: CorvaxFloorTilesItemMS13WoodFancy
 
     - node: WoodMosaic
-      entity: FloorTilesItemMS13WoodMosaic
+      entity: CorvaxFloorTilesItemMS13WoodMosaic
 
     - node: WoodWide
-      entity: FloorTilesItemMS13WoodWide
+      entity: CorvaxFloorTilesItemMS13WoodWide

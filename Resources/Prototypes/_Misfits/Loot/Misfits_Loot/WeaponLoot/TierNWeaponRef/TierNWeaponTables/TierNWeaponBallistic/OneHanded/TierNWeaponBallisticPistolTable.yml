@@ -1,11 +1,11 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/TierNWeaponRef/TierNWeaponTables/TierNWeaponBallistic/OneHanded/TierNWeaponBallisticPistolTable.yml
 
 - type: entityTable
-  id: M14WeaponLootTierN_GunsBulletPistol
+  id: MisfitsM14WeaponLootTierN_GunsBulletPistol
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponPistolM1911
+      id: MisfitsWeaponPistolM1911
       weight: 7
     - !type:EntSelector
       id: MisfitsWeaponRangerPowerArmorPistol
@@ -14,7 +14,7 @@
       id: N14WeaponDesertEagle44
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistolT60
+      id: MisfitsWeaponPistolT60
       weight: 7
     - !type:EntSelector
       id: MisfitsWeaponRangerPowerArmorPistol
@@ -33,13 +33,13 @@
       id: N14WeaponPistol45Colt
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistolM1911 # .45acp
+      id: MisfitsWeaponPistolM1911 # .45acp
       weight: 7
     - !type:EntSelector
       id: N14WeaponPistol12mm
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistol223
+      id: MisfitsWeaponPistol223
       weight: 7
     - !type:EntSelector
       id: N14WeaponPistol10mmPipe
@@ -58,7 +58,7 @@
       weight: 7
 
     - !type:EntSelector
-      id: N14WeaponPistolM1911Custom # .45acp fancy
+      id: MisfitsWeaponPistolM1911Custom # .45acp fancy
       weight: 7
 
     - !type:EntSelector
@@ -67,5 +67,5 @@
 
 # uniques
     - !type:EntSelector
-      id: N14WeaponPistolMaria #stealth
+      id: MisfitsWeaponPistolMaria #stealth
       weight: 7

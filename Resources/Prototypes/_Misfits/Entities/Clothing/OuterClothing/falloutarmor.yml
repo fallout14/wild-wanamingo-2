@@ -1,0 +1,36 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Clothing/OuterClothing/falloutarmor.yml
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: MisfitsClothingOuterNCRVestCoatBlackArmored
+  name: NCR Provost Armored Coat
+  description: A light ballistic plate inside a leather vest over a long coat. This one is covered in black camo for night operations.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutNCRvestcoatblack.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutNCRvestcoatblack.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.00
+    sprintModifier: 1.00
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.60
+        Slash: 0.60
+        Piercing: 0.55
+        Heat: 0.60
+    priceMultiplier: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
+
+- type: entity
+  parent: N14ClothingOuterRangerCoat
+  id: MisfitsClothingOuterRangerFieldArmor
+  name: NCR field armor
+  description: A set of combat armor refurbished from old national guard stock, issued to Field Rangers and senior Army personnel.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutrangerfieldarmor.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutrangerfieldarmor.rsi

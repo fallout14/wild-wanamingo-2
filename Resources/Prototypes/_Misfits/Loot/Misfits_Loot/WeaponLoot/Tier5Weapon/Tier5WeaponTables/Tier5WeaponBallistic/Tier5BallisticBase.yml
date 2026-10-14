@@ -1,20 +1,20 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier5Weapon/Tier5WeaponTables/Tier5WeaponBallistic/Tier5BallisticBase.yml
 
 - type: entityTable
-  id: M14WeaponLootTier5_GunsBulletAll
+  id: MisfitsM14WeaponLootTier5_GunsBulletAll
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_GunsBulletHeavy
+          tableId: MisfitsM14WeaponLootTier5_GunsBulletHeavy
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_GunsBulletLMG
+          tableId: MisfitsM14WeaponLootTier5_GunsBulletLMG
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_GunsBulletRifle
+          tableId: MisfitsM14WeaponLootTier5_GunsBulletRifle
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_GunsBulletShotgun
+          tableId: MisfitsM14WeaponLootTier5_GunsBulletShotgun
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_GunsBulletSMG
+          tableId: MisfitsM14WeaponLootTier5_GunsBulletSMG
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_GunsBulletPistol
+          tableId: MisfitsM14WeaponLootTier5_GunsBulletPistol
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_GunsBulletRevolver
+          tableId: MisfitsM14WeaponLootTier5_GunsBulletRevolver

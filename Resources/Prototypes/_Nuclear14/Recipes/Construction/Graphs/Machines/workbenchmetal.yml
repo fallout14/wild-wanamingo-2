@@ -23,13 +23,13 @@
       edges:
         - to: WorkbenchMetalAluminum
           steps:
-            - tag: Gear
+            - tag: N14Gear
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: gear_large
               name: misfits-kit-gears
               doAfter: 1
-            - tag: Gear
+            - tag: N14Gear
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: gear_large
@@ -43,7 +43,7 @@
       edges:
         - to: WorkbenchMetalScrews
           steps: 
-            - material: Aluminum
+            - material: N14Aluminum
               amount: 3
               doAfter: 4
 
@@ -54,13 +54,13 @@
       edges:
         - to: WorkbenchMetalUnwrenched
           steps:
-            - tag: Screw
+            - tag: N14Screw
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: screw
               name: misfits-kit-screws
               doAfter: 1
-            - tag: Screw
+            - tag: N14Screw
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: screw

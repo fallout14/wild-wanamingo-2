@@ -43,7 +43,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14GeckoAttack #Misfits Change
+      collection: MisfitsGeckoAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -55,13 +55,13 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: N14GeckoIdle
+      collection: MisfitsGeckoIdle
       params:
         volume: -10
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14GeckoAttack
+      collection: MisfitsGeckoAttack
       params:
         volume: -3
         maxDistance: 10
@@ -105,7 +105,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14GeckoAttack #Misfits Change
+      collection: MisfitsGeckoAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -169,7 +169,7 @@
     damageModifierSet: N14ScaleFireresist
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14GeckoAttack
+      collection: MisfitsGeckoAttack
       params:
         volume: -3
         maxDistance: 10
@@ -207,7 +207,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14GeckoAttack #Misfits Change
+      collection: MisfitsGeckoAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -240,7 +240,7 @@
    #  - Gecko
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14GeckoAttack
+      collection: MisfitsGeckoAttack
       params:
         volume: -3
         maxDistance: 10
@@ -263,7 +263,7 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: NightstalkerBlood
+      - ReagentId: N14NightstalkerBlood
         Quantity: 30
   - type: MovementSpeedModifier
     baseWalkSpeed : 3.5
@@ -301,7 +301,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14NightstalkerAttack #Misfits Change
+      collection: MisfitsNightstalkerAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -314,13 +314,13 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: N14NightstalkerIdle
+      collection: MisfitsNightstalkerIdle
       params:
         volume: -10
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14NightstalkerAttack
+      collection: MisfitsNightstalkerAttack
       params:
         volume: -3
         maxDistance: 10
@@ -332,7 +332,7 @@
     solution: melee
     generated:
       reagents:
-      - ReagentId: NightstalkerVenom
+      - ReagentId: N14NightstalkerVenom
         Quantity: 1
 
 # Adult Nightstalker
@@ -347,7 +347,7 @@
     solution:
       maxVol: 3
       reagents:
-      - ReagentId: NightstalkerVenom
+      - ReagentId: N14NightstalkerVenom
         Quantity: 3
 
 - type: entity
@@ -360,7 +360,7 @@
     solution:
       maxVol: 3
       reagents:
-      - ReagentId: NightstalkerVenom
+      - ReagentId: N14NightstalkerVenom
         Quantity: 3
 
 - type: entity
@@ -378,7 +378,7 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: NightstalkerBlood
+      - ReagentId: N14NightstalkerBlood
         Quantity: 50
   - type: MovementSpeedModifier
     baseWalkSpeed : 3.5
@@ -420,7 +420,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14NightstalkerAttack #Misfits Change
+      collection: MisfitsNightstalkerAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -433,13 +433,13 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: N14NightstalkerIdle
+      collection: MisfitsNightstalkerIdle
       params:
         volume: -8
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14NightstalkerAttack
+      collection: MisfitsNightstalkerAttack
       params:
         volume: -3
         maxDistance: 10
@@ -451,7 +451,7 @@
     solution: melee
     generated:
       reagents:
-      - ReagentId: NightstalkerVenom
+      - ReagentId: N14NightstalkerVenom
         Quantity: 0.25
   - type: MeleeChemicalInjector
     solution: melee
@@ -486,7 +486,7 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: NightstalkerVenom
+      - ReagentId: N14NightstalkerVenom
         Quantity: 5
 
 - type: entity
@@ -499,7 +499,7 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: NightstalkerVenom
+      - ReagentId: N14NightstalkerVenom
         Quantity: 10
 
 - type: entity
@@ -510,7 +510,7 @@
   components:
   - type: NpcFactionMember #Misfits Add - Deathclaw is its own faction; hostile to everything except other deathclaws
     factions:
-    - Deathclaw
+    - N14Deathclaw
   - type: Damageable
     damageModifierSet: N14ToughAnimal
   - type: Injurable
@@ -573,7 +573,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14DeathclawAttack #Misfits Change
+      collection: MisfitsDeathclawAttack #Misfits Change
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw
@@ -588,13 +588,13 @@
     minInterval: 10
     maxInterval: 30
     sound:
-      collection: N14DeathclawIdle
+      collection: MisfitsDeathclawIdle
       params:
         volume: -8
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14DeathclawAttack
+      collection: MisfitsDeathclawAttack
       params:
         volume: -3
         maxDistance: 10
@@ -638,7 +638,7 @@
     # - id: N14FoodEggDeathclaw
   - type: Tag
     tags:
-    - Deathclaw
+    - N14Deathclaw
   - type: Butcherable
     spawned:
     - id: N14FoodMeatRadRaw
@@ -664,7 +664,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14DeathclawAttack #Misfits Change
+      collection: MisfitsDeathclawAttack #Misfits Change
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw
@@ -693,7 +693,7 @@
         Base: dead
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14DeathclawAttack
+      collection: MisfitsDeathclawAttack
       params:
         volume: -3
         maxDistance: 10
@@ -720,7 +720,7 @@
         Base: dead
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14DeathclawAttack
+      collection: MisfitsDeathclawAttack
       params:
         volume: -3
         maxDistance: 10
@@ -743,7 +743,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14DeathclawAttack #Misfits Change
+      collection: MisfitsDeathclawAttack #Misfits Change
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw
@@ -775,7 +775,7 @@
         Base: dead
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14DeathclawAttack
+      collection: MisfitsDeathclawAttack
       params:
         volume: -3
         maxDistance: 10
@@ -808,7 +808,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14DeathclawAttack #Misfits Change
+      collection: MisfitsDeathclawAttack #Misfits Change
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw
@@ -819,7 +819,7 @@
         Piercing: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14DeathclawAttack
+      collection: MisfitsDeathclawAttack
       params:
         volume: -3
         maxDistance: 10

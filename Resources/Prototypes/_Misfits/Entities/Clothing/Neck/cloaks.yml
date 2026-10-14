@@ -1,8 +1,8 @@
-# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Neck/cloaks.yml
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Neck/cloaks.yml, Resources/Prototypes/_Nuclear14/Entities/Clothing/Neck/cloaks.yml
 
 - type: entity
   parent: ClothingNeckBase
-  id: M14ClothingNeckCloakWesternPoncho
+  id: MisfitsM14ClothingNeckCloakWesternPoncho
   name: thick decorated poncho
   description: Dark brown with white patterns, thick enough to provide some protection.
   components:
@@ -12,3 +12,35 @@
     sprite: Misfits/Clothing/Neck/WesternPoncho.rsi
   - type: StaticPrice
     price: 50
+
+- type: entity
+  parent: ClothingNeckBase
+  id: MisfitsClothingNeckCoyoteCloak
+  name: Houndmaster's cloak
+  description: A Cloak for Houndmasters made from Coyote hide.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Neck/coyotecape.rsi
+  - type: ToggleableClothing
+    clothingPrototype: MisfitsClothingHeadCoyoteCloakHood
+    requiredSlot: neck
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot
+
+- type: entity
+  parent: ClothingNeckBase
+  id: MisfitsClothingNeckAcolyteCloak
+  name: Acolyte's cloak
+  description: A Cloak worn by acolytes during rituals.
+  components:
+  - type: Sprite
+    sprite: Misfits/Clothing/CaesarLegion/acolyterobes.rsi
+  - type: ToggleableClothing
+    clothingPrototype: MisfitsClothingHeadAcolyteCloakHood
+    requiredSlot: neck
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot

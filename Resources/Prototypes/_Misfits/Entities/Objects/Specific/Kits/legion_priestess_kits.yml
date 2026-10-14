@@ -2,8 +2,8 @@
 
 - type: entity
   name: priestess of zealotry
-  parent: KitBase
-  id: KitPriestessZealot
+  parent: N14KitBase
+  id: MisfitsKitPriestessZealot
   description: "Inspire bloodlust in allies and terror in foes."
   components:
   - type: Sprite
@@ -13,10 +13,10 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14AmmoBox12gauge
+      - id: MisfitsAmmoBox12gauge
         amount: 2
-      - id: ClothingBeltQuiverSpear
-      - id: N14PilumSpear
+      - id: N14ClothingBeltQuiverSpear
+      - id: CorvaxPilumSpear
         amount: 3
       - id: Bola
         amount: 2
@@ -30,8 +30,8 @@
 
 - type: entity
   name: priestess of restoration
-  parent: KitBase
-  id: KitPriestessHealing
+  parent: N14KitBase
+  id: MisfitsKitPriestessHealing
   description: "Keep Caesars finest ready for war."
   components:
   - type: Sprite
@@ -64,8 +64,8 @@
 
 - type: entity
   name: priestess of purification
-  parent: KitBase
-  id: KitPriestessPurifier
+  parent: N14KitBase
+  id: MisfitsKitPriestessPurifier
   description: "Cleanse the enemies of Mars with flame."
   components:
   - type: Sprite
@@ -94,8 +94,8 @@
 
 - type: entity
   name: Acolyte Zealot
-  parent: KitBase
-  id: KitAcolyteZealot
+  parent: N14KitBase
+  id: MisfitsKitAcolyteZealot
   description: "Inspire bloodlust in allies and terror in foes."
   components:
   - type: Sprite
@@ -105,22 +105,22 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltQuiverSpear
-      - id: N14PilumSpear
+      - id: N14ClothingBeltQuiverSpear
+      - id: CorvaxPilumSpear
         amount: 3
       - id: N14FoodTinK
         amount: 2
       - id: N14JunkCeramicFlask
-      - id: N14WeaponRifle308SVT40 #
-      - id: MagazineBox308
+      - id: MisfitsWeaponRifle308SVT40 #
+      - id: N14MagazineBox308
         amount: 1
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: Acolyte Healer
-  parent: KitBase
-  id: KitAcolyteHealing
+  parent: N14KitBase
+  id: MisfitsKitAcolyteHealing
   description: "Keep Caesars finest ready for war."
   components:
   - type: Sprite
@@ -146,15 +146,15 @@
       - id: N14FoodTinK
         amount: 2
       - id: N14JunkCeramicFlask
-      - id: N14Gladius
+      - id: CorvaxGladius
       - id: N14WeaponPistol45Colt
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: Acolyte Slaver
-  parent: KitBase
-  id: KitAcolyteSlaver
+  parent: N14KitBase
+  id: MisfitsKitAcolyteSlaver
   description: "Equipped with all a Priestess needs to catch and control slaves."
   components:
   - type: Sprite
@@ -188,8 +188,8 @@
 
 - type: entity
   name: Temple Guard Protector
-  parent: KitBase
-  id: KitTempleGuardProtector
+  parent: N14KitBase
+  id: MisfitsKitTempleGuardProtector
   description: "Equipped with the proper weapons to defend the Priestess and her temple."
   components:
   - type: Sprite
@@ -215,8 +215,8 @@
 
 - type: entity
   name: Temple Guard Enforcer
-  parent: KitBase
-  id: KitTempleGuardEnforcer
+  parent: N14KitBase
+  id: MisfitsKitTempleGuardEnforcer
   description: "Equipped with weapons befitting one used to punish sinners and enforce the law of the Legion."
   components:
   - type: Sprite
@@ -227,8 +227,8 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14WeaponShotgunAuto
-      - id: N14Gladius
-      - id: MagazineBox12gauge
+      - id: CorvaxGladius
+      - id: N14MagazineBox12gauge
         amount: 3
       - id: N14Bandage
         amount: 1
@@ -242,8 +242,8 @@
 
 - type: entity
   name: Temple Guard Executor
-  parent: KitBase
-  id: KitTempleGuardExecutor
+  parent: N14KitBase
+  id: MisfitsKitTempleGuardExecutor
   description: "Equipped with weapons made to burn and punish profligates."
   components:
   - type: Sprite

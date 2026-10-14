@@ -14,9 +14,9 @@ namespace Content.IntegrationTests.Tests._WW;
 public sealed class PipBoyTest : GameTest
 {
     [TestCase("N14Pipboy")]
-    [TestCase("N14NCRCommanderPipboy")]
-    [TestCase("N14NCRVeteranRangerPipboy")]
-    [TestCase("N14HeadPaladin_PipBoy")]
+    [TestCase("MisfitsNCRCommanderPipboy")]
+    [TestCase("MisfitsNCRVeteranRangerPipboy")]
+    [TestCase("MisfitsHeadPaladin_PipBoy")]
     public async Task PipBoyIsAPda(string proto)
     {
         var server = Pair.Server;

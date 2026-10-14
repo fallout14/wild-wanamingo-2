@@ -24,9 +24,9 @@ public sealed class WarperTest : GameTest
         await server.WaitAssertion(() =>
         {
             mapSys.CreateMap(out var map);
-            var top = entMan.SpawnEntity("LadderTop", new MapCoordinates(0, 0, map));
-            var bottom = entMan.SpawnEntity("LadderBottom", new MapCoordinates(20, 20, map));
-            var unlinked = entMan.SpawnEntity("LadderTop", new MapCoordinates(-20, -20, map));
+            var top = entMan.SpawnEntity("N14LadderTop", new MapCoordinates(0, 0, map));
+            var bottom = entMan.SpawnEntity("N14LadderBottom", new MapCoordinates(20, 20, map));
+            var unlinked = entMan.SpawnEntity("N14LadderTop", new MapCoordinates(-20, -20, map));
             entMan.GetComponent<WarperComponent>(top).ID = "test-ladder";
             entMan.GetComponent<WarperComponent>(bottom).ID = "test-ladder";
 

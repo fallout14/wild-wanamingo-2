@@ -1,481 +1,6 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Corvax/Entities/Objects/Specific/Kits/UndecidedLoadout.yml
 # (Misfits' copy of a Space Station 14 or other-fork file.)
 
-- type: entity
-  id: LegionLegateloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
-    state: base
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - LegatePraetorianSet
-    - LegateSagitariaSet
-    - LegateImperatorSet
-
-- type: entity
-  id: LegionCenturionloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: BaseItem
-  components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
-    state: base
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - CenturionCommandSet
-    - CenturionMarksmanSet
-    - CenturionVanquisherSet
-  - type: ActivatableUI
-    key: enum.ThiefBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      enum.ThiefBackpackUIKey.Key:
-        type: ThiefBackpackBoundUserInterface
-
-# #Misfits Add - Centurion armor selection kit: three armor variants for the Centurion to pick at spawn.
-# Goes in pocket2 of CaesarLegionCenturionGear. Separate from the weapon/role kit in pocket1.
-
-- type: entity
-  id: LegionCenturionArmorloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
-    state: base
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - CenturionArmorStandardSet
-    - CenturionArmorWarforgedSet
-    - CenturionArmorWarlordSet
-    - CenturionArmorCinderSet
-    - CenturionArmorSaltColumnSet
-    - CenturionArmorUnbrokenSet
-
-- type: entity
-  id: LegionVenatorloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
-    state: base
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - VenatorMarksmanSet
-    - VenatorStalkerSet
-    - VenatorExecutionerSet
-
-- type: entity
-  id: LegionVexillariusloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
-    state: base
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - VexillariusStandardSet
-    - VexillariusHeraldSet
-    - VexillariusSkirmisherSet
-
-- type: entity
-  id: LegionExplorerloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
-    state: base
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - ExplorerTrackerSet
-    - ExplorerRaiderSet
-
-- type: entity
-  id: LegionOptioloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
-    state: base
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - OptioPreacherSet
-    - OptioDefenderSet
-    - OptioInquisitorSet
-
-- type: entity
-  id: LegionHoundmasterloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
-    state: base
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - HoundmasterHunterSet
-    - HoundmasterTamerSet
-    - HoundmasterMedicSet
-
-- type: entity
-  id: LegionAuxilialoadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
-    state: base
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - AuxiliaSkirmisherSet
-    - AuxiliaSpearmanSet
-    - AuxiliaMedicSet
-
-- type: entity
-  id: LegionRecruitDecanusloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
-    state: base
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - RecruitDecanusCommandSet
-    - RecruitDecanusHunterSet
-    - RecruitDecanusCrusherSet
-
-- type: entity
-  id: LegionDeanloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
-    state: base
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - DecanusGladiatorSet
-    - DecanusCrusherSet
-    - DecanusDemolitionistSet
-    - DecanusSharpshooterSet
-    - DecanusDestroyerSet
-
-- type: entity
-  id: LegionVeteranloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
-    state: base
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - VeteranRiflemanSet
-    - VeteranBerserkerSet
-    - VeteranGoliathSet # #Misfits Change /Add/: Legion veterans get a dedicated powerfist option.
-
-- type: entity
-  id: LegionWarriorloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - WarriorMedicSet
-    - WarriorGunmanSet
-    - WarriorShieldbearerSet
-
-- type: entity
-  id: LegionLegionnaireRecruitloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
-    state: base
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - LegionnaireRecruitSkirmisherSet
-    - LegionnaireRecruitSpearmanSet
-    - LegionnaireRecruitMedicSet
-
-- type: entity
-  id: LegionRecruitInitiateloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
-    state: base
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - RecruitInitiateSet
-    - RecruitPorterSet
-    - RecruitCampMedicSet
-
-- type: entity
-  id: LegionRecruitloadoutkits
-  name: kit
-  description: "please only take one."
-  parent: LegionCenturionloadoutkits
-  components:
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - AuxiliaryRecruitSet
-    - AuxiliarySpearmanSet
-    - AuxiliaryMeleeSet
-    - AuxiliaryHealerSet
-
-#Misfits Change /Comment-out/: Washington BoS undecided loadout entities removed — will create new prototypes.
-##Washington kits
-#
-#- type: entity
-#  id: BoSWashingtonStandartKits
-#  name: Undecided BoS Kit
-#  description: please only take one
-#  parent: BaseItem
-#  components:
-#  - type: Sprite
-#    sprite: Nuclear14/Objects/Misc/kits.rsi
-#    state: rifleman
-#  - type: UndecidedLoadoutBackpack
-#    possibleSets:
-#    - BaseWashingtonBoSSet
-#    - WattzWashingtonBoSSet
-#    - AutoWashingtonBoSSet
-#    - ProtoWashingtonBoSSet
-#  - type: ActivatableUI
-#    key: enum.ThiefBackpackUIKey.Key
-#  - type: UserInterface
-#    interfaces:
-#      enum.ThiefBackpackUIKey.Key:
-#        type: ThiefBackpackBoundUserInterface
-#
-#- type: entity
-#  id: BoSWashingtonScribeKits
-#  name: Undecided BoS Kit
-#  description: please only take one
-#  parent: BaseItem
-#  components:
-#  - type: Sprite
-#    sprite: Nuclear14/Objects/Misc/kits.rsi
-#    state: rifleman
-#  - type: UndecidedLoadoutBackpack
-#    possibleSets:
-#    - ScribeMedicWashingtonBoSSet
-#    - ScribeEngineerWashingtonBoSSet
-#  - type: ActivatableUI
-#    key: enum.ThiefBackpackUIKey.Key
-#  - type: UserInterface
-#    interfaces:
-#      enum.ThiefBackpackUIKey.Key:
-#        type: ThiefBackpackBoundUserInterface
-#
-#- type: entity
-#  id: BoSWashingtonCommandKits
-#  name: Undecided BoS Kit
-#  description: please only take one
-#  parent: BaseItem
-#  components:
-#  - type: Sprite
-#    sprite: Nuclear14/Objects/Misc/kits.rsi
-#    state: rifleman
-#  - type: UndecidedLoadoutBackpack
-#    possibleSets:
-#    - CommandBaseWashingtonBoSSet
-#    - CommandMultiWashingtonBoSSet
-#    - CommandCasterWashingtonBoSSet
-#    - CommandWattzWashingtonBoSSet
-#    - CommandGatlingWashingtonBoSSet
-#  - type: ActivatableUI
-#    key: enum.ThiefBackpackUIKey.Key
-#  - type: UserInterface
-#    interfaces:
-#      enum.ThiefBackpackUIKey.Key:
-#        type: ThiefBackpackBoundUserInterface
-
-#Misfits Change /Comment-out/: Western BoS undecided loadout entities removed — no Western BoS chapter.
-## Brother West Elder kits
-#- type: entity
-#  id: BoSWesternElderKits
-#  name: BoS West Elder Kit
-#  parent: BaseLoadoutKit
-#  components:
-#  - type: Sprite
-#    sprite: Nuclear14/Objects/Misc/kits.rsi
-#    state: rifleman
-#  - type: UndecidedLoadoutBackpack
-#    possibleSets:
-#    - KitBrotherWest_ElderlasSet
-#    - KitBrotherWest_ElderrifleSet
-#
-## Brother West Paladin kits
-#- type: entity
-#  id: BoSWesternPaladinKits
-#  name: Undecided Paladin Kit
-#  parent: BaseLoadoutKit
-#  components:
-#  - type: Sprite
-#    sprite: Nuclear14/Objects/Misc/kits.rsi
-#    state: rifleman
-#  - type: UndecidedLoadoutBackpack
-#    possibleSets:
-#    - KitBrotherWest_PaladinlasSet
-#    - KitBrotherWest_PaladinrifleSet
-#    - KitBrotherWest_PaladinplasmaSet
-#
-## Brother West Knight kits
-#- type: entity
-#  id: BoSWesternKnightKits
-#  name: Undecided Knight Kit
-#  parent: BaseLoadoutKit
-#  components:
-#  - type: Sprite
-#    sprite: Nuclear14/Objects/Misc/kits.rsi
-#    state: rifleman
-#  - type: UndecidedLoadoutBackpack
-#    possibleSets:
-#    - KitBrotherWest_KnightrifleSet
-#    - KitBrotherWest_KnightlaserSet
-#    - KitBrotherWest_KnightplasmaSet
-#
-## Brother West Squire kits
-#- type: entity
-#  id: BoSWesternSquireKits
-#  name: Undecided Squire Kit
-#  parent: BaseLoadoutKit
-#  components:
-#  - type: Sprite
-#    sprite: Nuclear14/Objects/Misc/kits.rsi
-#    state: rifleman
-#  - type: UndecidedLoadoutBackpack
-#    possibleSets:
-#    - KitBrotherWest_SquirerifleSet
-#    - KitBrotherWest_SquirelaserSet
-#    - KitBrotherWest_SquireplasmaSet
-#
-## Brother West Scribe kits
-#- type: entity
-#  id: BoSWesternScribeKits
-#  name: Undecided Scribe Kit
-#  parent: BaseLoadoutKit
-#  components:
-#  - type: Sprite
-#    sprite: Nuclear14/Objects/Misc/kits.rsi
-#    state: rifleman
-#  - type: UndecidedLoadoutBackpack
-#    possibleSets:
-#    - KitBrotherWest_ScriberifleSet
-#    - KitBrotherWest_ScribelaserSet
-#    - KitBrotherWest_ScribeplasmaSet
-#
-##Inquisitor Brother Kits
-#- type: entity
-#  id: BoSMidwestInquisitorKits
-#  parent: BaseLoadoutKit
-#  components:
-#  - type: Sprite
-#    sprite: Nuclear14/Objects/Misc/kits.rsi
-#    state: marksman
-#  - type: UndecidedLoadoutBackpack
-#    possibleSets:
-#    - KitMidwestInquisitorInspectorSet
-#    - KitMidwestInquisitorCrusaderSet
-#    - KitMidwestInquisitorPlasmaSet
-
-# NCRMP Investegator Kits
-
-- type: entity
-  id: NCRMPinvestigatorKits
-  parent: BaseLoadoutKit
-  components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Misc/kits.rsi
-    state: marksman
-  - type: ThiefUndeterminedBackpack
-    maxSelectedSets: 1
-    toolName: n14-loadout-kit-window-title
-    toolDesc: n14-loadout-kit-window-description
-    possibleSets:
-    - KitNCRMPMilitaryPoliceSet
-    - KitNCRMPinvestigatorBailifSet
-    - KitNCRMPinvestigatorSet
-
-### Sets
-
-# Legion
-
 - type: thiefBackpackSet
   id: LegatePraetorianSet
   # #Misfits Change - Localize active Corvax undecided loadout set text through Misfits/undecidedloadout.ftl.
@@ -485,7 +10,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitLegatePraetorian
+  - CorvaxKitLegatePraetorian
 
 - type: thiefBackpackSet
   id: LegateSagitariaSet
@@ -495,7 +20,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitLegateSagitaria
+  - CorvaxKitLegateSagitaria
 
 - type: thiefBackpackSet
   id: LegateImperatorSet
@@ -505,7 +30,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitLegateImperator
+  - CorvaxKitLegateImperator
 
 - type: thiefBackpackSet
   id: CenturionCommandSet
@@ -515,7 +40,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitCenturionCommand
+  - CorvaxKitCenturionCommand
 
 - type: thiefBackpackSet
   id: CenturionMarksmanSet
@@ -525,7 +50,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitCenturionMarksman
+  - CorvaxKitCenturionMarksman
 
 - type: thiefBackpackSet
   id: CenturionVanquisherSet
@@ -535,7 +60,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitCenturionVanquisher
+  - CorvaxKitCenturionVanquisher
 
 # #Misfits Add - Centurion armor selection sets (for LegionCenturionArmorloadoutkits in pocket2).
 
@@ -547,7 +72,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitCenturionArmorStandard
+  - CorvaxKitCenturionArmorStandard
 
 - type: thiefBackpackSet
   id: CenturionArmorWarforgedSet
@@ -557,7 +82,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitCenturionWarforged
+  - CorvaxKitCenturionWarforged
 
 - type: thiefBackpackSet
   id: CenturionArmorWarlordSet
@@ -567,7 +92,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitCenturionWarlord
+  - CorvaxKitCenturionWarlord
 
 - type: thiefBackpackSet
   id: CenturionArmorCinderSet
@@ -577,7 +102,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitCenturionCinder
+  - CorvaxKitCenturionCinder
 
 - type: thiefBackpackSet
   id: CenturionArmorSaltColumnSet
@@ -587,7 +112,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitCenturionSaltColumn
+  - CorvaxKitCenturionSaltColumn
 
 - type: thiefBackpackSet
   id: CenturionArmorUnbrokenSet
@@ -597,7 +122,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitCenturionUnbroken
+  - CorvaxKitCenturionUnbroken
 
 - type: thiefBackpackSet
   id: VenatorMarksmanSet
@@ -607,7 +132,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitVenatorSagitaria
+  - CorvaxKitVenatorSagitaria
 
 - type: thiefBackpackSet
   id: VenatorStalkerSet
@@ -617,7 +142,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitVenatorStalker
+  - CorvaxKitVenatorStalker
 
 - type: thiefBackpackSet
   id: VenatorExecutionerSet
@@ -627,7 +152,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitVenatorTriaria
+  - CorvaxKitVenatorTriaria
 
 - type: thiefBackpackSet
   id: VexillariusStandardSet
@@ -637,7 +162,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitVexillariusStandard
+  - CorvaxKitVexillariusStandard
 
 - type: thiefBackpackSet
   id: VexillariusHeraldSet
@@ -647,7 +172,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitVexillariusHerald
+  - CorvaxKitVexillariusHerald
 
 - type: thiefBackpackSet
   id: VexillariusSkirmisherSet
@@ -657,7 +182,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitVexillariusSkirmisher
+  - CorvaxKitVexillariusSkirmisher
   # #Misfits Fix - Use FTL keys so undecided loadout UI stops localizing raw English text as message IDs.
 
 - type: thiefBackpackSet
@@ -668,7 +193,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitExplorerTracker
+  - CorvaxKitExplorerTracker
 
 - type: thiefBackpackSet
   id: ExplorerRaiderSet
@@ -678,7 +203,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitExplorerRaider
+  - CorvaxKitExplorerRaider
 
 - type: thiefBackpackSet
   id: OptioPreacherSet
@@ -688,7 +213,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitOptioPreacher
+  - CorvaxKitOptioPreacher
 
 - type: thiefBackpackSet
   id: OptioDefenderSet
@@ -698,7 +223,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitOptioDefender
+  - CorvaxKitOptioDefender
 
 - type: thiefBackpackSet
   id: OptioInquisitorSet
@@ -708,7 +233,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitOptioInquisitor
+  - CorvaxKitOptioInquisitor
 
 - type: thiefBackpackSet
   id: HoundmasterHunterSet
@@ -718,7 +243,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitHoundmasterHunter
+  - CorvaxKitHoundmasterHunter
 
 - type: thiefBackpackSet
   id: HoundmasterTamerSet
@@ -728,7 +253,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitHoundmasterTamer
+  - CorvaxKitHoundmasterTamer
 
 - type: thiefBackpackSet
   id: HoundmasterMedicSet
@@ -738,7 +263,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitHoundmasterMedic
+  - CorvaxKitHoundmasterMedic
 
 - type: thiefBackpackSet
   id: AuxiliaSkirmisherSet
@@ -748,7 +273,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitAuxiliaSkirmisher
+  - CorvaxKitAuxiliaSkirmisher
 
 - type: thiefBackpackSet
   id: AuxiliaSpearmanSet
@@ -758,7 +283,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitAuxiliaSpearman
+  - CorvaxKitAuxiliaSpearman
 
 - type: thiefBackpackSet
   id: AuxiliaMedicSet
@@ -768,7 +293,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitAuxiliaMedic
+  - CorvaxKitAuxiliaMedic
 
 - type: thiefBackpackSet
   id: RecruitDecanusCommandSet
@@ -778,7 +303,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitRecruitDecanusCommand
+  - CorvaxKitRecruitDecanusCommand
 
 - type: thiefBackpackSet
   id: RecruitDecanusHunterSet
@@ -788,7 +313,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitRecruitDecanusHunter
+  - CorvaxKitRecruitDecanusHunter
 
 - type: thiefBackpackSet
   id: RecruitDecanusCrusherSet
@@ -798,7 +323,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitRecruitDecanusCrusher
+  - CorvaxKitRecruitDecanusCrusher
 
 - type: thiefBackpackSet
   id: DecanusGladiatorSet
@@ -808,7 +333,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitDeanGladiator
+  - CorvaxKitDeanGladiator
 
 - type: thiefBackpackSet
   id: DecanusCrusherSet
@@ -818,7 +343,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitDeanCrusher
+  - CorvaxKitDeanCrusher
 
 - type: thiefBackpackSet
   id: DecanusDemolitionistSet
@@ -828,7 +353,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitDeanDemolitionist
+  - CorvaxKitDeanDemolitionist
 
 - type: thiefBackpackSet
   id: DecanusSharpshooterSet
@@ -838,7 +363,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitDeanSharpshooter
+  - CorvaxKitDeanSharpshooter
 
 - type: thiefBackpackSet
   id: DecanusDestroyerSet
@@ -848,7 +373,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitDeanDestroyer
+  - CorvaxKitDeanDestroyer
 
 - type: thiefBackpackSet
   id: VeteranRiflemanSet
@@ -858,7 +383,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitVeteranFirearm
+  - CorvaxKitVeteranFirearm
 
 - type: thiefBackpackSet
   id: VeteranBerserkerSet
@@ -868,7 +393,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitVeteranBerserker
+  - CorvaxKitVeteranBerserker
 
 - type: thiefBackpackSet
   id: VeteranGoliathSet
@@ -878,7 +403,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitVeteranGoliath
+  - CorvaxKitVeteranGoliath
 
 - type: thiefBackpackSet
   id: WarriorMedicSet
@@ -888,7 +413,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitWarriorHealer
+  - CorvaxKitWarriorHealer
 
 - type: thiefBackpackSet
   id: WarriorGunmanSet
@@ -898,7 +423,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitWarriorFirearm
+  - CorvaxKitWarriorFirearm
 
 - type: thiefBackpackSet
   id: WarriorShieldbearerSet
@@ -908,7 +433,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitWarriorMelee
+  - CorvaxKitWarriorMelee
 
 - type: thiefBackpackSet
   id: LegionnaireRecruitSkirmisherSet
@@ -918,7 +443,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitRecruitBase
+  - CorvaxKitRecruitBase
 
 - type: thiefBackpackSet
   id: LegionnaireRecruitSpearmanSet
@@ -928,7 +453,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitRecruitSpear
+  - CorvaxKitRecruitSpear
 
 - type: thiefBackpackSet
   id: LegionnaireRecruitMedicSet
@@ -938,7 +463,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitRecruitHealer
+  - CorvaxKitRecruitHealer
 
 - type: thiefBackpackSet
   id: RecruitInitiateSet
@@ -948,7 +473,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitRecruitInitiate
+  - CorvaxKitRecruitInitiate
 
 - type: thiefBackpackSet
   id: RecruitPorterSet
@@ -958,7 +483,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitRecruitPorter
+  - CorvaxKitRecruitPorter
 
 - type: thiefBackpackSet
   id: RecruitCampMedicSet
@@ -968,7 +493,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitRecruitCampMedic
+  - CorvaxKitRecruitCampMedic
 
 - type: thiefBackpackSet
   id: AuxiliaryRecruitSet
@@ -978,7 +503,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitRecruitBase
+  - CorvaxKitRecruitBase
 
 - type: thiefBackpackSet
   id: AuxiliarySpearmanSet
@@ -988,7 +513,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitRecruitSpear
+  - CorvaxKitRecruitSpear
 
 - type: thiefBackpackSet
   id: AuxiliaryMeleeSet
@@ -998,7 +523,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitRecruitMelee
+  - CorvaxKitRecruitMelee
 
 - type: thiefBackpackSet
   id: AuxiliaryHealerSet
@@ -1008,7 +533,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - KitRecruitHealer
+  - CorvaxKitRecruitHealer
 
 #Misfits Change /Comment-out/: Washington BoS kit sets removed — will create new prototypes.
 ## Washington BoS
@@ -1133,7 +658,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - KitNCRMPMilitaryPolice
+  - CorvaxKitNCRMPMilitaryPolice
 
 - type: thiefBackpackSet
   id: KitNCRMPinvestigatorSet
@@ -1143,7 +668,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - KitNCRMPinvestigator
+  - CorvaxKitNCRMPinvestigator
 
 - type: thiefBackpackSet
   id: KitNCRMPinvestigatorBailifSet
@@ -1153,4 +678,4 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - KitNCRMPbailiff
+  - CorvaxKitNCRMPbailiff

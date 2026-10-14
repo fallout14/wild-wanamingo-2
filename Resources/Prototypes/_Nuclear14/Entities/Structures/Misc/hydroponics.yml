@@ -29,7 +29,7 @@
         acts: ["Destruction"]
   - type: ReactionMixer
     reactionTypes:
-    - Composting
+    - N14Composting
   - type: SolutionContainerMixer # #Misfits Fix: Triggers reactions when player clicks to mix,
     mixDuration: 3                # spawning N14CompostRotted from Dung or CompostingOrganic reactions.
     mixingSound:

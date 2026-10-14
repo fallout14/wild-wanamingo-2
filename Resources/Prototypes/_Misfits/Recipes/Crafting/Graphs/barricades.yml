@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Crafting/Graphs/barricades.yml
 
 - type: constructionGraph
-  id: BarricadeTanktrap
+  id: MisfitsBarricadeTanktrap
   start: start
   graph:
     - node: start
@@ -29,7 +29,7 @@
             - !type:DeleteEntity 
 
 - type: constructionGraph
-  id: BarricadeMetal
+  id: MisfitsBarricadeMetal
   start: start
   graph:
     - node: start
@@ -56,7 +56,7 @@
             - !type:DeleteEntity 
 
 - type: constructionGraph
-  id: BarricadeMetalGreen
+  id: MisfitsBarricadeMetalGreen
   start: start
   graph:
     - node: start
@@ -83,14 +83,14 @@
             - !type:DeleteEntity
 
 - type: constructionGraph
-  id: BarricadeConcrete
+  id: MisfitsBarricadeConcrete
   start: start
   graph:
     - node: start
       edges:
         - to: Concrete
           steps:
-            - material: N14Concrete
+            - material: MisfitsConcrete
               amount: 8
               doAfter: 6
           completed:
@@ -105,12 +105,12 @@
               doAfter: 3
           completed:
             - !type:SpawnPrototype
-              prototype: N14MaterialCement1
+              prototype: MisfitsMaterialCement1
               amount: 5
             - !type:DeleteEntity
 
 - type: constructionGraph
-  id: BarricadeWoodTall
+  id: MisfitsBarricadeWoodTall
   start: start
   graph:
     - node: start

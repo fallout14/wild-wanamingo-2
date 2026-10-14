@@ -1,17 +1,17 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier5Weapon/Tier5WeaponTables/Tier5WeaponBallistic/TwoHanded/Tier5WeaponBallisticRifleTable.yml
 
 - type: entityTable
-  id: M14WeaponLootTier5_GunsBulletRifleAuto
+  id: MisfitsM14WeaponLootTier5_GunsBulletRifleAuto
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponRifle5mmCarbine
+      id: MisfitsWeaponRifle5mmCarbine
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle10mmSkirmisher
+      id: MisfitsWeaponRifle10mmSkirmisher
       weight: 4
     - !type:EntSelector
-      id: N14WeaponAutoRifle556Legion
+      id: MisfitsWeaponAutoRifle556Legion
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle556Pipe
@@ -21,26 +21,26 @@
       id: N14WeaponRifle556R91
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifleInfiltrator # stealth R91
+      id: MisfitsWeaponRifleInfiltrator # stealth R91
       weight: 4
 
     - !type:EntSelector
       id: N14WeaponRifle556EM2
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle308Fal
+      id: MisfitsWeaponRifle308Fal
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle762Canadian
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556Chinese
+      id: MisfitsWeaponRifle556Chinese
       weight: 4
       #AK 5.45
 #temp!!!
 
 - type: entityTable
-  id: M14WeaponLootTier5_GunsBulletRifleSemi
+  id: MisfitsM14WeaponLootTier5_GunsBulletRifleSemi
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -52,7 +52,7 @@
 
 
     - !type:EntSelector
-      id: N14WeaponRifle10mmM1Carbine
+      id: MisfitsWeaponRifle10mmM1Carbine
       weight: 4
 
     - !type:EntSelector
@@ -88,27 +88,27 @@
       id: N14WeaponSniper308Canadian
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniper303Ross
+      id: MisfitsWeaponSniper303Ross
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle308SniperRifle
+      id: MisfitsWeaponRifle308SniperRifle
       weight: 4
 
 
     - !type:EntSelector
-      id: N14WeaponRifle556Rangemaster # bayonet
+      id: MisfitsWeaponRifle556Rangemaster # bayonet
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556Marksman
+      id: MisfitsWeaponRifle556Marksman
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle308M14
+      id: MisfitsWeaponRifle308M14
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle762MarksmanCanadian
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle9mmMarksmanChinese
+      id: MisfitsWeaponRifle9mmMarksmanChinese
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle762SKS
@@ -131,13 +131,13 @@
 
 
     - !type:EntSelector
-      id: N14WeaponSniperCowboyRepeater #.357
+      id: MisfitsWeaponSniperCowboyRepeater #.357
       weight: 4
     - !type:EntSelector
       id: N14WeaponSniper44LeverShortCarbine
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniperCowboyRepeater
+      id: MisfitsWeaponSniperCowboyRepeater
       weight: 4
     - !type:EntSelector
       id: N14WeaponSniper45-70BrushGun
@@ -155,14 +155,14 @@
       id: N14WeaponRifle762SKS
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle308SVT40 #Legion
+      id: MisfitsWeaponRifle308SVT40 #Legion
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifleM1GarandOldGlory # #Misfits Add - unique
+      id: MisfitsWeaponRifleM1GarandOldGlory # #Misfits Add - unique
       weight: 1
     - !type:EntSelector
-      id: N14WeaponRifleM1GarandPawolskis # #Misfits Add - unique
+      id: MisfitsWeaponRifleM1GarandPawolskis # #Misfits Add - unique
       weight: 1
     - !type:EntSelector
-      id: N14WeaponSniperPaciencia # #Misfits Add - unique
+      id: MisfitsWeaponSniperPaciencia # #Misfits Add - unique
       weight: 1

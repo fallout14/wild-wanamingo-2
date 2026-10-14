@@ -2,7 +2,7 @@
 
 - type: entity
   parent: N14BasePipboy
-  id: N14HeadPaladin_PipBoy
+  id: MisfitsHeadPaladin_PipBoy
   suffix: Head Paladin
   components:
   - type: Pda
@@ -20,19 +20,19 @@
 
 - type: entity
   parent: N14BasePipboy
-  id: N14HeadScribe_PipBoy
+  id: MisfitsHeadScribe_PipBoy
   suffix: Head Scribe
   components:
   - type: Pda
-    id: N14IDBrotherhoodOfSteelHolotagHeadScribe
+    id: MisfitsIDBrotherhoodOfSteelHolotagHeadScribe
 
 - type: entity
   parent: N14BasePipboy
-  id: N14HeadKnight_PipBoy
+  id: MisfitsHeadKnight_PipBoy
   suffix: Head Knight
   components:
   - type: Pda
-    id: N14IDBrotherhoodOfSteelHolotagHeadKnight
+    id: MisfitsIDBrotherhoodOfSteelHolotagHeadKnight
 
 # #Cythisiax Fixed - Dedented Lancer Pip-Boy entities (4-space indent broke YAML parsing)
 # Knight-Lancer Pip-Boy.

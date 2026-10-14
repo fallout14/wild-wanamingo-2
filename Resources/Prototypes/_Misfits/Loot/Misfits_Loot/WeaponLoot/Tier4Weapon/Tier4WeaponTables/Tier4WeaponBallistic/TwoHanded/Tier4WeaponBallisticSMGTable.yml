@@ -1,17 +1,17 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier4Weapon/Tier4WeaponTables/Tier4WeaponBallistic/TwoHanded/Tier4WeaponBallisticSMGTable.yml
 
 - type: entityTable
-  id: M14WeaponLootTier4_GunsBulletSMG
+  id: MisfitsM14WeaponLootTier4_GunsBulletSMG
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: N14WeaponSMG12mmPipe
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSMG45GreaseGun
+      id: MisfitsWeaponSMG45GreaseGun
       weight: 7
     - !type:EntSelector
-      id: N14WeaponSMGPPSh41 #9mm
+      id: MisfitsWeaponSMGPPSh41 #9mm
       weight: 4
     - !type:EntSelector
       id: N14WeaponSMG9mmCanadian
@@ -20,7 +20,7 @@
       id: N14WeaponSMG10mm
       weight: 7
     - !type:EntSelector
-      id: N14WeaponSMG45GreaseGun #.45 acp
+      id: MisfitsWeaponSMG45GreaseGun #.45 acp
       weight: 4
     - !type:EntSelector
       id: N14WeaponSMG12mmAdvanced

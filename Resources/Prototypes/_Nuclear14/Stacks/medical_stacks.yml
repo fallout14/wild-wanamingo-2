@@ -1,5 +1,12 @@
 # Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
-# Resources/Prototypes/_Nuclear14/Stacks/medical_stacks.yml
+# Resources/Prototypes/Corvax/Stacks/medical_stacks.yml, Resources/Prototypes/_Nuclear14/Stacks/medical_stacks.yml
+
+- type: stack
+  id: N14Bandage
+  name: misfits-kit-bandage
+  icon: { sprite: "Nuclear14/Objects/Specific/Medical/drugs.rsi", state: bandage }
+  spawn: N14Bandage
+  maxCount: 15 #Changed to 15 due to shitmed changes
 
 - type: stack
   id: N14AloeSalve
@@ -29,10 +36,3 @@
   spawn: N14Ointment1
   maxCount: 10
 # misfit add:
-
-- type: stack
-  id: N14OintmentAdv10
-  name: regenerative-mesh
-  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: regenerative-mesh}
-  spawn: N14OintmentAdv1
-  maxCount: 10

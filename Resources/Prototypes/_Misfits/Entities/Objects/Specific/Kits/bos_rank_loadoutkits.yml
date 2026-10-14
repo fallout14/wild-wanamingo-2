@@ -1,9 +1,9 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Kits/bos_rank_loadoutkits.yml
 
 - type: entity
-  id: BoSBrotherhoodSeniorPaladinKits
+  id: MisfitsBoSBrotherhoodSeniorPaladinKits
   name: Undecided Brotherhood Senior Paladin Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -22,9 +22,9 @@
     #- Misfits_PalWattz_Set
 
 - type: entity
-  id: BoSBrotherhoodSeniorKnightKits
+  id: MisfitsBoSBrotherhoodSeniorKnightKits
   name: Undecided Brotherhood Senior Knight Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -39,9 +39,9 @@
     - MBoS_Recon_Set
 
 - type: entity
-  id: BoSBrotherhoodSeniorScribeKits
+  id: MisfitsBoSBrotherhoodSeniorScribeKits
   name: Undecided Brotherhood Senior Scribe Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -101,9 +101,9 @@
 #    - WBoS_ScrEng_Set
 
 - type: entity
-  id: BoSBrotherhoodSquireKits
+  id: MisfitsBoSBrotherhoodSquireKits
   name: Undecided Brotherhood Squire Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -133,9 +133,9 @@
 #Misfits Change /Add/: New consolidated Brotherhood loadout kit entities using MBoS weapon sets.
 
 - type: entity
-  id: BoSBrotherhoodElderKits
+  id: MisfitsBoSBrotherhoodElderKits
   name: Undecided Brotherhood Elder Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -153,9 +153,9 @@
     - Misfits_PalWattz_Set
 
 - type: entity
-  id: BoSBrotherhoodHeadPaladinKits
+  id: MisfitsBoSBrotherhoodHeadPaladinKits
   name: Undecided Brotherhood Head Paladin Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -174,9 +174,9 @@
     #- Misfits_PalWattz_Set
 
 - type: entity
-  id: BoSBrotherhoodHeadKnightKits
+  id: MisfitsBoSBrotherhoodHeadKnightKits
   name: Undecided Brotherhood Head Knight Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -194,9 +194,9 @@
     - MBoS_PalSni_Set
 
 - type: entity
-  id: BoSBrotherhoodHeadScribeKits
+  id: MisfitsBoSBrotherhoodHeadScribeKits
   name: Undecided Brotherhood Head Scribe Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -211,9 +211,9 @@
     - MBoS_ScrEng_Set
 
 - type: entity
-  id: BoSBrotherhoodPaladinKits
+  id: MisfitsBoSBrotherhoodPaladinKits
   name: Undecided Brotherhood Paladin Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -232,9 +232,9 @@
     #- Misfits_PalWattz_Set
 
 - type: entity
-  id: BoSBrotherhoodKnightKits
+  id: MisfitsBoSBrotherhoodKnightKits
   name: Undecided Brotherhood Knight Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -249,9 +249,9 @@
     #- MBoS_PalSni_Set  # #Misfits Removed - Bozar moved to T4 craftable blueprint
 
 - type: entity
-  id: BoSBrotherhoodScribeKits
+  id: MisfitsBoSBrotherhoodScribeKits
   name: Undecided Brotherhood Scribe Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -268,9 +268,9 @@
 #Misfits Change /Tweak/: Initiate only gets one option (wattz pistol kit).
 
 - type: entity
-  id: BoSBrotherhoodInitiateKits
+  id: MisfitsBoSBrotherhoodInitiateKits
   name: Undecided Brotherhood Initiate Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -286,8 +286,8 @@
 
 - type: entity
   name: BoS Squire Basic Kit
-  parent: KitBase
-  id: KitMisfits_SqrBasic
+  parent: N14KitBase
+  id: MisfitsKitSqrBasic
   description: A crate containing a sidearm and blade for Brotherhood Squires.
   components:
   - type: Sprite
@@ -313,14 +313,14 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - KitMisfits_SqrBasic
+  - MisfitsKitSqrBasic
 
 #Misfits Tweak: Restored the Bozar to the shared paladin kit because the Wattz 2000 was overtuned.
 
 - type: entity
   name: BoS Paladin Bozar Kit
-  parent: KitBase
-  id: KitMisfits_PalWattz
+  parent: N14KitBase
+  id: MisfitsKitPalWattz
   description: A crate containing a Bozar and sidearm for Brotherhood Paladins.
   components:
   - type: Sprite
@@ -330,7 +330,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: LMGMagazine556Rifle
+      - id: N14LMGMagazine556Rifle
         amount: 1
       - id: N14WeaponPistol12mm
       - id: N14MagazinePistol12mm
@@ -347,4 +347,4 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - KitMisfits_PalWattz
+  - MisfitsKitPalWattz

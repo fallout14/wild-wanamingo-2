@@ -1,14 +1,14 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3WeaponBallistic/TwoHanded/Tier3WeaponBallisticRifleTable.yml
 
 - type: entityTable
-  id: M14WeaponLootTier3_GunsBulletRifleAuto
+  id: MisfitsM14WeaponLootTier3_GunsBulletRifleAuto
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponRifle5mmCarbine
+      id: MisfitsWeaponRifle5mmCarbine
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle10mmSkirmisher
+      id: MisfitsWeaponRifle10mmSkirmisher
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle556Pipe
@@ -19,14 +19,14 @@
 #temp!!!
 
 - type: entityTable
-  id: M14WeaponLootTier3_GunsBulletRifleSemi
+  id: MisfitsM14WeaponLootTier3_GunsBulletRifleSemi
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: N14WeaponSniper308PipeRifle
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle10mmM1Carbine
+      id: MisfitsWeaponRifle10mmM1Carbine
       weight: 4
     - !type:EntSelector
       id: N14WeaponSniper556VarmintRifle
@@ -50,11 +50,11 @@
       id: N14WeaponSniperHunting
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniperCowboyRepeater #.357
+      id: MisfitsWeaponSniperCowboyRepeater #.357
       weight: 4
     - !type:EntSelector
       id: N14WeaponSniper44LeverShortCarbine
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniper10mmLeverRifle # #Misfits Add - mid-tier 10mm lever action
+      id: MisfitsWeaponSniper10mmLeverRifle # #Misfits Add - mid-tier 10mm lever action
       weight: 5

@@ -1,0 +1,32 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Boxes/2mmEC.yml
+
+- type: entity
+  parent: BaseItem
+  id: MisfitsAmmoBox2mmEC
+  name: ammunition box (2mmEC)
+  description: A sealed box of 2mm electromagnetic cartridges for U.S. Army gauss weapons.
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - MisfitsCartridge2mmEC
+    proto: MisfitsCartridge2mmEC
+    capacity: 40
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Boxes/anti_materiel.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

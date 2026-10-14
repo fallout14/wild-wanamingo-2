@@ -235,7 +235,7 @@
     id: toilet
     solution:
       reagents:
-      - ReagentId: WaterDirty
+      - ReagentId: N14WaterDirty
         Quantity: 180
       - ReagentId: GastroToxin
         Quantity: 20
@@ -245,7 +245,7 @@
     solution: toilet
     generated:
       reagents:
-      - ReagentId: WaterDirty
+      - ReagentId: N14WaterDirty
         Quantity: 3
       - ReagentId: GastroToxin
         Quantity: 1
@@ -259,7 +259,7 @@
     id: toilet
     solution:
       reagents:
-      - ReagentId: WaterIrradiated
+      - ReagentId: N14WaterIrradiated
         Quantity: 180
       - ReagentId: GastroToxin
         Quantity: 20
@@ -267,7 +267,7 @@
     solution: toilet
     generated:
       reagents:
-      - ReagentId: WaterIrradiated
+      - ReagentId: N14WaterIrradiated
         Quantity: 3
       - ReagentId: GastroToxin
         Quantity: 1
@@ -350,7 +350,7 @@
     solution: tank
     generated:
       reagents:
-      - ReagentId: WaterDirty
+      - ReagentId: N14WaterDirty
         Quantity: 1
 
 - type: entity
@@ -362,7 +362,7 @@
     id: tank
     solution:
       reagents:
-      - ReagentId: WaterDirty
+      - ReagentId: N14WaterDirty
         Quantity: 200
 
 - type: entity
@@ -381,7 +381,7 @@
     solution: tank
     generated:
       reagents:
-      - ReagentId: WaterIrradiated
+      - ReagentId: N14WaterIrradiated
         Quantity: 1
 
 - type: entity
@@ -393,5 +393,5 @@
     id: tank
     solution:
       reagents:
-      - ReagentId: WaterIrradiated
+      - ReagentId: N14WaterIrradiated
         Quantity: 200

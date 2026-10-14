@@ -2,39 +2,7 @@
 
 - type: entity
   parent: N14IDPassportBlank
-  id: N14IDBrotherhoodHolotag
-  name: senior scribe's holotags
-  description: An ID holotag worn by the Brotherhood of Steel.
-  suffix: Senior Scribe
-  components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Misc/identification.rsi
-    state: bos_holotag
-  - type: IdCard
-    nameLocId: n14-id-holotag-name
-    fullNameLocId: n14-id-holotag-full-name
-  - type: PresetIdCard
-  - type: Tag
-    tags:
-    - IdCardBrotherhood
-  - type: ClothingAddFaction
-    faction: BrotherhoodOfSteel
-
-- type: entity
-  parent: N14IDBrotherhoodHolotag
-  id: N14IDBrotherhoodHolotagCommander
-  name: head paladin's holotags
-  description: An ID holotag worn by the Head Paladin of the Brotherhood of Steel.
-  suffix: Head Paladin
-  components:
-  - type: PresetIdCard
-    job: BoSMidPaladinCommander
-
-##MARK: Brotherhood Unified Live Jobs
-
-- type: entity
-  parent: N14IDPassportBlank
-  id: N14IDBrotherhoodOfSteelHolotagBase
+  id: MisfitsIDBrotherhoodOfSteelHolotagBase
   name: Brotherhood holotags
   description: An ID holotag worn by the Brotherhood of Steel.
   suffix: Brotherhood
@@ -47,23 +15,23 @@
     fullNameLocId: n14-id-holotag-full-name
   - type: Tag
     tags:
-    - IdCardBrotherhood
+    - MisfitsIdCardBrotherhood
   - type: ClothingAddFaction
-    faction: BrotherhoodOfSteel
+    faction: MisfitsBrotherhoodOfSteel
 
 - type: entity
-  parent: N14IDBrotherhoodOfSteelHolotagBase
-  id: N14IDBrotherhoodOfSteelHolotagInitiate
+  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
+  id: MisfitsIDBrotherhoodOfSteelHolotagInitiate
   name: initiate's holotags
   description: An ID holotag worn by a Brotherhood initiate.
   suffix: Initiate
   components:
   - type: PresetIdCard
-    job: BoSInitiate  #Misfits Change /Tweak/: Updated to new consolidated BoS Initiate job
+    job: MisfitsBoSInitiate  #Misfits Change /Tweak/: Updated to new consolidated BoS Initiate job
 
 - type: entity
-  parent: N14IDBrotherhoodOfSteelHolotagBase
-  id: N14IDBrotherhoodOfSteelHolotagSquire
+  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
+  id: MisfitsIDBrotherhoodOfSteelHolotagSquire
   name: squire's holotags
   description: An ID holotag worn by a Brotherhood squire.
   suffix: Squire
@@ -71,78 +39,63 @@
   - type: PresetIdCard
 
 - type: entity
-  parent: N14IDBrotherhoodOfSteelHolotagBase
-  id: N14IDBrotherhoodOfSteelHolotagScribe
+  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
+  id: MisfitsIDBrotherhoodOfSteelHolotagScribe
   name: scribe's holotags
   description: An ID holotag worn by a Brotherhood scribe.
   suffix: Scribe
   components:
   - type: PresetIdCard
-    job: BoSScribe  #Misfits Change /Tweak/: Updated to new consolidated BoS Scribe job
+    job: MisfitsBoSScribe  #Misfits Change /Tweak/: Updated to new consolidated BoS Scribe job
 
 - type: entity
-  parent: N14IDBrotherhoodOfSteelHolotagBase
-  id: N14IDBrotherhoodOfSteelHolotagHeadScribe
+  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
+  id: MisfitsIDBrotherhoodOfSteelHolotagHeadScribe
   name: head scribe's holotags
   description: An ID holotag worn by the Head Scribe of the Brotherhood of Steel.
   suffix: Head Scribe
   components:
   - type: PresetIdCard
-    job: BoSWestScribe
+    job: MisfitsBoSWestScribe
 
 - type: entity
-  parent: N14IDBrotherhoodOfSteelHolotagBase
-  id: N14IDBrotherhoodOfSteelHolotagKnight
+  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
+  id: MisfitsIDBrotherhoodOfSteelHolotagKnight
   name: knight's holotags
   description: An ID holotag worn by a Brotherhood knight.
   suffix: Knight
   components:
   - type: PresetIdCard
-    job: BoSKnight  #Misfits Change /Tweak/: Updated to new consolidated BoS Knight job
+    job: MisfitsBoSKnight  #Misfits Change /Tweak/: Updated to new consolidated BoS Knight job
 
 - type: entity
-  parent: N14IDBrotherhoodOfSteelHolotagBase
-  id: N14IDBrotherhoodOfSteelHolotagHeadKnight
+  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
+  id: MisfitsIDBrotherhoodOfSteelHolotagHeadKnight
   name: head knight's holotags
   description: An ID holotag worn by the Head Knight of the Brotherhood of Steel.
   suffix: Head Knight
   components:
   - type: PresetIdCard
-    job: BoSHeadKnight  #Misfits Change /Tweak/: Updated to new consolidated BoS Head Knight job
+    job: MisfitsBoSHeadKnight  #Misfits Change /Tweak/: Updated to new consolidated BoS Head Knight job
 
 - type: entity
-  parent: N14IDBrotherhoodOfSteelHolotagBase
-  id: N14IDBrotherhoodOfSteelHolotagPaladin
+  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
+  id: MisfitsIDBrotherhoodOfSteelHolotagPaladin
   name: paladin's holotags
   description: An ID holotag worn by a Brotherhood paladin.
   suffix: Paladin
   components:
   - type: PresetIdCard
-    job: BoSPaladin  #Misfits Change /Tweak/: Updated to new consolidated BoS Paladin job
+    job: MisfitsBoSPaladin  #Misfits Change /Tweak/: Updated to new consolidated BoS Paladin job
 
 - type: entity
-  parent: N14IDBrotherhoodOfSteelHolotagBase
-  id: N14IDBrotherhoodOfSteelHolotagElder
+  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
+  id: MisfitsIDBrotherhoodOfSteelHolotagElder
   name: elder's holotags
   description: An ID holotag worn by the Elder of the Brotherhood of Steel.
   suffix: Elder
   components:
   - type: PresetIdCard
-    job: BoSWestElderCommander
+    job: MisfitsBoSWestElderCommander
 
 # #Cythisiax Added - HONOR GUARD personal-whitelist holotag.
-
-- type: entity
-  parent: N14IDNCRDogtag
-  id: N14IDNCRDogtagWS
-  name: specialist's dogtags
-  description: An ID dogtag worn by NCR specialists.
-  suffix: Specialist
-  components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Misc/identification.rsi
-    state: ncrdogtag
-  - type: PresetIdCard
-    job: NCRWS
-
-#Misfits Add: Legacy Washington holotag ID compatibility for existing map entities.

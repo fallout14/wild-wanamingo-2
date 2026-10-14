@@ -1,19 +1,19 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/Magazines/357.yml
 
 - type: entity
-  id: N14MagazinePistol357Automag
+  id: MisfitsMagazinePistol357Automag
   name: automag magazine (.357)
   parent: BaseItem
   components:
   - type: Tag
     tags:
-      - N14MagazinePistol357
+      - MisfitsMagazinePistol357
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14CartridgePistol357
-    proto: N14CartridgePistol357
+        - MisfitsCartridgePistol357
+    proto: MisfitsCartridgePistol357
     capacity: 7
   - type: ContainerContainer
     containers:

@@ -1,0 +1,32 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Boxes/_Misfits/glock45.yml
+
+- type: entity
+  parent: BaseItem
+  id: MisfitsAmmoBoxGlock45
+  name: ammo box (.45M)
+  description: A box of custom .45 Magnum rounds, hand-loaded for the Glock 37M.
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeMagnum
+    proto: MisfitsCartridgeGlock45
+    capacity: 30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    netsync: false
+    sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Boxes/45-auto.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: FoldableAmmoBox

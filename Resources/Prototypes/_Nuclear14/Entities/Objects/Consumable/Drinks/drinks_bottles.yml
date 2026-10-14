@@ -3,7 +3,7 @@
 
 - type: entity
   parent: DrinkBottleGlassBaseFull
-  id: DrinkBottleBaseFull50
+  id: N14DrinkBottleBaseFull50
   abstract: true
   components:
   - type: Solution
@@ -12,15 +12,15 @@
       maxVol: 50
 
 - type: entity
-  parent: DrinkBottleBaseFull50
-  id: DrinkBottleBaseEmpty50
+  parent: N14DrinkBottleBaseFull50
+  id: N14DrinkBottleBaseEmpty50
   abstract: true
   suffix: empty
 
 # Allows for caps and fill levels
 
 - type: entity
-  id: DrinkGlassVisualsOpenable
+  id: N14DrinkGlassVisualsOpenable
   abstract: true
   components:
   - type: Appearance
@@ -39,7 +39,7 @@
 # Empty Bottle
 
 - type: entity
-  parent: DrinkBottleBaseEmpty50
+  parent: N14DrinkBottleBaseEmpty50
   id: N14DrinkBottleMilkEmpty
   name: milk bottle
   description: Looks good at holding milky substances.
@@ -52,7 +52,7 @@
 # Basic Milk Bottle
 
 - type: entity
-  parent: [DrinkGlassVisualsOpenable, DrinkBottleBaseFull50]
+  parent: [N14DrinkGlassVisualsOpenable, N14DrinkBottleBaseFull50]
   id: N14DrinkMilkBrahmin
   name: brahmin milk
   description: A glass bottle of brahmin milk.
@@ -107,7 +107,7 @@
         Quantity: 50
 
 - type: entity
-  parent: DrinkBottleBaseEmpty50
+  parent: N14DrinkBottleBaseEmpty50
   id: N14DrinkCreamGlassEmpty
   name: cream glass
   description: Aw look, theres a little cow on the front.
@@ -118,7 +118,7 @@
 # Filled Cream Bottle
 
 - type: entity
-  parent: [DrinkGlassVisualsOpenable, DrinkBottleBaseFull50]
+  parent: [N14DrinkGlassVisualsOpenable, N14DrinkBottleBaseFull50]
   id: N14DrinkCreamGlass
   name: cream
   description: Aw look, theres a little cow on the front. Seems to be filled with heavy cream.
@@ -145,7 +145,7 @@
 # Soda
 
 - type: entity
-  parent: DrinkBottleBaseFull50
+  parent: N14DrinkBottleBaseFull50
   id: N14DrinkNukaColaBottleFull
   name: Nuka-Cola bottle
   description: A refreshing beverage that has a extremely sugary taste. Reminds you of vanilla and cinnamon.
@@ -168,13 +168,13 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: NukaCola
+      - ReagentId: N14NukaCola
         Quantity: 50
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola.rsi
 
 - type: entity
-  parent: DrinkBottleBaseFull50
+  parent: N14DrinkBottleBaseFull50
   id: N14DrinkIrradiatedNukaColaBottleFull
   name: irradiated Nuka-Cola bottle
   description: An unrefreshing beverage that has a extremely sugary taste. The aftertaste is bitter and burnt.
@@ -197,7 +197,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: IrradiatedNukaCola
+      - ReagentId: N14IrradiatedNukaCola
         Quantity: 50
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola.rsi
@@ -205,14 +205,14 @@
 # New Soda
 
 - type: entity
-  parent: DrinkBottleBaseEmpty50
+  parent: N14DrinkBottleBaseEmpty50
   id: N14DrinkNukaColaEmpty
   name: Nuka-Cola bottle
   description: The leading cola since 2044.
   components:
   - type: Tag
     tags:
-    - N14EmptyNukaBottle
+    - MisfitsEmptyNukaBottle
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola_new.rsi
     state: empty
@@ -276,7 +276,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: NukaCola
+      - ReagentId: N14NukaCola
         Quantity: 50
 
 - type: entity
@@ -293,7 +293,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: NukaColaCherry
+      - ReagentId: N14NukaColaCherry
         Quantity: 50
 
 - type: entity
@@ -310,7 +310,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: NukaColaGrape
+      - ReagentId: N14NukaColaGrape
         Quantity: 50
 
 - type: entity
@@ -328,7 +328,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: NukaColaOrange
+      - ReagentId: N14NukaColaOrange
         Quantity: 50
 
 - type: entity
@@ -346,7 +346,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: NukaColaYellow
+      - ReagentId: N14NukaColaYellow
         Quantity: 50
 
 - type: entity
@@ -365,7 +365,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: NukaColaQuantum
+      - ReagentId: N14NukaColaQuantum
         Quantity: 50
   - type: PointLight
     color: "#8DB6FF"
@@ -388,7 +388,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: NukaColaQuartz
+      - ReagentId: N14NukaColaQuartz
         Quantity: 50
   - type: PointLight
     color: "#B2FFFF"
@@ -409,7 +409,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: NukaColaVictory
+      - ReagentId: N14NukaColaVictory
         Quantity: 50
 
 - type: entity
@@ -426,7 +426,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: NukaColaWild
+      - ReagentId: N14NukaColaWild
         Quantity: 50
 
 - type: entity
@@ -460,7 +460,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: VimCaptainsblend
+      - ReagentId: N14VimCaptainsblend
         Quantity: 50
 
 - type: entity
@@ -477,7 +477,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: VimRefresh
+      - ReagentId: N14VimRefresh
         Quantity: 50
 
 - type: entity
@@ -494,11 +494,11 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: VimQuartz
+      - ReagentId: N14VimQuartz
         Quantity: 50
 
 - type: entity
-  parent: DrinkBottleBaseFull50
+  parent: N14DrinkBottleBaseFull50
   id: N14DrinkGammagulpBeer
   name: Gamma Gulp Beer
   description: One of Gecko's biggest exports. A mild, radioactive alcohol.
@@ -517,7 +517,7 @@
         Quantity: 50
 
 - type: entity
-  parent: DrinkBottleBaseFull50
+  parent: N14DrinkBottleBaseFull50
   id: N14DrinkRoentgenRum
   name: Roentgen Rum
   description: One of Gecko's biggest exports. A strong, tingly alcohol.
@@ -534,7 +534,7 @@
         Quantity: 50
 
 - type: entity
-  parent: DrinkBottleBaseFull50
+  parent: N14DrinkBottleBaseFull50
   id: N14DrinkWhisky
   name: whiskey
   description: A bottle of standard looking whiskey
@@ -551,7 +551,7 @@
         Quantity: 50
 
 - type: entity
-  parent: DrinkBottleBaseFull50
+  parent: N14DrinkBottleBaseFull50
   id: N14DrinkWine
   name: wine
   description: Nappa Valley Wine.

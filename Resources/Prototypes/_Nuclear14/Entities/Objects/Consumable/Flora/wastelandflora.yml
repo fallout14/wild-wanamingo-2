@@ -50,7 +50,7 @@
   - type: Sprite
     state: wild_agave
   - type: OreVein
-    currentOre: WildAgave
+    currentOre: N14WildAgave
   - type: Gatherable
     toolWhitelist:
       components:
@@ -75,7 +75,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: WildBananaYucca
+    currentOre: N14WildBananaYucca
   - type: Gatherable
     toolWhitelist:
       components:
@@ -106,7 +106,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: WildBarrelCactus
+    currentOre: N14WildBarrelCactus
   - type: Gatherable
     toolWhitelist:
       components:
@@ -137,7 +137,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: WildBlackberries
+    currentOre: N14WildBlackberries
   - type: Gatherable
     toolWhitelist:
       components:
@@ -167,7 +167,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: WildBrocFlower
+    currentOre: N14WildBrocFlower
   - type: Gatherable
     toolWhitelist:
       components:
@@ -189,7 +189,7 @@
   - type: Sprite
     state: wild_gourd
   - type: OreVein
-    currentOre: WildGourd
+    currentOre: N14WildGourd
   - type: Gatherable
     toolWhitelist:
       components:
@@ -214,7 +214,7 @@
       - state: harvest
       - state: produce
   - type: OreVein
-    currentOre: WildCabbage
+    currentOre: N14WildCabbage
   - type: Gatherable
     toolWhitelist:
       components:
@@ -237,7 +237,7 @@
     sprite: Nuclear14/Objects/Specific/Hydroponics/cabbage.rsi
     state: harvest
   - type: OreVein
-    currentOre: WildCarrot
+    currentOre: N14WildCarrot
   - type: Gatherable
     toolWhitelist:
       components:
@@ -272,7 +272,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: WildCaveFungus
+    currentOre: N14WildCaveFungus
   - type: Gatherable
     toolWhitelist:
       components:
@@ -303,7 +303,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: WildCaveFungusRad
+    currentOre: N14WildCaveFungusRad
   - type: PointLight
     radius: 1.5 # Corvax Change
     energy: 0.7 # Corvax Change
@@ -335,7 +335,7 @@
     sprite: Objects/Specific/Hydroponics/cotton.rsi
     state: harvest
   - type: OreVein
-    currentOre: WildCotton
+    currentOre: N14WildCotton
   - type: Gatherable
     toolWhitelist:
       components:
@@ -357,7 +357,7 @@
   - type: Sprite
     state: wild_coyote
   - type: OreVein
-    currentOre: WildCoyote
+    currentOre: N14WildCoyote
   - type: Gatherable
     toolWhitelist:
       components:
@@ -370,28 +370,6 @@
 
 - type: entity
   parent: N14WastelandFlora
-  id: N14WastelandFloraWildCannabis
-  name: wild cannabis plant
-  description: A cannabis plant growing wild. It's healthy.
-  components:
-  - type: Physics  # spawn state
-    canCollide: False
-  - type: Sprite
-    state: wild_cannabis
-  - type: OreVein
-    currentOre: WildCannabis
-  - type: Gatherable
-    toolWhitelist:
-      components:
-      - Hands
-      tags:
-      - PlantSampleTaker
-    loot:
-      All: !type:NestedSelector
-        tableId: WildCannabisAll
-
-- type: entity
-  parent: N14WastelandFlora
   id: N14WastelandFloraWildDatura
   name: wild datura plant
   description: A datura plant growing wild. It's healthy.
@@ -401,7 +379,7 @@
   - type: Sprite
     state: wild_datura
   - type: OreVein
-    currentOre: WildDatura
+    currentOre: N14WildDatura
   - type: Gatherable
     toolWhitelist:
       components:
@@ -424,7 +402,7 @@
     sprite: Nuclear14/Objects/Specific/Hydroponics/jalapeno.rsi #I DON'T KNOW WHERE THIS IS
     state: harvest
   - type: OreVein
-    currentOre: WildGlowpepper
+    currentOre: N14WildGlowpepper
   - type: PointLight
     radius: 2
     energy: 2
@@ -453,7 +431,7 @@
     sprite: Nuclear14/Objects/Specific/Hydroponics/maize.rsi
     state: harvest
   - type: OreVein
-    currentOre: WildMaize
+    currentOre: N14WildMaize
   - type: Gatherable
     toolWhitelist:
       components:
@@ -475,7 +453,7 @@
   - type: Sprite
     state: wild_mesquite
   - type: OreVein
-    currentOre: MesquitePods
+    currentOre: N14MesquitePods
   - type: Gatherable
     toolWhitelist:
       components:
@@ -506,7 +484,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: WildMutfruit
+    currentOre: N14WildMutfruit
   - type: Gatherable
     toolWhitelist:
       components:
@@ -529,7 +507,7 @@
     sprite: Objects/Specific/Hydroponics/nettle.rsi
     state: harvest
   - type: OreVein
-    currentOre: WildNettle
+    currentOre: N14WildNettle
   - type: Gatherable
     toolWhitelist:
       components:
@@ -552,7 +530,7 @@
     sprite: Nuclear14/Objects/Specific/Hydroponics/onion.rsi
     state: harvest
   - type: OreVein
-    currentOre: WildOnion
+    currentOre: N14WildOnion
   - type: Gatherable
     toolWhitelist:
       components:
@@ -574,7 +552,7 @@
   - type: Sprite
     state: wild_pinyon
   - type: OreVein
-    currentOre: PinyonNuts
+    currentOre: N14PinyonNuts
   - type: Gatherable
     toolWhitelist:
       components:
@@ -596,7 +574,7 @@
   - type: Sprite
     state: wild_prickly
   - type: OreVein
-    currentOre: WildPrickly
+    currentOre: N14WildPrickly
   - type: Gatherable
     toolWhitelist:
       components:
@@ -619,7 +597,7 @@
     sprite: Nuclear14/Objects/Specific/Hydroponics/razorgrain.rsi
     state: harvest
   - type: OreVein
-    currentOre: WildRazorgrain
+    currentOre: N14WildRazorgrain
   - type: Gatherable
     toolWhitelist:
       components:
@@ -642,7 +620,7 @@
     sprite: Nuclear14/Objects/Specific/Hydroponics/starlight.rsi
     state: harvest
   - type: OreVein
-    currentOre: WildStarlightBerries
+    currentOre: N14WildStarlightBerries
   - type: Gatherable
     toolWhitelist:
       components:
@@ -673,7 +651,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: WildTarberries
+    currentOre: N14WildTarberries
   - type: Gatherable
     toolWhitelist:
       components:
@@ -695,7 +673,7 @@
   - type: Sprite
     state: wild_tato
   - type: OreVein
-    currentOre: WildTato
+    currentOre: N14WildTato
   - type: Gatherable
     toolWhitelist:
       components:
@@ -717,7 +695,7 @@
   - type: Sprite
     state: wild_horsenettle
   - type: OreVein
-    currentOre: WildWhiteHorsenettle
+    currentOre: N14WildWhiteHorsenettle
   - type: Gatherable
     toolWhitelist:
       components:
@@ -747,7 +725,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: WildXander
+    currentOre: N14WildXander
   - type: Gatherable
     toolWhitelist:
       components:
@@ -812,18 +790,18 @@
     state: AgaveLeaf
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize (was commented out but maps still reference it)
   - type: Stack
-    stackType: AgaveLeaf
+    stackType: N14AgaveLeaf
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractAgaveNectar
+      - ReagentId: N14ExtractAgaveNectar
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractAgaveNectar
+      - ReagentId: N14ExtractAgaveNectar
         Quantity: 10
   - type: Produce
     plantId: N14WildAgave
@@ -840,18 +818,18 @@
     state: BananaYucca
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: WildBananaYucca
+    stackType: N14WildBananaYucca
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractBananaYucca
+      - ReagentId: N14ExtractBananaYucca
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractBananaYucca
+      - ReagentId: N14ExtractBananaYucca
         Quantity: 10
   - type: Produce
     plantId: N14WildBananaYucca
@@ -868,18 +846,18 @@
     state: BarrelCactusFruit
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: BarrelCactusFruit
+    stackType: N14BarrelCactusFruit
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractCactusWater
+      - ReagentId: N14ExtractCactusWater
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractCactusWater
+      - ReagentId: N14ExtractCactusWater
         Quantity: 10
   - type: Produce
     plantId: N14WildBarrelCactus
@@ -897,18 +875,18 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: WildBlackberries
+    stackType: N14WildBlackberries
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractBlackberries
+      - ReagentId: N14ExtractBlackberries
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractBlackberries
+      - ReagentId: N14ExtractBlackberries
         Quantity: 10
   - type: Produce
     plantId: N14WildBlackberry
@@ -925,18 +903,18 @@
     state: BrocFlower
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: BrocFlower
+    stackType: N14BrocFlower
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractBroc
+      - ReagentId: N14ExtractBroc
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractBroc
+      - ReagentId: N14ExtractBroc
         Quantity: 10
   - type: Produce
     plantId: N14WildBroc
@@ -953,18 +931,18 @@
     state: BuffaloGourd
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: WildBuffaloGourd
+    stackType: N14WildBuffaloGourd
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractBuffaloGourd
+      - ReagentId: N14ExtractBuffaloGourd
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractBuffaloGourd
+      - ReagentId: N14ExtractBuffaloGourd
         Quantity: 10
   - type: Produce
     plantId: N14WildBuffaloGourd
@@ -982,7 +960,7 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: WildCabbage
+    stackType: N14WildCabbage
     count: 1
   - type: FlavorProfile
     flavors:
@@ -991,12 +969,12 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractCabbage
+      - ReagentId: N14ExtractCabbage
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractCabbage
+      - ReagentId: N14ExtractCabbage
         Quantity: 10
   - type: Produce
     plantId: N14WildCabbage
@@ -1014,7 +992,7 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: WildCarrot
+    stackType: N14WildCarrot
     count: 1
   - type: FlavorProfile
     flavors:
@@ -1023,12 +1001,12 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractCarrot
+      - ReagentId: N14ExtractCarrot
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractCarrot
+      - ReagentId: N14ExtractCarrot
         Quantity: 10
   - type: Produce
     plantId: N14WildCarrot
@@ -1045,18 +1023,18 @@
     state: CaveFungus
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: CaveFungus
+    stackType: N14CaveFungus
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractFungus
+      - ReagentId: N14ExtractFungus
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractFungus
+      - ReagentId: N14ExtractFungus
         Quantity: 10
 
 - type: entity
@@ -1069,18 +1047,18 @@
     state: CaveFungusRad
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: CaveFungusRad
+    stackType: N14CaveFungusRad
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractFungusRad
+      - ReagentId: N14ExtractFungusRad
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractFungusRad
+      - ReagentId: N14ExtractFungusRad
         Quantity: 10
 
 - type: entity
@@ -1093,51 +1071,23 @@
     state: CoyoteTobacco
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: CoyoteTobacco
+    stackType: N14CoyoteTobacco
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractCoyoteTobacco
+      - ReagentId: N14ExtractCoyoteTobacco
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractCoyoteTobacco
+      - ReagentId: N14ExtractCoyoteTobacco
         Quantity: 10
   - type: Produce
     plantId: N14CoyoteTobacco
   - type: Seed
     plantId: N14CoyoteTobacco
-
-- type: entity
-  parent: N14FloraProduce
-  id: N14FloraProduceWildCannabis
-  name: cannabis leaves
-  description: Wild cannabis plant leaves.
-  components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Specific/Hydroponics/cannabis.rsi
-    state: produce
-  - type: Stack
-    stackType: Cannabis
-    count: 1
-  - type: Solution
-    solution:
-      maxVol: 10
-      reagents:
-      - ReagentId: ExtractCannabis
-        Quantity: 10
-  - type: Extractable
-    juiceSolution:
-      reagents:
-      - ReagentId: ExtractCannabis
-        Quantity: 10
-  - type: Produce
-    plantId: N14WildCannabis
-  - type: Seed
-    plantId: N14WildCannabis
 
 - type: entity
   parent: N14FloraProduce
@@ -1149,18 +1099,18 @@
     state: Datura
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: DaturaFlower
+    stackType: N14DaturaFlower
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractDatura
+      - ReagentId: N14ExtractDatura
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractDatura
+      - ReagentId: N14ExtractDatura
         Quantity: 10
   - type: Produce
     plantId: N14Datura
@@ -1178,18 +1128,18 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: WildGlowpepper
+    stackType: N14WildGlowpepper
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractGlowpepper
+      - ReagentId: N14ExtractGlowpepper
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractGlowpepper
+      - ReagentId: N14ExtractGlowpepper
         Quantity: 10
   - type: Produce
     plantId: N14WildGlowpepper
@@ -1207,18 +1157,18 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: WildMaize
+    stackType: N14WildMaize
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractMaize
+      - ReagentId: N14ExtractMaize
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractMaize
+      - ReagentId: N14ExtractMaize
         Quantity: 10
   - type: Produce
     plantId: N14WildMaize
@@ -1235,18 +1185,18 @@
     state: MesquitePod
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: MesquitePods
+    stackType: N14MesquitePods
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractHoneyMesquitePod
+      - ReagentId: N14ExtractHoneyMesquitePod
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractHoneyMesquitePod
+      - ReagentId: N14ExtractHoneyMesquitePod
         Quantity: 10
   - type: Produce
     plantId: N14WildMesquite
@@ -1263,18 +1213,18 @@
     state: Mutfruit
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: Mutfruit
+    stackType: N14Mutfruit
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractMutfruit
+      - ReagentId: N14ExtractMutfruit
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractMutfruit
+      - ReagentId: N14ExtractMutfruit
         Quantity: 10
   - type: Produce
     plantId: N14WildMutfruit
@@ -1292,18 +1242,18 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: Nettles
+    stackType: N14Nettles
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractNettle
+      - ReagentId: N14ExtractNettle
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractNettle
+      - ReagentId: N14ExtractNettle
         Quantity: 10
   - type: Produce
     plantId: N14WildNettle
@@ -1321,7 +1271,7 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: WildOnion
+    stackType: N14WildOnion
     count: 1
   - type: FlavorProfile
     flavors:
@@ -1355,18 +1305,18 @@
     state: PinyonNuts
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: PinyonNuts
+    stackType: N14PinyonNuts
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractPinyon
+      - ReagentId: N14ExtractPinyon
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractPinyon
+      - ReagentId: N14ExtractPinyon
         Quantity: 10
   - type: Produce
     plantId: N14WildPinyon
@@ -1383,18 +1333,18 @@
     state: PricklyPear
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: PricklyPear
+    stackType: N14PricklyPear
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractPricklyPearFruit
+      - ReagentId: N14ExtractPricklyPearFruit
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractPricklyPearFruit
+      - ReagentId: N14ExtractPricklyPearFruit
         Quantity: 10
 
 - type: entity
@@ -1408,7 +1358,7 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: ExtractRazorgrainFlour #it should be a goal to make this interchangeable with flour in recipes. -Hazel
+      - ReagentId: N14ExtractRazorgrainFlour #it should be a goal to make this interchangeable with flour in recipes. -Hazel
         Quantity: 10
   - type: Produce
     plantId: N14WildRazorgrain
@@ -1426,18 +1376,18 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: WildStarlightBerries
+    stackType: N14WildStarlightBerries
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractStarlightBerries
+      - ReagentId: N14ExtractStarlightBerries
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractStarlightBerries
+      - ReagentId: N14ExtractStarlightBerries
         Quantity: 10
   - type: Produce
     plantId: N14Starlight
@@ -1455,18 +1405,18 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: WildTarberries
+    stackType: N14WildTarberries
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractTarberries
+      - ReagentId: N14ExtractTarberries
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractTarberries
+      - ReagentId: N14ExtractTarberries
         Quantity: 10
   - type: Produce
     plantId: N14Tarberry
@@ -1483,18 +1433,18 @@
     state: Tato
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: WildTato #This should be used in place of... either tomatoes, potatoes, or both, I guess. -Hazel
+    stackType: N14WildTato #This should be used in place of... either tomatoes, potatoes, or both, I guess. -Hazel
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractTato
+      - ReagentId: N14ExtractTato
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractTato
+      - ReagentId: N14ExtractTato
         Quantity: 10
   - type: Produce
     plantId: N14WildTato
@@ -1511,18 +1461,18 @@
     state: WhiteHorsenettle
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: WildWhiteHorsenettle
+    stackType: N14WildWhiteHorsenettle
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractWhiteHorsenettle
+      - ReagentId: N14ExtractWhiteHorsenettle
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractWhiteHorsenettle
+      - ReagentId: N14ExtractWhiteHorsenettle
         Quantity: 10
   - type: Produce
     plantId: N14WildWhiteHorsenettle
@@ -1539,18 +1489,18 @@
     state: xander_root
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: XanderRoot
+    stackType: N14XanderRoot
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ExtractXander
+      - ReagentId: N14ExtractXander
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ExtractXander
+      - ReagentId: N14ExtractXander
         Quantity: 10
   - type: Produce
     plantId: N14WildXander

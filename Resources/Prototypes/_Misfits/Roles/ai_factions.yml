@@ -1,101 +1,83 @@
-# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Roles/ai_factions.yml
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Roles/ai_factions.yml, Resources/Prototypes/_Nuclear14/Roles/ai_factions.yml
 
 - type: npcFaction
-  id: PlayerSentryBot
+  id: MisfitsPlayerSentryBot
   friendly:
-  - HostileRobot
+  - N14HostileRobot
 
 # #Misfits Add - Player Super Mutant faction for FEV Mutant job prototypes.
 # Kept separate from the NPC SuperMutant faction so NPC mutants don't auto-aggro player mutants.
 
 - type: npcFaction
-  id: BrotherhoodOfSteel
+  id: MisfitsBrotherhoodOfSteel
   friendly:
-  - BrotherhoodOfSteelSecureArea
+  - MisfitsBrotherhoodOfSteelSecureArea
   hostile:
-  - WastelandInsect
-  - WastelandAnimal
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - HostileRobot
-  - Enclave
-  - Feral
+  - N14WastelandInsect
+  - N14WastelandAnimal
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14HostileRobot
+  - N14Enclave
+  - N14Feral
 
 - type: npcFaction
-  id: BrotherhoodOfSteelSecureArea
+  id: MisfitsBrotherhoodOfSteelSecureArea
   friendly:
-  - BrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteel
   hostile:
-  - Wastelander
-  - CaravanCompany
-  - CaravanCompanySecureArea
-  - NCR
-  - NCRSecureArea
-  - Rangers
-  - Townsfolk
-  - TownsfolkSecureArea
-  - Tribal
-  - TribalSecureArea
-  - Vault
-  - VaultSecureArea
-  - Zetan
-  - WastelandAnimal
-  - WastelandInsect
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - CaesarLegion
-  - HostileRobot
-  - Enclave
-  - Feral
+  - N14Wastelander
+  - N14CaravanCompany
+  - N14CaravanCompanySecureArea
+  - N14NCR
+  - N14NCRSecureArea
+  - N14Rangers
+  - N14Townsfolk
+  - N14TownsfolkSecureArea
+  - N14Tribal
+  - N14TribalSecureArea
+  - N14Vault
+  - N14VaultSecureArea
+  - N14Zetan
+  - N14WastelandAnimal
+  - N14WastelandInsect
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - CorvaxCaesarLegion
+  - N14HostileRobot
+  - N14Enclave
+  - N14Feral
 
 # #Misfits Add - Enclave remnant faction for player jobs and future map-side automation.
 
 - type: npcFaction
-  id: Enclave
-  hostile:
-  - BrotherhoodOfSteel
-  - BrotherhoodOfSteelSecureArea
-  - NCR
-  - NCRSecureArea
-  - CaesarLegion
-  - WastelandInsect
-  - WastelandAnimal
-  - Deathclaw
-  - Raider
-  - Feral
-
-# #Misfits Add - Followers of the Apocalypse player faction.
-# Used by BuildFactionFilter to target death-alert chat messages at Followers players.
-# Neutral to all factions — Followers are non-hostile humanitarians.
-
-- type: npcFaction
-  id: Followers
+  id: MisfitsFollowers
 
 # #Misfits Add - Deathclaw faction. Hostile to everything, neutral only to other deathclaws.
 
 - type: npcFaction
-  id: Deathclaw
+  id: MisfitsSuperMutant
   hostile:
-  - Wastelander
-  - BrotherhoodOfSteel
-  - BrotherhoodOfSteelSecureArea
-  - CaravanCompany
-  - CaravanCompanySecureArea
-  - NCR
-  - NCRSecureArea
-  - Rangers
-  - Townsfolk
-  - TownsfolkSecureArea
-  - Tribal
-  - TribalSecureArea
-  - Vault
-  - VaultSecureArea
-  - Zetan
-  - WastelandAnimal
-  - WastelandInsect
-  - Raider
-  - HostileRobot
-  - Feral
-  - CaesarLegion
-  - SuperMutant
-  - Enclave
+  - N14Wastelander
+  - MisfitsBrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteelSecureArea
+  - N14CaravanCompany
+  - N14CaravanCompanySecureArea
+  - N14NCR
+  - N14NCRSecureArea
+  - N14Rangers
+  - N14Townsfolk
+  - N14TownsfolkSecureArea
+  - N14Tribal
+  - N14TribalSecureArea
+  - N14Vault
+  - N14VaultSecureArea
+  - N14Zetan #Misfits Add - Super Mutants attack all, including Zetans
+  - N14Raider #Misfits Add - Super Mutants attack all, including Raiders
+  - N14Enclave #Misfits Add - Super Mutants attack all, including Enclave
+  - N14WastelandInsect
+  - N14WastelandAnimal
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14HostileRobot
+  - N14Feral
+  - CorvaxCaesarLegion #Corvax-Legion

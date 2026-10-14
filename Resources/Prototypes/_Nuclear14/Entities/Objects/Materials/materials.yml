@@ -79,7 +79,7 @@
 
 - type: entity
   parent: N14MaterialBasePowder
-  id: SulfurPowder
+  id: N14SulfurPowder
   name: sulfur
   categories: [ HideSpawnMenu ]
   components:
@@ -107,16 +107,16 @@
     price: 1 # PH
 
 - type: entity
-  parent: SulfurPowder
-  id: SulfurPowder10
+  parent: N14SulfurPowder
+  id: N14SulfurPowder10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: SulfurPowder
-  id: SulfurPowder1
+  parent: N14SulfurPowder
+  id: N14SulfurPowder1
   suffix: Single
   components:
   - type: Stack
@@ -242,7 +242,7 @@
 
 - type: entity
   parent: Charcoal
-  id: Charcoal10
+  id: N14Charcoal10
   suffix: 10
   components:
   - type: Stack
@@ -250,7 +250,7 @@
 
 - type: entity
   parent: Charcoal
-  id: Charcoal1
+  id: N14Charcoal1
   suffix: Single
   components:
   - type: Stack
@@ -321,7 +321,7 @@
     - state: leather_3
       map: ["base"]
   - type: Stack
-    stackType: Leather
+    stackType: N14Leather
     count: 15
     baseLayer: base
     layerStates:
@@ -330,7 +330,7 @@
     - leather_3
   - type: PhysicalComposition
     materialComposition:
-      Leather: 100
+      N14Leather: 100
   - type: StackPrice # Forge-Change
     price: 2
 
@@ -357,7 +357,7 @@
     - state: raw_leather_2
       map: ["base"]
   - type: Stack
-    stackType: RawLeather
+    stackType: N14RawLeather
     count: 15
     baseLayer: base
     layerStates:
@@ -365,7 +365,7 @@
     - raw_leather_2
   - type: PhysicalComposition
     materialComposition:
-      RawLeather: 100
+      N14RawLeather: 100
   - type: StackPrice # Forge-Change
     price: 1 # PH
 
@@ -393,7 +393,7 @@
     - state: chitin_3
       map: ["base"]
   - type: Stack
-    stackType: AntChitin
+    stackType: N14AntChitin
     count: 3
     baseLayer: base
     layerStates:
@@ -403,7 +403,7 @@
     - chitin_3
   - type: PhysicalComposition
     materialComposition:
-      AntChitin: 100
+      N14AntChitin: 100
   - type: Item
     size: Small
   - type: StackPrice # Forge-Change
@@ -434,7 +434,7 @@
     state: rad_exo
   - type: PhysicalComposition
     materialComposition:
-      Exoskeleton: 100
+      N14Exoskeleton: 100
   - type: Item
     size: Small
   - type: StackPrice # Forge-Change
@@ -456,7 +456,7 @@
     - state: thread
       map: ["base"]
   - type: Stack
-    stackType: Thread
+    stackType: N14Thread
     count: 10
     baseLayer: base
     layerStates:
@@ -465,7 +465,7 @@
     - thread
   - type: PhysicalComposition
     materialComposition:
-      Thread: 100
+      N14Thread: 100
   - type: Item
     size: Small
   - type: StackPrice # Forge-Change
@@ -495,7 +495,7 @@
   # - type: Craftable # Corvax-Change  # #Misfits Remove: Stalker14 crafting system
   - type: Tag
     tags:
-    - Scrap
+    - N14Scrap
 
 - type: entity
   parent: N14ScrapBase
@@ -506,7 +506,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      Scrap: 100
+      N14Scrap: 100
   - type: Stack
     count: 30
     stackType: N14Scrap
@@ -545,7 +545,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      ScrapElectronic: 100
+      N14ScrapElectronic: 100
   - type: Stack
     count: 30
     stackType: N14ScrapElectronic
@@ -623,7 +623,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      ScrapGold: 100
+      N14ScrapGold: 100
   - type: Stack
     count: 30
     stackType: N14ScrapGold
@@ -656,7 +656,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      ScrapCopper: 100
+      N14ScrapCopper: 100
   - type: Stack
     count: 30
     stackType: N14ScrapCopper
@@ -689,7 +689,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      ScrapBrass: 100
+      N14ScrapBrass: 100
   - type: Stack
     count: 30
     stackType: N14ScrapBrass
@@ -722,7 +722,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      ScrapLead: 100
+      N14ScrapLead: 100
   - type: Stack
     count: 30
     stackType: N14ScrapLead
@@ -746,108 +746,3 @@
 
 # #Misfits Add: Construction materials for concrete and brick building
 #MARK: Cement
-
-- type: entity
-  parent: N14MaterialBasePowder
-  id: N14MaterialCement
-  name: cement
-  description: Cement powder used for making concrete.
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Stack
-    stackType: N14Cement
-    baseLayer: powder_lead
-  - type: PhysicalComposition
-    materialComposition:
-      Cement: 100
-  - type: Sprite
-    sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
-    state: powder_brass
-    layers:
-    - state: powder_brass
-      map: ["base"]
-  - type: Item
-    size: Small
-  - type: Solution
-    id: powder
-    solution:
-      maxVol: 5
-      reagents:
-      - ReagentId: Cement
-        Quantity: 5
-  - type: Tag
-    tags:
-    - Cement
-
-- type: entity
-  parent: N14MaterialCement
-  id: N14MaterialCement1
-  suffix: 1
-  components:
-  - type: Stack
-    stackType: N14Cement
-    count: 1
-
-#MARK: Concrete
-
-- type: entity
-  parent: N14MaterialBase
-  id: N14MaterialConcrete
-  name: concrete
-  description: Solid concrete mix ready for construction.
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Stack
-    stackType: N14Concrete
-  - type: PhysicalComposition
-    materialComposition:
-      Concrete: 100
-  - type: Sprite
-    sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
-    state: scrap_3
-    color: "#b0b0b0"
-  - type: Item
-    size: Small
-  - type: Tag
-    tags:
-    - Concrete
-
-- type: entity
-  parent: N14MaterialConcrete
-  id: N14MaterialConcrete1
-  suffix: 1
-  components:
-  - type: Stack
-    count: 1
-
-#MARK: Brick
-
-- type: entity
-  parent: N14MaterialBase
-  id: N14MaterialBrick
-  name: adobe brick
-  description: Clay brick for construction.
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Stack
-    stackType: N14Brick
-  - type: PhysicalComposition
-    materialComposition:
-      Brick: 100
-  - type: Sprite
-    sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
-    state: adobe_brick
-    color: "#8b4513"
-  - type: Item
-    size: Small
-  - type: Tag
-    tags:
-    - Brick
-
-- type: entity
-  parent: N14MaterialBrick
-  id: N14MaterialBrick1
-  suffix: 1
-  components:
-  - type: Stack
-    count: 1

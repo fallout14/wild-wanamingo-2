@@ -1,0 +1,49 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Misfits/Entities/Objects/Misc/bos_identification.yml
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDBrotherhoodHolotag
+  name: senior scribe's holotags
+  description: An ID holotag worn by the Brotherhood of Steel.
+  suffix: Senior Scribe
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/identification.rsi
+    state: bos_holotag
+  - type: IdCard
+    nameLocId: n14-id-holotag-name
+    fullNameLocId: n14-id-holotag-full-name
+  - type: PresetIdCard
+  - type: Tag
+    tags:
+    - MisfitsIdCardBrotherhood
+  - type: ClothingAddFaction
+    faction: MisfitsBrotherhoodOfSteel
+
+- type: entity
+  parent: N14IDBrotherhoodHolotag
+  id: N14IDBrotherhoodHolotagCommander
+  name: head paladin's holotags
+  description: An ID holotag worn by the Head Paladin of the Brotherhood of Steel.
+  suffix: Head Paladin
+  components:
+  - type: PresetIdCard
+    job: N14BoSMidPaladinCommander
+
+##MARK: Brotherhood Unified Live Jobs
+
+- type: entity
+  parent: N14IDNCRDogtag
+  id: N14IDNCRDogtagWS
+  name: specialist's dogtags
+  description: An ID dogtag worn by NCR specialists.
+  suffix: Specialist
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/identification.rsi
+    state: ncrdogtag
+  - type: PresetIdCard
+    job: N14NCRWS
+
+#Misfits Add: Legacy Washington holotag ID compatibility for existing map entities.

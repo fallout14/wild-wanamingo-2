@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier4Weapon/Tier4WeaponTables/Tier4WeaponMelee/Tier4WeaponMeleeTwoHand.yml
 
 - type: entityTable
-  id: M14WeaponLootTier4_MeleeBluntTwoHanded
+  id: MisfitsM14WeaponLootTier4_MeleeBluntTwoHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -16,7 +16,7 @@
       id: N14TribalBigClubDecorated
 
 - type: entityTable
-  id: M14WeaponLootTier4_MeleeSharpTwoHanded
+  id: MisfitsM14WeaponLootTier4_MeleeSharpTwoHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -33,7 +33,7 @@
       id: N14BaseAxe
 
 - type: entityTable
-  id: M14WeaponLootTier4_MeleeOtherTwoHanded
+  id: MisfitsM14WeaponLootTier4_MeleeOtherTwoHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector

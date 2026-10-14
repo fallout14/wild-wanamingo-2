@@ -1,0 +1,614 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Snipers/snipers.yml
+
+- type: entity
+  name: trail carbine
+  parent: N14WeaponSniperHunting
+  id: MisfitsWeaponSniper357TrailCarbine
+  description: A short, entry-level lever action carbine. Uses .357 magnum ammo, and will also chamber .38 special.
+  components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Clothing
+    sprite: Misfits/Objects/Weapons/Guns/Snipers/trailcarbine.rsi
+  - type: Sprite
+    sprite: Misfits/Objects/Weapons/Guns/Snipers/trailcarbine.rsi
+  - type: Item # Forge-Change
+    size: Large # Forge-Change
+  - type: Wieldable
+  - type: GunWieldBonus
+    minAngle: -23
+    maxAngle: -104
+  - type: Gun
+    minAngle: 24
+    maxAngle: 105
+    angleIncrease: 4
+    angleDecay: 16
+    fireRate: 2
+    soundGunshot:
+      collection: N14LeverCarbineGunshot
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - MisfitsCartridgePistol357
+      - MisfitsSpeedLoaderTube357
+    capacity: 10 # #Misfits Tweak - entry-level, was 12
+    proto: MisfitsCartridgePistol357
+  - type: EyeCursorOffset
+    maxOffset: 4
+    pvsIncrease: 0.4
+  - type: StaticPrice
+    price: 75
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
+      types:
+        Piercing: 0
+
+- type: entity
+  name: lever action rifle
+  parent: N14WeaponSniperHunting
+  id: MisfitsWeaponSniper10mmLeverRifle
+  description: A long lever action repeater rifle. Its long barrel gets a little more out of each round. Uses 10mm ammo.
+  components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Snipers/leverrifle.rsi
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Snipers/leverrifle.rsi
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - long barrel: 10mm 15 + 7 = 22, on par with the cowboy repeater
+      types:
+        Piercing: 7
+  - type: Gun
+    fireRate: 2.5 # #Misfits Tweak - mid-tier lever action, was 1.2
+    soundGunshot:
+      collection: N14LeverRifleGunshot
+  - type: EyeCursorOffset
+    maxOffset: 4
+    pvsIncrease: 0.4
+  - type: StaticPrice
+    price: 90
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - N14CartridgePistol10
+    proto: N14CartridgePistol10
+  - type: FirearmAttachmentHost
+    opticVisualState: leveraction_scope
+    opticVisualOffset: 0.21875, 0.4375
+
+- type: entity
+  name: ross rifle
+  parent: N14WeaponSniperHunting
+  id: MisfitsWeaponSniper303Ross
+  description: A well-preserved bolt action canadian service rifle. Uses .303 British ammo.
+  components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: FirearmAttachmentHost
+    bayonetVisualOffset: 0.75, 0.75
+    enableOpticSlot: true
+    muzzleSlot:
+      name: Muzzle attachment
+      locked: false
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        tags: []
+        requireAll: false
+        components:
+        - BayonetAttachment
+    opticVisualState: battlerifle_scope
+    opticVisualOffset: 0.125, 0.375
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Snipers/ross.rsi
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Snipers/ross.rsi
+  - type: Wieldable
+  - type: GunWieldBonus
+    minAngle: -23
+    maxAngle: -104
+  - type: Gun
+    fireRate: 1.5
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - MisfitsCartridge303Rifle
+    capacity: 6
+    proto: MisfitsCartridge303
+  - type: EyeCursorOffset
+    maxOffset: 4
+    pvsIncrease: 0.4
+  - type: StaticPrice
+    price: 50 # Forge-Change
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
+      types:
+        Piercing: 0
+
+# Forge-add-start
+
+- type: entity
+  name: 308 Sniper Rifle
+  parent: N14WeaponRifleBase
+  id: MisfitsWeaponRifle308SniperRifle
+  description:  sniper rifle chambered in .308, its chamber can handle overpressured .308 ammo.
+  components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Snipers/308SniperRifle.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Snipers/308SniperRifle.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: GunWieldBonus
+    minAngle: -23
+    maxAngle: -44
+  - type: Gun
+    minAngle: 24
+    maxAngle: 45
+    angleIncrease: 4
+    angleDecay: 16
+    soundGunshot:
+      collection: N14MarksmanGunshot
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MisfitsMagazineOver308RifleSniper
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MisfitsMagazineOver308RifleSnipers
+            - MisfitsMagazine308RifleSnipers
+      gun_chamber:
+        name: Chamber
+        startingItem: MisfitsCartridgeOver308Rifle
+        priority: 1
+        whitelist:
+          tags:
+            - MisfitsCartridgeOver308Rifle
+            - N14Cartridge308Rifle
+  - type: EyeCursorOffset
+    maxOffset: 4
+    pvsIncrease: 0.4
+  - type: StaticPrice
+    price: 175
+  - type: Scope
+    requireWielding: true
+    zoomLevels:
+    - name: 2x
+      zoom: 1.2
+      offset: 11
+      allowMovement: false
+      doAfter: 0.6
+    - name: 4x
+      zoom: 1.0
+      offset: 15
+      allowMovement: false
+      doAfter: 0.8
+    - name: 6x
+      zoom: 0.8
+      offset: 21
+      allowMovement: false
+      doAfter: 1.0
+# Forge-add-end
+
+# #Misfits Add — Cowboy Repeater, Paciencia, Ratslayer, M1 Carbine, Rangemaster
+# Ported from Fortune13/LoneStar (https://github.com/Cythisiax/LoneStar/), a SS13 Fallout fork.
+
+- type: entity
+  name: cowboy repeater
+  parent: N14WeaponSniperHunting
+  id: MisfitsWeaponSniperCowboyRepeater
+  description: A lever-action rifle in .357 Magnum with worn brown furniture. The weapon of gunslingers and honest wastelanders. Holds twelve rounds in the tubular magazine and cycles fast enough to feel semi-automatic.
+  components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Snipers/cowboyrepeater.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Snipers/cowboyrepeater.rsi
+  - type: Wieldable
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: GunWieldBonus
+    minAngle: -18
+    maxAngle: -65
+  - type: Gun
+    minAngle: 18
+    maxAngle: 65
+    angleIncrease: 3
+    angleDecay: 14
+    fireRate: 2.5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: N14LeverCarbineGunshot
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - MisfitsCartridgePistol357
+      - MisfitsSpeedLoaderTube357 # #Misfits Add
+    capacity: 12
+    proto: MisfitsCartridgePistol357
+  - type: EyeCursorOffset
+    maxOffset: 4
+    pvsIncrease: 0.4
+  - type: StaticPrice
+    price: 80
+  - type: FirearmAttachmentHost
+    opticVisualState: leveraction_scope
+    opticVisualOffset: 0.25, 0.46875
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
+      types:
+        Piercing: 0
+
+- type: entity
+  name: Paciencia
+  parent: N14WeaponSniperHunting
+  id: MisfitsWeaponSniperPaciencia
+  description: A bolt-action hunting rifle with a Mexican flag hand-painted on the stock. Only three rounds in the chamber, but each shot hits like a freight train. The name means patience. You will need it.
+  components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Snipers/paciencia.rsi
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Snipers/paciencia.rsi
+  - type: Wieldable
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.65
+    sprintModifier: 0.65
+  - type: GunWieldBonus
+    minAngle: -22
+    maxAngle: -100
+  - type: Gun
+    minAngle: 22
+    maxAngle: 60
+    angleIncrease: 3
+    angleDecay: 14
+    fireRate: 1.0
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: N14SniperHuntingGunshot
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - N14Cartridge308Rifle
+    capacity: 3
+    proto: N14Cartridge308Rifle
+  - type: EyeCursorOffset
+    maxOffset: 3
+    pvsIncrease: 0.3
+  - type: StaticPrice
+    price: 700
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - potent three-shot hunting rifle: .308 38 + 20 = 58 (2-hit crit)
+      types:
+        Piercing: 20
+
+- type: entity
+  name: Ratslayer
+  parent: N14WeaponSniper556VarmintRifle
+  id: MisfitsWeaponSniperRatslayer
+  description: A varmint rifle fitted with an integrated suppressor, scope, and camouflage paint. Found cached in the Broc Flower Cave. Whisper-quiet and surgically accurate. Whoever left it there was good at their job.
+  components:
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Snipers/ratslayer.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Snipers/ratslayer.rsi
+  - type: Gun
+    minAngle: 18
+    maxAngle: 80
+    angleIncrease: 3
+    angleDecay: 16
+    fireRate: 2.2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: N14SniperVarmintGunshot
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  name: paratrooper carbine
+  parent: N14WeaponRifleBase
+  id: MisfitsWeaponRifle10mmM1Carbine
+  description: A lightweight semi-automatic 10mm carbine with a skeletonized folding stock and detachable magazines. Fold the stock for compact storage and reduced recoil.
+  components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Foldable
+    canFoldInsideContainer: true
+    foldVerbText: gun-fold-stock
+    unfoldVerbText: gun-unfold-stock
+  - type: FoldableStock
+    foldedSize: Normal
+    unfoldedSize: Large
+    foldedRecoilMultiplier: 0.8
+  - type: GunDamageModifier
+    damage:
+      types:
+        Piercing: 4
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Rifles/m1a1carbine.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Rifles/m1a1carbine.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+  - type: MagazineVisuals
+  - type: Wieldable
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: GunWieldBonus
+    minAngle: -14
+    maxAngle: -48
+  - type: Gun
+    minAngle: 14
+    maxAngle: 48
+    angleIncrease: 2
+    angleDecay: 12
+    fireRate: 4
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: N14OldCarbineGunshot
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: N14MagazinePistol10mm
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - N14MagazineSMG10mm
+          - N14MagazinePistol10mm
+      gun_chamber:
+        name: Chamber
+        startingItem: N14CartridgePistol10
+        priority: 1
+        whitelist:
+          tags:
+          - N14CartridgePistol10
+  - type: EyeCursorOffset
+    maxOffset: 3
+    pvsIncrease: 0.3
+  - type: StaticPrice
+    price: 80
+  - type: FirearmAttachmentHost
+    bayonetVisualOffset: 0.71875, 0.75
+
+- type: entity
+  name: Colt Rangemaster
+  parent: N14WeaponRifleBase
+  id: MisfitsWeaponRifle556Rangemaster
+  description: 'A Colt Rangemaster semi-automatic hunting rifle in .223 with a long barrel and a mount for an optional scope. The classic wasteland hunting rifle: slow and deliberate, but it reaches out and holds its punch at range.'
+  components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - hunting rifle: .223 20 + 10 = 30 (4-hit crit)
+      types:
+        Piercing: 10
+  - type: FirearmAttachmentHost
+    enableOpticSlot: true
+    opticVisualState: rangemaster_scope
+    opticVisualOffset: 0.09375, 0.3125
+    opticSlot:
+      name: Optic
+      priority: 4
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        tags:
+        - N14RifleScope
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Rifles/rangemaster.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Rifles/rangemaster.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Wieldable
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.75
+    sprintModifier: 0.75
+  - type: GunWieldBonus
+    minAngle: -22
+    maxAngle: -80
+  - type: Gun
+    minAngle: 22
+    maxAngle: 80
+    angleIncrease: 4
+    angleDecay: 16
+    fireRate: 1.8 # #Misfits Tweak - was 2.5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: N14BattleRifleGunshot
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: N14Magazine556Rifle
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - N14Magazine556Rifle
+      gun_chamber:
+        name: Chamber
+        startingItem: N14Cartridge556Rifle
+        priority: 1
+        whitelist:
+          tags:
+          - N14Cartridge556Rifle
+  - type: EyeCursorOffset
+    maxOffset: 3
+    pvsIncrease: 0.3
+  - type: StaticPrice
+    price: 150
+  - type: GunDamageFalloffOverride
+    falloffStartTiles: 14 # long barrel holds velocity
+    maxFalloffTiles: 26
+    minDamageMultiplier: 0.8

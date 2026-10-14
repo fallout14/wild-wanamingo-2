@@ -86,13 +86,13 @@
     id: well
     solution:
       reagents:
-      - ReagentId: WaterDirty
+      - ReagentId: N14WaterDirty
         Quantity: 500
   - type: NamedSolutionRegeneration
     solution: well
     generated:
       reagents:
-      - ReagentId: WaterDirty
+      - ReagentId: N14WaterDirty
         Quantity: 1
 
 - type: entity
@@ -104,11 +104,11 @@
     id: well
     solution:
       reagents:
-      - ReagentId: WaterIrradiated
+      - ReagentId: N14WaterIrradiated
         Quantity: 500
   - type: NamedSolutionRegeneration
     solution: well
     generated:
       reagents:
-      - ReagentId: WaterIrradiated
+      - ReagentId: N14WaterIrradiated
         Quantity: 1

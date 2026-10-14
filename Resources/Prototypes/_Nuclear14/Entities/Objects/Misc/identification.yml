@@ -40,10 +40,10 @@
   - type: PresetIdCard
   - type: Tag
     tags:
-    - IdCardVault
+    - N14IdCardVault
     - DoorBumpOpener
   - type: ClothingAddFaction
-    faction: Vault
+    faction: N14Vault
 
 - type: entity
   parent: N14IDCardVault
@@ -139,8 +139,8 @@
     state: doctor
   - type: Access
     tags:
-    - FotA
-    - FotADoctor
+    - MisfitsFotA
+    - MisfitsFotADoctor
 
 
 # #Misfits Change - BoS Midwest holotags commented out.
@@ -275,12 +275,12 @@
     nameLocId: n14-id-dogtag-name
     fullNameLocId: n14-id-dogtag-full-name
   - type: PresetIdCard
-    job: NCRCadet #Misfits Change - was NCRSoldier
+    job: N14NCRCadet #Misfits Change - was NCRSoldier
   - type: Tag
     tags:
-    - IdCardNCR  # #Misfits Change - enables NCR shared map in Pip-Boy; all NCR dogtags inherit this via parent
+    - MisfitsIdCardNCR  # #Misfits Change - enables NCR shared map in Pip-Boy; all NCR dogtags inherit this via parent
   - type: ClothingAddFaction
-    faction: NCR
+    faction: N14NCR
 
 - type: entity
   parent: N14IDNCRDogtag
@@ -293,7 +293,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: ncrdogtag
   - type: PresetIdCard
-    job: NCRMedic
+    job: N14NCRMedic
 
 #Misfits Change - Start - commented out removed NCR job dogtag
 #- type: entity
@@ -321,7 +321,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: ncrdogtag
   - type: PresetIdCard
-    job: NCREngineer
+    job: N14NCREngineer
 
 - type: entity
   parent: N14IDNCRDogtag
@@ -334,7 +334,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: ncrdogtag
   - type: PresetIdCard
-    job: NCRNCO
+    job: N14NCRNCO
 
 - type: entity
   parent: N14IDNCRDogtag
@@ -347,7 +347,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: ncrdogtag
   - type: PresetIdCard
-    job: NCRExecutiveOfficer
+    job: MisfitsNCRExecutiveOfficer
 
 #MARK: Desert Rangers
 
@@ -361,7 +361,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: ranger_recruit
   - type: PresetIdCard
-    job: NCRPatrolRanger
+    job: MisfitsNCRPatrolRanger
   # #Misfits Fix - Tag every ranger badge so the Rangers TacMap Overwatch tab only
   # tracks Ranger personnel, not the whole NCR. This is the base of ALL ranger badges
   # (Desert Ranger, Elite, Chief, Republic Ranger). NOTE: a child Tag component
@@ -369,8 +369,8 @@
   # re-list IdCardNCR here to keep rangers on the standard NCR map/Pip-Boy feed.
   - type: Tag
     tags:
-    - IdCardNCR
-    - IdCardNCRRanger
+    - MisfitsIdCardNCR
+    - MisfitsIdCardNCRRanger
 
 - type: entity
   parent: N14IDBadgeNCRDesertRangerRecruit
@@ -382,7 +382,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: ranger
   - type: PresetIdCard
-    job: NCRFieldRanger #Misfits Change - was NCRRanger
+    job: MisfitsNCRFieldRanger #Misfits Change - was NCRRanger
 
 - type: entity
   parent: N14IDBadgeNCRDesertRangerRecruit
@@ -394,7 +394,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: ranger_elite
   - type: PresetIdCard
-    job: NCRVeteranRanger #Misfits Change - was NCRRangerVeteran
+    job: MisfitsNCRVeteranRanger #Misfits Change - was NCRRangerVeteran
 
 - type: entity
   parent: N14IDBadgeNCRDesertRangerRecruit
@@ -406,7 +406,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: ranger_chief
   - type: PresetIdCard
-    job: NCRVeteranRanger #Misfits Change - was NCRRangerVeteran
+    job: MisfitsNCRVeteranRanger #Misfits Change - was NCRRangerVeteran
 
 #MARK: NCR Rangers
 
@@ -423,9 +423,9 @@
   description: A passport used by townsfolk as ID.
   components:
   - type: ClothingAddFaction
-    faction: Townsfolk
+    faction: N14Townsfolk
   - type: PresetIdCard # Forge-Change
-    job: Townsperson # Forge-Change
+    job: N14Townsperson # Forge-Change
 
 - type: entity
   parent: N14IDPassportTownsfolk
@@ -437,18 +437,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: passport_presidential
   - type: PresetIdCard
-    job: TownShopkeeper
-
-- type: entity # Forge-Add-Start
-  parent: N14IDPassportTownsfolk
-  id: N14IDShopkeeperHelperTown
-  name: ShopkeepersHelper ID
-  description: A passport ID used by a town shopkeeper helper.
-  components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Misc/identification.rsi
-    state: passport_presidential
-  - type: PresetIdCard
+    job: N14TownShopkeeper
 
 - type: entity
   parent: N14IDPassportTownsfolk
@@ -460,7 +449,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: passport_presidential
   - type: PresetIdCard
-    job: TownMechanic
+    job: N14TownMechanic
 
 - type: entity
   parent: N14IDPassportTownsfolk
@@ -473,7 +462,7 @@
     state: passport_presidential
   - type: PresetIdCard
   - type: ClothingAddFaction
-    faction: Townsfolk
+    faction: N14Townsfolk
 
 - type: entity
   parent: N14IDPassportTownsfolk
@@ -485,9 +474,9 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: passport_presidential
   - type: PresetIdCard
-    job: WastelandBartender
+    job: N14WastelandBartender
   - type: ClothingAddFaction
-    faction: Townsfolk
+    faction: N14Townsfolk
 
 - type: entity
   parent: N14IDPassportTownsfolk
@@ -499,7 +488,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: deputy
   - type: PresetIdCard
-    job: TownDeputy
+    job: N14TownDeputy
 
 - type: entity
   parent: N14IDPassportTownsfolk
@@ -511,7 +500,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: sheriff
   - type: PresetIdCard
-    job: TownSheriff
+    job: N14TownSheriff
 
 - type: entity
   parent: N14IDPassportTownsfolk
@@ -523,7 +512,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: mayor
   - type: PresetIdCard
-    job: TownMayor
+    job: N14TownMayor
 
 - type: entity
   parent: N14IDPassportPhoto
@@ -536,7 +525,7 @@
     state: passport
   - type: PresetIdCard
   - type: ClothingAddFaction # Forge-Add
-    faction: Townsfolk
+    faction: N14Townsfolk
 
 # Wastelanders
 
@@ -550,7 +539,7 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: passport
   - type: PresetIdCard
-    job: WastelandFarmer
+    job: N14WastelandFarmer
 
 #MARK: Raiders / Tribes
 
@@ -564,14 +553,14 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: sawbone
   - type: PresetIdCard
-    job: TribalShaman # #Misfits Fix - updated job ID after TribalHealer was renamed to TribalShaman
+    job: MisfitsTribalShaman # #Misfits Fix - updated job ID after TribalHealer was renamed to TribalShaman
   # #Misfits Add - enables Tree TacMap tracking without dropping the inherited door tag.
   - type: Tag
     tags:
-    - IdCardTribe
+    - MisfitsIdCardTribe
     - DoorBumpOpener
   - type: ClothingAddFaction
-    faction: Tribal
+    faction: N14Tribal
 
 - type: entity
   parent: N14IDPassportBlank
@@ -583,14 +572,14 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: raider
   - type: PresetIdCard
-    job: Tribal
+    job: N14Tribal
   # #Misfits Add - enables Tree TacMap tracking without dropping the inherited door tag.
   - type: Tag
     tags:
-    - IdCardTribe
+    - MisfitsIdCardTribe
     - DoorBumpOpener
   - type: ClothingAddFaction
-    faction: Tribal
+    faction: N14Tribal
 
 - type: entity
   parent: N14IDPassportBlank
@@ -602,14 +591,14 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: enforcer
   - type: PresetIdCard
-    job: TribalFarmer
+    job: N14TribalFarmer
   # #Misfits Add - enables Tree TacMap tracking without dropping the inherited door tag.
   - type: Tag
     tags:
-    - IdCardTribe
+    - MisfitsIdCardTribe
     - DoorBumpOpener
   - type: ClothingAddFaction
-    faction: Tribal
+    faction: N14Tribal
 
 - type: entity
   parent: N14IDPassportBlank
@@ -621,70 +610,13 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: boss
   - type: PresetIdCard
-    job: TribalElder
+    job: N14TribalElder
   # #Misfits Add - enables Tree TacMap tracking without dropping the inherited door tag.
   - type: Tag
     tags:
-    - IdCardTribe
+    - MisfitsIdCardTribe
     - DoorBumpOpener
   - type: ClothingAddFaction
-    faction: Tribal
+    faction: N14Tribal
 
 # Followers
-
-- type: entity
-  parent: N14IDDoctor
-  id: N14IDFollowerVolunteer
-  name: followers (volunteer) ID
-  description: An ID card worn by the Followers of the Apocalypse.
-  components:
-  - type: Tag
-    tags:
-    - IdCardFollowers
-  - type: Access
-    tags:
-    - FotA
-
-- type: entity
-  parent: N14IDDoctor
-  id: N14IDFollowerDoctor
-  name: followers (doctor) ID
-  description: An ID card worn by the Followers of the Apocalypse.
-  components:
-  - type: Tag
-    tags:
-    - IdCardFollowers
-  - type: Access
-    tags:
-    - FotA
-    - FotADoctor
-
-- type: entity
-  parent: N14IDDoctor
-  id: N14IDFollowerGuard
-  name: followers (guard) ID
-  description: An ID card worn by the Followers of the Apocalypse.
-  components:
-  - type: Tag
-    tags:
-    - IdCardFollowers
-  - type: Access
-    tags:
-    - FotA
-
-- type: entity
-  parent: N14IDDoctor
-  id: N14IDFollowerHead
-  name: followers (head) ID
-  description: An ID card worn by the Followers of the Apocalypse.
-  components:
-  - type: Tag
-    tags:
-    - IdCardFollowers
-  - type: Access
-    tags:
-    - FotA
-    - FotADoctor
-    - FotAHead
-
-#MARK: Keys

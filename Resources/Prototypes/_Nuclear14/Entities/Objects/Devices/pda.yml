@@ -58,11 +58,11 @@
         components:
         - IdCard # #Misfits Add - accept any entity with IdCard component (belt-and-suspenders with tag list)
         tags:
-        - IdCardVault # Misfits Change
-        - IdCardBrotherhood #Misfits Change
-        - IdCardNCR #Misfits Change
-        - IdCardLegion # #Misfits Change
-        - IdCardWastelander # #Misfits Add - allows wastelander dogtags to be inserted
+        - N14IdCardVault # Misfits Change
+        - MisfitsIdCardBrotherhood #Misfits Change
+        - MisfitsIdCardNCR #Misfits Change
+        - MisfitsIdCardLegion # #Misfits Change
+        - MisfitsIdCardWastelander # #Misfits Add - allows wastelander dogtags to be inserted
   # #Misfits Add - Pip-Boy can read holotapes when they are used on it.
   # Opens the holotape's own UI (not the Pip-Boy's) since the PDA already has its own UserInterface.
   - type: HolotapeReader
@@ -85,31 +85,3 @@
 - type: entity
   parent: N14BasePipboy
   id: N14Pipboy
-
-- type: entity
-  parent: N14BasePipboy
-  id: N14NCRVeteranRangerPipboy
-  suffix: NCR Veteran Ranger
-  components:
-  - type: Pda
-    id: N14IDBadgeNCRDesertRangerElite
-
-- type: entity
-  parent: N14BasePipboy
-  id: N14NCRCommanderPipboy
-  suffix: NCR Captain
-  components:
-  - type: Pda
-    id: N14IDNCRDogtagCaptain
-
-# #Misfits Add - Wastelander Pip-Boy with pre-inserted dogtags for PipBoy Hub networking.
-
-- type: entity
-  parent: N14BasePipboy
-  id: N14WastelanderPipboy
-  suffix: Wastelander
-  components:
-  - type: Pda
-    id: N14ClothingNeckDogtags
-
-#MARK: Vault

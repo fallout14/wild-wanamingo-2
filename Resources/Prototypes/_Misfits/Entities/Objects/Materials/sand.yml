@@ -2,7 +2,7 @@
 
 - type: entity
   parent: N14MaterialBase
-  id: N14Sand
+  id: MisfitsSand
   name: sand
   description: A pile of coarse desert sand. Can be smelted into glass at a forge.
   categories: [ HideSpawnMenu ]
@@ -15,7 +15,7 @@
     - state: powder_brass
       map: ["base"]
   - type: Stack
-    stackType: N14Sand
+    stackType: MisfitsSand
     count: 15
     baseLayer: base
     layerStates:
@@ -24,7 +24,7 @@
     - powder_brass
   - type: PhysicalComposition
     materialComposition:
-      N14Sand: 100
+      MisfitsSand: 100
   - type: Item
     heldPrefix: powder_brass
     size: Small
@@ -35,24 +35,24 @@
     price: 1
 
 - type: entity
-  parent: N14Sand
-  id: N14Sand10
+  parent: MisfitsSand
+  id: MisfitsSand10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14Sand
-  id: N14Sand1
+  parent: MisfitsSand
+  id: MisfitsSand1
   suffix: Single
   components:
   - type: Stack
     count: 1
 
 - type: entity
-  parent: N14Sand
-  id: N14Sand5
+  parent: MisfitsSand
+  id: MisfitsSand5
   suffix: 5
   components:
   - type: Stack

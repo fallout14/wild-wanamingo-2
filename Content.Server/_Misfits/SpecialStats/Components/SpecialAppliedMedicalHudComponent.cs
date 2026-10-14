@@ -8,7 +8,7 @@ namespace Content.Server._Misfits.SpecialStats.Components;
 [RegisterComponent]
 public sealed partial class SpecialAppliedMedicalHudComponent : Component
 {
-    public string Action = "ActionToggleSpecialMedicalHud";
+    public string Action = "MisfitsActionToggleSpecialMedicalHud";
     public EntityUid? ActionEntity;
     public bool Enabled = true;
     public bool AddedHealthBars;

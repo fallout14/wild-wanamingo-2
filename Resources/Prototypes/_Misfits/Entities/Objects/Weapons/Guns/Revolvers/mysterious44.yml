@@ -1,0 +1,29 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Revolvers/mysterious44.yml
+
+- type: entity
+  parent: MisfitsWeaponRevolver44Magnum
+  id: MisfitsWeaponRevolver44Mysterious
+  name: mysterious revolver
+  description: A finely kept revolver with an unsettling air about it. Uses .44 magnum ammo.
+  components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      revolver-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Revolvers/mysterious44.rsi
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Revolvers/mysterious44.rsi
+  - type: StaticPrice
+    price: 120

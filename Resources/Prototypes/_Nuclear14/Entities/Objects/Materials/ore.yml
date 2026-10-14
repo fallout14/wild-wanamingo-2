@@ -16,7 +16,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      RawLead: 500
+      N14RawLead: 500
   - type: Extractable
     grindableSolutionName: leadore
   - type: Solution
@@ -168,12 +168,12 @@
 
 - type: entity
   parent: OreBase
-  id: SulfurOre
+  id: N14SulfurOre
   name: sulfur ore
   suffix: Full
   components:
   - type: Stack
-    stackType: SulfurOre
+    stackType: N14SulfurOre
     count: 10
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
@@ -181,7 +181,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      RawSulfur: 500
+      N14RawSulfur: 500
   - type: Extractable
     grindableSolutionName: sulfurore
   - type: Solution
@@ -192,8 +192,8 @@
         Quantity: 10
 
 - type: entity
-  id: SulfurOre1
-  parent: SulfurOre
+  id: N14SulfurOre1
+  parent: N14SulfurOre
   suffix: Single
   components:
   - type: Stack
@@ -201,12 +201,12 @@
 
 - type: entity
   parent: OreBase
-  id: FertilizerOre
+  id: N14FertilizerOre
   name: fertilizer
   suffix: Full
   components:
   - type: Stack # Misfits Fix - re-enabled fertilizer ore stacking
-    stackType: FertilizerOre
+    stackType: N14FertilizerOre
     count: 10
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/crafting_material.rsi
@@ -214,19 +214,19 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      Fertilizer: 50
+      N14Fertilizer: 50
   - type: Extractable
     grindableSolutionName: fertilizer
   - type: Solution
     id: fertilizer
     solution:
       reagents:
-      - ReagentId: Fertilizer
+      - ReagentId: N14Fertilizer
         Quantity: 50
 
 - type: entity
-  id: FertilizerOre1
-  parent: FertilizerOre
+  id: N14FertilizerOre1
+  parent: N14FertilizerOre
   suffix: Single
   components:
     - type: Stack # Misfits Fix - re-enabled fertilizer ore stacking

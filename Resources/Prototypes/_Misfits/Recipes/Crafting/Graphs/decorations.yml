@@ -353,14 +353,14 @@
               # Signs (like left and right wooden signs)
 
 - type: constructionGraph
-  id: DecorFloorBrickrubble
+  id: MisfitsDecorFloorBrickrubble
   start: start
   graph:
     - node: start
       edges:
         - to: brickrubble
           steps:
-            - material: N14Brick
+            - material: MisfitsBrick
               amount: 1
               doAfter: 3
           completed: []
@@ -374,12 +374,12 @@
               doAfter: 3
           completed:
             - !type:SpawnPrototype
-              prototype: N14MaterialBrick1
+              prototype: MisfitsMaterialBrick1
               amount: 1
             - !type:DeleteEntity
 
 - type: constructionGraph
-  id: DecorFloorPallets
+  id: MisfitsDecorFloorPallets
   start: start
   graph:
     - node: start
@@ -424,7 +424,7 @@
             - !type:DeleteEntity
 
 - type: constructionGraph
-  id: DecorFloorBoards
+  id: MisfitsDecorFloorBoards
   start: start
   graph:
     - node: start
@@ -889,7 +889,7 @@
 # #Cythisiax Added - Crafting menu expansion: rebar structure graph
 
 - type: constructionGraph
-  id: N14Rugs
+  id: MisfitsRugs
   start: start
   graph:
     - node: start
@@ -1238,7 +1238,7 @@
 # #Cythisiax Added - Crafting menu expansion: barrels graph
 
 - type: constructionGraph
-  id: N14Barrels
+  id: MisfitsBarrels
   start: start
   graph:
     - node: start

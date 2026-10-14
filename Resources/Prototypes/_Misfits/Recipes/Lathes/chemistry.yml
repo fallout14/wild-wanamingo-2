@@ -1,0 +1,19 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Recipes/Lathes/chemistry.yml
+
+- type: latheRecipe
+  id: MisfitsCombatInjector
+  result: MisfitsCombatInjector
+  completetime: 2
+  categories:
+  - N14Chemistry
+  materials:
+    Glass: 100
+
+- type: latheRecipe
+  id: MisfitsMed-XInjector
+  result: MisfitsMed-XInjector
+  completetime: 2
+  categories:
+  - N14Chemistry
+  materials:
+    Glass: 100

@@ -4,7 +4,7 @@
   name: Tier3 Weapon Spawner
   abstract: true
   suffix: Tier3
-  id: M14Tier3Spawner_RefPistol
+  id: MisfitsM14Tier3Spawner_RefPistol
   parent: MarkerBase
   components:
   - type: Sprite
@@ -20,41 +20,41 @@
 - type: entity
   name: Tier3 Pistol Spawner
   suffix: Tier3
-  id: M14Tier3WeaponSpawner_Single_GunsBulletPistol
-  parent: M14Tier3Spawner_RefPistol
+  id: MisfitsM14Tier3WeaponSpawner_Single_GunsBulletPistol
+  parent: MisfitsM14Tier3Spawner_RefPistol
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: M14WeaponLootTier3_GunsBulletPistol
+        tableId: MisfitsM14WeaponLootTier3_GunsBulletPistol
 
 - type: entity
   name: Tier3 Pistol Spawner 0-3
   suffix: Tier3
-  id: M14Tier3WeaponSpawner_Mult0_3_GunsBulletPistol
-  parent: M14Tier3Spawner_RefPistol
+  id: MisfitsM14Tier3WeaponSpawner_Mult0_3_GunsBulletPistol
+  parent: MisfitsM14Tier3Spawner_RefPistol
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: M14WeaponLootTier3_GunsBulletPistol
+        tableId: MisfitsM14WeaponLootTier3_GunsBulletPistol
 
 - type: entity
   name: Tier3 Pistol Spawner 1-2
   suffix: Tier3
-  id: M14Tier3WeaponSpawner_Mult1_2_GunsBulletPistol
-  parent: M14Tier3Spawner_RefPistol
+  id: MisfitsM14Tier3WeaponSpawner_Mult1_2_GunsBulletPistol
+  parent: MisfitsM14Tier3Spawner_RefPistol
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: M14WeaponLootTier3_GunsBulletPistol
+        tableId: MisfitsM14WeaponLootTier3_GunsBulletPistol
 
 # REVOLVER SPRITE/COLOR REF
 
@@ -62,7 +62,7 @@
   name: Tier3 Weapon Spawner
   abstract: true
   suffix: Tier3
-  id: M14Tier3Spawner_RefRevolver
+  id: MisfitsM14Tier3Spawner_RefRevolver
   parent: MarkerBase
   components:
   - type: Sprite
@@ -78,41 +78,41 @@
 - type: entity
   name: Tier3 Revolver Spawner
   suffix: Tier3
-  id: M14Tier3WeaponSpawner_Single_GunsBulletRevolver
-  parent: M14Tier3Spawner_RefRevolver
+  id: MisfitsM14Tier3WeaponSpawner_Single_GunsBulletRevolver
+  parent: MisfitsM14Tier3Spawner_RefRevolver
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: M14WeaponLootTier3_GunsBulletRevolver
+        tableId: MisfitsM14WeaponLootTier3_GunsBulletRevolver
 
 - type: entity
   name: Tier3 Revolver Spawner 0-3
   suffix: Tier3
-  id: M14Tier3WeaponSpawner_Mult0_3_GunsBulletRevolver
-  parent: M14Tier3Spawner_RefRevolver
+  id: MisfitsM14Tier3WeaponSpawner_Mult0_3_GunsBulletRevolver
+  parent: MisfitsM14Tier3Spawner_RefRevolver
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: M14WeaponLootTier3_GunsBulletRevolver
+        tableId: MisfitsM14WeaponLootTier3_GunsBulletRevolver
 
 - type: entity
   name: Tier3 Revolver Spawner 1-2
   suffix: Tier3
-  id: M14Tier3WeaponSpawner_Mult1_2_GunsBulletRevolver
-  parent: M14Tier3Spawner_RefRevolver
+  id: MisfitsM14Tier3WeaponSpawner_Mult1_2_GunsBulletRevolver
+  parent: MisfitsM14Tier3Spawner_RefRevolver
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: M14WeaponLootTier3_GunsBulletRevolver
+        tableId: MisfitsM14WeaponLootTier3_GunsBulletRevolver
 
 # SMG SPRITE/COLOR REF
 
@@ -120,7 +120,7 @@
   name: Tier3 Weapon Spawner
   abstract: true
   suffix: Tier3
-  id: M14Tier3Spawner_RefSMG
+  id: MisfitsM14Tier3Spawner_RefSMG
   parent: MarkerBase
   components:
   - type: Sprite
@@ -136,38 +136,38 @@
 - type: entity
   name: Tier3 SMG Spawner
   suffix: Tier3
-  id: M14Tier3WeaponSpawner_Single_GunsBulletSMG
-  parent: M14Tier3Spawner_RefSMG
+  id: MisfitsM14Tier3WeaponSpawner_Single_GunsBulletSMG
+  parent: MisfitsM14Tier3Spawner_RefSMG
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: M14WeaponLootTier3_GunsBulletSMG
+        tableId: MisfitsM14WeaponLootTier3_GunsBulletSMG
 
 - type: entity
   name: Tier3 SMG Spawner 0-3
   suffix: Tier3
-  id: M14Tier3WeaponSpawner_Mult0_3_GunsBulletSMG
-  parent: M14Tier3Spawner_RefSMG
+  id: MisfitsM14Tier3WeaponSpawner_Mult0_3_GunsBulletSMG
+  parent: MisfitsM14Tier3Spawner_RefSMG
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: M14WeaponLootTier3_GunsBulletSMG
+        tableId: MisfitsM14WeaponLootTier3_GunsBulletSMG
 
 - type: entity
   name: Tier3 SMG Spawner 1-2
   suffix: Tier3
-  id: M14Tier3WeaponSpawner_Mult1_2_GunsBulletSMG
-  parent: M14Tier3Spawner_RefSMG
+  id: MisfitsM14Tier3WeaponSpawner_Mult1_2_GunsBulletSMG
+  parent: MisfitsM14Tier3Spawner_RefSMG
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: M14WeaponLootTier3_GunsBulletSMG
+        tableId: MisfitsM14WeaponLootTier3_GunsBulletSMG

@@ -42,7 +42,7 @@
 
 - type: entity
   parent: [N14FalloutArmorBase, N14ClothingOuterBase]
-  id: falloutNCRmilitarypolicevest
+  id: MisfitsFalloutNCRmilitarypolicevest
   name: NCR Military Police Vest
   description: A vest used by the NCR Military Police.
   components:
@@ -58,7 +58,7 @@
         Piercing: 0.85
 
 - type: entity
-  parent: falloutNCRmilitarypolicevest
+  parent: MisfitsFalloutNCRmilitarypolicevest
   id: MisfitsNCRMPRecruitArmor
   name: NCR military police recruit armor
   description: Reinforced NCR Military Police armor issued to recruits for base defense and riot control.
@@ -75,7 +75,7 @@
     damageCoefficient: 0.80
 
 - type: entity
-  parent: falloutNCRmilitarypolicevest
+  parent: MisfitsFalloutNCRmilitarypolicevest
   id: MisfitsNCRMPCombatArmor
   name: NCR military police combat armor
   description: Reinforced NCR Military Police armor for base defense and riot control.
@@ -92,7 +92,7 @@
     damageCoefficient: 0.75
 
 - type: entity
-  parent: falloutNCRmilitarypolicevest
+  parent: MisfitsFalloutNCRmilitarypolicevest
   id: MisfitsNCRMPLieutenantArmor
   name: NCR military police lieutenant armor
   description: Command-grade NCR Military Police armor issued to First Lieutenants.

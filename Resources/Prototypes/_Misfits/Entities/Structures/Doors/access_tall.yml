@@ -1,0 +1,35 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Structures/Doors/access_tall.yml
+
+- type: entity
+  parent: N14DoorAirlockTall
+  id: MisfitsDoorBunkerLockedVaultCargoTall
+  suffix: Vault Cargo Specialist, Locked
+  components:
+  - type: AccessReader
+    access: [["MisfitsVaultCargo"]]
+  - type: Wires
+    layoutId: HighSec
+
+- type: entity
+  parent: N14DoorAirlockTall
+  id: MisfitsDoorBunkerLockedVaultCourierTall
+  suffix: Vault Courier, Locked
+  components:
+  - type: AccessReader
+    access: [["MisfitsVaultCourier"]]
+  - type: Wires
+    layoutId: HighSec
+
+- type: entity
+  parent: N14DoorAirlockTall
+  id: MisfitsDoorBunkerLockedVaultSalvageTall
+  suffix: Vault Salvage Specialist, Locked
+  components:
+  - type: AccessReader
+    access: [["MisfitsVaultSalvage"]]
+  - type: Wires
+    layoutId: HighSec
+
+#MARK: Keylocked
+
+#IronKey

@@ -1,27 +1,27 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/GeneralLoot/GenTiersDrinksTables.yml
 
 - type: entityTable
-  id: M14ConsumableLootTier0_DrinksAll
+  id: MisfitsM14ConsumableLootTier0_DrinksAll
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: M14ConsumableLootTier0_DrinksNukaColaDefault
+      tableId: MisfitsM14ConsumableLootTier0_DrinksNukaColaDefault
     - !type:NestedSelector
-      tableId: M14ConsumableLootTier0_DrinksOther
+      tableId: MisfitsM14ConsumableLootTier0_DrinksOther
 
 - type: entityTable
-  id: M14ConsumableLootTier0_DrinksOther
+  id: MisfitsM14ConsumableLootTier0_DrinksOther
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: M14ConsumableLootTier0_DrinksVim
+      tableId: MisfitsM14ConsumableLootTier0_DrinksVim
     - !type:NestedSelector
-      tableId: M14ConsumableLootTier0_DrinksAlcoholAll
+      tableId: MisfitsM14ConsumableLootTier0_DrinksAlcoholAll
 
 # shit tier
 
 - type: entityTable
-  id: M14ConsumableLootTier1_DrinksNukaCola
+  id: MisfitsM14ConsumableLootTier1_DrinksNukaCola
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -38,7 +38,7 @@
       weight: 1
 
 - type: entityTable
-  id: M14ConsumableLootTier1_DrinksNukaColaRadEnvironment
+  id: MisfitsM14ConsumableLootTier1_DrinksNukaColaRadEnvironment
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -54,7 +54,7 @@
 # tier 2 and up
 
 - type: entityTable
-  id: M14ConsumableLootTier0_DrinksNukaColaDefault
+  id: MisfitsM14ConsumableLootTier0_DrinksNukaColaDefault
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -70,7 +70,7 @@
 # tier 2 and up in rad environments
 
 - type: entityTable
-  id: M14ConsumableLootTier0_DrinksNukaColaRadEnvironmentDefault
+  id: MisfitsM14ConsumableLootTier0_DrinksNukaColaRadEnvironmentDefault
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -84,7 +84,7 @@
       weight: 10
 
 - type: entityTable
-  id: M14ConsumableLootTier2_DrinksNukaColaUncommon
+  id: MisfitsM14ConsumableLootTier2_DrinksNukaColaUncommon
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -109,7 +109,7 @@
 #tier 3
 
 - type: entityTable
-  id: M14ConsumableLootTier3_DrinksNukaCola
+  id: MisfitsM14ConsumableLootTier3_DrinksNukaCola
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -120,7 +120,7 @@
       weight: 10
 
 - type: entityTable
-  id: M14ConsumableLootTier3_DrinksNukaColaRad
+  id: MisfitsM14ConsumableLootTier3_DrinksNukaColaRad
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -134,7 +134,7 @@
       weight: 6
 
 - type: entityTable
-  id: M14ConsumableLootTier3_DrinksNukaColaUncommon
+  id: MisfitsM14ConsumableLootTier3_DrinksNukaColaUncommon
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -160,7 +160,7 @@
       weight: 1
 
 - type: entityTable
-  id: M14ConsumableLootTier3_DrinksNukaColaRare
+  id: MisfitsM14ConsumableLootTier3_DrinksNukaColaRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -179,7 +179,7 @@
 #tier 3+++and up
 
 - type: entityTable
-  id: M14ConsumableLootTier4_DrinksNukaColaSuperRare
+  id: MisfitsM14ConsumableLootTier4_DrinksNukaColaSuperRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -193,7 +193,7 @@
       weight: 1
 
 - type: entityTable
-  id: M14ConsumableLootTier0_DrinksNukaCola
+  id: MisfitsM14ConsumableLootTier0_DrinksNukaCola
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -218,7 +218,7 @@
       id: N14DrinkNukaColaWild
 
 - type: entityTable
-  id: M14ConsumableLootTier0_DrinksAlcoholAll
+  id: MisfitsM14ConsumableLootTier0_DrinksAlcoholAll
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -231,7 +231,7 @@
       id: N14DrinkWine
 
 - type: entityTable
-  id: M14ConsumableLootTier0_DrinksVim
+  id: MisfitsM14ConsumableLootTier0_DrinksVim
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -246,7 +246,7 @@
 # I dunno what vim is
 
 - type: entityTable
-  id: M14ConsumableLootTier0_DrinksVimWeighted
+  id: MisfitsM14ConsumableLootTier0_DrinksVimWeighted
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -263,7 +263,7 @@
       weight: 5
 
 - type: entityTable
-  id: M14ConsumableLootTier0_DrinksVimWeightedRare
+  id: MisfitsM14ConsumableLootTier0_DrinksVimWeightedRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector

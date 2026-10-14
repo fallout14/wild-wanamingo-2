@@ -1,0 +1,18 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Projectiles/308.yml
+
+- type: entity
+  id: MisfitsBulletOver308
+  name: bullet (Overpressure .308 rifle)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 58
+        Structural: 30
+  # Misfits Add -  Overpressure. Best of the best ammo. Long range, high damage, lethal impact. 
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 15.0
+    maxFalloffTiles: 25.0
+    minDamageMultiplier: 0.85

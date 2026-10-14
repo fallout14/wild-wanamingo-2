@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Reagents/material_extractor.yml
 
 - type: material
-  id: RawZinc
-  stackEntity: N14ZincOre1
+  id: MisfitsRawZinc
+  stackEntity: MisfitsZincOre1
   name: materials-raw-zinc
   unit: materials-unit-chunk
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: lead }
@@ -11,7 +11,7 @@
 
 - type: material
   id: Zinc
-  stackEntity: N14IngotZinc1
+  stackEntity: MisfitsIngotZinc1
   name: materials-zinc
   unit: materials-unit-bar
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: ingot_aluminum }
@@ -19,8 +19,8 @@
   price: 0.02
 
 - type: material
-  id: RawBauxite
-  stackEntity: N14BauxiteOre1
+  id: MisfitsRawBauxite
+  stackEntity: MisfitsBauxiteOre1
   name: materials-raw-bauxite
   unit: materials-unit-chunk
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: copper }

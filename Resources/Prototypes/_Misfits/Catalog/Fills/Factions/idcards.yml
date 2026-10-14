@@ -3,7 +3,7 @@
 - type: entity
   name: ID card box
   parent: BoxCardboard
-  id: BoxIDVault
+  id: MisfitsBoxIDVault
   description: A box of spare ID cards.
   components:
   - type: StorageFill
@@ -27,14 +27,14 @@
 - type: entity
   name: medallion box
   parent: BoxCardboard
-  id: BoxIDLegion
+  id: MisfitsBoxIDLegion
   description: A box of spare medallions.
   components:
   - type: StorageFill
     contents:
-    - id: N14IDLegionaryMedalLegionnaireRecruit
+    - id: CorvaxIDLegionaryMedalLegionnaireRecruit
       amount: 2
-    - id: N14IDLegionaryMedalSilver
+    - id: CorvaxIDLegionaryMedalSilver
       amount: 2
   - type: Sprite
     layers:
@@ -44,14 +44,14 @@
 - type: entity
   name: dog tag box
   parent: BoxCardboard
-  id: BoxIDNCR
+  id: MisfitsBoxIDNCR
   description: A box of spare ID cards.
   components:
   - type: StorageFill
     contents:
     - id: N14IDNCRDogtag
       amount: 2
-    - id: N14IDNCRDogtagSoldier
+    - id: MisfitsIDNCRDogtagSoldier
       amount: 2
     - id: N14IDNCRDogtagWS
       amount: 2
@@ -68,16 +68,16 @@
 - type: entity
   name: followers ID card box
   parent: BoxCardboard
-  id: BoxIDFollowers
+  id: MisfitsBoxIDFollowers
   description: A box of spare ID cards.
   components:
   - type: StorageFill
     contents:
-    - id: N14IDFollowerVolunteer
+    - id: MisfitsIDFollowerVolunteer
       amount: 4
-    - id: N14IDFollowerGuard
+    - id: MisfitsIDFollowerGuard
       amount: 2
-    - id: N14IDFollowerDoctor
+    - id: MisfitsIDFollowerDoctor
       amount: 2
   - type: Sprite
     layers:
@@ -90,20 +90,20 @@
 - type: entity
   name: holotags box
   parent: BoxCardboard
-  id: BoxIDBrotherhoodOfSteel
+  id: MisfitsBoxIDBrotherhoodOfSteel
   description: A box of spare holotags.
   components:
   - type: StorageFill
     contents:
-    - id: N14IDBrotherhoodOfSteelHolotagInitiate
+    - id: MisfitsIDBrotherhoodOfSteelHolotagInitiate
       amount: 3
-    - id: N14IDBrotherhoodOfSteelHolotagSquire
+    - id: MisfitsIDBrotherhoodOfSteelHolotagSquire
       amount: 2
-    - id: N14IDBrotherhoodOfSteelHolotagScribe
+    - id: MisfitsIDBrotherhoodOfSteelHolotagScribe
       amount: 1
-    - id: N14IDBrotherhoodOfSteelHolotagKnight
+    - id: MisfitsIDBrotherhoodOfSteelHolotagKnight
       amount: 1
-    - id: N14IDBrotherhoodOfSteelHolotagPaladin
+    - id: MisfitsIDBrotherhoodOfSteelHolotagPaladin
       amount: 1
   - type: Sprite
     layers:
@@ -116,14 +116,14 @@
 - type: entity
   name: passport box
   parent: BoxCardboard
-  id: BoxIDTown
+  id: MisfitsBoxIDTown
   description: A box of spare passports.
   components:
   - type: StorageFill
     contents:
     - id: N14IDShopkeeperTown
       amount: 1
-    - id: N14IDShopkeeperHelperTown
+    - id: MisfitsIDShopkeeperHelperTown
       amount: 1
     - id: N14IDPassportWasteFarmer
       amount: 1
@@ -148,7 +148,7 @@
 - type: entity
   name: pendant box
   parent: BoxCardboard
-  id: BoxIDTribe
+  id: MisfitsBoxIDTribe
   description: A box of spare pendants.
   components:
   - type: StorageFill

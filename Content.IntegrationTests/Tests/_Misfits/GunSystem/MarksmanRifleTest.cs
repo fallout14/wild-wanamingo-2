@@ -20,7 +20,7 @@ public sealed class MarksmanRifleTest
 
         await server.WaitAssertion(() =>
         {
-            var rifle = entMan.SpawnEntity("N14WeaponRifle9mmMarksmanChinese", map.GridCoords);
+            var rifle = entMan.SpawnEntity("MisfitsWeaponRifle9mmMarksmanChinese", map.GridCoords);
             var slots = entMan.GetComponent<ItemSlotsComponent>(rifle);
             var muzzle = slots.Slots["weapon_muzzle"];
             Assert.That(muzzle.Item, Is.Not.Null, "The integral suppressor must spawn even in a locked slot.");

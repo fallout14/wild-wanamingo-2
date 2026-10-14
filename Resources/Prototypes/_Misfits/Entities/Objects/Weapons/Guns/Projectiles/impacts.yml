@@ -1,0 +1,38 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Projectiles/impacts.yml
+
+- type: entity
+  id: MisfitsPlasmaMuzzleFlashEffect
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TimedDespawn
+    lifetime: 0.4
+  - type: Sprite
+    drawdepth: Effects
+    layers:
+    - shader: unshaded
+      map: ["enum.EffectLayers.Unshaded"]
+      sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Projectiles/plasma.rsi
+      state: muzzle_plasma
+  - type: EffectVisuals
+  - type: Tag
+    tags:
+      - HideContextMenu
+  - type: AnimationPlayer
+
+- type: entity
+  id: MisfitsBulletPlasmaImpactEffect
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TimedDespawn
+    lifetime: 0.25
+  - type: Sprite
+    drawdepth: Effects
+    layers:
+    - shader: unshaded
+      map: ["enum.EffectLayers.Unshaded"]
+      sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Projectiles/plasma.rsi
+      state: impact_plasma
+  - type: EffectVisuals
+  - type: Tag
+    tags:
+      - HideContextMenu

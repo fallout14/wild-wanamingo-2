@@ -1,0 +1,68 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Smokeables/joints.yml
+
+- type: entity
+  parent: Joint
+  id: MisfitsJoint
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Consumable/Smokeables/Cannabis/joint.rsi
+    state: unlit-icon
+  - type: Tag
+    tags:
+    - MisfitsSuperMutantWearable
+    - Cigarette
+    - Trash
+  - type: Clothing
+    sprite: Nuclear14/Objects/Consumable/Smokeables/Cannabis/joint.rsi
+    slots: [ mask ]
+    equippedPrefix: unlit
+
+- type: entity
+  parent: MisfitsJoint
+  id: MisfitsJointSpent
+  suffix: spent
+  components:
+  - type: Sprite
+    state: burnt-icon
+  - type: Smokable
+    state: Burnt
+  - type: Tag
+    tags:
+    - MisfitsSuperMutantWearable
+    - Cigarette
+    - Trash
+    - Burnt
+
+- type: entity
+  id: MisfitsBlunt
+  parent: Blunt
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Consumable/Smokeables/Cannabis/blunt.rsi
+    state: unlit-icon
+  - type: Tag
+    tags:
+    - MisfitsSuperMutantWearable
+    - Cigarette
+    - Trash
+  - type: SpaceGarbage
+  - type: Clothing
+    sprite: Nuclear14/Objects/Consumable/Smokeables/Cannabis/blunt.rsi
+    slots: [ mask ]
+    equippedPrefix: unlit
+
+- type: entity
+  parent: MisfitsBlunt
+  id: MisfitsBluntSpent
+  suffix: spent
+  components:
+  - type: Sprite
+    state: burnt-icon
+  - type: Smokable
+    state: Burnt
+  - type: Tag
+    tags:
+    - MisfitsSuperMutantWearable
+    - Cigarette
+    - Trash
+    - Burnt

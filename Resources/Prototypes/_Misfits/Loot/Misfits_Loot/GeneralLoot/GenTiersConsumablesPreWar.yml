@@ -1,18 +1,18 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/GeneralLoot/GenTiersConsumablesPreWar.yml
 
 - type: entityTable
-  id: M14ConsumableLootTier0_PreWarAll
+  id: MisfitsM14ConsumableLootTier0_PreWarAll
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: M14ConsumableLootTier0_PreWarGrocery
+      tableId: MisfitsM14ConsumableLootTier0_PreWarGrocery
     - !type:NestedSelector
-      tableId: M14ConsumableLootTier0_PreWarCanned
+      tableId: MisfitsM14ConsumableLootTier0_PreWarCanned
     - !type:EntSelector
       id: N14FoodMouldy
 
 - type: entityTable
-  id: M14ConsumableLootTier0_PreWarGrocery
+  id: MisfitsM14ConsumableLootTier0_PreWarGrocery
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -38,16 +38,16 @@
       id: N14FoodFancyladssnackcakes
 
 - type: entityTable
-  id: M14ConsumableLootTier0_PreWarCanned
+  id: MisfitsM14ConsumableLootTier0_PreWarCanned
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: M14ConsumableLootTier0_PreWarCannedDogFood
+      tableId: MisfitsM14ConsumableLootTier0_PreWarCannedDogFood
     - !type:NestedSelector
-      tableId: M14ConsumableLootTier0_PreWarCannedNoDogFood
+      tableId: MisfitsM14ConsumableLootTier0_PreWarCannedNoDogFood
 
 - type: entityTable
-  id: M14ConsumableLootTier0_PreWarCannedDogFood
+  id: MisfitsM14ConsumableLootTier0_PreWarCannedDogFood
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -56,7 +56,7 @@
       id: N14FoodDinki-Di
 
 - type: entityTable
-  id: M14ConsumableLootTier0_PreWarCannedNoDogFood
+  id: MisfitsM14ConsumableLootTier0_PreWarCannedNoDogFood
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -65,7 +65,7 @@
       id: N14FoodPorkBeans
 
 - type: entityTable
-  id: M14ConsumableLootTier0_PreWarSweets
+  id: MisfitsM14ConsumableLootTier0_PreWarSweets
   table: !type:GroupSelector
     children:
     - !type:EntSelector

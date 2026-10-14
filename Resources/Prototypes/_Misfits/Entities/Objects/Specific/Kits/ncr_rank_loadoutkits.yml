@@ -8,7 +8,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - KitNCR_StaffSergeantLine
+  - MisfitsKitNCR_StaffSergeantLine
 
 - type: thiefBackpackSet
   id: NCRA_SGTMSLSet
@@ -18,7 +18,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - KitNCR_SGTMSL
+  - MisfitsKitNCR_SGTMSL
 
 - type: thiefBackpackSet
   id: NCRA_FirstSergeantVeteranSet
@@ -28,7 +28,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - KitNCR_FirstSergeantVeteran
+  - MisfitsKitNCR_FirstSergeantVeteran
 
 - type: thiefBackpackSet
   id: NCRA_CaptainCommandSet
@@ -38,7 +38,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - KitNCR_CaptainCommand
+  - MisfitsKitNCR_CaptainCommand
 
 - type: thiefBackpackSet
   id: NCRA_CaptainMarksmanSet
@@ -48,12 +48,12 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - KitNCR_CaptainMarksman
+  - MisfitsKitNCR_CaptainMarksman
 
 - type: entity
   name: private first class fireteam kit
-  parent: KitBase
-  id: KitNCR_PFCFireteam
+  parent: N14KitBase
+  id: MisfitsKitNCR_PFCFireteam
   description: A crate containing trusted fireteam gear for a dependable NCR private first class.
   components:
   - type: Sprite
@@ -62,9 +62,9 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltNCRPouches
+      - id: N14ClothingBeltNCRPouches
       - id: N14WeaponRifle556ServiceScoped
-      - id: Magazine556Rifle
+      - id: N14Magazine556Rifle
         amount: 4
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
@@ -81,8 +81,8 @@
 
 - type: entity
   name: specialist patrol leader kit # #Misfits Tweak - renamed from corporal
-  parent: KitBase
-  id: KitNCR_CorporalPatrol
+  parent: N14KitBase
+  id: MisfitsKitNCR_CorporalPatrol
   description: A crate containing field leadership gear for an NCR specialist tasked with pushing scouts and screening a column.
   components:
   - type: Sprite
@@ -92,9 +92,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14ClothingHeadHatNCRHelmetMetalDesert
-      - id: ClothingBeltNCR
+      - id: N14ClothingBeltNCR
       - id: N14WeaponRifle556ServiceScoped
-      - id: Magazine556Rifle
+      - id: N14Magazine556Rifle
         amount: 4
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
@@ -112,8 +112,8 @@
 
 - type: entity
   name: staff sergeant linebreaker kit
-  parent: KitBase
-  id: KitNCR_StaffSergeantLine
+  parent: N14KitBase
+  id: MisfitsKitNCR_StaffSergeantLine
   description: A crate containing veteran line gear for an NCR staff sergeant expected to steady a wavering push.
   components:
   - type: Sprite
@@ -122,9 +122,9 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltNCR
+      - id: N14ClothingBeltNCR
       - id: N14WeaponRifle308Battle
-      - id: ClipMagazine308Rifle
+      - id: N14ClipMagazine308Rifle
         amount: 6
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
@@ -142,8 +142,8 @@
 
 - type: entity
   name: Morale Trooper Squad Lead kit
-  parent: KitBase
-  id: KitNCR_SGTMSL
+  parent: N14KitBase
+  id: MisfitsKitNCR_SGTMSL
   description: "A crate containing an NCR squad leader's MSL package: custom mantle, trench shotgun, close-range ammunition, and a combat-stim field dose."
   components:
   - type: Sprite
@@ -158,8 +158,8 @@
       - id: MisfitsNCRMSLBoots
       - id: MisfitsNCRMSLMask
       - id: MisfitsNCRMSLArmor
-      - id: ClothingBeltNCRShotgunner
-      - id: N14WeaponShotgunTrench
+      - id: MisfitsClothingBeltNCRShotgunner
+      - id: MisfitsWeaponShotgunTrench
       - id: N14MagazineShotgun12
         amount: 4
       - id: N14WeaponPistol9mm
@@ -177,8 +177,8 @@
 
 - type: entity
   name: sergeant first class veteran kit
-  parent: KitBase
-  id: KitNCR_FirstSergeantVeteran
+  parent: N14KitBase
+  id: MisfitsKitNCR_FirstSergeantVeteran
   description: A crate containing campaign-proven command gear for a sergeant first class who leads by example.
   components:
   - type: Sprite
@@ -188,9 +188,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: MisfitsClothingOuterNCRTrenchCoat
-      - id: ClothingBeltRevolverfilled
-      - id: N14WeaponRifle5mmCarbine
-      - id: N14MagazineCarbine5mm
+      - id: N14ClothingBeltRevolverfilled
+      - id: MisfitsWeaponRifle5mmCarbine
+      - id: MisfitsMagazineCarbine5mm
         amount: 3
       - id: RadioHandheld
       - id: SmokeGrenade
@@ -208,8 +208,8 @@
 
 - type: entity
   name: captain command kit
-  parent: KitBase
-  id: KitNCR_CaptainCommand
+  parent: N14KitBase
+  id: MisfitsKitNCR_CaptainCommand
   description: A crate containing stronger command gear for an NCR captain who may need to hold the line personally.
   components:
   - type: Sprite
@@ -218,9 +218,9 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltRevolverCaptainfilled
+      - id: N14ClothingBeltRevolverCaptainfilled
       - id: N14WeaponRifle308Battle
-      - id: ClipMagazine308Rifle
+      - id: N14ClipMagazine308Rifle
         amount: 6
       - id: RadioHandheld
       - id: SmokeGrenade
@@ -239,8 +239,8 @@
 
 - type: entity
   name: captain frontier marksman kit
-  parent: KitBase
-  id: KitNCR_CaptainMarksman
+  parent: N14KitBase
+  id: MisfitsKitNCR_CaptainMarksman
   description: A crate containing a precision marksman package for an NCR captain — the Republic's Pride scoped M1C, issued to scout captains by the Gunrunners.
   components:
   - type: Sprite
@@ -249,9 +249,9 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltRevolverCaptainfilled
-      - id: N14WeaponRifleM1GarandRepublicsPride # #Misfits Change: Republic's Pride scoped M1C replaces .50 rifle
-      - id: Magazine308Rifle # #Misfits Change - replaced GarandEnbloc308
+      - id: N14ClothingBeltRevolverCaptainfilled
+      - id: MisfitsWeaponRifleM1GarandRepublicsPride # #Misfits Change: Republic's Pride scoped M1C replaces .50 rifle
+      - id: N14Magazine308Rifle # #Misfits Change - replaced GarandEnbloc308
         amount: 2
       - id: RadioHandheld
       - id: SmokeGrenade
@@ -273,12 +273,12 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - KitNCR_CaptainServiceRifle
+  - MisfitsKitNCR_CaptainServiceRifle
 
 - type: entity
   name: captain field officer kit
-  parent: KitBase
-  id: KitNCR_CaptainServiceRifle
+  parent: N14KitBase
+  id: MisfitsKitNCR_CaptainServiceRifle
   description: A crate containing field officer gear for an NCR captain who favors the marksman carbine on the front line.
   components:
   - type: Sprite
@@ -287,9 +287,9 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltNCR
-      - id: N14WeaponRifle556Marksman
-      - id: Magazine556Rifle
+      - id: N14ClothingBeltNCR
+      - id: MisfitsWeaponRifle556Marksman
+      - id: N14Magazine556Rifle
         amount: 4
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
@@ -311,8 +311,8 @@
 
 - type: entity
   name: Heavy Trooper Veteran Kit
-  parent: KitBase
-  id: KitNCR_HeavyTrooperVeteran
+  parent: N14KitBase
+  id: MisfitsKitNCR_HeavyTrooperVeteran
   description: A crate containing campaign-proven Heavy Trooper gear for warmongering.
   components:
   - type: Sprite
@@ -321,8 +321,8 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle5mmCarbine
-      - id: N14MagazineCarbine5mm
+      - id: MisfitsWeaponRifle5mmCarbine
+      - id: MisfitsMagazineCarbine5mm
         amount: 4
       - id: SmokeGrenade
         amount: 2
@@ -338,8 +338,8 @@
 
 - type: entity
   name: Heavy Trooper Linebreaker Kit
-  parent: KitBase
-  id: KitNCR_HeavyTrooperLinebreaker
+  parent: N14KitBase
+  id: MisfitsKitNCR_HeavyTrooperLinebreaker
   description: A crate containing a heavy-hitting weapon, built to contend with enemy heavy infantry.
   components:
   - type: Sprite
@@ -349,7 +349,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14WeaponLMGAutoRifle
-      - id: Magazine308Rifle
+      - id: N14Magazine308Rifle
         amount: 2
       - id: SmokeGrenade
         amount: 2
@@ -366,8 +366,8 @@
 
 - type: entity
   name: Heavy Trooper Minigun Kit
-  parent: KitBase
-  id: KitNCR_HeavyTrooperMinigun
+  parent: N14KitBase
+  id: MisfitsKitNCR_HeavyTrooperMinigun
   description: A crate containing a standard minigun and supplies for sustained fire.
   components:
   - type: Sprite
@@ -394,8 +394,8 @@
 
 - type: entity
   name: Heavy Trooper Defender Kit
-  parent: KitBase
-  id: KitNCR_HeavyTrooperDefender
+  parent: N14KitBase
+  id: MisfitsKitNCR_HeavyTrooperDefender
   description: A crate containing everything a Heavy Trooper needs to hold the line against the tide.
   components:
   - type: Sprite
@@ -405,7 +405,7 @@
   - type: SpawnItemsOnUse
     items:
     - id: N14WeaponLMG
-    - id: LMGMagazine556Rifle
+    - id: N14LMGMagazine556Rifle
     - id: N14Dynamite # #Misfits Fix - GrenadeFrag is a GL-only round (no matching launcher in kit); replaced with throwable dynamite
       amount: 3
     - id: N14BoxCardboardMREBoxCFilled
@@ -425,7 +425,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - KitNCR_HeavyTrooperVeteran
+  - MisfitsKitNCR_HeavyTrooperVeteran
 
 - type: thiefBackpackSet
   id: NCR_HeavyTrooperLinebreakerSet
@@ -435,7 +435,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - KitNCR_HeavyTrooperLinebreaker
+  - MisfitsKitNCR_HeavyTrooperLinebreaker
 
 - type: thiefBackpackSet
   id: NCR_HeavyTrooperMinigunSet
@@ -445,7 +445,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - KitNCR_HeavyTrooperMinigun
+  - MisfitsKitNCR_HeavyTrooperMinigun
 
 - type: thiefBackpackSet
   id: NCR_HeavyTrooperDefenderSet
@@ -455,12 +455,12 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - KitNCR_HeavyTrooperDefender
+  - MisfitsKitNCR_HeavyTrooperDefender
 
 - type: entity
-  id: NCRHeavyTrooperLoadoutKits
+  id: MisfitsNCRHeavyTrooperLoadoutKits
   name: Undecided NCR Heavy Trooper Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -475,9 +475,9 @@
     - NCR_HeavyTrooperDefenderSet
 
 - type: entity
-  id: NCRHeavyTrooperLeadLoadoutKits
+  id: MisfitsNCRHeavyTrooperLeadLoadoutKits
   name: Undecided NCR Heavy Trooper Lead Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi

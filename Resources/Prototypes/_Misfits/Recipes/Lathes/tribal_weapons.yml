@@ -1,11 +1,11 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/tribal_weapons.yml
 
 - type: latheRecipe
-  id: N14TribalWarBow
+  id: MisfitsTribalWarBow
   icon:
     sprite: Misfits/Objects/Weapons/Guns/Bow/tribal_bow.rsi
     state: unwielded
-  result: N14TribalWarBow
+  result: MisfitsTribalWarBow
   categories:
   - N14Weapons
   completetime: 16
@@ -14,11 +14,11 @@
     Cloth: 400
 
 - type: latheRecipe
-  id: N14TribalRecurveBow
+  id: MisfitsTribalRecurveBow
   icon:
     sprite: Misfits/Objects/Weapons/Guns/Bow/tribal_bow.rsi
     state: unwielded
-  result: N14TribalRecurveBow
+  result: MisfitsTribalRecurveBow
   categories:
   - N14Weapons
   completetime: 8
@@ -27,11 +27,11 @@
     Cloth: 200
 
 - type: latheRecipe
-  id: N14ArrowTribal
+  id: MisfitsArrowTribal
   icon:
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
     state: tip
-  result: N14ArrowTribal
+  result: MisfitsArrowTribal
   categories:
   - N14Ammo
   completetime: 2
@@ -40,11 +40,11 @@
     Cloth: 10
 
 - type: latheRecipe
-  id: N14ArrowBroadHead
+  id: MisfitsArrowBroadHead
   icon:
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
     state: tip
-  result: N14ArrowBroadHead
+  result: MisfitsArrowBroadHead
   categories:
   - N14Ammo
   completetime: 2

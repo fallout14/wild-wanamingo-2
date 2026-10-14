@@ -7,7 +7,7 @@
   applyMaterialDiscount: false
   completetime: 2
   materials:
-    RawLead: 100
+    N14RawLead: 100
     Coal: 50
 
 - type: latheRecipe
@@ -51,35 +51,35 @@
   result: N14IngotIron1
   completetime: 2
   materials:
-    Scrap: 200
+    N14Scrap: 200
 
 - type: latheRecipe
-  id: SheetPlasticScrap
+  id: N14SheetPlasticScrap
   result: SheetPlastic1
   completetime: 2
   materials:
-    ScrapElectronic: 200
+    N14ScrapElectronic: 200
 
 - type: latheRecipe
   id: N14IngotBrassScrap
   result: N14IngotBrass1
   completetime: 2
   materials:
-    ScrapBrass: 200
+    N14ScrapBrass: 200
 
 - type: latheRecipe
   id: N14IngotCopperScrap
   result: N14IngotCopper1
   completetime: 2
   materials:
-    ScrapCopper: 200
+    N14ScrapCopper: 200
 
 - type: latheRecipe
   id: N14IngotGoldScrap
   result: N14IngotGold1
   completetime: 2
   materials:
-    ScrapGold: 200
+    N14ScrapGold: 200
 
 - type: latheRecipe
   id: N14IngotSteelScrap
@@ -93,19 +93,19 @@
   result: N14IngotLead1
   completetime: 2
   materials:
-    ScrapLead: 200
+    N14ScrapLead: 200
 
 - type: latheRecipe
-  id: SulfurPowder
-  result: SulfurPowder1
+  id: N14SulfurPowder
+  result: N14SulfurPowder1
   applyMaterialDiscount: false
   completetime: 2
   materials:
-    RawSulfur: 100
+    N14RawSulfur: 100
 
 - type: latheRecipe
   id: Charcoal
-  result: Charcoal1
+  result: N14Charcoal1
   applyMaterialDiscount: false
   completetime: 2
   materials:
@@ -134,10 +134,10 @@
   - N14Misc
   completetime: 2
   materials:
-    RawLeather: 100
+    N14RawLeather: 100
 
 - type: latheRecipe
-  id: CharcoalToCoal
+  id: N14CharcoalToCoal
   result: Coal1
   applyMaterialDiscount: false
   completetime: 2

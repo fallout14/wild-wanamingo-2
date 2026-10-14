@@ -10,8 +10,8 @@
   - type: PlantData
     name: seeds-lemonade-name
     noun: seeds-noun-seeds
-    packetPrototype: LemonadeSeeds
-    productPrototypes: [ FoodLemonade ]
+    packetPrototype: MisfitsLemonadeSeeds
+    productPrototypes: [ MisfitsFoodLemonade ]
     mutationPrototypes: [LimePlants ]
   - type: Plant
     lifespan: 55
@@ -46,8 +46,8 @@
   - type: PlantData
     name: seeds-cocaplant-name
     noun: seeds-noun-seeds
-    packetPrototype: CocaSeeds
-    productPrototypes: [ LeavesCoca ]
+    packetPrototype: MisfitsCocaSeeds
+    productPrototypes: [ MisfitsLeavesCoca ]
   - type: Plant
     lifespan: 75
     maturation: 5
@@ -61,7 +61,7 @@
     harvestRepeat: Repeat
   - type: PlantChemicals
     chemicals:
-      CocaSlurry:
+      MisfitsCocaSlurry:
         min: 1
         max: 10
         potencyDivisor: 10
@@ -76,8 +76,8 @@
   - type: PlantData
     name: seeds-coconut-name
     noun: seeds-noun-seeds
-    packetPrototype: CoconutSeeds
-    productPrototypes: [ FoodCoconut ]
+    packetPrototype: MisfitsCoconutSeeds
+    productPrototypes: [ MisfitsFoodCoconut ]
   - type: Plant
     lifespan: 80
     maturation: 12
@@ -91,7 +91,7 @@
     harvestRepeat: SelfHarvest
   - type: PlantChemicals
     chemicals:
-      CoconutFlesh:
+      MisfitsCoconutFlesh:
         min: 1
         max: 20
         potencyDivisor: 2
@@ -114,8 +114,8 @@
   - type: PlantData
     name: seeds-cherrybomb-name
     noun: seeds-noun-seeds
-    packetPrototype: CherryBombSeeds
-    productPrototypes: [ FoodCherryBomb ]
+    packetPrototype: MisfitsCherryBombSeeds
+    productPrototypes: [ MisfitsFoodCherryBomb ]
   - type: Plant
     lifespan: 55
     maturation: 3
@@ -145,7 +145,7 @@
   - type: PlantData
     name: seeds-zoybean-name
     noun: seeds-noun-seeds
-    packetPrototype: ZoybeanSeeds
+    packetPrototype: MisfitsZoybeanSeeds
     productPrototypes: [ MisfitsFloraProduceWildZoybeans ]
   - type: Plant
     lifespan: 30

@@ -1,0 +1,16 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Food/ingredients.yml
+
+- type: entity
+  name: butter slice
+  parent: N14FoodBakingBase
+  id: MisfitsFoodButterSlice
+  description: A pat of delicious, golden, fatty goodness.
+  components:
+  - type: Sprite
+    state: butter-slice
+  - type: Solution
+    solution:
+      maxVol: 5
+      reagents:
+      - ReagentId: Butter
+        Quantity: 5

@@ -1,0 +1,34 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Cartridges/2mmEC.yml
+
+- type: entity
+  parent: BaseCartridge
+  id: MisfitsCartridge2mmEC
+  name: cartridge (2mmEC)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - MisfitsCartridge2mmEC
+  - type: CartridgeAmmo
+    proto: MisfitsBullet2mmEC
+    soundEject:
+      collection: N14RifleCasingEject
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 2
+  - type: EmitSoundOnLand
+    sound:
+      collection: N14RifleCasingEject
+      params:
+        volume: -1
+  - type: EmitSoundOnCollide
+    sound:
+      collection: N14RifleCasingEject
+      params:
+        volume: -1

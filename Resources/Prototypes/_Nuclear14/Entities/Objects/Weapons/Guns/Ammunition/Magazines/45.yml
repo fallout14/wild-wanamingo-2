@@ -42,13 +42,13 @@
     proto: N14CartridgePistol45
 
 - type: entity
-  id: Magazine45SubMachineGun
+  id: N14Magazine45SubMachineGun
   name: SMG magazine (45. auto)
   parent: BaseItem
   components:
   - type: Tag
     tags:
-      - Magazine45SubMachineGun
+      - N14Magazine45SubMachineGun
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:

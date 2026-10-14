@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/50.yml
 
 - type: entity
-  id: BaseMagazine50AMR
+  id: N14BaseMagazine50AMR
   name: "magazine (.50 BMG)"
   parent: BaseItem
   abstract: true
@@ -40,7 +40,7 @@
 - type: entity
   id: N14Magazine50AMR
   name: "magazine (.50 BMG)"
-  parent: BaseMagazine50AMR
+  parent: N14BaseMagazine50AMR
   components:
   - type: BallisticAmmoProvider
     proto: N14Cartridge50
@@ -48,7 +48,7 @@
 - type: entity
   id: N14Magazine50AMRHEIAP
   name: "magazine (.50 BMG HEIAP)"
-  parent: BaseMagazine50AMR
+  parent: N14BaseMagazine50AMR
   suffix: HEIAP
   components:
   - type: BallisticAmmoProvider

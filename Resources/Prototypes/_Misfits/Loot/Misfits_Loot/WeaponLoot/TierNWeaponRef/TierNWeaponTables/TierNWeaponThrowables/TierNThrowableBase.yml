@@ -1,10 +1,10 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/TierNWeaponRef/TierNWeaponTables/TierNWeaponThrowables/TierNThrowableBase.yml
 
 - type: entityTable
-  id: M14WeaponLootTierN_ThrowablesAll
+  id: MisfitsM14WeaponLootTierN_ThrowablesAll
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTierN_Throwables
+          tableId: MisfitsM14WeaponLootTierN_Throwables
       - !type:NestedSelector
-          tableId: M14WeaponLootTierN_ThrowablesExplosive
+          tableId: MisfitsM14WeaponLootTierN_ThrowablesExplosive

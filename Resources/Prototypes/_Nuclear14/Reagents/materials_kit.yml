@@ -23,7 +23,7 @@
 
 - type: material
   id: Sulfur
-  stackEntity: SulfurPowder1
+  stackEntity: N14SulfurPowder1
   name: materials-sulfur
   unit: materials-unit-bar
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: powder_brass }
@@ -31,7 +31,7 @@
   price: 0.01
 
 - type: material
-  id: Aluminum
+  id: N14Aluminum
   stackEntity: N14IngotAluminum1
   name: materials-aluminum
   unit: materials-unit-bar
@@ -101,7 +101,7 @@
   price: 0.075
 
 - type: material
-  id: ScrapElectronic
+  id: N14ScrapElectronic
   stackEntity: N14ScrapElectronic1
   name: materials-scrap-electronic
   unit: materials-unit-bunch
@@ -117,7 +117,7 @@
   price: 0.005
 
 - type: material
-  id: ScrapGold
+  id: N14ScrapGold
   stackEntity: N14ScrapGold1
   name: materials-scrap-gold
   unit: materials-unit-bunch
@@ -126,7 +126,7 @@
   price: 0.007
 
 - type: material
-  id: ScrapCopper
+  id: N14ScrapCopper
   stackEntity: N14ScrapCopper1
   name: materials-scrap-copper
   unit: materials-unit-bunch
@@ -135,7 +135,7 @@
   price: 0.005
 
 - type: material
-  id: ScrapBrass
+  id: N14ScrapBrass
   stackEntity: N14ScrapBrass1
   name: materials-scrap-brass
   unit: materials-unit-bunch
@@ -144,7 +144,7 @@
   price: 0.005
 
 - type: material
-  id: Scrap
+  id: N14Scrap
   stackEntity: N14Scrap1
   name: materials-scrap
   unit: materials-unit-bunch
@@ -153,7 +153,7 @@
   price: 0.003
 
 - type: material
-  id: ScrapLead
+  id: N14ScrapLead
   stackEntity: N14ScrapLead1
   name: materials-lead-scrap
   unit: materials-unit-bunch
@@ -181,7 +181,7 @@
 
 - type: material
   id: Charcoal
-  stackEntity: Charcoal1
+  stackEntity: N14Charcoal1
   name: materials-charcoal
   unit: materials-unit-piece
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: powder_lead }
@@ -189,8 +189,8 @@
   price: 0.005
 
 - type: material
-  id: Fertilizer
-  stackEntity: FertilizerOre1
+  id: N14Fertilizer
+  stackEntity: N14FertilizerOre1
   name: materials-fertilizer
   unit: materials-unit-piece
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/Sacks/daesack2.rsi, state: icon }
@@ -198,7 +198,7 @@
   price: 0.05
 
 - type: reagent
-  id: Fertilizer
+  id: N14Fertilizer
   name: reagent-name-fertilizer
   group: Wasteland
   desc: reagent-desc-fertilizer
@@ -226,7 +226,7 @@
         probability: 0.45
 
 - type: material
-  id: Leather
+  id: N14Leather
   stackEntity: N14MaterialLeather1
   name: materials-leather
   unit: materials-unit-roll
@@ -234,7 +234,7 @@
   price: 0.02
 
 - type: material
-  id: Exoskeleton
+  id: N14Exoskeleton
   stackEntity: N14MaterialExoskeleton
   name: materials-exoskeleton
   unit: materials-unit-piece
@@ -242,7 +242,7 @@
   price: 0.05
 
 - type: material
-  id: AntChitin
+  id: N14AntChitin
   stackEntity: N14MaterialAntChitin1
   name: materials-antchitin
   unit: materials-unit-piece
@@ -250,7 +250,7 @@
   price: 0.05
 
 - type: material
-  id: RawLeather
+  id: N14RawLeather
   stackEntity: N14MaterialRawLeather1
   name: materials-raw-leather
   unit: materials-unit-roll
@@ -258,7 +258,7 @@
   price: 0.01
 
 - type: material
-  id: Thread
+  id: N14Thread
   stackEntity: N14MaterialThread1
   name: materials-thread
   unit: materials-unit-roll
@@ -268,30 +268,3 @@
 
 # #Misfits Add: Construction material prototypes for the cement/concrete/brick building system.
 # PhysicalComposition on N14MaterialCement, N14MaterialConcrete, and N14MaterialBrick reference these IDs.
-
-- type: material
-  id: Cement
-  stackEntity: N14MaterialCement1
-  name: materials-cement
-  unit: materials-unit-pile
-  icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: powder_brass }
-  color: "#c0bdb8"
-  price: 0.005
-
-- type: material
-  id: Concrete
-  stackEntity: N14MaterialConcrete1
-  name: materials-concrete
-  unit: materials-unit-piece
-  icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: scrap_3 }
-  color: "#b0b0b0"
-  price: 0.01
-
-- type: material
-  id: Brick
-  stackEntity: N14MaterialBrick1
-  name: materials-brick
-  unit: materials-unit-piece
-  icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: scrap_copper }
-  color: "#8b4513"
-  price: 0.01

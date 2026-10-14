@@ -2,11 +2,11 @@
 
 - type: entity
   name: plasma spread
-  id: BulletPlasmaSpread
-  parent: BulletPlasma
+  id: MisfitsBulletPlasmaSpread
+  parent: N14BulletPlasma
   categories: [ HideSpawnMenu ]
   components:
   - type: ProjectileSpread
-    proto: BulletPlasma  # each pellet is a standard plasma bolt
+    proto: N14BulletPlasma  # each pellet is a standard plasma bolt
     count: 3             # three simultaneous bolts per trigger pull
     spread: 20           # 20 degrees total arc (shotgun-like spread)

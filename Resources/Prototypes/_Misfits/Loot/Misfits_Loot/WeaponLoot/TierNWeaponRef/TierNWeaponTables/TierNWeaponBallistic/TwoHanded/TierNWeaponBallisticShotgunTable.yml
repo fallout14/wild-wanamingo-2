@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/TierNWeaponRef/TierNWeaponTables/TierNWeaponBallistic/TwoHanded/TierNWeaponBallisticShotgunTable.yml
 
 - type: entityTable
-  id: M14WeaponLootTierN_GunsBulletShotgun
+  id: MisfitsM14WeaponLootTierN_GunsBulletShotgun
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -37,7 +37,7 @@
       id: N14WeaponShotgunAuto
       weight: 6
     - !type:EntSelector
-      id: N14WeaponShotgunBlowback
+      id: MisfitsWeaponShotgunBlowback
       weight: 6
     - !type:EntSelector
       id: N14WeaponShotgunRiot
@@ -51,7 +51,7 @@
       id: N14WeaponShotgunShort
       weight: 6
     - !type:EntSelector
-      id: N14WeaponShotgunTrench # pump
+      id: MisfitsWeaponShotgunTrench # pump
       weight: 6
     - !type:EntSelector
       id: N14WeaponShotgunShort

@@ -45,7 +45,7 @@
       edges:
         - to: WorkbenchChemistrysetScrews
           steps:
-            - tag: Gear
+            - tag: N14Gear
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: gear_large
@@ -59,19 +59,19 @@
       edges:
         - to: WorkbenchChemistrysetUnwelded
           steps:
-            - tag: Screw
+            - tag: N14Screw
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: screw
               name: misfits-kit-screws
               doAfter: 1
-            - tag: Screw
+            - tag: N14Screw
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: screw
               name: misfits-kit-screws
               doAfter: 1
-            - tag: Screw
+            - tag: N14Screw
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: screw

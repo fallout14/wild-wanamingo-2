@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Damage/modifier_sets.yml
 
 - type: damageModifierSet
-  id: Ghoul
+  id: N14Ghoul
   coefficients:
     Blunt: 1.05
     Slash: 1.05
@@ -15,7 +15,7 @@
     Bloodloss: 0.8
 
 - type: damageModifierSet
-  id: GhoulGlowing
+  id: N14GhoulGlowing
   coefficients:
     Blunt: 1.1
     Slash: 1.1
@@ -28,7 +28,7 @@
     Bloodloss: 0.8
 
 - type: damageModifierSet
-  id: GhoulNPC
+  id: N14GhoulNPC
   coefficients:
     Blunt: 1
     Slash: 1
@@ -43,7 +43,7 @@
 # immune to everything except physical and heat damage
 
 - type: damageModifierSet
-  id: WastelandAnimal
+  id: N14WastelandAnimal
   coefficients:
     Blunt: 1
     Slash: 1
@@ -95,28 +95,6 @@
 # #Cythisiax Added - Sentient deathclaw (Bwonsamdi) hide: 50% damage taken across the board.
 
 - type: damageModifierSet
-  id: N14DeathclawHide
-  coefficients:
-    Blunt: 0.5
-    Slash: 0.5
-    Piercing: 0.5
-    Heat: 0.5
-    Shock: 0.5
-    Cold: 0.5
-    Poison: 0.5
-    Radiation: 0.5
-    Asphyxiation: 0.5
-    Bloodloss: 0.5
-    Cellular: 0.5
-    Caustic: 0.5
-    Structural: 0.5
-    Holy: 0.5
-
-# ── Ug-Qualtoth transformation modifier sets ────────────────────────────────
-
-# Stage 2: arms and one leg mutated — minor physical resistance, flesh toughening.
-
-- type: damageModifierSet
   id: N14GammaShield
   coefficients:
     Heat: 0.95
@@ -145,32 +123,3 @@
     Heat: 4
 
 # Misfits Change - FEV-mutated super mutants: 30% damage reduction across the board, immune to radiation.
-
-- type: damageModifierSet
-  id: SuperMutant
-  coefficients:
-    Blunt: 0.7
-    Slash: 0.7
-    Piercing: 0.7
-    Heat: 0.7
-    Shock: 0.7
-    Cold: 0.7
-    Caustic: 0.7
-    Poison: 0.7
-    Asphyxiation: 0.7
-    Bloodloss: 0.7
-    Cellular: 0.7
-    Radiation: 0.0
-
-# Misfits Change - Super Mutant damage modifier sets
-# Ported from DesertRose2/desertrose: supermutant.dm bullet deflection (85% chance vs weak bullets)
-# approximated here as flat Piercing coefficient reduction.
-
-- type: damageModifierSet
-  id: N14SuperMutant # Thick mutant hide, highly radiation resistant, shrugs off weak impacts.
-  coefficients:
-    Blunt: 0.85
-    Slash: 0.85
-    Piercing: 0.80
-    Radiation: 0.25
-    Poison: 0.75

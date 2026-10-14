@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/GeneralLoot/GenTiersConsumablesFloraTables.yml
 
 - type: entityTable
-  id: M14ConsumableLootTier0_FloraAll
+  id: MisfitsM14ConsumableLootTier0_FloraAll
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -90,7 +90,7 @@
       weight: 10
 
 - type: entityTable
-  id: M14ConsumableLootTier0_FloraCommon
+  id: MisfitsM14ConsumableLootTier0_FloraCommon
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -146,7 +146,7 @@
 # just if u wanna lay food stuff around
 
 - type: entityTable
-  id: M14ConsumableLootTier0_FloraBad
+  id: MisfitsM14ConsumableLootTier0_FloraBad
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -175,7 +175,7 @@
       weight: 10
 
 - type: entityTable
-  id: M14ConsumableLootTier0_FloraFarm
+  id: MisfitsM14ConsumableLootTier0_FloraFarm
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -217,7 +217,7 @@
 # if it is used in a tribal type recipe will prolly be here
 
 - type: entityTable
-  id: M14ConsumableLootTier0_FloraTribal
+  id: MisfitsM14ConsumableLootTier0_FloraTribal
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -264,7 +264,7 @@
 # Can be Common on tier 2
 
 - type: entityTable
-  id: M14ConsumableLootTier2_FloraUncommon
+  id: MisfitsM14ConsumableLootTier2_FloraUncommon
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -296,7 +296,7 @@
 # Can be Common on tier 3
 
 - type: entityTable
-  id: M14ConsumableLootTier3_FloraRare
+  id: MisfitsM14ConsumableLootTier3_FloraRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -317,7 +317,7 @@
 # careful since most of these are rare crafting ingredients so dont just spam it. dats why it special
 
 - type: entityTable
-  id: M14ConsumableLootSpecialTier3_FloraToxic
+  id: MisfitsM14ConsumableLootSpecialTier3_FloraToxic
   table: !type:GroupSelector
     children:
     - !type:EntSelector

@@ -1,28 +1,28 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier2Weapon/Tier2WeaponTables/Tier2WeaponEnergy/TwoHanded/Tier2WeaponEnergyRifleTable.yml
 
 - type: entityTable
-  id: M14WeaponLootTier2_LaserRifleAuto
+  id: MisfitsM14WeaponLootTier2_LaserRifleAuto
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: Error
 
 - type: entityTable
-  id: M14WeaponLootTier2_PlasmaRifleAuto
+  id: MisfitsM14WeaponLootTier2_PlasmaRifleAuto
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: Error
 
 - type: entityTable
-  id: M14WeaponLootTier2_OtherRifleAuto
+  id: MisfitsM14WeaponLootTier2_OtherRifleAuto
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: Error
 
 - type: entityTable
-  id: M14WeaponLootTier2_LaserRifleSemi
+  id: MisfitsM14WeaponLootTier2_LaserRifleSemi
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -33,14 +33,14 @@
       weight: 1
 
 - type: entityTable
-  id: M14WeaponLootTier2_PlasmaRifleSemi
+  id: MisfitsM14WeaponLootTier2_PlasmaRifleSemi
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: Error
 
 - type: entityTable
-  id: M14WeaponLootTier2_OtherRifleSemi
+  id: MisfitsM14WeaponLootTier2_OtherRifleSemi
   table: !type:GroupSelector
     children:
     - !type:EntSelector

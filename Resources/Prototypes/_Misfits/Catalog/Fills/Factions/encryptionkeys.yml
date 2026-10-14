@@ -3,12 +3,12 @@
 - type: entity
   name: legion encryption key box
   parent: BoxCardboard
-  id: BoxEncryptionKeyLegion
+  id: MisfitsBoxEncryptionKeyLegion
   description: A box of spare encryption keys.
   components:
   - type: StorageFill
     contents:
-    - id: EncryptionKeyLegion
+    - id: MisfitsEncryptionKeyLegion
       amount: 6
   - type: Sprite
     layers:
@@ -24,12 +24,12 @@
 - type: entity
   name: brotherhood encryption key box
   parent: BoxCardboard
-  id: BoxEncryptionKeyBrotherhoodOfSteel
+  id: MisfitsBoxEncryptionKeyBrotherhoodOfSteel
   description: A box of spare encryption keys.
   components:
   - type: StorageFill
     contents:
-    - id: EncryptionKeyBrotherhoodOfSteel
+    - id: MisfitsEncryptionKeyBrotherhoodOfSteel
       amount: 6
   - type: Sprite
     layers:
@@ -45,12 +45,12 @@
 - type: entity
   name: ncr encryption key box
   parent: BoxCardboard
-  id: BoxEncryptionKeyNCR
+  id: MisfitsBoxEncryptionKeyNCR
   description: A box of spare encryption keys.
   components:
   - type: StorageFill
     contents:
-    - id: EncryptionKeyNCR
+    - id: N14EncryptionKeyNCR
       amount: 6
   - type: Sprite
     layers:
@@ -66,12 +66,12 @@
 - type: entity
   name: vault encryption key box
   parent: BoxCardboard
-  id: BoxEncryptionKeyVault
+  id: MisfitsBoxEncryptionKeyVault
   description: A box of spare encryption keys.
   components:
   - type: StorageFill
     contents:
-    - id: EncryptionKeyVault
+    - id: N14EncryptionKeyVault
       amount: 6
   - type: Sprite
     layers:
@@ -87,12 +87,12 @@
 - type: entity
   name: eighties encryption key box
   parent: BoxCardboard
-  id: BoxEncryptionKeyEighties
+  id: MisfitsBoxEncryptionKeyEighties
   description: A box of spare encryption keys.
   components:
   - type: StorageFill
     contents:
-    - id: EncryptionKeyEighties
+    - id: MisfitsEncryptionKeyEighties
       amount: 6
   - type: Sprite
     layers:
@@ -108,12 +108,12 @@
 - type: entity
   name: wasteland encryption key box
   parent: BoxCardboard
-  id: BoxEncryptionKeyWasteland
+  id: MisfitsBoxEncryptionKeyWasteland
   description: A box of spare encryption keys.
   components:
   - type: StorageFill
     contents:
-    - id: EncryptionKeyWastelandGlobal
+    - id: MisfitsEncryptionKeyWastelandGlobal
       amount: 6
   - type: Sprite
     layers:
@@ -129,12 +129,12 @@
 - type: entity
   name: followers encryption key box
   parent: BoxCardboard
-  id: BoxEncryptionKeyFollowers
+  id: MisfitsBoxEncryptionKeyFollowers
   description: A box of spare encryption keys.
   components:
   - type: StorageFill
     contents:
-    - id: EncryptionKeyFollowers
+    - id: MisfitsEncryptionKeyFollowers
       amount: 6
   - type: Sprite
     layers:
@@ -150,12 +150,12 @@
 - type: entity
   name: U.S. Army encryption key box
   parent: BoxCardboard
-  id: BoxEncryptionKeyEnclave
+  id: MisfitsBoxEncryptionKeyEnclave
   description: A box of spare encryption keys.
   components:
   - type: StorageFill
     contents:
-    - id: EncryptionKeyEnclave
+    - id: N14EncryptionKeyEnclave
       amount: 6
   - type: Sprite
     layers:
@@ -171,12 +171,12 @@
 - type: entity
   name: town encryption key box
   parent: BoxCardboard
-  id: BoxEncryptionKeyTown
+  id: MisfitsBoxEncryptionKeyTown
   description: A box of spare encryption keys.
   components:
   - type: StorageFill
     contents:
-    - id: EncryptionKeyTown
+    - id: MisfitsEncryptionKeyTown
       amount: 6
   - type: Sprite
     layers:

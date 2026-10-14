@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier2Weapon/Tier2WeaponTables/Tier2WeaponMelee/Tier2WeaponMeleeTwoHand.yml
 
 - type: entityTable
-  id: M14WeaponLootTier2_MeleeBluntTwoHanded
+  id: MisfitsM14WeaponLootTier2_MeleeBluntTwoHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -16,7 +16,7 @@
       id: N14GolfClub
 
 - type: entityTable
-  id: M14WeaponLootTier2_MeleeSharpTwoHanded
+  id: MisfitsM14WeaponLootTier2_MeleeSharpTwoHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -25,7 +25,7 @@
       id: N14WastelandSpear
 
 - type: entityTable
-  id: M14WeaponLootTier2_MeleeOtherTwoHanded
+  id: MisfitsM14WeaponLootTier2_MeleeOtherTwoHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector

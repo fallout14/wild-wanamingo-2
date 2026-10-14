@@ -7,7 +7,7 @@
   suffix: Scientist
   components:
   - type: AccessReader
-    access: [["EnclaveRoleScientist"]]
+    access: [["MisfitsEnclaveRoleScientist"]]
 
 - type: entity
   parent: N14ClosetEnclave
@@ -16,7 +16,7 @@
   suffix: Head Scientist
   components:
   - type: AccessReader
-    access: [["EnclaveRoleHeadScientist"]]
+    access: [["MisfitsEnclaveRoleHeadScientist"]]
 
 - type: entity
   parent: N14ClosetEnclave
@@ -25,7 +25,7 @@
   suffix: Enclave All
   components:
   - type: AccessReader
-    access: [["EnclaveRoleAll"]]
+    access: [["MisfitsEnclaveRoleAll"]]
 
 - type: entity
   parent: N14ClosetEnclave
@@ -34,7 +34,7 @@
   suffix: NCO
   components:
   - type: AccessReader
-    access: [["EnclaveRoleNCO"]]
+    access: [["MisfitsEnclaveRoleNCO"]]
 
 - type: entity
   parent: N14ClosetEnclave
@@ -43,7 +43,7 @@
   suffix: Junior Officer
   components:
   - type: AccessReader
-    access: [["EnclaveRoleJuniorOfficer"]]
+    access: [["MisfitsEnclaveRoleJuniorOfficer"]]
 
 - type: entity
   parent: N14ClosetEnclave
@@ -52,7 +52,7 @@
   suffix: Senior Officer
   components:
   - type: AccessReader
-    access: [["EnclaveRoleSeniorOfficer"]]
+    access: [["MisfitsEnclaveRoleSeniorOfficer"]]
 
 - type: entity
   parent: N14ClosetEnclave
@@ -61,7 +61,7 @@
   suffix: Commander
   components:
   - type: AccessReader
-    access: [["EnclaveRoleCommander"]]
+    access: [["MisfitsEnclaveRoleCommander"]]
 
 - type: entity
   parent: N14ClosetEnclave
@@ -70,7 +70,7 @@
   suffix: Scientist
   components:
   - type: AccessReader
-    access: [["EnclaveRoleScientist"]]
+    access: [["MisfitsEnclaveRoleScientist"]]
 
 - type: entity
   parent: N14ClosetEnclave
@@ -79,7 +79,7 @@
   suffix: Head Scientist
   components:
   - type: AccessReader
-    access: [["EnclaveRoleHeadScientist"]]
+    access: [["MisfitsEnclaveRoleHeadScientist"]]
 
 - type: entity
   parent: N14ClosetEnclave
@@ -88,7 +88,7 @@
   suffix: Enclave All
   components:
   - type: AccessReader
-    access: [["EnclaveRoleAll"]]
+    access: [["MisfitsEnclaveRoleAll"]]
 
 - type: entity
   parent: N14ClosetEnclave
@@ -97,7 +97,7 @@
   suffix: NCO
   components:
   - type: AccessReader
-    access: [["EnclaveRoleNCO"]]
+    access: [["MisfitsEnclaveRoleNCO"]]
 
 - type: entity
   parent: N14ClosetEnclave
@@ -106,7 +106,7 @@
   suffix: Junior Officer
   components:
   - type: AccessReader
-    access: [["EnclaveRoleJuniorOfficer"]]
+    access: [["MisfitsEnclaveRoleJuniorOfficer"]]
 
 - type: entity
   parent: N14ClosetEnclave
@@ -115,7 +115,7 @@
   suffix: Senior Officer
   components:
   - type: AccessReader
-    access: [["EnclaveRoleSeniorOfficer"]]
+    access: [["MisfitsEnclaveRoleSeniorOfficer"]]
 
 - type: entity
   parent: N14ClosetEnclave
@@ -124,4 +124,4 @@
   suffix: Commander
   components:
   - type: AccessReader
-    access: [["EnclaveRoleCommander"]]
+    access: [["MisfitsEnclaveRoleCommander"]]

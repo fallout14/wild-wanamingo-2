@@ -1,37 +1,37 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/TierNWeaponRef/TierNWeaponTables/TierNLoot.yml
 
 - type: entityTable
-  id: M14WeaponLootTierN
+  id: MisfitsM14WeaponLootTierN
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTierN_GunsAll
+          tableId: MisfitsM14WeaponLootTierN_GunsAll
       - !type:NestedSelector
-          tableId: M14WeaponLootTierN_MeleeAll
+          tableId: MisfitsM14WeaponLootTierN_MeleeAll
       - !type:NestedSelector
-          tableId: M14WeaponLootTierN_ThrowablesAll
+          tableId: MisfitsM14WeaponLootTierN_ThrowablesAll
 
 - type: entityTable
-  id: M14WeaponLootTierN_GunsAll
+  id: MisfitsM14WeaponLootTierN_GunsAll
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTierN_GunsBulletAll
+          tableId: MisfitsM14WeaponLootTierN_GunsBulletAll
       - !type:NestedSelector
-          tableId: M14WeaponLootTierN_GunsEnergyAll
+          tableId: MisfitsM14WeaponLootTierN_GunsEnergyAll
       - !type:NestedSelector
-          tableId: M14WeaponLootTierN_GunsExplosiveAll
+          tableId: MisfitsM14WeaponLootTierN_GunsExplosiveAll
 
 # unused
 
 - type: entityTable
-  id: M14WeaponLootTierN_CallIn
+  id: MisfitsM14WeaponLootTierN_CallIn
   table: !type:GroupSelector
     children: []
 #unused
 
 - type: entityTable
-  id: M14TurretTableTierN_Any_Unused
+  id: MisfitsM14TurretTableTierN_Any_Unused
   table: !type:GroupSelector
     children:
     - !type:EntSelector

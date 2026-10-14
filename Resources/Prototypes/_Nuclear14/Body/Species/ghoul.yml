@@ -9,7 +9,7 @@
 # Same marking slots as humans (hair, facial hair...).
 - type: markingsGroup
   parent: Human
-  id: Ghoul
+  id: N14Ghoul
 
 # --- Ghoul
 
@@ -42,7 +42,7 @@
       Liver: OrganHumanLiver
       Kidneys: OrganHumanKidneys
   - type: HumanoidProfile
-    species: Ghoul
+    species: N14Ghoul
 
 - type: entity
   parent:
@@ -57,7 +57,7 @@
   - type: Perishable
     rotAfter: 3600 # an entire in-game day
   - type: Damageable
-    damageModifierSet: Ghoul
+    damageModifierSet: N14Ghoul
   - type: RadiationReceiver
   - type: RadiationHealing
   - type: MobThresholds
@@ -78,7 +78,7 @@
       sprite: Nuclear14/Mobs/Species/Ghoul/parts.rsi
   - type: VisualOrganMarkings
     markingData:
-      group: Ghoul
+      group: N14Ghoul
 
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganGhoulExternal ]
@@ -157,7 +157,7 @@
       Liver: OrganHumanLiver
       Kidneys: OrganHumanKidneys
   - type: HumanoidProfile
-    species: GhoulGlowing
+    species: N14GhoulGlowing
 
 - type: entity
   parent:
@@ -199,7 +199,7 @@
       sprite: Nuclear14/Mobs/Species/GhoulGlowing/parts.rsi
   - type: VisualOrganMarkings
     markingData:
-      group: Ghoul
+      group: N14Ghoul
 
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganGhoulGlowingExternal ]

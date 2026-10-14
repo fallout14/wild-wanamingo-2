@@ -1,0 +1,69 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Misc/identification.yml
+
+- type: entity # Forge-Add-Start
+  parent: N14IDPassportTownsfolk
+  id: MisfitsIDShopkeeperHelperTown
+  name: ShopkeepersHelper ID
+  description: A passport ID used by a town shopkeeper helper.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/identification.rsi
+    state: passport_presidential
+  - type: PresetIdCard
+
+- type: entity
+  parent: N14IDDoctor
+  id: MisfitsIDFollowerVolunteer
+  name: followers (volunteer) ID
+  description: An ID card worn by the Followers of the Apocalypse.
+  components:
+  - type: Tag
+    tags:
+    - MisfitsIdCardFollowers
+  - type: Access
+    tags:
+    - MisfitsFotA
+
+- type: entity
+  parent: N14IDDoctor
+  id: MisfitsIDFollowerDoctor
+  name: followers (doctor) ID
+  description: An ID card worn by the Followers of the Apocalypse.
+  components:
+  - type: Tag
+    tags:
+    - MisfitsIdCardFollowers
+  - type: Access
+    tags:
+    - MisfitsFotA
+    - MisfitsFotADoctor
+
+- type: entity
+  parent: N14IDDoctor
+  id: MisfitsIDFollowerGuard
+  name: followers (guard) ID
+  description: An ID card worn by the Followers of the Apocalypse.
+  components:
+  - type: Tag
+    tags:
+    - MisfitsIdCardFollowers
+  - type: Access
+    tags:
+    - MisfitsFotA
+
+- type: entity
+  parent: N14IDDoctor
+  id: MisfitsIDFollowerHead
+  name: followers (head) ID
+  description: An ID card worn by the Followers of the Apocalypse.
+  components:
+  - type: Tag
+    tags:
+    - MisfitsIdCardFollowers
+  - type: Access
+    tags:
+    - MisfitsFotA
+    - MisfitsFotADoctor
+    - MisfitsFotAHead
+
+#MARK: Keys

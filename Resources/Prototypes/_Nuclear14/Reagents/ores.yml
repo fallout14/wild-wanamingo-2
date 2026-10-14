@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Reagents/ores.yml
 
 - type: material
-  id: RawLead
+  id: N14RawLead
   stackEntity: N14LeadOre1
   name: materials-raw-lead
   unit: materials-unit-chunk
@@ -10,8 +10,8 @@
   price: 0.05
 
 - type: material
-  id: RawSulfur
-  stackEntity: SulfurOre1
+  id: N14RawSulfur
+  stackEntity: N14SulfurOre1
   name: materials-raw-sulfur
   unit: materials-unit-chunk
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: sulfur }

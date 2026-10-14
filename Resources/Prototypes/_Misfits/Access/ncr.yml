@@ -1,0 +1,43 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Access/ncr.yml
+
+- type: accessLevel
+  id: MisfitsNCRCaptain
+  name: id-card-access-level-ncr-captain
+
+- type: accessLevel
+  id: MisfitsNCRTrader
+  name: id-card-access-level-ncr-trader
+  #Misfits add, trader has own access to use caravan wagon
+
+- type: accessGroup
+  id: MisfitsNCRTrader
+  #Misfits add, trader has own access to use caravan wagon
+  tags:
+  - MisfitsNCRTrader
+
+- type: accessGroup
+  id: MisfitsNCRCaptain
+  # #Misfits Add: NCR Captain inherits all officer access plus Captain-level spaces.
+  tags:
+  - N14NCR
+  - N14NCRSGT
+  - N14NCRMedic
+  - N14NCRLT
+  - MisfitsNCRCaptain
+
+# #Misfits Add: NCR Major — top whitelist-only command billet above Captain.
+
+- type: accessLevel
+  id: MisfitsNCRMajor
+  name: id-card-access-level-ncr-major
+
+- type: accessGroup
+  id: MisfitsNCRMajor
+  # #Misfits Add: NCR Major inherits all Captain access plus Major-level command spaces.
+  tags:
+  - N14NCR
+  - N14NCRSGT
+  - N14NCRMedic
+  - N14NCRLT
+  - MisfitsNCRCaptain
+  - MisfitsNCRMajor

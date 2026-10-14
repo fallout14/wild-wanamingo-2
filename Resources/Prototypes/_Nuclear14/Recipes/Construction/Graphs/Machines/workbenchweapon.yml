@@ -19,7 +19,7 @@
     - node: WorkbenchWeaponbenchFrame
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchWeaponbenchFrame
+      entity: MisfitsWorkbenchWeaponbenchFrame
       edges:
         - to: WorkbenchWeaponbenchSteel
           steps:
@@ -30,7 +30,7 @@
     - node: WorkbenchWeaponbenchSteel
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchWeaponbenchFrame
+      entity: MisfitsWorkbenchWeaponbenchFrame
       edges:
         - to: WorkbenchWeaponbenchUnwelded
           steps: 
@@ -40,7 +40,7 @@
     - node: WorkbenchWeaponbenchUnwelded
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchWeaponbenchFrame
+      entity: MisfitsWorkbenchWeaponbenchFrame
       edges:
         - to: WorkbenchWeaponbenchCircuitry
           steps:
@@ -51,7 +51,7 @@
     - node: WorkbenchWeaponbenchCircuitry
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchWeaponbenchFrame
+      entity: MisfitsWorkbenchWeaponbenchFrame
       edges:
         - to: WorkbenchWeaponbenchUnscrewed
           steps: 
@@ -61,7 +61,7 @@
     - node: WorkbenchWeaponbenchUnscrewed
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchWeaponbenchFrame
+      entity: MisfitsWorkbenchWeaponbenchFrame
       edges:
         - to: WorkbenchWeaponbench
           steps:

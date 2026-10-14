@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3WeaponMelee/Tier3WeaponMeleeOneHand.yml
 
 - type: entityTable
-  id: M14WeaponLootTier3_MeleeBluntOneHanded
+  id: MisfitsM14WeaponLootTier3_MeleeBluntOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -12,7 +12,7 @@
       id: N14TribalClub
 
 - type: entityTable
-  id: M14WeaponLootTier3_MeleeSharpOneHanded
+  id: MisfitsM14WeaponLootTier3_MeleeSharpOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -30,7 +30,7 @@
     - !type:EntSelector
       id: N14TribalSword
     - !type:EntSelector
-      id: N14Gladius
+      id: CorvaxGladius
     - !type:EntSelector
       id: N14Hatchet
     - !type:EntSelector
@@ -43,14 +43,14 @@
       id: N14CombatKnife
 
 - type: entityTable
-  id: M14WeaponLootTier3_MeleeOtherOneHanded
+  id: MisfitsM14WeaponLootTier3_MeleeOtherOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: Error
 
 - type: entityTable
-  id: M14WeaponLootTier3_Shield
+  id: MisfitsM14WeaponLootTier3_Shield
   table: !type:GroupSelector
     children:
     - !type:EntSelector

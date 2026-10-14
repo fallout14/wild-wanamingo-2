@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Misc/ladders.yml
 
 - type: entity
-  id: BaseLadder
+  id: N14BaseLadder
   name: ladder
   abstract: true
   placement:
@@ -29,8 +29,8 @@
 # SS13 Sprites
 
 - type: entity
-  parent: BaseLadder
-  id: LadderTop
+  parent: N14BaseLadder
+  id: N14LadderTop
   suffix: top
   description: The top of a ladder. Use it to go down.
   components:
@@ -39,8 +39,8 @@
     
 
 - type: entity
-  parent: BaseLadder
-  id: LadderBottom
+  parent: N14BaseLadder
+  id: N14LadderBottom
   suffix: bottom
   description: The bottom of a ladder. Use it to go up.
   components:
@@ -61,8 +61,8 @@
 # MS13 Sprites
 
 - type: entity
-  parent: LadderTop
-  id: LadderTopBunkerOpen
+  parent: N14LadderTop
+  id: N14LadderTopBunkerOpen
   name: bunker entrance
   suffix: open
   description: Looks like it leads down somewhere.
@@ -73,8 +73,8 @@
     
 
 - type: entity
-  parent: LadderTop
-  id: LadderTopManholeOpen
+  parent: N14LadderTop
+  id: N14LadderTopManholeOpen
   name: manhole
   suffix: open
   description: Looks like it leads down somewhere.
@@ -86,8 +86,8 @@
     
 
 - type: entity
-  parent: LadderTop
-  id: LadderSquareTop
+  parent: N14LadderTop
+  id: N14LadderSquareTop
   suffix: square
   description: Looks like it leads down somewhere.
   components:
@@ -97,8 +97,8 @@
     
 
 - type: entity
-  parent: LadderBottom
-  id: LadderSquareBottom
+  parent: N14LadderBottom
+  id: N14LadderSquareBottom
   suffix: bottom, square
   description: The bottom of a ladder. Use it to go up.
   components:
@@ -120,8 +120,8 @@
         
 
 - type: entity
-  parent: LadderSquareBottom
-  id: LadderSquareMid
+  parent: N14LadderSquareBottom
+  id: N14LadderSquareMid
   suffix: mid, square
   description: The middle of a ladder. Up or down.
   components:
@@ -131,8 +131,8 @@
     
 
 - type: entity
-  parent: BaseLadder
-  id: LadderRopeTop1
+  parent: N14BaseLadder
+  id: N14LadderRopeTop1
   suffix: rope, top
   name: climbing rope
   description: The top of a rope. Going down!
@@ -143,8 +143,8 @@
     
 
 - type: entity
-  parent: BaseLadder
-  id: LadderRopeBottom1
+  parent: N14BaseLadder
+  id: N14LadderRopeBottom1
   suffix: rope, bottom
   name: climbing rope
   description: The bottom of a rope. Going up!
@@ -156,7 +156,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: LadderTopBunkerClosed
+  id: N14LadderTopBunkerClosed
   name: bunker entrance
   suffix: closed
   description: A closed up entrance to a bunker.
@@ -177,8 +177,8 @@
   
 
 - type: entity
-  parent: LadderTopBunkerClosed
-  id: LadderTopManholeClosed
+  parent: N14LadderTopBunkerClosed
+  id: N14LadderTopManholeClosed
   name: manhole cover
   suffix: closed
   description: A closed up entrance to a bunker.
@@ -193,8 +193,8 @@
 # Tops
 
 - type: entity
-  parent: BaseLadder
-  id: LadderTopMetal
+  parent: N14BaseLadder
+  id: N14LadderTopMetal
   suffix: top, metal, painted
   description: The top of a ladder. Use it to go down.
   components:
@@ -206,8 +206,8 @@
           
 
 - type: entity
-  parent: LadderTopMetal
-  id: LadderTopMetalPaint2
+  parent: N14LadderTopMetal
+  id: N14LadderTopMetalPaint2
   suffix: top, metal, flaking
   description: The top of a ladder. Use it to go down.
   components:
@@ -218,8 +218,8 @@
           
 
 - type: entity
-  parent: LadderTopMetal
-  id: LadderTopMetalPaint3
+  parent: N14LadderTopMetal
+  id: N14LadderTopMetalPaint3
   suffix: top, metal, flaked
   description: The top of a ladder. Use it to go down.
   components:
@@ -230,8 +230,8 @@
           
 
 - type: entity
-  parent: LadderTopMetal
-  id: LadderTopMetalRusted
+  parent: N14LadderTopMetal
+  id: N14LadderTopMetalRusted
   suffix: top, metal, rusted
   description: The top of a ladder. Use it to go down. Rusty.
   components:
@@ -242,8 +242,8 @@
     
 
 - type: entity
-  parent: LadderTopMetal
-  id: LadderTopMetalDamaged
+  parent: N14LadderTopMetal
+  id: N14LadderTopMetalDamaged
   suffix: top, metal
   description: The top of a ladder. Use it to go down. This one looks damaged.
   components:
@@ -252,8 +252,8 @@
     
 
 - type: entity
-  parent: LadderTopMetal
-  id: LadderTopRope
+  parent: N14LadderTopMetal
+  id: N14LadderTopRope
   name: rope ladder
   suffix: top, rope
   description: The top of a ladder. Use it to go down.
@@ -264,8 +264,8 @@
 # Bottoms
 
 - type: entity
-  parent: LadderBottom
-  id: LadderBottomMetal
+  parent: N14LadderBottom
+  id: N14LadderBottomMetal
   suffix: bottom, metal
   description: The bottom of a ladder. Use it to go up.
   components:
@@ -275,8 +275,8 @@
     
 
 - type: entity
-  parent: LadderBottomMetal
-  id: LadderBottomMetalPaint1
+  parent: N14LadderBottomMetal
+  id: N14LadderBottomMetalPaint1
   suffix: bottom, metal, painted
   description: The bottom of a ladder. Use it to go down.
   components:
@@ -287,8 +287,8 @@
           
 
 - type: entity
-  parent: LadderBottomMetal
-  id: LadderBottomMetalPaint2
+  parent: N14LadderBottomMetal
+  id: N14LadderBottomMetalPaint2
   suffix: bottom, metal, flaking
   description: The bottom of a ladder. Use it to go down.
   components:
@@ -299,8 +299,8 @@
           
 
 - type: entity
-  parent: LadderBottomMetal
-  id: LadderBottomMetalPaint3
+  parent: N14LadderBottomMetal
+  id: N14LadderBottomMetalPaint3
   suffix: bottom, metal, flaked
   description: The bottom of a ladder. Use it to go down.
   components:
@@ -311,8 +311,8 @@
           
 
 - type: entity
-  parent: LadderBottomMetal
-  id: LadderBottomMetalDamaged
+  parent: N14LadderBottomMetal
+  id: N14LadderBottomMetalDamaged
   suffix: bottom
   description: The bottom of a ladder. Use it to go up. Looks damaged.
   components:
@@ -321,8 +321,8 @@
     
 
 - type: entity
-  parent: LadderBottomMetal
-  id: LadderBottomMetalRusted
+  parent: N14LadderBottomMetal
+  id: N14LadderBottomMetalRusted
   suffix: bottom, metal, rusted
   description: The bottom of a ladder. Use it to go down. Rusty.
   components:
@@ -333,8 +333,8 @@
     
 
 - type: entity
-  parent: LadderBottomMetal
-  id: LadderBottomRope
+  parent: N14LadderBottomMetal
+  id: N14LadderBottomRope
   name: rope ladder
   suffix: bottom, rope
   description: The bottom of a ladder. Use it to go down.
@@ -344,8 +344,8 @@
     
 
 - type: entity
-  parent: LadderBottomMetal
-  id: LadderBottomRopeDamaged
+  parent: N14LadderBottomMetal
+  id: N14LadderBottomRopeDamaged
   name: rope ladder
   suffix: bottom, rope, damaged
   description: The bottom of a ladder. Use it to go down. Looks dangerous.

@@ -1,0 +1,16 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Smokeables/packs.yml
+
+- type: entity
+  parent: N14CigPackBase
+  id: MisfitsCigarettePackLuckyStrike
+  name: Lucky Strike cig pack
+  description: "A pristine pack of pre-war cigarettes once issued to U.S. Army troops. A label on the packaging reads: It's Toasted."
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Consumable/Smokeables/Packs/luckystrike.rsi
+  - type: Item
+    sprite: Nuclear14/Objects/Consumable/Smokeables/Packs/luckystrike.rsi
+  - type: StorageFill
+    contents:
+    - id: MisfitsCigaretteLuckyStrike
+      amount: 8

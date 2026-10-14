@@ -9,7 +9,7 @@
   components:
   - type: Tag
     tags:
-      - SpeedLoader45-70
+      - N14SpeedLoader45-70
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
@@ -23,7 +23,7 @@
         ents: []
 
 - type: entity
-  id: SpeedLoader45-70
+  id: N14SpeedLoader45-70
   name: "speed loader (45-70 gov)"
   parent: N14BaseSpeedLoader45-70
   components:
@@ -45,14 +45,14 @@
 #TODO: Move this to a proper place, upstream it made by 'Cojoke' from Wizden
 
 - type: entity
-  id: BaseSpeedLoaderInternal4570
+  id: N14BaseSpeedLoaderInternal4570
   name: "speed loader internal"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-    - SpeedLoaderInternal
+    - N14SpeedLoaderInternal
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
@@ -67,9 +67,9 @@
         ents: []
 
 - type: entity
-  id: SpeedLoader45-70Tube
+  id: N14SpeedLoader45-70Tube
   name: "speed loader tube (45-70 gov)"
-  parent: BaseSpeedLoaderInternal4570
+  parent: N14BaseSpeedLoaderInternal4570
   components:
   - type: BallisticAmmoProvider
     proto: N14Cartridge45-70

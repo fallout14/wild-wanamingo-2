@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/GeneralLoot/Tier1PartsTables.yml
 
 - type: entityTable
-  id: M14PartsLootTier1_ElectricComp
+  id: MisfitsM14PartsLootTier1_ElectricComp
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -18,7 +18,7 @@
       id: N14JunkComponentResistor1
 
 - type: entityTable
-  id: M14PartsLootTier0_EletricMisc
+  id: MisfitsM14PartsLootTier0_EletricMisc
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -40,7 +40,7 @@
 # stuff like pistons and industrial kinda stuff here too
 
 - type: entityTable
-  id: M14PartsLootTier1_Machine
+  id: MisfitsM14PartsLootTier1_Machine
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -61,7 +61,7 @@
 # get stuff like casings/shells too
 
 - type: entityTable
-  id: M14PartsLootTier1_RepairKitRecipe
+  id: MisfitsM14PartsLootTier1_RepairKitRecipe
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -75,7 +75,7 @@
       weight: 1
 
 - type: entityTable
-  id: M14PartsLootTier1_Adhesives
+  id: MisfitsM14PartsLootTier1_Adhesives
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -83,7 +83,7 @@
       weight: 1
 
 - type: entityTable
-  id: M14PartsLootTier1_Chemicals
+  id: MisfitsM14PartsLootTier1_Chemicals
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -91,7 +91,7 @@
       weight: 1
 
 - type: entityTable
-  id: M14PartsLootTier1_GunParts
+  id: MisfitsM14PartsLootTier1_GunParts
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -111,7 +111,7 @@
       weight: 1
 
 - type: entityTable
-  id: M14PartsLootTier2_GunParts
+  id: MisfitsM14PartsLootTier2_GunParts
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -134,7 +134,7 @@
       weight: 1
 
 - type: entityTable
-  id: M14PartsLootTier3_GunParts
+  id: MisfitsM14PartsLootTier3_GunParts
   table: !type:GroupSelector
     children:
     - !type:EntSelector

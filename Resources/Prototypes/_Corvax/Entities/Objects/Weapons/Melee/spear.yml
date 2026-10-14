@@ -1,0 +1,24 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Objects/Weapons/Melee/spear.yml
+
+- type: entity
+  parent: Spear
+  id: CorvaxPilumSpear
+  name: pilum
+  description: An ancient spear of the Roman Empire, now used by the Legion.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Objects/Weapons/Melee/pilum.rsi
+    netsync: false
+    state: spear
+  - type: SolutionContainerVisuals
+    inHandsMaxFillLevels: 0
+    equippedMaxFillLevels: 0
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 40
+  - type: MeleeWeapon
+    damage:
+      types:
+        Piercing: 24

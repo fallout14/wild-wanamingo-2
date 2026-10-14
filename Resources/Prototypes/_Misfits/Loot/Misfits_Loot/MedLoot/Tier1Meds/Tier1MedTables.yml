@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/MedLoot/Tier1Meds/Tier1MedTables.yml
 
 - type: entityTable
-  id: M14MedsLootTier1_Common
+  id: MisfitsM14MedsLootTier1_Common
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -9,7 +9,7 @@
       weight: 15
 
 - type: entityTable
-  id: M14MedsLootTier1_CommonPlus
+  id: MisfitsM14MedsLootTier1_CommonPlus
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -20,18 +20,18 @@
       weight: 5
 
 - type: entityTable
-  id: M14MedsLootTier1_UncommonAntiRad
+  id: MisfitsM14MedsLootTier1_UncommonAntiRad
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: N14RadXPill
       weight: 10
     - !type:EntSelector
-      id: N14CleansingPowder
+      id: MisfitsCleansingPowder
       weight: 20
 
 - type: entityTable
-  id: M14MedsLootTier1_PlusSuperRare
+  id: MisfitsM14MedsLootTier1_PlusSuperRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -45,7 +45,7 @@
       weight: 5
 
 - type: entityTable
-  id: M14MedsLootTier1_DrugsUncommon
+  id: MisfitsM14MedsLootTier1_DrugsUncommon
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -56,7 +56,7 @@
       id: N14MentatsPill
 
 - type: entityTable
-  id: M14MedsLootTier1_DrugsRare
+  id: MisfitsM14MedsLootTier1_DrugsRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -65,7 +65,7 @@
       id: N14BuffoutPill
 
 - type: entityTable
-  id: M14MedsLootTier1_DrugsSuperRare
+  id: MisfitsM14MedsLootTier1_DrugsSuperRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector

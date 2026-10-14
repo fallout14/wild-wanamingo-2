@@ -4,7 +4,7 @@
 - type: entity
   name: filing cabinet
   parent: BaseStructureDynamic
-  id: N14filingCabinet
+  id: N14FilingCabinet
   suffix: Empty
   description: "Remember: only you can prevent corporate espionage!"
   components:
@@ -44,7 +44,7 @@
       storagebase: !type:Container
 
 - type: entity
-  parent: [ N14filingCabinet, N14BaseSmallLockerStorageFill ]
+  parent: [ N14FilingCabinet, N14BaseSmallLockerStorageFill ]
   id: N14LootFilingCabinet
   suffix: Loot,Random
   components:

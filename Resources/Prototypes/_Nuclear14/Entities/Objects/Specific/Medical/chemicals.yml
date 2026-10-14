@@ -105,7 +105,7 @@
   - type: Tag
     tags:
     - Syringe # Forge-Change
-    - N14EmptySyringe
+    - MisfitsEmptySyringe
     - Trash
 
 - type: entity
@@ -149,12 +149,12 @@
     solution:
       maxVol: 25
       reagents:
-      - ReagentId: HealingMixture
+      - ReagentId: N14HealingMixture
         Quantity: 25
   - type: Tag # #Misfits Add - Allow empty stimpaks to be reused in crafting recipes
     tags:
     - Syringe
-    - N14EmptySyringe
+    - MisfitsEmptySyringe
   - type: UseDelay
     delay: 0.75
 
@@ -171,7 +171,7 @@
     solution:
       maxVol: 25
       reagents:
-      - ReagentId: DirtyStimpak
+      - ReagentId: N14DirtyStimpak
         Quantity: 25
 
 - type: entity
@@ -215,12 +215,12 @@
     solution:
       maxVol: 25
       reagents:
-      - ReagentId: RobustHealingMixture
+      - ReagentId: N14RobustHealingMixture
         Quantity: 25
   - type: Tag # #Misfits Add - Allow empty super stimpaks to be reused in crafting recipes
     tags:
     - Syringe
-    - N14EmptySyringe
+    - MisfitsEmptySyringe
   - type: UseDelay
     delay: 1.5
 
@@ -267,7 +267,7 @@
     solution:
       maxVol: 15
       reagents:
-      - ReagentId: Antidote
+      - ReagentId: N14Antidote
         Quantity: 15
 
 - type: entity
@@ -304,7 +304,7 @@
     - HyposprayInjectMode
   - type: Tag
     tags:
-    - Jet
+    - N14Jet
     - Syringe
   - type: UseDelay
     delay: 0.5
@@ -321,7 +321,7 @@
     solution:
       maxVol: 15
       reagents:
-      - ReagentId: MovespeedMixture
+      - ReagentId: N14MovespeedMixture
         Quantity: 15
 
 - type: entity
@@ -363,7 +363,7 @@
       maxVol: 10
   - type: Tag
     tags:
-    - Turbo
+    - MisfitsTurbo
     - Syringe
   - type: UseDelay
     delay: 0.25
@@ -380,49 +380,11 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: RobustMovespeedMixture
+      - ReagentId: N14RobustMovespeedMixture
         Quantity: 10
 
 - type: entity
-  parent: N14ChemicalSyringe
-  id: N14Med-XInjector
-  name: med-x
-  description: A syringe filled with a powerful painkiller. Some believe that it makes you more resistant to pain.
-  components:
-  - type: Sprite
-    scale: 0.75, 0.75
-    sprite: Nuclear14/Objects/Specific/Medical/ms13_drugs.rsi
-    layers:
-    - state: medxfill1
-      map: ["enum.SolutionContainerLayers.Fill"]
-      visible: false
-    - state: medx-empty
-      map: [ "enum.SolutionContainerLayers.Base" ]
-  - type: Icon
-    sprite: Nuclear14/Objects/Specific/Medical/ms13_drugs.rsi
-    state: "medx-empty"
-  - type: SolutionContainerVisuals
-    maxFillLevels: 1
-    changeColor: true
-    fillBaseName: medxfill
-    emptySpriteName: medx-empty
-  - type: Appearance
-  - type: Injector
-    solutionName: pen
-    currentTransferAmount: null
-    ignoreClosed: false
-    activeModeProtoId: HyposprayInjectMode
-    allowedModes:
-    - HyposprayInjectMode
-  - type: Solution
-    id: pen
-    solution:
-      maxVol: 20
-  - type: UseDelay
-    delay: 0.75
-
-- type: entity
-  parent: N14Med-XInjector
+  parent: MisfitsMed-XInjector
   id: N14Med-X
   suffix: filled
   name: med-x
@@ -433,7 +395,7 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: DamageResistMixture
+      - ReagentId: N14DamageResistMixture
         Quantity: 20
 
 - type: entity
@@ -470,7 +432,7 @@
     - HyposprayInjectMode
   - type: Tag
     tags:
-    - HydraInhaler
+    - MisfitsHydraInhaler
     - Syringe
   - type: UseDelay
     delay: 0.5
@@ -487,7 +449,7 @@
     solution:
       maxVol: 15
       reagents:
-      - ReagentId: Hydra
+      - ReagentId: N14Hydra
         Quantity: 15
 
 - type: entity
@@ -541,7 +503,7 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: DamageModifyingMixture
+      - ReagentId: N14DamageModifyingMixture
         Quantity: 20
 
 - type: entity
@@ -579,54 +541,10 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: RadAway
+      - ReagentId: N14RadAway
         Quantity: 20
   - type: UseDelay
     delay: 1.25
-
-- type: entity
-  parent: N14ChemicalSyringe
-  id: N14CombatInjector
-  suffix: empty
-  name: combat injector
-  description: A glass ampule attached to a rudimentary injector, used to house any number of medicines.
-  components:
-  - type: Sprite
-    scale: 0.75, 0.75
-    sprite: Nuclear14/Objects/Specific/Medical/combat-injector.rsi
-    layers:
-    - state: combatinjectorfill1
-      map: ["enum.SolutionContainerLayers.Fill"]
-      visible: false
-    - state: combatinjector-empty
-      map: [ "enum.SolutionContainerLayers.Base" ]
-  - type: Icon
-    sprite: Nuclear14/Objects/Specific/Medical/combat-injector.rsi
-    state: "combatinjector-empty"
-  - type: SolutionContainerVisuals
-    maxFillLevels: 1
-    changeColor: true
-    fillBaseName: combatinjectorfill
-    emptySpriteName: combatinjector-empty
-  - type: Appearance
-  - type: Injector
-    solutionName: pen
-    currentTransferAmount: null
-    ignoreClosed: false
-    activeModeProtoId: HyposprayInjectMode
-    allowedModes:
-    - HyposprayInjectMode
-  - type: Solution
-    id: pen
-    solution:
-      maxVol: 20
-  - type: Tag
-    tags:
-    - Syringe
-  - type: UseDelay
-    delay: 0.5
-
-#MARK: RadAway Inhaler
 
 - type: entity
   parent: N14ChemicalSyringe
@@ -678,7 +596,7 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: RadAway
+      - ReagentId: N14RadAway
         Quantity: 30
 
 - type: entity
@@ -757,13 +675,13 @@
     id: drink
     solution:
       reagents:
-      - ReagentId: RadAway
+      - ReagentId: N14RadAway
         Quantity: 30
   - type: Spillable
     solution: drink
   - type: Tag
     tags:
-    - Phial
+    - N14Phial
 
 - type: entity
   name: healing powder
@@ -773,7 +691,7 @@
   components:
   - type: Tag
     tags:
-    - N14TribalMedicine # #Misfits Fix: tag allows storage in the Medical Belt
+    - MisfitsTribalMedicine # #Misfits Fix: tag allows storage in the Medical Belt
   - type: Sprite
     sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
     state: healingpowder
@@ -784,7 +702,7 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: HealingPowder
+      - ReagentId: N14HealingPowder
         Quantity: 20
   - type: Edible
     edible: Food
@@ -812,76 +730,7 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14HealingPowder
-  id: N14CleansingPowder
-  name: cleansing powder
-  description: A bag of anti-rad powder used by tribal and Legion healers. Makes the user drowsy.
-  components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
-    layers:
-    - state: healingpowder
-      color: "#7fbf48"
-  - type: Item
-    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
-    size: Small
-  - type: Solution
-    solution:
-      maxVol: 10
-      reagents:
-      - ReagentId: CleansingPowder
-        Quantity: 10 # Misfits Change - Cleansing Powder is bargain bin anti-rad. Low quantity with side-effects.
-
-- type: entity
-  parent: N14HealingPowder
-  id: N14BerserkerPowder
-  name: berserker powder
-  description: A pouch of berserker powder, enhances physical abilities with some side effects.
-  components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
-    layers:
-    - state: berserkerpowder
-  - type: Item
-    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
-    size: Small
-  - type: Solution
-    solution:
-      maxVol: 25
-      reagents:
-      - ReagentId: Berserkermix
-        Quantity: 25 # less than what youd get from minmaxxing with chem, od is 26.
-
-- type: entity
-  parent: DrinkBase
-  id: N14AntidoteBottleBase
-  abstract: true
-  name: antidote bottle
-  description: A glass bottle for storing wasteland antidotes.
-  components:
-  - type: Tag
-    tags:
-    - Bottle
-  - type: Solution
-    id: drink
-    solution:
-      maxVol: 60
-  - type: Sprite
-    sprite: Nuclear14/Objects/Specific/Medical/fallout2.rsi
-    state: antidote
-  - type: Item
-    size: Tiny
-    sprite: Nuclear14/Objects/Specific/Medical/fallout2.rsi
-
-- type: entity
-  parent: N14AntidoteBottleBase
-  id: N14AntidoteEmpty
-  suffix: empty
-  name: antidote bottle
-  description: An empty glass bottle sized for antidote batches.
-
-- type: entity
-  parent: N14AntidoteBottleBase
+  parent: MisfitsAntidoteBottleBase
   id: N14Antidote
   name: antidote
   description: A toxin antidote made from radscorpion tail, ethanol, and tarberries.
@@ -891,7 +740,7 @@
     solution:
       maxVol: 60
       reagents:
-      - ReagentId: Antidote
+      - ReagentId: N14Antidote
         Quantity: 60
 
 - type: entity
@@ -928,39 +777,11 @@
     solution:
       maxVol: 25
       reagents:
-      - ReagentId: HealingPoultice
+      - ReagentId: N14HealingPoultice
         Quantity: 25
 
 - type: entity
-  parent: DrinkBase
-  id: N14BitterdrinkBottleBase
-  abstract: true
-  name: bitterdrink bottle
-  description: A bottle for storing brewed tribal remedies.
-  components:
-  - type: Tag
-    tags:
-    - Bottle
-  - type: Solution
-    id: drink
-    solution:
-      maxVol: 50
-  - type: Sprite
-    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
-    state: bitterdrink
-  - type: Item
-    size: Tiny
-    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
-
-- type: entity
-  parent: N14BitterdrinkBottleBase
-  id: N14BitterdrinkEmpty
-  suffix: empty
-  name: bitterdrink bottle
-  description: An empty bottle meant for bitterdrink and similar herbal brews.
-
-- type: entity
-  parent: N14BitterdrinkBottleBase
+  parent: MisfitsBitterdrinkBottleBase
   id: N14Bitterdrink
   name: Bitterdrink
   description: A bottle containing a mixture of plants to aid against poisons and radiation.
@@ -970,7 +791,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: Bitterdrink
+      - ReagentId: N14Bitterdrink
         Quantity: 50
 
 - type: entity
@@ -988,7 +809,7 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: MourningPoultice
+      - ReagentId: N14MourningPoultice
         Quantity: 20
 
 - type: entity
@@ -1009,7 +830,7 @@
     solution:
       maxVol: 25
       reagents:
-      - ReagentId: UltraRobustHealingMixture
+      - ReagentId: N14UltraRobustHealingMixture
         Quantity: 25
 
 - type: entity
@@ -1027,7 +848,7 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: TraumaPowder
+      - ReagentId: N14TraumaPowder
         Quantity: 30
   - type: Destructible
     thresholds:
@@ -1074,14 +895,6 @@
     count: 15 #Was 10, Buffed due to limb damage changes
   - type: StackPrice
     price: 2 # Corvax-Change
-
-- type: entity
-  parent: N14Bandage
-  id: N14Bandage1
-  suffix: Single
-  components:
-  - type: Stack
-    count: 1
 
 - type: entity
   name: aloe salve

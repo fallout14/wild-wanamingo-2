@@ -1,0 +1,74 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/308.yml
+
+- type: entity
+  id: MisfitsSKSEnbloc308
+  name: "en-bloc clip (SKS, .308)"
+  description: A 10-round en-bloc clip for the SKS rifle. Standard-issue ammunition for Legion heavy riflemen in the field.
+  parent: N14BaseMagazine308Rifle
+  components:
+  - type: Tag
+    tags:
+      - MisfitsSKSEnbloc308
+  - type: BallisticAmmoProvider
+    proto: N14Cartridge308Rifle
+    capacity: 10
+  - type: Sprite
+    netsync: false
+    sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Magazines/garand308.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1 # #Misfits Fix: RSI only has mag-0 (empty) and mag-1 (loaded); steps:1 maps correctly
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity # Forge-add-start
+  id: MisfitsMagazine308RifleSniper
+  name: "sniper magazine (.308)"
+  parent: N14BaseMagazine308Rifle
+  components:
+  - type: Tag
+    tags:
+      - MisfitsMagazine308RifleSnipers
+  - type: BallisticAmmoProvider
+    proto: N14Cartridge308Rifle
+    capacity: 10
+  - type: Sprite
+    netsync: false
+    sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Magazines/308/mag5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity # Forge-add-start
+  id: MisfitsMagazineOver308RifleSniper
+  name: "sniper magazine (Overpressure .308)"
+  description: A .308 overpressure magazine made for the sniper. Due to the bullets being slightly fatter, normal .308 won't fit in this mag.
+  parent: N14BaseMagazine308Rifle
+  components:
+  - type: Tag
+    tags:
+      - MisfitsMagazineOver308RifleSnipers
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - MisfitsCartridgeOver308Rifle
+    proto: MisfitsCartridgeOver308Rifle
+    capacity: 10
+  - type: Sprite
+    netsync: false
+    sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Magazines/308/mag5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+
+# Forge-add-end

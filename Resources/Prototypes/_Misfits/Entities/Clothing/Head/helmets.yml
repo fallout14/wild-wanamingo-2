@@ -1,8 +1,8 @@
-# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Head/helmets.yml
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Head/helmets.yml, Resources/Prototypes/_Nuclear14/Entities/Clothing/Head/helmets.yml
 
 - type: entity
   parent: N14ClothingHeadHatCombatHelmet
-  id: FalloutNCRmilitarypoliceHelmet
+  id: MisfitsFalloutNCRmilitarypoliceHelmet
   name: NCR Military Police Helmet
   description: A helmet worn by the NCR Military Police.
   components:
@@ -19,7 +19,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: N14ClothingHeadHatNCRSlouch
+  id: MisfitsClothingHeadHatNCRSlouch
   name: NCR slouch hat
   description: An irregular issue NCR sun hat, the left side of the brim is pinned to the crown for ease with shouldering rifles
   components:
@@ -148,3 +148,46 @@
     sprite: Misfits/Clothing/Head/khanfullhelmet.rsi
   - type: Clothing
     sprite: Misfits/Clothing/Head/khanfullhelmet.rsi
+
+- type: entity
+  parent: N14ClothingHeadHatCombatHelmet
+  id: MisfitsClothingHeadHatNCRCombatHelmet
+  name: NCR combat helmet
+  description: A combat helmet painted in New California Republic standard tan.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Head/FalloutHelmets/ncrcombathelmet.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/Head/FalloutHelmets/ncrcombathelmet.rsi
+  - type: Tag
+    tags:
+    - HidesHair
+
+# midwest BoS
+
+- type: entity
+  parent: N14ClothingHeadSuitbase
+  id: MisfitsClothingHeadHatHelmetVolMatHelmet
+  name: VMHE helmet
+  description: An advanced derivative of the radiation suit helmet specialized to counter rapidly expanding material delivering force impact to the face.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Head/FalloutHelmets/falloutvolmatsuit.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/Head/FalloutHelmets/falloutvolmatsuit.rsi
+  - type: IdentityBlocker
+  - type: BreathMask
+  - type: GasFilterMask
+  - type: IngestionBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
+  - type: Tag
+    tags:
+    - HidesHair
+    - HidesBeard
+
+# Town Guard helmets

@@ -83,7 +83,7 @@
       damageContainer: Inorganic
     - type: Explosive
       #Misfits Change - use the structural-capable N14 explosion profile.
-      explosionType: N14DefaultStructural
+      explosionType: MisfitsDefaultStructural
       maxIntensity: 4
       intensitySlope: 1
       totalIntensity: 10
@@ -149,7 +149,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - BrotherhoodOfSteelSecureArea
+    - MisfitsBrotherhoodOfSteelSecureArea
 
 - type: entity
   parent: N14BaseWeaponTurret
@@ -158,7 +158,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - BrotherhoodOfSteel
+    - MisfitsBrotherhoodOfSteel
 
 #Misfits Change: Washington BoS turrets re-enabled using consolidated BrotherhoodOfSteel faction.
 #Original used BrotherhoodOfSteelWashington/SecureArea which no longer exist.
@@ -170,7 +170,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - BrotherhoodOfSteelSecureArea
+    - MisfitsBrotherhoodOfSteelSecureArea
 
 - type: entity
   parent: N14BaseWeaponTurret
@@ -179,7 +179,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - BrotherhoodOfSteel
+    - MisfitsBrotherhoodOfSteel
 
 - type: entity
   parent: N14BaseWeaponTurret
@@ -188,7 +188,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - VaultSecureArea
+    - N14VaultSecureArea
 
 - type: entity
   parent: N14BaseWeaponTurret
@@ -197,7 +197,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - Vault
+    - N14Vault
 
 - type: entity
   parent: N14BaseWeaponTurret
@@ -206,7 +206,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - NCRSecureArea
+    - N14NCRSecureArea
 
 - type: entity
   parent: N14BaseWeaponTurret
@@ -215,7 +215,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - NCR
+    - N14NCR
 
 - type: entity
   parent: N14BaseWeaponTurret
@@ -224,7 +224,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - CaravanCompanySecureArea
+    - N14CaravanCompanySecureArea
 
 - type: entity
   parent: N14BaseWeaponTurret
@@ -233,7 +233,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - Raider
+    - N14Raider
 
 - type: entity
   parent: N14BaseWeaponTurret
@@ -242,7 +242,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - HostileRobot
+    - N14HostileRobot
 
 # Spawn Point Turrets
 # These are meta turrets designed to stop spawn point abuse
@@ -310,7 +310,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - BrotherhoodOfSteelSecureArea
+    - MisfitsBrotherhoodOfSteelSecureArea
 
 - type: entity
   parent: N14BaseWeaponTurretMeta
@@ -319,7 +319,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - BrotherhoodOfSteelSecureArea
+    - MisfitsBrotherhoodOfSteelSecureArea
 
 - type: entity
   parent: N14BaseWeaponTurretMeta
@@ -328,7 +328,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - VaultSecureArea
+    - N14VaultSecureArea
 
 - type: entity
   parent: N14BaseWeaponTurretMeta
@@ -337,4 +337,4 @@
   components:
   - type: NpcFactionMember
     factions:
-    - NCRSecureArea
+    - N14NCRSecureArea

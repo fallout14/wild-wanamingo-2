@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: BaseMagazineBox10mm
+  id: N14BaseMagazineBox10mm
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -27,8 +27,8 @@
   - type: FoldableAmmoBox #Misfits Change /Add/: Empty cardboard ammo boxes can fold back into one cardboard sheet.
 
 - type: entity
-  parent: BaseMagazineBox10mm
-  id: MagazineBox10mm
+  parent: N14BaseMagazineBox10mm
+  id: N14MagazineBox10mm
   name: ammunition box (10mm)
   components:
   - type: BallisticAmmoProvider

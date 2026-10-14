@@ -1,0 +1,12 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Clothing/Belt/belts.yml
+
+- type: entity
+  parent: N14ClothingBeltNCR
+  id: MisfitsClothingBeltNCRShotgunner
+  name: NCR shotgun belt
+  description: An NCR belt variant set up for shotgun shells and close-range kit.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Belt/ncrshotgunner.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/Belt/ncrshotgunner.rsi

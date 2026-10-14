@@ -1,4 +1,4 @@
-# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Eyes/glasses.yml
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Eyes/glasses.yml, Resources/Prototypes/_Nuclear14/Entities/Clothing/Eyes/glasses.yml
 
 - type: entity
   parent: ClothingEyesGlassesSunglasses
@@ -13,3 +13,14 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+
+- type: entity
+  parent: N14ClothingEyesGlassesGoggles
+  id: MisfitsClothingEyesNCRGoggles
+  name: NCR goggles
+  description: Service goggles favored by NCR troops working under sand, glare, and gun smoke.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Eyes/ncrgoggles.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/Eyes/ncrgoggles.rsi

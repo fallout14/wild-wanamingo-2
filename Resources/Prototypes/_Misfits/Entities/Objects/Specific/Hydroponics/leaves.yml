@@ -1,9 +1,9 @@
-# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Hydroponics/leaves.yml
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Hydroponics/leaves.yml, Resources/Prototypes/_Nuclear14/Entities/Objects/Specific/Hydroponics/leaves.yml
 
 - type: entity
   name: coca leaves
   parent: ProduceBase
-  id: LeavesCoca
+  id: MisfitsLeavesCoca
   description: "Drench it in welding fuel to make some fine powder."
   components:
   - type: Sprite
@@ -15,5 +15,70 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: CocaSlurry
+      - ReagentId: MisfitsCocaSlurry
         Quantity: 10
+
+- type: entity
+  name: dried cannabis leaves
+  parent: LeavesCannabisDried
+  id: MisfitsLeavesCannabisDried
+  components:
+    - type: Stack
+      stackType: MisfitsLeavesCannabisDried
+      count: 1
+    - type: Sprite
+      sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi
+      state: cannabis_dried
+   
+
+# Copied full vanilla code just so my sprite wasn't black
+
+- type: entity
+  name: ground cannabis
+  parent: BaseItem
+  id: MisfitsGroundCannabis
+  description: "Ground cannabis, ready to take you on a trip."
+  components:
+    - type: Stack
+      stackType: MisfitsGroundCannabis
+      count: 1
+    - type: Solution
+      solution:
+        reagents:
+          - ReagentId: THC
+            Quantity: 20
+    - type: Sprite
+      sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi
+      state: cannabis_powderpile
+    - type: Tag
+      tags:
+        - Smokable
+    - type: Item
+      size: Tiny
+      
+
+- type: entity
+  name: dried tobacco leaves
+  parent: LeavesTobaccoDried
+  id: MisfitsLeavesTobaccoDried
+  components:
+    - type: Stack
+      stackType: MisfitsLeavesTobaccoDried
+      count: 1
+    - type: Sprite
+      sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi
+      state: tobacco_dried_1
+   
+
+- type: entity
+  name: ground tobacco
+  parent: GroundTobacco
+  id: MisfitsGroundTobacco
+  components:
+    - type: Stack
+      stackType: MisfitsGroundTobacco
+      count: 1
+    - type: Sprite
+      sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi
+      state: tobacco_powderpile
+    

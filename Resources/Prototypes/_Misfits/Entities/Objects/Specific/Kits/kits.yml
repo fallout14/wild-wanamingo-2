@@ -1,0 +1,153 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Specific/Kits/kits.yml
+
+- type: entity
+  name: lieutenant's commissar kit
+  parent: N14KitBase
+  id: MisfitsKitNCR_LTCommissar
+  description: A crate containing all an NCR Commissar needs to execute their tro- duties.
+  components:
+  - type: Sprite
+    state: pointman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: MisfitsClothingOuterNCRCommissarPlate
+      - id: N14ClothingBeltNCR
+      - id: MisfitsNCRCommissarSabre
+      - id: MisfitsClothingNeckNCRCommissarJacket
+      - id: N14WeaponLaserdotDesertEagle44
+      - id: N14MagazinePistol44
+        amount: 4
+      - id: MisfitsClothingMaskCommissar
+      - id: MisfitsClothingHeadHatNCRCommissarHat
+      - id: N14BoxCardboardMREBoxCFilled
+      - id: N14Stimpak
+      - id: N14SuperStimpak
+      - id: N14RadAwayBloodbag
+      - id: N14CleanGauze10
+        amount: 2
+      - id: N14Flare
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+#MARK: NCR Ranger Kits
+
+- type: entity
+  name: ranger sniper kit
+  parent: N14KitBase
+  id: MisfitsKitSniperRanger
+  description: A crate containing advanced weaponry for members of the Rangers.
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14ClothingBeltNCRPouches
+      - id: MisfitsWeaponRifle308SniperRifle
+      - id: MisfitsMagazine308RifleSniper
+        amount: 3
+      - id: N14MagazineBox308
+      - id: N14Stimpak
+      - id: N14Stimpak
+      - id: N14BoxCardboardMREBoxKFilled
+      - id: N14CombatKnife
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+#MARK: Veteran Kits
+
+- type: entity
+  name: BoS Senior Knight Ballistic Kit
+  parent: N14KitBase
+  id: MisfitsKitMBoS_SKniBal
+  description: A crate containing everything a member of the Brotherhood might need.
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: MisfitsWeaponRifle5mmCarbine
+      - id: MisfitsMagazineCarbine5mm
+        amount: 3
+      - id: N14WeaponPistol12mm
+      - id: N14MagazinePistol12mm
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+      - id: N14BoxCardboardMREBoxKFilled
+      - id: N14ClothingOuterCombatArmorSeniorBOS
+      - id: MisfitsGrenadeFragDefensive # #Misfits Add - faction council Senior Knight ordnance
+      - id: EmpGrenade
+
+- type: entity
+  name: BoS Senior Knight Laser Kit
+  parent: N14KitBase
+  id: MisfitsKitMBoS_SKniLas
+  description: A crate containing everything a member of the Brotherhood might need.
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserRifle
+      - id: MisfitsMicrofusionCell
+        amount: 1
+      - id: N14WeaponPistol12mm
+      - id: N14MagazinePistol12mm
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+      - id: N14BoxCardboardMREBoxKFilled
+      - id: N14ClothingOuterCombatArmorSeniorBOS
+      - id: MisfitsGrenadeFragDefensive # #Misfits Add - faction council Senior Knight ordnance
+      - id: EmpGrenade
+
+- type: entity
+  name: BoS Recon Knight Kit
+  parent: N14KitBase
+  id: MisfitsKitMBoS_Recon
+  description: A crate containing everything a recon knight may need.
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: MisfitsWeaponRevolver44Magnum
+      - id: MisfitsSpeedLoader44Magnum
+        amount: 2
+      - id: MisfitsAmmoBox44Magnum
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+      - id: N14BoxCardboardMREBoxKFilled
+      - id: N14ClothingOuterMidwestReconArmor
+      - id: N14ClothingHeadHatBrotherhoodMidwestHelmetRecon
+      - id: SmokeGrenade # #Misfits Add - faction council Recon Knight ordnance
+
+- type: entity
+  name: BoS Paladin Enclave Slayer Kit
+  parent: N14KitBase
+  id: MisfitsKitMBoS_PalSlay
+  description: A crate containing everything a member of the Brotherhood might need.
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserPistol
+      - id: N14PowerCellSmall
+        amount: 4
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+        amount: 2
+      - id: N14BoxCardboardMREBoxKFilled

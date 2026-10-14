@@ -1,17 +1,17 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3WeaponBallistic/OneHanded/Tier3WeaponBallisticRevolverTable.yml
 
 - type: entityTable
-  id: M14WeaponLootTier3_GunsBulletRevolver
+  id: MisfitsM14WeaponLootTier3_GunsBulletRevolver
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponRevolver357Detective
+      id: MisfitsWeaponRevolver357Detective
       weight: 7
     - !type:EntSelector
       id: N14WeaponRevolver10mm
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver357Detective
+      id: MisfitsWeaponRevolver357Detective
       weight: 7
     - !type:EntSelector
       id: N14WeaponRevolver10mm
@@ -20,17 +20,17 @@
       id: N14WeaponRevolverWebley #.44
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver44Magnum
+      id: MisfitsWeaponRevolver44Magnum
       weight: 7
     - !type:EntSelector
       id: N14WeaponRevolver44Tribal
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver357Police # #Misfits Add - police pistol
+      id: MisfitsWeaponRevolver357Police # #Misfits Add - police pistol
       weight: 5
     - !type:EntSelector
-      id: N14WeaponRevolver44Snub # #Misfits Add - snub .44
+      id: MisfitsWeaponRevolver44Snub # #Misfits Add - snub .44
       weight: 5
     - !type:EntSelector
-      id: N14WeaponRevolver44SingleAction # #Misfits Add - .44 single action
+      id: MisfitsWeaponRevolver44SingleAction # #Misfits Add - .44 single action
       weight: 5

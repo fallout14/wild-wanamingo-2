@@ -7,13 +7,13 @@
   components:
   - type: StorageFill
     contents:
-    - id: N14IngotAluminum5
-    - id: N14IngotCopper5
-    - id: N14IngotGold5
-    - id: N14IngotBrass5
-    - id: N14IngotLead5
-    - id: N14IngotIron5
-    - id: N14IngotSilver5
+    - id: MisfitsIngotAluminum5
+    - id: MisfitsIngotCopper5
+    - id: MisfitsIngotGold5
+    - id: MisfitsIngotBrass5
+    - id: MisfitsIngotLead5
+    - id: MisfitsIngotIron5
+    - id: MisfitsIngotSilver5
 
 - type: entity
   id: MisfitsShelfMetalIngotsRandom
@@ -22,19 +22,19 @@
   components:
   - type: StorageFill
     contents:
-    - id: N14IngotAluminum5
+    - id: MisfitsIngotAluminum5
       prob: 0.4
-    - id: N14IngotCopper5
+    - id: MisfitsIngotCopper5
       prob: 0.4
-    - id: N14IngotGold5
+    - id: MisfitsIngotGold5
       prob: 0.4
-    - id: N14IngotBrass5
+    - id: MisfitsIngotBrass5
       prob: 0.4
-    - id: N14IngotLead5
+    - id: MisfitsIngotLead5
       prob: 0.4
-    - id: N14IngotIron5
+    - id: MisfitsIngotIron5
       prob: 0.4
-    - id: N14IngotSilver5
+    - id: MisfitsIngotSilver5
       prob: 0.4
 
 - type: entity
@@ -44,13 +44,13 @@
   components:
   - type: StorageFill
     contents:
-    - id: N14Scrap10
-    - id: N14ScrapGold5
-    - id: N14ScrapBrass5
-    - id: N14ScrapCopper10
-    - id: N14ScrapLead5
-    - id: N14ScrapSteel10
-    - id: N14ScrapElectronic10
+    - id: MisfitsScrap10
+    - id: MisfitsScrapGold5
+    - id: MisfitsScrapBrass5
+    - id: MisfitsScrapCopper10
+    - id: MisfitsScrapLead5
+    - id: MisfitsScrapSteel10
+    - id: MisfitsScrapElectronic10
 
 - type: entity
   id: MisfitsShelfMetalScrapRandom
@@ -59,19 +59,19 @@
   components:
   - type: StorageFill
     contents:
-    - id: N14Scrap10
+    - id: MisfitsScrap10
       prob: 0.4
-    - id: N14ScrapGold5
+    - id: MisfitsScrapGold5
       prob: 0.4
-    - id: N14ScrapBrass5
+    - id: MisfitsScrapBrass5
       prob: 0.4
-    - id: N14ScrapCopper10
+    - id: MisfitsScrapCopper10
       prob: 0.4
-    - id: N14ScrapLead5
+    - id: MisfitsScrapLead5
       prob: 0.4
-    - id: N14ScrapSteel10
+    - id: MisfitsScrapSteel10
       prob: 0.4
-    - id: N14ScrapElectronic10
+    - id: MisfitsScrapElectronic10
       prob: 0.4
 
 - type: entity
@@ -82,14 +82,14 @@
   - type: StorageFill
     contents:
     - id: N14MaterialCircuitry10
-    - id: N14MaterialLeather10
-    - id: N14MaterialThread10
+    - id: MisfitsMaterialLeather10
+    - id: MisfitsMaterialThread10
     - id: MaterialCardboard10
-    - id: MaterialCloth15
-    - id: MaterialWoodPlank15
-    - id: SheetGlass15
-    - id: SheetPlastic15
-    - id: SheetSteel15
+    - id: MisfitsMaterialCloth15
+    - id: MisfitsMaterialWoodPlank15
+    - id: MisfitsSheetGlass15
+    - id: MisfitsSheetPlastic15
+    - id: MisfitsSheetSteel15
 
 - type: entity
   id: MisfitsShelfMetalMaterialsRandom
@@ -100,19 +100,19 @@
     contents:
     - id: N14MaterialCircuitry10
       prob: 0.4
-    - id: N14MaterialLeather10
+    - id: MisfitsMaterialLeather10
       prob: 0.4
-    - id: N14MaterialThread10
+    - id: MisfitsMaterialThread10
       prob: 0.4
     - id: MaterialCardboard10
       prob: 0.4
-    - id: MaterialCloth15
+    - id: MisfitsMaterialCloth15
       prob: 0.4
-    - id: MaterialWoodPlank15
+    - id: MisfitsMaterialWoodPlank15
       prob: 0.4
-    - id: SheetGlass15
+    - id: MisfitsSheetGlass15
       prob: 0.4
-    - id: SheetPlastic15
+    - id: MisfitsSheetPlastic15
       prob: 0.4
-    - id: SheetSteel15
+    - id: MisfitsSheetSteel15
       prob: 0.4

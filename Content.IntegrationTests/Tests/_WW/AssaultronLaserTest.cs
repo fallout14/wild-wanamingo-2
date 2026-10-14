@@ -25,7 +25,7 @@ public sealed class AssaultronLaserTest : GameTest
         var map = await pair.CreateTestMap();
         EntityUid robot = default;
 
-        await server.WaitPost(() => robot = entMan.SpawnEntity("N14PlayerSyntheticAssaultron", map.GridCoords));
+        await server.WaitPost(() => robot = entMan.SpawnEntity("MisfitsPlayerSyntheticAssaultron", map.GridCoords));
         await server.WaitRunTicks(2);
 
         ActionGunComponent gunAction = default!;

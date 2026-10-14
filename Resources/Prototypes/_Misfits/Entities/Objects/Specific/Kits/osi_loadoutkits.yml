@@ -1,9 +1,9 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Kits/osi_loadoutkits.yml
 
 - type: entity
-  id: OSIloadoutkits
+  id: MisfitsOSIloadoutkits
   name: Undecided OSI Loadout Kit
-  parent: BaseLoadoutKit
+  parent: N14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -25,7 +25,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - KitOSI_Mechanical
+  - MisfitsKitOSI_Mechanical
 
 - type: thiefBackpackSet
   id: OSI_MedicalSet
@@ -35,7 +35,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: medic
   content:
-  - KitOSI_Medical
+  - MisfitsKitOSI_Medical
 
 - type: thiefBackpackSet
   id: OSI_FieldSet
@@ -45,12 +45,12 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - KitOSI_Field
+  - MisfitsKitOSI_Field
 
 - type: entity
-  id: KitOSI_Mechanical
+  id: MisfitsKitOSI_Mechanical
   name: mechanical OSI kit
-  parent: KitBase
+  parent: N14KitBase
   description: A crate containing tools and technical supplies for an OSI scientist assigned to mechanical and industrial work.
   components:
   - type: Sprite
@@ -69,9 +69,9 @@
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  id: KitOSI_Medical
+  id: MisfitsKitOSI_Medical
   name: medical OSI kit
-  parent: KitBase
+  parent: N14KitBase
   description: A crate containing trauma and radiation support for an OSI scientist assigned to medical duties.
   components:
   - type: Sprite
@@ -90,9 +90,9 @@
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  id: KitOSI_Field
+  id: MisfitsKitOSI_Field
   name: field OSI kit
-  parent: KitBase
+  parent: N14KitBase
   description: A crate containing a radiation suit, survey gear, and a sidearm for an OSI scientist operating in the field.
   components:
   - type: Sprite

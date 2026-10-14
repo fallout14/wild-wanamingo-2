@@ -1,0 +1,112 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Clothing/OuterClothing/powerarmor.yml
+
+- type: entity
+  parent: N14ClothingOuterPowerArmorT45
+  id: MisfitsEnclavePowerArmor
+  # #Misfits Change - Renamed to APA MK I (removed 'Experimental' prefix per rebalance)
+  name: APA MK I Power Armor
+  description: A set of APA MK I power armor made to fit a supermutant, the extensive modifications have left it less durable than a standard set of APA MK I.
+  components:
+  - type: Injurable # power armor integrity is stored as the armor's damage
+    damageContainer: Inorganic
+  - type: PowerArmorIntegrity
+    brokenBleedthroughRatio: 1.0  # #Misfits Add - when broken, only armor coefficients apply
+    maxIntegrity: 500 # #Misfits Tweak: By Bill, 500 durability.
+  - type: Sprite
+    sprite: Misfits/Clothing/OuterClothing/PowerArmor/Mutant_PA.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/OuterClothing/PowerArmor/Mutant_PA.rsi
+    equipDelay: 14400 # The APA MK I Power armor is a living Tomb for whichever poor supermutant they put in it, so it takes the entire round to unequip/equip.
+    unequipDelay: 14400
+  - type: Armor # #Misfits Tweak: Added Heat and Piercing coefficients — pre-reduces damage before integrity absorption so PA stays above Centurion/Vet.Ranger at all integrity levels.
+    # #Misfits Change - no Radiation coefficient; supermutants take no radiation damage to begin with.
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.70
+        Heat: 0.70
+        Caustic: 0.75
+  - type: Unremoveable # This is your casket. Service guarantees citizenship.
+  - type: Tag
+    tags:
+    - MisfitsSuperMutantWearable
+  - type: UserInterface
+    interfaces:
+      enum.MultiToggleClothingUiKey.Key:
+        type: MultiToggleableClothingBoundUserInterface
+  - type: MultiToggleableClothing
+    clothingPrototypes:
+      head: MisfitsEnclavePowerArmorHelmet
+      gloves: N14ClothingPAGauntlets
+      shoes: N14ClothingPABoots
+      back: N14ClothingPowerSystemsBack
+  - type: ExplosionResistance
+    damageCoefficient: 0.12 # #Misfits Tweak: T-51 blast resistance — ~14 HP at ground zero
+
+- type: entity
+  parent: N14ClothingOuterPowerArmorT45
+  id: MisfitsT45ClothingOuterPowerArmorBoS
+  name: T-45 Power Armor [Bos]
+  description: An old suit of T-45 power armor. It's amazing these still exist, given how many have been mangled and destroyed in combat both before and after the bombs dropped.
+  components:
+  - type: Injurable # power armor integrity is stored as the armor's damage
+    damageContainer: Inorganic
+  - type: PowerArmorIntegrity
+    brokenBleedthroughRatio: 1.0  # #Misfits Add - when broken, only armor coefficients apply
+    maxIntegrity: 500
+  - type: Sprite
+    sprite: Nuclear14/Clothing/OuterClothing/PowerArmor/t45.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/OuterClothing/PowerArmor/t45.rsi
+  - type: Armor # #Misfits Tweak: Added Heat and Piercing coefficients — pre-reduces damage before integrity absorption so PA stays above Centurion/Vet.Ranger at all integrity levels.
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.7
+        Caustic: 0.7
+        Radiation: 0.6
+  - type: UserInterface
+    interfaces:
+      enum.MultiToggleClothingUiKey.Key:
+        type: MultiToggleableClothingBoundUserInterface
+  - type: MultiToggleableClothing
+    clothingPrototypes:
+      head: MisfitsClothingHeadHelmetPowerArmorT45BOS
+      gloves: N14ClothingPAGauntlets
+      shoes: N14ClothingPABoots
+      back: N14ClothingPowerSystemsBack
+
+- type: entity
+  parent: N14ClothingOuterPowerArmorT60
+  id: MisfitsClothingOuterPowerArmorT60BOS
+  name: T-60 Power Armor
+  description: An old T-60 power armor suit from the Brotherhood of Steel. It has a tactical map feed built into the heads-up display, and looks well maintained.
+  components:
+  - type: MultiToggleableClothing
+    clothingPrototypes:
+      head: MisfitsClothingHeadHelmetPowerArmorT60BOS # #Misfits Change - BOS T60 uses BOS tactical-HUD helmet
+      gloves: N14ClothingPAGauntlets
+      shoes: N14ClothingPABoots
+      back: N14ClothingPowerSystemsBack
+
+- type: entity
+  parent: N14ClothingOuterPowerArmorT60 # #Misfits Add - Midwest PA are loadout options for Paladins/Senior Paladins/Head Paladins. Each parents off of the PA that role usually gets - they're drip, identical statwise.
+  id: MisfitsClothingOuterPowerArmorMidwestSilver
+  name: Midwest Silver Power Armor
+  description: An unknown model of power armor manufactured by the Brotherhood of Steel. It has a chain that likely serves some ceremonial purpose, and is decorated in bright silver paint.
+  components:
+  - type: Sprite
+    sprite: Misfits/Clothing/OuterClothing/PowerArmor/midwest_silver_pa.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/OuterClothing/PowerArmor/midwest_silver_pa.rsi
+  - type: MultiToggleableClothing
+    clothingPrototypes:
+      head: MisfitsClothingHeadHelmetPowerArmorMidwestSilver
+      gloves: N14ClothingPAGauntlets
+      shoes: N14ClothingPABoots
+      back: N14ClothingPowerSystemsBack
+
+#MIsfit

@@ -4,11 +4,11 @@
 # animal bodies: no markings, sizes or skin tone (the tone is ignored by their sprite).
 
 - type: species
-  id: Deathclaw
+  id: N14Deathclaw
   name: species-name-deathclaw
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: N14MobDeathclawSentient
+  prototype: MisfitsMobDeathclawSentient
   dollPrototype: AppearanceDeathclaw
   skinColoration: Hues
   defaultSkinTone: "#7a5a45"
@@ -22,11 +22,11 @@
   - MisfitsDeathclawEmotes
 
 - type: species
-  id: DeathclawAdolescent
+  id: MisfitsDeathclawAdolescent
   name: species-name-deathclaw-adolescent
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: N14MobDeathclawSentientAdolescent
+  prototype: MisfitsMobDeathclawSentientAdolescent
   dollPrototype: AppearanceDeathclawAdolescent
   skinColoration: Hues
   defaultSkinTone: "#7a5a45"
@@ -40,11 +40,11 @@
   - MisfitsDeathclawEmotes
 
 - type: species
-  id: DeathclawHatchling
+  id: MisfitsDeathclawHatchling
   name: species-name-deathclaw-hatchling
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: N14MobDeathclawSentientHatchling
+  prototype: MisfitsMobDeathclawSentientHatchling
   dollPrototype: AppearanceDeathclawHatchling
   skinColoration: Hues
   defaultSkinTone: "#7a5a45"
@@ -59,11 +59,11 @@
 
 # Separate from the ordinary deathclaw so its whitelist never grants the loa role.
 - type: species
-  id: BwonsamdiDeathclaw
+  id: MisfitsBwonsamdiDeathclaw
   name: species-name-bwonsamdi-deathclaw
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: N14MobDeathclawPlayer
+  prototype: MisfitsMobDeathclawPlayer
   dollPrototype: AppearanceBwonsamdi
   skinColoration: Hues
   defaultSkinTone: "#7a5a45"

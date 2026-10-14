@@ -4,7 +4,7 @@
 # First use charges (the action's cooldown shows the charge), the next use fires.
 - type: entity
   parent: BaseAction
-  id: ActionAssaultronHeadLaser
+  id: MisfitsActionAssaultronHeadLaser
   name: Charge Head Laser
   description: Charge and fire the integrated head laser.
   components:
@@ -23,8 +23,8 @@
     event: !type:ActionGunShootEvent
 
 - type: entity
-  parent: ActionAssaultronHeadLaser
-  id: ActionAssaultronTesla
+  parent: MisfitsActionAssaultronHeadLaser
+  id: MisfitsActionAssaultronTesla
   name: Charge Tesla Emitter
   description: Charge and fire the integrated Tesla emitter.
   components:

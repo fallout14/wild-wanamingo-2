@@ -1,43 +1,43 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Access/enclave.yml
 
 - type: accessLevel
-  id: EnclaveNCO
+  id: MisfitsEnclaveNCO
   name: id-card-access-level-enclave-nco
 
 - type: accessLevel
-  id: EnclaveCommand
+  id: MisfitsEnclaveCommand
   name: id-card-access-level-enclave-command
 
 - type: accessLevel
-  id: EnclaveScience
+  id: MisfitsEnclaveScience
   name: id-card-access-level-enclave-science
 
 - type: accessLevel
-  id: EnclaveRoleAll
+  id: MisfitsEnclaveRoleAll
   name: id-card-access-level-enclave-role-all
 
 - type: accessLevel
-  id: EnclaveRoleScientist
+  id: MisfitsEnclaveRoleScientist
   name: id-card-access-level-enclave-role-scientist
 
 - type: accessLevel
-  id: EnclaveRoleHeadScientist
+  id: MisfitsEnclaveRoleHeadScientist
   name: id-card-access-level-enclave-role-head-scientist
 
 - type: accessLevel
-  id: EnclaveRoleNCO
+  id: MisfitsEnclaveRoleNCO
   name: id-card-access-level-enclave-role-nco
 
 - type: accessLevel
-  id: EnclaveRoleJuniorOfficer
+  id: MisfitsEnclaveRoleJuniorOfficer
   name: id-card-access-level-enclave-role-junior-officer
 
 - type: accessLevel
-  id: EnclaveRoleSeniorOfficer
+  id: MisfitsEnclaveRoleSeniorOfficer
   name: id-card-access-level-enclave-role-senior-officer
 
 - type: accessLevel
-  id: EnclaveRoleCommander
+  id: MisfitsEnclaveRoleCommander
   name: id-card-access-level-enclave-role-commander
 
 # Access groups — cumulative, higher ranks inherit lower access.

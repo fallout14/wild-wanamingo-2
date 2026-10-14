@@ -1,0 +1,11 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Clothing/Hats/hats.yml
+
+- type: entity
+  parent: ClothingHeadBase
+  id: CorvaxClothingHeadHatNCRMPCap
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Head/FalloutHats/ncrsidecap.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/Head/FalloutHats/ncrsidecap.rsi

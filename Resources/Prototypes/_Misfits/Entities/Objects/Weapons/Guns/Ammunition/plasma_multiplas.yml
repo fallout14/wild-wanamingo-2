@@ -3,7 +3,7 @@
 - type: entity
   name: multiplas cartridge
   description: A high-capacity plasma cartridge engineered for the multiplas. It discharges three plasma bolts simultaneously, producing a concentrated spread rather than a single beam.
-  id: N14PlasmaCartridgeMultiplas
+  id: MisfitsPlasmaCartridgeMultiplas
   suffix: Full
   parent: N14BasePlasmaCell
   components:
@@ -17,7 +17,7 @@
         shader: unshaded
   - type: Tag
     tags:
-      - N14PlasmaCartridgeMultiplas  # dedicated tag — keeps it out of single-shot plasma weapons
+      - MisfitsPlasmaCartridgeMultiplas  # dedicated tag — keeps it out of single-shot plasma weapons
       - N14AmmoCell
   - type: Battery
     maxCharge: 1800

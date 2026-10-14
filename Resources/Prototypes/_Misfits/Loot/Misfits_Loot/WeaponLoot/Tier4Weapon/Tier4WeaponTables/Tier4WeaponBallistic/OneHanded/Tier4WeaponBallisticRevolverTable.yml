@@ -1,23 +1,23 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier4Weapon/Tier4WeaponTables/Tier4WeaponBallistic/OneHanded/Tier4WeaponBallisticRevolverTable.yml
 
 - type: entityTable
-  id: M14WeaponLootTier4_GunsBulletRevolver
+  id: MisfitsM14WeaponLootTier4_GunsBulletRevolver
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponRevolver357Detective
+      id: MisfitsWeaponRevolver357Detective
       weight: 7
     - !type:EntSelector
       id: N14WeaponRevolver10mm
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver357Detective
+      id: MisfitsWeaponRevolver357Detective
       weight: 7
     - !type:EntSelector
       id: N14WeaponRevolverWebley #.44
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver44Magnum
+      id: MisfitsWeaponRevolver44Magnum
       weight: 7
     - !type:EntSelector
       id: N14WeaponRevolver44MagnumCaptain
@@ -26,8 +26,8 @@
       id: N14WeaponRevolver45-70Hunter
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver357Police # #Misfits Add - police pistol
+      id: MisfitsWeaponRevolver357Police # #Misfits Add - police pistol
       weight: 5
     - !type:EntSelector
-      id: N14WeaponRevolver44Snub # #Misfits Add - snub .44
+      id: MisfitsWeaponRevolver44Snub # #Misfits Add - snub .44
       weight: 5

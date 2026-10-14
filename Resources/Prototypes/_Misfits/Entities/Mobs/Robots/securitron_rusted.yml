@@ -1,0 +1,46 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Mobs/Robots/securitron_rusted.yml
+
+- type: entity
+  parent: MisfitsMobRobotSecuritronHostile
+  id: MisfitsMobRobotSecuritronGrayRustedHostile
+  name: Rusted Securitron
+  description: A rusted securitron that still rolls around looking for trouble.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-gray-rusted.rsi
+
+- type: entity
+  parent: MisfitsMobRobotSecuritronHostile
+  id: MisfitsMobRobotSecuritronBlueRustedHostile
+  name: Rusted Securitron
+  description: A blue rusted securitron that still rolls around looking for trouble.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-blue-rusted.rsi
+
+- type: entity
+  parent: MisfitsMobRobotSecuritronHostile
+  id: MisfitsMobRobotSecuritronBrownRustedHostile
+  name: Rusted Securitron
+  description: A brown rusted securitron that still rolls around looking for trouble.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-brown-rusted.rsi
+
+- type: entity
+  parent: MisfitsMobRobotSecuritronHostile
+  id: MisfitsMobRobotSecuritronRedRustedHostile
+  name: Rusted Securitron
+  description: A red rusted securitron that still rolls around looking for trouble.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-red-rusted.rsi
+
+- type: entity
+  parent: MisfitsMobRobotSecuritronHostile
+  id: MisfitsMobRobotSecuritronYellowRustedHostile
+  name: Rusted Securitron
+  description: A yellow rusted securitron that still rolls around looking for trouble.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-yellow-rusted.rsi

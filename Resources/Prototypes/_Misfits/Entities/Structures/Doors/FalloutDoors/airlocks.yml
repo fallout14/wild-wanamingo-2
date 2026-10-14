@@ -1,0 +1,12 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Structures/Doors/FalloutDoors/airlocks.yml
+
+- type: entity
+  parent: AirlockAssembly
+  id: MisfitsDoorBunkerAssembly
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Doors/Airlocks/mechanical.rsi # WW Change - Mojave Sun 13 mechanical door
+    state: closed
+  - type: Construction
+    graph: N14DoorBunker
+    node: n14assembly

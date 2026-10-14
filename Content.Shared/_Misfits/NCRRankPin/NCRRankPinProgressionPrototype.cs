@@ -23,8 +23,8 @@ public sealed partial class NCRRankPinProgressionPrototype : IPrototype
     public List<ProtoId<JobPrototype>> Jobs = new();
 
     /// <summary>
-    /// When <see cref="DepartmentTracker"/> is false: a playtime tracker ID (e.g. "NCRNCO").
-    /// When <see cref="DepartmentTracker"/> is true: a DepartmentPrototype ID (e.g. "NCR")
+    /// When <see cref="DepartmentTracker"/> is false: a playtime tracker ID (e.g. "N14NCRNCO").
+    /// When <see cref="DepartmentTracker"/> is true: a DepartmentPrototype ID (e.g. "N14NCR")
     /// whose member job times are summed together.
     /// </summary>
     [DataField(required: true)]

@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier5Weapon/Tier5WeaponTables/Tier5WeaponMelee/Tier5WeaponMeleeTwoHand.yml
 
 - type: entityTable
-  id: M14WeaponLootTier5_MeleeBluntTwoHanded
+  id: MisfitsM14WeaponLootTier5_MeleeBluntTwoHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -24,7 +24,7 @@
       id: N14TribalBigClubDecorated
 
 - type: entityTable
-  id: M14WeaponLootTier5_MeleeSharpTwoHanded
+  id: MisfitsM14WeaponLootTier5_MeleeSharpTwoHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -45,11 +45,11 @@
     - !type:EntSelector
       id: N14WastelandSpear
     - !type:EntSelector
-      id: N14PilumSpear # wegion
+      id: CorvaxPilumSpear # wegion
 
 - type: entityTable
-  id: M14WeaponLootTier5_MeleeOtherTwoHanded
+  id: MisfitsM14WeaponLootTier5_MeleeOtherTwoHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponThermospear
+      id: CorvaxWeaponThermospear

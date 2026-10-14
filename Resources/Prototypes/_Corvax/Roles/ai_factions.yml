@@ -1,0 +1,55 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Roles/ai_factions.yml
+
+- type: npcFaction
+  id: CorvaxCaesarLegion
+  hostile:
+  - N14Wastelander
+  - MisfitsBrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteelSecureArea # turrets
+  - N14CaravanCompany
+  - N14CaravanCompanySecureArea # turrets
+  - N14NCR
+  - N14NCRSecureArea # turrets
+  - N14Rangers
+  - N14Townsfolk
+  - N14Tribal
+  - N14Vault
+  - N14VaultSecureArea # turrets
+  - N14WastelandInsect
+  - N14WastelandAnimal
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Zetan
+  - N14Feral
+  - N14HostileRobot
+  - N14Raider
+  - N14Enclave
+
+# - type: npcFaction
+#   id: BrotherhoodWest
+#   hostile:
+#   - WastelandInsect
+#   - WastelandAnimal
+#   - Raider
+#   - HostileRobot
+#   - Feral
+
+# - type: npcFaction
+#   id: BrotherhoodWestSecureArea
+#   hostile:
+#   - Wastelander
+#   - BrotherhoodWashington
+#   - CaravanCompany
+#   - NCR
+#   - Rangers
+#   - Townsfolk
+#   - Tribal
+#   - Vault
+#   - Zetan
+#   - WastelandAnimal
+#   - WastelandInsect
+#   - Raider
+#   - CaesarLegion
+#   - HostileRobot
+#   - Feral
+#   - BrotherhoodMidwest

@@ -1,0 +1,24 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Stacks/material_stacks.yml
+
+- type: stack
+  id: MisfitsCement
+  name: misfits-kit-cement
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: powder_brass }
+  spawn: MisfitsMaterialCement1
+  maxCount: 30
+
+- type: stack
+  id: MisfitsConcrete
+  name: misfits-kit-concrete
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: scrap_3 }
+  spawn: MisfitsMaterialConcrete1
+  maxCount: 30
+
+- type: stack
+  id: MisfitsBrick
+  name: misfits-kit-brick
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: scrap_copper }
+  spawn: MisfitsMaterialBrick1
+  maxCount: 30
+
+# #Misfits Add: Legendary tribal hunt material stack.

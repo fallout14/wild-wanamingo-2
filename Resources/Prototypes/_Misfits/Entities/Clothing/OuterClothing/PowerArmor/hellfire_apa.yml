@@ -2,7 +2,7 @@
 
 - type: entity
   parent: N14ClothingOuterPowerArmorAdvanced2Hellfire
-  id: N14ClothingOuterPowerArmorAdvanced2HellfireMisfit
+  id: MisfitsClothingOuterPowerArmorAdvanced2HellfireMisfit
   name: hellfire advanced power armor
   description: Hellfire power armor suit, a reskin of the APA MK I with a fiery motif. The removal of servo drives has made it less mobile but retains a high level of protection and partial hermetic sealing. Tribal markings and ceremonial bones coat the surface, but the heads-up display still functions beneath them.
   components:
@@ -15,7 +15,7 @@
   - type: MultiToggleableClothing
     # Override only to point head at the tribal helmet; gloves/shoes/back unchanged from APA MK I
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorHellfireMisfit
+      head: MisfitsClothingHeadHelmetPowerArmorHellfireMisfit
       gloves: N14ClothingPAGauntletsDark
       shoes: N14ClothingPABootsDark
       back: N14ClothingPowerSystemsBack

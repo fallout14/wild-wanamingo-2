@@ -1,0 +1,168 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Markers/Spawners/mobs.yml
+
+- type: entity
+  name: Sentry Bot Spawner
+  id: MisfitsSpawnMobSentryBot
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Nuclear14/Mobs/Robots/sentrybot.rsi
+        state: icon
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MisfitsMobRobotSentryBot
+
+# Misfits Change /Add: Spawner for the ballistic (minigun) sentry bot variant.
+
+- type: entity
+  name: Sentry Bot Spawner (Ballistic)
+  id: MisfitsSpawnMobSentryBotBallistic
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Nuclear14/Mobs/Robots/sentrybot.rsi
+        state: icon
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MisfitsMobRobotSentryBotBallistic
+
+- type: entity
+  name: Super Mutant Spawner
+  id: MisfitsSpawnMobSuperMutant
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Nuclear14/Mobs/SuperMutants/supermutant.rsi
+        state: base
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MisfitsMobSuperMutantNPC
+
+- type: entity
+  name: Super Mutant Brute Spawner
+  id: MisfitsSpawnMobSuperMutantMelee
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Nuclear14/Mobs/SuperMutants/supermutant.rsi
+        state: melee
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MisfitsMobSuperMutantMelee
+
+- type: entity
+  name: Super Mutant Hunter Spawner
+  id: MisfitsSpawnMobSuperMutantRanged
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Nuclear14/Mobs/SuperMutants/supermutant.rsi
+        state: ranged
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MisfitsMobSuperMutantRanged
+
+- type: entity
+  name: Nightkin Spawner
+  id: MisfitsSpawnMobNightkin
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Nuclear14/Mobs/SuperMutants/supermutant.rsi
+        state: nightkin
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MisfitsMobNightkin
+
+- type: entity
+  name: Nightkin Veteran Spawner
+  id: MisfitsSpawnMobNightkinVeteran
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Nuclear14/Mobs/SuperMutants/supermutant.rsi
+        state: nightkin_ranged
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MisfitsMobNightkinVeteran
+
+- type: entity
+  name: Nightkin Elite Spawner
+  id: MisfitsSpawnMobNightkinElite
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Nuclear14/Mobs/SuperMutants/supermutant.rsi
+        state: nightkin_boss
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MisfitsMobNightkinElite
+
+- type: entity
+  name: Super Mutant Suicider Spawner
+  id: MisfitsSpawnMobSuperMutantSuicider
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Nuclear14/Mobs/SuperMutants/supermutant.rsi
+        state: suicider
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MisfitsMobSuperMutantSuicider
+
+- type: entity
+  name: Super Mutant Armored Spawner
+  id: MisfitsSpawnMobSuperMutantArmored
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Nuclear14/Mobs/SuperMutants/supermutant.rsi
+        state: armored
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MisfitsMobSuperMutantArmored
+
+- type: entity
+  name: Centaur Spawner
+  id: MisfitsSpawnMobCentaur
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Nuclear14/Mobs/Animals/centaur.rsi
+        state: alive
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MisfitsMobSuperMutantArmored

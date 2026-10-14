@@ -14,7 +14,7 @@
   - type: Material
   - type: Tag
     tags:
-    - JunkItem
+    - N14JunkItem
     - Trash
     - RawMaterial
 
@@ -65,7 +65,7 @@
         Blunt: 5
   - type: Tag
     tags:
-    - JunkItem
+    - N14JunkItem
     - Trash
     - RawMaterial
   - type: ToolRefinable
@@ -135,7 +135,7 @@
     - id: N14IngotAluminum1
   - type: PhysicalComposition
     materialComposition:
-      Aluminum: 50
+      N14Aluminum: 50
 
 - type: entity
   parent: N14JunkItemBase
@@ -184,7 +184,7 @@
     state: baseball
   - type: Tag #For crafting
     tags:
-      - Baseball
+      - N14Baseball
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -209,9 +209,9 @@
     state: cookpot
   - type: Tag
     tags:
-    - JunkItem
+    - N14JunkItem
     - Trash
-    - CookPot
+    - N14CookPot
   - type: Solution
     id: cookpot
     solution:
@@ -269,9 +269,9 @@
     state: duct_tape
   - type: Tag
     tags:
-    - JunkItem
+    - N14JunkItem
     - Trash
-    - DuctTape
+    - N14DuctTape
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -391,7 +391,7 @@
       maxVol: 100
   - type: Tag
     tags:
-    - JunkKettle
+    - N14JunkKettle
 
 - type: entity
   parent: N14JunkItemBasePlastic
@@ -403,7 +403,7 @@
     state: timer
   - type: Tag
     tags:
-    - JunkTimer
+    - N14JunkTimer
   - type: PayloadTrigger
     components:
     - type: TriggerOnUse
@@ -431,7 +431,7 @@
     state: tincan
   - type: Tag
     tags:
-    - Tincan
+    - N14Tincan
 
 - type: entity
   parent: N14JunkItemBaseAluminum
@@ -472,11 +472,11 @@
     id: drink
     solution:
       reagents:
-      - ReagentId: Turpentine
+      - ReagentId: N14Turpentine
         Quantity: 50
   - type: Tag
     tags:
-      - Turpentine
+      - N14Turpentine
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -544,7 +544,7 @@
     state: action
   - type: Tag
     tags:
-    - Action
+    - N14Action
 
 - type: entity
   parent: N14JunkItemBaseAluminum
@@ -568,7 +568,7 @@
     state: barrel
   - type: Tag
     tags:
-    - Barrel
+    - N14Barrel
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -580,7 +580,7 @@
     state: bolt
   - type: Tag
     tags:
-    - Bolt
+    - N14Bolt
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -592,7 +592,7 @@
     state: gunframe
   - type: Tag
     tags:
-    - GunFrame
+    - N14GunFrame
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -604,7 +604,7 @@
     state: pistolframe
   - type: Tag
     tags:
-    - PistolFrame
+    - N14PistolFrame
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -616,7 +616,7 @@
     state: receiver
   - type: Tag
     tags:
-    - Receiver
+    - N14Receiver
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -628,7 +628,7 @@
     state: recoilcomp
   - type: Tag
     tags:
-    - RecoilComp
+    - N14RecoilComp
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -640,7 +640,7 @@
     state: rifleframe
   - type: Tag
     tags:
-    - RifleFrame
+    - N14RifleFrame
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -652,7 +652,7 @@
     state: riflestock
   - type: Tag
     tags:
-    - RifleStock1
+    - N14RifleStock1
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -664,7 +664,7 @@
     state: scope
   - type: Tag
     tags:
-    - RifleScope
+    - N14RifleScope
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -676,7 +676,7 @@
     state: stock
   - type: Tag
     tags:
-    - Stock
+    - N14Stock
 
 - type: entity
   parent: N14JunkItemBase
@@ -688,7 +688,7 @@
     state: stockwood
   - type: Tag
     tags:
-    - StockWood
+    - N14StockWood
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -712,7 +712,7 @@
     state: weapon_parts_1
   - type: Tag
     tags:
-    - WeaponParts1
+    - N14WeaponParts1
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -724,7 +724,7 @@
     state: weapon_parts_2
   - type: Tag
     tags:
-    - WeaponParts2
+    - N14WeaponParts2
 
 - type: entity
   parent: N14JunkItemBaseAluminum
@@ -736,7 +736,7 @@
     state: weapon_parts_3
   - type: Tag
     tags:
-    - WeaponParts3
+    - N14WeaponParts3
 
 
 #MARK: Components
@@ -749,8 +749,8 @@
   components:
   - type: Tag # Corvax-Change
     tags:
-    - N14Board
-    - JunkItem
+    - CorvaxBoard
+    - N14JunkItem
     - Trash
   - type: Sprite
     state: board_1
@@ -819,9 +819,9 @@
     state: diode_1
   - type: Tag # Corvax-Change
     tags:
-    - JunkItem
+    - N14JunkItem
     - Trash
-    - N14Diode
+    - CorvaxDiode
 
 - type: entity
   parent: N14JunkComponentDiode1 # Corvax-Change
@@ -851,7 +851,7 @@
     state: frame
   - type: Tag
     tags:
-    - Mainboard
+    - N14Mainboard
   - type: Item
     size: Small
     storedRotation: 90
@@ -866,9 +866,9 @@
     state: fuse_1
   - type: Tag # Corvax-Change
     tags:
-    - JunkItem
+    - N14JunkItem
     - Trash
-    - N14Fuse
+    - CorvaxFuse
 
 - type: entity
   parent: N14JunkComponentFuse1 # Corvax-Change
@@ -889,9 +889,9 @@
     state: gear_large
   - type: Tag
     tags:
-    - JunkItem
+    - N14JunkItem
     - Trash
-    - Gear
+    - N14Gear
 
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -903,9 +903,9 @@
     state: gear_small
   - type: Tag
     tags:
-    - JunkItem
+    - N14JunkItem
     - Trash
-    - GearSmall
+    - N14GearSmall
 
 - type: entity
   parent: N14JunkItemBaseGlass
@@ -943,9 +943,9 @@
     state: resistor_1
   - type: Tag # Corvax-Change
     tags:
-    - JunkItem
+    - N14JunkItem
     - Trash
-    - N14Resistor
+    - CorvaxResistor
 
 - type: entity
   parent: N14JunkComponentResistor1 # Corvax-Change
@@ -975,9 +975,9 @@
     state: screw
   - type: Tag
     tags:
-    - JunkItem
+    - N14JunkItem
     - Trash
-    - Screw
+    - N14Screw
   - type: Item
     size: Tiny
 
@@ -991,7 +991,7 @@
     state: sensor
   - type: Tag
     tags:
-    - Sensor
+    - N14Sensor
   - type: Item
     size: Small
     storedRotation: 90
@@ -1006,7 +1006,7 @@
     state: sensor_module
   - type: Tag
     tags:
-    - SensorModule
+    - N14SensorModule
 
 - type: entity
   parent: N14JunkComponentElectronic
@@ -1018,7 +1018,7 @@
     state: switch_1
   - type: Tag
     tags:
-    - Switch
+    - N14Switch
     - SignalTrigger
   - type: PayloadTrigger
     components:
@@ -1040,9 +1040,9 @@
     state: transistor_1
   - type: Tag # Corvax-Change
     tags:
-    - JunkItem
+    - N14JunkItem
     - Trash
-    - N14Transistor
+    - CorvaxTransistor
 
 - type: entity
   parent: N14JunkComponentTransistor1 # Corvax-Change

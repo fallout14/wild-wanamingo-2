@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Catalog/Fills/gatherables.yml
 
 - type: entityTable
-  id: WildAgave
+  id: N14WildAgave
   table: !type:AllSelector
     children:
     - id: N14FloraProduceWildAgave
@@ -194,7 +194,7 @@
   id: WildCannabisAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildCannabis
+    - id: MisfitsFloraProduceWildCannabis
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -203,7 +203,7 @@
   id: WildCannabisClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildCannabisClippingSeed
+    - id: MisfitsFloraWildCannabisClippingSeed
       prob: 0.75
 
 - type: entityTable

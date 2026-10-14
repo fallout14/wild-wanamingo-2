@@ -1,23 +1,23 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3Loot.yml
 
 - type: entityTable
-  id: M14WeaponLootTier3
+  id: MisfitsM14WeaponLootTier3
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTier3_GunsAll
+          tableId: MisfitsM14WeaponLootTier3_GunsAll
       - !type:NestedSelector
-          tableId: M14WeaponLootTier3_MeleeAll
+          tableId: MisfitsM14WeaponLootTier3_MeleeAll
       - !type:NestedSelector
-          tableId: M14WeaponLootTier3_ThrowablesAll
+          tableId: MisfitsM14WeaponLootTier3_ThrowablesAll
 
 - type: entityTable
-  id: M14WeaponLootTier3_GunsAll
+  id: MisfitsM14WeaponLootTier3_GunsAll
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTier3_GunsBulletAll
+          tableId: MisfitsM14WeaponLootTier3_GunsBulletAll
       - !type:NestedSelector
-          tableId: M14WeaponLootTier3_GunsEnergyAll
+          tableId: MisfitsM14WeaponLootTier3_GunsEnergyAll
       - !type:NestedSelector
-          tableId: M14WeaponLootTier3_GunsExplosiveAll
+          tableId: MisfitsM14WeaponLootTier3_GunsExplosiveAll

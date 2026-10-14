@@ -1,0 +1,116 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Recipes/Lathes/ammo.yml
+
+- type: latheRecipe
+  id: MisfitsSpeedLoader308Tube
+  result: MisfitsSpeedLoader308Tube
+  categories:
+  - N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 24
+    Steel: 132
+    N14Gunpowder: 24
+
+- type: latheRecipe
+  id: MisfitsMagazine308RifleSniper
+  result: MisfitsMagazine308RifleSniper
+  categories:
+  - N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 33
+    Steel: 77
+    N14Gunpowder: 33
+
+# 45-70 gov't
+
+- type: latheRecipe
+  id: MisfitsMagazineCarbine5mm
+  result: MisfitsMagazineCarbine5mm
+  categories:
+  - N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 35
+    Steel: 170
+    N14Gunpowder: 70
+
+- type: latheRecipe
+  id: MisfitsMagazineRifle9mm
+  result: MisfitsMagazineRifle9mm
+  categories:
+  - N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 24
+    Steel: 148
+    N14Gunpowder: 48
+
+# #Misfits Add - .357 / .38 special / .45 ACP speed loaders and tubes
+
+- type: latheRecipe
+  id: MisfitsSpeedLoader357
+  result: MisfitsSpeedLoader357
+  categories:
+  - N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 10
+    Steel: 25
+    N14Gunpowder: 10
+
+- type: latheRecipe
+  id: MisfitsMagazinePistol357Automag
+  result: MisfitsMagazinePistol357Automag
+  categories:
+  - N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 18
+    Steel: 30
+    N14Gunpowder: 14
+
+- type: latheRecipe
+  id: MisfitsSpeedLoaderTube357
+  result: MisfitsSpeedLoaderTube357
+  categories:
+  - N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 20
+    Steel: 35
+    N14Gunpowder: 20
+
+- type: latheRecipe
+  id: MisfitsAmmoBox38
+  result: MisfitsAmmoBox38
+  categories:
+  - N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 40
+    Steel: 100
+    N14Gunpowder: 40
+    Cardboard: 100
+
+- type: latheRecipe
+  id: MisfitsSpeedLoader45
+  result: MisfitsSpeedLoader45
+  categories:
+  - N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 10
+    Steel: 25
+    N14Gunpowder: 10
+
+- type: latheRecipe
+  id: MisfitsSpeedLoaderTube45
+  result: MisfitsSpeedLoaderTube45
+  categories:
+  - N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 20
+    Steel: 35
+    N14Gunpowder: 20

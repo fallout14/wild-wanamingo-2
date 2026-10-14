@@ -42,7 +42,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine308Rifle
+        startingItem: N14Magazine308Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
@@ -111,7 +111,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762AmmoBelt
+        startingItem: N14Magazine762AmmoBelt
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
@@ -180,7 +180,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762AmmoBelt
+        startingItem: N14Magazine762AmmoBelt
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
@@ -249,7 +249,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: LMGMagazine556Rifle
+        startingItem: N14LMGMagazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
@@ -321,20 +321,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine303Bren
+        startingItem: MisfitsMagazine303Bren
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine303Bren
+            - MisfitsMagazine303Bren
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge303
+        startingItem: MisfitsCartridge303
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge303Rifle
+            - MisfitsCartridge303Rifle
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -390,13 +390,13 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine308M60Box
+        startingItem: N14Magazine308M60Box
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine308M60Box
+            - N14Magazine308M60Box
       gun_chamber:
         name: Chamber
         startingItem: N14Cartridge308Rifle

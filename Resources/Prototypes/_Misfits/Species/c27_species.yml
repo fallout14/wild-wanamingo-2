@@ -3,11 +3,11 @@
 # whitelist/job restrictions and Corvax 1.25x height come back elsewhere (whitelisting/jobs; sprite scale on the mob).
 
 - type: species
-  id: C27
+  id: MisfitsC27
   name: species-name-c27
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: N14MobC27
+  prototype: MisfitsMobC27
   dollPrototype: AppearanceC27
   skinColoration: Hues
   defaultSkinTone: "#9a8a72"
@@ -24,11 +24,11 @@
   naming: First
 
 - type: species
-  id: C27NCR
+  id: MisfitsC27NCR
   name: species-name-c27-ncr
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: N14MobC27NCR
+  prototype: MisfitsMobC27NCR
   dollPrototype: AppearanceC27NCR
   skinColoration: Hues
   defaultSkinTone: "#9a8a72"
@@ -45,11 +45,11 @@
   naming: First
 
 - type: species
-  id: C27BoS
+  id: MisfitsC27BoS
   name: species-name-c27-bos
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: N14MobC27BoS
+  prototype: MisfitsMobC27BoS
   dollPrototype: AppearanceC27BoS
   skinColoration: Hues
   defaultSkinTone: "#9a8a72"

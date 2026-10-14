@@ -103,48 +103,48 @@ tilemap:
   7: FloorCave
   56: FloorConcreteMono
   37: FloorConcreteSmooth
-  33: FloorMS13BrickConcrete
-  9: FloorMS13BrickVertical
-  34: FloorMS13CarpetBlue
-  66: FloorMS13CarpetFancyBlue
-  64: FloorMS13CarpetFancyGreen
-  67: FloorMS13CarpetFancyRed
-  65: FloorMS13CarpetGreen
-  68: FloorMS13CarpetRed
-  53: FloorMS13CarpetViolet
-  44: FloorMS13Concrete
-  32: FloorMS13ConcreteIndustrial
-  57: FloorMS13ConcreteIndustrialAlt
-  58: FloorMS13ConcreteIndustrialSplit
-  59: FloorMS13MetalIndustrial
-  22: FloorMS13MetalSolid
-  28: FloorMS13TileBlack
-  27: FloorMS13TileBlackFull
-  51: FloorMS13TileBlackLarge
-  46: FloorMS13TileBrown
-  50: FloorMS13TileCafe
-  69: FloorMS13TileCeramic
-  70: FloorMS13TileCeramicBroken
-  40: FloorMS13TileCheck
-  55: FloorMS13TileConcreteSmall
-  60: FloorMS13TileFancy
-  63: FloorMS13TileGreenFull
-  24: FloorMS13TileGrey
-  35: FloorMS13TileGreyLarge
-  47: FloorMS13TileGreyLong
-  41: FloorMS13TileLongBlue
-  23: FloorMS13TileNavy
-  25: FloorMS13TileNavyFull
-  26: FloorMS13TileWhiteFull
-  31: FloorMS13TileWhiteLarge
-  21: FloorMS13WoodCommon
-  45: FloorMS13WoodCommonDamaged
-  52: FloorMS13WoodFancy
-  62: FloorMS13WoodFancyDamaged
-  48: FloorMS13WoodMosaic
-  42: FloorMS13WoodWide
-  43: FloorMS13WoodWideDamaged
-  29: FloorWasteland
+  33: N14FloorMS13BrickConcrete
+  9: N14FloorMS13BrickVertical
+  34: N14FloorMS13CarpetBlue
+  66: N14FloorMS13CarpetFancyBlue
+  64: N14FloorMS13CarpetFancyGreen
+  67: N14FloorMS13CarpetFancyRed
+  65: N14FloorMS13CarpetGreen
+  68: N14FloorMS13CarpetRed
+  53: N14FloorMS13CarpetViolet
+  44: N14FloorMS13Concrete
+  32: N14FloorMS13ConcreteIndustrial
+  57: N14FloorMS13ConcreteIndustrialAlt
+  58: N14FloorMS13ConcreteIndustrialSplit
+  59: N14FloorMS13MetalIndustrial
+  22: N14FloorMS13MetalSolid
+  28: N14FloorMS13TileBlack
+  27: N14FloorMS13TileBlackFull
+  51: N14FloorMS13TileBlackLarge
+  46: N14FloorMS13TileBrown
+  50: N14FloorMS13TileCafe
+  69: N14FloorMS13TileCeramic
+  70: N14FloorMS13TileCeramicBroken
+  40: N14FloorMS13TileCheck
+  55: N14FloorMS13TileConcreteSmall
+  60: N14FloorMS13TileFancy
+  63: N14FloorMS13TileGreenFull
+  24: N14FloorMS13TileGrey
+  35: N14FloorMS13TileGreyLarge
+  47: N14FloorMS13TileGreyLong
+  41: N14FloorMS13TileLongBlue
+  23: N14FloorMS13TileNavy
+  25: N14FloorMS13TileNavyFull
+  26: N14FloorMS13TileWhiteFull
+  31: N14FloorMS13TileWhiteLarge
+  21: N14FloorMS13WoodCommon
+  45: N14FloorMS13WoodCommonDamaged
+  52: N14FloorMS13WoodFancy
+  62: N14FloorMS13WoodFancyDamaged
+  48: N14FloorMS13WoodMosaic
+  42: N14FloorMS13WoodWide
+  43: N14FloorMS13WoodWideDamaged
+  29: N14FloorWasteland
   38: FloorWoodTile
   10: N14FloorConcrete
   54: N14FloorConcreteDark
@@ -165,7 +165,7 @@ tilemap:
   13: N14FloorRoadRight
   4: N14FloorRoadTop
   5: Plating
-  6: WaterMedium
+  6: N14WaterMedium
 entities:
 - proto: ""
   entities:
@@ -72965,7 +72965,7 @@ entities:
         version: 1
         nodes:
         - node:
-            id: RoadMiddleSolid2
+            id: N14RoadMiddleSolid2
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
@@ -72992,7 +72992,7 @@ entities:
         version: 1
         nodes:
         - node:
-            id: RoadMiddleSolid2
+            id: N14RoadMiddleSolid2
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
@@ -73025,7 +73025,7 @@ entities:
         version: 1
         nodes:
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
           decals:
             16: 61,46
@@ -73045,7 +73045,7 @@ entities:
             30: 61,32
             31: 62,32
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: 3.141592653589793 rad
           decals:
@@ -73066,7 +73066,7 @@ entities:
             46: 61,47
             47: 62,47
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
           decals:
             0: 60,32
@@ -73078,7 +73078,7 @@ entities:
             6: 60,44
             7: 60,46
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
@@ -73114,13 +73114,13 @@ entities:
             7: 51,57
             8: 50,55
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
           decals:
             1: 61,48
             2: 62,48
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
           decals:
             0: 60,48
@@ -73137,14 +73137,14 @@ entities:
         version: 1
         nodes:
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: 3.141592653589793 rad
           decals:
             1: 61,31
             2: 62,31
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
@@ -73182,7 +73182,7 @@ entities:
         version: 1
         nodes:
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: -3.141592653589793 rad
           decals:
@@ -73201,7 +73201,7 @@ entities:
             109: 79,45
             110: 78,45
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
           decals:
             29: 67,46
@@ -73239,7 +73239,7 @@ entities:
             98: 79,38
             99: 78,38
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: 3.141592653589793 rad
           decals:
@@ -73264,19 +73264,19 @@ entities:
             70: 70,37
             71: 71,37
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: -3.141592653589793 rad
           decals:
             0: 68,35
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
             1: 69,35
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 3.141592653589793 rad
           decals:
@@ -73286,7 +73286,7 @@ entities:
             5: 68,43
             6: 68,45
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 4.71238898038469 rad
           decals:
@@ -73297,7 +73297,7 @@ entities:
             11: 68,38
             12: 68,36
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 7.853981633974483 rad
           decals:
@@ -73307,7 +73307,7 @@ entities:
             81: 69,43
             82: 69,45
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 12.566370614359172 rad
           decals:
@@ -73338,13 +73338,13 @@ entities:
             11: 89,41
             12: 87,45
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: -3.141592653589793 rad
           decals:
             4: 80,37
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 3.141592653589793 rad
           decals:
@@ -73353,7 +73353,7 @@ entities:
             2: 80,41
             3: 80,39
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 4.71238898038469 rad
           decals:
@@ -74843,13 +74843,13 @@ entities:
         version: 1
         nodes:
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
             1: 111,-194
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
@@ -74867,7 +74867,7 @@ entities:
         version: 1
         nodes:
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
@@ -74878,7 +74878,7 @@ entities:
             17: 115,-194
             18: 113,-194
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: 4.71238898038469 rad
           decals:
@@ -74890,7 +74890,7 @@ entities:
             24: 118,-194
             25: 116,-194
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: -3.141592653589793 rad
           decals:
@@ -74902,7 +74902,7 @@ entities:
             11: 122,-195
             12: 124,-195
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
@@ -74925,7 +74925,7 @@ entities:
         version: 1
         nodes:
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
@@ -74936,7 +74936,7 @@ entities:
             17: 121,-189
             18: 123,-189
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: 4.71238898038469 rad
           decals:
@@ -74948,7 +74948,7 @@ entities:
             24: 122,-189
             25: 124,-189
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: -1.5707963267948966 rad
           decals:
@@ -74960,7 +74960,7 @@ entities:
             5: 122,-188
             6: 124,-188
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
           decals:
             7: 117,-188
@@ -74982,13 +74982,13 @@ entities:
         version: 1
         nodes:
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
             1: 111,-189
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
           decals:
             0: 111,-188
@@ -75005,7 +75005,7 @@ entities:
         version: 1
         nodes:
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: -1.5707963267948966 rad
           decals:
@@ -75020,7 +75020,7 @@ entities:
             39: 57,-117
             40: 55,-117
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
@@ -75035,7 +75035,7 @@ entities:
             28: 56,-117
             29: 54,-117
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: -1.5707963267948966 rad
           decals:
@@ -75045,7 +75045,7 @@ entities:
             8: 57,-116
             9: 55,-116
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
           decals:
             0: 54,-116
@@ -75054,7 +75054,7 @@ entities:
             3: 60,-116
             4: 62,-116
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
@@ -75064,7 +75064,7 @@ entities:
             13: 60,-128
             14: 62,-128
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 3.141592653589793 rad
           decals:
@@ -75086,7 +75086,7 @@ entities:
         version: 1
         nodes:
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: -1.5707963267948966 rad
           decals:
@@ -75101,7 +75101,7 @@ entities:
             38: 67,-117
             39: 65,-117
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
@@ -75116,7 +75116,7 @@ entities:
             28: 66,-117
             29: 64,-117
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: -1.5707963267948966 rad
           decals:
@@ -75126,7 +75126,7 @@ entities:
             8: 71,-116
             9: 73,-116
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
           decals:
             0: 64,-116
@@ -75135,7 +75135,7 @@ entities:
             3: 70,-116
             4: 72,-116
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 1.5707963267948966 rad
           decals:
@@ -75145,7 +75145,7 @@ entities:
             13: 70,-128
             14: 72,-128
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 3.141592653589793 rad
           decals:
@@ -75167,12 +75167,12 @@ entities:
         version: 1
         nodes:
         - node:
-            id: RoadEdgeSingle1
+            id: N14RoadEdgeSingle1
             color: '#FFFFFFFF'
           decals:
             24: 171,-92
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: -3.141592653589793 rad
           decals:
@@ -75183,7 +75183,7 @@ entities:
             20: 171,-83
             21: 171,-81
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
           decals:
             11: 171,-82
@@ -75192,19 +75192,19 @@ entities:
             14: 171,-88
             15: 171,-90
         - node:
-            id: RoadEdgeSingleBroken2
+            id: N14RoadEdgeSingleBroken2
             color: '#FFFFFFFF'
             angle: -3.141592653589793 rad
           decals:
             25: 171,-93
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: -3.141592653589793 rad
           decals:
             22: 172,-93
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: -1.5707963267948966 rad
           decals:
@@ -75215,7 +75215,7 @@ entities:
             10: 172,-82
             23: 172,-92
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 3.141592653589793 rad
           decals:
@@ -75238,21 +75238,21 @@ entities:
         version: 1
         nodes:
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
             angle: -3.141592653589793 rad
           decals:
             8: 166,-77
             9: 166,-79
         - node:
-            id: RoadEdgeSingle2
+            id: N14RoadEdgeSingle2
             color: '#FFFFFFFF'
           decals:
             5: 171,-80
             6: 166,-78
             7: 166,-76
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: -1.5707963267948966 rad
           decals:
@@ -75260,7 +75260,7 @@ entities:
             3: 167,-78
             4: 167,-76
         - node:
-            id: RoadEdgeSingleCorner3
+            id: N14RoadEdgeSingleCorner3
             color: '#FFFFFFFF'
             angle: 3.141592653589793 rad
           decals:
@@ -75474,7 +75474,7 @@ entities:
     - type: Transform
       parent: 2
       pos: 307.5,-22.5
-- proto: DecorFloorBrickrubble
+- proto: MisfitsDecorFloorBrickrubble
   entities:
   - uid: 3012
     components:
@@ -76147,7 +76147,7 @@ entities:
     - type: Transform
       parent: 2
       pos: 174.5,-82.5
-- proto: LadderTopManholeOpen
+- proto: N14LadderTopManholeOpen
   entities:
   - uid: 5090
     mapInit: true
@@ -76208,7 +76208,7 @@ entities:
     - type: Transform
       parent: 2
       pos: 56.674194,18.786291
-- proto: MagazineBox9mm
+- proto: N14MagazineBox9mm
   entities:
   - uid: 3130
     components:
@@ -76296,7 +76296,7 @@ entities:
       parent: 2
       rot: -1.5707963267948966 rad
       pos: 192.5,-49.5
-- proto: N14AmmoBox127
+- proto: MisfitsAmmoBox127
   entities:
   - uid: 3138
     components:
@@ -81100,28 +81100,28 @@ entities:
     - type: Transform
       parent: 2
       pos: 238.5,-86.5
-- proto: N14DrinkNukaColaCherryIceCold
+- proto: MisfitsDrinkNukaColaCherryIceCold
   entities:
   - uid: 3235
     components:
     - type: Transform
       parent: 2
       pos: 158.88692,76.82062
-- proto: N14DrinkNukaColaIceCold
+- proto: MisfitsDrinkNukaColaIceCold
   entities:
   - uid: 3234
     components:
     - type: Transform
       parent: 2
       pos: 158.45885,76.78392
-- proto: N14DrinkNukaColaOrangeIceCold
+- proto: MisfitsDrinkNukaColaOrangeIceCold
   entities:
   - uid: 3236
     components:
     - type: Transform
       parent: 2
       pos: 159.42662,76.67748
-- proto: N14DrinkNukaColaWildIceCold
+- proto: MisfitsDrinkNukaColaWildIceCold
   entities:
   - uid: 3237
     components:
@@ -82593,14 +82593,14 @@ entities:
       count: 2
     - type: Physics
       canCollide: False
-- proto: N14ScrapCopper5
+- proto: MisfitsScrapCopper5
   entities:
   - uid: 134
     components:
     - type: Transform
       parent: 2
       pos: 62.394707,16.494179
-- proto: N14ScrapElectronic5
+- proto: MisfitsScrapElectronic5
   entities:
   - uid: 123
     components:
@@ -82613,7 +82613,7 @@ entities:
     - type: Transform
       parent: 2
       pos: 55.484562,16.070383
-- proto: N14ScrapSteel10
+- proto: MisfitsScrapSteel10
   entities:
   - uid: 91
     components:
@@ -142312,7 +142312,7 @@ entities:
     - type: Transform
       parent: 2
       pos: 269.5,-62.5
-- proto: ThrowingBrick
+- proto: MisfitsThrowingBrick
   entities:
   - uid: 4942
     components:
@@ -142501,7 +142501,7 @@ entities:
     - type: Transform
       pos: 534.5,-31.5
       parent: 2
-- proto: N14SpawnPointNCRPlatoonLeader
+- proto: MisfitsSpawnPointNCRPlatoonLeader
   entities:
   - uid: 14324
     components:
@@ -142571,77 +142571,77 @@ entities:
     - type: Transform
       pos: 538.5,-35.5
       parent: 2
-- proto: N14SpawnPointCenturion
+- proto: CorvaxSpawnPointCenturion
   entities:
   - uid: 14334
     components:
     - type: Transform
       pos: 540.5,-35.5
       parent: 2
-- proto: N14SpawnPointVexillarius
+- proto: CorvaxSpawnPointVexillarius
   entities:
   - uid: 14335
     components:
     - type: Transform
       pos: 542.5,-35.5
       parent: 2
-- proto: N14SpawnPointExplorer
+- proto: CorvaxSpawnPointExplorer
   entities:
   - uid: 14336
     components:
     - type: Transform
       pos: 526.5,-37.5
       parent: 2
-- proto: N14SpawnPointHoundmaster
+- proto: CorvaxSpawnPointHoundmaster
   entities:
   - uid: 14337
     components:
     - type: Transform
       pos: 528.5,-37.5
       parent: 2
-- proto: N14SpawnPointForgemaster
+- proto: CorvaxSpawnPointForgemaster
   entities:
   - uid: 14338
     components:
     - type: Transform
       pos: 530.5,-37.5
       parent: 2
-- proto: N14SpawnPointDean
+- proto: CorvaxSpawnPointDean
   entities:
   - uid: 14339
     components:
     - type: Transform
       pos: 532.5,-37.5
       parent: 2
-- proto: N14SpawnPointLegionnaireRecruit
+- proto: CorvaxSpawnPointLegionnaireRecruit
   entities:
   - uid: 14340
     components:
     - type: Transform
       pos: 534.5,-37.5
       parent: 2
-- proto: N14SpawnPointLegionnaireWarrior
+- proto: CorvaxSpawnPointLegionnaireWarrior
   entities:
   - uid: 14341
     components:
     - type: Transform
       pos: 540.5,-37.5
       parent: 2
-- proto: N14SpawnPointLegionnaireVeteran
+- proto: CorvaxSpawnPointLegionnaireVeteran
   entities:
   - uid: 14342
     components:
     - type: Transform
       pos: 542.5,-37.5
       parent: 2
-- proto: N14SpawnPointAuxilia
+- proto: CorvaxSpawnPointAuxilia
   entities:
   - uid: 14343
     components:
     - type: Transform
       pos: 544.5,-37.5
       parent: 2
-- proto: SpawnPointCaesarLegionSlave
+- proto: CorvaxSpawnPointCaesarLegionSlave
   entities:
   - uid: 14344
     components:

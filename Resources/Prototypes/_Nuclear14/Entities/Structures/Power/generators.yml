@@ -76,7 +76,7 @@
       - !type:ExplodeBehavior
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: N14DefaultStructural
+    explosionType: MisfitsDefaultStructural
     maxIntensity: 100
     intensitySlope: 2
     totalIntensity: 200
@@ -235,7 +235,7 @@
     - state: generator_rust
 
 - type: entity
-  parent: N14BasePortableGeneratorFuel
+  parent: MisfitsBasePortableGeneratorFuel
   id: N14GeneratorPrewar
   description: A dirty old generator that uses fuel to run.
   name: pre-war generator
@@ -285,7 +285,7 @@
     supplyRampTolerance: 250
 
 - type: entity
-  parent: N14BasePortableGeneratorUranium
+  parent: MisfitsBasePortableGeneratorUranium
   id: N14GeneratorPrewarUranium
   description: A dirty old generator that uses raw uranium to run.
   name: pre-war uranium generator
@@ -398,7 +398,7 @@
     color: "#B4FCF0"
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: N14DefaultStructural
+    explosionType: MisfitsDefaultStructural
     totalIntensity: 20000 # ~15 tile radius.
     intensitySlope: 5
     maxIntensity: 50
@@ -433,72 +433,3 @@
     energy: 4.5
     softness: 0.5
     color: "#f05e1b"
-
-- type: entity
-  abstract: true
-  parent: PortableGeneratorBase
-  id: N14BasePortableGeneratorFuel
-  components:
-    - type: AmbientSound
-      range: 4
-      volume: -8
-    - type: PortableGenerator
-      startChance: 0.5
-    - type: FuelGenerator
-      on: true #Misfits Change - generators start on at round start
-      targetPower: 5000
-      minTargetPower: 1000
-      optimalPower: 8000
-      maxTargetPower: 8000
-      # ~2 hours at a full 250u tank. #Misfits Tweak: reduced burn rate from 0.11111111 for longer runtime.
-      optimalBurnRate: 0.01388889
-      fuelEfficiencyConstant: 0.3
-    - type: ChemicalFuelGeneratorAdapter
-      solution: tank
-      reagents:
-        WeldingFuel: 1
-    - type: Solution
-      id: tank
-      solution:
-        maxVol: 250
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 250
-    - type: RefillableSolution
-      solution: tank
-    - type: GeneratorExhaustGas
-      gasType: CarbonDioxide
-      moleRatio: 0.5
-    - type: Explosive
-      #Misfits Change - use the structural-capable N14 explosion profile.
-      explosionType: N14DefaultStructural
-      tileBreakScale: 0
-
-- type: entity
-  abstract: true
-  parent: PortableGeneratorBase
-  id: N14BasePortableGeneratorUranium
-  components:
-    - type: PortableGenerator
-      startChance: 0.7
-    - type: FuelGenerator
-      on: true #Misfits Change - generators start on at round start
-      targetPower: 5000
-      minTargetPower: 1000
-      optimalPower: 5000
-      maxTargetPower: 5000
-      # Roughly two hours on a full 30-sheet hopper. #Misfits Tweak: halved burn rate from 0.008333333 to reduce fuel consumption.
-      optimalBurnRate: 0.004166667
-      fuelEfficiencyConstant: 0.2
-    - type: SolidFuelGeneratorAdapter
-      fuelMaterial: Uranium
-      multiplier: 0.01
-    - type: MaterialStorage
-      storageLimit: 3000
-      materialWhiteList: [Uranium]
-      storage:
-        Uranium: 3000
-    - type: Explosive
-      #Misfits Change - use the structural-capable N14 explosion profile.
-      explosionType: N14DefaultStructural
-      tileBreakScale: 0

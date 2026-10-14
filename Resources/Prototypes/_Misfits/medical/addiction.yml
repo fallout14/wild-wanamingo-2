@@ -1,11 +1,11 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/medical/addiction.yml
 
 - type: localizedDataset
-  id: AddictionEffects
+  id: MisfitsAddictionEffects
   values:
     prefix: addiction-effect-
     count: 10
 
 - type: statusEffect
-  id: Addicted
+  id: MisfitsAddicted
   alwaysAllowed: true

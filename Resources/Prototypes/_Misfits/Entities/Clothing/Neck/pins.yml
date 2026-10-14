@@ -1,0 +1,140 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Clothing/Neck/pins.yml
+
+- type: entity
+  parent: N14ClothingNeckPinNCRPrivate
+  id: MisfitsClothingNeckPinNCRStaffSergeant
+  name: staff sergeant pin
+  components:
+  - type: RankTitle
+    rankTitle: Staff Sergeant
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
+    layers:
+    - state: mastersergeant
+  - type: Tag
+    tags:
+    - MisfitsSuperMutantWearable
+
+- type: entity
+  parent: N14ClothingNeckPinNCRPrivate
+  id: MisfitsClothingNeckPinNCR1stSergeant
+  name: first sergeant pin
+  components:
+  - type: RankTitle
+    rankTitle: First Sergeant
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
+    layers:
+    - state: sergeantmajor
+  - type: Tag
+    tags:
+    - MisfitsSuperMutantWearable
+
+- type: entity
+  parent: N14ClothingNeckPinNCRPrivate
+  id: MisfitsClothingNeckPinNCRCommandSergeantMajor
+  name: command sergeant major pin
+  components:
+  - type: RankTitle
+    rankTitle: Command Sergeant Major
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
+    layers:
+    - state: sergeantmajor
+  - type: Tag
+    tags:
+    - MisfitsSuperMutantWearable
+
+- type: entity
+  parent: N14ClothingNeckPinNCRPrivate
+  id: MisfitsClothingNeckPinNCRWarrantOfficer
+  name: warrant officer pin
+  components:
+  - type: RankTitle
+    rankTitle: Warrant Officer
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
+    layers:
+    - state: secondlieutenant
+  - type: Tag
+    tags:
+    - MisfitsSuperMutantWearable
+
+# #Misfits Add - Chief Warrant Officer grades for the NCR aviation track.
+# No warrant-specific sprites exist, so these borrow officer pin art the same way
+# ClothingNeckPinNCRWarrantOfficer already borrows the second lieutenant state.
+
+- type: entity
+  parent: N14ClothingNeckPinNCRPrivate
+  id: MisfitsClothingNeckPinNCRChiefWarrantOfficer2
+  name: chief warrant officer 2 pin
+  components:
+  - type: RankTitle
+    rankTitle: Chief Warrant Officer 2
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
+    layers:
+    - state: firstlieutenant
+  - type: Clothing
+    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
+    clothingVisuals:
+      neck:
+      - state: silver-equipped
+  - type: Tag
+    tags:
+    - MisfitsSuperMutantWearable
+
+- type: entity
+  parent: N14ClothingNeckPinNCRPrivate
+  id: MisfitsClothingNeckPinNCRChiefWarrantOfficer3
+  name: chief warrant officer 3 pin
+  components:
+  - type: RankTitle
+    rankTitle: Chief Warrant Officer 3
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
+    layers:
+    - state: captain
+  - type: Clothing
+    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
+    clothingVisuals:
+      neck:
+      - state: silver-equipped
+  - type: Tag
+    tags:
+    - MisfitsSuperMutantWearable
+
+- type: entity
+  parent: N14ClothingNeckPinNCRPrivate
+  id: MisfitsClothingNeckPinNCRFirstLieutenant
+  name: first lieutenant pin
+  components:
+  - type: RankTitle
+    rankTitle: First Lieutenant
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
+    layers:
+    - state: firstlieutenant
+  - type: Clothing
+    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
+    clothingVisuals:
+      neck:
+      - state: silver-equipped
+  - type: Tag
+    tags:
+    - MisfitsSuperMutantWearable
+
+- type: entity
+  parent: MisfitsClothingNeckPinNCRFirstLieutenant
+  id: MisfitsClothingNeckPinNCRLtColonel
+  name: lieutenant colonel pin
+  components:
+  - type: RankTitle
+    rankTitle: Lieutenant Colonel
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
+    layers:
+    - state: major
+  - type: Tag
+    tags:
+    - MisfitsSuperMutantWearable

@@ -78,7 +78,7 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - N14MobRobotSentryBot
+    - MisfitsMobRobotSentryBot
 
 - type: entity
   name: Enclave Sentry Bot Spawner (Ballistic)
@@ -94,7 +94,7 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - N14MobRobotSentryBotBallistic
+    - MisfitsMobRobotSentryBotBallistic
 
 - type: entity
   name: Enclave Robot Security Spawner
@@ -114,5 +114,5 @@
     - N14MobRobotProtectronHostile
     - N14MobRobotMrHandyGutsy
     - N14MobRobotAssaultronHostile
-    - N14MobRobotSentryBot
-    - N14MobRobotSentryBotBallistic
+    - MisfitsMobRobotSentryBot
+    - MisfitsMobRobotSentryBotBallistic

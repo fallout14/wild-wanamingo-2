@@ -1,19 +1,19 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/Speedloaders/357.yml
 
 - type: entity
-  id: N14BaseSpeedLoader357
+  id: MisfitsBaseSpeedLoader357
   name: "speed loader (.357 magnum)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - SpeedLoader357
+      - MisfitsSpeedLoader357
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - N14CartridgePistol357
+        - MisfitsCartridgePistol357
     capacity: 6
   - type: Sprite
   - type: ContainerContainer
@@ -22,12 +22,12 @@
         ents: []
 
 - type: entity
-  id: N14SpeedLoader357
+  id: MisfitsSpeedLoader357
   name: "speed loader (.357 magnum)"
-  parent: N14BaseSpeedLoader357
+  parent: MisfitsBaseSpeedLoader357
   components:
   - type: BallisticAmmoProvider
-    proto: N14CartridgePistol357
+    proto: MisfitsCartridgePistol357
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Speedloaders/44loader.rsi
     layers:
@@ -45,19 +45,19 @@
 # Uses its own tag instead of the shared SpeedLoaderInternal so it cannot load other calibers.
 
 - type: entity
-  id: N14BaseSpeedLoaderTube357
+  id: MisfitsBaseSpeedLoaderTube357
   name: "speed loader tube (.357 magnum)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - SpeedLoaderTube357
+      - MisfitsSpeedLoaderTube357
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - N14CartridgePistol357
+        - MisfitsCartridgePistol357
     capacity: 12
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Speedloaders/45_70loadertube.rsi # placeholder
@@ -67,12 +67,12 @@
         ents: []
 
 - type: entity
-  id: N14SpeedLoaderTube357
+  id: MisfitsSpeedLoaderTube357
   name: "speed loader tube (.357 magnum)"
-  parent: N14BaseSpeedLoaderTube357
+  parent: MisfitsBaseSpeedLoaderTube357
   components:
   - type: BallisticAmmoProvider
-    proto: N14CartridgePistol357
+    proto: MisfitsCartridgePistol357
   - type: Sprite
     layers:
     - state: base

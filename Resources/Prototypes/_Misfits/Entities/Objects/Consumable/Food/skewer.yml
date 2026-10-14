@@ -1,0 +1,38 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Food/skewer.yml
+
+- type: entity
+  name: meat kebab
+  parent: FoodKebabSkewer
+  id: MisfitsCookedFoodMeatKebab
+  description: Three chunks of wasteland meat on a skewer.
+  components:
+  - type: Edible
+    edible: Food
+    trash:
+    - FoodKebabSkewer
+  - type: FlavorProfile
+    flavors:
+    - meaty
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Consumable/Food/skewer.rsi
+    layers:
+    - state: skewer
+    - state: skewer-meat
+    # #Misfits Fix - removed greyscale alpha overlay and empty foodSequenceLayers map;
+    # those are for dynamically assembled food sequences, not pre-made static kebabs
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 12
+      - ReagentId: Protein
+        Quantity: 6
+      - ReagentId: Vitamin
+        Quantity: 2
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  parent: FoodMeatSnakeKebab
+  id: MisfitsFoodMeatSnakeKebab

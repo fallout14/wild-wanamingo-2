@@ -1,0 +1,38 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Reagents/Consumable/extracts.yml
+
+- type: reagent
+  id: MisfitsM14BaseProduceExtract
+  parent: BaseDrink
+  abstract: true
+  group: Extracts
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:AdjustReagent
+        reagent: Nutriment
+        amount: .2
+      - !type:AdjustReagent
+        reagent: Water
+        amount: .2
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: .1 # TODO: need more in-depth and nuanced way to handle radiation
+
+
+# Alphabetical
+# Extracts
+
+- type: reagent
+  id: MisfitsExtractCannabis
+  name: reagent-name-extract-cannabis
+  group: Extracts
+  desc: reagent-desc-extract-cannabis
+  flavor: bitter
+  color: "#4F6B3A"
+  physicalDesc: reagent-physical-desc-strong-smelling
+  plantMetabolism:
+  - !type:PlantAdjustHealth
+    amount: 0

@@ -1,21 +1,21 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier1Weapon/Tier1WeaponTables/Tier1WeaponEnergy/TwoHanded/Tier1WeaponEnergyHeavyTable.yml
 
 - type: entityTable
-  id: M14WeaponLootTier1_LaserHeavy
+  id: MisfitsM14WeaponLootTier1_LaserHeavy
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: Error
 
 - type: entityTable
-  id: M14WeaponLootTier1_PlasmaHeavy
+  id: MisfitsM14WeaponLootTier1_PlasmaHeavy
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: Error
 
 - type: entityTable
-  id: M14WeaponLootTier1_OtherHeavy
+  id: MisfitsM14WeaponLootTier1_OtherHeavy
   table: !type:GroupSelector
     children:
     - !type:EntSelector

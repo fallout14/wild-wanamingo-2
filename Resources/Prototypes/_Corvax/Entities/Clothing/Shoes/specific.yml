@@ -1,0 +1,13 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Clothing/Shoes/specific.yml
+
+- type: entity
+  parent: ClothingShoesBase
+  id: CorvaxClothingShoesKaligi
+  name: kaligi
+  description: Spacious... Sandals?
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/Shoes/Specific/romanshoes.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/Shoes/Specific/romanshoes.rsi

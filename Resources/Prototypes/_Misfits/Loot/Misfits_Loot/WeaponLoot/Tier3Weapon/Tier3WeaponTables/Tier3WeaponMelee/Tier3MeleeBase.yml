@@ -1,40 +1,40 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3WeaponMelee/Tier3MeleeBase.yml
 
 - type: entityTable
-  id: M14WeaponLootTier3_MeleeAll
+  id: MisfitsM14WeaponLootTier3_MeleeAll
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTier3_MeleeBlunt
+          tableId: MisfitsM14WeaponLootTier3_MeleeBlunt
       - !type:NestedSelector
-          tableId: M14WeaponLootTier3_MeleeSharp
+          tableId: MisfitsM14WeaponLootTier3_MeleeSharp
 #      - !type:NestedSelector
 #          tableId: M14WeaponLootTier3_MeleeOther
 # stuff here
 
 - type: entityTable
-  id: M14WeaponLootTier3_MeleeBlunt
+  id: MisfitsM14WeaponLootTier3_MeleeBlunt
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTier3_MeleeBluntOneHanded
+          tableId: MisfitsM14WeaponLootTier3_MeleeBluntOneHanded
       - !type:NestedSelector
-          tableId: M14WeaponLootTier3_MeleeBluntTwoHanded
+          tableId: MisfitsM14WeaponLootTier3_MeleeBluntTwoHanded
 
 - type: entityTable
-  id: M14WeaponLootTier3_MeleeSharp
+  id: MisfitsM14WeaponLootTier3_MeleeSharp
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTier3_MeleeSharpOneHanded
+          tableId: MisfitsM14WeaponLootTier3_MeleeSharpOneHanded
       - !type:NestedSelector
-          tableId: M14WeaponLootTier3_MeleeSharpTwoHanded
+          tableId: MisfitsM14WeaponLootTier3_MeleeSharpTwoHanded
 
 - type: entityTable
-  id: M14WeaponLootTier3_MeleeOther
+  id: MisfitsM14WeaponLootTier3_MeleeOther
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTier3_MeleeOtherOneHanded
+          tableId: MisfitsM14WeaponLootTier3_MeleeOtherOneHanded
       - !type:NestedSelector
-          tableId: M14WeaponLootTier3_MeleeOtherTwoHanded
+          tableId: MisfitsM14WeaponLootTier3_MeleeOtherTwoHanded

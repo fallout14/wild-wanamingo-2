@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier1Weapon/Tier1WeaponTables/Tier1WeaponMelee/Tier1WeaponMeleeOneHand.yml
 
 - type: entityTable
-  id: M14WeaponLootTier1_MeleeBluntOneHanded
+  id: MisfitsM14WeaponLootTier1_MeleeBluntOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -11,7 +11,7 @@
 #omfg we need more one handed blunt
 
 - type: entityTable
-  id: M14WeaponLootTier1_MeleeSharpOneHanded
+  id: MisfitsM14WeaponLootTier1_MeleeSharpOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -22,14 +22,14 @@
       id: N14ButchersCleaver
 
 - type: entityTable
-  id: M14WeaponLootTier1_MeleeOtherOneHanded
+  id: MisfitsM14WeaponLootTier1_MeleeOtherOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: Error
 
 - type: entityTable
-  id: M14WeaponLootTier1_Shield
+  id: MisfitsM14WeaponLootTier1_Shield
   table: !type:GroupSelector
     children:
     - !type:EntSelector

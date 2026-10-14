@@ -41,7 +41,7 @@ public sealed partial class ScopeComponent : Component
     /// Action prototype for toggling the scope on/off.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public EntProtoId? ScopingToggleAction = "N14ActionToggleScope";
+    public EntProtoId? ScopingToggleAction = "MisfitsActionToggleScope";
 
     /// <summary>
     /// Runtime: the spawned toggle action entity.
@@ -53,7 +53,7 @@ public sealed partial class ScopeComponent : Component
     /// Action prototype for cycling zoom levels (only used when ZoomLevels.Count > 1).
     /// </summary>
     [DataField, AutoNetworkedField]
-    public EntProtoId CycleZoomLevelAction = "N14ActionCycleZoomLevel";
+    public EntProtoId CycleZoomLevelAction = "MisfitsActionCycleZoomLevel";
 
     /// <summary>
     /// Runtime: the spawned cycle zoom action entity.

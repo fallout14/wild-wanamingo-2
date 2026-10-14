@@ -10,13 +10,13 @@ namespace Content.IntegrationTests.Tests._Misfits.GunSystem;
 [TestFixture]
 public sealed class RifleCaliberTest
 {
-    [TestCase("Magazine308Rifle", "N14Cartridge762x51FMJ")]
-    [TestCase("Magazine308Rifle", "N14Cartridge762x51AP")]
-    [TestCase("Magazine308Rifle", "N14Cartridge308JHP")]
-    [TestCase("Magazine308Rifle", "N14Cartridge308Match")]
-    [TestCase("Magazine556Rifle", "N14Cartridge556FMJ")]
-    [TestCase("Magazine556Rifle", "N14Cartridge556AP")]
-    [TestCase("Magazine556Rifle", "N14Cartridge223JHP")]
+    [TestCase("N14Magazine308Rifle", "MisfitsCartridge762x51FMJ")]
+    [TestCase("N14Magazine308Rifle", "MisfitsCartridge762x51AP")]
+    [TestCase("N14Magazine308Rifle", "MisfitsCartridge308JHP")]
+    [TestCase("N14Magazine308Rifle", "MisfitsCartridge308Match")]
+    [TestCase("N14Magazine556Rifle", "MisfitsCartridge556FMJ")]
+    [TestCase("N14Magazine556Rifle", "MisfitsCartridge556AP")]
+    [TestCase("N14Magazine556Rifle", "MisfitsCartridge223JHP")]
     public async Task SharedCalibersFitExistingMagazines(string magazineId, string cartridgeId)
     {
         await using var pair = await PoolManager.GetServerClient();
@@ -28,16 +28,16 @@ public sealed class RifleCaliberTest
             var cartridge = em.SpawnEntity(cartridgeId, map.GridCoords);
             var provider = em.GetComponent<BallisticAmmoProviderComponent>(magazine);
             Assert.That(em.System<EntityWhitelistSystem>().IsWhitelistPass(provider.Whitelist, cartridge), Is.True);
-            var wrongRound = em.SpawnEntity("N14Cartridge303", map.GridCoords);
+            var wrongRound = em.SpawnEntity("MisfitsCartridge303", map.GridCoords);
             Assert.That(em.System<EntityWhitelistSystem>().IsWhitelistPass(provider.Whitelist, wrongRound), Is.False);
         });
         await pair.CleanReturnAsync();
     }
 
     [TestCase("N14WeaponSniperEnfield")]
-    [TestCase("N14WeaponSniper303Ross")]
-    [TestCase("N14Magazine303Bren")]
-    [TestCase("N14SpeedLoader303")]
+    [TestCase("MisfitsWeaponSniper303Ross")]
+    [TestCase("MisfitsMagazine303Bren")]
+    [TestCase("MisfitsSpeedLoader303")]
     public async Task BritishProvidersLoadOnly303(string prototype)
     {
         await using var pair = await PoolManager.GetServerClient();
@@ -47,10 +47,10 @@ public sealed class RifleCaliberTest
             var em = pair.Server.ResolveDependency<IEntityManager>();
             var entity = em.SpawnEntity(prototype, map.GridCoords);
             var provider = em.GetComponent<BallisticAmmoProviderComponent>(entity);
-            Assert.That(provider.Proto?.Id, Is.EqualTo("N14Cartridge303"));
+            Assert.That(provider.Proto?.Id, Is.EqualTo("MisfitsCartridge303"));
             var whitelist = em.System<EntityWhitelistSystem>();
-            var correct = em.SpawnEntity("N14Cartridge303", map.GridCoords);
-            var incorrect = em.SpawnEntity("N14Cartridge762x51FMJ", map.GridCoords);
+            var correct = em.SpawnEntity("MisfitsCartridge303", map.GridCoords);
+            var incorrect = em.SpawnEntity("MisfitsCartridge762x51FMJ", map.GridCoords);
             Assert.That(whitelist.IsWhitelistPass(provider.Whitelist, correct), Is.True);
             Assert.That(whitelist.IsWhitelistPass(provider.Whitelist, incorrect), Is.False);
         });
@@ -68,13 +68,13 @@ public sealed class RifleCaliberTest
             var weapon = em.SpawnEntity("N14WeaponLMGBren", map.GridCoords);
             var slots = em.System<ItemSlotsSystem>();
             Assert.That(slots.TryEject(weapon, "gun_magazine", null, out var loaded), Is.True);
-            Assert.That(em.GetComponent<MetaDataComponent>(loaded!.Value).EntityPrototype!.ID, Is.EqualTo("N14Magazine303Bren"));
+            Assert.That(em.GetComponent<MetaDataComponent>(loaded!.Value).EntityPrototype!.ID, Is.EqualTo("MisfitsMagazine303Bren"));
             Assert.That(slots.TryInsert(weapon, "gun_magazine", loaded.Value, null), Is.True);
             Assert.That(slots.TryEject(weapon, "gun_magazine", null, out _), Is.True);
-            var wrongMagazine = em.SpawnEntity("Magazine308RifleLong", map.GridCoords);
+            var wrongMagazine = em.SpawnEntity("N14Magazine308RifleLong", map.GridCoords);
             Assert.That(slots.TryInsert(weapon, "gun_magazine", wrongMagazine, null), Is.False);
             Assert.That(slots.TryEject(weapon, "gun_chamber", null, out var chambered), Is.True);
-            Assert.That(em.GetComponent<MetaDataComponent>(chambered!.Value).EntityPrototype!.ID, Is.EqualTo("N14Cartridge303"));
+            Assert.That(em.GetComponent<MetaDataComponent>(chambered!.Value).EntityPrototype!.ID, Is.EqualTo("MisfitsCartridge303"));
         });
         await pair.CleanReturnAsync();
     }

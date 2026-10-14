@@ -1,0 +1,13 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Clothing/Hands/gloves.yml
+
+- type: entity
+  parent: ClothingHandsBase
+  id: CorvaxClothingHandsGlovesCenturion
+  name: centurion bracers
+  description: "Protective bracers."
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/Hands/Gloves/centuriongloves.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/Hands/Gloves/centuriongloves.rsi

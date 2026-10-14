@@ -2,46 +2,28 @@
 # Resources/Prototypes/_Nuclear14/Access/vault.yml
 
 - type: accessLevel
-  id: VaultOverseer
+  id: N14VaultOverseer
   name: id-card-access-level-vault-overseer
 
 - type: accessLevel
-  id: VaultGatekeeper
+  id: N14VaultGatekeeper
   name: id-card-access-level-vault-gatekeeper
   
 
 - type: accessLevel
-  id: VaultSecurity
+  id: N14VaultSecurity
   name: id-card-access-level-vault-security
   
 
 - type: accessLevel
-  id: VaultMedical
+  id: N14VaultMedical
   name: id-card-access-level-vault-medical
 
 - type: accessLevel
-  id: VaultEngineer
+  id: N14VaultEngineer
   name: id-card-access-level-vault-engineer
   
 
 - type: accessLevel
-  id: VaultDweller
+  id: N14VaultDweller
   name: id-card-access-level-vault-dweller
-
-- type: accessLevel
-  id: VaultCargo
-  name: id-card-access-level-vault-cargo
-
-- type: accessLevel
-  id: VaultCourier
-  name: id-card-access-level-vault-courier
-
-- type: accessLevel
-  id: VaultSalvage
-  name: id-card-access-level-vault-salvage
-
-# Misfits Add - unique access level for the vault controls panel; kept out of AllAccess so only the Overseer card can use it
-
-- type: accessLevel
-  id: VaultControlsPanel
-  name: id-card-access-level-vault-controls-panel

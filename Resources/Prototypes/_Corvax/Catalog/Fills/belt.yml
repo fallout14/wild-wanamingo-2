@@ -1,0 +1,12 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Catalog/Fills/belt.yml
+
+- type: entity
+  id: CorvaxClothingBeltFarmerFilled
+  parent: N14ClothingBeltFarmer
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: HydroponicsToolMiniHoe
+    - id: HydroponicsToolSpade

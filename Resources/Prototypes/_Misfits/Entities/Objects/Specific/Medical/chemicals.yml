@@ -1,0 +1,188 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Specific/Medical/chemicals.yml
+
+- type: entity
+  parent: N14ChemicalSyringe
+  id: MisfitsMed-XInjector
+  name: med-x
+  description: A syringe filled with a powerful painkiller. Some believe that it makes you more resistant to pain.
+  components:
+  - type: Sprite
+    scale: 0.75, 0.75
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_drugs.rsi
+    layers:
+    - state: medxfill1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: medx-empty
+      map: [ "enum.SolutionContainerLayers.Base" ]
+  - type: Icon
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_drugs.rsi
+    state: "medx-empty"
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: true
+    fillBaseName: medxfill
+    emptySpriteName: medx-empty
+  - type: Appearance
+  - type: Injector
+    solutionName: pen
+    currentTransferAmount: null
+    ignoreClosed: false
+    activeModeProtoId: HyposprayInjectMode
+    allowedModes:
+    - HyposprayInjectMode
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 20
+  - type: UseDelay
+    delay: 0.75
+
+- type: entity
+  parent: N14ChemicalSyringe
+  id: MisfitsCombatInjector
+  suffix: empty
+  name: combat injector
+  description: A glass ampule attached to a rudimentary injector, used to house any number of medicines.
+  components:
+  - type: Sprite
+    scale: 0.75, 0.75
+    sprite: Nuclear14/Objects/Specific/Medical/combat-injector.rsi
+    layers:
+    - state: combatinjectorfill1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: combatinjector-empty
+      map: [ "enum.SolutionContainerLayers.Base" ]
+  - type: Icon
+    sprite: Nuclear14/Objects/Specific/Medical/combat-injector.rsi
+    state: "combatinjector-empty"
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: true
+    fillBaseName: combatinjectorfill
+    emptySpriteName: combatinjector-empty
+  - type: Appearance
+  - type: Injector
+    solutionName: pen
+    currentTransferAmount: null
+    ignoreClosed: false
+    activeModeProtoId: HyposprayInjectMode
+    allowedModes:
+    - HyposprayInjectMode
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 20
+  - type: Tag
+    tags:
+    - Syringe
+  - type: UseDelay
+    delay: 0.5
+
+#MARK: RadAway Inhaler
+
+- type: entity
+  parent: N14HealingPowder
+  id: MisfitsCleansingPowder
+  name: cleansing powder
+  description: A bag of anti-rad powder used by tribal and Legion healers. Makes the user drowsy.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
+    layers:
+    - state: healingpowder
+      color: "#7fbf48"
+  - type: Item
+    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
+    size: Small
+  - type: Solution
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: MisfitsCleansingPowder
+        Quantity: 10 # Misfits Change - Cleansing Powder is bargain bin anti-rad. Low quantity with side-effects.
+
+- type: entity
+  parent: N14HealingPowder
+  id: MisfitsBerserkerPowder
+  name: berserker powder
+  description: A pouch of berserker powder, enhances physical abilities with some side effects.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
+    layers:
+    - state: berserkerpowder
+  - type: Item
+    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
+    size: Small
+  - type: Solution
+    solution:
+      maxVol: 25
+      reagents:
+      - ReagentId: MisfitsBerserkermix
+        Quantity: 25 # less than what youd get from minmaxxing with chem, od is 26.
+
+- type: entity
+  parent: DrinkBase
+  id: MisfitsAntidoteBottleBase
+  abstract: true
+  name: antidote bottle
+  description: A glass bottle for storing wasteland antidotes.
+  components:
+  - type: Tag
+    tags:
+    - Bottle
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 60
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/fallout2.rsi
+    state: antidote
+  - type: Item
+    size: Tiny
+    sprite: Nuclear14/Objects/Specific/Medical/fallout2.rsi
+
+- type: entity
+  parent: MisfitsAntidoteBottleBase
+  id: MisfitsAntidoteEmpty
+  suffix: empty
+  name: antidote bottle
+  description: An empty glass bottle sized for antidote batches.
+
+- type: entity
+  parent: DrinkBase
+  id: MisfitsBitterdrinkBottleBase
+  abstract: true
+  name: bitterdrink bottle
+  description: A bottle for storing brewed tribal remedies.
+  components:
+  - type: Tag
+    tags:
+    - Bottle
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 50
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
+    state: bitterdrink
+  - type: Item
+    size: Tiny
+    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
+
+- type: entity
+  parent: MisfitsBitterdrinkBottleBase
+  id: MisfitsBitterdrinkEmpty
+  suffix: empty
+  name: bitterdrink bottle
+  description: An empty bottle meant for bitterdrink and similar herbal brews.
+
+- type: entity
+  parent: N14Bandage
+  id: MisfitsBandage1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1

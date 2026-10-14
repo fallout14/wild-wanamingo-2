@@ -1,9 +1,9 @@
-# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Revolvers/revolvers.yml
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Revolvers/revolvers.yml, Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Revolvers/revolvers.yml
 
 - type: entity
   name: snub .44
   parent: N14WeaponRevolverBase
-  id: N14WeaponRevolver44Snub
+  id: MisfitsWeaponRevolver44Snub
   description: A magnum revolver with its barrel cut down to a stub. Easy to hide and brutal up close, but it loses its punch quickly with distance. Uses .44 magnum ammo.
   components:
   - type: Tag
@@ -22,7 +22,7 @@
     whitelist:
       tags:
         - N14Cartridge44Magnum
-        - SpeedLoader44
+        - N14SpeedLoader44
     proto: N14Cartridge44Magnum
   - type: Gun
     minAngle: 2
@@ -42,7 +42,7 @@
 - type: entity
   name: .357 single action revolver
   parent: N14WeaponRevolverBase
-  id: N14WeaponRevolver357SingleAction
+  id: MisfitsWeaponRevolver357SingleAction
   description: A classic single-action .357 magnum revolver, the kind every other wastelander seems to carry. Loaded one round at a time through the gate. Will also chamber .38 special.
   components:
   - type: Tag
@@ -55,8 +55,8 @@
   - type: RevolverAmmoProvider
     whitelist:
       tags:
-        - N14CartridgePistol357
-    proto: N14CartridgePistol357
+        - MisfitsCartridgePistol357
+    proto: MisfitsCartridgePistol357
   - type: Gun
     minAngle: 1
     maxAngle: 6
@@ -71,7 +71,7 @@
 - type: entity
   name: .44 single action revolver
   parent: N14WeaponRevolverBase
-  id: N14WeaponRevolver44SingleAction
+  id: MisfitsWeaponRevolver44SingleAction
   description: An old 1851-pattern cap-and-ball revolver converted to fire .44 magnum cartridges. Slow to load one round at a time, but it still hits like a mule.
   components:
   - type: Tag
@@ -100,7 +100,7 @@
 - type: entity
   name: .45 single action revolver
   parent: N14WeaponRevolverBase
-  id: N14WeaponRevolver45SingleAction
+  id: MisfitsWeaponRevolver45SingleAction
   description: A plain single-action revolver chambered in .45 ACP. Cheap and dependable, loaded one round at a time.
   components:
   - type: Tag
@@ -125,3 +125,196 @@
       collection: N14RevolverMagnunGunshot
   - type: StaticPrice
     price: 25
+
+- type: entity
+  name: magnum revolver
+  parent: N14WeaponRevolverBase
+  id: MisfitsWeaponRevolver44Magnum
+  description: The Big Iron. Uses .44 magnum ammo.
+  components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      revolver-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Wieldable
+  - type: FirearmAttachmentHost
+    enableOpticSlot: true
+    opticSlot:
+      name: Optic
+      priority: 4
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        tags:
+        - N14RifleScope
+    muzzleSlot:
+      locked: true
+    opticVisualState: revolver_scope
+    opticVisualOffset: 0.21875, 0.6875
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Revolvers/magnum.rsi
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Revolvers/magnum.rsi
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - N14Cartridge44Magnum
+        - N14SpeedLoader44
+    proto: N14Cartridge44Magnum
+  - type: Gun
+    soundGunshot:
+      collection: N14RevolverMagnunGunshot
+  - type: StaticPrice
+    price: 50
+
+- type: entity
+  name: detective special (.357)
+  parent: N14WeaponRevolverBase
+  id: MisfitsWeaponRevolver357Detective
+  description: A compact double-action revolver in .357 Magnum. Favoured by lawmen pre-war, this blued model fits neatly under a jacket. Short barrel cuts range but not lethality.
+  components:
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Revolvers/detective.rsi
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Revolvers/detective.rsi
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - MisfitsCartridgePistol357
+        - MisfitsSpeedLoader357
+    proto: MisfitsCartridgePistol357
+    capacity: 6
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+    - 0,0,0,1
+  - type: Gun
+    minAngle: 1
+    maxAngle: 6
+    angleIncrease: 0.5
+    angleDecay: 5
+    fireRate: 3
+    soundGunshot:
+      collection: N14RevolverMagnunGunshot
+  - type: StaticPrice
+    price: 40
+
+- type: entity
+  name: Lucky 37
+  parent: MisfitsWeaponRevolver357Detective
+  id: MisfitsWeaponRevolver357Lucky
+  description: A .357 revolver with a custom pearl grip and exceptional balance. It has outlasted a lot of hard years without complaint. It cycles just a hair faster than it should — like it wants to be fired.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Revolvers/lucky37.rsi
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Revolvers/lucky37.rsi
+  - type: Gun
+    minAngle: 0
+    maxAngle: 5
+    angleIncrease: 0.5
+    angleDecay: 6
+    fireRate: 4
+    soundGunshot:
+      collection: N14RevolverMagnunGunshot
+  - type: StaticPrice
+    price: 600
+
+- type: entity
+  name: Peacekeeper
+  parent: N14WeaponRevolverBase
+  id: MisfitsWeaponRevolver44Peacekeeper
+  description: A beautifully maintained .44 Magnum with a custom grip and hair-trigger action. In the right hands it can be fanned for rapid fire, sacrificing precision for volume. A showman's weapon that still kills.
+  components:
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Revolvers/peacekeeper.rsi
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Revolvers/peacekeeper.rsi
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - N14Cartridge44Magnum
+        - N14SpeedLoader44
+    proto: N14Cartridge44Magnum
+    capacity: 6
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+    - 0,0,0,1
+  - type: Gun
+    minAngle: 2
+    maxAngle: 15
+    angleIncrease: 2
+    angleDecay: 6
+    fireRate: 5
+    soundGunshot:
+      collection: N14RevolverMagnunGunshot
+  - type: StaticPrice
+    price: 500
+
+# #Misfits Add - Police Pistol, after the Fallout: New Vegas pocket .357.
+# Reuses the DeltaV K-38 Masterpiece sprite (WeaponRevolverK38MasterNonlethalSecurity).
+
+- type: entity
+  name: police pistol
+  parent: N14WeaponRevolverBase
+  id: MisfitsWeaponRevolver357Police
+  description: A pre-war police service revolver cut down into a potent pocket pistol. Hits harder than its size suggests. Uses .357 magnum ammo, and will also chamber .38 special.
+  components:
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Sprite
+    sprite: Misfits/Legacy/DeltaV/Objects/Weapons/Guns/Revolvers/k38master.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/DeltaV/Objects/Weapons/Guns/Revolvers/k38master.rsi
+    slots: # k38master.rsi only has a belt equip sprite
+    - Belt
+    - suitStorage
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - MisfitsCartridgePistol357
+        - MisfitsSpeedLoader357
+    proto: MisfitsCartridgePistol357
+    capacity: 6
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+    - 0,0,0,1
+  - type: GunDamageModifier
+    damage:
+      types:
+        Piercing: 4
+  - type: Gun
+    minAngle: 1
+    maxAngle: 6
+    angleIncrease: 0.5
+    angleDecay: 5
+    fireRate: 3.5
+    soundGunshot:
+      collection: N14RevolverMagnunGunshot
+  - type: StaticPrice
+    price: 150

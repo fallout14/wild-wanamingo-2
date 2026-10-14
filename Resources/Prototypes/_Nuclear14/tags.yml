@@ -1,57 +1,41 @@
 # Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
-# Resources/Prototypes/_Nuclear14/tags.yml
+# Resources/Prototypes/Corvax/tags.yml, Resources/Prototypes/_Nuclear14/tags.yml
 
 - type: Tag
-  id: Axe
+  id: N14Axe
 
 - type: Tag
-  id: BottleCap
+  id: N14Bandage
 
 - type: Tag
-  id: ComposterCompatible
+  id: N14ComposterCompatible
 
 - type: Tag
-  id: Currency
+  id: N14Currency
 
 - type: Tag
-  id: JunkItem
+  id: N14JunkItem
 
 - type: Tag
-  id: JunkPile
+  id: N14JunkPile
 
 - type: Tag
-  id: Jam
+  id: N14Jam
 
 - type: Tag
-  id: Magazine
+  id: N14Magazine
 
 - type: Tag
-  id: Pickled
+  id: N14Pickled
 
 - type: Tag
-  id: RawLeather
+  id: N14RawLeather
 
 - type: Tag
-  id: Jet
+  id: N14Jet
 
 - type: Tag
-  id: HydraInhaler
-
-- type: Tag
-  id: Turbo
-
-- type: Tag
-  id: IdCardVault
-
-- type: Tag
-  id: MisfitsPipBoy
-
-# #Cythisiax Added - lets utility belts store the N14 welding goggles
-
-- type: Tag
-  id: WeldingGoggles
-
-# Medical Items
+  id: N14IdCardVault
 
 - type: Tag
   id: N14DirtyGauze
@@ -60,126 +44,109 @@
   id: N14CleanGauze
 
 - type: Tag
-  id: N14EmptySyringe
+  id: N14Abraxo
 
 - type: Tag
-  id: N14EmptyNukaBottle
+  id: N14SensorModule
 
 - type: Tag
-  id: N14TribalMedicine # #Misfits Add: used to whitelist tribal medicines (powder, poultice) in the Medical Belt
-
-#MARK: Crafts
+  id: N14Baseball
 
 - type: Tag
-  id: Abraxo
+  id: N14JunkTimer
 
 - type: Tag
-  id: SensorModule
+  id: N14Turpentine
 
 - type: Tag
-  id: Baseball
+  id: N14JunkKettle
 
 - type: Tag
-  id: JunkTimer
-
-- type: Tag
-  id: Turpentine
-
-- type: Tag
-  id: JunkKettle
-
-- type: Tag
-  id: Tincan
+  id: N14Tincan
 
 - type: Tag
   id: N14JunkLunchbox
 
 - type: Tag
-  id: Scrap
+  id: N14Scrap
 
 - type: Tag
-  id: Phial
+  id: N14Phial
 
 - type: Tag
-  id: CookPot
+  id: N14CookPot
 
 - type: Tag
-  id: DuctTape
+  id: N14DuctTape
 
 - type: Tag
-  id: Screw
+  id: N14Screw
 
 - type: Tag
-  id: Gear
+  id: N14Gear
 
 - type: Tag
-  id: YaoguaiHide
+  id: N14YaoguaiHide
 
 - type: Tag
-  id: GearSmall
+  id: N14GearSmall
 
 - type: Tag
-  id: RifleScope # #Misfits Fix: uncommented — used by N14JunkGunpartsRifleScope
+  id: N14RifleScope # #Misfits Fix: uncommented — used by N14JunkGunpartsRifleScope
 
 - type: Tag
-  id: N14FirearmMuzzleAttachment
+  id: N14RifleStock1
 
 - type: Tag
-  id: RifleStock1
+  id: N14RecoilComp
 
 - type: Tag
-  id: RecoilComp
+  id: N14Action
 
 - type: Tag
-  id: Action
+  id: N14Bolt
 
 - type: Tag
-  id: Bolt
+  id: N14Stock
 
 - type: Tag
-  id: Stock
+  id: N14StockWood
 
 - type: Tag
-  id: StockWood
+  id: N14RifleFrame
 
 - type: Tag
-  id: RifleFrame
+  id: N14GunFrame
 
 - type: Tag
-  id: GunFrame
-
-- type: Tag
-  id: PistolFrame
+  id: N14PistolFrame
 
 - type: Tag
   id: N14AdvancedFrame
 
 - type: Tag
-  id: Receiver
+  id: N14Receiver
 
 - type: Tag
-  id: Barrel
+  id: N14Barrel
 
 - type: Tag
   id: Trigger
 
 - type: Tag
-  id: WeaponParts1
+  id: N14WeaponParts1
 
 - type: Tag
-  id: WeaponParts2
+  id: N14WeaponParts2
 
 - type: Tag
-  id: WeaponParts3
+  id: N14WeaponParts3
 
 - type: Tag
-  id: VarmintRifle
+  id: N14Mainboard
 
 - type: Tag
-  id: Mainboard
-
-- type: Tag
-  id: Sensor
+  id: N14Sensor
 
 - type: Tag
   id: N14Igniter
@@ -188,13 +155,13 @@
   id: N14PoliceBaton
 
 - type: Tag
-  id: Switch
+  id: N14Switch
 
 - type: Tag
-  id: PoliceVest
+  id: N14PoliceVest
 
 - type: Tag
-  id: FollowerLabcoat
+  id: N14FollowerLabcoat
 
 - type: Tag
   id: N14Welder
@@ -202,24 +169,19 @@
 #MARK: Guns types.
 
 - type: Tag
-  id: SpeedLoaderInternal
+  id: N14SpeedLoaderInternal
 
 - type: Tag
-  id: SpeedLoader9
+  id: N14SpeedLoader9
 
 - type: Tag
-  id: SpeedLoader10
+  id: N14SpeedLoader10
 
 - type: Tag
-  id: SpeedLoader44
+  id: N14SpeedLoader44
 
 - type: Tag
-  id: SpeedLoader45-70
-
-- type: Tag
-  id: SpeedLoader357 # #Misfits Add — .357 Magnum speedloader tag for Detective Special / Lucky 37
-
-#MARK: Ammo tags(cartriges).
+  id: N14SpeedLoader45-70
 
 - type: Tag
   id: N14CartridgePistol22
@@ -267,14 +229,6 @@
   id: N14Cartridge308Rifle
 
 - type: Tag
-  id: N14CartridgeOver308Rifle
-
-- type: Tag
-  id: N14Cartridge2mmEC
-
-#MARK: Ammo tags(Magazines).
-
-- type: Tag
   id: N14MagazinePistol44
 
 - type: Tag
@@ -296,7 +250,7 @@
   id: N14MagazinePistol45
 
 - type: Tag
-  id: Magazine45SubMachineGun
+  id: N14Magazine45SubMachineGun
 
 - type: Tag
   id: N14MagazinePistol12mm
@@ -311,24 +265,13 @@
   id: N14TopMagazineSMG12mm
 
 - type: Tag
-  id: Magazine556Rifle
+  id: N14Magazine556Rifle
 
 - type: Tag
-  id: LongMagazine556Rifle
+  id: N14LongMagazine556Rifle
 
 - type: Tag
   id: N14LMGMagazine556Rifle
-
-- type: Tag
-  id: N14MagazineOver308RifleSnipers
-
-- type: Tag
-  id: N14Magazine2mmECRifle
-
-- type: Tag
-  id: N14Magazine2mmECPistol
-
-# Forge-Add-Start
 
 - type: Tag
   id: N14Magazine762Rifle
@@ -348,9 +291,6 @@
 - type: Tag
   id: N14Magazine308Rifle
 
-- type: Tag # forge-add
-  id: N14Magazine308RifleSnipers
-
 - type: Tag
   id: N14Magazine308RifleLong
 
@@ -362,30 +302,13 @@
 #  id: N14GarandEnbloc308
 
 - type: Tag
-  id: N14SKSEnbloc308
-
-# #Misfits Add — tags for ported weapons: .357 ammo, PPSh-41 drum, American 180 drum
-
-- type: Tag
-  id: N14CartridgePistol357
-
-- type: Tag
-  id: N14MagazineSMG9mmDrum
-
-- type: Tag
-  id: N14MagazineAmerican180Drum
-
-- type: Tag
   id: N14Magazine50AMR
 
 - type: Tag
   id: N14Magazine50AMRHEIAP
 
 - type: Tag
-  id:  SpeedLoader
-
-- type: Tag
-  id: Magazine308M60Box
+  id: N14Magazine308M60Box
 
 #MARK: Ammo tags(Battery).
 
@@ -394,9 +317,6 @@
 
 - type: Tag
   id: N14PlasmaCartridge
-
-- type: Tag
-  id: N14PlasmaCartridgeMultiplas # #Misfits Add - dedicated tag for Multiplas spread ammo
 
 - type: Tag
   id: N14PlasmaShell
@@ -410,23 +330,7 @@
 #Misfits Add — shared whitelist tags for consolidated energy ammo tiers.
 
 - type: Tag
-  id: N14MicrofusionCell
-
-# #Misfits Add - Dedicated tag for fusion cores (Gatling-only high-capacity cells)
-
-- type: Tag
   id: N14FusionCore
-
-- type: Tag
-  id: N14ElectronChargePack
-
-- type: Tag
-  id: N14PulseEnergyCell
-
-- type: Tag
-  id: N14PulseMicrofusionCell
-
-#MARK: Ammo tags(explosives)
 
 - type: Tag
   id: N14Grenade
@@ -437,7 +341,7 @@
 #MARK: Mobs
 
 - type: Tag
-  id: Deathclaw
+  id: N14Deathclaw
 
 - type: Tag
-  id: NightstalkerPelt
+  id: N14NightstalkerPelt

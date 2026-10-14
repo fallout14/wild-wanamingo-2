@@ -1,0 +1,31 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Recipes/Cooking/steak.yml
+
+- type: constructionGraph
+  id: MisfitsMeatSteakRadchicken
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: SteakCooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
+  - node: SteakCooked
+    entity: N14FoodMeatRadchickenCooked
+
+- type: constructionGraph # Corvax-Change
+  id: MisfitsFoodMeatRad
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: MeatCooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
+  - node: MeatCooked
+    entity: N14FoodMeatCooked

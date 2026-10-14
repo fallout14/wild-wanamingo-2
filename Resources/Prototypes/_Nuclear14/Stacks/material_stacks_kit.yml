@@ -9,7 +9,7 @@
   maxCount: 15
 
 - type: stack
-  id: BrahminHide
+  id: N14BrahminHide
   name: misfits-kit-brahmin-hides
   icon: { sprite: Nuclear14/Objects/Misc/mob_drops.rsi, state: hide_brahmin_2 }
   spawn: N14MaterialBrahminHide1
@@ -30,28 +30,28 @@
   maxCount: 10
 
 - type: stack
-  id: Leather
+  id: N14Leather
   name: misfits-kit-leather
   icon: { sprite: Nuclear14/Objects/Misc/materials.rsi, state: leather_3 }
   spawn: N14MaterialLeather1
   maxCount: 15
 
 - type: stack
-  id: RawLeather
+  id: N14RawLeather
   name: misfits-kit-raw-leather
   icon: { sprite: Nuclear14/Objects/Misc/materials.rsi, state: raw_leather_2 }
   spawn: N14MaterialRawLeather1
   maxCount: 15
 
 - type: stack
-  id: AntChitin
+  id: N14AntChitin
   name: misfits-kit-ant-chitin
   icon: { sprite: Nuclear14/Objects/Misc/mob_drops.rsi, state: chitin_3 }
   spawn: N14MaterialAntChitin1
   maxCount: 3
 
 - type: stack
-  id: Thread
+  id: N14Thread
   name: misfits-kit-thread
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: thread }
   spawn: N14MaterialThread1
@@ -95,17 +95,17 @@
   maxCount: 30
 
 - type: stack
-  id: SulfurOre
+  id: N14SulfurOre
   name: misfits-kit-sulfur-ore
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: sulfur }
-  spawn: SulfurOre1
+  spawn: N14SulfurOre1
   maxCount: 10
 
 - type: stack
-  id: FertilizerOre
+  id: N14FertilizerOre
   name: misfits-kit-fertilizer-ore
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/crafting_material.rsi", state: ore_fertilizer }
-  spawn: FertilizerOre1
+  spawn: N14FertilizerOre1
   maxCount: 10
 
 
@@ -119,7 +119,7 @@
   maxCount: 30
 
 - type: stack
-  id: Aluminum
+  id: N14Aluminum
   name: misfits-kit-aluminum
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: ingot_aluminum }
   spawn: N14IngotAluminum1
@@ -157,14 +157,14 @@
   id: Sulfur
   name: misfits-kit-sulfur
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: powder_brass }
-  spawn: SulfurPowder1
+  spawn: N14SulfurPowder1
   maxCount: 30
 
 - type: stack
   id: Charcoal
   name: misfits-kit-charcoal
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: powder_lead }
-  spawn: Charcoal1
+  spawn: N14Charcoal1
   maxCount: 30
 
 #Scrap
@@ -219,26 +219,3 @@
   maxCount: 30
 
 # #Misfits Add: Construction materials for building
-
-- type: stack
-  id: N14Cement
-  name: misfits-kit-cement
-  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: powder_brass }
-  spawn: N14MaterialCement1
-  maxCount: 30
-
-- type: stack
-  id: N14Concrete
-  name: misfits-kit-concrete
-  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: scrap_3 }
-  spawn: N14MaterialConcrete1
-  maxCount: 30
-
-- type: stack
-  id: N14Brick
-  name: misfits-kit-brick
-  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: scrap_copper }
-  spawn: N14MaterialBrick1
-  maxCount: 30
-
-# #Misfits Add: Legendary tribal hunt material stack.

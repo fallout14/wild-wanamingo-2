@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/MedLoot/Tier3Meds/Tier3MedTables.yml
 
 - type: entityTable
-  id: M14MedsLootTier3_Common
+  id: MisfitsM14MedsLootTier3_Common
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -18,7 +18,7 @@
       weight: 5
 
 - type: entityTable
-  id: M14MedsLootTier3_UncommonSalts
+  id: MisfitsM14MedsLootTier3_UncommonSalts
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -29,7 +29,7 @@
       weight: 5
 
 - type: entityTable
-  id: M14MedsLootTier3_Topicals
+  id: MisfitsM14MedsLootTier3_Topicals
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -49,7 +49,7 @@
       weight: 2
 
 - type: entityTable
-  id: M14MedsLootTier3_BloodlossMult
+  id: MisfitsM14MedsLootTier3_BloodlossMult
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -62,7 +62,7 @@
       weight: 35
 
 - type: entityTable
-  id: M14MedsLootTier3_BurnMult
+  id: MisfitsM14MedsLootTier3_BurnMult
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -75,7 +75,7 @@
       weight: 15
 
 - type: entityTable
-  id: M14MedsLootTier3_Rare
+  id: MisfitsM14MedsLootTier3_Rare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -86,7 +86,7 @@
       weight: 5
 
 - type: entityTable
-  id: M14MedsLootTier3_PlusRare
+  id: MisfitsM14MedsLootTier3_PlusRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -105,7 +105,7 @@
 # tribals peak here lol
 
 - type: entityTable
-  id: M14MedsLootTier3_Tribal
+  id: MisfitsM14MedsLootTier3_Tribal
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -115,11 +115,11 @@
       id: N14Bitterdrink
       weight: 7
     - !type:EntSelector
-      id: N14BerserkerPowder
+      id: MisfitsBerserkerPowder
       weight: 7
 
 - type: entityTable
-  id: M14MedsLootTier3_TribalUncommon
+  id: MisfitsM14MedsLootTier3_TribalUncommon
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -129,11 +129,11 @@
       id: N14Bitterdrink
       weight: 10
     - !type:EntSelector
-      id: N14BerserkerPowder
+      id: MisfitsBerserkerPowder
       weight: 12
 
 - type: entityTable
-  id: M14MedsLootTier3_AntiRad
+  id: MisfitsM14MedsLootTier3_AntiRad
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -147,7 +147,7 @@
       weight: 15
 
 - type: entityTable
-  id: M14MedsLootTier3_AntiRadUncommon
+  id: MisfitsM14MedsLootTier3_AntiRadUncommon
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -161,7 +161,7 @@
       weight: 30
 
 - type: entityTable
-  id: M14MedsLootTier3_Drugs
+  id: MisfitsM14MedsLootTier3_Drugs
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -175,7 +175,7 @@
       weight: 5
 
 - type: entityTable
-  id: M14MedsLootTier3_DrugsAlt
+  id: MisfitsM14MedsLootTier3_DrugsAlt
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -189,7 +189,7 @@
       weight: 5
 
 - type: entityTable
-  id: M14MedsLootTier3_DrugsUncommonCanisters
+  id: MisfitsM14MedsLootTier3_DrugsUncommonCanisters
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -209,7 +209,7 @@
       weight: 5
 
 - type: entityTable
-  id: M14MedsLootTier3_DrugsRareFixer
+  id: MisfitsM14MedsLootTier3_DrugsRareFixer
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -220,7 +220,7 @@
       weight: 10
 
 - type: entityTable
-  id: M14MedsLootTier3Plus_DrugsUncommon
+  id: MisfitsM14MedsLootTier3Plus_DrugsUncommon
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -237,7 +237,7 @@
       weight: 1
 
 - type: entityTable
-  id: M14MedsLootTier3_DrugsSuperRareFixer
+  id: MisfitsM14MedsLootTier3_DrugsSuperRareFixer
   table: !type:GroupSelector
     children:
     - !type:EntSelector

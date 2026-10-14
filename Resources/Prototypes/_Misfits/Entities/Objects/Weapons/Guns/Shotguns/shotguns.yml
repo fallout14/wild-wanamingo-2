@@ -1,0 +1,139 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Shotguns/shotguns.yml
+
+- type: entity
+  name: blowback shotgun
+  parent: N14WeaponShotgunBase
+  id: MisfitsWeaponShotgunBlowback
+  description: A select-fire combat shotgun fed from a detachable drum magazine, uses 12 gauge shells.
+  components:
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: Gun
+    fireRate: 4
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    - SemiAuto
+    soundGunshot:
+      collection: N14ShotgunGunshot
+  - type: GunRequiresWield
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/blowback.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/blowback.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Large
+    sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/blowback.rsi
+  - type: ChamberMagazineAmmoProvider
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: N14MagazineShotgun12
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - N14MagazineShotgun12
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+          - N14ShellShotgun12
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: StaticPrice
+    price: 125
+
+- type: entity
+  name: trench shotgun
+  parent: N14WeaponShotgunBase
+  id: MisfitsWeaponShotgunTrench
+  description: A military pump-action shotgun with a bayonet lug and slam-fire capability. Hold the cycle-firearm key and pull the trigger repeatedly to slam-fire.
+  components:
+  - type: ItemSlots  # spawn state
+  - type: ContainerContainer  # spawn state
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: ManualAction
+    slamFire: true
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/trench.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/trench.rsi
+  - type: Wieldable
+  - type: GunWieldBonus
+    minAngle: -15
+    maxAngle: -40
+  - type: Gun
+    minAngle: 15
+    maxAngle: 60
+    angleIncrease: 5
+    angleDecay: 12
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: N14ShotgunGunshot
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - N14ShellShotgun12
+    capacity: 5
+    proto: N14ShellShotgun12
+    soundInsert:
+      path: /Audio/Nuclear14/Weapons/Effects/Reload/Shotguns/shotgun_insert.ogg
+  - type: EyeCursorOffset
+    maxOffset: 3
+    pvsIncrease: 0.3
+  - type: StaticPrice
+    price: 90
+  - type: FirearmAttachmentHost
+    bayonetVisualOffset: 0.75, 0.71875
+
+- type: entity
+  id: MisfitsNeosteadMagazineTube
+  name: Neostead magazine tube
+  categories: [HideSpawnMenu]
+  components:
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - N14ShellShotgun12
+    capacity: 6
+    proto: N14ShellShotgun12
+    mayTransfer: false
+    soundInsert:
+      path: /Audio/Nuclear14/Weapons/Effects/Reload/Shotguns/shotgun_insert.ogg
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container

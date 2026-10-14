@@ -4,36 +4,36 @@
 # Misfits' playtime and species requirements are left out for now.
 
 - type: job
-  id: TribalElder
+  id: N14TribalElder
   name: job-name-tribal-elder
   description: job-description-tribal-elder
-  playTimeTracker: TribalElder
-  startingGear: TribalElderGear
-  icon: JobIconTribalLeader
+  playTimeTracker: N14TribalElder
+  startingGear: N14TribalElderGear
+  icon: CorvaxJobIconTribalLeader
   supervisors: job-supervisors-tribal-elder
   access:
-  - TribeMember
-  - TribeChief
+  - N14TribeMember
+  - N14TribeChief
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - Wastelander
-          - Tribal
+          - N14Wastelander
+          - N14Tribal
 
 - type: startingGear
-  id: TribalElderGear
+  id: N14TribalElderGear
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitTribal
     suitstorage: N14TribalBigClubDecorated
     outerClothing: N14ClothingOuterTribalCoat
-    belt: ClothingBeltElderRevolver
+    belt: N14ClothingBeltElderRevolver
     shoes: N14ClothingShoesTribal
     gloves: N14ClothingHandsGlovesTribal
     back: N14ClothingBackpackTrekker
     pocket1: N14TribalKnife
-    pocket2: Triballoadoutkits
+    pocket2: N14Triballoadoutkits
     id: N14IDTribeBossPendant
   storage:
     back:
@@ -42,28 +42,28 @@
     - Torch
     - N14Bandage
     - Ointment
-    - N14ClothingDeathclawHelm
+    - MisfitsClothingDeathclawHelm
 
 - type: job
-  id: Tribal
+  id: N14Tribal
   name: job-name-tribal
   description: job-description-tribal
-  playTimeTracker: Tribal
-  startingGear: TribalGear
-  icon: JobIconTribal
+  playTimeTracker: N14Tribal
+  startingGear: N14TribalGear
+  icon: CorvaxJobIconTribal
   supervisors: job-supervisors-tribal
   access:
-  - TribeMember
+  - N14TribeMember
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - Wastelander
-          - Tribal
+          - N14Wastelander
+          - N14Tribal
 
 - type: startingGear
-  id: TribalGear
+  id: N14TribalGear
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitTribal
     outerClothing: N14ClothingOuterTribalArmor
@@ -71,7 +71,7 @@
     gloves: N14ClothingHandsGlovesTribal
     back: N14ClothingBackpackTrekker
     pocket1: N14TribalKnife
-    pocket2: Triballoadoutkits
+    pocket2: N14Triballoadoutkits
     id: N14IDTribeBulletsPendant
   storage:
     back:
@@ -83,34 +83,34 @@
     - N14HealingPowder
 
 - type: job
-  id: TribalFarmer
+  id: N14TribalFarmer
   name: job-name-tribal-farmer
   description: job-description-tribal-farmer
-  playTimeTracker: TribalFarmer
-  startingGear: TribalFarmerGear
-  icon: JobIconTribalFarmer
+  playTimeTracker: N14TribalFarmer
+  startingGear: N14TribalFarmerGear
+  icon: CorvaxJobIconTribalFarmer
   supervisors: job-supervisors-tribal
   access:
-  - TribeMember
+  - N14TribeMember
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - Wastelander
-          - Tribal
+          - N14Wastelander
+          - N14Tribal
 
 - type: startingGear
-  id: TribalFarmerGear
+  id: N14TribalFarmerGear
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitTribal
     outerClothing: N14ClothingOuterTribalArmor
     shoes: N14ClothingShoesTribal
     gloves: N14ClothingHandsGlovesTribal
     back: N14ClothingBackpackTrekker
-    belt: ClothingBeltFarmerFilled
+    belt: CorvaxClothingBeltFarmerFilled
     pocket1: N14TribalKnife
-    pocket2: Triballoadoutkits
+    pocket2: N14Triballoadoutkits
     id: N14IDTribeEnforcerPendant
   storage:
     back:
@@ -121,25 +121,25 @@
     - Ointment
 
 - type: job
-  id: TribalShaman
+  id: MisfitsTribalShaman
   name: job-name-tribal-shaman
   description: job-description-tribal-shaman
-  playTimeTracker: TribalShaman
-  startingGear: TribalShamanGear
-  icon: JobIconTribalMedic
+  playTimeTracker: MisfitsTribalShaman
+  startingGear: MisfitsTribalShamanGear
+  icon: CorvaxJobIconTribalMedic
   supervisors: job-supervisors-tribal
   access:
-  - TribeMember
+  - N14TribeMember
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - Wastelander
-          - Tribal
+          - N14Wastelander
+          - N14Tribal
 
 - type: startingGear
-  id: TribalShamanGear
+  id: MisfitsTribalShamanGear
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitTribal
     outerClothing: N14ClothingOuterTribalArmor

@@ -1,0 +1,15 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Recipes/Construction/structures.yml
+
+- type: construction
+  id: MisfitsWallAdobe
+  graph: MisfitsAdobeWall
+  startNode: start
+  targetNode: AdobeWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked

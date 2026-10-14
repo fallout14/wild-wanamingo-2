@@ -48,7 +48,7 @@
 # Billboards
 
 - type: entity
-  id: StreetFurnitureBillboardNukacola1
+  id: N14StreetFurnitureBillboardNukacola1
   parent: N14SignFloorBase
   name: billboard
   description: A billboard advertising nuka cola.
@@ -80,8 +80,8 @@
         - WallLayer
 
 - type: entity
-  id: StreetFurnitureBillboardNukacola1worn
-  parent: StreetFurnitureBillboardNukacola1
+  id: N14StreetFurnitureBillboardNukacola1worn
+  parent: N14StreetFurnitureBillboardNukacola1
   description: A billboard advertising nuka cola.
   components:
   - type: Sprite
@@ -91,8 +91,8 @@
     - state: nukacola1-worn
 
 - type: entity
-  id: StreetFurnitureBillboardMassfusion1
-  parent: StreetFurnitureBillboardNukacola1
+  id: N14StreetFurnitureBillboardMassfusion1
+  parent: N14StreetFurnitureBillboardNukacola1
   description: A billboard advertising the Mass Fusion company.
   components:
   - type: Sprite
@@ -102,8 +102,8 @@
     - state: massfusion1
 
 - type: entity
-  id: StreetFurnitureBillboardMassfusion1worn
-  parent: StreetFurnitureBillboardNukacola1
+  id: N14StreetFurnitureBillboardMassfusion1worn
+  parent: N14StreetFurnitureBillboardNukacola1
   description: A billboard advertising the Mass Fusion company.
   components:
   - type: Sprite
@@ -113,8 +113,8 @@
     - state: massfusion1-worn
 
 - type: entity
-  id: StreetFurnitureBillboardRedrocket1
-  parent: StreetFurnitureBillboardNukacola1
+  id: N14StreetFurnitureBillboardRedrocket1
+  parent: N14StreetFurnitureBillboardNukacola1
   description: A billboard advertising the Red Rocket fuel company.
   components:
   - type: Sprite
@@ -124,8 +124,8 @@
     - state: redrocket1
 
 - type: entity
-  id: StreetFurnitureBillboardRedrocket1worn
-  parent: StreetFurnitureBillboardNukacola1
+  id: N14StreetFurnitureBillboardRedrocket1worn
+  parent: N14StreetFurnitureBillboardNukacola1
   description: A billboard advertising the Red Rocket fuel company.
   components:
   - type: Sprite
@@ -135,8 +135,8 @@
     - state: redrocket1-worn
 
 - type: entity
-  parent: StreetFurnitureBillboardNukacola1
-  id: StreetFurnitureBillboardHorizonAirlines
+  parent: N14StreetFurnitureBillboardNukacola1
+  id: N14StreetFurnitureBillboardHorizonAirlines
   description: A billboard advertising the Horizon Airlines company.
   components:
   - type: Sprite
@@ -145,8 +145,8 @@
     - state: horizonairlines
 
 - type: entity
-  parent: StreetFurnitureBillboardHorizonAirlines
-  id: StreetFurnitureBillboardHorizonAirlinesWorn
+  parent: N14StreetFurnitureBillboardHorizonAirlines
+  id: N14StreetFurnitureBillboardHorizonAirlinesWorn
   components:
   - type: Sprite
     layers:
@@ -154,8 +154,8 @@
     - state: horizonairlines-worn
 
 - type: entity
-  parent: StreetFurnitureBillboardNukacola1
-  id: StreetFurnitureBillboardSchoelt
+  parent: N14StreetFurnitureBillboardNukacola1
+  id: N14StreetFurnitureBillboardSchoelt
   description: A billboard advertising the Schoelt propane company.
   components:
   - type: Sprite

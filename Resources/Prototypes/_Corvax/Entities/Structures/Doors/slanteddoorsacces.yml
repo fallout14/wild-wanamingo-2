@@ -1,0 +1,38 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Structures/Doors/slanteddoorsacces.yml
+
+- type: entity
+  parent: N14DoorMetalBlueSlanted
+  id: CorvaxDoorMetalBlueSlantedLoced
+  categories: [HideSpawnMenu]
+  components:
+  - type: Construction
+    graph: N14DoorGraph
+    node: MetalBlueLoced
+
+- type: entity
+  parent: N14DoorMetalRedSlanted
+  id: CorvaxDoorMetalRedSlantedLoced
+  categories: [HideSpawnMenu]
+  components:
+  - type: Construction
+    graph: N14DoorGraph
+    node: MetalRedLoced
+
+- type: entity
+  parent: N14DoorMetalBlueAltSlanted
+  id: CorvaxDoorMetalBlueAltSlantedLoced
+  categories: [HideSpawnMenu]
+  components:
+  - type: Construction
+    graph: N14DoorGraph
+    node: MetalBlueAltLoced
+
+- type: entity
+  parent: N14DoorMetalBlueWindowSlanted
+  id: CorvaxDoorMetalBlueWindowSlantedLoced
+  categories: [HideSpawnMenu]
+  components:
+  - type: Construction
+    graph: N14DoorGraph
+    node: MetalBlueWindowLoced

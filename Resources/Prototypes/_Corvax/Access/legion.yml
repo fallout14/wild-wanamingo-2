@@ -1,0 +1,156 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Access/legion.yml
+
+- type: accessLevel
+  id: CorvaxCaesarLegion
+  name: id-card-access-level-legion
+
+- type: accessLevel
+  id: CorvaxCaesarLegionSlave
+  name: id-card-access-level-legion-slave
+
+- type: accessLevel
+  id: CorvaxCaesarLegionRecruit
+  name: id-card-access-level-legion-recruit
+
+- type: accessLevel
+  id: CorvaxCaesarLegionTrader
+  name: id-card-access-level-legion-trader
+
+- type: accessLevel
+  id: CorvaxCaesarLegionHoundmaster
+  name: id-card-access-level-legion-houndmaster
+
+- type: accessLevel
+  id: CorvaxCaesarLegionFrumentarii
+  name: id-card-access-level-legion-frumentarii
+
+- type: accessLevel
+  id: CorvaxCaesarLegionVexillarius
+  name: id-card-access-level-legion-vexillarius
+
+- type: accessLevel
+  id: CorvaxCaesarLegionExplorer
+  name: id-card-access-level-legion-explorer
+
+- type: accessLevel
+  id: CorvaxCaesarLegionLegionnaireRecruit
+  name: id-card-access-level-legion-recruit-legionary
+
+- type: accessLevel
+  id: CorvaxCaesarLegionLegionnaireWarrior
+  name: id-card-access-level-legion-prime-legionary
+
+- type: accessLevel
+  id: CorvaxCaesarLegionLegionnaireVeteran
+  name: id-card-access-level-legion-veteran-legionary
+
+- type: accessLevel
+  id: CorvaxCaesarLegionDean
+  name: id-card-access-level-legion-decanus
+
+- type: accessLevel
+  id: CorvaxCaesarLegionVeteranDecanus
+  name: id-card-access-level-legion-veteran-decanus
+
+- type: accessLevel
+  id: CorvaxCaesarLegionPriestessOfMars
+  name: id-card-access-level-legion-priestess-of-mars
+
+- type: accessLevel
+  id: CorvaxCaesarLegionAcolyteOfMars
+  name: id-card-access-level-legion-acolyte-of-mars
+
+- type: accessLevel
+  id: CorvaxCaesarLegionOptio
+  name: id-card-access-level-legion-optio
+
+- type: accessLevel
+  id: CorvaxCaesarLegionCenturion
+  name: id-card-access-level-legion-centurion
+
+- type: accessGroup
+  id: CorvaxCaesarLegionSlave
+  tags:
+  - CorvaxCaesarLegionSlave
+
+- type: accessGroup
+  id: CorvaxCaesarLegionRecruit
+  tags:
+  - CorvaxCaesarLegion
+  - CorvaxCaesarLegionRecruit
+
+- type: accessGroup
+  id: CorvaxCaesarLegionHoundmaster
+  tags:
+  - CorvaxCaesarLegion
+  - CorvaxCaesarLegionRecruit
+  - CorvaxCaesarLegionHoundmaster
+
+- type: accessGroup
+  id: CorvaxCaesarLegionVexillarius
+  tags:
+  - CorvaxCaesarLegion
+  - CorvaxCaesarLegionRecruit
+  - CorvaxCaesarLegionVexillarius
+
+- type: accessGroup
+  id: CorvaxCaesarLegionExplorer
+  tags:
+  - CorvaxCaesarLegion
+  - CorvaxCaesarLegionRecruit
+  - CorvaxCaesarLegionExplorer
+
+- type: accessGroup
+  id: CorvaxCaesarLegionLegionnaireRecruit
+  tags:
+  - CorvaxCaesarLegion
+  - CorvaxCaesarLegionRecruit
+  - CorvaxCaesarLegionLegionnaireRecruit
+
+- type: accessGroup
+  id: CorvaxCaesarLegionLegionnaireWarrior
+  tags:
+  - CorvaxCaesarLegion
+  - CorvaxCaesarLegionRecruit
+  - CorvaxCaesarLegionLegionnaireRecruit
+  - CorvaxCaesarLegionLegionnaireWarrior
+
+- type: accessGroup
+  id: CorvaxCaesarLegionLegionnaireVeteran
+  tags:
+  - CorvaxCaesarLegion
+  - CorvaxCaesarLegionRecruit
+  - CorvaxCaesarLegionLegionnaireRecruit
+  - CorvaxCaesarLegionLegionnaireWarrior
+  - CorvaxCaesarLegionLegionnaireVeteran
+
+- type: accessGroup
+  id: CorvaxCaesarLegionDean
+  tags:
+  - CorvaxCaesarLegion
+  - CorvaxCaesarLegionRecruit
+  - CorvaxCaesarLegionLegionnaireRecruit
+  - CorvaxCaesarLegionLegionnaireWarrior
+  - CorvaxCaesarLegionLegionnaireVeteran
+  - CorvaxCaesarLegionDean
+
+- type: accessGroup
+  id: CorvaxCaesarLegionCenturion
+  tags:
+  - CorvaxCaesarLegion
+  - CorvaxCaesarLegionRecruit
+  - CorvaxCaesarLegionTrader
+  - CorvaxCaesarLegionHoundmaster
+  - CorvaxCaesarLegionFrumentarii
+  - CorvaxCaesarLegionVexillarius
+  - CorvaxCaesarLegionExplorer
+  - CorvaxCaesarLegionOptio
+  - CorvaxCaesarLegionLegionnaireRecruit
+  - CorvaxCaesarLegionLegionnaireWarrior
+  - CorvaxCaesarLegionLegionnaireVeteran
+  - CorvaxCaesarLegionDean
+  - CorvaxCaesarLegionVeteranDecanus
+  - CorvaxCaesarLegionCenturion
+  - CorvaxCaesarLegionAcolyteOfMars
+  - CorvaxCaesarLegionPriestessOfMars

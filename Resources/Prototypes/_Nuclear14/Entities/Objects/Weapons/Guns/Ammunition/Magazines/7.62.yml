@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/7.62.yml
 
 - type: entity
-  id: BaseMagazine762Rifle
+  id: N14BaseMagazine762Rifle
   name: "magazine (7.62mm)"
   parent: BaseItem
   abstract: true
@@ -35,17 +35,17 @@
   - type: Appearance
 
 - type: entity
-  id: Magazine762Rifle
+  id: N14Magazine762Rifle
   name: "magazine (7.62mm)"
-  parent: BaseMagazine762Rifle
+  parent: N14BaseMagazine762Rifle
   components:
   - type: BallisticAmmoProvider
     proto: N14Cartridge762Rifle
 
 - type: entity
-  id: Magazine762AmmoBelt
+  id: N14Magazine762AmmoBelt
   name: "ammo belt (7.62mm)"
-  parent: BaseMagazine762Rifle
+  parent: N14BaseMagazine762Rifle
   components:
   - type: Tag
     tags:
@@ -76,9 +76,9 @@
     zeroVisible: false
 
 - type: entity
-  id: Magazine762AmmoShort
+  id: N14Magazine762AmmoShort
   name: "short magazine (7.62mm)"
-  parent: BaseMagazine762Rifle
+  parent: N14BaseMagazine762Rifle
   components:
   - type: Tag
     tags:

@@ -2,7 +2,7 @@
 
 - type: entity
   parent: FoodProduceBase
-  id: FoodLemonade
+  id: MisfitsFoodLemonade
   name: lemonade
   description: When life gives you lemons, commit arson. With the lemons.
   suffix: Food
@@ -30,7 +30,7 @@
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: JuiceLemonade # lol
+      - ReagentId: MisfitsJuiceLemonade # lol
         Quantity: 10
   - type: Tag
     tags:
@@ -38,14 +38,14 @@
   - type: Edible
     edible: Food
     trash:
-    - LemonGrenade
+    - MisfitsLemonGrenade
   - type: ToolRefinable
     refineResult:
-    - id: LemonGrenade
+    - id: MisfitsLemonGrenade
 
 - type: entity
   parent: FoodProduceBase
-  id: FoodCoconut
+  id: MisfitsFoodCoconut
   name: coconut
   description: Should probably split it before eating...
   components:
@@ -77,7 +77,7 @@
         acts: ["Destruction"]
       - !type:SpawnEntitiesBehavior
             spawn:
-              FoodCoconutHalf:
+              MisfitsFoodCoconutHalf:
                 min: 1
                 max: 2
       - !type:PlaySoundBehavior
@@ -86,7 +86,7 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: CoconutFlesh
+      - ReagentId: MisfitsCoconutFlesh
         Quantity: 20
       - ReagentId: Vitamin
         Quantity: 10
@@ -98,7 +98,7 @@
       - ReagentId: CoconutWater
         Quantity: 30
   - type: CartridgeAmmo
-    proto: BulletCoconut # lol
+    proto: MisfitsBulletCoconut # lol
     deleteOnSpawn: true
   - type: Produce
     plantId: CoconutPlant
@@ -110,19 +110,19 @@
     - CannonBall # lmao
   - type: ToolRefinable
     refineResult:
-    - id: FoodCoconutHalf
+    - id: MisfitsFoodCoconutHalf
       amount: 2
   - type: Edible
     edible: Food
     trash:
-    - TrashCoconutShell
+    - MisfitsTrashCoconutShell
   - type: PhysicalComposition
     materialComposition:
       Wood: 100 # lol
 
 - type: entity
   parent: [ FoodProduceBase, ProduceSliceBase ]
-  id: FoodCoconutHalf
+  id: MisfitsFoodCoconutHalf
   name: coconut half
   description: The perfect defense... if you're an octopus.
   components:
@@ -131,7 +131,7 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: CoconutFlesh
+      - ReagentId: MisfitsCoconutFlesh
         Quantity: 10
       - ReagentId: Vitamin
         Quantity: 5
@@ -152,10 +152,10 @@
   - type: Edible
     edible: Food
     trash:
-    - TrashCoconutShell
+    - MisfitsTrashCoconutShell
   - type: ToolRefinable
     refineResult:
-    - id: TrashCoconutShell
+    - id: MisfitsTrashCoconutShell
   - type: PhysicalComposition
     materialComposition:
       Wood: 50 # lol
@@ -166,7 +166,7 @@
 
 - type: entity
   parent: DrinkBaseCup
-  id: TrashCoconutShell
+  id: MisfitsTrashCoconutShell
   name: coconut shell
   description: The shell of a coconut, kinda useless.
   components:
@@ -182,7 +182,7 @@
 
 - type: entity
   parent: FoodProduceBase
-  id: FoodCherryBomb
+  id: MisfitsFoodCherryBomb
   name: cherry
   description: Juicy red cherry with a bomb inside.
   suffix: bomb
@@ -243,7 +243,7 @@
 
 - type: entity
   parent: TrashMimanaPeel
-  id: MimanaPeelStealthy
+  id: MisfitsMimanaPeelStealthy
   name: mimana peel
   suffix: Stealthy
   components:
@@ -281,7 +281,7 @@
     - Vegetable
   - type: FlavorProfile
     flavors:
-    - zoy
+    - MisfitsZoy
   - type: Stack
-    stackType: ZoyBeans
+    stackType: MisfitsZoyBeans
     count: 1

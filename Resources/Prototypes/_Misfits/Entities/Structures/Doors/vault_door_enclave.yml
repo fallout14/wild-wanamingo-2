@@ -28,7 +28,7 @@
   - type: Lock
   - type: LockVisuals
   - type: AccessReader
-    access: [["EnclaveNCO"]]
+    access: [["MisfitsEnclaveNCO"]]
 
 # The outside terminal raiders hack. No AccessReader on purpose - the Pip-Boy check and the active
 # raid check in SharedVaultDoorConsoleSystem are the gate.

@@ -1,35 +1,35 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier4Weapon/Tier4WeaponTables/Tier4WeaponBallistic/TwoHanded/Tier4WeaponBallisticRifleTable.yml
 
 - type: entityTable
-  id: M14WeaponLootTier4_GunsBulletRifleAuto
+  id: MisfitsM14WeaponLootTier4_GunsBulletRifleAuto
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponRifle5mmCarbine
+      id: MisfitsWeaponRifle5mmCarbine
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle556R91
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifleInfiltrator # stealth R91
+      id: MisfitsWeaponRifleInfiltrator # stealth R91
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle556EM2
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle308Fal
+      id: MisfitsWeaponRifle308Fal
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle762Canadian
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556Chinese
+      id: MisfitsWeaponRifle556Chinese
       weight: 4
       #AK 5.45
 #temp!!!
 
 - type: entityTable
-  id: M14WeaponLootTier4_GunsBulletRifleSemi
+  id: MisfitsM14WeaponLootTier4_GunsBulletRifleSemi
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -54,10 +54,10 @@
       id: N14WeaponSniper308Tribal
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle308SniperRifle
+      id: MisfitsWeaponRifle308SniperRifle
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556Rangemaster # bayonet
+      id: MisfitsWeaponRifle556Rangemaster # bayonet
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle762SKS
@@ -69,10 +69,10 @@
       id: N14WeaponSniperEnfield
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniperCowboyRepeater #.357
+      id: MisfitsWeaponSniperCowboyRepeater #.357
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniperCowboyRepeater
+      id: MisfitsWeaponSniperCowboyRepeater
       weight: 4
     - !type:EntSelector
       id: N14WeaponSniper45-70BrushGun

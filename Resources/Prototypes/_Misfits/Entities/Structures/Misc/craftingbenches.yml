@@ -1,0 +1,88 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Structures/Misc/craftingbenches.yml
+
+- type: entity
+  categories: [ HideSpawnMenu ] # Forge-change
+  parent: N14WorkbenchBase
+  id: MisfitsWorkbenchWeaponbenchFrame
+  description: A workbench with weapon working tools for crafting. This one is still being built!
+  name: weapon workbench frame
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Structures/Misc/workbenches.rsi
+    layers:
+    - state: weaponbenchframe0
+      map: [ "enum.ConstructionVisuals.Layer" ]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          WorkbenchWeaponbenchFrame: { state: weaponbenchframe0 }
+          WorkbenchWeaponbenchSteel: { state: weaponbenchframe1 }
+          WorkbenchWeaponbenchUnwelded: { state: weaponbenchframe2 }
+          WorkbenchWeaponbenchCircuitry: { state: weaponbenchframe3 }
+          WorkbenchWeaponbenchUnscrewed: { state: weaponbenchframe4 }
+  - type: Construction
+    graph: N14WorkbenchWeaponbench
+    node: WorkbenchWeaponbenchFrame
+    defaultTarget: WorkbenchWeaponbench
+
+- type: entity
+  categories: [ HideSpawnMenu ] # Forge-change
+  parent: N14WorkbenchBase
+  id: MisfitsWorkbenchArmorbenchFrame
+  description: A workbench with armor working tools for crafting. This one is still being built!
+  name: armor workbench frame
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Structures/Misc/workbenches.rsi
+    layers:
+    - state: armorbenchframe0
+      map: [ "enum.ConstructionVisuals.Layer" ]
+    # Misfit Remove: Fix the offset issue with construction benches
+    #offset: 0.5, 0
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          WorkbenchArmorbenchFrame: { state: armorbenchframe0 }
+          WorkbenchArmorbenchUnwelded: { state: armorbenchframe1 }
+          WorkbenchArmorbenchCircuitry: { state: armorbenchframe2 }
+          WorkbenchArmorbenchUnscrewed: { state: armorbenchframe3 }
+          WorkbenchArmorbenchIron: { state: armorbenchframe4 }
+  - type: Construction
+    graph: N14WorkbenchArmorbench
+    node: WorkbenchArmorbenchFrame
+    defaultTarget: WorkbenchArmorbench
+
+- type: entity
+  categories: [ HideSpawnMenu ] # Forge-change
+  parent: N14WorkbenchBase
+  id: MisfitsWorkbenchTinkerbenchFrame
+  description: A workbench with tinkering tools for crafting. This one is still being built!
+  name: tinker workbench frame
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Structures/Misc/workbenches.rsi
+    layers:
+    - state: tinkerbench0
+      map: [ "enum.ConstructionVisuals.Layer" ]
+    # Misfit Remove: Fix the offset issue with construction benches
+    #offset: 0.5, 0
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          WorkbenchTinkerbenchFrame: { state: tinkerbench0 }
+          WorkbenchTinkerbenchCopper: { state: tinkerbench1 }
+          WorkbenchTinkerbenchAluminum: { state: tinkerbench2 }
+          WorkbenchTinkerbenchCable: { state: tinkerbench3 }
+          WorkbenchTinkerbenchPlastic: { state: tinkerbench4 }
+          WorkbenchTinkerbenchUnwrench: { state: tinkerbench5 }
+          WorkbenchTinkerbenchUnscrewed: { state: tinkerbench6 }
+  - type: Construction
+    graph: N14WorkbenchTinkerbench
+    node: WorkbenchTinkerbenchFrame
+    defaultTarget: WorkbenchTinkerbench

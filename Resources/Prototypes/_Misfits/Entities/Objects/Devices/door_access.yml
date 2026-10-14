@@ -1,91 +1,129 @@
-# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Devices/door_access.yml
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Devices/door_access.yml, Resources/Prototypes/_Nuclear14/Entities/Objects/Devices/door_access.yml
 
 - type: entity
-  parent: DoorElectronicsFotA
-  id: DoorElectronicsFotAHead
+  parent: MisfitsDoorElectronicsFotA
+  id: MisfitsDoorElectronicsFotAHead
   suffix: FotA Head, Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FotAHead"]]
+    access: [["MisfitsFotAHead"]]
 
 - type: entity
-  parent: DoorElectronicsFotA
-  id: DoorElectronicsFotADoctor
+  parent: MisfitsDoorElectronicsFotA
+  id: MisfitsDoorElectronicsFotADoctor
   suffix: FotA Doctor, Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FotADoctor"]]
+    access: [["MisfitsFotADoctor"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsFotA
+  id: MisfitsDoorElectronicsFotA
   suffix: FotA, Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FotA"]]
+    access: [["MisfitsFotA"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsEnclaveRoleAll
+  id: MisfitsDoorElectronicsEnclaveRoleAll
   suffix: Vault Doctor Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["EnclaveRoleAll"]]
+    access: [["MisfitsEnclaveRoleAll"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsEnclaveRoleScientist
+  id: MisfitsDoorElectronicsEnclaveRoleScientist
   suffix: Vault Engineer Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["EnclaveRoleScientist"]]
+    access: [["MisfitsEnclaveRoleScientist"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsEnclaveRoleHeadScientist
+  id: MisfitsDoorElectronicsBOSMidwestOffDuty
+  suffix: BOSM, OffDuty, Locked
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["MisfitsBOS"], ["MisfitsBOSOffDuty"]]
+
+# BoS Washington
+
+- type: entity
+  parent: DoorElectronics
+  id: MisfitsDoorElectronicsEnclaveRoleHeadScientist
   suffix: Vault Security Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["EnclaveRoleHeadScientist"]]
+    access: [["MisfitsEnclaveRoleHeadScientist"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsEnclaveRoleNCO
+  id: MisfitsDoorElectronicsEnclaveRoleNCO
   suffix: Vault Doctor Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["EnclaveRoleNCO"]]
+    access: [["MisfitsEnclaveRoleNCO"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsEnclaveRoleJuniorOfficer
+  id: MisfitsDoorElectronicsEnclaveRoleJuniorOfficer
   suffix: Vault Engineer Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["EnclaveRoleJuniorOfficer"]]
+    access: [["MisfitsEnclaveRoleJuniorOfficer"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsEnclaveRoleSeniorOfficer
+  id: MisfitsDoorElectronicsEnclaveRoleSeniorOfficer
   suffix: Vault Security Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["EnclaveRoleSeniorOfficer"]]
+    access: [["MisfitsEnclaveRoleSeniorOfficer"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsEnclaveRoleCommander
+  id: MisfitsDoorElectronicsEnclaveRoleCommander
   suffix: Vault Security Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["EnclaveRoleCommander"]]
+    access: [["MisfitsEnclaveRoleCommander"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: MisfitsDoorElectronicsVaultCargo
+  suffix: Vault Cargo Locked
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["MisfitsVaultCargo"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: MisfitsDoorElectronicsVaultCourier
+  suffix: Vault Courier Locked
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["MisfitsVaultCourier"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: MisfitsDoorElectronicsVaultSalvage
+  suffix: Vault Salvage Locked
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["MisfitsVaultSalvage"]]

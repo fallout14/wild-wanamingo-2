@@ -2,7 +2,7 @@
 
 - type: entity
   parent: F14ClothingOuterPowerArmorBase
-  id: N14ClothingOuterPowerArmorLegion
+  id: MisfitsClothingOuterPowerArmorLegion
   name: Gravis Pattern Armor
   description: Taken either as a trophy or found, this heavily stripped set of PA has been modified heavily by legion into a usable set of armor. Far lighter than the NCR equivalent, yet still capable and surprisingly light. Leather now acts as the joint coverings, serving to aid in movement further.
   components:
@@ -42,7 +42,7 @@
     blockUnequipWhenAttached: true
     replaceCurrentClothing: false
     clothingPrototypes:
-      head: N14ClothingHeadHatLegionpa
+      head: MisfitsClothingHeadHatLegionpa
       gloves: N14ClothingPAGauntlets
       shoes: N14ClothingPABoots
   - type: Armor # #Misfits Tweak: Added Heat and Piercing coefficients — pre-reduces damage before integrity absorption so PA stays above Centurion/Vet.Ranger at all integrity levels.
@@ -79,7 +79,7 @@
 
 - type: entity
   parent: N14ClothingHeadHatBaseHelmetMetal
-  id: N14ClothingHeadHatLegionpa
+  id: MisfitsClothingHeadHatLegionpa
   name: Gravis Pattern Helmet
   description: Once a T45 helmet, heavily modified by legion with a solid steel face mask and a plume of a Prime Decanus.
   components:

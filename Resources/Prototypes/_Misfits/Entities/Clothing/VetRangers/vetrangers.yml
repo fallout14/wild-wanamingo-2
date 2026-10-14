@@ -2,7 +2,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckSaltRunnerDuster
+  id: MisfitsClothingNeckSaltRunnerDuster
   name: salt runner ranger duster
   description: An NCR Ranger duster, customized with various tribal implements and hunting trophies. Worn often by Rangers with tribal origins or ties. Worn over armor.
   components:
@@ -15,7 +15,7 @@
 
 - type: entity
   parent: N14ClothingOuterBase
-  id: N14ClothingOuterVetRangerRiotArmor
+  id: MisfitsClothingOuterVetRangerRiotArmor
   name: ranger riot armor
   description: A refurbished suit of L.A.P.D. Riot armor used most notably by the NCR Rangers. It has tactical pouches to store assorted items in, ranging from magazines to medicine.
   components:
@@ -37,8 +37,8 @@
 # --- California Girl riot vest ---
 
 - type: entity
-  parent: N14ClothingOuterVetRangerRiotArmor
-  id: N14ClothingOuterCaliforniaGirlVetRangerRiotArmor
+  parent: MisfitsClothingOuterVetRangerRiotArmor
+  id: MisfitsClothingOuterCaliforniaGirlVetRangerRiotArmor
   name: california girl riot armor
   description: A refurbished suit of LAPD riot armor painted in olive drab green. A stencil of the state of California is painted on the front and scratches adorn the well worn vest.
   components:
@@ -51,8 +51,8 @@
 # --- Can Opener riot vest ---
 
 - type: entity
-  parent: N14ClothingOuterVetRangerRiotArmor
-  id: N14ClothingOuterCanOpenerVetRangerRiotArmor
+  parent: MisfitsClothingOuterVetRangerRiotArmor
+  id: MisfitsClothingOuterCanOpenerVetRangerRiotArmor
   name: can opener riot armor
   description: A refurbished set of LAPD riot armor in full assault configuration.
   components:
@@ -65,8 +65,8 @@
 # --- Demo Expert riot vest ---
 
 - type: entity
-  parent: N14ClothingOuterVetRangerRiotArmor
-  id: N14ClothingOuterDemoExpertVetRangerRiotArmor
+  parent: MisfitsClothingOuterVetRangerRiotArmor
+  id: MisfitsClothingOuterDemoExpertVetRangerRiotArmor
   name: demo expert riot armor
   description: A refurbished set of LAPD riot armor painted in desert tan, in full assault configuration. The left shoulder is missing.
   components:
@@ -79,8 +79,8 @@
 # --- The Devout riot vest ---
 
 - type: entity
-  parent: N14ClothingOuterVetRangerRiotArmor
-  id: N14ClothingOuterTheDevoutVetRangerRiotArmor
+  parent: MisfitsClothingOuterVetRangerRiotArmor
+  id: MisfitsClothingOuterTheDevoutVetRangerRiotArmor
   name: the devout riot armor
   description: A refurbished set of LAPD riot armor with a white cross chalked in the middle.
   components:
@@ -94,7 +94,7 @@
 
 - type: entity
   parent: N14ClothingHeadHatRangerHelmetModif
-  id: N14ClothingHatSaltRunnerHelmet
+  id: MisfitsClothingHatSaltRunnerHelmet
   name: salt runner ranger helmet
   description: A decorated ranger helmet. It's crown is adorned with mutated insect stingers.
   components:
@@ -106,8 +106,8 @@
 # --- Salt Runner Mask ---
 
 - type: entity
-  parent: ClothingMaskGasRiot
-  id: N14ClothingHatSaltRunnerMask
+  parent: N14ClothingMaskGasRiot
+  id: MisfitsClothingHatSaltRunnerMask
   name: salt coven riot gas mask
   description: A modified gas mask from the divide. It has a red stripe across the bridge and a symbol of venus on the cheek.
   components:
@@ -122,8 +122,8 @@
 # --- The Devout Mask ---
 
 - type: entity
-  parent: ClothingMaskGasRiot
-  id: N14ClothingHatTheDevoutMask
+  parent: N14ClothingMaskGasRiot
+  id: MisfitsClothingHatTheDevoutMask
   name: the devout riot gas mask
   description: A modified gas mask with yellow lenses.
   components:
@@ -139,7 +139,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckRangerDuster
+  id: MisfitsClothingNeckRangerDuster
   name: veteran ranger duster
   description: An elite ranger duster without the riot gear underneath, allowing for the user to fit in their own armor plating of their choosing. Goes over armor.
   components:
@@ -152,7 +152,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckCaliforniaGirlDuster
+  id: MisfitsClothingNeckCaliforniaGirlDuster
   name: california girl duster
   description: A modified ranger duster with additional straps and the NCR flag stitched onto it's forearms. Goes over armor.
   components:
@@ -165,7 +165,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckFourLeafDuster
+  id: MisfitsClothingNeckFourLeafDuster
   name: four leaf ranger duster
   description: A duster for rangers with luck, grit and determination, it has a crude wolf patch stitched on the inside. Goes over armor.
   components:
@@ -178,7 +178,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckHighlandRangerDuster
+  id: MisfitsClothingNeckHighlandRangerDuster
   name: highland ranger duster
   description: A ranger duster adorned with salvaged armor and hunting trophies. Smells faintly of mountain air. Goes over armor.
   components:
@@ -191,7 +191,7 @@
 
 - type: entity
   parent: N14ClothingHeadHatRangerHelmetModif
-  id: N14ClothingHeadHighlandRangerHelmet
+  id: MisfitsClothingHeadHighlandRangerHelmet
   name: highland ranger helmet
   description: An old ranger helmet with various tribal markings. The straps are worn, but well kept.
   components:
@@ -204,7 +204,7 @@
 
 - type: entity
   parent: N14ClothingHeadHatRangerHelmetModif
-  id: N14ClothingHeadFourLeafRangerHelmet
+  id: MisfitsClothingHeadFourLeafRangerHelmet
   name: four leaf ranger helmet
   description: A ranger helmet with one too many dents across it's exterior. Whoever's worn this is clearly lucky enough to shrug off a few bullets.
   components:
@@ -217,7 +217,7 @@
 
 - type: entity
   parent: N14ClothingHeadHatRangerHelmetModif
-  id: N14ClothingHeadCanOpenerRangerHelmet
+  id: MisfitsClothingHeadCanOpenerRangerHelmet
   name: can opener ranger helmet
   description: A polished olive drab helmet with tally marks and a red crosshair painted on the forehead.
   components:
@@ -230,7 +230,7 @@
 
 - type: entity
   parent: N14ClothingHeadHatRangerHelmetModif
-  id: N14ClothingHeadTheDevoutRangerHelmet
+  id: MisfitsClothingHeadTheDevoutRangerHelmet
   name: the devout ranger helmet
   description: A polished olive drab helmet with tally marks and a red crosshair painted on the forehead.
   components:
@@ -243,7 +243,7 @@
 
 - type: entity
   parent: N14ClothingHeadHatRangerHelmetModif
-  id: N14ClothingHeadDemoExpertRangerHelmet
+  id: MisfitsClothingHeadDemoExpertRangerHelmet
   name: demo expert ranger helmet
   description: A tan riot helmet with a bottle of insect repellent on the helmet band. A painted popped flower adorns the side of the helmet.
   components:
@@ -256,7 +256,7 @@
 
 - type: entity
   parent: N14ClothingHeadHatRangerHelmetModif
-  id: N14ClothingHeadHardCaseRangerHelmet
+  id: MisfitsClothingHeadHardCaseRangerHelmet
   name: hard case ranger helmet
   description: A helmet for a seasoned veteran ranger with ammo attached to the headband.
   components:

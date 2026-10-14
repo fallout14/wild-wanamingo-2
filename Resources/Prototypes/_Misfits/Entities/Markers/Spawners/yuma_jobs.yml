@@ -8,7 +8,7 @@
   name: n c r commander spawn point
   components:
   - type: SpawnPoint
-    job_id: NCRCommander
+    job_id: MisfitsNCRCommander
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/ncr.rsi
     layers:
@@ -17,11 +17,11 @@
 
 - type: entity
   parent: SpawnPointJobBase
-  id: N14SpawnPointNCRPlatoonLeader
+  id: MisfitsSpawnPointNCRPlatoonLeader
   name: n c r platoon leader spawn point
   components:
   - type: SpawnPoint
-    job_id: NCRPlatoonLeader
+    job_id: MisfitsNCRPlatoonLeader
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/ncr.rsi
     layers:
@@ -34,7 +34,7 @@
   name: n c r doctor spawn point
   components:
   - type: SpawnPoint
-    job_id: NCRDoctor
+    job_id: N14NCRDoctor
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/ncr.rsi
     layers:
@@ -47,7 +47,7 @@
   name: n c r r o spawn point
   components:
   - type: SpawnPoint
-    job_id: NCRRO
+    job_id: MisfitsNCRRO
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/ncr.rsi
     layers:
@@ -60,7 +60,7 @@
   name: n c r n c o spawn point
   components:
   - type: SpawnPoint
-    job_id: NCRNCO
+    job_id: N14NCRNCO
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/ncr.rsi
     layers:
@@ -73,7 +73,7 @@
   name: n c r w s spawn point
   components:
   - type: SpawnPoint
-    job_id: NCRWS
+    job_id: N14NCRWS
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/ncr.rsi
     layers:
@@ -86,7 +86,7 @@
   name: n c r medic spawn point
   components:
   - type: SpawnPoint
-    job_id: NCRMedic
+    job_id: N14NCRMedic
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/ncr.rsi
     layers:
@@ -99,7 +99,7 @@
   name: n c r cadet spawn point
   components:
   - type: SpawnPoint
-    job_id: NCRCadet
+    job_id: N14NCRCadet
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/ncr.rsi
     layers:
@@ -108,24 +108,11 @@
 
 - type: entity
   parent: SpawnPointJobBase
-  id: F14SpawnPointNCRGarrisonTrooper
-  name: n c r garrison trooper spawn point
-  components:
-  - type: SpawnPoint
-    job_id: F14NCRGarrisonTrooper
-  - type: Sprite
-    sprite: Nuclear14/Markers/Jobs/ncr.rsi
-    layers:
-    - state: green
-    - state: soldier
-
-- type: entity
-  parent: SpawnPointJobBase
   id: N14SpawnPointNCRRangerVeteran
   name: n c r veteran ranger spawn point
   components:
   - type: SpawnPoint
-    job_id: NCRVeteranRanger
+    job_id: MisfitsNCRVeteranRanger
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/rangers.rsi
     layers:
@@ -138,7 +125,7 @@
   name: n c r patrol ranger spawn point
   components:
   - type: SpawnPoint
-    job_id: NCRPatrolRanger
+    job_id: MisfitsNCRPatrolRanger
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/rangers.rsi
     layers:
@@ -147,11 +134,11 @@
 
 - type: entity
   parent: SpawnPointJobBase
-  id: N14SpawnPointCenturion
+  id: CorvaxSpawnPointCenturion
   name: caesar legion centurion spawn point
   components:
   - type: SpawnPoint
-    job_id: CaesarLegionCenturion
+    job_id: CorvaxCaesarLegionCenturion
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -159,11 +146,11 @@
 
 - type: entity
   parent: SpawnPointJobBase
-  id: N14SpawnPointVexillarius
+  id: CorvaxSpawnPointVexillarius
   name: caesar legion vexillarius spawn point
   components:
   - type: SpawnPoint
-    job_id: CaesarLegionVexillarius
+    job_id: CorvaxCaesarLegionVexillarius
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -171,11 +158,11 @@
 
 - type: entity
   parent: SpawnPointJobBase
-  id: N14SpawnPointExplorer
+  id: CorvaxSpawnPointExplorer
   name: caesar legion explorer spawn point
   components:
   - type: SpawnPoint
-    job_id: CaesarLegionExplorer
+    job_id: CorvaxCaesarLegionExplorer
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -183,11 +170,11 @@
 
 - type: entity
   parent: SpawnPointJobBase
-  id: N14SpawnPointHoundmaster
+  id: CorvaxSpawnPointHoundmaster
   name: caesar legion houndmaster spawn point
   components:
   - type: SpawnPoint
-    job_id: CaesarLegionHoundmaster
+    job_id: CorvaxCaesarLegionHoundmaster
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -195,11 +182,11 @@
 
 - type: entity
   parent: SpawnPointJobBase
-  id: N14SpawnPointForgemaster
+  id: CorvaxSpawnPointForgemaster
   name: caesar legion forgemaster spawn point
   components:
   - type: SpawnPoint
-    job_id: CaesarLegionForgemaster
+    job_id: MisfitsCaesarLegionForgemaster
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -207,11 +194,11 @@
 
 - type: entity
   parent: SpawnPointJobBase
-  id: N14SpawnPointDean
+  id: CorvaxSpawnPointDean
   name: caesar legion dean spawn point
   components:
   - type: SpawnPoint
-    job_id: CaesarLegionDean
+    job_id: CorvaxCaesarLegionDean
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -219,11 +206,11 @@
 
 - type: entity
   parent: SpawnPointJobBase
-  id: N14SpawnPointLegionnaireRecruit
+  id: CorvaxSpawnPointLegionnaireRecruit
   name: caesar legion legionnaire recruit spawn point
   components:
   - type: SpawnPoint
-    job_id: CaesarLegionLegionnaireRecruit
+    job_id: CorvaxCaesarLegionLegionnaireRecruit
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -231,11 +218,11 @@
 
 - type: entity
   parent: SpawnPointJobBase
-  id: N14SpawnPointLegionnaireWarrior
+  id: CorvaxSpawnPointLegionnaireWarrior
   name: caesar legion legionnaire warrior spawn point
   components:
   - type: SpawnPoint
-    job_id: CaesarLegionLegionnaireWarrior
+    job_id: CorvaxCaesarLegionLegionnaireWarrior
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -243,11 +230,11 @@
 
 - type: entity
   parent: SpawnPointJobBase
-  id: N14SpawnPointLegionnaireVeteran
+  id: CorvaxSpawnPointLegionnaireVeteran
   name: caesar legion legionnaire veteran spawn point
   components:
   - type: SpawnPoint
-    job_id: CaesarLegionLegionnaireVeteran
+    job_id: CorvaxCaesarLegionLegionnaireVeteran
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -255,11 +242,11 @@
 
 - type: entity
   parent: SpawnPointJobBase
-  id: N14SpawnPointAuxilia
+  id: CorvaxSpawnPointAuxilia
   name: caesar legion auxilia spawn point
   components:
   - type: SpawnPoint
-    job_id: CaesarLegionAuxilia
+    job_id: MisfitsCaesarLegionAuxilia
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -267,11 +254,11 @@
 
 - type: entity
   parent: SpawnPointJobBase
-  id: SpawnPointCaesarLegionSlave
+  id: CorvaxSpawnPointCaesarLegionSlave
   name: caesar legion slave spawn point
   components:
   - type: SpawnPoint
-    job_id: CaesarLegionSlave
+    job_id: CorvaxCaesarLegionSlave
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -283,7 +270,7 @@
   name: bo s west elder commander spawn point
   components:
   - type: SpawnPoint
-    job_id: BoSWestElderCommander
+    job_id: MisfitsBoSWestElderCommander
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/boswashington.rsi
     layers:
@@ -296,7 +283,7 @@
   name: bo s mid paladin commander spawn point
   components:
   - type: SpawnPoint
-    job_id: BoSMidPaladinCommander
+    job_id: N14BoSMidPaladinCommander
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/bosmid.rsi
     layers:
@@ -309,7 +296,7 @@
   name: bo s head knight spawn point
   components:
   - type: SpawnPoint
-    job_id: BoSHeadKnight
+    job_id: MisfitsBoSHeadKnight
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/bosmid.rsi
     layers:
@@ -322,7 +309,7 @@
   name: bo s west scribe spawn point
   components:
   - type: SpawnPoint
-    job_id: BoSWestScribe
+    job_id: MisfitsBoSWestScribe
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/bosmid.rsi
     layers:
@@ -335,7 +322,7 @@
   name: bo s scribe spawn point
   components:
   - type: SpawnPoint
-    job_id: BoSScribe
+    job_id: MisfitsBoSScribe
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/boswashington.rsi
     layers:
@@ -348,7 +335,7 @@
   name: bo s paladin spawn point
   components:
   - type: SpawnPoint
-    job_id: BoSPaladin
+    job_id: MisfitsBoSPaladin
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/boswashington.rsi
     layers:
@@ -361,7 +348,7 @@
   name: bo s knight spawn point
   components:
   - type: SpawnPoint
-    job_id: BoSKnight
+    job_id: MisfitsBoSKnight
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/boswashington.rsi
     layers:
@@ -374,7 +361,7 @@
   name: bo s initiate spawn point
   components:
   - type: SpawnPoint
-    job_id: BoSInitiate
+    job_id: MisfitsBoSInitiate
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/boswashington.rsi
     layers:
@@ -387,7 +374,7 @@
   name: town mayor spawn point
   components:
   - type: SpawnPoint
-    job_id: TownMayor
+    job_id: N14TownMayor
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/town.rsi
     layers:
@@ -400,7 +387,7 @@
   name: town sheriff spawn point
   components:
   - type: SpawnPoint
-    job_id: TownSheriff
+    job_id: N14TownSheriff
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/town.rsi
     layers:
@@ -413,7 +400,7 @@
   name: town deputy spawn point
   components:
   - type: SpawnPoint
-    job_id: TownDeputy
+    job_id: N14TownDeputy
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/town.rsi
     layers:
@@ -426,7 +413,7 @@
   name: wasteland bartender spawn point
   components:
   - type: SpawnPoint
-    job_id: WastelandBartender
+    job_id: N14WastelandBartender
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/wastelanders.rsi
     layers:
@@ -439,7 +426,7 @@
   name: wasteland farmer spawn point
   components:
   - type: SpawnPoint
-    job_id: WastelandFarmer
+    job_id: N14WastelandFarmer
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/wastelanders.rsi
     layers:
@@ -452,7 +439,7 @@
   name: town mechanic spawn point
   components:
   - type: SpawnPoint
-    job_id: TownMechanic
+    job_id: N14TownMechanic
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/town.rsi
     layers:
@@ -465,7 +452,7 @@
   name: town shopkeeper spawn point
   components:
   - type: SpawnPoint
-    job_id: TownShopkeeper
+    job_id: N14TownShopkeeper
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/town.rsi
     layers:
@@ -478,7 +465,7 @@
   name: townsperson spawn point
   components:
   - type: SpawnPoint
-    job_id: Townsperson
+    job_id: N14Townsperson
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/town.rsi
     layers:
@@ -491,7 +478,7 @@
   name: tribal elder spawn point
   components:
   - type: SpawnPoint
-    job_id: TribalElder
+    job_id: N14TribalElder
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/tribal.rsi
     layers:
@@ -504,7 +491,7 @@
   name: tribal spawn point
   components:
   - type: SpawnPoint
-    job_id: Tribal
+    job_id: N14Tribal
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/tribal.rsi
     layers:
@@ -517,7 +504,7 @@
   name: tribal farmer spawn point
   components:
   - type: SpawnPoint
-    job_id: TribalFarmer
+    job_id: N14TribalFarmer
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/tribal.rsi
     layers:
@@ -530,7 +517,7 @@
   name: tribal shaman spawn point
   components:
   - type: SpawnPoint
-    job_id: TribalShaman
+    job_id: MisfitsTribalShaman
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/tribal.rsi
     layers:
@@ -543,7 +530,7 @@
   name: follower director spawn point
   components:
   - type: SpawnPoint
-    job_id: FollowerDirector
+    job_id: MisfitsFollowerDirector
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/town.rsi
     layers:
@@ -556,7 +543,7 @@
   name: follower head spawn point
   components:
   - type: SpawnPoint
-    job_id: FollowerHead
+    job_id: MisfitsFollowerHead
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/town.rsi
     layers:
@@ -569,7 +556,7 @@
   name: follower doctor spawn point
   components:
   - type: SpawnPoint
-    job_id: FollowerDoctor
+    job_id: MisfitsFollowerDoctor
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/town.rsi
     layers:
@@ -582,7 +569,7 @@
   name: follower guard spawn point
   components:
   - type: SpawnPoint
-    job_id: FollowerGuard
+    job_id: MisfitsFollowerGuard
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/town.rsi
     layers:
@@ -595,7 +582,7 @@
   name: follower volunteer spawn point
   components:
   - type: SpawnPoint
-    job_id: FollowerVolunteer
+    job_id: MisfitsFollowerVolunteer
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/town.rsi
     layers:
@@ -608,7 +595,7 @@
   name: wastelander spawn point
   components:
   - type: SpawnPoint
-    job_id: Wastelander
+    job_id: N14Wastelander
   - type: Sprite
     sprite: Nuclear14/Markers/Jobs/wastelanders.rsi
     layers:

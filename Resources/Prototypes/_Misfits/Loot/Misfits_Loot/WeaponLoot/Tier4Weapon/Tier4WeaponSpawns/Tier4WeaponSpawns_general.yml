@@ -4,7 +4,7 @@
   name: Tier4 Weapon Spawner
   abstract: true
   suffix: Tier4
-  id: M14Tier4Spawner_Ref
+  id: MisfitsM14Tier4Spawner_Ref
   parent: MarkerBase
   components:
   - type: Sprite
@@ -21,8 +21,8 @@
 - type: entity
   name: Tier4 Weapon Spawner
   suffix: Tier4
-  id: M14Tier4WeaponSpawner_Single_All
-  parent: M14Tier4Spawner_Ref
+  id: MisfitsM14Tier4WeaponSpawner_Single_All
+  parent: MisfitsM14Tier4Spawner_Ref
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
@@ -30,30 +30,30 @@
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: M14WeaponLootTier4
+        tableId: MisfitsM14WeaponLootTier4
 
 - type: entity
   name: Tier4 Weapon Spawner 0-3
   suffix: Tier4
-  id: M14Tier4WeaponSpawner_Mult0_3_All
-  parent: M14Tier4Spawner_Ref
+  id: MisfitsM14Tier4WeaponSpawner_Mult0_3_All
+  parent: MisfitsM14Tier4Spawner_Ref
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: M14WeaponLootTier4
+        tableId: MisfitsM14WeaponLootTier4
 
 - type: entity
   name: Tier4 Weapon Spawner 1-2
   suffix: Tier4
-  id: M14Tier4WeaponSpawner_Mult1_2_All
-  parent: M14Tier4Spawner_Ref
+  id: MisfitsM14Tier4WeaponSpawner_Mult1_2_All
+  parent: MisfitsM14Tier4Spawner_Ref
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: M14WeaponLootTier4
+        tableId: MisfitsM14WeaponLootTier4

@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Projectiles/fire.yml
 
 - type: entity
-  id: BaseFire
+  id: N14BaseFire
   name: BaseFire
   description: This is fine.
   abstract: true
@@ -57,9 +57,9 @@
     lifetime: 10
 
 - type: entity
-  id: FireProjectile
+  id: N14FireProjectile
   name: fire
-  parent: BaseFire
+  parent: N14BaseFire
   categories: [ HideSpawnMenu ]
   components:
   - type: IgniteOnCollide
@@ -69,8 +69,8 @@
     
 
 - type: entity
-  id: FireProjectileShort
-  parent: FireProjectile
+  id: N14FireProjectileShort
+  parent: N14FireProjectile
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
@@ -79,21 +79,7 @@
 # Visual-only flamer spew projectile — no damage, no ignite, just sprite + light.
 
 - type: entity
-  id: FlamerSpew
-  parent: BaseFire
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: TimedDespawn
-    lifetime: 0.5
-  - type: Projectile
-    impactEffect: null
-    damage: {}
-    soundHit: null
-  - type: IgniteOnCollide
-    fireStacks: 0
-
-- type: entity
-  id: BaseFireExplosiveProjectile
+  id: N14BaseFireExplosiveProjectile
   name: fire
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
@@ -112,16 +98,16 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: N14DefaultStructural
+    explosionType: MisfitsDefaultStructural
     maxIntensity: 2 # max 30 per tile
     intensitySlope: 1
     totalIntensity: 1 # 60 total damage to distribute over tiles
     maxTileBreak: 1
 
 - type: entity
-  id: FireExplosive
+  id: N14FireExplosive
   name: fire
-  parent: BaseFireExplosiveProjectile
+  parent: N14BaseFireExplosiveProjectile
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

@@ -1,14 +1,14 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/Speedloaders/45.yml
 
 - type: entity
-  id: N14BaseSpeedLoader45
+  id: MisfitsBaseSpeedLoader45
   name: "speed loader (.45 ACP)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - SpeedLoader45
+      - MisfitsSpeedLoader45
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
@@ -22,9 +22,9 @@
         ents: []
 
 - type: entity
-  id: N14SpeedLoader45
+  id: MisfitsSpeedLoader45
   name: "speed loader (.45 ACP)"
-  parent: N14BaseSpeedLoader45
+  parent: MisfitsBaseSpeedLoader45
   components:
   - type: BallisticAmmoProvider
     proto: N14CartridgePistol45
@@ -44,14 +44,14 @@
 # Uses its own tag instead of the shared SpeedLoaderInternal so it cannot load other calibers.
 
 - type: entity
-  id: N14BaseSpeedLoaderTube45
+  id: MisfitsBaseSpeedLoaderTube45
   name: "speed loader tube (.45 ACP)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - SpeedLoaderTube45
+      - MisfitsSpeedLoaderTube45
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
@@ -66,9 +66,9 @@
         ents: []
 
 - type: entity
-  id: N14SpeedLoaderTube45
+  id: MisfitsSpeedLoaderTube45
   name: "speed loader tube (.45 ACP)"
-  parent: N14BaseSpeedLoaderTube45
+  parent: MisfitsBaseSpeedLoaderTube45
   components:
   - type: BallisticAmmoProvider
     proto: N14CartridgePistol45

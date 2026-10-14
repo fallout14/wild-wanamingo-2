@@ -1,0 +1,25 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Projectiles/creature.yml
+
+- type: entity
+  id: MisfitsBulletCentaurSpit
+  name: centaur spit
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Physics
+      bodyType: Dynamic
+      linearDamping: 0.3
+      angularDamping: 0.5
+    - type: Projectile
+      damage:
+        types:
+          Poison: 12
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/xeno_toxic.rsi
+      layers:
+        - state: xeno_toxic
+          color: "#88FF66"
+    - type: Ammo
+      muzzleFlash: null
+    - type: TimedDespawn
+      lifetime: 2

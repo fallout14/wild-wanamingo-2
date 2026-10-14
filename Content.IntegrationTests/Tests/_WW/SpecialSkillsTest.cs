@@ -131,8 +131,8 @@ public sealed class SpecialSkillsTest : GameTest
         Assert.That(SharedSpecialSystem.GetCharismaLoadoutPointModifier(1), Is.LessThan(0));
     }
 
-    [TestCase("N14HolotapeLoreProspector")]
-    [TestCase("N14HolotapeMisfitsRandomBlue")]
+    [TestCase("MisfitsHolotapeLoreProspector")]
+    [TestCase("MisfitsHolotapeRandomBlue")]
     [TestCase("N14ComputerTerminal")]
     public async Task HolotapesAndTerminalsHaveText(string proto)
     {

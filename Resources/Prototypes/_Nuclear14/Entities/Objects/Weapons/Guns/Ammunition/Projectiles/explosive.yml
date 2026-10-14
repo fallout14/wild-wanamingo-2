@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Projectiles/explosive.yml
 
 - type: entity
-  id: BaseGrenadeProjectile
+  id: N14BaseGrenadeProjectile
   name: grenade
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
@@ -14,16 +14,16 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: N14DefaultStructural
+    explosionType: MisfitsDefaultStructural
     maxIntensity: 4 # max 30 per tile
     intensitySlope: 1
     totalIntensity: 3 # 60 total damage to distribute over tiles
     maxTileBreak: 0
 
 - type: entity
-  id: GrenadeProjectile
+  id: N14GrenadeProjectile
   name: grenade
-  parent: BaseGrenadeProjectile
+  parent: N14BaseGrenadeProjectile
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -41,9 +41,9 @@
     maxTileBreak: 0
 
 - type: entity
-  id: FireGrenadeProjectile
+  id: N14FireGrenadeProjectile
   name: fire grenade
-  parent: BaseGrenadeProjectile
+  parent: N14BaseGrenadeProjectile
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -61,7 +61,7 @@
     maxTileBreak: 0
 
 - type: entity
-  id: BoilingWaterShot
+  id: N14BoilingWaterShot
   parent: [ SolutionVapor, SolutionSmall ]
   name: boiling water
   categories: [ HideSpawnMenu ]

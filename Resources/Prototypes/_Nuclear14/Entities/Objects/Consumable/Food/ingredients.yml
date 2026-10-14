@@ -77,7 +77,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: ExtractRazorgrainFlour
+      - ReagentId: N14ExtractRazorgrainFlour
         Quantity: 50
 
 - type: entity
@@ -92,7 +92,7 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: ExtractRazorgrainFlour
+      - ReagentId: N14ExtractRazorgrainFlour
         Quantity: 20
 
 - type: entity
@@ -106,7 +106,7 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: ExtractMaize
+      - ReagentId: N14ExtractMaize
         Quantity: 50
 
 - type: entity
@@ -121,7 +121,7 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: ExtractMaize
+      - ReagentId: N14ExtractMaize
         Quantity: 20
 
 - type: entity
@@ -427,23 +427,8 @@
         Quantity: 15
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodButterSlice
+    - id: MisfitsFoodButterSlice
       amount: 3
-
-- type: entity
-  name: butter slice
-  parent: N14FoodBakingBase
-  id: N14FoodButterSlice
-  description: A pat of delicious, golden, fatty goodness.
-  components:
-  - type: Sprite
-    state: butter-slice
-  - type: Solution
-    solution:
-      maxVol: 5
-      reagents:
-      - ReagentId: Butter
-        Quantity: 5
 
 - type: entity
   name: stick of cannabis butter

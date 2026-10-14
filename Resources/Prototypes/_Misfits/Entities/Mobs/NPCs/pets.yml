@@ -32,7 +32,7 @@
     price: 3000 # it is a truly valuable creature
   - type: NpcFactionMember
     factions:
-    - Followers
+    - MisfitsFollowers
   - type: GhostRole
     name: ghost-role-information-misfitpet-rabbit-followers-name
     description: ghost-role-information-misfit-faction-description
@@ -56,7 +56,7 @@
     - CannotSuicide
   - type: NpcFactionMember
     factions:
-    - BrotherhoodOfSteel
+    - MisfitsBrotherhoodOfSteel
   - type: MobPrice
     price: 200
 
@@ -77,6 +77,6 @@
     - CannotSuicide
   - type: NpcFactionMember
     factions:
-    - BrotherhoodOfSteel
+    - MisfitsBrotherhoodOfSteel
   - type: MobPrice
     price: 200

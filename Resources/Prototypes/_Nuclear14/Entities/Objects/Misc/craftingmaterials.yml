@@ -14,12 +14,12 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: ScorpionTail
+      - ReagentId: N14ScorpionTail
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: ScorpionTail
+      - ReagentId: N14ScorpionTail
         Quantity: 10
   # - type: Craftable # Corvax-Change  # #Misfits Remove: Stalker14 crafting system
 
@@ -35,10 +35,10 @@
     state: hide_brahmin
   - type: Tag
     tags:
-      - RawLeather
+      - N14RawLeather
   - type: PhysicalComposition
     materialComposition:
-      RawLeather: 400
+      N14RawLeather: 400
   - type: Material
   - type: Item
     size: Normal
@@ -57,7 +57,7 @@
     - state: hide_brahmin_2
       map: ["base"]
   - type: Stack
-    stackType: BrahminHide
+    stackType: N14BrahminHide
     count: 4
     baseLayer: base
     layerStates:
@@ -74,7 +74,7 @@
   suffix: Single
   components:
   - type: Stack
-    stackType: BrahminHide
+    stackType: N14BrahminHide
     count: 1
 
 - type: entity
@@ -87,10 +87,10 @@
     state: pelt_nightstalker
   - type: Tag
     tags:
-      - NightstalkerPelt
+      - N14NightstalkerPelt
   - type: PhysicalComposition
     materialComposition:
-      RawLeather: 300
+      N14RawLeather: 300
   - type: StaticPrice # Forge-Change
     price: 30
 
@@ -104,11 +104,11 @@
     state: hide_yaoguai
   - type: Tag
     tags:
-      - YaoguaiHide
-      - RawLeather
+      - N14YaoguaiHide
+      - N14RawLeather
   - type: PhysicalComposition
     materialComposition:
-      RawLeather: 600
+      N14RawLeather: 600
   - type: StaticPrice # Forge-Change
     price: 50
 
@@ -123,11 +123,11 @@
     state: hide_gecko
   - type: Tag
     tags:
-      - RawLeather
+      - N14RawLeather
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      RawLeather: 600
+      N14RawLeather: 600
   - type: Item
     size: Normal
   # - type: Craftable # Corvax-Change  # #Misfits Remove: Stalker14 crafting system

@@ -1,0 +1,42 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Structures/Power/substation.yml
+
+- type: entity # Corvax-Change
+  parent: BaseMachine
+  id: MisfitsBaseSubstationFrame
+  name: substation frame
+  description: Reduces the voltage of electricity put into it.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    drawdepth: Overdoors
+    offset: 0, 0.5
+    snapCardinals: true
+    sprite: Nuclear14/Structures/Power/32x48_machines.rsi
+    state: substation
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          N14ScrapSteel1:
+           min: 4
+           max: 7
+
+# In Use

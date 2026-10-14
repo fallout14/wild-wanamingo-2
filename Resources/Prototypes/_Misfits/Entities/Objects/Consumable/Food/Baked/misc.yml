@@ -1,0 +1,26 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Food/Baked/misc.yml
+
+- type: entity
+  name: cornbread muffin
+  parent: N14CookedFoodBakedBase
+  id: MisfitsCookedFoodBakedMuffinCorn
+  description: A tasty muffin with wild maize kernels on top.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - savory
+    - corn
+  - type: Sprite
+    sprite: Misfits/Objects/Consumable/Food/Baked/misc.rsi
+    state: muffin-corn
+  - type: Tag
+    tags:
+    - Corn
+  - type: Solution
+    solution:
+      maxVol: 6 #big muffins, they're a third of a cornbread!
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 4
+      - ReagentId: Vitamin
+        Quantity: 1

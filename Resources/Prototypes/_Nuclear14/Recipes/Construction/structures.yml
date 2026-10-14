@@ -292,22 +292,8 @@
 # #Misfits Add: Concrete and brick wall construction recipes
 
 - type: construction
-  id: N14WallAdobe
-  graph: N14AdobeWall
-  startNode: start
-  targetNode: AdobeWall
-  category: construction-category-structures
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canRotate: false
-  canBuildInImpassable: false
-  hide: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
   id: N14WallAdobeTall
-  graph: N14AdobeWall
+  graph: MisfitsAdobeWall
   startNode: start
   targetNode: AdobeWallTall
   category: construction-category-structures

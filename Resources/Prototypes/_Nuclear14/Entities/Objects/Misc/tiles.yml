@@ -5,7 +5,7 @@
 - type: entity
   name: metal floor blue
   parent: FloorTileItemBase
-  id: FloorTileItemMetalBlue
+  id: N14FloorTileItemMetalBlue
   components:
   - type: Sprite
     state: steel
@@ -14,17 +14,17 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalBlue
+      - N14FloorMetalBlue
   - type: Stack
-    stackType: FloorTileMetalBlue
+    stackType: N14FloorTileMetalBlue
   - type: Construction
-    graph: N14FloorTileMetalBlue
+    graph: MisfitsFloorTileMetalBlue
     node: metaltileblue
 
 - type: entity
   name: metal floor blue solid
   parent: FloorTileItemBase
-  id: FloorTileItemMetalBlueSolid
+  id: N14FloorTileItemMetalBlueSolid
   components:
   - type: Sprite
     state: steel
@@ -33,14 +33,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalBlueSolid
+      - N14FloorMetalBlueSolid
   - type: Stack
-    stackType: FloorTileMetalBlueSolid
+    stackType: N14FloorTileMetalBlueSolid
 
 - type: entity
   name: metal floor green
   parent: FloorTileItemBase
-  id: FloorTileItemMetalGreen
+  id: N14FloorTileItemMetalGreen
   components:
   - type: Sprite
     state: steel
@@ -49,17 +49,17 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalGreen
+      - N14FloorMetalGreen
   - type: Stack
-    stackType: FloorTileMetalGreen
+    stackType: N14FloorTileMetalGreen
   - type: Construction
-    graph: N14FloorTileMetalGreen
+    graph: MisfitsFloorTileMetalGreen
     node: metaltilegreen
 
 - type: entity
   name: metal floor green solid
   parent: FloorTileItemBase
-  id: FloorTileItemMetalGreenSolid
+  id: N14FloorTileItemMetalGreenSolid
   components:
   - type: Sprite
     state: steel
@@ -68,14 +68,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalGreenSolid
+      - N14FloorMetalGreenSolid
   - type: Stack
-    stackType: FloorTileMetalGreenSolid
+    stackType: N14FloorTileMetalGreenSolid
 
 - type: entity
   name: metal floor grey
   parent: FloorTileItemBase
-  id: FloorTileItemMetalGrey
+  id: N14FloorTileItemMetalGrey
   components:
   - type: Sprite
     state: steel
@@ -84,14 +84,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalGrey
+      - N14FloorMetalGrey
   - type: Stack
-    stackType: FloorTileMetalGrey
+    stackType: N14FloorTileMetalGrey
 
 - type: entity
   name: metal floor grey solid
   parent: FloorTileItemBase
-  id: FloorTileItemMetalGreySolid
+  id: N14FloorTileItemMetalGreySolid
   components:
   - type: Sprite
     state: steel
@@ -100,14 +100,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalGreySolid
+      - N14FloorMetalGreySolid
   - type: Stack
-    stackType: FloorTileMetalGreySolid
+    stackType: N14FloorTileMetalGreySolid
 
 - type: entity
   name: metal floor grey dark
   parent: FloorTileItemBase
-  id: FloorTileItemMetalGreyDark
+  id: N14FloorTileItemMetalGreyDark
   components:
   - type: Sprite
     state: steel
@@ -116,14 +116,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalGreyDark
+      - N14FloorMetalGreyDark
   - type: Stack
-    stackType: FloorTileMetalGreyDark
+    stackType: N14FloorTileMetalGreyDark
 
 - type: entity
   name: metal floor grey dark solid
   parent: FloorTileItemBase
-  id: FloorTileItemMetalGreyDarkSolid
+  id: N14FloorTileItemMetalGreyDarkSolid
   components:
   - type: Sprite
     state: steel
@@ -132,14 +132,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalGreyDarkSolid
+      - N14FloorMetalGreyDarkSolid
   - type: Stack
-    stackType: FloorTileMetalGreyDarkSolid
+    stackType: N14FloorTileMetalGreyDarkSolid
 
 - type: entity
   name: metal floor purple
   parent: FloorTileItemBase
-  id: FloorTileItemMetalPurple
+  id: N14FloorTileItemMetalPurple
   components:
   - type: Sprite
     state: steel
@@ -148,14 +148,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalPurple
+      - N14FloorMetalPurple
   - type: Stack
-    stackType: FloorTileMetalPurple
+    stackType: N14FloorTileMetalPurple
 
 - type: entity
   name: metal floor purple solid
   parent: FloorTileItemBase
-  id: FloorTileItemMetalPurpleSolid
+  id: N14FloorTileItemMetalPurpleSolid
   components:
   - type: Sprite
     state: steel
@@ -164,14 +164,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalPurpleSolid
+      - N14FloorMetalPurpleSolid
   - type: Stack
-    stackType: FloorTileMetalPurpleSolid
+    stackType: N14FloorTileMetalPurpleSolid
 
 - type: entity
   name: metal floor red
   parent: FloorTileItemBase
-  id: FloorTileItemMetalRed
+  id: N14FloorTileItemMetalRed
   components:
   - type: Sprite
     state: steel
@@ -180,17 +180,17 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalRed
+      - N14FloorMetalRed
   - type: Stack
-    stackType: FloorTileMetalRed
+    stackType: N14FloorTileMetalRed
   - type: Construction
-    graph: N14FloorTileMetalRed
+    graph: MisfitsFloorTileMetalRed
     node: metaltilered
 
 - type: entity
   name: metal floor red solid
   parent: FloorTileItemBase
-  id: FloorTileItemMetalRedSolid
+  id: N14FloorTileItemMetalRedSolid
   components:
   - type: Sprite
     state: steel
@@ -199,14 +199,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalRedSolid
+      - N14FloorMetalRedSolid
   - type: Stack
-    stackType: FloorTileMetalRedSolid
+    stackType: N14FloorTileMetalRedSolid
 
 - type: entity
   name: metal floor teal
   parent: FloorTileItemBase
-  id: FloorTileItemMetalTeal
+  id: N14FloorTileItemMetalTeal
   components:
   - type: Sprite
     state: steel
@@ -215,14 +215,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalTeal
+      - N14FloorMetalTeal
   - type: Stack
-    stackType: FloorTileMetalTeal
+    stackType: N14FloorTileMetalTeal
 
 - type: entity
   name: metal floor teal solid
   parent: FloorTileItemBase
-  id: FloorTileItemMetalTealSolid
+  id: N14FloorTileItemMetalTealSolid
   components:
   - type: Sprite
     state: steel
@@ -231,14 +231,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalTealSolid
+      - N14FloorMetalTealSolid
   - type: Stack
-    stackType: FloorTileMetalTealSolid
+    stackType: N14FloorTileMetalTealSolid
 
 - type: entity
   name: metal floor white
   parent: FloorTileItemBase
-  id: FloorTileItemMetalWhite
+  id: N14FloorTileItemMetalWhite
   components:
   - type: Sprite
     state: steel
@@ -247,14 +247,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalWhite
+      - N14FloorMetalWhite
   - type: Stack
-    stackType: FloorTileMetalWhite
+    stackType: N14FloorTileMetalWhite
 
 - type: entity
   name: metal floor white solid
   parent: FloorTileItemBase
-  id: FloorTileItemMetalWhiteSolid
+  id: N14FloorTileItemMetalWhiteSolid
   components:
   - type: Sprite
     state: steel
@@ -263,14 +263,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalWhiteSolid
+      - N14FloorMetalWhiteSolid
   - type: Stack
-    stackType: FloorTileMetalWhiteSolid
+    stackType: N14FloorTileMetalWhiteSolid
 
 - type: entity
   name: metal floor yellow
   parent: FloorTileItemBase
-  id: FloorTileItemMetalYellow
+  id: N14FloorTileItemMetalYellow
   components:
   - type: Sprite
     state: steel
@@ -279,14 +279,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalYellow
+      - N14FloorMetalYellow
   - type: Stack
-    stackType: FloorTileMetalYellow
+    stackType: N14FloorTileMetalYellow
 
 - type: entity
   name: metal floor yellow solid
   parent: FloorTileItemBase
-  id: FloorTileItemMetalYellowSolid
+  id: N14FloorTileItemMetalYellowSolid
   components:
   - type: Sprite
     state: steel
@@ -295,14 +295,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalYellowSolid
+      - N14FloorMetalYellowSolid
   - type: Stack
-    stackType: FloorTileMetalYellowSolid
+    stackType: N14FloorTileMetalYellowSolid
 
 - type: entity
   name: metal floor freezer
   parent: FloorTileItemBase
-  id: FloorTileItemMetalFreezer
+  id: N14FloorTileItemMetalFreezer
   components:
   - type: Sprite
     state: steel
@@ -311,9 +311,9 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorMetalFreezer
+      - N14FloorMetalFreezer
   - type: Stack
-    stackType: FloorTileMetalFreezer
+    stackType: N14FloorTileMetalFreezer
 
 # Wood Tiles
 
@@ -321,7 +321,7 @@
 - type: entity
   name: oak wood floor
   parent: FloorTileItemBase
-  id: FloorTileItemWoodOak
+  id: N14FloorTileItemWoodOak
   components:
   - type: Sprite
     state: wood
@@ -329,19 +329,19 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - FloorWasteland
-      - FloorWoodOak
+      - N14FloorWasteland
+      - N14FloorWoodOak
   - type: Stack
-    stackType: FloorTileWoodOak
+    stackType: N14FloorTileWoodOak
   - type: Construction
-    graph: N14FloorTileWoodOak
+    graph: MisfitsFloorTileWoodOak
     node: woodtileoak
 
 # #Misfits Add: Plating-compatible version for base SS14 areas
 - type: entity
   name: oak wood floor (station compatible)
   parent: FloorTileItemBase
-  id: FloorTileItemWoodOakCompat
+  id: MisfitsFloorTileItemWoodOakCompat
   components:
   - type: Sprite
     state: wood
@@ -350,14 +350,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorWoodOak
+      - N14FloorWoodOak
   - type: Stack
-    stackType: FloorTileWoodOakCompat
+    stackType: MisfitsFloorTileWoodOakCompat
 
 - type: entity
   name: house wood floor
   parent: FloorTileItemBase
-  id: FloorTileItemWoodHouse
+  id: N14FloorTileItemWoodHouse
   components:
   - type: Sprite
     state: wood
@@ -365,19 +365,19 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - FloorWasteland
-      - FloorWoodHouse
+      - N14FloorWasteland
+      - N14FloorWoodHouse
   - type: Stack
-    stackType: FloorTileWoodHouse
+    stackType: N14FloorTileWoodHouse
   - type: Construction
-    graph: N14FloorTileWoodHouse
+    graph: MisfitsFloorTileWoodHouse
     node: woodtilehouse
 
 # #Misfits Add: Plating-compatible version for base SS14 areas
 - type: entity
   name: house wood floor (station compatible)
   parent: FloorTileItemBase
-  id: FloorTileItemWoodHouseCompat
+  id: MisfitsFloorTileItemWoodHouseCompat
   components:
   - type: Sprite
     state: wood
@@ -386,14 +386,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorWoodHouse
+      - N14FloorWoodHouse
   - type: Stack
-    stackType: FloorTileWoodHouseCompat
+    stackType: MisfitsFloorTileWoodHouseCompat
 
 - type: entity
   name: maple floor
   parent: FloorTileItemBase
-  id: FloorTileItemWoodMaple
+  id: N14FloorTileItemWoodMaple
   components:
   - type: Sprite
     state: wood
@@ -401,19 +401,19 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - FloorWasteland
-      - FloorWoodMaple
+      - N14FloorWasteland
+      - N14FloorWoodMaple
   - type: Stack
-    stackType: FloorTileWoodMaple
+    stackType: N14FloorTileWoodMaple
   - type: Construction
-    graph: N14FloorTileWoodMaple
+    graph: MisfitsFloorTileWoodMaple
     node: woodtilemaple
 
 # #Misfits Add: Plating-compatible version for base SS14 areas
 - type: entity
   name: maple floor (station compatible)
   parent: FloorTileItemBase
-  id: FloorTileItemWoodMapleCompat
+  id: MisfitsFloorTileItemWoodMapleCompat
   components:
   - type: Sprite
     state: wood
@@ -422,14 +422,14 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorWoodMaple
+      - N14FloorWoodMaple
   - type: Stack
-    stackType: FloorTileWoodMapleCompat
+    stackType: MisfitsFloorTileWoodMapleCompat
 
 - type: entity
   name: industrial floor
   parent: FloorTileItemBase
-  id: FloorTileItemMetalIndustrial
+  id: N14FloorTileItemMetalIndustrial
   components:
   - type: Sprite
     state: steel
@@ -437,15 +437,15 @@
     heldPrefix: steel
   - type: FloorTile
     outputs:
-      - FloorWasteland
-      - FloorMS13MetalIndustrial
+      - N14FloorWasteland
+      - N14FloorMS13MetalIndustrial
   - type: Stack
-    stackType: FloorTileMetalIndustrial
+    stackType: N14FloorTileMetalIndustrial
 
 - type: entity
   name: metal floor
   parent: FloorTileItemBase
-  id: FloorTileItemMetalMS13
+  id: N14FloorTileItemMetalMS13
   components:
   - type: Sprite
     state: steel
@@ -453,15 +453,15 @@
     heldPrefix: steel
   - type: FloorTile
     outputs:
-      - FloorWasteland
-      - FloorMS13MetalTile
+      - N14FloorWasteland
+      - N14FloorMS13MetalTile
   - type: Stack
-    stackType: FloorTileMetalMS13
+    stackType: N14FloorTileMetalMS13
 
 - type: entity
   name: metal grate floor
   parent: FloorTileItemBase
-  id: FloorTileItemMetalGrate
+  id: N14FloorTileItemMetalGrate
   components:
   - type: Sprite
     state: steel
@@ -469,15 +469,15 @@
     heldPrefix: steel
   - type: FloorTile
     outputs:
-      - FloorWasteland
-      - FloorMS13MetalGrate
+      - N14FloorWasteland
+      - N14FloorMS13MetalGrate
   - type: Stack
-    stackType: FloorTileMetalGrate
+    stackType: N14FloorTileMetalGrate
 
 - type: entity
   name: metal solid floor
   parent: FloorTileItemBase
-  id: FloorTileItemMetalSolid
+  id: N14FloorTileItemMetalSolid
   components:
   - type: Sprite
     state: steel
@@ -485,17 +485,17 @@
     heldPrefix: steel
   - type: FloorTile
     outputs:
-      - FloorWasteland
-      - FloorMS13MetalSolid
+      - N14FloorWasteland
+      - N14FloorMS13MetalSolid
   - type: Stack
-    stackType: FloorTileMetalSolid
+    stackType: N14FloorTileMetalSolid
 
 # Carpets
 
 - type: entity
   name: red carpet
   parent: FloorTileItemBase
-  id: FloorTileItemCarpetRed
+  id: N14FloorTileItemCarpetRed
   components:
   - type: Sprite
     state: wood
@@ -503,10 +503,10 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - FloorWasteland
+      - N14FloorWasteland
       - FloorCarpetRed
   - type: Stack
-    stackType: FloorTileCarpetRed
+    stackType: N14FloorTileCarpetRed
 #  - type: Construction
 #    graph: TileWood
 #    node: woodtilelight

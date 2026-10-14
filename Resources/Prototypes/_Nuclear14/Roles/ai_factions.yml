@@ -1,15 +1,15 @@
 # Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
-# Resources/Prototypes/_Nuclear14/Roles/ai_factions.yml
+# Resources/Prototypes/_Misfits/Roles/ai_factions.yml, Resources/Prototypes/_Nuclear14/Roles/ai_factions.yml
 
 - type: npcFaction
-  id: Wastelander
+  id: N14Wastelander
   hostile:
-  - WastelandInsect
-  - WastelandAnimal
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - HostileRobot
-  - Feral
+  - N14WastelandInsect
+  - N14WastelandAnimal
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14HostileRobot
+  - N14Feral
 
 # #Misfits Change - BoS Midwest/Washington AI factions commented out.
 # Consolidated to Misfits/Roles/ai_factions.yml
@@ -93,384 +93,402 @@
 #  - BrotherhoodWest #Corvax-West
 
 - type: npcFaction
-  id: CaravanCompany
+  id: N14CaravanCompany
   friendly:
-  - CaravanCompanySecureArea
+  - N14CaravanCompanySecureArea
   hostile:
-  - WastelandInsect
-  - WastelandAnimal
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - Feral
+  - N14WastelandInsect
+  - N14WastelandAnimal
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14Feral
 
 - type: npcFaction
-  id: CaravanCompanySecureArea
+  id: N14CaravanCompanySecureArea
   friendly:
-  - CaravanCompany
+  - N14CaravanCompany
   hostile:
-  - Wastelander
-  - BrotherhoodOfSteel
-  - BrotherhoodOfSteelSecureArea
-  - NCR
-  - NCRSecureArea
-  - Rangers
-  - Townsfolk
-  - TownsfolkSecureArea
-  - Tribal
-  - TribalSecureArea
-  - Vault
-  - VaultSecureArea
-  - Zetan
-  - WastelandAnimal
-  - WastelandInsect
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - HostileRobot
-  - Feral
-  - CaesarLegion #Corvax-Legion
-  - BrotherhoodOfSteel
+  - N14Wastelander
+  - MisfitsBrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteelSecureArea
+  - N14NCR
+  - N14NCRSecureArea
+  - N14Rangers
+  - N14Townsfolk
+  - N14TownsfolkSecureArea
+  - N14Tribal
+  - N14TribalSecureArea
+  - N14Vault
+  - N14VaultSecureArea
+  - N14Zetan
+  - N14WastelandAnimal
+  - N14WastelandInsect
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14HostileRobot
+  - N14Feral
+  - CorvaxCaesarLegion #Corvax-Legion
+  - MisfitsBrotherhoodOfSteel
 
 - type: npcFaction
-  id: NCR
+  id: N14NCR
   friendly:
-  - NCRSecureArea
+  - N14NCRSecureArea
   hostile:
-  - WastelandInsect
-  - WastelandAnimal
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - HostileRobot
-  - Enclave
-  - Feral
+  - N14WastelandInsect
+  - N14WastelandAnimal
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14HostileRobot
+  - N14Enclave
+  - N14Feral
 
 - type: npcFaction
-  id: NCRSecureArea
+  id: N14NCRSecureArea
   friendly:
-  - NCR
+  - N14NCR
   hostile:
-  - Wastelander
-  - BrotherhoodOfSteel
-  - BrotherhoodOfSteelSecureArea
-  - CaravanCompany
-  - CaravanCompanySecureArea
-  - Townsfolk
-  - TownsfolkSecureArea
-  - Tribal
-  - TribalSecureArea
-  - Vault
-  - VaultSecureArea
-  - Zetan
-  - WastelandAnimal
-  - WastelandInsect
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - HostileRobot
-  - Feral
-  - CaesarLegion #Corvax-Legion
-  - BrotherhoodOfSteel
-  - Enclave
+  - N14Wastelander
+  - MisfitsBrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteelSecureArea
+  - N14CaravanCompany
+  - N14CaravanCompanySecureArea
+  - N14Townsfolk
+  - N14TownsfolkSecureArea
+  - N14Tribal
+  - N14TribalSecureArea
+  - N14Vault
+  - N14VaultSecureArea
+  - N14Zetan
+  - N14WastelandAnimal
+  - N14WastelandInsect
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14HostileRobot
+  - N14Feral
+  - CorvaxCaesarLegion #Corvax-Legion
+  - MisfitsBrotherhoodOfSteel
+  - N14Enclave
 
 - type: npcFaction
-  id: Rangers
+  id: N14Rangers
   friendly:
-  - NCR
+  - N14NCR
   hostile:
-  - Zetan
-  - WastelandInsect
-  - WastelandAnimal
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - Feral
+  - N14Zetan
+  - N14WastelandInsect
+  - N14WastelandAnimal
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14Feral
 
 - type: npcFaction
-  id: Townsfolk
+  id: N14Townsfolk
   friendly:
-  - TownsfolkSecureArea
+  - N14TownsfolkSecureArea
   hostile:
-  - WastelandAnimal
-  - WastelandInsect
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - HostileRobot
-  - Feral
+  - N14WastelandAnimal
+  - N14WastelandInsect
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14HostileRobot
+  - N14Feral
 
 - type: npcFaction
-  id: TownsfolkSecureArea
+  id: N14Enclave
+  hostile:
+  - MisfitsBrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteelSecureArea
+  - N14NCR
+  - N14NCRSecureArea
+  - CorvaxCaesarLegion
+  - N14WastelandInsect
+  - N14WastelandAnimal
+  - N14Deathclaw
+  - N14Raider
+  - N14Feral
+
+# #Misfits Add - Followers of the Apocalypse player faction.
+# Used by BuildFactionFilter to target death-alert chat messages at Followers players.
+# Neutral to all factions — Followers are non-hostile humanitarians.
+
+- type: npcFaction
+  id: N14TownsfolkSecureArea
   friendly:
-  - Townsfolk
+  - N14Townsfolk
   hostile:
-  - Wastelander
-  - BrotherhoodOfSteel
-  - BrotherhoodOfSteelSecureArea
-  - CaravanCompany
-  - CaravanCompanySecureArea
-  - Rangers
-  - Tribal
-  - TribalSecureArea
-  - Vault
-  - VaultSecureArea
-  - Zetan
-  - WastelandAnimal
-  - WastelandInsect
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - HostileRobot
-  - Feral
+  - N14Wastelander
+  - MisfitsBrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteelSecureArea
+  - N14CaravanCompany
+  - N14CaravanCompanySecureArea
+  - N14Rangers
+  - N14Tribal
+  - N14TribalSecureArea
+  - N14Vault
+  - N14VaultSecureArea
+  - N14Zetan
+  - N14WastelandAnimal
+  - N14WastelandInsect
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14HostileRobot
+  - N14Feral
 
 - type: npcFaction
-  id: Tribal
+  id: N14Tribal
   friendly:
-  - TribalSecureArea
+  - N14TribalSecureArea
   hostile:
-  - WastelandAnimal
-  - WastelandInsect
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - HostileRobot
-  - Feral
+  - N14WastelandAnimal
+  - N14WastelandInsect
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14HostileRobot
+  - N14Feral
 
 - type: npcFaction
-  id: TribalSecureArea
+  id: N14Deathclaw
+  hostile:
+  - N14Wastelander
+  - MisfitsBrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteelSecureArea
+  - N14CaravanCompany
+  - N14CaravanCompanySecureArea
+  - N14NCR
+  - N14NCRSecureArea
+  - N14Rangers
+  - N14Townsfolk
+  - N14TownsfolkSecureArea
+  - N14Tribal
+  - N14TribalSecureArea
+  - N14Vault
+  - N14VaultSecureArea
+  - N14Zetan
+  - N14WastelandAnimal
+  - N14WastelandInsect
+  - N14Raider
+  - N14HostileRobot
+  - N14Feral
+  - CorvaxCaesarLegion
+  - MisfitsSuperMutant
+  - N14Enclave
+
+- type: npcFaction
+  id: N14TribalSecureArea
   friendly:
-  - Tribal
+  - N14Tribal
   hostile:
-  - Wastelander
-  - BrotherhoodOfSteel
-  - BrotherhoodOfSteelSecureArea
-  - CaravanCompany
-  - CaravanCompanySecureArea
-  - Rangers
-  - Townsfolk
-  - TownsfolkSecureArea
-  - Vault
-  - VaultSecureArea
-  - Zetan
-  - WastelandAnimal
-  - WastelandInsect
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - HostileRobot
-  - Feral
+  - N14Wastelander
+  - MisfitsBrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteelSecureArea
+  - N14CaravanCompany
+  - N14CaravanCompanySecureArea
+  - N14Rangers
+  - N14Townsfolk
+  - N14TownsfolkSecureArea
+  - N14Vault
+  - N14VaultSecureArea
+  - N14Zetan
+  - N14WastelandAnimal
+  - N14WastelandInsect
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14HostileRobot
+  - N14Feral
 
 - type: npcFaction
-  id: Vault
+  id: N14Vault
   friendly:
-  - VaultSecureArea
+  - N14VaultSecureArea
   hostile:
-  - Zetan
-  - WastelandAnimal
-  - WastelandInsect
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - HostileRobot
-  - Feral
+  - N14Zetan
+  - N14WastelandAnimal
+  - N14WastelandInsect
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14HostileRobot
+  - N14Feral
 
 - type: npcFaction
-  id: VaultSecureArea
+  id: N14VaultSecureArea
   friendly:
-  - Vault
+  - N14Vault
   hostile:
-  - Wastelander
-  - BrotherhoodOfSteel
-  - BrotherhoodOfSteelSecureArea
-  - CaravanCompany
-  - CaravanCompanySecureArea
-  - Rangers
-  - Townsfolk
-  - TownsfolkSecureArea
-  - Tribal
-  - TribalSecureArea
-  - Zetan
-  - WastelandAnimal
-  - WastelandInsect
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - HostileRobot
-  - Feral
-  - CaesarLegion #Corvax-Legion
-  - BrotherhoodOfSteel
+  - N14Wastelander
+  - MisfitsBrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteelSecureArea
+  - N14CaravanCompany
+  - N14CaravanCompanySecureArea
+  - N14Rangers
+  - N14Townsfolk
+  - N14TownsfolkSecureArea
+  - N14Tribal
+  - N14TribalSecureArea
+  - N14Zetan
+  - N14WastelandAnimal
+  - N14WastelandInsect
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14HostileRobot
+  - N14Feral
+  - CorvaxCaesarLegion #Corvax-Legion
+  - MisfitsBrotherhoodOfSteel
 
 - type: npcFaction
-  id: Zetan
+  id: N14Zetan
   hostile:
-  - Wastelander
-  - BrotherhoodOfSteel
-  - CaravanCompany
-  - NCR
-  - Rangers
-  - Townsfolk
-  - TownsfolkSecureArea
-  - Tribal
-  - Vault
-  - VaultSecureArea
-  - WastelandAnimal
-  - WastelandInsect
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - HostileRobot
-  - Feral
-  - CaesarLegion #Corvax-Legion
-  - BrotherhoodOfSteelSecureArea
+  - N14Wastelander
+  - MisfitsBrotherhoodOfSteel
+  - N14CaravanCompany
+  - N14NCR
+  - N14Rangers
+  - N14Townsfolk
+  - N14TownsfolkSecureArea
+  - N14Tribal
+  - N14Vault
+  - N14VaultSecureArea
+  - N14WastelandAnimal
+  - N14WastelandInsect
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14HostileRobot
+  - N14Feral
+  - CorvaxCaesarLegion #Corvax-Legion
+  - MisfitsBrotherhoodOfSteelSecureArea
 
 - type: npcFaction
-  id: Raider
+  id: N14Raider
   hostile:
-  - Wastelander
-  - BrotherhoodOfSteel
-  - BrotherhoodOfSteelSecureArea # turrets
-  - CaravanCompany
-  - CaravanCompanySecureArea
-  - NCR
-  - NCRSecureArea
-  - Rangers
-  - Townsfolk
-  - TownsfolkSecureArea
-  - Tribal
-  - TribalSecureArea
-  - Vault
-  - VaultSecureArea
-  - WastelandInsect
-  - WastelandAnimal
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Zetan
-  - HostileRobot
-  - Enclave
-  - Feral
-  - CaesarLegion #Corvax-Legion
-  - BrotherhoodOfSteelSecureArea
+  - N14Wastelander
+  - MisfitsBrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteelSecureArea # turrets
+  - N14CaravanCompany
+  - N14CaravanCompanySecureArea
+  - N14NCR
+  - N14NCRSecureArea
+  - N14Rangers
+  - N14Townsfolk
+  - N14TownsfolkSecureArea
+  - N14Tribal
+  - N14TribalSecureArea
+  - N14Vault
+  - N14VaultSecureArea
+  - N14WastelandInsect
+  - N14WastelandAnimal
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Zetan
+  - N14HostileRobot
+  - N14Enclave
+  - N14Feral
+  - CorvaxCaesarLegion #Corvax-Legion
+  - MisfitsBrotherhoodOfSteelSecureArea
 
 - type: npcFaction
-  id: Feral
+  id: N14Feral
   hostile:
-  - Wastelander
-  - BrotherhoodOfSteel
-  - BrotherhoodOfSteelSecureArea # turrets
-  - CaravanCompany
-  - CaravanCompanySecureArea
-  - NCR
-  - NCRSecureArea
-  - Rangers
-  - Townsfolk
-  - TownsfolkSecureArea
-  - Tribal
-  - TribalSecureArea
-  - Vault
-  - VaultSecureArea
-  - WastelandInsect
-  - WastelandAnimal
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Zetan
-  - HostileRobot
-  - Enclave
-  - Raider
-  - CaesarLegion #Corvax-Legion
-  - BrotherhoodOfSteelSecureArea
+  - N14Wastelander
+  - MisfitsBrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteelSecureArea # turrets
+  - N14CaravanCompany
+  - N14CaravanCompanySecureArea
+  - N14NCR
+  - N14NCRSecureArea
+  - N14Rangers
+  - N14Townsfolk
+  - N14TownsfolkSecureArea
+  - N14Tribal
+  - N14TribalSecureArea
+  - N14Vault
+  - N14VaultSecureArea
+  - N14WastelandInsect
+  - N14WastelandAnimal
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Zetan
+  - N14HostileRobot
+  - N14Enclave
+  - N14Raider
+  - CorvaxCaesarLegion #Corvax-Legion
+  - MisfitsBrotherhoodOfSteelSecureArea
 
 - type: npcFaction
-  id: WastelandAnimal
+  id: N14WastelandAnimal
   hostile:
-  - Wastelander
-  - BrotherhoodOfSteel
-  - BrotherhoodOfSteelSecureArea # turrets
-  - CaravanCompany
-  - CaravanCompanySecureArea
-  - NCR
-  - NCRSecureArea
-  - Rangers
-  - Townsfolk
-  - TownsfolkSecureArea
-  - Tribal
-  - TribalSecureArea
-  - Vault
-  - VaultSecureArea
-  - WastelandInsect
-  - Deathclaw #Misfits Add - Deathclaw is now a separate faction; yaoguai etc. attack deathclaws
-  - Raider
-  - HostileRobot
-  - Enclave
-  - Feral
-  - CaesarLegion #Corvax-Legion
-  - BrotherhoodOfSteelSecureArea
+  - N14Wastelander
+  - MisfitsBrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteelSecureArea # turrets
+  - N14CaravanCompany
+  - N14CaravanCompanySecureArea
+  - N14NCR
+  - N14NCRSecureArea
+  - N14Rangers
+  - N14Townsfolk
+  - N14TownsfolkSecureArea
+  - N14Tribal
+  - N14TribalSecureArea
+  - N14Vault
+  - N14VaultSecureArea
+  - N14WastelandInsect
+  - N14Deathclaw #Misfits Add - Deathclaw is now a separate faction; yaoguai etc. attack deathclaws
+  - N14Raider
+  - N14HostileRobot
+  - N14Enclave
+  - N14Feral
+  - CorvaxCaesarLegion #Corvax-Legion
+  - MisfitsBrotherhoodOfSteelSecureArea
 
 - type: npcFaction
-  id: WastelandInsect
+  id: N14WastelandInsect
   hostile:
-  - Wastelander
-  - BrotherhoodOfSteel
-  - BrotherhoodOfSteelSecureArea # turrets
-  - CaravanCompany
-  - CaravanCompanySecureArea
-  - NCR
-  - NCRSecureArea
-  - Rangers
-  - Townsfolk
-  - TownsfolkSecureArea
-  - Tribal
-  - TribalSecureArea
-  - Vault
-  - VaultSecureArea
-  - WastelandAnimal
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Raider
-  - HostileRobot
-  - Enclave
-  - Feral
-  - CaesarLegion #Corvax-Legion
-  - BrotherhoodOfSteelSecureArea
+  - N14Wastelander
+  - MisfitsBrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteelSecureArea # turrets
+  - N14CaravanCompany
+  - N14CaravanCompanySecureArea
+  - N14NCR
+  - N14NCRSecureArea
+  - N14Rangers
+  - N14Townsfolk
+  - N14TownsfolkSecureArea
+  - N14Tribal
+  - N14TribalSecureArea
+  - N14Vault
+  - N14VaultSecureArea
+  - N14WastelandAnimal
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Raider
+  - N14HostileRobot
+  - N14Enclave
+  - N14Feral
+  - CorvaxCaesarLegion #Corvax-Legion
+  - MisfitsBrotherhoodOfSteelSecureArea
 
 - type: npcFaction
-  id: HostileRobot
+  id: N14HostileRobot
   friendly: # #Misfits Add - player SentryBots are allies of NPC robots
-  - PlayerSentryBot
+  - MisfitsPlayerSentryBot
   hostile:
-  - Wastelander
-  - BrotherhoodOfSteel
-  - BrotherhoodOfSteelSecureArea
-  - CaravanCompany
-  - CaravanCompanySecureArea
-  - NCR
-  - NCRSecureArea
-  - Rangers
-  - Townsfolk
-  - TownsfolkSecureArea
-  - Tribal
-  - TribalSecureArea
-  - Vault
-  - VaultSecureArea
-  - WastelandInsect
-  - Raider
-  - WastelandAnimal
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - Feral
-  - CaesarLegion #Corvax-Legion
-  - BrotherhoodOfSteelSecureArea
+  - N14Wastelander
+  - MisfitsBrotherhoodOfSteel
+  - MisfitsBrotherhoodOfSteelSecureArea
+  - N14CaravanCompany
+  - N14CaravanCompanySecureArea
+  - N14NCR
+  - N14NCRSecureArea
+  - N14Rangers
+  - N14Townsfolk
+  - N14TownsfolkSecureArea
+  - N14Tribal
+  - N14TribalSecureArea
+  - N14Vault
+  - N14VaultSecureArea
+  - N14WastelandInsect
+  - N14Raider
+  - N14WastelandAnimal
+  - N14Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - N14Feral
+  - CorvaxCaesarLegion #Corvax-Legion
+  - MisfitsBrotherhoodOfSteelSecureArea
 
 # Misfits Change - Super Mutant hostile NPC faction. Hostile to ALL factions except other Super Mutants.
 # Misfits Tweak - Added Raider, Enclave, Zetan so mutants attack every mob without exception (except own faction).
-
-- type: npcFaction
-  id: SuperMutant
-  hostile:
-  - Wastelander
-  - BrotherhoodOfSteel
-  - BrotherhoodOfSteelSecureArea
-  - CaravanCompany
-  - CaravanCompanySecureArea
-  - NCR
-  - NCRSecureArea
-  - Rangers
-  - Townsfolk
-  - TownsfolkSecureArea
-  - Tribal
-  - TribalSecureArea
-  - Vault
-  - VaultSecureArea
-  - Zetan #Misfits Add - Super Mutants attack all, including Zetans
-  - Raider #Misfits Add - Super Mutants attack all, including Raiders
-  - Enclave #Misfits Add - Super Mutants attack all, including Enclave
-  - WastelandInsect
-  - WastelandAnimal
-  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
-  - HostileRobot
-  - Feral
-  - CaesarLegion #Corvax-Legion

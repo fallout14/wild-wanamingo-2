@@ -1,0 +1,53 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/Structures/walls.yml
+
+- type: constructionGraph
+  id: MisfitsAdobeWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: AdobeWall
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          steps:
+            - material: MisfitsBrick
+              amount: 6
+              doAfter: 4
+
+        - to: AdobeWallTall
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          steps:
+            - material: MisfitsBrick
+              amount: 10
+              doAfter: 5
+
+    - node: AdobeWall
+      entity: N14WallAdobeSlanted
+      edges:
+        - to: start
+          completed:
+            - !type:GivePrototype
+              prototype: MisfitsMaterialBrick1
+              amount: 3
+            - !type:DeleteEntity
+          steps:
+            - tool: Prying
+              doAfter: 20
+
+    - node: AdobeWallTall
+      entity: N14WallAdobeTall
+      edges:
+        - to: start
+          completed:
+            - !type:GivePrototype
+              prototype: MisfitsMaterialBrick1
+              amount: 5
+            - !type:DeleteEntity
+          steps:
+            - tool: Prying
+              doAfter: 20
+
+# #Misfits Add: Tent construction graphs

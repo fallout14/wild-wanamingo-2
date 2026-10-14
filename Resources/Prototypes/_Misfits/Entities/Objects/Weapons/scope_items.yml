@@ -2,7 +2,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14Binoculars
+  id: MisfitsBinoculars
   name: binoculars
   description: A pair of pre-war binoculars. Wield them with two hands and look through to see far in one direction.
   components:
@@ -38,7 +38,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14WeaponScopeAttachment
+  id: MisfitsWeaponScopeAttachment
   name: 4x rifle scope
   description: A fixed-magnification rifle optic. Attach it to a compatible weapon to gain a 4x directional scope action.
   components:
@@ -59,13 +59,13 @@
       doAfter: 0.8
   - type: Tag
     tags:
-    - RifleScope
+    - N14RifleScope
   - type: StaticPrice
     price: 100
 
 - type: entity
-  parent: N14WeaponScopeAttachment
-  id: N14WeaponScopeVariable
+  parent: MisfitsWeaponScopeAttachment
+  id: MisfitsWeaponScopeVariable
   name: variable rifle scope
   description: A variable-power rifle optic. Use the mouse wheel while scoped to adjust between 2x, 4x, and 6x magnification.
   components:
@@ -93,8 +93,8 @@
     price: 200
 
 - type: entity
-  parent: N14WeaponScopeAttachment
-  id: N14WeaponScopeNightVision
+  parent: MisfitsWeaponScopeAttachment
+  id: MisfitsWeaponScopeNightVision
   name: night vision rifle scope
   description: An amplified-light optic that automatically engages night vision while scoped.
   components:
@@ -102,8 +102,8 @@
     price: 350
 
 - type: entity
-  parent: N14WeaponScopeAttachment
-  id: N14WeaponScopeThermal
+  parent: MisfitsWeaponScopeAttachment
+  id: MisfitsWeaponScopeThermal
   name: thermal rifle scope
   description: An advanced heat-detecting optic that automatically engages thermal vision while scoped.
   components:

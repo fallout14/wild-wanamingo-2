@@ -4,28 +4,28 @@
 # Misfits' playtime and species requirements are left out for now.
 
 - type: job
-  id: Wastelander
+  id: N14Wastelander
   name: job-name-wastelander
   description: job-description-wastelander
-  playTimeTracker: Wastelander
-  startingGear: WastelanderGear
-  icon: JobIconWastelander
+  playTimeTracker: N14Wastelander
+  startingGear: N14WastelanderGear
+  icon: CorvaxJobIconWastelander
   supervisors: job-supervisors-wastelander
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - Wastelander
+          - N14Wastelander
 
 - type: startingGear
-  id: WastelanderGear
+  id: N14WastelanderGear
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitRags
     ears: MisfitsClothingHeadsetWastelandScrap
     back: N14ClothingBackpackExplorer
     shoes: N14ClothingShoesRags
-    id: N14ClothingNeckDogtags
+    id: MisfitsClothingNeckDogtags
   storage:
     back:
     - MisfitsSurvivalKitWastelander

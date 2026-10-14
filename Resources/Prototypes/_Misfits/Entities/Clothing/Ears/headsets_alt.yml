@@ -1,0 +1,79 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Clothing/Ears/headsets_alt.yml
+
+- type: entity
+  parent: N14ClothingHeadsetNCR
+  id: MisfitsClothingHeadsetOSI
+  name: OSI radio earpiece
+  description: An NCR headset fitted with separate Office of Science and Industry encryption.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - N14EncryptionKeyNCR
+      - MisfitsEncryptionKeyOSI
+      - MisfitsEncryptionKeyWastelandGlobal
+  - type: EncryptionKeyHolder
+    keysUnlocked: false
+
+- type: entity
+  parent: N14ClothingHeadsetNCR
+  id: MisfitsClothingHeadsetNCRRanger
+  name: NCR Ranger radio earpiece
+  description: An NCR headset fitted with separate Ranger field encryption.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - N14EncryptionKeyNCR
+      - MisfitsEncryptionKeyNCRRangers
+      - MisfitsEncryptionKeyWastelandGlobal
+  - type: EncryptionKeyHolder
+    keysUnlocked: false
+
+# #Misfits Change - Legion headset
+
+- type: entity
+  parent: N14ClothingHeadsetAlt
+  id: MisfitsClothingHeadsetLegion
+  name: Legion radio earpiece
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - MisfitsEncryptionKeyLegion
+      - MisfitsEncryptionKeyWastelandGlobal
+  - type: EncryptionKeyHolder
+    keysUnlocked: false
+  - type: Sprite
+    sprite: Misfits/Clothing/Ears/Headsets/legion.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/Ears/Headsets/legion.rsi
+
+# #Misfits Add — Followers of the Apocalypse headset; grants both faction and wasteland channels
+
+- type: entity
+  parent: N14ClothingHeadsetLightScribe
+  id: MisfitsClothingHeadsetFollowers
+  name: Followers radio headset
+  components:
+  - type: Item
+    heldPrefix: off
+    size: Small
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - MisfitsEncryptionKeyFollowers
+      - MisfitsEncryptionKeyWastelandGlobal
+  - type: EncryptionKeyHolder
+    keysUnlocked: false
+  - type: Sprite
+    sprite: Misfits/Clothing/Ears/Headsets/followerslight.rsi
+    layers:
+    - state: icon
+    - state: light-icon
+      shader: unshaded
+      visible: false
+      map: [ "light" ]
+  - type: Clothing
+    sprite: Misfits/Clothing/Ears/Headsets/followerslight.rsi
+    equippedPrefix: off

@@ -1,12 +1,12 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier1Weapon/Tier1WeaponTables/Tier1WeaponBallistic/TwoHanded/Tier1WeaponBallisticSMGTable.yml
 
 - type: entityTable
-  id: M14WeaponLootTier1_GunsBulletSMG
+  id: MisfitsM14WeaponLootTier1_GunsBulletSMG
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: N14WeaponSMG10mmPipe
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSMG45GreaseGun
+      id: MisfitsWeaponSMG45GreaseGun
       weight: 7

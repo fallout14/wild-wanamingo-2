@@ -4,262 +4,262 @@
 # Misfits' playtime and species requirements are left out for now.
 
 - type: job
-  id: CaesarLegionCenturion
+  id: CorvaxCaesarLegionCenturion
   name: job-name-caesar-legion-centurion
   description: job-description-caesar-legion-centurion
-  playTimeTracker: CaesarLegionCenturion
-  startingGear: CaesarLegionCenturionGear
-  icon: JobIconlegionerCenturion
+  playTimeTracker: CorvaxCaesarLegionCenturion
+  startingGear: MisfitsCaesarLegionCenturionGear
+  icon: CorvaxJobIconlegionerCenturion
   supervisors: job-name-caesar-legion
   whitelisted: true
   accessGroups:
-  - CaesarLegionCenturion
+  - CorvaxCaesarLegionCenturion
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - CaesarLegion
+          - CorvaxCaesarLegion
       - type: ReplacementAccent
-        accent: latin
+        accent: CorvaxLatin
 
 - type: startingGear
-  id: CaesarLegionCenturionGear
+  id: MisfitsCaesarLegionCenturionGear
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
-    ears: N14ClothingHeadsetLegion
+    jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
+    ears: MisfitsClothingHeadsetLegion
     eyes: N14ClothingEyesGlassesWelding
     back: N14ClothingBackpackMilitary
-    shoes: N14ClothingBootsCenturion
-    gloves: N14ClothingHandsGlovesCenturion
+    shoes: CorvaxClothingBootsCenturion
+    gloves: CorvaxClothingHandsGlovesCenturion
     pocket1: F14KitSelectLegionCenturion
-    pocket2: LegionCenturionArmorloadoutkits
-    id: N14IDLegionaryMedalGold
+    pocket2: CorvaxLegionCenturionArmorloadoutkits
+    id: CorvaxIDLegionaryMedalGold
   storage:
     back:
     - MisfitsIFAKLegion
     - N14HealingPowder
 
 - type: job
-  id: CaesarLegionVexillarius
+  id: CorvaxCaesarLegionVexillarius
   name: job-name-caesar-legion-vexillarius
   description: job-description-caesar-legion-vexillarius
-  playTimeTracker: CaesarLegionVexillarius
-  startingGear: CaesarLegionVexillariusGear
-  icon: JobIconlegionerVenator
+  playTimeTracker: CorvaxCaesarLegionVexillarius
+  startingGear: MisfitsCaesarLegionVexillariusGear
+  icon: CorvaxJobIconlegionerVenator
   supervisors: job-name-caesar-legion-other
   accessGroups:
-  - CaesarLegionVexillarius
+  - CorvaxCaesarLegionVexillarius
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - CaesarLegion
+          - CorvaxCaesarLegion
       - type: ReplacementAccent
-        accent: latin
+        accent: CorvaxLatin
 
 - type: startingGear
-  id: CaesarLegionVexillariusGear
+  id: MisfitsCaesarLegionVexillariusGear
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
-    ears: N14ClothingHeadsetLegion
-    neck: N14ClothingNeckCloakLegionWhite
+    jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
+    ears: MisfitsClothingHeadsetLegion
+    neck: ForgeClothingNeckCloakLegionWhite
     mask: N14ClothingMaskBrownMask
     back: N14ClothingBackpackMilitary
-    shoes: N14ClothingShoesKaligi
-    head: N14ClothingHeadHatLegionHood
-    outerClothing: N14ClothingOuterLegionnaireVexillariusArmor
+    shoes: CorvaxClothingShoesKaligi
+    head: CorvaxClothingHeadHatLegionHood
+    outerClothing: CorvaxClothingOuterLegionnaireVexillariusArmor
     gloves: N14ClothingHandsGlovesTribal
     pocket1: F14KitSelectLegionVexillarius
-    id: N14IDLegionaryMedalVexillarius
+    id: CorvaxIDLegionaryMedalVexillarius
   storage:
     back:
     - MisfitsIFAKLegion
     - N14HealingPowder
 
 - type: job
-  id: CaesarLegionExplorer
+  id: CorvaxCaesarLegionExplorer
   name: job-name-caesar-legion-explorer
   description: job-description-caesar-legion-explorer
-  playTimeTracker: CaesarLegionExplorer
-  startingGear: CaesarLegionExplorerGear
-  icon: JobIconlegionerVenator
+  playTimeTracker: CorvaxCaesarLegionExplorer
+  startingGear: MisfitsCaesarLegionExplorerGear
+  icon: CorvaxJobIconlegionerVenator
   supervisors: job-name-caesar-legion-supervisors
   accessGroups:
-  - CaesarLegionExplorer
+  - CorvaxCaesarLegionExplorer
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - CaesarLegion
+          - CorvaxCaesarLegion
       - type: ReplacementAccent
-        accent: latin
+        accent: CorvaxLatin
 
 - type: startingGear
-  id: CaesarLegionExplorerGear
+  id: MisfitsCaesarLegionExplorerGear
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
-    ears: N14ClothingHeadsetLegion
-    neck: N14ClothingNeckCloakLegionBlack
+    jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
+    ears: MisfitsClothingHeadsetLegion
+    neck: ForgeClothingNeckCloakLegionBlack
     eyes: ClothingEyesNightVisionGoggles
     mask: N14ClothingMaskBrownMask
     back: N14ClothingBackpackMilitary
-    shoes: N14ClothingShoesKaligi
+    shoes: CorvaxClothingShoesKaligi
     head: N14ClothingHeadHatTribalOutcastHood
-    outerClothing: N14ClothingOuterLegionnaireExplorerArmor
+    outerClothing: CorvaxClothingOuterLegionnaireExplorerArmor
     gloves: N14ClothingHandsGlovesTribal
     pocket1: F14KitLegionExplorer
-    id: N14IDLegionaryMedalExplorer
+    id: CorvaxIDLegionaryMedalExplorer
   storage:
     back:
     - MisfitsIFAKLegion
     - N14HealingPowder
-    - N14Binoculars
+    - MisfitsBinoculars
 
 - type: job
-  id: CaesarLegionHoundmaster
+  id: CorvaxCaesarLegionHoundmaster
   name: job-name-caesar-legion-houndmaster
   description: job-description-caesar-legion-houndmaster
-  playTimeTracker: CaesarLegionHoundmaster
-  startingGear: CaesarLegionHoundmasterGear
-  icon: JobIconlegionerWarrior
+  playTimeTracker: CorvaxCaesarLegionHoundmaster
+  startingGear: MisfitsCaesarLegionHoundmasterGear
+  icon: CorvaxJobIconlegionerWarrior
   supervisors: job-name-caesar-legion-other
   accessGroups:
-  - CaesarLegionHoundmaster
+  - CorvaxCaesarLegionHoundmaster
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - CaesarLegion
+          - CorvaxCaesarLegion
       - type: ReplacementAccent
-        accent: latin
+        accent: CorvaxLatin
 
 - type: startingGear
-  id: CaesarLegionHoundmasterGear
+  id: MisfitsCaesarLegionHoundmasterGear
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
-    ears: N14ClothingHeadsetLegion
-    neck: N14ClothingNeckCoyoteCloak
+    jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
+    ears: MisfitsClothingHeadsetLegion
+    neck: MisfitsClothingNeckCoyoteCloak
     mask: N14ClothingMaskBrownMask
     back: N14ClothingBackpackMilitary
-    shoes: N14ClothingShoesKaligi
+    shoes: CorvaxClothingShoesKaligi
     gloves: N14ClothingHandsGlovesTribal
-    outerClothing: N14ClothingLegionReconArmor
+    outerClothing: CorvaxClothingLegionReconArmor
     pocket1: F14KitLegionHoundmaster
-    id: N14IDLegionaryMedalHoundmaster
+    id: CorvaxIDLegionaryMedalHoundmaster
   storage:
     back:
     - MisfitsIFAKLegion
     - N14HealingPowder
 
 - type: job
-  id: CaesarLegionForgemaster
+  id: MisfitsCaesarLegionForgemaster
   name: job-name-caesar-legion-forgemaster
   description: job-description-caesar-legion-forgemaster
-  playTimeTracker: CaesarLegionForgemaster
-  startingGear: CaesarLegionForgeMasterGear
-  icon: JobIconlegionerDean
+  playTimeTracker: MisfitsCaesarLegionForgemaster
+  startingGear: MisfitsCaesarLegionForgeMasterGear
+  icon: CorvaxJobIconlegionerDean
   supervisors: job-name-caesar-legion-supervisors
   accessGroups:
-  - CaesarLegionDean
+  - CorvaxCaesarLegionDean
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - CaesarLegion
+          - CorvaxCaesarLegion
       - type: ReplacementAccent
-        accent: latin
+        accent: CorvaxLatin
 
 - type: startingGear
-  id: CaesarLegionForgeMasterGear
+  id: MisfitsCaesarLegionForgeMasterGear
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
-    ears: N14ClothingHeadsetLegion
-    neck: ClothingNeckRedScarf
+    jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
+    ears: MisfitsClothingHeadsetLegion
+    neck: N14ClothingNeckRedScarf
     eyes: N14ClothingEyesGlassesWelding
     back: N14ClothingBackpackMilitary
     shoes: N14ClothingBootsCombatFilled
-    head: N14ClothingHeadHatDeanRecruitHelmet
-    outerClothing: N14ClothingOuterDeanLegionnairePrimeArmor
+    head: CorvaxClothingHeadHatDeanRecruitHelmet
+    outerClothing: CorvaxClothingOuterDeanLegionnairePrimeArmor
     gloves: N14ClothingHandsGlovesTribal
     pocket1: F14KitLegionForgemaster
-    id: N14IDLegionaryMedalForgemaster
+    id: CorvaxIDLegionaryMedalForgemaster
 
 - type: job
-  id: CaesarLegionDean
+  id: CorvaxCaesarLegionDean
   name: job-name-caesar-legion-dean
   description: job-description-caesar-legion-dean
-  playTimeTracker: CaesarLegionDean
-  startingGear: CaesarLegionDeanGear
-  icon: JobIconlegionerDean
+  playTimeTracker: CorvaxCaesarLegionDean
+  startingGear: MisfitsCaesarLegionDeanGear
+  icon: CorvaxJobIconlegionerDean
   supervisors: job-name-caesar-legion-supervisors
   accessGroups:
-  - CaesarLegionDean
+  - CorvaxCaesarLegionDean
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - CaesarLegion
+          - CorvaxCaesarLegion
       - type: ReplacementAccent
-        accent: latin
+        accent: CorvaxLatin
 
 - type: startingGear
-  id: CaesarLegionDeanGear
+  id: MisfitsCaesarLegionDeanGear
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
-    ears: N14ClothingHeadsetLegion
-    neck: ClothingNeckRedScarf
+    jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
+    ears: MisfitsClothingHeadsetLegion
+    neck: N14ClothingNeckRedScarf
     eyes: N14ClothingEyesGlassesWelding
     back: N14ClothingBackpackMilitary
     shoes: N14ClothingBootsCombatFilled
-    head: N14ClothingHeadHatDeanRecruitHelmet
-    outerClothing: N14ClothingOuterDeanLegionnairePrimeArmor
+    head: CorvaxClothingHeadHatDeanRecruitHelmet
+    outerClothing: CorvaxClothingOuterDeanLegionnairePrimeArmor
     gloves: N14ClothingHandsGlovesTribal
     pocket1: F14KitSelectLegionDecanus
-    id: N14IDLegionaryMedalSilver3
+    id: CorvaxIDLegionaryMedalSilver3
   storage:
     back:
     - MisfitsIFAKLegion
     - N14HealingPowder
 
 - type: job
-  id: CaesarLegionLegionnaireRecruit
+  id: CorvaxCaesarLegionLegionnaireRecruit
   name: job-name-caesar-legion-legionnaire-recruit
   description: job-description-caesar-legionnaire-recruit
-  playTimeTracker: CaesarLegionLegionnaireRecruit
-  startingGear: CaesarLegionLegionnaireRecruitGear
-  icon: JobIconlegionerRecruit
+  playTimeTracker: CorvaxCaesarLegionLegionnaireRecruit
+  startingGear: MisfitsCaesarLegionLegionnaireRecruitGear
+  icon: CorvaxJobIconlegionerRecruit
   supervisors: job-name-caesar-legion-other
   accessGroups:
-  - CaesarLegionLegionnaireRecruit
+  - CorvaxCaesarLegionLegionnaireRecruit
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - CaesarLegion
+          - CorvaxCaesarLegion
       - type: ReplacementAccent
-        accent: latin
+        accent: CorvaxLatin
 
 - type: startingGear
-  id: CaesarLegionLegionnaireRecruitGear
+  id: MisfitsCaesarLegionLegionnaireRecruitGear
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
-    ears: N14ClothingHeadsetLegion
+    jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
+    ears: MisfitsClothingHeadsetLegion
     mask: N14ClothingMaskBrownMask
     eyes: N14ClothingEyesGlassesWelding
     back: N14ClothingBackpackMilitary
-    shoes: N14ClothingShoesKaligi
+    shoes: CorvaxClothingShoesKaligi
     head: N14ClothingHeadHatTribalOutcastHood
-    outerClothing: N14ClothingOuterLegionnaireRecruitArmor
+    outerClothing: CorvaxClothingOuterLegionnaireRecruitArmor
     gloves: N14ClothingHandsGlovesTribal
     pocket1: F14KitLegionRecruit
-    id: N14IDLegionaryMedalLegionnaireRecruit
+    id: CorvaxIDLegionaryMedalLegionnaireRecruit
   storage:
     back:
     - MisfitsIFAKLegion
@@ -267,113 +267,113 @@
     - BookLegionLaw
 
 - type: job
-  id: CaesarLegionLegionnaireWarrior
+  id: CorvaxCaesarLegionLegionnaireWarrior
   name: job-name-caesar-legion-legionnaire-warrior
   description: job-description-caesar-legion-legionnaire-warrior
-  playTimeTracker: CaesarLegionLegionnaireWarrior
-  startingGear: CaesarLegionLegionnaireWarriorGear
-  icon: JobIconlegionerWarrior
+  playTimeTracker: CorvaxCaesarLegionLegionnaireWarrior
+  startingGear: MisfitsCaesarLegionLegionnaireWarriorGear
+  icon: CorvaxJobIconlegionerWarrior
   supervisors: job-name-caesar-legion-other
   accessGroups:
-  - CaesarLegionLegionnaireWarrior
+  - CorvaxCaesarLegionLegionnaireWarrior
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - CaesarLegion
+          - CorvaxCaesarLegion
       - type: ReplacementAccent
-        accent: latin
+        accent: CorvaxLatin
 
 - type: startingGear
-  id: CaesarLegionLegionnaireWarriorGear
+  id: MisfitsCaesarLegionLegionnaireWarriorGear
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
-    ears: N14ClothingHeadsetLegion
-    neck: ClothingNeckRedScarf
+    jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
+    ears: MisfitsClothingHeadsetLegion
+    neck: N14ClothingNeckRedScarf
     eyes: N14ClothingEyesGlassesWelding
     back: N14ClothingBackpackMilitary
-    shoes: N14ClothingShoesKaligi
-    head: N14ClothingHeadHatLightBaseballHelmet
+    shoes: CorvaxClothingShoesKaligi
+    head: CorvaxClothingHeadHatLightBaseballHelmet
     outerClothing: MisfitsLegionWarriorArmor
     gloves: N14ClothingHandsGlovesTribal
     pocket1: F14KitSelectLegionPrime
-    id: N14IDLegionaryMedalSilver
+    id: CorvaxIDLegionaryMedalSilver
   storage:
     back:
     - MisfitsIFAKLegion
     - N14HealingPowder
 
 - type: job
-  id: CaesarLegionLegionnaireVeteran
+  id: CorvaxCaesarLegionLegionnaireVeteran
   name: job-name-caesar-legion-legionnaire-veteran
   description: job-description-caesar-legion-legionnaire-veteran
-  playTimeTracker: CaesarLegionLegionnaireVeteran
-  startingGear: CaesarLegionLegionnaireVeteranGear
-  icon: JobIconlegionerVeteran
+  playTimeTracker: CorvaxCaesarLegionLegionnaireVeteran
+  startingGear: MisfitsCaesarLegionLegionnaireVeteranGear
+  icon: CorvaxJobIconlegionerVeteran
   supervisors: job-name-caesar-legion-other
   accessGroups:
-  - CaesarLegionLegionnaireVeteran
+  - CorvaxCaesarLegionLegionnaireVeteran
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - CaesarLegion
+          - CorvaxCaesarLegion
       - type: ReplacementAccent
-        accent: latin
+        accent: CorvaxLatin
 
 - type: startingGear
-  id: CaesarLegionLegionnaireVeteranGear
+  id: MisfitsCaesarLegionLegionnaireVeteranGear
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
-    ears: N14ClothingHeadsetLegion
-    neck: ClothingNeckRedScarf
+    jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
+    ears: MisfitsClothingHeadsetLegion
+    neck: N14ClothingNeckRedScarf
     eyes: N14ClothingEyesGlassesWelding
     back: N14ClothingBackpackMilitary
     shoes: N14ClothingBootsBlack
-    head: N14ClothingHeadHatBaseballHelmet
-    outerClothing: N14ClothingOuterLegionnaireVeteranArmor
+    head: CorvaxClothingHeadHatBaseballHelmet
+    outerClothing: CorvaxClothingOuterLegionnaireVeteranArmor
     gloves: N14ClothingHandsGlovesTribal
     pocket1: F14KitSelectLegionVeteran
-    id: N14IDLegionaryMedalSilver2
+    id: CorvaxIDLegionaryMedalSilver2
   storage:
     back:
     - MisfitsIFAKLegion
     - N14HealingPowder
 
 - type: job
-  id: CaesarLegionAuxilia
+  id: MisfitsCaesarLegionAuxilia
   name: job-name-caesar-legion-auxilia
   description: job-description-caesar-legion-auxilia
-  playTimeTracker: CaesarLegionAuxilia
-  startingGear: CaesarLegionAuxiliaGear
-  icon: JobIconlegionerRecruit
+  playTimeTracker: MisfitsCaesarLegionAuxilia
+  startingGear: MisfitsCaesarLegionAuxiliaGear
+  icon: CorvaxJobIconlegionerRecruit
   supervisors: job-name-caesar-legion-female
   accessGroups:
-  - CaesarLegionRecruit
+  - CorvaxCaesarLegionRecruit
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - CaesarLegion
+          - CorvaxCaesarLegion
       - type: ReplacementAccent
-        accent: latin
+        accent: CorvaxLatin
 
 - type: startingGear
-  id: CaesarLegionAuxiliaGear
+  id: MisfitsCaesarLegionAuxiliaGear
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
-    ears: N14ClothingHeadsetLegion
+    jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
+    ears: MisfitsClothingHeadsetLegion
     mask: N14ClothingMaskBrownMask
     back: N14ClothingBackpackMilitary
     shoes: N14ClothingBootsLeather
     head: N14ClothingHeadHatTribalOutcastHood
     gloves: N14ClothingHandsGlovesTribal
-    outerClothing: N14ClothingOuterLegionnaireRecruitArmor
-    pocket1: LegionAuxilialoadoutkits
-    id: N14IDLegionaryBadge
+    outerClothing: CorvaxClothingOuterLegionnaireRecruitArmor
+    pocket1: CorvaxLegionAuxilialoadoutkits
+    id: CorvaxIDLegionaryBadge
   storage:
     back:
     - MisfitsIFAKLegion
@@ -385,26 +385,26 @@
     - BookLegionLaw
 
 - type: job
-  id: CaesarLegionSlave
+  id: CorvaxCaesarLegionSlave
   name: job-name-caesar-legion-slave
   description: job-description-caesar-legion-slave
-  playTimeTracker: CaesarLegionSlave
-  startingGear: CaesarLegionSlaveGear
-  icon: JobIconLegionSlave
+  playTimeTracker: CorvaxCaesarLegionSlave
+  startingGear: MisfitsCaesarLegionSlaveGear
+  icon: CorvaxJobIconLegionSlave
   supervisors: job-supervisors-caesar-legion-slave
   accessGroups:
-  - CaesarLegionSlave
+  - CorvaxCaesarLegionSlave
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - CaesarLegion
+          - CorvaxCaesarLegion
       - type: ReplacementAccent
-        accent: latin
+        accent: CorvaxLatin
 
 - type: startingGear
-  id: CaesarLegionSlaveGear
+  id: MisfitsCaesarLegionSlaveGear
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitRags
-    id: N14IDLegionaryBadgeSlave
+    id: CorvaxIDLegionaryBadgeSlave

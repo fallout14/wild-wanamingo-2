@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier5Weapon/Tier5WeaponTables/Tier5WeaponMelee/Tier5WeaponMeleeOneHand.yml
 
 - type: entityTable
-  id: M14WeaponLootTier5_MeleeBluntOneHanded
+  id: MisfitsM14WeaponLootTier5_MeleeBluntOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -17,7 +17,7 @@
       id: N14PoliceBaton
 
 - type: entityTable
-  id: M14WeaponLootTier5_MeleeSharpOneHanded
+  id: MisfitsM14WeaponLootTier5_MeleeSharpOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -36,10 +36,10 @@
     - !type:EntSelector
       id: N14TribalSword
     - !type:EntSelector
-      id: N14Gladius
+      id: CorvaxGladius
 
     - !type:EntSelector
-      id: N14ripper
+      id: N14Ripper
 
     - !type:EntSelector
       id: N14Hatchet
@@ -57,12 +57,12 @@
       id: N14CombatKnife
 
 - type: entityTable
-  id: M14WeaponLootTier5_MeleeOtherOneHanded
+  id: MisfitsM14WeaponLootTier5_MeleeOtherOneHanded
   table: !type:GroupSelector
     children: []
 
 - type: entityTable
-  id: M14WeaponLootTier5_Shield
+  id: MisfitsM14WeaponLootTier5_Shield
   table: !type:GroupSelector
     children:
     - !type:EntSelector

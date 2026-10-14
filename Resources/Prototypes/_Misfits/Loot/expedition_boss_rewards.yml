@@ -1,15 +1,15 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/expedition_boss_rewards.yml
 
 - type: entityTable
-  id: M14ExpeditionBossPrimaryReward
+  id: MisfitsM14ExpeditionBossPrimaryReward
   table: !type:GroupSelector
     children:
     # Weapons remain possible, but high-end guns are a minority of final-boss drops.
     - !type:NestedSelector
-      tableId: M14WeaponLootTier3
+      tableId: MisfitsM14WeaponLootTier3
       weight: 30
     - !type:NestedSelector
-      tableId: M14WeaponLootTier4
+      tableId: MisfitsM14WeaponLootTier4
       weight: 10
     # Equipment outcomes are deliberately faction-neutral and portable.
     - !type:EntSelector
@@ -29,7 +29,7 @@
       weight: 10
 
 - type: entityTable
-  id: M14ExpeditionBossRecoveryReward
+  id: MisfitsM14ExpeditionBossRecoveryReward
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -49,48 +49,48 @@
       weight: 15
 
 - type: entityTable
-  id: M14ExpeditionBossMaterialsReward
+  id: MisfitsM14ExpeditionBossMaterialsReward
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14ScrapElectronic10
+      id: MisfitsScrapElectronic10
       weight: 28
     - !type:EntSelector
-      id: N14ScrapSteel10
+      id: MisfitsScrapSteel10
       weight: 28
     - !type:EntSelector
-      id: N14ScrapCopper10
+      id: MisfitsScrapCopper10
       weight: 18
     - !type:EntSelector
-      id: N14ScrapBrass10
+      id: MisfitsScrapBrass10
       weight: 14
     - !type:EntSelector
-      id: N14ScrapLead10
+      id: MisfitsScrapLead10
       weight: 12
 
 - type: entityTable
-  id: M14ExpeditionBossReward
+  id: MisfitsM14ExpeditionBossReward
   table: !type:AllSelector
     children:
     - !type:NestedSelector
-      tableId: M14ExpeditionBossPrimaryReward
+      tableId: MisfitsM14ExpeditionBossPrimaryReward
     - !type:NestedSelector
-      tableId: M14ExpeditionBossRecoveryReward
+      tableId: MisfitsM14ExpeditionBossRecoveryReward
     - !type:NestedSelector
-      tableId: M14ExpeditionBossMaterialsReward
+      tableId: MisfitsM14ExpeditionBossMaterialsReward
 
 # Optional deep guardians pay a meaningful but deliberately smaller reward.
 # The table favors recovery, materials, and Tier 2 over another high-end gun.
 
 - type: entityTable
-  id: M14ExpeditionGuardianReward
+  id: MisfitsM14ExpeditionGuardianReward
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: M14WeaponLootTier2
+      tableId: MisfitsM14WeaponLootTier2
       weight: 45
     - !type:NestedSelector
-      tableId: M14WeaponLootTier3
+      tableId: MisfitsM14WeaponLootTier3
       weight: 12
     - !type:EntSelector
       id: N14ClothingOuterLeatherArmor
@@ -99,7 +99,7 @@
       id: N14Stimpak
       weight: 14
     - !type:EntSelector
-      id: N14ScrapElectronic10
+      id: MisfitsScrapElectronic10
       weight: 15
 
 # Retains the previous two guaranteed Tier 3 caches for dangerous focused
@@ -107,12 +107,12 @@
 # final guardian's corpse rather than placing loot before the fight.
 
 - type: entityTable
-  id: M14ExpeditionHighRiskBossReward
+  id: MisfitsM14ExpeditionHighRiskBossReward
   table: !type:AllSelector
     children:
     - !type:NestedSelector
-      tableId: M14ExpeditionBossReward
+      tableId: MisfitsM14ExpeditionBossReward
     - !type:NestedSelector
-      tableId: M14WeaponLootTier3
+      tableId: MisfitsM14WeaponLootTier3
     - !type:NestedSelector
-      tableId: M14WeaponLootTier3
+      tableId: MisfitsM14WeaponLootTier3

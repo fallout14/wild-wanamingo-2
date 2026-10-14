@@ -1,0 +1,24 @@
+# Ported from Forge content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Forge/Entities/Clothing/Neck/cloaks.yml
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ForgeClothingNeckCloakLegionWhite
+  name: Legion white cloak
+  description: A comfy cloak with a Legion.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/Neck/cloaklegionwhite.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/Neck/cloaklegionwhite.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ForgeClothingNeckCloakLegionBlack
+  name: Legion black cloak
+  description: A comfy cloak with a Legion.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/Neck/cloaklegionblack.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/Neck/cloaklegionblack.rsi

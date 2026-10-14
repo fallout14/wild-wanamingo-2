@@ -60,14 +60,3 @@
     node: glassBunker
     containers:
     - board
-
-- type: entity
-  parent: AirlockAssembly
-  id: N14DoorBunkerAssembly
-  components:
-  - type: Sprite
-    sprite: MojaveSun/Structures/Doors/Airlocks/mechanical.rsi # WW Change - Mojave Sun 13 mechanical door
-    state: closed
-  - type: Construction
-    graph: N14DoorBunker
-    node: n14assembly

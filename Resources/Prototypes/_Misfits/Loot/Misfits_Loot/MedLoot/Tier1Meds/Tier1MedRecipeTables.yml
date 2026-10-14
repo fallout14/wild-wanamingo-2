@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/MedLoot/Tier1Meds/Tier1MedRecipeTables.yml
 
 - type: entityTable
-  id: M14MedsConsumableLootTier1_HealRecipeBasket
+  id: MisfitsM14MedsConsumableLootTier1_HealRecipeBasket
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -12,7 +12,7 @@
       weight: 10
 
 - type: entityTable
-  id: M14MedsConsumableLootTier1_UncommonPoulticeRecipeBasket
+  id: MisfitsM14MedsConsumableLootTier1_UncommonPoulticeRecipeBasket
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -29,7 +29,7 @@
       weight: 10
 
 - type: entityTable
-  id: M14MedsConsumableLootTier2_UncommonBitterDrinkRecipeBasket
+  id: MisfitsM14MedsConsumableLootTier2_UncommonBitterDrinkRecipeBasket
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -43,7 +43,7 @@
       weight: 10
 
 - type: entityTable
-  id: M14MedsConsumableLootTier1_UncommonAntidoteWeakRecipeBasket
+  id: MisfitsM14MedsConsumableLootTier1_UncommonAntidoteWeakRecipeBasket
   table: !type:GroupSelector
     children:
     - !type:EntSelector

@@ -1,25 +1,25 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/material_extractor.yml
 
 - type: latheRecipe
-  id: N14IngotZinc
-  result: N14IngotZinc1
+  id: MisfitsIngotZinc
+  result: MisfitsIngotZinc1
   applyMaterialDiscount: false
   completetime: 2
   materials:
-    RawZinc: 100
+    MisfitsRawZinc: 100
     Coal: 30
 
 - type: latheRecipe
-  id: N14IngotAluminumBauxite
+  id: MisfitsIngotAluminumBauxite
   result: N14IngotAluminum1
   applyMaterialDiscount: false
   completetime: 2
   materials:
-    RawBauxite: 100
+    MisfitsRawBauxite: 100
     Coal: 30
 
 - type: latheRecipe
-  id: N14IngotBrassZinc
+  id: MisfitsIngotBrassZinc
   result: N14IngotBrass1
   applyMaterialDiscount: false
   completetime: 2
@@ -28,7 +28,7 @@
     Zinc: 100
 
 - type: latheRecipe
-  id: N14SaltRefine
+  id: MisfitsSaltRefine
   result: N14FoodCondimentPacketSalt
   applyMaterialDiscount: false
   completetime: 2

@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClothingNeckPinBase
-  id: ClothingNeckPinNCRRecruit
+  id: N14ClothingNeckPinNCRRecruit
   name: recruit pin
   description: A worn Republic Armed Forces badge showing the wearer's rank.
   components:
@@ -20,11 +20,11 @@
       - state: empty-equipped
   - type: Tag
     tags:
-    - SuperMutantWearable
+    - MisfitsSuperMutantWearable
 
 - type: entity
-  parent: ClothingNeckPinNCRRecruit
-  id: ClothingNeckPinNCRPrivate
+  parent: N14ClothingNeckPinNCRRecruit
+  id: N14ClothingNeckPinNCRPrivate
   name: private pin
   components:
   - type: RankTitle
@@ -40,12 +40,12 @@
       - state: gold-equipped
   - type: Tag
     tags:
-    - SuperMutantWearable
+    - MisfitsSuperMutantWearable
     
 
 - type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRPrivate1st
+  parent: N14ClothingNeckPinNCRPrivate
+  id: N14ClothingNeckPinNCRPrivate1st
   name: private first class pin
   components:
   - type: RankTitle
@@ -56,11 +56,11 @@
     - state: private1st
   - type: Tag
     tags:
-    - SuperMutantWearable
+    - MisfitsSuperMutantWearable
 
 - type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRCorporal
+  parent: N14ClothingNeckPinNCRPrivate
+  id: N14ClothingNeckPinNCRCorporal
   name: corporal pin
   components:
   - type: RankTitle
@@ -71,11 +71,11 @@
     - state: corporal
   - type: Tag
     tags:
-    - SuperMutantWearable
+    - MisfitsSuperMutantWearable
 
 - type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRSpecialist
+  parent: N14ClothingNeckPinNCRPrivate
+  id: N14ClothingNeckPinNCRSpecialist
   name: specialist pin
   components:
   - type: RankTitle
@@ -86,11 +86,11 @@
     - state: specialist
   - type: Tag
     tags:
-    - SuperMutantWearable
+    - MisfitsSuperMutantWearable
 
 - type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRSergeant
+  parent: N14ClothingNeckPinNCRPrivate
+  id: N14ClothingNeckPinNCRSergeant
   name: sergeant pin
   components:
   - type: RankTitle
@@ -101,26 +101,11 @@
     - state: sergeant
   - type: Tag
     tags:
-    - SuperMutantWearable
+    - MisfitsSuperMutantWearable
 
 - type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRStaffSergeant
-  name: staff sergeant pin
-  components:
-  - type: RankTitle
-    rankTitle: Staff Sergeant
-  - type: Sprite
-    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
-    layers:
-    - state: mastersergeant
-  - type: Tag
-    tags:
-    - SuperMutantWearable
-
-- type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRSergeant1st
+  parent: N14ClothingNeckPinNCRPrivate
+  id: N14ClothingNeckPinNCRSergeant1st
   name: sergeant first class pin
   components:
   - type: RankTitle
@@ -131,11 +116,11 @@
     - state: sergeant1st
   - type: Tag
     tags:
-    - SuperMutantWearable
+    - MisfitsSuperMutantWearable
 
 - type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRMasterSergeant
+  parent: N14ClothingNeckPinNCRPrivate
+  id: N14ClothingNeckPinNCRMasterSergeant
   name: master sergeant pin
   components:
   - type: RankTitle
@@ -146,26 +131,11 @@
     - state: sergeant1st
   - type: Tag
     tags:
-    - SuperMutantWearable
+    - MisfitsSuperMutantWearable
 
 - type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCR1stSergeant
-  name: first sergeant pin
-  components:
-  - type: RankTitle
-    rankTitle: First Sergeant
-  - type: Sprite
-    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
-    layers:
-    - state: sergeantmajor
-  - type: Tag
-    tags:
-    - SuperMutantWearable
-
-- type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRSergeantMajor
+  parent: N14ClothingNeckPinNCRPrivate
+  id: N14ClothingNeckPinNCRSergeantMajor
   name: sergeant major pin
   components:
   - type: RankTitle
@@ -176,85 +146,11 @@
     - state: sergeantmajor
   - type: Tag
     tags:
-    - SuperMutantWearable
+    - MisfitsSuperMutantWearable
 
 - type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRCommandSergeantMajor
-  name: command sergeant major pin
-  components:
-  - type: RankTitle
-    rankTitle: Command Sergeant Major
-  - type: Sprite
-    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
-    layers:
-    - state: sergeantmajor
-  - type: Tag
-    tags:
-    - SuperMutantWearable
-
-- type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRWarrantOfficer
-  name: warrant officer pin
-  components:
-  - type: RankTitle
-    rankTitle: Warrant Officer
-  - type: Sprite
-    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
-    layers:
-    - state: secondlieutenant
-  - type: Tag
-    tags:
-    - SuperMutantWearable
-
-# #Misfits Add - Chief Warrant Officer grades for the NCR aviation track.
-# No warrant-specific sprites exist, so these borrow officer pin art the same way
-# ClothingNeckPinNCRWarrantOfficer already borrows the second lieutenant state.
-
-- type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRChiefWarrantOfficer2
-  name: chief warrant officer 2 pin
-  components:
-  - type: RankTitle
-    rankTitle: Chief Warrant Officer 2
-  - type: Sprite
-    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
-    layers:
-    - state: firstlieutenant
-  - type: Clothing
-    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
-    clothingVisuals:
-      neck:
-      - state: silver-equipped
-  - type: Tag
-    tags:
-    - SuperMutantWearable
-
-- type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRChiefWarrantOfficer3
-  name: chief warrant officer 3 pin
-  components:
-  - type: RankTitle
-    rankTitle: Chief Warrant Officer 3
-  - type: Sprite
-    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
-    layers:
-    - state: captain
-  - type: Clothing
-    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
-    clothingVisuals:
-      neck:
-      - state: silver-equipped
-  - type: Tag
-    tags:
-    - SuperMutantWearable
-
-- type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRSecondLieutenant
+  parent: N14ClothingNeckPinNCRPrivate
+  id: N14ClothingNeckPinNCRSecondLieutenant
   name: second lieutenant pin
   components:
   - type: RankTitle
@@ -265,31 +161,11 @@
     - state: secondlieutenant
   - type: Tag
     tags:
-    - SuperMutantWearable
+    - MisfitsSuperMutantWearable
 
 - type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRFirstLieutenant
-  name: first lieutenant pin
-  components:
-  - type: RankTitle
-    rankTitle: First Lieutenant
-  - type: Sprite
-    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
-    layers:
-    - state: firstlieutenant
-  - type: Clothing
-    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
-    clothingVisuals:
-      neck:
-      - state: silver-equipped
-  - type: Tag
-    tags:
-    - SuperMutantWearable
-
-- type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRCaptain
+  parent: N14ClothingNeckPinNCRPrivate
+  id: N14ClothingNeckPinNCRCaptain
   name: captain pin
   components:
   - type: RankTitle
@@ -305,11 +181,11 @@
       - state: silver-equipped
   - type: Tag
     tags:
-    - SuperMutantWearable
+    - MisfitsSuperMutantWearable
 
 - type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRMajor
+  parent: N14ClothingNeckPinNCRPrivate
+  id: N14ClothingNeckPinNCRMajor
   name: major pin
   components:
   - type: RankTitle
@@ -320,26 +196,11 @@
     - state: major
   - type: Tag
     tags:
-    - SuperMutantWearable
+    - MisfitsSuperMutantWearable
 
 - type: entity
-  parent: ClothingNeckPinNCRFirstLieutenant
-  id: ClothingNeckPinNCRLtColonel
-  name: lieutenant colonel pin
-  components:
-  - type: RankTitle
-    rankTitle: Lieutenant Colonel
-  - type: Sprite
-    sprite: Nuclear14/Clothing/Neck/Misc/pins.rsi
-    layers:
-    - state: major
-  - type: Tag
-    tags:
-    - SuperMutantWearable
-
-- type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRDoctor
+  parent: N14ClothingNeckPinNCRPrivate
+  id: N14ClothingNeckPinNCRDoctor
   name: doctor pin
   components:
   - type: RankTitle
@@ -355,11 +216,11 @@
       - state: red-equipped
   - type: Tag
     tags:
-    - SuperMutantWearable
+    - MisfitsSuperMutantWearable
 
 - type: entity
-  parent: ClothingNeckPinNCRPrivate
-  id: ClothingNeckPinNCRChiefPhysician
+  parent: N14ClothingNeckPinNCRPrivate
+  id: N14ClothingNeckPinNCRChiefPhysician
   name: chief physician pin
   components:
   - type: RankTitle
@@ -370,4 +231,4 @@
     - state: chiefphysician
   - type: Tag
     tags:
-    - SuperMutantWearable
+    - MisfitsSuperMutantWearable

@@ -1,105 +1,105 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Roles/Jobs/factions.yml (Yuma departments)
 
 - type: department
-  id: NCR
+  id: N14NCR
   name: department-NCR
   description: department-NCR-description
   color: "#c9a86b"
   roles:
-  - NCRCommander
-  - NCRPlatoonLeader
-  - NCRDoctor
-  - NCRRO
-  - NCRNCO
-  - NCRWS
-  - NCRMedic
-  - NCRCadet
+  - MisfitsNCRCommander
+  - MisfitsNCRPlatoonLeader
+  - N14NCRDoctor
+  - MisfitsNCRRO
+  - N14NCRNCO
+  - N14NCRWS
+  - N14NCRMedic
+  - N14NCRCadet
   - F14NCRGarrisonTrooper
 
 - type: department
-  id: NCRRangers
+  id: MisfitsNCRRangers
   name: department-NCRRangers
   description: department-NCRRangers-description
   color: "#8a6d3b"
   roles:
-  - NCRVeteranRanger
-  - NCRPatrolRanger
+  - MisfitsNCRVeteranRanger
+  - MisfitsNCRPatrolRanger
 
 - type: department
-  id: CaesarLegion
+  id: CorvaxCaesarLegion
   name: department-CaesarLegion
   description: department-CaesarLegion-description
   color: "#a32020"
   roles:
-  - CaesarLegionCenturion
-  - CaesarLegionVexillarius
-  - CaesarLegionExplorer
-  - CaesarLegionHoundmaster
-  - CaesarLegionForgemaster
-  - CaesarLegionDean
-  - CaesarLegionLegionnaireRecruit
-  - CaesarLegionLegionnaireWarrior
-  - CaesarLegionLegionnaireVeteran
-  - CaesarLegionAuxilia
-  - CaesarLegionSlave
+  - CorvaxCaesarLegionCenturion
+  - CorvaxCaesarLegionVexillarius
+  - CorvaxCaesarLegionExplorer
+  - CorvaxCaesarLegionHoundmaster
+  - MisfitsCaesarLegionForgemaster
+  - CorvaxCaesarLegionDean
+  - CorvaxCaesarLegionLegionnaireRecruit
+  - CorvaxCaesarLegionLegionnaireWarrior
+  - CorvaxCaesarLegionLegionnaireVeteran
+  - MisfitsCaesarLegionAuxilia
+  - CorvaxCaesarLegionSlave
 
 - type: department
-  id: BrotherhoodOfSteel
+  id: MisfitsBrotherhoodOfSteel
   name: department-BrotherhoodOfSteel
   description: department-BrotherhoodOfSteel-description
   color: "#3d5a80"
   roles:
-  - BoSWestElderCommander
-  - BoSMidPaladinCommander
-  - BoSHeadKnight
-  - BoSWestScribe
-  - BoSScribe
-  - BoSPaladin
-  - BoSKnight
-  - BoSInitiate
+  - MisfitsBoSWestElderCommander
+  - N14BoSMidPaladinCommander
+  - MisfitsBoSHeadKnight
+  - MisfitsBoSWestScribe
+  - MisfitsBoSScribe
+  - MisfitsBoSPaladin
+  - MisfitsBoSKnight
+  - MisfitsBoSInitiate
 
 - type: department
-  id: Townsfolk
+  id: N14Townsfolk
   name: department-Townsfolk
   description: department-Townsfolk-description
   color: "#5c733a"
   roles:
-  - TownMayor
-  - TownSheriff
-  - TownDeputy
-  - WastelandBartender
-  - WastelandFarmer
-  - TownMechanic
-  - TownShopkeeper
-  - Townsperson
+  - N14TownMayor
+  - N14TownSheriff
+  - N14TownDeputy
+  - N14WastelandBartender
+  - N14WastelandFarmer
+  - N14TownMechanic
+  - N14TownShopkeeper
+  - N14Townsperson
 
 - type: department
-  id: Tribe
+  id: N14Tribe
   name: department-Tribe
   description: department-Tribe-description
   color: "#7b5e3b"
   roles:
-  - TribalElder
-  - Tribal
-  - TribalFarmer
-  - TribalShaman
+  - N14TribalElder
+  - N14Tribal
+  - N14TribalFarmer
+  - MisfitsTribalShaman
 
 - type: department
-  id: FollowersOfTheApocalypse
+  id: MisfitsFollowersOfTheApocalypse
   name: department-FollowersOfTheApocalypse
   description: department-FollowersOfTheApocalypse-description
   color: "#6c8ebf"
   roles:
-  - FollowerDirector
-  - FollowerHead
-  - FollowerDoctor
-  - FollowerGuard
-  - FollowerVolunteer
+  - MisfitsFollowerDirector
+  - MisfitsFollowerHead
+  - MisfitsFollowerDoctor
+  - MisfitsFollowerGuard
+  - MisfitsFollowerVolunteer
 
 - type: department
-  id: Wastelander
+  id: N14Wastelander
   name: department-Wastelander
   description: department-Wastelander-description
   color: "#81c784"
   roles:
-  - Wastelander
+  - N14Wastelander

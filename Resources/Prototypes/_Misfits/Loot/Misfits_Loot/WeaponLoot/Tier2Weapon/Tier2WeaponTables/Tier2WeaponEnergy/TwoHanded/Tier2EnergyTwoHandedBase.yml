@@ -1,43 +1,43 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier2Weapon/Tier2WeaponTables/Tier2WeaponEnergy/TwoHanded/Tier2EnergyTwoHandedBase.yml
 
 - type: entityTable
-  id: M14WeaponLootTier2_EnergyRifle
+  id: MisfitsM14WeaponLootTier2_EnergyRifle
   table: !type:GroupSelector
     children:
 #      - !type:NestedSelector
 #          tableId: M14WeaponLootTier2_EnergyRifleAuto
       - !type:NestedSelector
-          tableId: M14WeaponLootTier2_EnergyRifleSemi
+          tableId: MisfitsM14WeaponLootTier2_EnergyRifleSemi
 
 - type: entityTable
-  id: M14WeaponLootTier2_EnergyRifleAuto
+  id: MisfitsM14WeaponLootTier2_EnergyRifleAuto
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTier2_LaserRifleAuto
+          tableId: MisfitsM14WeaponLootTier2_LaserRifleAuto
       - !type:NestedSelector
-          tableId: M14WeaponLootTier2_PlasmaRifleAuto
+          tableId: MisfitsM14WeaponLootTier2_PlasmaRifleAuto
       - !type:NestedSelector
-          tableId: M14WeaponLootTier2_OtherRifleAuto
+          tableId: MisfitsM14WeaponLootTier2_OtherRifleAuto
 
 - type: entityTable
-  id: M14WeaponLootTier2_EnergyRifleSemi
+  id: MisfitsM14WeaponLootTier2_EnergyRifleSemi
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTier2_LaserRifleSemi
+          tableId: MisfitsM14WeaponLootTier2_LaserRifleSemi
 #      - !type:NestedSelector
 #          tableId: M14WeaponLootTier2_PlasmaRifleSemi
 #      - !type:NestedSelector
 #          tableId: M14WeaponLootTier2_OtherRifleSemi
 
 - type: entityTable
-  id: M14WeaponLootTier2_EnergyHeavy
+  id: MisfitsM14WeaponLootTier2_EnergyHeavy
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTier2_LaserHeavy
+          tableId: MisfitsM14WeaponLootTier2_LaserHeavy
       - !type:NestedSelector
-          tableId: M14WeaponLootTier2_PlasmaHeavy
+          tableId: MisfitsM14WeaponLootTier2_PlasmaHeavy
       - !type:NestedSelector
-          tableId: M14WeaponLootTier2_OtherHeavy
+          tableId: MisfitsM14WeaponLootTier2_OtherHeavy

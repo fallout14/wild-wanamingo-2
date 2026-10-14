@@ -1,0 +1,54 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Food/burger.yml
+
+- type: entity
+  name: human burger
+  parent: N14FoodBurgerBase
+  id: MisfitsCookedFoodBurgerHuman
+  description: Still a good source of protein...
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bun
+    - people
+  - type: Sprite
+    state: human
+  - type: Solution
+    solution:
+      maxVol: 23
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 2
+      - ReagentId: Protein
+        Quantity: 6
+      - ReagentId: Vitamin
+        Quantity: 5
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: supermutant burger
+  parent: N14FoodBurgerBase
+  id: MisfitsCookedFoodSupermutantBurger
+  description: Tastes alright, but you better have a steel jaw.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bun
+    - people
+  - type: Sprite
+    sprite: Misfits/Objects/Consumable/Food/burger.rsi
+    state: supermutant
+  - type: Solution
+    solution:
+      maxVol: 25
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 3
+      - ReagentId: Protein
+        Quantity: 7
+      - ReagentId: Vitamin
+        Quantity: 5
+  - type: Tag
+    tags:
+    - Meat

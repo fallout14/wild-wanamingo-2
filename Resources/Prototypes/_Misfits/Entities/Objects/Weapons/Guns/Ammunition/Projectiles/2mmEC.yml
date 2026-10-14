@@ -1,0 +1,14 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Projectiles/2mmEC.yml
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: MisfitsBullet2mmEC
+  name: bullet (2mmEC)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 17.5
+        Blunt: 17.5
+    ignoreResistances: true

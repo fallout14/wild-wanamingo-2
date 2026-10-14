@@ -1,156 +1,156 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Access/brotherhood_of_steel.yml
 
 - type: accessLevel
-  id: BOS
+  id: MisfitsBOS
   name: id-card-access-level-bos
 
 - type: accessLevel
-  id: BOSInitiate
+  id: MisfitsBOSInitiate
   name: id-card-access-level-bos-initiate
 
 - type: accessLevel
-  id: BOSSquire
+  id: MisfitsBOSSquire
   name: id-card-access-level-bos-squire
 
 - type: accessLevel
-  id: BOSScribe
+  id: MisfitsBOSScribe
   name: id-card-access-level-bos-scribe
 
 - type: accessLevel
-  id: BOSKnight
+  id: MisfitsBOSKnight
   name: id-card-access-level-bos-knight
 
 - type: accessLevel
-  id: BOSPaladin
+  id: MisfitsBOSPaladin
   name: id-card-access-level-bos-paladin
 
 - type: accessLevel
-  id: BOSSeniorScribe
+  id: MisfitsBOSSeniorScribe
   name: id-card-access-level-bos-senior-scribe
 
 - type: accessLevel
-  id: BOSSeniorKnight
+  id: MisfitsBOSSeniorKnight
   name: id-card-access-level-bos-senior-knight
 
 - type: accessLevel
-  id: BOSSeniorPaladin
+  id: MisfitsBOSSeniorPaladin
   name: id-card-access-level-bos-senior-paladin
 
 - type: accessLevel
-  id: BOSHeadScribe
+  id: MisfitsBOSHeadScribe
   name: id-card-access-level-bos-head-scribe
 
 - type: accessLevel
-  id: BOSHeadKnight
+  id: MisfitsBOSHeadKnight
   name: id-card-access-level-bos-head-knight
 
 - type: accessLevel
-  id: BOSHeadPaladin
+  id: MisfitsBOSHeadPaladin
   name: id-card-access-level-bos-head-paladin
 
 - type: accessLevel
-  id: BOSElder
+  id: MisfitsBOSElder
   name: id-card-access-level-bos-elder
 
 - type: accessLevel
-  id: BOSOffDuty
+  id: MisfitsBOSOffDuty
   name: id-card-access-level-bos
 
 - type: accessGroup
-  id: BOSInitiate
+  id: MisfitsBOSInitiate
   tags:
-  - BOS
-  - BOSInitiate
+  - MisfitsBOS
+  - MisfitsBOSInitiate
 
 - type: accessGroup
-  id: BOSScribe
+  id: MisfitsBOSScribe
   tags:
-  - BOS
-  - BOSInitiate
-  - BOSScribe
-  - BOSSeniorScribe  # #Misfits Change - unified faction: scribes open all scribe-wing doors
+  - MisfitsBOS
+  - MisfitsBOSInitiate
+  - MisfitsBOSScribe
+  - MisfitsBOSSeniorScribe  # #Misfits Change - unified faction: scribes open all scribe-wing doors
 
 - type: accessGroup
-  id: BOSKnight
+  id: MisfitsBOSKnight
   tags:
-  - BOS
-  - BOSInitiate
-  - BOSKnight
-  - BOSSeniorKnight  # #Misfits Change - unified faction: knights open all knight-wing doors
+  - MisfitsBOS
+  - MisfitsBOSInitiate
+  - MisfitsBOSKnight
+  - MisfitsBOSSeniorKnight  # #Misfits Change - unified faction: knights open all knight-wing doors
 
 - type: accessGroup
-  id: BOSPaladin
+  id: MisfitsBOSPaladin
   tags:
-  - BOS
-  - BOSInitiate
-  - BOSScribe
-  - BOSSeniorScribe  # #Misfits Change - unified faction
+  - MisfitsBOS
+  - MisfitsBOSInitiate
+  - MisfitsBOSScribe
+  - MisfitsBOSSeniorScribe  # #Misfits Change - unified faction
   #- BOSKnight
   #- BOSSeniorKnight  # #Misfits Change - disallow regular paladin into armory
-  - BOSPaladin
-  - BOSSeniorPaladin  # #Misfits Change - unified faction: paladins open all paladin-wing doors
+  - MisfitsBOSPaladin
+  - MisfitsBOSSeniorPaladin  # #Misfits Change - unified faction: paladins open all paladin-wing doors
 
 - type: accessGroup
-  id: BOSHeadScribe
+  id: MisfitsBOSHeadScribe
   tags:
-  - BOS
-  - BOSInitiate
-  - BOSSquire
-  - BOSScribe
-  - BOSSeniorScribe
-  - BOSHeadScribe
-  - BOSKnight        # #Misfits Change - Head Scribe is command-level, full base access
-  - BOSSeniorKnight
-  - BOSHeadKnight
-  - BOSPaladin
-  - BOSSeniorPaladin
-  - BOSHeadPaladin
+  - MisfitsBOS
+  - MisfitsBOSInitiate
+  - MisfitsBOSSquire
+  - MisfitsBOSScribe
+  - MisfitsBOSSeniorScribe
+  - MisfitsBOSHeadScribe
+  - MisfitsBOSKnight        # #Misfits Change - Head Scribe is command-level, full base access
+  - MisfitsBOSSeniorKnight
+  - MisfitsBOSHeadKnight
+  - MisfitsBOSPaladin
+  - MisfitsBOSSeniorPaladin
+  - MisfitsBOSHeadPaladin
 
 - type: accessGroup
-  id: BOSHeadKnight
+  id: MisfitsBOSHeadKnight
   tags:
-  - BOS
-  - BOSInitiate
-  - BOSSquire
-  - BOSScribe        # #Misfits Change - Head Knight is command-level, full base access
-  - BOSSeniorScribe
-  - BOSHeadScribe
-  - BOSKnight
-  - BOSSeniorKnight
-  - BOSHeadKnight
-  - BOSPaladin
-  - BOSSeniorPaladin
-  - BOSHeadPaladin
+  - MisfitsBOS
+  - MisfitsBOSInitiate
+  - MisfitsBOSSquire
+  - MisfitsBOSScribe        # #Misfits Change - Head Knight is command-level, full base access
+  - MisfitsBOSSeniorScribe
+  - MisfitsBOSHeadScribe
+  - MisfitsBOSKnight
+  - MisfitsBOSSeniorKnight
+  - MisfitsBOSHeadKnight
+  - MisfitsBOSPaladin
+  - MisfitsBOSSeniorPaladin
+  - MisfitsBOSHeadPaladin
 
 - type: accessGroup
-  id: BOSHeadPaladin
+  id: MisfitsBOSHeadPaladin
   tags:
-  - BOS
-  - BOSInitiate
-  - BOSSquire
-  - BOSScribe
-  - BOSSeniorScribe
-  - BOSHeadScribe
-  - BOSKnight
-  - BOSSeniorKnight
-  - BOSHeadKnight
-  - BOSPaladin
-  - BOSSeniorPaladin
-  - BOSHeadPaladin
+  - MisfitsBOS
+  - MisfitsBOSInitiate
+  - MisfitsBOSSquire
+  - MisfitsBOSScribe
+  - MisfitsBOSSeniorScribe
+  - MisfitsBOSHeadScribe
+  - MisfitsBOSKnight
+  - MisfitsBOSSeniorKnight
+  - MisfitsBOSHeadKnight
+  - MisfitsBOSPaladin
+  - MisfitsBOSSeniorPaladin
+  - MisfitsBOSHeadPaladin
 
 - type: accessGroup
-  id: BOSElder
+  id: MisfitsBOSElder
   tags:
-  - BOS
-  - BOSInitiate
-  - BOSSquire
-  - BOSScribe
-  - BOSSeniorScribe
-  - BOSHeadScribe
-  - BOSKnight
-  - BOSSeniorKnight
-  - BOSHeadKnight
-  - BOSPaladin
-  - BOSSeniorPaladin
-  - BOSHeadPaladin
-  - BOSElder
+  - MisfitsBOS
+  - MisfitsBOSInitiate
+  - MisfitsBOSSquire
+  - MisfitsBOSScribe
+  - MisfitsBOSSeniorScribe
+  - MisfitsBOSHeadScribe
+  - MisfitsBOSKnight
+  - MisfitsBOSSeniorKnight
+  - MisfitsBOSHeadKnight
+  - MisfitsBOSPaladin
+  - MisfitsBOSSeniorPaladin
+  - MisfitsBOSHeadPaladin
+  - MisfitsBOSElder

@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Flamers/Flamers.yml
 
 - type: entity
-  id: WeaponFireGunBase
+  id: N14WeaponFireGunBase
   abstract: true
   parent: BaseItem
   components:
@@ -30,7 +30,7 @@
     solutionId: chamber
     fireCost: 5
     fireTilePrototype: MisfitsTileFire
-    projectileProto: FlamerSpew
+    projectileProto: MisfitsFlamerSpew
     range: 6
   - type: SolutionTransfer
     transferAmount: 5
@@ -60,7 +60,7 @@
     shotChance: 0.35
 
 - type: entity
-  parent: WeaponFireGunBase
+  parent: N14WeaponFireGunBase
   id: N14WeaponFlamer
   name: Flamer
   description: A light flamethrower designed for close quarters combat, perfect for your wasteland BBQ.

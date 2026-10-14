@@ -50,13 +50,13 @@ public sealed partial class FirearmAttachmentHostComponent : Component
     public EntityUid? OpticToggleActionEntity;
 
     [DataField, AutoNetworkedField]
-    public EntProtoId OpticToggleAction = "N14ActionToggleScope";
+    public EntProtoId OpticToggleAction = "MisfitsActionToggleScope";
 
     [DataField, AutoNetworkedField]
     public EntityUid? OpticCycleActionEntity;
 
     [DataField, AutoNetworkedField]
-    public EntProtoId OpticCycleAction = "N14ActionCycleZoomLevel";
+    public EntProtoId OpticCycleAction = "MisfitsActionCycleZoomLevel";
 
     /// <summary>
     /// Selects the reusable attachment sprite that matches this firearm's icon orientation.

@@ -1,43 +1,43 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier5Weapon/Tier5WeaponTables/Tier5WeaponEnergy/TwoHanded/Tier5EnergyTwoHandedBase.yml
 
 - type: entityTable
-  id: M14WeaponLootTier5_EnergyRifle
+  id: MisfitsM14WeaponLootTier5_EnergyRifle
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_EnergyRifleAuto
+          tableId: MisfitsM14WeaponLootTier5_EnergyRifleAuto
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_EnergyRifleSemi
+          tableId: MisfitsM14WeaponLootTier5_EnergyRifleSemi
 
 - type: entityTable
-  id: M14WeaponLootTier5_EnergyRifleAuto
+  id: MisfitsM14WeaponLootTier5_EnergyRifleAuto
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_LaserRifleAuto
+          tableId: MisfitsM14WeaponLootTier5_LaserRifleAuto
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_PlasmaRifleAuto
+          tableId: MisfitsM14WeaponLootTier5_PlasmaRifleAuto
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_OtherRifleAuto
+          tableId: MisfitsM14WeaponLootTier5_OtherRifleAuto
 
 - type: entityTable
-  id: M14WeaponLootTier5_EnergyRifleSemi
+  id: MisfitsM14WeaponLootTier5_EnergyRifleSemi
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_LaserRifleSemi
+          tableId: MisfitsM14WeaponLootTier5_LaserRifleSemi
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_PlasmaRifleSemi
+          tableId: MisfitsM14WeaponLootTier5_PlasmaRifleSemi
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_OtherRifleSemi
+          tableId: MisfitsM14WeaponLootTier5_OtherRifleSemi
 
 - type: entityTable
-  id: M14WeaponLootTier5_EnergyHeavy
+  id: MisfitsM14WeaponLootTier5_EnergyHeavy
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_LaserHeavy
+          tableId: MisfitsM14WeaponLootTier5_LaserHeavy
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_PlasmaHeavy
+          tableId: MisfitsM14WeaponLootTier5_PlasmaHeavy
       - !type:NestedSelector
-          tableId: M14WeaponLootTier5_OtherHeavy
+          tableId: MisfitsM14WeaponLootTier5_OtherHeavy

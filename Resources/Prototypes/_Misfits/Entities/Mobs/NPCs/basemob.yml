@@ -1,0 +1,152 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Mobs/NPCs/basemob.yml
+
+- type: entity
+  abstract: true
+  id: MisfitsMobBaseHostileNoAccent
+  parent: N14MobBaseSimple
+  description: It's a dirty wasteland animal. Watch out for it's bite, it could be infectious.
+  components:
+  - type: NPCRetaliation # Aggro on the attacker when damaged from any range
+    attackMemoryLength: 30
+  - type: NpcFactionMember
+    factions:
+    - N14WastelandAnimal
+  - type: ProximityNPC # Misfits Add — sleep distant NPCs to reduce tick load
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+    blackboard:
+      NavSmash: !type:Bool
+        true
+      MeleeRange: !type:Single
+        1.5
+  - type: Sprite
+    drawdepth: Mobs
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      15: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatRadRaw
+      amount: 1
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: N14WastelandBlood
+        Quantity: 50
+  - type: CombatMode
+  - type: MeleeWeapon
+    hidden: true
+    attackRate: 2
+    range: 1.5
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    angle: 60
+    animation: WeaponArcBite
+    wideAnimation: WeaponArcBite
+    damage:
+      types:
+        Blunt: 0.666667
+        Slash: 0.666667
+        Piercing: 0.666667
+  - type: SolutionManager
+    solutions:
+    - N14MobBaseHostileNoAccentSolutionMelee
+  - type: MeleeChemicalInjector
+    solution: melee
+
+#MARK: Base Scaley
+
+- type: entity
+  parent: Solution
+  id: N14MobBaseHostileNoAccentSolutionMelee
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: melee
+    solution:
+      reagents:
+      - ReagentId: Toxin
+        Quantity: 0.1
+
+- type: entity
+  name: super mutant
+  abstract: true
+  id: MisfitsMobBaseHostileSuperMutant
+  parent: N14MobBaseHostile
+  description: A hulking post-human mutation, product of the FEV virus. Radiation resistant and brutally strong.
+  components:
+  - type: Damageable
+    damageModifierSet: MisfitsSuperMutantMob
+  - type: Injurable
+    damageContainer: MisfitsNPCBiological  # Misfits Change
+  - type: NpcFactionMember
+    factions:
+    - MisfitsSuperMutant
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+    blackboard:
+      NavSmash: !type:Bool
+        true
+      MeleeRange: !type:Single
+        1.8
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: base
+      Dead:
+        Base: base_dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 4.5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.55
+        density: 60
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Hands
+  - type: Puller
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      60: 0.85
+      80: 0.7
+  - type: IdleSound #Misfits Change
+  - type: SpamEmitSound #Misfits Change
+    minInterval: 15
+    maxInterval: 60
+    sound:
+      collection: MisfitsSuperMutantIdle
+      params:
+        volume: -6
+        maxDistance: 7
+  - type: AggroSound #Misfits Change - separate aggro/alert vocalization on combat entry
+    sound:
+      collection: MisfitsSuperMutantAlert
+      params:
+        volume: -3
+        maxDistance: 10
+
+# Wave Defence Base Hostile
+#MARK: WAVE

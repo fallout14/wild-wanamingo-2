@@ -23,7 +23,7 @@
       edges:
         - to: seedextractorpot
           steps:
-          - tag: CookPot
+          - tag: N14CookPot
             icon:
               sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
               state: cookpot
@@ -47,7 +47,7 @@
       edges:
         - to: seedextractorunscrewed
           steps:
-            - tag: DuctTape
+            - tag: N14DuctTape
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: duct_tape

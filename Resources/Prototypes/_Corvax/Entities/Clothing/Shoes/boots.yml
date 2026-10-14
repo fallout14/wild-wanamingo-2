@@ -1,0 +1,14 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Clothing/Shoes/boots.yml
+
+- type: entity
+  parent: ClothingShoesBase
+  id: CorvaxClothingBootsCenturion
+  name: centurion boots
+  description: "Protective boots for the needs of the Legion army."
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/Shoes/Boots/centurionboots.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/Shoes/Boots/centurionboots.rsi
+  - type: NoSlip

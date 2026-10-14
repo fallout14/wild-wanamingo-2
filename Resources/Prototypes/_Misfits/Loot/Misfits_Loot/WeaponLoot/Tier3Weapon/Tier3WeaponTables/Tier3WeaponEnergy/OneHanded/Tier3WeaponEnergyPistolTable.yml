@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3WeaponEnergy/OneHanded/Tier3WeaponEnergyPistolTable.yml
 
 - type: entityTable
-  id: M14WeaponLootTier3_LaserPistol
+  id: MisfitsM14WeaponLootTier3_LaserPistol
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -15,7 +15,7 @@
       weight: 2
 
 - type: entityTable
-  id: M14WeaponLootTier3_PlasmaPistol
+  id: MisfitsM14WeaponLootTier3_PlasmaPistol
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -23,9 +23,9 @@
       weight: 2
 
 - type: entityTable
-  id: M14WeaponLootTier3_OtherPistol
+  id: MisfitsM14WeaponLootTier3_OtherPistol
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponPulsePistol
+      id: MisfitsWeaponPulsePistol
       weight: 2

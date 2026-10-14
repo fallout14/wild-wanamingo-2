@@ -6,7 +6,7 @@
   suffix: Enclave, Locked
   components:
   - type: AccessReader
-    access: [["Enclave"]]
+    access: [["N14Enclave"]]
   - type: Wires
     layoutId: HighSec
 
@@ -16,27 +16,27 @@
   suffix: Enclave, Locked
   components:
   - type: AccessReader
-    access: [["Enclave"]]
+    access: [["N14Enclave"]]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorBunker3X
+  parent: CorvaxDoorBunker3X
   id: MisfitsDoorBunker3XLockedEnclave
   suffix: Enclave, Locked
   components:
   - type: AccessReader
-    access: [["Enclave"]]
+    access: [["N14Enclave"]]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorBunkerGlass3X
+  parent: CorvaxDoorBunkerGlass3X
   id: MisfitsDoorBunkerGlass3XLockedEnclave
   suffix: Enclave, Locked
   components:
   - type: AccessReader
-    access: [["Enclave"]]
+    access: [["N14Enclave"]]
   - type: Wires
     layoutId: HighSec
 
@@ -46,7 +46,7 @@
   suffix: Enclave, Locked
   components:
   - type: AccessReader
-    access: [["Enclave"]]
+    access: [["N14Enclave"]]
   - type: Wires
     layoutId: HighSec
 
@@ -56,7 +56,7 @@
   suffix: Enclave, Locked
   components:
   - type: AccessReader
-    access: [["Enclave"]]
+    access: [["N14Enclave"]]
   - type: Wires
     layoutId: HighSec
 
@@ -66,7 +66,7 @@
   suffix: Enclave, Locked, Security
   components:
   - type: AccessReader
-    access: [["EnclaveNCO"]]
+    access: [["MisfitsEnclaveNCO"]]
   - type: Wires
     layoutId: HighSec
 
@@ -76,7 +76,7 @@
   suffix: Enclave, Locked, Science
   components:
   - type: AccessReader
-    access: [["EnclaveScience"]]
+    access: [["MisfitsEnclaveScience"]]
   - type: Wires
     layoutId: HighSec
 
@@ -86,7 +86,7 @@
   suffix: Enclave, Locked, Command
   components:
   - type: AccessReader
-    access: [["EnclaveCommand"]]
+    access: [["MisfitsEnclaveCommand"]]
   - type: Wires
     layoutId: HighSec
 
@@ -96,7 +96,7 @@
   suffix: Enclave, Locked, Security
   components:
   - type: AccessReader
-    access: [["EnclaveNCO"]]
+    access: [["MisfitsEnclaveNCO"]]
   - type: Wires
     layoutId: HighSec
 
@@ -106,7 +106,7 @@
   suffix: Enclave, Locked, Science
   components:
   - type: AccessReader
-    access: [["EnclaveScience"]]
+    access: [["MisfitsEnclaveScience"]]
   - type: Wires
     layoutId: HighSec
 
@@ -116,7 +116,7 @@
   suffix: Enclave, Locked, Command
   components:
   - type: AccessReader
-    access: [["EnclaveCommand"]]
+    access: [["MisfitsEnclaveCommand"]]
   - type: Wires
     layoutId: HighSec
 
@@ -128,7 +128,7 @@
   suffix: Enclave, Locked, Role Scientist
   components:
   - type: AccessReader
-    access: [["EnclaveRoleScientist"]]
+    access: [["MisfitsEnclaveRoleScientist"]]
 
 - type: entity
   parent: N14DoorBunker
@@ -136,7 +136,7 @@
   suffix: Enclave, Locked, Role Head Scientist
   components:
   - type: AccessReader
-    access: [["EnclaveRoleHeadScientist"]]
+    access: [["MisfitsEnclaveRoleHeadScientist"]]
 
 - type: entity
   parent: N14DoorBunker
@@ -144,7 +144,7 @@
   suffix: Enclave, Locked, Role All
   components:
   - type: AccessReader
-    access: [["EnclaveRoleAll"]]
+    access: [["MisfitsEnclaveRoleAll"]]
 
 - type: entity
   parent: N14DoorBunker
@@ -152,7 +152,7 @@
   suffix: Enclave, Locked, Role NCO
   components:
   - type: AccessReader
-    access: [["EnclaveRoleNCO"]]
+    access: [["MisfitsEnclaveRoleNCO"]]
 
 - type: entity
   parent: N14DoorBunker
@@ -160,7 +160,7 @@
   suffix: Enclave, Locked, Role Junior Officer
   components:
   - type: AccessReader
-    access: [["EnclaveRoleJuniorOfficer"]]
+    access: [["MisfitsEnclaveRoleJuniorOfficer"]]
 
 - type: entity
   parent: N14DoorBunker
@@ -168,7 +168,7 @@
   suffix: Enclave, Locked, Role Senior Officer
   components:
   - type: AccessReader
-    access: [["EnclaveRoleSeniorOfficer"]]
+    access: [["MisfitsEnclaveRoleSeniorOfficer"]]
 
 - type: entity
   parent: N14DoorBunker
@@ -176,4 +176,4 @@
   suffix: Enclave, Locked, Role Commander
   components:
   - type: AccessReader
-    access: [["EnclaveRoleCommander"]]
+    access: [["MisfitsEnclaveRoleCommander"]]

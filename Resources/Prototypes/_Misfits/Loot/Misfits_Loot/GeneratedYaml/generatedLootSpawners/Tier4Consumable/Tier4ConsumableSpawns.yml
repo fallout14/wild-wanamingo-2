@@ -3,38 +3,38 @@
 - type: entity
   name: Tier4 Consumable DrinksNukaColaSuperRare Single
   suffix: Tier4
-  id: M14ConsumableTier4Spawner_Single_DrinksNukaColaSuperRare
-  parent: M14Tier4Spawner_RefConsumable
+  id: MisfitsM14ConsumableTier4Spawner_Single_DrinksNukaColaSuperRare
+  parent: MisfitsM14Tier4Spawner_RefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: M14ConsumableLootTier4_DrinksNukaColaSuperRare
+      tableId: MisfitsM14ConsumableLootTier4_DrinksNukaColaSuperRare
 
 - type: entity
   name: Tier4 Consumable DrinksNukaColaSuperRare 0-3
   suffix: Tier4
-  id: M14ConsumableTier4Spawner_Mult0_3_DrinksNukaColaSuperRare
-  parent: M14Tier4Spawner_RefConsumable
+  id: MisfitsM14ConsumableTier4Spawner_Mult0_3_DrinksNukaColaSuperRare
+  parent: MisfitsM14Tier4Spawner_RefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: M14ConsumableLootTier4_DrinksNukaColaSuperRare
+      tableId: MisfitsM14ConsumableLootTier4_DrinksNukaColaSuperRare
 
 - type: entity
   name: Tier4 Consumable DrinksNukaColaSuperRare 1-2
   suffix: Tier4
-  id: M14ConsumableTier4Spawner_Mult1_2_DrinksNukaColaSuperRare
-  parent: M14Tier4Spawner_RefConsumable
+  id: MisfitsM14ConsumableTier4Spawner_Mult1_2_DrinksNukaColaSuperRare
+  parent: MisfitsM14Tier4Spawner_RefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: M14ConsumableLootTier4_DrinksNukaColaSuperRare
+      tableId: MisfitsM14ConsumableLootTier4_DrinksNukaColaSuperRare

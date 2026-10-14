@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/rifle_calibers.yml
 
 - type: entity
-  id: N14Bullet762x51FMJ
+  id: MisfitsBullet762x51FMJ
   parent: N14Bullet308
   name: bullet (7.62x51mm FMJ)
   categories: [HideSpawnMenu]
@@ -16,25 +16,25 @@
     minDamageMultiplier: 0.65
 
 - type: entity
-  id: N14Cartridge762x51FMJ
+  id: MisfitsCartridge762x51FMJ
   parent: N14Cartridge308Rifle
   name: cartridge (7.62x51mm FMJ)
   description: General-purpose ammunition. Compatible with .308 firearms and magazines.
   components:
   - type: CartridgeAmmo
-    proto: N14Bullet762x51FMJ
+    proto: MisfitsBullet762x51FMJ
 
 - type: entity
-  id: N14MagazineBox762x51FMJ
-  parent: MagazineBox308
+  id: MisfitsMagazineBox762x51FMJ
+  parent: N14MagazineBox308
   name: ammunition box (7.62x51mm FMJ)
   description: General-purpose ammunition. Compatible with .308 firearms and magazines.
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge762x51FMJ
+    proto: MisfitsCartridge762x51FMJ
 
 - type: entity
-  id: N14Bullet762x51AP
+  id: MisfitsBullet762x51AP
   parent: N14Bullet308
   name: bullet (7.62x51mm AP)
   categories: [HideSpawnMenu]
@@ -49,25 +49,25 @@
     minDamageMultiplier: 0.65
 
 - type: entity
-  id: N14Cartridge762x51AP
+  id: MisfitsCartridge762x51AP
   parent: N14Cartridge308Rifle
   name: cartridge (7.62x51mm AP)
   description: Armor-piercing ammunition with reduced impact damage. Compatible with .308 firearms and magazines.
   components:
   - type: CartridgeAmmo
-    proto: N14Bullet762x51AP
+    proto: MisfitsBullet762x51AP
 
 - type: entity
-  id: N14MagazineBox762x51AP
-  parent: MagazineBox308
+  id: MisfitsMagazineBox762x51AP
+  parent: N14MagazineBox308
   name: ammunition box (7.62x51mm AP)
   description: Armor-piercing ammunition with reduced impact damage. Compatible with .308 firearms and magazines.
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge762x51AP
+    proto: MisfitsCartridge762x51AP
 
 - type: entity
-  id: N14Bullet308JHP
+  id: MisfitsBullet308JHP
   parent: N14Bullet308
   name: bullet (.308 JHP)
   categories: [HideSpawnMenu]
@@ -82,25 +82,25 @@
     minDamageMultiplier: 0.5
 
 - type: entity
-  id: N14Cartridge308JHP
+  id: MisfitsCartridge308JHP
   parent: N14Cartridge308Rifle
   name: cartridge (.308 JHP)
   description: Hollow-point ammunition with higher unarmored damage and reduced performance against armor. Compatible with 7.62x51mm firearms and magazines.
   components:
   - type: CartridgeAmmo
-    proto: N14Bullet308JHP
+    proto: MisfitsBullet308JHP
 
 - type: entity
-  id: N14MagazineBox308JHP
-  parent: MagazineBox308
+  id: MisfitsMagazineBox308JHP
+  parent: N14MagazineBox308
   name: ammunition box (.308 JHP)
   description: Hollow-point ammunition with higher unarmored damage and reduced performance against armor. Compatible with 7.62x51mm firearms and magazines.
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge308JHP
+    proto: MisfitsCartridge308JHP
 
 - type: entity
-  id: N14Bullet308Match
+  id: MisfitsBullet308Match
   parent: N14Bullet308
   name: bullet (.308 Match)
   categories: [HideSpawnMenu]
@@ -115,25 +115,25 @@
     minDamageMultiplier: 0.8
 
 - type: entity
-  id: N14Cartridge308Match
+  id: MisfitsCartridge308Match
   parent: N14Cartridge308Rifle
   name: cartridge (.308 Match)
   description: Match ammunition with improved damage retention at range. Compatible with 7.62x51mm firearms and magazines.
   components:
   - type: CartridgeAmmo
-    proto: N14Bullet308Match
+    proto: MisfitsBullet308Match
 
 - type: entity
-  id: N14MagazineBox308Match
-  parent: MagazineBox308
+  id: MisfitsMagazineBox308Match
+  parent: N14MagazineBox308
   name: ammunition box (.308 Match)
   description: Match ammunition with improved damage retention at range. Compatible with 7.62x51mm firearms and magazines.
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge308Match
+    proto: MisfitsCartridge308Match
 
 - type: entity
-  id: N14Bullet556FMJ
+  id: MisfitsBullet556FMJ
   parent: N14Bullet556
   name: bullet (5.56mm)
   categories: [HideSpawnMenu]
@@ -148,25 +148,25 @@
     minDamageMultiplier: 0.57
 
 - type: entity
-  id: N14Cartridge556FMJ
+  id: MisfitsCartridge556FMJ
   parent: N14Cartridge556Rifle
   name: cartridge (5.56mm)
   description: Military 5.56mm ammunition, loaded hotter than civilian .223. Compatible with .223 firearms and magazines.
   components:
   - type: CartridgeAmmo
-    proto: N14Bullet556FMJ
+    proto: MisfitsBullet556FMJ
 
 - type: entity
-  id: N14MagazineBox556FMJ
-  parent: MagazineBox556
+  id: MisfitsMagazineBox556FMJ
+  parent: N14MagazineBox556
   name: ammunition box (5.56mm)
   description: Military 5.56mm ammunition, loaded hotter than civilian .223. Compatible with .223 firearms and magazines.
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge556FMJ
+    proto: MisfitsCartridge556FMJ
 
 - type: entity
-  id: N14Bullet556AP
+  id: MisfitsBullet556AP
   parent: N14Bullet556
   name: bullet (5.56mm AP)
   categories: [HideSpawnMenu]
@@ -181,25 +181,25 @@
     minDamageMultiplier: 0.57
 
 - type: entity
-  id: N14Cartridge556AP
+  id: MisfitsCartridge556AP
   parent: N14Cartridge556Rifle
   name: cartridge (5.56mm AP)
   description: Armor-piercing ammunition with reduced impact damage. Compatible with .223 firearms and magazines.
   components:
   - type: CartridgeAmmo
-    proto: N14Bullet556AP
+    proto: MisfitsBullet556AP
 
 - type: entity
-  id: N14MagazineBox556AP
-  parent: MagazineBox556
+  id: MisfitsMagazineBox556AP
+  parent: N14MagazineBox556
   name: ammunition box (5.56mm AP)
   description: Armor-piercing ammunition with reduced impact damage. Compatible with .223 firearms and magazines.
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge556AP
+    proto: MisfitsCartridge556AP
 
 - type: entity
-  id: N14Bullet223JHP
+  id: MisfitsBullet223JHP
   parent: N14Bullet556
   name: bullet (.223 JHP)
   categories: [HideSpawnMenu]
@@ -214,25 +214,25 @@
     minDamageMultiplier: 0.45
 
 - type: entity
-  id: N14Cartridge223JHP
+  id: MisfitsCartridge223JHP
   parent: N14Cartridge556Rifle
   name: cartridge (.223 JHP)
   description: Hollow-point ammunition with higher unarmored damage and reduced performance against armor. Compatible with 5.56mm firearms and magazines.
   components:
   - type: CartridgeAmmo
-    proto: N14Bullet223JHP
+    proto: MisfitsBullet223JHP
 
 - type: entity
-  id: N14MagazineBox223JHP
-  parent: MagazineBox556
+  id: MisfitsMagazineBox223JHP
+  parent: N14MagazineBox556
   name: ammunition box (.223 JHP)
   description: Hollow-point ammunition with higher unarmored damage and reduced performance against armor. Compatible with 5.56mm firearms and magazines.
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge223JHP
+    proto: MisfitsCartridge223JHP
 
 - type: entity
-  id: N14Bullet303
+  id: MisfitsBullet303
   parent: N14Bullet308
   name: bullet (.303)
   categories: [HideSpawnMenu]
@@ -247,77 +247,77 @@
     minDamageMultiplier: 0.65
 
 - type: entity
-  id: N14Cartridge303
+  id: MisfitsCartridge303
   parent: N14Cartridge308Rifle
   name: cartridge (.303)
   description: Rifle ammunition for the Lee-Enfield, Ross rifle, and Bren. Incompatible with .308 and 7.62x51mm firearms.
   components:
   - type: CartridgeAmmo
-    proto: N14Bullet303
+    proto: MisfitsBullet303
   - type: Tag
     tags:
     - Cartridge
-    - N14Cartridge303Rifle
+    - MisfitsCartridge303Rifle
 
 - type: entity
-  id: N14MagazineBox303
-  parent: MagazineBox308
+  id: MisfitsMagazineBox303
+  parent: N14MagazineBox308
   name: ammunition box (.303)
   description: Rifle ammunition for the Lee-Enfield, Ross rifle, and Bren. Incompatible with .308 and 7.62x51mm firearms.
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge303
+    proto: MisfitsCartridge303
     whitelist:
       tags:
-      - N14Cartridge303Rifle
+      - MisfitsCartridge303Rifle
 
 - type: Tag
-  id: N14Cartridge303Rifle
+  id: MisfitsCartridge303Rifle
 
 - type: Tag
-  id: N14Magazine303Bren
+  id: MisfitsMagazine303Bren
 
 - type: entity
-  id: N14Magazine303Bren
-  parent: Magazine308RifleLong
+  id: MisfitsMagazine303Bren
+  parent: N14Magazine308RifleLong
   name: Bren magazine (.303)
   description: A .303 magazine for the Bren machine gun.
   components:
   - type: Tag
     tags:
-    - N14Magazine303Bren
+    - MisfitsMagazine303Bren
   - type: BallisticAmmoProvider
-    proto: N14Cartridge303
+    proto: MisfitsCartridge303
     whitelist:
       tags:
-      - N14Cartridge303Rifle
+      - MisfitsCartridge303Rifle
 
 - type: entity
-  id: N14SpeedLoader303
-  parent: SpeedLoader308Tube
+  id: MisfitsSpeedLoader303
+  parent: MisfitsSpeedLoader308Tube
   name: speed loader (.303)
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge303
+    proto: MisfitsCartridge303
     whitelist:
       tags:
-      - N14Cartridge303Rifle
+      - MisfitsCartridge303Rifle
 
 - type: Tag
-  id: N14Magazine303EM2
+  id: MisfitsMagazine303EM2
 
 - type: entity
-  id: N14Magazine303EM2
+  id: MisfitsMagazine303EM2
   suffix: Deprecated
-  parent: LongMagazine556Rifle
+  parent: N14LongMagazine556Rifle
   name: EM2 magazine (.303 British)
   description: A 35-round .303 British magazine for the EM2 rifle.
   components:
   - type: Tag
     tags:
-    - N14Magazine303EM2
+    - MisfitsMagazine303EM2
   - type: BallisticAmmoProvider
-    proto: N14Cartridge303
+    proto: MisfitsCartridge303
     whitelist:
       tags:
-      - N14Cartridge303Rifle
+      - MisfitsCartridge303Rifle

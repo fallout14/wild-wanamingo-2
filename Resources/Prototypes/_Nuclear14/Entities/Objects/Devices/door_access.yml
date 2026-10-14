@@ -3,193 +3,155 @@
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsBOSMidwestPaladinCommander
+  id: N14DoorElectronicsBOSMidwestPaladinCommander
   suffix: BOSM PaladinCommander, Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["BOSHeadPaladin"]]
+    access: [["MisfitsBOSHeadPaladin"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsBOSMidwestPaladin
+  id: N14DoorElectronicsBOSMidwestPaladin
   suffix: BOSM Paladin, Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["BOSSeniorPaladin"]]
+    access: [["MisfitsBOSSeniorPaladin"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsBOSMidwestKnight
+  id: N14DoorElectronicsBOSMidwestKnight
   suffix: BOSM Knight, Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["BOSSeniorKnight"]]
+    access: [["MisfitsBOSSeniorKnight"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsBOSMidwestScribe
+  id: N14DoorElectronicsBOSMidwestScribe
   suffix: BOSM Scribe, Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["BOSSeniorScribe"]]
+    access: [["MisfitsBOSSeniorScribe"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsBOSMidwestGeneral
+  id: N14DoorElectronicsBOSMidwestGeneral
   suffix: BOSM General, Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["BOS"]]
+    access: [["MisfitsBOS"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsBOSMidwestOffDuty
-  suffix: BOSM, OffDuty, Locked
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: AccessReader
-    access: [["BOS"], ["BOSOffDuty"]]
-
-# BoS Washington
-
-- type: entity
-  parent: DoorElectronics
-  id: DoorElectronicsBoSWashingtonCommander
+  id: N14DoorElectronicsBoSWashingtonCommander
   suffix: BOSW Elder, Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["BOSHeadKnight"]]
+    access: [["MisfitsBOSHeadKnight"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsBOSWashingtonPaladin
+  id: N14DoorElectronicsBOSWashingtonPaladin
   suffix: BOSW Paladin, Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["BOSPaladin"]]
+    access: [["MisfitsBOSPaladin"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsBOSWashingtonKnight
+  id: N14DoorElectronicsBOSWashingtonKnight
   suffix: BOSW Knight, Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["BOSKnight"]]
+    access: [["MisfitsBOSKnight"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsBOSWashingtonScribe
+  id: N14DoorElectronicsBOSWashingtonScribe
   suffix: BOSW Scribe, Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["BOSScribe"]]
+    access: [["MisfitsBOSScribe"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsBOSWashington
+  id: N14DoorElectronicsBOSWashington
   suffix: BOSW Initiate, Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["BOSInitiate"]]
+    access: [["MisfitsBOSInitiate"]]
 
 # Vault
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsVaultOverseer
+  id: N14DoorElectronicsVaultOverseer
   suffix: Vault Overseer Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["VaultOverseer"]]
+    access: [["N14VaultOverseer"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsVaultGatekeeper
+  id: N14DoorElectronicsVaultGatekeeper
   suffix: Vault Gatekeeper Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["VaultGatekeeper"]]
+    access: [["N14VaultGatekeeper"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsVaultMedical
+  id: N14DoorElectronicsVaultMedical
   suffix: Vault Doctor Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["VaultMedical"]]
+    access: [["N14VaultMedical"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsVaultEngineer
+  id: N14DoorElectronicsVaultEngineer
   suffix: Vault Engineer Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["VaultEngineer"]]
+    access: [["N14VaultEngineer"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsVaultSecurity
+  id: N14DoorElectronicsVaultSecurity
   suffix: Vault Security Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["VaultSecurity"]]
+    access: [["N14VaultSecurity"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsVaultDweller
+  id: N14DoorElectronicsVaultDweller
   suffix: Vault Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["VaultDweller"]]
+    access: [["N14VaultDweller"]]
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsVaultCargo
-  suffix: Vault Cargo Locked
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: AccessReader
-    access: [["VaultCargo"]]
-
-- type: entity
-  parent: DoorElectronics
-  id: DoorElectronicsVaultCourier
-  suffix: Vault Courier Locked
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: AccessReader
-    access: [["VaultCourier"]]
-
-- type: entity
-  parent: DoorElectronics
-  id: DoorElectronicsVaultSalvage
-  suffix: Vault Salvage Locked
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: AccessReader
-    access: [["VaultSalvage"]]
-
-- type: entity
-  parent: DoorElectronics
-  id: DoorElectronicsAncientBunker
+  id: N14DoorElectronicsAncientBunker
   suffix: Bunker Locked
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["AncientBunker"]]
+    access: [["N14AncientBunker"]]

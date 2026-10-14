@@ -1,0 +1,28 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Reagents/materials.yml
+
+- type: material
+  id: MisfitsCement
+  stackEntity: MisfitsMaterialCement1
+  name: materials-cement
+  unit: materials-unit-pile
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: powder_brass }
+  color: "#c0bdb8"
+  price: 0.005
+
+- type: material
+  id: Concrete
+  stackEntity: MisfitsMaterialConcrete1
+  name: materials-concrete
+  unit: materials-unit-piece
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: scrap_3 }
+  color: "#b0b0b0"
+  price: 0.01
+
+- type: material
+  id: MisfitsBrick
+  stackEntity: MisfitsMaterialBrick1
+  name: materials-brick
+  unit: materials-unit-piece
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: scrap_copper }
+  color: "#8b4513"
+  price: 0.01

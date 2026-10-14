@@ -1,4 +1,4 @@
-# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Stacks/medical_stacks.yml
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Stacks/medical_stacks.yml, Resources/Prototypes/_Nuclear14/Stacks/medical_stacks.yml
 
 - type: stack
   id: MisfitsSuture
@@ -19,4 +19,11 @@
   name: misfits-kit-aloe-regenerative-mesh
   icon: { sprite: "/Textures/Misfits/Objects/Specific/Medical/wound_care.rsi", state: aloe_mesh_closed }
   spawn: MisfitsAloeMesh
+  maxCount: 10
+
+- type: stack
+  id: MisfitsOintmentAdv10
+  name: regenerative-mesh
+  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: regenerative-mesh}
+  spawn: MisfitsOintmentAdv1
   maxCount: 10

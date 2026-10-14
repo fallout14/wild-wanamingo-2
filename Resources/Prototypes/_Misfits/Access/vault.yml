@@ -1,0 +1,19 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Access/vault.yml
+
+- type: accessLevel
+  id: MisfitsVaultCargo
+  name: id-card-access-level-vault-cargo
+
+- type: accessLevel
+  id: MisfitsVaultCourier
+  name: id-card-access-level-vault-courier
+
+- type: accessLevel
+  id: MisfitsVaultSalvage
+  name: id-card-access-level-vault-salvage
+
+# Misfits Add - unique access level for the vault controls panel; kept out of AllAccess so only the Overseer card can use it
+
+- type: accessLevel
+  id: MisfitsVaultControlsPanel
+  name: id-card-access-level-vault-controls-panel

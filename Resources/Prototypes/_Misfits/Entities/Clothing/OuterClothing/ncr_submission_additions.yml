@@ -1,0 +1,102 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Clothing/OuterClothing/ncr_submission_additions.yml
+
+- type: entity
+  parent: N14ClothingOuterNCRCombatArmor
+  id: MisfitsClothingOuterNCRArmoredFieldJacket
+  name: NCR armored field jacket
+  description: An NCR field jacket fitted with hidden armor plating.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrarmoredfieldjacket.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrarmoredfieldjacket.rsi
+
+- type: entity
+  parent: N14ClothingOuterNCRCombatArmor
+  id: MisfitsClothingOuterNCRArmoredFieldJacketLogo
+  name: NCR armored field jacket
+  description: An NCR field jacket fitted with hidden armor plating and a bold Republic insignia.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrarmoredfieldjacketlogo.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrarmoredfieldjacketlogo.rsi
+
+- type: entity
+  parent: N14ClothingOuterNCRCombatArmor
+  id: MisfitsClothingOuterNCRAssaultVest
+  name: NCR assault vest
+  description: A sidegrade NCR combat vest set up for assault troops.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrassault.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrassault.rsi
+
+- type: entity
+  parent: N14ClothingOuterNCRPouchedVestDesert
+  id: MisfitsClothingOuterNCREngineerVest
+  name: NCR engineer vest
+  description: A sidegrade NCR armored vest for engineers and field support crews.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrengineer.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrengineer.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.60
+
+- type: entity
+  parent: N14ClothingOuterNCRCombatArmor
+  id: MisfitsClothingOuterNCRFlakVest
+  name: NCR flak vest
+  description: A sidegrade NCR flak vest often seen on lighter patrol assignments.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrflakvest.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrflakvest.rsi
+
+- type: entity
+  parent: N14ClothingOuterNCRCombatArmor
+  id: MisfitsClothingOuterNCRFlakVestOpen
+  name: open NCR flak vest
+  description: A sidegrade NCR flak vest worn open for comfort in desert heat.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrflakvestopen.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrflakvestopen.rsi
+
+- type: entity
+  parent: N14ClothingOuterNCRCombatArmor
+  id: MisfitsClothingOuterNCRPatrolRangerArmorVariant
+  name: NCR patrol ranger armor
+  description: A sidegrade patrol ranger armor set with an NCR field refit.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrpatrolrangerarmor.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrpatrolrangerarmor.rsi
+
+- type: entity
+  parent: N14ClothingOuterNCRVestDesert
+  id: MisfitsClothingOuterNCRTrenchRaider
+  name: NCR trench raider vest
+  description: A stripped-down NCR armored vest intended for aggressive close-range patrol work.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrtrenchraider.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrtrenchraider.rsi
+
+- type: entity
+  parent: N14ClothingOuterNCRCombatArmor
+  id: MisfitsClothingOuterNCRCommissarPlate
+  name: NCR commissar plate
+  description: A series of forged plates made for frontline NCR Commissars in charge of Penal Units.
+  components:
+  - type: Sprite
+    sprite: Misfits/Clothing/OuterClothing/Armor/ncr_commissar_plate.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/OuterClothing/Armor/ncr_commissar_plate.rsi

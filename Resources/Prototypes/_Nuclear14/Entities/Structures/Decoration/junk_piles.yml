@@ -19,7 +19,7 @@
       prob: 0.07
       amount: 1
       maxAmount: 3
-    - id: N14Binoculars # #Misfits Add — rare binoculars find in junkpiles
+    - id: MisfitsBinoculars # #Misfits Add — rare binoculars find in junkpiles
       prob: 0.02
     - id: N14CombatKnife
       prob: 0.03
@@ -262,7 +262,7 @@
     - id: N14ClothingBootsLeather
       prob: 0.05
       orGroup: Clothing
-    - id: Magazine762Rifle
+    - id: N14Magazine762Rifle
       prob: 0.07
       orGroup: Ammunition
     - id: N14MagazinePistol9mm
@@ -292,21 +292,21 @@
     - id: N14MagazinePistol45
       prob: 0.07
       orGroup: Ammunition
-    - id: LongMagazine556Rifle
+    - id: N14LongMagazine556Rifle
       prob: 0.07
       orGroup: Ammunition
-    - id: Magazine556Rifle
+    - id: N14Magazine556Rifle
       prob: 0.07
       orGroup: Ammunition
-    - id: Magazine45SubMachineGun
+    - id: N14Magazine45SubMachineGun
       prob: 0.09
       orGroup: Ammunition
     # #Misfits Add - rare loose 40mm finds. Other than existing upstream
     # availability, these variants enter circulation through junk or crafting.
-    - id: 40mmGrenadeFrag
+    - id: N1440mmGrenadeFrag
       prob: 0.0025
       orGroup: Ammunition
-    - id: 40mmGrenadeFire
+    - id: N1440mmGrenadeFire
       prob: 0.0025
       orGroup: Ammunition
     - id: Misfits40mmGrenadeHEDP
@@ -524,28 +524,28 @@
     - id: N14Pipboy
       prob: 0.005
     # #Misfits Add - Shoddy power armor manual, even rarer than the pipboy (0.1%)
-    - id: WastelandPowerArmor
+    - id: MisfitsWastelandPowerArmor
       prob: 0.001
     - id: MisfitsClothingHeadsetWastelandScrap
       prob: 0.02
     - id: N14CurrencyCap
       prob: 1
-      orGroup: Currency
+      orGroup: N14Currency
       amount: 1
       maxAmount: 25
     - id: N14CurrencyPrewar
       prob: 1
-      orGroup: Currency
+      orGroup: N14Currency
       amount: 1
       maxAmount: 25
     - id: N14CurrencyNCRDollar
       prob: 1
-      orGroup: Currency
+      orGroup: N14Currency
       amount: 1
       maxAmount: 25
     - id: null
       prob: 0.75
-      orGroup: Currency
+      orGroup: N14Currency
       amount: 1
       maxAmount: 25
     - id: null
@@ -604,7 +604,7 @@
   - type: Clickable
   - type: Tag
     tags:
-    - JunkPile
+    - N14JunkPile
 # No fixture on this base, inherit from further down for fixture
 
 # TODO: Add a loot box mechanic where using the pile does a doAfter then spits out useful items from a loot table.

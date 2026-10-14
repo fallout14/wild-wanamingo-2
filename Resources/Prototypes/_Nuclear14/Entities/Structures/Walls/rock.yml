@@ -136,7 +136,7 @@
             acts: ["Destruction"]
 
 - type: entity
-  id: SteelRock
+  id: N14SteelRock
   parent: N14RockGrey
   name: ore vein
   suffix: Low Ore Yield
@@ -169,7 +169,7 @@
 
 - type: entity
   id: N14RockMining
-  parent: SteelRock
+  parent: N14SteelRock
   name: ore evin
   suffix: higher ore yield
   description: An asteroid.
@@ -306,7 +306,7 @@
 
 # Misfits Add - Procedural ore vein variant for random distribution on Wendover
 - type: entity
-  id: N14WallRockMining
+  id: MisfitsWallRockMining
   parent: N14WallRock
   name: rock
   suffix: Random Ore Yield
@@ -416,7 +416,7 @@
 
 # Misfits Add - Procedural ore vein variant for random distribution on Wendover
 - type: entity
-  id: N14WallRockBasaltMining
+  id: MisfitsWallRockBasaltMining
   parent: N14WallRockBasalt
   name: basalt
   suffix: Random Ore Yield
@@ -526,7 +526,7 @@
 
 # Misfits Add - Procedural ore vein variant for random distribution on Wendover
 - type: entity
-  id: N14WallRockSandMining
+  id: MisfitsWallRockSandMining
   parent: N14WallRockSand
   name: sandstone
   suffix: Random Ore Yield
@@ -636,7 +636,7 @@
 
 # Misfits Add - Procedural ore vein variant for random distribution on Wendover
 - type: entity
-  id: N14WallRockAndesiteMining
+  id: MisfitsWallRockAndesiteMining
   parent: N14WallRockAndesite
   name: andesite
   suffix: Random Ore Yield
@@ -648,7 +648,7 @@
 
 # Cold Mountain Rock.
 - type: entity
-  id: ColdMountainRock
+  id: N14ColdMountainRock
   parent: BaseStructure
   name: cold mountain rock
   suffix: Un-mineable

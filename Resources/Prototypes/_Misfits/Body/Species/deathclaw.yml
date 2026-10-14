@@ -18,7 +18,7 @@
     state: deathclaw
   - type: VisualBody
   - type: HumanoidProfile
-    species: Deathclaw
+    species: N14Deathclaw
 
 - type: entity
   parent: AppearanceDeathclaw
@@ -29,7 +29,7 @@
   - type: Sprite
     sprite: Misfits/Mobs/Animals/deathclawadolescent.rsi
   - type: HumanoidProfile
-    species: DeathclawAdolescent
+    species: MisfitsDeathclawAdolescent
 
 - type: entity
   parent: AppearanceDeathclaw
@@ -40,7 +40,7 @@
   - type: Sprite
     sprite: Misfits/Mobs/Animals/deathclawhatchling.rsi
   - type: HumanoidProfile
-    species: DeathclawHatchling
+    species: MisfitsDeathclawHatchling
 
 - type: entity
   parent: AppearanceDeathclaw
@@ -51,22 +51,22 @@
   - type: Sprite
     sprite: Misfits/Mobs/Animals/deathclawbwonsamdi.rsi
   - type: HumanoidProfile
-    species: BwonsamdiDeathclaw
+    species: MisfitsBwonsamdiDeathclaw
 
 # --- Playable deathclaws
 
 # The NPC deathclaw plus player parts (speech, hands, charge); the variants below inherit these.
 - type: entity
   parent: N14MobDeathclaw
-  id: N14MobDeathclawSentient
+  id: MisfitsMobDeathclawSentient
   name: sentient deathclaw
   description: An unusually intelligent deathclaw, watchful and capable of speech.
   components:
   - type: VisualBody
   - type: HumanoidProfile
-    species: Deathclaw
+    species: N14Deathclaw
   - type: ReplacementAccent # replaces the NPC's growl-only genericAggressive with plain speech
-    accent: misfitsDeathclaw
+    accent: MisfitsDeathclaw
   - type: LizardAccent # drawn-out hiss (Misfits: elongated sibilants)
   - type: Speech
     speechSounds: MisfitsDeathclaw
@@ -80,11 +80,11 @@
   - type: Emoting
   - type: Tag
     tags:
-    - Deathclaw
+    - N14Deathclaw
     - FootstepSound
   - type: NpcFactionMember
     factions:
-    - Wastelander
+    - N14Wastelander
   - type: Hands
     startingHands:
       hand_right:
@@ -111,13 +111,13 @@
         maxDistance: 20
 
 - type: entity
-  parent: N14MobDeathclawSentient
-  id: N14MobDeathclawSentientAdolescent
+  parent: MisfitsMobDeathclawSentient
+  id: MisfitsMobDeathclawSentientAdolescent
   name: adolescent sentient deathclaw
   description: An intelligent young deathclaw, not yet fully grown.
   components:
   - type: HumanoidProfile
-    species: DeathclawAdolescent
+    species: MisfitsDeathclawAdolescent
   - type: Sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
@@ -148,7 +148,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14DeathclawAttack
+      collection: MisfitsDeathclawAttack
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw
@@ -163,13 +163,13 @@
     baseSprintSpeed: 6.25
 
 - type: entity
-  parent: N14MobDeathclawSentient
-  id: N14MobDeathclawSentientHatchling
+  parent: MisfitsMobDeathclawSentient
+  id: MisfitsMobDeathclawSentientHatchling
   name: hatchling sentient deathclaw
   description: An intelligent Deathclaw hatchling, small but still dangerous.
   components:
   - type: HumanoidProfile
-    species: DeathclawHatchling
+    species: MisfitsDeathclawHatchling
   - type: Sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
@@ -200,7 +200,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14DeathclawAttack
+      collection: MisfitsDeathclawAttack
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw
@@ -216,20 +216,20 @@
 
 # Bwonsamdi: a deathclaw of unnatural size bound to the loa of death. Body and stats only for now.
 - type: entity
-  parent: N14MobDeathclawSentient
-  id: N14MobDeathclawPlayer
+  parent: MisfitsMobDeathclawSentient
+  id: MisfitsMobDeathclawPlayer
   name: Bwonsamdi
   description: A deathclaw of unnatural size and strength, bound to the loa of death and marked with strange, restless designs.
   components:
   - type: HumanoidProfile
-    species: BwonsamdiDeathclaw
+    species: MisfitsBwonsamdiDeathclaw
   - type: Sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: deathclaw
       sprite: Misfits/Mobs/Animals/deathclawbwonsamdi.rsi
   - type: Damageable
-    damageModifierSet: N14DeathclawHide # half damage from everything
+    damageModifierSet: MisfitsDeathclawHide # half damage from everything
   - type: Fixtures # mech-like: too heavy to shove, fills the tile
     fixtures:
       fix1:
@@ -273,18 +273,18 @@
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
     channels:
-    - WastelandGlobal
-    - Eighties
-    - VaultCommon
-    - BrotherhoodOfSteel
-    - Enclave
-    - NCR
-    - OSI
-    - NCRRangers
-    - Legion
-    - PBS
-    - FollowersOfApocalypse
-    - Townsfolk
+    - MisfitsWastelandGlobal
+    - MisfitsEighties
+    - N14VaultCommon
+    - MisfitsBrotherhoodOfSteel
+    - N14Enclave
+    - N14NCR
+    - MisfitsOSI
+    - MisfitsNCRRangers
+    - MisfitsLegion
+    - N14PBS
+    - MisfitsFollowersOfApocalypse
+    - N14Townsfolk
     - Common
   - type: FootstepModifier
     footstepSoundCollection:
@@ -294,14 +294,14 @@
         maxDistance: 30
   - type: NpcFactionMember
     factions:
-    - Wastelander
-    - Tribal
+    - N14Wastelander
+    - N14Tribal
   - type: MeleeWeapon
     altDisarm: false
     hidden: true
     attackRate: 1.0
     soundHit:
-      collection: N14DeathclawAttack
+      collection: MisfitsDeathclawAttack
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw

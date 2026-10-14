@@ -1,8 +1,43 @@
-# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Stacks/consumable_stacks.yml
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Stacks/consumable_stacks.yml, Resources/Prototypes/_Nuclear14/Stacks/consumable_stacks.yml
 
 - type: stack
-  id: ZoyBeans
+  id: MisfitsZoyBeans
   name: misfits-kit-zoy-beans
   icon: { sprite: Misfits/Objects/Specific/Hydroponics/zoybeans.rsi, state: produce }
   spawn: MisfitsFloraProduceWildZoybeans
   maxCount: 4
+
+- type: stack
+  id: MisfitsCannabis
+  name: misfits-kit-cannabis-leaves
+  icon: { sprite: Nuclear14/Objects/Specific/Hydroponics/cannabis.rsi, state: produce }
+  spawn: MisfitsFloraProduceWildCannabis
+  maxCount: 5
+
+- type: stack
+  id: MisfitsLeavesTobaccoDried
+  name: misfits-kit-dried-tobacco-leaves
+  icon: { sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi, state: tobacco_dried_1 }
+  spawn: MisfitsLeavesTobaccoDried
+  maxCount: 5
+
+- type: stack
+  id: MisfitsLeavesCannabisDried
+  name: misfits-kit-dried-cannabis-leaves
+  icon: { sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi, state: cannabis_dried }
+  spawn: MisfitsLeavesCannabisDried
+  maxCount: 5
+
+- type: stack
+  id: MisfitsGroundTobacco
+  name: misfits-kit-ground-tobacco
+  icon: { sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi, state: tobacco_powderpile }
+  spawn: MisfitsGroundTobacco
+  maxCount: 5
+
+- type: stack
+  id: MisfitsGroundCannabis
+  name: misfits-kit-ground-cannabis
+  icon: { sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi, state: cannabis_powderpile }
+  spawn: MisfitsGroundCannabis
+  maxCount: 5

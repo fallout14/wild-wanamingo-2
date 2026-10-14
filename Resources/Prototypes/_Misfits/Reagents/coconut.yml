@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Reagents/coconut.yml
 
 - type: reagent
-  id: CoconutFlesh
+  id: MisfitsCoconutFlesh
   group: Wasteland
   parent: Nutriment
   name: reagent-name-coconut-flesh
@@ -11,7 +11,7 @@
 
 - type: reagent
   parent: BaseJuice
-  id: JuiceLemonade
+  id: MisfitsJuiceLemonade
   name: reagent-name-juice-lemonade
   desc: reagent-desc-juice-lemonade
   physicalDesc: reagent-physical-desc-citric
@@ -19,7 +19,7 @@
   color: "#fff690"
 
 - type: reagent
-  id: CocaSlurry
+  id: MisfitsCocaSlurry
   name: reagent-name-cocaslurry
   group: Wasteland
   desc: reagent-desc-cocaslurry

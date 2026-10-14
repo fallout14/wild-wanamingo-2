@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: BaseStructure
-  id: BaseWallIndestructible
+  id: N14BaseWallIndestructible
   name: wall
   description: You will struggle to break this.
   suffix: indestructible
@@ -51,7 +51,7 @@
   - type: BlockWeather
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14BaseWallSlanted
   suffix: slanted
   abstract: true
@@ -144,7 +144,7 @@
           collection: WoodDestroyHeavy
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallAdobeSlantedIndestructible
   name: adobe wall
   components:
@@ -167,11 +167,11 @@
   components:
   - type: Construction
     # #Misfits Add - lets the hand-construction adobe recipe deconstruct back through its graph.
-    graph: N14AdobeWall
+    graph: MisfitsAdobeWall
     node: AdobeWall
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallBrickSlantedIndestructible
   name: brick wall
   components:
@@ -193,7 +193,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallBrickAltSlantedIndestructible
   name: brick wall
   components:
@@ -215,7 +215,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallBrickGraySlantedIndestructible
   name: brick wall
   components:
@@ -237,7 +237,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallBunkerSlantedIndestructible
   name: bunker wall
   components:
@@ -259,7 +259,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallCombSlantedIndestructible
   name: comb wall
   components:
@@ -281,7 +281,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallConcreteSlantedIndestructible
   name: concrete wall
   components:
@@ -316,7 +316,7 @@
   # Forge-Change-End
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallConcreteAltSlantedIndestructible
   name: concrete wall
   components:
@@ -338,7 +338,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallDungeonSlantedIndestructible
   name: dungeon wall
   components:
@@ -360,7 +360,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallDungeonAltSlantedIndestructible
   name: dungeon wall
   components:
@@ -382,7 +382,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallMetalSlantedIndestructible
   name: metal wall
   components:
@@ -404,7 +404,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallPrisonSlantedIndestructible
   name: prison wall
   components:
@@ -426,7 +426,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallReinfMetalSlantedIndestructible
   name: reinforced metal wall
   components:
@@ -448,7 +448,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallRockSlantedIndestructible
   name: rock wall
   components:
@@ -488,7 +488,7 @@
             acts: ["Destruction"]
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallRockDroughtSlantedIndestructible
   name: drought rock wall
   components:
@@ -530,18 +530,7 @@
 # Misfits Add - Procedural ore variant for Wendover; ~33% of placed rocks become random ore veins at round start
 
 - type: entity
-  parent: N14WallRockDroughtSlanted
-  id: N14WallRockDroughtSlantedMining
-  name: rock wall
-  suffix: Random Ore Yield
-  description: A drought rock wall. Could be hiding something.
-  components:
-  - type: OreVein
-    oreChance: 0.33
-    oreRarityPrototypeId: RandomOreDistributionStandard
-
-- type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallRockMammothSlantedIndestructible
   name: mammoth rock wall
   components:
@@ -579,7 +568,7 @@
             acts: ["Destruction"]
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallRoughScrapSlantedIndestructible
   name: rough scrap wall
   components:
@@ -605,7 +594,7 @@
     node: RoughScrapWall
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallIndustrialRustSlantedIndestructible
   name: rusty industrial wall
   components:
@@ -627,7 +616,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallMetalRustSlantedIndestructible
   name: rusty metal wall
   components:
@@ -649,7 +638,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallReinfMetalRustSlantedIndestructible
   name: rusty reinforced metal wall
   components:
@@ -671,7 +660,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallVaultRustSlantedIndestructible
   name: rusty vault wall
   components:
@@ -693,7 +682,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallVaultVentsRustSlantedIndestructible
   name: rusty vault vents wall
   components:
@@ -715,7 +704,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallScrapSlantedIndestructible
   name: scrap wall
   components:
@@ -741,7 +730,7 @@
     node: SheetScrapWall
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallScrapBlueSlantedIndestructible
   name: blue sheet metal wall
   components:
@@ -767,7 +756,7 @@
     node: BlueScrapWall
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallScrapRedSlantedIndestructible
   name: red sheet metal wall
   components:
@@ -793,7 +782,7 @@
     node: RedScrapWall
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallScrapWhiteSlantedIndestructible
   name: white sheet metal wall
   components:
@@ -819,7 +808,7 @@
     node: WhiteScrapWall
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallSewerSlantedIndestructible
   name: sewer wall
   components:
@@ -841,7 +830,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallSidingSlantedIndestructible
   name: brick wall
   components:
@@ -863,7 +852,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallSidingBlueSlantedIndestructible
   name: blue brick wall
   components:
@@ -885,7 +874,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallSidingRedSlantedIndestructible
   name: red brick wall
   components:
@@ -907,7 +896,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallSidingGreenSlantedIndestructible
   name: green brick wall
   components:
@@ -929,7 +918,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallVaultSlantedIndestructible
   name: vault wall
   components:
@@ -951,7 +940,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallVaultVentSlantedIndestructible
   name: vault vent wall
   components:
@@ -973,7 +962,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallWoodSlantedIndestructible
   name: wood wall
   components:
@@ -999,7 +988,7 @@
     node: WoodWall
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: N14BaseWallIndestructible
   id: N14WallWoodAltSlantedIndestructible
   name: wood wall
   components:

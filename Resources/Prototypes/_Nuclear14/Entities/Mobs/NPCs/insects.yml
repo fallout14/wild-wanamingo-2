@@ -77,7 +77,7 @@
       prob: 0.75
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14BloatflyAttack
+      collection: MisfitsBloatflyAttack
       params:
         volume: -3
         maxDistance: 10
@@ -138,7 +138,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14RadscorpionAttack #Misfits Change
+      collection: MisfitsRadscorpionAttack #Misfits Change
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw
@@ -149,7 +149,7 @@
         Piercing: 1.66667
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14RadroachAttack
+      collection: MisfitsRadroachAttack
       params:
         volume: -3
         maxDistance: 10
@@ -183,7 +183,7 @@
     solution: melee
     generated:
       reagents:
-      - ReagentId: FireToxin
+      - ReagentId: N14FireToxin
         Quantity: 0.1
   - type: Butcherable
     spawned:
@@ -196,7 +196,7 @@
       prob: 0.75
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14RadroachAttack
+      collection: MisfitsRadroachAttack
       params:
         volume: -3
         maxDistance: 10
@@ -212,7 +212,7 @@
     id: melee
     solution:
       reagents:
-      - ReagentId: FireToxin
+      - ReagentId: N14FireToxin
         Quantity: 10
 
 - type: entity
@@ -260,7 +260,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14RadroachAttack #Misfits Change
+      collection: MisfitsRadroachAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -274,13 +274,13 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: N14RadroachIdle
+      collection: MisfitsRadroachIdle
       params:
         volume: -12
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14RadroachAttack
+      collection: MisfitsRadroachAttack
       params:
         volume: -3
         maxDistance: 10
@@ -351,7 +351,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14RadscorpionAttack #Misfits Change
+      collection: MisfitsRadscorpionAttack #Misfits Change
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw
@@ -364,13 +364,13 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: N14RadscorpionIdle
+      collection: MisfitsRadscorpionIdle
       params:
         volume: -10
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14RadscorpionAttack
+      collection: MisfitsRadscorpionAttack
       params:
         volume: -3
         maxDistance: 10
@@ -426,7 +426,7 @@
         Quantity: 0.2
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14RadscorpionAttack
+      collection: MisfitsRadscorpionAttack
       params:
         volume: -3
         maxDistance: 10
@@ -491,7 +491,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: N14CazadorAttack #Misfits Change
+      collection: MisfitsCazadorAttack #Misfits Change
     angle: 30
     animation: WeaponArcThrust
     wideAnimation: WeaponArcThrust
@@ -503,7 +503,7 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: N14CazadorIdle
+      collection: MisfitsCazadorIdle
       params:
         volume: -8
         maxDistance: 5
@@ -514,7 +514,7 @@
     solution: melee
     generated:
       reagents:
-      - ReagentId: CazadorVenom
+      - ReagentId: N14CazadorVenom
         Quantity: 0.25
   - type: MeleeChemicalInjector
     solution: melee
@@ -532,7 +532,7 @@
       75: Dead #Misfits Tweak - reduced from 100, cazadors were too tanky
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14CazadorAttack
+      collection: MisfitsCazadorAttack
       params:
         volume: -3
         maxDistance: 10
@@ -547,5 +547,5 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: CazadorVenom
+      - ReagentId: N14CazadorVenom
         Quantity: 10

@@ -4,137 +4,137 @@
 # Misfits' playtime and species requirements are left out for now.
 
 - type: job
-  id: FollowerDirector
+  id: MisfitsFollowerDirector
   name: job-name-follower-director
   description: job-description-follower-director
-  playTimeTracker: FollowerDirector
-  startingGear: FollowerDirectorGear
+  playTimeTracker: MisfitsFollowerDirector
+  startingGear: MisfitsFollowerDirectorGear
   icon: JobIconPassenger
   supervisors: job-supervisors-follower-director
   accessGroups:
-  - FollowersApocalypse
-  - FotAHead
-  - FotADoctor
-  - FotA
+  - N14FollowersApocalypse
+  - MisfitsFotAHead
+  - MisfitsFotADoctor
+  - MisfitsFotA
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - Wastelander
-          - Followers
+          - N14Wastelander
+          - MisfitsFollowers
 
 - type: startingGear
-  id: FollowerDirectorGear
+  id: MisfitsFollowerDirectorGear
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitFollowers
     back: ClothingBackpackDuffelSurgeryFilled
     shoes: N14ClothingBootsLeather
     neck: ClothingNeckStethoscope
-    id: N14IDFollowerHead
-    ears: N14ClothingHeadsetFollowers
+    id: MisfitsIDFollowerHead
+    ears: MisfitsClothingHeadsetFollowers
     outerClothing: N14ClothingOuterCoatFollowerLab
     belt: N14ClothingBeltMedicalFilled
     pocket2: N14HandheldHealthAnalyzer
     head: ClothingHeadHatBeretMedic
 
 - type: job
-  id: FollowerHead
+  id: MisfitsFollowerHead
   name: job-name-follower-head
   description: job-description-follower-head
-  playTimeTracker: FollowerHead
-  startingGear: FollowerHeadGear
+  playTimeTracker: MisfitsFollowerHead
+  startingGear: MisfitsFollowerHeadGear
   icon: JobIconPassenger
   supervisors: job-supervisors-follower-head
   accessGroups:
-  - FollowersApocalypse
-  - FotAHead
-  - FotADoctor
-  - FotA
+  - N14FollowersApocalypse
+  - MisfitsFotAHead
+  - MisfitsFotADoctor
+  - MisfitsFotA
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - Wastelander
-          - Followers
+          - N14Wastelander
+          - MisfitsFollowers
 
 - type: startingGear
-  id: FollowerHeadGear
+  id: MisfitsFollowerHeadGear
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitFollowers
     back: ClothingBackpackDuffelSurgeryFilled
     shoes: N14ClothingBootsLeather
     neck: ClothingNeckStethoscope
-    id: N14IDFollowerHead
-    ears: N14ClothingHeadsetFollowers
+    id: MisfitsIDFollowerHead
+    ears: MisfitsClothingHeadsetFollowers
     outerClothing: N14ClothingOuterCoatFollowerLab
     belt: N14ClothingBeltMedicalFilled
     pocket2: N14HandheldHealthAnalyzer
     head: ClothingHeadHatBeretMedic
 
 - type: job
-  id: FollowerDoctor
+  id: MisfitsFollowerDoctor
   name: job-name-follower-doctor
   description: job-description-follower-doctor
-  playTimeTracker: FollowerDoctor
-  startingGear: FollowerDoctorGear
+  playTimeTracker: MisfitsFollowerDoctor
+  startingGear: MisfitsFollowerDoctorGear
   icon: JobIconPassenger
   supervisors: job-supervisors-follower-doctor
   accessGroups:
-  - FollowersApocalypse
-  - FotADoctor
-  - FotA
+  - N14FollowersApocalypse
+  - MisfitsFotADoctor
+  - MisfitsFotA
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - Wastelander
-          - Followers
+          - N14Wastelander
+          - MisfitsFollowers
 
 - type: startingGear
-  id: FollowerDoctorGear
+  id: MisfitsFollowerDoctorGear
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitFollowers
     back: ClothingBackpackDuffelSurgeryFilled
     shoes: N14ClothingBootsLeather
     neck: ClothingNeckStethoscope
-    id: N14IDFollowerDoctor
-    ears: N14ClothingHeadsetFollowers
+    id: MisfitsIDFollowerDoctor
+    ears: MisfitsClothingHeadsetFollowers
     outerClothing: N14ClothingOuterCoatFollowerLab
     belt: N14ClothingBeltMedicalFilled
     pocket2: N14HandheldHealthAnalyzer
 
 - type: job
-  id: FollowerGuard
+  id: MisfitsFollowerGuard
   name: job-name-follower-guard
   description: job-description-follower-guard
-  playTimeTracker: FollowerGuard
-  startingGear: FollowerGuardGear
+  playTimeTracker: MisfitsFollowerGuard
+  startingGear: MisfitsFollowerGuardGear
   icon: JobIconPassenger
   supervisors: job-supervisors-follower-guard
   accessGroups:
-  - FollowersApocalypse
-  - FotA
+  - N14FollowersApocalypse
+  - MisfitsFotA
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - Wastelander
-          - Followers
+          - N14Wastelander
+          - MisfitsFollowers
 
 - type: startingGear
-  id: FollowerGuardGear
+  id: MisfitsFollowerGuardGear
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitFollowers
     back: N14ClothingBackpackSatchelMilitary
     shoes: N14ClothingBootsLeatherFilled
-    id: N14IDFollowerGuard
-    ears: N14ClothingHeadsetFollowers
+    id: MisfitsIDFollowerGuard
+    ears: MisfitsClothingHeadsetFollowers
     outerClothing: N14ClothingOuterCoatFollowersArmored
-    belt: ClothingBelt10mmfilled
+    belt: N14ClothingBelt10mmfilled
     pocket1: Handcuffs
     pocket2: N14HandheldHealthAnalyzer
   storage:
@@ -142,37 +142,37 @@
     - MisfitsSurvivalKitWastelander
     - N14PoliceBaton
     - N14CombatKnife
-    - MagazineBox10mm
+    - N14MagazineBox10mm
     - Brutepack
 
 - type: job
-  id: FollowerVolunteer
+  id: MisfitsFollowerVolunteer
   name: job-name-follower-volunteer
   description: job-description-follower-volunteer
-  playTimeTracker: FollowerVolunteer
-  startingGear: FollowerVolunteerGear
+  playTimeTracker: MisfitsFollowerVolunteer
+  startingGear: MisfitsFollowerVolunteerGear
   icon: JobIconPassenger
   supervisors: job-supervisors-follower-volunteer
   accessGroups:
-  - FollowersApocalypse
-  - FotA
+  - N14FollowersApocalypse
+  - MisfitsFotA
   special:
   - !type:AddComponentSpecial
     components:
       - type: NpcFactionMember
         factions:
-          - Wastelander
-          - Followers
+          - N14Wastelander
+          - MisfitsFollowers
 
 - type: startingGear
-  id: FollowerVolunteerGear
+  id: MisfitsFollowerVolunteerGear
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitFollowers
     back: ClothingBackpackSatchelMedical
     shoes: N14ClothingBootsLeather
     neck: ClothingNeckStethoscope
-    id: N14IDFollowerVolunteer
-    ears: N14ClothingHeadsetFollowers
+    id: MisfitsIDFollowerVolunteer
+    ears: MisfitsClothingHeadsetFollowers
     belt: ClothingBeltMedicalFilled
     pocket1: N14HandheldHealthAnalyzer
     pocket2: Brutepack

@@ -4,7 +4,7 @@
 - type: entity
   name: rifleman kit
   parent: BaseItem
-  id: KitBase
+  id: N14KitBase
   description: A box containing military supplies.
   abstract: true
   components:
@@ -22,8 +22,8 @@
 
 - type: entity
   name: cadet's rifleman kit
-  parent: KitBase
-  id: KitNCR_CadetRifleman
+  parent: N14KitBase
+  id: N14KitNCR_CadetRifleman
   description: A crate containing all an NCR trooper needs to patrol the wasteland.
   components:
   - type: Sprite
@@ -33,9 +33,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14ClothingOuterNCRVestDesert # Forge-Change
-      - id: ClothingBeltNCRPouches
+      - id: N14ClothingBeltNCRPouches
       - id: N14WeaponSniper556VarmintRifle
-      - id: MagazineBox556 # #Misfits Fix - was abstract BaseMagazineBox556Rifle (Spawn threw, aborting OnUseInHand before QueueDel; kit became infinite)
+      - id: N14MagazineBox556 # #Misfits Fix - was abstract BaseMagazineBox556Rifle (Spawn threw, aborting OnUseInHand before QueueDel; kit became infinite)
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
         amount: 2
@@ -49,8 +49,8 @@
 
 - type: entity
   name: cadet's stormtrooper kit
-  parent: KitBase
-  id: KitNCR_CadetStorm
+  parent: N14KitBase
+  id: N14KitNCR_CadetStorm
   description: A crate containing all an NCR trooper needs to patrol the wasteland.
   components:
   - type: Sprite
@@ -60,9 +60,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14ClothingOuterNCRVestDesert # Forge-Change
-      - id: ClothingBeltNCRPouches
-      - id: N14WeaponSMG45GreaseGun
-      - id: Magazine45SubMachineGun
+      - id: N14ClothingBeltNCRPouches
+      - id: MisfitsWeaponSMG45GreaseGun
+      - id: N14Magazine45SubMachineGun
         amount: 4
       - id: N14BoxCardboardMREBoxCFilled
       - id: SmokeGrenade
@@ -74,8 +74,8 @@
 
 - type: entity
   name: cadet's scout kit
-  parent: KitBase
-  id: KitNCR_CadetScout
+  parent: N14KitBase
+  id: N14KitNCR_CadetScout
   description: A crate containing all an NCR trooper needs to patrol the wasteland.
   components:
   - type: Sprite
@@ -85,9 +85,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14ClothingOuterNCRVestDesert # Forge-Change
-      - id: ClothingBeltNCRBandolier
-      - id: N14WeaponSniperCowboyRepeater
-      - id: N14AmmoBox357
+      - id: N14ClothingBeltNCRBandolier
+      - id: MisfitsWeaponSniperCowboyRepeater
+      - id: MisfitsAmmoBox357
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
         amount: 2
@@ -103,8 +103,8 @@
 
 - type: entity
   name: soldier's rifleman kit
-  parent: KitBase
-  id: KitNCR_Rifleman
+  parent: N14KitBase
+  id: N14KitNCR_Rifleman
   description: A crate containing all an NCR trooper needs to patrol the wasteland.
   components:
   - type: Sprite
@@ -115,9 +115,9 @@
     items:
       - id: N14ClothingOuterNCRVestDesert
       - id: N14ClothingHeadHatNCRHelmetMetalDesert
-      - id: ClothingBeltNCR
+      - id: N14ClothingBeltNCR
       - id: N14WeaponRifle556Service
-      - id: Magazine556Rifle
+      - id: N14Magazine556Rifle
         amount: 3
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
@@ -132,8 +132,8 @@
 
 - type: entity
   name: soldier's stormtrooper kit
-  parent: KitBase
-  id: KitNCR_Storm
+  parent: N14KitBase
+  id: N14KitNCR_Storm
   description: A crate containing all an NCR trooper needs to patrol the wasteland.
   components:
   - type: Sprite
@@ -143,10 +143,10 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14ClothingOuterNCRVestDesert
-      - id: N14ClothingHeadHatNCRHelmetNoCover
-      - id: ClothingBeltNCR
+      - id: MisfitsClothingHeadHatNCRHelmetNoCover
+      - id: N14ClothingBeltNCR
       - id: N14WeaponRifle556Service
-      - id: Magazine556Rifle
+      - id: N14Magazine556Rifle
         amount: 4
       - id: N14BoxCardboardMREBoxCFilled
       - id: SmokeGrenade
@@ -158,8 +158,8 @@
 
 - type: entity
   name: soldier's scout kit
-  parent: KitBase
-  id: KitNCR_Scout
+  parent: N14KitBase
+  id: N14KitNCR_Scout
   description: A crate containing all an NCR trooper needs to patrol the wasteland.
   components:
   - type: Sprite
@@ -169,12 +169,12 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14ClothingOuterNCRPouchedVestDesert # Super - Since the scout kit has no helmet, give them a pouched vest.
-      - id: N14ClothingUniformNCRRecon
+      - id: MisfitsClothingUniformNCRRecon
       - id: N14ClothingHeadHatNCRBeretRecon
       - id: N14ClothingNeckTownGuardMantle
-      - id: ClothingBeltNCR
-      - id: N14WeaponSniperCowboyRepeater
-      - id: N14AmmoBox357
+      - id: N14ClothingBeltNCR
+      - id: MisfitsWeaponSniperCowboyRepeater
+      - id: MisfitsAmmoBox357
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
         amount: 2
@@ -188,8 +188,8 @@
 
 - type: entity
   name: soldier's trench raider kit
-  parent: KitBase
-  id: KitNCR_Point
+  parent: N14KitBase
+  id: N14KitNCR_Point
   description: A crate containing all an NCR trooper needs to patrol the wasteland.
   components:
   - type: Sprite
@@ -198,13 +198,13 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingOuterNCRTrenchRaider
-      - id: N14ClothingHeadHatNCRHelmetNoCover
+      - id: MisfitsClothingOuterNCRTrenchRaider
+      - id: MisfitsClothingHeadHatNCRHelmetNoCover
       - id: N14ClothingMaskSkirmisher
-      - id: ClothingBeltNCRShotgunner
+      - id: MisfitsClothingBeltNCRShotgunner
       - id: N14ClothingNeckTownGuardMantle
       - id: N14WeaponShotgun
-      - id: MagazineBox12gauge
+      - id: N14MagazineBox12gauge
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
         amount: 2
@@ -219,8 +219,8 @@
 
 - type: entity
   name: soldier's charger kit
-  parent: KitBase
-  id: KitNCR_Morale
+  parent: N14KitBase
+  id: N14KitNCR_Morale
   description: A crate containing all an NCR trooper needs to engage the enemy in glorious melee combat!
   components:
   - type: Sprite
@@ -231,7 +231,7 @@
     items:
       - id: N14ClothingOuterNCRPlateDesert # Forge-Change
       - id: N14ClothingMaskPlate
-      - id: ClothingBeltNCR
+      - id: N14ClothingBeltNCR
       - id: N14WastelandFlagSpear
       #- id: N14ClothingHandsGlovesBlackBiker # Super - Get your gloves from your character's loadout menu!
       - id: N14Hatchet
@@ -251,8 +251,8 @@
 
 - type: entity
   name: engineer's construction kit
-  parent: KitBase
-  id: KitNCR_EngiMechanic
+  parent: N14KitBase
+  id: N14KitNCR_EngiMechanic
   description: A crate containing all an NCR engineer needs to build defenses and repair structures.
   components:
   - type: Sprite
@@ -263,7 +263,7 @@
     items:
       - id: N14ClothingBeltUtilityFilled
       - id: N14WeaponRifle556Service
-      - id: Magazine556Rifle
+      - id: N14Magazine556Rifle
         amount: 3
       - id: SheetSteel
       - id: MaterialWoodPlank
@@ -277,8 +277,8 @@
 
 - type: entity
   name: engineer's sapper kit
-  parent: KitBase
-  id: KitNCR_EngiDemo
+  parent: N14KitBase
+  id: N14KitNCR_EngiDemo
   description: A crate containing all an NCR engineer needs to kick in doors.
   components:
   - type: Sprite
@@ -287,15 +287,15 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSMG45GreaseGun
-      - id: Magazine45SubMachineGun
-      - id: ClothingBeltNCRShotgunner
+      - id: MisfitsWeaponSMG45GreaseGun
+      - id: N14Magazine45SubMachineGun
+      - id: MisfitsClothingBeltNCRShotgunner
       - id: N14WeaponShotgunShort
-      - id: MagazineBox12gauge
+      - id: N14MagazineBox12gauge
       - id: N14ShieldMetalHeavy
       - id: C4
         amount: 3
-      - id: N14ripper
+      - id: N14Ripper
       - id: N14BoxCardboardMREBoxCFilled
       - id: N14Stimpak
       - id: N14RadAwayBloodbag
@@ -306,8 +306,8 @@
 
 - type: entity
   name: engineer's breacher kit
-  parent: KitBase
-  id: KitNCR_EngiBreach
+  parent: N14KitBase
+  id: N14KitNCR_EngiBreach
   description: A crate containing all an NCR engineer needs to perform their job.
   components:
   - type: Sprite
@@ -322,7 +322,7 @@
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
         amount: 2
-      - id: ClothingBeltNCRShotgunner
+      - id: MisfitsClothingBeltNCRShotgunner
       - id: N14BoxCardboardMREBoxCFilled
       - id: N14Stimpak
       - id: N14RadAwayBloodbag
@@ -337,8 +337,8 @@
 
 - type: entity
   name: medic's doctor kit
-  parent: KitBase
-  id: KitNCR_MedSurgeon
+  parent: N14KitBase
+  id: N14KitNCR_MedSurgeon
   description: A crate containing all an NCR medic needs to perform their job.
   components:
   - type: Sprite
@@ -371,8 +371,8 @@
 
 - type: entity
   name: medic's field medic kit # #Misfits Change - upstream brute/blood packs and sterile wipes replaced with N14 equivalents
-  parent: KitBase
-  id: KitNCR_MedDoctor
+  parent: N14KitBase
+  id: N14KitNCR_MedDoctor
   description: A crate containing standard field medicine for an NCR medic focused on stabilising the wounded in the field.
   components:
   - type: Sprite
@@ -390,8 +390,8 @@
       - id: N14SmellingSalts # #Misfits Change - N14 field revival item replaces upstream sterile wipes
         amount: 2
       - id: N14HandheldHealthAnalyzer # #Misfits Add - NCR medical doctors should spawn with health analyzer
-      - id: N14WeaponSMG45GreaseGun
-      - id: Magazine45SubMachineGun
+      - id: MisfitsWeaponSMG45GreaseGun
+      - id: N14Magazine45SubMachineGun
         amount: 3
       - id: N14Traumapack # #Misfits Change - N14 brute treatment replaces upstream Brutepack
       - id: N14Ointment10
@@ -408,8 +408,8 @@
 
 - type: entity
   name: medic's combat kit
-  parent: KitBase
-  id: KitNCR_MedCombat
+  parent: N14KitBase
+  id: N14KitNCR_MedCombat
   description: A crate containing all an NCR medic needs to perform their job.
   components:
   - type: Sprite
@@ -422,7 +422,7 @@
       - id: N14ClothingHeadHatNCRHelmetMetalMedic
       - id: N14ClothingOuterNCRPouchedVestDesert
       - id: DefibrillatorCompact # portable defib for frontline revival
-      - id: Magazine556Rifle
+      - id: N14Magazine556Rifle
         amount: 4
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
@@ -442,8 +442,8 @@
 
 - type: entity
   name: specialist's heavy sniper kit
-  parent: KitBase
-  id: KitNCR_WSGunner
+  parent: N14KitBase
+  id: N14KitNCR_WSGunner
   description: A crate containing all an NCR weapon specialist needs to perform their job.
   components:
   - type: Sprite
@@ -452,12 +452,12 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingUniformNCRRecon
-      - id: ClothingBeltNCR
+      - id: MisfitsClothingUniformNCRRecon
+      - id: N14ClothingBeltNCR
       - id: N14ClothingHeadHatNCRBeretRecon # Forge-Change
       - id: N14ClothingNeckCloakNCR # Forge-Change
       - id: N14WeaponSniper50NCRRifle # Bill- the autorifle was too much. Kill tankies with skillful shots
-      - id: MagazineBox50
+      - id: N14MagazineBox50
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
         amount: 2
@@ -471,8 +471,8 @@
 
 - type: entity
   name: specialist's grenadier kit
-  parent: KitBase
-  id: KitNCR_WSGrenadier
+  parent: N14KitBase
+  id: N14KitNCR_WSGrenadier
   description: A crate containing all an NCR weapon specialist needs to perform their job.
   components:
   - type: Sprite
@@ -481,13 +481,13 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltNCR
+      - id: N14ClothingBeltNCR
       - id: N14ClothingHeadHatNCRHelmetMetalDesert # Forge-Change
       - id: N14ClothingNeckCloakNCR # Forge-Change
       # #Misfits Change: removed 4x GrenadeFrag — no grenade launcher in this kit, grenades were orphaned
       # #Misfits Fix - Added grenade rifle + 40mm rounds so the Grenadier kit actually has a primary weapon
       - id: N14WeaponRifleGrenade
-      - id: 40mmGrenadeFrag
+      - id: N1440mmGrenadeFrag
         amount: 5
       - id: SmokeGrenade
       - id: N14WeaponSMG12mmAdvanced
@@ -503,8 +503,8 @@
 
 - type: entity
   name: specialist's sniper kit
-  parent: KitBase
-  id: KitNCR_WSSniper
+  parent: N14KitBase
+  id: N14KitNCR_WSSniper
   description: A crate containing all an NCR weapon specialist needs to perform their job.
   components:
   - type: Sprite
@@ -513,12 +513,12 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingUniformNCRRecon
-      - id: ClothingBeltNCR
+      - id: MisfitsClothingUniformNCRRecon
+      - id: N14ClothingBeltNCR
       - id: N14ClothingHeadHatNCRBeretRecon
       - id: N14ClothingNeckCloakNCR # Forge-Change
-      - id: N14WeaponRifle308SniperRifle
-      - id: MagazineOver308RifleSniper
+      - id: MisfitsWeaponRifle308SniperRifle
+      - id: MisfitsMagazineOver308RifleSniper
       - id: N14WeaponPistol45Colt
       - id: N14MagazinePistol45
         amount: 2
@@ -532,8 +532,8 @@
 
 - type: entity
   name: specialist's infiltrator kit
-  parent: KitBase
-  id: KitNCR_WSStealth
+  parent: N14KitBase
+  id: N14KitNCR_WSStealth
   description: A crate containing all an NCR weapon specialist needs to perform their job.
   components:
   - type: Sprite
@@ -543,7 +543,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14ClothingOuterNCRVestCoatBlack
-      - id: ClothingBeltNCR
+      - id: N14ClothingBeltNCR
       - id: N14ClothingMaskBlackBalaclava
       - id: N14ClothingEyesNCRNVGs
       - id: N14WeaponSMG9mminfiltrator
@@ -561,8 +561,8 @@
 
 - type: entity
   name: sergeant's assault kit
-  parent: KitBase
-  id: KitNCR_SGTRifleman
+  parent: N14KitBase
+  id: N14KitNCR_SGTRifleman
   description: A crate containing all an NCR sergeant needs to patrol the wasteland.
   components:
   - type: Sprite
@@ -572,9 +572,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14ClothingHeadHatNCRHelmetMetalDesert # Forge-Change
-      - id: ClothingBeltNCR
-      - id: N14WeaponRifle5mmCarbine
-      - id: N14MagazineCarbine5mm
+      - id: N14ClothingBeltNCR
+      - id: MisfitsWeaponRifle5mmCarbine
+      - id: MisfitsMagazineCarbine5mm
         amount: 3
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
@@ -589,8 +589,8 @@
 
 - type: entity
   name: sergeant's gunner kit
-  parent: KitBase
-  id: KitNCR_SGTGunner
+  parent: N14KitBase
+  id: N14KitNCR_SGTGunner
   description: A crate containing all an NCR sergeant needs to patrol the wasteland.
   components:
   - type: Sprite
@@ -600,10 +600,10 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14ClothingHeadHatNCRHelmetMetalDesert # Forge-Change
-      - id: ClothingBeltNCR
+      - id: N14ClothingBeltNCR
       # Misfits Tweak: AutoRifle was too powerful at roundstart; downgraded to standard LMG.
       - id: N14WeaponLMG
-      - id: LMGMagazine556Rifle
+      - id: N14LMGMagazine556Rifle
         amount: 3
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
@@ -618,8 +618,8 @@
 
 - type: entity
   name: sergeant's scout kit
-  parent: KitBase
-  id: KitNCR_SGTScout
+  parent: N14KitBase
+  id: N14KitNCR_SGTScout
   description: A crate containing all an NCR sergeant needs to patrol the wasteland.
   components:
   - type: Sprite
@@ -628,11 +628,11 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingUniformNCRRecon
+      - id: MisfitsClothingUniformNCRRecon
       - id: N14ClothingHeadHatNCRBeretRecon
-      - id: ClothingBeltNCR
+      - id: N14ClothingBeltNCR
       - id: N14WeaponRifle308Battle
-      - id: ClipMagazine308Rifle
+      - id: N14ClipMagazine308Rifle
         amount: 6
       - id: N14WeaponPistol9mm
       - id: N14MagazinePistol9mm
@@ -647,8 +647,8 @@
 
 - type: entity
   name: sergeant's pointman kit
-  parent: KitBase
-  id: KitNCR_SGTPoint
+  parent: N14KitBase
+  id: N14KitNCR_SGTPoint
   description: A crate containing all an NCR sergeant needs to patrol the wasteland.
   components:
   - type: Sprite
@@ -658,7 +658,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14ClothingHeadHatNCRHelmetMetalDesert # Forge-Change
-      - id: ClothingBeltNCR
+      - id: N14ClothingBeltNCR
       - id: N14WeaponShotgunAuto
       - id: N14MagazineShotgun12
         amount: 3
@@ -677,8 +677,8 @@
 
 - type: entity
   name: lieutenant's basic kit
-  parent: KitBase
-  id: KitNCR_LTPencil
+  parent: N14KitBase
+  id: N14KitNCR_LTPencil
   description: A crate containing all an NCR lieutenant needs to administrate their troops.
   components:
   - type: Sprite
@@ -688,9 +688,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: MisfitsClothingOuterNCRTrenchCoat
-      - id: ClothingBeltRevolverCaptainfilled
-      - id: N14WeaponSniperCowboyRepeater
-      - id: N14AmmoBox357
+      - id: N14ClothingBeltRevolverCaptainfilled
+      - id: MisfitsWeaponSniperCowboyRepeater
+      - id: MisfitsAmmoBox357
       - id: LuxuryPen
       - id: N14BoxCardboardMREBoxCFilled
       - id: N14Stimpak
@@ -704,8 +704,8 @@
 
 - type: entity
   name: lieutenant's scout kit
-  parent: KitBase
-  id: KitNCR_LTScout
+  parent: N14KitBase
+  id: N14KitNCR_LTScout
   description: A crate containing all an NCR lieutenant needs to administrate their troops.
   components:
   - type: Sprite
@@ -715,9 +715,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: MisfitsClothingOuterNCRTrenchCoat
-      - id: ClothingBeltRevolverfilled
+      - id: N14ClothingBeltRevolverfilled
       - id: N14WeaponRifle308Battle
-      - id: ClipMagazine308Rifle
+      - id: N14ClipMagazine308Rifle
         amount: 6
       - id: N14BoxCardboardMREBoxCFilled
       - id: N14Stimpak
@@ -731,8 +731,8 @@
 
 - type: entity
   name: lieutenant's tactical kit
-  parent: KitBase
-  id: KitNCR_LTTactical
+  parent: N14KitBase
+  id: N14KitNCR_LTTactical
   description: A crate containing all an NCR lieutenant needs to administrate their troops.
   components:
   - type: Sprite
@@ -742,9 +742,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: MisfitsNCROfficerArmor
-      - id: ClothingBeltRevolverfilled
-      - id: N14WeaponRifle5mmCarbine
-      - id: N14MagazineCarbine5mm
+      - id: N14ClothingBeltRevolverfilled
+      - id: MisfitsWeaponRifle5mmCarbine
+      - id: MisfitsMagazineCarbine5mm
         amount: 3
       - id: N14BoxCardboardMREBoxCFilled
       - id: N14Stimpak
@@ -757,42 +757,9 @@
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  name: lieutenant's commissar kit
-  parent: KitBase
-  id: KitNCR_LTCommissar
-  description: A crate containing all an NCR Commissar needs to execute their tro- duties.
-  components:
-  - type: Sprite
-    state: pointman
-  - type: Item
-    size: Huge
-  - type: SpawnItemsOnUse
-    items:
-      - id: MisfitsClothingOuterNCRCommissarPlate
-      - id: ClothingBeltNCR
-      - id: NCRCommissarSabre
-      - id: MisfitsClothingNeckNCRCommissarJacket
-      - id: N14WeaponLaserdotDesertEagle44
-      - id: N14MagazinePistol44
-        amount: 4
-      - id: ClothingMaskCommissar
-      - id: N14ClothingHeadHatNCRCommissarHat
-      - id: N14BoxCardboardMREBoxCFilled
-      - id: N14Stimpak
-      - id: N14SuperStimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
-        amount: 2
-      - id: N14Flare
-    sound:
-      path: /Audio/Effects/unwrap.ogg
-
-#MARK: NCR Ranger Kits
-
-- type: entity
   name: ranger service kit
-  parent: KitBase
-  id: KitServiceRanger
+  parent: N14KitBase
+  id: N14KitServiceRanger
   description: A crate containing advanced weaponry for members of the Rangers.
   components:
   - type: Sprite
@@ -801,11 +768,11 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltNCR
+      - id: N14ClothingBeltNCR
       - id: N14WeaponRifle556Service # forge-change
-      - id: Magazine556Rifle
+      - id: N14Magazine556Rifle
         amount: 4
-      - id: MagazineBox556
+      - id: N14MagazineBox556
       - id: N14Stimpak
       - id: N14BoxCardboardMREBoxKFilled
       - id: N14CombatKnife
@@ -814,8 +781,8 @@
 
 - type: entity
   name: ranger rifleman kit
-  parent: KitBase
-  id: KitRiflemanRanger
+  parent: N14KitBase
+  id: N14KitRiflemanRanger
   description: A crate containing advanced weaponry for members of the Rangers.
   components:
   - type: Sprite
@@ -824,11 +791,11 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltNCR
-      - id: N14WeaponRifle5mmCarbine
-      - id: N14MagazineCarbine5mm
+      - id: N14ClothingBeltNCR
+      - id: MisfitsWeaponRifle5mmCarbine
+      - id: MisfitsMagazineCarbine5mm
         amount: 4
-      - id: MagazineBox556
+      - id: N14MagazineBox556
       - id: N14Stimpak
       - id: N14BoxCardboardMREBoxKFilled
       - id: N14CombatKnife
@@ -837,8 +804,8 @@
 
 - type: entity
   name: ranger marksman kit
-  parent: KitBase
-  id: KitMarksmanRanger
+  parent: N14KitBase
+  id: N14KitMarksmanRanger
   description: A crate containing advanced weaponry for members of the Rangers.
   components:
   - type: Sprite
@@ -847,11 +814,11 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltNCR
-      - id: N14WeaponRifle556Marksman
-      - id: Magazine556Rifle
+      - id: N14ClothingBeltNCR
+      - id: MisfitsWeaponRifle556Marksman
+      - id: N14Magazine556Rifle
         amount: 4
-      - id: MagazineBox556
+      - id: N14MagazineBox556
       - id: N14Stimpak
       - id: N14BoxCardboardMREBoxKFilled
       - id: N14CombatKnife
@@ -860,8 +827,8 @@
 
 - type: entity
   name: ranger CQB specialist kit
-  parent: KitBase
-  id: KitCQBRanger
+  parent: N14KitBase
+  id: N14KitCQBRanger
   description: A crate containing advanced weaponry for members of the Rangers.
   components:
   - type: Sprite
@@ -870,11 +837,11 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltNCRPouches
+      - id: N14ClothingBeltNCRPouches
       - id: N14WeaponShotgunAuto # Forge-Change
       - id:  N14MagazineShotgun12 # Forge-Change
         amount: 2 # Forge-Change
-      - id: MagazineBox12gauge # Forge-Change
+      - id: N14MagazineBox12gauge # Forge-Change
       - id: N14CombatKnife
       - id: N14Stimpak
       - id: N14Stimpak
@@ -885,8 +852,8 @@
 
 - type: entity
   name: ranger trailman kit
-  parent: KitBase
-  id: KitTrailmanRanger
+  parent: N14KitBase
+  id: N14KitTrailmanRanger
   description: A crate containing advanced weaponry for members of the Rangers.
   components:
   - type: Sprite
@@ -895,9 +862,9 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltNCRPouches
-      - id: N14WeaponSniperCowboyRepeater
-      - id: N14AmmoBox357
+      - id: N14ClothingBeltNCRPouches
+      - id: MisfitsWeaponSniperCowboyRepeater
+      - id: MisfitsAmmoBox357
         amount: 3
       - id: N14Stimpak
       - id: N14Stimpak
@@ -909,35 +876,9 @@
 # forge-add
 
 - type: entity
-  name: ranger sniper kit
-  parent: KitBase
-  id: KitSniperRanger
-  description: A crate containing advanced weaponry for members of the Rangers.
-  components:
-  - type: Sprite
-    state: rifleman
-  - type: Item
-    size: Huge
-  - type: SpawnItemsOnUse
-    items:
-      - id: ClothingBeltNCRPouches
-      - id: N14WeaponRifle308SniperRifle
-      - id: Magazine308RifleSniper
-        amount: 3
-      - id: MagazineBox308
-      - id: N14Stimpak
-      - id: N14Stimpak
-      - id: N14BoxCardboardMREBoxKFilled
-      - id: N14CombatKnife
-    sound:
-      path: /Audio/Effects/unwrap.ogg
-
-#MARK: Veteran Kits
-
-- type: entity
   name: modified ranger service kit
-  parent: KitBase
-  id: KitServiceRangerVeteran
+  parent: N14KitBase
+  id: N14KitServiceRangerVeteran
   description: A cache containing the belongings of a seasoned Ranger.
   components:
   - type: Sprite
@@ -946,11 +887,11 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltNCR
+      - id: N14ClothingBeltNCR
       - id: N14WeaponRifle556Scout
-      - id: LongMagazine556Rifle
+      - id: N14LongMagazine556Rifle
         amount: 4
-      - id: MagazineBox556
+      - id: N14MagazineBox556
       - id: N14Stimpak
       - id: N14Stimpak
       - id: N14BoxCardboardMREBoxKFilled
@@ -960,8 +901,8 @@
 
 - type: entity
   name: veteran ranger precision rifle kit
-  parent: KitBase
-  id: KitRiflemanRangerVeteran
+  parent: N14KitBase
+  id: N14KitRiflemanRangerVeteran
   description: A cache containing the belongings of a Veteran Ranger.
   components:
   - type: Sprite
@@ -970,11 +911,11 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltNCRPouches
+      - id: N14ClothingBeltNCRPouches
       - id: N14WeaponSniper45-70BrushGun
-      - id: SpeedLoader45-70Tube
+      - id: N14SpeedLoader45-70Tube
         amount: 4
-      - id: MagazineBox45-70
+      - id: N14MagazineBox45-70
       - id: N14Stimpak
       - id: N14Stimpak
       - id: N14BoxCardboardMREBoxKFilled
@@ -984,8 +925,8 @@
 
 - type: entity
   name: veteran ranger heavy sniper kit
-  parent: KitBase
-  id: KitHeavySniperRangerVeteran
+  parent: N14KitBase
+  id: N14KitHeavySniperRangerVeteran
   description: A cache containing the belongings of a Veteran Ranger. # #Misfits Change - Veteran Ranger carries the semi-auto Anti-Materiel rifle with full magazines
   components:
   - type: Sprite
@@ -994,11 +935,11 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltNCRPouches
+      - id: N14ClothingBeltNCRPouches
       - id: N14WeaponSniper50AntiMateriel  # #Misfits Change - Veteran Ranger gets the semi-auto magazine-fed AMR
       - id: N14Magazine50AMR
         amount: 4
-      - id: MagazineBox50
+      - id: N14MagazineBox50
       - id: N14Stimpak
       - id: N14Stimpak
       - id: N14BoxCardboardMREBoxKFilled
@@ -1008,8 +949,8 @@
 
 - type: entity
   name: veteran ranger assault kit
-  parent: KitBase
-  id: KitAssaultRangerVeteran
+  parent: N14KitBase
+  id: N14KitAssaultRangerVeteran
   description: A cache containing the belongings of a Veteran Ranger.
   components:
   - type: Sprite
@@ -1018,11 +959,11 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltNCR
-      - id: N14WeaponRifle5mmCarbine
-      - id: N14MagazineCarbine5mm
+      - id: N14ClothingBeltNCR
+      - id: MisfitsWeaponRifle5mmCarbine
+      - id: MisfitsMagazineCarbine5mm
         amount: 4
-      - id: MagazineBox556
+      - id: N14MagazineBox556
       - id: N14Stimpak
       - id: N14Stimpak
       - id: N14BoxCardboardMREBoxKFilled
@@ -1032,8 +973,8 @@
 
 - type: entity
   name: veteran ranger marksman kit
-  parent: KitBase
-  id: KitMarksmanRangerVeteran
+  parent: N14KitBase
+  id: N14KitMarksmanRangerVeteran
   description: A cache containing the belongings of a Veteran Ranger.
   components:
   - type: Sprite
@@ -1042,11 +983,11 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingBeltNCR
-      - id: N14WeaponRifle556Marksman
-      - id: Magazine556Rifle
+      - id: N14ClothingBeltNCR
+      - id: MisfitsWeaponRifle556Marksman
+      - id: N14Magazine556Rifle
         amount: 4
-      - id: MagazineBox556
+      - id: N14MagazineBox556
       - id: N14Stimpak
       - id: N14Stimpak
       - id: N14BoxCardboardMREBoxKFilled
@@ -1060,8 +1001,8 @@
 
 - type: entity
   name: BoS Initiate Laser Kit
-  parent: KitBase
-  id: KitMBoS_IniLas
+  parent: N14KitBase
+  id: N14KitMBoS_IniLas
   description: A crate containing everything a member of the Brotherhood might need.
   components:
   - type: Sprite
@@ -1079,8 +1020,8 @@
 
 - type: entity
   name: BoS Initiate Ballistic Kit
-  parent: KitBase
-  id: KitMBoS_IniBal
+  parent: N14KitBase
+  id: N14KitMBoS_IniBal
   description: A crate containing everything a member of the Brotherhood might need.
   components:
   - type: Sprite
@@ -1089,7 +1030,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle10mmSkirmisher
+      - id: MisfitsWeaponRifle10mmSkirmisher
       - id: N14MagazineSMG10mm
         amount: 3
       - id: N14WeaponLaserPistol
@@ -1102,8 +1043,8 @@
 
 - type: entity
   name: BoS Knight Laser Kit
-  parent: KitBase
-  id: KitMBoS_KniLas
+  parent: N14KitBase
+  id: N14KitMBoS_KniLas
   description: A crate containing everything a member of the Brotherhood might need.
   components:
   - type: Sprite
@@ -1114,7 +1055,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14WeaponLaserRifleCrude
-      - id: N14MicrofusionCellRed
+      - id: MisfitsMicrofusionCellRed
         amount: 1
       - id: N14WeaponPistol12mm
       - id: N14MagazinePistol12mm
@@ -1122,84 +1063,11 @@
       - id: N14CleanGauze10
       - id: N14Stimpak
       - id: N14BoxCardboardMREBoxKFilled
-
-- type: entity
-  name: BoS Senior Knight Ballistic Kit
-  parent: KitBase
-  id: KitMBoS_SKniBal
-  description: A crate containing everything a member of the Brotherhood might need.
-  components:
-  - type: Sprite
-    state: rifleman
-  - type: Item
-    size: Huge
-  - type: SpawnItemsOnUse
-    items:
-      - id: N14WeaponRifle5mmCarbine
-      - id: N14MagazineCarbine5mm
-        amount: 3
-      - id: N14WeaponPistol12mm
-      - id: N14MagazinePistol12mm
-        amount: 2
-      - id: N14CleanGauze10
-      - id: N14Stimpak
-      - id: N14BoxCardboardMREBoxKFilled
-      - id: N14ClothingOuterCombatArmorSeniorBOS
-      - id: MisfitsGrenadeFragDefensive # #Misfits Add - faction council Senior Knight ordnance
-      - id: EmpGrenade
-
-- type: entity
-  name: BoS Senior Knight Laser Kit
-  parent: KitBase
-  id: KitMBoS_SKniLas
-  description: A crate containing everything a member of the Brotherhood might need.
-  components:
-  - type: Sprite
-    state: rifleman
-  - type: Item
-    size: Huge
-  - type: SpawnItemsOnUse
-    items:
-      - id: N14WeaponLaserRifle
-      - id: N14MicrofusionCell
-        amount: 1
-      - id: N14WeaponPistol12mm
-      - id: N14MagazinePistol12mm
-        amount: 2
-      - id: N14CleanGauze10
-      - id: N14Stimpak
-      - id: N14BoxCardboardMREBoxKFilled
-      - id: N14ClothingOuterCombatArmorSeniorBOS
-      - id: MisfitsGrenadeFragDefensive # #Misfits Add - faction council Senior Knight ordnance
-      - id: EmpGrenade
-
-- type: entity
-  name: BoS Recon Knight Kit
-  parent: KitBase
-  id: KitMBoS_Recon
-  description: A crate containing everything a recon knight may need.
-  components:
-  - type: Sprite
-    state: rifleman
-  - type: Item
-    size: Huge
-  - type: SpawnItemsOnUse
-    items:
-      - id: N14WeaponRevolver44Magnum
-      - id: N14SpeedLoader44Magnum
-        amount: 2
-      - id: N14AmmoBox44Magnum
-      - id: N14CleanGauze10
-      - id: N14Stimpak
-      - id: N14BoxCardboardMREBoxKFilled
-      - id: N14ClothingOuterMidwestReconArmor
-      - id: N14ClothingHeadHatBrotherhoodMidwestHelmetRecon
-      - id: SmokeGrenade # #Misfits Add - faction council Recon Knight ordnance
 
 - type: entity
   name: BoS Knight Ballistic Kit
-  parent: KitBase
-  id: KitMBoS_KniBal
+  parent: N14KitBase
+  id: N14KitMBoS_KniBal
   description: A crate containing everything a member of the Brotherhood might need.
   components:
   - type: Sprite
@@ -1209,7 +1077,7 @@
   #Misfits Change /Tweak/: Added stimpak to knight ballistic kit.
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle10mmSkirmisher
+      - id: MisfitsWeaponRifle10mmSkirmisher
       - id: N14MagazineSMG10mm
         amount: 3
       - id: N14WeaponLaserPistol
@@ -1223,8 +1091,8 @@
 
 - type: entity
   name: BoS Scribe Medical Kit
-  parent: KitBase
-  id: KitMBoS_ScrMed
+  parent: N14KitBase
+  id: N14KitMBoS_ScrMed
   description: A crate containing everything a member of the Brotherhood of Steel Scribes might need for keeping the fighting forces alive.
   components:
   - type: Sprite
@@ -1250,8 +1118,8 @@
 
 - type: entity
   name: BoS Scribe Field Kit
-  parent: KitBase
-  id: KitMBoS_ScrFld
+  parent: N14KitBase
+  id: N14KitMBoS_ScrFld
   description: A crate containing everything a member of the Brotherhood of Steel Scribes might need for supporting their unit in the field.
   components:
   - type: Sprite
@@ -1277,8 +1145,8 @@
 
 - type: entity
   name: BoS Scribe Engineer Kit
-  parent: KitBase
-  id: KitMBoS_ScrEng
+  parent: N14KitBase
+  id: N14KitMBoS_ScrEng
   description: A crate containing everything a member of the Brotherhood of Steel Scribes might need for their general engineering needs.
   components:
   - type: Sprite
@@ -1305,8 +1173,8 @@
 
 - type: entity
   name: BoS Paladin Close Range Kit
-  parent: KitBase
-  id: KitMBoS_PalLas
+  parent: N14KitBase
+  id: N14KitMBoS_PalLas
   description: A crate containing everything a member of the Brotherhood might need.
   components:
   - type: Sprite
@@ -1327,29 +1195,9 @@
       - id: N14BoxCardboardMREBoxKFilled
 
 - type: entity
-  name: BoS Paladin Enclave Slayer Kit
-  parent: KitBase
-  id: KitMBoS_PalSlay
-  description: A crate containing everything a member of the Brotherhood might need.
-  components:
-  - type: Sprite
-    state: rifleman
-  - type: Item
-    size: Huge
-  - type: SpawnItemsOnUse
-    items:
-      - id: N14WeaponLaserPistol
-      - id: N14PowerCellSmall
-        amount: 4
-      - id: N14CleanGauze10
-      - id: N14Stimpak
-        amount: 2
-      - id: N14BoxCardboardMREBoxKFilled
-
-- type: entity
   name: BoS Paladin Ballistic Kit
-  parent: KitBase
-  id: KitMBoS_PalBal
+  parent: N14KitBase
+  id: N14KitMBoS_PalBal
   description: A crate containing everything a member of the Brotherhood might need.
   components:
   - type: Sprite
@@ -1358,8 +1206,8 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle5mmCarbine
-      - id: N14MagazineCarbine5mm
+      - id: MisfitsWeaponRifle5mmCarbine
+      - id: MisfitsMagazineCarbine5mm
         amount: 3
       - id: N14WeaponLaserPistol
       - id: N14PowerCellSmall
@@ -1372,8 +1220,8 @@
 
 - type: entity
   name: BoS Paladin Advanced Laser Kit
-  parent: KitBase
-  id: KitMBoS_PalSni
+  parent: N14KitBase
+  id: N14KitMBoS_PalSni
   description: A crate containing everything a member of the Brotherhood might need.
   components:
   - type: Sprite
@@ -1383,7 +1231,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14WeaponLaserRifle
-      - id: N14MicrofusionCell
+      - id: MisfitsMicrofusionCell
         amount: 1
       - id: N14WeaponPistol12mm
       - id: N14MagazinePistol12mm
@@ -1394,8 +1242,8 @@
 
 - type: entity
   name: BoS Paladin Automatic Laser Kit
-  parent: KitBase
-  id: KitMBoS_PalPla
+  parent: N14KitBase
+  id: N14KitMBoS_PalPla
   description: A crate containing everything a member of the Brotherhood might need.
   components:
   - type: Sprite
@@ -1405,7 +1253,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14WeaponLaserRifleAuto # misfits change by bill; makes it easier to balance paladin kits, AER14 too much roundstart.
-      - id: N14MicrofusionCell
+      - id: MisfitsMicrofusionCell
         amount: 1
       - id: N14WeaponPistol12mm
       - id: N14MagazinePistol12mm
@@ -1670,8 +1518,8 @@
 
 - type: entity
   name: Tribal Stalker
-  parent: KitBase
-  id: Kittribalstalker
+  parent: N14KitBase
+  id: N14Kittribalstalker
   description: A crate containing everything a hunter will need who follows the old ways
   components:
   - type: Sprite
@@ -1690,8 +1538,8 @@
 
 - type: entity
   name: Tribal Champion
-  parent: KitBase
-  id: Kittribalchampion
+  parent: N14KitBase
+  id: N14Kittribalchampion
   description: A crate containing everything a champion would carry into war
   components:
   - type: Sprite
@@ -1701,15 +1549,15 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14TribalBigClub
-      - id: ClothingBeltQuiverSpear
+      - id: N14ClothingBeltQuiverSpear
       - id: N14ClothingNeckCloakYaoguai
 
 #tribal gunslinger
 
 - type: entity
   name: Tribal Fire Hand
-  parent: KitBase
-  id: Kittribalfirehand
+  parent: N14KitBase
+  id: N14Kittribalfirehand
   description: A crate containing everything a tribal gunslinger will want
   components:
   - type: Sprite
@@ -1720,15 +1568,15 @@
     items:
       - id: N14WeaponRevolver44TribalUpgraded
         amount: 2
-      - id: MagazineBox44
-      - id: ClothingBeltRevolver
+      - id: N14MagazineBox44
+      - id: N14ClothingBeltRevolver
 
 #hunt stick
 
 - type: entity
   name: Tribal Hunter
-  parent: KitBase
-  id: Kittribalhunter
+  parent: N14KitBase
+  id: N14Kittribalhunter
   description: A crate containing everything a hunter will need who knows the secrets of powder
   components:
   - type: Sprite
@@ -1739,14 +1587,14 @@
     items:
       - id: N14WeaponSniper308Tribal
       - id: N14TribalMachete
-      - id: MagazineBox308
+      - id: N14MagazineBox308
 
 #tribal rifle
 
 - type: entity
   name: Tribal Bone-Breaker
-  parent: KitBase
-  id: Kittribalbonebreaker
+  parent: N14KitBase
+  id: N14Kittribalbonebreaker
   description: A crate containing everything a warrior will need who knows the secrets of powder
   components:
   - type: Sprite
@@ -1757,14 +1605,14 @@
     items:
       - id: N14WeaponSniper556Tribal
       - id: N14TribalMachete
-      - id: MagazineBox556
+      - id: N14MagazineBox556
 
 #boomstick
 
 - type: entity
   name: Tribal Pain Bringer
-  parent: KitBase
-  id: Kittribalpainbringer
+  parent: N14KitBase
+  id: N14Kittribalpainbringer
   description: A crate containing everything a warrior will need who knows the secrets of powder but still wants to get close
   components:
   - type: Sprite
@@ -1775,14 +1623,14 @@
     items:
       - id: N14WeaponShotgunBoomstick
       - id: N14ClothingMaskHockey
-      - id: MagazineBox12gauge
+      - id: N14MagazineBox12gauge
 
 # All of the Town Guard kits
 
 - type: entity
   name: the Guard's ceremonial kit
-  parent: KitBase
-  id: KitTownGuard_Cere
+  parent: N14KitBase
+  id: N14KitTownGuard_Cere
   description: A crate containing everything a Guard of The Town requires to perform their duties for the public.
   components:
   - type: Sprite
@@ -1794,10 +1642,10 @@
       - id: N14ClothingHeadHatTownGuard
       - id: N14ClothingOuterTownGuardCoat
       - id: N14WeaponSniper45-70BrushGun
-      - id: MagazineBox45-70
+      - id: N14MagazineBox45-70
         amount: 3
-      - id: N14WeaponRevolver44Magnum
-      - id: SpeedLoader44
+      - id: MisfitsWeaponRevolver44Magnum
+      - id: N14SpeedLoader44
         amount: 2
       - id: N14CleanGauze10
       - id: N14JunkCeramicFlask
@@ -1806,8 +1654,8 @@
 
 - type: entity
   name: the Guard's patrol kit
-  parent: KitBase
-  id: KitTownGuard_Patr
+  parent: N14KitBase
+  id: N14KitTownGuard_Patr
   description: A crate containing everything a Guard of The Town requires to perform their duties for the public.
   components:
   - type: Sprite
@@ -1832,8 +1680,8 @@
 
 - type: entity
   name: the Guard's lawbringer kit
-  parent: KitBase
-  id: KitTownGuard_Lawb
+  parent: N14KitBase
+  id: N14KitTownGuard_Lawb
   description: A crate containing everything a Guard of The Town requires to perform their duties for the public.
   components:
   - type: Sprite
@@ -1845,7 +1693,7 @@
       - id: N14ClothingHeadTownGuardBrodie
       - id: N14ClothingOuterTownGuardLight
       - id: N14WeaponHMGcanadian
-      - id: Magazine762AmmoBelt
+      - id: N14Magazine762AmmoBelt
       - id: N14CleanGauze10
       - id: N14JunkCeramicFlask
       - id: N14FoodTinC1
@@ -1853,8 +1701,8 @@
 
 - type: entity
   name: the Guard's breacher kit
-  parent: KitBase
-  id: KitTownGuard_Brea
+  parent: N14KitBase
+  id: N14KitTownGuard_Brea
   description: A crate containing everything a Guard of The Town requires to perform their duties for the public.
   components:
   - type: Sprite
@@ -1865,8 +1713,8 @@
     items:
       - id: N14ClothingHeadTownGuardBrodieCover
       - id: N14ClothingOuterTownGuardRiot
-      - id: N14WeaponShotgunBlowback
-      - id: MagazineBox12gauge
+      - id: MisfitsWeaponShotgunBlowback
+      - id: N14MagazineBox12gauge
       - id: N14WeaponPistolWebley
       - id: N14MagazinePistol9mm
         amount: 2
@@ -1877,8 +1725,8 @@
 
 - type: entity
   name: the Guard's riot kit
-  parent: KitBase
-  id: KitTownGuard_Riot
+  parent: N14KitBase
+  id: N14KitTownGuard_Riot
   description: A crate containing everything a Guard of The Town requires to perform their duties for the public.
   components:
   - type: Sprite
@@ -1889,11 +1737,11 @@
     items:
       - id: N14ClothingHeadTownGuardBrodieVisor
       - id: N14ClothingOuterTownGuardRiot
-      - id: N14WeaponRifle308Fal
-      - id: Magazine762AmmoShort
+      - id: MisfitsWeaponRifle308Fal
+      - id: N14Magazine762AmmoShort
         amount: 3
       - id: N14WeaponRevolver45-70Hunter
-      - id: SpeedLoader45-70
+      - id: N14SpeedLoader45-70
         amount: 2
       - id: N14ClothingNeckTownGuardCloak
       - id: N14CleanGauze10

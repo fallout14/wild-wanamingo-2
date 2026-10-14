@@ -1,22 +1,22 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Stacks/material_extractor.yml
 
 - type: stack
-  id: N14ZincOre
+  id: MisfitsZincOre
   name: misfits-kit-zinc-ore
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: lead }
-  spawn: N14ZincOre1
+  spawn: MisfitsZincOre1
   maxCount: 30
 
 - type: stack
-  id: N14BauxiteOre
+  id: MisfitsBauxiteOre
   name: misfits-kit-bauxite-ore
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: copper }
-  spawn: N14BauxiteOre1
+  spawn: MisfitsBauxiteOre1
   maxCount: 30
 
 - type: stack
   id: Zinc
   name: misfits-kit-zinc
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: ingot_aluminum }
-  spawn: N14IngotZinc1
+  spawn: MisfitsIngotZinc1
   maxCount: 30

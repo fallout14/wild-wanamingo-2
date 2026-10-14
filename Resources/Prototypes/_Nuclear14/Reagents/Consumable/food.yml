@@ -11,7 +11,7 @@
   parent: Uranium
 
 - type: reagent
-  id: ScorpionTail
+  id: N14ScorpionTail
   group: Wasteland
   name: reagent-name-scorpiontail
   desc: reagent-desc-scorpiontail
@@ -73,22 +73,6 @@
             Poison: 1
 
 - type: reagent
-  id: N14BloatflyMilk
-  group: Wasteland
-  name: reagent-name-bloatflymilk
-  desc: reagent-desc-bloatflymilk
-  physicalDesc: reagent-physical-desc-thick-and-grainy
-  color: "#CBFF00"
-  recognizable: true
-  flavor: pilk
-  metabolisms:
-    Digestion:
-      effects:
-      - !type:Satiate
-        satiationType: Thirst
-        factor: 4
-
-- type: reagent
   id: N14CazadorAcid
   group: Wasteland
   name: reagent-name-cazadoracid
@@ -108,7 +92,7 @@
 
 - type: reagent
   parent: BaseDrink
-  id: AgaveJam
+  id: N14AgaveJam
   name: reagent-name-agavejam
   desc: reagent-desc-agavejam
   physicalDesc: reagent-physical-desc-sugary
@@ -117,7 +101,7 @@
 
 - type: reagent
   parent: BaseDrink
-  id: BlackberryJam
+  id: N14BlackberryJam
   name: reagent-name-blackberryjam
   desc: reagent-desc-blackberryjam
   physicalDesc: reagent-physical-desc-sugary
@@ -126,7 +110,7 @@
 
 - type: reagent
   parent: BaseDrink
-  id: CactusJam
+  id: N14CactusJam
   name: reagent-name-cactusjam
   desc: reagent-desc-cactusjam
   physicalDesc: reagent-physical-desc-sugary
@@ -135,7 +119,7 @@
 
 - type: reagent
   parent: BaseDrink
-  id: BrocJam
+  id: N14BrocJam
   name: reagent-name-brocjam
   desc: reagent-desc-brocjam
   physicalDesc: reagent-physical-desc-sugary
@@ -144,7 +128,7 @@
 
 - type: reagent
   parent: BaseDrink
-  id: MultifruitJam
+  id: N14MultifruitJam
   name: reagent-name-multifruitjam
   desc: reagent-desc-multifruitjam
   physicalDesc: reagent-physical-desc-sugary
@@ -153,7 +137,7 @@
 
 - type: reagent
   parent: BaseDrink
-  id: PickledCabbage
+  id: N14PickledCabbage
   name: reagent-name-pickledcabbage
   desc: reagent-desc-pickledcabbage
   physicalDesc: reagent-physical-desc-sugary
@@ -162,7 +146,7 @@
 
 - type: reagent
   parent: BaseDrink
-  id: PickledCarrots
+  id: N14PickledCarrots
   name: reagent-name-pickledcarrots
   desc: reagent-desc-pickledcarrots
   physicalDesc: reagent-physical-desc-sugary
@@ -171,7 +155,7 @@
 
 - type: reagent
   parent: BaseDrink
-  id: PickledCorn
+  id: N14PickledCorn
   name: reagent-name-pickledcorn
   desc: reagent-desc-pickledcorn
   physicalDesc: reagent-physical-desc-sugary
@@ -180,7 +164,7 @@
 
 - type: reagent
   parent: BaseDrink
-  id: PickledJalapenos
+  id: N14PickledJalapenos
   name: reagent-name-pickledjalapenos
   desc: reagent-desc-pickledjalapenos
   physicalDesc: reagent-physical-desc-sugary
@@ -189,7 +173,7 @@
 
 - type: reagent
   parent: BaseDrink
-  id: PickledOnions
+  id: N14PickledOnions
   name: reagent-name-pickledonions
   desc: reagent-desc-pickledonions
   physicalDesc: reagent-physical-desc-sugary
@@ -198,7 +182,7 @@
 
 - type: reagent
   parent: BaseDrink
-  id: PricklyPearJam
+  id: N14PricklyPearJam
   name: reagent-name-pricklypearjam
   desc: reagent-desc-pricklypearjam
   physicalDesc: reagent-physical-desc-sugary
@@ -207,7 +191,7 @@
 
 - type: reagent
   parent: BaseDrink
-  id: StarlightJam
+  id: N14StarlightJam
   name: reagent-name-starlightjam
   desc: reagent-desc-starlightjam
   physicalDesc: reagent-physical-desc-sugary
@@ -216,7 +200,7 @@
 
 - type: reagent
   parent: BaseDrink
-  id: TarberryJam
+  id: N14TarberryJam
   name: reagent-name-tarberryjam
   desc: reagent-desc-tarberryjam
   physicalDesc: reagent-physical-desc-sugary

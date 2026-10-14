@@ -3,11 +3,11 @@
 # restrictions aren't species fields in Wizden (they come back with jobs/whitelisting); size is set on the mob sprite.
 
 - type: species
-  id: SuperMutant
+  id: MisfitsSuperMutant
   name: species-name-supermutant
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: N14MobSuperMutant
+  prototype: MisfitsMobSuperMutant
   dollPrototype: AppearanceSuperMutant
   skinColoration: Hues
   defaultSkinTone: "#6b8e23"
@@ -23,11 +23,11 @@
 
 # Super mutants exposed to Stealth Boys for years: slate blue-purple skin.
 - type: species
-  id: Nightkin
+  id: MisfitsNightkin
   name: species-name-nightkin
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: N14MobNightkinPlayer
+  prototype: MisfitsMobNightkinPlayer
   dollPrototype: AppearanceNightkin
   skinColoration: Hues
   defaultSkinTone: "#4A5878"

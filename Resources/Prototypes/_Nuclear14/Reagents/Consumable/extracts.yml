@@ -2,33 +2,8 @@
 # Resources/Prototypes/_Nuclear14/Reagents/Consumable/extracts.yml
 
 - type: reagent
-  id: M14BaseProduceExtract
-  parent: BaseDrink
-  abstract: true
-  group: Extracts
-  metabolisms:
-    Digestion:
-      effects:
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: .2
-      - !type:AdjustReagent
-        reagent: Water
-        amount: .2
-    Bloodstream:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Radiation: .1 # TODO: need more in-depth and nuanced way to handle radiation
-
-
-# Alphabetical
-# Extracts
-
-- type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractAgaveNectar
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractAgaveNectar
   name: reagent-name-extract-agave-nectar
   group: Extracts
   desc: reagent-desc-extract-agave-nectar
@@ -59,8 +34,8 @@
             Radiation: .1
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractBananaYucca
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractBananaYucca
   name: reagent-name-extract-banana-yucca
   group: Extracts
   desc: reagent-desc-extract-banana-yucca
@@ -69,8 +44,8 @@
   color: "#c2d64d"
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractBlackberries
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractBlackberries
   name: reagent-name-extract-blackberries
   group: Extracts
   desc: reagent-desc-extract-blackberries
@@ -97,8 +72,8 @@
             Radiation: .1
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractBroc
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractBroc
   name: reagent-name-extract-broc
   group: Extracts
   desc: reagent-desc-extract-broc
@@ -128,8 +103,8 @@
             Radiation: .1
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractBuffaloGourd
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractBuffaloGourd
   name: reagent-name-extract-buffalo-gourd
   group: Extracts
   desc: reagent-desc-extract-buffalo-gourd
@@ -156,8 +131,8 @@
             Radiation: .2
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractCabbage
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractCabbage
   name: reagent-name-extract-cabbage
   group: Extracts
   desc: reagent-desc-extract-cabbage
@@ -183,8 +158,8 @@
         amount: 0.5 # I think spinnach is good for ur iron not cabbage
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractCactusWater #barrel cactus
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractCactusWater #barrel cactus
   name: reagent-name-extract-cactus-water
   group: Extracts
   desc: reagent-desc-extract-cactus-water
@@ -207,9 +182,9 @@
             Radiation: .1
 
 - type: reagent
-  id: ExtractCarrot
+  id: N14ExtractCarrot
   name: reagent-name-extract-carrot
-  parent: M14BaseProduceExtract
+  parent: MisfitsM14BaseProduceExtract
   desc: reagent-desc-extract-carrot
   physicalDesc: reagent-physical-desc-crisp
   flavor: carrot
@@ -236,7 +211,7 @@
 # Cave fungus = no reagent
 
 - type: reagent
-  id: ExtractCoyoteTobacco
+  id: N14ExtractCoyoteTobacco
   name: reagent-name-extract-coyote-tobacco
   group: Extracts
   desc: reagent-desc-extract-coyote-tobacco
@@ -260,19 +235,7 @@
             Radiation: .1
 
 - type: reagent
-  id: ExtractCannabis
-  name: reagent-name-extract-cannabis
-  group: Extracts
-  desc: reagent-desc-extract-cannabis
-  flavor: bitter
-  color: "#4F6B3A"
-  physicalDesc: reagent-physical-desc-strong-smelling
-  plantMetabolism:
-  - !type:PlantAdjustHealth
-    amount: 0
-
-- type: reagent
-  id: ExtractDatura #HeartbreakerToxin
+  id: N14ExtractDatura #HeartbreakerToxin
   name: reagent-name-extract-datura
   group: Wasteland
   desc: reagent-desc-extract-datura
@@ -292,8 +255,8 @@
     amount: 10
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractHoneyMesquitePod
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractHoneyMesquitePod
   name: reagent-name-extract-honey-mesquite-pod
   group: Extracts
   desc: reagent-desc-extract-honey-mesquite-pod
@@ -320,8 +283,8 @@
             Radiation: .1
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractGlowpepper #N14 change
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractGlowpepper #N14 change
   name: reagent-name-extract-glowpepper #N14 change
   group: Extracts
   desc: reagent-desc-extract-glowpepper #N14 change
@@ -344,7 +307,7 @@
             Radiation: -0.1
 
 - type: reagent
-  id: ExtractMaize
+  id: N14ExtractMaize
   name: reagent-name-extract-maize
   group: Extract
   desc: reagent-desc-extract-maize
@@ -353,8 +316,8 @@
   color: "#a2ab6f"
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractMutfruit
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractMutfruit
   name: reagent-name-extract-mutfruit
   group: Extracts
   desc: reagent-desc-extract-mutfruit
@@ -380,8 +343,8 @@
 # nettle tea dont forget
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractNettle
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractNettle
   name: reagent-name-extract-nettle
   group: Extracts
   desc: reagent-desc-extract-nettle
@@ -405,8 +368,8 @@
             Radiation: .1
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractPinyon
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractPinyon
   name: reagent-name-extract-pinyon
   group: Extracts
   desc: reagent-desc-extract-pinyon
@@ -430,8 +393,8 @@
             Radiation: .1
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractPricklyPearFruit
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractPricklyPearFruit
   name: reagent-name-extract-pricky-pear-fruit
   group: Extracts
   desc: reagent-desc-extract-pricky-pear-fruit
@@ -440,7 +403,7 @@
   color: "#6ab854"
 
 - type: reagent
-  id: ExtractRazorgrainFlour
+  id: N14ExtractRazorgrainFlour
   name: reagent-name-extract-razorgrain
   group: Extract
   desc: reagent-desc-extract-razorgrain
@@ -465,8 +428,8 @@
             Radiation: .1
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractStarlightBerries
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractStarlightBerries
   name: reagent-name-extract-starlight-berries
   group: Extracts
   desc: reagent-desc-extract-starlight-berries
@@ -493,8 +456,8 @@
             Radiation: .1
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractTarberries
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractTarberries
   name: reagent-name-extract-tarberries
   group: Extracts
   desc: reagent-desc-extract-tarberries
@@ -521,8 +484,8 @@
             Radiation: .1
 
 - type: reagent
-  parent: M14BaseProduceExtract
-  id: ExtractTato
+  parent: MisfitsM14BaseProduceExtract
+  id: N14ExtractTato
   name: reagent-name-extract-tato
   group: Extracts
   desc: reagent-desc-extract-tato
@@ -531,7 +494,7 @@
   color: "#97a832"
 
 - type: reagent
-  id: ExtractWhiteHorsenettle
+  id: N14ExtractWhiteHorsenettle
   name: reagent-name-extract-white-horsenettle
   group: Wasteland
   desc: reagent-desc-extract-white-horsenettle
@@ -551,7 +514,7 @@
     amount: 10
 
 - type: reagent
-  id: ExtractXander
+  id: N14ExtractXander
   name: reagent-name-extract-xander
   group: Extracts
   desc: reagent-desc-extract-xander
@@ -578,7 +541,7 @@
         probability: 0.5
 
 - type: reagent
-  id: ExtractFungus
+  id: N14ExtractFungus
   name: reagent-name-extract-fungus
   group: Wasteland
   desc: reagent-desc-extract-fungus
@@ -604,7 +567,7 @@
         probability: 0.1
 
 - type: reagent
-  id: ExtractFungusRad
+  id: N14ExtractFungusRad
   name: reagent-name-extract-fungusrad
   group: Wasteland
   desc: reagent-desc-extract-fungusrad

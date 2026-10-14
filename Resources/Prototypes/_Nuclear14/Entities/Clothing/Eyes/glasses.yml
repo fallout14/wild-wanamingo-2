@@ -14,7 +14,7 @@
   - type: EyeProtection
   - type: Tag
     tags:
-    - WeldingGoggles # #Cythisiax Added - lets utility belts store the welding goggles
+    - MisfitsWeldingGoggles # #Cythisiax Added - lets utility belts store the welding goggles
 
 - type: entity
   parent: ClothingEyesBase
@@ -83,14 +83,3 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.975
     sprintModifier: 0.975
-
-- type: entity
-  parent: N14ClothingEyesGlassesGoggles
-  id: N14ClothingEyesNCRGoggles
-  name: NCR goggles
-  description: Service goggles favored by NCR troops working under sand, glare, and gun smoke.
-  components:
-  - type: Sprite
-    sprite: Nuclear14/Clothing/Eyes/ncrgoggles.rsi
-  - type: Clothing
-    sprite: Nuclear14/Clothing/Eyes/ncrgoggles.rsi

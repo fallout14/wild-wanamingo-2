@@ -1,4 +1,4 @@
-# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Consumable/Flora/wastelandflora.yml
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Consumable/Flora/wastelandflora.yml, Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Flora/wastelandflora.yml
 
 - type: entity
   parent: N14WastelandFlora
@@ -12,7 +12,7 @@
     sprite: Misfits/Objects/Specific/Hydroponics/zoybeans.rsi
     state: harvest
   - type: OreVein
-    currentOre: WildZoy
+    currentOre: MisfitsWildZoy
   - type: Gatherable
     toolWhitelist:
       components:
@@ -22,3 +22,53 @@
     loot:
       All: !type:NestedSelector
         tableId: WildZoyAll
+
+- type: entity
+  parent: N14WastelandFlora
+  id: MisfitsWastelandFloraWildCannabis
+  name: wild cannabis plant
+  description: A cannabis plant growing wild. It's healthy.
+  components:
+  - type: Physics  # spawn state
+    canCollide: False
+  - type: Sprite
+    state: wild_cannabis
+  - type: OreVein
+    currentOre: MisfitsWildCannabis
+  - type: Gatherable
+    toolWhitelist:
+      components:
+      - Hands
+      tags:
+      - PlantSampleTaker
+    loot:
+      All: !type:NestedSelector
+        tableId: WildCannabisAll
+
+- type: entity
+  parent: N14FloraProduce
+  id: MisfitsFloraProduceWildCannabis
+  name: cannabis leaves
+  description: Wild cannabis plant leaves.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/cannabis.rsi
+    state: produce
+  - type: Stack
+    stackType: MisfitsCannabis
+    count: 1
+  - type: Solution
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: MisfitsExtractCannabis
+        Quantity: 10
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: MisfitsExtractCannabis
+        Quantity: 10
+  - type: Produce
+    plantId: N14WildCannabis
+  - type: Seed
+    plantId: N14WildCannabis

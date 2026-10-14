@@ -22,8 +22,8 @@
     areaInsert: true
     whitelist:
       tags:
-      - BottleCap
-      - Currency
+      - MisfitsBottleCap
+      - N14Currency
       - DoorBumpOpener
   # Pull loose bottlecaps into the wallet while it is worn, like an OreBag.
   - type: Dumpable
@@ -43,10 +43,10 @@
     price: 0
   - type: Tag
     tags:
-      - Currency
-      - BottleCap
+      - N14Currency
+      - MisfitsBottleCap
   - type: Stack
-    stackType: Caps
+    stackType: N14Caps
     count: 1
     baseLayer: base
     layerStates:
@@ -80,7 +80,7 @@
   # end cherry-pick from ss#32938
 
 - type: stack
-  id: Caps
+  id: N14Caps
   name: misfits-kit-caps
   icon: { sprite: Nuclear14/Objects/Misc/currency.rsi, state: caps3 }
   spawn: N14CurrencyCap
@@ -146,9 +146,9 @@
     price: 0
   - type: Tag
     tags:
-      - Currency
+      - N14Currency
   - type: Stack
-    stackType: PrewarMoney
+    stackType: N14PrewarMoney
     count: 1
     baseLayer: base
     layerStates:
@@ -166,7 +166,7 @@
     size: Tiny
 
 - type: stack
-  id: PrewarMoney
+  id: N14PrewarMoney
   name: misfits-kit-pre-war-money
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/currency.rsi, state: prewar3 }
   spawn: N14CurrencyPrewar
@@ -216,7 +216,7 @@
     count: 500
 
 - type: material
-  id: NcrCredit
+  id: N14NcrCredit
   name: ncrCredit
   unit: materials-unit-bill
   stackEntity: N14CurrencyNCRDollar
@@ -235,14 +235,14 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      NcrCredit: 1
+      N14NcrCredit: 1
   - type: StackPrice
     price: 0
   - type: Tag
     tags:
-      - Currency
+      - N14Currency
   - type: Stack
-    stackType: NCRDollar
+    stackType: N14NCRDollar
     count: 1
     baseLayer: base
     layerStates:
@@ -272,7 +272,7 @@
     size: Tiny
 
 - type: stack
-  id: NCRDollar
+  id: N14NCRDollar
   name: misfits-kit-ncr-dollars
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/currency.rsi, state: ncr3 }
   spawn: N14CurrencyNCRDollar

@@ -7,7 +7,7 @@
   suffix: NCR, Locked
   components:
   - type: AccessReader
-    access: [["NCR"]]
+    access: [["N14NCR"]]
   - type: Wires
     layoutId: AirlockSecurity
 
@@ -17,7 +17,7 @@
   suffix: NCR, Locked, SGT
   components:
   - type: AccessReader
-    access: [["NCRSGT"]]
+    access: [["N14NCRSGT"]]
   - type: Wires
     layoutId: AirlockSecurity
 
@@ -27,7 +27,7 @@
   suffix: NCR, Locked, Medic
   components:
   - type: AccessReader
-    access: [["NCRMedic"]]
+    access: [["N14NCRMedic"]]
   - type: Wires
     layoutId: AirlockSecurity
 
@@ -37,7 +37,7 @@
   suffix: NCR, Locked, SGT
   components:
   - type: AccessReader
-    access: [["NCRSGT"]]
+    access: [["N14NCRSGT"]]
   - type: Wires
     layoutId: AirlockSecurity
 
@@ -47,7 +47,7 @@
   suffix: NCR, Locked, SGT
   components:
   - type: AccessReader
-    access: [["NCRSGT"]]
+    access: [["N14NCRSGT"]]
   - type: Wires
     layoutId: AirlockSecurity
 
@@ -57,7 +57,7 @@
   suffix: NCR, Locked, LT
   components:
   - type: AccessReader
-    access: [["NCRLT"]]
+    access: [["N14NCRLT"]]
   - type: Wires
     layoutId: AirlockSecurity
 
@@ -67,7 +67,7 @@
   suffix: NCR, Locked, Ranger
   components:
   - type: AccessReader
-    access: [["NCRRanger"]]
+    access: [["N14NCRRanger"]]
   - type: Wires
     layoutId: HighSec
 
@@ -80,7 +80,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsBOSMidwestGeneral ]
+      board: [ N14DoorElectronicsBOSMidwestGeneral ]
   - type: Wires
     layoutId: HighSec
 
@@ -91,7 +91,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsBOSMidwestPaladin ]
+      board: [ N14DoorElectronicsBOSMidwestPaladin ]
   - type: Wires
     layoutId: HighSec
 
@@ -102,7 +102,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsBOSMidwestPaladinCommander ]
+      board: [ N14DoorElectronicsBOSMidwestPaladinCommander ]
   - type: Wires
     layoutId: HighSec
 
@@ -115,7 +115,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsBOSWashington ]
+      board: [ N14DoorElectronicsBOSWashington ]
   - type: Wires
     layoutId: HighSec
 
@@ -126,7 +126,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsBOSWashingtonScribe ]
+      board: [ N14DoorElectronicsBOSWashingtonScribe ]
   - type: Wires
     layoutId: HighSec
 
@@ -137,7 +137,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsBOSWashingtonKnight ]
+      board: [ N14DoorElectronicsBOSWashingtonKnight ]
   - type: Wires
     layoutId: HighSec
 
@@ -148,7 +148,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsBOSWashingtonPaladin ]
+      board: [ N14DoorElectronicsBOSWashingtonPaladin ]
   - type: Wires
     layoutId: HighSec
 
@@ -159,7 +159,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsBoSWashingtonCommander ]
+      board: [ N14DoorElectronicsBoSWashingtonCommander ]
   - type: Wires
     layoutId: HighSec
 
@@ -171,7 +171,7 @@
   suffix: Townie, Locked, Law
   components:
   - type: AccessReader
-    access: [["TownieLaw"]]
+    access: [["N14TownieLaw"]]
   - type: Wires
     layoutId: AirlockService
 
@@ -181,7 +181,7 @@
   suffix: Townie, Locked, Law
   components:
   - type: AccessReader
-    access: [["TownieLaw"]]
+    access: [["N14TownieLaw"]]
   - type: Wires
     layoutId: AirlockService
 
@@ -191,7 +191,7 @@
   suffix: Townie, Locked, Mayor
   components:
   - type: AccessReader
-    access: [["TownieMayor"]]
+    access: [["N14TownieMayor"]]
   - type: Wires
     layoutId: AirlockService
 
@@ -201,7 +201,7 @@
   suffix: Townie, Locked, Shopkeeper
   components:
   - type: AccessReader
-    access: [["TownieShopkeeper"]]
+    access: [["N14TownieShopkeeper"]]
   - type: Wires
     layoutId: AirlockService
 
@@ -211,7 +211,7 @@
   suffix: Townie, Locked, Doctor
   components:
   - type: AccessReader
-    access: [["TownieDoctor"]]
+    access: [["N14TownieDoctor"]]
   - type: Wires
     layoutId: AirlockService
 
@@ -224,7 +224,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsVaultDweller ]
+      board: [ N14DoorElectronicsVaultDweller ]
   - type: Wires
     layoutId: HighSec
 
@@ -235,7 +235,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsVaultEngineer ]
+      board: [ N14DoorElectronicsVaultEngineer ]
   - type: Wires
     layoutId: HighSec
 
@@ -246,7 +246,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsVaultMedical ]
+      board: [ N14DoorElectronicsVaultMedical ]
   - type: Wires
     layoutId: HighSec
 
@@ -257,7 +257,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsVaultSecurity ]
+      board: [ N14DoorElectronicsVaultSecurity ]
   - type: Wires
     layoutId: HighSec
 
@@ -268,7 +268,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsVaultGatekeeper ]
+      board: [ N14DoorElectronicsVaultGatekeeper ]
   - type: Wires
     layoutId: HighSec
 
@@ -279,46 +279,9 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsVaultOverseer ]
+      board: [ N14DoorElectronicsVaultOverseer ]
   - type: Wires
     layoutId: HighSec
-
-- type: entity
-  parent: N14DoorAirlockSlanted
-  id: MisfitsDoorAirlockSlantedVaultCargo
-  suffix: Vault Cargo Specialist, Locked
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsVaultCargo ]
-  - type: Wires
-    layoutId: HighSec
-
-- type: entity
-  parent: N14DoorAirlockSlanted
-  id: MisfitsDoorAirlockSlantedVaultCourier
-  suffix: Vault Courier, Locked
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsVaultCourier ]
-  - type: Wires
-    layoutId: HighSec
-
-- type: entity
-  parent: N14DoorAirlockSlanted
-  id: MisfitsDoorAirlockSlantedVaultSalvage
-  suffix: Vault Salvage Specialist, Locked
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsVaultSalvage ]
-  - type: Wires
-    layoutId: HighSec
-
-#MARK: Keylocked
-
-#IronKey
 
 - type: entity
   parent: N14DoorWoodSlanted
@@ -326,7 +289,7 @@
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["IronKey"]]
+    access: [["N14IronKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -336,7 +299,7 @@
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["IronKey"]]
+    access: [["N14IronKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -346,7 +309,7 @@
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["IronKey"]]
+    access: [["N14IronKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -358,7 +321,7 @@
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["BronzeKey"]]
+    access: [["N14BronzeKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -368,7 +331,7 @@
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["BronzeKey"]]
+    access: [["N14BronzeKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -378,7 +341,7 @@
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["BronzeKey"]]
+    access: [["N14BronzeKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -390,7 +353,7 @@
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["BrassKey"]]
+    access: [["N14BrassKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -403,7 +366,7 @@
     tags:
     - ForceNoFixRotations
   - type: AccessReader
-    access: [["BrassKey"]]
+    access: [["N14BrassKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -413,7 +376,7 @@
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["BrassKey"]]
+    access: [["N14BrassKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -425,7 +388,7 @@
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["SilverKey"]]
+    access: [["N14SilverKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -435,7 +398,7 @@
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["SilverKey"]]
+    access: [["N14SilverKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -445,6 +408,6 @@
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["SilverKey"]]
+    access: [["N14SilverKey"]]
   - type: Wires
     layoutId: AirlockCargo

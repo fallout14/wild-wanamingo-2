@@ -22,7 +22,7 @@
   - type: Rotatable
   - type: Anchorable
   - type: Construction
-    graph: TerminalNew
+    graph: N14TerminalNew
     node: missingWires
   - type: Damageable
     damageModifierSet: Metallic
@@ -100,7 +100,7 @@
   - type: EmitSoundOnUIOpen
     sound:
       # #Misfits Change: Swap the generic keyboard collection for imported Fallout terminal taps.
-      collection: N14TerminalKeyboard
+      collection: MisfitsTerminalKeyboard
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -142,7 +142,7 @@
     - map: ["computerLayerScreen"]
       state: screens
   - type: Construction
-    graph: TerminalNew
+    graph: N14TerminalNew
     node: Terminal
 
 - type: entity
@@ -177,7 +177,7 @@
            min: 3
            max: 6
   - type: Construction
-    graph: TerminalNew
+    graph: N14TerminalNew
     node: Broken
 
 - type: entity
@@ -185,7 +185,7 @@
   id: N14ComputerTerminalNewWired
   components:
   - type: Construction
-    graph: TerminalNew
+    graph: N14TerminalNew
     node: Frame
   - type: Sprite
     sprite: Nuclear14/Structures/Machines/Terminals/terminal_new.rsi
@@ -229,7 +229,7 @@
            min: 3
            max: 6
   - type: Construction
-    graph: Terminal
+    graph: N14Terminal
     node: Terminal
 
 - type: entity
@@ -264,7 +264,7 @@
            min: 3
            max: 6
   - type: Construction
-    graph: Terminal
+    graph: N14Terminal
     node: Broken
 
 - type: entity
@@ -272,7 +272,7 @@
   id: N14ComputerTerminalFrame
   components:
   - type: Construction
-    graph: Terminal
+    graph: N14Terminal
     node: missingWires
   - type: Sprite
     sprite: Nuclear14/Structures/Machines/Terminals/terminal.rsi
@@ -283,7 +283,7 @@
   id: N14ComputerTerminalWired
   components:
   - type: Construction
-    graph: Terminal
+    graph: N14Terminal
     node: Frame
   - type: Sprite
     sprite: Nuclear14/Structures/Machines/Terminals/terminal.rsi
@@ -362,7 +362,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: N14DefaultStructural
+    explosionType: MisfitsDefaultStructural
     maxIntensity: 5
     intensitySlope: 3
     totalIntensity: 30 # about a ~1 tile radius
@@ -381,7 +381,7 @@
     beepInterval: 1 # 2 beeps total (at 0 and 2)
     examinable: false
   - type: Construction
-    graph: Terminal
+    graph: N14Terminal
     node: Rigged
 
 - type: entity
@@ -413,7 +413,7 @@
     bodyType: Static
   - type: Rotatable
   - type: Construction
-    graph: TerminalNew
+    graph: N14TerminalNew
     node: missingWires
   - type: Damageable
     damageModifierSet: Metallic

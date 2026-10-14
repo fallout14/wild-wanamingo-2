@@ -79,7 +79,7 @@
           temperature: 373.15
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: N14DefaultStructural
+    explosionType: MisfitsDefaultStructural
     maxIntensity: 100
     intensitySlope: 2
     totalIntensity: 200
@@ -100,47 +100,6 @@
     requirePower: true
     highVoltageNode: input
     mediumVoltageNode: output
-
-- type: entity # Corvax-Change
-  parent: BaseMachine
-  id: N14BaseSubstationFrame
-  name: substation frame
-  description: Reduces the voltage of electricity put into it.
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Clickable
-  - type: InteractionOutline
-  - type: Transform
-    anchored: true
-  - type: Sprite
-    drawdepth: Overdoors
-    offset: 0, 0.5
-    snapCardinals: true
-    sprite: Nuclear14/Structures/Power/32x48_machines.rsi
-    state: substation
-  - type: Damageable
-    damageModifierSet: Metallic
-  - type: Injurable
-    damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          N14ScrapSteel1:
-           min: 4
-           max: 7
-
-# In Use
 
 - type: entity
   parent: N14BaseSubstation

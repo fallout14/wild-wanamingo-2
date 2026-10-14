@@ -139,7 +139,7 @@ public sealed class FlamerTest : GameTest
         var timing = server.ResolveDependency<IGameTiming>();
         EntityUid handy = default;
 
-        await server.WaitPost(() => handy = entMan.SpawnEntity("N14PlayerSyntheticMrHandy", map.GridCoords));
+        await server.WaitPost(() => handy = entMan.SpawnEntity("MisfitsPlayerSyntheticMrHandy", map.GridCoords));
         await server.WaitRunTicks(2);
 
         var solution = entMan.System<SharedSolutionContainerSystem>();

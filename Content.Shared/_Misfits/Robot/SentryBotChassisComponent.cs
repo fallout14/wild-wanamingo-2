@@ -27,7 +27,7 @@ public sealed partial class SentryBotChassisComponent : Component
     public float TargetingDelay = 4f;
 
     [DataField]
-    public EntProtoId MissileAction = "ActionSentryBotMissileLaunch";
+    public EntProtoId MissileAction = "MisfitsActionSentryBotMissileLaunch";
 
     [DataField]
     public EntProtoId MissilePrototype = "N14ProjectileMissile";

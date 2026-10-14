@@ -11,7 +11,7 @@
     scale: 0.5, 0.5
   - type: Tag
     tags:
-      - SuperMutantWearable
+      - MisfitsSuperMutantWearable
       - Cigarette
       - Trash
   - type: SpaceGarbage
@@ -33,7 +33,7 @@
     state: Burnt
   - type: Tag
     tags:
-      - SuperMutantWearable
+      - MisfitsSuperMutantWearable
       - Cigarette
       - Trash
       - Burnt
@@ -65,12 +65,6 @@
     sprite: Nuclear14/Objects/Consumable/Smokeables/Cigarettes/marl.rsi
   - type: Clothing
     sprite: Nuclear14/Objects/Consumable/Smokeables/Cigarettes/marl.rsi
-
-- type: entity
-  parent: N14CigaretteMarlboro
-  id: N14CigaretteLuckyStrike
-  description: A Lucky Strike brand cigarette.
-  suffix: lucky strike
 
 - type: entity
   parent: N14Cigarette

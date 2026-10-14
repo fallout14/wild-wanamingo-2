@@ -9,39 +9,39 @@
 
 - type: markingsGroup
   parent: Undergarments
-  id: C27
+  id: MisfitsC27
   onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Chest:
       limit: 1
       required: true
-      default: [ C27ModelGeneric ]
+      default: [ MisfitsC27ModelGeneric ]
     enum.HumanoidVisualLayers.Head:
       limit: 1
       required: false
 
 - type: markingsGroup
-  parent: C27
-  id: C27NCR
+  parent: MisfitsC27
+  id: MisfitsC27NCR
   limits:
     enum.HumanoidVisualLayers.Chest:
       limit: 1
       required: true
-      default: [ C27ModelNCR ]
+      default: [ MisfitsC27ModelNCR ]
 
 - type: markingsGroup
-  parent: C27
-  id: C27BoS
+  parent: MisfitsC27
+  id: MisfitsC27BoS
   limits:
     enum.HumanoidVisualLayers.Chest:
       limit: 1
       required: true
-      default: [ C27ModelBoS ]
+      default: [ MisfitsC27ModelBoS ]
 
 - type: marking
-  id: C27ModelGeneric
+  id: MisfitsC27ModelGeneric
   bodyPart: Chest
-  groupWhitelist: [ C27, C27NCR, C27BoS ]
+  groupWhitelist: [ MisfitsC27, MisfitsC27NCR, MisfitsC27BoS ]
   forcedColoring: true
   coloring:
     default:
@@ -53,9 +53,9 @@
     state: torso_m
 
 - type: marking
-  id: C27ModelNCR
+  id: MisfitsC27ModelNCR
   bodyPart: Chest
-  groupWhitelist: [ C27, C27NCR, C27BoS ]
+  groupWhitelist: [ MisfitsC27, MisfitsC27NCR, MisfitsC27BoS ]
   forcedColoring: true
   coloring:
     default:
@@ -67,9 +67,9 @@
     state: torso_m
 
 - type: marking
-  id: C27ModelBoS
+  id: MisfitsC27ModelBoS
   bodyPart: Chest
-  groupWhitelist: [ C27, C27NCR, C27BoS ]
+  groupWhitelist: [ MisfitsC27, MisfitsC27NCR, MisfitsC27BoS ]
   forcedColoring: true
   coloring:
     default:
@@ -89,8 +89,8 @@
   name: c-27 appearance
   components:
   - type: Inventory
-    templateId: c27
-    speciesId: c27
+    templateId: MisfitsC27
+    speciesId: MisfitsC27
   - type: InitialBody
     organs:
       Torso: OrganC27Torso
@@ -104,7 +104,7 @@
       FootLeft: OrganC27FootLeft
       FootRight: OrganC27FootRight
   - type: HumanoidProfile
-    species: C27
+    species: MisfitsC27
 
 - type: entity
   parent: AppearanceC27
@@ -116,7 +116,7 @@
     organs:
       Torso: OrganC27TorsoNCR
   - type: HumanoidProfile
-    species: C27NCR
+    species: MisfitsC27NCR
 
 - type: entity
   parent: AppearanceC27
@@ -128,7 +128,7 @@
     organs:
       Torso: OrganC27TorsoBoS
   - type: HumanoidProfile
-    species: C27BoS
+    species: MisfitsC27BoS
 
 - type: entity
   abstract: true
@@ -141,7 +141,7 @@
     state: full
   - type: NpcFactionMember
     factions:
-    - Wastelander
+    - N14Wastelander
   - type: EncryptionKeyHolder
     keySlots: 4
   - type: IntrinsicRadioReceiver
@@ -150,7 +150,7 @@
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeyWastelandGlobal
+      - MisfitsEncryptionKeyWastelandGlobal
   - type: Damageable
     damageModifierSet: MisfitsC27Silicon
   - type: Injurable
@@ -182,17 +182,17 @@
 
 - type: entity
   parent: [ AppearanceC27, BaseSpeciesMob, N14BaseMobC27Stats ]
-  id: N14MobC27
+  id: MisfitsMobC27
   name: c-27 humanoid robot
 
 - type: entity
   parent: [ AppearanceC27NCR, BaseSpeciesMob, N14BaseMobC27Stats ]
-  id: N14MobC27NCR
+  id: MisfitsMobC27NCR
   name: c-27 humanoid robot
 
 - type: entity
   parent: [ AppearanceC27BoS, BaseSpeciesMob, N14BaseMobC27Stats ]
-  id: N14MobC27BoS
+  id: MisfitsMobC27BoS
   name: c-27 humanoid robot
 
 # --- Parts (metal, no organs inside)
@@ -209,7 +209,7 @@
       sprite: Misfits/Mobs/Species/C27/parts.rsi
   - type: VisualOrganMarkings
     markingData:
-      group: C27
+      group: MisfitsC27
 
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganC27External ]
@@ -221,7 +221,7 @@
   components:
   - type: VisualOrganMarkings
     markingData:
-      group: C27NCR
+      group: MisfitsC27NCR
 
 - type: entity
   parent: OrganC27Torso
@@ -229,7 +229,7 @@
   components:
   - type: VisualOrganMarkings
     markingData:
-      group: C27BoS
+      group: MisfitsC27BoS
 
 - type: entity
   parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganC27External ]

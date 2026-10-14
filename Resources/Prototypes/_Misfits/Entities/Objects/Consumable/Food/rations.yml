@@ -2,7 +2,7 @@
 
 - type: entity
   parent: BaseStorageItem
-  id: N14CigarettePackRation
+  id: MisfitsCigarettePackRation
   name: ration cigarettes
   description: A small waxed-cardboard pack of four cigarettes, packed as part of a military combat ration.
   components:
@@ -58,7 +58,7 @@
 
 - type: entity
   parent: BaseFoodCondimentPacket
-  id: N14FoodCondimentRationTubeBase
+  id: MisfitsFoodCondimentRationTubeBase
   name: ration condiment tube
   abstract: true
   description: A small foil tube of condiment packed into a military combat ration.
@@ -79,8 +79,8 @@
     state: icon
 
 - type: entity
-  parent: N14FoodCondimentRationTubeBase
-  id: N14FoodCondimentRationTubeKetchup
+  parent: MisfitsFoodCondimentRationTubeBase
+  id: MisfitsFoodCondimentRationTubeKetchup
   name: ration ketchup
   description: A small foil tube of ketchup packed into a military combat ration.
   components:
@@ -91,8 +91,8 @@
         Quantity: 10
 
 - type: entity
-  parent: N14FoodCondimentRationTubeBase
-  id: N14FoodCondimentRationTubeMustard
+  parent: MisfitsFoodCondimentRationTubeBase
+  id: MisfitsFoodCondimentRationTubeMustard
   name: ration mustard
   description: A small foil tube of mustard packed into a military combat ration.
   components:
@@ -103,8 +103,8 @@
         Quantity: 10
 
 - type: entity
-  parent: N14FoodCondimentRationTubeBase
-  id: N14FoodCondimentRationTubeHotsauce
+  parent: MisfitsFoodCondimentRationTubeBase
+  id: MisfitsFoodCondimentRationTubeHotsauce
   name: ration hot sauce
   description: A small foil tube of hot sauce packed into a military combat ration.
   components:
@@ -115,8 +115,8 @@
         Quantity: 10
 
 - type: entity
-  parent: N14FoodCondimentRationTubeBase
-  id: N14FoodCondimentRationTubeBbq
+  parent: MisfitsFoodCondimentRationTubeBase
+  id: MisfitsFoodCondimentRationTubeBbq
   name: ration BBQ sauce
   description: A small foil tube of BBQ sauce packed into a military combat ration.
   components:
@@ -127,8 +127,8 @@
         Quantity: 10
 
 - type: entity
-  parent: N14FoodCondimentRationTubeBase
-  id: N14FoodCondimentRationTubeCondensedMilk
+  parent: MisfitsFoodCondimentRationTubeBase
+  id: MisfitsFoodCondimentRationTubeCondensedMilk
   name: ration condensed milk
   description: A small foil tube of sweetened condensed milk packed into a military combat ration.
   components:

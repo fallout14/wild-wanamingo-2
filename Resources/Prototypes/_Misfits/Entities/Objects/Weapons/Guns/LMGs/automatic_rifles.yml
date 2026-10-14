@@ -3,7 +3,7 @@
 - type: entity
   name: heavy automatic rifle
   parent: N14WeaponLMGAutoRifle
-  id: N14WeaponLMGAutoRifleHeavy
+  id: MisfitsWeaponLMGAutoRifleHeavy
   description: An M1918A2 Browning Automatic Rifle. Heavier than the A1, with a bipod and a rate reducer that make its full-power .308 far easier to keep on target. It can also be fired one round at a time.
   components:
   - type: Clothing
@@ -46,7 +46,7 @@
 - type: entity
   name: Colt Monitor
   parent: N14WeaponLMGAutoRifle
-  id: N14WeaponLMGAutoRifleMonitor
+  id: MisfitsWeaponLMGAutoRifleMonitor
   description: A Colt R80 Monitor, the lightened and shortened Browning Automatic Rifle built for law enforcement. Fast-firing and easier to carry than any other BAR, and it takes the long 40-round .308 magazines as well as standard ones.
   components:
   - type: Clothing
@@ -84,7 +84,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine308Rifle
+        startingItem: N14Magazine308Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2

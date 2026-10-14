@@ -1,0 +1,32 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Recipes/Lathes/tools.yml
+
+- type: latheRecipe
+  id: MisfitsGeigerCounter
+  result: GeigerCounter
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    Plastic: 100
+    Circuitry: 50
+
+- type: latheRecipe
+  id: MisfitsRemoteSignaller
+  result: RemoteSignaller
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    N14Copper: 50
+    Plastic: 300
+    Circuitry: 100
+
+- type: latheRecipe
+  id: MisfitsBinoculars
+  result: MisfitsBinoculars
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    Glass: 100
+    Steel: 100

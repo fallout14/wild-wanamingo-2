@@ -2,14 +2,14 @@
 
 - type: entity
   parent: N14ClothingHeadsetAlt
-  id: N14ClothingHeadsetBrotherhoodOfSteel
+  id: MisfitsClothingHeadsetBrotherhoodOfSteel
   name: Brotherhood radio earpiece
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeyBrotherhoodOfSteel
-      - EncryptionKeyWastelandGlobal
+      - MisfitsEncryptionKeyBrotherhoodOfSteel
+      - MisfitsEncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keysUnlocked: false
   - type: Sprite
@@ -19,14 +19,14 @@
 
 - type: entity
   parent: N14ClothingHeadsetLightScribe
-  id: N14ClothingHeadsetBrotherhoodOfSteelScribe
+  id: MisfitsClothingHeadsetBrotherhoodOfSteelScribe
   name: Brotherhood scribe headset
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeyBrotherhoodOfSteel
-      - EncryptionKeyWastelandGlobal
+      - MisfitsEncryptionKeyBrotherhoodOfSteel
+      - MisfitsEncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keysUnlocked: false
   # Keep light-capable state names while applying the new BoS sprite set.

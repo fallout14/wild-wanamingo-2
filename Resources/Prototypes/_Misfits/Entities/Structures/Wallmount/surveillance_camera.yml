@@ -1,0 +1,78 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Structures/Wallmount/surveillance_camera.yml
+
+- type: entity
+  parent: SurveillanceCameraBase
+  id: MisfitsSurveillanceCameraBrotherhoodMidwest
+  name: camera
+  suffix: BrotherhoodMidwest
+  components:
+  - type: DeviceNetwork
+    deviceNetId: Wired
+    receiveFrequencyId: SurveillanceCamera
+    transmitFrequencyId: N14SurveillanceCameraBrotherhoodMidwest
+  - type: SurveillanceCamera
+    networkSet: true
+  - type: Sprite
+    drawdepth: Overdoors
+
+- type: entity
+  parent: SurveillanceCameraBase
+  id: MisfitsSurveillanceCameraNCR
+  name: camera
+  suffix: NCR
+  components:
+  - type: DeviceNetwork
+    deviceNetId: Wired
+    receiveFrequencyId: SurveillanceCamera
+    transmitFrequencyId: N14SurveillanceCameraNCR
+  - type: SurveillanceCamera
+    networkSet: true
+  - type: Sprite
+    drawdepth: Overdoors
+
+- type: entity
+  parent: SurveillanceCameraBase
+  id: MisfitsSurveillanceCameraTown
+  name: camera
+  suffix: Town
+  components:
+  - type: DeviceNetwork
+    deviceNetId: Wired
+    receiveFrequencyId: SurveillanceCamera
+    transmitFrequencyId: N14SurveillanceCameraTown
+  - type: SurveillanceCamera
+    networkSet: true
+  - type: Sprite
+    drawdepth: Overdoors
+
+- type: entity
+  parent: SurveillanceCameraBase
+  id: MisfitsSurveillanceCameraVault
+  name: camera
+  suffix: Vault
+  components:
+  - type: DeviceNetwork
+    deviceNetId: Wired
+    receiveFrequencyId: SurveillanceCamera
+    transmitFrequencyId: N14SurveillanceCameraVault
+  - type: SurveillanceCamera
+    networkSet: true
+  - type: Sprite
+    drawdepth: Overdoors
+
+- type: entity
+  parent: SurveillanceCameraBase
+  id: MisfitsSurveillanceCameraZAX
+  name: camera
+  suffix: ZAX
+  components:
+  - type: DeviceNetwork
+    deviceNetId: Wired
+    receiveFrequencyId: SurveillanceCamera
+    transmitFrequencyId: MisfitsSurveillanceCameraZAX
+  - type: SurveillanceCamera
+    networkSet: true
+  - type: StationAiVision
+  - type: StationAiWhitelist
+  - type: Sprite
+    drawdepth: Overdoors

@@ -14,7 +14,7 @@
   - type: MeleeWeapon
     hidden: true
     soundHit:
-      collection: N14GhoulAttack #Misfits Change
+      collection: MisfitsGhoulAttack #Misfits Change
     angle: 0
     animation: WeaponArcFist
     damage:
@@ -26,13 +26,13 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: N14GhoulIdle
+      collection: MisfitsGhoulIdle
       params:
         volume: -15
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14GhoulAggro
+      collection: MisfitsGhoulAggro
       params:
         volume: -12
         maxDistance: 10
@@ -52,7 +52,7 @@
   - type: MeleeWeapon
     hidden: true
     soundHit:
-      collection: N14GhoulAttack #Misfits Change
+      collection: MisfitsGhoulAttack #Misfits Change
     angle: 0
     animation: WeaponArcFist
     damage:
@@ -64,13 +64,13 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: N14GhoulIdle
+      collection: MisfitsGhoulIdle
       params:
         volume: -15
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14GhoulAggro
+      collection: MisfitsGhoulAggro
       params:
         volume: -12
         maxDistance: 10
@@ -94,7 +94,7 @@
   - type: MeleeWeapon
     hidden: true
     soundHit:
-      collection: N14GhoulAttack #Misfits Change
+      collection: MisfitsGhoulAttack #Misfits Change
     angle: 0
     animation: WeaponArcFist
     damage:
@@ -106,13 +106,13 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: N14GhoulIdle
+      collection: MisfitsGhoulIdle
       params:
         volume: -15
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14GhoulAggro
+      collection: MisfitsGhoulAggro
       params:
         volume: -12
         maxDistance: 10
@@ -136,7 +136,7 @@
   - type: MeleeWeapon
     hidden: true
     soundHit:
-      collection: N14GhoulAttack #Misfits Change
+      collection: MisfitsGhoulAttack #Misfits Change
     angle: 0
     animation: WeaponArcFist
     damage:
@@ -208,7 +208,7 @@
   - type: NoPull #Misfits Add - Maypole is too large to be grabbed
   - type: AggroSound #Misfits Change
     sound:
-      collection: N14GhoulAggro
+      collection: MisfitsGhoulAggro
       params:
         volume: -12
         maxDistance: 10

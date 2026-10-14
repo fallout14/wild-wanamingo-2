@@ -51,7 +51,7 @@
 
 - type: entity
   parent: ClothingMaskGas
-  id: ClothingMaskGasFire
+  id: N14ClothingMaskGasFire
   name: fire gas mask
   description: A gasmask with extra protection against fire.
   components:
@@ -72,7 +72,7 @@
 
 - type: entity
   parent: ClothingMaskGas
-  id: ClothingMaskGasMiner
+  id: N14ClothingMaskGasMiner
   name: miner gas mask
   description: A gasmask used to keep the breath clear in mines.
   components:
@@ -102,32 +102,7 @@
 
 - type: entity
   parent: ClothingMaskGas
-  id: ClothingMaskCommissar
-  name: commissar gas mask
-  description: An armor plated gas mask used by NCR Commissars.
-  components:
-  - type: Item
-    size: Tiny
-  - type: FlashImmunity
-  - type: EyeProtection
-  - type: Sprite
-    sprite: Misfits/Clothing/Mask/ncr_commissarmask.rsi
-  - type: Clothing
-    sprite: Misfits/Clothing/Mask/ncr_commissarmask.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.9
-    priceMultiplier: 0.5
-
-# NCR Rangers, Vets
-
-- type: entity
-  parent: ClothingMaskGas
-  id: ClothingMaskGasCombat
+  id: N14ClothingMaskGasCombat
   name: combat gas mask
   description: An advanced pre-war military gas mask.
   components:
@@ -153,8 +128,8 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingMaskGasCombat
-  id: ClothingMaskGasRiot
+  parent: N14ClothingMaskGasCombat
+  id: N14ClothingMaskGasRiot
   name: NCR ranger gas mask
   description: A close-fitting tactical mask issued to all NCR Rangers as a proof of their service.
   components:
@@ -178,8 +153,8 @@
         Heat: 0.95
 
 - type: entity
-  parent: ClothingMaskGasCombat
-  id: ClothingMaskGasRanger
+  parent: N14ClothingMaskGasCombat
+  id: N14ClothingMaskGasRanger
   name: ranger gas mask
   description: The last in pre-war military gas masks technology, with extra protection.
   components:
@@ -193,8 +168,8 @@
     sprite: Nuclear14/Clothing/Mask/Gasmask/rangergasmask.rsi
 
 - type: entity
-  parent: ClothingMaskGasCombat
-  id: ClothingMaskGasRangerOld
+  parent: N14ClothingMaskGasCombat
+  id: N14ClothingMaskGasRangerOld
   name: ranger gas mask
   description: An old combat mask, out of use around the time of the war.
   components:
@@ -208,8 +183,8 @@
     sprite: Nuclear14/Clothing/Mask/Gasmask/rangeroldgasmask.rsi
 
 - type: entity
-  parent: ClothingMaskGasCombat
-  id: ClothingMaskGasRangerDesert
+  parent: N14ClothingMaskGasCombat
+  id: N14ClothingMaskGasRangerDesert
   name: desert ranger gas mask
   description: An U.S Marine Corps helmet, used by the legendary Desert Rangers.
   components:
@@ -231,7 +206,7 @@
 
 - type: entity
   parent: ClothingMaskGas
-  id: ClothingMaskGasRangerWeathered
+  id: N14ClothingMaskGasRangerWeathered
   name: weathered ranger gas mask
   description: A well-used Desert Ranger helmet passed down through generations. Though this one's stripped of night vision and it's kevlar lining, it's even more lightweight.
   components:
@@ -251,8 +226,8 @@
         Heat: 0.95
 
 - type: entity
-  parent: ClothingMaskGasCombat
-  id: ClothingMaskGasRangerPrice
+  parent: N14ClothingMaskGasCombat
+  id: N14ClothingMaskGasRangerPrice
   name: spider ranger gas mask
   description: A customised riot helmet reminiscient of the more advanced riot helmets found in the Divide, sporting purple lenses over the traditional red or green and a pair of red fangs painted over the respirator. The back of the helmet has a the face of an albino spider painted over it.
   components:
@@ -274,7 +249,7 @@
 
 - type: entity
   parent: ClothingMaskGas
-  id: ClothingMaskGasRangerBroken
+  id: N14ClothingMaskGasRangerBroken
   name: old riot gas mask
   description: An old riot gas mask, out of use around the time of the war.
   components:
@@ -298,8 +273,8 @@
     - HidesHair
 
 - type: entity
-  parent: ClothingMaskGasCombat
-  id: ClothingMaskGasRangerElite
+  parent: N14ClothingMaskGasCombat
+  id: N14ClothingMaskGasRangerElite
   name: elite riot gas mask
   description: An old gas mask seen in the Divide, repurposed for higher-ranking Rangers.
   components:
@@ -320,8 +295,8 @@
         Heat: 0.95
 
 - type: entity
-  parent: ClothingMaskGasCombat
-  id: ClothingMaskGasRangerModif
+  parent: N14ClothingMaskGasCombat
+  id: N14ClothingMaskGasRangerModif
   name: modified ranger gas mask
   description: A thicker-than-average mask worn by Rangers out in the field.
   components:

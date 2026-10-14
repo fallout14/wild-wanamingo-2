@@ -1,0 +1,55 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/_Misfits/drums.yml
+
+- type: entity
+  id: MisfitsMagazineSMG9mmDrum
+  name: drum magazine (9mm)
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+      - MisfitsMagazineSMG9mmDrum
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - N14CartridgePistol9
+    capacity: 71 # Misfits 
+    proto: N14CartridgePistol9
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Appearance 
+  - type: Sprite
+    netsync: false
+    sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Magazines/22lr/smgmag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+
+# American 180 35-round .22lr drum
+
+- type: entity
+  id: MisfitsMagazineAmerican180Drum
+  name: drum magazine (.22lr)
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+      - MisfitsMagazineAmerican180Drum
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - N14CartridgePistol22
+    capacity: 177
+    proto: N14CartridgePistol22
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Appearance
+  - type: Sprite
+    netsync: false
+    sprite: Misfits/Objects/Weapons/Guns/Ammunition/Magazines/22lrdrum.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]

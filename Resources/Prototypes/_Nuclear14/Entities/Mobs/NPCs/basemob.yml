@@ -15,7 +15,7 @@
   - type: MobMover
   - type: NpcFactionMember
     factions:
-    - WastelandAnimal
+    - N14WastelandAnimal
   - type: Sprite
     drawdepth: Mobs # Replace this with a mob error or something
   - type: Physics
@@ -58,10 +58,10 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: WastelandBlood
+      - ReagentId: N14WastelandBlood
         Quantity: 50
   - type: Damageable
-    damageModifierSet: WastelandAnimal
+    damageModifierSet: N14WastelandAnimal
   - type: Injurable
     damageContainer: Biological
   - type: Puller
@@ -87,7 +87,7 @@
     attackMemoryLength: 30
   - type: NpcFactionMember
     factions:
-    - WastelandAnimal
+    - N14WastelandAnimal
   - type: ProximityNPC # Misfits Add — sleep distant NPCs to reduce tick load
   - type: HTN
     rootTask:
@@ -120,7 +120,7 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: WastelandBlood
+      - ReagentId: N14WastelandBlood
         Quantity: 50
   - type: CombatMode
   - type: MeleeWeapon
@@ -148,86 +148,6 @@
 - type: entity
   parent: Solution
   id: N14MobBaseHostileSolutionMelee
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Solution
-    id: melee
-    solution:
-      reagents:
-      - ReagentId: Toxin
-        Quantity: 0.1
-
-- type: entity
-  abstract: true
-  id: N14MobBaseHostileNoAccent
-  parent: N14MobBaseSimple
-  description: It's a dirty wasteland animal. Watch out for it's bite, it could be infectious.
-  components:
-  - type: NPCRetaliation # Aggro on the attacker when damaged from any range
-    attackMemoryLength: 30
-  - type: NpcFactionMember
-    factions:
-    - WastelandAnimal
-  - type: ProximityNPC # Misfits Add — sleep distant NPCs to reduce tick load
-  - type: HTN
-    rootTask:
-      task: N14RangedHostileCompound
-    blackboard:
-      NavSmash: !type:Bool
-        true
-      MeleeRange: !type:Single
-        1.5
-  - type: Sprite
-    drawdepth: Mobs
-  - type: MobState
-    allowedStates:
-    - Alive
-    - Dead
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      15: Dead
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: alive
-      Dead:
-        Base: dead
-  - type: Butcherable
-    spawned:
-    - id: N14FoodMeatRadRaw
-      amount: 1
-  - type: Bloodstream
-    bloodReferenceSolution:
-      reagents:
-      - ReagentId: WastelandBlood
-        Quantity: 50
-  - type: CombatMode
-  - type: MeleeWeapon
-    hidden: true
-    attackRate: 2
-    range: 1.5
-    soundHit:
-      path: /Audio/Effects/bite.ogg
-    angle: 60
-    animation: WeaponArcBite
-    wideAnimation: WeaponArcBite
-    damage:
-      types:
-        Blunt: 0.666667
-        Slash: 0.666667
-        Piercing: 0.666667
-  - type: SolutionManager
-    solutions:
-    - N14MobBaseHostileNoAccentSolutionMelee
-  - type: MeleeChemicalInjector
-    solution: melee
-
-#MARK: Base Scaley
-
-- type: entity
-  parent: Solution
-  id: N14MobBaseHostileNoAccentSolutionMelee
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -267,7 +187,7 @@
   - type: NoSlip
   - type: NpcFactionMember
     factions:
-    - WastelandInsect
+    - N14WastelandInsect
   - type: Speech
     speechSounds: Squeak
   - type: ReplacementAccent
@@ -298,7 +218,7 @@
   - type: NoSlip
   - type: NpcFactionMember
     factions:
-    - Raider
+    - N14Raider
   - type: Fixtures
     fixtures:
       fix1:
@@ -319,13 +239,13 @@
   description: A mean looking ghoul.
   components:
   - type: Damageable
-    damageModifierSet: GhoulNPC
+    damageModifierSet: N14GhoulNPC
   # - type: NoSlip
   - type: Injurable
     damageContainer: MisfitsNPCBiological  # Misfits Change - no hunger/thirst damage for feral ghouls
   - type: NpcFactionMember
     factions:
-    - Feral
+    - N14Feral
   #- type: MobGhoulAggro #Misfits Change — removed: NPC feral ghouls should be hostile to player ghouls, not neutral.
   - type: HTN
     rootTask:
@@ -370,77 +290,6 @@
 #MARK: SuperMutant Base
 # Misfits Change - Base entity for all Super Mutant NPC variants
 # Ported from DesertRose2/desertrose supermutant.dm
-
-- type: entity
-  name: super mutant
-  abstract: true
-  id: N14MobBaseHostileSuperMutant
-  parent: N14MobBaseHostile
-  description: A hulking post-human mutation, product of the FEV virus. Radiation resistant and brutally strong.
-  components:
-  - type: Damageable
-    damageModifierSet: N14SuperMutant
-  - type: Injurable
-    damageContainer: MisfitsNPCBiological  # Misfits Change
-  - type: NpcFactionMember
-    factions:
-    - SuperMutant
-  - type: HTN
-    rootTask:
-      task: N14RangedHostileCompound
-    blackboard:
-      NavSmash: !type:Bool
-        true
-      MeleeRange: !type:Single
-        1.8
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      200: Dead
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: base
-      Dead:
-        Base: base_dead
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 2.5
-    baseSprintSpeed: 4.5
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-            radius: 0.55
-        density: 60
-        mask:
-        - MobMask
-        layer:
-        - MobLayer
-  - type: Hands
-  - type: Puller
-  - type: SlowOnDamage
-    speedModifierThresholds:
-      60: 0.85
-      80: 0.7
-  - type: IdleSound #Misfits Change
-  - type: SpamEmitSound #Misfits Change
-    minInterval: 15
-    maxInterval: 60
-    sound:
-      collection: N14SuperMutantIdle
-      params:
-        volume: -6
-        maxDistance: 7
-  - type: AggroSound #Misfits Change - separate aggro/alert vocalization on combat entry
-    sound:
-      collection: N14SuperMutantAlert
-      params:
-        volume: -3
-        maxDistance: 10
-
-# Wave Defence Base Hostile
-#MARK: WAVE
 
 - type: entity
   abstract: true

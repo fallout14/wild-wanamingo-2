@@ -23,7 +23,7 @@
       Cloth: 100
   - type: Tag
     tags:
-    - ComposterCompatible
+    - N14ComposterCompatible
 
 - type: entity
   parent: N14Sack
@@ -75,7 +75,7 @@
       maxVol: 100
   - type: Tag
     tags:
-    - ComposterCompatible
+    - N14ComposterCompatible
 
 - type: entity
   parent: N14SackCompost
@@ -114,5 +114,5 @@
     solution:
       maxVol: 100
       reagents:
-      - ReagentId: Fertilizer
+      - ReagentId: N14Fertilizer
         Quantity: 100

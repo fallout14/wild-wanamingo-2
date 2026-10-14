@@ -81,7 +81,7 @@
   description: A worn out black barrel. The label is torn off.
   components:
   - type: Construction
-    graph: N14Barrels
+    graph: MisfitsBarrels
     node: barrelblack
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -97,7 +97,7 @@
   description: A blue barrel with a warning sign of. Maybe it contains water?
   components:
   - type: Construction
-    graph: N14Barrels
+    graph: MisfitsBarrels
     node: barrelblue
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -110,7 +110,7 @@
   description: A red barrel with an explosive warning sign on. Better be careful.
   components:
   - type: Construction
-    graph: N14Barrels
+    graph: MisfitsBarrels
     node: barrelred
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -128,7 +128,7 @@
         Heat: 10
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: N14DefaultStructural
+    explosionType: MisfitsDefaultStructural
     totalIntensity: 90
 
 - type: entity
@@ -138,7 +138,7 @@
   description: A yellow barrel with a radiation warning sign on. Better be careful.
   components:
   - type: Construction
-    graph: N14Barrels
+    graph: MisfitsBarrels
     node: barrelyellow
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -157,7 +157,7 @@
   description: A worn out black barrel. The label is torn off. The lid is off and you can see inside.
   components:
   - type: Construction
-    graph: N14Barrels
+    graph: MisfitsBarrels
     node: barrelblackopen
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -174,7 +174,7 @@
   description: A blue barrel with a warning sign of. The lid is off and you can see inside.
   components:
   - type: Construction
-    graph: N14Barrels
+    graph: MisfitsBarrels
     node: barrelblueopen
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -188,7 +188,7 @@
   description: A red barrel with an explosive warning sign on. The lid is off and you can see inside.
   components:
   - type: Construction
-    graph: N14Barrels
+    graph: MisfitsBarrels
     node: barrelredopen
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -202,7 +202,7 @@
   description: A yellow barrel with a radiation warning sign on. The lid is off and you can see inside but it still makes you twitch.
   components:
   - type: Construction
-    graph: N14Barrels
+    graph: MisfitsBarrels
     node: barrelyellowopen
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -220,7 +220,7 @@
   description: A worn out black barrel. This one looks full of some dark liquid.
   components:
   - type: Construction
-    graph: N14Barrels
+    graph: MisfitsBarrels
     node: barrelblackfull
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -237,7 +237,7 @@
   description: A red barrel with an explosive warning sign on. It has a golden liquid inside.
   components:
   - type: Construction
-    graph: N14Barrels
+    graph: MisfitsBarrels
     node: barrelredfull
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -255,7 +255,7 @@
         Heat: 10
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: N14DefaultStructural
+    explosionType: MisfitsDefaultStructural
     totalIntensity: 90
 
 - type: entity
@@ -265,7 +265,7 @@
   description: A yellow barrel with a radiation warning sign on. You can see the glowing goo bubble.
   components:
   - type: Construction
-    graph: N14Barrels
+    graph: MisfitsBarrels
     node: barrelyellowfull
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi

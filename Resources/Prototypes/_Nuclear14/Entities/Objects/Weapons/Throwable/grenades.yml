@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: IgnitableGrenadeBase
+  id: N14IgnitableGrenadeBase
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Grenades/Dynamite.rsi
@@ -44,7 +44,7 @@
 - type: entity
   name: dynamite
   description: A stick of dynamite that produces a broad, powerful pressure wave without fragmentation.
-  parent: IgnitableGrenadeBase
+  parent: N14IgnitableGrenadeBase
   id: N14Dynamite
   components:
   - type: Explosive
@@ -110,7 +110,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: N14DefaultStructural
+    explosionType: MisfitsDefaultStructural
     maxIntensity: 2
     intensitySlope: 10
     totalIntensity: 20
@@ -189,7 +189,7 @@
 - type: entity #should spawn fire only when it was activated and then thrown, but when its not activated it just breaks and spills welding fuel. 
   name: Nuka cocktail
   description: Nuka-Cola bottle filled with flammable fuel.
-  parent: IgnitableGrenadeBase
+  parent: N14IgnitableGrenadeBase
   id: N14NukaCocktail
   components:
   - type: Sprite
@@ -277,7 +277,7 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ProjectileGrenade
     triggerKey: trigger
-    fillPrototype: BulletPlasma
+    fillPrototype: N14BulletPlasma
     capacity: 16
   - type: PacifismDangerousAttack
   - type: TriggerOnUse
@@ -311,7 +311,7 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ProjectileGrenade
     triggerKey: trigger
-    fillPrototype: BoilingWaterShot
+    fillPrototype: N14BoilingWaterShot
     capacity: 20
   - type: PacifismDangerousAttack
   - type: TriggerOnUse
@@ -408,7 +408,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: N14DefaultStructural
+    explosionType: MisfitsDefaultStructural
     maxIntensity: 1
     intensitySlope: 5
     totalIntensity: 5 # should be about 1 tile max very small damage
@@ -446,7 +446,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: N14DefaultStructural
+    explosionType: MisfitsDefaultStructural
     maxIntensity: 5
     intensitySlope: 1
     totalIntensity: 1

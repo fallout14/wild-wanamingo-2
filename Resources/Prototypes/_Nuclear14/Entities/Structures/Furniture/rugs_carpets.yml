@@ -39,7 +39,7 @@
     sprite: Nuclear14/Structures/Furniture/rugs.rsi
     state: mat_blank
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rugmat
 
 - type: entity
@@ -50,7 +50,7 @@
   - type: Sprite
     state: mat_welcome
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rugwelcome
 
 - type: entity
@@ -62,7 +62,7 @@
   - type: Sprite
     state: mat_vulgar
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rugvulgar1
 
 - type: entity
@@ -73,7 +73,7 @@
   - type: Sprite
     state: mat_vulgar_2
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rugvulgar2
 
 - type: entity
@@ -84,7 +84,7 @@
   - type: Sprite
     state: mat_town
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rugtown
 
 - type: entity
@@ -95,7 +95,7 @@
   - type: Sprite
     state: mat_ncr
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rugncr
 
 - type: entity
@@ -106,7 +106,7 @@
   - type: Sprite
     state: mat_bos
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rugbos
 
 # Rubber mats
@@ -120,7 +120,7 @@
   - type: Sprite
     state: rubber_single
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rubbersingle
 
 - type: entity
@@ -130,7 +130,7 @@
   - type: Sprite
     state: rubber_1
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rubber1
 
 - type: entity
@@ -140,7 +140,7 @@
   - type: Sprite
     state: rubber_2
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rubber2
 
 - type: entity
@@ -150,7 +150,7 @@
   - type: Sprite
     state: rubber_3
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rubber3
 
 # 64x64 rugs
@@ -165,7 +165,7 @@
     sprite: Nuclear14/Structures/Furniture/rugs64x64.rsi
     state: rug_blue
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rugblue
 
 - type: entity
@@ -177,7 +177,7 @@
     sprite: Nuclear14/Structures/Furniture/rugs64x64.rsi
     state: rug_blue_shag
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rugblueshag
 
 - type: entity
@@ -189,7 +189,7 @@
     sprite: Nuclear14/Structures/Furniture/rugs64x64.rsi
     state: rug_fancy
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rugfancy
 
 - type: entity
@@ -201,7 +201,7 @@
     sprite: Nuclear14/Structures/Furniture/rugs64x64.rsi
     state: rug_red
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rugred
 
 - type: entity
@@ -213,7 +213,7 @@
     sprite: Nuclear14/Structures/Furniture/rugs64x64.rsi
     state: rug_yellow
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rugyellow
 
 - type: entity
@@ -226,5 +226,5 @@
     sprite: Nuclear14/Structures/Furniture/rugs64x64.rsi
     state: rug_rubber
   - type: Construction
-    graph: N14Rugs
+    graph: MisfitsRugs
     node: rubberlarge

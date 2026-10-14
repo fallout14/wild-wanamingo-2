@@ -1,0 +1,43 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Structures/Doors/airlocks.yml
+
+- type: entity
+  id: CorvaxDoorBunker3X
+  parent: N14Airlock
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Structures/Door/bunkerdoor.rsi
+  - type: Occluder
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.5,-0.5,1.5,0.5"
+        density: 100
+        mask:
+        - FullTileMask
+        layer:
+        - AirlockLayer
+
+- type: entity
+  id: CorvaxDoorBunkerGlass3X
+  parent: N14Airlock
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Structures/Door/glassbunkerdoor.rsi
+  - type: Door
+    occludes: false
+  - type: Occluder
+    enabled: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.5,-0.5,1.5,0.5"
+        density: 100
+        mask:
+        - FullTileMask
+        layer:
+        - AirlockLayer

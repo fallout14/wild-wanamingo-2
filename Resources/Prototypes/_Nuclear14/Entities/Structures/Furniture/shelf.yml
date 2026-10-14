@@ -107,7 +107,7 @@
     netsync: false
     state: shelf_wood
   - type: Construction
-    graph: ShelvesWood
+    graph: MisfitsShelvesWood
     node: ShelfWood
   - type: Damageable
     damageModifierSet: Wood
@@ -184,7 +184,7 @@
     noRot: false
     offset: 0.5, 0.5
   - type: Construction
-    graph: ShelvesWood
+    graph: MisfitsShelvesWood
     node: ShelfWoodTall
   - type: Fixtures
     fixtures:
@@ -229,7 +229,7 @@
     snapCardinals: true
     state: showcase
   - type: Construction
-    graph: ShelvesWood
+    graph: MisfitsShelvesWood
     node: ShelfWoodShowcase
   - type: Fixtures
     fixtures:
@@ -253,7 +253,7 @@
   - type: Sprite
     state: stand_wood
   - type: Construction
-    graph: ShelvesWood
+    graph: MisfitsShelvesWood
     node: ShelfWoodStand
   - type: Fixtures
     fixtures:
@@ -277,7 +277,7 @@
   - type: Sprite
     state: stand_wood_small
   - type: Construction
-    graph: ShelvesWood
+    graph: MisfitsShelvesWood
     node: ShelfWoodStandSmall
   - type: Fixtures
     fixtures:
@@ -301,7 +301,7 @@
   - type: Sprite
     state: clothing_rack
   - type: Construction
-    graph: ShelvesWood
+    graph: MisfitsShelvesWood
     node: ShelfWoodClothesRack
 
 # Metal Shelves
