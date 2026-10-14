@@ -259,6 +259,10 @@ public abstract partial class SharedDoAfterSystem : EntitySystem
             return false;
         }
 
+        // WW Change - let other systems (SPECIAL Intelligence) scale how long this do-after takes.
+        var delayEv = new Content.Shared._WW.DoAfter.ModifyDoAfterDelayEvent(args);
+        RaiseLocalEvent(args.User, ref delayEv);
+
         // Duplicate blocking & cancellation.
         if (!ProcessDuplicates(args, comp))
         {

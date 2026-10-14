@@ -64,10 +64,10 @@
   suffix: open
   categories: [ HideSpawnMenu ]
   components:
-  - type: SolutionContainerManager
-    solutions:
-      barrel:
-        maxVol: 500
+  - type: Solution
+    id: barrel
+    solution:
+      maxVol: 500
   - type: DrainableSolution
     solution: barrel
   - type: ReagentTank
@@ -115,12 +115,12 @@
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
     state: red-closed
-  - type: SolutionContainerManager
-    solutions:
-      barrel:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 100
+  - type: Solution
+    id: barrel
+    solution:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 100
   - type: DamageOnToolInteract
     tools: Welding
     weldingDamage:
@@ -242,12 +242,12 @@
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
     state: red-full
-  - type: SolutionContainerManager
-    solutions:
-      barrel:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 100
+  - type: Solution
+    id: barrel
+    solution:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 100
   - type: DamageOnToolInteract
     tools: Welding
     weldingDamage:

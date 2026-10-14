@@ -117,13 +117,13 @@
     fuelLitCost: 0.5
   - type: RefillableSolution
     solution: Welder
-  - type: SolutionContainerManager
-    solutions:
-      Welder:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 60
-        maxVol: 60
+  - type: Solution
+    id: Welder
+    solution:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 60
+      maxVol: 60
   - type: PointLight
     enabled: false
     radius: 2

@@ -13,13 +13,13 @@
     startingCharge: 99999
   - type: BatterySelfRecharger
     autoRechargeRate: 1000
-  - type: SolutionContainerManager
-    solutions:
-      chamber:
-        maxVol: 500
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 500
+  - type: Solution
+    id: chamber
+    solution:
+      maxVol: 500
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 500
   - type: FlamerAmmoProvider
     solutionId: chamber
     fireCost: 5

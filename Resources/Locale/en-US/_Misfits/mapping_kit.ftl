@@ -595,3 +595,4 @@ n14-id-holotag-full-name = {$fullName}'s holotags{$jobSuffix}
 lathe-category-identification = Identification
 reagent-name-nightstalker-blood = nightstalker blood
 reagent-desc-nightstalker-blood = blood from a nightstalker
+misfits-kit-explosive = explosive

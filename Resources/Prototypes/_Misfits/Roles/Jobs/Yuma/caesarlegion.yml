@@ -9,7 +9,7 @@
   description: job-description-caesar-legion-centurion
   playTimeTracker: CaesarLegionCenturion
   startingGear: CaesarLegionCenturionGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconlegionerCenturion
   supervisors: job-name-caesar-legion
   whitelisted: true
   accessGroups:
@@ -46,7 +46,7 @@
   description: job-description-caesar-legion-vexillarius
   playTimeTracker: CaesarLegionVexillarius
   startingGear: CaesarLegionVexillariusGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconlegionerVenator
   supervisors: job-name-caesar-legion-other
   accessGroups:
   - CaesarLegionVexillarius
@@ -84,7 +84,7 @@
   description: job-description-caesar-legion-explorer
   playTimeTracker: CaesarLegionExplorer
   startingGear: CaesarLegionExplorerGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconlegionerVenator
   supervisors: job-name-caesar-legion-supervisors
   accessGroups:
   - CaesarLegionExplorer
@@ -124,7 +124,7 @@
   description: job-description-caesar-legion-houndmaster
   playTimeTracker: CaesarLegionHoundmaster
   startingGear: CaesarLegionHoundmasterGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconlegionerWarrior
   supervisors: job-name-caesar-legion-other
   accessGroups:
   - CaesarLegionHoundmaster
@@ -161,7 +161,7 @@
   description: job-description-caesar-legion-forgemaster
   playTimeTracker: CaesarLegionForgemaster
   startingGear: CaesarLegionForgeMasterGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconlegionerDean
   supervisors: job-name-caesar-legion-supervisors
   accessGroups:
   - CaesarLegionDean
@@ -195,7 +195,7 @@
   description: job-description-caesar-legion-dean
   playTimeTracker: CaesarLegionDean
   startingGear: CaesarLegionDeanGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconlegionerDean
   supervisors: job-name-caesar-legion-supervisors
   accessGroups:
   - CaesarLegionDean
@@ -233,7 +233,7 @@
   description: job-description-caesar-legionnaire-recruit
   playTimeTracker: CaesarLegionLegionnaireRecruit
   startingGear: CaesarLegionLegionnaireRecruitGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconlegionerRecruit
   supervisors: job-name-caesar-legion-other
   accessGroups:
   - CaesarLegionLegionnaireRecruit
@@ -272,7 +272,7 @@
   description: job-description-caesar-legion-legionnaire-warrior
   playTimeTracker: CaesarLegionLegionnaireWarrior
   startingGear: CaesarLegionLegionnaireWarriorGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconlegionerWarrior
   supervisors: job-name-caesar-legion-other
   accessGroups:
   - CaesarLegionLegionnaireWarrior
@@ -310,7 +310,7 @@
   description: job-description-caesar-legion-legionnaire-veteran
   playTimeTracker: CaesarLegionLegionnaireVeteran
   startingGear: CaesarLegionLegionnaireVeteranGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconlegionerVeteran
   supervisors: job-name-caesar-legion-other
   accessGroups:
   - CaesarLegionLegionnaireVeteran
@@ -348,7 +348,7 @@
   description: job-description-caesar-legion-auxilia
   playTimeTracker: CaesarLegionAuxilia
   startingGear: CaesarLegionAuxiliaGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconlegionerRecruit
   supervisors: job-name-caesar-legion-female
   accessGroups:
   - CaesarLegionRecruit
@@ -390,7 +390,7 @@
   description: job-description-caesar-legion-slave
   playTimeTracker: CaesarLegionSlave
   startingGear: CaesarLegionSlaveGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconLegionSlave
   supervisors: job-supervisors-caesar-legion-slave
   accessGroups:
   - CaesarLegionSlave

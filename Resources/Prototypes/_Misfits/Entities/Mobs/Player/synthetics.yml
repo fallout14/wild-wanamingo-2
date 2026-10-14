@@ -162,13 +162,9 @@
     soundGunshot:
       path: /Audio/Nuclear14/Weapons/Guns/Flames/flamer.ogg
     useKey: false
-  - type: SolutionContainerManager # #Misfits Change: internal fuel tank feeds tile-fire flamer bursts
+  - type: SolutionManager
     solutions:
-      chamber:
-        maxVol: 150
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 150
+    - N14PlayerSyntheticMrHandySolutionChamber
   - type: FlamerAmmoProvider
     solutionId: chamber
     fireCost: 5
@@ -202,6 +198,19 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellAntiqueProto
+
+- type: entity
+  parent: Solution
+  id: N14PlayerSyntheticMrHandySolutionChamber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: chamber
+    solution:
+      maxVol: 150
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 150
 
 - type: entity
   parent: N14BasePlayerSynthetic

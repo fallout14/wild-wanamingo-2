@@ -176,12 +176,9 @@
         Base: fireant
       Dead:
         Base: dead
-  - type: SolutionContainerManager
+  - type: SolutionManager
     solutions:
-      melee:
-        reagents:
-        - ReagentId: FireToxin
-          Quantity: 10
+    - N14MobGiantFireAntSolutionMelee
   - type: NamedSolutionRegeneration
     solution: melee
     generated:
@@ -205,6 +202,18 @@
         maxDistance: 10
 
 #MARK: Radroach
+
+- type: entity
+  parent: Solution
+  id: N14MobGiantFireAntSolutionMelee
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: melee
+    solution:
+      reagents:
+      - ReagentId: FireToxin
+        Quantity: 10
 
 - type: entity
   name: radroach
@@ -365,15 +374,9 @@
       params:
         volume: -3
         maxDistance: 10
-  - type: SolutionContainerManager
+  - type: SolutionManager
     solutions:
-      melee:
-        maxVol: 10
-        reagents:
-        - ReagentId: Toxin
-          Quantity: 5
-        - ReagentId: Radium
-          Quantity: 5
+    - N14MobRadscorpionSolutionMelee
   - type: NamedSolutionRegeneration
     solution: melee
     generated:
@@ -384,6 +387,21 @@
         Quantity: 0.1
 
 #MARK: Barkscorpion
+
+- type: entity
+  parent: Solution
+  id: N14MobRadscorpionSolutionMelee
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: melee
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Toxin
+        Quantity: 5
+      - ReagentId: Radium
+        Quantity: 5
 
 - type: entity
   name: barkscorpion
@@ -397,13 +415,9 @@
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: radscorpion
       sprite: Nuclear14/Mobs/Insects/radscorpionbark.rsi
-  - type: SolutionContainerManager
+  - type: SolutionManager
     solutions:
-      melee:
-        maxVol: 10
-        reagents:
-        - ReagentId: Toxin
-          Quantity: 10
+    - N14MobRadscorpionBarkSolutionMelee
   - type: NamedSolutionRegeneration
     solution: melee
     generated:
@@ -418,6 +432,19 @@
         maxDistance: 10
 #MARK: Cazador
 #SCARY FUCKERS, RUUUN!!
+
+- type: entity
+  parent: Solution
+  id: N14MobRadscorpionBarkSolutionMelee
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: melee
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Toxin
+        Quantity: 10
 
 - type: entity
   name: cazador
@@ -480,13 +507,9 @@
       params:
         volume: -8
         maxDistance: 5
-  - type: SolutionContainerManager
+  - type: SolutionManager
     solutions:
-      melee:
-        maxVol: 10
-        reagents:
-        - ReagentId: CazadorVenom
-          Quantity: 10
+    - N14MobCazadorSolutionMelee
   - type: NamedSolutionRegeneration
     solution: melee
     generated:
@@ -513,3 +536,16 @@
       params:
         volume: -3
         maxDistance: 10
+
+- type: entity
+  parent: Solution
+  id: N14MobCazadorSolutionMelee
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: melee
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: CazadorVenom
+        Quantity: 10

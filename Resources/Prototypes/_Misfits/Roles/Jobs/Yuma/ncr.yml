@@ -9,7 +9,7 @@
   description: job-description-ncr-commander
   playTimeTracker: NCRCommander
   startingGear: NCRCommanderGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconNcrLeader
   supervisors: job-supervisors-ncr-commander
   whitelisted: true
   access:
@@ -51,7 +51,7 @@
   description: job-description-ncr-platoon-leader
   playTimeTracker: NCRPlatoonLeader
   startingGear: NCRPlatoonLeaderGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconNcrLeader
   supervisors: job-supervisors-ncr-commander
   access:
   - NCR
@@ -90,7 +90,7 @@
   description: job-description-ncr-doctor
   playTimeTracker: NCRDoctor
   startingGear: NCRDoctorGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconNcrMedic
   supervisors: job-supervisors-ncr-commander
   access:
   - NCR
@@ -124,7 +124,7 @@
   description: job-description-ncr-requisition-officer
   playTimeTracker: NCRRO
   startingGear: NCRRequisitionOfficerGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconNcrLeader
   supervisors: job-supervisors-ncr-commander
   access:
   - NCR
@@ -163,7 +163,7 @@
   description: job-description-ncr-nco
   playTimeTracker: NCRNCO
   startingGear: NCRNCOGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconNcrSerg
   supervisors: job-supervisors-ncr-nco
   access:
   - NCR
@@ -199,7 +199,7 @@
   description: job-description-ncr-weapon-specialist
   playTimeTracker: NCRWS
   startingGear: NCRWSGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconNcrSpec
   supervisors: job-supervisors-ncr-sergeant
   access:
   - NCR
@@ -234,7 +234,7 @@
   description: job-description-ncr-medic
   playTimeTracker: NCRMedic
   startingGear: NCRMedicGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconNcrMedic
   supervisors: job-supervisors-ncr-nco
   access:
   - NCR
@@ -269,7 +269,7 @@
   description: job-description-ncr-recruit
   playTimeTracker: NCRCadet
   startingGear: NCRCadetGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconNcrCadet
   supervisors: job-supervisors-ncr
   access:
   - NCR
@@ -301,7 +301,7 @@
   description: job-description-ncr-recruit
   playTimeTracker: F14NCRGarrisonTrooper
   startingGear: F14NCRGarrisonTrooperGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconNcrCadet
   supervisors: job-supervisors-ncr
   access:
   - NCR

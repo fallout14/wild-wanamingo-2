@@ -6,7 +6,10 @@
   id: N14ProduceBase
   abstract: true
   components:
-  - type: SolutionContainerManager
+  - type: Solution
+    id: food
+    solution:
+      maxVol: 10
   - type: Sprite
     state: produce
   # let cows eat raw produce like wheat and oats
@@ -30,7 +33,6 @@
   id: N14FoodProduceBase
   abstract: true
   components:
-  - type: SolutionContainerManager
   - type: Sprite
     state: produce
   - type: Produce
@@ -144,7 +146,6 @@
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/towercap.rsi
-  - type: SolutionContainerManager
   - type: MeleeWeapon
     damage:
       types:
@@ -165,7 +166,6 @@
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/steelcap.rsi
-  - type: SolutionContainerManager
   - type: MeleeWeapon
     damage:
       types:

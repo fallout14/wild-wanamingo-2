@@ -27,10 +27,10 @@
     changeColor: true
     fillBaseName: stimpakfill
     emptySpriteName: stimpak-empty
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 15
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 15
   - type: ExaminableSolution
     solution: pen
   - type: Injector
@@ -75,10 +75,10 @@
     fillBaseName: doctorssyringefill
     emptySpriteName: doctorssyringe-empty
   - type: Appearance
-  - type: SolutionContainerManager
-    solutions:
-      injector:
-        maxVol: 15
+  - type: Solution
+    id: injector
+    solution:
+      maxVol: 15
   - type: Injector
     activeModeProtoId: SyringeDrawMode
     allowedModes:
@@ -144,13 +144,13 @@
     activeModeProtoId: HyposprayInjectMode
     allowedModes:
     - HyposprayInjectMode
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 25
-        reagents:
-        - ReagentId: HealingMixture
-          Quantity: 25
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 25
+      reagents:
+      - ReagentId: HealingMixture
+        Quantity: 25
   - type: Tag # #Misfits Add - Allow empty stimpaks to be reused in crafting recipes
     tags:
     - Syringe
@@ -166,13 +166,13 @@
   components:
   - type: StaticPrice
     price: 8
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 25
-        reagents:
-        - ReagentId: DirtyStimpak
-          Quantity: 25
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 25
+      reagents:
+      - ReagentId: DirtyStimpak
+        Quantity: 25
 
 - type: entity
   parent: N14ChemicalSyringe
@@ -210,13 +210,13 @@
     activeModeProtoId: HyposprayInjectMode
     allowedModes:
     - HyposprayInjectMode
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 25
-        reagents:
-        - ReagentId: RobustHealingMixture
-          Quantity: 25
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 25
+      reagents:
+      - ReagentId: RobustHealingMixture
+        Quantity: 25
   - type: Tag # #Misfits Add - Allow empty super stimpaks to be reused in crafting recipes
     tags:
     - Syringe
@@ -262,13 +262,13 @@
   name: antidote syringe
   description: A syringe filled with an effective antitoxin.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 15
-        reagents:
-        - ReagentId: Antidote
-          Quantity: 15
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 15
+      reagents:
+      - ReagentId: Antidote
+        Quantity: 15
 
 - type: entity
   parent: N14ChemicalSyringe
@@ -316,13 +316,13 @@
   name: Jet inhaler
   description: A rare injector filled with a narcotic reagent that makes you feel as though you're speeding up. It's weaker but lasts longer than Turbo.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 15
-        reagents:
-        - ReagentId: MovespeedMixture
-          Quantity: 15
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 15
+      reagents:
+      - ReagentId: MovespeedMixture
+        Quantity: 15
 
 - type: entity
   parent: N14ChemicalSyringe
@@ -357,10 +357,10 @@
     activeModeProtoId: HyposprayInjectMode
     allowedModes:
     - HyposprayInjectMode
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 10
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 10
   - type: Tag
     tags:
     - Turbo
@@ -375,13 +375,13 @@
   name: Turbo inhaler
   description: A small injector filled with a narcotic reagent that makes you feel as though the world around you is slowing down. It's stronger and more dangerous than Jet.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 10
-        reagents:
-        - ReagentId: RobustMovespeedMixture
-          Quantity: 10
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: RobustMovespeedMixture
+        Quantity: 10
 
 - type: entity
   parent: N14ChemicalSyringe
@@ -414,10 +414,10 @@
     activeModeProtoId: HyposprayInjectMode
     allowedModes:
     - HyposprayInjectMode
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 20
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 20
   - type: UseDelay
     delay: 0.75
 
@@ -428,13 +428,13 @@
   name: med-x
   description: A syringe filled with a powerful painkiller. Some believe that it makes you more resistant to pain.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 20
-        reagents:
-        - ReagentId: DamageResistMixture
-          Quantity: 20
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 20
+      reagents:
+      - ReagentId: DamageResistMixture
+        Quantity: 20
 
 - type: entity
   parent: N14ChemicalSyringe
@@ -482,13 +482,13 @@
   name: hydra
   description: A bottle of Supa Yum soda with several vials attached to it. Contains an addictive painkiller cocktail that functions like a wasteland Med-X.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 15
-        reagents:
-        - ReagentId: Hydra
-          Quantity: 15
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 15
+      reagents:
+      - ReagentId: Hydra
+        Quantity: 15
 
 - type: entity
   parent: N14ChemicalSyringe
@@ -519,10 +519,10 @@
     activeModeProtoId: HyposprayInjectMode
     allowedModes:
     - HyposprayInjectMode
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 20
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 20
   - type: Tag
     tags:
     - Syringe
@@ -536,13 +536,13 @@
   name: psycho syringe
   description: A syringe filled with a reagent designed to make you more violent. Legend has it that these have a military origin.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 20
-        reagents:
-        - ReagentId: DamageModifyingMixture
-          Quantity: 20
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 20
+      reagents:
+      - ReagentId: DamageModifyingMixture
+        Quantity: 20
 
 - type: entity
   parent: N14ChemicalSyringe
@@ -574,13 +574,13 @@
     activeModeProtoId: HyposprayInjectMode
     allowedModes:
     - HyposprayInjectMode
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 20
-        reagents:
-        - ReagentId: RadAway
-          Quantity: 20
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 20
+      reagents:
+      - ReagentId: RadAway
+        Quantity: 20
   - type: UseDelay
     delay: 1.25
 
@@ -616,10 +616,10 @@
     activeModeProtoId: HyposprayInjectMode
     allowedModes:
     - HyposprayInjectMode
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 20
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 20
   - type: Tag
     tags:
     - Syringe
@@ -655,10 +655,10 @@
     activeModeProtoId: HyposprayInjectMode
     allowedModes:
     - HyposprayInjectMode
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 30
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 30
   - type: UseDelay
     delay: 0.5
 
@@ -673,13 +673,13 @@
   name: RadAway inhaler
   description: A jet inhaler with a RadAway phial screwed on top of it. Three puffs away from being rad free.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 30
-        reagents:
-        - ReagentId: RadAway
-          Quantity: 30
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: RadAway
+        Quantity: 30
 
 - type: entity
   parent: BaseBeaker
@@ -1004,13 +1004,13 @@
     activeModeProtoId: HyposprayInjectMode
     allowedModes:
     - HyposprayInjectMode
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 25
-        reagents:
-        - ReagentId: UltraRobustHealingMixture
-          Quantity: 25
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 25
+      reagents:
+      - ReagentId: UltraRobustHealingMixture
+        Quantity: 25
 
 - type: entity
   parent: N14HealingPowder

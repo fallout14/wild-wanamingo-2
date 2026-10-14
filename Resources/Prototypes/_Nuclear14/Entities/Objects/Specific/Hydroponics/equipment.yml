@@ -69,10 +69,10 @@
     maxTransferAmount: 100
     minTransferAmount: 5
     canChangeTransferAmount: true
-  - type: SolutionContainerManager
-    solutions:
-      sack:
-        maxVol: 100
+  - type: Solution
+    id: sack
+    solution:
+      maxVol: 100
   - type: Tag
     tags:
     - ComposterCompatible
@@ -109,10 +109,10 @@
   name: fertilizer sack
   description: A sack for storing fertilizer.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      sack:
-        maxVol: 100
-        reagents:
-        - ReagentId: Fertilizer
-          Quantity: 100
+  - type: Solution
+    id: sack
+    solution:
+      maxVol: 100
+      reagents:
+      - ReagentId: Fertilizer
+        Quantity: 100

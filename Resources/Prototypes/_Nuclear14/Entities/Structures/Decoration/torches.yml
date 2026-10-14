@@ -19,8 +19,8 @@
   - type: Sprite
     netsync: false
     noRot: true
-    sprite: Misfits/Legacy/Corvax/Structures/Decoration/torches.rsi   # Forge-Change replace sprites with working ones
-    state: torch_lit                                   # Forge-Change
+    sprite: MojaveSun/Structures/Lighting/torches.rsi   # WW Change - Mojave Sun 13 sprites
+    state: torch_lit                                   # WW Change - Mojave Sun 13 sprites
   - type: Appearance
   - type: Reactive
     groups:
@@ -44,7 +44,7 @@
       types:
         Heat: 0.1
   - type: FireVisuals
-    sprite: Misfits/Legacy/Corvax/Structures/Decoration/torches.rsi     # Forge-Change replace sprites with working ones
+    sprite: MojaveSun/Structures/Lighting/torches.rsi     # WW Change - Mojave Sun 13 sprites
     normalState: torch_lit                               # Forge-Change
   - type: Damageable
     damageModifierSet: Wood
@@ -70,7 +70,7 @@
   components:
   - type: Sprite
     noRot: false
-    state: wall_torch_lite # Forge-Change
+    state: wall_torch_lite # WW Change - Mojave Sun 13 sprites
   - type: FireVisuals
-    sprite: Misfits/Legacy/Corvax/Structures/Decoration/torches.rsi # Forge-Change replace sprites with working ones
+    sprite: MojaveSun/Structures/Lighting/torches.rsi # WW Change - Mojave Sun 13 sprites
     normalState: wall_torch_lite # Forge-Change

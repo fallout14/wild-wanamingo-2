@@ -143,13 +143,9 @@
     - FullAuto
     soundGunshot:
       path: /Audio/Nuclear14/Weapons/Guns/Flames/flamer.ogg
-  - type: SolutionContainerManager
+  - type: SolutionManager
     solutions:
-      chamber:
-        maxVol: 100
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 100
+    - N14MobGeckoFireSolutionChamber
   - type: FlamerAmmoProvider
     solutionId: chamber
     fireCost: 5
@@ -177,6 +173,19 @@
       params:
         volume: -3
         maxDistance: 10
+
+- type: entity
+  parent: Solution
+  id: N14MobGeckoFireSolutionChamber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: chamber
+    solution:
+      maxVol: 100
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 100
 
 - type: entity
   name: golden gecko
@@ -315,18 +324,10 @@
       params:
         volume: -3
         maxDistance: 10
-  - type: SolutionContainerManager
+  - type: SolutionManager
     solutions:
-      melee:
-        maxVol: 3
-        reagents:
-        - ReagentId: NightstalkerVenom
-          Quantity: 3
-      udder:
-        maxVol: 3
-        reagents:
-        - ReagentId: NightstalkerVenom
-          Quantity: 3
+    - N14MobNightstalkerCubSolutionMelee
+    - N14MobNightstalkerCubSolutionUdder
   - type: NamedSolutionRegeneration
     solution: melee
     generated:
@@ -335,6 +336,32 @@
         Quantity: 1
 
 # Adult Nightstalker
+
+- type: entity
+  parent: Solution
+  id: N14MobNightstalkerCubSolutionMelee
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: melee
+    solution:
+      maxVol: 3
+      reagents:
+      - ReagentId: NightstalkerVenom
+        Quantity: 3
+
+- type: entity
+  parent: Solution
+  id: N14MobNightstalkerCubSolutionUdder
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: udder
+    solution:
+      maxVol: 3
+      reagents:
+      - ReagentId: NightstalkerVenom
+        Quantity: 3
 
 - type: entity
   name: nightstalker
@@ -416,18 +443,10 @@
       params:
         volume: -3
         maxDistance: 10
-  - type: SolutionContainerManager
+  - type: SolutionManager
     solutions:
-      melee:
-        maxVol: 10
-        reagents:
-        - ReagentId: NightstalkerVenom
-          Quantity: 5
-      udder:
-        maxVol: 10
-        reagents:
-        - ReagentId: NightstalkerVenom
-          Quantity: 10
+    - N14MobNightstalkerSolutionMelee
+    - N14MobNightstalkerSolutionUdder
   - type: NamedSolutionRegeneration
     solution: melee
     generated:
@@ -456,6 +475,32 @@
  #   - Nightstalker
 
 # Deathclaw
+
+- type: entity
+  parent: Solution
+  id: N14MobNightstalkerSolutionMelee
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: melee
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: NightstalkerVenom
+        Quantity: 5
+
+- type: entity
+  parent: Solution
+  id: N14MobNightstalkerSolutionUdder
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: udder
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: NightstalkerVenom
+        Quantity: 10
 
 - type: entity
   name: deathclaw

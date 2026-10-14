@@ -101,6 +101,9 @@ namespace Content.Server.Construction
             EntityCoordinates coords,
             Angle angle = default)
         {
+            if (!CanCraftWithIntelligence(user, true)) // Misfits Change
+                return null;
+
             // We need a place to hold our construction items!
             var container = _container.EnsureContainer<Container>(user, materialContainer, out var existed);
 
@@ -257,7 +260,7 @@ namespace Content.Server.Construction
                 return null;
             }
 
-            var doAfterArgs = new DoAfterArgs(EntityManager, user, doAfterTime, new AwaitedDoAfterEvent(), null)
+            var doAfterArgs = new DoAfterArgs(EntityManager, user, _special.GetIntelligenceConstructionDelay(user, doAfterTime), new AwaitedDoAfterEvent(), null) // Misfits Change - Intelligence build speed
             {
                 BreakOnDamage = true,
                 BreakOnMove = true,

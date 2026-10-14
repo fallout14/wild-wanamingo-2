@@ -287,7 +287,7 @@ namespace Content.Shared.Storage
     }
 
     [ByRefEvent]
-    public record struct StorageInteractAttemptEvent(bool Silent, bool Cancelled = false);
+    public record struct StorageInteractAttemptEvent(bool Silent, bool Cancelled = false, EntityUid? User = null); // Misfits Change - who is opening it (HandOrGroundStorage)
 
     [ByRefEvent]
     public record struct StorageInteractUsingAttemptEvent(bool Cancelled = false);

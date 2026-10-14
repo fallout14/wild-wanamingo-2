@@ -49,10 +49,10 @@
           collection: MetalBreak
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        maxVol: 1500
+  - type: Solution
+    id: tank
+    solution:
+      maxVol: 1500
   - type: DrainableSolution
     solution: tank
   - type: ReagentTank
@@ -112,12 +112,12 @@
   id: N14StorageTankWideFullFuel
   suffix: Full
   components:
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 2000
+  - type: Solution
+    id: tank
+    solution:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 2000
           
           
 
@@ -148,12 +148,12 @@
   parent: N14StorageTank
   suffix: Full
   components:
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 1500
+  - type: Solution
+    id: tank
+    solution:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 1500
           
 
 - type: entity
@@ -183,12 +183,12 @@
   parent: N14StorageTankHuge
   suffix: Full
   components:
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 2000
+  - type: Solution
+    id: tank
+    solution:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 2000
           
 
 - type: entity
@@ -218,12 +218,12 @@
   id: N14StorageTankVatFullFuel
   suffix: Full, fuel
   components:
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 1500
+  - type: Solution
+    id: tank
+    solution:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 1500
           
 
 - type: entity
@@ -231,9 +231,9 @@
   id: N14StorageTankVatFullWater
   suffix: Full, water
   components:
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        reagents:
-        - ReagentId: Water
-          Quantity: 1500
+  - type: Solution
+    id: tank
+    solution:
+      reagents:
+      - ReagentId: Water
+        Quantity: 1500

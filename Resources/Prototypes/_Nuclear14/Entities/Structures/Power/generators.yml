@@ -457,13 +457,13 @@
       solution: tank
       reagents:
         WeldingFuel: 1
-    - type: SolutionContainerManager
-      solutions:
-        tank:
-          maxVol: 250
-          reagents:
-          - ReagentId: WeldingFuel
-            Quantity: 250
+    - type: Solution
+      id: tank
+      solution:
+        maxVol: 250
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 250
     - type: RefillableSolution
       solution: tank
     - type: GeneratorExhaustGas

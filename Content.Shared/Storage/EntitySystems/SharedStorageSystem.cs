@@ -1888,7 +1888,7 @@ public abstract partial class SharedStorageSystem : EntitySystem
         if (!canInteract)
             return false;
 
-        var ev = new StorageInteractAttemptEvent(silent);
+        var ev = new StorageInteractAttemptEvent(silent, User: user); // Misfits Change
         RaiseLocalEvent(storage, ref ev);
 
         return !ev.Cancelled;

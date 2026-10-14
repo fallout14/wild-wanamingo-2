@@ -35,13 +35,13 @@
     sprite: Nuclear14/Objects/Tools/welder_industrial.rsi
   - type: Item
     sprite: Nuclear14/Objects/Tools/welder_industrial.rsi
-  - type: SolutionContainerManager
-    solutions:
-      Welder:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 250
-        maxVol: 250
+  - type: Solution
+    id: Welder
+    solution:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 250
+      maxVol: 250
 
 - type: entity
   name: advanced industrial welding tool
@@ -66,13 +66,13 @@
     sprite: Nuclear14/Objects/Tools/welder_experimental.rsi
   - type: Item
     sprite: Nuclear14/Objects/Tools/welder_experimental.rsi
-  - type: SolutionContainerManager
-    solutions:
-      Welder:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 1000
-        maxVol: 1000
+  - type: Solution
+    id: Welder
+    solution:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 1000
+      maxVol: 1000
   - type: PointLight
     enabled: false
     radius: 1.5

@@ -40,12 +40,12 @@
   - type: Appearance
   - type: Extractable
     grindableSolutionName: lead
-  - type: SolutionContainerManager
-    solutions:
-      lead:
-        reagents:
-        - ReagentId: Lead
-          Quantity: 10
+  - type: Solution
+    id: lead
+    solution:
+      reagents:
+      - ReagentId: Lead
+        Quantity: 10
 
 - type: entity
   parent: N14IngotLead
@@ -99,12 +99,12 @@
   - type: Appearance
   - type: Extractable
     grindableSolutionName: aluminum
-  - type: SolutionContainerManager
-    solutions:
-      aluminum:
-        reagents:
-        - ReagentId: Aluminium
-          Quantity: 10
+  - type: Solution
+    id: aluminum
+    solution:
+      reagents:
+      - ReagentId: Aluminium
+        Quantity: 10
 
 - type: entity
   parent: N14IngotAluminum
@@ -147,12 +147,12 @@
   - type: Appearance
   - type: Extractable
     grindableSolutionName: copper
-  - type: SolutionContainerManager
-    solutions:
-      copper:
-        reagents:
-        - ReagentId: Copper
-          Quantity: 10
+  - type: Solution
+    id: copper
+    solution:
+      reagents:
+      - ReagentId: Copper
+        Quantity: 10
 
 - type: entity
   parent: N14IngotCopper
@@ -195,14 +195,14 @@
   - type: Appearance
   - type: Extractable
     grindableSolutionName: brass
-  - type: SolutionContainerManager
-    solutions:
-      brass:
-        reagents:
-        - ReagentId: Copper
-          Quantity: 5
-        - ReagentId: Zinc
-          Quantity: 5
+  - type: Solution
+    id: brass
+    solution:
+      reagents:
+      - ReagentId: Copper
+        Quantity: 5
+      - ReagentId: Zinc
+        Quantity: 5
 
 - type: entity
   parent: N14IngotBrass
@@ -245,12 +245,12 @@
   - type: Appearance
   - type: Extractable
     grindableSolutionName: gold
-  - type: SolutionContainerManager
-    solutions:
-      gold:
-        reagents:
-        - ReagentId: Gold
-          Quantity: 10
+  - type: Solution
+    id: gold
+    solution:
+      reagents:
+      - ReagentId: Gold
+        Quantity: 10
 
 - type: entity
   parent: N14IngotGold
@@ -293,12 +293,12 @@
   - type: Appearance
   - type: Extractable
     grindableSolutionName: silver
-  - type: SolutionContainerManager
-    solutions:
-      silver:
-        reagents:
-        - ReagentId: Silver
-          Quantity: 10
+  - type: Solution
+    id: silver
+    solution:
+      reagents:
+      - ReagentId: Silver
+        Quantity: 10
 
 - type: entity
   parent: N14IngotSilver

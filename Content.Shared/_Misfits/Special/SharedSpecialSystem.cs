@@ -292,6 +292,57 @@ public sealed partial class SharedSpecialSystem : EntitySystem
         return MathF.Max(0.1f, baseMultiplier * (1f - discount));
     }
 
+    // WW: the construction and lathe helpers below were private methods of Misfits' ConstructionSystem.cs and
+    // LatheSystem.cs; they live here so Wizden's systems only need a one-line call.
+
+    /// <summary>
+    /// Scales a construction step's length: faster above Intelligence 5, slower below.
+    /// </summary>
+    public float GetIntelligenceConstructionDelay(EntityUid user, float baseDelay)
+    {
+        if (baseDelay <= 0f || !UsesSpecialStats(user))
+            return baseDelay;
+
+        var intelligence = GetEffective(user, SpecialStat.Intelligence);
+        if (intelligence <= SpecialProfile.Minimum)
+            return baseDelay;
+
+        var multiplier = intelligence >= SpecialProfile.DefaultValue
+            ? 1f - (intelligence - SpecialProfile.DefaultValue) * 0.1f
+            : 1f + (SpecialProfile.DefaultValue - intelligence) * 0.15f;
+
+        return baseDelay * MathF.Max(0.1f, multiplier);
+    }
+
+    /// <summary>
+    /// Intelligence 1 cannot build or take things apart. Characters without SPECIAL (ghosts, borgs) always can.
+    /// </summary>
+    public bool CanConstructWithIntelligence(EntityUid user)
+    {
+        return !UsesSpecialStats(user) || GetEffective(user, SpecialStat.Intelligence) > SpecialProfile.Minimum;
+    }
+
+    /// <summary>
+    /// Intelligence 3 or lower cannot work a workbench.
+    /// </summary>
+    public bool CanUseLatheWithIntelligence(EntityUid user)
+    {
+        return !UsesSpecialStats(user) || GetEffective(user, SpecialStat.Intelligence) > 3;
+    }
+
+    /// <summary>
+    /// Scales a workbench job's length by the Intelligence of whoever queued it.
+    /// </summary>
+    public TimeSpan GetIntelligenceLatheProductionTime(EntityUid user, TimeSpan baseTime)
+    {
+        if (baseTime <= TimeSpan.Zero || !TryComp<SpecialComponent>(user, out var special))
+            return baseTime;
+
+        var delta = GetCurvedEffectDelta(GetEffective(user, SpecialStat.Intelligence, special));
+        var multiplier = 1f - delta * GetTuning().IntelligenceLatheTimeMultiplierPerPoint;
+        return baseTime * MathF.Max(0.1f, multiplier);
+    }
+
     public int GetCharismaChatFontSize(EntityUid uid, int baseFontSize, SpecialComponent? component = null)
     {
         var charisma = GetEffective(uid, SpecialStat.Charisma, component);

@@ -18,12 +18,12 @@
       RawZinc: 500
   - type: Extractable
     grindableSolutionName: zincore
-  - type: SolutionContainerManager
-    solutions:
-      zincore:
-        reagents:
-        - ReagentId: Zinc
-          Quantity: 10
+  - type: Solution
+    id: zincore
+    solution:
+      reagents:
+      - ReagentId: Zinc
+        Quantity: 10
 
 - type: entity
   parent: N14ZincOre
@@ -51,12 +51,12 @@
       RawBauxite: 500
   - type: Extractable
     grindableSolutionName: bauxiteore
-  - type: SolutionContainerManager
-    solutions:
-      bauxiteore:
-        reagents:
-        - ReagentId: Aluminium
-          Quantity: 10
+  - type: Solution
+    id: bauxiteore
+    solution:
+      reagents:
+      - ReagentId: Aluminium
+        Quantity: 10
 
 - type: entity
   parent: N14BauxiteOre
@@ -94,12 +94,12 @@
   - type: Appearance
   - type: Extractable
     grindableSolutionName: zinc
-  - type: SolutionContainerManager
-    solutions:
-      zinc:
-        reagents:
-        - ReagentId: Zinc
-          Quantity: 10
+  - type: Solution
+    id: zinc
+    solution:
+      reagents:
+      - ReagentId: Zinc
+        Quantity: 10
 
 - type: entity
   parent: N14IngotZinc

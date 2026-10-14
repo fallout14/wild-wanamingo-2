@@ -57,10 +57,10 @@
     slots:
     - back
     - suitStorage
-  - type: SolutionContainerManager
-    solutions:
-      melee:
-        maxVol: 10
+  - type: Solution
+    id: melee
+    solution:
+      maxVol: 10
   - type: MeleeChemicalInjector
     solution: melee
   - type: RefillableSolution
@@ -146,10 +146,10 @@
     slots:
     - back
     - suitStorage
-  - type: SolutionContainerManager
-    solutions:
-      melee:
-        maxVol: 10
+  - type: Solution
+    id: melee
+    solution:
+      maxVol: 10
   - type: MeleeChemicalInjector
     solution: melee
   - type: RefillableSolution

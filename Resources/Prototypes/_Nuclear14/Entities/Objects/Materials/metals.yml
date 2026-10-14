@@ -29,12 +29,12 @@
   - type: Appearance
   - type: Extractable
     grindableSolutionName: iron
-  - type: SolutionContainerManager
-    solutions:
-      iron:
-        reagents:
-        - ReagentId: Iron
-          Quantity: 10
+  - type: Solution
+    id: iron
+    solution:
+      reagents:
+      - ReagentId: Iron
+        Quantity: 10
 
 - type: entity
   parent: N14IngotIron

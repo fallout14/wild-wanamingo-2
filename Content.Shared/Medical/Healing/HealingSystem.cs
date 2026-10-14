@@ -31,6 +31,7 @@ public sealed partial class HealingSystem : EntitySystem
     [Dependency] private MobThresholdSystem _mobThresholdSystem = default!;
     [Dependency] private SharedPopupSystem _popupSystem = default!;
     [Dependency] private SharedSolutionContainerSystem _solutionContainerSystem = default!;
+    [Dependency] private Content.Shared._Misfits.Special.SharedSpecialSystem _special = default!; // Misfits Change
 
     public override void Initialize()
     {
@@ -62,11 +63,14 @@ public sealed partial class HealingSystem : EntitySystem
 
         TryComp<BloodstreamComponent>(target, out var bloodstream);
 
+        // Misfits Change - Intelligence makes topical treatment work better.
+        var intelMultiplier = _special.GetIntelligenceTopicalHealingMultiplier(args.User);
+
         // Heal some bloodloss damage.
         if (healing.BloodlossModifier != 0 && bloodstream != null)
         {
             var isBleeding = bloodstream.BleedAmount > 0;
-            _bloodstreamSystem.TryModifyBleedAmount((target.Owner, bloodstream), healing.BloodlossModifier);
+            _bloodstreamSystem.TryModifyBleedAmount((target.Owner, bloodstream), healing.BloodlossModifier * intelMultiplier); // Misfits Change
             if (isBleeding != bloodstream.BleedAmount > 0)
             {
                 var popup = (args.User == target.Owner)
@@ -80,7 +84,7 @@ public sealed partial class HealingSystem : EntitySystem
         if (healing.ModifyBloodLevel != 0 && bloodstream != null)
             _bloodstreamSystem.TryModifyBloodLevel((target.Owner, bloodstream), healing.ModifyBloodLevel);
 
-        if (!_damageable.TryChangeDamage(target.Owner, healing.Damage * _damageable.UniversalTopicalsHealModifier, out var healed, true, origin: args.Args.User) && healing.BloodlossModifier != 0)
+        if (!_damageable.TryChangeDamage(target.Owner, healing.Damage * _damageable.UniversalTopicalsHealModifier * intelMultiplier, out var healed, true, origin: args.Args.User) && healing.BloodlossModifier != 0) // Misfits Change
             return;
 
         var total = healed.GetTotal();
@@ -124,7 +128,8 @@ public sealed partial class HealingSystem : EntitySystem
 
         // Update our self heal delay so it shortens as we heal more damage.
         if (args.User == target.Owner)
-            args.Args.Delay = healing.Delay * GetScaledHealingPenalty(target.Owner, healing.SelfHealPenaltyMultiplier);
+            args.Args.Delay = _special.GetIntelligenceMedicalActionDelay(args.User, // Misfits Change - Intelligence speed on repeats too
+                healing.Delay * GetScaledHealingPenalty(target.Owner, healing.SelfHealPenaltyMultiplier));
     }
 
     private bool HasDamage(Entity<HealingComponent> healing, Entity<DamageableComponent> target)

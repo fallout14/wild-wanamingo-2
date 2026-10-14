@@ -50,12 +50,12 @@
       map: ["base"]
   - type: Item
     heldPrefix: powder_lead
-  - type: SolutionContainerManager
-    solutions:
-      powder:
-        reagents:
-        - ReagentId: N14Gunpowder
-          Quantity: 10
+  - type: Solution
+    id: powder
+    solution:
+      reagents:
+      - ReagentId: N14Gunpowder
+        Quantity: 10
   - type: StackPrice # Forge-Change
     price: 1 # PH
 
@@ -97,12 +97,12 @@
       map: ["base"]
   - type: Item
     heldPrefix: powder_brass
-  - type: SolutionContainerManager
-    solutions:
-      powder:
-        reagents:
-        - ReagentId: Sulfur
-          Quantity: 10
+  - type: Solution
+    id: powder
+    solution:
+      reagents:
+      - ReagentId: Sulfur
+        Quantity: 10
   - type: StackPrice # Forge-Change
     price: 1 # PH
 
@@ -182,12 +182,12 @@
       N14Paper: 100
   - type: Extractable
     grindableSolutionName: paper
-  - type: SolutionContainerManager
-    solutions:
-      paper:
-        reagents:
-        - ReagentId: Cellulose
-          Quantity: 3
+  - type: Solution
+    id: paper
+    solution:
+      reagents:
+      - ReagentId: Cellulose
+        Quantity: 3
   - type: StackPrice
     price: 0
 
@@ -231,12 +231,12 @@
   - type: Item
     heldPrefix: powder_lead
   - type: Appearance
-  - type: SolutionContainerManager
-    solutions:
-      powder:
-        reagents:
-        - ReagentId: Charcoal
-          Quantity: 10
+  - type: Solution
+    id: powder
+    solution:
+      reagents:
+      - ReagentId: Charcoal
+        Quantity: 10
   - type: StackPrice
     price: 0
 
@@ -768,13 +768,13 @@
       map: ["base"]
   - type: Item
     size: Small
-  - type: SolutionContainerManager
-    solutions:
-      powder:
-        maxVol: 5
-        reagents:
-        - ReagentId: Cement
-          Quantity: 5
+  - type: Solution
+    id: powder
+    solution:
+      maxVol: 5
+      reagents:
+      - ReagentId: Cement
+        Quantity: 5
   - type: Tag
     tags:
     - Cement

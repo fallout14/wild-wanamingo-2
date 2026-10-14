@@ -61,12 +61,12 @@
         - Impassable
         - MidImpassable
         - LowImpassable
-  - type: SolutionContainerManager
-    solutions:
-      well:
-        reagents:
-        - ReagentId: Water
-          Quantity: 500
+  - type: Solution
+    id: well
+    solution:
+      reagents:
+      - ReagentId: Water
+        Quantity: 500
   - type: DrainableSolution
     solution: well
   - type: ReagentTank
@@ -82,12 +82,12 @@
   id: N14WellWaterDirty
   suffix: Dirty
   components:
-  - type: SolutionContainerManager
-    solutions:
-      well:
-        reagents:
-        - ReagentId: WaterDirty
-          Quantity: 500
+  - type: Solution
+    id: well
+    solution:
+      reagents:
+      - ReagentId: WaterDirty
+        Quantity: 500
   - type: NamedSolutionRegeneration
     solution: well
     generated:
@@ -100,12 +100,12 @@
   id: N14WellWaterIrradiated # N14TODO: As above
   suffix: Irradiated
   components:
-  - type: SolutionContainerManager
-    solutions:
-      well:
-        reagents:
-        - ReagentId: WaterIrradiated
-          Quantity: 500
+  - type: Solution
+    id: well
+    solution:
+      reagents:
+      - ReagentId: WaterIrradiated
+        Quantity: 500
   - type: NamedSolutionRegeneration
     solution: well
     generated:

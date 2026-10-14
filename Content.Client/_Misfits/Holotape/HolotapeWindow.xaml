@@ -1,0 +1,28 @@
+<!-- Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Content.Client/_Misfits/Holotape/HolotapeWindow.xaml -->
+<!-- WW: only the DATA view; Misfits' notes, links, database and Overwatch tabs are not ported. -->
+<DefaultWindow xmlns="https://spacestation14.io"
+               Title="TERMINAL"
+               MinSize="480 360"
+               SetSize="680 520">
+    <!-- Green-on-black RobCo terminal look; colours set in code-behind. -->
+    <PanelContainer Name="BackgroundPanel" VerticalExpand="True" HorizontalExpand="True">
+        <BoxContainer Orientation="Vertical" Margin="12 8 12 8" SeparationOverride="6">
+            <Label Name="HeaderLabel"
+                   Text="ROBCO INDUSTRIES (TM) TERMLINK PROTOCOL"
+                   FontColorOverride="#33FF33"
+                   StyleClasses="monospace"
+                   HorizontalAlignment="Center" />
+            <PanelContainer Name="SepTop" MinHeight="1" HorizontalExpand="True" />
+            <RichTextLabel Name="EntryTitleLabel" StyleClasses="monospace" HorizontalExpand="True" />
+            <PanelContainer Name="SepMid" MinHeight="1" HorizontalExpand="True" />
+            <ScrollContainer VerticalExpand="True" HorizontalExpand="True" HScrollEnabled="False">
+                <RichTextLabel Name="ContentLabel" StyleClasses="monospace" HorizontalExpand="True" />
+            </ScrollContainer>
+            <PanelContainer Name="SepBot" MinHeight="1" HorizontalExpand="True" />
+            <Label Text="[END OF FILE]"
+                   FontColorOverride="#1a5c1a"
+                   StyleClasses="monospace"
+                   HorizontalAlignment="Center" />
+        </BoxContainer>
+    </PanelContainer>
+</DefaultWindow>

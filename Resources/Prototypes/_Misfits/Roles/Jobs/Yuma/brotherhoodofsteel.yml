@@ -9,7 +9,7 @@
   description: job-description-bos-west-elder-comm
   playTimeTracker: BoSWestElderCommander
   startingGear: BoSWestElderCommanderGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconBosMCommander
   supervisors: job-supervisors-bos-west-elder
   whitelisted: true
   accessGroups:
@@ -44,7 +44,7 @@
   description: job-description-bos-mid-paladin-comm
   playTimeTracker: BoSMidPaladinCommander
   startingGear: BoSMidPaladinCommanderGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconBosMCommander
   supervisors: job-supervisors-bos-mid-commander
   accessGroups:
   - BOSHeadPaladin
@@ -81,7 +81,7 @@
   description: job-description-bos-headknight
   playTimeTracker: BoSHeadKnight
   startingGear: BoSHeadKnightGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconBosMKnight
   supervisors: job-supervisors-bos-headknight
   accessGroups:
   - BOSHeadKnight
@@ -116,7 +116,7 @@
   description: job-description-bos-west-scribe
   playTimeTracker: BoSWestScribe
   startingGear: BoSWestScribeGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconBosMScriptor
   supervisors: job-supervisors-bos-west
   accessGroups:
   - BOSHeadScribe
@@ -148,7 +148,7 @@
   description: job-description-bos-scribe
   playTimeTracker: BoSScribe
   startingGear: BoSScribeGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconBosMScriptor
   supervisors: job-supervisors-bos-scribe
   accessGroups:
   - BOSScribe
@@ -179,7 +179,7 @@
   description: job-description-bos-paladin
   playTimeTracker: BoSPaladin
   startingGear: BoSPaladinGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconBosMPaladin
   supervisors: job-supervisors-bos-paladin
   accessGroups:
   - BOSPaladin
@@ -215,7 +215,7 @@
   description: job-description-bos-knight
   playTimeTracker: BoSKnight
   startingGear: BoSKnightGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconBosMKnight
   supervisors: job-supervisors-bos-knight
   accessGroups:
   - BOSKnight
@@ -252,7 +252,7 @@
   description: job-description-bos-initiate
   playTimeTracker: BoSInitiate
   startingGear: BoSInitiateGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconBosMSquire
   supervisors: job-supervisors-bos-initiate
   accessGroups:
   - BOSInitiate

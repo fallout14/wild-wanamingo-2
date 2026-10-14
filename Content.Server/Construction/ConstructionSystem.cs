@@ -20,6 +20,21 @@ namespace Content.Server.Construction
         [Dependency] private ContainerSystem _container = default!;
         [Dependency] private StackSystem _stackSystem = default!;
         [Dependency] private SharedToolSystem _toolSystem = default!;
+        [Dependency] private Content.Shared._Misfits.Special.SharedSpecialSystem _special = default!; // Misfits Change
+
+        /// <summary>
+        /// Misfits Change - Intelligence 1 cannot build or take things apart.
+        /// </summary>
+        private bool CanCraftWithIntelligence(EntityUid user, bool showPopup = false)
+        {
+            if (_special.CanConstructWithIntelligence(user))
+                return true;
+
+            if (showPopup)
+                _popup.PopupEntity(Loc.GetString("construction-system-construct-too-low-intelligence"), user, user);
+
+            return false;
+        }
 
         public override void Initialize()
         {

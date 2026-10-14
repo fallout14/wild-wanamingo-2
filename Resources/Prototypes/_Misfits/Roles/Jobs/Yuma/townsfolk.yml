@@ -9,7 +9,7 @@
   description: job-description-townmayor
   playTimeTracker: TownMayor
   startingGear: TownMayorGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconTownMayor
   supervisors: job-supervisors-townsfolk
   accessGroups:
   - Townie
@@ -40,7 +40,7 @@
   description: job-description-townsheriff
   playTimeTracker: TownSheriff
   startingGear: TownSheriffGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconTownSheriff
   supervisors: job-supervisors-townsfolk
   access:
   - TownieLaw
@@ -77,7 +77,7 @@
   description: job-description-towndeputy
   playTimeTracker: TownDeputy
   startingGear: TownDeputyGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconTownDeputy
   supervisors: job-supervisors-townsfolk
   access:
   - TownieLaw
@@ -116,7 +116,7 @@
   description: job-description-townbartender
   playTimeTracker: WastelandBartender
   startingGear: WastelandBartenderGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconBartender
   supervisors: job-supervisors-townsfolk
   access:
   - WastelandBartender
@@ -153,7 +153,7 @@
   description: job-description-farmer
   playTimeTracker: WastelandFarmer
   startingGear: FarmerGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconWastelandFarmer
   supervisors: job-supervisors-wastelander
   access:
   - WastelandFarmer
@@ -179,7 +179,7 @@
   description: job-description-townmechanic
   playTimeTracker: TownMechanic
   startingGear: TownMechanicGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconTownMechanic
   supervisors: job-supervisors-townsfolk
   access:
   - TownieMechanic
@@ -213,7 +213,7 @@
   description: job-description-townshopkeeper
   playTimeTracker: TownShopkeeper
   startingGear: TownShopkeeperGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconTownShopKeeper
   supervisors: job-supervisors-townsfolk
   access:
   - TownieShopkeeper
@@ -244,7 +244,7 @@
   description: job-description-townsperson
   playTimeTracker: Townsperson
   startingGear: TownspersonGear
-  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  icon: JobIconTownPerson
   supervisors: job-supervisors-townsfolk
   access:
   - TownsPerson

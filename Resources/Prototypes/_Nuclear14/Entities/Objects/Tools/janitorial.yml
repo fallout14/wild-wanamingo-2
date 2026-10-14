@@ -38,12 +38,12 @@
         - state: mopbucket
         - state: mopbucket_water-3
           map: [ "enum.SolutionContainerLayers.Fill" ]
-    - type: SolutionContainerManager
-      solutions:
-        bucket:
-          maxVol: 600
-          reagents:
-            - ReagentId: Water
-              Quantity: 600
+    - type: Solution
+      id: bucket
+      solution:
+        maxVol: 600
+        reagents:
+          - ReagentId: Water
+            Quantity: 600
 
 # Just use upstream rags ID: RagItem

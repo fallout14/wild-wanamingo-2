@@ -5,10 +5,10 @@
   description: A pre-war inhaler of Addictol. Purges chem addictions from the body for good, unlike Fixer.
   suffix: filled
   components:
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 15
-        reagents:
-        - ReagentId: F14Addictol
-          Quantity: 15
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 15
+      reagents:
+      - ReagentId: F14Addictol
+        Quantity: 15

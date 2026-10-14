@@ -186,26 +186,39 @@
   - type: ContainerContainer
     containers:
       stash: !type:ContainerSlot {}
-  - type: SolutionContainerManager
+  - type: Solution
+    id: drainBuffer
+    solution:
+      maxVol: 500
+  - type: SolutionManager
     solutions:
-      drainBuffer:
-        maxVol: 500
-      toilet:
-        maxVol: 250
+    - N14ToiletSolutionToilet
   - type: DumpableSolution
     solution: drainBuffer
+
+- type: entity
+  parent: Solution
+  id: N14ToiletSolutionToilet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: toilet
+    solution:
+      maxVol: 250
 
 - type: entity
   parent: N14Toilet
   id: N14ToiletWater
   suffix: filled water
   components:
-  - type: SolutionContainerManager
-    solutions:
-      toilet:
-        reagents:
-        - ReagentId: Water
-          Quantity: 200
+  - type: Solution
+    id: toilet
+    solution:
+      reagents:
+      - ReagentId: Water
+        Quantity: 200
+  - type: SolutionManager
+    solutions: []
   - type: NamedSolutionRegeneration
     solution: toilet
     generated:
@@ -218,14 +231,16 @@
   id: N14ToiletDirty
   suffix: filled dirty water
   components:
-  - type: SolutionContainerManager
-    solutions:
-      toilet:
-        reagents:
-        - ReagentId: WaterDirty
-          Quantity: 180
-        - ReagentId: GastroToxin
-          Quantity: 20
+  - type: Solution
+    id: toilet
+    solution:
+      reagents:
+      - ReagentId: WaterDirty
+        Quantity: 180
+      - ReagentId: GastroToxin
+        Quantity: 20
+  - type: SolutionManager
+    solutions: []
   - type: NamedSolutionRegeneration
     solution: toilet
     generated:
@@ -240,14 +255,14 @@
   id: N14ToiletIrradiated
   suffix: filled rad water
   components:
-  - type: SolutionContainerManager
-    solutions:
-      toilet:
-        reagents:
-        - ReagentId: WaterIrradiated
-          Quantity: 180
-        - ReagentId: GastroToxin
-          Quantity: 20
+  - type: Solution
+    id: toilet
+    solution:
+      reagents:
+      - ReagentId: WaterIrradiated
+        Quantity: 180
+      - ReagentId: GastroToxin
+        Quantity: 20
   - type: NamedSolutionRegeneration
     solution: toilet
     generated:
@@ -265,12 +280,13 @@
   components:
   - type: Sprite
     state: sink
-  - type: SolutionContainerManager
+  - type: Solution
+    id: drainBuffer
+    solution:
+      maxVol: 100
+  - type: SolutionManager
     solutions:
-      drainBuffer:
-        maxVol: 100
-      tank:
-        maxVol: 200
+    - N14SinkSolutionTank
   - type: DrainableSolution
     solution: tank
   - type: ReagentTank
@@ -278,18 +294,27 @@
     solution: drainBuffer
 
 - type: entity
+  parent: Solution
+  id: N14SinkSolutionTank
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: tank
+    solution:
+      maxVol: 200
+
+- type: entity
   parent: N14Sink
   id: N14SinkFilledWater
   suffix: filled water
   components:
-  - type: SolutionContainerManager
+  - type: Solution
+    id: drainBuffer
+    solution:
+      maxVol: 200
+  - type: SolutionManager
     solutions:
-      drainBuffer:
-        maxVol: 200
-      tank:
-        reagents:
-        - ReagentId: Water
-          Quantity: 200
+    - N14SinkFilledWaterSolutionTank
   - type: NamedSolutionRegeneration
     solution: tank
     generated:
@@ -298,18 +323,29 @@
         Quantity: 1
 
 - type: entity
+  parent: Solution
+  id: N14SinkFilledWaterSolutionTank
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: tank
+    solution:
+      reagents:
+      - ReagentId: Water
+        Quantity: 200
+
+- type: entity
   parent: N14Sink
   id: N14SinkFilledWaterDirty
   suffix: filled water dirty
   components:
-  - type: SolutionContainerManager
+  - type: Solution
+    id: drainBuffer
+    solution:
+      maxVol: 200
+  - type: SolutionManager
     solutions:
-      drainBuffer:
-        maxVol: 200
-      tank:
-        reagents:
-        - ReagentId: WaterDirty
-          Quantity: 200
+    - N14SinkFilledWaterDirtySolutionTank
   - type: NamedSolutionRegeneration
     solution: tank
     generated:
@@ -318,21 +354,44 @@
         Quantity: 1
 
 - type: entity
+  parent: Solution
+  id: N14SinkFilledWaterDirtySolutionTank
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: tank
+    solution:
+      reagents:
+      - ReagentId: WaterDirty
+        Quantity: 200
+
+- type: entity
   parent: N14Sink
   id: N14SinkFilledWaterIrradiated
   suffix: filled water irradiated
   components:
-  - type: SolutionContainerManager
+  - type: Solution
+    id: drainBuffer
+    solution:
+      maxVol: 200
+  - type: SolutionManager
     solutions:
-      drainBuffer:
-        maxVol: 200
-      tank:
-        reagents:
-        - ReagentId: WaterIrradiated
-          Quantity: 200
+    - N14SinkFilledWaterIrradiatedSolutionTank
   - type: NamedSolutionRegeneration
     solution: tank
     generated:
       reagents:
       - ReagentId: WaterIrradiated
         Quantity: 1
+
+- type: entity
+  parent: Solution
+  id: N14SinkFilledWaterIrradiatedSolutionTank
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: tank
+    solution:
+      reagents:
+      - ReagentId: WaterIrradiated
+        Quantity: 200

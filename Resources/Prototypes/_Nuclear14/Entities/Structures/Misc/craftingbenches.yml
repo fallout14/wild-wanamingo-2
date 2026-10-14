@@ -370,12 +370,13 @@
           tags:
           - Bottle
           - PillCanister
-  - type: SolutionContainerManager
+  - type: Solution
+    id: buffer
+    solution:
+      maxVol: 10000 # #Misfits Tweak - cap buffer to prevent unlimited super-chem stacking
+  - type: SolutionManager
     solutions:
-      buffer:
-        maxVol: 10000 # #Misfits Tweak - cap buffer to prevent unlimited super-chem stacking
-      pillBuffer:
-        maxVol: 1000
+    - N14WorkbenchChemistrysetSolutionPillBuffer
   - type: DumpableSolution
     solution: buffer
   - type: Anchorable
@@ -384,6 +385,16 @@
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice
+
+- type: entity
+  parent: Solution
+  id: N14WorkbenchChemistrysetSolutionPillBuffer
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: pillBuffer
+    solution:
+      maxVol: 1000
 
 - type: entity
   parent: BaseStructure

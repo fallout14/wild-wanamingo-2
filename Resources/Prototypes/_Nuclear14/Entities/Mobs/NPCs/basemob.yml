@@ -137,16 +137,25 @@
         Blunt: 0.666667
         Slash: 0.666667
         Piercing: 0.666667
-  - type: SolutionContainerManager
+  - type: SolutionManager
     solutions:
-      melee:
-        reagents:
-        - ReagentId: Toxin
-          Quantity: 0.1
+    - N14MobBaseHostileSolutionMelee
   - type: MeleeChemicalInjector
     solution: melee
   - type: ReplacementAccent
     accent: genericAggressive
+
+- type: entity
+  parent: Solution
+  id: N14MobBaseHostileSolutionMelee
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: melee
+    solution:
+      reagents:
+      - ReagentId: Toxin
+        Quantity: 0.1
 
 - type: entity
   abstract: true
@@ -208,16 +217,25 @@
         Blunt: 0.666667
         Slash: 0.666667
         Piercing: 0.666667
-  - type: SolutionContainerManager
+  - type: SolutionManager
     solutions:
-      melee:
-        reagents:
-        - ReagentId: Toxin
-          Quantity: 0.1
+    - N14MobBaseHostileNoAccentSolutionMelee
   - type: MeleeChemicalInjector
     solution: melee
 
 #MARK: Base Scaley
+
+- type: entity
+  parent: Solution
+  id: N14MobBaseHostileNoAccentSolutionMelee
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: melee
+    solution:
+      reagents:
+      - ReagentId: Toxin
+        Quantity: 0.1
 
 - type: entity
   name: scaley wasteland animal

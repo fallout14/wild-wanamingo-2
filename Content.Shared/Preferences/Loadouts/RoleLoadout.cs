@@ -108,6 +108,13 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
         // Reset points to recalculate.
         Points = roleProto.Points;
 
+        // Misfits Change - Charisma grants (or costs) loadout points on roles that use points.
+        if (Points != null)
+        {
+            Points = Math.Max(0, Points.Value + Content.Shared._Misfits.Special.SharedSpecialSystem.GetCharismaLoadoutPointModifier(
+                Content.Shared._Misfits.Special.SpecialProfile.EnsureValid(profile.Special).Charisma));
+        }
+
         foreach (var (group, groupLoadouts) in SelectedLoadouts)
         {
             // Check the group is even valid for this role.

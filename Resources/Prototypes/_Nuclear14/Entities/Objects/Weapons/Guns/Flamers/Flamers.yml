@@ -19,13 +19,13 @@
     - FullAuto
     soundGunshot:
       path: /Audio/Nuclear14/Weapons/Guns/Flames/flamer.ogg
-  - type: SolutionContainerManager
-    solutions:
-      chamber:
-        maxVol: 500
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 500
+  - type: Solution
+    id: chamber
+    solution:
+      maxVol: 500
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 500
   - type: FlamerAmmoProvider
     solutionId: chamber
     fireCost: 5

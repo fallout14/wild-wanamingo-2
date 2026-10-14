@@ -34,13 +34,13 @@
   - type: DisarmMalus
   - type: RefillableSolution
     solution: Welder
-  - type: SolutionContainerManager
-    solutions:
-      Welder:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 350
-        maxVol: 350
+  - type: Solution
+    id: Welder
+    solution:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 350
+      maxVol: 350
   - type: UseDelay
     delay: 1
   - type: Tool

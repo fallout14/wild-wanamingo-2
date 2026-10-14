@@ -21,10 +21,10 @@
       - N14AmmoCell
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/microfusion.rsi
-  - type: SolutionContainerManager
-    solutions:
-      battery:
-        maxVol: 5
+  - type: Solution
+    id: battery
+    solution:
+      maxVol: 5
   - type: InjectableSolution
     solution: battery
   - type: DrawableSolution
@@ -289,10 +289,10 @@
     intensitySlope: 1.5
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/plasma.rsi
-  - type: SolutionContainerManager
-    solutions:
-      battery:
-        maxVol: 5
+  - type: Solution
+    id: battery
+    solution:
+      maxVol: 5
   - type: InjectableSolution
     solution: battery
   - type: DrawableSolution

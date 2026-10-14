@@ -72,3 +72,6 @@ reagent-effect-guidebook-special-boost =
         [1] Boosts
         *[other] boost
     } SPECIAL ({ $stats }) while in the system
+
+# Ported from Misfits: Resources/Locale/en-US/construction/construction-system.ftl
+construction-system-construct-too-low-intelligence = You are not smart enough to craft that.

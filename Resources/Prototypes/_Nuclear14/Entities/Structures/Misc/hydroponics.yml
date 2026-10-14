@@ -36,10 +36,10 @@
       path: /Audio/Machines/buzz_loop.ogg
       params:
         volume: -5
-  - type: SolutionContainerManager
-    solutions:
-      composting:
-        maxVol: 250
+  - type: Solution
+    id: composting
+    solution:
+      maxVol: 250
   - type: RefillableSolution
     solution: composting
   - type: ExaminableSolution
