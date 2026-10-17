@@ -1,0 +1,91 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Devices/pipboy_hub_cartridge.yml
+
+- type: entity
+  parent: BaseItem
+  id: MisfitsPipBoyContactsCartridge
+  name: Pip-Boy contacts cartridge
+  description: Manage Pip-Boy contacts, send messages, and broadcast SOS beacons.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/DeltaV/Objects/Devices/cartridge.rsi
+    state: cart-chat
+  - type: Icon
+    sprite: Misfits/Legacy/DeltaV/Objects/Devices/cartridge.rsi
+    state: cart-chat
+  - type: UIFragment
+    ui: !type:PipBoyContactsUi
+  - type: Cartridge
+    programName: pipboy-contacts-program-name
+    icon:
+      sprite: MojaveSun/Objects/Devices/pipboy.rsi
+      state: pda
+  - type: PipBoyHubCartridge
+
+# ── Groups: group chat, waypoints, encryption, map tracking ──
+
+- type: entity
+  parent: BaseItem
+  id: MisfitsPipBoyGroupsCartridge
+  name: Pip-Boy groups cartridge
+  description: Create or join group channels for coordinated communication and map tracking.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/DeltaV/Objects/Devices/cartridge.rsi
+    state: cart-chat
+  - type: Icon
+    sprite: Misfits/Legacy/DeltaV/Objects/Devices/cartridge.rsi
+    state: cart-chat
+  - type: UIFragment
+    ui: !type:PipBoyGroupsUi
+  - type: Cartridge
+    programName: pipboy-groups-program-name
+    icon:
+      sprite: MojaveSun/Objects/Devices/pipboy.rsi
+      state: pda
+  - type: PipBoyHubCartridge
+
+# ── Directory: network-wide PipBoy listing, dead drops ──
+
+- type: entity
+  parent: BaseItem
+  id: MisfitsPipBoyDirectoryCartridge
+  name: Pip-Boy directory cartridge
+  description: Browse all visible Pip-Boys on the network and manage dead drops.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/DeltaV/Objects/Devices/cartridge.rsi
+    state: cart-chat
+  - type: Icon
+    sprite: Misfits/Legacy/DeltaV/Objects/Devices/cartridge.rsi
+    state: cart-chat
+  - type: UIFragment
+    ui: !type:PipBoyDirectoryUi
+  - type: Cartridge
+    programName: pipboy-directory-program-name
+    icon:
+      sprite: MojaveSun/Objects/Devices/pipboy.rsi
+      state: pda
+  - type: PipBoyHubCartridge
+
+# ── Settings: visibility, status, password lock ──
+
+- type: entity
+  parent: BaseItem
+  id: MisfitsPipBoySettingsCartridge
+  name: Pip-Boy settings cartridge
+  description: Configure Pip-Boy visibility, presence status, and password lock.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/DeltaV/Objects/Devices/cartridge.rsi
+    state: cart-chat
+  - type: Icon
+    sprite: Misfits/Legacy/DeltaV/Objects/Devices/cartridge.rsi
+    state: cart-chat
+  - type: UIFragment
+    ui: !type:PipBoySettingsUi
+  - type: Cartridge
+    programName: pipboy-settings-program-name
+    icon:
+      sprite: MojaveSun/Objects/Devices/pipboy.rsi
+      state: pda
+  - type: PipBoyHubCartridge

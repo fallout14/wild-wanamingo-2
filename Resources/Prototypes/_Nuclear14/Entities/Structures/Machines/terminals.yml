@@ -74,11 +74,14 @@
   - type: HolotapeData
   # #Misfits Add - Explicitly permits this working terminal to access faction databases.
   # Database selection remains viewer-driven; holotape items do not receive this marker.
+  - type: TerminalDatabaseAccess
   - type: TerminalRandomContent
     contentPool:
       - MisfitsTerminalEntries
   # #Misfits Add - Persistent player-written notes notebook on each terminal.
   # terminalId should be overridden in child entities for unique storage per placement.
+  - type: TerminalNotebook
+    terminalId: default-terminal
   - type: ActivatableUI
     key: enum.HolotapeUiKey.Key
   - type: UserInterface

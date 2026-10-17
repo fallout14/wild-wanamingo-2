@@ -1,0 +1,23 @@
+# Ported from DeltaV content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/DeltaV/Entities/Objects/Devices/cartridges.yml
+
+- type: entity
+  parent: BaseItem
+  id: DeltaVNanoChatCartridge
+  name: NanoChat cartridge
+  description: Lets you message other people!
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/DeltaV/Objects/Devices/cartridge.rsi
+    state: cart-chat
+  - type: UIFragment
+    ui: !type:NanoChatUi
+  - type: NanoChatCartridge
+  - type: Cartridge
+    programName: nano-chat-program-name
+    icon:
+      sprite: MojaveSun/Objects/Devices/pipboy.rsi
+      state: pda
+  - type: ActiveRadio
+    channels:
+    - Common

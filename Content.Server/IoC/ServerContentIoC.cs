@@ -83,5 +83,7 @@ internal static class ServerContentIoC
         deps.Register<ServerFeedbackManager>();
         deps.Register<ISharedFeedbackManager, ServerFeedbackManager>();
         deps.Register<WhitelistManager>();
+        deps.Register<Content.Server._Misfits.Holotape.TerminalNotesDataStore>(); // Misfits Change - terminal notes kept across rounds
+        deps.Register<Content.Server._Misfits.Holotape.TerminalDatabaseDataStore>(); // Misfits Change - faction databases kept across rounds
     }
 }

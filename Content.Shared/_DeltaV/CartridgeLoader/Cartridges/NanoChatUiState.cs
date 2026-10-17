@@ -1,0 +1,32 @@
+// Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Content.Shared/DeltaV/CartridgeLoader/Cartridges/NanoChatUiState.cs (Delta-V code carried by Misfits)
+
+using Robust.Shared.Serialization;
+
+namespace Content.Shared._DeltaV.CartridgeLoader.Cartridges;
+
+[Serializable, NetSerializable]
+public sealed class NanoChatUiState : BoundUserInterfaceState
+{
+    public readonly Dictionary<uint, NanoChatRecipient> Recipients;
+    public readonly Dictionary<uint, List<NanoChatMessage>> Messages;
+    public readonly uint? CurrentChat;
+    public readonly uint OwnNumber;
+    public readonly int MaxRecipients;
+    public readonly bool NotificationsMuted;
+
+    public NanoChatUiState(
+        Dictionary<uint, NanoChatRecipient> recipients,
+        Dictionary<uint, List<NanoChatMessage>> messages,
+        uint? currentChat,
+        uint ownNumber,
+        int maxRecipients,
+        bool notificationsMuted)
+    {
+        Recipients = recipients;
+        Messages = messages;
+        CurrentChat = currentChat;
+        OwnNumber = ownNumber;
+        MaxRecipients = maxRecipients;
+        NotificationsMuted = notificationsMuted;
+    }
+}

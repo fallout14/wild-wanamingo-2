@@ -1,0 +1,23 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/themes.yml, hud.yml (SS14Fallout2Theme)
+# Wild Wanamingo's only HUD: the client always uses it (Content.Client/Entry/EntryPoint.cs, WW Change).
+# Textures the theme doesn't have fall back to Wizden's Default theme.
+
+- type: uiTheme
+  id: N14Fallout2Theme
+  path: /Textures/Nuclear14/Interface/Fallout2/
+  colors:
+    whiteText: "#FFF5EE"
+    slotSelectedGold: "#FFF5EE"
+    slotColor: "#FFF5EE"
+    slotOutline: "#FFF5EE"
+    slotText: "#FFF5EE"
+    nanoGold: "#FFF5EE"
+    goodGreenFore: "#FFF5EE"
+    concerningOrangeFore: "#FFF5EE"
+    dangerousRedFore: "#FFF5EE"
+    disabledFore: "#FFF5EE"
+    # Item status frames (64x32, ~4px border): stretch inside a 5px edge, keep text off the border.
+    _itemstatus_content_margin_right: "#07060706"
+    _itemstatus_content_margin_left: "#07060706"
+    _itemstatus_patch_margin: "#05050505"

@@ -4,6 +4,18 @@
   id: MisfitsWildZoy
   oreEntity: MisfitsFloraProduceWildZoybeans
 
+- type: weightedRandomOre
+  id: MisfitsRandomOreDistributionHigh
+  weights:
+    N14OreIron: 1
+    OreSpaceQuartz: 2
+    N14OreGold: 10
+    N14OreSilver: 4
+    OreUranium: 6
+    OreArtifactFragment: 0.5
+
+# Plants
+
 - type: ore
   id: MisfitsWildCannabis
   oreEntity: MisfitsFloraProduceWildCannabis

@@ -57,12 +57,22 @@
   - type: Weldable
 
 - type: entity
+  parent: [ N14ClosetGrey1, N14TimedStorageFillDomestic ]
+  id: N14ClosetGrey1Refilling
+  suffix: Refilling,Domestic,Random
+
+- type: entity
   parent: [ N14ClosetGrey1, N14StorageFillDomestic ]
   id: N14LootClosetGrey1
   suffix: Loot,Domestic,Random
   components:
   - type: EntityStorage
     capacity: 34
+
+- type: entity
+  parent: [ N14ClosetGrey1, N14BaseLockerTimedStorageFill ]
+  id: N14ClosetGrey1RefillingGeneric
+  suffix: Refilling,Generic,Random
 
 - type: entity
   parent: [ N14ClosetGrey1, N14BaseLockerStorageFill ]
@@ -80,12 +90,22 @@
     sprite: Nuclear14/Structures/Storage/Closets/closetgrey2.rsi
 
 - type: entity
+  parent: [ N14ClosetGrey2, N14TimedStorageFillDomestic ]
+  id: N14ClosetGrey2Refilling
+  suffix: Refilling,Domestic,Random
+
+- type: entity
   parent: [ N14ClosetGrey2, N14StorageFillDomestic ]
   id: N14LootClosetGrey2
   suffix: Loot,Domestic,Random
   components:
   - type: EntityStorage
     capacity: 34
+
+- type: entity
+  parent: [ N14ClosetGrey2, N14BaseLockerTimedStorageFill ]
+  id: N14ClosetGrey2RefillingGeneric
+  suffix: Refilling,Generic,Random
 
 - type: entity
   parent: [ N14ClosetGrey2, N14BaseLockerStorageFill ]
@@ -105,12 +125,22 @@
     sprite: Nuclear14/Structures/Storage/Closets/closetold.rsi
 
 - type: entity
+  parent: [ N14ClosetRusty, N14TimedStorageFillDomestic ]
+  id: N14ClosetRustyRefilling
+  suffix: Refilling,Domestic,Random
+
+- type: entity
   parent: [ N14ClosetRusty, N14StorageFillDomestic ]
   id: N14LootClosetRusty
   suffix: Loot,Domestic,Random
   components:
   - type: EntityStorage
     capacity: 34
+
+- type: entity
+  parent: [ N14ClosetRusty, N14BaseLockerTimedStorageFill ]
+  id: N14ClosetRustyRefillingGeneric
+  suffix: Refilling,Generic,Random
 
 - type: entity
   parent: [ N14ClosetRusty, N14BaseLockerStorageFill ]
@@ -128,6 +158,11 @@
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/Closets/guncabinet.rsi
+
+- type: entity
+  parent: [ N14ClosetGunCabinet, N14BaseMilitaryTimedStorageFill ]
+  id: N14ClosetGunCabinetRefilling
+  suffix: Refilling,Military,Random
 
 - type: entity
   parent: [ N14ClosetGunCabinet, N14BaseMilitaryStorageFill ]
@@ -181,12 +216,22 @@
         - MachineLayer
 
 - type: entity
+  parent: [ N14ClosetDouble, N14TimedStorageFillDomestic ]
+  id: N14ClosetDoubleRefilling
+  suffix: Refilling,Domestic,Random
+
+- type: entity
   parent: [ N14ClosetDouble, N14StorageFillDomestic ]
   id: N14LootClosetDouble
   suffix: Loot,Domestic,Random
   components:
   - type: EntityStorage
     capacity: 34
+
+- type: entity
+  parent: [ N14ClosetDouble, N14BaseLockerTimedStorageFill ]
+  id: N14ClosetDoubleRefillingGeneric
+  suffix: Refilling,Generic,Random
 
 - type: entity
   parent: [ N14ClosetDouble, N14BaseLockerStorageFill ]
@@ -234,6 +279,11 @@
     - Wooden
 
 - type: entity
+  parent: [ N14ClosetCabinetWood, N14TimedStorageFillDomestic ]
+  id: N14ClosetCabinetWoodRefilling
+  suffix: Refilling,Domestic,Random
+
+- type: entity
   parent: [ N14ClosetCabinetWood, N14StorageFillDomestic ]
   id: N14LootClosetCabinetWood
   suffix: Loot,Domestic,Random
@@ -269,6 +319,13 @@
   parent: [ N14ClosetGeneric, N14BaseMilitaryStorageFill ]
   id: N14LootMilitaryClosetGeneric
   suffix: Loot,Military,Random
+
+- type: entity
+  parent: [ N14ClosetGeneric, N14BaseMilitaryTimedStorageFill ]
+  id: N14ClosetGenericRefillingMilitary
+  suffix: Refilling,Military,Random
+
+# Wallmounted Closets
 
 - type: entity
   id: N14ClosetWallMedicabinet
@@ -328,6 +385,11 @@
           SheetSteel1:
             min: 1
             max: 1
+
+- type: entity
+  parent: [ N14ClosetWallMedicabinet, N14TimedStorageFillMedical ]
+  id: N14ClosetWallMedicabinetRefilling
+  suffix: Refilling,Medical,Random
 
 - type: entity
   parent: [ N14ClosetWallMedicabinet, N14StorageFillMedical ]

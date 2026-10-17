@@ -1,0 +1,18 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/gatherable.yml
+# N14 replaced Wizden's RandomOreDistributionStandard with Fallout ores; here it keeps its own ID so Wizden's
+# space rocks are unchanged. Wasteland mining rock rolls its ore from this.
+
+- type: weightedRandomOre
+  id: N14RandomOreDistributionStandard
+  weights:
+    N14OreCopper: 3
+    N14OreGold: 2
+    N14OreSilver: 2
+    N14OreIron: 3
+    OreCoal: 6
+    OreSpaceQuartz: 3
+    OreUranium: 1
+    N14OreLead: 2
+    N14OreSulfur: 2
+    N14OreFertilizer: 3

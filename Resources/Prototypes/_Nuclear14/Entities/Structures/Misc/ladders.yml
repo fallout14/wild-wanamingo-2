@@ -17,16 +17,29 @@
     anchored: true
   - type: Clickable
   - type: Physics
-    canCollide: False
+    canCollide: true
     bodyStatus: OnGround
     bodyType: Static
   - type: Tag
     tags:
       - Structure
   - type: InteractionOutline
-  - type: Warper
-
-# SS13 Sprites
+  - type: Portal # WW: Wizden portal (was Warper)
+    canTeleportToOtherMaps: true
+    randomTeleport: false
+  - type: F14PortalLink
+    linkId: ""
+  - type: Fixtures
+    fixtures:
+      portalFixture:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        hard: false
 
 - type: entity
   parent: N14BaseLadder
@@ -48,6 +61,15 @@
     state: ladder_bottom
   - type: Fixtures
     fixtures:
+      portalFixture:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        hard: false
       fix1:
         shape:
           !type:PhysShapeAabb

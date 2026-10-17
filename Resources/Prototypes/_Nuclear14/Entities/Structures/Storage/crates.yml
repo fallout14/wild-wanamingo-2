@@ -131,6 +131,11 @@
   suffix: Loot, Medical
 
 - type: entity
+  parent: [ N14CrateMedical, N14TimedStorageFillMedical ]
+  id: N14CrateMedicalRefilling
+  suffix: Refilling, Medical
+
+- type: entity
   parent: CrateGenericSteel
   id: N14CrateRed
   name: red crate
@@ -353,6 +358,11 @@
         - MachineLayer
 
 - type: entity
+  parent: [ N14CrateWooden, N14WastelandBotanyStorageTimedFill ]
+  id: N14CrateWastelandBotanyRefilling
+  suffix: Refilling, Random Botany
+
+- type: entity
   parent: [ N14CrateWooden, N14WastelandBotanyStorageFill ]
   id: N14LootCrateWastelandBotany
   suffix: Loot, Random Botany
@@ -367,6 +377,11 @@
     sprite: Nuclear14/Structures/Storage/Crates/cratemilitary.rsi
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/Crates/cratemilitary.rsi
+
+- type: entity
+  parent: [ N14CrateMilitary, N14BaseMilitaryTimedStorageFill ]
+  id: N14CrateMilitaryRefilling
+  suffix: Refilling, Random Military
 
 - type: entity
   parent: [ N14CrateMilitary, N14BaseMilitaryStorageFill ]

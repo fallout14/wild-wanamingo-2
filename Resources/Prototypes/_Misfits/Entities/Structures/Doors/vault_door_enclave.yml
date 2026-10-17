@@ -32,3 +32,19 @@
 
 # The outside terminal raiders hack. No AccessReader on purpose - the Pip-Boy check and the active
 # raid check in SharedVaultDoorConsoleSystem are the gate.
+
+- type: entity
+  parent: MisfitsDoorVaultExteriorControls
+  id: MisfitsDoorVaultEnclaveExteriorControls
+  name: enclave security terminal
+  description: A RobCo security terminal wired into the Enclave blast door's control network.
+  suffix: Enclave
+  components:
+  - type: AutoLinkTransmitter
+    channel: EnclaveVaultdoor
+  - type: VaultDoorConsole
+    raidFaction: N14Enclave
+    terminalTitle: Enclave Security Terminal
+    doorNoun: blast door
+  - type: VaultDoorConsoleGate
+    lockoutMessage: "SECURITY LOCKOUT: no active operation against this facility is on record."

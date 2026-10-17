@@ -1,7 +1,7 @@
 // Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Content.Server/_Misfits/Administration/Commands/SetWarpIdCommand.cs
 
 using Content.Server.Administration;
-using Content.Server._Misfits.Warps;
+using Content.Server._WW.Teleportation;
 using Content.Shared.Administration;
 using Robust.Shared.Console;
 
@@ -9,6 +9,7 @@ namespace Content.Server._Misfits.Administration.Commands;
 
 /// <summary>
 /// Misfits: sets the link id on a ladder (or any warper). Two warpers with the same id lead to each other.
+/// WW: ladders are Wizden portals now; this re-pairs them through <see cref="F14PortalLinkComponent"/>.
 /// </summary>
 [AdminCommand(AdminFlags.Admin)]
 public sealed partial class SetWarpIdCommand : IConsoleCommand
@@ -33,13 +34,13 @@ public sealed partial class SetWarpIdCommand : IConsoleCommand
             return;
         }
 
-        if (!_entManager.TryGetComponent<WarperComponent>(uid, out var warper))
+        if (!_entManager.TryGetComponent<F14PortalLinkComponent>(uid, out var link))
         {
-            shell.WriteError($"{_entManager.ToPrettyString(uid.Value)} isn't a ladder (no Warper component).");
+            shell.WriteError($"{_entManager.ToPrettyString(uid.Value)} isn't a ladder (no F14PortalLink component).");
             return;
         }
 
-        warper.ID = args[1];
+        _entManager.System<F14PortalLinkSystem>().SetLinkId((uid.Value, link), args[1]);
         shell.WriteLine($"Set link id of {_entManager.ToPrettyString(uid.Value)} to '{args[1]}'.");
     }
 

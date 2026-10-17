@@ -1,0 +1,31 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Locale/en-US/deltav/cartridge-loader/cartridges.ftl (Delta-V NanoChat strings)
+
+nano-chat-cancel = Cancel
+nano-chat-confirm = Confirm
+nano-chat-contacts = CONTACTS
+nano-chat-create = Create
+nano-chat-delete = Delete
+nano-chat-delivery-failed = Failed to deliver
+nano-chat-edit = Edit
+nano-chat-edit-title = Edit a contact
+nano-chat-job-label = Job title
+nano-chat-job-placeholder = Enter a job title (optional)
+nano-chat-loading = Loading...
+nano-chat-max-recipients = Maximum number of chats reached
+nano-chat-message-placeholder = Type a message...
+nano-chat-message-too-long = Message too long ({$current}/{$max} characters)
+nano-chat-name-label = Name
+nano-chat-name-placeholder = Enter a name
+nano-chat-new-chat = New Chat
+nano-chat-new-message-body = {$message}
+nano-chat-new-message-title = message from {$sender}
+nano-chat-new-message-title-recipient = {$sender} ({$jobTitle})
+nano-chat-new-title = Add a new chat
+nano-chat-no-chats = No active chats
+nano-chat-number-label = Number
+nano-chat-number-placeholder = Enter a number
+nano-chat-program-name = Pip-Boy Messenger
+nano-chat-select-chat = Select a chat to begin
+nano-chat-send = Send
+nano-chat-title = Instant Messenger
+nano-chat-toggle-mute = Mute notifications

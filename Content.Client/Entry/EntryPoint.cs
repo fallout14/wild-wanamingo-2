@@ -165,8 +165,9 @@ namespace Content.Client.Entry
             _clientPreferencesManager.Initialize();
             _euiManager.Initialize();
             _voteManager.Initialize();
-            _userInterfaceManager.SetDefaultTheme("SS14DefaultTheme");
-            _userInterfaceManager.SetActiveTheme(_configManager.GetCVar(CVars.InterfaceTheme));
+            // WW Change - the Fallout HUD is the game's only HUD; the player's theme setting is ignored.
+            _userInterfaceManager.SetDefaultTheme("N14Fallout2Theme");
+            _userInterfaceManager.SetActiveTheme("N14Fallout2Theme");
             _documentParsingManager.Initialize();
             _titleWindowManager.Initialize();
             _feedbackManager.Initialize();

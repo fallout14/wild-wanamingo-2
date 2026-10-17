@@ -8,7 +8,7 @@
   name: job-name-caesar-legion-centurion
   description: job-description-caesar-legion-centurion
   playTimeTracker: CorvaxCaesarLegionCenturion
-  startingGear: MisfitsCaesarLegionCenturionGear
+  startingGear: CorvaxCaesarLegionCenturionGear
   icon: CorvaxJobIconlegionerCenturion
   supervisors: job-name-caesar-legion
   whitelisted: true
@@ -24,7 +24,7 @@
         accent: CorvaxLatin
 
 - type: startingGear
-  id: MisfitsCaesarLegionCenturionGear
+  id: CorvaxCaesarLegionCenturionGear
   equipment:
     jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
     ears: MisfitsClothingHeadsetLegion
@@ -45,7 +45,7 @@
   name: job-name-caesar-legion-vexillarius
   description: job-description-caesar-legion-vexillarius
   playTimeTracker: CorvaxCaesarLegionVexillarius
-  startingGear: MisfitsCaesarLegionVexillariusGear
+  startingGear: CorvaxCaesarLegionVexillariusGear
   icon: CorvaxJobIconlegionerVenator
   supervisors: job-name-caesar-legion-other
   accessGroups:
@@ -60,7 +60,7 @@
         accent: CorvaxLatin
 
 - type: startingGear
-  id: MisfitsCaesarLegionVexillariusGear
+  id: CorvaxCaesarLegionVexillariusGear
   equipment:
     jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
     ears: MisfitsClothingHeadsetLegion
@@ -83,7 +83,7 @@
   name: job-name-caesar-legion-explorer
   description: job-description-caesar-legion-explorer
   playTimeTracker: CorvaxCaesarLegionExplorer
-  startingGear: MisfitsCaesarLegionExplorerGear
+  startingGear: CorvaxCaesarLegionExplorerGear
   icon: CorvaxJobIconlegionerVenator
   supervisors: job-name-caesar-legion-supervisors
   accessGroups:
@@ -98,7 +98,7 @@
         accent: CorvaxLatin
 
 - type: startingGear
-  id: MisfitsCaesarLegionExplorerGear
+  id: CorvaxCaesarLegionExplorerGear
   equipment:
     jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
     ears: MisfitsClothingHeadsetLegion
@@ -123,7 +123,7 @@
   name: job-name-caesar-legion-houndmaster
   description: job-description-caesar-legion-houndmaster
   playTimeTracker: CorvaxCaesarLegionHoundmaster
-  startingGear: MisfitsCaesarLegionHoundmasterGear
+  startingGear: CorvaxCaesarLegionHoundmasterGear
   icon: CorvaxJobIconlegionerWarrior
   supervisors: job-name-caesar-legion-other
   accessGroups:
@@ -138,7 +138,7 @@
         accent: CorvaxLatin
 
 - type: startingGear
-  id: MisfitsCaesarLegionHoundmasterGear
+  id: CorvaxCaesarLegionHoundmasterGear
   equipment:
     jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
     ears: MisfitsClothingHeadsetLegion
@@ -156,11 +156,11 @@
     - N14HealingPowder
 
 - type: job
-  id: MisfitsCaesarLegionForgemaster
+  id: CorvaxCaesarLegionForgemaster
   name: job-name-caesar-legion-forgemaster
   description: job-description-caesar-legion-forgemaster
-  playTimeTracker: MisfitsCaesarLegionForgemaster
-  startingGear: MisfitsCaesarLegionForgeMasterGear
+  playTimeTracker: CorvaxCaesarLegionForgemaster
+  startingGear: CorvaxCaesarLegionForgeMasterGear
   icon: CorvaxJobIconlegionerDean
   supervisors: job-name-caesar-legion-supervisors
   accessGroups:
@@ -175,7 +175,7 @@
         accent: CorvaxLatin
 
 - type: startingGear
-  id: MisfitsCaesarLegionForgeMasterGear
+  id: CorvaxCaesarLegionForgeMasterGear
   equipment:
     jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
     ears: MisfitsClothingHeadsetLegion
@@ -194,7 +194,7 @@
   name: job-name-caesar-legion-dean
   description: job-description-caesar-legion-dean
   playTimeTracker: CorvaxCaesarLegionDean
-  startingGear: MisfitsCaesarLegionDeanGear
+  startingGear: CorvaxCaesarLegionDeanGear
   icon: CorvaxJobIconlegionerDean
   supervisors: job-name-caesar-legion-supervisors
   accessGroups:
@@ -209,7 +209,7 @@
         accent: CorvaxLatin
 
 - type: startingGear
-  id: MisfitsCaesarLegionDeanGear
+  id: CorvaxCaesarLegionDeanGear
   equipment:
     jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
     ears: MisfitsClothingHeadsetLegion
@@ -232,7 +232,7 @@
   name: job-name-caesar-legion-legionnaire-recruit
   description: job-description-caesar-legionnaire-recruit
   playTimeTracker: CorvaxCaesarLegionLegionnaireRecruit
-  startingGear: MisfitsCaesarLegionLegionnaireRecruitGear
+  startingGear: CorvaxCaesarLegionLegionnaireRecruitGear
   icon: CorvaxJobIconlegionerRecruit
   supervisors: job-name-caesar-legion-other
   accessGroups:
@@ -247,7 +247,7 @@
         accent: CorvaxLatin
 
 - type: startingGear
-  id: MisfitsCaesarLegionLegionnaireRecruitGear
+  id: CorvaxCaesarLegionLegionnaireRecruitGear
   equipment:
     jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
     ears: MisfitsClothingHeadsetLegion
@@ -271,7 +271,7 @@
   name: job-name-caesar-legion-legionnaire-warrior
   description: job-description-caesar-legion-legionnaire-warrior
   playTimeTracker: CorvaxCaesarLegionLegionnaireWarrior
-  startingGear: MisfitsCaesarLegionLegionnaireWarriorGear
+  startingGear: CorvaxCaesarLegionLegionnaireWarriorGear
   icon: CorvaxJobIconlegionerWarrior
   supervisors: job-name-caesar-legion-other
   accessGroups:
@@ -286,7 +286,7 @@
         accent: CorvaxLatin
 
 - type: startingGear
-  id: MisfitsCaesarLegionLegionnaireWarriorGear
+  id: CorvaxCaesarLegionLegionnaireWarriorGear
   equipment:
     jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
     ears: MisfitsClothingHeadsetLegion
@@ -309,7 +309,7 @@
   name: job-name-caesar-legion-legionnaire-veteran
   description: job-description-caesar-legion-legionnaire-veteran
   playTimeTracker: CorvaxCaesarLegionLegionnaireVeteran
-  startingGear: MisfitsCaesarLegionLegionnaireVeteranGear
+  startingGear: CorvaxCaesarLegionLegionnaireVeteranGear
   icon: CorvaxJobIconlegionerVeteran
   supervisors: job-name-caesar-legion-other
   accessGroups:
@@ -324,7 +324,7 @@
         accent: CorvaxLatin
 
 - type: startingGear
-  id: MisfitsCaesarLegionLegionnaireVeteranGear
+  id: CorvaxCaesarLegionLegionnaireVeteranGear
   equipment:
     jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
     ears: MisfitsClothingHeadsetLegion
@@ -343,11 +343,11 @@
     - N14HealingPowder
 
 - type: job
-  id: MisfitsCaesarLegionAuxilia
+  id: CorvaxCaesarLegionAuxilia
   name: job-name-caesar-legion-auxilia
   description: job-description-caesar-legion-auxilia
-  playTimeTracker: MisfitsCaesarLegionAuxilia
-  startingGear: MisfitsCaesarLegionAuxiliaGear
+  playTimeTracker: CorvaxCaesarLegionAuxilia
+  startingGear: CorvaxCaesarLegionAuxiliaGear
   icon: CorvaxJobIconlegionerRecruit
   supervisors: job-name-caesar-legion-female
   accessGroups:
@@ -362,7 +362,7 @@
         accent: CorvaxLatin
 
 - type: startingGear
-  id: MisfitsCaesarLegionAuxiliaGear
+  id: CorvaxCaesarLegionAuxiliaGear
   equipment:
     jumpsuit: CorvaxClothingUniformJumpsuitLegionnaire
     ears: MisfitsClothingHeadsetLegion
@@ -389,7 +389,7 @@
   name: job-name-caesar-legion-slave
   description: job-description-caesar-legion-slave
   playTimeTracker: CorvaxCaesarLegionSlave
-  startingGear: MisfitsCaesarLegionSlaveGear
+  startingGear: CorvaxCaesarLegionSlaveGear
   icon: CorvaxJobIconLegionSlave
   supervisors: job-supervisors-caesar-legion-slave
   accessGroups:
@@ -404,7 +404,7 @@
         accent: CorvaxLatin
 
 - type: startingGear
-  id: MisfitsCaesarLegionSlaveGear
+  id: CorvaxCaesarLegionSlaveGear
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitRags
     id: CorvaxIDLegionaryBadgeSlave

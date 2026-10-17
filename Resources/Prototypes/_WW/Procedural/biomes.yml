@@ -3,6 +3,18 @@
 - type: biomeTemplate
   id: F14Wasteland
   layers:
+    # Mining rock in scattered clusters (replaces Misfits' ore cluster spawner): each rock rolls its own ore from
+    # N14's table, so every round's clusters and ores differ.
+    - !type:BiomeEntityLayer
+      threshold: 0.78
+      noise:
+        seed: 71
+        frequency: 0.06
+        noiseType: OpenSimplex2
+      allowedTiles:
+      - F14FloorWastelandSand
+      entities:
+      - N14WallRockMammothSlanted
     # Wild Fallout plants (gatherable)
     - !type:BiomeEntityLayer
       threshold: 0.92
