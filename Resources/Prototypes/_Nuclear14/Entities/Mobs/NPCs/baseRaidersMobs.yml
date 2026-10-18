@@ -1,0 +1,69 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Mobs/NPCs/baseRaidersMobs.yml
+
+- type: entity
+  parent: MobHuman
+  id: N14BaseMobRaider
+  abstract: true
+  name: Raider
+  suffix: AI
+  components:
+    - type: Damageable    # Misfits Add - Override from BaseMobSpeciesOrganic to prevent hunger/thirst damage
+    - type: Injurable
+      damageContainer: MisfitsNPCBiological
+    - type: NpcFactionMember
+      factions:
+      - N14Raider
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        60: Dead
+    - type: Destructible #Misfits Change /Add: Drop bottle caps on death (1-7)
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 60
+        behaviors:
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            N14CurrencyCap:
+              min: 1
+              max: 7
+    - type: PassiveDamage # It's mostly for the faction NPCs, but can be here nonetheless.
+      allowedStates:
+      - Alive
+      damage:
+        types:
+          Poison: -0.5
+          Radiation: -0.5
+          Asphyxiation: -1.5
+          Bloodloss: -1.5
+    - type: MindContainer
+    - type: InputMover
+    - type: MobMover
+    - type: ProximityNPC # Misfits Add — sleep distant NPCs to reduce tick load
+    - type: HTN
+      rootTask:
+        task: N14RangedHostileCompound
+      blackboard:
+        NavSmash: !type:Bool
+          true
+        MeleeRange: !type:Single
+          1.5
+    - type: MeleeWeapon
+      hidden: true
+      attackRate: 1.5
+      range: 1.5
+      angle: 30
+      animation: WeaponArcPunch
+      damage:
+        types:
+          Blunt: 15
+    - type: Perishable
+      rotAfter: 1800 # Rots after half of an in-game day
+    - type: RotInto
+      entity: N14FoodMeatRadRaw # and becomes a single chunk of meat.
+    - type: Butcherable
+      spawned:
+      - id: N14FoodMeatRadRaw
+        amount: 5

@@ -1,0 +1,44 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Mobs/NPCs/pickles.yml
+
+- type: entity
+  name: Pickles
+  id: MisfitsMobPetPickles
+  parent: MobPossum
+  description: A heavyset wasteland opossum, genetically enhanced into a cuddly, domesticated companion. Truly patriotic.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Misfits/Mobs/Pets/pickles.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: pickles
+  - type: DamageStateVisuals # MobPossum has no Critical entry, so it must be redeclared here
+    states:
+      Alive:
+        Base: MisfitsPickles
+      Critical:
+        Base: pickles_dead
+      Dead:
+        Base: pickles_dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      200: Dead
+    allowRevives: true # so medics can bring Pickles back, same as every other N14 pet
+  - type: Inventory
+    speciesId: possum
+    templateId: MisfitsPickles
+  - type: Hands # on its own this only allows dragging - BorgHands is what makes real slots
+  - type: BorgHands # #Misfits Add - AddHand on MapInit, gives Pickles actual holdable hand slots
+    handCount: 2
+  - type: ComplexInteraction # #Misfits Add - allows click-opening doors and other complex hand interactions
+  - type: Puller
+    needsHands: false
+  - type: Grammar
+    attributes:
+      gender: epicene
+      proper: true
+  - type: NpcFactionMember
+    factions:
+      - N14Enclave

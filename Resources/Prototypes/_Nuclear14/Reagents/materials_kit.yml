@@ -225,6 +225,24 @@
       - !type:Vomit
         probability: 0.45
 
+- type: reagent
+  id: N14Dung
+  name: reagent-name-dung
+  group: Wasteland
+  desc: reagent-desc-dung
+  flavor: bitter
+  color: "#664330"
+  physicalDesc: reagent-physical-desc-thick
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.25
+      - !type:Vomit
+        probability: 0.80
+
 - type: material
   id: N14Leather
   stackEntity: N14MaterialLeather1

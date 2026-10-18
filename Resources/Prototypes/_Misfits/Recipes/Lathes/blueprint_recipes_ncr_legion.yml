@@ -1,0 +1,2697 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/blueprint_recipes_ncr_legion.yml
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponPistol9mm
+  result: N14WeaponPistol9mm
+  categories:
+  - MisfitsBlueprintNCRWeaponsT1
+  completetime: 5
+  materials:
+    Steel: 1000
+
+    N14Scrap: 50
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponPistol10mm
+  result: N14WeaponPistol10mm
+  categories:
+  - MisfitsBlueprintNCRWeaponsT1
+  completetime: 5
+  materials:
+    Steel: 1500
+
+    N14Scrap: 50
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponPistol22lr
+  result: N14WeaponPistol22lr
+  categories:
+  - MisfitsBlueprintNCRWeaponsT1
+  completetime: 4
+  materials:
+    Steel: 1000
+
+    N14Scrap: 50
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRevolver9mm
+  result: MisfitsWeaponRevolver357Detective
+  categories:
+  - MisfitsBlueprintNCRWeaponsT1
+  completetime: 4
+  materials:
+    Steel: 1000
+
+    N14Iron: 20
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRevolver10mm
+  result: N14WeaponRevolver10mm
+  categories:
+  - MisfitsBlueprintNCRWeaponsT1
+  completetime: 5
+  materials:
+    Steel: 1500
+
+    N14Iron: 20
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponSniperHunting
+  result: N14WeaponSniperHunting
+  categories:
+  - MisfitsBlueprintNCRWeaponsT1
+  completetime: 8
+  materials:
+    Steel: 2000
+
+    Wood: 1000
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponSniperEnfield
+  result: N14WeaponSniperEnfield
+  categories:
+  - MisfitsBlueprintNCRWeaponsT1
+  completetime: 8
+  materials:
+    Steel: 2000
+
+    Wood: 1000
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponShotgun
+  result: N14WeaponShotgun
+  categories:
+  - MisfitsBlueprintNCRWeaponsT1
+  completetime: 7
+  materials:
+    Steel: 2000
+
+    Wood: 1000
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponShotgunLever
+  result: N14WeaponShotgunLever
+  categories:
+  - MisfitsBlueprintNCRWeaponsT1
+  completetime: 7
+  materials:
+    Steel: 1500
+
+    Wood: 1000
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponSniper556Varmint
+  result: N14WeaponSniper556VarmintRifle
+  categories:
+  - MisfitsBlueprintNCRWeaponsT1
+  completetime: 6
+  materials:
+    Steel: 1500
+
+    Wood: 1000
+
+
+# #Misfits Add - mediocre surplus kinetic sidearms/close-range (T1)
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponPistol9mmChinese
+  result: N14WeaponPistol9mmChinese
+  categories:
+  - MisfitsBlueprintNCRWeaponsT1
+  completetime: 4
+  materials:
+    Steel: 1000
+    N14Scrap: 50
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponShotgunSawedOff
+  result: N14WeaponShotgunSawedOff
+  categories:
+  - MisfitsBlueprintNCRWeaponsT1
+  completetime: 6
+  materials:
+    Steel: 2000
+    Wood: 1000
+
+
+# --- NCR Tier 2 Weapons (Standard military issue) ---
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponPistol45Colt
+  result: N14WeaponPistol45Colt
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 7
+  materials:
+    Steel: 3000
+
+    N14Iron: 700
+
+    Wood: 500
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRifle556Service
+  result: N14WeaponRifle556Service
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 10
+  materials:
+    Steel: 3500
+
+    Wood: 1500
+
+    N14Iron: 500
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRifle556ServiceScoped
+  result: N14WeaponRifle556ServiceScoped
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 12
+  materials:
+    Steel: 4000
+
+    Wood: 1500
+
+    Glass: 500
+
+    N14Iron: 500
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRifle556R91
+  result: N14WeaponRifle556R91
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 10
+  materials:
+    Steel: 5000
+
+    Wood: 1500
+
+    N14Iron: 700
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponSMG9mm
+  result: MisfitsWeaponSMG45GreaseGun
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 8
+  materials:
+    Steel: 3000
+
+    N14Iron: 700
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponSMG45
+  result: MisfitsWeaponSMG45Thompson
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 9
+  materials:
+    Steel: 3500
+
+    Wood: 1000
+
+    N14Iron: 500
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponShotgunAuto
+  result: N14WeaponShotgunAuto
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 10
+  materials:
+    Steel: 3500
+
+    N14Iron: 700
+
+    N14Scrap: 1000
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponShotgunRiot
+  result: N14WeaponShotgunRiot
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 9
+  materials:
+    Steel: 4500
+
+    N14Iron: 700
+
+    Plastic: 2500
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponSMG10mm
+  result: N14WeaponSMG10mm
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 12
+  materials:
+    Steel: 4500
+
+    N14Iron: 400
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponSMG12mm
+  result: N14WeaponSMG12mmAdvanced
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 13
+  materials:
+    Steel: 4500
+
+    N14Iron: 500
+
+    N14Brass: 50
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRevolver44Magnun
+  result: MisfitsWeaponRevolver44Magnum
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 10
+  materials:
+    Steel: 3500
+
+    N14Iron: 120
+
+    Wood: 150
+
+# #Misfits Add - mediocre surplus kinetic rifles/SMGs (T2)
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponPistolM1911
+  result: MisfitsWeaponPistolM1911
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 7
+  materials:
+    Steel: 3000
+    N14Iron: 700
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRifle10mmM1Carbine
+  result: MisfitsWeaponRifle10mmM1Carbine
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 9
+  materials:
+    Steel: 3500
+    Wood: 1000
+    N14Iron: 500
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRifle762M14
+  result: MisfitsWeaponRifle308M14
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 10
+  materials:
+    Steel: 4000
+    Wood: 1500
+    N14Iron: 500
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRifle762Rangemaster
+  result: MisfitsWeaponRifle556Rangemaster
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 9
+  materials:
+    Steel: 3500
+    Wood: 1000
+    N14Iron: 500
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponShotgunTrench
+  result: MisfitsWeaponShotgunTrench
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 9
+  materials:
+    Steel: 3500
+    N14Iron: 700
+    N14Scrap: 1000
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponSMG10mmChinese
+  result: N14WeaponSMG10mmChinese
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 10
+  materials:
+    Steel: 4000
+    N14Iron: 700
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponSMGPPSh41
+  result: MisfitsWeaponSMGPPSh41
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 9
+  materials:
+    Steel: 3500
+    N14Iron: 700
+    N14Brass: 250
+
+# --- NCR Tier 3 Weapons (Ranger/Veteran grade) ---
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponSniper45-70BrushGun
+  result: N14WeaponSniper45-70BrushGun
+  categories:
+  - MisfitsBlueprintNCRWeaponsT2
+  completetime: 10
+  materials:
+    Steel: 6000
+
+    Wood: 2000
+
+    N14Iron: 1000
+
+    N14Brass: 100
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRifle762Marksman
+  result: MisfitsWeaponRifle556Marksman
+  categories:
+  - MisfitsBlueprintNCRWeaponsT3
+  completetime: 11
+  materials:
+    Steel: 6500
+
+    Plastic: 1000
+
+    Glass: 500
+
+    N14Iron: 800
+
+    N14Brass: 300
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRifle556Scout
+  result: N14WeaponRifle556Scout
+  categories:
+  - MisfitsBlueprintNCRWeaponsT3
+  completetime: 14
+  materials:
+    Steel: 6000
+
+    Wood: 1500
+
+    N14Iron: 300
+
+    N14Brass: 200
+
+    Plastic: 1500
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRifle556Carbine
+  result: MisfitsWeaponRifle5mmCarbine
+  categories:
+  - MisfitsBlueprintNCRWeaponsT3
+  completetime: 14
+  materials:
+    Steel: 6000
+
+    N14Iron: 1200
+
+    Plastic: 1000
+
+    N14Brass: 100
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRifle762Fal
+  result: MisfitsWeaponRifle308Fal
+  categories:
+  - MisfitsBlueprintNCRWeaponsT3
+  completetime: 14
+  materials:
+    Steel: 5000
+
+    Wood: 1500
+
+    N14Iron: 1500
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRifle308Battle
+  result: N14WeaponRifle308Battle
+  categories:
+  - MisfitsBlueprintNCRWeaponsT3
+  completetime: 15
+  materials:
+    Steel: 7000
+
+    Wood: 1500
+
+    N14Iron: 120
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponDesertEagle44
+  result: N14WeaponDesertEagle44
+  categories:
+  - MisfitsBlueprintNCRWeaponsT3
+  completetime: 10
+  materials:
+    Steel: 5000
+
+    N14Iron: 120
+
+    N14Brass: 100
+
+    N14Silver: 300
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRevolver45-70RangerSequoia
+  result: N14WeaponRevolver45-70RangerSequoia
+  categories:
+  - MisfitsBlueprintNCRWeaponsT3
+  completetime: 12
+  materials:
+    Steel: 6000
+
+    N14Iron: 1500
+
+    Wood: 1500
+
+    N14Silver: 300
+
+    N14Gold: 300
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponShotgunChinese
+  result: N14WeaponShotgunChinese
+  categories:
+  - MisfitsBlueprintNCRWeaponsT3
+  completetime: 12
+  materials:
+    Steel: 6000
+
+    N14Iron: 1500
+
+    N14Brass: 250
+
+    Wood: 1500
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponSMG12mmAdvanced
+  result: N14WeaponSMG12mmAdvanced
+  categories:
+  - MisfitsBlueprintNCRWeaponsT3
+  completetime: 16
+  materials:
+    Steel: 8000
+
+    N14Iron: 500
+
+    N14Brass: 200
+
+    Circuitry: 300
+
+    Plastic: 1000
+
+    N14ScrapElectronic: 500
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponRevolver45-70Hunter
+  result: N14WeaponRevolver45-70Hunter
+  categories:
+  - MisfitsBlueprintNCRWeaponsT3
+  completetime: 14
+  materials:
+    Steel: 4000
+
+    N14Iron: 1000
+
+    Wood: 500
+
+    N14Brass: 50
+
+# --- NCR Tier 4 Weapons (Elite/Heavy) ---
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponSniper50NCR
+  result: N14WeaponSniper50NCRRifle
+  categories:
+  - MisfitsBlueprintNCRWeaponsT4
+  completetime: 20
+  materials:
+    Steel: 12000
+
+    N14Iron: 300
+
+    N14Brass: 500
+
+    Glass: 500
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponLMGAutoRifle
+  result: N14WeaponLMGAutoRifle
+  categories:
+  - MisfitsBlueprintNCRWeaponsT4
+  completetime: 20
+  materials:
+    Steel: 10500
+
+    N14Iron: 270
+
+    Wood: 2000
+
+    N14Brass: 250
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponLMG
+  result: N14WeaponLMG
+  categories:
+  - MisfitsBlueprintNCRWeaponsT4
+  completetime: 18
+  materials:
+    Steel: 11500
+
+    N14Iron: 2500
+
+    N14Brass: 250
+
+    Plastic: 1500
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponMinigun
+  result: N14WeaponMinigun
+  categories:
+  - MisfitsBlueprintNCRWeaponsT4
+  completetime: 25
+  materials:
+    Steel: 18000 # #Burger - increased to make up for buff (was 1500)
+
+    N14Iron: 1500
+
+    N14Brass: 600
+
+    Circuitry: 600
+
+    Plastic: 1500 # #Burger - increased to make up for buff (was 1000)
+
+# --- NCR Tier 5 Weapons (Anti-Materiel) ---
+# #Misfits Add - costs so much scrap metal to make these dang things
+
+- type: latheRecipe
+  id: MisfitsBPNCRWeaponAntiMateriel
+  result: N14WeaponSniper50AntiMateriel
+  categories:
+  - MisfitsBlueprintNCRWeaponsT5
+  completetime: 35
+  materials:
+    Steel: 20000
+
+    N14Iron: 60
+
+    N14Brass: 50
+
+    N14Scrap: 80
+
+    Glass: 20
+
+
+# =====================================================================
+# NCR ARMOR RECIPES
+# =====================================================================
+
+# --- NCR Tier 1 Armor ---
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorVestSnow
+  result: N14ClothingOuterNCRVestSnow
+  categories:
+  - MisfitsBlueprintNCRArmorT1
+  completetime: 6
+  materials:
+    Cloth: 800
+
+    N14Thread: 500
+
+    N14Leather: 500
+
+- type: latheRecipe
+  id: MisfitsShackledBoots
+  result: MisfitsShackledBoots
+  categories:
+  - MisfitsBlueprintNCRArmorT1
+  completetime: 6
+  materials:
+    Cloth: 800
+
+    N14Thread: 500
+
+    Steel: 500
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorVestWoods
+  result: N14ClothingOuterNCRVestWoods
+  categories:
+  - MisfitsBlueprintNCRArmorT1
+  completetime: 6
+  materials:
+    Cloth: 800
+
+    N14Thread: 500
+
+    N14Leather: 500
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorVestDesert
+  result: N14ClothingOuterNCRVestDesert
+  categories:
+  - MisfitsBlueprintNCRArmorT1
+  completetime: 6
+  materials:
+    Cloth: 800
+
+    N14Thread: 500
+
+    N14Leather: 500
+
+
+# --- NCR Tier 2 Armor ---
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorPlateWoods
+  result: N14ClothingOuterNCRPlateWoods
+  categories:
+  - MisfitsBlueprintNCRArmorT2
+  completetime: 10
+  materials:
+    Steel: 3000
+
+    Cloth: 150
+
+    N14Thread: 120
+
+    N14Leather: 70
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorPlateDesert
+  result: N14ClothingOuterNCRPlateDesert
+  categories:
+  - MisfitsBlueprintNCRArmorT2
+  completetime: 10
+  materials:
+    Steel: 3000
+
+    Cloth: 150
+
+    N14Thread: 120
+
+    N14Leather: 70
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorPouchedVestWoods
+  result: N14ClothingOuterNCRPouchedVestWoods
+  categories:
+  - MisfitsBlueprintNCRArmorT2
+  completetime: 8
+  materials:
+    Cloth: 800
+
+    N14Thread: 200
+
+    N14Leather: 100
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorPouchedVestDesert
+  result: N14ClothingOuterNCRPouchedVestDesert
+  categories:
+  - MisfitsBlueprintNCRArmorT2
+  completetime: 8
+  materials:
+    Cloth: 800
+
+    N14Thread: 200
+
+    N14Leather: 100
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorPouchedVestSnow
+  result: N14ClothingOuterNCRPouchedVestSnow
+  categories:
+  - MisfitsBlueprintNCRArmorT2
+  completetime: 8
+  materials:
+    Cloth: 800
+
+    N14Thread: 200
+
+    N14Leather: 100
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorCFvest
+  result: N14ClothingOuterNCRCFvest
+  categories:
+  - MisfitsBlueprintNCRArmorT2
+  completetime: 8
+  materials:
+    Cloth: 170
+
+    N14Thread: 170
+
+    N14Leather: 120
+
+    Steel: 2000
+
+
+# --- NCR Tier 3 Armor ---
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorCombatArmor
+  result: N14ClothingOuterNCRCombatArmor
+  categories:
+  - MisfitsBlueprintNCRArmorT3
+  completetime: 15
+  materials:
+    Steel: 6000
+
+    Cloth: 1000
+
+    N14Thread: 150
+
+    N14Leather: 120
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorRangerVest
+  result: N14ClothingOuterRangerVest
+  categories:
+  - MisfitsBlueprintNCRArmorT3
+  completetime: 12
+  materials:
+    N14Leather: 200
+
+    Cloth: 300
+
+    N14Thread: 220
+
+    Steel: 4500
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorRangerCoat
+  result: N14ClothingOuterRangerCoat
+  categories:
+  - MisfitsBlueprintNCRArmorT3
+  completetime: 14
+  materials:
+    N14Leather: 300
+
+    Cloth: 300
+
+    N14Thread: 220
+
+    Steel: 4000
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorRangerFieldArmor
+  result: MisfitsClothingOuterRangerFieldArmor
+  categories:
+  - MisfitsBlueprintNCRArmorT3
+  completetime: 14
+  materials:
+    N14Leather: 300
+
+    Cloth: 300
+
+    N14Thread: 220
+
+    Steel: 4000
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorRangerFlakVest
+  result: MisfitsClothingOuterNCRFlakVestOpen
+  categories:
+  - MisfitsBlueprintNCRArmorT3
+  completetime: 14
+  materials:
+    N14Leather: 300
+
+    Cloth: 300
+
+    N14Thread: 220
+
+    Steel: 4000
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorRangerDuster
+  result: N14ClothingOuterRangerDuster
+  categories:
+  - MisfitsBlueprintNCRArmorT3
+  completetime: 12
+  materials:
+    N14Leather: 1000
+
+    Cloth: 750
+
+    N14Thread: 170
+
+    Steel: 6000
+
+
+# --- NCR Tier 4 Armor ---
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorCombatArmorMK2
+  result: N14ClothingOuterNCRCombatArmorMK2
+  categories:
+  - MisfitsBlueprintNCRArmorT4
+  completetime: 20
+  materials:
+    Steel: 8500
+
+    Cloth: 320
+
+    N14Thread: 200
+
+    N14Leather: 350
+
+    Circuitry: 100
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoBox9mm
+  result: MisfitsAmmoBox9mm
+  categories:
+  - MisfitsBlueprintNCRAmmoT1
+  completetime: 4
+  materials:
+    Lead: 10
+
+    N14Brass: 5
+
+    N14Gunpowder: 5
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoBox10mm
+  result: MisfitsAmmoBox10mm
+  categories:
+  - MisfitsBlueprintNCRAmmoT1
+  completetime: 4
+  materials:
+    Lead: 10
+
+    N14Brass: 5
+
+    N14Gunpowder: 5
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoBox22lr
+  result: MisfitsAmmoBox22lr
+  categories:
+  - MisfitsBlueprintNCRAmmoT1
+  completetime: 3
+  materials:
+    Lead: 10
+
+    N14Brass: 5
+
+    N14Gunpowder: 5
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoMag9mmPistol
+  result: N14MagazinePistol9mm
+  categories:
+  - MisfitsBlueprintNCRAmmoT1
+  completetime: 3
+  materials:
+    Steel: 50
+
+    Lead: 5
+
+    N14Gunpowder: 5
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoMag10mmPistol
+  result: N14MagazinePistol10mm
+  categories:
+  - MisfitsBlueprintNCRAmmoT1
+  completetime: 3
+  materials:
+    Steel: 70
+
+    Lead: 5
+
+    N14Gunpowder: 5
+
+# #Misfits Add - .45 pistol magazine for M1911 blueprint
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoMag45Pistol
+  result: N14MagazinePistol45
+  categories:
+  - MisfitsBlueprintNCRAmmoT1
+  completetime: 4
+  materials:
+    Steel: 80
+    Lead: 5
+    N14Gunpowder: 5
+
+
+# --- NCR Tier 2 Ammo ---
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoBox556
+  result: MisfitsAmmoBox556
+  categories:
+  - MisfitsBlueprintNCRAmmoT2
+  completetime: 6
+  materials:
+    Lead: 25
+
+    N14Brass: 15
+
+    N14Gunpowder: 15
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoBox45
+  result: MisfitsAmmoBox45
+  categories:
+  - MisfitsBlueprintNCRAmmoT2
+  completetime: 5
+  materials:
+    Lead: 25
+
+    N14Brass: 15
+
+    N14Gunpowder: 15
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoBox12gauge
+  result: MisfitsAmmoBox12gauge
+  categories:
+  - MisfitsBlueprintNCRAmmoT2
+  completetime: 5
+  materials:
+    Lead: 25
+
+    Plastic: 5
+
+    N14Gunpowder: 15
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoMag556Rifle
+  result: N14Magazine556Rifle
+  categories:
+  - MisfitsBlueprintNCRAmmoT2
+  completetime: 5
+  materials:
+    Steel: 200
+
+    Lead: 20
+
+    N14Gunpowder: 10
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoMag45SMG
+  result: N14Magazine45SubMachineGun
+  categories:
+  - MisfitsBlueprintNCRAmmoT2
+  completetime: 5
+  materials:
+    Steel: 150
+
+    Lead: 20
+
+    N14Gunpowder: 10
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoMag9mmSMG
+  result: N14MagazineSMG9mm
+  categories:
+  - MisfitsBlueprintNCRAmmoT2
+  completetime: 5
+  materials:
+    Steel: 100
+
+    Lead: 20
+
+    N14Gunpowder: 10
+
+# #Misfits Add - magazines for M14 / PPSh-41 blueprints
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoMag762Short
+  result: N14Magazine762AmmoShort
+  categories:
+  - MisfitsBlueprintNCRAmmoT2
+  completetime: 6
+  materials:
+    Steel: 180
+    Lead: 40
+    N14Gunpowder: 40
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoMag9mmSMGDrum
+  result: MisfitsMagazineSMG9mmDrum
+  categories:
+  - MisfitsBlueprintNCRAmmoT2
+  completetime: 6
+  materials:
+    Steel: 200
+    Lead: 60
+    N14Gunpowder: 60
+
+
+# --- NCR Tier 3 Ammo ---
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoBox762
+  result: MisfitsAmmoBox762
+  categories:
+  - MisfitsBlueprintNCRAmmoT3
+  completetime: 7
+  materials:
+    Lead: 45
+
+    N14Brass: 35
+
+    N14Gunpowder: 35
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoBox308
+  result: MisfitsAmmoBox308
+  categories:
+  - MisfitsBlueprintNCRAmmoT3
+  completetime: 8
+  materials:
+    Lead: 45
+
+    N14Brass: 35
+
+    N14Gunpowder: 35
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoBox127
+  result: MisfitsAmmoBox127
+  categories:
+  - MisfitsBlueprintNCRAmmoT3
+  completetime: 7
+  materials:
+    Lead: 45
+
+    N14Brass: 35
+
+    N14Gunpowder: 25
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoBox44Magnum
+  result: MisfitsAmmoBox44Magnum
+  categories:
+  - MisfitsBlueprintNCRAmmoT3
+  completetime: 7
+  materials:
+    Lead: 45
+
+    N14Brass: 35
+
+    N14Gunpowder: 35
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoMag762Rifle
+  result: N14Magazine762Rifle
+  categories:
+  - MisfitsBlueprintNCRAmmoT3
+  completetime: 6
+  materials:
+    Steel: 200
+
+    Lead: 35
+
+    N14Gunpowder: 20
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoMag10mmSMG
+  result: N14MagazineSMG10mm
+  categories:
+  - MisfitsBlueprintNCRAmmoT3
+  completetime: 6
+  materials:
+    Steel: 100
+
+    Lead: 35
+
+    N14Gunpowder: 20
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoMag12mmSMG
+  result: N14MagazineSMG12mm
+  categories:
+  - MisfitsBlueprintNCRAmmoT3
+  completetime: 7
+  materials:
+    Steel: 200
+
+    Lead: 40
+
+    N14Gunpowder: 20
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmo40mmGrenade
+  result: MisfitsCartridgeGrenade40mm
+  categories:
+  - MisfitsBlueprintNCRAmmoT3
+  completetime: 8
+  materials:
+    Steel: 1000
+
+    N14Gunpowder: 1200
+
+    N14Iron: 500
+
+# #Misfits Add - Issue #968 faction ordnance: NCR offensive fragmentation grenade.
+
+- type: latheRecipe
+  id: MisfitsBPNCRGrenadeShrapnel
+  result: GrenadeShrapnel
+  categories:
+  - MisfitsBlueprintNCRAmmoT3
+  completetime: 10
+  applyMaterialDiscount: false
+  materials:
+    Steel: 1500
+    N14Gunpowder: 1200
+    N14Iron: 500
+
+
+# --- NCR Tier 4 Ammo ---
+# #Misfits Add - Vertibird turret ammunition belt.
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoBox50
+  result: MisfitsAmmoBox50
+  categories:
+  - MisfitsBlueprintNCRAmmoT4
+  completetime: 12
+  materials: # #Burger - mat costs was absurdly high compared to non BP recipe (you could misclick it)
+    Lead: 75 # #Burger - (was 1000)
+
+    N14Brass: 75 # #Burger - (was 300)
+
+    N14Gunpowder: 75 # #Burger - (was 500)
+
+    Steel: 100 # #Burger - (was 1000)
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoBox5mm
+  result: MisfitsAmmoBox5mm
+  categories:
+  - MisfitsBlueprintNCRAmmoT4
+  completetime: 8
+  materials: # #Burger - Decreased cost of ammo boxes to make up for larger size in bag the less use cases that causes.
+    Lead: 150 # #Burger - Decreased (was 250)
+
+    N14Brass: 60 # #Burger - Decreased (was 170)
+
+    N14Gunpowder: 100 # #Burger - Decreased (was 170)
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoBox45-70
+  result: MisfitsAmmoBox45-70
+  categories:
+  - MisfitsBlueprintNCRAmmoT4
+  completetime: 10
+  materials:
+    Lead: 90
+
+    N14Brass: 60
+
+    N14Gunpowder: 60
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoMag556Long
+  result: N14LongMagazine556Rifle
+  categories:
+  - MisfitsBlueprintNCRAmmoT4
+  completetime: 8
+  materials:
+    Steel: 500
+
+    Lead: 350
+
+    N14Gunpowder: 400
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoMag308LMG
+  result: MisfitsMagazineLMG308
+  categories:
+  - MisfitsBlueprintNCRAmmoT4
+  completetime: 10
+  materials:
+    Steel: 1000
+
+    Lead: 650
+
+    N14Gunpowder: 450
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoOverMag308
+  result: MisfitsMagazineOver308RifleSniper
+  categories:
+  - MisfitsBlueprintNCRAmmoT4
+  completetime: 8
+  materials:
+    Steel: 500
+
+    Lead: 500
+
+    N14Gunpowder: 300
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoBoxOver308
+  result: MisfitsAmmoBoxOver308
+  categories:
+  - MisfitsBlueprintNCRAmmoT4
+  completetime: 8
+  materials:
+    Steel: 150
+
+    N14Brass: 75
+
+    N14Gunpowder: 125
+
+- type: latheRecipe
+  id: MisfitsBPNCRAmmoMagTopSMG12mm
+  result: N14TopMagazineSMG12mm
+  categories:
+  - MisfitsBlueprintNCRAmmoT4
+  completetime: 8
+  materials:
+    Steel: 800
+
+    Lead: 650
+
+    N14Gunpowder: 350
+
+
+# =====================================================================
+# CAESAR'S LEGION WEAPON RECIPES
+# =====================================================================
+
+# --- Legion Tier 1 Weapons (Slave/Recruit arms - tribal melee focus) ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponTribalKnife
+  result: N14TribalKnife
+  categories:
+  - MisfitsBlueprintLegionWeaponsT1
+  completetime: 3
+  materials:
+    N14Iron: 300
+
+    N14Leather: 100
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponTribalClub
+  result: N14TribalClub
+  categories:
+  - MisfitsBlueprintLegionWeaponsT1
+  completetime: 3
+  materials:
+    Wood: 1000
+
+    N14Leather: 150
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponWastelandSpear
+  result: N14WastelandSpear
+  categories:
+  - MisfitsBlueprintLegionWeaponsT1
+  completetime: 4
+  materials:
+    Wood: 2500
+
+    N14Iron: 700
+
+    N14Leather: 100
+
+# #Misfits Add - mediocre scavenged kinetic guns (T1)
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponPistol9mmChinese
+  result: N14WeaponPistol9mmChinese
+  categories:
+  - MisfitsBlueprintLegionWeaponsT1
+  completetime: 4
+  materials:
+    Steel: 1000
+    N14Scrap: 50
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponShotgunSawedOff
+  result: N14WeaponShotgunSawedOff
+  categories:
+  - MisfitsBlueprintLegionWeaponsT1
+  completetime: 6
+  materials:
+    Steel: 2000
+    Wood: 1000
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponRevolver357Detective
+  result: MisfitsWeaponRevolver357Detective
+  categories:
+  - MisfitsBlueprintLegionWeaponsT1
+  completetime: 5
+  materials:
+    Steel: 1500
+    N14Iron: 100
+
+# --- Legion Tier 2 Weapons (Legionnaire grade) ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponTribalMachete
+  result: N14TribalMachete
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 6
+  materials:
+    N14Iron: 600
+
+    N14Leather: 70
+
+    Wood: 300
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponGladius
+  result: CorvaxGladius
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 6
+  materials:
+    Steel: 1500
+
+    N14Leather: 100
+
+    Wood: 500
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponMachete
+  result: N14Machete
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 5
+  materials:
+    Steel: 600
+
+    N14Iron: 300
+
+    N14Leather: 20
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponRevolver44TribalUpgraded
+  result: N14WeaponRevolver44TribalUpgraded
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 7
+  materials:
+    N14Iron: 170
+
+    Steel: 2000
+
+    N14Scrap: 150
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponShotgunPipe
+  result: N14WeaponShotgunPipe
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 5
+  materials:
+    N14Scrap: 250
+
+    ScrapSteel: 150
+
+    Wood: 500
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponTrenchClub
+  result: N14TrenchClub
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 4
+  materials:
+    Wood: 1500
+
+    N14Iron: 500
+
+    N14Leather: 20
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponSMGGreaseGun
+  result: MisfitsWeaponSMG45GreaseGun
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 11
+  materials:
+    Steel: 4500
+
+    N14Iron: 100
+
+    N14Brass: 150
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponRifle556EM2
+  result: N14WeaponRifle556EM2
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 11
+  materials:
+    Steel: 5000
+
+    N14Iron: 500
+
+    N14Scrap: 500
+
+    Wood: 2000
+
+    Glass: 500
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponLongSword
+  result: N14LongSword
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 10
+  materials:
+    Steel: 3000
+
+    N14Iron: 170
+
+    N14Leather: 70
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponSledgeHammer
+  result: N14SledgeHammer
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 10
+  materials:
+    Steel: 5000
+
+    Wood: 250
+
+    N14Iron: 120
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponTribalBigClub
+  result: N14TribalBigClub
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 8
+  materials:
+    Wood: 3500
+
+    N14Iron: 500
+
+    N14Leather: 100
+
+- type: latheRecipe
+  id: MisfitsBPLegionnaireShield
+  result: CorvaxLegionnaireShield
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 10
+  materials:
+    Steel: 1000
+
+    Wood: 2000
+
+    N14Leather: 200
+
+# #Misfits Add - mediocre scavenged kinetic guns (T2)
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponPistolM1911
+  result: MisfitsWeaponPistolM1911
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 7
+  materials:
+    Steel: 3000
+    N14Iron: 700
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponSMGPPSh41
+  result: MisfitsWeaponSMGPPSh41
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 9
+  materials:
+    Steel: 3500
+    N14Iron: 700
+    N14Brass: 250
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponRifle10mmM1Carbine
+  result: MisfitsWeaponRifle10mmM1Carbine
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 9
+  materials:
+    Steel: 3500
+    Wood: 1000
+    N14Iron: 500
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponSMG10mmChinese
+  result: N14WeaponSMG10mmChinese
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 10
+  materials:
+    Steel: 4000
+    N14Iron: 700
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponSniper44LeverShortCarbine
+  result: N14WeaponSniper44LeverShortCarbine
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 9
+  materials:
+    Steel: 3500
+    Wood: 1500
+    N14Iron: 500
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponSniper308Ross
+  result: MisfitsWeaponSniper303Ross
+  categories:
+  - MisfitsBlueprintLegionWeaponsT2
+  completetime: 9
+  materials:
+    Steel: 3500
+    Wood: 1500
+    N14Iron: 500
+
+# --- Legion Tier 3 Weapons (Veteran grade) ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponCeremonialSword
+  result: N14CeremonialSword
+  categories:
+  - MisfitsBlueprintLegionWeaponsT3
+  completetime: 12
+  materials:
+    Steel: 4500
+
+    N14Iron: 700
+
+    N14Leather: 70
+
+    N14Gold: 100
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponRevolver44TribalExtra
+  result: N14WeaponRevolver44TribalUpgradedExtra
+  categories:
+  - MisfitsBlueprintLegionWeaponsT3
+  completetime: 10
+  materials:
+    Steel: 4500
+
+    N14Iron: 200
+
+    N14Scrap: 200
+
+    N14Brass: 100
+
+
+# #Misfits Add - T3 firearm parity: semi-auto shotgun, SMG, and carbine rifle to close gap with NCR
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponRifle762SKS
+  result: N14WeaponRifle762SKS
+  categories:
+  - MisfitsBlueprintLegionWeaponsT3
+  completetime: 12
+  materials:
+    Steel: 5000
+
+    Wood: 200
+
+    N14Iron: 120
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponSMG10mmSuppressed
+  result: N14WeaponSMG10mmSuppressed
+  categories:
+  - MisfitsBlueprintLegionWeaponsT3
+  completetime: 12
+  materials:
+    Steel: 5000
+
+    N14Scrap: 1000
+
+    N14Iron: 500
+
+    Plastic: 500
+
+
+# #Misfits Add - M240B GPMG for Tier 3 Legion crafting
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponHandcannonUpgraded
+  result: N14WeaponRevolver45-70HandcannonUpgraded
+  categories:
+  - MisfitsBlueprintLegionWeaponsT3
+  completetime: 14
+  materials:
+    Steel: 6500
+
+    N14Iron: 1000
+
+    N14Brass: 150
+
+    N14Gold: 500
+
+    N14Silver: 500
+
+    N14Leather: 500
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponRipper
+  result: N14Ripper
+  categories:
+  - MisfitsBlueprintLegionWeaponsT3
+  completetime: 20
+  materials:
+    Steel: 3500
+
+    N14Iron: 300
+
+    Circuitry: 200
+
+    N14ScrapElectronic: 300
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponShotgunAuto
+  result: N14WeaponShotgunAuto
+  categories:
+  - MisfitsBlueprintLegionWeaponsT3
+  completetime: 14
+  materials:
+    Steel: 5500
+
+    Wood: 2000
+
+    N14Scrap: 1500
+
+    N14Iron: 500
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponRifle762Chinese
+  result: MisfitsWeaponRifle556Chinese
+  categories:
+  - MisfitsBlueprintLegionWeaponsT3
+  completetime: 12
+  materials:
+    Steel: 6500
+
+    Wood: 2000
+
+    N14Iron: 1000
+
+    Plastic: 500
+
+    N14Brass: 300
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponRifleSKS
+  result: MisfitsWeaponRifle308SVT40
+  categories:
+  - MisfitsBlueprintLegionWeaponsT3
+  completetime: 12
+  materials:
+    Steel: 6500
+
+    Wood: 1500
+
+    N14Iron: 500
+
+    N14Leather: 300
+
+    N14Brass: 200
+
+
+# --- Legion Tier 4 Weapons (Legate's elite) ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponSuperSledgeHammer
+  result: N14SuperSledgeHammer
+  categories:
+  - MisfitsBlueprintLegionWeaponsT4
+  completetime: 18
+  materials:
+    Steel: 17500
+
+    N14Iron: 5000
+
+    Circuitry: 100
+
+    N14ScrapElectronic: 100
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponTribalBigClubDecorated
+  result: N14TribalBigClubDecorated
+  categories:
+  - MisfitsBlueprintLegionWeaponsT4
+  completetime: 14
+  materials:
+    Steel: 3000
+
+    Wood: 5000
+
+    N14Iron: 1000
+
+    N14Leather: 500
+
+    N14Gold: 300
+
+    N14Silver: 300
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponPolearm
+  result: N14WastelandPolearm
+  categories:
+  - MisfitsBlueprintLegionWeaponsT4
+  completetime: 12
+  materials:
+    Steel: 5000
+
+    N14Iron: 1000
+
+    Wood: 3500
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponLauncherGrenade
+  result: N14WeaponLauncherGrenade
+  categories:
+  - MisfitsBlueprintLegionWeaponsT4
+  completetime: 15
+  materials:
+    Steel: 12000
+
+    N14Iron: 1000
+
+    N14Brass: 500
+
+    Wood: 2000
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponLauncherMissile
+  result: N14WeaponLauncherMissile
+  categories:
+  - MisfitsBlueprintLegionWeaponsT4
+  completetime: 25
+  materials:
+    Steel: 12000
+
+    N14Iron: 370
+
+    Circuitry: 250
+
+    N14ScrapElectronic: 150
+
+
+# #Misfits Add - T4 firearm additions: Bren LMG (.308 FullAuto) and Neostead for DPS parity with NCR T4
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponBren
+  result: N14WeaponLMGBren
+  categories:
+  - MisfitsBlueprintLegionWeaponsT4
+  completetime: 20
+  materials:
+    Steel: 13000
+
+    N14Iron: 250
+
+    N14Brass: 1000
+
+    Wood: 2000
+
+
+# #Misfits Add - T5 Legion Weapons: Scorcher flamethrower (apex incendiary weapon)
+# --- Legion Tier 5 Weapons (Scorched Earth) ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponScorcher
+  result: MisfitsWeaponLegionScorcher
+  categories:
+  - MisfitsBlueprintLegionWeaponsT5
+  completetime: 35
+  materials:
+    Steel: 14000
+
+    N14Iron: 300
+
+    Circuitry: 200
+
+    N14ScrapElectronic: 150
+
+
+# =====================================================================
+# CAESAR'S LEGION ARMOR RECIPES
+# =====================================================================
+
+# --- Legion Tier 1 Armor ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorRecruitArmor
+  result: CorvaxClothingOuterLegionnaireRecruitArmor
+  categories:
+  - MisfitsBlueprintLegionArmorT1
+  completetime: 5
+  materials:
+    N14Leather: 500
+
+    Cloth: 500
+
+    N14Thread: 200
+
+
+# --- Legion Tier 2 Armor ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorBaseArmor
+  result: CorvaxClothingOuterLegionnaireBaseArmor
+  categories:
+  - MisfitsBlueprintLegionArmorT2
+  completetime: 8
+  materials:
+    N14Leather: 1000
+
+    Cloth: 1000
+
+    N14Thread: 700
+
+    N14Iron: 500
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorLightBaseballHelmet
+  result: CorvaxClothingHeadHatLightBaseballHelmet
+  categories:
+  - MisfitsBlueprintLegionArmorT2
+  completetime: 8
+  materials:
+    N14Leather: 500
+
+    Cloth: 500
+
+    N14Thread: 400
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorReconArmor
+  result: CorvaxClothingLegionReconArmor
+  categories:
+  - MisfitsBlueprintLegionArmorT2
+  completetime: 7
+  materials:
+    N14Leather: 1500
+
+    Cloth: 1000
+
+    N14Thread: 700
+
+    Steel: 1000
+
+
+# --- Legion Tier 3 Armor ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorVeteranArmor
+  result: CorvaxClothingOuterLegionnaireVeteranArmor
+  categories:
+  - MisfitsBlueprintLegionArmorT3
+  completetime: 12
+  materials:
+    N14Leather: 700
+
+    Steel: 7000
+
+    Cloth: 300
+
+    N14Thread: 300
+
+    N14Iron: 500
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorExplorerArmor
+  result: CorvaxClothingOuterLegionnaireExplorerArmor
+  categories:
+  - MisfitsBlueprintLegionArmorT3
+  completetime: 12
+  materials:
+    N14Leather: 1400
+
+    Cloth: 800
+
+    N14Thread: 600
+
+    N14Iron: 500
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorVexillariusArmor
+  result: CorvaxClothingOuterLegionnaireVexillariusArmor
+  categories:
+  - MisfitsBlueprintLegionArmorT3
+  completetime: 12
+  materials:
+    N14Leather: 1500
+
+    Cloth: 800
+
+    N14Thread: 600
+
+    N14Iron: 500
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorBaseballHelmet
+  result: CorvaxClothingHeadHatBaseballHelmet
+  categories:
+  - MisfitsBlueprintLegionArmorT3
+  completetime: 12
+  materials:
+    N14Leather: 400
+
+    Steel: 3500
+
+    Cloth: 200
+
+    N14Thread: 200
+
+    N14Iron: 200
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorDeanRecruitHelmet
+  result: CorvaxClothingHeadHatDeanRecruitHelmet
+  categories:
+  - MisfitsBlueprintLegionArmorT3
+  completetime: 12
+  materials:
+    N14Leather: 400
+
+    Steel: 3500
+
+    Cloth: 200
+
+    N14Thread: 200
+
+    N14Iron: 200
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorReconnaissanceArmor
+  result: CorvaxClothingOuterLegionnaireReconnaissanceArmor
+  categories:
+  - MisfitsBlueprintLegionArmorT3
+  completetime: 11
+  materials:
+    N14Leather: 250
+
+    Cloth: 170
+
+    N14Thread: 150
+
+    N14Iron: 70
+
+    Steel: 1000
+
+
+# --- Legion Tier 4 Armor ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorDeanRecruitArmor
+  result: CorvaxClothingOuterDeanLegionnairePrimeArmor
+  categories:
+  - MisfitsBlueprintLegionArmorT4
+  completetime: 14
+  materials:
+    Steel: 8500
+
+    N14Iron: 700
+
+    N14Leather: 500
+
+    Cloth: 800
+
+    N14Thread: 150
+
+
+# =====================================================================
+# CAESAR'S LEGION AMMO RECIPES
+# =====================================================================
+
+# --- Legion Tier 1 Ammo ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoBox44Magnum
+  result: MisfitsAmmoBox44Magnum
+  categories:
+  - MisfitsBlueprintLegionAmmoT1
+  completetime: 5
+  materials:
+    Lead: 10
+
+    N14Brass: 10
+
+    N14Gunpowder: 10
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoBox10mm
+  result: MisfitsAmmoBox10mm
+  categories:
+  - MisfitsBlueprintLegionAmmoT1
+  completetime: 4
+  materials:
+    Lead: 10
+
+    N14Scrap: 5
+
+    N14Gunpowder: 5
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoSpeedLoader44
+  result: MisfitsSpeedLoader44Magnum
+  categories:
+  - MisfitsBlueprintLegionAmmoT1
+  completetime: 3
+  materials:
+    Lead: 10
+
+    N14Brass: 5
+
+    N14Gunpowder: 5
+
+# #Misfits Add - .45 pistol mag, .357 box + speed loader for mediocre guns (T1)
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoMag45Pistol
+  result: N14MagazinePistol45
+  categories:
+  - MisfitsBlueprintLegionAmmoT1
+  completetime: 4
+  materials:
+    Steel: 80
+    Lead: 5
+    N14Gunpowder: 5
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoBox357
+  result: MisfitsAmmoBox357
+  categories:
+  - MisfitsBlueprintLegionAmmoT1
+  completetime: 4
+  materials:
+    Lead: 25
+    N14Brass: 15
+    N14Gunpowder: 15
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoSpeedLoader357
+  result: MisfitsSpeedLoader357
+  categories:
+  - MisfitsBlueprintLegionAmmoT1
+  completetime: 3
+  materials:
+    Lead: 10
+    N14Brass: 5
+    N14Gunpowder: 5
+
+# --- Legion Tier 2 Ammo ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoBox12gauge
+  result: MisfitsAmmoBox12gauge
+  categories:
+  - MisfitsBlueprintLegionAmmoT2
+  completetime: 5
+  materials:
+    Lead: 25
+
+    N14Scrap: 15
+
+    N14Gunpowder: 15
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoMag44Pistol
+  result: N14MagazinePistol44
+  categories:
+  - MisfitsBlueprintLegionAmmoT2
+  completetime: 5
+  materials:
+    Steel: 200
+
+    Lead: 25
+
+    N14Gunpowder: 15
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoBox9mm
+  result: MisfitsAmmoBox9mm
+  categories:
+  - MisfitsBlueprintLegionAmmoT2
+  completetime: 4
+  materials:
+    Lead: 20
+
+    N14Scrap: 10
+
+    N14Gunpowder: 10
+
+# #Misfits Add - magazines for PPSh-41 / Chinese SMG + .308 box for Ross (T2)
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoMag9mmSMGDrum
+  result: MisfitsMagazineSMG9mmDrum
+  categories:
+  - MisfitsBlueprintLegionAmmoT2
+  completetime: 6
+  materials:
+    Steel: 200
+    Lead: 60
+    N14Gunpowder: 60
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoMag10mmSMG
+  result: N14MagazineSMG10mm
+  categories:
+  - MisfitsBlueprintLegionAmmoT2
+  completetime: 6
+  materials:
+    Steel: 100
+    Lead: 35
+    N14Gunpowder: 20
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoBox308
+  result: MisfitsAmmoBox308
+  categories:
+  - MisfitsBlueprintLegionAmmoT2
+  completetime: 7
+  materials:
+    Lead: 45
+    N14Brass: 35
+    N14Gunpowder: 35
+
+# --- Legion Tier 3 Ammo ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoBox45-70
+  result: MisfitsAmmoBox45-70
+  categories:
+  - MisfitsBlueprintLegionAmmoT3
+  completetime: 8
+  materials:
+    Lead: 45
+
+    N14Brass: 35
+
+    N14Gunpowder: 40
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoSKSEnbloc308 # #Misfits Change - new SKSEnbloc308 rep
+  result: MisfitsSKSEnbloc308
+  categories:
+  - MisfitsBlueprintLegionAmmoT3
+  completetime: 5
+  materials:
+    Steel: 200
+
+    Lead: 50
+
+    N14Gunpowder: 50
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoSpeedLoader45-70
+  result: MisfitsSpeedLoader45-70
+  categories:
+  - MisfitsBlueprintLegionAmmoT3
+  completetime: 5
+  materials:
+    Lead: 40
+
+    N14Brass: 35
+
+    N14Gunpowder: 35
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmo40mmGrenade
+  result: MisfitsCartridgeGrenade40mm
+  categories:
+  - MisfitsBlueprintLegionAmmoT3
+  completetime: 8
+  materials:
+    Steel: 1000
+
+    N14Gunpowder: 1200
+
+    N14Iron: 500
+
+# #Misfits Add - Issue #968 faction ordnance: Legion improvised tin grenade.
+
+- type: latheRecipe
+  id: MisfitsBPLegionGrenadeTin
+  result: N14TinNade
+  categories:
+  - MisfitsBlueprintLegionAmmoT3
+  completetime: 8
+  applyMaterialDiscount: false
+  materials:
+    Steel: 500
+    N14Gunpowder: 700
+    N14Scrap: 500
+
+
+# #Misfits Add - T3 ammo parity: 7.62mm for SKS, and craftable dynamite (Legion explosive doctrine)
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoBox762
+  result: MisfitsAmmoBox762
+  categories:
+  - MisfitsBlueprintLegionAmmoT3
+  completetime: 7
+  materials:
+    Lead: 45
+
+    N14Brass: 35
+
+    N14Gunpowder: 35
+
+- type: latheRecipe
+  id: MisfitsBPLegionWeaponDynamite
+  result: N14Dynamite
+  categories:
+  - MisfitsBlueprintLegionAmmoT3
+  completetime: 10
+  materials:
+    N14Gunpowder: 100
+
+    Cloth: 100
+
+    N14Iron: 100
+
+
+# #Misfits Add - 7.62mm ammo belt craftable for Legion M240B (Tier 3)
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoMissile
+  result: MisfitsCartridgeMissile
+  categories:
+  - MisfitsBlueprintLegionAmmoT4
+  completetime: 15
+  materials:
+    Steel: 1000
+
+    N14Gunpowder: 4000
+
+    N14Iron: 200
+
+    Circuitry: 100
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoBox50
+  result: MisfitsAmmoBox50
+  categories:
+  - MisfitsBlueprintLegionAmmoT4
+  completetime: 12
+  materials: # #Burger - mat costs was absurdly high compared to non BP recipe (you could misclick it)
+    Lead: 75 # #Burger - (was 1000)
+
+    N14Brass: 75 # #Burger - (was 300)
+
+    N14Gunpowder: 75 # #Burger - (was 500)
+
+    Steel: 100 # #Burger - (was 1000)
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmo40mmGrenadeIncendiary
+  result: MisfitsCartridgeGrenadeIncendiary40mm
+  categories:
+  - MisfitsBlueprintLegionAmmoT4
+  completetime: 10
+  materials:
+    Steel: 1000
+
+    N14Gunpowder: 1000
+
+    N14Iron: 300
+
+    Plastic: 150
+
+
+# #Misfits Add - T4 ammo for Bren LMG (.308 Long magazine, 20-round box)
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoMagazine308RifleLong
+  result: N14Magazine308RifleLong
+  categories:
+  - MisfitsBlueprintLegionAmmoT4
+  completetime: 8
+  materials:
+    Steel: 1200
+
+    Lead: 900
+
+    N14Gunpowder: 850
+
+# #Misfits Add - T4 ammo for M60 LMG (.308 box magazine, 50-round box). Same material cost as Bren mag per design intent. made it cost a little extra cause extra bullets -Bill
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoMagazine308M60Box
+  result: N14Magazine308M60Box
+  categories:
+  - MisfitsBlueprintLegionAmmoT4
+  completetime: 8
+  materials:
+    Steel: 1300
+
+    Lead: 1000
+
+    N14Gunpowder: 900
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoOverMag308
+  result: MisfitsMagazineOver308RifleSniper
+  categories:
+  - MisfitsBlueprintLegionAmmoT4
+  completetime: 8
+  materials:
+    Steel: 1000
+
+    Lead: 500
+
+    N14Gunpowder: 75
+
+- type: latheRecipe
+  id: MisfitsBPLegionAmmoBoxOver308
+  result: MisfitsAmmoBoxOver308
+  categories:
+  - MisfitsBlueprintLegionAmmoT4
+  completetime: 8
+  materials:
+    Steel: 150
+
+    N14Brass: 75
+
+    N14Gunpowder: 125
+
+# =====================================================================
+# #Misfits Add - HELMET RECIPES
+# Helmets pair with their armor tier so players can craft a matching head
+# slot when their issued one breaks. Material costs are scaled to be lighter
+# than the body armor they pair with.
+# =====================================================================
+
+# --- NCR Tier 1 Helmets (paired with vest armor) ---
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorHelmetMetalSnow
+  result: N14ClothingHeadHatNCRHelmetMetalSnow
+  categories:
+  - MisfitsBlueprintNCRArmorT1
+  completetime: 4
+  materials:
+    Steel: 500
+    Cloth: 40
+    N14Leather: 20
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorHelmetMetalWoods
+  result: N14ClothingHeadHatNCRHelmetMetalWoods
+  categories:
+  - MisfitsBlueprintNCRArmorT1
+  completetime: 4
+  materials:
+    Steel: 500
+    Cloth: 40
+    N14Leather: 20
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorHelmetMetalDesert
+  result: N14ClothingHeadHatNCRHelmetMetalDesert
+  categories:
+  - MisfitsBlueprintNCRArmorT1
+  completetime: 4
+  materials:
+    Steel: 500
+    Cloth: 40
+    N14Leather: 20
+
+# --- NCR Tier 2 Helmets (paired with plate / pouched / CF vests) ---
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorHelmetMetalRadioWood
+  result: N14ClothingHeadHatNCRHelmetMetalRadioWood
+  categories:
+  - MisfitsBlueprintNCRArmorT2
+  completetime: 6
+  materials:
+    Steel: 1000
+    Cloth: 60
+    N14Leather: 30
+    N14ScrapElectronic: 30
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorHelmetMetalRadioSnow
+  result: N14ClothingHeadHatNCRHelmetMetalRadioSnow
+  categories:
+  - MisfitsBlueprintNCRArmorT2
+  completetime: 6
+  materials:
+    Steel: 1000
+    Cloth: 60
+    N14Leather: 30
+    N14ScrapElectronic: 30
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorHelmetMetalMilitaryPolice
+  result: N14ClothingHeadHatNCRHelmetMetalMilitaryPolice
+  categories:
+  - MisfitsBlueprintNCRArmorT2
+  completetime: 5
+  materials:
+    Steel: 900
+    Cloth: 50
+    N14Leather: 30
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorHelmetMetalMedic
+  result: N14ClothingHeadHatNCRHelmetMetalMedic
+  categories:
+  - MisfitsBlueprintNCRArmorT2
+  completetime: 5
+  materials:
+    Steel: 900
+    Cloth: 50
+    N14Leather: 30
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorHelmetMetalGhillie
+  result: N14ClothingHeadHatNCRHelmetMetalGhillie
+  categories:
+  - MisfitsBlueprintNCRArmorT2
+  completetime: 6
+  materials:
+    Steel: 800
+    Cloth: 10
+    N14Leather: 40
+
+# --- NCR Tier 3 Helmets (combat / ranger) ---
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorCombatHelmet
+  result: MisfitsClothingHeadHatNCRCombatHelmet
+  categories:
+  - MisfitsBlueprintNCRArmorT3
+  completetime: 8
+  materials:
+    Steel: 2000
+    Cloth: 80
+    N14Leather: 40
+    Plastic: 100
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorRangerHelmet
+  result: N14ClothingHeadHatRangerHelmet
+  categories:
+  - MisfitsBlueprintNCRArmorT3
+  completetime: 9
+  materials:
+    Steel: 1800
+    N14Leather: 100
+    Cloth: 80
+    Glass: 200
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorRangerHelmetDesert
+  result: N14ClothingHeadHatRangerHelmetDesert
+  categories:
+  - MisfitsBlueprintNCRArmorT3
+  completetime: 9
+  materials:
+    Steel: 1800
+    N14Leather: 100
+    Cloth: 80
+    Glass: 200
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorRangerHelmetOld
+  result: N14ClothingHeadHatRangerHelmetOld
+  categories:
+  - MisfitsBlueprintNCRArmorT3
+  completetime: 9
+  materials:
+    Steel: 1800
+    N14Leather: 100
+    Cloth: 80
+    Glass: 200
+
+# --- NCR Tier 4 Helmets (elite / power armor) ---
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorCombatHelmetMK2
+  result: N14ClothingHeadHatCombatHelmetMK2
+  categories:
+  - MisfitsBlueprintNCRArmorT4
+  completetime: 12
+  materials:
+    Steel: 4000
+    Cloth: 100
+    N14Leather: 50
+    Circuitry: 50
+
+- type: latheRecipe
+  id: MisfitsBPNCRArmorRangerHelmetElite
+  result: N14ClothingHeadHatRangerHelmetElite
+  categories:
+  - MisfitsBlueprintNCRArmorT4
+  completetime: 14
+  materials:
+    Steel: 4000
+    N14Leather: 120
+    Cloth: 100
+    Glass: 250
+    Circuitry: 50
+
+# #Misfits Removed - user requested no power armor helmet recipes
+# - type: latheRecipe
+#   id: N14BPNCRArmorPowerHelmetT45NCR
+#   result: N14ClothingHeadHelmetPowerArmorT45NCR
+#   category: N14BlueprintNCRArmorT4
+#   completetime: 18
+#   requiresBlueprint: true
+#   availableFaction:
+#   - NCR
+#   materials:
+#     Steel: 4500
+#     N14Iron: 15
+#     Circuitry: 12
+#     ScrapElectronic: 8
+#     N14Brass: 5
+
+# --- Legion Tier 1 Helmets (recruit head wraps) ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorHelmetTribalShemagh
+  result: N14ClothingTribalShemagh
+  categories:
+  - MisfitsBlueprintLegionArmorT1
+  completetime: 3
+  materials:
+    Cloth: 80
+    N14Thread: 50
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorHelmetTribalHeadWraps
+  result: N14ClothingTribalHeadWraps
+  categories:
+  - MisfitsBlueprintLegionArmorT1
+  completetime: 3
+  materials:
+    Cloth: 80
+    N14Thread: 50
+
+# --- Legion Tier 2 Helmets (legionnaire hoods) ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorHelmetTribalHood
+  result: N14ClothingTribalHood
+  categories:
+  - MisfitsBlueprintLegionArmorT2
+  completetime: 5
+  materials:
+    Cloth: 120
+    N14Thread: 80
+    N14Leather: 50
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorHelmetTribalOutcastHood
+  result: N14ClothingHeadHatTribalOutcastHood
+  categories:
+  - MisfitsBlueprintLegionArmorT2
+  completetime: 5
+  materials:
+    Cloth: 120
+    N14Thread: 80
+    N14Leather: 50
+
+# --- Legion Tier 3 Helmets (veteran skulls and hunter hoods) ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorHelmetTribalHunterHood
+  result: N14ClothingTribalHunterHood
+  categories:
+  - MisfitsBlueprintLegionArmorT3
+  completetime: 7
+  materials:
+    Cloth: 150
+    N14Thread: 100
+    N14Leather: 80
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorHelmetHeadtakerwraps
+  result: N14ClothingHeadTakerwraps
+  categories:
+  - MisfitsBlueprintLegionArmorT3
+  completetime: 7
+  materials:
+    Cloth: 150
+    N14Thread: 100
+    N14Leather: 80
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorHelmetMuffaloskull
+  result: N14ClothingTribalMuffaloskull
+  categories:
+  - MisfitsBlueprintLegionArmorT3
+  completetime: 8
+  materials:
+    N14Leather: 200
+    N14Thread: 80
+
+# --- Legion Tier 4 Helmets (looted pre-war military) ---
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorHelmetPrewarMilitaryHelmet
+  result: N14ClothingHeadHatPrewarMilitaryHelmet
+  categories:
+  - MisfitsBlueprintLegionArmorT4
+  completetime: 10
+  materials:
+    Steel: 3000
+    Cloth: 100
+    N14Leather: 50
+
+- type: latheRecipe
+  id: MisfitsBPLegionArmorHelmetMetalHelmet
+  result: MisfitsClothingHeadHatVaultBlueprintHelmetMetal
+  categories:
+  - MisfitsBlueprintLegionArmorT4
+  completetime: 10
+  materials:
+    Steel: 3000
+    Cloth: 100
+    N14Leather: 50

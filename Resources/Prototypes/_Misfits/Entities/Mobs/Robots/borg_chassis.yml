@@ -1,0 +1,75 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Mobs/Robots/borg_chassis.yml
+
+- type: entity
+  parent: N14RobotProtectron
+  id: MisfitsRobotSecuritron
+  name: securitron
+  components:
+  - type: SpamEmitSound
+    minInterval: 12
+    maxInterval: 45
+    sound:
+      collection: MisfitsSecuritronIdle
+      params:
+        volume: -7
+        maxDistance: 6
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-gray.rsi
+    layers:
+    - state: icon
+      map: ["movement"]
+    - state: icon
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: icon
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: walking
+    noMovementLayers:
+      movement:
+        state: icon
+  - type: GhostRole
+    prob: 1
+    makeSentient: true
+    name: Friendly Securitron
+    description: |
+      Do as your masters say with a literal but reasonable level of logic.
+
+- type: entity
+  parent: MisfitsRobotSecuritron
+  id: MisfitsRobotSecuritronBlue
+  name: securitron
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-blue.rsi
+
+- type: entity
+  parent: MisfitsRobotSecuritron
+  id: MisfitsRobotSecuritronBrown
+  name: securitron
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-brown.rsi
+
+- type: entity
+  parent: MisfitsRobotSecuritron
+  id: MisfitsRobotSecuritronRed
+  name: securitron
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-red.rsi
+
+- type: entity
+  parent: MisfitsRobotSecuritron
+  id: MisfitsRobotSecuritronYellow
+  name: securitron
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-yellow.rsi
+        
+# Handy Gutsy

@@ -17,6 +17,7 @@
     state: substation
     snapCardinals: true
   - type: Battery
+    netsync: false # WW: power-net battery
     startingCharge: 0
   - type: ExaminableBattery
   - type: PointLight
@@ -113,6 +114,7 @@
       machine_parts: !type:Container
         ents: []
   - type: Battery
+    netsync: false # WW: power-net battery
     maxCharge: 2500000
     startingCharge: 2500000
 
@@ -128,6 +130,7 @@
       machine_parts: !type:Container
         ents: []
   - type: Battery
+    netsync: false # WW: power-net battery
     startingCharge: 0
 
 # Rusty
@@ -190,6 +193,7 @@
       machine_parts: !type:Container
         ents: []
   - type: Battery
+    netsync: false # WW: power-net battery
     startingCharge: 0
 
 # Destroyed

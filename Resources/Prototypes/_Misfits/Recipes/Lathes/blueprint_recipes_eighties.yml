@@ -1,0 +1,678 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/blueprint_recipes_eighties.yml
+
+- type: latheRecipe
+  id: MisfitsBlueprintPipePistolEighties
+  result: N14WeaponPistol10mmPipe
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT1
+  applyMaterialDiscount: false
+  completetime: 2
+  materials:
+    Steel: 1000
+    Wood: 500
+
+- type: latheRecipe
+  id: MisfitsBlueprintPipeRifleEighties
+  result: N14WeaponRifle556Pipe
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT1
+  applyMaterialDiscount: false
+  completetime: 2
+  materials:
+    Steel: 1500
+    Wood: 1000
+
+- type: latheRecipe
+  id: MisfitsBlueprintPipeShotgunEighties
+  result: N14WeaponShotgunPipe
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT1
+  applyMaterialDiscount: false
+  completetime: 2
+  materials:
+    Steel: 1500
+    Wood: 1000
+
+- type: latheRecipe
+  id: MisfitsBlueprintPipeSniperEighties
+  result: N14WeaponSniper308PipeRifle
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT1
+  applyMaterialDiscount: false
+  completetime: 2
+  materials:
+    Steel: 2000
+    Wood: 1500
+
+- type: latheRecipe
+  id: MisfitsBlueprintPipeSubMachineGunEighties
+  result: N14WeaponSMG10mmPipe
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT1
+  applyMaterialDiscount: false
+  completetime: 2
+  materials:
+    Steel: 1500
+    Wood: 500
+
+- type: latheRecipe
+  id: MisfitsBlueprintPipeAssaultRifleEighties
+  result: N14WeaponRifle556Pipe
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT1
+  applyMaterialDiscount: false
+  completetime: 2
+  materials:
+    Steel: 2500
+    Wood: 1000
+
+- type: latheRecipe
+  id: MisfitsBlueprintPipeSubMachineGun12mmEighties
+  result: N14WeaponSMG12mmPipe
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT1
+  applyMaterialDiscount: false
+  completetime: 2
+  materials:
+    Steel: 2500
+    Wood: 1000
+
+# t2 weapons
+
+- type: latheRecipe
+  id: MisfitsBlueprintPistol45Eighties
+  result: N14WeaponPistol45Colt
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT2
+  applyMaterialDiscount: false
+  completetime: 4
+  materials:
+    Steel: 2500
+    Plastic: 500
+
+- type: latheRecipe
+  id: MisfitsBlueprintPistol9mmEighties
+  result: N14WeaponPistol9mm
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT2
+  applyMaterialDiscount: false
+  completetime: 4
+  materials:
+    Steel: 2000
+    Plastic: 500
+
+- type: latheRecipe
+  id: MisfitsBlueprintPistol10mmEighties
+  result: N14WeaponPistol10mm
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT2
+  applyMaterialDiscount: false
+  completetime: 4
+  materials:
+    Steel: 2500
+    Plastic: 500
+
+# t3 weapons
+
+- type: latheRecipe
+  id: MisfitsBlueprintSmg9mmEighties
+  result: MisfitsWeaponSMG45GreaseGun
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT3
+  applyMaterialDiscount: false
+  completetime: 6
+  materials:
+    Steel: 4000
+    Plastic: 1000
+    Silver: 300
+
+- type: latheRecipe
+  id: MisfitsBlueprintSmg10mmEighties
+  result: N14WeaponSMG10mm
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT3
+  applyMaterialDiscount: false
+  completetime: 6
+  materials:
+    Steel: 4000
+    Plastic: 1000
+    Silver: 300
+
+# t4 weapons
+
+- type: latheRecipe
+  id: MisfitsBlueprintShotgunLeverEighties
+  result: N14WeaponShotgunLever
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT3
+  applyMaterialDiscount: false
+  completetime: 6
+  materials:
+    Steel: 4000
+    Plastic: 1000
+    Silver: 300
+
+- type: latheRecipe
+  id: MisfitsBlueprintDesertEagleEighties
+  result: N14WeaponDesertEagle44
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT4
+  applyMaterialDiscount: false
+  completetime: 8
+  materials:
+    Steel: 5000
+    Plastic: 1000
+    Silver: 300
+
+- type: latheRecipe
+  id: MisfitsBlueprintHuntingRevolverEighties
+  result: N14WeaponRevolver45-70Hunter
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT4
+  applyMaterialDiscount: false
+  completetime: 8
+  materials:
+    Steel: 5000
+    Wood: 1500
+    Silver: 200
+
+- type: latheRecipe
+  id: MisfitsBlueprintDouglasSmgEighties
+  result: N14WeaponSMG12mmAdvancedCanadian
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT4
+  applyMaterialDiscount: false
+  completetime: 8
+  materials:
+    Steel: 6000
+    Plastic: 1000
+    Silver: 400
+
+- type: latheRecipe
+  id: MisfitsBlueprintCanadiaSmgEighties
+  result: N14WeaponSMG9mmCanadian
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT4
+  applyMaterialDiscount: false
+  completetime: 8
+  materials:
+    Steel: 6000
+    Plastic: 1000
+    Silver: 400
+
+# t5 weapons
+
+- type: latheRecipe
+  id: MisfitsBlueprintAssaultCarbineEighties
+  result: MisfitsWeaponRifle5mmCarbine
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT5
+  applyMaterialDiscount: false
+  completetime: 12
+  materials:
+    Steel: 7000
+    Plastic: 1500
+    Silver: 500
+    Gold: 300
+
+- type: latheRecipe
+  id: MisfitsBlueprintPipeSniper50Eighties
+  result: N14WeaponSniper50Pipe
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT5
+  applyMaterialDiscount: false
+  completetime: 12
+  materials:
+    Steel: 7000
+    Wood: 1500
+    Silver: 500
+    Gold: 300
+
+- type: latheRecipe
+  id: MisfitsBlueprintSmg180Eighties
+  result: MisfitsWeaponSMGAmerican180
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT5
+  applyMaterialDiscount: false
+  completetime: 12
+  materials:
+    Steel: 8000
+    Plastic: 1500
+    Silver: 500
+    Gold: 300
+
+- type: latheRecipe
+  id: MisfitsBlueprintSmg127AdvancedEighties
+  result: N14WeaponSMG12mmAdvanced
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT5
+  applyMaterialDiscount: false
+  completetime: 14
+  materials:
+    Steel: 9000
+    Plastic: 2000
+    Silver: 500
+    Gold: 300
+
+- type: latheRecipe
+  id: MisfitsBlueprintChinaLakeEighties
+  result: N14WeaponLauncherGrenade
+  categories:
+  - MisfitsBlueprintEightiesWeaponsT5
+  applyMaterialDiscount: false
+  completetime: 20
+  materials:
+    Steel: 20000
+    Plastic: 2000
+    Silver: 2000
+    Gold: 2000
+
+
+# ammo
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoBox10mm
+  result: MisfitsAmmoBox10mm
+  categories:
+  - MisfitsBlueprintEightiesAmmoT1
+  applyMaterialDiscount: false
+  completetime: 4
+  materials:
+    Lead: 10
+    N14Brass: 5
+    N14Gunpowder: 5
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoBox308
+  result: MisfitsAmmoBox308
+  categories:
+  - MisfitsBlueprintEightiesAmmoT3
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Lead: 15
+    N14Brass: 10
+    N14Gunpowder: 10
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoBox12gauge
+  result: MisfitsAmmoBox12gauge
+  categories:
+  - MisfitsBlueprintEightiesAmmoT2
+  applyMaterialDiscount: false
+  completetime: 4
+  materials:
+    Lead: 12
+    N14Brass: 6
+    N14Gunpowder: 6
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoBox556
+  result: MisfitsAmmoBox556
+  categories:
+  - MisfitsBlueprintEightiesAmmoT2
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Lead: 15
+    N14Brass: 10
+    N14Gunpowder: 10
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoBox45
+  result: MisfitsAmmoBox45
+  categories:
+  - MisfitsBlueprintEightiesAmmoT1
+  applyMaterialDiscount: false
+  completetime: 4
+  materials:
+    Lead: 10
+    N14Brass: 5
+    N14Gunpowder: 5
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoBox9mm
+  result: MisfitsAmmoBox9mm
+  categories:
+  - MisfitsBlueprintEightiesAmmoT1
+  applyMaterialDiscount: false
+  completetime: 4
+  materials:
+    Lead: 10
+    N14Brass: 5
+    N14Gunpowder: 5
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoBox44
+  result: MisfitsAmmoBox44Magnum
+  categories:
+  - MisfitsBlueprintEightiesAmmoT3
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Lead: 15
+    N14Brass: 10
+    N14Gunpowder: 10
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoBox50
+  result: MisfitsAmmoBox50
+  categories:
+  - MisfitsBlueprintEightiesAmmoT4
+  applyMaterialDiscount: false
+  completetime: 6
+  materials:
+    Lead: 20
+    N14Brass: 15
+    N14Gunpowder: 15
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoBox22lr
+  result: MisfitsAmmoBox22lr
+  categories:
+  - MisfitsBlueprintEightiesAmmoT1
+  applyMaterialDiscount: false
+  completetime: 3
+  materials:
+    Lead: 80
+    N14Brass: 4
+    N14Gunpowder: 4
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoMag10mmPistol
+  result: N14MagazinePistol10mm
+  categories:
+  - MisfitsBlueprintEightiesAmmoT1
+  applyMaterialDiscount: false
+  completetime: 3
+  materials:
+    Steel: 70
+    Lead: 5
+    N14Gunpowder: 5
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoMag9mmPistol
+  result: N14MagazinePistol9mm
+  categories:
+  - MisfitsBlueprintEightiesAmmoT1
+  applyMaterialDiscount: false
+  completetime: 3
+  materials:
+    Steel: 60
+    Lead: 5
+    N14Gunpowder: 5
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoMag45Pistol
+  result: N14MagazinePistol45
+  categories:
+  - MisfitsBlueprintEightiesAmmoT1
+  applyMaterialDiscount: false
+  completetime: 4
+  materials:
+    Steel: 80
+    Lead: 5
+    N14Gunpowder: 5
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoMag44Pistol
+  result: N14MagazinePistol44
+  categories:
+  - MisfitsBlueprintEightiesAmmoT3
+  applyMaterialDiscount: false
+  completetime: 4
+  materials:
+    Steel: 90
+    Lead: 6
+    N14Gunpowder: 6
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoMag9mmSMG
+  result: N14MagazineSMG9mm
+  categories:
+  - MisfitsBlueprintEightiesAmmoT2
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Steel: 100
+    Lead: 10
+    N14Gunpowder: 10
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoMag10mmSMG
+  result: N14MagazineSMG10mm
+  categories:
+  - MisfitsBlueprintEightiesAmmoT2
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Steel: 110
+    Lead: 10
+    N14Gunpowder: 10
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoMag12mmSMG
+  result: N14MagazineSMG12mm
+  categories:
+  - MisfitsBlueprintEightiesAmmoT4
+  applyMaterialDiscount: false
+  completetime: 6
+  materials:
+    Steel: 120
+    Lead: 12
+    N14Gunpowder: 12
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoMag556Long
+  result: N14LongMagazine556Rifle
+  categories:
+  - MisfitsBlueprintEightiesAmmoT2
+  applyMaterialDiscount: false
+  completetime: 6
+  materials:
+    Steel: 205
+    Lead: 70
+    N14Gunpowder: 70
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmoMagAmerican180
+  result: MisfitsMagazineAmerican180Drum
+  categories:
+  - MisfitsBlueprintEightiesAmmoT4
+  applyMaterialDiscount: false
+  completetime: 6
+  materials:
+    Steel: 120
+    Lead: 20
+    N14Gunpowder: 20
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesAmmo40mm
+  result: MisfitsCartridgeGrenade40mm
+  categories:
+  - MisfitsBlueprintEightiesAmmoT4
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Steel: 200
+    N14Gunpowder: 20
+    Plastic: 10
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesMagazineBox20gauge
+  result: N14MagazineBox20gauge
+  categories:
+  - MisfitsBlueprintEightiesAmmoT4
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Steel: 200
+    N14Gunpowder: 20
+    Plastic: 10
+
+# t1 armor
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesArmor
+  result: MisfitsClothingOuterEightiesArmor
+  categories:
+  - MisfitsBlueprintEightiesArmorT1
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Steel: 1000
+    Cloth: 500
+    Plastic: 200
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesHelmet
+  result: MisfitsClothingHeadBikeHelmet
+  categories:
+  - MisfitsBlueprintEightiesArmorT1
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Steel: 1000
+    Cloth: 500
+    Plastic: 200
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesHelmetWhite
+  result: MisfitsClothingHeadBikeHelmetWhite
+  categories:
+  - MisfitsBlueprintEightiesArmorT1
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Steel: 1000
+    Cloth: 500
+    Plastic: 200
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesHelmetRed
+  result: MisfitsClothingHeadBikeHelmetRed
+  categories:
+  - MisfitsBlueprintEightiesArmorT1
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Steel: 1000
+    Cloth: 500
+    Plastic: 200
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesHelmetBlack
+  result: MisfitsClothingHeadBikeHelmetBlack
+  categories:
+  - MisfitsBlueprintEightiesArmorT1
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Steel: 1000
+    Cloth: 500
+    Plastic: 200
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesHelmetYellow
+  result: MisfitsClothingHeadBikeHelmetYellow
+  categories:
+  - MisfitsBlueprintEightiesArmorT1
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Steel: 1000
+    Cloth: 500
+    Plastic: 200
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesHelmetOlive
+  result: MisfitsClothingHeadBikeHelmetOlive
+  categories:
+  - MisfitsBlueprintEightiesArmorT1
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Steel: 1000
+    Cloth: 500
+    Plastic: 200
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesHelmetBeige
+  result: MisfitsClothingHeadBikeHelmetBeige
+  categories:
+  - MisfitsBlueprintEightiesArmorT1
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Steel: 1000
+    Cloth: 500
+    Plastic: 200
+
+# t2 armor
+
+- type: latheRecipe
+  id: MisfitsBlueprintEightiesArmorHeavy
+  result: MisfitsClothingOuterEightiesArmorHeavy
+  categories:
+  - MisfitsBlueprintEightiesArmorT2
+  applyMaterialDiscount: false
+  completetime: 8
+  materials:
+    Steel: 3000
+    Cloth: 500
+    Plastic: 300
+
+- type: latheRecipe
+  id: MisfitsBlueprintRaiderArmorEighties
+  result: MisfitsClothingOuterEightiesArmorHeavy
+  categories:
+  - MisfitsBlueprintEightiesArmorT2
+  applyMaterialDiscount: false
+  completetime: 6
+  materials:
+    Steel: 3000
+    Cloth: 500
+    N14Leather: 200
+
+# t3 armor
+
+- type: latheRecipe
+  id: MisfitsBlueprintRaiderArmorHeavyEighties
+  result: MisfitsClothingOuterEightiesArmorHeavyElite
+  categories:
+  - MisfitsBlueprintEightiesArmorT3
+  applyMaterialDiscount: false
+  completetime: 9
+  materials:
+    Steel: 4000
+    Cloth: 600
+    N14Leather: 300
+
+- type: latheRecipe
+  id: MisfitsBlueprintRaiderCombatArmorEighties
+  result: MisfitsClothingOuterEightiesArmorHeavyElite
+  categories:
+  - MisfitsBlueprintEightiesArmorT3
+  applyMaterialDiscount: false
+  completetime: 9
+  materials:
+    Steel: 4000
+    Cloth: 600
+    N14Leather: 300
+    Plastic: 200
+
+# t4 armor
+
+- type: latheRecipe
+  id: MisfitsBlueprintRaiderMk2ArmorEighties
+  result: MisfitsClothingOuterEightiesArmorHeavyBoss
+  categories:
+  - MisfitsBlueprintEightiesArmorT4
+  applyMaterialDiscount: false
+  completetime: 12
+  materials:
+    Steel: 6000
+    Cloth: 700
+    N14Leather: 300
+    Plastic: 300
+    Silver: 100

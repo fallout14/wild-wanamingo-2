@@ -1,0 +1,54 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Blueprints/c27_blueprints.yml
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintC27ArmorGeneric
+  name: C-27 Armor Blueprint
+  description: Factory manufacturing schematics for reinforced C-27 chassis plating. Covers medium and heavy chassis armor and the matching helmets in plain (Generic) livery.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBPC27ArmorMediumGeneric
+    - MisfitsBPC27HelmetMediumGeneric
+    - MisfitsBPC27ArmorHeavyGeneric
+    - MisfitsBPC27HelmetHeavyGeneric
+    - MisfitsBPC27ArmorCombatGeneric
+    - MisfitsBPC27HelmetCombatGeneric
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintC27ArmorNCR
+  name: NCR C-27 Armor Blueprint
+  description: NCR-issued manufacturing schematics for reinforced C-27 chassis plating. Covers medium and heavy chassis armor and the matching helmets in New California Republic livery.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBPC27ArmorMediumNCR
+    - MisfitsBPC27HelmetMediumNCR
+    - MisfitsBPC27ArmorHeavyNCR
+    - MisfitsBPC27HelmetHeavyNCR
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintC27ArmorBoS
+  name: Brotherhood C-27 Armor Blueprint
+  description: Brotherhood of Steel manufacturing schematics for reinforced C-27 chassis plating. Covers medium and heavy chassis armor and the matching helmets in Brotherhood livery.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBPC27ArmorMediumBoS
+    - MisfitsBPC27HelmetMediumBoS
+    - MisfitsBPC27ArmorHeavyBoS
+    - MisfitsBPC27HelmetHeavyBoS
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintZAXEquipment
+  name: Z.A.X Equipment Blueprint
+  description: Z.A.X-linked manufacturing schematics for specialized equipment. Covers Z.A.X-specific chassis armor now, with room for future Z.A.X weapons and tools.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBPC27ArmorMediumZAX
+    - MisfitsBPC27HelmetMediumZAX
+    - MisfitsBPWeaponZAXPulseRifle

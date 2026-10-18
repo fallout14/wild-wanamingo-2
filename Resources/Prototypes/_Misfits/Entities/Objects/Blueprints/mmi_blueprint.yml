@@ -4,3 +4,16 @@
   parent: MMI
   id: MisfitsMMI
   suffix: N14
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintMMI
+  name: MMI Assembly Schematic
+  description: >
+    A Pre-War technical schematic for assembling a Man-Machine Interface unit —
+    the cranial bridge between a biological brain and robotic hardware.
+    Insert it into a weapon workbench to unlock the fabrication recipe.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBPMMIRecipe

@@ -1,0 +1,61 @@
+# Ported from Goobstation content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Goobstation/Entities/Objects/Vehicles/vehicles.yml
+
+- type: entity
+  parent: BaseVehicleStrap
+  id: GoobstationBaseVehicle
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Vehicle
+    canAttack: false
+    transferDamage: false # Goob's vehicles kept the rider out of the vehicle's damage
+  - type: VehicleDrawOver
+    renderOver: East, SouthEast, South, SouthWest, West
+  - type: VehicleHandBlocker
+  - type: Strap
+    position: Stand
+  - type: Appearance
+  - type: AmbientSound
+    sound: "/Audio/Nuclear14/Effects/motorcycle2.ogg"
+    range: 10
+    volume: -10
+    enabled: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 100
+        mask:
+        - MobMask
+        hard: true
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: MovementSpeedModifier
+    acceleration: 8
+    friction: 5 # wheels dont stop instantly
+    baseSprintSpeed: 7
+    baseWalkSpeed: 4.5
+  - type: StaticPrice
+    price: 2500

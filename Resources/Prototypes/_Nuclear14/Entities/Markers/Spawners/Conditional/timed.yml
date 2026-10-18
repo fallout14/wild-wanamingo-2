@@ -44,6 +44,27 @@
       maxAlivePerPrototype: 12 # #Misfits Add - Cap alive mobs of this type per map
 
 - type: entity
+  name: Radhog Timed Spawner
+  id: N14TimedSpawnerRadhog
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/Animals/radhog.rsi
+          state: radhog
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobRadhog
+      chance: 0.65
+      intervalSeconds: 2400
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+      activationRange: 60 # #Misfits Add - Only spawn when a living player is within 60 tiles
+      maxAlivePerPrototype: 12 # #Misfits Add - Cap alive mobs of this type per map
+
+- type: entity
   parent: N14TimedSpawnerMolerat
   id: N14TimedSpawnerDogFeral
   name: Feral Dog Timed Spawner
@@ -371,3 +392,136 @@
       maximumEntitiesSpawned: 2
 
 # Ranged Raider Variants
+
+- type: entity
+  name: Raider Ranged Psycho Timed Spawner
+  id: N14TimedSpawnerMobRaiderPsychoRanged
+  parent: N14TimedSpawnerMolerat
+  components:
+  - type: Sprite
+    layers:
+      - state: blue
+      - sprite: Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+        state: raider_ranged
+      - state: timed
+  - type: WastelandSpawner
+    prototypes:
+      - N14MobRaiderPsychoRanged
+    chance: 0.95
+    intervalSeconds: 2400
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 2
+
+- type: entity
+  name: Raider Psycho Boss Timed Spawner
+  id: N14TimedSpawnerMobRaiderBoss
+  parent: N14TimedSpawnerMolerat
+  components:
+  - type: Sprite
+    layers:
+      - state: blue
+      - sprite: Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+        state: raiderboss
+      - state: timed
+  - type: WastelandSpawner
+    prototypes:
+      - N14MobRaiderBoss
+    chance: 0.95
+    intervalSeconds: 2400
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 1
+
+- type: entity
+  name: Raider Psycho Timed Spawner
+  id: N14TimedSpawnerMobRaiderPsycho
+  parent: N14TimedSpawnerMolerat
+  components:
+  - type: Sprite
+    layers:
+      - state: blue
+      - sprite: Nuclear14/Mobs/RaidersSimpleMob/RaiderPsycho.rsi
+        state: raider_melee
+      - state: timed
+  - type: WastelandSpawner
+    prototypes:
+      - N14MobRaiderPsycho
+    chance: 0.95
+    intervalSeconds: 2400
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 3
+
+- type: entity
+  parent: N14TimedSpawnerMolerat
+  id: N14TimedSpawnerRadstag
+  name: Radstag Timed Spawner
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/Animals/radstag.rsi
+          state: radstag
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobRadstag
+      chance: 0.95
+      intervalSeconds: 2400
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+- type: entity
+  parent: N14TimedSpawnerMolerat
+  id: N14TimedSpawnerChicken
+  name: Chicken Timed Spawner
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/Animals/chicken.rsi
+          state: chicken
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobChicken
+      chance: 0.95
+      intervalSeconds: 2400
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+- type: entity
+  parent: N14TimedSpawnerMolerat
+  id: N14TimedSpawnerBighorner
+  name: Bighorner Timed Spawner
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/Animals/bighorner.rsi
+          state: bighorner
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobBighorner
+      chance: 0.95
+      intervalSeconds: 2400
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+- type: entity
+  parent: N14TimedSpawnerMolerat
+  id: N14TimedSpawnerBrahmin
+  name: Brahmin Timed Spawner
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/Animals/brahmin.rsi
+          state: brahmin-1
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobBrahmin
+      chance: 0.95
+      intervalSeconds: 2400
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3

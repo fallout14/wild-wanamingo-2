@@ -75,6 +75,29 @@
 
 - type: entity
   parent: N14FalloutArmorBase
+  id: CorvaxClothingOuterLegionnaireReconnaissanceArmor
+  name: reconnaissance armor
+  description: "Good durable armor that does not burden movement."
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/reconnaissancearmor.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/reconnaissancearmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.10
+    sprintModifier: 1.10
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.75
+        Heat: 0.80
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
+
+- type: entity
+  parent: N14FalloutArmorBase
   id: CorvaxClothingLegionReconArmor
   name: light reconnaissance armor
   description: "Incredibly light armor with not the best protection, but you feel faster."

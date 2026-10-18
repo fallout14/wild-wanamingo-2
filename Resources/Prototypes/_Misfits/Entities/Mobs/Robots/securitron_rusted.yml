@@ -1,6 +1,61 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Mobs/Robots/securitron_rusted.yml
 
 - type: entity
+  parent: MisfitsRobotSecuritron
+  id: MisfitsRobotSecuritronGrayRusted
+  name: rusted securitron
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-gray-rusted.rsi
+  - type: BorgChassis
+    hasMindState: icon
+    noMindState: icon
+
+- type: entity
+  parent: MisfitsRobotSecuritron
+  id: MisfitsRobotSecuritronBlueRusted
+  name: rusted securitron
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-blue-rusted.rsi
+  - type: BorgChassis
+    hasMindState: icon
+    noMindState: icon
+
+- type: entity
+  parent: MisfitsRobotSecuritron
+  id: MisfitsRobotSecuritronBrownRusted
+  name: rusted securitron
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-brown-rusted.rsi
+  - type: BorgChassis
+    hasMindState: icon
+    noMindState: icon
+
+- type: entity
+  parent: MisfitsRobotSecuritron
+  id: MisfitsRobotSecuritronRedRusted
+  name: rusted securitron
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-red-rusted.rsi
+  - type: BorgChassis
+    hasMindState: icon
+    noMindState: icon
+
+- type: entity
+  parent: MisfitsRobotSecuritron
+  id: MisfitsRobotSecuritronYellowRusted
+  name: rusted securitron
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-yellow-rusted.rsi
+  - type: BorgChassis
+    hasMindState: icon
+    noMindState: icon
+
+- type: entity
   parent: MisfitsMobRobotSecuritronHostile
   id: MisfitsMobRobotSecuritronGrayRustedHostile
   name: Rusted Securitron

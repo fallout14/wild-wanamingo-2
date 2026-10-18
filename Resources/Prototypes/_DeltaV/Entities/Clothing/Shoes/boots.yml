@@ -1,0 +1,14 @@
+# Ported from DeltaV content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/DeltaV/Entities/Clothing/Shoes/boots.yml
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: DeltaVClothingShoesBootsRyuzo
+  name: rugged fur boots
+  description: These would be perfect for chilly winter walks out in the forests - if they still existed, that is.
+  suffix: ADMIN ONLY, DO NOT MAP
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/DeltaV/Clothing/Shoes/Boots/ryuzoboots.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/DeltaV/Clothing/Shoes/Boots/ryuzoboots.rsi

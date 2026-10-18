@@ -13,7 +13,9 @@
         state: brahmin-2
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobBrahmin
+      
 
 - type: entity
   name: Chicken Spawner
@@ -27,7 +29,9 @@
         state: chicken
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobChicken
+      
 
 - type: entity
   name: Bighorner Spawner
@@ -41,7 +45,9 @@
         state: bighorner
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobBighorner
+      
 
 - type: entity
   name: Radstag Spawner
@@ -55,7 +61,8 @@
         state: radstag
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobRadstag
 
 - type: entity
   name: Nuclear Beaver Spawner
@@ -176,7 +183,9 @@
         state: radhog
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobRadhog
+      
 
 - type: entity
   name: Feral Dog Spawner
@@ -478,7 +487,9 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobRaiderPsychoRanged
+      
 
 - type: entity
   name: Raider Spawner - Rifle
@@ -492,7 +503,9 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobRaiderHunter
+      
 
 - type: entity
   name: Raider Spawner - Shotgun
@@ -506,7 +519,9 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobRaiderSkrimisher
+      
 
 - type: entity
   name: Raider Spawner - Boss
@@ -520,7 +535,8 @@
         state: raiderboss
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobRaiderBoss
 
 - type: entity
   name: Gunners Spawner - Private
@@ -534,7 +550,8 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobFernMercPrivate
 
 - type: entity
   name: Gunners Spawner - Sergeant
@@ -548,7 +565,8 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobFernMercSergeant
 
 - type: entity
   name: Gunners Spawner - Lieutenant
@@ -562,7 +580,8 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobFernMercLieutenant
 
 - type: entity
   name: Enforcer Spawner - Trooper
@@ -576,7 +595,8 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobEnforcerTrooper
 
 - type: entity
   name: Enforcer Spawner - Warden
@@ -590,7 +610,8 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobEnforcerWarden
 
 - type: entity
   name: Enforcer Spawner - Chief
@@ -604,7 +625,9 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobEnforcerChief
+
 # Melee Raider Variants
 
 - type: entity
@@ -619,7 +642,8 @@
         state: raider_melee
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobRaiderPsycho
 
 - type: entity
   name: Gunners Spawner - Melee
@@ -633,7 +657,8 @@
         state: raider_melee
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobRaiderFernMelee
 
 - type: entity
   name: Enforcer Spawner - Melee
@@ -647,7 +672,9 @@
         state: raider_melee
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobRaiderEnforcerMelee
+
 #MARK: Ghoul
 
 - type: entity
@@ -823,7 +850,9 @@
         state: icon
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobRobotMrHandyGun
+      
 
 - type: entity
   name: Mr Handy Saw Spawner
@@ -936,7 +965,8 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobNPCTown
 
 - type: entity
   name: Town Enforcer Spawner
@@ -950,7 +980,8 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobNPCTownGuard
 
 - type: entity
   name: BoS Serf Spawner
@@ -964,7 +995,8 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobNPCMBoSSerf
 
 - type: entity
   name: BoS Knight Spawner
@@ -978,7 +1010,9 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobNPCMBoSKnight
+
 #Misfits Change /Comment-out/: Washington BoS NPC spawners removed — NPC entities commented out.
 #- type: entity
 #  name: Washington Initiate Spawner
@@ -1022,7 +1056,8 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobNPCNCRGuard
 
 - type: entity
   name: NCR Army Trooper Spawner
@@ -1036,7 +1071,8 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobNPCNCRTrooper
 
 - type: entity
   name: Caravan Merc Spawner
@@ -1050,7 +1086,8 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobNPCCaravanMerc
 
 - type: entity
   name: Tribal Skirmisher Spawner
@@ -1064,7 +1101,8 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobNPCTribeSkir
 
 - type: entity
   name: Tribal Warrior Spawner
@@ -1078,5 +1116,7 @@
         state: raider_ranged
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobNPCTribeWarr
+
 # Misfits Change - Super Mutant spawners (DesertRose2/desertrose port)

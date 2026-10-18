@@ -1,0 +1,217 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/blueprint_recipes_c27.yml
+
+- type: latheRecipe
+  id: MisfitsBPC27ArmorMediumGeneric
+  result: MisfitsClothingC27ArmorMediumGeneric
+  categories:
+  - MisfitsBlueprintC27ArmorGeneric
+  completetime: 10
+  materials:
+    Steel: 1500
+    Cloth: 200
+    N14Thread: 150
+    Plastic: 750
+
+- type: latheRecipe
+  id: MisfitsBPC27HelmetMediumGeneric
+  result: MisfitsClothingC27HelmetMediumGeneric
+  categories:
+  - MisfitsBlueprintC27ArmorGeneric
+  completetime: 6
+  materials:
+    Steel: 150
+    Cloth: 75
+    N14Thread: 50
+    Plastic: 40
+
+- type: latheRecipe
+  id: MisfitsBPC27ArmorMediumZAX
+  result: MisfitsClothingC27ArmorMediumZAX
+  categories:
+  - MisfitsBlueprintZAXEquipment
+  completetime: 10
+  materials:
+    Steel: 1500
+    Cloth: 200
+    N14Thread: 150
+    Plastic: 750
+
+- type: latheRecipe
+  id: MisfitsBPC27HelmetMediumZAX
+  result: MisfitsClothingC27HelmetMediumZAX
+  categories:
+  - MisfitsBlueprintZAXEquipment
+  completetime: 6
+  materials:
+    Steel: 150
+    Cloth: 75
+    N14Thread: 50
+    Plastic: 40
+
+- type: latheRecipe
+  id: MisfitsBPWeaponZAXPulseRifle
+  result: MisfitsWeaponZAXPulseRifle
+  categories:
+  - MisfitsBlueprintZAXEquipment
+  completetime: 14
+  materials:
+    Steel: 5000
+    Glass: 575
+    Circuitry: 400
+    Plastic: 750
+
+- type: latheRecipe
+  id: MisfitsBPC27ArmorHeavyGeneric
+  result: MisfitsClothingC27ArmorHeavyGeneric
+  categories:
+  - MisfitsBlueprintC27ArmorGeneric
+  completetime: 14
+  materials:
+    Steel: 22000
+    Cloth: 250
+    N14Thread: 175
+    Plastic: 1000
+
+- type: latheRecipe
+  id: MisfitsBPC27HelmetHeavyGeneric
+  result: MisfitsClothingC27HelmetHeavyGeneric
+  categories:
+  - MisfitsBlueprintC27ArmorGeneric
+  completetime: 8
+  materials:
+    Steel: 275
+    Cloth: 100
+    N14Thread: 65
+    Plastic: 60
+
+# =====================================================================
+# C-27 NCR
+# =====================================================================
+
+- type: latheRecipe
+  id: MisfitsBPC27ArmorMediumNCR
+  result: MisfitsClothingC27ArmorMediumNCR
+  categories:
+  - MisfitsBlueprintC27ArmorNCR
+  completetime: 10
+  materials:
+    Steel: 1500
+    Cloth: 200
+    N14Thread: 150
+    Plastic: 750
+
+- type: latheRecipe
+  id: MisfitsBPC27HelmetMediumNCR
+  result: MisfitsClothingC27HelmetMediumNCR
+  categories:
+  - MisfitsBlueprintC27ArmorNCR
+  completetime: 6
+  materials:
+    Steel: 150
+    Cloth: 75
+    N14Thread: 50
+    Plastic: 40
+
+- type: latheRecipe
+  id: MisfitsBPC27ArmorHeavyNCR
+  result: MisfitsClothingC27ArmorHeavyNCR
+  categories:
+  - MisfitsBlueprintC27ArmorNCR
+  completetime: 14
+  materials:
+    Steel: 22000
+    Cloth: 250
+    N14Thread: 175
+    Plastic: 1000
+
+- type: latheRecipe
+  id: MisfitsBPC27HelmetHeavyNCR
+  result: MisfitsClothingC27HelmetHeavyNCR
+  categories:
+  - MisfitsBlueprintC27ArmorNCR
+  completetime: 8
+  materials:
+    Steel: 275
+    Cloth: 100
+    N14Thread: 65
+    Plastic: 60
+
+# =====================================================================
+# C-27 Brotherhood of Steel
+# =====================================================================
+
+- type: latheRecipe
+  id: MisfitsBPC27ArmorMediumBoS
+  result: MisfitsClothingC27ArmorMediumBoS
+  categories:
+  - MisfitsBlueprintC27ArmorBoS
+  completetime: 10
+  materials:
+    Steel: 1500
+    Cloth: 200
+    N14Thread: 150
+    Plastic: 750
+
+- type: latheRecipe
+  id: MisfitsBPC27HelmetMediumBoS
+  result: MisfitsClothingC27HelmetMediumBoS
+  categories:
+  - MisfitsBlueprintC27ArmorBoS
+  completetime: 6
+  materials:
+    Steel: 150
+    Cloth: 75
+    N14Thread: 50
+    Plastic: 40
+
+- type: latheRecipe
+  id: MisfitsBPC27ArmorHeavyBoS
+  result: MisfitsClothingC27ArmorHeavyBoS
+  categories:
+  - MisfitsBlueprintC27ArmorBoS
+  completetime: 14
+  materials:
+    Steel: 22000
+    Cloth: 250
+    N14Thread: 175
+    Plastic: 1000
+
+- type: latheRecipe
+  id: MisfitsBPC27HelmetHeavyBoS
+  result: MisfitsClothingC27HelmetHeavyBoS
+  categories:
+  - MisfitsBlueprintC27ArmorBoS
+  completetime: 8
+  materials:
+    Steel: 275
+    Cloth: 100
+    N14Thread: 65
+    Plastic: 60
+
+# =====================================================================
+# C-27 Combat armor set
+# =====================================================================
+
+- type: latheRecipe
+  id: MisfitsBPC27ArmorCombatGeneric
+  result: MisfitsClothingC27ArmorCombatGeneric
+  categories:
+  - MisfitsBlueprintC27CombatGeneric
+  completetime: 10
+  materials:
+    Steel: 15000
+    Cloth: 200
+    N14Thread: 150
+    Plastic: 1050
+
+- type: latheRecipe
+  id: MisfitsBPC27HelmetCombatGeneric
+  result: MisfitsClothingC27HelmetCombatGeneric
+  categories:
+  - MisfitsBlueprintC27CombatGeneric
+  completetime: 6
+  materials:
+    Steel: 2000
+    Cloth: 500
+    N14Thread: 45
+    Plastic: 30

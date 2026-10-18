@@ -1,0 +1,195 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/blueprint_recipes_enclave_weapons.yml
+
+- type: latheCategory
+  id: MisfitsBlueprintEnclaveWeapons
+  name: lathe-category-blueprint-enclave-weapons
+
+# =====================================================================
+# PLASMA WEAPONS - all feed on N14PlasmaCartridge
+# =====================================================================
+
+# Plasma pistol - 80 steel
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveWeaponPlasmaPistol
+  result: N14WeaponPlasmaPistol
+  categories:
+  - MisfitsBlueprintEnclaveWeapons
+  completetime: 20
+  materials:
+    Steel: 8000
+    Glass: 2000
+    Circuitry: 1500
+    Plastic: 1000
+
+# Plasma defender - 100 steel
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveWeaponPlasmaDefender
+  result: N14WeaponPlasmaDefender
+  categories:
+  - MisfitsBlueprintEnclaveWeapons
+  completetime: 24
+  materials:
+    Steel: 10000
+    Glass: 2500
+    Circuitry: 1800
+    Plastic: 1000
+
+# Plasma rifle - 140 steel
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveWeaponPlasmaRifle
+  result: N14WeaponPlasmaRifle
+  categories:
+  - MisfitsBlueprintEnclaveWeapons
+  completetime: 30
+  materials:
+    Steel: 14000
+    Glass: 3000
+    Circuitry: 2200
+    Plastic: 1000
+
+# Urban plasma rifle - 150 steel
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveWeaponPlasmaRifleUrban
+  result: N14WeaponPlasmaRifleUrban
+  categories:
+  - MisfitsBlueprintEnclaveWeapons
+  completetime: 32
+  materials:
+    Steel: 15000
+    Glass: 3000
+    Circuitry: 2400
+    Plastic: 1000
+
+# Automatic plasma rifle - 160 steel, top of the plasma line
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveWeaponPlasmaRifleAuto
+  result: N14WeaponPlasmaRifleAuto
+  categories:
+  - MisfitsBlueprintEnclaveWeapons
+  completetime: 35
+  materials:
+    Steel: 16000
+    Glass: 3500
+    Circuitry: 2800
+    Plastic: 1000
+
+# =====================================================================
+# LASER AND PULSE WEAPONS
+# =====================================================================
+
+# Magneto-laser pistol - 80 steel. Feeds on N14MicrofusionCell.
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveWeaponLaserMagnetoPistol
+  result: CorvaxWeaponLaserMagnetoPistol
+  categories:
+  - MisfitsBlueprintEnclaveWeapons
+  completetime: 20
+  materials:
+    Steel: 8000
+    Glass: 2000
+    Circuitry: 1500
+    Plastic: 1000
+
+# Pulse pistol - 90 steel. Feeds on N14ElectronChargePack.
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveWeaponPulsePistol
+  result: MisfitsWeaponPulsePistol
+  categories:
+  - MisfitsBlueprintEnclaveWeapons
+  completetime: 22
+  materials:
+    Steel: 9000
+    Glass: 2000
+    Circuitry: 1800
+    Plastic: 1000
+
+# Laser RCW - 110 steel. Feeds on N14ElectronChargePack.
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveWeaponLaserRCW
+  result: MisfitsWeaponLaserRCW
+  categories:
+  - MisfitsBlueprintEnclaveWeapons
+  completetime: 26
+  materials:
+    Steel: 11000
+    Glass: 2500
+    Circuitry: 2000
+    Plastic: 1000
+
+# Pulse carbine - 120 steel. Feeds on N14ElectronChargePack.
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveWeaponPulseCarbine
+  result: MisfitsWeaponPulseCarbine
+  categories:
+  - MisfitsBlueprintEnclaveWeapons
+  completetime: 28
+  materials:
+    Steel: 12000
+    Glass: 2500
+    Circuitry: 2200
+    Plastic: 1000
+
+# Wattz 2000 laser rifle - 120 steel. Feeds on N14MicrofusionCell.
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveWeaponLaserRifleWattz2000
+  result: N14WeaponLaserRifleWattz2000
+  categories:
+  - MisfitsBlueprintEnclaveWeapons
+  completetime: 28
+  materials:
+    Steel: 12000
+    Glass: 2500
+    Circuitry: 2000
+    Plastic: 1000
+
+# Wattz 3000 laser rifle - 130 steel. Feeds on N14MicrofusionCell.
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveWeaponLaserRifleWattz3000
+  result: MisfitsWeaponLaserRifleWattz2000Extended
+  categories:
+  - MisfitsBlueprintEnclaveWeapons
+  completetime: 30
+  materials:
+    Steel: 13000
+    Glass: 3000
+    Circuitry: 2200
+    Plastic: 1000
+
+# AER-9 auto laser rifle - 140 steel. Feeds on N14MicrofusionCell.
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveWeaponLaserRifleAER9Auto
+  result: N14WeaponLaserRifleAuto
+  categories:
+  - MisfitsBlueprintEnclaveWeapons
+  completetime: 32
+  materials:
+    Steel: 14000
+    Glass: 3000
+    Circuitry: 2400
+    Plastic: 1000
+
+# AER-12 laser rifle - 150 steel, top of the laser line. Feeds on N14MicrofusionCell.
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveWeaponLaserRifleAER12
+  result: MisfitsWeaponLaserRifleAER12
+  categories:
+  - MisfitsBlueprintEnclaveWeapons
+  completetime: 34
+  materials:
+    Steel: 15000
+    Glass: 3500
+    Circuitry: 2600
+    Plastic: 1000

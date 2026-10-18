@@ -1,0 +1,48 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Misc/materials.yml
+
+- type: entity
+  parent: BaseItem
+  id: N14Dung
+  name: dung pile
+  description: Flip those cowpatties into free fertilizer!
+  components:
+  - type: Sprite
+    sprite: /Textures/Nuclear14/Objects/Misc/crafting_material.rsi
+    noRot: true
+    layers:
+      - state: dung
+      - state: dung-flies
+# N14:TODO: Add creampie ing but worse and it makes you throw up.
+  - type: Solution
+    id: dung
+    solution:
+      maxVol: 25
+      reagents:
+      - ReagentId: N14Dung
+        Quantity: 25
+  - type: DrainableSolution
+    solution: dung
+  - type: SolutionTransfer
+    canChangeTransferAmount: false
+  - type: DeleteOnSolutionEmpty
+    solution: dung
+  # #Misfits Fix: Re-applied the original cleanup timer so dung does not accumulate indefinitely.
+  - type: TimedDespawn
+    lifetime: 300
+
+- type: entity
+  parent: N14Dung
+  id: N14BrahminDung
+  name: brahmin dung
+  description: A dung pile more acrid and vile than the rest, rancher's gold.
+  components:
+  - type: Solution
+    id: dung
+    solution:
+      maxVol: 25
+      reagents:
+      - ReagentId: N14Dung
+        Quantity: 15
+      - ReagentId: Ammonia
+        Quantity: 10

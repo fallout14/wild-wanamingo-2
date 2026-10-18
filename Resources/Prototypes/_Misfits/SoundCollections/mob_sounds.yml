@@ -336,6 +336,24 @@
 # Centaur attack sounds
 
 - type: soundCollection
+  id: MisfitsCentaurAttack
+  files:
+    - /Audio/Misfits/Mobs/Centaur/aggro1.ogg
+    - /Audio/Misfits/Mobs/Centaur/lash.ogg
+    - /Audio/Misfits/Mobs/Centaur/spit.ogg
+
+# Centaur ambient idle
+
+- type: soundCollection
+  id: MisfitsCentaurIdle
+  files:
+    - /Audio/Misfits/Mobs/Centaur/idle1.ogg
+    - /Audio/Misfits/Mobs/Centaur/idle2.ogg
+    - /Audio/Misfits/Mobs/Centaur/taunt.ogg
+
+# Centaur death sound
+
+- type: soundCollection
   id: MisfitsSuperMutantAttack
   files:
     - /Audio/Misfits/Mobs/Supermutant/attack1.ogg

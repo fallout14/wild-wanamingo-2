@@ -1,0 +1,192 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Blueprints/eighties_ordnance_blueprint.yml
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintEightiesOrdnance
+  name: Eighties ordnance schematic
+  description: A stained collection of demolition sketches for improvised baseball and Nuka-Cola grenades.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBPEightiesNukaGrenade
+    - MisfitsBPEightiesBaseballGrenade # #Misfits Add - inexpensive gang ordnance
+
+# --- Eighties Weapons ---
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintEightiesWeaponsT1
+  name: Eighties Scrap Arsenal
+  description: Schematics for crude raider firearms and pipe weapons. Tier 1 weapons.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBlueprintPipePistolEighties
+    - MisfitsBlueprintPipeRifleEighties
+    - MisfitsBlueprintPipeShotgunEighties
+    - MisfitsBlueprintPipeSniperEighties
+    - MisfitsBlueprintPipeSubMachineGunEighties
+    - MisfitsBlueprintPipeAssaultRifleEighties
+    - MisfitsBlueprintPipeSubMachineGun12mmEighties
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintEightiesWeaponsT2
+  name: Eighties Sidearm Schematics
+  description: Schematics for the Eighties's common pistols. Tier 2 weapons.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBlueprintPistol45Eighties
+    - MisfitsBlueprintPistol9mmEighties
+    - MisfitsBlueprintPistol10mmEighties
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintEightiesWeaponsT3
+  name: Eighties SMG Schematics
+  description: Schematics for reliable Eighties submachine guns. Tier 3 weapons.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBlueprintSmg9mmEighties
+    - MisfitsBlueprintSmg10mmEighties
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintEightiesWeaponsT4
+  name: Eighties Veteran Arsenal
+  description: Advanced schematics for the Eighties' veteran firearms. Tier 4 weapons.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBlueprintDesertEagleEighties
+    - MisfitsBlueprintHuntingRevolverEighties
+    - MisfitsBlueprintDouglasSmgEighties
+    - MisfitsBlueprintCanadiaSmgEighties
+    - MisfitsBlueprintShotgunLeverEighties
+
+# --- Eighties Weapons T5 ---
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintEightiesWeaponsT5
+  name: Eighties Heavy Arsenal
+  description: Schematics for the Eighties' most expensive and destructive weapons. Tier 5 weapons.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBlueprintAssaultCarbineEighties
+    - MisfitsBlueprintPipeSniper50Eighties
+    - MisfitsBlueprintSmg180Eighties
+    - MisfitsBlueprintSmg127AdvancedEighties
+    - MisfitsBlueprintChinaLakeEighties
+
+# --- Eighties Armor ---
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintEightiesArmorT1
+  name: Eighties Roadsign Armor Guide
+  description: Instructions for assembling the Eighties' basic roadsign armor and helmets. Tier 1 armor.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBlueprintEightiesArmor
+    - MisfitsBlueprintEightiesHelmet
+    - MisfitsBlueprintEightiesHelmetWhite
+    - MisfitsBlueprintEightiesHelmetRed
+    - MisfitsBlueprintEightiesHelmetBlack
+    - MisfitsBlueprintEightiesHelmetYellow
+    - MisfitsBlueprintEightiesHelmetOlive
+    - MisfitsBlueprintEightiesHelmetBeige
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintEightiesArmorT2
+  name: Eighties Scavenged Armor Guide
+  description: Instructions for reinforcing roadsign armor with scavenged materials. Tier 2 armor.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBlueprintEightiesArmorHeavy
+    - MisfitsBlueprintRaiderArmorEighties
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintEightiesArmorT3
+  name: Eighties Elite Armor Guide
+  description: Advanced instructions for assembling elite Eighties armor. Tier 3 armor.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBlueprintRaiderArmorHeavyEighties
+    - MisfitsBlueprintRaiderCombatArmorEighties
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintEightiesArmorT4
+  name: Eighties Boss Armor Guide
+  description: The most advanced armor construction known to the Eighties. Tier 4 armor.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBlueprintRaiderMk2ArmorEighties
+
+# --- Eighties Ammo ---
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintEightiesAmmoT1
+  name: Eighties Small-Caliber Ammunition
+  description: Instructions for producing the common ammunition used by Eighties sidearms. Tier 1 ammo.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBlueprintEightiesAmmoBox10mm
+    - MisfitsBlueprintEightiesAmmoBox45
+    - MisfitsBlueprintEightiesAmmoBox9mm
+    - MisfitsBlueprintEightiesAmmoBox22lr
+    - MisfitsBlueprintEightiesAmmoMag10mmPistol
+    - MisfitsBlueprintEightiesAmmoMag9mmPistol
+    - MisfitsBlueprintEightiesAmmoMag45Pistol
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintEightiesAmmoT2
+  name: Eighties Military Ammunition
+  description: Instructions for producing shotgun shells, rifle rounds, and SMG magazines. Tier 2 ammo.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBlueprintEightiesAmmoBox12gauge
+    - MisfitsBlueprintEightiesAmmoBox556
+    - MisfitsBlueprintEightiesAmmoMag9mmSMG
+    - MisfitsBlueprintEightiesAmmoMag10mmSMG
+    - MisfitsBlueprintEightiesAmmoMag556Long
+    - MisfitsBlueprintEightiesMagazineBox20gauge
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintEightiesAmmoT3
+  name: Eighties Heavy Ammunition
+  description: Instructions for producing heavy rifle and magnum ammunition. Tier 3 ammo.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBlueprintEightiesAmmoBox308
+    - MisfitsBlueprintEightiesAmmoBox44
+    - MisfitsBlueprintEightiesAmmoMag44Pistol
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintEightiesAmmoT4
+  name: Eighties Master Munitions
+  description: Instructions for producing anti-materiel, drum-fed, and explosive ammunition. Tier 4 ammo.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBlueprintEightiesAmmoBox50
+    - MisfitsBlueprintEightiesAmmoMag12mmSMG
+    - MisfitsBlueprintEightiesAmmoMagAmerican180
+    - MisfitsBlueprintEightiesAmmo40mm

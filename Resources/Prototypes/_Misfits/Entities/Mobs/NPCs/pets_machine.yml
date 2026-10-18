@@ -1,0 +1,19 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Mobs/NPCs/pets_machine.yml
+
+- type: entity
+  name: OSI Eyebot
+  id: MisfitsMobPetEyebotOSI
+  parent: N14MobPetEyebot
+  description: A professionally maintained Eyebot assigned to the NCR Office of Science and Industry. Its laser is kept calibrated for field research.
+  components:
+  - type: NpcFactionMember
+    factions:
+    - N14NCR
+  - type: GhostRole
+    name: ghost-role-information-misfits-pet-eyebot-osi-name
+    description: ghost-role-information-misfits-pet-eyebot-osi-description
+    rules: ghost-role-component-default-rules
+    makeSentient: false
+    allowMovement: true
+  - type: GhostRoleJob
+    job: MisfitsOSIEyebot

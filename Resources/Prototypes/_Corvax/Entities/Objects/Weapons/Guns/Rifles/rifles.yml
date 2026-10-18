@@ -1,0 +1,125 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Objects/Weapons/Guns/Rifles/rifles.yml
+
+- type: entity
+  name: Ak-112
+  parent: N14WeaponRifleBase
+  id: CorvaxWeaponRifleAk112
+  description: AK-112 assault rifle. An old military model that has not been used since the war. It fires in single-shot and automatic modes. It has gained popularity among the Western Brotherhood of Steel. It uses 5mm cartridges and accepts standard and drum magazines.
+  components:
+  - type: GunDamageModifier
+    damage:
+      types:
+        Piercing: 9
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Objects/Weapons/Guns/Rifles/ak112.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Objects/Weapons/Guns/Rifles/ak112.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    minAngle: 24
+    maxAngle: 45
+    angleIncrease: 4
+    angleDecay: 12
+    fireRate: 4.5
+    projectileSpeed: 40
+    soundGunshot:
+      collection: N14RifleR91Gunshot
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: CorvaxMagazine545Rifle
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - CorvaxMagazine545Rifle
+            - CorvaxMagazineDrum545Rifle
+      gun_chamber:
+        name: Chamber
+        startingItem: N14CartridgePistol5
+        priority: 1
+        whitelist:
+          tags:
+            - N14CartridgePistol5
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  name: Bozar
+  parent: N14WeaponRifleBase
+  id: CorvaxWeaponRifleBozarGRA
+  components:
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Objects/Weapons/Guns/Rifles/bozar_gra.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Objects/Weapons/Guns/Rifles/bozar_gra.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    minAngle: 21
+    maxAngle: 46
+    angleIncrease: 2
+    angleDecay: 8
+    fireRate: 6
+    soundGunshot:
+      collection: N14CarbineGunshot
+    selectedMode: Fullauto
+    availableModes:
+    - Fullauto
+    - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: N14LMGMagazine556Rifle
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - N14LMGMagazine556Rifle
+      gun_chamber:
+        name: Chamber
+        startingItem: N14Cartridge556Rifle
+        priority: 1
+        whitelist:
+          tags:
+            - N14Cartridge556Rifle
+  - type: EyeCursorOffset
+    maxOffset: 6
+    pvsIncrease: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: StaticPrice
+    price: 500
+  - type: Scope
+    requireWielding: true
+    zoomLevels:
+    - name: 4x
+      zoom: 1.0
+      offset: 15
+      allowMovement: false
+      doAfter: 0.8

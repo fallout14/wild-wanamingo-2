@@ -9,6 +9,36 @@
   color: "#3E7BD1"
 
 - type: radioChannel
+  id: N14VaultCommand
+  name: chat-radio-vault-command
+  frequency: 1350
+  color: "#5B9BD5"
+
+- type: radioChannel
+  id: N14VaultEngineering
+  name: chat-radio-vault-engineering
+  frequency: 1351
+  color: "#F0A500"
+
+- type: radioChannel
+  id: N14VaultMedical
+  name: chat-radio-vault-medical
+  frequency: 1352
+  color: "#52B4E9"
+
+- type: radioChannel
+  id: N14VaultScience
+  name: chat-radio-vault-science
+  frequency: 1353
+  color: "#D381C9"
+
+- type: radioChannel
+  id: N14VaultSecurity
+  name: chat-radio-vault-security
+  frequency: 1354
+  color: "#A32B2B"
+
+- type: radioChannel
   id: N14Enclave
   name: chat-radio-enclave
   keycode: 'e'

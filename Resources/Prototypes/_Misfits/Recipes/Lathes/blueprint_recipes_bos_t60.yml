@@ -1,0 +1,71 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/blueprint_recipes_bos_t60.yml
+
+- type: latheCategory
+  id: MisfitsBlueprintBoSWeaponsT60
+  name: lathe-category-blueprint-bos-weapons-t60
+
+# =====================================================================
+# WEAPONS
+# =====================================================================
+
+# Heavy Assault Rifle - 90 steel, 15 brass, 2 scrap electronics, 4 plastic.
+# Sits just under the Bozar: a heavy pre-war receiver, but no optics or gold contacts.
+
+- type: latheRecipe
+  id: MisfitsBPBoSWeaponRifleHeavyAssault
+  result: MisfitsWeaponRifle556HeavyAssault
+  categories:
+  - MisfitsBlueprintBoSWeaponsT60
+  completetime: 18
+  materials:
+    Steel: 9000
+
+    N14Brass: 1500
+
+    N14ScrapElectronic: 200
+
+    Plastic: 400
+
+
+# T-60 Pistol - 45 steel, 8 brass, 6 circuitry, 2 glass, 2.5 scrap electronics.
+# The circuitry and glass are the integrated targeting electronics that replace the
+# missing iron sights; that is what puts it above an ordinary .44 sidearm.
+
+- type: latheRecipe
+  id: MisfitsBPBoSWeaponPistolT60
+  result: MisfitsWeaponPistolT60
+  categories:
+  - MisfitsBlueprintBoSWeaponsT60
+  completetime: 12
+  materials:
+    Steel: 4500
+
+    N14Brass: 800
+
+    Circuitry: 600
+
+    Glass: 200
+
+    N14ScrapElectronic: 250
+
+
+# =====================================================================
+# AMMUNITION
+# =====================================================================
+
+# 80-round heavy 5.56 magazine - 1.2 steel, 1.5 lead, 9 gunpowder.
+# Scaled from the 35-round carbine magazine (50 steel / 65 lead / 400 gunpowder);
+# crafted magazines come out loaded, so the lead and powder cover the rounds.
+
+- type: latheRecipe
+  id: MisfitsBPBoSAmmoMagHeavy556
+  result: MisfitsMagazineHeavy556Rifle
+  categories:
+  - MisfitsBlueprintBoSWeaponsT60
+  completetime: 10
+  materials:
+    Steel: 120
+
+    Lead: 150
+
+    N14Gunpowder: 900

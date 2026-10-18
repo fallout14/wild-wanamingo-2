@@ -534,6 +534,81 @@
 
 - type: entity
   parent: N14MobRobotHostile
+  id: N14MobRobotMrHandyGun
+  name: Mr Handy
+  description: A domestic Mr Handy model with a gun attachment.
+  suffix: hostile, gun
+  components:
+  - type: IdleSound #Misfits Change - use the dedicated Mr. Handy idle loop set
+  - type: SpamEmitSound #Misfits Change - periodic Mr. Handy idle chatter
+    minInterval: 12
+    maxInterval: 45
+    sound:
+      collection: MisfitsHandyIdle
+      params:
+        volume: -7
+        maxDistance: 6
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 4
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/mrhandygun.rsi
+    layers:
+    - state: icon
+      map: ["movement"]
+    - state: icon  # change me
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: icon # change me
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  # - type: GhostRole
+    # prob: 1
+    # makeSentient: true
+    # name: Mr Handy
+    # description: |
+      # Protect your area and remove any trespassers.
+  - type: Gun #Mobs currently cannot bolt a gun, so we have to simulate them firing it
+    minAngle: 9
+    maxAngle: 18
+    angleIncrease: 3
+    angleDecay: 4
+    fireRate: 1
+    soundGunshot:
+      collection: N14RechargerRifleGunshot
+    useKey: false
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: BasicEntityAmmoProvider
+    proto: BulletLaser
+    capacity: 9
+    count: 9
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: Loadout
+    prototypes:
+      - N14RaiderPistolGear
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+    blackboard:
+      NavSmash: !type:Bool
+        true
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: MisfitsHandyAttack
+      params:
+        volume: -3
+        maxDistance: 10
+  # Misfits Add - robot/broadcast languages when player-controlled.
+
+- type: entity
+  parent: N14MobRobotHostile
   id: N14MobRobotMrHandyGutsy
   name: Mr Gutsy
   description: A military Mr Gutsy model with a plasma attachment.

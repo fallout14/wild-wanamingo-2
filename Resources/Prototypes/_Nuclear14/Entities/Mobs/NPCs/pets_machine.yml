@@ -238,6 +238,30 @@
         maxDistance: 5
 
 - type: entity
+  name: BoS Eyebot
+  id: N14MobPetEyebotMBoS
+  parent: N14MobPetEyebot
+  description: A military Eyebot in the colours of the Brotherhood of Steel!
+  components:
+  - type: NpcFactionMember
+    factions:
+    - MisfitsBrotherhoodOfSteel # #Misfits Fix - Eyebot should be in the BoS faction for playtime tracking and faction relations
+  - type: GhostRole
+    name: ghost-role-information-n14pet-eyebot-mbos-name
+    description: ghost-role-information-n14pet-eyebot-description
+    rules: ghost-role-component-default-rules
+    makeSentient: false
+    allowMovement: true
+  - type: GhostRoleJob # #Misfits Add - Attribute BoS playtime when a player takes this ghost role
+    job: MisfitsBoSEyebot
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Pets/eyebot_mbos.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: icon
+    - state: shadow_eyebot
+
+- type: entity
   name: Washington BoS Eyebot
   id: N14MobPetEyebotWBoS
   parent: N14MobPetEyebot

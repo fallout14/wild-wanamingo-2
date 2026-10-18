@@ -1,0 +1,13 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Blueprints/bos_t60_blueprint.yml
+
+- type: entity
+  parent: MisfitsBlueprintBase
+  id: MisfitsBlueprintBoSWeaponsT60
+  name: BoS Power Armor Armaments Schematics
+  description: Pre-war military manufacturing plans for the small arms issued alongside T-60 power armor — the heavy assault rifle, the T-60 sidearm, and the oversized magazines both were built around.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MisfitsBPBoSWeaponRifleHeavyAssault
+    - MisfitsBPBoSWeaponPistolT60
+    - MisfitsBPBoSAmmoMagHeavy556

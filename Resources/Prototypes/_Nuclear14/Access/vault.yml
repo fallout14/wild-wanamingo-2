@@ -27,3 +27,18 @@
 - type: accessLevel
   id: N14VaultDweller
   name: id-card-access-level-vault-dweller
+
+- type: accessGroup
+  id: N14VaultOverseer
+  tags:
+  - N14VaultOverseer
+  - N14VaultGatekeeper
+  - N14VaultSecurity
+  - N14VaultEngineer
+  - N14VaultMedical
+  - MisfitsVaultChemistry
+  - N14VaultDweller
+  - MisfitsVaultCargo
+  - MisfitsVaultCourier
+  - MisfitsVaultSalvage
+  - MisfitsVaultControlsPanel # Misfits Add - exclusive to Overseer; NOT in AllAccess

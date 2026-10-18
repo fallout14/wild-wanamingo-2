@@ -1,0 +1,122 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Mobs/NPCs/centaurs.yml
+
+- type: entity
+  name: Centaur
+  id: MisfitsMobCentaur
+  parent: N14MobBaseHostile
+  description: The result of FEV infection gone horribly wrong. A bloated, multi-headed abomination covered in writhing tentacles. Despite their gruesome appearance they frequently travel with super mutant bands.
+  # DesertRose: faction=supermutant, ranged neurotoxin spit, melee tentacle lash, retreat_distance=5
+  components:
+  - type: Damageable
+    damageModifierSet: N14ToughAnimal
+  - type: Injurable
+    damageContainer: Biological
+  - type: NpcFactionMember
+    factions:
+    - MisfitsSuperMutant
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+    blackboard:
+      NavSmash: !type:Bool
+        false
+      MeleeRange: !type:Single
+        1.5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.0
+    baseSprintSpeed: 3.5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.40
+        density: 50
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      collection: MisfitsCentaurAttack #Misfits Change - tentacle lash
+    angle: 60
+    animation: WeaponArcFist
+    damage:
+      types:
+        Slash: 10
+    range: 1.5
+  # Ranged neurotoxin spit - DesertRose: projectiletype=/obj/item/projectile/neurotox, damage=30
+  - type: Gun
+    minAngle: 10
+    maxAngle: 30
+    angleIncrease: 5
+    angleDecay: 8
+    fireRate: 0.5
+    soundGunshot:
+      path: /Audio/Misfits/Mobs/Centaur/spit.ogg #Misfits Change
+    useKey: false
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: BasicEntityAmmoProvider
+    proto: MisfitsBulletCentaurSpit
+    capacity: 20
+    count: 20
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2
+  - type: IdleSound #Misfits Change
+  - type: SpamEmitSound #Misfits Change
+    minInterval: 15
+    maxInterval: 60
+    sound:
+      collection: MisfitsCentaurIdle
+      params:
+        volume: -6
+        maxDistance: 7
+  - type: AggroSound #Misfits Change - separate aggro vocalization on combat entry
+    sound:
+      path: /Audio/Misfits/Mobs/Centaur/aggro1.ogg
+      params:
+        volume: -3
+        maxDistance: 10
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+      sprite: Nuclear14/Mobs/Animals/centaur.rsi
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatRadRaw
+      amount: 3
+  - type: Body # #Misfits Add - override N14Animal with N14PetAnimal to include heart (Medicine/Poison metabolizer for stimpaks/healing powder)
+  - type: Hands # #Misfits Add - allows player-controlled centaur pets to drag items
+  - type: MisfitsPetNoPickup # #Misfits Add - cancels PickupAttemptEvent; drag only, no item pickup
+  - type: PassiveDamage # #Misfits Add - slow natural regeneration for player-controlled pet centaurs
+    allowedStates:
+    - Alive
+    - Critical
+    damage:
+      types:
+        Blunt: -0.166667
+        Slash: -0.166667
+        Piercing: -0.166667
+        Heat: -0.125
+        Shock: -0.125
+        Cold: -0.125
+        Caustic: -0.125
+        Poison: -0.25
+        Radiation: -0.25
+        Asphyxiation: -1.5
+        Bloodloss: -1.5

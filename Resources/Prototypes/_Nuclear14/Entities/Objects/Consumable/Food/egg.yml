@@ -82,6 +82,24 @@
     price: 1 # PH
 
 - type: entity
+  id: N14FoodEggChickenFertilized
+  parent: N14FoodEggChicken
+  suffix: Fertilized, Chicken
+  components:
+  - type: WastelandSpawner
+    prototypes:
+    - N14MobChicken
+    - Eggshells
+    intervalSeconds: 20
+    minimumEntitiesSpawned: 2
+    maximumEntitiesSpawned: 2
+    ignoreSpawnBlock: true # Forge-Change
+  - type: TimedDespawn #delete the egg after the chicken spawns
+    lifetime: 21
+  - type: StaticPrice # Forge-Change
+    price: 1 # PH
+
+- type: entity
   parent: N14FoodEggChicken
   id: N14CookedFoodEggChickenBoiled
   name: boiled chicken egg

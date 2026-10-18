@@ -14,6 +14,48 @@
 
 - type: entity
   parent: MisfitsPetSpawnerBase
+  id: MisfitsPetSpawnerDog
+  name: companion dog spawner
+  components:
+  - type: GhostRole
+    name: ghost-role-information-n14pet-dog-name
+    description: ghost-role-information-n14pet-generic-description
+    rules: ghost-role-component-default-rules
+  - type: GhostRoleMobSpawner
+    prototype: N14MobPetDog
+
+# Brahmin companion spawner
+
+- type: entity
+  parent: MisfitsPetSpawnerBase
+  id: MisfitsPetSpawnerRoach
+  name: companion roach spawner
+  components:
+  - type: GhostRole
+    name: ghost-role-information-n14pet-roach-name
+    description: ghost-role-information-n14pet-generic-description
+    rules: ghost-role-component-default-rules
+  - type: GhostRoleMobSpawner
+    prototype: N14MobPetRoach
+
+# Pigrat companion spawner (Wastelander/Tribe/Townsfolk)
+
+- type: entity
+  parent: MisfitsPetSpawnerBase
+  id: MisfitsPetSpawnerPigrat
+  name: companion pigrat spawner
+  components:
+  - type: GhostRole
+    name: ghost-role-information-n14pet-pigrat-name
+    description: ghost-role-information-n14pet-generic-description
+    rules: ghost-role-component-default-rules
+  - type: GhostRoleMobSpawner
+    prototype: N14MobPetPigrat
+
+# Eyebot companion spawner (Wastelander/Townsfolk)
+
+- type: entity
+  parent: MisfitsPetSpawnerBase
   id: MisfitsPetSpawnerEyebot
   name: companion eyebot spawner
   components:
@@ -25,3 +67,85 @@
     prototype: N14MobPetEyebot
 
 # Eyebot MBoS companion spawner (Brotherhood of Steel)
+
+- type: entity
+  parent: MisfitsPetSpawnerBase
+  id: MisfitsPetSpawnerEyebotMBoS
+  name: companion eyebot mbos spawner
+  components:
+  - type: GhostRole
+    name: ghost-role-information-n14pet-eyebot-mbos-name
+    description: ghost-role-information-n14pet-eyebot-description
+    rules: ghost-role-component-default-rules
+  - type: GhostRoleMobSpawner
+    prototype: N14MobPetEyebotMBoS
+
+# Treyebot (Tribe Eyebot) spawner
+
+- type: entity
+  parent: MisfitsPetSpawnerEyebot
+  id: MisfitsPetSpawnerEyebotOSI
+  name: OSI eyebot companion spawner
+  components:
+  - type: GhostRole
+    name: ghost-role-information-misfits-pet-eyebot-osi-name
+    description: ghost-role-information-misfits-pet-eyebot-osi-description
+    rules: ghost-role-component-default-rules
+  - type: GhostRoleMobSpawner
+    prototype: MisfitsMobPetEyebotOSI
+
+# Enclave Eyebot companion, issued only by the Enclave scientist job specials.
+
+- type: entity
+  parent: MisfitsPetSpawnerBase
+  id: MisfitsPetSpawnerDogGeneric
+  name: companion dog generic spawner
+  components:
+  - type: GhostRole
+    name: ghost-role-information-n14pet-dog-name
+    description: ghost-role-information-n14pet-generic-description
+    rules: ghost-role-component-default-rules
+  - type: GhostRoleMobSpawner
+    prototype: N14MobPetDog
+
+# Dog MBoS companion spawner (Brotherhood of Steel)
+
+- type: entity
+  parent: MisfitsPetSpawnerBase
+  id: MisfitsPetSpawnerDogMBoS
+  name: companion dog mbos spawner
+  components:
+  - type: GhostRole
+    name: ghost-role-information-n14pet-dog-mbos-name
+    description: ghost-role-information-n14pet-hauler-description
+    rules: ghost-role-component-default-rules
+  - type: GhostRoleMobSpawner
+    prototype: N14MobPetDogMBoS
+
+# Dog Legion companion spawner
+
+- type: entity
+  parent: MisfitsPetSpawnerBase
+  id: MisfitsPetSpawnerDogNCR
+  name: companion dog ncr spawner
+  components:
+  - type: GhostRole
+    name: ghost-role-information-n14pet-dog-ncr-name
+    description: ghost-role-information-n14pet-generic-description
+    rules: ghost-role-component-default-rules
+  - type: GhostRoleMobSpawner
+    prototype: N14MobPetDogNCR
+
+# Dog NCR K9 Medical companion spawner
+
+- type: entity
+  parent: MisfitsPetSpawnerBase
+  id: MisfitsPetSpawnerDogNCRK9Medical
+  name: companion dog ncr k9 medical spawner
+  components:
+  - type: GhostRole
+    name: ghost-role-information-n14pet-dog-ncrmed-name
+    description: ghost-role-information-n14pet-generic-description
+    rules: ghost-role-component-default-rules
+  - type: GhostRoleMobSpawner
+    prototype: N14MobPetDogNCRMedicK9

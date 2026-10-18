@@ -1,6 +1,200 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Markers/Spawners/Conditional/timed.yml
 
 - type: entity
+  name: Raider Timed Spawner - Rifle
+  id: MisfitsTimedSpawnerRaiderPsychoHunter
+  parent: N14TimedSpawnerMolerat
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+          state: raider_ranged
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobRaiderHunter
+      chance: 0.65
+      intervalSeconds: 1500
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+- type: entity
+  name: Raider Timed Spawner - Shotgun
+  id: MisfitsTimedSpawnerRaiderPsychoSkrimisher
+  parent: N14TimedSpawnerMolerat
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+          state: raider_ranged
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobRaiderSkrimisher
+      chance: 0.65
+      intervalSeconds: 1500
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+- type: entity
+  name: Gunners Timed Spawner - Private
+  id: MisfitsTimedSpawnerRaiderFernPrivate
+  parent: N14TimedSpawnerMolerat
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+          state: raider_ranged
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobFernMercPrivate
+      chance: 0.65
+      intervalSeconds: 1500
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+- type: entity
+  name: Gunners Timed Spawner - Sergeant
+  id: MisfitsTimedSpawnerRaiderFernSergeant
+  parent: N14TimedSpawnerMolerat
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+          state: raider_ranged
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobFernMercSergeant
+      chance: 0.65
+      intervalSeconds: 1500
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+- type: entity
+  name: Gunners Timed Spawner - Lieutenant
+  id: MisfitsTimedSpawnerRaiderFern
+  parent: N14TimedSpawnerMolerat
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+          state: raider_ranged
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobFernMercLieutenant
+      chance: 0.65
+      intervalSeconds: 1500
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+- type: entity
+  name: Enforcer Timed Spawner - Trooper
+  id: MisfitsTimedSpawnerRaiderEnforcerTrooper
+  parent: N14TimedSpawnerMolerat
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+          state: raider_ranged
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobEnforcerTrooper
+      chance: 0.65
+      intervalSeconds: 1500
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+- type: entity
+  name: Enforcer Timed Spawner - Warden
+  id: MisfitsTimedSpawnerRaiderEnforcerWarden
+  parent: N14TimedSpawnerMolerat
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+          state: raider_ranged
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobEnforcerWarden
+      chance: 0.65
+      intervalSeconds: 1500
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+- type: entity
+  name: Enforcer Timed Spawner - Chief
+  id: MisfitsTimedSpawnerRaiderEnforcerChief
+  parent: N14TimedSpawnerMolerat
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+          state: raider_ranged
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobEnforcerChief
+      chance: 0.65
+      intervalSeconds: 1500
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+# Melee Raider Variants
+
+- type: entity
+  name: Gunners Timed Spawner - Melee
+  id: MisfitsTimedSpawnerRaiderFernMelee
+  parent: N14TimedSpawnerMolerat
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/RaidersSimpleMob/RaiderPsycho.rsi
+          state: raider_melee
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobRaiderFernMelee
+      chance: 0.65
+      intervalSeconds: 1500
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+- type: entity
+  name: Enforcer Timed Spawner - Melee
+  id: MisfitsTimedSpawnerRaiderEnforcerMelee
+  parent: N14TimedSpawnerMolerat
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/RaidersSimpleMob/RaiderPsycho.rsi
+          state: raider_melee
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobRaiderEnforcerMelee
+      chance: 0.65
+      intervalSeconds: 1500
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+#MARK: Ghoul
+
+- type: entity
   name: Feral Ghoul Timed Spawner
   id: MisfitsTimedSpawnerFeralGhoul
   parent: N14TimedSpawnerMolerat
@@ -187,6 +381,25 @@
     - type: WastelandSpawner
       prototypes:
         - N14MobRobotMrHandyClaw
+      chance: 0.65
+      intervalSeconds: 1500
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+- type: entity
+  name: Mr Handy Gun Timed Spawner
+  id: MisfitsTimedSpawnerMrHandyGun
+  parent: N14TimedSpawnerMolerat
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/Robots/mrhandygun.rsi
+          state: icon
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobRobotMrHandyGun
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1

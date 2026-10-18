@@ -6,7 +6,19 @@
   parent: N14CrateAluminium
   components:
   - type: StorageFill
-    contents: []
+    contents:
+    - id: MisfitsBlueprintTribeAmmoT4
+    - id: MisfitsBlueprintTribeAmmoT3
+    - id: MisfitsBlueprintTribeAmmoT2
+    - id: MisfitsBlueprintTribeAmmoT1
+    - id: MisfitsBlueprintTribeWeaponsT4
+    - id: MisfitsBlueprintTribeWeaponsT3
+    - id: MisfitsBlueprintTribeWeaponsT2
+    - id: MisfitsBlueprintTribeWeaponsT1
+    - id: MisfitsBlueprintTribeArmorT4
+    - id: MisfitsBlueprintTribeArmorT3
+    - id: MisfitsBlueprintTribeArmorT2
+    - id: MisfitsBlueprintTribeArmorT1
 
 - type: entity
   id: MisfitsCrateAluminiumBlueprints80s
@@ -14,7 +26,21 @@
   parent: N14CrateAluminium
   components:
   - type: StorageFill
-    contents: []
+    contents:
+    - id: MisfitsBlueprintEightiesOrdnance
+    - id: MisfitsBlueprintEightiesAmmoT4
+    - id: MisfitsBlueprintEightiesAmmoT3
+    - id: MisfitsBlueprintEightiesAmmoT2
+    - id: MisfitsBlueprintEightiesAmmoT1
+    - id: MisfitsBlueprintEightiesWeaponsT5
+    - id: MisfitsBlueprintEightiesWeaponsT4
+    - id: MisfitsBlueprintEightiesWeaponsT3
+    - id: MisfitsBlueprintEightiesWeaponsT2
+    - id: MisfitsBlueprintEightiesWeaponsT1
+    - id: MisfitsBlueprintEightiesArmorT4
+    - id: MisfitsBlueprintEightiesArmorT3
+    - id: MisfitsBlueprintEightiesArmorT2
+    - id: MisfitsBlueprintEightiesArmorT1
 
 - type: entity
   id: MisfitsCrateAluminiumBlueprintsEnclave
@@ -28,3 +54,7 @@
     # Enclave map and Wendover but held only the folder above, so none of the
     # Enclave blueprints had an obtain path. The gauss ordnance plans below are
     # pre-existing and were likewise unobtainable outside admin spawn.
+    - id: MisfitsBlueprintEnclaveArmor
+    - id: MisfitsBlueprintEnclaveWeapons
+    - id: MisfitsBlueprintEnclaveAmmo
+    - id: MisfitsEnclaveheavyordnancet5

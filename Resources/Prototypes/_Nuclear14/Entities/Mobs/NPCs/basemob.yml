@@ -292,6 +292,49 @@
 # Ported from DesertRose2/desertrose supermutant.dm
 
 - type: entity
+  name: wave attacker
+  abstract: true
+  id: N14MobWave
+  components:
+  - type: ProximityNPC # Misfits Tweak — wave mobs inherit ProximityNPC from their hostile parent; override to stay awake so they rush immediately
+    startAsleep: false
+  - type: HTN
+    rootTask:
+      task: N14HostileCompound
+    blackboard:
+      NavInteract: !type:Bool
+        true
+      NavClimb: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+      ESP: !type:Bool
+        true
+      VisionRadius: !type:Single
+        1000.0
+      MeleeRange: !type:Single
+        1.5
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    prob: 0.33
+    makeSentient: true
+    name: hostile wildlife # wave defence
+    description: |
+      Smash, break, kill!
+
+- type: entity
+  abstract: true
+  id: N14MobWaveAnimal
+  parent: N14MobWave
+
+- type: entity
+  abstract: true
+  id: N14MobWaveInsect
+  parent: N14MobWave
+
+- type: entity
   abstract: true
   id: N14TameableMobBase
   parent: SimpleMobBase

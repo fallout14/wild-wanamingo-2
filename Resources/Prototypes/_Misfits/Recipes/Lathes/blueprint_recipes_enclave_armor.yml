@@ -1,0 +1,78 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/blueprint_recipes_enclave_armor.yml
+
+- type: latheCategory
+  id: MisfitsBlueprintEnclaveArmor
+  name: lathe-category-blueprint-enclave-armor
+
+# =====================================================================
+# ENCLAVE POWER ARMOR RECIPES
+# =====================================================================
+
+# APA MK I advanced power armor - 200 steel. Enclave enlisted/NCO issue.
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveArmorPowerArmorX01
+  result: N14ClothingOuterPowerArmorAdvanced1
+  categories:
+  - MisfitsBlueprintEnclaveArmor
+  completetime: 35
+  materials:
+    Steel: 20000
+    N14Iron: 450
+    Circuitry: 450
+    N14ScrapElectronic: 4000
+    N14Brass: 200
+
+# APA MK II tesla power armor - 230 steel. A step above the APA MK I.
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveArmorPowerArmorX02Tesla
+  result: CorvaxClothingOuterPowerArmorAdvanced2Tesla
+  categories:
+  - MisfitsBlueprintEnclaveArmor
+  completetime: 40
+  materials:
+    Steel: 23000
+    N14Iron: 550
+    Circuitry: 550
+    N14ScrapElectronic: 5000
+    N14Brass: 250
+
+# =====================================================================
+# ZULU SQUAD COMBAT ARMOR
+# =====================================================================
+# Unlike the power armor above, these are ordinary clothing entities with no
+# ToggleableClothing, so the helmet is a genuinely separate item and needs its
+# own recipe.
+#
+# Costs are scaled off the standard combat armor and helmet recipes in
+# blueprint_recipes_ncr_legion.yml (N14BPNCRArmorCombatArmor at 60 steel,
+# N14BPNCRArmorHelmetMetal* at 5 steel), with the ADVANCED suit priced a step
+# above the standard one.
+
+# Zulu Squad advanced combat armor - 90 steel, above the standard 60
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveArmorZuluAdvancedCombatArmor
+  result: MisfitsClothingOuterEnclaveZuluAdvancedCombatArmor
+  categories:
+  - MisfitsBlueprintEnclaveArmor
+  completetime: 20
+  materials:
+    Steel: 9000
+    Cloth: 1500
+    N14Thread: 200
+    N14Leather: 150
+
+# Zulu Squad combat helmet - 8 steel. Pairs with the suit above.
+
+- type: latheRecipe
+  id: MisfitsBPEnclaveArmorZuluCombatHelmet
+  result: MisfitsClothingHeadHatEnclaveZuluCombatHelmet
+  categories:
+  - MisfitsBlueprintEnclaveArmor
+  completetime: 6
+  materials:
+    Steel: 800
+    Cloth: 60
+    N14Leather: 30

@@ -1,0 +1,60 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Objects/Weapons/Melee/shields.yml
+
+- type: entity
+  parent: BaseShield
+  id: CorvaxLegionnaireShield
+  name: legionnaire heater shield #Misfits Change /Fix/: corrected visible name
+  description: He had seen worse battles.
+  components:
+    - type: Reflect # #Misfits Change Add: Metal heater shield deflects sub-5.56mm pistol rounds at 30%; degrades while moving.
+      reflects:
+        - NonEnergy
+      reflectProb: 0.20 # Turned into a BP and increased in price significantly.
+      spread: 90
+    - type: Sprite
+      sprite: Misfits/Legacy/Corvax/Objects/Weapons/Melee/romanshield.rsi
+      state: icon
+    - type: Item
+      sprite: Misfits/Legacy/Corvax/Objects/Weapons/Melee/romanshield.rsi
+      heldPrefix: null
+    - type: Clothing
+      sprite: Misfits/Legacy/Corvax/Objects/Weapons/Melee/romanshield.rsi
+      quickEquip: false
+      slots:
+      - Back
+      - suitStorage
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.95
+          Slash: 0.95
+          Piercing: 0.95
+          Heat: 0.95
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.7
+          Heat: 0.7
+        flatReductions:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.5
+          Heat: 1
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 200
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: WoodDestroy
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                MaterialWoodPlank:
+                  min: 5
+                  max: 5

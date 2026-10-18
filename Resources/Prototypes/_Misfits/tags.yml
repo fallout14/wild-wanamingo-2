@@ -74,6 +74,13 @@
   id: MisfitsCannotRide
 
 - type: Tag
+  id: MisfitsBrahdo
+
+# #Misfits Add - Tag for the 80-round heavy 5.56 magazine used by the Heavy Assault
+# Rifle (N14WeaponRifle556HeavyAssault). Keeps the oversized magazine out of the
+# standard 5.56 rifles, the same way LongMagazine556Rifle gates the assault carbine.
+
+- type: Tag
   id: MisfitsMagazineHeavy556Rifle
 
 - type: Tag
@@ -191,6 +198,12 @@
   id: MisfitsPulseMicrofusionCell
 
 #MARK: Ammo tags(explosives)
+
+- type: Tag
+  id: MisfitsVehicleKey
+
+- type: Tag
+  id: MisfitsMotorbikeKeys
 
 - type: Tag
   id: ThrowingKnife # Storage whitelist: ClothingBeltMedical, SyndicateThrowingKnivesKit

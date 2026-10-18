@@ -1,0 +1,44 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Objects/Weapons/Guns/Ammunition/Boxes/5-45.yml
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: CorvaxBaseMagazineBox545Rifle
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CorvaxCartridge545Rifle
+    proto: CorvaxCartridge545Rifle
+    capacity: 75
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Objects/Weapons/Guns/Ammunition/Boxes/5-45box.rsi
+    netsync: false
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: FoldableAmmoBox #Misfits Change /Add/: Empty cardboard ammo boxes can fold back into one cardboard sheet.
+
+- type: entity
+  parent: CorvaxBaseMagazineBox545Rifle
+  id: CorvaxMagazineBox5mm
+  name: ammunition box (5mm)
+  components:
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - N14CartridgePistol5
+    proto: N14CartridgePistol5
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

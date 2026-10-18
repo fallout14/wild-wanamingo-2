@@ -1,0 +1,13 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Clothing/Head/powerarmorhelmet.yml
+
+- type: entity
+  parent: N14ClothingHeadHelmetPowerArmorX02
+  id: CorvaxClothingHeadHelmetPowerArmorX02Tesla
+  # #Misfits Change - Renamed X-02 -> APA MK II
+  name: APA MK II tesla power armor helmet
+  description: The U.S. Army Mark II Powered Combat Armor helmet.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Misfits/Legacy/Corvax/Clothing/Head/PowerArmorHelmets/x02Tesla.rsi

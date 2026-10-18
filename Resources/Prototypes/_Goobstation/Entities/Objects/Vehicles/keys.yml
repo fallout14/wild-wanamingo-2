@@ -1,0 +1,14 @@
+# Ported from Goobstation content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Goobstation/Entities/Objects/Vehicles/keys.yml
+
+- type: entity
+  parent: BaseItem
+  id: GoobstationBaseKey
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - MisfitsVehicleKey

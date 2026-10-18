@@ -350,6 +350,436 @@
 #MARK: Brahmin
 
 - type: entity
+  name: brahmin
+  parent: MobCow
+  id: N14MobBrahmin
+  description: The ultimate beast of burden, it can carry heavy packs, produces fertilizer for farms and milk, can be butchered for hide and meat, and you can ride it.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    scale: 1.25, 1.25
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: brahmin-2
+      sprite: Nuclear14/Mobs/Animals/brahmin.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: brahmin-2
+      Dead:
+        Base: dead
+  - type: Stamina
+    baseCritThreshold: 200
+  - type: Strap
+    buckleOffset: "0, -0.4" # WW: Mountable riderOffset
+    # #Misfits Add - brahmin riding is perk-gated through the shared riding marker component.
+    whitelist:
+      requireAll: true
+      components:
+      - HumanoidProfile
+    # #Misfits Fix - Super Mutants and Power Armor wearers are too heavy to ride brahmin
+    blacklist:
+      tags:
+      - MisfitsCannotRide
+      components:
+      - PowerArmorWorn
+    buckleSound:
+      path: /Audio/_NC/Effects/lift-saddle.ogg
+      params:
+        volume: 20
+    unbuckleSound:
+      path: /Audio/_NC/Effects/dismount-saddle.ogg
+      params:
+        volume: 20
+  - type: NPCRetaliation # Aggro on the attacker when damaged from any range
+    attackMemoryLength: 30
+  - type: ProximityNPC # Misfits fix — Didn't have comp to reduce tick load and activate ai
+                        #TODO: make every NPC inherit from same base to avoid issues in future
+  - type: HTN
+    rootTask:
+     task: RuminantHostileCompound
+    blackboard:
+     NavSmash: !type:Bool
+       false
+  - type: MeleeWeapon
+    range: 2
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: MetalThud
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 10
+  - type: Mountable
+  - type: Tag
+    tags:
+    - N14Brahmin
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatBrahmin
+      amount: 4
+    - id: N14MaterialBrahminHide1
+      amount: 1
+      prob: 0.95
+    - id: MisfitsMiscBrahminSkull
+      amount: 1
+      prob: 0.75
+  - type: SolutionManager
+    solutions:
+    - N14MobBrahminSolutionUdder
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: N14WastelandBlood
+        Quantity: 1800
+  - type: Damageable
+    damageModifierSet: N14WastelandAnimal
+  - type: Injurable
+    damageContainer: Biological
+  - type: WastelandSpawner
+    prototypes:
+      - N14BrahminDung
+    chance: 0.5
+    intervalSeconds: 300
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 1
+    ignoreSpawnBlock: true # Forge-Change
+  - type: Reproductive
+    breedChance: 0.05
+    birthPopup: reproductive-birth-popup
+    makeOffspringInfant: false
+    partnerWhitelist:
+      tags:
+      - N14Brahmin
+    offspring:
+    - id: N14MobBrahmin
+      maxAmount: 1
+  - type: ReproductivePartner
+  - type: MobPrice
+    price: 250 # Corvax-Change
+  - type: Vocalizer
+    minVocalizeInterval: 120
+    maxVocalizeInterval: 300
+  - type: DatasetVocalizer
+    dataset: N14BrahminSays
+  - type: Inventory
+    templateId: MisfitsBrahmin
+  - type: InventorySlots
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+
+#MARK: Bighorner
+
+- type: entity
+  parent: Solution
+  id: N14MobBrahminSolutionUdder
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: udder
+    solution:
+      maxVol: 100
+      reagents:
+      - ReagentId: N14MilkBrahmin
+        Quantity: 30
+
+- type: entity
+  name: bighorner
+  parent: N14MobBrahmin
+  id: N14MobBighorner
+  description: These ornery beasts are really only good for meat and hide. Try to put a pack or saddle on them and they'll just lay down and refuse to move.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: bighorner
+      sprite: Nuclear14/Mobs/Animals/bighorner.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: bighorner
+      Dead:
+        Base: dead
+  - type: Stamina
+    baseCritThreshold: 200
+  - type: Strap
+    # #Misfits Change - bighorners inherit brahmin straps, so blacklist humanoid riders to keep them non-mountable.
+    blacklist:
+      components:
+      - HumanoidProfile
+  - type: Tag
+    tags:
+    - N14Bighorner
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatBighorner
+      amount: 4
+    - id: N14MaterialRawLeather1
+      amount: 4
+    - id: MisfitsMiscBighornerSkull
+      amount: 1
+      prob: 0.75
+  - type: MeleeWeapon
+    range: 1 # Cythfix - Bighorner had range 3 (too long, could attack from ~4 tiles). Normal melee range, so set to 1
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: MetalThud
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 10
+        Slash: 8
+  - type: NPCRetaliation # Aggro on the attacker when damaged from any range
+  - type: HTN
+    rootTask:
+     task: RuminantHostileCompound
+    blackboard:
+     NavSmash: !type:Bool
+       true
+  - type: SolutionManager
+    solutions:
+    - N14MobBighornerSolutionUdder
+  - type: WastelandSpawner
+    prototypes:
+      - N14Dung
+    chance: 0.5
+    ignoreSpawnBlock: true # Forge-Change
+  - type: Reproductive
+    breedChance: 0.05
+    birthPopup: reproductive-birth-popup
+    makeOffspringInfant: false
+    partnerWhitelist:
+      tags:
+      - N14Bighorner
+    offspring:
+    - id: N14MobBighorner
+      maxAmount: 1
+  - type: ReproductivePartner
+
+#MARK: Radstag
+
+- type: entity
+  parent: Solution
+  id: N14MobBighornerSolutionUdder
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: udder
+    solution:
+      maxVol: 250
+      reagents:
+      - ReagentId: N14MilkBighorner
+        Quantity: 30
+
+- type: entity
+  name: radstag
+  parent: N14MobBrahmin
+  id: N14MobRadstag
+  description: These pathetic creatures prefer to flee rather than right, but if cornered they can do some real harm.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: radstag
+      sprite: Nuclear14/Mobs/Animals/radstag.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: radstag
+      Dead:
+        Base: dead
+  - type: Stamina
+    baseCritThreshold: 200
+  - type: Strap
+    # #Misfits Change - radstags keep the shared mount setup but restrict riders to tribal hunt participants.
+    whitelist:
+      requireAll: true
+      components:
+      - HumanoidProfile
+  - type: Tag
+    tags:
+    - N14Radstag
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatRadstag
+      amount: 4
+    - id: N14MaterialRawLeather1
+      amount: 4
+    - id: MisfitsMiscRadstagSkull
+      amount: 1
+      prob: 0.75
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: MetalThud
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 8
+        Slash: 5
+  - type: SolutionManager
+    solutions:
+    - N14MobRadstagSolutionUdder
+  - type: WastelandSpawner
+    prototypes:
+      - N14Dung
+    chance: 0.5
+    ignoreSpawnBlock: true # Forge-Change
+  - type: Reproductive
+    breedChance: 0.05
+    birthPopup: reproductive-birth-popup
+    makeOffspringInfant: false
+    partnerWhitelist:
+      tags:
+      - N14Radstag
+    offspring:
+    - id: N14MobRadstag
+      maxAmount: 1
+  - type: ReproductivePartner
+
+#MARK: Radhog
+
+- type: entity
+  parent: Solution
+  id: N14MobRadstagSolutionUdder
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: udder
+    solution:
+      maxVol: 150
+      reagents:
+      - ReagentId: N14MilkRadstag
+        Quantity: 30
+
+- type: entity
+  name: radhog
+  parent: N14MobBrahmin
+  id: N14MobRadhog
+  description: Surprisingly intelligent creatures, their ancestors were feral hogs, and they've retained the attitude and knack for survival.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: radhog
+      sprite: Nuclear14/Mobs/Animals/radhog.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: radhog
+      Dead:
+        Base: dead
+  - type: Strap
+    # #Misfits Change - radhogs inherit brahmin straps, so blacklist humanoid riders to keep them non-mountable.
+    blacklist:
+      components:
+      - HumanoidProfile
+  - type: Tag
+    tags:
+    - N14Radhog
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatRadstag
+      amount: 4
+  - type: MeleeWeapon
+    range: 2
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: MetalThud
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 10
+        Piercing: 1
+  - type: NPCRetaliation # Aggro on the attacker when damaged from any range
+    attackMemoryLength: 30
+  - type: HTN
+    rootTask:
+     task: RuminantHostileCompound
+    blackboard:
+     NavSmash: !type:Bool
+       false
+ #- type: Reproductive
+   #breedChance: 0.05
+   #birthPopup: reproductive-birth-popup
+   #makeOffspringInfant: false
+   #partnerWhitelist:
+     # tags:
+     # - Radhog
+   #offspring:
+   #- id: N14MobRadhog
+     #maxAmount: 1
+ #- type: ReproductivePartner
+
+#MARK: Chicken
+
+- type: entity
+  parent: MobChicken
+  id: N14MobChicken
+  name: chicken
+  description: Surviving the Great War relatively untouched, they've remained one of man's greatest domesticated food sources.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: chicken
+      sprite: Nuclear14/Mobs/Animals/chicken.rsi
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: chicken #TODO: Add movement animations
+    noMovementLayers:
+      movement:
+        state: chicken
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: chicken
+      Dead:
+        Base: dead
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatRadchicken
+      amount: 1
+      prob: 0.95
+  - type: Damageable
+    damageModifierSet: N14WastelandAnimal
+  - type: Injurable
+    damageContainer: Biological
+  - type: Reproductive
+    breedChance: 0.05
+    birthPopup: reproductive-laid-egg-popup
+    makeOffspringInfant: false
+    partnerWhitelist:
+      tags:
+      - Chicken
+    offspring:
+    - id: N14FoodEggChickenFertilized
+      maxAmount: 3
+  - type: ReproductivePartner
+  - type: MobPrice
+    price: 200
+
+- type: entity
   parent: N14MobBaseSimple
   id: N14MobIguana
   name: iguana
