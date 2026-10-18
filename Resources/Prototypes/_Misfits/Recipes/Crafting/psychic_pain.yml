@@ -1,0 +1,17 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Crafting/psychic_pain.yml
+
+- type: entity
+  parent: N14HealingPowder
+  id: MisfitsWillowbark
+  name: willowbark analgesic
+  description: A bitter pouch of crushed wasteland herbs used to dull persistent pain.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
+    state: tin
+  - type: Solution
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: MisfitsWillowbark
+        Quantity: 10

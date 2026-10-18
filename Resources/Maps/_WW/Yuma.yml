@@ -71984,8 +71984,10 @@ entities:
       ambientLightColor: '#E8CD92FF'
     - type: LightCycle
       originalColor: '#E8CD92FF'
+      offset: 450 # WW: post-init map, so MapInit never set the day/night offset
     - type: SunShadow
     - type: SunShadowCycle
+      offset: 450
     - type: Roof
       data:
         4,-5: 68719476736

@@ -1,0 +1,16 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Clothing/Masks/bandanas.yml
+
+- type: entity
+  parent: ClothingMaskBase
+  id: CorvaxClothingMaskBlackMask
+  name: black mask
+  description: "A short black, covering your mouth."
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/Mask/Bandanas/blackscarf.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/Mask/Bandanas/blackscarf.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: IdentityBlocker

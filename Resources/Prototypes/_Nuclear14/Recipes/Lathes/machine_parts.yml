@@ -1,0 +1,12 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Recipes/Lathes/machine_parts.yml
+
+- type: latheRecipe
+  id: N14PortableGeneratorWeldingFuelMachineParts
+  result: N14PortableGeneratorWeldingFuelMachineParts
+  applyMaterialDiscount: false
+  completetime: 10
+  materials:
+    Glass: 200
+    Steel: 1000
+    Plastic: 500

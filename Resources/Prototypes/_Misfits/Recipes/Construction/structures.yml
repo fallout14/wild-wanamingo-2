@@ -1,6 +1,20 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Recipes/Construction/structures.yml
 
 - type: construction
+  id: MisfitsWindowSlanted # Forge-Change
+  graph: N14WindowPane
+  startNode: start
+  targetNode: N14WindowSlanted
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  hide: false
+  canRotate: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
   id: MisfitsWallAdobe
   graph: MisfitsAdobeWall
   startNode: start

@@ -72,7 +72,10 @@
   - type: Label
     localizedLabel: misfits-label-blood-shield-15u
   - type: StorageFill
-    contents: []
+    contents:
+    - id: MisfitsPillBloodShield
+      amount: 5
+
 # ============================================================================
 # FIERY PURGATIVE
 # ============================================================================
@@ -85,7 +88,10 @@
   - type: Label
     localizedLabel: misfits-label-fiery-purgative-10u
   - type: StorageFill
-    contents: []
+    contents:
+    - id: MisfitsPillFieryPurgative
+      amount: 5
+
 # ============================================================================
 # REFRESHING BEVERAGE
 # ============================================================================
@@ -114,7 +120,10 @@
   - type: Label
     localizedLabel: misfits-label-herbal-stimulant-20u
   - type: StorageFill
-    contents: []
+    contents:
+    - id: MisfitsPillHerbalStimulant
+      amount: 5
+
 # ============================================================================
 # SKEETO SPIT
 # ============================================================================
@@ -175,7 +184,10 @@
   - type: Label
     localizedLabel: misfits-label-pilgrim-s-remedy-20u
   - type: StorageFill
-    contents: []
+    contents:
+    - id: MisfitsPillPilgrimsRemedy
+      amount: 5
+
 # ============================================================================
 # FURY
 # ============================================================================
@@ -332,7 +344,9 @@
   - type: Label
     localizedLabel: misfits-label-gravesalt-5u
   - type: StorageFill
-    contents: []
+    contents:
+    - id: MisfitsPillGravesalt
+      amount: 5
 
 - type: entity
   parent: PillCanister
@@ -422,7 +436,10 @@
   - type: Label
     localizedLabel: misfits-label-willowbark-analgesic-20u
   - type: StorageFill
-    contents: []
+    contents:
+    - id: MisfitsPillWillowbark
+      amount: 5
+
 # ============================================================================
 # ANODYNE
 # ============================================================================

@@ -61,6 +61,36 @@
         Quantity: 10
 
 - type: entity
+  name: blood shield
+  parent: Pill
+  id: MisfitsPillBloodShield
+  description: A thick wasteland tonic that promotes recovery while helping the body clear circulating toxins.
+  components:
+  - type: Label
+    localizedLabel: misfits-label-blood-shield-15u
+  - type: Solution
+    solution:
+      maxVol: 20
+      reagents:
+      - ReagentId: MisfitsBloodShield
+        Quantity: 15
+
+- type: entity
+  name: fiery purgative
+  parent: Pill
+  id: MisfitsPillFieryPurgative
+  description: A foul, burning mixture that purges poison and radiation at the cost of weakness and nausea.
+  components:
+  - type: Label
+    localizedLabel: misfits-label-fiery-purgative-10u
+  - type: Solution
+    solution:
+      maxVol: 20
+      reagents:
+      - ReagentId: MisfitsFieryPurgative
+        Quantity: 10
+
+- type: entity
   name: refreshing beverage
   parent: Pill
   id: MisfitsPillRefreshingBeverage
@@ -74,6 +104,21 @@
       reagents:
       - ReagentId: MisfitsRefreshingBeverage
         Quantity: 5
+
+- type: entity
+  name: herbal stimulant
+  parent: Pill
+  id: MisfitsPillHerbalStimulant
+  description: A sharp herbal tonic that drives away drowsiness and keeps an exhausted patient moving.
+  components:
+  - type: Label
+    localizedLabel: misfits-label-herbal-stimulant-20u
+  - type: Solution
+    solution:
+      maxVol: 20
+      reagents:
+      - ReagentId: MisfitsHerbalStimulant
+        Quantity: 20
 
 - type: entity
   name: skeeto spit
@@ -118,6 +163,21 @@
       maxVol: 20
       reagents:
       - ReagentId: MisfitsPrussianBlue
+        Quantity: 20
+
+- type: entity
+  name: pilgrim's remedy
+  parent: Pill
+  id: MisfitsPillPilgrimsRemedy
+  description: A mild wasteland cure-all made from common medicinal plants, useful for wounds, toxins and light radiation exposure.
+  components:
+  - type: Label
+    localizedLabel: misfits-label-pilgrim-s-remedy-20u
+  - type: Solution
+    solution:
+      maxVol: 20
+      reagents:
+      - ReagentId: MisfitsPilgrimsRemedy
         Quantity: 20
 
 - type: entity
@@ -256,6 +316,21 @@
         Quantity: 10
 
 - type: entity
+  name: gravesalt
+  parent: Pill
+  id: MisfitsPillGravesalt
+  description: A brutal emergency purgative that clears several dangerous venoms at the cost of violent sickness and bodily strain.
+  components:
+  - type: Label
+    localizedLabel: misfits-label-gravesalt-5u
+  - type: Solution
+    solution:
+      maxVol: 20
+      reagents:
+      - ReagentId: MisfitsGravesalt
+        Quantity: 5
+
+- type: entity
   name: clearhead
   parent: Pill
   id: MisfitsPillClearhead
@@ -329,6 +404,21 @@
       reagents:
       - ReagentId: MisfitsNeurostatic
         Quantity: 5
+
+- type: entity
+  name: willowbark analgesic
+  parent: Pill
+  id: MisfitsPillWillowbark
+  description: A bitter medicinal preparation that dulls persistent pain for a short time.
+  components:
+  - type: Label
+    localizedLabel: misfits-label-willowbark-analgesic-20u
+  - type: Solution
+    solution:
+      maxVol: 20
+      reagents:
+      - ReagentId: MisfitsWillowbark
+        Quantity: 20
 
 - type: entity
   name: anodyne

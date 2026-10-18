@@ -65,6 +65,38 @@
         Quantity: 30
 
 - type: entity
+  id: MisfitsBloodShieldChemistryBottle
+  name: blood shield bottle
+  description: A thick wasteland tonic that promotes recovery while helping the body clear circulating toxins.
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    localizedLabel: misfits-label-blood-shield-30u
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: MisfitsBloodShield
+        Quantity: 30
+
+- type: entity
+  id: MisfitsFieryPurgativeChemistryBottle
+  name: fiery purgative bottle
+  description: A foul, burning mixture that purges poison and radiation at the cost of weakness and nausea.
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    localizedLabel: misfits-label-fiery-purgative-30u
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: MisfitsFieryPurgative
+        Quantity: 30
+
+- type: entity
   id: MisfitsRefreshingBeverageChemistryBottle
   name: refreshing beverage bottle
   description: An extraordinarily rich restorative drink that treats wounds, toxins, radiation and withdrawal all at once.
@@ -78,6 +110,22 @@
       maxVol: 30
       reagents:
       - ReagentId: MisfitsRefreshingBeverage
+        Quantity: 30
+
+- type: entity
+  id: MisfitsHerbalStimulantChemistryBottle
+  name: herbal stimulant bottle
+  description: A sharp herbal tonic that drives away drowsiness and keeps an exhausted patient moving.
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    localizedLabel: misfits-label-herbal-stimulant-30u
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: MisfitsHerbalStimulant
         Quantity: 30
 
 - type: entity
@@ -126,6 +174,22 @@
       maxVol: 30
       reagents:
       - ReagentId: MisfitsPrussianBlue
+        Quantity: 30
+
+- type: entity
+  id: MisfitsPilgrimsRemedyChemistryBottle
+  name: pilgrim's remedy bottle
+  description: A mild wasteland cure-all made from common medicinal plants, useful for wounds, toxins and light radiation exposure.
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    localizedLabel: misfits-label-pilgrim-s-remedy-30u
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: MisfitsPilgrimsRemedy
         Quantity: 30
 
 - type: entity
@@ -273,6 +337,22 @@
         Quantity: 30
 
 - type: entity
+  id: MisfitsGravesaltChemistryBottle
+  name: gravesalt bottle
+  description: A brutal emergency purgative that clears several dangerous venoms at the cost of violent sickness and bodily strain.
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    localizedLabel: misfits-label-gravesalt-30u
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: MisfitsGravesalt
+        Quantity: 30
+
+- type: entity
   id: MisfitsClearheadChemistryBottle
   name: clearhead bottle
   description: A basic psychiatric stabilizer used to clear drug haze and reduce mild perceptual disturbances.
@@ -350,6 +430,22 @@
       maxVol: 30
       reagents:
       - ReagentId: MisfitsNeurostatic
+        Quantity: 30
+
+- type: entity
+  id: MisfitsWillowbarkChemistryBottle
+  name: willowbark analgesic bottle
+  description: A bitter medicinal preparation that dulls persistent pain for a short time.
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    localizedLabel: misfits-label-willowbark-analgesic-30u
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: MisfitsWillowbark
         Quantity: 30
 
 - type: entity

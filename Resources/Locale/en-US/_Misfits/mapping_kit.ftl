@@ -709,3 +709,4 @@ recipe-tribal-legendary-chest-name = Legendary Tribal Chestplate
 recipe-tribal-legendary-chest-desc = Craft a legendary tribal chestplate from legendary creature leather.
 misfits-kit-legendary-tribal-leather = legendary tribal leather
 lathe-category-blueprint-legion-weapons-t5 = Legion Weapons - Tier 5
+misfits-kit-datura-hide = datura hide

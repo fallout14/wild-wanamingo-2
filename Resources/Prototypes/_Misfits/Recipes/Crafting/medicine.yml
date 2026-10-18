@@ -1,6 +1,15 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Crafting/medicine.yml
 
 - type: stack
+  id: MisfitsDaturaHide
+  name: misfits-kit-datura-hide
+  icon:
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
+    state: ointment4
+  spawn: MisfitsDaturaHide
+  maxCount: 10
+
+- type: stack
   id: MisfitsSnakebiteTourniquet
   name: misfits-kit-snakebite-tourniquet
   icon:
@@ -38,6 +47,34 @@
 
 - type: entity
   parent: BaseHealingItem
+  id: MisfitsDaturaHide
+  name: datura hide
+  description: A numbing datura ointment for severe thermal burns. It is specialized for Heat damage and is poor treatment for other wounds.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
+    state: ointment4
+  - type: Item
+    heldPrefix: ointment
+  - type: Healing
+    damageContainers:
+    - Biological
+    # BURN SPECIALIST: HEAT.
+    # Strong single-type healing is the reward for diagnosing the injury correctly.
+    damage:
+      types:
+        Heat: -12
+    delay: 2.5
+    healingBeginSound:
+      path: "/Audio/Items/Medical/ointment_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/ointment_end.ogg"
+  - type: Stack
+    stackType: MisfitsDaturaHide
+    count: 1
+
+- type: entity
+  parent: BaseHealingItem
   id: MisfitsSnakebiteTourniquet
   name: snakebite tourniquet
   description: A treated binding packed with ground buffalo gourd for venomous bites and severe bleeding.
@@ -63,6 +100,54 @@
   - type: Stack
     stackType: MisfitsSnakebiteTourniquet
     count: 1
+
+- type: entity
+  parent: N14HealingPowder
+  id: MisfitsFieryPurgative
+  name: fiery purgative
+  description: A viciously hot herbal purge used to flush venom and radiation from the body.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
+    state: bitterdrink
+  - type: Solution
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: MisfitsFieryPurgative
+        Quantity: 10
+
+- type: entity
+  parent: N14HealingPowder
+  id: MisfitsBloodShield
+  name: blood shield
+  description: A bitter herbal mash used to strengthen the body against poison.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
+    state: bottle_primitive
+  - type: Solution
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: MisfitsBloodShield
+        Quantity: 10
+
+- type: entity
+  parent: N14HealingPowder
+  id: MisfitsPilgrimsRemedy
+  name: pilgrim's remedy
+  description: A mild wasteland mixture of medicinal roots, fungus and agave intended for long journeys.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_medical.rsi
+    state: bottle
+  - type: Solution
+    solution:
+      maxVol: 15
+      reagents:
+      - ReagentId: MisfitsPilgrimsRemedy
+        Quantity: 15
 
 - type: entity
   parent: BaseHealingItem
@@ -92,6 +177,43 @@
   - type: Stack
     stackType: MisfitsHealingSalve
     count: 1
+
+- type: entity
+  parent: N14HealingPowder
+  id: MisfitsGravesalt
+  name: gravesalt
+  description: A harsh pouch of ash, bitter herbs and mineral-rich plant matter used as an emergency poison purge.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
+    state: smellingsalts
+  - type: Solution
+    solution:
+      maxVol: 5
+      reagents:
+      - ReagentId: MisfitsGravesalt
+        Quantity: 5
+
+- type: entity
+  parent: N14RadAwayBloodbag
+  id: MisfitsGlowingBloodPack
+  name: glowing blood pack
+  description: A blood pack treated with irradiated fungus and medical alcohol. It emits a faint, unhealthy glow.
+  components:
+  - type: Solution
+    id: pen
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: MisfitsGlowingBloodPack
+        Quantity: 10
+  - type: Injector
+    solutionName: pen
+    currentTransferAmount: null
+    ignoreClosed: false
+    activeModeProtoId: HyposprayInjectMode
+    allowedModes:
+    - HyposprayInjectMode
 
 - type: entity
   parent: BaseHealingItem
@@ -149,3 +271,19 @@
   - type: Stack
     stackType: MisfitsHerbalAntimicrobial
     count: 1
+
+- type: entity
+  parent: N14HealingPowder
+  id: MisfitsHerbalStimulant
+  name: herbal stimulant
+  description: A sharp herbal mixture prepared to keep an exhausted traveler awake and moving.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_medical.rsi
+    state: bitterdrank
+  - type: Solution
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: MisfitsHerbalStimulant
+        Quantity: 10

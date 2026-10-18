@@ -1,0 +1,21 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Devices/machine_parts.yml
+
+- type: entity
+  id: N14PortableGeneratorWeldingFuelMachineParts
+  parent: BaseMachineCircuitboard
+  name: gas powered generator machine parts
+  description: Essential parts for making your own gas-powered generator.
+  components:
+    - type: MachineBoard
+      prototype: N14PortableGeneratorWeldingFuel
+      stackRequirements:
+        Manipulator: 1
+        Cable: 10
+    - type: PhysicalComposition
+      materialComposition:
+        Glass: 200
+      chemicalComposition:
+        Silicon: 20
+    - type: StaticPrice
+      price: 30 # Corvax-Change

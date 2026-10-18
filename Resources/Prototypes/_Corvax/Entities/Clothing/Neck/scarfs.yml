@@ -1,0 +1,16 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Clothing/Neck/scarfs.yml
+
+- type: entity
+  parent: ClothingNeckBase
+  id: CorvaxClothingNeckBlackScarf
+  name: black scarf
+  description: A short black scarf.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/Neck/Bandanas/blackscarf.rsi
+  - type: ToggleableClothing
+    clothingPrototype: CorvaxClothingMaskBlackMask
+    requiredSlot:
+    - neck
+    slot: mask
