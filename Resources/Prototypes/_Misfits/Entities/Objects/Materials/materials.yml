@@ -1,112 +1,112 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Materials/materials.yml, Resources/Prototypes/_Nuclear14/Entities/Objects/Materials/materials.yml
 
 - type: entity
-  parent: N14IngotBrass
-  id: MisfitsIngotBrass10
+  parent: F14IngotBrass
+  id: F14IngotBrass10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14IngotBrass
-  id: MisfitsIngotBrass5
+  parent: F14IngotBrass
+  id: F14IngotBrass5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14IngotAluminum
-  id: MisfitsIngotAluminum10
+  parent: F14IngotAluminum
+  id: F14IngotAluminum10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14IngotAluminum
-  id: MisfitsIngotAluminum5
+  parent: F14IngotAluminum
+  id: F14IngotAluminum5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14IngotGold
-  id: MisfitsIngotGold10
+  parent: F14IngotGold
+  id: F14IngotGold10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14IngotGold
-  id: MisfitsIngotGold5
+  parent: F14IngotGold
+  id: F14IngotGold5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14IngotCopper
-  id: MisfitsIngotCopper10
+  parent: F14IngotCopper
+  id: F14IngotCopper10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14IngotCopper
-  id: MisfitsIngotCopper5
+  parent: F14IngotCopper
+  id: F14IngotCopper5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14IngotIron
-  id: MisfitsIngotIron10
+  parent: F14IngotIron
+  id: F14IngotIron10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14IngotIron
-  id: MisfitsIngotIron5
+  parent: F14IngotIron
+  id: F14IngotIron5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14IngotSilver
-  id: MisfitsIngotSilver10
+  parent: F14IngotSilver
+  id: F14IngotSilver10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14IngotSilver
-  id: MisfitsIngotSilver5
+  parent: F14IngotSilver
+  id: F14IngotSilver5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14IngotLead
-  id: MisfitsIngotLead10
+  parent: F14IngotLead
+  id: F14IngotLead10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14IngotLead
-  id: MisfitsIngotLead5
+  parent: F14IngotLead
+  id: F14IngotLead5
   suffix: 5
   components:
   - type: Stack
@@ -115,184 +115,184 @@
 # scrap and other misc materials
 
 - type: entity
-  parent: N14MaterialThread1
-  id: MisfitsMaterialThread10
+  parent: F14MaterialThread1
+  id: F14MaterialThread10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14MaterialThread1
-  id: MisfitsMaterialThread5
+  parent: F14MaterialThread1
+  id: F14MaterialThread5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14ScrapElectronic1
-  id: MisfitsScrapElectronic10
+  parent: F14ScrapElectronic1
+  id: F14ScrapElectronic10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14ScrapElectronic1
-  id: MisfitsScrapElectronic5
+  parent: F14ScrapElectronic1
+  id: F14ScrapElectronic5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14MaterialCircuitry1
-  id: MisfitsMaterialCircuitry5
+  parent: F14MaterialCircuitry1
+  id: F14MaterialCircuitry5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14Scrap1
-  id: MisfitsScrap10
+  parent: F14Scrap1
+  id: F14Scrap10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14Scrap1
-  id: MisfitsScrap5
+  parent: F14Scrap1
+  id: F14Scrap5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14ScrapSteel1
-  id: MisfitsScrapSteel10
+  parent: F14ScrapSteel1
+  id: F14ScrapSteel10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14ScrapSteel1
-  id: MisfitsScrapSteel5
+  parent: F14ScrapSteel1
+  id: F14ScrapSteel5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14MaterialLeather1
-  id: MisfitsMaterialLeather10
+  parent: F14MaterialLeather1
+  id: F14MaterialLeather10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14MaterialLeather1
-  id: MisfitsMaterialLeather5
+  parent: F14MaterialLeather1
+  id: F14MaterialLeather5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14MaterialRawLeather1
-  id: MisfitsMaterialRawLeather10
+  parent: F14MaterialRawLeather1
+  id: F14MaterialRawLeather10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14MaterialRawLeather1
-  id: MisfitsMaterialRawLeather5
+  parent: F14MaterialRawLeather1
+  id: F14MaterialRawLeather5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14ScrapGold1
-  id: MisfitsScrapGold10
+  parent: F14ScrapGold1
+  id: F14ScrapGold10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14ScrapGold1
-  id: MisfitsScrapGold5
+  parent: F14ScrapGold1
+  id: F14ScrapGold5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14ScrapLead1
-  id: MisfitsScrapLead10
+  parent: F14ScrapLead1
+  id: F14ScrapLead10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14ScrapLead1
-  id: MisfitsScrapLead5
+  parent: F14ScrapLead1
+  id: F14ScrapLead5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14Paper1
-  id: MisfitsPaper5
+  parent: F14Paper1
+  id: F14Paper5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14Charcoal1
-  id: MisfitsCharcoal5
+  parent: F14Charcoal1
+  id: F14Charcoal5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14ScrapBrass1
-  id: MisfitsScrapBrass10
+  parent: F14ScrapBrass1
+  id: F14ScrapBrass10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14ScrapBrass1
-  id: MisfitsScrapBrass5
+  parent: F14ScrapBrass1
+  id: F14ScrapBrass5
   suffix: 5
   components:
   - type: Stack
     count: 5
 
 - type: entity
-  parent: N14ScrapCopper1
-  id: MisfitsScrapCopper10
+  parent: F14ScrapCopper1
+  id: F14ScrapCopper10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14ScrapCopper1
-  id: MisfitsScrapCopper5
+  parent: F14ScrapCopper1
+  id: F14ScrapCopper5
   suffix: 5
   components:
   - type: Stack
@@ -303,7 +303,7 @@
 
 - type: entity
   parent: SheetPlastic
-  id: MisfitsSheetPlastic15
+  id: F14SheetPlastic15
   suffix: 15
   components:
   - type: Stack
@@ -311,7 +311,7 @@
 
 - type: entity
   parent: SheetGlass
-  id: MisfitsSheetGlass15
+  id: F14SheetGlass15
   suffix: 15
   components:
   - type: Stack
@@ -319,7 +319,7 @@
 
 - type: entity
   parent: SheetSteel
-  id: MisfitsSheetSteel15
+  id: F14SheetSteel15
   suffix: 15
   components:
   - type: Stack
@@ -327,7 +327,7 @@
 
 - type: entity
   parent: MaterialCloth
-  id: MisfitsMaterialCloth15
+  id: F14MaterialCloth15
   suffix: 15
   components:
   - type: Stack
@@ -335,25 +335,25 @@
 
 - type: entity
   parent: MaterialWoodPlank
-  id: MisfitsMaterialWoodPlank15
+  id: F14MaterialWoodPlank15
   suffix: 15
   components:
   - type: Stack
     count: 15
 
 - type: entity
-  parent: N14MaterialBasePowder
-  id: MisfitsMaterialCement
+  parent: F14MaterialBasePowder
+  id: F14MaterialCement
   name: cement
   description: Cement powder used for making concrete.
   categories: [ HideSpawnMenu ]
   components:
   - type: Stack
-    stackType: MisfitsCement
+    stackType: F14Cement
     baseLayer: powder_lead
   - type: PhysicalComposition
     materialComposition:
-      MisfitsCement: 100
+      F14Cement: 100
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
     state: powder_brass
@@ -367,40 +367,40 @@
     solution:
       maxVol: 5
       reagents:
-      - ReagentId: MisfitsCement
+      - ReagentId: F14Cement
         Quantity: 5
   - type: Tag
     tags:
-    - MisfitsCement
+    - F14Cement
 
 - type: entity
   parent: MaterialWoodPlank
-  id: MisfitsMaterialWoodPlank2
+  id: F14MaterialWoodPlank2
   suffix: 2
   components:
   - type: Stack
     count: 2
 
 - type: entity
-  parent: MisfitsMaterialCement
-  id: MisfitsMaterialCement1
+  parent: F14MaterialCement
+  id: F14MaterialCement1
   suffix: 1
   components:
   - type: Stack
-    stackType: MisfitsCement
+    stackType: F14Cement
     count: 1
 
 #MARK: Concrete
 
 - type: entity
-  parent: N14MaterialBase
-  id: MisfitsMaterialConcrete
+  parent: F14MaterialBase
+  id: F14MaterialConcrete
   name: concrete
   description: Solid concrete mix ready for construction.
   categories: [ HideSpawnMenu ]
   components:
   - type: Stack
-    stackType: MisfitsConcrete
+    stackType: F14Concrete
   - type: PhysicalComposition
     materialComposition:
       Concrete: 100
@@ -415,8 +415,8 @@
     - Concrete
 
 - type: entity
-  parent: MisfitsMaterialConcrete
-  id: MisfitsMaterialConcrete1
+  parent: F14MaterialConcrete
+  id: F14MaterialConcrete1
   suffix: 1
   components:
   - type: Stack
@@ -425,17 +425,17 @@
 #MARK: Brick
 
 - type: entity
-  parent: N14MaterialBase
-  id: MisfitsMaterialBrick
+  parent: F14MaterialBase
+  id: F14MaterialBrick
   name: adobe brick
   description: Clay brick for construction.
   categories: [ HideSpawnMenu ]
   components:
   - type: Stack
-    stackType: MisfitsBrick
+    stackType: F14Brick
   - type: PhysicalComposition
     materialComposition:
-      MisfitsBrick: 100
+      F14Brick: 100
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
     state: adobe_brick
@@ -444,11 +444,11 @@
     size: Small
   - type: Tag
     tags:
-    - MisfitsBrick
+    - F14Brick
 
 - type: entity
-  parent: MisfitsMaterialBrick
-  id: MisfitsMaterialBrick1
+  parent: F14MaterialBrick
+  id: F14MaterialBrick1
   suffix: 1
   components:
   - type: Stack

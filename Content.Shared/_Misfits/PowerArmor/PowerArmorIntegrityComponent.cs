@@ -91,7 +91,7 @@ public sealed partial class PowerArmorIntegrityComponent : Component
     ///     Severity scales with remaining integrity (higher = healthier).
     /// </summary>
     [DataField]
-    public ProtoId<AlertPrototype> IntegrityAlert = "MisfitsPowerArmorIntegrity";
+    public ProtoId<AlertPrototype> IntegrityAlert = "F14PowerArmorIntegrity";
 
     /// <summary>
     ///     Number of severity levels for the HUD alert (matches the icon count

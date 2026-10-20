@@ -2,7 +2,7 @@
 # The forge keeps metal armor and melee weapons. Sprite from Mojave Sun 13.
 
 - type: entity
-  parent: N14WorkbenchBase
+  parent: F14WorkbenchBase
   id: F14Smelter
   name: smelter
   description: A crude stone furnace for melting ore and scrap down into usable metal.
@@ -36,7 +36,7 @@
       - RawMaterial
       - Ingot
       - Ore
-      - N14Scrap
+      - F14Scrap
   - type: Construction
     graph: F14Smelter
     node: smelter

@@ -2,7 +2,7 @@
 
 - type: entity
   parent: BaseItem
-  id: MisfitsAmmoBox2mmEC
+  id: F14AmmoBox2mmEC
   name: ammunition box (2mmEC)
   description: A sealed box of 2mm electromagnetic cartridges for U.S. Army gauss weapons.
   components:
@@ -10,8 +10,8 @@
     mayTransfer: true
     whitelist:
       tags:
-        - MisfitsCartridge2mmEC
-    proto: MisfitsCartridge2mmEC
+        - F14Cartridge2mmEC
+    proto: F14Cartridge2mmEC
     capacity: 40
   - type: Item
     size: Small

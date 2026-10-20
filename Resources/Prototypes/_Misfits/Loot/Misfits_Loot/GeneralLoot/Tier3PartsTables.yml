@@ -1,18 +1,18 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/GeneralLoot/Tier3PartsTables.yml
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier3_ElectricComp
+  id: F14PartsLootTier3ElectricComp
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkComponentBoard3
+      id: F14JunkComponentBoard3
     - !type:EntSelector
-      id: N14JunkComponentBulb3
+      id: F14JunkComponentBulb3
     - !type:EntSelector
-      id: N14JunkComponentDiode3
+      id: F14JunkComponentDiode3
     - !type:EntSelector
-      id: N14JunkComponentFuse2
+      id: F14JunkComponentFuse2
     - !type:EntSelector
-      id: N14JunkComponentTransistor3
+      id: F14JunkComponentTransistor3
     - !type:EntSelector
-      id: N14JunkComponentResistor3
+      id: F14JunkComponentResistor3

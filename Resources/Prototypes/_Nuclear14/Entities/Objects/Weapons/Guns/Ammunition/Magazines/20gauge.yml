@@ -2,19 +2,19 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/20gauge.yml
 
 - type: entity
-  id: N14BaseMagazineShotgun20
+  id: F14BaseMagazineShotgun20
   name: ammo drum (20 gauge shells)
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-    - N14MagazineShotgun20
+    - F14MagazineShotgun20
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14ShellShotgun20
+        - F14ShellShotgun20
     capacity: 10
     soundRack:
       path: /Audio/Weapons/Guns/Cock/smg_cock.ogg
@@ -36,12 +36,12 @@
   - type: Appearance
 
 - type: entity
-  id: N14MagazineShotgun20
+  id: F14MagazineShotgun20
   name: ammo drum (20 gauge shells)
-  parent: N14BaseMagazineShotgun20
+  parent: F14BaseMagazineShotgun20
   components:
   - type: BallisticAmmoProvider
-    proto: N14ShellShotgun20
+    proto: F14ShellShotgun20
   - type: Sprite
     layers:
     - state: base

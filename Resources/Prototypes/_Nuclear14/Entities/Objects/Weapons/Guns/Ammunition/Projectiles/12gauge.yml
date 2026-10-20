@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Projectiles/12gauge.yml
 
 - type: entity
-  id: N14PelletShotgun12
+  id: F14PelletShotgun12
   name: pellet (12 gauge)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
@@ -21,11 +21,11 @@
     minDamageMultiplier: 0.30
 
 - type: entity
-  id: N14PelletShotgun12Spread
+  id: F14PelletShotgun12Spread
   categories: [ HideSpawnMenu ]
-  parent: N14PelletShotgun12
+  parent: F14PelletShotgun12
   components:
   - type: ProjectileSpread
-    proto: N14PelletShotgun12
+    proto: F14PelletShotgun12
     count: 6
     spread: 15

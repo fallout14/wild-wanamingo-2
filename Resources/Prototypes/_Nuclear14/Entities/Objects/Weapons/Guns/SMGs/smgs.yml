@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseWeaponSubMachineGun
-  id: N14WeaponSMGBase
+  id: F14WeaponSMGBase
   abstract: true
   components:
   - type: Wieldable
@@ -28,8 +28,8 @@
 
 - type: entity
   name: 10mm SMG
-  parent: N14WeaponSMGBase
-  id: N14WeaponSMG10mm
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG10mm
   description: Fully automatic submachine gun chambered in 10mm. # TODO: Need to create projectiles, magazines and boxes for 10mm.
   components:
   - type: ContainerContainer  # spawn state
@@ -79,7 +79,7 @@
   - type: Gun
     fireRate: 8
     soundGunshot:
-      collection: N14Pistol10mmGunshot
+      collection: F14Pistol10mmGunshot
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -97,26 +97,26 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazineSMG10mm
+        startingItem: F14MagazineSMG10mm
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         whitelist:
           tags:
-            - N14MagazineSMG10mm
+            - F14MagazineSMG10mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol10
+        startingItem: F14CartridgePistol10
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol10
+            - F14CartridgePistol10
   - type: StaticPrice
     price: 75
 
 - type: entity
   name: Sleepytyme
-  parent: N14WeaponSMGBase
-  id: N14WeaponSMG10mmSuppressed
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG10mmSuppressed
   description: A unique, permanently suppressed 10mm submachine gun. Quiet, compact, and built for work after dark.
   components:
   - type: ContainerContainer  # spawn state
@@ -137,7 +137,7 @@
     showMuzzleVisual: false
     muzzleSlot:
       name: Integral suppressor
-      startingItem: MisfitsFirearmSuppressor
+      startingItem: F14FirearmSuppressor
       locked: true
       insertOnInteract: false
       ejectOnInteract: false
@@ -160,7 +160,7 @@
   - type: Gun
     fireRate: 8
     soundGunshot:
-      collection: N14PistolSpyGunshot
+      collection: F14PistolSpyGunshot
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -178,26 +178,26 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazineSMG10mm
+        startingItem: F14MagazineSMG10mm
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         whitelist:
           tags:
-            - N14MagazineSMG10mm
+            - F14MagazineSMG10mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol10
+        startingItem: F14CartridgePistol10
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol10
+            - F14CartridgePistol10
   - type: StaticPrice
     price: 75
 
 - type: entity
   name: 12.7mm SMG
-  parent: N14WeaponSMGBase
-  id: N14WeaponSMG12mm
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG12mm
   description: A heavy, crude submachine gun chambered in 12.7mm. Slow and hard to control, it is the rough predecessor of the advanced 12.7mm SMG.
   components:
   - type: Clothing
@@ -216,7 +216,7 @@
   - type: Gun
     fireRate: 4 # #Misfits Tweak - entry 12.7mm SMG, was 6
     soundGunshot:
-      collection: N14Pistol12mmGunshot
+      collection: F14Pistol12mmGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -234,27 +234,27 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazineSMG12mm
+        startingItem: F14MagazineSMG12mm
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14MagazineSMG12mm
+            - F14MagazineSMG12mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol127
+        startingItem: F14CartridgePistol127
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol127
+            - F14CartridgePistol127
   - type: StaticPrice
     price: 100
 
 - type: entity
   name: 12.7mm pipe SMG
-  parent: N14WeaponSMGBase
-  id: N14WeaponSMG12mmPipe
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG12mmPipe
   description: A rickety, makeshift 12mm submachine gun. It looks like it's going to fall apart the second it shoots.
   components:
   - type: Clothing
@@ -273,7 +273,7 @@
   - type: Gun
     fireRate: 3 # #Misfits Tweak - was 4
     soundGunshot:
-      collection: N14Pistol12mmGunshot
+      collection: F14Pistol12mmGunshot
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -291,26 +291,26 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazineSMG12mm
+        startingItem: F14MagazineSMG12mm
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14MagazineSMG12mm
+            - F14MagazineSMG12mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol127
+        startingItem: F14CartridgePistol127
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol127
+            - F14CartridgePistol127
   - type: StaticPrice
     price: 10
 
 - type: entity
-  parent: N14WeaponSMG12mmPipe
-  id: N14WeaponSMG12mmPipeEmpty
+  parent: F14WeaponSMG12mmPipe
+  id: F14WeaponSMG12mmPipeEmpty
   suffix: Empty
   components:
   - type: ItemSlots
@@ -322,18 +322,18 @@
         priority: 2
         whitelist:
           tags:
-            - N14MagazineSMG12mm
+            - F14MagazineSMG12mm
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol127
+            - F14CartridgePistol127
 
 - type: entity
   name: 10mm pipe SMG
-  parent: N14WeaponSMGBase
-  id: N14WeaponSMG10mmPipe
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG10mmPipe
   description: A makeshift 10mm SMG, if you shake it you can hear the loose parts rattling inside of the gun.
   components:
   - type: Clothing
@@ -352,7 +352,7 @@
   - type: Gun
     fireRate: 6
     soundGunshot:
-      collection: N14Pistol10mmGunshot
+      collection: F14Pistol10mmGunshot
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -370,25 +370,25 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazineSMG10mm
+        startingItem: F14MagazineSMG10mm
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         whitelist:
           tags:
-            - N14MagazineSMG10mm
+            - F14MagazineSMG10mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol10
+        startingItem: F14CartridgePistol10
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol10
+            - F14CartridgePistol10
   - type: StaticPrice
     price: 10
 
 - type: entity
-  parent: N14WeaponSMG10mmPipe
-  id: N14WeaponSMG10mmPipeEmpty
+  parent: F14WeaponSMG10mmPipe
+  id: F14WeaponSMG10mmPipeEmpty
   suffix: Empty
   components:
   - type: ItemSlots
@@ -399,18 +399,18 @@
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         whitelist:
           tags:
-            - N14MagazineSMG10mm
+            - F14MagazineSMG10mm
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol10
+            - F14CartridgePistol10
 
 - type: entity
   name: advanced 12.7mm SMG
-  parent: N14WeaponSMGBase
-  id: N14WeaponSMG12mmAdvanced
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG12mmAdvanced
   description: A bulky submachine gun with a top-fed magazine system, it uses 12mm ammo.
   components:
   - type: ContainerContainer  # spawn state
@@ -454,7 +454,7 @@
   - type: Gun
     fireRate: 5 # #Misfits Tweak - was 7; 12.7mm now hits for 25
     soundGunshot:
-      collection: N14Pistol12mmGunshot
+      collection: F14Pistol12mmGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -472,27 +472,27 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14TopMagazineSMG12mm
+        startingItem: F14TopMagazineSMG12mm
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14TopMagazineSMG12mm
+            - F14TopMagazineSMG12mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol127
+        startingItem: F14CartridgePistol127
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol127
+            - F14CartridgePistol127
   - type: StaticPrice
     price: 175
 
 - type: entity
   name: infiltrator
-  parent: N14WeaponSMGBase
-  id: N14WeaponSMG9mminfiltrator
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG9mminfiltrator
   description: A simple metallic pre-war submachine gun modified with a integrated suppressor, chambered in 9mm ammo.
   components:
   - type: Clothing
@@ -512,7 +512,7 @@
   - type: Gun
     fireRate: 8.5
     soundGunshot:
-      collection: N14PistolSpyGunshot
+      collection: F14PistolSpyGunshot
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -530,26 +530,26 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazineSMG9mm
+        startingItem: F14MagazineSMG9mm
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         whitelist:
           tags:
-            - N14MagazineSMG9mm
+            - F14MagazineSMG9mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol9
+        startingItem: F14CartridgePistol9
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol9
+            - F14CartridgePistol9
   - type: StaticPrice
     price: 50
 
 - type: entity
   name: sten SMG
-  parent: N14WeaponSMGBase
-  id: N14WeaponSMG9mmCanadian
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG9mmCanadian
   description: A simple pre-war canadian submachine gun, chambered in 9mm ammo.
   components:
   - type: Clothing
@@ -573,7 +573,7 @@
   - type: Gun
     fireRate: 8.5
     soundGunshot:
-      collection: N14Pistol9mmGunshot
+      collection: F14Pistol9mmGunshot
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -591,26 +591,26 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazineSMG9mm
+        startingItem: F14MagazineSMG9mm
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         whitelist:
           tags:
-            - N14MagazineSMG9mm
+            - F14MagazineSMG9mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol9
+        startingItem: F14CartridgePistol9
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol9
+            - F14CartridgePistol9
   - type: StaticPrice
     price: 50
 
 - type: entity
   name: douglas advanced SMG
-  parent: N14WeaponSMGBase
-  id: N14WeaponSMG12mmAdvancedCanadian
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG12mmAdvancedCanadian
   description: An advanced pre-war canadian submachine gun, chambered in 12.7mm ammo.
   components:
   - type: Clothing
@@ -629,7 +629,7 @@
   - type: Gun
     fireRate: 5 # #Misfits Tweak - was 7; 12.7mm now hits for 25
     soundGunshot:
-      collection: N14Pistol12mmGunshot
+      collection: F14Pistol12mmGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -647,27 +647,27 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14TopMagazineSMG12mm
+        startingItem: F14TopMagazineSMG12mm
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14TopMagazineSMG12mm
+            - F14TopMagazineSMG12mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol127
+        startingItem: F14CartridgePistol127
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol127
+            - F14CartridgePistol127
   - type: StaticPrice
     price: 150
 
 - type: entity
   name: chinese advanced SMG
-  parent: N14WeaponSMGBase
-  id: N14WeaponSMG12mmAdvancedChinese
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG12mmAdvancedChinese
   description: An advanced pre-war chinese submachine gun intended for special forces, chambered in 12.7mm ammo.
   components:
   - type: ContainerContainer  # spawn state
@@ -711,7 +711,7 @@
   - type: Gun
     fireRate: 5 # #Misfits Tweak - was 7; 12.7mm now hits for 25
     soundGunshot:
-      collection: N14Pistol12mmGunshot
+      collection: F14Pistol12mmGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -729,27 +729,27 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14TopMagazineSMG12mm
+        startingItem: F14TopMagazineSMG12mm
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14TopMagazineSMG12mm
+            - F14TopMagazineSMG12mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol127
+        startingItem: F14CartridgePistol127
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol127
+            - F14CartridgePistol127
   - type: StaticPrice
     price: 175
 
 - type: entity
   name: chinese SMG
-  parent: N14WeaponSMGBase
-  id: N14WeaponSMG10mmChinese
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG10mmChinese
   description: A chinese fully automatic silenced submachine gun chambered in 10mm.
   components:
   - type: Clothing
@@ -773,7 +773,7 @@
   - type: Gun
     fireRate: 7
     soundGunshot:
-      collection: N14PistolSpyGunshot
+      collection: F14PistolSpyGunshot
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -791,19 +791,19 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazineSMG10mm
+        startingItem: F14MagazineSMG10mm
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         whitelist:
           tags:
-            - N14MagazineSMG10mm
+            - F14MagazineSMG10mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol10
+        startingItem: F14CartridgePistol10
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol10
+            - F14CartridgePistol10
   - type: StaticPrice
     price: 100
 

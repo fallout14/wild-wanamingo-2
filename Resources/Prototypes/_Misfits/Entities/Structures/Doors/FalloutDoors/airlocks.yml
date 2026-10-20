@@ -2,11 +2,11 @@
 
 - type: entity
   parent: AirlockAssembly
-  id: MisfitsDoorBunkerAssembly
+  id: F14DoorBunkerAssembly
   components:
   - type: Sprite
     sprite: MojaveSun/Structures/Doors/Airlocks/mechanical.rsi # WW Change - Mojave Sun 13 mechanical door
     state: closed
   - type: Construction
-    graph: N14DoorBunker
+    graph: F14DoorBunker
     node: n14assembly

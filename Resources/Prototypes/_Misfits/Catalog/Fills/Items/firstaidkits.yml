@@ -1,19 +1,19 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/Items/firstaidkits.yml
 
 - type: entity
-  id: MisfitsMedkitGeneralFilled
+  id: F14MedkitGeneralFilled
   name: general first aid kit
   suffix: Filled, Misfits
   parent: Medkit
   components:
   - type: StorageFill
     contents:
-    - id: N14CleanGauze10
-    - id: N14Ointment10
-    - id: N14Stimpak
+    - id: F14CleanGauze10
+    - id: F14Ointment10
+    - id: F14Stimpak
       amount: 2
-    - id: MisfitsPillCanisterAntibiotics
-    - id: MisfitsPillCanisterAnodyne
+    - id: F14PillCanisterAntibiotics
+    - id: F14PillCanisterAnodyne
 
 # ============================================================================
 # TRAUMA
@@ -24,19 +24,19 @@
     - 0,0,4,2
 
 - type: entity
-  id: MisfitsMedkitTraumaFilled
+  id: F14MedkitTraumaFilled
   name: trauma treatment kit
   suffix: Filled, Misfits
   parent: MedkitBrute
   components:
   - type: StorageFill
     contents:
-    - id: N14CleanGauze10
+    - id: F14CleanGauze10
       amount: 2
     - id: Bloodpack
-    - id: N14Stimpak
-    - id: MisfitsPillCanisterTraumadol
-    - id: MisfitsPillCanisterAnodyne
+    - id: F14Stimpak
+    - id: F14PillCanisterTraumadol
+    - id: F14PillCanisterAnodyne
 
 # ============================================================================
 # BURN
@@ -47,18 +47,18 @@
     - 0,0,4,2
 
 - type: entity
-  id: MisfitsMedkitBurnFilled
+  id: F14MedkitBurnFilled
   name: burn treatment kit
   suffix: Filled, Misfits
   parent: MedkitBurn
   components:
   - type: StorageFill
     contents:
-    - id: N14Ointment10
+    - id: F14Ointment10
       amount: 2
-    - id: MisfitsHealingSalve10
-    - id: N14Stimpak
-    - id: MisfitsPillCanisterAnodyne
+    - id: F14HealingSalve10
+    - id: F14Stimpak
+    - id: F14PillCanisterAnodyne
 
 # ============================================================================
 # TOXIN / VENOM
@@ -69,19 +69,19 @@
     - 0,0,4,2
 
 - type: entity
-  id: MisfitsMedkitToxinFilled
+  id: F14MedkitToxinFieldFilled
   name: toxin and venom treatment kit
   suffix: Filled, Misfits
   parent: MedkitToxin
   components:
   - type: StorageFill
     contents:
-    - id: N14ChemicalSyringeAntidote
+    - id: F14ChemicalSyringeAntidote
       amount: 2
-    - id: MisfitsPillCanisterWidowbane
-    - id: MisfitsPillCanisterCinderSerum
-    - id: MisfitsPillCanisterGravesalt
-    - id: MisfitsSnakebiteTourniquet10
+    - id: F14PillCanisterWidowbane
+    - id: F14PillCanisterCinderSerum
+    - id: F14PillCanisterGravesalt
+    - id: F14SnakebiteTourniquet10
 
 # ============================================================================
 # RADIATION
@@ -92,18 +92,18 @@
     - 0,0,4,2
 
 - type: entity
-  id: MisfitsMedkitRadiationFilled
+  id: F14MedkitRadiationFieldFilled
   name: radiation treatment kit
   suffix: Filled, Misfits
   parent: MedkitRadiation
   components:
   - type: StorageFill
     contents:
-    - id: N14RadAwayBloodbag
+    - id: F14RadAwayBloodbag
       amount: 2
-    - id: MisfitsPillCanisterRadShield
-    - id: MisfitsPillCanisterX111Compound
-    - id: MisfitsPillCanisterPrussianBlue
+    - id: F14PillCanisterRadShield
+    - id: F14PillCanisterX111Compound
+    - id: F14PillCanisterPrussianBlue
 
 # ============================================================================
 # COMBAT
@@ -114,7 +114,7 @@
     - 0,0,4,2
 
 - type: entity
-  id: MisfitsMedkitCombatFilled
+  id: F14MedkitCombatFieldFilled
   name: combat medical kit
   suffix: Filled, Misfits
   parent: MedkitCombat
@@ -123,10 +123,10 @@
     contents:
     - id: MedicatedSuture
     - id: RegenerativeMesh
-    - id: N14Stimpak
+    - id: F14Stimpak
       amount: 2
-    - id: MisfitsPillCanisterTraumadol
-    - id: MisfitsPillCanisterClearwake
+    - id: F14PillCanisterTraumadol
+    - id: F14PillCanisterClearwake
 
 # ============================================================================
 # PAIN MANAGEMENT
@@ -137,18 +137,18 @@
     - 0,0,4,2
 
 - type: entity
-  id: MisfitsMedkitPainManagementFilled
+  id: F14MedkitPainManagementFilled
   name: pain management kit
   suffix: Filled, Misfits
   parent: MedkitAdvanced
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsPillCanisterAnodyne
-    - id: MisfitsPillCanisterAnalgesine
-    - id: MisfitsPillCanisterNerveblock
-    - id: MisfitsPillCanisterTraumadol
-    - id: MisfitsHerbalAnodyne10
+    - id: F14PillCanisterAnodyne
+    - id: F14PillCanisterAnalgesine
+    - id: F14PillCanisterNerveblock
+    - id: F14PillCanisterTraumadol
+    - id: F14HerbalAnodyne10
 
 # ============================================================================
 # PSYCHIATRIC
@@ -159,18 +159,18 @@
     - 0,0,4,2
 
 - type: entity
-  id: MisfitsMedkitPsychiatricFilled
+  id: F14MedkitPsychiatricFilled
   name: psychiatric treatment kit
   suffix: Filled, Misfits
   parent: MedkitAdvanced
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsPillCanisterClearhead
-    - id: MisfitsPillCanisterChlorpromazine
-    - id: MisfitsPillCanisterLucidine
-    - id: MisfitsPillCanisterPsychocline
-    - id: MisfitsPillCanisterNeurostatic
+    - id: F14PillCanisterClearhead
+    - id: F14PillCanisterChlorpromazine
+    - id: F14PillCanisterLucidine
+    - id: F14PillCanisterPsychocline
+    - id: F14PillCanisterNeurostatic
 
 # ============================================================================
 # NARCOLEPSY / WAKEFULNESS
@@ -181,17 +181,17 @@
     - 0,0,4,2
 
 - type: entity
-  id: MisfitsMedkitNarcolepsyFilled
+  id: F14MedkitNarcolepsyFilled
   name: sleep disorder treatment kit
   suffix: Filled, Misfits
   parent: MedkitO2
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsPillCanisterVigilazine
-    - id: MisfitsPillCanisterWakeguard
-    - id: MisfitsPillCanisterSomnoreguline
-    - id: MisfitsPillCanisterClearwake
+    - id: F14PillCanisterVigilazine
+    - id: F14PillCanisterWakeguard
+    - id: F14PillCanisterSomnoreguline
+    - id: F14PillCanisterClearwake
 
 # ============================================================================
 # INFECTION CONTROL
@@ -202,17 +202,17 @@
     - 0,0,4,2
 
 - type: entity
-  id: MisfitsMedkitInfectionFilled
+  id: F14MedkitInfectionFilled
   name: infection treatment kit
   suffix: Filled, Misfits
   parent: MedkitToxin
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsPillCanisterAntibiotics
-    - id: MisfitsPillCanisterPenicillin
-    - id: MisfitsHerbalAntimicrobial10
-    - id: N14CleanGauze10
+    - id: F14PillCanisterAntibiotics
+    - id: F14PillCanisterPenicillin
+    - id: F14HerbalAntimicrobial10
+    - id: F14CleanGauze10
       amount: 2
 
 # ============================================================================
@@ -224,18 +224,18 @@
     - 0,0,4,2
 
 - type: entity
-  id: MisfitsMedkitFieldFilled
+  id: F14MedkitFieldFilled
   name: field medicine kit
   suffix: Filled, Misfits
   parent: Medkit
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsHealingSalve10
-    - id: MisfitsHerbalAnodyne10
-    - id: MisfitsHerbalAntimicrobial10
-    - id: MisfitsSnakebiteTourniquet10
-    - id: MisfitsPillCanisterPilgrimsRemedy
+    - id: F14HealingSalve10
+    - id: F14HerbalAnodyne10
+    - id: F14HerbalAntimicrobial10
+    - id: F14SnakebiteTourniquet10
+    - id: F14PillCanisterPilgrimsRemedy
 
 # ============================================================================
 # ADVANCED EMERGENCY
@@ -246,19 +246,19 @@
     - 0,0,2,2
 
 - type: entity
-  id: MisfitsMedkitAdvancedEmergencyFilled
+  id: F14MedkitAdvancedEmergencyFilled
   name: advanced emergency medical kit
   suffix: Filled, Misfits
   parent: MedkitAdvanced
   components:
   - type: StorageFill
     contents:
-    - id: N14SuperStimpak
+    - id: F14SuperStimpak
     - id: Bloodpack
     - id: MedicatedSuture
     - id: RegenerativeMesh
-    - id: MisfitsPillCanisterClearwake
-    - id: MisfitsPillCanisterLazarusCompound
+    - id: F14PillCanisterClearwake
+    - id: F14PillCanisterLazarusCompound
   - type: Storage
     grid:
     - 0,0,4,2

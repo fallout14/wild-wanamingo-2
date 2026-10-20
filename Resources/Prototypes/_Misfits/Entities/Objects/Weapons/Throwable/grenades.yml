@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Throwable/grenades.yml
 
 - type: entity
-  id: MisfitsBaseImpactGrenade
+  id: F14BaseImpactGrenade
   parent: BaseItem
   abstract: true
   components:
@@ -37,10 +37,10 @@
 # triggers it when the subsequent throw hits a surface, mob, vehicle, or stops.
 
 - type: entity
-  id: MisfitsGrenadeImpact
+  id: F14GrenadeImpact
   name: impact grenade
   description: A ball-shaped fragmentation grenade with an impact fuze. Arm it before throwing; there is no timed fuse.
-  parent: MisfitsBaseImpactGrenade
+  parent: F14BaseImpactGrenade
   components:
   - type: Sprite
     sprite: Misfits/Objects/Weapons/Throwable/beano_grenade.rsi
@@ -71,7 +71,7 @@
     fillPrototype: PelletClusterLethal
     capacity: 20
   - type: SpawnOnTrigger
-    proto: MisfitsGrenadeFragExplosion
+    proto: F14GrenadeFragExplosion
   - type: PacifismDangerousAttack
   - type: ContainerContainer
     containers:
@@ -81,13 +81,13 @@
 # dispersed, avoiding trigger-order deletion of the fragment payload.
 
 - type: entity
-  id: MisfitsGrenadeTinExplosion
+  id: F14GrenadeTinExplosion
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 3
     intensitySlope: 10
     totalIntensity: 30
@@ -97,7 +97,7 @@
 
 - type: entity
   parent: GrenadeBase
-  id: MisfitsGrenadeFragDefensive
+  id: F14GrenadeFragDefensive
   name: defensive frag grenade
   description: A fragmentation-heavy grenade intended to be thrown from cover. Its small blast scatters lethal fragments across a wide area.
   components:
@@ -108,10 +108,10 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ProjectileGrenade
     triggerKey: trigger
-    fillPrototype: MisfitsPelletClusterDefensive
+    fillPrototype: F14PelletClusterDefensive
     capacity: 45
   - type: SpawnOnTrigger
-    proto: MisfitsGrenadeFragDefensiveExplosion
+    proto: F14GrenadeFragDefensiveExplosion
   - type: PacifismDangerousAttack
   - type: TriggerOnUse
     keyOut: prime
@@ -133,13 +133,13 @@
       cluster-payload: !type:Container
 
 - type: entity
-  id: MisfitsGrenadeFragExplosion
+  id: F14GrenadeFragExplosion
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 8
     intensitySlope: 4
     totalIntensity: 50
@@ -148,13 +148,13 @@
     tileBreakScale: 0
 
 - type: entity
-  id: MisfitsGrenadeFragDefensiveExplosion
+  id: F14GrenadeFragDefensiveExplosion
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 4
     intensitySlope: 4
     totalIntensity: 20
@@ -163,13 +163,13 @@
     tileBreakScale: 0
 
 - type: entity
-  id: MisfitsPulseGrenadeExplosion
+  id: F14PulseGrenadeExplosion
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: MisfitsPulse
+    explosionType: F14Pulse
     maxIntensity: 5
     intensitySlope: 5
     totalIntensity: 20
@@ -181,14 +181,14 @@
   name: plasma grenade
   description: A high-energy grenade that erupts in a devastating burst of caustic green plasma.
   parent: GrenadeBase
-  id: MisfitsGrenadePlasma
+  id: F14GrenadePlasma
   components:
   - type: Sprite
     sprite: Objects/Weapons/Grenades/empgrenade.rsi
     color: "#53FF38"
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: MisfitsPlasma
+    explosionType: F14Plasma
     maxIntensity: 8
     intensitySlope: 4
     totalIntensity: 55
@@ -212,7 +212,7 @@
 
 - type: entity
   parent: SmokeGrenade
-  id: MisfitsGrenadeWhitePhosphorus
+  id: F14GrenadeWhitePhosphorus
   name: white phosphorus grenade
   description: A screening grenade that releases pale, corrosive smoke. Prolonged exposure causes severe chemical burns.
   components:
@@ -224,5 +224,5 @@
     spreadAmount: 50
     solution:
       reagents:
-      - ReagentId: MisfitsWhitePhosphorusSmoke
+      - ReagentId: F14WhitePhosphorusSmoke
         Quantity: 50

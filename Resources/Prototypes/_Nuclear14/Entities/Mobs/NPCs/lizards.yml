@@ -3,8 +3,8 @@
 
 - type: entity
   name: gecko
-  id: N14MobGecko
-  parent: N14MobBaseHostileScaley
+  id: F14MobGecko
+  parent: F14MobBaseHostileScaley
   description: Looks like a dinosaur. The bite is worse than the claws.
   components:
   - type: Sprite
@@ -43,7 +43,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsGeckoAttack #Misfits Change
+      collection: F14GeckoAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -55,21 +55,21 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsGeckoIdle
+      collection: F14GeckoIdle
       params:
         volume: -10
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsGeckoAttack
+      collection: F14GeckoAttack
       params:
         volume: -3
         maxDistance: 10
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatGecko
+    - id: F14FoodMeatGecko
       amount: 3
-    - id: N14MaterialHideGecko
+    - id: F14MaterialHideGecko
       amount: 1
   #- type: Reproductive
     #breedChance: 0.05
@@ -79,19 +79,19 @@
       #tags:
       #- Gecko
     #offspring:
-    # id: N14FoodEggGeckoFertilized
+    # id: F14FoodEggGeckoFertilized
      #maxAmount: 3
  #- type: ReproductivePartner
  #- type: EggLayer
    #eggSpawn:
-   #- id: N14FoodEggGecko
+   #- id: F14FoodEggGecko
 #- type: Tag
    # tags:
     #- Gecko
 
 - type: entity
-  parent: N14MobGecko
-  id: N14MobGeckoFire
+  parent: F14MobGecko
+  id: F14MobGeckoFire
   name: fire gecko
   description: A dangerous fire gecko. Don't let it get close!
   components:
@@ -105,7 +105,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsGeckoAttack #Misfits Change
+      collection: F14GeckoAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -114,9 +114,9 @@
         Slash: 7                        # Forge-Change
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatGeckoFire
+    - id: F14FoodMeatGeckoFire
       amount: 3
-    - id: N14MaterialHideGeckoFire
+    - id: F14MaterialHideGeckoFire
       amount: 1
   # - type: Reproductive
     # breedChance: 0.05
@@ -126,12 +126,12 @@
       # tags:
       # - Gecko
     # offspring:
-    # - id: N14FoodEggGeckoFertilized
+    # - id: F14FoodEggGeckoFertilized
       # maxAmount: 3
   # - type: ReproductivePartner
   # - type: EggLayer
     # eggSpawn:
-    # - id: N14FoodEggGecko
+    # - id: F14FoodEggGecko
   # - type: Tag
     # tags:
      #- Gecko
@@ -145,11 +145,11 @@
       path: /Audio/Nuclear14/Weapons/Guns/Flames/flamer.ogg
   - type: SolutionManager
     solutions:
-    - N14MobGeckoFireSolutionChamber
+    - F14MobGeckoFireSolutionChamber
   - type: FlamerAmmoProvider
     solutionId: chamber
     fireCost: 5
-    fireTilePrototype: MisfitsTileFire
+    fireTilePrototype: F14TileFire
     range: 4
   - type: NamedSolutionRegeneration
     solution: chamber
@@ -160,23 +160,23 @@
     duration: 0.1
   - type: HTN
     rootTask:
-      task: N14RangedHostileCompound
+      task: F14RangedHostileCompound
   - type: Flammable
     fireSpread: false
     canResistFire: true
     firestackFade: -1
   - type: Damageable
-    damageModifierSet: N14ScaleFireresist
+    damageModifierSet: F14ScaleFireresist
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsGeckoAttack
+      collection: F14GeckoAttack
       params:
         volume: -3
         maxDistance: 10
 
 - type: entity
   parent: Solution
-  id: N14MobGeckoFireSolutionChamber
+  id: F14MobGeckoFireSolutionChamber
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -189,8 +189,8 @@
 
 - type: entity
   name: golden gecko
-  id: N14MobGeckoGolden
-  parent: N14MobGecko
+  id: F14MobGeckoGolden
+  parent: F14MobGecko
   description: A beautiful golden gecko. Don't let it scratch.
   components:
   - type: Sprite
@@ -207,7 +207,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsGeckoAttack #Misfits Change
+      collection: F14GeckoAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -217,9 +217,9 @@
         Radiation: 5                       # Forge-Change
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatGeckoGolden
+    - id: F14FoodMeatGeckoGolden
       amount: 3
-    - id: N14MaterialHideGeckoGolden
+    - id: F14MaterialHideGeckoGolden
       amount: 1
   # - type: Reproductive
     # breedChance: 0.05
@@ -229,18 +229,18 @@
       # tags:
       # - Gecko
     # offspring:
-    # - id: N14FoodEggGeckoFertilized
+    # - id: F14FoodEggGeckoFertilized
       # maxAmount: 3
   # - type: ReproductivePartner
   # - type: EggLayer
     # eggSpawn:
-    # - id: N14FoodEggGecko
+    # - id: F14FoodEggGecko
    #- type: Tag
  # tags:
    #  - Gecko
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsGeckoAttack
+      collection: F14GeckoAttack
       params:
         volume: -3
         maxDistance: 10
@@ -250,8 +250,8 @@
 
 - type: entity
   name: nightstalker cub
-  id: N14MobNightstalkerCub
-  parent: N14MobBaseHostile
+  id: F14MobNightstalkerCub
+  parent: F14MobBaseHostile
   description: Is it a coyote? Why does it have a rattler... This one is small.
   components:
   - type: Sprite
@@ -263,7 +263,7 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: N14NightstalkerBlood
+      - ReagentId: F14NightstalkerBlood
         Quantity: 30
   - type: MovementSpeedModifier
     baseWalkSpeed : 3.5
@@ -301,7 +301,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsNightstalkerAttack #Misfits Change
+      collection: F14NightstalkerAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -314,32 +314,32 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsNightstalkerIdle
+      collection: F14NightstalkerIdle
       params:
         volume: -10
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsNightstalkerAttack
+      collection: F14NightstalkerAttack
       params:
         volume: -3
         maxDistance: 10
   - type: SolutionManager
     solutions:
-    - N14MobNightstalkerCubSolutionMelee
-    - N14MobNightstalkerCubSolutionUdder
+    - F14MobNightstalkerCubSolutionMelee
+    - F14MobNightstalkerCubSolutionUdder
   - type: NamedSolutionRegeneration
     solution: melee
     generated:
       reagents:
-      - ReagentId: N14NightstalkerVenom
+      - ReagentId: F14NightstalkerVenom
         Quantity: 1
 
 # Adult Nightstalker
 
 - type: entity
   parent: Solution
-  id: N14MobNightstalkerCubSolutionMelee
+  id: F14MobNightstalkerCubSolutionMelee
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -347,12 +347,12 @@
     solution:
       maxVol: 3
       reagents:
-      - ReagentId: N14NightstalkerVenom
+      - ReagentId: F14NightstalkerVenom
         Quantity: 3
 
 - type: entity
   parent: Solution
-  id: N14MobNightstalkerCubSolutionUdder
+  id: F14MobNightstalkerCubSolutionUdder
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -360,13 +360,13 @@
     solution:
       maxVol: 3
       reagents:
-      - ReagentId: N14NightstalkerVenom
+      - ReagentId: F14NightstalkerVenom
         Quantity: 3
 
 - type: entity
   name: nightstalker
-  id: N14MobNightstalker
-  parent: N14MobBaseHostile
+  id: F14MobNightstalker
+  parent: F14MobBaseHostile
   description: Is it a coyote? Why does it have a rattler...
   components:
   - type: Sprite
@@ -378,7 +378,7 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: N14NightstalkerBlood
+      - ReagentId: F14NightstalkerBlood
         Quantity: 50
   - type: MovementSpeedModifier
     baseWalkSpeed : 3.5
@@ -406,7 +406,7 @@
       200: Dead
   - type: Butcherable
     spawned:
-    - id: N14MaterialNightstalkerPelt
+    - id: F14MaterialNightstalkerPelt
       amount: 1
   - type: DamageStateVisuals
     states:
@@ -420,7 +420,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsNightstalkerAttack #Misfits Change
+      collection: F14NightstalkerAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -433,25 +433,25 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsNightstalkerIdle
+      collection: F14NightstalkerIdle
       params:
         volume: -8
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsNightstalkerAttack
+      collection: F14NightstalkerAttack
       params:
         volume: -3
         maxDistance: 10
   - type: SolutionManager
     solutions:
-    - N14MobNightstalkerSolutionMelee
-    - N14MobNightstalkerSolutionUdder
+    - F14MobNightstalkerSolutionMelee
+    - F14MobNightstalkerSolutionUdder
   - type: NamedSolutionRegeneration
     solution: melee
     generated:
       reagents:
-      - ReagentId: N14NightstalkerVenom
+      - ReagentId: F14NightstalkerVenom
         Quantity: 0.25
   - type: MeleeChemicalInjector
     solution: melee
@@ -464,12 +464,12 @@
    #   tags:
    #  - Nightstalker
    #offspring:
-   #- id: N14FoodEggNightstalkerFertilized
+   #- id: F14FoodEggNightstalkerFertilized
      #maxAmount: 3
  #- type: ReproductivePartner
  #- type: EggLayer
    #eggSpawn:
-   #- id: N14FoodEggNightstalker
+   #- id: F14FoodEggNightstalker
  # - type: Tag
 #    tags:
  #   - Nightstalker
@@ -478,7 +478,7 @@
 
 - type: entity
   parent: Solution
-  id: N14MobNightstalkerSolutionMelee
+  id: F14MobNightstalkerSolutionMelee
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -486,12 +486,12 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14NightstalkerVenom
+      - ReagentId: F14NightstalkerVenom
         Quantity: 5
 
 - type: entity
   parent: Solution
-  id: N14MobNightstalkerSolutionUdder
+  id: F14MobNightstalkerSolutionUdder
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -499,20 +499,20 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14NightstalkerVenom
+      - ReagentId: F14NightstalkerVenom
         Quantity: 10
 
 - type: entity
   name: deathclaw
-  id: N14MobDeathclaw
-  parent: N14MobBaseHostileScaley
+  id: F14MobDeathclaw
+  parent: F14MobBaseHostileScaley
   description: Look at those claws.
   components:
   - type: NpcFactionMember #Misfits Add - Deathclaw is its own faction; hostile to everything except other deathclaws
     factions:
-    - N14Deathclaw
+    - F14Deathclaw
   - type: Damageable
-    damageModifierSet: N14ToughAnimal
+    damageModifierSet: F14ToughAnimal
   - type: Injurable
     damageContainer: Biological
   - type: Sprite
@@ -523,7 +523,7 @@
       sprite: Nuclear14/Mobs/Animals/deathclaw.rsi
   - type: HTN
     rootTask:
-      task: N14HostileCompound
+      task: F14HostileCompound
     blackboard:
       NavClimb: !type:Bool
         true
@@ -573,7 +573,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsDeathclawAttack #Misfits Change
+      collection: F14DeathclawAttack #Misfits Change
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw
@@ -588,13 +588,13 @@
     minInterval: 10
     maxInterval: 30
     sound:
-      collection: MisfitsDeathclawIdle
+      collection: F14DeathclawIdle
       params:
         volume: -8
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsDeathclawAttack
+      collection: F14DeathclawAttack
       params:
         volume: -3
         maxDistance: 10
@@ -630,28 +630,28 @@
       # tags:
       # - Deathclaw
     # offspring:
-    # - id: N14FoodEggDeathclawFertilized
+    # - id: F14FoodEggDeathclawFertilized
       # maxAmount: 1
   # - type: ReproductivePartner
   # - type: EggLayer
     # eggSpawn:
-    # - id: N14FoodEggDeathclaw
+    # - id: F14FoodEggDeathclaw
   - type: Tag
     tags:
-    - N14Deathclaw
+    - F14Deathclaw
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadRaw
+    - id: F14FoodMeatRadRaw
       amount: 12
-    - id: N14MaterialRawLeather1
+    - id: F14MaterialRawLeather1
       amount: 8
 
 #MARK: Albino Deathclaw
 
 - type: entity
   name: albino deathclaw
-  id: N14MobDeathclawAlbino
-  parent: N14MobDeathclaw
+  id: F14MobDeathclawAlbino
+  parent: F14MobDeathclaw
   description: Look at those white claws.
   components:
   - type: Sprite
@@ -664,7 +664,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsDeathclawAttack #Misfits Change
+      collection: F14DeathclawAttack #Misfits Change
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw
@@ -693,15 +693,15 @@
         Base: dead
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsDeathclawAttack
+      collection: F14DeathclawAttack
       params:
         volume: -3
         maxDistance: 10
 
 - type: entity
   name: deathclaw maid
-  id: N14MobDeathclawMaid
-  parent: N14MobDeathclaw
+  id: F14MobDeathclawMaid
+  parent: F14MobDeathclaw
   description: They put maid outfit on that thing?!
   components:
   - type: Sprite
@@ -720,7 +720,7 @@
         Base: dead
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsDeathclawAttack
+      collection: F14DeathclawAttack
       params:
         volume: -3
         maxDistance: 10
@@ -729,8 +729,8 @@
 
 - type: entity
   name: metal deathclaw
-  id: N14MobDeathclawMetal
-  parent: N14MobDeathclawAlbino
+  id: F14MobDeathclawMetal
+  parent: F14MobDeathclawAlbino
   description: They put armor on that thing?!
   components:
   - type: Sprite
@@ -743,7 +743,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsDeathclawAttack #Misfits Change
+      collection: F14DeathclawAttack #Misfits Change
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw
@@ -775,7 +775,7 @@
         Base: dead
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsDeathclawAttack
+      collection: F14DeathclawAttack
       params:
         volume: -3
         maxDistance: 10
@@ -785,8 +785,8 @@
 
 - type: entity
   name: Lurker
-  id: N14MobRadLurker
-  parent: N14MobDeathclaw
+  id: F14MobRadLurker
+  parent: F14MobDeathclaw
   description: It's a Lurker, the creature from the green waters. It might be fat, but is extremely fast and dangerous.
   components:
   - type: Sprite
@@ -808,7 +808,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsDeathclawAttack #Misfits Change
+      collection: F14DeathclawAttack #Misfits Change
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw
@@ -819,7 +819,7 @@
         Piercing: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsDeathclawAttack
+      collection: F14DeathclawAttack
       params:
         volume: -3
         maxDistance: 10

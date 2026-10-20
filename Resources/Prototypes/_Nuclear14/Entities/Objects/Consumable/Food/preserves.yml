@@ -5,7 +5,7 @@
   name: glass jar
   description: A glass jar, a cuter alternative to the glass cup.
   parent: DrinkGlassBase
-  id: N14FoodJarBase
+  id: F14FoodJarBase
   components:
   - type: Appearance
   - type: Solution
@@ -31,8 +31,8 @@
     scale: 0.5, 0.5
 
 - type: entity
-  parent: N14FoodJarBase
-  id: N14FoodJamBase
+  parent: F14FoodJarBase
+  id: F14FoodJamBase
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Food/preserves.rsi
@@ -42,13 +42,13 @@
     - fruity
   - type: Tag
     tags:
-    - N14Jam
+    - F14Jam
 
 # PickledBase
 
 - type: entity
-  parent: N14FoodJarBase
-  id: N14PickledBase
+  parent: F14FoodJarBase
+  id: F14PickledBase
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Food/preserves.rsi
@@ -58,13 +58,13 @@
     - sweet
   - type: Tag
     tags:
-    - N14Pickled
+    - F14Pickled
 
 # Jams
 
 - type: entity
-  parent: N14FoodJamBase
-  id: N14AgaveJam
+  parent: F14FoodJamBase
+  id: F14AgaveJam
   name: agave jam
   description: A jar filled with agave jam. Wait... people make agave jam?
   components:
@@ -73,12 +73,12 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14AgaveJam
+      - ReagentId: F14AgaveJam
         Quantity: 30
 
 - type: entity
-  parent: N14FoodJamBase
-  id: N14BlackberryJam
+  parent: F14FoodJamBase
+  id: F14BlackberryJam
   name: blackberry jam
   description: A jar filled with blackberry jam. What a treat!
   components:
@@ -88,12 +88,12 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14BlackberryJam
+      - ReagentId: F14BlackberryJam
         Quantity: 30
 
 - type: entity
-  parent: N14FoodJamBase
-  id: N14BrocJam
+  parent: F14FoodJamBase
+  id: F14BrocJam
   name: broc jam
   description: A jar filled with broc jam. It... doesnt taste very good.
   components:
@@ -106,12 +106,12 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14BrocJam
+      - ReagentId: F14BrocJam
         Quantity: 30
 
 - type: entity
-  parent: N14FoodJamBase
-  id: N14CactusJam
+  parent: F14FoodJamBase
+  id: F14CactusJam
   name: cactus jam
   description: A jar filled with cactus jam. These jams are getting out of hand.
   components:
@@ -124,12 +124,12 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14CactusJam
+      - ReagentId: F14CactusJam
         Quantity: 30
 
 - type: entity
-  parent: N14FoodJamBase
-  id: N14MultifruitJam
+  parent: F14FoodJamBase
+  id: F14MultifruitJam
   name: multifruit jam
   description: A jar filled with multifruit jam. Now where is some toast?
   components:
@@ -138,12 +138,12 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14MultifruitJam
+      - ReagentId: F14MultifruitJam
         Quantity: 30
 
 - type: entity
-  parent: N14FoodJamBase
-  id: N14PricklyJam
+  parent: F14FoodJamBase
+  id: F14PricklyJam
   name: prickly pear jam
   description: A jar filled with prickly pear jam. Now THIS is jam!
   components:
@@ -152,12 +152,12 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14PricklyPearJam
+      - ReagentId: F14PricklyPearJam
         Quantity: 30
 
 - type: entity
-  parent: N14FoodJamBase
-  id: N14StarlightJam
+  parent: F14FoodJamBase
+  id: F14StarlightJam
   name: starlight jam
   description: A jar filled with starlight jam. Its a pretty color.
   components:
@@ -166,12 +166,12 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14StarlightJam
+      - ReagentId: F14StarlightJam
         Quantity: 30
 
 - type: entity
-  parent: N14FoodJamBase
-  id: N14TarberryJam
+  parent: F14FoodJamBase
+  id: F14TarberryJam
   name: tarberry jam
   description: A jar filled with tarberry jam. It gives you a strange feeling...
   components:
@@ -180,12 +180,12 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14TarberryJam
+      - ReagentId: F14TarberryJam
         Quantity: 30
 
 - type: entity
-  parent: N14PickledBase
-  id: N14PickledCabbage
+  parent: F14PickledBase
+  id: F14PickledCabbage
   name: pickled cabbage
   description: A jar filled with pickled cabbage. How old is this?
   components:
@@ -194,12 +194,12 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14PickledCabbage
+      - ReagentId: F14PickledCabbage
         Quantity: 30
 
 - type: entity
-  parent: N14PickledBase
-  id: N14PickledCarrots
+  parent: F14PickledBase
+  id: F14PickledCarrots
   name: pickled carrots
   description: A jar filled with pickled carrots. I guess people will pickle anything now-a-days.
   components:
@@ -208,12 +208,12 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14PickledCarrots
+      - ReagentId: F14PickledCarrots
         Quantity: 30
 
 - type: entity
-  parent: N14PickledBase
-  id: N14PickledCorn
+  parent: F14PickledBase
+  id: F14PickledCorn
   name: pickled corn
   description: A jar filled with pickled corn. Aw, its baby corn.
   components:
@@ -222,12 +222,12 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14PickledCorn
+      - ReagentId: F14PickledCorn
         Quantity: 30
 
 - type: entity
-  parent: N14PickledBase
-  id: N14PickledJalapenos
+  parent: F14PickledBase
+  id: F14PickledJalapenos
   name: pickled jalapenos
   description: A jar filled with pickled jalapenos. So hot!
   components:
@@ -236,12 +236,12 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14PickledJalapenos
+      - ReagentId: F14PickledJalapenos
         Quantity: 30
 
 - type: entity
-  parent: N14PickledBase
-  id: N14PickledOnions
+  parent: F14PickledBase
+  id: F14PickledOnions
   name: pickled onions
   description: A jar filled with pickled onions. What a crunch!
   components:
@@ -250,5 +250,5 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14PickledOnions
+      - ReagentId: F14PickledOnions
         Quantity: 30

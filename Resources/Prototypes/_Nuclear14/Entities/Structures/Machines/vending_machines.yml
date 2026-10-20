@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Machines/vending_machines.yml
 
 - type: entity
-  id: N14VendingMachineStorageBase # This is for vending machines that are storage and not actual vending machines.
+  id: F14VendingMachineStorageBase # This is for vending machines that are storage and not actual vending machines.
   parent: BaseMachinePowered
   name: vending machine
   description: Just add capitalism!
@@ -51,7 +51,7 @@
           SheetSteel1:
             min: 3
             max: 5
-          N14ScrapElectronic1:
+          F14ScrapElectronic1:
            min: 1
            max: 3
       - !type:DoActsBehavior
@@ -89,8 +89,8 @@
 #MARK: Nuka Vending
 
 - type: entity
-  parent: N14VendingMachineStorageBase
-  id: N14VendingMachineNukaColaNew
+  parent: F14VendingMachineStorageBase
+  id: F14VendingMachineNukaColaNew
   suffix: storage, empty
   name: Nuka-Cola machine
   description: A Pre-War vending machine that dispenses Nuka-Cola Corporation branded beverages.
@@ -123,44 +123,44 @@
 #MARK: Nuka Filled
 
 - type: entity
-  parent: N14VendingMachineNukaColaNew
-  id: N14VendingMachineNukaColaNewFilled
+  parent: F14VendingMachineNukaColaNew
+  id: F14VendingMachineNukaColaNewFilled
   suffix: storage, random
   components:
   - type: StorageFill
     contents:
-      - id: N14DrinkNukaColaEmpty
+      - id: F14DrinkNukaColaEmpty
         prob: 0.3
-      - id: N14DrinkNukaColaBroken
+      - id: F14DrinkNukaColaBroken
         prob: 0.3
-      - id: N14DrinkNukaCola
+      - id: F14DrinkNukaCola
         prob: 0.3
-      - id: N14DrinkNukaCola
+      - id: F14DrinkNukaCola
         prob: 0.3
-      - id: N14DrinkNukaCola
+      - id: F14DrinkNukaCola
         prob: 0.2
-      - id: N14DrinkNukaColaCherry
+      - id: F14DrinkNukaColaCherry
         prob: 0.1
-      - id: N14DrinkNukaColaGrape
+      - id: F14DrinkNukaColaGrape
         prob: 0.1
-      - id: N14DrinkNukaColaOrange
+      - id: F14DrinkNukaColaOrange
         prob: 0.1
-      - id: N14DrinkNukaColaYellow
+      - id: F14DrinkNukaColaYellow
         prob: 0.05
-      - id: N14DrinkNukaColaQuantum
+      - id: F14DrinkNukaColaQuantum
         prob: 0.05
-      - id: N14DrinkNukaColaQuartz
+      - id: F14DrinkNukaColaQuartz
         prob: 0.05
-      - id: N14DrinkNukaColaVictory
+      - id: F14DrinkNukaColaVictory
         prob: 0.05
-      - id: N14DrinkNukaColaWild
+      - id: F14DrinkNukaColaWild
         prob: 0.05
 
 #MARK: Vim Storage
 
 - type: entity
-  parent: N14VendingMachineStorageBase
-  id: N14VendingMachineVim
+  parent: F14VendingMachineStorageBase
+  id: F14VendingMachineVim
   suffix: storage, empty
   name: Vim machine
   description: A Pre-War vending machine that dispenses Vim branded beverages.
@@ -187,33 +187,33 @@
 #MARK: Vim Filled
 
 - type: entity
-  parent: N14VendingMachineVim
-  id: N14VendingMachineVimFilled
+  parent: F14VendingMachineVim
+  id: F14VendingMachineVimFilled
   suffix: storage, random
   components:
   - type: StorageFill
     contents:
-      - id: N14DrinkNukaColaEmpty
+      - id: F14DrinkNukaColaEmpty
         prob: 0.3
-      - id: N14DrinkNukaColaBroken
+      - id: F14DrinkNukaColaBroken
         prob: 0.3
-      - id: N14DrinkVim
+      - id: F14DrinkVim
         prob: 0.3
-      - id: N14DrinkVimCaptainsBlend
+      - id: F14DrinkVimCaptainsBlend
         prob: 0.2
-      - id: N14DrinkVimRefresh
+      - id: F14DrinkVimRefresh
         prob: 0.2
-      - id: N14DrinkVimQuartz
+      - id: F14DrinkVimQuartz
         prob: 0.1
-      - id: N14DrinkVim
+      - id: F14DrinkVim
         prob: 0.1
-      - id: N14DrinkVimCaptainsBlend
+      - id: F14DrinkVimCaptainsBlend
         prob: 0.1
-      - id: N14DrinkNukaColaYellow
+      - id: F14DrinkNukaColaYellow
         prob: 0.05
-      - id: N14DrinkVimRefresh
+      - id: F14DrinkVimRefresh
         prob: 0.05
-      - id: N14DrinkVimQuartz
+      - id: F14DrinkVimQuartz
         prob: 0.05
 
 
@@ -221,7 +221,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14VendingMachineCigarette
+  id: F14VendingMachineCigarette
   suffix: storage, empty
   name: cigarette vendor
   description: A Pre-War vending machine that dispenses cigarettes.
@@ -248,45 +248,45 @@
 #MARK: Cig Filled
 
 - type: entity
-  parent: N14VendingMachineCigarette
-  id: N14VendingMachineCigaretteFilled
+  parent: F14VendingMachineCigarette
+  id: F14VendingMachineCigaretteFilled
   suffix: storage, random
   components:
   - type: StorageFill
     contents:
-      - id: N14CigarettePackWinston
+      - id: F14CigarettePackWinston
         prob: 0.3
-      - id: N14CigarettePackMarlboro
+      - id: F14CigarettePackMarlboro
         prob: 0.3
-      - id: N14CigarettePackKool
+      - id: F14CigarettePackKool
         prob: 0.3
-      - id: N14CigarettePackSalem
+      - id: F14CigarettePackSalem
         prob: 0.3
-      - id: N14CigarettePackWinston
+      - id: F14CigarettePackWinston
         prob: 0.2
-      - id: N14CigarettePackMarlboro
+      - id: F14CigarettePackMarlboro
         prob: 0.2
-      - id: N14CigarettePackKool
+      - id: F14CigarettePackKool
         prob: 0.2
-      - id: N14CigarettePackSalem
+      - id: F14CigarettePackSalem
         prob: 0.2
 
 #MARK: Cig Republic
 
 - type: entity
-  parent: N14VendingMachineCigarette
-  id: N14VendingMachineCigaretteFilledRepublic
+  parent: F14VendingMachineCigarette
+  id: F14VendingMachineCigaretteFilledRepublic
   suffix: storage, republics
   name: Republics cig vendor
   description: A pre-war cigarette vendor that's been filled with Republic cigarette packs.
   components:
   - type: StorageFill
     contents:
-      - id: N14CigarettePackRepublics
+      - id: F14CigarettePackRepublics
         prob: 0.5
-      - id: N14CigarettePackRepublics
+      - id: F14CigarettePackRepublics
         prob: 0.5
-      - id: N14CigarettePackRepublics
+      - id: F14CigarettePackRepublics
         prob: 0.5
-      - id: N14CigarettePackRepublics
+      - id: F14CigarettePackRepublics
         prob: 0.3

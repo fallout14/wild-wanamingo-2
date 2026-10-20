@@ -1,15 +1,15 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Mobs/Robots/borg_chassis.yml
 
 - type: entity
-  parent: N14RobotProtectron
-  id: MisfitsRobotSecuritron
+  parent: F14RobotProtectron
+  id: F14RobotSecuritron
   name: securitron
   components:
   - type: SpamEmitSound
     minInterval: 12
     maxInterval: 45
     sound:
-      collection: MisfitsSecuritronIdle
+      collection: F14SecuritronIdle
       params:
         volume: -7
         maxDistance: 6
@@ -41,32 +41,32 @@
       Do as your masters say with a literal but reasonable level of logic.
 
 - type: entity
-  parent: MisfitsRobotSecuritron
-  id: MisfitsRobotSecuritronBlue
+  parent: F14RobotSecuritron
+  id: F14RobotSecuritronBlue
   name: securitron
   components:
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/securitron-blue.rsi
 
 - type: entity
-  parent: MisfitsRobotSecuritron
-  id: MisfitsRobotSecuritronBrown
+  parent: F14RobotSecuritron
+  id: F14RobotSecuritronBrown
   name: securitron
   components:
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/securitron-brown.rsi
 
 - type: entity
-  parent: MisfitsRobotSecuritron
-  id: MisfitsRobotSecuritronRed
+  parent: F14RobotSecuritron
+  id: F14RobotSecuritronRed
   name: securitron
   components:
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/securitron-red.rsi
 
 - type: entity
-  parent: MisfitsRobotSecuritron
-  id: MisfitsRobotSecuritronYellow
+  parent: F14RobotSecuritron
+  id: F14RobotSecuritronYellow
   name: securitron
   components:
   - type: Sprite

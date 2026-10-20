@@ -2,185 +2,185 @@
 # Resources/Prototypes/_Nuclear14/Stacks/consumable_stacks.yml
 
 - type: stack
-  id: N14AgaveLeaf
+  id: F14AgaveLeaf
   name: misfits-kit-agave-leaves
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: AgaveLeaf }
-  spawn: N14FloraProduceWildAgave
+  spawn: F14FloraProduceWildAgave
   maxCount: 5
 
 - type: stack
-  id: N14WildBananaYucca
+  id: F14WildBananaYucca
   name: misfits-kit-wild-banana-yucca
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: BananaYucca }
-  spawn: N14FloraProduceWildBananaYucca
+  spawn: F14FloraProduceWildBananaYucca
   maxCount: 5
 
 - type: stack
-  id: N14WildBlackberries
+  id: F14WildBlackberries
   name: misfits-kit-wild-blackberries
   icon: { sprite: Nuclear14/Objects/Specific/Hydroponics/blackberry.rsi, state: produce }
-  spawn: N14FloraProduceWildBlackberries
+  spawn: F14FloraProduceWildBlackberries
   maxCount: 5
 
 - type: stack
-  id: N14WildBuffaloGourd
+  id: F14WildBuffaloGourd
   name: misfits-kit-wild-buffalo-gourd
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: BuffaloGourd }
-  spawn: N14FloraProduceWildBuffaloGourd
+  spawn: F14FloraProduceWildBuffaloGourd
   maxCount: 3
 
 - type: stack
-  id: N14BrocFlower
+  id: F14BrocFlower
   name: misfits-kit-broc-flower
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: BrocFlower }
-  spawn: N14FloraProduceWildBrocFlower
+  spawn: F14FloraProduceWildBrocFlower
   maxCount: 5
 
 - type: stack
-  id: N14WildCabbage
+  id: F14WildCabbage
   name: misfits-kit-wild-cabbage
   icon: { sprite: Nuclear14/Objects/Specific/Hydroponics/maize.rsi, state: produce }
-  spawn: N14FloraProduceWildCabbage
+  spawn: F14FloraProduceWildCabbage
   maxCount: 3
 
 - type: stack
-  id: N14BarrelCactusFruit
+  id: F14BarrelCactusFruit
   name: misfits-kit-barrel-cactus-fruit
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: BarrelCactusFruit }
-  spawn: N14FloraProduceWildBarrelCactusFruit
+  spawn: F14FloraProduceWildBarrelCactusFruit
   maxCount: 5
 
 - type: stack
-  id: N14WildCarrot
+  id: F14WildCarrot
   name: misfits-kit-wild-carrot
   icon: { sprite: Nuclear14/Objects/Specific/Hydroponics/carrot.rsi, state: produce }
-  spawn: N14FloraProduceWildCarrot
+  spawn: F14FloraProduceWildCarrot
   maxCount: 5
 
 - type: stack
-  id: N14CaveFungus
+  id: F14CaveFungus
   name: misfits-kit-wild-cave-fungus
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: CaveFungus }
-  spawn: N14FloraProduceWildCaveFungus
+  spawn: F14FloraProduceWildCaveFungus
   maxCount: 5
 
 - type: stack
-  id: N14CaveFungusRad
+  id: F14CaveFungusRad
   name: misfits-kit-irradiated-cave-fungus
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: CaveFungusRad }
-  spawn: N14FloraProduceWildCaveFungusRad
+  spawn: F14FloraProduceWildCaveFungusRad
   maxCount: 5
 
 - type: stack
-  id: N14CoyoteTobacco
+  id: F14CoyoteTobacco
   name: misfits-kit-coyote-tobacco-leaves
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: CoyoteTobacco }
-  spawn: N14FloraProduceWildCoyoteTobacco
+  spawn: F14FloraProduceWildCoyoteTobacco
   maxCount: 5
 
 - type: stack
-  id: N14DaturaFlower
+  id: F14DaturaFlower
   name: misfits-kit-datura-flower
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: Datura }
-  spawn: N14FloraProduceWildDaturaFlower
+  spawn: F14FloraProduceWildDaturaFlower
   maxCount: 5
 
 - type: stack
-  id: N14WildGlowpepper
+  id: F14WildGlowpepper
   name: misfits-kit-wild-glowpepper
   icon: { sprite: Nuclear14/Objects/Specific/Hydroponics/jalapeno.rsi, state: produce } #another potential sprite change -Hazel
-  spawn: N14FloraProduceWildGlowpepper
+  spawn: F14FloraProduceWildGlowpepper
   maxCount: 5
 
 - type: stack
-  id: N14WildMaize
+  id: F14WildMaize
   name: misfits-kit-wild-maize
   icon: { sprite: Nuclear14/Objects/Specific/Hydroponics/maize.rsi, state: produce }
-  spawn: N14FloraProduceWildMaize
+  spawn: F14FloraProduceWildMaize
   maxCount: 4
 
 - type: stack
-  id: N14MesquitePods
+  id: F14MesquitePods
   name: misfits-kit-mesquite-pods
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: MesquitePod }
-  spawn: N14FloraProduceWildMesquitePods
+  spawn: F14FloraProduceWildMesquitePods
   maxCount: 5
 
 - type: stack
-  id: N14Mutfruit
+  id: F14Mutfruit
   name: misfits-kit-mutfruit
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: Mutfruit }
-  spawn: N14FloraProduceWildMutfruit
+  spawn: F14FloraProduceWildMutfruit
   maxCount: 2
 
 - type: stack
-  id: N14Nettles
+  id: F14Nettles
   name: misfits-kit-nettles
   icon: { sprite: Objects/Specific/Hydroponics/nettle.rsi, state: produce }
-  spawn: N14FloraProduceWildNettle
+  spawn: F14FloraProduceWildNettle
   maxCount: 5
 
 - type: stack
-  id: N14WildOnion
+  id: F14WildOnion
   name: misfits-kit-wild-onion
   icon: { sprite: Nuclear14/Objects/Specific/Hydroponics/onion.rsi, state: produce }
-  spawn: N14FloraProduceWildOnion
+  spawn: F14FloraProduceWildOnion
   maxCount: 3
 
 - type: stack
-  id: N14PinyonNuts
+  id: F14PinyonNuts
   name: misfits-kit-pinyon-nuts
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: PinyonNuts }
-  spawn: N14FloraProduceWildPinyonNuts
+  spawn: F14FloraProduceWildPinyonNuts
   maxCount: 5
 
 - type: stack
-  id: N14PricklyPear
+  id: F14PricklyPear
   name: misfits-kit-prickly-pear-fruit
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: PricklyPear }
-  spawn: N14FloraProduceWildPricklyPearFruit
+  spawn: F14FloraProduceWildPricklyPearFruit
   maxCount: 5
 
 - type: stack
-  id: N14WildStarlightBerries
+  id: F14WildStarlightBerries
   name: misfits-kit-wild-starlight-berries
   icon: { sprite: Nuclear14/Objects/Specific/Hydroponics/starlight.rsi, state: produce }
-  spawn: N14FloraProduceWildStarlightBerries
+  spawn: F14FloraProduceWildStarlightBerries
   maxCount: 5
 
 - type: stack
-  id: N14WildTarberries
+  id: F14WildTarberries
   name: misfits-kit-wild-tarberries
   icon: { sprite: Nuclear14/Objects/Specific/Hydroponics/tarberry.rsi, state: produce }
-  spawn: N14FloraProduceWildTarberries
+  spawn: F14FloraProduceWildTarberries
   maxCount: 5
 
 - type: stack
-  id: N14WildTato
+  id: F14WildTato
   name: misfits-kit-wild-tato
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: Tato }
-  spawn: N14FloraProduceWildTato
+  spawn: F14FloraProduceWildTato
   maxCount: 3
 
 - type: stack
-  id: N14WildWhiteHorsenettle
+  id: F14WildWhiteHorsenettle
   name: misfits-kit-white-horsenettle-flower
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: WhiteHorsenettle }
-  spawn: N14FloraProduceWildWhiteHorsenettle
+  spawn: F14FloraProduceWildWhiteHorsenettle
   maxCount: 5
 
 - type: stack
-  id: N14XanderRoot
+  id: F14XanderRoot
   name: misfits-kit-xander-root
   icon: { sprite: Nuclear14/Objects/Consumable/Flora/wastelandflora.rsi, state: xander_root }
-  spawn: N14FloraProduceWildXander
+  spawn: F14FloraProduceWildXander
   maxCount: 5
 
 # Smokeables
 
 - type: stack
-  id: N14RollingPaper
+  id: F14RollingPaper
   name: misfits-kit-rolling-paper
   icon: { sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi, state: rollie_paper }
-  spawn: N14RollingPaper1
+  spawn: F14RollingPaper1
   maxCount: 5

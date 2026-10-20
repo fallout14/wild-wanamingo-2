@@ -1,12 +1,12 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Crafting/topical_variants.yml
 
 - type: entity
-  parent: MisfitsSnakebiteTourniquet
-  id: MisfitsSnakebiteTourniquet10
+  parent: F14SnakebiteTourniquet
+  id: F14SnakebiteTourniquet10
   suffix: Full
   components:
   - type: Stack
-    stackType: MisfitsSnakebiteTourniquet
+    stackType: F14SnakebiteTourniquet
     count: 10
 
 # ============================================================================
@@ -14,12 +14,12 @@
 # ============================================================================
 
 - type: entity
-  parent: MisfitsHealingSalve
-  id: MisfitsHealingSalve10
+  parent: F14HealingSalve
+  id: F14HealingSalve10
   suffix: Full
   components:
   - type: Stack
-    stackType: MisfitsHealingSalve
+    stackType: F14HealingSalve
     count: 10
 
 # ============================================================================
@@ -27,12 +27,12 @@
 # ============================================================================
 
 - type: entity
-  parent: MisfitsHerbalAnodyne
-  id: MisfitsHerbalAnodyne10
+  parent: F14HerbalAnodyne
+  id: F14HerbalAnodyne10
   suffix: Full
   components:
   - type: Stack
-    stackType: MisfitsHerbalAnodyne
+    stackType: F14HerbalAnodyne
     count: 10
 
 # ============================================================================
@@ -40,10 +40,10 @@
 # ============================================================================
 
 - type: entity
-  parent: MisfitsHerbalAntimicrobial
-  id: MisfitsHerbalAntimicrobial10
+  parent: F14HerbalAntimicrobial
+  id: F14HerbalAntimicrobial10
   suffix: Full
   components:
   - type: Stack
-    stackType: MisfitsHerbalAntimicrobial
+    stackType: F14HerbalAntimicrobial
     count: 10

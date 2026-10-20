@@ -1,12 +1,12 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/MedLoot/Tier2Meds/Tier2MedRecipeTables.yml
 
 - type: entityTable
-  id: MisfitsM14MedsConsumableLootTier2_UncommonAntidoteRecipeBasket
+  id: F14MedsConsumableLootTier2UncommonAntidoteRecipeBasket
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FloraProduceWildTarberries
+      id: F14FloraProduceWildTarberries
       weight: 10
     - !type:EntSelector
-      id: N14MaterialRadscorpionTail
+      id: F14MaterialRadscorpionTail
       weight: 10

@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Legion/principes_pa.yml
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsClothingOuterPowerArmorLegionPrinceps
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterPowerArmorLegionPrinceps
   name: Principes Armor
   description: Captured heavy plate reworked into veteran Principes armor. Slow and clunking, this suit is difficult to move but very protective for its stripped nature. It comes in the livery of a Veteran.
   components:
@@ -41,9 +41,9 @@
     blockUnequipWhenAttached: true
     replaceCurrentClothing: false
     clothingPrototypes:
-      head: MisfitsLegionPrincipesHelmet
-      gloves: N14ClothingPAGauntlets
-      shoes: N14ClothingPABoots
+      head: F14LegionPrincipesHelmet
+      gloves: F14ClothingPAGauntlets
+      shoes: F14ClothingPABoots
   - type: Armor
     modifiers:
       coefficients:
@@ -66,7 +66,7 @@
     spread: 90
   - type: EmitsSoundOnMove # Corvax-Change
     soundCollection:
-      collection: N14FootstepPowerArmor
+      collection: F14FootstepPowerArmor
       params:
         volume: -6
     requiresWorn: true
@@ -77,8 +77,8 @@
     requiredSlot: BELT
 
 - type: entity
-  parent: CorvaxClothingHeadHatCenturionHelmet
-  id: MisfitsLegionPrincipesHelmet
+  parent: F14ClothingHeadHatCenturionHelmet
+  id: F14LegionPrincipesHelmet
   name: Principes Helmet
   description: A heavily butchered T-60 helmet, stripped to its base components and decorated in the colors of a Veteran decanus.
   components:

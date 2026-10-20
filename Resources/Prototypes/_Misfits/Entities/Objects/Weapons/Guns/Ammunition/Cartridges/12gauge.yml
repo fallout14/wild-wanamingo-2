@@ -1,20 +1,20 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/Cartridges/12gauge.yml
 
 - type: entity
-  id: MisfitsShellShotgun12Beanbag
+  id: F14ShellShotgun12Beanbag
   name: beanbag shell (12 gauge)
-  parent: N14ShellShotgun12
+  parent: F14ShellShotgun12
   components:
   - type: Tag
     tags:
     - Cartridge
-    - N14ShellShotgun12
+    - F14ShellShotgun12
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
     layers:
       - state: beanbag
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
-    proto: MisfitsPelletShotgun12Beanbag
+    proto: F14PelletShotgun12Beanbag
   - type: SpentAmmoVisuals
     state: beanbag

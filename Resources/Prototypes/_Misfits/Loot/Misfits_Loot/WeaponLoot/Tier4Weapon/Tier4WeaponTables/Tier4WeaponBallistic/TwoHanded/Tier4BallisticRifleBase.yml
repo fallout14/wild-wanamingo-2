@@ -1,10 +1,10 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier4Weapon/Tier4WeaponTables/Tier4WeaponBallistic/TwoHanded/Tier4BallisticRifleBase.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_GunsBulletRifle
+  id: F14WeaponLootTier4GunsBulletRifle
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier4_GunsBulletRifleAuto
+          tableId: F14WeaponLootTier4GunsBulletRifleAuto
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier4_GunsBulletRifleSemi
+          tableId: F14WeaponLootTier4GunsBulletRifleSemi

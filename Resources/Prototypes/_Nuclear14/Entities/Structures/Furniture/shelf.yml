@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Furniture/shelf.yml
 
 - type: entity
-  id: N14BookshelfDirty
+  id: F14BookshelfDirty
   parent: BaseStructure
   name: "bookshelf"
   description: A dusty old shelf.
@@ -57,8 +57,8 @@
   - type: InteractionOutline
 
 - type: entity
-  id: N14Bookshelf
-  parent: N14BookshelfDirty
+  id: F14BookshelfRandom
+  parent: F14BookshelfDirty
   name: "bookshelf"
   description: Dusty old books.
   components:
@@ -84,8 +84,8 @@
           book-5: ""
 
 - type: entity
-  id: N14BookshelfDestroyed
-  parent: N14BookshelfDirty
+  id: F14BookshelfDestroyed
+  parent: F14BookshelfDirty
   name: "bookshelf"
   description: A broken down bookcase, it can still stubbornly do its job.
   components:
@@ -97,7 +97,7 @@
 # Normal Shelves
 
 - type: entity
-  id: N14ShelfWood1
+  id: F14ShelfWood1
   parent: BaseStructure
   name: wooden shelf
   description: A dusty old shelf.
@@ -107,7 +107,7 @@
     netsync: false
     state: shelf_wood
   - type: Construction
-    graph: MisfitsShelvesWood
+    graph: F14ShelvesWood
     node: ShelfWood
   - type: Damageable
     damageModifierSet: Wood
@@ -162,8 +162,8 @@
   - type: InteractionOutline
 
 - type: entity
-  parent: [ N14ShelfWood1, N14StorageFillDomestic ]
-  id: N14LootShelfWood1
+  parent: [ F14ShelfWood1, F14StorageFillDomestic ]
+  id: F14LootShelfWood1
   suffix: Loot, RandomDomestic
 
 # Tall
@@ -174,8 +174,8 @@
     - 0,0,9,9
 
 - type: entity
-  parent: N14ShelfWood1
-  id: N14ShelfWood
+  parent: F14ShelfWood1
+  id: F14ShelfWoodTall
   name: tall wooden shelf
   components:
   - type: Sprite
@@ -184,7 +184,7 @@
     noRot: false
     offset: 0.5, 0.5
   - type: Construction
-    graph: MisfitsShelvesWood
+    graph: F14ShelvesWood
     node: ShelfWoodTall
   - type: Fixtures
     fixtures:
@@ -203,24 +203,24 @@
     noRot: false
 
 - type: entity
-  parent: N14ShelfWood
-  id: N14ShelfWoodAlt
+  parent: F14ShelfWoodTall
+  id: F14ShelfWoodTallAlt
   suffix: alt
   components:
   - type: Sprite
     state: wood_shelf-alt
 
 - type: entity
-  parent: N14ShelfWood
-  id: N14ShelfWoodBig
+  parent: F14ShelfWoodTall
+  id: F14ShelfWoodBig
   name: big wooden shelf
   components:
   - type: Sprite
     state: wood_shelf_big
 
 - type: entity
-  parent: N14ShelfWood
-  id: N14ShelfWoodShowcase
+  parent: F14ShelfWoodTall
+  id: F14ShelfWoodShowcase
   name: wooden showcase shelves
   description: A wooden stand for showing things off.
   components:
@@ -229,7 +229,7 @@
     snapCardinals: true
     state: showcase
   - type: Construction
-    graph: MisfitsShelvesWood
+    graph: F14ShelvesWood
     node: ShelfWoodShowcase
   - type: Fixtures
     fixtures:
@@ -245,15 +245,15 @@
         - LowImpassable
 
 - type: entity
-  parent: N14ShelfWood
-  id: N14ShelfWoodStand
+  parent: F14ShelfWoodTall
+  id: F14ShelfWoodStand
   name: wooden stand
   description: A stand, not a sit. Missing a TV.
   components:
   - type: Sprite
     state: stand_wood
   - type: Construction
-    graph: MisfitsShelvesWood
+    graph: F14ShelvesWood
     node: ShelfWoodStand
   - type: Fixtures
     fixtures:
@@ -269,15 +269,15 @@
         - LowImpassable
 
 - type: entity
-  parent: N14ShelfWood
-  id: N14ShelfWoodStandSmall
+  parent: F14ShelfWoodTall
+  id: F14ShelfWoodStandSmall
   name: small wooden stand
   description: A small stand. For small people.
   components:
   - type: Sprite
     state: stand_wood_small
   - type: Construction
-    graph: MisfitsShelvesWood
+    graph: F14ShelvesWood
     node: ShelfWoodStandSmall
   - type: Fixtures
     fixtures:
@@ -293,22 +293,22 @@
         - LowImpassable
 
 - type: entity
-  parent: N14ShelfWood
-  id: N14ShelfWoodClothesRack
+  parent: F14ShelfWoodTall
+  id: F14ShelfWoodClothesRack
   name: clothes rack
   description: A wooden rack for storing clothes.
   components:
   - type: Sprite
     state: clothing_rack
   - type: Construction
-    graph: MisfitsShelvesWood
+    graph: F14ShelvesWood
     node: ShelfWoodClothesRack
 
 # Metal Shelves
 
 - type: entity
-  parent: N14ShelfWood
-  id: N14ShelfMetal
+  parent: F14ShelfWoodTall
+  id: F14ShelfMetalBase
   name: metal shelf
   description: A cold metal shelf.
   components:
@@ -345,8 +345,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14ShelfMetal
-  id: N14ShelfMetalShop
+  parent: F14ShelfMetalBase
+  id: F14ShelfMetalShop
   name: shop shelf
   description: A metal shelf for displaying goods.
   components:
@@ -367,8 +367,8 @@
         - LowImpassable
 
 - type: entity
-  parent: N14ShelfMetal
-  id: N14ShelfMetalMeds
+  parent: F14ShelfMetalBase
+  id: F14ShelfMetalMeds
   name: medical shelf
   description: A metal shelf for storing meds.
   components:

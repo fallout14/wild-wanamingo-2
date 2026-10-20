@@ -13,7 +13,7 @@ namespace Content.Shared._Misfits.Weapons.Ranged.Flamer;
 public sealed partial class FlamerShotComponent : Component
 {
     [DataField]
-    public EntProtoId FireTilePrototype = "MisfitsTileFire";
+    public EntProtoId FireTilePrototype = "F14TileFire";
 
     [DataField]
     public EntProtoId? ProjectileProto;

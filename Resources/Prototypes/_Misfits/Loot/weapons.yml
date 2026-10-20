@@ -3,7 +3,7 @@
 - type: entity
   name: Weapon Loot Spawner
   suffix: Tiered
-  id: MisfitsM14WeaponLootSpawner
+  id: F14WeaponLootSpawner
   parent: MarkerBase
   components:
   - type: Sprite
@@ -13,7 +13,7 @@
       state: icon
   - type: EntityTableSpawner
     table: !type:NestedSelector
-      tableId: MisfitsM14WeaponLootAllTiers
+      tableId: F14WeaponLootAllTiers
       prob: 0.75
     # Keep the MarkerBase after its one map-init roll so mappers can reveal and
     # delete it with Show Spawns, like the existing N14 map spawners.
@@ -25,21 +25,21 @@
 # prototypes and stock SS14 weapons are excluded from these world-loot tables.
 
 - type: entityTable
-  id: MisfitsM14WeaponLootAllTiers
+  id: F14WeaponLootAllTiers
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier1
+      tableId: F14WeaponLootTier1
       weight: 60
     - !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier2
+      tableId: F14WeaponLootTier2
       weight: 25
     - !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier3
+      tableId: F14WeaponLootTier3
       weight: 10
     - !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier4
+      tableId: F14WeaponLootTier4
       weight: 4
     - !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier5
+      tableId: F14WeaponLootTier5
       weight: 1

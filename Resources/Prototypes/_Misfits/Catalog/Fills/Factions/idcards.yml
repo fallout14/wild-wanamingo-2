@@ -3,18 +3,18 @@
 - type: entity
   name: ID card box
   parent: BoxCardboard
-  id: MisfitsBoxIDVault
+  id: F14BoxIDVault
   description: A box of spare ID cards.
   components:
   - type: StorageFill
     contents:
-    - id: N14IDCardVault
+    - id: F14IDCardVault
       amount: 2
-    - id: N14IDCardVaultDoctor
+    - id: F14IDCardVaultDoctor
       amount: 2
-    - id: N14IDCardVaultEngineer
+    - id: F14IDCardVaultEngineer
       amount: 2
-    - id: N14IDCardVaultSecurity
+    - id: F14IDCardVaultSecurity
       amount: 2
   - type: Sprite
     layers:
@@ -27,14 +27,14 @@
 - type: entity
   name: medallion box
   parent: BoxCardboard
-  id: MisfitsBoxIDLegion
+  id: F14BoxIDLegion
   description: A box of spare medallions.
   components:
   - type: StorageFill
     contents:
-    - id: CorvaxIDLegionaryMedalLegionnaireRecruit
+    - id: F14IDLegionaryMedalLegionnaireRecruit
       amount: 2
-    - id: CorvaxIDLegionaryMedalSilver
+    - id: F14IDLegionaryMedalSilver
       amount: 2
   - type: Sprite
     layers:
@@ -44,18 +44,18 @@
 - type: entity
   name: dog tag box
   parent: BoxCardboard
-  id: MisfitsBoxIDNCR
+  id: F14BoxIDNCR
   description: A box of spare ID cards.
   components:
   - type: StorageFill
     contents:
-    - id: N14IDNCRDogtag
+    - id: F14IDNCRDogtag
       amount: 2
-    - id: MisfitsIDNCRDogtagSoldier
+    - id: F14IDNCRDogtagSoldier
       amount: 2
-    - id: N14IDNCRDogtagWS
+    - id: F14IDNCRDogtagWS
       amount: 2
-    - id: N14IDNCRDogtagDoctor
+    - id: F14IDNCRDogtagDoctor
       amount: 2
   - type: Sprite
     layers:
@@ -68,16 +68,16 @@
 - type: entity
   name: followers ID card box
   parent: BoxCardboard
-  id: MisfitsBoxIDFollowers
+  id: F14BoxIDFollowers
   description: A box of spare ID cards.
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsIDFollowerVolunteer
+    - id: F14IDFollowerVolunteer
       amount: 4
-    - id: MisfitsIDFollowerGuard
+    - id: F14IDFollowerGuard
       amount: 2
-    - id: MisfitsIDFollowerDoctor
+    - id: F14IDFollowerDoctor
       amount: 2
   - type: Sprite
     layers:
@@ -90,20 +90,20 @@
 - type: entity
   name: holotags box
   parent: BoxCardboard
-  id: MisfitsBoxIDBrotherhoodOfSteel
+  id: F14BoxIDBrotherhoodOfSteel
   description: A box of spare holotags.
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsIDBrotherhoodOfSteelHolotagInitiate
+    - id: F14IDBrotherhoodOfSteelHolotagInitiate
       amount: 3
-    - id: MisfitsIDBrotherhoodOfSteelHolotagSquire
+    - id: F14IDBrotherhoodOfSteelHolotagSquire
       amount: 2
-    - id: MisfitsIDBrotherhoodOfSteelHolotagScribe
+    - id: F14IDBrotherhoodOfSteelHolotagScribe
       amount: 1
-    - id: MisfitsIDBrotherhoodOfSteelHolotagKnight
+    - id: F14IDBrotherhoodOfSteelHolotagKnight
       amount: 1
-    - id: MisfitsIDBrotherhoodOfSteelHolotagPaladin
+    - id: F14IDBrotherhoodOfSteelHolotagPaladin
       amount: 1
   - type: Sprite
     layers:
@@ -116,26 +116,26 @@
 - type: entity
   name: passport box
   parent: BoxCardboard
-  id: MisfitsBoxIDTown
+  id: F14BoxIDTown
   description: A box of spare passports.
   components:
   - type: StorageFill
     contents:
-    - id: N14IDShopkeeperTown
+    - id: F14IDShopkeeperTown
       amount: 1
-    - id: MisfitsIDShopkeeperHelperTown
+    - id: F14IDShopkeeperHelperTown
       amount: 1
-    - id: N14IDPassportWasteFarmer
+    - id: F14IDPassportWasteFarmer
       amount: 1
-    - id: N14IDBartenderTown
+    - id: F14IDBartenderTown
       amount: 1
-    - id: N14IDPassportWasteChaplain
+    - id: F14IDPassportWasteChaplain
       amount: 1
-    - id: N14IDPassportTownMechanic
+    - id: F14IDPassportTownMechanic
       amount: 1
-    - id: N14IDReporterTown
+    - id: F14IDReporterTown
       amount: 1
-    - id: N14IDBadgeTownDeputy
+    - id: F14IDBadgeTownDeputy
       amount: 1
   - type: Sprite
     layers:
@@ -148,16 +148,16 @@
 - type: entity
   name: pendant box
   parent: BoxCardboard
-  id: MisfitsBoxIDTribe
+  id: F14BoxIDTribe
   description: A box of spare pendants.
   components:
   - type: StorageFill
     contents:
-    - id: N14IDTribeBulletsPendant
+    - id: F14IDTribeBulletsPendant
       amount: 4
-    - id: N14IDTribeSawbonePendant
+    - id: F14IDTribeSawbonePendant
       amount: 2
-    - id: N14IDTribeEnforcerPendant
+    - id: F14IDTribeEnforcerPendant
       amount: 2
   - type: Sprite
     layers:

@@ -2,7 +2,7 @@
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: MisfitsEnclavePowerArmorHelmet
+  id: F14EnclavePowerArmorHelmet
   # #Misfits Change - Renamed to APA MK I (removed 'Experimental' prefix per rebalance)
   name: APA MK I Power Armor Helmet
   description: A matching helmet to the U.S. Army's supermutant power armor.
@@ -75,29 +75,29 @@
     tags:
     - HidesHair
     - HidesBeard
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
   # #Misfits Change - Enclave tactical HUD
   # End Misfits Change
 
 # #Misfits Add - BOS-issue T-45 helmet with Brotherhood tactical HUD.
-# Used by N14ClothingOuterPowerArmorT45 so BOS initiates/knights can access the shared map feed.
+# Used by F14ClothingOuterPowerArmorT45 so BOS initiates/knights can access the shared map feed.
 # Raiders intentionally keep the plain T45 helmet (no map) via their own ToggleableClothing override.
 
 - type: entity
-  parent: N14ClothingHeadHelmetPowerArmorT45
-  id: MisfitsClothingHeadHelmetPowerArmorT45BOS
+  parent: F14ClothingHeadHelmetPowerArmorT45
+  id: F14ClothingHeadHelmetPowerArmorT45BOS
   name: t-45 power armor helmet
   description: An old helmet used with T-45 Power Armor suits. The Brotherhood of Steel keeps a tactical map feed active inside the visor.
 
 - type: entity
-  parent: N14ClothingHeadHelmetPowerArmorT60
-  id: MisfitsClothingHeadHelmetPowerArmorT60BOS
+  parent: F14ClothingHeadHelmetPowerArmorT60
+  id: F14ClothingHeadHelmetPowerArmorT60BOS
   name: T-60 Power Armor Helmet
   description: An old helmet used with T-60 Power Armor suits, with a tactical map feed built into it. These helmets gazed down on hungry domestic protestors more than foreign enemy combatants.
 
 - type: entity
-  parent: N14ClothingHeadHelmetPowerArmorT45
-  id: MisfitsClothingHeadHelmetPowerArmorMidwestSilver
+  parent: F14ClothingHeadHelmetPowerArmorT45
+  id: F14ClothingHeadHelmetPowerArmorMidwestSilver
   name: BoS Power Armor Helmet
   description: A unknown model of Power Armor helmet adopted by the Brotherhood of Steel chapter.
   components:

@@ -2,11 +2,11 @@
 # Resources/Prototypes/_Nuclear14/Entities/Clothing/Hands/base_butcherable_leather_gloves.yml
 
 - type: entity
-  id: N14ClothingHandsButcherableLeather
+  id: F14ClothingHandsButcherableLeather
   parent: ClothingHandsButcherable
   abstract: true
   components:
   - type: Butcherable
     spawned:
-    - id: N14MaterialLeather1
+    - id: F14MaterialLeather1
       amount: 1

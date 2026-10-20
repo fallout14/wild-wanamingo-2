@@ -4,8 +4,8 @@
 - type: entity
   name: wasteland plant
   abstract: true
-  id: N14MobBaseHostilePlant
-  parent: N14MobBaseHostile
+  id: F14MobBaseHostilePlant
+  parent: F14MobBaseHostile
   description: A mutated plant. You wonder where it came from, a vault perhaps?
   components:
   - type: Damageable
@@ -18,7 +18,7 @@
     accent: genericAggressive
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadRaw #change to something else
+    - id: F14FoodMeatRadRaw #change to something else
       amount: 1
   - type: Fixtures
     fixtures:
@@ -34,8 +34,8 @@
 
 - type: entity
   name: spore plant
-  parent: N14MobBaseHostilePlant
-  id: N14MobSporeplant
+  parent: F14MobBaseHostilePlant
+  id: F14MobSporeplant
   description: A mutated venus fly trap. Who knew they got this big?
   components:
   - type: Sprite

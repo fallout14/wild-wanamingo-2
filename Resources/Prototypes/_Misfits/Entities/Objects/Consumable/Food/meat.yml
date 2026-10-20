@@ -2,8 +2,8 @@
 
 - type: entity
   name: raw human meat
-  parent: [N14FoodMeatBase, BaseSlicingRefinableFood]
-  id: MisfitsFoodMeatHuman
+  parent: [F14FoodMeatBase, BaseSlicingRefinableFood]
+  id: F14FoodMeatHuman
   description: Whoever this came from had a really bad day.
   components:
   - type: Tag
@@ -26,17 +26,17 @@
     - people
   - type: ToolRefinable
     refineResult:
-    - id: MisfitsFoodMeatHumanCutlet
+    - id: F14FoodMeatHumanCutlet
       amount: 3
   - type: Construction
-    graph: MisfitsHumanMeatSteak # misfits add; human meat steaks :)
+    graph: F14HumanMeatSteak # misfits add; human meat steaks :)
     node: start
     defaultTarget: human meat steak
 
 - type: entity
   name: raw supermutant meat
-  parent: [N14FoodMeatBase, BaseSlicingRefinableFood]
-  id: MisfitsFoodMeatSupermutant
+  parent: [F14FoodMeatBase, BaseSlicingRefinableFood]
+  id: F14FoodMeatSupermutant
   description: You'd have to be brave or stupid to eat this.
   components:
   - type: Tag
@@ -51,7 +51,7 @@
       reagents:
       - ReagentId: Nutriment
         Quantity: 3
-      - ReagentId: N14UncookedAnimalProteinsRad
+      - ReagentId: F14UncookedAnimalProteinsRad
         Quantity: 9
   - type: FlavorProfile # tastes meaty, and like people...
     flavors:
@@ -59,21 +59,21 @@
     - people
   - type: ToolRefinable
     refineResult:
-    - id: MisfitsFoodMeatSupermutantCutlet
+    - id: F14FoodMeatSupermutantCutlet
       amount: 3
   - type: Construction
-    graph: MisfitsSupermutantMeatSteak # misfits add; supermutant steaks :)
+    graph: F14SupermutantMeatSteak # misfits add; supermutant steaks :)
     node: start
     defaultTarget: supermutant meat steak
 
 - type: entity
   parent: FoodMeatFish
-  id: MisfitsFoodMeatFish
+  id: F14FoodMeatFish
 
 - type: entity
   name: raw human cutlet
-  parent: N14FoodMeatBase
-  id: MisfitsFoodMeatHumanCutlet
+  parent: F14FoodMeatBase
+  id: F14FoodMeatHumanCutlet
   description: A raw meat cutlet from some unlucky bastard.
   components:
   - type: Tag
@@ -104,14 +104,14 @@
     # don't want meat giving off ammonia only bodies
     molsPerSecondPerUnitMass: 0
   - type: Construction
-    graph: MisfitsHumanMeatCutlet
+    graph: F14HumanMeatCutlet
     node: start
     defaultTarget: human meat cutlet
 
 - type: entity
   name: raw supermutant cutlet
-  parent: N14FoodMeatBase
-  id: MisfitsFoodMeatSupermutantCutlet
+  parent: F14FoodMeatBase
+  id: F14FoodMeatSupermutantCutlet
   description: A tough cutlet from a Supermutant, feels leathery...
   components:
   - type: Tag
@@ -131,7 +131,7 @@
       reagents:
       - ReagentId: Nutriment
         Quantity: 1
-      - ReagentId: N14UncookedAnimalProteinsRad
+      - ReagentId: F14UncookedAnimalProteinsRad
         Quantity: 3
   - type: Temperature
   - type: InternalTemperature
@@ -142,7 +142,7 @@
     # don't want meat giving off ammonia only bodies
     molsPerSecondPerUnitMass: 0
   - type: Construction
-    graph: MisfitsSupermutantMeatCutlet
+    graph: F14SupermutantMeatCutlet
     node: start
     defaultTarget: supermutant meat cutlet
 
@@ -150,8 +150,8 @@
 
 - type: entity
   name: cooked human cutlet
-  parent: N14FoodMeatBase
-  id: MisfitsFoodMeatHumanCutletCooked
+  parent: F14FoodMeatBase
+  id: F14FoodMeatHumanCutletCooked
   description: Bacon! Wait, not quite...
   components:
   - type: Tag
@@ -176,7 +176,7 @@
       - ReagentId: Protein
         Quantity: 2
   - type: Construction
-    graph: MisfitsHumanMeatCutlet
+    graph: F14HumanMeatCutlet
     node: human meat cutlet
     defaultTarget: null
   - type: StaticPrice
@@ -184,8 +184,8 @@
 
 - type: entity
   name: cooked human meat
-  parent: N14FoodMeatBase
-  id: MisfitsFoodMeatHumanCooked
+  parent: F14FoodMeatBase
+  id: F14FoodMeatHumanCooked
   description: Good with some wine, if you have no moral compass.
   components:
   - type: Tag
@@ -196,7 +196,7 @@
     sprite: Objects/Consumable/Food/meat.rsi
     state: plain-cooked
   - type: Construction
-    graph: MisfitsHumanMeatSteak
+    graph: F14HumanMeatSteak
     node: human meat steak
     defaultTarget: null
   - type: FlavorProfile # tastes meaty, oily, and like people
@@ -217,8 +217,8 @@
 
 - type: entity
   name: cooked supermutant cutlet
-  parent: N14FoodMeatBase
-  id: MisfitsFoodMeatSupermutantCutletCooked
+  parent: F14FoodMeatBase
+  id: F14FoodMeatSupermutantCutletCooked
   description: Arguably closer to leather than meat after being cooked.
   components:
   - type: Tag
@@ -242,7 +242,7 @@
       - ReagentId: Protein
         Quantity: 3
   - type: Construction
-    graph: MisfitsSupermutantMeatCutlet
+    graph: F14SupermutantMeatCutlet
     node: supermutant meat cutlet
     defaultTarget: null
   - type: StaticPrice
@@ -250,8 +250,8 @@
 
 - type: entity
   name: cooked supermutant meat
-  parent: N14FoodMeatBase
-  id: MisfitsFoodMeatSupermutantCooked
+  parent: F14FoodMeatBase
+  id: F14FoodMeatSupermutantCooked
   description: It's super meat, boy!
   components:
   - type: Tag
@@ -262,7 +262,7 @@
     sprite: Misfits/Objects/Consumable/Food/Meat/supermutant.rsi
     state: supermutantmeat-cooked
   - type: Construction
-    graph: MisfitsSupermutantMeatSteak
+    graph: F14SupermutantMeatSteak
     node: supermutant meat steak
     defaultTarget: null
   - type: FlavorProfile # tastes meaty, and like people. supermutants are a lean meat! no fat!

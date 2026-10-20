@@ -3,11 +3,11 @@
 # restrictions aren't species fields in Wizden (they come back with jobs/whitelisting); size is set on the mob sprite.
 
 - type: species
-  id: MisfitsSuperMutant
+  id: F14SuperMutant
   name: species-name-supermutant
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: MisfitsMobSuperMutant
+  prototype: F14MobSuperMutant
   dollPrototype: AppearanceSuperMutant
   skinColoration: Hues
   defaultSkinTone: "#6b8e23"
@@ -15,19 +15,19 @@
   - Male
   - Female
   defaultSoundsBySex: # male, female, unsexed
-  - MisfitsSuperMutantEmotes
-  - MisfitsSuperMutantEmotes
-  - MisfitsSuperMutantEmotes
+  - F14SuperMutantEmotes
+  - F14SuperMutantEmotes
+  - F14SuperMutantEmotes
   voices:
-  - MisfitsSuperMutantEmotes
+  - F14SuperMutantEmotes
 
 # Super mutants exposed to Stealth Boys for years: slate blue-purple skin.
 - type: species
-  id: MisfitsNightkin
+  id: F14Nightkin
   name: species-name-nightkin
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: MisfitsMobNightkinPlayer
+  prototype: F14MobNightkinPlayer
   dollPrototype: AppearanceNightkin
   skinColoration: Hues
   defaultSkinTone: "#4A5878"
@@ -35,8 +35,8 @@
   - Male
   - Female
   defaultSoundsBySex: # male, female, unsexed
-  - MisfitsSuperMutantEmotes
-  - MisfitsSuperMutantEmotes
-  - MisfitsSuperMutantEmotes
+  - F14SuperMutantEmotes
+  - F14SuperMutantEmotes
+  - F14SuperMutantEmotes
   voices:
-  - MisfitsSuperMutantEmotes
+  - F14SuperMutantEmotes

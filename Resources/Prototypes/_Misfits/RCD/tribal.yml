@@ -1,11 +1,11 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/RCD/tribal.yml
 
 - type: rcd
-  id: MisfitsRCDTribalLogWall
+  id: F14RCDTribalLogWall
   category: TribalShelter
   sprite: { sprite: Nuclear14/Structures/Walls/nc14/woodlognew.rsi, state: full }
   mode: ConstructObject
-  prototype: N14WallWoodLog
+  prototype: F14WallWoodLog
   cost: 4
   delay: 2
   collisionMask: FullTileMask
@@ -13,11 +13,11 @@
   fx: EffectRCDConstruct2
 
 - type: rcd
-  id: MisfitsRCDTribalWoodWall
+  id: F14RCDTribalWoodWall
   category: TribalShelter
   sprite: { sprite: Nuclear14/Structures/Walls/ms13/slanted/wood.rsi, state: full }
   mode: ConstructObject
-  prototype: N14WallWoodSlanted
+  prototype: F14WallWoodSlanted
   cost: 4
   delay: 2
   collisionMask: FullTileMask
@@ -25,11 +25,11 @@
   fx: EffectRCDConstruct2
 
 - type: rcd
-  id: MisfitsRCDTribalTallWoodWall
+  id: F14RCDTribalTallWoodWall
   category: TribalShelter
   sprite: { sprite: Nuclear14/Structures/Walls/ms13/tall/wood.rsi, state: full }
   mode: ConstructObject
-  prototype: N14WallWoodTall
+  prototype: F14WallWoodTall
   cost: 4
   delay: 2
   collisionMask: FullTileMask
@@ -37,11 +37,11 @@
   fx: EffectRCDConstruct2
 
 - type: rcd
-  id: MisfitsRCDTribalHalfWoodWall
+  id: F14RCDTribalHalfWoodWall
   category: TribalShelter
   sprite: { sprite: Nuclear14/Structures/Walls/ms13/half/wood.rsi, state: full }
   mode: ConstructObject
-  prototype: N14WallWoodHalf
+  prototype: F14WallWoodHalf
   cost: 2
   delay: 1
   collisionMask: FullTileMask
@@ -49,11 +49,11 @@
   fx: EffectRCDConstruct1
 
 - type: rcd
-  id: MisfitsRCDTribalAdobeWall
+  id: F14RCDTribalAdobeWall
   category: TribalShelter
   sprite: { sprite: Nuclear14/Structures/Walls/ms13/slanted/adobe.rsi, state: full }
   mode: ConstructObject
-  prototype: N14WallAdobeSlanted
+  prototype: F14WallAdobeSlanted
   cost: 4
   delay: 2
   collisionMask: FullTileMask
@@ -61,11 +61,11 @@
   fx: EffectRCDConstruct2
 
 - type: rcd
-  id: MisfitsRCDTribalMakeshiftDoor
+  id: F14RCDTribalMakeshiftDoor
   category: TribalShelter
   sprite: /Textures/Interface/Radial/RCD/airlock.png
   mode: ConstructObject
-  prototype: N14DoorMakeshift
+  prototype: F14DoorMakeshift
   cost: 4
   delay: 3
   collisionMask: FullTileMask
@@ -73,11 +73,11 @@
   fx: EffectRCDConstruct3
 
 - type: rcd
-  id: MisfitsRCDTribalWoodDoor
+  id: F14RCDTribalWoodDoor
   category: TribalShelter
   sprite: /Textures/Interface/Radial/RCD/airlock.png
   mode: ConstructObject
-  prototype: N14DoorWoodSlanted
+  prototype: F14DoorWoodSlanted
   cost: 4
   delay: 3
   collisionMask: FullTileMask
@@ -85,11 +85,11 @@
   fx: EffectRCDConstruct3
 
 - type: rcd
-  id: MisfitsRCDTribalLeatherTentWall
+  id: F14RCDTribalLeatherTentWall
   category: TribalShelter
   sprite: { sprite: Nuclear14/Structures/Walls/nc14/tents.rsi, state: leather_edge }
   mode: ConstructObject
-  prototype: N14TentLeatherWall
+  prototype: F14TentLeatherWall
   cost: 3
   delay: 2
   collisionMask: FullTileMask
@@ -97,11 +97,11 @@
   fx: EffectRCDConstruct2
 
 - type: rcd
-  id: MisfitsRCDTribalLeatherTentCorner
+  id: F14RCDTribalLeatherTentCorner
   category: TribalShelter
   sprite: { sprite: Nuclear14/Structures/Walls/nc14/tents.rsi, state: leather_corner }
   mode: ConstructObject
-  prototype: N14TentLeatherCorner
+  prototype: F14TentLeatherCorner
   cost: 2
   delay: 1
   collisionMask: FullTileMask
@@ -109,11 +109,11 @@
   fx: EffectRCDConstruct1
 
 - type: rcd
-  id: MisfitsRCDTribalClothTentWall
+  id: F14RCDTribalClothTentWall
   category: TribalShelter
   sprite: { sprite: Nuclear14/Structures/Walls/nc14/tents.rsi, state: cloth_edge }
   mode: ConstructObject
-  prototype: N14TentClothWall
+  prototype: F14TentClothWall
   cost: 3
   delay: 2
   collisionMask: FullTileMask
@@ -121,11 +121,11 @@
   fx: EffectRCDConstruct2
 
 - type: rcd
-  id: MisfitsRCDTribalClothTentCorner
+  id: F14RCDTribalClothTentCorner
   category: TribalShelter
   sprite: { sprite: Nuclear14/Structures/Walls/nc14/tents.rsi, state: cloth_corner }
   mode: ConstructObject
-  prototype: N14TentClothCorner
+  prototype: F14TentClothCorner
   cost: 2
   delay: 1
   collisionMask: FullTileMask
@@ -133,11 +133,11 @@
   fx: EffectRCDConstruct1
 
 - type: rcd
-  id: MisfitsRCDTribalLeatherTentFlap
+  id: F14RCDTribalLeatherTentFlap
   category: TribalShelter
   sprite: { sprite: Nuclear14/Structures/Doors/FalloutDoors/tentleather.rsi, state: closed }
   mode: ConstructObject
-  prototype: N14DoorTentLeatherflap
+  prototype: F14DoorTentLeatherflap
   cost: 3
   delay: 2
   collisionMask: FullTileMask
@@ -145,11 +145,11 @@
   fx: EffectRCDConstruct2
 
 - type: rcd
-  id: MisfitsRCDTribalClothTentFlap
+  id: F14RCDTribalClothTentFlap
   category: TribalShelter
   sprite: { sprite: Nuclear14/Structures/Doors/FalloutDoors/tentcloth.rsi, state: closed }
   mode: ConstructObject
-  prototype: N14DoorTentClothflap
+  prototype: F14DoorTentClothflap
   cost: 3
   delay: 2
   collisionMask: FullTileMask
@@ -157,11 +157,11 @@
   fx: EffectRCDConstruct2
 
 - type: rcd
-  id: MisfitsRCDTribalWoodWindow
+  id: F14RCDTribalWoodWindow
   category: TribalShelter
   sprite: { sprite: Nuclear14/Structures/Windows/window_ruins.rsi, state: woodwindow }
   mode: ConstructObject
-  prototype: N14WindowHouseWood
+  prototype: F14WindowHouseWood
   cost: 3
   delay: 2
   collisionMask: FullTileMask
@@ -169,11 +169,11 @@
   fx: EffectRCDConstruct2
 
 - type: rcd
-  id: MisfitsRCDTribalBedroll
+  id: F14RCDTribalBedroll
   category: TribalFurnishings
   sprite: { sprite: Nuclear14/Structures/Furniture/bedsandchairs.rsi, state: bedroll_unrolled }
   mode: ConstructObject
-  prototype: N14Bedroll
+  prototype: F14Bedroll
   cost: 2
   delay: 1
   collisionMask: InteractImpassable
@@ -181,11 +181,11 @@
   fx: EffectRCDConstruct1
 
 - type: rcd
-  id: MisfitsRCDTribalSettlerChair
+  id: F14RCDTribalSettlerChair
   category: TribalFurnishings
   sprite: { sprite: Nuclear14/Structures/Furniture/bedsandchairs.rsi, state: wooden_chair_settler }
   mode: ConstructObject
-  prototype: N14ChairWoodSettler
+  prototype: F14ChairWoodSettler
   cost: 2
   delay: 1
   collisionMask: InteractImpassable
@@ -193,11 +193,11 @@
   fx: EffectRCDConstruct1
 
 - type: rcd
-  id: MisfitsRCDTribalSettlerTable
+  id: F14RCDTribalSettlerTable
   category: TribalFurnishings
   sprite: { sprite: Nuclear14/Structures/Furniture/Tables/table_settler.rsi, state: full }
   mode: ConstructObject
-  prototype: N14TableWoodSettler
+  prototype: F14TableWoodSettler
   cost: 3
   delay: 2
   collisionMask: InteractImpassable
@@ -205,11 +205,11 @@
   fx: EffectRCDConstruct2
 
 - type: rcd
-  id: MisfitsRCDTribalBanner
+  id: F14RCDTribalBanner
   category: TribalFurnishings
   sprite: { sprite: Misfits/Structures/Decoration/tribal_banner.rsi, state: banner1 }
   mode: ConstructObject
-  prototype: MisfitsDecorationFlagTribe
+  prototype: F14DecorationFlagTribe
   cost: 4
   delay: 3
   collisionMask: InteractImpassable
@@ -217,11 +217,11 @@
   fx: EffectRCDConstruct3
 
 - type: rcd
-  id: MisfitsRCDTribalFloorTorch
-  category: TribalLighting
-  sprite: { sprite: MojaveSun/Structures/Lighting/torches.rsi, state: torch_lit }
+  id: F14RCDTribalSoil
+  category: TribalAgriculture
+  sprite: { sprite: Structures/Hydroponics/misc.rsi, state: soil }
   mode: ConstructObject
-  prototype: N14Torch
+  prototype: F14Soil
   cost: 1
   delay: 1
   collisionMask: InteractImpassable
@@ -229,11 +229,35 @@
   fx: EffectRCDConstruct1
 
 - type: rcd
-  id: MisfitsRCDTribalWallTorch
+  id: F14RCDTribalPlanter
+  category: TribalAgriculture
+  sprite: { sprite: Nuclear14/Structures/Hydroponics/planterbox.rsi, state: icon }
+  mode: ConstructObject
+  prototype: F14HydroponicsPlanter
+  cost: 3
+  delay: 2
+  collisionMask: InteractImpassable
+  rotation: Fixed
+  fx: EffectRCDConstruct2
+
+- type: rcd
+  id: F14RCDTribalFloorTorch
+  category: TribalLighting
+  sprite: { sprite: MojaveSun/Structures/Lighting/torches.rsi, state: torch_lit }
+  mode: ConstructObject
+  prototype: F14Torch
+  cost: 1
+  delay: 1
+  collisionMask: InteractImpassable
+  rotation: Fixed
+  fx: EffectRCDConstruct1
+
+- type: rcd
+  id: F14RCDTribalWallTorch
   category: TribalLighting
   sprite: { sprite: Nuclear14/Structures/Decoration/torches.rsi, state: wall_torch_unlit }
   mode: ConstructObject
-  prototype: N14TorchWall
+  prototype: F14TorchWall
   cost: 1
   delay: 1
   collisionMask: InteractImpassable

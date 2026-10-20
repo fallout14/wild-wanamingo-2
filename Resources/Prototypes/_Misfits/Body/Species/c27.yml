@@ -9,39 +9,39 @@
 
 - type: markingsGroup
   parent: Undergarments
-  id: MisfitsC27
+  id: F14C27
   onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Chest:
       limit: 1
       required: true
-      default: [ MisfitsC27ModelGeneric ]
+      default: [ F14C27ModelGeneric ]
     enum.HumanoidVisualLayers.Head:
       limit: 1
       required: false
 
 - type: markingsGroup
-  parent: MisfitsC27
-  id: MisfitsC27NCR
+  parent: F14C27
+  id: F14C27NCR
   limits:
     enum.HumanoidVisualLayers.Chest:
       limit: 1
       required: true
-      default: [ MisfitsC27ModelNCR ]
+      default: [ F14C27ModelNCR ]
 
 - type: markingsGroup
-  parent: MisfitsC27
-  id: MisfitsC27BoS
+  parent: F14C27
+  id: F14C27BoS
   limits:
     enum.HumanoidVisualLayers.Chest:
       limit: 1
       required: true
-      default: [ MisfitsC27ModelBoS ]
+      default: [ F14C27ModelBoS ]
 
 - type: marking
-  id: MisfitsC27ModelGeneric
+  id: F14C27ModelGeneric
   bodyPart: Chest
-  groupWhitelist: [ MisfitsC27, MisfitsC27NCR, MisfitsC27BoS ]
+  groupWhitelist: [ F14C27, F14C27NCR, F14C27BoS ]
   forcedColoring: true
   coloring:
     default:
@@ -53,9 +53,9 @@
     state: torso_m
 
 - type: marking
-  id: MisfitsC27ModelNCR
+  id: F14C27ModelNCR
   bodyPart: Chest
-  groupWhitelist: [ MisfitsC27, MisfitsC27NCR, MisfitsC27BoS ]
+  groupWhitelist: [ F14C27, F14C27NCR, F14C27BoS ]
   forcedColoring: true
   coloring:
     default:
@@ -67,9 +67,9 @@
     state: torso_m
 
 - type: marking
-  id: MisfitsC27ModelBoS
+  id: F14C27ModelBoS
   bodyPart: Chest
-  groupWhitelist: [ MisfitsC27, MisfitsC27NCR, MisfitsC27BoS ]
+  groupWhitelist: [ F14C27, F14C27NCR, F14C27BoS ]
   forcedColoring: true
   coloring:
     default:
@@ -89,8 +89,8 @@
   name: c-27 appearance
   components:
   - type: Inventory
-    templateId: MisfitsC27
-    speciesId: MisfitsC27
+    templateId: F14C27
+    speciesId: F14C27
   - type: InitialBody
     organs:
       Torso: OrganC27Torso
@@ -104,7 +104,7 @@
       FootLeft: OrganC27FootLeft
       FootRight: OrganC27FootRight
   - type: HumanoidProfile
-    species: MisfitsC27
+    species: F14C27
 
 - type: entity
   parent: AppearanceC27
@@ -116,7 +116,7 @@
     organs:
       Torso: OrganC27TorsoNCR
   - type: HumanoidProfile
-    species: MisfitsC27NCR
+    species: F14C27NCR
 
 - type: entity
   parent: AppearanceC27
@@ -128,11 +128,11 @@
     organs:
       Torso: OrganC27TorsoBoS
   - type: HumanoidProfile
-    species: MisfitsC27BoS
+    species: F14C27BoS
 
 - type: entity
   abstract: true
-  id: N14BaseMobC27Stats
+  id: F14BaseMobC27Stats
   components:
   - type: Sprite
     scale: 1.25, 1.25
@@ -141,7 +141,7 @@
     state: full
   - type: NpcFactionMember
     factions:
-    - N14Wastelander
+    - F14Wastelander
   - type: EncryptionKeyHolder
     keySlots: 4
   - type: IntrinsicRadioReceiver
@@ -150,9 +150,9 @@
   - type: ContainerFill
     containers:
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
   - type: Damageable
-    damageModifierSet: MisfitsC27Silicon
+    damageModifierSet: F14C27Silicon
   - type: Injurable
     damageContainer: Silicon # welders and cable coils heal it, like borgs
   - type: MobThresholds
@@ -181,18 +181,18 @@
     proto: robot
 
 - type: entity
-  parent: [ AppearanceC27, BaseSpeciesMob, N14BaseMobC27Stats ]
-  id: MisfitsMobC27
+  parent: [ AppearanceC27, BaseSpeciesMob, F14BaseMobC27Stats ]
+  id: F14MobC27
   name: c-27 humanoid robot
 
 - type: entity
-  parent: [ AppearanceC27NCR, BaseSpeciesMob, N14BaseMobC27Stats ]
-  id: MisfitsMobC27NCR
+  parent: [ AppearanceC27NCR, BaseSpeciesMob, F14BaseMobC27Stats ]
+  id: F14MobC27NCR
   name: c-27 humanoid robot
 
 - type: entity
-  parent: [ AppearanceC27BoS, BaseSpeciesMob, N14BaseMobC27Stats ]
-  id: MisfitsMobC27BoS
+  parent: [ AppearanceC27BoS, BaseSpeciesMob, F14BaseMobC27Stats ]
+  id: F14MobC27BoS
   name: c-27 humanoid robot
 
 # --- Parts (metal, no organs inside)
@@ -209,7 +209,7 @@
       sprite: Misfits/Mobs/Species/C27/parts.rsi
   - type: VisualOrganMarkings
     markingData:
-      group: MisfitsC27
+      group: F14C27
 
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganC27External ]
@@ -221,7 +221,7 @@
   components:
   - type: VisualOrganMarkings
     markingData:
-      group: MisfitsC27NCR
+      group: F14C27NCR
 
 - type: entity
   parent: OrganC27Torso
@@ -229,7 +229,7 @@
   components:
   - type: VisualOrganMarkings
     markingData:
-      group: MisfitsC27BoS
+      group: F14C27BoS
 
 - type: entity
   parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganC27External ]

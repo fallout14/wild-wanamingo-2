@@ -3,12 +3,12 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14CompostBox
+  id: F14CompostBox
   name: compost box
   # #Misfits Fix: Reworked to function as a pour-in solution container (like a bucket).
   # The old ItemSlots + SolutionContainerMixer approach couldn't extract reagents from
   # slotted items (FinishMix uses TryGetFitsInDispenser which none of our items had).
-  # Now: click N14Dung or produce items on the box to pour their reagents in; the
+  # Now: click F14Dung or produce items on the box to pour their reagents in; the
   # Composting / CompostingOrganic reactions fire automatically when thresholds are met.
   description: Pour animal dung or organic matter in here to produce compost.
   placement:
@@ -29,9 +29,9 @@
         acts: ["Destruction"]
   - type: ReactionMixer
     reactionTypes:
-    - N14Composting
+    - F14Composting
   - type: SolutionContainerMixer # #Misfits Fix: Triggers reactions when player clicks to mix,
-    mixDuration: 3                # spawning N14CompostRotted from Dung or CompostingOrganic reactions.
+    mixDuration: 3                # spawning F14CompostRotted from Dung or CompostingOrganic reactions.
     mixingSound:
       path: /Audio/Machines/buzz_loop.ogg
       params:
@@ -60,7 +60,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14SeedExtractor
+  id: F14SeedExtractor
   name: seed extractor
   description: Extracts seeds from produce.
   components:
@@ -91,7 +91,7 @@
     powerLoad: 0
     needsPower: false
   - type: Construction
-    graph: N14SeedExtractor
+    graph: F14SeedExtractor
     node: seedextractor
   - type: Anchorable
   - type: Rotatable
@@ -99,7 +99,7 @@
     board: SeedExtractorMachineCircuitboard
 
 - type: entity
-  id: N14SeedExtractorFrame
+  id: F14SeedExtractorFrame
   name: seed extractor frame
   parent: BaseStructure
   description: Extracts seeds from produce. This one isn't finished building
@@ -119,14 +119,76 @@
           seedextractorreinforced: { state: seedextractor2 }
           seedextractorunscrewed: { state: seedextractor3 }
   - type: Construction
-    graph: N14SeedExtractor
+    graph: F14SeedExtractor
     node: seedextractorhalf
 
 # Soils and Planters
 
 - type: entity
+  id: F14Soil
+  name: soil
+  description: Looks good for planting things in.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.1"
+        density: 190
+        hard: false
+        mask:
+        - FullTileMask
+        layer:
+        - FullTileMask
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Sprite
+    sprite: Structures/Hydroponics/misc.rsi
+    state: soil
+    snapCardinals: true
+    noRot: true
+  - type: PlantTray
+    drawWarnings: false
+  - type: Solution
+    id: soil
+    solution:
+      maxVol: 200
+  - type: RefillableSolution
+    solution: soil
+    maxRefill: 50
+  - type: Transform
+    anchored: true
+  - type: Reactive
+    reactions:
+    - reagents: [Water]
+      methods: [Touch, Ingestion, Injection]
+      effects:
+      - !type:AddReagentToSolution
+        reagent: Water
+        solution: soil
+  - type: Appearance
+  - type: PlantTrayVisuals
+
+- type: entity
   parent: BaseStructure
-  id: N14HydroponicsPlanterEmpty
+  id: F14HydroponicsPlanterEmpty
   name: planter
   description: A wooden planter for growing things. Just needs soil.
   components:
@@ -157,3 +219,83 @@
             max: 1
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: Construction
+    graph: F14Planter
+    node: box
+
+- type: entity
+  parent: F14Soil
+  id: F14HydroponicsPlanter
+  name: planter
+  description: A wooden planter with soil for growing things in.
+  components:
+  - type: Sprite
+    layers:
+      - sprite: Nuclear14/Structures/Hydroponics/planterbox.rsi
+        state: icon
+      - sprite: Nuclear14/Structures/Hydroponics/planterbox.rsi
+        state: redflag
+        map: [ "health_alert" ]
+        visible: false
+      - sprite: Nuclear14/Structures/Hydroponics/planterbox.rsi
+        state: blueflag
+        map: [ "water_alert" ]
+        visible: false
+      - sprite: Nuclear14/Structures/Hydroponics/planterbox.rsi
+        state: yellowflag
+        map: [ "nutri_alert" ]
+        visible: false
+      - sprite: Nuclear14/Structures/Hydroponics/planterbox.rsi
+        state: redflag
+        map: [ "undefined_alert" ]
+        visible: false
+      - sprite: Nuclear14/Structures/Hydroponics/planterbox.rsi
+        state: greenflag
+        map: [ "harvest_alert" ]
+        visible: false
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.PlantTrayVisuals.HealthLight:
+        health_alert:
+          True: { visible: true }
+          False: { visible: false }
+      enum.PlantTrayVisuals.WaterLight:
+        water_alert:
+          True: { visible: true }
+          False: { visible: false }
+      enum.PlantTrayVisuals.NutritionLight:
+        nutri_alert:
+          True: { visible: true }
+          False: { visible: false }
+      enum.PlantTrayVisuals.AlertLight:
+        undefined_alert:
+          True: { visible: true }
+          False: { visible: false }
+      enum.PlantTrayVisuals.HarvestLight:
+        harvest_alert:
+          True: { visible: true }
+          False: { visible: false }
+  - type: PlantTray
+    drawWarnings: true
+  - type: AmbientSound
+    volume: -9
+    range: 5
+    sound:
+      path: /Audio/Ambience/Objects/flowing_water_open.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 0
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Construction
+    graph: F14Planter
+    node: Planter

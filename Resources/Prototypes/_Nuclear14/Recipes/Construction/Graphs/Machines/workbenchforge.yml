@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/Machines/workbenchforge.yml
 
 - type: constructionGraph
-  id: N14WorkbenchForge
+  id: F14WorkbenchForge
   start: start
   graph:
     - node: start
@@ -19,7 +19,7 @@
     - node: WorkbenchForgeFrame
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchForgeFrame
+      entity: F14WorkbenchForgeFrame
       edges:
         - to: WorkbenchForgeCookpot
           steps:
@@ -30,11 +30,11 @@
     - node: WorkbenchForgeCookpot
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchForgeFrame
+      entity: F14WorkbenchForgeFrame
       edges:
         - to: WorkbenchForgeCookpotUnwelded
           steps:
-            - tag: N14CookPot
+            - tag: F14CookPot
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: cookpot
@@ -44,7 +44,7 @@
     - node: WorkbenchForgeCookpotUnwelded
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchForgeFrame
+      entity: F14WorkbenchForgeFrame
       edges:
         - to: WorkbenchForgeCharcoal
           steps:
@@ -54,7 +54,7 @@
     - node: WorkbenchForgeCharcoal
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchForgeFrame
+      entity: F14WorkbenchForgeFrame
       edges:
         - to: WorkbenchForgeUnwrenched
           steps:
@@ -65,7 +65,7 @@
     - node: WorkbenchForgeUnwrenched
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchForgeFrame
+      entity: F14WorkbenchForgeFrame
       edges:
         - to: WorkbenchForgeUnwelded
           steps:
@@ -75,7 +75,7 @@
     - node: WorkbenchForgeUnwelded
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchForgeFrame
+      entity: F14WorkbenchForgeFrame
       edges:
         - to: WorkbenchForge
           steps:
@@ -83,4 +83,4 @@
               doAfter: 6
 
     - node: WorkbenchForge
-      entity: N14WorkbenchForge
+      entity: F14WorkbenchForge

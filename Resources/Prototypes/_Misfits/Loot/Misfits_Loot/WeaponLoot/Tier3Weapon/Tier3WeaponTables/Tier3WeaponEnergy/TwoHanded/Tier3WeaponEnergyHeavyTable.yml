@@ -1,23 +1,23 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3WeaponEnergy/TwoHanded/Tier3WeaponEnergyHeavyTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_LaserHeavy
+  id: F14WeaponLootTier3LaserHeavy
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: Error
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_PlasmaHeavy
+  id: F14WeaponLootTier3PlasmaHeavy
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: Error
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_OtherHeavy
+  id: F14WeaponLootTier3OtherHeavy
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: MisfitsWeaponLegionScorcher
+      id: F14WeaponLegionScorcher
       weight: 1

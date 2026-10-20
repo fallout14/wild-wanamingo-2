@@ -1,0 +1,178 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Roles/Jobs/, _Nuclear14/Roles/Jobs/
+# Changed for Wild Wanamingo: Yuma's roster. Names, slots and whitelists from the server's roster; gear is
+# Misfits' (minus the wallet slot and the skirt/satchel/duffel choices, which are loadouts in Wizden).
+# Misfits' playtime and species requirements are left out for now.
+
+- type: job
+  id: F14FollowerDirector
+  name: job-name-follower-director
+  description: job-description-follower-director
+  playTimeTracker: F14FollowerDirector
+  startingGear: F14FollowerDirectorGear
+  icon: JobIconPassenger
+  supervisors: job-supervisors-follower-director
+  accessGroups:
+  - F14FollowersApocalypse
+  - F14FotAHead
+  - F14FotADoctor
+  - F14FotA
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Followers
+
+- type: startingGear
+  id: F14FollowerDirectorGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitFollowers
+    back: ClothingBackpackDuffelSurgeryFilled
+    shoes: F14ClothingBootsLeather
+    neck: ClothingNeckStethoscope
+    id: F14IDFollowerHead
+    ears: F14ClothingHeadsetFollowers
+    outerClothing: F14ClothingOuterCoatFollowerLab
+    belt: F14ClothingBeltMedicalFilled
+    pocket2: F14HandheldHealthAnalyzer
+    head: ClothingHeadHatBeretMedic
+
+- type: job
+  id: F14FollowerHead
+  name: job-name-follower-head
+  description: job-description-follower-head
+  playTimeTracker: F14FollowerHead
+  startingGear: F14FollowerHeadGear
+  icon: JobIconPassenger
+  supervisors: job-supervisors-follower-head
+  accessGroups:
+  - F14FollowersApocalypse
+  - F14FotAHead
+  - F14FotADoctor
+  - F14FotA
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Followers
+
+- type: startingGear
+  id: F14FollowerHeadGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitFollowers
+    back: ClothingBackpackDuffelSurgeryFilled
+    shoes: F14ClothingBootsLeather
+    neck: ClothingNeckStethoscope
+    id: F14IDFollowerHead
+    ears: F14ClothingHeadsetFollowers
+    outerClothing: F14ClothingOuterCoatFollowerLab
+    belt: F14ClothingBeltMedicalFilled
+    pocket2: F14HandheldHealthAnalyzer
+    head: ClothingHeadHatBeretMedic
+
+- type: job
+  id: F14FollowerDoctor
+  name: job-name-follower-doctor
+  description: job-description-follower-doctor
+  playTimeTracker: F14FollowerDoctor
+  startingGear: F14FollowerDoctorGear
+  icon: JobIconPassenger
+  supervisors: job-supervisors-follower-doctor
+  accessGroups:
+  - F14FollowersApocalypse
+  - F14FotADoctor
+  - F14FotA
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Followers
+
+- type: startingGear
+  id: F14FollowerDoctorGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitFollowers
+    back: ClothingBackpackDuffelSurgeryFilled
+    shoes: F14ClothingBootsLeather
+    neck: ClothingNeckStethoscope
+    id: F14IDFollowerDoctor
+    ears: F14ClothingHeadsetFollowers
+    outerClothing: F14ClothingOuterCoatFollowerLab
+    belt: F14ClothingBeltMedicalFilled
+    pocket2: F14HandheldHealthAnalyzer
+
+- type: job
+  id: F14FollowerGuard
+  name: job-name-follower-guard
+  description: job-description-follower-guard
+  playTimeTracker: F14FollowerGuard
+  startingGear: F14FollowerGuardGear
+  icon: JobIconPassenger
+  supervisors: job-supervisors-follower-guard
+  accessGroups:
+  - F14FollowersApocalypse
+  - F14FotA
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Followers
+
+- type: startingGear
+  id: F14FollowerGuardGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitFollowers
+    back: F14ClothingBackpackSatchelMilitary
+    shoes: F14ClothingBootsLeatherFilled
+    id: F14IDFollowerGuard
+    ears: F14ClothingHeadsetFollowers
+    outerClothing: F14ClothingOuterCoatFollowersArmored
+    belt: F14ClothingBelt10mmfilled
+    pocket1: Handcuffs
+    pocket2: F14HandheldHealthAnalyzer
+  storage:
+    back:
+    - F14SurvivalKitWastelander
+    - F14PoliceBaton
+    - F14CombatKnife
+    - F14MagazineBox10mm
+    - Brutepack
+
+- type: job
+  id: F14FollowerVolunteer
+  name: job-name-follower-volunteer
+  description: job-description-follower-volunteer
+  playTimeTracker: F14FollowerVolunteer
+  startingGear: F14FollowerVolunteerGear
+  icon: JobIconPassenger
+  supervisors: job-supervisors-follower-volunteer
+  accessGroups:
+  - F14FollowersApocalypse
+  - F14FotA
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Followers
+
+- type: startingGear
+  id: F14FollowerVolunteerGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitFollowers
+    back: ClothingBackpackSatchelMedical
+    shoes: F14ClothingBootsLeather
+    neck: ClothingNeckStethoscope
+    id: F14IDFollowerVolunteer
+    ears: F14ClothingHeadsetFollowers
+    belt: ClothingBeltMedicalFilled
+    pocket1: F14HandheldHealthAnalyzer
+    pocket2: Brutepack

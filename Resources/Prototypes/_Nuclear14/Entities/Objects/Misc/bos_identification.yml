@@ -2,8 +2,8 @@
 # Resources/Prototypes/_Misfits/Entities/Objects/Misc/bos_identification.yml
 
 - type: entity
-  parent: N14IDPassportBlank
-  id: N14IDBrotherhoodHolotag
+  parent: F14IDPassportBlank
+  id: F14IDBrotherhoodHolotag
   name: senior scribe's holotags
   description: An ID holotag worn by the Brotherhood of Steel.
   suffix: Senior Scribe
@@ -17,25 +17,25 @@
   - type: PresetIdCard
   - type: Tag
     tags:
-    - MisfitsIdCardBrotherhood
+    - F14IdCardBrotherhood
   - type: ClothingAddFaction
-    faction: MisfitsBrotherhoodOfSteel
+    faction: F14BrotherhoodOfSteel
 
 - type: entity
-  parent: N14IDBrotherhoodHolotag
-  id: N14IDBrotherhoodHolotagCommander
+  parent: F14IDBrotherhoodHolotag
+  id: F14IDBrotherhoodHolotagCommander
   name: head paladin's holotags
   description: An ID holotag worn by the Head Paladin of the Brotherhood of Steel.
   suffix: Head Paladin
   components:
   - type: PresetIdCard
-    job: N14BoSMidPaladinCommander
+    job: F14BoSMidPaladinCommander
 
 ##MARK: Brotherhood Unified Live Jobs
 
 - type: entity
-  parent: N14IDNCRDogtag
-  id: N14IDNCRDogtagWS
+  parent: F14IDNCRDogtag
+  id: F14IDNCRDogtagWS
   name: specialist's dogtags
   description: An ID dogtag worn by NCR specialists.
   suffix: Specialist
@@ -44,6 +44,6 @@
     sprite: Nuclear14/Objects/Misc/identification.rsi
     state: ncrdogtag
   - type: PresetIdCard
-    job: N14NCRWS
+    job: F14NCRWS
 
 #Misfits Add: Legacy Washington holotag ID compatibility for existing map entities.

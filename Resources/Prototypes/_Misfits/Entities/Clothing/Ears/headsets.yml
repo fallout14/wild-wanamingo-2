@@ -1,16 +1,16 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Ears/headsets.yml
 
 - type: entity
-  parent: N14ClothingHeadsetAlt
-  id: MisfitsClothingHeadsetRobotVault
+  parent: F14ClothingHeadsetAlt
+  id: F14ClothingHeadsetRobotVault
   name: integrated vault comms module
   description: A hardwired communications module tuned to both wasteland and Vault frequencies.
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
-      - N14EncryptionKeyVault
+      - F14EncryptionKeyWastelandGlobal
+      - F14EncryptionKeyVault
   - type: EncryptionKeyHolder
     keysUnlocked: false
   - type: Sprite
@@ -21,15 +21,15 @@
 # #Misfits Change - Wasteland scrap headset for junk pile loot drops
 
 - type: entity
-  parent: N14ClothingHeadsetAlt
-  id: MisfitsClothingHeadsetWastelandScrap
+  parent: F14ClothingHeadsetAlt
+  id: F14ClothingHeadsetWastelandScrap
   name: scrap headset
   description: A battered, jury-rigged headset salvaged from the wastes. Barely holds together, but it still picks up the wasteland frequency.
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
   - type: Sprite
     sprite: Misfits/Clothing/Ears/Headsets/scrap.rsi
   - type: Clothing
@@ -38,15 +38,15 @@
 # Misfits Add - Town Bazaar radio
 
 - type: entity
-  parent: MisfitsClothingHeadsetWastelandScrap
-  id: MisfitsClothingHeadsetTown
+  parent: F14ClothingHeadsetWastelandScrap
+  id: F14ClothingHeadsetTown
   name: town headset
   description: A compact headset issued to trusted members of the Bazaar. Tuned to the local town frequency.
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keysUnlocked: false
   - type: Sprite
@@ -55,16 +55,16 @@
     sprite: Clothing/Ears/Headsets/centcom.rsi
 
 - type: entity
-  parent: MisfitsClothingHeadsetWastelandScrap
-  id: MisfitsClothingHeadsetEighties
+  parent: F14ClothingHeadsetWastelandScrap
+  id: F14ClothingHeadsetEighties
   name: 80's Headset
   description: A headset for Eighties raider communication.
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
-      - MisfitsEncryptionKeyEighties
+      - F14EncryptionKeyWastelandGlobal
+      - F14EncryptionKeyEighties
   - type: EncryptionKeyHolder
     keysUnlocked: false
   - type: Sprite

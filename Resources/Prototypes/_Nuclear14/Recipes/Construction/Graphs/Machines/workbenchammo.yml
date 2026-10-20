@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/Machines/workbenchammo.yml
 
 - type: constructionGraph
-  id: N14WorkbenchAmmobench
+  id: F14WorkbenchAmmobench
   start: start
   graph:
     - node: start
@@ -19,11 +19,11 @@
     - node: WorkbenchAmmobenchFrame
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchAmmobenchFrame
+      entity: F14WorkbenchAmmobenchFrame
       edges:
         - to: WorkbenchAmmobenchAluminum
           steps:
-            - tag: N14Gear
+            - tag: F14Gear
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: gear_large
@@ -33,18 +33,18 @@
     - node: WorkbenchAmmobenchAluminum
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchAmmobenchFrame
+      entity: F14WorkbenchAmmobenchFrame
       edges:
         - to: WorkbenchAmmobenchSteel
           steps: 
-            - material: N14Aluminum
+            - material: F14Aluminum
               amount: 2
               doAfter: 2
 
     - node: WorkbenchAmmobenchSteel
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchAmmobenchFrame
+      entity: F14WorkbenchAmmobenchFrame
       edges:
         - to: WorkbenchAmmobenchScrews
           steps: 
@@ -55,17 +55,17 @@
     - node: WorkbenchAmmobenchScrews
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchAmmobenchFrame
+      entity: F14WorkbenchAmmobenchFrame
       edges:
         - to: WorkbenchAmmobenchUnwrenched
           steps:
-            - tag: N14Screw
+            - tag: F14Screw
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: screw
               name: misfits-kit-screws
               doAfter: 1
-            - tag: N14Screw
+            - tag: F14Screw
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: screw
@@ -75,7 +75,7 @@
     - node: WorkbenchAmmobenchUnwrenched
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchAmmobenchFrame
+      entity: F14WorkbenchAmmobenchFrame
       edges:
         - to: WorkbenchAmmobenchUnscrewed
           steps:
@@ -85,7 +85,7 @@
     - node: WorkbenchAmmobenchUnscrewed
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchAmmobenchFrame
+      entity: F14WorkbenchAmmobenchFrame
       edges:
         - to: WorkbenchAmmobench
           steps:
@@ -93,4 +93,4 @@
               doAfter: 2
 
     - node: WorkbenchAmmobench
-      entity: N14WorkbenchAmmobench
+      entity: F14WorkbenchAmmobench

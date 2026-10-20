@@ -1,64 +1,64 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3WeaponBallistic/TwoHanded/Tier3WeaponBallisticRifleTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_GunsBulletRifleAuto
+  id: F14WeaponLootTier3GunsBulletRifleAuto
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: MisfitsWeaponRifle5mmCarbine
+      id: F14WeaponRifle5mmCarbine
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponRifle10mmSkirmisher
+      id: F14WeaponRifle10mmSkirmisher
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556Pipe
+      id: F14WeaponRifle556Pipe
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556R91
+      id: F14WeaponRifle556R91
       weight: 4
     - !type:EntSelector
-      id: CorvaxWeaponRifleAk112 #BOS??
+      id: F14WeaponRifleAk112 #BOS??
       weight: 4
 
 #temp!!!
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_GunsBulletRifleSemi
+  id: F14WeaponLootTier3GunsBulletRifleSemi
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponSniper308PipeRifle
+      id: F14WeaponSniper308PipeRifle
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponRifle10mmM1Carbine
+      id: F14WeaponRifle10mmM1Carbine
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniper556VarmintRifle
+      id: F14WeaponSniper556VarmintRifle
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniper556Tribal
+      id: F14WeaponSniper556Tribal
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556Service
+      id: F14WeaponRifle556Service
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556Service
+      id: F14WeaponRifle556Service
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556Scout
+      id: F14WeaponRifle556Scout
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniper308Tribal
+      id: F14WeaponSniper308Tribal
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniperHunting
+      id: F14WeaponSniperHunting
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponSniperCowboyRepeater #.357
+      id: F14WeaponSniperCowboyRepeater #.357
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniper44LeverShortCarbine
+      id: F14WeaponSniper44LeverShortCarbine
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponSniper10mmLeverRifle # #Misfits Add - mid-tier 10mm lever action
+      id: F14WeaponSniper10mmLeverRifle # #Misfits Add - mid-tier 10mm lever action
       weight: 5

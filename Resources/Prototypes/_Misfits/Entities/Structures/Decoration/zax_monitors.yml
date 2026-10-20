@@ -3,7 +3,7 @@
 - type: entity
   abstract: true
   parent: BaseStructure
-  id: MisfitsZaxMonitorBase
+  id: F14ZaxMonitorBase
   name: Z.A.X monitor
   description: A decorative Z.A.X-linked monitor. Its camera feed is wired into the Z.A.X. core.
   placement:
@@ -49,8 +49,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: MisfitsZaxMonitorBase
-  id: MisfitsZaxMonitorStaticLeft
+  parent: F14ZaxMonitorBase
+  id: F14ZaxMonitorStaticLeft
   suffix: Static, Left
   components:
   - type: Sprite
@@ -58,8 +58,8 @@
     - state: static_left
 
 - type: entity
-  parent: MisfitsZaxMonitorBase
-  id: MisfitsZaxMonitorStaticRight
+  parent: F14ZaxMonitorBase
+  id: F14ZaxMonitorStaticRight
   suffix: Static, Right
   components:
   - type: Sprite
@@ -67,8 +67,8 @@
     - state: static_right
 
 - type: entity
-  parent: MisfitsZaxMonitorBase
-  id: MisfitsZaxMonitorEye1Left
+  parent: F14ZaxMonitorBase
+  id: F14ZaxMonitorEye1Left
   suffix: Eye 1, Left
   components:
   - type: Sprite
@@ -76,8 +76,8 @@
     - state: eye1_left
 
 - type: entity
-  parent: MisfitsZaxMonitorBase
-  id: MisfitsZaxMonitorEye1Right
+  parent: F14ZaxMonitorBase
+  id: F14ZaxMonitorEye1Right
   suffix: Eye 1, Right
   components:
   - type: Sprite
@@ -85,8 +85,8 @@
     - state: eye1_right
 
 - type: entity
-  parent: MisfitsZaxMonitorBase
-  id: MisfitsZaxMonitorEye2Left
+  parent: F14ZaxMonitorBase
+  id: F14ZaxMonitorEye2Left
   suffix: Eye 2, Left
   components:
   - type: Sprite
@@ -94,8 +94,8 @@
     - state: eye2_left
 
 - type: entity
-  parent: MisfitsZaxMonitorBase
-  id: MisfitsZaxMonitorEye2Right
+  parent: F14ZaxMonitorBase
+  id: F14ZaxMonitorEye2Right
   suffix: Eye 2, Right
   components:
   - type: Sprite
@@ -103,8 +103,8 @@
     - state: eye2_right
 
 - type: entity
-  parent: MisfitsZaxMonitorBase
-  id: MisfitsZaxMonitorEye3Left
+  parent: F14ZaxMonitorBase
+  id: F14ZaxMonitorEye3Left
   suffix: Eye 3, Left
   components:
   - type: Sprite
@@ -112,8 +112,8 @@
     - state: eye3_left
 
 - type: entity
-  parent: MisfitsZaxMonitorBase
-  id: MisfitsZaxMonitorEye3Right
+  parent: F14ZaxMonitorBase
+  id: F14ZaxMonitorEye3Right
   suffix: Eye 3, Right
   components:
   - type: Sprite
@@ -121,8 +121,8 @@
     - state: eye3_right
 
 - type: entity
-  parent: MisfitsZaxMonitorBase
-  id: MisfitsZaxMonitorEye4Left
+  parent: F14ZaxMonitorBase
+  id: F14ZaxMonitorEye4Left
   suffix: Eye 4, Left
   components:
   - type: Sprite
@@ -130,8 +130,8 @@
     - state: eye4_left
 
 - type: entity
-  parent: MisfitsZaxMonitorBase
-  id: MisfitsZaxMonitorEye4Right
+  parent: F14ZaxMonitorBase
+  id: F14ZaxMonitorEye4Right
   suffix: Eye 4, Right
   components:
   - type: Sprite
@@ -139,8 +139,8 @@
     - state: eye4_right
 
 - type: entity
-  parent: MisfitsZaxMonitorBase
-  id: MisfitsZaxMonitorTower
+  parent: F14ZaxMonitorBase
+  id: F14ZaxMonitorTower
   suffix: Tower
   components:
   - type: Sprite

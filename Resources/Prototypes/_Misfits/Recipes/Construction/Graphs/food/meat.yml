@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Construction/Graphs/food/meat.yml
 
 - type: constructionGraph
-  id: MisfitsHumanMeatSteak
+  id: F14HumanMeatSteak
   start: start
   graph:
 
@@ -15,10 +15,10 @@
       - minTemperature: 345
 
   - node: human meat steak
-    entity: MisfitsFoodMeatHumanCooked
+    entity: F14FoodMeatHumanCooked
 
 - type: constructionGraph
-  id: MisfitsHumanMeatCutlet
+  id: F14HumanMeatCutlet
   start: start
   graph:
 
@@ -32,10 +32,10 @@
       - minTemperature: 345
 
   - node: human meat cutlet
-    entity: MisfitsFoodMeatHumanCutletCooked
+    entity: F14FoodMeatHumanCutletCooked
 
 - type: constructionGraph
-  id: MisfitsSupermutantMeatSteak
+  id: F14SupermutantMeatSteak
   start: start
   graph:
 
@@ -49,10 +49,10 @@
       - minTemperature: 360 # tough meat! takes more to cook it
 
   - node: supermutant meat steak
-    entity: MisfitsFoodMeatSupermutantCooked
+    entity: F14FoodMeatSupermutantCooked
 
 - type: constructionGraph
-  id: MisfitsSupermutantMeatCutlet
+  id: F14SupermutantMeatCutlet
   start: start
   graph:
 
@@ -66,4 +66,4 @@
       - minTemperature: 360 # tough meat! takes more to cook it
 
   - node: supermutant meat cutlet
-    entity: MisfitsFoodMeatSupermutantCutletCooked
+    entity: F14FoodMeatSupermutantCutletCooked

@@ -2,8 +2,8 @@
 # Resources/Prototypes/_Nuclear14/Entities/Mobs/Robots/borg_chassis.yml
 
 - type: entity
-  parent: N14BaseRobotChassis
-  id: N14RobotProtectron
+  parent: F14BaseRobotChassis
+  id: F14RobotProtectron
   name: protectron
   components:
   - type: IdleSound # #Misfits Change: give protectrons their ambient voice lines again
@@ -11,7 +11,7 @@
     minInterval: 12
     maxInterval: 45
     sound:
-      collection: MisfitsProtectronIdle
+      collection: F14ProtectronIdle
       params:
         volume: -7
         maxDistance: 6
@@ -63,8 +63,8 @@
       Do as your masters say with a literal but reasonable level of logic.
 
 - type: entity
-  parent: N14RobotProtectron
-  id: N14RobotProtectronBuilder
+  parent: F14RobotProtectron
+  id: F14RobotProtectronBuilder
   name: protectron builder
   components:
   - type: Sprite
@@ -109,8 +109,8 @@
     
 
 - type: entity
-  parent: N14RobotProtectron
-  id: N14RobotProtectronFire
+  parent: F14RobotProtectron
+  id: F14RobotProtectronFire
   name: protectron firefighter
   components:
   - type: Sprite
@@ -142,8 +142,8 @@
         
 
 - type: entity
-  parent: N14RobotProtectron
-  id: N14RobotProtectronPolice
+  parent: F14RobotProtectron
+  id: F14RobotProtectronPolice
   name: protectron police officer
   components:
   - type: Sprite
@@ -174,8 +174,8 @@
       Do as your masters say with a literal but reasonable level of logic.
 
 - type: entity
-  parent: N14BaseRobotChassis
-  id: N14RobotMrHandy
+  parent: F14BaseRobotChassis
+  id: F14RobotMrHandy
   name: mr handy
   components:
   - type: IdleSound # #Misfits Change: give Mr. Handy chassis their ambient voice lines again
@@ -183,7 +183,7 @@
     minInterval: 12
     maxInterval: 45
     sound:
-      collection: MisfitsHandyIdle
+      collection: F14HandyIdle
       params:
         volume: -7
         maxDistance: 6
@@ -232,8 +232,8 @@
     
 
 - type: entity
-  parent: N14RobotMrHandy
-  id: N14RobotMrHandySaw
+  parent: F14RobotMrHandy
+  id: F14RobotMrHandySaw
   name: mr handy
   suffix: saw
   components:
@@ -242,8 +242,8 @@
     
 
 - type: entity
-  parent: N14RobotMrHandy
-  id: N14RobotMrHandyGun
+  parent: F14RobotMrHandy
+  id: F14RobotMrHandyGun
   name: mr handy
   suffix: gun
   components:
@@ -252,8 +252,8 @@
     
 
 - type: entity
-  parent: N14RobotMrHandy
-  id: N14RobotMrGutsy
+  parent: F14RobotMrHandy
+  id: F14RobotMrGutsy
   name: mr gutsy
   components:
   - type: IdleSound # #Misfits Change: give Mr. Gutsy chassis their ambient voice lines again
@@ -261,7 +261,7 @@
     minInterval: 12
     maxInterval: 45
     sound:
-      collection: MisfitsGutsyIdle
+      collection: F14GutsyIdle
       params:
         volume: -7
         maxDistance: 6
@@ -279,45 +279,45 @@
 ## Vault
 
 - type: entity
-  parent: N14RobotMrHandy
-  id: N14RobotMrHandyVault
+  parent: F14RobotMrHandy
+  id: F14RobotMrHandyVault
   suffix: player, vault
   components:
   - type: NpcFactionMember
     factions:
-      - N14Vault
+      - F14Vault
   - type: IntrinsicRadioTransmitter
     channels:
-    - N14VaultCommon
-    - N14VaultCommand
-    - N14VaultEngineering
-    - N14VaultMedical
-    - N14VaultScience
-    - N14VaultSecurity
+    - F14VaultCommon
+    - F14VaultCommand
+    - F14VaultEngineering
+    - F14VaultMedical
+    - F14VaultScience
+    - F14VaultSecurity
   - type: ActiveRadio
     channels:
-    - N14VaultCommon
-    - N14VaultCommand
-    - N14VaultEngineering
-    - N14VaultMedical
-    - N14VaultScience
-    - N14VaultSecurity
+    - F14VaultCommon
+    - F14VaultCommand
+    - F14VaultEngineering
+    - F14VaultMedical
+    - F14VaultScience
+    - F14VaultSecurity
   # - type: AccessReader
     # access: [["VaultOverseer"]
   - type: Access
     enabled: false
     groups:
-    - N14VaultOverseer
+    - F14VaultOverseer
     
 
 - type: entity
-  parent: N14RobotMrHandySaw
-  id: N14RobotMrHandySawVault
+  parent: F14RobotMrHandySaw
+  id: F14RobotMrHandySawVault
   suffix: player, vault, saw
   components:
   - type: NpcFactionMember
     factions:
-      - N14Vault
+      - F14Vault
   # - type: IntrinsicRadioTransmitter
     # channels:
     # - VaultCommon
@@ -339,23 +339,23 @@
   - type: Access
     enabled: false
     groups:
-    - N14VaultOverseer
+    - F14VaultOverseer
     
 ## BOS Midwest
 
 - type: entity
-  id: N14RobotBOSMidwestBase # for inheritance only
+  id: F14RobotBOSMidwestBase # for inheritance only
   abstract: true
   components:
   - type: NpcFactionMember
     factions:
-      - MisfitsBrotherhoodOfSteel
+      - F14BrotherhoodOfSteel
   - type: IntrinsicRadioTransmitter
     channels:
-    - MisfitsBrotherhoodOfSteel
+    - F14BrotherhoodOfSteel
   - type: ActiveRadio
     channels:
-    - MisfitsBrotherhoodOfSteel
+    - F14BrotherhoodOfSteel
   # - type: AccessReader
     # access: [["BOSMidwest"]
   # - type: ContainerFill
@@ -374,41 +374,41 @@
   - type: Access
     enabled: false
     groups:
-    - MisfitsBOS
+    - F14BOS
     
 
 - type: entity
-  parent: [N14RobotMrHandy, N14RobotBOSMidwestBase]
-  id: N14RobotMrHandyBOSMidwest
+  parent: [F14RobotMrHandy, F14RobotBOSMidwestBase]
+  id: F14RobotMrHandyBOSMidwest
   suffix: player, BOS Midwest
     
 
 - type: entity
-  parent: [N14RobotMrHandySaw, N14RobotBOSMidwestBase]
-  id: N14RobotMrHandySawBOSMidwest
+  parent: [F14RobotMrHandySaw, F14RobotBOSMidwestBase]
+  id: F14RobotMrHandySawBOSMidwest
   suffix: player, BOS Midwest, saw
     
 
 - type: entity
-  parent: [N14RobotMrGutsy, N14RobotBOSMidwestBase]
-  id: N14RobotMrGutsyBOSMidwest
+  parent: [F14RobotMrGutsy, F14RobotBOSMidwestBase]
+  id: F14RobotMrGutsyBOSMidwest
   suffix: player, BOS Midwest, gutsy
     
 ## BOS Washington
 
 - type: entity
-  id: N14RobotBOSWashingtonBase # for inheritance only
+  id: F14RobotBOSWashingtonBase # for inheritance only
   abstract: true
   components:
   - type: NpcFactionMember
     factions:
-      - MisfitsBrotherhoodOfSteel
+      - F14BrotherhoodOfSteel
   - type: IntrinsicRadioTransmitter
     channels:
-    - MisfitsBrotherhoodOfSteel
+    - F14BrotherhoodOfSteel
   - type: ActiveRadio
     channels:
-    - MisfitsBrotherhoodOfSteel
+    - F14BrotherhoodOfSteel
   # - type: AccessReader
     # access: [["BOSWashington"]
   # - type: ContainerFill
@@ -427,22 +427,22 @@
   - type: Access
     enabled: false
     groups:
-    - MisfitsBOS
+    - F14BOS
     
 
 - type: entity
-  parent: [N14RobotMrHandy, N14RobotBOSWashingtonBase]
-  id: N14RobotMrHandyBOSWashington
+  parent: [F14RobotMrHandy, F14RobotBOSWashingtonBase]
+  id: F14RobotMrHandyBOSWashington
   suffix: player, BOS Washington
     
 
 - type: entity
-  parent: [N14RobotMrHandySaw, N14RobotBOSWashingtonBase]
-  id: N14RobotMrHandySawBOSWashington
+  parent: [F14RobotMrHandySaw, F14RobotBOSWashingtonBase]
+  id: F14RobotMrHandySawBOSWashington
   suffix: player, BOS Washington, saw
     
 
 - type: entity
-  parent: [N14RobotMrGutsy, N14RobotBOSWashingtonBase]
-  id: N14RobotMrGutsyBOSWashington
+  parent: [F14RobotMrGutsy, F14RobotBOSWashingtonBase]
+  id: F14RobotMrGutsyBOSWashington
   suffix: player, BOS Washington, gutsy

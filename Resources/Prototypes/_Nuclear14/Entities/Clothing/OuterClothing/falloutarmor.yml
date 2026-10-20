@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: [Clothing, AllowSuitStorageClothing]
-  id: N14FalloutArmorBase
+  id: F14FalloutArmorBase
   components:
   - type: Clothing
     slots:
@@ -16,8 +16,8 @@
 #MARK: Armor
 
 - type: entity
-  parent: [N14FalloutArmorBase, N14ClothingOuterBase]
-  id: N14ClothingOuterZealotDuster
+  parent: [F14FalloutArmorBase, F14ClothingOuterBase]
+  id: F14ClothingOuterZealotDuster
   name: zealot duster
   description: A heavily modified highway patrol coat clearly designed by some manner of fanatic.
   components:
@@ -39,8 +39,8 @@
   #  luckModifier: 1
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingScavengerHeavyArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingScavengerHeavyArmor
   name: scavenger heavy armor
   description: A reinforced duster hiding pieces of scavenged armor.
   components:
@@ -63,8 +63,8 @@
     sprintModifier: 1.0 # Forge-Change
 
 - type: entity
-  parent: [N14FalloutArmorBase, N14ClothingOuterBase]
-  id: N14ClothingOuterCoatFollowersArmored
+  parent: [F14FalloutArmorBase, F14ClothingOuterBase]
+  id: F14ClothingOuterCoatFollowersArmored
   name: Followers Armored Labcoat
   description: A labcoat used by the Followers of the Apocalypse. It has a bulletproof vest underneath for working in dangerous environments.
   components:
@@ -95,8 +95,8 @@
         type: StorageBoundUserInterface
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterLeatherArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterLeatherArmor
   name: leather armor
   description: A leather suit of armor that provides protection against physical threats.
   components:
@@ -116,12 +116,12 @@
     damageCoefficient: 0.85
   - type: Butcherable
     spawned:
-    - id: N14MaterialLeather1
+    - id: F14MaterialLeather1
       amount: 4
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterVestLeather
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterVestLeather
   name: leather vest
   description: A simple armored leather vest, better than nothing.
   components:
@@ -141,8 +141,8 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterMetalArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterMetalArmor
   name: metal armor
   description: A suit of metal armor that provides protection against physical threats at the cost of movement.
   components:
@@ -169,8 +169,8 @@
     price: 25
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterCombatArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterCombatArmor
   name: combat armor
   description: A suit of combat armor that's used in combat.
   components:
@@ -190,8 +190,8 @@
     damageCoefficient: 0.8
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: N14ClothingOuterCombatArmorCargo
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterCombatArmorCargo
   name: combat armor
   description: A suit of combat armor that's used in combat. This one bears a hastily added trade mark of the Blue Line Caravan corp.
   components:
@@ -205,8 +205,8 @@
     priceMultiplier: 0
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterCombatArmorMK2
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterCombatArmorMK2
   name: combat armor mk2
   description: A suit of combat armor that's used in combat. It looks stronger than basic combat armor.
   components:
@@ -226,8 +226,8 @@
     damageCoefficient: 0.75
 
 - type: entity
-  parent: N14ClothingOuterCombatArmorMK2
-  id: N14ClothingOuterCombatArmorMK2Cargo
+  parent: F14ClothingOuterCombatArmorMK2
+  id: F14ClothingOuterCombatArmorMK2Cargo
   name: combat armor mk2
   description: A suit of combat armor that's used in combat. It looks stronger than basic combat armor. This one bears a hastily added trade mark of the Blue Line Caravan corp.
   components:
@@ -241,8 +241,8 @@
     priceMultiplier: 0
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterMarineArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterMarineArmor
   name: marine armor
   description: An extremely advanced piece of combat armor, the strongest you can find.
   components:
@@ -265,8 +265,8 @@
     sprintModifier: 0.95
 
 - type: entity
-  parent: N14ClothingOuterCombatArmorMK2
-  id: N14ClothingOuterEnclaveArmor
+  parent: F14ClothingOuterCombatArmorMK2
+  id: F14ClothingOuterEnclaveArmor
   name: U.S. Army armor
   description: A suit of armor used by U.S. Army soldiers.
   components:
@@ -276,8 +276,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutenclavearmor.rsi
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterVaultSecVest
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterVaultSecVest
   name: vault security vest
   description: A vest used by Vault security to protect themselves.
   components:
@@ -297,8 +297,8 @@
     damageCoefficient: 0.8
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterEnclavePeacekeeper
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterEnclavePeacekeeper
   name: U.S. Army peacekeeper vest
   description: A bulletproof vest used by U.S. Army 'peacekeepers'. Pfft. Yeah, right.
   components:
@@ -320,8 +320,8 @@
 #MARK: Tribal
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterTribalArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterTribalArmor
   name: tribal armor
   description: A piece of armor used by tribals.
   components:
@@ -341,8 +341,8 @@
     damageCoefficient: 0.85
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterTribalArmorHeavy
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterTribalArmorHeavy
   name: heavy tribal armor
   description: A piece of heavy armor used by tribals.
   components:
@@ -365,8 +365,8 @@
     damageCoefficient: 0.8
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterCombatTribal
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterCombatTribal
   name: tribal combat armor
   description: A salvaged combat armor to fit the tribe's needs.
   components:
@@ -389,8 +389,8 @@
     # luckModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterTribalArmor
-  id: N14ClothingOuterBandito
+  parent: F14ClothingOuterTribalArmor
+  id: F14ClothingOuterBandito
   name: tribal bandito armor
   description: A robe used by tribals skilled with the gun in the drylanders style.
   components:
@@ -400,8 +400,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/drylander-bandito.rsi
 
 - type: entity
-  parent: N14ClothingOuterTribalArmor
-  id: N14ClothingOuterforager
+  parent: F14ClothingOuterTribalArmor
+  id: F14ClothingOuterforager
   name: tribal forager armor
   description: A robe used by tribals who scavange the land in the drylanders style.
   components:
@@ -411,8 +411,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/drylander-forager.rsi
 
 - type: entity
-  parent: N14ClothingOuterTribalArmor
-  id: N14ClothingOuterheadtaker
+  parent: F14ClothingOuterTribalArmor
+  id: F14ClothingOuterheadtaker
   name: tribal headtaker armor
   description: A robe used by tribals who fight with blade and fury in the drylanders style.
   components:
@@ -422,8 +422,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/drylander-headtaker.rsi
 
 - type: entity
-  parent: N14ClothingOuterTribalArmor
-  id: N14ClothingOuterhunter
+  parent: F14ClothingOuterTribalArmor
+  id: F14ClothingOuterhunter
   name: tribal hunter armor
   description: A robe used by tribals who hunt prey in the drylander style.
   components:
@@ -433,8 +433,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/drylander-hunter.rsi
 
 - type: entity
-  parent: N14ClothingOuterTribalArmor
-  id: N14ClothingOuterponcho
+  parent: F14ClothingOuterTribalArmor
+  id: F14ClothingOuterponcho
   name: tribal poncho
   description: A piece of armor used by tribals in the drylander style.
   components:
@@ -444,8 +444,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/drylander-poncho.rsi
 
 - type: entity
-  parent: N14ClothingOuterTribalArmor
-  id: N14ClothingOutershaman
+  parent: F14ClothingOuterTribalArmor
+  id: F14ClothingOutershaman
   name: tribal shamanic robes
   description: A robe worn by the drylander shamans.
   components:
@@ -455,8 +455,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/drylander-shaman.rsi
 
 - type: entity
-  parent: N14ClothingOuterTribalArmor
-  id: N14ClothingOuterdrylandersimple
+  parent: F14ClothingOuterTribalArmor
+  id: F14ClothingOuterdrylandersimple
   name: tribal robes
   description: A robe used by tribals in the drylander style.
   components:
@@ -468,8 +468,8 @@
 #MARK: Raiders
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterRaiderBadlands
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterRaiderBadlands
   name: raider badlands armor
   description: A suit of raider armor. It provides barely any protection... but it DOES look cool.
   components:
@@ -490,8 +490,8 @@
   #  strengthModifier: 1
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterRaiderBlastmaster
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterRaiderBlastmaster
   name: raider blastmaster armor
   description: A suit of raider armor. It provides barely any protection... but it DOES look cool.
   components:
@@ -512,8 +512,8 @@
   #  agilityModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: N14ClothingOuterRaiderCombat1
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterRaiderCombat1
   name: raider combat armor
   description: An armor piece infamously used by raiders of all kinds in combat.
   components:
@@ -530,8 +530,8 @@
         Heat: 0.7
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterRaiderCombat2
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterRaiderCombat2
   name: raider combat armor mk2
   description: An armor piece infamously used by Raiders of all kinds in combat, this one seems to hold some pieces of a salvaged mk2 combat armor.
   components:
@@ -551,8 +551,8 @@
     damageCoefficient: 0.8
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterPoliceCombat
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterPoliceCombat
   name: police combat armor
   description: A blue lighter variant of combat armor used by police forces of the pre-war.
   components:
@@ -572,8 +572,8 @@
     damageCoefficient: 0.8
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterCombatRusted
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterCombatRusted
   name: rusted combat armor
   description: A suit of combat armor. This one looks rusted.
   components:
@@ -593,8 +593,8 @@
     damageCoefficient: 0.85
 
 - type: entity
-  parent: N14ClothingOuterCombatRusted
-  id: N14ClothingOuterCombatRaider
+  parent: F14ClothingOuterCombatRusted
+  id: F14ClothingOuterCombatRaider
   name: raider combat armor
   description: A suit of combat armor. This one is quite decrepit and broken down.
   components:
@@ -604,8 +604,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutcombatraider.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: N14ClothingOuterCombatPainspike
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterCombatPainspike
   name: painspike combat armor
   description: A suit of combat armor. This one seems to be dyed black and modified with spikes around its entirety.
   components:
@@ -615,8 +615,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutcombatpainspike.rsi
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterPainspike
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterPainspike
   name: painspike armor
   description: A particularly unhuggable armor, even by raider standards. Extremely spiky.
   components:
@@ -636,8 +636,8 @@
     damageCoefficient: 0.85
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterSupafly
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterSupafly
   name: supafly
   description: Fabulous mutant powers were revealed to me the day I held aloft my bumper sword and said... BY THE POWER OF NUKA-COLA, I AM RAIDER MAN!
   components:
@@ -661,8 +661,8 @@
     spread: 150
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterPoliceVest
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterPoliceVest
   name: police vest
   description: A protective vest used for the pre-war police.
   components:
@@ -682,11 +682,11 @@
     damageCoefficient: 0.85
   - type: Tag #For crafting
     tags:
-      - N14PoliceVest
+      - F14PoliceVest
 
 - type: entity
-  parent: N14ClothingOuterPoliceVest
-  id: N14ClothingOuterPoliceVestCargo
+  parent: F14ClothingOuterPoliceVest
+  id: F14ClothingOuterPoliceVestCargo
   name: cargo vest
   description: A protective vest used for the pre-war police. This one has a Blue Line Caravan corp trade mark sewn into the breast.
   components:
@@ -700,8 +700,8 @@
     priceMultiplier: 0
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterSheriffVest
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterSheriffVest
   name: sheriff vest
   description: The sheriff needs a good piece of armor to protect themselves from the dangers of the wasteland.
   components:
@@ -723,8 +723,8 @@
 #MARK: NCR
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterNCRVestSnow
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterNCRVestSnow
   name: snow leather NCR vest
   description: A light ballistic plate inside a leather vest, cheap and easy to mass produce, perfect armor for light infantry. This one is covered in snow-white camo.
   components:
@@ -744,8 +744,8 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterNCRVestWoods
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterNCRVestWoods
   name: woods leather NCR vest
   description: A light ballistic plate inside a leather vest, cheap and easy to mass produce, perfect armor for light infantry. This one is covered in green camo.
   components:
@@ -765,8 +765,8 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterNCRVestDesert
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterNCRVestDesert
   name: desert leather NCR vest
   description: A light ballistic plate inside a leather vest, cheap and easy to mass produce, perfect armor for light infantry. This one is covered in classic desert camo.
   components:
@@ -786,8 +786,8 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterNCRVestCoatBlack
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterNCRVestCoatBlack
   name: infiltrator NCR coat
   description: A light ballistic plate inside a leather vest over a long coat. This one is covered in black camo for night operations.
   components:
@@ -810,8 +810,8 @@
     damageCoefficient: 0.85
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterNCRPlateWoods
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterNCRPlateWoods
   name: NCR plate armor
   description: A bunch of light steel plates connected to a hollow regular vest, designed to protect during melee combat.
   components:
@@ -837,8 +837,8 @@
     sprintModifier: 0.95
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterNCRPlateDesert
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterNCRPlateDesert
   name: NCR plate armor
   description: A bunch of light steel plates connected to a hollow regular vest, designed to protect during melee combat.
   components:
@@ -864,8 +864,8 @@
     sprintModifier: 0.95
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterNCRPouchedVestWoods
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterNCRPouchedVestWoods
   name: pouched leather NCR vest
   description: A leather vest with a light ballistic plate inside, this vest comes with a pack of pouches to hold any kind of things. It's uncomfy to move with it.
   components:
@@ -888,8 +888,8 @@
     sprintModifier: 0.95
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterNCRPouchedVestDesert
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterNCRPouchedVestDesert
   name: pouched leather NCR vest
   description: A leather vest with a light ballistic plate inside, this vest comes with a pack of pouches to hold any kind of things. It's uncomfy to move with it.
   components:
@@ -912,8 +912,8 @@
     sprintModifier: 0.95
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterNCRPouchedVestSnow
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterNCRPouchedVestSnow
   name: pouched leather NCR vest
   description: A leather vest with a light ballistic plate inside, this vest comes with a pack of pouches to hold any kind of things. It's uncomfy to move with it.
   components:
@@ -935,8 +935,8 @@
     sprintModifier: 0.95
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterNCRLightPouchedVest
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterNCRLightPouchedVest
   name: light pouched leather NCR vest
   description: A hardened leather vest with a light ballistic plate inside, this vest comes with a pack of pouches to hold any kind of things.
   components:
@@ -956,8 +956,8 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: N14ClothingOuterNCRCombatArmor
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterNCRCombatArmor
   name: NCR combat armor
   description: An old military grade pre-war combat armor, repainted to the colour scheme of the New California Republic.
   components:
@@ -967,8 +967,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutcombatNCR.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmorMK2
-  id: N14ClothingOuterNCRCombatArmorMK2
+  parent: F14ClothingOuterCombatArmorMK2
+  id: F14ClothingOuterNCRCombatArmorMK2
   name: NCR combat armor mk2
   description: A reinforced set of bracers, greaves, and torso plating of pre-war design. This one is kitted with additional plates, repainted to the colour scheme of the New California Republic.
   components:
@@ -979,7 +979,7 @@
 
 - type: entity
   parent: ClothingOuterBase
-  id: N14ClothingOuterNCRCFvest
+  id: F14ClothingOuterNCRCFvest
   name: NCR CF ballistic vest
   description: A light ballistic plate inside a nylon vest. This one is in the colors of NCR Correctional Facility staff.
   components:
@@ -1000,8 +1000,8 @@
 #MARK: NCR Rangers
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterRangerVest
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterRangerVest
   name: NCR tactical vest
   description: A custom NCR leather vest modified to become more versatile and protective.
   components:
@@ -1021,8 +1021,8 @@
     damageCoefficient: 0.7
 
 - type: entity
-  parent: N14ClothingOuterNCRCombatArmor
-  id: N14ClothingOuterRangerArmor
+  parent: F14ClothingOuterNCRCombatArmor
+  id: F14ClothingOuterRangerArmor
   name: ranger patrol armor
   description: A complete piece of combat armor created by the NCR itself, used by the NCR Rangers during their most dangerous patrols.
   components:
@@ -1032,8 +1032,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutrangersuit.rsi
 
 - type: entity
-  parent: N14ClothingOuterNCRCombatArmor
-  id: N14ClothingOuterRangerArmorB
+  parent: F14ClothingOuterNCRCombatArmor
+  id: F14ClothingOuterRangerArmorB
   name: customized ranger patrol armor
   description: A customized and moderately-worn suit of patrol ranger armor. A sun-worn thick olive duster is worn over the armor.
   components:
@@ -1053,8 +1053,8 @@
     damageCoefficient: 0.7
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterRangerDuster
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterRangerDuster
   name: ranger recon duster
   description: A thicker than average duster worn by NCR recon rangers out in the field. It's not heavily armored by any means, but is easy to move around in and provides excellent protection from the harsh desert environment.
   components:
@@ -1079,8 +1079,8 @@
 #MARK: Veteran
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterRangerCoat
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterRangerCoat
   name: NCR ranger armor
   description: The most feared and skillful soldiers of the NCR that the wasteland can create tend to wear this armor.
   components:
@@ -1101,8 +1101,8 @@
   - type: ClothingSpeedModifier
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterRangerCombat
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterRangerCombat
   name: ranger combat armor
   description: The Rangers combat armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers.
   components:
@@ -1122,8 +1122,8 @@
     damageCoefficient: 0.7
 
 - type: entity
-  parent: N14ClothingOuterRangerCombat
-  id: N14ClothingOuterRangerCombatDesert
+  parent: F14ClothingOuterRangerCombat
+  id: F14ClothingOuterRangerCombatDesert
   name: desert ranger combat armor
   description: This is the original armor the NCR Ranger Combat armor was based off of. An awe inspiring suit of armor used by the legendary Desert Rangers.
   components:
@@ -1133,8 +1133,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutrangerdesertcombat.rsi
 
 - type: entity
-  parent: N14ClothingOuterRangerCombat
-  id: N14ClothingOuterRangerFox
+  parent: F14ClothingOuterRangerCombat
+  id: F14ClothingOuterRangerFox
   name: fox ranger combat armor
   description: A customized and well worn suit of riot gear reinforced with leather armor and pieces of a slain Centurion by the wearer. "A. Fox" is stenciled on the left breastplate.
   components:
@@ -1144,8 +1144,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutrangerfox.rsi
 
 - type: entity
-  parent: N14ClothingOuterRangerCombat
-  id: N14ClothingOuterRangerWeathered
+  parent: F14ClothingOuterRangerCombat
+  id: F14ClothingOuterRangerWeathered
   name: weathered ranger combat armor
   description: A set of pre-unification desert ranger armor, made using parts of what was once USMC riot armor. It looks as if it has been worn for decades; the coat has become discoloured from years under the Mojave sun and has multiple tears and bullet holes in its leather. The armor plating itself seems to be in relatively good shape though it could do with some maintenance.
   components:
@@ -1155,8 +1155,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutrangerweathered.rsi
 
 - type: entity
-  parent: N14ClothingOuterRangerCombat
-  id: N14ClothingOuterRangerElite # Admin event gear (OP)
+  parent: F14ClothingOuterRangerCombat
+  id: F14ClothingOuterRangerElite # Admin event gear (OP)
   name: elite ranger combat armor
   description: A customized and well-worn suit of riot gear with parts of the suit reinforced with leather armor and slain Centurion armor pieces by the wearer. A sniper's veil is wrapped around the neck.
   components:
@@ -1176,8 +1176,8 @@
     damageCoefficient: 0.7
 
 - type: entity
-  parent: N14ClothingOuterRangerCombat
-  id: N14ClothingOuterRangerEliteOld
+  parent: F14ClothingOuterRangerCombat
+  id: F14ClothingOuterRangerEliteOld
   name: worn elite ranger combat armor
   description: Worn riot gear granted to Rangers who served as law bringers for times of great unrest. This armor is a testament to the reach and power of the Republic and its will to bring peace to the lawlessness of the wasteland.
   components:
@@ -1197,8 +1197,8 @@
     damageCoefficient: 0.7
 
 - type: entity
-  parent: N14ClothingOuterRangerCombat
-  id: N14ClothingOuterRangerPrice
+  parent: F14ClothingOuterRangerCombat
+  id: F14ClothingOuterRangerPrice
   name: spider ranger combat armor
   description: A customised and faded suit of riot gear, reminiscient of that found near Hopeville in the Divide, with a pair of wrist mounted ammo pouches for easy access to spare munitions with a pair of stripes down the back made from a fire-proof material.
   components:
@@ -1220,8 +1220,8 @@
 #MARK: washington BoS
 
 - type: entity
-  parent: N14ClothingOuterCombatArmorMK2
-  id: N14ClothingOuterCombatArmorBOSMK2
+  parent: F14ClothingOuterCombatArmorMK2
+  id: F14ClothingOuterCombatArmorBOSMK2
   name: BoS Combat Armor MK2
   description: A suit of combat armor used by the Brotherhood of Steel. #Misfits Tweak - Removed Washington reference
   components:
@@ -1231,8 +1231,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutbosmk2armor.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: N14ClothingOuterCombatArmorBOS
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterCombatArmorBOS
   name: BoS Combat Armor
   description: A suit of combat armor used by the low-ranking members of the Brotherhood of Steel. #Misfits Tweak - Removed Washington reference
   components:
@@ -1242,8 +1242,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutbosarmor.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: N14ClothingOuterCombatArmorKnightBOS
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterCombatArmorKnightBOS
   name: Knight Combat Armor
   description: A suit of combat armor used by the Knights of the Brotherhood of Steel. #Misfits Tweak - Removed Washington reference
   components:
@@ -1253,8 +1253,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutbosknight.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmorMK2
-  id: N14ClothingOuterCombatArmorSeniorBOS
+  parent: F14ClothingOuterCombatArmorMK2
+  id: F14ClothingOuterCombatArmorSeniorBOS
   name: Senior Knight Combat Armor
   description: A suit of combat armor used by the Senior Knights of the Brotherhood of Steel. #Misfits Tweak - Removed Washington reference
   components:
@@ -1264,8 +1264,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutbossenior.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmorMK2
-  id: N14ClothingOuterCombatArmorCaptainBOS
+  parent: F14ClothingOuterCombatArmorMK2
+  id: F14ClothingOuterCombatArmorCaptainBOS
   name: Head Knight Combat Armor #Misfits Tweak - Renamed to match Head Knight role
   description: A suit of combat armor used by the Head Knights of the Brotherhood of Steel. #Misfits Tweak - Removed Washington reference
   components:
@@ -1285,8 +1285,8 @@
     damageCoefficient: 0.75
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterBosScribe
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterBosScribe
   name: technical leather vest
   description: A leather vest with everything a Scribe could need during a field job, theres no Don Quixote without a Sancho Panza.
   components:
@@ -1306,8 +1306,8 @@
     damageCoefficient: 0.8
 
 - type: entity
-  parent: N14ClothingOuterCombatArmorMK2
-  id: N14ClothingOuterCombatArmorMK3
+  parent: F14ClothingOuterCombatArmorMK2
+  id: F14ClothingOuterCombatArmorMK3
   name: BoS Combat Armor MK3
   description: Meticulously worked on by the Washington Scribes, its near unrecognisable from its original state.
   components:
@@ -1329,8 +1329,8 @@
 # New Washington BoS stuff after rework
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterWBoSInitiateArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterWBoSInitiateArmor
   name: Initiate Armor
   description: A set of light armor used by the Washington Brotherhood's Initiates. It's quite light on actual plating, but cheap to make.
   components:
@@ -1352,8 +1352,8 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterWBoSSquireArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterWBoSSquireArmor
   name: Squire Armor
   description: A set of light armor used by the Washington Brotherhood's Squires. It's a bit light on actual plating, but insulates from the cold.
   components:
@@ -1375,8 +1375,8 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterWBoSKnightArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterWBoSKnightArmor
   name: Knight Armor
   description: A suit of combat armor used by the Washington Brotherhood's Knights. Almost identical to pre-war sets issued to the military.
   components:
@@ -1398,8 +1398,8 @@
     damageCoefficient: 0.8
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterWBoSSeniorKArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterWBoSSeniorKArmor
   name: Senior Knight Armor
   description: A suit of combat armor used by the Washington Brotherhood's Senior Knights. It's slightly sturdier than the average rank & file troop's gear.
   components:
@@ -1421,8 +1421,8 @@
     damageCoefficient: 0.8
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterWBoSPaladinArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterWBoSPaladinArmor
   name: Paladin Armor
   description: A suit of sturdy armor used by the Washington Brotherhood's Paladins. Seems to cover almost every inch of one's torso.
   components:
@@ -1458,8 +1458,8 @@
 #MARK: midwest BoS
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: N14ClothingOuterMidwestArmor
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterMidwestArmor
   name: BoS Combat Armor
   description: A suit of combat armor modified with multiple well-polished metal plates.
   components:
@@ -1469,8 +1469,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutmidbosarmor.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmorMK2
-  id: N14ClothingOuterMidwestArmorMK2
+  parent: F14ClothingOuterCombatArmorMK2
+  id: F14ClothingOuterMidwestArmorMK2
   name: Veteran BoS Combat Armor
   description: A suit of combat armor modified with multiple well-polished metal plates and vibrant orange lines, a more robust version.
   components:
@@ -1480,8 +1480,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutmidbosarmorV2.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: N14ClothingOuterMidwestReconArmor
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterMidwestReconArmor
   name: BoS Recon Armor
   description: A suit of recon armor manufactured by the Brotherhood of Steel, reserved for only higher ranked members.
   components:
@@ -1506,8 +1506,8 @@
 # New Midwest BoS stuff after rework
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterMBoSInitiateArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterMBoSInitiateArmor
   name: Initiate Armor
   description: A set of light armor used by the Brotherhood's Initiates. It's quite light on actual plating, but cheap to make.
   components:
@@ -1529,8 +1529,8 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterMBoSSquireArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterMBoSSquireArmor
   name: Squire Armor
   description: A set of light armor used by the Brotherhood's Squires. It's a bit light on actual plating, but insulates from the cold.
   components:
@@ -1552,8 +1552,8 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterMBoSKnightArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterMBoSKnightArmor
   name: Knight Armor
   description: A suit of combat armor used by the Brotherhood's Knights. Almost identical to pre-war sets issued to the military.
   components:
@@ -1575,8 +1575,8 @@
     damageCoefficient: 0.8
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterMBoSSeniorKArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterMBoSSeniorKArmor
   name: Senior Knight Armor
   description: A suit of combat armor used by the Brotherhood's Senior Knights. It's slightly sturdier than the average rank & file troop's gear.
   components:
@@ -1598,8 +1598,8 @@
     damageCoefficient: 0.8
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterMBoSPaladinArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterMBoSPaladinArmor
   name: Paladin Armor
   description: A suit of sturdy armor used by the Brotherhood's Paladins. Seems to have been forged by artificers for WAR!
   components:
@@ -1634,8 +1634,8 @@
 #MARK: craftable armors
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterInsectArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterInsectArmor
   name: insect armor
   description: A suit of handmade armor made from a blend of different insect pieces, very protective.
   components:
@@ -1655,8 +1655,8 @@
     damageCoefficient: 0.85
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterChitinArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterChitinArmor
   name: chitin armor
   description: A suit of handmade armor made from a lot of chitin from insects.
   components:
@@ -1676,8 +1676,8 @@
     damageCoefficient: 0.85
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterRadArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterRadArmor
   name: radscorpion armor
   description: A suit of handmade armor made of pieces of exoskeleton from radscorpions.
   components:
@@ -1697,8 +1697,8 @@
     damageCoefficient: 0.85
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterLightMetalArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterLightMetalArmor
   name: light metal armor
   description: A suit of light metal armor that provides protection against physical threats.
   components:
@@ -1719,8 +1719,8 @@
     price: 20
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterLightLeatherArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterLightLeatherArmor
   name: light leather armor
   description: Your basic all leather apparel. Finely crafted from tanned brahmin hide.
   components:
@@ -1739,8 +1739,8 @@
     damageCoefficient: 0.80
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterReinforcedLeatherArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterReinforcedLeatherArmor
   name: Reinforced leather armor
   description: An advanced version of the basic leather armor with extra layers of protection. Finely crafted from tanned brahmin hide.
   components:
@@ -1761,8 +1761,8 @@
 #MARK: RCMP armors
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterVestRCMP
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterVestRCMP
   name: RCMP armored vest
   description: A bulletproof vest used by the Canadian Mounties of the RCMP.
   components:
@@ -1782,8 +1782,8 @@
     damageCoefficient: 0.85
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterCombatArmorRCMP
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterCombatArmorRCMP
   name: RCMP combat armor
   description: A suit of combat armor that's used in combat, this one is a post-war model produced by the RCMP.
   components:
@@ -1805,8 +1805,8 @@
 #MARK: Chinese renmants
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterCombatArmorChinese
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterCombatArmorChinese
   name: chinese combat armor
   description: A bulletproof vest combined with knee pads, mostly used by chinese commandos and special forces.
   components:
@@ -1826,8 +1826,8 @@
     damageCoefficient: 0.8
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterVestChinese
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterVestChinese
   name: chinese armored vest
   description: A light bulletproof vest, mostly used by regular Chinese infantry.
   components:
@@ -1849,8 +1849,8 @@
 # random other armor
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterPressArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterPressArmor
   name: prewar reporter armor
   description: An old piece of armor once used by the Free Press before the war. Though the ballistic fiber is worn, it will still offer some protection.
   components:
@@ -1873,7 +1873,7 @@
 
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: N14ClothingOuterChineseStealthSuit
+  id: F14ClothingOuterChineseStealthSuit
   name: chinese stealth suit
   description: Yī tào yǐqián wéi zhōngguó tèzhǒng bùduì zhìzào de zhuāngjiǎ. # Someone translate this shit back to English.
   components: # Oh and it wouldn't hurt to make this actially functioning stealth suit :P
@@ -1882,7 +1882,7 @@
   - type: Clothing
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutchinesestealthsuit.rsi
   - type: ToggleableClothing
-    clothingPrototype: N14ClothingHeadHatHelmetChineseStealthSuitHelmet
+    clothingPrototype: F14ClothingHeadHatHelmetChineseStealthSuitHelmet
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
@@ -1902,8 +1902,8 @@
 # Town Guard armour
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: N14ClothingOuterTownGuardLight
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterTownGuardLight
   name: the Guard's light armor # Misfits Fix - renamed to distinguish from riot variant
   description: An old piece of armor or maybe a replica of one. Nothing more than sheets of metal held together by leather straps, surprisingly sturdy thing.
   components:
@@ -1924,8 +1924,8 @@
     price: 50
 
 - type: entity
-  parent: N14ClothingOuterTownGuardLight
-  id: N14ClothingOuterTownGuardRiot
+  parent: F14ClothingOuterTownGuardLight
+  id: F14ClothingOuterTownGuardRiot
   name: the Guard's riot armor # Misfits Fix - renamed to distinguish from light variant
   description: An old piece of armor or maybe a replica of one, surprisingly sturdy thing. Additional plating over the left arm for extra protection in melee combat.
   components:

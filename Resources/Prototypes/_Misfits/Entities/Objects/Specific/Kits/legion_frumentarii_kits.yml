@@ -2,8 +2,8 @@
 
 - type: entity
   name: frumentarii black-ops kit
-  parent: N14KitBase
-  id: MisfitsKitFrumentariiBlackOps
+  parent: F14KitBase
+  id: F14KitFrumentariiBlackOps
   description: A concealed kit for Frumentarii undercover operations. Contains civilian clothes, a scrap headset, and wastelander dogtags.
   components:
   - type: Sprite
@@ -13,8 +13,8 @@
     size: Normal
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingUniformJumpsuitSettlerRags  # civilian cover — blend in with wastelanders
-      - id: MisfitsClothingHeadsetWastelandScrap   # wasteland radio channel, inconspicuous
-      - id: MisfitsClothingNeckDogtags                 # fake wastelander ID for deep cover
+      - id: F14ClothingUniformJumpsuitSettlerRags  # civilian cover — blend in with wastelanders
+      - id: F14ClothingHeadsetWastelandScrap   # wasteland radio channel, inconspicuous
+      - id: F14ClothingNeckDogtags                 # fake wastelander ID for deep cover
     sound:
       path: /Audio/Effects/unwrap.ogg

@@ -4,21 +4,21 @@
 # neutral orders), which aren't ported. Like N14, hostile mobs don't wander when they have no target.
 
 - type: htnCompound
-  id: N14HostileCompound
+  id: F14HostileCompound
   branches:
     - tasks:
         - !type:HTNCompoundTask
           task: MeleeCombatCompound
 
 - type: htnCompound
-  id: N14RangedHostileCompound
+  id: F14RangedHostileCompound
   branches:
     - tasks:
         - !type:HTNCompoundTask
           task: RangedCombatCompound
 
 - type: htnCompound
-  id: N14TurretCompound
+  id: F14TurretCompound
   branches:
     - tasks:
         - !type:HTNCompoundTask

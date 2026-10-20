@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/Machines/workbenchtinker.yml
 
 - type: constructionGraph
-  id: N14WorkbenchTinkerbench
+  id: F14WorkbenchTinkerbench
   start: start
   graph:
     - node: start
@@ -19,29 +19,29 @@
     - node: WorkbenchTinkerbenchFrame
       actions:
       - !type:AppearanceChange
-      entity: MisfitsWorkbenchTinkerbenchFrame
+      entity: F14WorkbenchTinkerbenchFrame
       edges:
         - to: WorkbenchTinkerbenchCopper
           steps:
-            - material: N14Copper
+            - material: F14Copper
               amount: 2
               doAfter: 3
 
     - node: WorkbenchTinkerbenchCopper
       actions:
       - !type:AppearanceChange
-      entity: MisfitsWorkbenchTinkerbenchFrame
+      entity: F14WorkbenchTinkerbenchFrame
       edges:
         - to: WorkbenchTinkerbenchAluminum
           steps: 
-            - material: N14Aluminum
+            - material: F14Aluminum
               amount: 1
               doAfter: 1
 
     - node: WorkbenchTinkerbenchAluminum
       actions:
       - !type:AppearanceChange
-      entity: MisfitsWorkbenchTinkerbenchFrame
+      entity: F14WorkbenchTinkerbenchFrame
       edges:
         - to: WorkbenchTinkerbenchCable
           steps:
@@ -52,7 +52,7 @@
     - node: WorkbenchTinkerbenchCable
       actions:
       - !type:AppearanceChange
-      entity: MisfitsWorkbenchTinkerbenchFrame
+      entity: F14WorkbenchTinkerbenchFrame
       edges:
         - to: WorkbenchTinkerbenchPlastic
           steps:
@@ -63,7 +63,7 @@
     - node: WorkbenchTinkerbenchPlastic
       actions:
       - !type:AppearanceChange
-      entity: MisfitsWorkbenchTinkerbenchFrame
+      entity: F14WorkbenchTinkerbenchFrame
       edges:
         - to: WorkbenchTinkerbenchUnwrench
           steps:
@@ -73,7 +73,7 @@
     - node: WorkbenchTinkerbenchUnwrench
       actions:
       - !type:AppearanceChange
-      entity: MisfitsWorkbenchTinkerbenchFrame
+      entity: F14WorkbenchTinkerbenchFrame
       edges:
         - to: WorkbenchTinkerbenchUnscrewed
           steps:
@@ -84,7 +84,7 @@
     - node: WorkbenchTinkerbenchUnscrewed
       actions:
       - !type:AppearanceChange
-      entity: MisfitsWorkbenchTinkerbenchFrame
+      entity: F14WorkbenchTinkerbenchFrame
       edges:
         - to: WorkbenchTinkerbench
           steps:
@@ -92,4 +92,4 @@
               doAfter: 2
 
     - node: WorkbenchTinkerbench
-      entity: N14WorkbenchTinkerbench
+      entity: F14WorkbenchTinkerbench

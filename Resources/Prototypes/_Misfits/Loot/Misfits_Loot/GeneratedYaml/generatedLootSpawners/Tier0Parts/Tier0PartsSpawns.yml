@@ -3,38 +3,38 @@
 - type: entity
   name: Tier0 Parts EletricMisc Single
   suffix: Tier0
-  id: MisfitsM14PartsTier0Spawner_Single_EletricMisc
-  parent: MisfitsM14Tier0Spawner_RefParts
+  id: F14PartsTier0SpawnerSingleEletricMisc
+  parent: F14Tier0SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier0_EletricMisc
+      tableId: F14PartsLootTier0EletricMisc
 
 - type: entity
   name: Tier0 Parts EletricMisc 0-3
   suffix: Tier0
-  id: MisfitsM14PartsTier0Spawner_Mult0_3_EletricMisc
-  parent: MisfitsM14Tier0Spawner_RefParts
+  id: F14PartsTier0SpawnerMult03EletricMisc
+  parent: F14Tier0SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier0_EletricMisc
+      tableId: F14PartsLootTier0EletricMisc
 
 - type: entity
   name: Tier0 Parts EletricMisc 1-2
   suffix: Tier0
-  id: MisfitsM14PartsTier0Spawner_Mult1_2_EletricMisc
-  parent: MisfitsM14Tier0Spawner_RefParts
+  id: F14PartsTier0SpawnerMult12EletricMisc
+  parent: F14Tier0SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier0_EletricMisc
+      tableId: F14PartsLootTier0EletricMisc

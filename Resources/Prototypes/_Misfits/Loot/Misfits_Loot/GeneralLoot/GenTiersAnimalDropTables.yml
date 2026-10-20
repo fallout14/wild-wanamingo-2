@@ -1,336 +1,336 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/GeneralLoot/GenTiersAnimalDropTables.yml
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_All
+  id: F14AnimalDropsLootTier0All
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_InsectOrgans
+      tableId: F14AnimalDropsLootTier0InsectOrgans
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_AllGecko
+      tableId: F14AnimalDropsLootTier0AllGecko
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_Generic
+      tableId: F14AnimalDropsLootTier0Generic
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_RadScorp
+      tableId: F14AnimalDropsLootTier0RadScorp
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_Bovine
+      tableId: F14AnimalDropsLootTier0Bovine
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_YaoGuai
+      tableId: F14AnimalDropsLootTier0YaoGuai
     - !type:EntSelector
-      id: N14FoodMeatRadroachFillet
+      id: F14FoodMeatRadroachFillet
     - !type:EntSelector
-      id: N14FoodMeatMirelurkClaw
+      id: F14FoodMeatMirelurkClaw
     - !type:EntSelector
-      id: N14FoodMeatRadchicken
+      id: F14FoodMeatRadchicken
     - !type:EntSelector
-      id: N14FoodMeatPigrat
+      id: F14FoodMeatPigrat
     - !type:EntSelector
-      id: N14MaterialNightstalkerPelt
+      id: F14MaterialNightstalkerPelt
     - !type:EntSelector
-      id: N14FoodEggDeathclaw
+      id: F14FoodEggDeathclaw
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_Generic
+  id: F14AnimalDropsLootTier0Generic
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14MaterialRawLeather1
+      id: F14MaterialRawLeather1
     - !type:EntSelector
-      id: N14MaterialAntChitin1 # this is reused for insects
+      id: F14MaterialAntChitin1 # this is reused for insects
     - !type:EntSelector
-      id: N14FoodMeatRadRaw
+      id: F14FoodMeatRadRaw
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_GenericMammal
+  id: F14AnimalDropsLootTier0GenericMammal
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14MaterialRawLeather1
+      id: F14MaterialRawLeather1
     - !type:EntSelector
-      id: N14FoodMeatRadRaw
+      id: F14FoodMeatRadRaw
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_GenericInsect
+  id: F14AnimalDropsLootTier0GenericInsect
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14MaterialAntChitin1 # this is reused for insects
+      id: F14MaterialAntChitin1 # this is reused for insects
     - !type:EntSelector
-      id: N14FoodMeatRadRaw
+      id: F14FoodMeatRadRaw
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_AnyInsect
-  table: !type:GroupSelector
-    children:
-    - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_GenericInsect
-    - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_InsectOrgans
-    - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_RadScorp
-    - !type:EntSelector
-      id: N14FoodMeatRadroachFillet
-
-- type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_MoleRat
-  table: !type:GroupSelector
-    children:
-    - !type:EntSelector
-      id: N14MaterialRawLeather1
-    - !type:EntSelector
-      id: N14FoodMeatPigrat
-
-- type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_MirelurkFull
+  id: F14AnimalDropsLootTier0AnyInsect
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_GenericInsect
+      tableId: F14AnimalDropsLootTier0GenericInsect
+    - !type:NestedSelector
+      tableId: F14AnimalDropsLootTier0InsectOrgans
+    - !type:NestedSelector
+      tableId: F14AnimalDropsLootTier0RadScorp
     - !type:EntSelector
-      id: N14FoodMeatMirelurkClaw
+      id: F14FoodMeatRadroachFillet
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_RadroachFull
+  id: F14AnimalDropsLootTier0MoleRat
+  table: !type:GroupSelector
+    children:
+    - !type:EntSelector
+      id: F14MaterialRawLeather1
+    - !type:EntSelector
+      id: F14FoodMeatPigrat
+
+- type: entityTable
+  id: F14AnimalDropsLootTier0MirelurkFull
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_GenericInsect
+      tableId: F14AnimalDropsLootTier0GenericInsect
     - !type:EntSelector
-      id: N14FoodMeatRadroachFillet
+      id: F14FoodMeatMirelurkClaw
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_NightstalkerFull
-  table: !type:GroupSelector
-    children:
-    - !type:EntSelector
-      id: N14FoodMeatRadRaw
-    - !type:EntSelector
-      id: N14MaterialNightstalkerPelt
-
-- type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_InsectOrgans
-  table: !type:GroupSelector
-    children:
-    - !type:EntSelector
-      id: N14FoodFireantNectar
-    - !type:EntSelector
-      id: N14FoodBloatflyAcidSac
-    - !type:EntSelector
-      id: N14FoodCazadorAcidSac
-
-- type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_RadScorp
-  table: !type:GroupSelector
-    children:
-    - !type:EntSelector
-      id: N14MaterialRadscorpionTail
-    - !type:EntSelector
-      id: N14MaterialExoskeleton
-    - !type:EntSelector
-      id: N14FoodMeatRadscorpionLeg
-    - !type:EntSelector
-      id: N14FoodMeatRadscorpion
-
-- type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_AllGecko
+  id: F14AnimalDropsLootTier0RadroachFull
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_Gecko
-    - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_FireGecko
-    - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_GoldGecko
+      tableId: F14AnimalDropsLootTier0GenericInsect
+    - !type:EntSelector
+      id: F14FoodMeatRadroachFillet
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_Gecko
+  id: F14AnimalDropsLootTier0NightstalkerFull
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FoodMeatGecko
+      id: F14FoodMeatRadRaw
     - !type:EntSelector
-      id: N14MaterialHideGecko
+      id: F14MaterialNightstalkerPelt
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_FireGecko
+  id: F14AnimalDropsLootTier0InsectOrgans
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FoodMeatGeckoFire
+      id: F14FoodFireantNectar
     - !type:EntSelector
-      id: N14MaterialHideGeckoFire
+      id: F14FoodBloatflyAcidSac
+    - !type:EntSelector
+      id: F14FoodCazadorAcidSac
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_GoldGecko
+  id: F14AnimalDropsLootTier0RadScorp
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FoodMeatGeckoGolden
+      id: F14MaterialRadscorpionTail
     - !type:EntSelector
-      id: N14MaterialHideGeckoGolden
+      id: F14MaterialExoskeleton
+    - !type:EntSelector
+      id: F14FoodMeatRadscorpionLeg
+    - !type:EntSelector
+      id: F14FoodMeatRadscorpion
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_YaoGuai
-  table: !type:GroupSelector
-    children:
-    - !type:EntSelector
-      id: N14MaterialYaoguaiHide
-    - !type:EntSelector
-      id: N14FoodMeatYaoguai
-
-- type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_Bovine
-  table: !type:GroupSelector
-    children:
-    - !type:EntSelector
-      id: N14MaterialBrahminHide1
-    - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_BovineMeats
-    - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_BovineSkulls
-
-- type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_BovineComplete
-  table: !type:GroupSelector
-    children:
-    - !type:EntSelector
-      id: N14MaterialRawLeather1
-    - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_Bovine
-
-- type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_BovineSkulls
-  table: !type:GroupSelector
-    children:
-    - !type:EntSelector
-      id: MisfitsMiscBrahminSkull
-    - !type:EntSelector
-      id: MisfitsMiscBighornerSkull
-    - !type:EntSelector
-      id: MisfitsMiscRadstagSkull
-
-- type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_BovineMeats
-  table: !type:GroupSelector
-    children:
-    - !type:EntSelector
-      id: N14FoodMeatBrahmin
-    - !type:EntSelector
-      id: N14FoodMeatRadstag
-    - !type:EntSelector
-      id: N14FoodMeatBighorner
-
-- type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_MammalAll
+  id: F14AnimalDropsLootTier0AllGecko
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_GenericMammal
+      tableId: F14AnimalDropsLootTier0Gecko
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_Bovine
+      tableId: F14AnimalDropsLootTier0FireGecko
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_YaoGuai
-    - !type:EntSelector
-      id: N14MaterialNightstalkerPelt
-    - !type:EntSelector
-      id: N14FoodMeatPigrat
+      tableId: F14AnimalDropsLootTier0GoldGecko
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_Brahmin
+  id: F14AnimalDropsLootTier0Gecko
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FoodMeatBrahmin
+      id: F14FoodMeatGecko
     - !type:EntSelector
-      id: N14MaterialBrahminHide1
-    - !type:EntSelector
-      id: MisfitsMiscBrahminSkull
+      id: F14MaterialHideGecko
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_Bighorner
+  id: F14AnimalDropsLootTier0FireGecko
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FoodMeatBighorner
+      id: F14FoodMeatGeckoFire
     - !type:EntSelector
-      id: MisfitsMiscBighornerSkull
+      id: F14MaterialHideGeckoFire
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_Ragstag
+  id: F14AnimalDropsLootTier0GoldGecko
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FoodMeatRadstag
+      id: F14FoodMeatGeckoGolden
     - !type:EntSelector
-      id: MisfitsMiscRadstagSkull
+      id: F14MaterialHideGeckoGolden
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_AllMeats
+  id: F14AnimalDropsLootTier0YaoGuai
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FoodMeatRadRaw
+      id: F14MaterialYaoguaiHide
     - !type:EntSelector
-      id: N14FoodMeatRadroachFillet
-    - !type:EntSelector
-      id: N14FoodMeatMirelurkClaw
-    - !type:EntSelector
-      id: N14FoodMeatRadchicken
-    - !type:EntSelector
-      id: N14FoodMeatPigrat
-    - !type:EntSelector
-      id: N14FoodMeatBrahmin
-    - !type:EntSelector
-      id: N14FoodMeatRadstag
-    - !type:EntSelector
-      id: N14FoodMeatBighorner
-    - !type:EntSelector
-      id: N14FoodMeatYaoguai
-    - !type:EntSelector
-      id: N14FoodMeatRadscorpionLeg
-    - !type:EntSelector
-      id: N14FoodMeatRadscorpion
+      id: F14FoodMeatYaoguai
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_AllHides
+  id: F14AnimalDropsLootTier0Bovine
+  table: !type:GroupSelector
+    children:
+    - !type:EntSelector
+      id: F14MaterialBrahminHide1
+    - !type:NestedSelector
+      tableId: F14AnimalDropsLootTier0BovineMeats
+    - !type:NestedSelector
+      tableId: F14AnimalDropsLootTier0BovineSkulls
+
+- type: entityTable
+  id: F14AnimalDropsLootTier0BovineComplete
+  table: !type:GroupSelector
+    children:
+    - !type:EntSelector
+      id: F14MaterialRawLeather1
+    - !type:NestedSelector
+      tableId: F14AnimalDropsLootTier0Bovine
+
+- type: entityTable
+  id: F14AnimalDropsLootTier0BovineSkulls
+  table: !type:GroupSelector
+    children:
+    - !type:EntSelector
+      id: F14MiscBrahminSkull
+    - !type:EntSelector
+      id: F14MiscBighornerSkull
+    - !type:EntSelector
+      id: F14MiscRadstagSkull
+
+- type: entityTable
+  id: F14AnimalDropsLootTier0BovineMeats
+  table: !type:GroupSelector
+    children:
+    - !type:EntSelector
+      id: F14FoodMeatBrahmin
+    - !type:EntSelector
+      id: F14FoodMeatRadstag
+    - !type:EntSelector
+      id: F14FoodMeatBighorner
+
+- type: entityTable
+  id: F14AnimalDropsLootTier0MammalAll
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHidesMammal
+      tableId: F14AnimalDropsLootTier0GenericMammal
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHidesExoSkeleton
+      tableId: F14AnimalDropsLootTier0Bovine
     - !type:NestedSelector
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHidesReptile
+      tableId: F14AnimalDropsLootTier0YaoGuai
+    - !type:EntSelector
+      id: F14MaterialNightstalkerPelt
+    - !type:EntSelector
+      id: F14FoodMeatPigrat
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_AllHidesExoSkeleton
+  id: F14AnimalDropsLootTier0Brahmin
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14MaterialAntChitin1
+      id: F14FoodMeatBrahmin
     - !type:EntSelector
-      id: N14MaterialExoskeleton
+      id: F14MaterialBrahminHide1
+    - !type:EntSelector
+      id: F14MiscBrahminSkull
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_AllHidesReptile
+  id: F14AnimalDropsLootTier0Bighorner
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14MaterialHideGecko
+      id: F14FoodMeatBighorner
     - !type:EntSelector
-      id: N14MaterialHideGeckoFire
-    - !type:EntSelector
-      id: N14MaterialHideGeckoGolden
+      id: F14MiscBighornerSkull
 
 - type: entityTable
-  id: MisfitsM14AnimalDropsLootTier0_AllHidesMammal
+  id: F14AnimalDropsLootTier0Ragstag
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14MaterialBrahminHide1
+      id: F14FoodMeatRadstag
     - !type:EntSelector
-      id: N14MaterialYaoguaiHide
+      id: F14MiscRadstagSkull
+
+- type: entityTable
+  id: F14AnimalDropsLootTier0AllMeats
+  table: !type:GroupSelector
+    children:
     - !type:EntSelector
-      id: N14MaterialRawLeather1
+      id: F14FoodMeatRadRaw
     - !type:EntSelector
-      id: N14MaterialNightstalkerPelt
+      id: F14FoodMeatRadroachFillet
+    - !type:EntSelector
+      id: F14FoodMeatMirelurkClaw
+    - !type:EntSelector
+      id: F14FoodMeatRadchicken
+    - !type:EntSelector
+      id: F14FoodMeatPigrat
+    - !type:EntSelector
+      id: F14FoodMeatBrahmin
+    - !type:EntSelector
+      id: F14FoodMeatRadstag
+    - !type:EntSelector
+      id: F14FoodMeatBighorner
+    - !type:EntSelector
+      id: F14FoodMeatYaoguai
+    - !type:EntSelector
+      id: F14FoodMeatRadscorpionLeg
+    - !type:EntSelector
+      id: F14FoodMeatRadscorpion
+
+- type: entityTable
+  id: F14AnimalDropsLootTier0AllHides
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: F14AnimalDropsLootTier0AllHidesMammal
+    - !type:NestedSelector
+      tableId: F14AnimalDropsLootTier0AllHidesExoSkeleton
+    - !type:NestedSelector
+      tableId: F14AnimalDropsLootTier0AllHidesReptile
+
+- type: entityTable
+  id: F14AnimalDropsLootTier0AllHidesExoSkeleton
+  table: !type:GroupSelector
+    children:
+    - !type:EntSelector
+      id: F14MaterialAntChitin1
+    - !type:EntSelector
+      id: F14MaterialExoskeleton
+
+- type: entityTable
+  id: F14AnimalDropsLootTier0AllHidesReptile
+  table: !type:GroupSelector
+    children:
+    - !type:EntSelector
+      id: F14MaterialHideGecko
+    - !type:EntSelector
+      id: F14MaterialHideGeckoFire
+    - !type:EntSelector
+      id: F14MaterialHideGeckoGolden
+
+- type: entityTable
+  id: F14AnimalDropsLootTier0AllHidesMammal
+  table: !type:GroupSelector
+    children:
+    - !type:EntSelector
+      id: F14MaterialBrahminHide1
+    - !type:EntSelector
+      id: F14MaterialYaoguaiHide
+    - !type:EntSelector
+      id: F14MaterialRawLeather1
+    - !type:EntSelector
+      id: F14MaterialNightstalkerPelt

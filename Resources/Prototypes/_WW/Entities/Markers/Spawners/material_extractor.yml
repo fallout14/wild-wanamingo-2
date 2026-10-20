@@ -1,0 +1,18 @@
+# Wild Wanamingo: where a seismic material extractor may appear. Misfits placed extractors beside random boulders on
+# Wendover at round start (MaterialExtractorSpawnerSystem); Yuma has no fixed boulders, so mappers place these instead
+# and each one rolls its chance every round.
+- type: entity
+  parent: MarkerBase
+  id: F14SpawnerMaterialExtractor
+  name: material extractor spawner
+  suffix: 50%
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Misfits/Structures/Machines/seismic_extractor.rsi
+      state: seismic_extractor
+  - type: RandomSpawner
+    chance: 0.5
+    prototypes:
+    - F14SeismicMaterialExtractor

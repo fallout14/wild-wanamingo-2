@@ -1,12 +1,12 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/Boxes/12gauge.yml
 
 - type: entity
-  parent: N14MagazineBox12gauge
-  id: MisfitsMagazineBox12GaugeBeanbag
+  parent: F14MagazineBox12gauge
+  id: F14MagazineBox12GaugeBeanbag
   name: ammunition box (12 gauge beanbag)
   components:
   - type: BallisticAmmoProvider
-    proto: MisfitsShellShotgun12Beanbag
+    proto: F14ShellShotgun12Beanbag
   - type: Sprite
     layers:
       - state: base

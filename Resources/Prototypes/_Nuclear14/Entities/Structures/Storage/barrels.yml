@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseStructureDynamic
-  id: N14BaseBarrel
+  id: F14BaseBarrel
   name: barrel
   description: This barrel looks like it could contain something.
   categories: [ HideSpawnMenu ]
@@ -59,8 +59,8 @@
 # Base Open
 
 - type: entity
-  parent: N14BaseBarrel
-  id: N14BaseBarrelOpen
+  parent: F14BaseBarrel
+  id: F14BaseBarrelOpen
   suffix: open
   categories: [ HideSpawnMenu ]
   components:
@@ -75,13 +75,13 @@
 # Closed
 
 - type: entity
-  parent: N14BaseBarrel
-  id: N14BlackBarrel
+  parent: F14BaseBarrel
+  id: F14BlackBarrel
   name: black barrel
   description: A worn out black barrel. The label is torn off.
   components:
   - type: Construction
-    graph: MisfitsBarrels
+    graph: F14Barrels
     node: barrelblack
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -91,26 +91,26 @@
     slope: 1
 
 - type: entity
-  parent: N14BaseBarrel
-  id: N14BlueBarrel
+  parent: F14BaseBarrel
+  id: F14BlueBarrel
   name: blue barrel
   description: A blue barrel with a warning sign of. Maybe it contains water?
   components:
   - type: Construction
-    graph: MisfitsBarrels
+    graph: F14Barrels
     node: barrelblue
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
     state: blue-closed
 
 - type: entity
-  parent: N14BaseBarrel
-  id: N14RedBarrel
+  parent: F14BaseBarrel
+  id: F14RedBarrel
   name: red barrel
   description: A red barrel with an explosive warning sign on. Better be careful.
   components:
   - type: Construction
-    graph: MisfitsBarrels
+    graph: F14Barrels
     node: barrelred
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -128,17 +128,17 @@
         Heat: 10
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     totalIntensity: 90
 
 - type: entity
-  parent: N14BaseBarrel
-  id: N14YellowBarrel
+  parent: F14BaseBarrel
+  id: F14YellowBarrel
   name: yellow barrel
   description: A yellow barrel with a radiation warning sign on. Better be careful.
   components:
   - type: Construction
-    graph: MisfitsBarrels
+    graph: F14Barrels
     node: barrelyellow
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -150,14 +150,14 @@
 # Open
 
 - type: entity
-  parent: N14BaseBarrelOpen
-  id: N14BlackBarrelOpen
+  parent: F14BaseBarrelOpen
+  id: F14BlackBarrelOpen
   suffix: open
   name: black barrel
   description: A worn out black barrel. The label is torn off. The lid is off and you can see inside.
   components:
   - type: Construction
-    graph: MisfitsBarrels
+    graph: F14Barrels
     node: barrelblackopen
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -167,42 +167,42 @@
     slope: 1
 
 - type: entity
-  parent: N14BaseBarrelOpen
-  id: N14BlueBarrelOpen
+  parent: F14BaseBarrelOpen
+  id: F14BlueBarrelOpen
   suffix: open
   name: blue barrel
   description: A blue barrel with a warning sign of. The lid is off and you can see inside.
   components:
   - type: Construction
-    graph: MisfitsBarrels
+    graph: F14Barrels
     node: barrelblueopen
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
     state: blue-open
 
 - type: entity
-  parent: N14BaseBarrelOpen
-  id: N14RedBarrelOpen
+  parent: F14BaseBarrelOpen
+  id: F14RedBarrelOpen
   suffix: open
   name: red barrel
   description: A red barrel with an explosive warning sign on. The lid is off and you can see inside.
   components:
   - type: Construction
-    graph: MisfitsBarrels
+    graph: F14Barrels
     node: barrelredopen
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
     state: red-open
 
 - type: entity
-  parent: N14BaseBarrelOpen
-  id: N14YellowBarrelOpen
+  parent: F14BaseBarrelOpen
+  id: F14YellowBarrelOpen
   suffix: open
   name: yellow barrel
   description: A yellow barrel with a radiation warning sign on. The lid is off and you can see inside but it still makes you twitch.
   components:
   - type: Construction
-    graph: MisfitsBarrels
+    graph: F14Barrels
     node: barrelyellowopen
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -214,13 +214,13 @@
 # Full barrels
 
 - type: entity
-  parent: N14BlackBarrelOpen
-  id: N14BlackBarrelFull
+  parent: F14BlackBarrelOpen
+  id: F14BlackBarrelFull
   suffix: full
   description: A worn out black barrel. This one looks full of some dark liquid.
   components:
   - type: Construction
-    graph: MisfitsBarrels
+    graph: F14Barrels
     node: barrelblackfull
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -231,13 +231,13 @@
     slope: 1
 
 - type: entity
-  parent: N14RedBarrelOpen
-  id: N14RedBarrelFull
+  parent: F14RedBarrelOpen
+  id: F14RedBarrelFull
   suffix: full
   description: A red barrel with an explosive warning sign on. It has a golden liquid inside.
   components:
   - type: Construction
-    graph: MisfitsBarrels
+    graph: F14Barrels
     node: barrelredfull
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -255,17 +255,17 @@
         Heat: 10
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     totalIntensity: 90
 
 - type: entity
-  parent: N14YellowBarrelOpen
-  id: N14YellowBarrelFull
+  parent: F14YellowBarrelOpen
+  id: F14YellowBarrelFull
   suffix: full
   description: A yellow barrel with a radiation warning sign on. You can see the glowing goo bubble.
   components:
   - type: Construction
-    graph: MisfitsBarrels
+    graph: F14Barrels
     node: barrelyellowfull
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/barrels.rsi
@@ -298,7 +298,7 @@
 
 - type: entity
   parent: BaseStructureDynamic
-  id: N14BurningBarrel
+  id: F14BurningBarrel
   name: burnt barrel
   description: This barrel looks like it once contained a fire.
   components:
@@ -321,8 +321,8 @@
         - LowImpassable
 
 - type: entity
-  parent: N14BurningBarrel
-  id: N14BurningBarrelLit
+  parent: F14BurningBarrel
+  id: F14BurningBarrelLit
   name: burning barrel
   description: This barrel is smoldering. Toasty
   components:

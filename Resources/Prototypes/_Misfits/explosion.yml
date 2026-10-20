@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/explosion.yml
 
 - type: explosion
-  id: MisfitsDefaultStructural
+  id: F14DefaultStructural
   damagePerIntensity:
     types:
       Heat: 5
@@ -19,7 +19,7 @@
 # damage associated with purpose-built fragmentation casings.
 
 - type: explosion
-  id: MisfitsDynamite
+  id: F14Dynamite
   damagePerIntensity:
     types:
       Heat: 5
@@ -36,7 +36,7 @@
 # 100-damage epicenter and crowd-control knockdown on the surrounding tiles.
 
 - type: explosion
-  id: Misfits40mmHE
+  id: F1440mmHE
   damagePerIntensity:
     types:
       Heat: 6.25
@@ -53,7 +53,7 @@
 # Its intensity is kept below the explosion system's knockdown threshold.
 
 - type: explosion
-  id: Misfits40mmIncendiary
+  id: F1440mmIncendiary
   damagePerIntensity:
     types: {}
   fireStacks: 4
@@ -67,7 +67,7 @@
 # broader intensity curve supplies knockdown through roughly three tiles.
 
 - type: explosion
-  id: MisfitsMissile
+  id: F14Missile
   damagePerIntensity:
     types:
       Heat: 5
@@ -85,7 +85,7 @@
 # conventional blast damage at zero protects ordinary mobs and prevents chain detonations.
 
 - type: explosion
-  id: MisfitsPulse
+  id: F14Pulse
   damagePerIntensity:
     types: {}
   tileBreakChance: [0]
@@ -99,7 +99,7 @@
 # Separate visuals keep standard plasma green; the grenade sets its lower cap.
 
 - type: explosion
-  id: MisfitsNukaPlasma
+  id: F14NukaPlasma
   damagePerIntensity:
     types:
       Caustic: 15
@@ -113,7 +113,7 @@
 # Misfits Add - Green caustic burst used by Fallout-style plasma explosives.
 
 - type: explosion
-  id: MisfitsPlasma
+  id: F14Plasma
   damagePerIntensity:
     types:
       Caustic: 15

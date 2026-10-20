@@ -1,0 +1,37 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Trade/brahdo_trade.yml
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Animals
+  name: "Animals"
+  entries:
+  - proto: F14MobBrahdoLight
+    price: 500
+    count: 2
+  - proto: F14MobBrahmin
+    price: 250
+  - proto: F14MobPetDog
+    price: 250
+
+- type: storeCategoryStructured
+  id: F14NCRBuy2Animals
+  name: "Animals"
+  entries:
+  - proto: F14MobBrahdoArmorNCR
+    price: 1000
+    count: 2
+  - proto: F14MobBrahmin
+    price: 500
+  - proto: F14MobPetDogNCR
+    price: 600
+  - proto: F14MobPetDogNCRMedicK9
+    price: 850
+
+- type: storeCategoryStructured
+  id: F14LegionBuy2Animals
+  name: "Animals"
+  entries:
+  - proto: F14MobBrahdoLightLegion
+    price: 125
+    count: 2
+  - proto: F14MobBrahmin
+    price: 60

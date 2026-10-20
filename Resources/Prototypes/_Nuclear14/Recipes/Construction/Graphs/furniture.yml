@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/furniture.yml
 
 - type: constructionGraph
-  id: N14Bed
+  id: F14Bed
   start: start
   graph:
     - node: start
@@ -56,7 +56,7 @@
               amount: 6
               doAfter: 2
     - node: bed
-      entity: N14Bed
+      entity: F14Bed
       edges:
         - to: start
           completed:
@@ -70,7 +70,7 @@
             - tool: Screwing
               doAfter: 1
     - node: bedwood
-      entity: N14BedWood
+      entity: F14BedWood
       edges:
         - to: start
           completed:
@@ -85,7 +85,7 @@
               doAfter: 2
     #start Misfits change
     - node: bedwoodbunk
-      entity: N14BedWoodBunk
+      entity: F14BedWoodBunk
       edges:
         - to: start
           completed:
@@ -114,7 +114,7 @@
             - tool: Screwing
               doAfter: 1
     - node: bedroll
-      entity: N14Bedroll
+      entity: F14Bedroll
       edges:
         - to: start
           completed:
@@ -125,7 +125,7 @@
             - tool: Slicing
               doAfter: 1
     - node: mattress
-      entity: N14BedMattress0
+      entity: F14BedMattress0
       edges:
         - to: start
           completed:

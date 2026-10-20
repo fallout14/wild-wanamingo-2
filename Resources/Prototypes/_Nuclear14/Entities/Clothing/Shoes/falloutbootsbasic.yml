@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClothingShoesBase
-  id: N14ClothingBootsBlack
+  id: F14ClothingBootsBlack
   name: black boots
   description: A pair of simple black boots, nothing really interesting.
   components:
@@ -13,14 +13,14 @@
     sprite: Nuclear14/Clothing/Shoes/FalloutBoots/blackboots.rsi
   - type: Butcherable
     spawned:
-    - id: N14MaterialLeather1
+    - id: F14MaterialLeather1
       amount: 1
     - id: MaterialCloth1
       amount: 1
 
 - type: entity
   parent: ClothingShoesMilitaryBase
-  id: N14ClothingBootsCombat
+  id: F14ClothingBootsCombat
   name: combat boots
   description: Comfy and weather-resistent, perfect for long walks in hard terrains.
   components:
@@ -32,7 +32,7 @@
 
 - type: entity
   parent: ClothingShoesMilitaryBase
-  id: N14ClothingBootsCombatMK2
+  id: F14ClothingBootsCombatMK2
   name: combat boots MK2
   description: Extremely comfy and protective, only the most skilled soldiers get to use this pair of boots.
   components:
@@ -46,7 +46,7 @@
 
 - type: entity
   parent: ClothingShoesBase
-  id: N14ClothingBootsCowboy
+  id: F14ClothingBootsCowboy
   name: cowboy boots
   description: Cowboy boots, perfect to walk around your brahmin ranch.
   components:
@@ -56,12 +56,12 @@
     sprite: Nuclear14/Clothing/Shoes/FalloutBoots/cowboyboots.rsi
   - type: Butcherable
     spawned:
-    - id: N14MaterialLeather1
+    - id: F14MaterialLeather1
       amount: 2
 
 - type: entity
   parent: ClothingShoesBase
-  id: N14ClothingBootsFire
+  id: F14ClothingBootsFire
   name: firefighter boots
   description: Made to resist fire, used by a group of people of the pre-war that liked to fight against fire, crazy thing.
   components:
@@ -72,7 +72,7 @@
 
 - type: entity
   parent: ClothingShoesBase
-  id: N14ClothingBootsLeather
+  id: F14ClothingBootsLeather
   name: leather boots
   description: Brown leather boots, that's all.
   components:
@@ -85,7 +85,7 @@
     sprite: Nuclear14/Clothing/Shoes/FalloutBoots/leatherboots.rsi
   - type: Butcherable
     spawned:
-    - id: N14MaterialLeather1
+    - id: F14MaterialLeather1
       amount: 2
   - type: Matchbox
   - type: ItemSlots
@@ -99,7 +99,7 @@
 
 - type: entity
   parent: ClothingShoesBase
-  id: N14ClothingBootsMountie
+  id: F14ClothingBootsMountie
   name: mountie leather boots
   description: Brown leather boots, that's all.
   components:
@@ -109,5 +109,5 @@
     sprite: Nuclear14/Clothing/Shoes/FalloutBoots/mountieboots.rsi
   - type: Butcherable
     spawned:
-    - id: N14MaterialLeather1
+    - id: F14MaterialLeather1
       amount: 2

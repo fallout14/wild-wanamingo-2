@@ -2,7 +2,7 @@
 
 - type: entity
   name: Enclave Eyebot Spawner
-  id: MisfitsSpawnerEnclaveEyebot
+  id: F14SpawnerEnclaveEyebot
   suffix: Mapping
   parent: MarkerBase
   components:
@@ -14,11 +14,11 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - N14MobRobotEyebot
+    - F14MobRobotEyebot
 
 - type: entity
   name: Enclave Protectron Spawner
-  id: MisfitsSpawnerEnclaveProtectron
+  id: F14SpawnerEnclaveProtectron
   suffix: Mapping
   parent: MarkerBase
   components:
@@ -30,11 +30,11 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - N14MobRobotProtectronHostile
+    - F14MobRobotProtectronHostile
 
 - type: entity
   name: Enclave Mr. Gutsy Spawner
-  id: MisfitsSpawnerEnclaveMrGutsy
+  id: F14SpawnerEnclaveMrGutsy
   suffix: Mapping
   parent: MarkerBase
   components:
@@ -46,11 +46,11 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - N14MobRobotMrHandyGutsy
+    - F14MobRobotMrHandyGutsy
 
 - type: entity
   name: Enclave Assaultron Spawner
-  id: MisfitsSpawnerEnclaveAssaultron
+  id: F14SpawnerEnclaveAssaultron
   suffix: Mapping
   parent: MarkerBase
   components:
@@ -62,11 +62,11 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - N14MobRobotAssaultronHostile
+    - F14MobRobotAssaultronHostile
 
 - type: entity
   name: Enclave Sentry Bot Spawner
-  id: MisfitsSpawnerEnclaveSentryBot
+  id: F14SpawnerEnclaveSentryBot
   suffix: Mapping
   parent: MarkerBase
   components:
@@ -78,11 +78,11 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - MisfitsMobRobotSentryBot
+    - F14MobRobotSentryBot
 
 - type: entity
   name: Enclave Sentry Bot Spawner (Ballistic)
-  id: MisfitsSpawnerEnclaveSentryBotBallistic
+  id: F14SpawnerEnclaveSentryBotBallistic
   suffix: Mapping
   parent: MarkerBase
   components:
@@ -94,11 +94,11 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - MisfitsMobRobotSentryBotBallistic
+    - F14MobRobotSentryBotBallistic
 
 - type: entity
   name: Enclave Robot Security Spawner
-  id: MisfitsSpawnerEnclaveRobotSecurity
+  id: F14SpawnerEnclaveRobotSecurity
   suffix: Mapping, Random
   parent: MarkerBase
   components:
@@ -110,9 +110,9 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - N14MobRobotEyebot
-    - N14MobRobotProtectronHostile
-    - N14MobRobotMrHandyGutsy
-    - N14MobRobotAssaultronHostile
-    - MisfitsMobRobotSentryBot
-    - MisfitsMobRobotSentryBotBallistic
+    - F14MobRobotEyebot
+    - F14MobRobotProtectronHostile
+    - F14MobRobotMrHandyGutsy
+    - F14MobRobotAssaultronHostile
+    - F14MobRobotSentryBot
+    - F14MobRobotSentryBotBallistic

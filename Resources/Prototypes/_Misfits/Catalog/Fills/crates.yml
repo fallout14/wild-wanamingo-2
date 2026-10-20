@@ -1,13 +1,13 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Catalog/Fills/crates.yml
 
 - type: entity # Corvax-Add-Start
-  parent: N14CrateBreakPlain
-  id: MisfitsCrateBreakPlainFilledFuelTank
+  parent: F14CrateBreakPlain
+  id: F14CrateBreakPlainFilledFuelTank
   name: FuelTank crate
   description: Crate containing 1 FuelTank
   components:
   - type: StorageFill
     contents:
-      - id: N14FuelTankHandy
+      - id: F14FuelTankHandy
         amount: 1 # Corvax-Add-End
       

@@ -3,7 +3,7 @@
 
 - type: entity
   parent: FoodMeatRawBase
-  id: N14FoodMeatBase
+  id: F14FoodMeatBase
   abstract: true
   components:
   - type: Edible
@@ -36,8 +36,8 @@
 
 - type: entity
   name: raw irradiated meat
-  parent: [N14FoodMeatBase, BaseSlicingRefinableFood]
-  id: N14FoodMeatRadRaw
+  parent: [F14FoodMeatBase, BaseSlicingRefinableFood]
+  id: F14FoodMeatRadRaw
   description: A morsel of raw irradiated meat
   components:
   - type: Tag
@@ -48,14 +48,14 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: N14UncookedAnimalProteinsRad
+      - ReagentId: F14UncookedAnimalProteinsRad
         Quantity: 5
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatRadCutlet
+    - id: F14FoodMeatRadCutlet
       amount: 3
   - type: Construction # Corvax-Change
-    graph: MisfitsFoodMeatRad
+    graph: F14FoodMeatRad
     node: start
     defaultTarget: MeatCooked
   - type: StaticPrice # Forge-Change
@@ -63,8 +63,8 @@
 
 - type: entity
   name: raw brahmin steak
-  parent: [N14FoodMeatRadRaw, BaseSlicingRefinableFood]
-  id: N14FoodMeatBrahmin
+  parent: [F14FoodMeatRadRaw, BaseSlicingRefinableFood]
+  id: F14FoodMeatBrahmin
   description: A raw piece of rump brahmin.
   components:
   - type: Sprite
@@ -72,14 +72,14 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: N14UncookedAnimalProteinsRad
+      - ReagentId: F14UncookedAnimalProteinsRad
         Quantity: 9
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatBrahminCutlet
+    - id: F14FoodMeatBrahminCutlet
       amount: 3
   - type: Construction
-    graph: N14MeatSteakBrahmin
+    graph: F14MeatSteakBrahmin
     node: start
     defaultTarget: SteakCooked
   - type: StaticPrice # Forge-Change
@@ -87,18 +87,18 @@
 
 - type: entity
   name: raw bighorner steak
-  parent: [N14FoodMeatBrahmin, BaseSlicingRefinableFood]
-  id: N14FoodMeatBighorner
+  parent: [F14FoodMeatBrahmin, BaseSlicingRefinableFood]
+  id: F14FoodMeatBighorner
   description: A raw piece of rump bighorner.
   components:
   - type: Sprite
     state: bighornermeat
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatBighornerCutlet
+    - id: F14FoodMeatBighornerCutlet
       amount: 3
   - type: Construction
-    graph: N14MeatSteakBighorner
+    graph: F14MeatSteakBighorner
     node: start
     defaultTarget: SteakCooked
   - type: StaticPrice # Forge-Change
@@ -108,26 +108,26 @@
 
 - type: entity
   name: raw radstag steak
-  parent: [N14FoodMeatBrahmin, BaseSlicingRefinableFood]
-  id: N14FoodMeatRadstag
+  parent: [F14FoodMeatBrahmin, BaseSlicingRefinableFood]
+  id: F14FoodMeatRadstag
   description: A raw piece of rump radstag.
   components:
   - type: Sprite
     state: radstagmeat
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatRadstagCutlet
+    - id: F14FoodMeatRadstagCutlet
       amount: 3
   - type: Construction
-    graph: N14MeatSteakRadstag
+    graph: F14MeatSteakRadstag
     node: start
     defaultTarget: SteakCooked
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
 - type: entity
-  parent: [N14FoodMeatBrahmin, BaseSlicingRefinableFood]
-  id: N14FoodMeatRadhog
+  parent: [F14FoodMeatBrahmin, BaseSlicingRefinableFood]
+  id: F14FoodMeatRadhog
   name: raw radhog meat
   description: A raw chunk of radhog meat.
   components:
@@ -135,25 +135,25 @@
     state: porkchop
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatRadhogCutlet
+    - id: F14FoodMeatRadhogCutlet
       amount: 3
   - type: Construction
-    graph: N14MeatSteakRadhog
+    graph: F14MeatSteakRadhog
     node: start
     defaultTarget: SteakCooked
   - type: StaticPrice # Forge-Change
     price: 1
 
 - type: entity
-  parent: N14FoodMeatBrahmin
-  id: N14FoodMeatPigrat
+  parent: F14FoodMeatBrahmin
+  id: F14FoodMeatPigrat
   name: raw pigrat meat
   description: Raw morsels of pigrat meat.
   components:
   - type: Sprite
     state: morsels
   - type: Construction
-    graph: N14MeatSteakPigrat
+    graph: F14MeatSteakPigrat
     node: start
     defaultTarget: SteakCooked
   - type: StaticPrice # Forge-Change
@@ -161,8 +161,8 @@
 
 - type: entity
   name: raw Yao Guai meat
-  parent: [N14FoodMeatBrahmin, BaseSlicingRefinableFood]
-  id: N14FoodMeatYaoguai
+  parent: [F14FoodMeatBrahmin, BaseSlicingRefinableFood]
+  id: F14FoodMeatYaoguai
   description: A very muscular slab of raw yao-guai meat.
   components:
   - type: Sprite
@@ -170,14 +170,14 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: N14UncookedAnimalProteinsRad
+      - ReagentId: F14UncookedAnimalProteinsRad
         Quantity: 9
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatYaoguaiCutlet
+    - id: F14FoodMeatYaoguaiCutlet
       amount: 3
   - type: Construction
-    graph: N14MeatSteakYaoguai
+    graph: F14MeatSteakYaoguai
     node: start
     defaultTarget: SteakCooked
   - type: StaticPrice # Forge-Change
@@ -185,8 +185,8 @@
 
 - type: entity
   name: raw mutant plant meat # for spore plants etc
-  parent: N14FoodMeatBase
-  id: N14FoodMeatMutantPlant
+  parent: F14FoodMeatBase
+  id: F14FoodMeatMutantPlant
   description: All the joys of healthy eating with all the fun of cannibalism.
   components:
   - type: Tag
@@ -200,8 +200,8 @@
 
 - type: entity
   name: raw radscorpion meat
-  parent: [N14FoodMeatRadRaw, BaseSlicingRefinableFood]
-  id: N14FoodMeatRadscorpion
+  parent: [F14FoodMeatRadRaw, BaseSlicingRefinableFood]
+  id: F14FoodMeatRadscorpion
   description: A slab of radscorpion meat.
   components:
   - type: Sprite
@@ -209,14 +209,14 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: N14UncookedAnimalProteinsRad
+      - ReagentId: F14UncookedAnimalProteinsRad
         Quantity: 7
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatRadscorpionCutlet
+    - id: F14FoodMeatRadscorpionCutlet
       amount: 3
   - type: Construction
-    graph: N14MeatSteakRadscorpion
+    graph: F14MeatSteakRadscorpion
     node: start
     defaultTarget: SteakCooked
   - type: StaticPrice # Forge-Change
@@ -224,8 +224,8 @@
 
 - type: entity
   name: raw radscorpion leg
-  parent: N14FoodMeatRadRaw
-  id: N14FoodMeatRadscorpionLeg
+  parent: F14FoodMeatRadRaw
+  id: F14FoodMeatRadscorpionLeg
   description: A still twitching leg of a radscorpion... you don't really want to eat this, do you?
   components:
   - type: Sprite
@@ -233,7 +233,7 @@
     layers:
     - state: spiderleg
   - type: Construction
-    graph: N14MeatRadscorpionLeg
+    graph: F14MeatRadscorpionLeg
     node: start
     defaultTarget: MeatCooked
   - type: StaticPrice # Forge-Change
@@ -241,20 +241,20 @@
 
 - type: entity
   name: raw radchicken meat
-  parent: [N14FoodMeatRadRaw, BaseSlicingRefinableFood]
-  id: N14FoodMeatRadchicken
+  parent: [F14FoodMeatRadRaw, BaseSlicingRefinableFood]
+  id: F14FoodMeatRadchicken
   description: A raw piece of radchicken. Slimy and pale.
   components:
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatRadchickenCutlet
+    - id: F14FoodMeatRadchickenCutlet
       amount: 3
   - type: Sprite
     sprite: Objects/Consumable/Food/meat.rsi
     layers:
     - state: bird
   - type: Construction
-    graph: MisfitsMeatSteakRadchicken
+    graph: F14MeatSteakRadchicken
     node: start
     defaultTarget: SteakCooked
   - type: StaticPrice # Forge-Change
@@ -262,14 +262,14 @@
 
 - type: entity
   name: raw gecko meat
-  parent: N14FoodMeatRadRaw
-  id: N14FoodMeatGecko
+  parent: F14FoodMeatRadRaw
+  id: F14FoodMeatGecko
   description: tough chunk of gecko meat. It glistens.
   components:
   - type: Sprite
     state: silvergeckomeat
   - type: Construction
-    graph: N14MeatSteakGecko
+    graph: F14MeatSteakGecko
     node: start
     defaultTarget: SteakCooked
   - type: StaticPrice # Forge-Change
@@ -277,14 +277,14 @@
 
 - type: entity
   name: raw fire gecko meat
-  parent: N14FoodMeatRadRaw
-  id: N14FoodMeatGeckoFire
+  parent: F14FoodMeatRadRaw
+  id: F14FoodMeatGeckoFire
   description: tough chunk of fire gecko meat. It glistens.
   components:
   - type: Sprite
     state: icegeckomeat
   - type: Construction
-    graph: N14MeatSteakGeckoFire
+    graph: F14MeatSteakGeckoFire
     node: start
     defaultTarget: SteakCooked
   - type: StaticPrice # Forge-Change
@@ -292,14 +292,14 @@
 
 - type: entity
   name: raw golden gecko meat
-  parent: N14FoodMeatRadRaw
-  id: N14FoodMeatGeckoGolden
+  parent: F14FoodMeatRadRaw
+  id: F14FoodMeatGeckoGolden
   description: tough chunk of golden gecko meat. It glistens.
   components:
   - type: Sprite
     state: goldengeckomeat
   - type: Construction
-    graph: N14MeatSteakGeckoGolden
+    graph: F14MeatSteakGeckoGolden
     node: start
     defaultTarget: SteakCooked
   - type: StaticPrice # Forge-Change
@@ -307,15 +307,15 @@
 
 - type: entity
   name: raw iguana
-  parent: N14FoodMeatRadRaw
-  id: N14FoodMeatIguana
+  parent: F14FoodMeatRadRaw
+  id: F14FoodMeatIguana
   description: poor iguana on a stick.
   components:
   - type: Sprite
     sprite: Nuclear14/Mobs/Animals/iguana.rsi
     state: iguanaonstick
   - type: Construction
-    graph: N14MeatIguana
+    graph: F14MeatIguana
     node: start
     defaultTarget: MeatCooked
   - type: StaticPrice # Forge-Change
@@ -323,15 +323,15 @@
 
 - type: entity
   name: raw squirrel bits
-  parent: N14FoodMeatRadRaw
-  id: N14FoodMeatSquirrel
+  parent: F14FoodMeatRadRaw
+  id: F14FoodMeatSquirrel
   description: morsels of a poor squirrel.
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Food/meat.rsi
     state: morsels
   - type: Construction
-    graph: N14MeatMorsels
+    graph: F14MeatMorsels
     node: start
     defaultTarget: MeatCooked
   - type: StaticPrice # Forge-Change
@@ -339,14 +339,14 @@
 
 - type: entity
   name: raw radroach fillet
-  parent: N14FoodMeatRadRaw
-  id: N14FoodMeatRadroachFillet
+  parent: F14FoodMeatRadRaw
+  id: F14FoodMeatRadroachFillet
   description: radroach fillet
   components:
   - type: Sprite
     state: radroachfillet
   - type: Construction
-    graph: N14MeatRadroach
+    graph: F14MeatRadroach
     node: start
     defaultTarget: MeatCooked
   - type: StaticPrice # Forge-Change
@@ -354,8 +354,8 @@
 
 - type: entity
   name: raw mirelurk claw
-  parent: N14FoodMeatRadRaw
-  id: N14FoodMeatMirelurkClaw
+  parent: F14FoodMeatRadRaw
+  id: F14FoodMeatMirelurkClaw
   description: Exotic mirelurk claw.
   components:
   - type: Sprite
@@ -363,10 +363,10 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: N14UncookedAnimalProteinsRad
+      - ReagentId: F14UncookedAnimalProteinsRad
         Quantity: 5
   - type: Construction
-    graph: N14MeatMirelurkClaw
+    graph: F14MeatMirelurkClaw
     node: start
     defaultTarget: MeatCooked
   - type: StaticPrice # Forge-Change
@@ -374,8 +374,8 @@
 
 - type: entity
   name: raw radlurk claw
-  parent: N14FoodMeatRadRaw
-  id: N14FoodMeatRadlurkClaw
+  parent: F14FoodMeatRadRaw
+  id: F14FoodMeatRadlurkClaw
   description: Exotic radlurk claw.
   components:
   - type: Sprite
@@ -383,10 +383,10 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: N14UncookedAnimalProteinsRad
+      - ReagentId: F14UncookedAnimalProteinsRad
         Quantity: 5
   - type: Construction
-    graph: N14MeatRadlurkClaw
+    graph: F14MeatRadlurkClaw
     node: start
     defaultTarget: MeatCooked
   - type: StaticPrice # Forge-Change
@@ -396,8 +396,8 @@
 
 - type: entity
   name: cooked irradiated meat
-  parent: N14FoodMeatBase
-  id: N14FoodMeatCooked
+  parent: F14FoodMeatBase
+  id: F14FoodMeatCooked
   description: Cooked morsels of irradiated meat.
   components:
   - type: Tag
@@ -407,7 +407,7 @@
     sprite: Nuclear14/Objects/Consumable/Food/meat.rsi
     state: morsels_roasted
   - type: Construction # Corvax-Change
-    graph: MisfitsFoodMeatRad
+    graph: F14FoodMeatRad
     node: MeatCooked
     defaultTarget: null
   - type: Solution
@@ -420,13 +420,13 @@
         Quantity: 6
   - type: StaticPrice # Forge-Change
     price: 1 # PH
-        # - ReagentId: N14RadParticleFood # You cannot set variables to a zero value!
+        # - ReagentId: F14RadParticleFood # You cannot set variables to a zero value!
           # Quantity: 0 #currently, we are experimenting with cooked food not giving rads. Former value is 5.
 
 - type: entity
   name: cooked brahmin steak
-  parent: [N14FoodMeatCooked, BaseSlicingRefinableFood]
-  id: N14FoodMeatBrahminCooked
+  parent: [F14FoodMeatCooked, BaseSlicingRefinableFood]
+  id: F14FoodMeatBrahminCooked
   description: A cooked slab of meat. Smells primal.
   components:
   - type: Sprite
@@ -440,14 +440,14 @@
         Quantity: 10
       - ReagentId: Protein
         Quantity: 5
-      # - ReagentId: N14RadParticleFood
+      # - ReagentId: F14RadParticleFood
         # Quantity: 0 #former value 3
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatBrahminCutletCooked
+    - id: F14FoodMeatBrahminCutletCooked
       amount: 3
   - type: Construction
-    graph: N14MeatSteakBrahmin
+    graph: F14MeatSteakBrahmin
     node: SteakCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -455,8 +455,8 @@
 
 - type: entity
   name: cooked bighorner steak
-  parent: [N14FoodMeatBrahminCooked, BaseSlicingRefinableFood]
-  id: N14FoodMeatBighornerCooked
+  parent: [F14FoodMeatBrahminCooked, BaseSlicingRefinableFood]
+  id: F14FoodMeatBighornerCooked
   description: A cooked slab of meat. Smells primal.
   components:
   - type: Sprite
@@ -470,14 +470,14 @@
         Quantity: 8
       - ReagentId: Protein
         Quantity: 8
-      # - ReagentId: N14RadParticleFood
+      # - ReagentId: F14RadParticleFood
         # Quantity: 0
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatBighornerCutletCooked
+    - id: F14FoodMeatBighornerCutletCooked
       amount: 3
   - type: Construction
-    graph: N14MeatSteakBighorner
+    graph: F14MeatSteakBighorner
     node: SteakCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -485,8 +485,8 @@
 
 - type: entity
   name: cooked radstag steak
-  parent: [N14FoodMeatBrahminCooked, BaseSlicingRefinableFood]
-  id: N14FoodMeatRadstagCooked
+  parent: [F14FoodMeatBrahminCooked, BaseSlicingRefinableFood]
+  id: F14FoodMeatRadstagCooked
   description: A cooked slab of meat. Smells primal.
   components:
   - type: Sprite
@@ -500,14 +500,14 @@
         Quantity: 6
       - ReagentId: Protein
         Quantity: 4
-      # - ReagentId: N14RadParticleFood
+      # - ReagentId: F14RadParticleFood
         # Quantity: 0
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatRadstagCutletCooked
+    - id: F14FoodMeatRadstagCutletCooked
       amount: 3
   - type: Construction
-    graph: N14MeatSteakRadstag
+    graph: F14MeatSteakRadstag
     node: SteakCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -515,8 +515,8 @@
 
 - type: entity
   name: cooked radhog meat
-  parent: [N14FoodMeatBrahminCooked, BaseSlicingRefinableFood]
-  id: N14FoodMeatRadhogCooked
+  parent: [F14FoodMeatBrahminCooked, BaseSlicingRefinableFood]
+  id: F14FoodMeatRadhogCooked
   description: A chunk of cooked radhog meat.
   components:
   - type: Sprite
@@ -529,22 +529,22 @@
         Quantity: 4
       - ReagentId: Protein
         Quantity: 4
-      # - ReagentId: N14RadParticleFood
+      # - ReagentId: F14RadParticleFood
         # Quantity: 0
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatRadhogCutletCooked
+    - id: F14FoodMeatRadhogCutletCooked
       amount: 3
   - type: Construction
-    graph: N14MeatSteakRadhog
+    graph: F14MeatSteakRadhog
     node: SteakCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
     price: 1 # PH
 
 - type: entity
-  parent: N14FoodMeatBrahminCooked
-  id: N14FoodMeatPigratCooked
+  parent: F14FoodMeatBrahminCooked
+  id: F14FoodMeatPigratCooked
   name: cooked pigrat meat
   description: Cooked morsels of pigrat meat.
   components:
@@ -558,10 +558,10 @@
         Quantity: 6
       - ReagentId: Protein
         Quantity: 6
-      # - ReagentId: N14RadParticleFood
+      # - ReagentId: F14RadParticleFood
         # Quantity: 0
   - type: Construction
-    graph: N14MeatSteakPigrat
+    graph: F14MeatSteakPigrat
     node: SteakCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -569,8 +569,8 @@
 
 - type: entity
   name: cooked yao-guai steak
-  parent: [N14FoodMeatBrahminCooked, BaseSlicingRefinableFood]
-  id: N14FoodMeatYaoguaiCooked
+  parent: [F14FoodMeatBrahminCooked, BaseSlicingRefinableFood]
+  id: F14FoodMeatYaoguaiCooked
   description: A well-cooked slab of yao-guai meat. Tough, but tasty with the right sides.
   components:
   - type: Sprite
@@ -584,14 +584,14 @@
         Quantity: 10
       - ReagentId: Protein
         Quantity: 10
-      - ReagentId: N14RadParticleFood
+      - ReagentId: F14RadParticleFood
         Quantity: 3
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatYaoguaiCutletCooked
+    - id: F14FoodMeatYaoguaiCutletCooked
       amount: 3
   - type: Construction
-    graph: N14MeatSteakYaoguai
+    graph: F14MeatSteakYaoguai
     node: SteakCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -599,8 +599,8 @@
 
 - type: entity
   name: cooked radscorpion steak
-  parent: [N14FoodMeatCooked, BaseSlicingRefinableFood]
-  id: N14FoodMeatRadscorpionCooked
+  parent: [F14FoodMeatCooked, BaseSlicingRefinableFood]
+  id: F14FoodMeatRadscorpionCooked
   description: A cooked piece of radscorpion.
   components:
   - type: Sprite
@@ -614,14 +614,14 @@
         Quantity: 4
       - ReagentId: Protein
         Quantity: 6
-      # - ReagentId: N14RadParticleFood
+      # - ReagentId: F14RadParticleFood
         # Quantity: 0
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatRadscorpionCutletCooked
+    - id: F14FoodMeatRadscorpionCutletCooked
       amount: 3
   - type: Construction
-    graph: N14MeatSteakRadscorpion
+    graph: F14MeatSteakRadscorpion
     node: SteakCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -629,8 +629,8 @@
 
 - type: entity
   name: cooked radchicken meat
-  parent: [N14FoodMeatCooked, BaseSlicingRefinableFood]
-  id: N14FoodMeatRadchickenCooked
+  parent: [F14FoodMeatCooked, BaseSlicingRefinableFood]
+  id: F14FoodMeatRadchickenCooked
   description: A cooked piece of radchicken. Flaky!
   components:
   - type: Sprite
@@ -645,14 +645,14 @@
         Quantity: 4
       - ReagentId: Protein
         Quantity: 4
-      # - ReagentId: N14RadParticleFood
+      # - ReagentId: F14RadParticleFood
         # Quantity: 0
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodMeatRadchickenCutletCooked
+    - id: F14FoodMeatRadchickenCutletCooked
       amount: 3
   - type: Construction
-    graph: MisfitsMeatSteakRadchicken
+    graph: F14MeatSteakRadchicken
     node: SteakCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -660,8 +660,8 @@
 
 - type: entity
   name: cooked gecko steak
-  parent: N14FoodMeatCooked
-  id: N14FoodMeatGeckoCooked
+  parent: F14FoodMeatCooked
+  id: F14FoodMeatGeckoCooked
   description: Cooked, tough gecko meat.
   components:
   - type: Sprite
@@ -675,10 +675,10 @@
         Quantity: 6
       - ReagentId: Protein
         Quantity: 6
-      # - ReagentId: N14RadParticleFood
+      # - ReagentId: F14RadParticleFood
         # Quantity: 0
   - type: Construction
-    graph: N14MeatSteakGecko
+    graph: F14MeatSteakGecko
     node: SteakCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -686,8 +686,8 @@
 
 - type: entity
   name: cooked fire gecko steak
-  parent: N14FoodMeatCooked
-  id: N14FoodMeatGeckoFireCooked
+  parent: F14FoodMeatCooked
+  id: F14FoodMeatGeckoFireCooked
   description: Cooked, tough fire gecko meat.
   components:
   - type: Sprite
@@ -701,10 +701,10 @@
         Quantity: 6
       - ReagentId: Protein
         Quantity: 6
-      # - ReagentId: N14RadParticleFood
+      # - ReagentId: F14RadParticleFood
         # Quantity: 0
   - type: Construction
-    graph: N14MeatSteakGeckoFire
+    graph: F14MeatSteakGeckoFire
     node: SteakCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -712,8 +712,8 @@
 
 - type: entity
   name: cooked golden gecko steak
-  parent: N14FoodMeatCooked
-  id: N14FoodMeatGeckoGoldenCooked
+  parent: F14FoodMeatCooked
+  id: F14FoodMeatGeckoGoldenCooked
   description: Cooked, tough golden gecko meat. Your molars itch uncomfortably at the thought of eating this.
   components:
   - type: Sprite
@@ -727,10 +727,10 @@
         Quantity: 6
       - ReagentId: Protein
         Quantity: 6
-      - ReagentId: N14RadParticleFood
+      - ReagentId: F14RadParticleFood
         Quantity: 3 #golden geckos are normally radioactive and they're not common right now. Later we should add a special meal made of them! ^^
   - type: Construction
-    graph: N14MeatSteakGeckoGolden
+    graph: F14MeatSteakGeckoGolden
     node: SteakCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -738,8 +738,8 @@
 
 - type: entity
   name: cooked iguana
-  parent: N14FoodMeatCooked
-  id: N14FoodMeatIguanaCooked
+  parent: F14FoodMeatCooked
+  id: F14FoodMeatIguanaCooked
   description: Cooked iguana on a stick.
   components:
   - type: Sprite
@@ -752,10 +752,10 @@
         Quantity: 3
       - ReagentId: Protein
         Quantity: 3
-      - ReagentId: N14RadParticleFood
+      - ReagentId: F14RadParticleFood
         Quantity: 1
   - type: Construction
-    graph: N14MeatIguana
+    graph: F14MeatIguana
     node: MeatCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -763,8 +763,8 @@
 
 - type: entity
   name: cooked squirrel bits
-  parent: N14FoodMeatCooked
-  id: N14FoodMeatSquirrelCooked
+  parent: F14FoodMeatCooked
+  id: F14FoodMeatSquirrelCooked
   description: Cooked, meager squirrel meat.
   components:
   - type: Sprite
@@ -776,10 +776,10 @@
         Quantity: 2
       - ReagentId: Protein
         Quantity: 2
-      - ReagentId: N14RadParticleFood
+      - ReagentId: F14RadParticleFood
         Quantity: 1
   - type: Construction
-    graph: N14MeatMorsels
+    graph: F14MeatMorsels
     node: MeatCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -787,8 +787,8 @@
 
 - type: entity
   name: cooked radroach fillet
-  parent: N14FoodMeatCooked
-  id: N14FoodMeatRadroachFilletCooked
+  parent: F14FoodMeatCooked
+  id: F14FoodMeatRadroachFilletCooked
   description: Cooked, hard radroach. Smells like indigestion.
   components:
   - type: Sprite
@@ -801,10 +801,10 @@
         Quantity: 2
       - ReagentId: Protein
         Quantity: 2
-      - ReagentId: N14RadParticleFood
+      - ReagentId: F14RadParticleFood
         Quantity: 1 #not VERY radioactive but definitely not good for you. A desperation / poverty food?
   - type: Construction
-    graph: N14MeatRadroach
+    graph: F14MeatRadroach
     node: MeatCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -812,8 +812,8 @@
 
 - type: entity
   name: cooked mirelurk claw
-  parent: N14FoodMeatCooked
-  id: N14FoodMeatMirelurkClawCooked
+  parent: F14FoodMeatCooked
+  id: F14FoodMeatMirelurkClawCooked
   description: Cooked, exotic mirelurk claw.
   components:
   - type: Sprite
@@ -826,10 +826,10 @@
         Quantity: 3
       - ReagentId: Protein
         Quantity: 3
-      - ReagentId: N14RadParticleFood
+      - ReagentId: F14RadParticleFood
         Quantity: 1
   - type: Construction
-    graph: N14MeatMirelurkClaw
+    graph: F14MeatMirelurkClaw
     node: MeatCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -837,8 +837,8 @@
 
 - type: entity
   name: cooked radlurk claw
-  parent: N14FoodMeatCooked
-  id: N14FoodMeatRadlurkClawCooked
+  parent: F14FoodMeatCooked
+  id: F14FoodMeatRadlurkClawCooked
   description: Cooked, exotic radlurk claw.
   components:
   - type: Sprite
@@ -851,10 +851,10 @@
         Quantity: 2
       - ReagentId: Protein
         Quantity: 2
-      - ReagentId: N14RadParticleFood
+      - ReagentId: F14RadParticleFood
         Quantity: 4
   - type: Construction
-    graph: N14MeatRadlurkClaw
+    graph: F14MeatRadlurkClaw
     node: MeatCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -865,8 +865,8 @@
 
 - type: entity
   name: boiled radscorpion leg
-  parent: N14FoodMeatCooked
-  id: N14FoodMeatRadscorpionLegBoiled
+  parent: F14FoodMeatCooked
+  id: F14FoodMeatRadscorpionLegBoiled
   description: A giant radscorpion leg that's had the life boiled out of it.
   components:
   - type: Sprite
@@ -881,7 +881,7 @@
       - ReagentId: Protein
         Quantity: 5
   - type: Construction
-    graph: N14MeatRadscorpionLeg
+    graph: F14MeatRadscorpionLeg
     node: MeatCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -893,8 +893,8 @@
 
 - type: entity
   name: raw rad cutlet
-  parent: N14FoodMeatBase
-  id: N14FoodMeatRadCutlet
+  parent: F14FoodMeatBase
+  id: F14FoodMeatRadCutlet
   description: A raw meat cutlet from a wasteland animal.
   components:
   - type: Tag
@@ -907,9 +907,9 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: N14UncookedAnimalProteinsRad
+      - ReagentId: F14UncookedAnimalProteinsRad
         Quantity: 3
-      - ReagentId: N14RadParticleFood
+      - ReagentId: F14RadParticleFood
         Quantity: 1
   - type: Temperature
   - type: InternalTemperature
@@ -920,14 +920,14 @@
     # don't want meat giving off ammonia only bodies
     molsPerSecondPerUnitMass: 0
   - type: Construction
-    graph: N14MeatRadCutlet
+    graph: F14MeatRadCutlet
     node: start
     defaultTarget: CutletCooked
 
 - type: entity
   name: raw brahmin cutlet
-  parent: N14FoodMeatRadCutlet
-  id: N14FoodMeatBrahminCutlet
+  parent: F14FoodMeatRadCutlet
+  id: F14FoodMeatBrahminCutlet
   description: A very grisly cutlet of brahmin meat.
   components:
   - type: Sprite
@@ -936,14 +936,14 @@
     - state: cutlet-alpha
       color: brown
   - type: Construction
-    graph: N14MeatBrahminCutlet
+    graph: F14MeatBrahminCutlet
     node: start
     defaultTarget: CutletCooked
 
 - type: entity
   name: raw bighorner cutlet
-  parent: N14FoodMeatRadCutlet
-  id: N14FoodMeatBighornerCutlet
+  parent: F14FoodMeatRadCutlet
+  id: F14FoodMeatBighornerCutlet
   description: A very grisly cutlet of bighorner meat.
   components:
   - type: Sprite
@@ -952,14 +952,14 @@
     - state: cutlet-alpha
       color: brown
   - type: Construction
-    graph: N14MeatBighornerCutlet
+    graph: F14MeatBighornerCutlet
     node: start
     defaultTarget: CutletCooked
 
 - type: entity
   name: raw radstag cutlet
-  parent: N14FoodMeatRadCutlet
-  id: N14FoodMeatRadstagCutlet
+  parent: F14FoodMeatRadCutlet
+  id: F14FoodMeatRadstagCutlet
   description: A very grisly cutlet of radstag meat.
   components:
   - type: Sprite
@@ -968,14 +968,14 @@
     - state: cutlet-alpha
       color: brown
   - type: Construction
-    graph: N14MeatRadstagCutlet
+    graph: F14MeatRadstagCutlet
     node: start
     defaultTarget: CutletCooked
 
 - type: entity
   name: raw radhog cutlet
-  parent: N14FoodMeatRadCutlet
-  id: N14FoodMeatRadhogCutlet
+  parent: F14FoodMeatRadCutlet
+  id: F14FoodMeatRadhogCutlet
   description: A very grisly cutlet of radhog meat.
   components:
   - type: Sprite
@@ -984,14 +984,14 @@
     - state: cutlet-alpha
       color: brown
   - type: Construction
-    graph: N14MeatRadhogCutlet
+    graph: F14MeatRadhogCutlet
     node: start
     defaultTarget: CutletCooked
 
 - type: entity
   name: raw yao-guai cutlet
-  parent: N14FoodMeatRadCutlet
-  id: N14FoodMeatYaoguaiCutlet
+  parent: F14FoodMeatRadCutlet
+  id: F14FoodMeatYaoguaiCutlet
   description: A very grisly cutlet of raw yao-guai meat.
   components:
   - type: Sprite
@@ -1000,28 +1000,28 @@
     - state: cutlet-alpha
       color: brown
   - type: Construction
-    graph: N14MeatYaoguaiCutlet
+    graph: F14MeatYaoguaiCutlet
     node: start
     defaultTarget: CutletCooked
 
 - type: entity
   name: raw radchicken cutlet
-  parent: N14FoodMeatRadCutlet
-  id: N14FoodMeatRadchickenCutlet
+  parent: F14FoodMeatRadCutlet
+  id: F14FoodMeatRadchickenCutlet
   description: A cutlet of raw radchicken. Remember to wash your hands!
   components:
   - type: Sprite
     state: cutlet
     color: white
   - type: Construction
-    graph: N14MeatRadchickenCutlet
+    graph: F14MeatRadchickenCutlet
     node: start
     defaultTarget: CutletCooked
 
 - type: entity
   name: raw radscorpion cutlet
-  parent: N14FoodMeatRadCutlet
-  id: N14FoodMeatRadscorpionCutlet
+  parent: F14FoodMeatRadCutlet
+  id: F14FoodMeatRadscorpionCutlet
   description: A cutlet of raw scorpion meat.
   components:
   - type: Sprite
@@ -1031,14 +1031,14 @@
     - state: cutlet-alpha
       color: red
   - type: Construction
-    graph: N14MeatRadscorpionCutlet
+    graph: F14MeatRadscorpionCutlet
     node: start
     defaultTarget: CutletCooked
 
 - type: entity
   name: cooked cutlet
   parent: FoodMeatBase
-  id: N14FoodMeatRadCutletCooked
+  id: F14FoodMeatRadCutletCooked
   description: A cooked meat cutlet. Needs some seasoning.
   components:
   - type: Tag
@@ -1055,10 +1055,10 @@
         Quantity: 2
       - ReagentId: Protein
         Quantity: 2
-      # - ReagentId: N14RadParticleFood
+      # - ReagentId: F14RadParticleFood
         # Quantity: 0 #Ditto, changing these values to 0 seemed like the best bet for if we want to revert this later. Formerly 3 rads.
   - type: Construction
-    graph: N14MeatRadCutlet
+    graph: F14MeatRadCutlet
     node: CutletCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -1066,8 +1066,8 @@
 
 - type: entity
   name: cooked brahmin cutlet
-  parent: N14FoodMeatRadCutletCooked
-  id: N14FoodMeatBrahminCutletCooked
+  parent: F14FoodMeatRadCutletCooked
+  id: F14FoodMeatBrahminCutletCooked
   description: A very grisly cutlet of cooked brahmin meat.
   components:
   - type: Sprite
@@ -1076,7 +1076,7 @@
     - state: cutlet-alpha
       color: brown
   - type: Construction
-    graph: N14MeatBrahminCutlet
+    graph: F14MeatBrahminCutlet
     node: CutletCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -1084,8 +1084,8 @@
 
 - type: entity
   name: cooked bighorner cutlet
-  parent: N14FoodMeatRadCutletCooked
-  id: N14FoodMeatBighornerCutletCooked
+  parent: F14FoodMeatRadCutletCooked
+  id: F14FoodMeatBighornerCutletCooked
   description: A very grisly cutlet of cooked bighorner meat.
   components:
   - type: Sprite
@@ -1094,7 +1094,7 @@
     - state: cutlet-alpha
       color: brown
   - type: Construction
-    graph: N14MeatBighornerCutlet
+    graph: F14MeatBighornerCutlet
     node: CutletCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -1102,8 +1102,8 @@
 
 - type: entity
   name: cooked radstag cutlet
-  parent: N14FoodMeatRadCutletCooked
-  id: N14FoodMeatRadstagCutletCooked
+  parent: F14FoodMeatRadCutletCooked
+  id: F14FoodMeatRadstagCutletCooked
   description: A very grisly cutlet of cooked radstag meat.
   components:
   - type: Sprite
@@ -1112,7 +1112,7 @@
     - state: cutlet-alpha
       color: brown
   - type: Construction
-    graph: N14MeatRadstagCutlet
+    graph: F14MeatRadstagCutlet
     node: CutletCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -1120,8 +1120,8 @@
 
 - type: entity
   name: cooked radhog cutlet
-  parent: N14FoodMeatRadCutletCooked
-  id: N14FoodMeatRadhogCutletCooked
+  parent: F14FoodMeatRadCutletCooked
+  id: F14FoodMeatRadhogCutletCooked
   description: A very grisly cutlet of cooked radhog meat.
   components:
   - type: Sprite
@@ -1130,7 +1130,7 @@
     - state: cutlet-alpha
       color: brown
   - type: Construction
-    graph: N14MeatRadhogCutlet
+    graph: F14MeatRadhogCutlet
     node: CutletCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -1138,8 +1138,8 @@
 
 - type: entity
   name: cooked yao-guai cutlet
-  parent: N14FoodMeatRadCutletCooked
-  id: N14FoodMeatYaoguaiCutletCooked
+  parent: F14FoodMeatRadCutletCooked
+  id: F14FoodMeatYaoguaiCutletCooked
   description: A very grisly cutlet of cooked yao-guai meat.
   components:
   - type: Sprite
@@ -1148,7 +1148,7 @@
     - state: cutlet-alpha
       color: brown
   - type: Construction
-    graph: N14MeatYaoguaiCutlet
+    graph: F14MeatYaoguaiCutlet
     node: CutletCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -1156,15 +1156,15 @@
 
 - type: entity
   name: cooked radchicken cutlet
-  parent: N14FoodMeatRadCutletCooked
-  id: N14FoodMeatRadchickenCutletCooked
+  parent: F14FoodMeatRadCutletCooked
+  id: F14FoodMeatRadchickenCutletCooked
   description: A cutlet of cooked radchicken. Remember to wash your hands!
   components:
   - type: Sprite
     state: cutlet-cooked
     color: white
   - type: Construction
-    graph: N14MeatRadchickenCutlet
+    graph: F14MeatRadchickenCutlet
     node: CutletCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change
@@ -1172,8 +1172,8 @@
 
 - type: entity
   name: cooked radscorpion cutlet
-  parent: N14FoodMeatRadCutletCooked
-  id: N14FoodMeatRadscorpionCutletCooked
+  parent: F14FoodMeatRadCutletCooked
+  id: F14FoodMeatRadscorpionCutletCooked
   description: A cutlet of cooked radscorpion meat. Finally edible.
   components:
   - type: Sprite
@@ -1183,7 +1183,7 @@
     - state: cutlet-alpha
       color: red
   - type: Construction
-    graph: N14MeatRadscorpionCutlet
+    graph: F14MeatRadscorpionCutlet
     node: CutletCooked
     defaultTarget: null
   - type: StaticPrice # Forge-Change

@@ -2,25 +2,25 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Cartridges/12.7.yml
 
 - type: entity
-  id: N14CartridgePistol127
+  id: F14CartridgePistol127
   name: cartridge (12.7mm)
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
-    proto: N14Bullet127
+    proto: F14Bullet127
     soundEject:
-      collection: N14PistolCasingEject
+      collection: F14PistolCasingEject
   - type: Tag
     tags:
       - Cartridge
-      - N14CartridgePistol127
+      - F14CartridgePistol127
   - type: EmitSoundOnLand
     sound:
-      collection: N14PistolCasingEject
+      collection: F14PistolCasingEject
       params:
         volume: -1
   - type: EmitSoundOnCollide
     sound:
-      collection: N14PistolCasingEject
+      collection: F14PistolCasingEject
       params:
         volume: -1

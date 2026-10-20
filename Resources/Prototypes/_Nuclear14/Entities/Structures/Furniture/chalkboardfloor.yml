@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14ChalkboardFloor
+  id: F14ChalkboardFloor
   name: Chalkboard
   description: A dusty chalkboard
   components:
@@ -44,84 +44,84 @@
   - type: Pullable
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor1
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor1
   suffix: suck
   components:
   - type: Sprite
     state: board_mess2
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor2
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor2
   suffix: vault-tec
   components:
   - type: Sprite
     state: board_mess2
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor3
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor3
   components:
   - type: Sprite
     state: board_mess3
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor4
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor4
   components:
   - type: Sprite
     state: board_mess4
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor5
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor5
   components:
   - type: Sprite
     state: board_mess5
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor6
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor6
   suffix: welcome hell
   components:
   - type: Sprite
     state: board_mess6
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor7
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor7
   suffix: dorf
   components:
   - type: Sprite
     state: board_mess7
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor8
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor8
   suffix: love
   components:
   - type: Sprite
     state: board_mess8
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor9
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor9
   suffix: peace
   components:
   - type: Sprite
     state: board_mess9
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor10
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor10
   components:
   - type: Sprite
     state: board_text1
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor12
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor12
   name: chalkboard
   description: A dusty chalkboard covered in old expedition notes and maps.
   components:
@@ -130,54 +130,54 @@
     
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor13
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor13
   components:
   - type: Sprite
     state: board_text4
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor14
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor14
   components:
   - type: Sprite
     state: board_text5
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor15
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor15
   suffix: radiation
   components:
   - type: Sprite
     state: board_text6
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor16
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor16
   suffix: fallout
   components:
   - type: Sprite
     state: board_text7
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor17
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor17
   suffix: vault
   components:
   - type: Sprite
     state: board_text8
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor18
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor18
   suffix: lambda
   components:
   - type: Sprite
     state: board_text9
 
 - type: entity
-  parent: N14ChalkboardFloor
-  id: N14ChalkboardFloor19
+  parent: F14ChalkboardFloor
+  id: F14ChalkboardFloor19
   suffix: wet
   components:
   - type: Sprite

@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/80s/armor.yml
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsClothingOuterEightiesArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterEightiesArmor
   name: eighties roadsign armor
   description: Roadsign plates from Interstate 80 bolted onto a leather harness. The "80" on the backplate is worn but legible — the tribe's namesake and calling card. Crude but effective against blades and bullets alike.
   components:
@@ -21,8 +21,8 @@
     damageCoefficient: 0.88 # near NCR Private baseline (0.90) — bulky metal helps slightly
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsClothingOuterEightiesArmorHeavy
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterEightiesArmorHeavy
   name: eighties roadsign scavenged armor
   description: Roadsign plates from Interstate 80 bolted onto a leather harness. The "80" on the backplate is worn but legible — the tribe's namesake and calling card. Crude but effective against blades and bullets alike.
   components:
@@ -41,8 +41,8 @@
     damageCoefficient: 0.88 # near NCR Private baseline (0.90) — bulky metal helps slightly
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsClothingOuterEightiesArmorHeavyElite
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterEightiesArmorHeavyElite
   name: eighties roadsign scavenged elite armor
   description: Roadsign plates from Interstate 80 bolted onto a leather harness. The "80" on the backplate is worn but legible — the tribe's namesake and calling card. Crude but effective against blades and bullets alike.
   components:
@@ -61,8 +61,8 @@
     damageCoefficient: 0.88 # near NCR Private baseline (0.90) — bulky metal helps slightly
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsClothingOuterEightiesArmorHeavyBoss
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterEightiesArmorHeavyBoss
   name: eighties roadsign boss armor
   description: Roadsign plates from Interstate 80 bolted onto a leather harness. The "80" on the backplate is worn but legible — the tribe's namesake and calling card. Crude but effective against blades and bullets alike.
   components:
@@ -81,8 +81,8 @@
     damageCoefficient: 0.88 # near NCR Private baseline (0.90) — bulky metal helps slightly
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsClothingOuterTheBlockArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterTheBlockArmor
   name: The Block Armor
   description: A jacket with some steel street sign plates attached.
   components:

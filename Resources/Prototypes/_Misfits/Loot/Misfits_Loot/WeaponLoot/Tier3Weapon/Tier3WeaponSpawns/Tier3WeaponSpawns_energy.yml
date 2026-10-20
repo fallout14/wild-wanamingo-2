@@ -4,7 +4,7 @@
   name: Tier3 Weapon Spawner
   abstract: true
   suffix: Tier3
-  id: MisfitsM14Tier3Spawner_RefGunsEnergyAll
+  id: F14Tier3SpawnerRefGunsEnergyAll
   parent: MarkerBase
   components:
   - type: Sprite
@@ -30,41 +30,41 @@
 - type: entity
   name: Tier3 Gun Energy Spawner
   suffix: Tier3
-  id: MisfitsM14Tier3WeaponSpawner_Single_GunsEnergyAll
-  parent: MisfitsM14Tier3Spawner_RefGunsEnergyAll
+  id: F14Tier3WeaponSpawnerSingleGunsEnergyAll
+  parent: F14Tier3SpawnerRefGunsEnergyAll
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier3_GunsEnergyAll
+        tableId: F14WeaponLootTier3GunsEnergyAll
 
 - type: entity
   name: Tier3 Gun Energy Spawner 0-3
   suffix: Tier3
-  id: MisfitsM14Tier3WeaponSpawner_Mult0_3_GunsEnergyAll
-  parent: MisfitsM14Tier3Spawner_RefGunsEnergyAll
+  id: F14Tier3WeaponSpawnerMult03GunsEnergyAll
+  parent: F14Tier3SpawnerRefGunsEnergyAll
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier3_GunsEnergyAll
+        tableId: F14WeaponLootTier3GunsEnergyAll
 
 - type: entity
   name: Tier3 Gun Energy Spawner 1-2
   suffix: Tier3
-  id: MisfitsM14Tier3WeaponSpawner_Mult1_2_GunsEnergyAll
-  parent: MisfitsM14Tier3Spawner_RefGunsEnergyAll
+  id: F14Tier3WeaponSpawnerMult12GunsEnergyAll
+  parent: F14Tier3SpawnerRefGunsEnergyAll
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier3_GunsEnergyAll
+        tableId: F14WeaponLootTier3GunsEnergyAll
 
 # PISTOL ENERGY SPRITE/COLOR REF
 
@@ -72,7 +72,7 @@
   name: Tier3 Weapon Spawner
   abstract: true
   suffix: Tier3
-  id: MisfitsM14Tier3Spawner_RefEnergyPistol
+  id: F14Tier3SpawnerRefEnergyPistol
   parent: MarkerBase
   components:
   - type: Sprite
@@ -88,41 +88,41 @@
 - type: entity
   name: Tier3 Pistol Energy Spawner
   suffix: Tier3
-  id: MisfitsM14Tier3WeaponSpawner_Single_EnergyPistol
-  parent: MisfitsM14Tier3Spawner_RefEnergyPistol
+  id: F14Tier3WeaponSpawnerSingleEnergyPistol
+  parent: F14Tier3SpawnerRefEnergyPistol
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier3_EnergyPistol
+        tableId: F14WeaponLootTier3EnergyPistol
 
 - type: entity
   name: Tier3 Pistol Energy Spawner 0-3
   suffix: Tier3
-  id: MisfitsM14Tier3WeaponSpawner_Mult0_3_EnergyPistol
-  parent: MisfitsM14Tier3Spawner_RefEnergyPistol
+  id: F14Tier3WeaponSpawnerMult03EnergyPistol
+  parent: F14Tier3SpawnerRefEnergyPistol
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier3_EnergyPistol
+        tableId: F14WeaponLootTier3EnergyPistol
 
 - type: entity
   name: Tier3 Pistol Energy Spawner 1-2
   suffix: Tier3
-  id: MisfitsM14Tier3WeaponSpawner_Mult1_2_EnergyPistol
-  parent: MisfitsM14Tier3Spawner_RefEnergyPistol
+  id: F14Tier3WeaponSpawnerMult12EnergyPistol
+  parent: F14Tier3SpawnerRefEnergyPistol
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier3_EnergyPistol
+        tableId: F14WeaponLootTier3EnergyPistol
 
 # RIFLE ENERGY SPRITE/COLOR REF
 
@@ -130,7 +130,7 @@
   name: Tier3 Weapon Spawner
   abstract: true
   suffix: Tier3
-  id: MisfitsM14Tier3Spawner_RefEnergyRifle
+  id: F14Tier3SpawnerRefEnergyRifle
   parent: MarkerBase
   components:
   - type: Sprite
@@ -146,38 +146,38 @@
 - type: entity
   name: Tier3 Rifle Energy Spawner
   suffix: Tier3
-  id: MisfitsM14Tier3WeaponSpawner_Single_EnergyRifle
-  parent: MisfitsM14Tier3Spawner_RefEnergyRifle
+  id: F14Tier3WeaponSpawnerSingleEnergyRifle
+  parent: F14Tier3SpawnerRefEnergyRifle
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier3_EnergyRifle
+        tableId: F14WeaponLootTier3EnergyRifle
 
 - type: entity
   name: Tier3 Rifle Energy Spawner 0-3
   suffix: Tier3
-  id: MisfitsM14Tier3WeaponSpawner_Mult0_3_EnergyRifle
-  parent: MisfitsM14Tier3Spawner_RefEnergyRifle
+  id: F14Tier3WeaponSpawnerMult03EnergyRifle
+  parent: F14Tier3SpawnerRefEnergyRifle
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier3_EnergyRifle
+        tableId: F14WeaponLootTier3EnergyRifle
 
 - type: entity
   name: Tier3 Rifle Energy Spawner 1-2
   suffix: Tier3
-  id: MisfitsM14Tier3WeaponSpawner_Mult1_2_EnergyRifle
-  parent: MisfitsM14Tier3Spawner_RefEnergyRifle
+  id: F14Tier3WeaponSpawnerMult12EnergyRifle
+  parent: F14Tier3SpawnerRefEnergyRifle
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier3_EnergyRifle
+        tableId: F14WeaponLootTier3EnergyRifle

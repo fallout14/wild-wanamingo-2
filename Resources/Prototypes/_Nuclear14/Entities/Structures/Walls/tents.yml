@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14TentLeatherWall
+  id: F14TentLeatherWall
   name: tent
   description: A tent made out of leather.
   components:
@@ -50,8 +50,8 @@
     - ForceNoFixRotations
 
 - type: entity
-  parent: N14TentLeatherWall
-  id: N14TentLeatherCorner
+  parent: F14TentLeatherWall
+  id: F14TentLeatherCorner
   suffix: corner
   components:
   - type: Sprite
@@ -61,8 +61,8 @@
     - ForceNoFixRotations
 
 - type: entity
-  parent: N14TentLeatherWall
-  id: N14TentClothWall
+  parent: F14TentLeatherWall
+  id: F14TentClothWall
   name: tent
   description: A tent made out of cloth.
   components:
@@ -82,8 +82,8 @@
     - ForceNoFixRotations
 
 - type: entity
-  parent: N14TentClothWall
-  id: N14TentClothCorner
+  parent: F14TentClothWall
+  id: F14TentClothCorner
   suffix: corner
   components:
   - type: Sprite

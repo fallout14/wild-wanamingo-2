@@ -3,7 +3,7 @@
 
 - type: entity
   abstract: true
-  id: N14PowerStorageBase
+  id: F14PowerStorageBase
   parent: BaseSMES
   name: energy storage unit
   description: A high-capacity energy storage unit.
@@ -49,7 +49,7 @@
       - !type:ExplodeBehavior
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14MachineFrameTallDestroyed:
+          F14MachineFrameTallDestroyed:
             min: 1
             max: 1
       - !type:SpawnGasBehavior
@@ -62,7 +62,7 @@
           temperature: 373.15
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 100
     intensitySlope: 2
     totalIntensity: 200
@@ -70,8 +70,8 @@
 # Storage in use:
 
 - type: entity
-  parent: N14PowerStorageBase
-  id: N14PowerStorageBasic
+  parent: F14PowerStorageBase
+  id: F14PowerStorageBasic
   suffix: Basic, 8MW
   components:
   - type: Battery
@@ -79,8 +79,8 @@
     startingCharge: 8000000
 
 - type: entity
-  parent: N14PowerStorageBasic
-  id: N14PowerStorageBasicEmpty
+  parent: F14PowerStorageBasic
+  id: F14PowerStorageBasicEmpty
   suffix: Empty
   components:
   - type: Battery
@@ -89,8 +89,8 @@
 # Enclave
 
 - type: entity
-  parent: N14PowerStorageBase
-  id: N14PowerStorageEnclaveBasic
+  parent: F14PowerStorageBase
+  id: F14PowerStorageEnclaveBasic
   suffix: Basic, 8MW
   components:
   - type: Battery

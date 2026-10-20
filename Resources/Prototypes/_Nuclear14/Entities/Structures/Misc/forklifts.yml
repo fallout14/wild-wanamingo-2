@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14WreckForklift
+  id: F14WreckForklift
   name: wrecked forklift
   description: Now you have no choice but to lift with your knees!
   suffix: Mapping
@@ -37,10 +37,10 @@
           SheetSteel1:
             min: 1
             max: 5
-          N14ScrapSteel1:
+          F14ScrapSteel1:
             min: 3
             max: 10
-          N14ScrapLead1:
+          F14ScrapLead1:
             min: 1
             max: 4
       - !type:EmptyAllContainersBehaviour

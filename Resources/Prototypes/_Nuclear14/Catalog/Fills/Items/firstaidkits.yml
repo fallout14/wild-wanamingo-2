@@ -2,71 +2,71 @@
 # Resources/Prototypes/_Nuclear14/Catalog/Fills/Items/firstaidkits.yml
 
 - type: entity
-  id: N14MedkitFilled
+  id: F14MedkitFilledBase
   suffix: N14
   parent: Medkit
   components:
   - type: StorageFill
     contents:
-      - id: N14CleanGauze10
-      - id: N14Ointment10
-      - id: N14CleanGauze10
-      - id: N14Stimpak
+      - id: F14CleanGauze10
+      - id: F14Ointment10
+      - id: F14CleanGauze10
+      - id: F14Stimpak
 
 - type: entity
-  id: N14MedkitBruteFilled
+  id: F14MedkitBruteFilled
   suffix: N14
   parent: MedkitBrute
   components:
   - type: StorageFill
     contents:
-      - id: N14CleanGauze10
-      - id: N14CleanGauze10
+      - id: F14CleanGauze10
+      - id: F14CleanGauze10
       - id: Bloodpack
       - id: PillCanisterIron
 
 - type: entity
-  id: N14MedkitToxinFilled
+  id: F14MedkitToxinFilled
   suffix: Filled, N14
   parent: MedkitToxin
   components:
   - type: StorageFill
     contents:
-      - id: N14ChemicalSyringeAntidote
+      - id: F14ChemicalSyringeAntidote
         amount: 3
       - id: PillCanisterCharcoal
         amount: 2
 
 - type: entity
-  id: N14MedkitCombatFilled
+  id: F14MedkitCombatFilled
   suffix: N14
   parent: MedkitCombat
   components:
   - type: StorageFill
     contents:
       - id: MedicatedSuture
-      - id: N14Stimpak
-      - id: N14ChemicalSyringeAntidote
+      - id: F14Stimpak
+      - id: F14ChemicalSyringeAntidote
       - id: RegenerativeMesh
 
 - type: entity
-  id: N14MedkitRadiationFilled
+  id: F14MedkitRadiationFilled
   suffix: Filled, N14
   parent: MedkitRadiation
   components:
   - type: StorageFill
     contents:
-      - id: N14RadAwayBloodbag
+      - id: F14RadAwayBloodbag
         amount: 2
-      - id: N14RadXCanisterFilled
+      - id: F14RadXCanisterFilled
 
 - type: entity
-  id: N14MedkitStimkitFilled
+  id: F14MedkitStimkitFilled
   suffix: Stimkit, N14
   parent: Medkit
   components:
   - type: StorageFill
     contents:
-      - id: N14Stimpak
+      - id: F14Stimpak
         amount: 3
-      - id: N14SuperStimpak
+      - id: F14SuperStimpak

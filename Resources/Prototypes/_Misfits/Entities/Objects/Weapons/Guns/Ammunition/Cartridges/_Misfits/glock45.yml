@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Cartridges/_Misfits/glock45.yml
 
 - type: entity
-  id: MisfitsBulletGlock45
+  id: F14BulletGlock45
   name: bullet (.45 custom)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -13,9 +13,9 @@
         Blunt: 10
 
 - type: entity
-  id: MisfitsCartridgeGlock45
+  id: F14CartridgeGlock45
   name: glock cartridge
   parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
-    proto: MisfitsBulletGlock45
+    proto: F14BulletGlock45

@@ -2,22 +2,22 @@
 # Resources/Prototypes/Corvax/Recipes/Crafting/Construction/Graphs/apc.yml
 
 - type: constructionGraph
-  id: CorvaxAPC
+  id: F14APC
   start: start
   graph:
     - node: start
       edges:
         - to: apcFrame
           steps:
-            - material: N14Iron
+            - material: F14Iron
               amount: 2
 
     - node: apcFrame
-      entity: N14APCBreakerFrame
+      entity: F14APCBreakerFrame
       edges:
         - to: apcCable
           steps:
-            - tag: N14Mainboard
+            - tag: F14Mainboard
               name: misfits-kit-mainboard
               icon: {sprite: Nuclear14/Objects/Misc/crafting_junk.rsi, state: frame}
             - tool: Screwing
@@ -25,7 +25,7 @@
         - to: start
           completed:
             - !type:GivePrototype
-              prototype: N14IngotIron1
+              prototype: F14IngotIron1
               amount: 2
             - !type:DeleteEntity {}
           steps:
@@ -33,7 +33,7 @@
               doAfter: 2
 
     - node: apcCable
-      entity: N14APCBreakerFrame
+      entity: F14APCBreakerFrame
       edges:
       - to: apc
         steps:
@@ -47,11 +47,11 @@
           doAfter: 1
         completed:
         - !type:GivePrototype
-          prototype: N14JunkComponentMainboard
+          prototype: F14JunkComponentMainboard
           amount: 1
 
     - node: apc
-      entity: N14APCBreakerConstructed
+      entity: F14APCBreakerConstructed
       edges:
         - to: apcCable
           completed:

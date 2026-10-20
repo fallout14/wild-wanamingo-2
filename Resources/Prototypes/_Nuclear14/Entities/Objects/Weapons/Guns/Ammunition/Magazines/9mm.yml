@@ -2,19 +2,19 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/9mm.yml
 
 - type: entity
-  id: N14BaseMagazine9mmPistol
+  id: F14BaseMagazine9mmPistol
   name: pistol magazine (9mm)
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - N14MagazinePistol9mm
+      - F14MagazinePistol9mm
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14CartridgePistol9
+        - F14CartridgePistol9
     capacity: 14
   - type: ContainerContainer
     containers:
@@ -34,29 +34,29 @@
   - type: Appearance
 
 - type: entity
-  id: N14MagazinePistol9mm
+  id: F14MagazinePistol9mm
   name: pistol magazine (9mm)
-  parent: N14BaseMagazine9mmPistol
+  parent: F14BaseMagazine9mmPistol
   components:
   - type: BallisticAmmoProvider
-    proto: N14CartridgePistol9
+    proto: F14CartridgePistol9
 
 - type: entity
-  id: N14MagazineSMG9mm
+  id: F14MagazineSMG9mm
   name: SMG magazine (9mm)
-  parent: N14BaseMagazine9mmPistol
+  parent: F14BaseMagazine9mmPistol
   components:
   - type: Tag
     tags:
-      - N14MagazineSMG9mm
+      - F14MagazineSMG9mm
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Magazines/9mm/smgmag.rsi
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - N14CartridgePistol9
+        - F14CartridgePistol9
     capacity: 31
-    proto: N14CartridgePistol9
+    proto: F14CartridgePistol9
   - type: MagazineVisuals
     magState: mag
     steps: 2

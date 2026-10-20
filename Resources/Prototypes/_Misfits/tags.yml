@@ -1,16 +1,16 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/tags.yml, Resources/Prototypes/_Nuclear14/tags.yml, Resources/Prototypes/tags.yml
 
 - type: Tag
-  id: MisfitsIdCardBrotherhood
+  id: F14IdCardBrotherhood
 
 - type: Tag
-  id: MisfitsIdCardNCR
+  id: F14IdCardNCR
 
 - type: Tag
-  id: MisfitsBottleCap
+  id: F14BottleCap
 
 - type: Tag
-  id: MisfitsIdCardNCRRanger # #Misfits Add - used by Ranger tactical map Overwatch filter
+  id: F14IdCardNCRRanger # #Misfits Add - used by Ranger tactical map Overwatch filter
 
 # #Misfits Add - Tag for Legion faction map blip tracking.
 # Applied to every Legion ID card / medallion / badge so the
@@ -24,186 +24,186 @@
 #   5. Handle in WastelandMapCartridgeSystem.GetLoaderFeed() if Pip-Boy support is wanted
 
 - type: Tag
-  id: MisfitsIdCardLegion # #Misfits Add - used by Legion tactical feed
+  id: F14IdCardLegion # #Misfits Add - used by Legion tactical feed
 
 # #Misfits Add - Tag for Followers of the Apocalypse ID cards.
 # Applied to N14IDDoctorFollower so the Pip-Boy can identify Followers IDs.
 
 - type: Tag
-  id: MisfitsIdCardFollowers
+  id: F14IdCardFollowers
 
 # #Misfits Add - identifies pendants and tribal Protectron cards for the Tree TacMap.
 
 - type: Tag
-  id: MisfitsIdCardTribe
+  id: F14IdCardTribe
 
 # #Misfits Add - Tag for wastelander dogtags to allow insertion into Pip-Boy idSlot.
 # Without a faction-specific tag, wastelander dogtags would be rejected by the PDA whitelist.
 
 - type: Tag
-  id: MisfitsIdCardWastelander
+  id: F14IdCardWastelander
 
 # #Misfits Change - Tag for Super Mutant species-specific clothing.
 # Used by the supermutant inventory template whitelist to restrict body-worn slots.
 
 - type: Tag
-  id: MisfitsSuperMutantWearable
+  id: F14SuperMutantWearable
 
 # #Misfits Add - Tag for C-27 humanoid robot species-specific armor/chassis clothing.
 # Used by the c27 inventory template to restrict the outerClothing slot to C-27 plating only,
 # and (combined with MisfitsC27ArmorComponent in Phase D) to enforce species-locked equipment.
 
 - type: Tag
-  id: MisfitsC27Wearable
+  id: F14C27Wearable
 
 # #Misfits Add - Tags for construction materials (cement/concrete/brick building system).
 # Referenced by TagComponent on N14MaterialCement, N14MaterialConcrete, and N14MaterialBrick.
 
 - type: Tag
-  id: MisfitsCement
+  id: F14Cement
 
 - type: Tag
   id: Concrete
 
 - type: Tag
-  id: MisfitsBrick
+  id: F14Brick
 
 # Shared no-ride tag used by vehicles and large creature species to block mounting logic.
 
 - type: Tag
-  id: MisfitsCannotRide
+  id: F14CannotRide
 
 - type: Tag
-  id: MisfitsBrahdo
+  id: F14Brahdo
 
 # #Misfits Add - Tag for the 80-round heavy 5.56 magazine used by the Heavy Assault
 # Rifle (N14WeaponRifle556HeavyAssault). Keeps the oversized magazine out of the
 # standard 5.56 rifles, the same way LongMagazine556Rifle gates the assault carbine.
 
 - type: Tag
-  id: MisfitsMagazineHeavy556Rifle
+  id: F14MagazineHeavy556Rifle
 
 - type: Tag
-  id: MisfitsHydraInhaler
+  id: F14HydraInhaler
 
 - type: Tag
-  id: MisfitsTurbo
+  id: F14Turbo
 
 - type: Tag # #Cythisiax Fixed - was lowercase 'type: tag'
-  id: MisfitsBwonsamdiHarness
+  id: F14BwonsamdiHarness
 
 # Misfits Add - identifies the medical ethanol bottle for crafting.
 
 - type: Tag
-  id: MisfitsPipBoy
+  id: F14PipBoy
 
 # #Cythisiax Added - lets utility belts store the N14 welding goggles
 
 - type: Tag
-  id: MisfitsSpeedLoader45
+  id: F14SpeedLoader45
 
 - type: Tag
-  id: MisfitsSpeedLoaderTube357
+  id: F14SpeedLoaderTube357
 
 - type: Tag
-  id: MisfitsWeldingGoggles
+  id: F14WeldingGoggles
 
 # Medical Items
 
 - type: Tag
-  id: MisfitsSpeedLoaderTube45
+  id: F14SpeedLoaderTube45
 
 - type: Tag
-  id: MisfitsCartridgePistol38
+  id: F14CartridgePistol38
 
 - type: Tag
-  id: MisfitsEmptySyringe
+  id: F14EmptySyringe
 
 - type: Tag
-  id: MisfitsMagazinePistol357
+  id: F14MagazinePistol357
 
 - type: Tag
-  id: MisfitsEmptyNukaBottle
+  id: F14EmptyNukaBottle
 
 - type: Tag
-  id: MisfitsTribalMedicine # #Misfits Add: used to whitelist tribal medicines (powder, poultice) in the Medical Belt
+  id: F14TribalMedicine # #Misfits Add: used to whitelist tribal medicines (powder, poultice) in the Medical Belt
 
 #MARK: Crafts
 
 - type: Tag
-  id: MisfitsFirearmMuzzleAttachment
+  id: F14FirearmMuzzleAttachment
 
 - type: Tag
-  id: MisfitsVarmintRifle
+  id: F14VarmintRifle
 
 - type: Tag
-  id: MisfitsSpeedLoader357 # #Misfits Add — .357 Magnum speedloader tag for Detective Special / Lucky 37
+  id: F14SpeedLoader357 # #Misfits Add — .357 Magnum speedloader tag for Detective Special / Lucky 37
 
 #MARK: Ammo tags(cartriges).
 
 - type: Tag
-  id: MisfitsCartridgeOver308Rifle
+  id: F14CartridgeOver308Rifle
 
 - type: Tag
-  id: MisfitsCartridge2mmEC
+  id: F14Cartridge2mmEC
 
 #MARK: Ammo tags(Magazines).
 
 - type: Tag
-  id: MisfitsMagazineOver308RifleSnipers
+  id: F14MagazineOver308RifleSnipers
 
 - type: Tag
-  id: MisfitsMagazine2mmECRifle
+  id: F14Magazine2mmECRifle
 
 - type: Tag
-  id: MisfitsMagazine2mmECPistol
+  id: F14Magazine2mmECPistol
 
 # Forge-Add-Start
 
 - type: Tag # forge-add
-  id: MisfitsMagazine308RifleSnipers
+  id: F14Magazine308RifleSnipers
 
 - type: Tag
-  id: MisfitsSKSEnbloc308
+  id: F14SKSEnbloc308
 
 # #Misfits Add — tags for ported weapons: .357 ammo, PPSh-41 drum, American 180 drum
 
 - type: Tag
-  id: MisfitsCartridgePistol357
+  id: F14CartridgePistol357
 
 - type: Tag
-  id: MisfitsMagazineSMG9mmDrum
+  id: F14MagazineSMG9mmDrum
 
 - type: Tag
-  id: MisfitsMagazineAmerican180Drum
+  id: F14MagazineAmerican180Drum
 
 - type: Tag
   id:  MisfitsSpeedLoader
 
 - type: Tag
-  id: MisfitsPlasmaCartridgeMultiplas # #Misfits Add - dedicated tag for Multiplas spread ammo
+  id: F14PlasmaCartridgeMultiplas # #Misfits Add - dedicated tag for Multiplas spread ammo
 
 - type: Tag
-  id: MisfitsMicrofusionCell
+  id: F14MicrofusionCell
 
 # #Misfits Add - Dedicated tag for fusion cores (Gatling-only high-capacity cells)
 
 - type: Tag
-  id: MisfitsElectronChargePack
+  id: F14ElectronChargePack
 
 - type: Tag
-  id: MisfitsPulseEnergyCell
+  id: F14PulseEnergyCell
 
 - type: Tag
-  id: MisfitsPulseMicrofusionCell
+  id: F14PulseMicrofusionCell
 
 #MARK: Ammo tags(explosives)
 
 - type: Tag
-  id: MisfitsVehicleKey
+  id: F14VehicleKey
 
 - type: Tag
-  id: MisfitsMotorbikeKeys
+  id: F14MotorbikeKeys
 
 - type: Tag
   id: ThrowingKnife # Storage whitelist: ClothingBeltMedical, SyndicateThrowingKnivesKit

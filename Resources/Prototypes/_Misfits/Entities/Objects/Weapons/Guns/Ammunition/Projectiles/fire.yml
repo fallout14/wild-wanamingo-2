@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Projectiles/fire.yml
 
 - type: entity
-  id: MisfitsFlamerSpew
-  parent: N14BaseFire
+  id: F14FlamerSpew
+  parent: F14BaseFire
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn

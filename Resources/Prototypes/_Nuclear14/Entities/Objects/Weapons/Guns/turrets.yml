@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14WeaponTurretBroken
+  id: F14WeaponTurretBroken
   name: ballistic turret
   suffix: broken
   description: A ballistic machine gun auto-turret.
@@ -35,8 +35,8 @@
                   max: 4
 
 - type: entity
-  parent: N14WeaponTurretBroken
-  id: N14WeaponTurretMobileBroken
+  parent: F14WeaponTurretBroken
+  id: F14WeaponTurretMobileBroken
   components:
     - type: Sprite
       sprite: Nuclear14/Structures/Machines/turrets.rsi
@@ -44,7 +44,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14BaseWeaponTurret
+  id: F14BaseWeaponTurret
   name: ballistic turret
   abstract: true
   components:
@@ -83,7 +83,7 @@
       damageContainer: Inorganic
     - type: Explosive
       #Misfits Change - use the structural-capable N14 explosion profile.
-      explosionType: MisfitsDefaultStructural
+      explosionType: F14DefaultStructural
       maxIntensity: 4
       intensitySlope: 1
       totalIntensity: 10
@@ -121,13 +121,13 @@
       useKey: false
     # TODO: Power ammo provider?
     - type: BallisticAmmoProvider
-      proto: N14CartridgePistol10 
+      proto: F14CartridgePistol10 
       capacity: 500
     - type: ProximityNPC # Misfits Add — sleep distant NPCs to reduce tick load
     - type: MobState # Misfits Add — compatibility with proximity system checks
     - type: HTN
       rootTask:
-        task: N14TurretCompound
+        task: F14TurretCompound
       blackboard:
         RotateSpeed: !type:Single
           3.141
@@ -143,113 +143,113 @@
       context: "human"
 
 - type: entity
-  parent: N14BaseWeaponTurret
-  id: N14WeaponTurretBrotherhoodMidwestSecureArea
+  parent: F14BaseWeaponTurret
+  id: F14WeaponTurretBrotherhoodMidwestSecureArea
   suffix: BOS Midwest, Hostile
   components:
   - type: NpcFactionMember
     factions:
-    - MisfitsBrotherhoodOfSteelSecureArea
+    - F14BrotherhoodOfSteelSecureArea
 
 - type: entity
-  parent: N14BaseWeaponTurret
-  id: N14WeaponTurretBrotherhoodMidwest
+  parent: F14BaseWeaponTurret
+  id: F14WeaponTurretBrotherhoodMidwest
   suffix: BOS Midwest
   components:
   - type: NpcFactionMember
     factions:
-    - MisfitsBrotherhoodOfSteel
+    - F14BrotherhoodOfSteel
 
 #Misfits Change: Washington BoS turrets re-enabled using consolidated BrotherhoodOfSteel faction.
 #Original used BrotherhoodOfSteelWashington/SecureArea which no longer exist.
 
 - type: entity
-  parent: N14BaseWeaponTurret
-  id: N14WeaponTurretBrotherhoodWashingtonSecureArea
+  parent: F14BaseWeaponTurret
+  id: F14WeaponTurretBrotherhoodWashingtonSecureArea
   suffix: BOS Washington, Hostile
   components:
   - type: NpcFactionMember
     factions:
-    - MisfitsBrotherhoodOfSteelSecureArea
+    - F14BrotherhoodOfSteelSecureArea
 
 - type: entity
-  parent: N14BaseWeaponTurret
-  id: N14WeaponTurretBrotherhoodWashington
+  parent: F14BaseWeaponTurret
+  id: F14WeaponTurretBrotherhoodWashington
   suffix: BOS Washington
   components:
   - type: NpcFactionMember
     factions:
-    - MisfitsBrotherhoodOfSteel
+    - F14BrotherhoodOfSteel
 
 - type: entity
-  parent: N14BaseWeaponTurret
-  id: N14WeaponTurretVaultSecureArea
+  parent: F14BaseWeaponTurret
+  id: F14WeaponTurretVaultSecureArea
   suffix: VaultSecureArea, Hostile
   components:
   - type: NpcFactionMember
     factions:
-    - N14VaultSecureArea
+    - F14VaultSecureArea
 
 - type: entity
-  parent: N14BaseWeaponTurret
-  id: N14WeaponTurretVault
+  parent: F14BaseWeaponTurret
+  id: F14WeaponTurretVault
   suffix: Vault, Hostile
   components:
   - type: NpcFactionMember
     factions:
-    - N14Vault
+    - F14Vault
 
 - type: entity
-  parent: N14BaseWeaponTurret
-  id: N14WeaponTurretNCRSecureArea
+  parent: F14BaseWeaponTurret
+  id: F14WeaponTurretNCRSecureArea
   suffix: NCRSecureArea, Hostile
   components:
   - type: NpcFactionMember
     factions:
-    - N14NCRSecureArea
+    - F14NCRSecureArea
 
 - type: entity
-  parent: N14BaseWeaponTurret
-  id: N14WeaponTurretNCR
+  parent: F14BaseWeaponTurret
+  id: F14WeaponTurretNCR
   suffix: NCR, Hostile
   components:
   - type: NpcFactionMember
     factions:
-    - N14NCR
+    - F14NCR
 
 - type: entity
-  parent: N14BaseWeaponTurret
-  id: N14WeaponTurretCaravan
+  parent: F14BaseWeaponTurret
+  id: F14WeaponTurretCaravan
   suffix: CaravanCompany, Hostile
   components:
   - type: NpcFactionMember
     factions:
-    - N14CaravanCompanySecureArea
+    - F14CaravanCompanySecureArea
 
 - type: entity
-  parent: N14BaseWeaponTurret
-  id: N14WeaponTurretRaider
+  parent: F14BaseWeaponTurret
+  id: F14WeaponTurretRaider
   suffix: Raider, Hostile
   components:
   - type: NpcFactionMember
     factions:
-    - N14Raider
+    - F14Raider
 
 - type: entity
-  parent: N14BaseWeaponTurret
-  id: N14WeaponTurretRobot
+  parent: F14BaseWeaponTurret
+  id: F14WeaponTurretRobot
   suffix: Robot, Hostile
   components:
   - type: NpcFactionMember
     factions:
-    - N14HostileRobot
+    - F14HostileRobot
 
 # Spawn Point Turrets
 # These are meta turrets designed to stop spawn point abuse
 
 - type: entity
   parent: BaseStructure
-  id: N14BaseWeaponTurretMeta
+  id: F14BaseWeaponTurretMeta
   name: ballistic turret
   abstract: true
   components:
@@ -292,11 +292,11 @@
       useKey: false
     # TODO: Power ammo provider?
     - type: BallisticAmmoProvider
-      proto: N14Bullet50HEIAPMeta
+      proto: F14Bullet50HEIAPMeta
       capacity: 50000
     - type: HTN
       rootTask:
-        task: N14TurretCompound
+        task: F14TurretCompound
       blackboard:
         RotateSpeed: !type:Single
           10
@@ -304,37 +304,37 @@
           path: /Audio/Effects/double_beep.ogg
 
 - type: entity
-  parent: N14BaseWeaponTurretMeta
-  id: N14WeaponTurretBrotherhoodMidwestSpawnpoint
+  parent: F14BaseWeaponTurretMeta
+  id: F14WeaponTurretBrotherhoodMidwestSpawnpoint
   suffix: BOS Midwest, Spawnpoint
   components:
   - type: NpcFactionMember
     factions:
-    - MisfitsBrotherhoodOfSteelSecureArea
+    - F14BrotherhoodOfSteelSecureArea
 
 - type: entity
-  parent: N14BaseWeaponTurretMeta
-  id: N14WeaponTurretBrotherhoodWashingtonSpawnpoint
+  parent: F14BaseWeaponTurretMeta
+  id: F14WeaponTurretBrotherhoodWashingtonSpawnpoint
   suffix: BOS Washington, Spawnpoint
   components:
   - type: NpcFactionMember
     factions:
-    - MisfitsBrotherhoodOfSteelSecureArea
+    - F14BrotherhoodOfSteelSecureArea
 
 - type: entity
-  parent: N14BaseWeaponTurretMeta
-  id: N14WeaponTurretVaultSpawnpoint
+  parent: F14BaseWeaponTurretMeta
+  id: F14WeaponTurretVaultSpawnpoint
   suffix: Vault, Spawnpoint
   components:
   - type: NpcFactionMember
     factions:
-    - N14VaultSecureArea
+    - F14VaultSecureArea
 
 - type: entity
-  parent: N14BaseWeaponTurretMeta
-  id: N14WeaponTurretNCRSpawnpoint
+  parent: F14BaseWeaponTurretMeta
+  id: F14WeaponTurretNCRSpawnpoint
   suffix: NCR, Spawnpoint
   components:
   - type: NpcFactionMember
     factions:
-    - N14NCRSecureArea
+    - F14NCRSecureArea

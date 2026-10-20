@@ -2,8 +2,8 @@
 
 - type: entity
   name: Dr. Thumper
-  id: MisfitsMobRabbitFollowersPet
-  parent: N14MobRabbit
+  id: F14MobRabbitFollowersPet
+  parent: F14MobRabbit
   description: A highly trained professional.
   components:
   - type: MobThresholds
@@ -32,7 +32,7 @@
     price: 3000 # it is a truly valuable creature
   - type: NpcFactionMember
     factions:
-    - MisfitsFollowers
+    - F14Followers
   - type: GhostRole
     name: ghost-role-information-misfitpet-rabbit-followers-name
     description: ghost-role-information-misfit-faction-description
@@ -41,7 +41,7 @@
 
 - type: entity
   name: Timmy
-  id: MisfitsMobLizardBoSPet1
+  id: F14MobLizardBoSPet1
   parent: MobLizard
   description: Oddly enough, not a deathclaw. You have been lied to.
   components:
@@ -56,13 +56,13 @@
     - CannotSuicide
   - type: NpcFactionMember
     factions:
-    - MisfitsBrotherhoodOfSteel
+    - F14BrotherhoodOfSteel
   - type: MobPrice
     price: 200
 
 - type: entity
   name: Jimmy
-  id: MisfitsMobLizardBoSPet2
+  id: F14MobLizardBoSPet2
   parent: MobLizard
   description: Seems very friendly!
   components:
@@ -77,6 +77,6 @@
     - CannotSuicide
   - type: NpcFactionMember
     factions:
-    - MisfitsBrotherhoodOfSteel
+    - F14BrotherhoodOfSteel
   - type: MobPrice
     price: 200

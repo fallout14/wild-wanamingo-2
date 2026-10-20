@@ -2,8 +2,8 @@
 # Resources/Prototypes/Corvax/Entities/Structures/Doors/airlocks.yml
 
 - type: entity
-  id: CorvaxDoorBunker3X
-  parent: N14Airlock
+  id: F14DoorBunker3X
+  parent: F14Airlock
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Structures/Door/bunkerdoor.rsi
@@ -21,8 +21,8 @@
         - AirlockLayer
 
 - type: entity
-  id: CorvaxDoorBunkerGlass3X
-  parent: N14Airlock
+  id: F14DoorBunkerGlass3X
+  parent: F14Airlock
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Structures/Door/glassbunkerdoor.rsi

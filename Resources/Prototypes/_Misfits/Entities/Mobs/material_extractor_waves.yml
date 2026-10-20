@@ -1,0 +1,77 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Mobs/material_extractor_waves.yml
+
+- type: entity
+  abstract: true
+  id: F14MobMaterialExtractorWaveBase
+  parent: F14MobWaveAnimal
+  components:
+  # Wave mobs first close on the extractor itself. Once they arrive, their
+  # normal hostile HTN can select and attack nearby players.
+  - type: HTN
+    rootTask:
+      task: F14MaterialExtractorWaveCompound
+  - type: NpcFactionMember
+    factions:
+    - F14WastelandAnimal
+
+- type: htnCompound
+  id: F14MaterialExtractorWaveCompound
+  branches:
+  - tasks:
+    - !type:HTNPrimitiveTask
+      preconditions:
+      - !type:CoordinatesNotInRangePrecondition
+        targetKey: FollowTarget
+        rangeKey: MeleeRange
+      operator: !type:MoveToOperator
+        pathfindInPlanning: true
+        targetKey: FollowTarget
+        rangeKey: MeleeRange
+        removeKeyOnFinish: false
+  - tasks:
+    - !type:HTNCompoundTask
+      task: F14MeleeCombatCompound
+
+- type: entity
+  id: F14MobMaterialExtractorMoleratWave
+  parent: [F14MobMolerat, F14MobMaterialExtractorWaveBase]
+
+- type: entity
+  id: F14MobMaterialExtractorGeckoWave
+  parent: [F14MobGecko, F14MobMaterialExtractorWaveBase]
+
+- type: entity
+  id: F14MobMaterialExtractorFireGeckoWave
+  parent: [F14MobGeckoFire, F14MobMaterialExtractorWaveBase]
+
+- type: entity
+  id: F14MobMaterialExtractorRadhogWave
+  parent: [F14MobRadhog, F14MobMaterialExtractorWaveBase]
+
+- type: entity
+  id: F14MobMaterialExtractorMirelurkWave
+  parent: [F14MobMirelurk, F14MobMaterialExtractorWaveBase]
+
+- type: entity
+  id: F14MobMaterialExtractorNightstalkerCubWave
+  parent: [F14MobNightstalkerCub, F14MobMaterialExtractorWaveBase]
+
+- type: entity
+  id: F14MobMaterialExtractorNightstalkerWave
+  parent: [F14MobNightstalker, F14MobMaterialExtractorWaveBase]
+
+- type: entity
+  id: F14MobMaterialExtractorRadMirelurkWave
+  parent: [F14MobRadMirelurk, F14MobMaterialExtractorWaveBase]
+
+- type: entity
+  id: F14MobMaterialExtractorGiantAntWave
+  parent: [F14MobGiantAnt, F14MobMaterialExtractorWaveBase]
+
+- type: entity
+  id: F14MobMaterialExtractorGiantFireAntWave
+  parent: [F14MobGiantFireAnt, F14MobMaterialExtractorWaveBase]
+
+- type: entity
+  id: F14MobMaterialExtractorRadscorpionWave
+  parent: [F14MobRadscorpion, F14MobMaterialExtractorWaveBase]

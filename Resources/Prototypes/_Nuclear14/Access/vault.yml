@@ -2,43 +2,43 @@
 # Resources/Prototypes/_Nuclear14/Access/vault.yml
 
 - type: accessLevel
-  id: N14VaultOverseer
+  id: F14VaultOverseer
   name: id-card-access-level-vault-overseer
 
 - type: accessLevel
-  id: N14VaultGatekeeper
+  id: F14VaultGatekeeper
   name: id-card-access-level-vault-gatekeeper
   
 
 - type: accessLevel
-  id: N14VaultSecurity
+  id: F14VaultSecurity
   name: id-card-access-level-vault-security
   
 
 - type: accessLevel
-  id: N14VaultMedical
+  id: F14VaultMedical
   name: id-card-access-level-vault-medical
 
 - type: accessLevel
-  id: N14VaultEngineer
+  id: F14VaultEngineer
   name: id-card-access-level-vault-engineer
   
 
 - type: accessLevel
-  id: N14VaultDweller
+  id: F14VaultDweller
   name: id-card-access-level-vault-dweller
 
 - type: accessGroup
-  id: N14VaultOverseer
+  id: F14VaultOverseer
   tags:
-  - N14VaultOverseer
-  - N14VaultGatekeeper
-  - N14VaultSecurity
-  - N14VaultEngineer
-  - N14VaultMedical
-  - MisfitsVaultChemistry
-  - N14VaultDweller
-  - MisfitsVaultCargo
-  - MisfitsVaultCourier
-  - MisfitsVaultSalvage
-  - MisfitsVaultControlsPanel # Misfits Add - exclusive to Overseer; NOT in AllAccess
+  - F14VaultOverseer
+  - F14VaultGatekeeper
+  - F14VaultSecurity
+  - F14VaultEngineer
+  - F14VaultMedical
+  - F14VaultChemistry
+  - F14VaultDweller
+  - F14VaultCargo
+  - F14VaultCourier
+  - F14VaultSalvage
+  - F14VaultControlsPanel # Misfits Add - exclusive to Overseer; NOT in AllAccess

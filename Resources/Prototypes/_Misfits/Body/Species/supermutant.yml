@@ -8,7 +8,7 @@
 # No hair: super mutants only take body markings.
 - type: markingsGroup
   parent: Undergarments
-  id: MisfitsSuperMutant
+  id: F14SuperMutant
   onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Hair:
@@ -52,8 +52,8 @@
   name: super mutant appearance
   components:
   - type: Inventory
-    templateId: MisfitsSupermutant
-    speciesId: MisfitsSupermutant
+    templateId: F14Supermutant
+    speciesId: F14Supermutant
   - type: InitialBody
     organs:
       Torso: OrganSuperMutantTorso
@@ -77,12 +77,12 @@
       Liver: OrganHumanLiver
       Kidneys: OrganHumanKidneys
   - type: HumanoidProfile
-    species: MisfitsSuperMutant
+    species: F14SuperMutant
 
 # Stats shared by super mutants and nightkin.
 - type: entity
   abstract: true
-  id: N14BaseMobSuperMutantStats
+  id: F14BaseMobSuperMutantStats
   components:
   - type: Sprite
     scale: 1.5, 1.5
@@ -92,7 +92,7 @@
   - type: Perishable
     rotAfter: 3600
   - type: Damageable
-    damageModifierSet: MisfitsSuperMutant
+    damageModifierSet: F14SuperMutant
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.0
     baseSprintSpeed: 3.5
@@ -124,21 +124,21 @@
         Piercing: 2.0
         Shock: 2.0
   - type: Vocal
-    emoteSounds: MisfitsSuperMutantEmotes
+    emoteSounds: F14SuperMutantEmotes
   - type: Butcherable
     spawned:
-    - id: MisfitsFoodMeatSupermutant
+    - id: F14FoodMeatSupermutant
       amount: 5
   - type: NpcFactionMember
     factions:
-    - N14Wastelander
+    - F14Wastelander
 
 - type: entity
   parent:
   - AppearanceSuperMutant
   - BaseSpeciesMobOrganic
-  - N14BaseMobSuperMutantStats
-  id: MisfitsMobSuperMutant
+  - F14BaseMobSuperMutantStats
+  id: F14MobSuperMutant
   name: Urist McSupermutant
 
 - type: entity
@@ -153,7 +153,7 @@
       sprite: Misfits/Mobs/Species/SuperMutant/parts.rsi
   - type: VisualOrganMarkings
     markingData:
-      group: MisfitsSuperMutant
+      group: F14SuperMutant
 
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganSuperMutantExternal ]
@@ -204,14 +204,14 @@
   name: nightkin appearance
   components:
   - type: HumanoidProfile
-    species: MisfitsNightkin
+    species: F14Nightkin
 
 - type: entity
   parent:
   - AppearanceNightkin
   - BaseSpeciesMobOrganic
-  - N14BaseMobSuperMutantStats
-  id: MisfitsMobNightkinPlayer
+  - F14BaseMobSuperMutantStats
+  id: F14MobNightkinPlayer
   name: Urist McNightkin
   components:
   - type: MovementSpeedModifier # faster than super mutants, still slower than humans

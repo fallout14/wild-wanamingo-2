@@ -1,0 +1,136 @@
+# ---- from _Misfits/Roles/Jobs/Yuma/ncr_rank_pins.yml
+# NCR rank pins for Yuma, handed over at spawn by hours played in the job (a step every 20 hours, like
+# Misfits). Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Misfits/NCR/ncr_rank_pin_progressions.yml; ranges from the server roster.
+
+# ---- from _WW/Roles/Jobs/Yuma/ncr_rank_pins.yml
+# Wild Wanamingo prototypes generated alongside ncr_rank_pins.yml (Yuma roster).
+
+- type: ncrRankPinProgression
+  id: F14NCRCommanderRankPins
+  jobs:
+  - F14NCRCommander
+  tracker: F14NCRCommander
+  thresholds:
+  - min: 0 # 0 hours
+    entity: F14ClothingNeckPinNCRSecondLieutenant
+  - min: 72000 # 20 hours
+    entity: F14ClothingNeckPinNCRFirstLieutenant
+  - min: 144000 # 40 hours
+    entity: F14ClothingNeckPinNCRCaptain
+
+- type: ncrRankPinProgression
+  id: F14NCRDoctorRankPins
+  jobs:
+  - F14NCRDoctor
+  tracker: F14NCRDoctor
+  thresholds:
+  - min: 0 # 0 hours
+    entity: F14ClothingNeckPinNCRSecondLieutenant
+  - min: 72000 # 20 hours
+    entity: F14ClothingNeckPinNCRFirstLieutenant
+  - min: 144000 # 40 hours
+    entity: F14ClothingNeckPinNCRCaptain
+
+- type: ncrRankPinProgression
+  id: F14NCRRORankPins
+  jobs:
+  - F14NCRRO
+  tracker: F14NCRRO
+  thresholds:
+  - min: 0 # 0 hours
+    entity: F14ClothingNeckPinNCRSecondLieutenant
+  - min: 72000 # 20 hours
+    entity: F14ClothingNeckPinNCRFirstLieutenant
+  - min: 144000 # 40 hours
+    entity: F14ClothingNeckPinNCRCaptain
+
+- type: ncrRankPinProgression
+  id: F14NCRPlatoonLeaderRankPins
+  jobs:
+  - F14NCRPlatoonLeader
+  tracker: F14NCRPlatoonLeader
+  thresholds:
+  - min: 0 # 0 hours
+    entity: F14ClothingNeckPinNCRSecondLieutenant
+  - min: 72000 # 20 hours
+    entity: F14ClothingNeckPinNCRFirstLieutenant
+
+- type: ncrRankPinProgression
+  id: F14NCRNCORankPins
+  jobs:
+  - F14NCRNCO
+  tracker: F14NCRNCO
+  thresholds:
+  - min: 0 # 0 hours
+    entity: F14ClothingNeckPinNCRCorporal
+  - min: 72000 # 20 hours
+    entity: F14ClothingNeckPinNCRSergeant
+  - min: 144000 # 40 hours
+    entity: F14ClothingNeckPinNCRStaffSergeant
+  - min: 216000 # 60 hours
+    entity: F14ClothingNeckPinNCRSergeant1st
+  - min: 288000 # 80 hours
+    entity: F14ClothingNeckPinNCRMasterSergeant
+  - min: 360000 # 100 hours
+    entity: F14ClothingNeckPinNCR1stSergeant
+
+- type: ncrRankPinProgression
+  id: F14NCRWSRankPins
+  jobs:
+  - F14NCRWS
+  tracker: F14NCRWS
+  thresholds:
+  - min: 0 # 0 hours
+    entity: F14ClothingNeckPinNCRPrivate
+  - min: 72000 # 20 hours
+    entity: F14ClothingNeckPinNCRPrivate1st
+  - min: 144000 # 40 hours
+    entity: F14ClothingNeckPinNCRSpecialist
+  - min: 216000 # 60 hours
+    entity: F14ClothingNeckPinNCRCorporal
+
+- type: ncrRankPinProgression
+  id: F14NCRMedicRankPins
+  jobs:
+  - F14NCRMedic
+  tracker: F14NCRMedic
+  thresholds:
+  - min: 0 # 0 hours
+    entity: F14ClothingNeckPinNCRPrivate
+  - min: 72000 # 20 hours
+    entity: F14ClothingNeckPinNCRPrivate1st
+  - min: 144000 # 40 hours
+    entity: F14ClothingNeckPinNCRSpecialist
+  - min: 216000 # 60 hours
+    entity: F14ClothingNeckPinNCRCorporal
+
+- type: ncrRankPinProgression
+  id: F14NCRCadetRankPins
+  jobs:
+  - F14NCRCadet
+  tracker: F14NCRCadet
+  thresholds:
+  - min: 0 # 0 hours
+    entity: F14ClothingNeckPinNCRPrivate
+  - min: 72000 # 20 hours
+    entity: F14ClothingNeckPinNCRPrivate1st
+  - min: 144000 # 40 hours
+    entity: F14ClothingNeckPinNCRSpecialist
+  - min: 216000 # 60 hours
+    entity: F14ClothingNeckPinNCRCorporal
+
+- type: ncrRankPinProgression
+  id: F14NCRGarrisonTrooperRankPins
+  jobs:
+  - F14NCRGarrisonTrooper
+  tracker: F14NCRGarrisonTrooper
+  thresholds:
+  - min: 0 # 0 hours
+    entity: F14ClothingNeckPinNCRPrivate
+  - min: 72000 # 20 hours
+    entity: F14ClothingNeckPinNCRPrivate1st
+  - min: 144000 # 40 hours
+    entity: F14ClothingNeckPinNCRSpecialist
+  - min: 216000 # 60 hours
+    entity: F14ClothingNeckPinNCRCorporal

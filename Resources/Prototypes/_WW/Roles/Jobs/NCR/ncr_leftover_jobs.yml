@@ -1,0 +1,885 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Roles/Jobs/, _Nuclear14/Roles/Jobs/
+# Changed for Wild Wanamingo: Misfits' NCR, Ranger and Military Police jobs that Yuma's roster doesn't
+# use. Kept for future maps: no slots and no department, so they stay out of the lobby. Gear is Misfits'
+# (minus the wallet slot and the skirt/satchel/duffel choices).
+
+- type: job
+  id: F14NCRChiefRanger
+  name: job-name-chief-ranger
+  description: job-description-chief-ranger
+  playTimeTracker: F14NCRChiefRanger
+  startingGear: F14NCRChiefRangerGear
+  icon: JobIconHeadOfSecurity
+  supervisors: job-supervisors-chief-ranger
+  accessGroups:
+  - F14NCRRanger
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Rangers
+
+- type: startingGear
+  id: F14NCRChiefRangerGear
+  equipment:
+    head: F14ClothingHeadHatRangerHelmetFox
+    back: F14ClothingBackpackMilitary
+    jumpsuit: F14ClothingUniformRangerV3
+    ears: F14ClothingHeadsetNCRRanger
+    shoes: F14ClothingBootsCombatFilled
+    gloves: F14ClothingHandsGlovesCombat
+    belt: F14ClothingBeltRevolvervetfilled
+    mask: F14ClothingMaskGasRangerElite
+    pocket1: F14MagazineBox4570
+    pocket2: F14NCRveteranrangerloadoutkits
+    eyes: ClothingEyesGlassesSunglasses
+    outerClothing: F14ClothingOuterPowerArmorRanger
+    id: F14IDBadgeNCRDesertRangerElite
+  storage:
+    back:
+    - F14IFAKMilitary
+    - FlashlightSeclite
+    - F14Binoculars
+
+- type: job
+  id: F14NCRCitizen
+  name: job-name-ncr-citizen
+  description: job-description-ncr-citizen
+  playTimeTracker: F14NCRCitizen
+  startingGear: F14NCRCitizenGear
+  icon: F14JobIconNcrCadet
+  supervisors: job-supervisors-ncr-prisoners
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRCitizenGear
+  equipment:
+    ears: F14ClothingHeadsetWastelandScrap
+    jumpsuit: F14ClothingUniformJumpsuitCaravan
+    back: F14ClothingBackpackHiking
+    shoes: F14ClothingBootsLeather
+    id: F14IDNCRPassportCitizen
+  storage:
+    back:
+    - F14SurvivalKitWastelander
+
+- type: job
+  id: F14NCREngineer
+  name: job-name-ncr-engineer
+  description: job-description-ncr-engineer
+  playTimeTracker: F14NCREngineer
+  startingGear: F14NCREngineerGear
+  icon: JobIconWarden
+  supervisors: job-supervisors-ncr-nco
+  access:
+  - F14NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCREngineerGear
+  equipment:
+    head: F14ClothingHeadHatNCRHelmetNoCover
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingUniformNCRDesert
+    outerClothing: F14ClothingOuterNCREngineerVest
+    shoes: F14ClothingBootsLeatherFilled
+    ears: F14ClothingHeadsetNCR
+    hands: F14ClothingHandsGlovesCombat
+    eyes: F14ClothingEyesGlassesWelding
+    id: F14IDNCRDogtagEngineer
+    pocket1: F14NCRengineerloadoutkits
+  storage:
+    back:
+    - F14IFAKMilitary
+    - F14MilitaryDetonator
+
+- type: job
+  id: F14NCRExecutiveOfficer
+  name: job-name-ncr-executive-officer
+  description: job-description-ncr-executive-officer
+  playTimeTracker: F14NCRExecutiveOfficer
+  startingGear: F14NCRExecutiveOfficerGear
+  icon: F14JobIconNcrLeader
+  supervisors: job-supervisors-ncr-commander
+  access:
+  - F14NCR
+  - F14NCRSGT
+  - F14NCRMedic
+  - F14NCRLT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRExecutiveOfficerGear
+  equipment:
+    head: F14ClothingHeadHatNCRBeretOfficer
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingOfficerUniformNCRDesert
+    outerClothing: F14ClothingOuterNCRDressJacket
+    shoes: F14ClothingBootsCombatFilled
+    belt: F14ClothingBeltNCR
+    eyes: ClothingEyesGlassesSunglasses
+    ears: F14ClothingHeadsetNCR
+    pocket1: F14NCRLTloadoutkits
+    pocket2: RadioHandheld
+    id: F14IDNCRDogtagOfficer
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRFieldRanger
+  name: job-name-ranger-field
+  description: job-description-ranger-field
+  playTimeTracker: F14NCRFieldRanger
+  startingGear: F14NCRFieldRangerGear
+  icon: JobIconSecurityOfficer
+  supervisors: job-supervisors-ranger-veteran
+  access:
+  - F14NCR
+  - F14NCRSGT
+  - F14NCRRanger
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Rangers
+
+- type: startingGear
+  id: F14NCRFieldRangerGear
+  equipment:
+    head: F14ClothingHeadHatRangerB
+    back: F14ClothingBackpackMilitary
+    jumpsuit: F14ClothingUniformRangerV2
+    ears: F14ClothingHeadsetNCRRanger
+    shoes: F14ClothingBootsCombatFilled
+    gloves: F14ClothingHandsGlovesBlackLeather
+    belt: F14ClothingBeltRevolverdesertfilled
+    mask: F14ClothingMaskGasRangerDesert
+    pocket1: F14MagazineBox4570
+    pocket2: F14NCRfieldrangerloadoutkits
+    eyes: ClothingEyesGlassesSunglasses
+    outerClothing: F14ClothingOuterRangerFieldArmor
+    id: F14IDBadgeNCRDesertRanger
+  storage:
+    back:
+    - F14IFAKMilitary
+    - FlashlightSeclite
+
+- type: job
+  id: F14NCRFirstSergeant
+  name: job-name-ncr-first-sergeant
+  description: job-description-ncr-first-sergeant
+  playTimeTracker: F14NCRFirstSergeant
+  startingGear: F14NCRFirstSergeantGear
+  icon: F14JobIconNcrSerg
+  supervisors: job-supervisors-ncr-lt
+  access:
+  - F14NCR
+  - F14NCRSGT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRFirstSergeantGear
+  equipment:
+    back: F14ClothingBackpackNCR
+    hands: F14ClothingHandsGlovesCombat
+    jumpsuit: F14ClothingOfficerUniformNCRDesert
+    shoes: F14ClothingBootsCombatFilled
+    ears: F14ClothingHeadsetNCR
+    neck: F14ClothingNeckPinNCRSergeant1st
+    belt: F14ClothingBeltNCR
+    outerClothing: F14NCRCommandArmor
+    pocket1: F14NCRfirstsergeantloadoutkits
+    pocket2: RadioHandheld
+    id: F14IDNCRDogtagFirstSergeant
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRHeavyTrooper
+  name: job-name-ncr-heavy-trooper
+  description: job-description-ncr-heavy-trooper
+  playTimeTracker: F14NCRHeavyTrooper
+  startingGear: F14NCRHeavyTrooperGear
+  icon: F14JobIconNcrSpec
+  supervisors: job-supervisors-ncr-sergeant
+  access:
+  - F14NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRHeavyTrooperGear
+  equipment:
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingOfficerUniformNCRDesert
+    outerClothing: F14NCRHeavyTrooperSalvagedPowerArmorT45
+    shoes: F14ClothingBootsCombatFilled
+    ears: F14ClothingHeadsetNCR
+    belt: F14ClothingBeltNCR
+    pocket1: F14NCRHeavyTrooperLoadoutKits
+    pocket2: RadioHandheld
+    id: F14IDNCRDogtagWS
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRHeavyTrooperLead
+  name: job-name-ncr-heavy-trooper-lead
+  description: job-description-ncr-heavy-trooper-lead
+  playTimeTracker: F14NCRHeavyTrooperLead
+  startingGear: F14NCRHeavyTrooperLeadGear
+  icon: F14JobIconNcrSpec
+  supervisors: job-supervisors-ncr-sergeant
+  access:
+  - F14NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+      - type: PowerArmorProficiency
+
+- type: startingGear
+  id: F14NCRHeavyTrooperLeadGear
+  equipment:
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingOfficerUniformNCRDesert
+    outerClothing: F14NCRHeavyTrooperLeadPowerArmorT51
+    shoes: F14ClothingBootsCombatFilled
+    ears: F14ClothingHeadsetNCR
+    belt: F14ClothingBeltNCR
+    pocket1: F14NCRHeavyTrooperLeadLoadoutKits
+    pocket2: RadioHandheld
+    id: F14IDNCRDogtagWS
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRLTCol
+  name: job-name-lieutenant-colonel
+  description: job-description-ltcol
+  playTimeTracker: F14NCRLTCol
+  startingGear: F14NCRLTColGear
+  icon: F14JobIconNcrLeader
+  supervisors: job-supervisors-ncr-ltcol
+  accessGroups:
+    - F14NCR
+    - F14NCRSGT
+    - F14NCRMedic
+    - F14NCRLT
+    - F14NCRCaptain
+    - F14NCRMajor
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - F14NCR
+
+- type: startingGear
+  id: F14NCRLTColGear
+  equipment:
+    head: F14ClothingHeadHatNCRBeretOfficer
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingOfficerUniformNCRDesert
+    outerClothing: F14ClothingOuterNCRTrenchCoatRank
+    shoes: F14ClothingBootsCombatFilled
+    neck: F14ClothingNeckPinNCRLtColonel
+    belt: F14ClothingBeltNCR
+    eyes: ClothingEyesGlassesSunglasses
+    ears: F14ClothingHeadsetNCR
+    pocket1: F14NCRcaptainloadoutkits
+    pocket2: BoxFolderClipboard
+    id: F14IDNCRDogtagltcol
+  storage:
+    back:
+    - F14IFAKMilitary
+    - RadioHandheld
+
+- type: job
+  id: F14NCRMPinvestigator
+  name: job-name-ncr-mp-investigator
+  description: job-description-ncr-mp-investegator
+  playTimeTracker: F14NCRMPinvestigator
+  startingGear: F14NCRMPinvestigatorGear
+  icon: F14JobIconNCRMPInvestegator
+  supervisors: job-supervisors-ncr-mp
+  access:
+  - F14NCR
+  - F14NCRSGT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRMPinvestigatorGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitNCRMP
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingBootsCombatFilled
+    head: F14ClothingHeadHatNCRMPCap
+    outerClothing: F14NCRMPCombatArmor
+    pocket1: F14NCRMPinvestigatorKits
+    hands: F14ClothingHandsGlovesCombat
+    id: F14IDNCRDogtagMPInvestigator
+    ears: F14ClothingHeadsetNCR
+    eyes: ClothingEyesGlassesSunglasses
+
+- type: job
+  id: F14NCRMajor
+  name: job-name-ncr-major
+  description: job-description-ncr-major
+  playTimeTracker: F14NCRMajor
+  startingGear: F14NCRMajorGear
+  icon: F14JobIconNcrLeader
+  supervisors: job-supervisors-ncr-major
+  access:
+    - F14NCR
+    - F14NCRSGT
+    - F14NCRMedic
+    - F14NCRLT
+    - F14NCRCaptain
+    - F14NCRMajor
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - F14Wastelander
+            - F14NCR
+
+- type: startingGear
+  id: F14NCRMajorGear
+  equipment:
+    head: F14ClothingHeadHatNCRBeretOfficer
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingOfficerUniformNCRDesert
+    outerClothing: F14ClothingOuterNCRDressJacketCO
+    shoes: F14ClothingBootsCombatFilled
+    neck: F14ClothingNeckPinNCRMajor
+    belt: F14ClothingBeltNCR
+    eyes: ClothingEyesGlassesSunglasses
+    ears: F14ClothingHeadsetNCR
+    pocket1: F14NCRcaptainloadoutkits
+    pocket2: RadioHandheld
+    id: F14IDNCRDogtagMajor
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRMilitaryPoliceCaptain
+  name: job-name-ncr-military-police-captain
+  description: job-description-ncr-military-police-captain
+  playTimeTracker: F14NCRMilitaryPoliceCaptain
+  startingGear: F14NCRMilitaryPoliceCaptainGear
+  icon: F14JobIconNcrLeader
+  supervisors: job-supervisors-ncr-militarypolice-captain
+  access:
+  - F14NCR
+  - F14NCRSGT
+  - F14NCRLT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRMilitaryPoliceCaptainGear
+  equipment:
+    head: F14ClothingHeadHatNCRBeretOfficer
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingMPUniformNCRDesert
+    outerClothing: F14NCRMPLieutenantArmor
+    shoes: F14ClothingBootsCombatFilled
+    belt: F14ClothingBeltNCR
+    eyes: ClothingEyesGlassesSunglasses
+    ears: F14ClothingHeadsetNCR
+    pocket1: F14NCRMPKitSet
+    id: F14IDNCRDogtagMPCaptain
+  storage:
+    back:
+    - F14IFAKMilitary
+    - F14PoliceBaton
+    - F14MagazineShotgun20
+
+- type: job
+  id: F14NCRMilitaryPoliceRecruit
+  name: job-name-ncr-military-police-recruit
+  description: job-description-ncr-military-police-recruit
+  playTimeTracker: F14NCRMilitaryPoliceRecruit
+  startingGear: F14NCRMilitaryPoliceRecruitGear
+  icon: F14JobIconNcrLeader
+  supervisors: job-supervisors-ncr-militarypolice-recruit
+  access:
+  - F14NCR
+  - F14NCRSGT
+  - F14NCRLT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRMilitaryPoliceRecruitGear
+  equipment:
+    head: F14ClothingHeadHatNCRSidecap
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingMPUniformNCRDesert
+    outerClothing: F14NCRMPRecruitArmor
+    shoes: F14ClothingBootsCombatFilled
+    belt: F14ClothingBeltNCR
+    eyes: ClothingEyesGlassesSunglasses
+    ears: F14ClothingHeadsetNCR
+    pocket1: F14NCRMPKitSet
+    id: F14IDNCRDogtagMPRecruit
+  storage:
+    back:
+    - F14IFAKMilitary
+    - F14PoliceBaton
+    - F14MagazinePistol45
+    - F14MagazinePistol45
+
+- type: job
+  id: F14NCRMilitaryPoliceSergeant
+  name: job-name-ncr-military-police-sergeant
+  description: job-description-ncr-military-police-sergeant
+  playTimeTracker: F14NCRMilitaryPoliceSergeant
+  startingGear: F14NCRMilitaryPoliceSergeantGear
+  icon: F14JobIconNcrLeader
+  supervisors: job-supervisors-ncr-militarypolice-sergeant
+  access:
+  - F14NCR
+  - F14NCRSGT
+  - F14NCRLT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRMilitaryPoliceSergeantGear
+  equipment:
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingMPUniformNCRDesert
+    outerClothing: F14NCRMPCombatArmor
+    shoes: F14ClothingBootsCombatFilled
+    belt: F14ClothingBeltNCR
+    eyes: ClothingEyesGlassesSunglasses
+    ears: F14ClothingHeadsetNCR
+    pocket1: F14NCRMPKitSet
+    id: F14IDNCRDogtagMPSergeant
+  storage:
+    back:
+    - F14IFAKMilitary
+    - F14PoliceBaton
+    - F14SpeedLoader44Magnum
+    - F14SpeedLoader44Magnum
+
+- type: job
+  id: F14NCRPrisoner
+  name: job-name-ncr-prisoner
+  description: job-description-ncr-prisoner
+  playTimeTracker: F14NCRPrisoner
+  startingGear: F14NCRPrisonerGear
+  icon: F14JobIconNCRPrisoner
+  supervisors: job-supervisors-ncr-prisoners
+  access:
+  - F14NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRPrisonerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPrisoner
+    shoes: F14ClothingShoesBlack
+    id: F14IDNCRDogtagPrisoner
+
+- type: job
+  id: F14NCRPrivateFirstClass
+  name: job-name-ncr-private-first-class
+  description: job-description-ncr-private-first-class
+  playTimeTracker: F14NCRPrivateFirstClass
+  startingGear: F14NCRPrivateFirstClassGear
+  icon: F14JobIconNcrSoldier
+  supervisors: job-supervisors-ncr-sergeant
+  access:
+  - F14NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRPrivateFirstClassGear
+  equipment:
+    head: F14ClothingHeadHatNCRHelmetMetalDesert
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingUniformNCRDesert
+    outerClothing: F14NCREnhancedVest
+    shoes: F14ClothingBootsLeatherFilled
+    ears: F14ClothingHeadsetNCR
+    neck: F14ClothingNeckPinNCRPrivate1st
+    belt: F14ClothingBeltNCR
+    id: F14IDNCRDogtagPrivateFirstClass
+    pocket1: F14NCRtrooperloadoutkits
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRProvost
+  name: job-name-ncr-provost
+  description: job-description-ncr-provost
+  playTimeTracker: F14NCRProvost
+  startingGear: F14NCRProvostGear
+  icon: F14JobIconNcrLeader
+  supervisors: job-supervisors-ncr-provost
+  access:
+    - F14NCR
+    - F14NCRSGT
+    - F14NCRMedic
+    - F14NCRLT
+    - F14NCRCaptain
+    - F14NCRMajor
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - F14Wastelander
+            - F14NCR
+
+- type: startingGear
+  id: F14NCRProvostGear
+  equipment:
+    head: F14ClothingHeadHatNCRSlouch
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingUniformNCRCFUniform
+    outerClothing: F14ClothingOuterNCRVestCoatBlackArmored
+    shoes: F14ClothingBootsCombatFilled
+    belt: F14ClothingBeltNCR
+    eyes: ClothingEyesGlassesSunglasses
+    ears: F14ClothingHeadsetNCR
+    pocket2: F14NCRMPKitSet
+    id: F14IDNCRDogtagProvost
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRRanger
+  name: job-name-ncr-ranger
+  description: job-description-ncr-ranger
+  playTimeTracker: F14NCRRanger
+  startingGear: F14NCRRangerGear
+  icon: F14JobIconNcrRanger
+  supervisors: job-supervisors-ncr-ranger
+  access:
+  - F14NCR
+  - F14NCRSGT
+  - F14NCRMedic
+  - F14NCRRanger
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRRangerGear
+  equipment:
+    jumpsuit: F14ClothingUniformRangerPatrol
+    shoes: F14ClothingBootsCombatFilled
+    ears: F14ClothingHeadsetNCRRanger
+    belt: F14ClothingBeltRevolverdesertfilled
+    eyes: ClothingEyesGlassesSunglasses
+    neck: F14ClothingNeckCloakRangerPoncho
+    pocket1: F14MagazineBox4570
+    pocket2: F14NCRrangerloadoutkits
+    outerClothing: F14ClothingOuterRangerArmor
+    head: F14ClothingHeadHatRanger
+    id: F14IDBadgeNCRRanger
+    back: F14ClothingBackpackMilitary
+  storage:
+    back:
+    - F14IFAKMilitary
+    - F14Binoculars
+
+- type: job
+  id: F14NCRRangerRecruit
+  name: job-name-ncr-ranger-recruit
+  description: job-description-ncr-ranger-recruit
+  playTimeTracker: F14NCRRangerRecruit
+  startingGear: F14NCRRangerRecruitGear
+  icon: JobIconSecurityCadet
+  supervisors: job-supervisors-ncr-ranger-recruit
+  access:
+  - F14NCR
+  - F14NCRRanger
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Rangers
+
+- type: startingGear
+  id: F14NCRRangerRecruitGear
+  equipment:
+    head: F14ClothingHeadHatRanger
+    back: F14ClothingBackpackMilitary
+    jumpsuit: F14ClothingUniformRangerV1
+    ears: F14ClothingHeadsetNCRRanger
+    shoes: F14ClothingBootsLeather
+    belt: F14ClothingBeltRevolverdesertfilled
+    pocket1: F14MagazineBox4570
+    outerClothing: F14ClothingOuterNCRFlakVestOpen
+    id: F14IDBadgeNCRDesertRangerRecruit
+  storage:
+    back:
+    - F14IFAKMilitary
+    - FlashlightSeclite
+
+- type: job
+  id: F14NCRSoldier
+  name: job-name-ncr-private
+  description: job-description-ncr-private
+  playTimeTracker: F14NCRSoldier
+  startingGear: F14NCRSoldierGear
+  icon: F14JobIconNcrSoldier
+  supervisors: job-supervisors-ncr
+  access:
+  - F14NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRSoldierGear
+  equipment:
+    head: F14ClothingHeadHatNCRHelmetMetalDesert
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingUniformNCRDesert
+    outerClothing: F14ClothingOuterNCRVestDesert
+    shoes: F14ClothingBootsLeatherFilled
+    ears: F14ClothingHeadsetNCR
+    neck: F14ClothingNeckPinNCRPrivate
+    belt: F14ClothingBeltNCR
+    id: F14IDNCRDogtagSoldier
+    pocket1: F14NCRtrooperloadoutkits
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRStaffSergeant
+  name: job-name-ncr-staff-sergeant
+  description: job-description-ncr-staff-sergeant
+  playTimeTracker: F14NCRStaffSergeant
+  startingGear: F14NCRStaffSergeantGear
+  icon: F14JobIconNcrSerg
+  supervisors: job-supervisors-ncr-first-sergeant
+  access:
+  - F14NCR
+  - F14NCRSGT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRStaffSergeantGear
+  equipment:
+    back: F14ClothingBackpackNCR
+    hands: F14ClothingHandsGlovesCombat
+    jumpsuit: F14ClothingOfficerUniformNCRDesert
+    shoes: F14ClothingBootsCombatFilled
+    ears: F14ClothingHeadsetNCR
+    neck: F14ClothingNeckPinNCRSergeant1st
+    belt: F14ClothingBeltNCR
+    outerClothing: F14NCREliteCombatArmor
+    pocket1: F14NCRstaffsergeantloadoutkits
+    pocket2: RadioHandheld
+    id: F14IDNCRDogtagStaffSergeant
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRTrader
+  name: job-name-ncr-trader
+  description: job-description-ncr-trader
+  playTimeTracker: F14NCRTrader
+  startingGear: F14NCRTraderGear
+  icon: F14JobIconNcrCadet
+  supervisors: job-supervisors-ncr-prisoners
+  accessGroups:
+  - F14NCRTrader
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRTraderGear
+  equipment:
+    ears: F14ClothingHeadsetWastelandScrap
+    jumpsuit: F14ClothingUniformJumpsuitMerchant
+    back: F14ClothingBackpackHiking
+    shoes: F14ClothingShoesBlack
+    id: F14IDNCRPassportTrader
+    pocket2: F14Multitool
+  storage:
+    back:
+    - F14SurvivalKitWastelander
+
+- type: job
+  id: F14NCRVertibirdPilot
+  name: job-name-ncr-vertibird-pilot
+  description: job-description-ncr-vertibird-pilot
+  playTimeTracker: F14NCRVertibirdPilot
+  startingGear: F14NCRVertibirdPilotGear
+  icon: F14JobIconNcrLeader
+  supervisors: job-supervisors-ncr-vertibird-pilot
+  access:
+  - F14NCR
+  - F14NCRSGT
+  - F14NCRLT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRVertibirdPilotGear
+  equipment:
+    head: F14ClothingHeadHatNCRBeretOfficer
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingOfficerUniformNCRDesert
+    outerClothing: F14NCROfficerArmor
+    shoes: F14ClothingBootsCombatFilled
+    hands: F14ClothingHandsGlovesCombat
+    belt: F14ClothingBeltNCR
+    eyes: F14ClothingEyesGlassesPilot
+    ears: F14ClothingHeadsetNCR
+    pocket1: F14NCRLTloadoutkits
+    pocket2: RadioHandheld
+    id: F14IDNCRDogtagOfficer
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14RangerChief
+  name: job-name-ranger-chief
+  description: job-description-ranger-chief
+  playTimeTracker: F14RangerChief
+  startingGear: F14RangerChiefGear
+  icon: JobIconCaptain
+  accessGroups:
+  - F14NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Rangers
+
+
+
+
+
+- type: startingGear
+  id: F14RangerChiefGear
+  equipment:
+    head: F14ClothingHeadHatRangerHelmetElite
+    back: F14ClothingBackpackMilitary
+    jumpsuit: F14ClothingUniformRangerVeteran
+    ears: F14ClothingHeadsetNCRRanger
+    shoes: F14ClothingBootsCombatMK2Filled
+    gloves: F14ClothingHandsGlovesCombat
+    belt: F14ClothingBeltRevolvervetfilled
+    mask: F14ClothingMaskGasRangerElite
+    pocket1: F14MagazineBox4570
+    pocket2: FlashlightSeclite
+    eyes: ClothingEyesGlassesSunglasses
+    outerClothing: F14ClothingOuterRangerElite
+    id: F14IDBadgeNCRDesertRangerChief
+  storage:
+    back:
+    - F14IFAKMilitary

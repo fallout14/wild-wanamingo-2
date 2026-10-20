@@ -1,20 +1,20 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/_Misfits/drums.yml
 
 - type: entity
-  id: MisfitsMagazineSMG9mmDrum
+  id: F14MagazineSMG9mmDrum
   name: drum magazine (9mm)
   parent: BaseItem
   components:
   - type: Tag
     tags:
-      - MisfitsMagazineSMG9mmDrum
+      - F14MagazineSMG9mmDrum
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14CartridgePistol9
+        - F14CartridgePistol9
     capacity: 71 # Misfits 
-    proto: N14CartridgePistol9
+    proto: F14CartridgePistol9
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -29,20 +29,20 @@
 # American 180 35-round .22lr drum
 
 - type: entity
-  id: MisfitsMagazineAmerican180Drum
+  id: F14MagazineAmerican180Drum
   name: drum magazine (.22lr)
   parent: BaseItem
   components:
   - type: Tag
     tags:
-      - MisfitsMagazineAmerican180Drum
+      - F14MagazineAmerican180Drum
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14CartridgePistol22
+        - F14CartridgePistol22
     capacity: 177
-    proto: N14CartridgePistol22
+    proto: F14CartridgePistol22
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container

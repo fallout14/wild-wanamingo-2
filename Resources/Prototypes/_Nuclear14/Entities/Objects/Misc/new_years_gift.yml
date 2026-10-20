@@ -2,89 +2,89 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Misc/new_years_gift.yml
 
 - type: entity
-  parent: N14JunkLunchbox
-  id: N14JunkLunchboxFill
+  parent: F14JunkLunchbox
+  id: F14JunkLunchboxFill
   components:
   - type: StorageFill
     contents:
       - id: DrinkWaterBottleFull
         orGroup: Drink
         prob: 0.6
-      - id: N14DrinkNukaCola
+      - id: F14DrinkNukaCola
         orGroup: Drink
         prob: 0.4
-      - id: N14DrinkNukaColaYellow
+      - id: F14DrinkNukaColaYellow
         orGroup: Drink
         prob: 0.3
-      - id: N14DrinkNukaColaCherry
+      - id: F14DrinkNukaColaCherry
         orGroup: Drink
         prob: 0.2
-      - id: N14DrinkNukaColaGrape
+      - id: F14DrinkNukaColaGrape
         orGroup: Drink
         prob: 0.2
-      - id: N14DrinkNukaColaOrange
+      - id: F14DrinkNukaColaOrange
         orGroup: Drink
         prob: 0.2
-      - id: N14DrinkNukaColaWild
+      - id: F14DrinkNukaColaWild
         orGroup: Drink
         prob: 0.1
-      - id: N14DrinkNukaColaQuartz
+      - id: F14DrinkNukaColaQuartz
         orGroup: Drink
         prob: 0.1
-      - id: N14DrinkNukaColaVictory
+      - id: F14DrinkNukaColaVictory
         orGroup: Drink
         prob: 0.05
-      - id: N14DrinkNukaColaQuantum
+      - id: F14DrinkNukaColaQuantum
         orGroup: Drink
         prob: 0.01
-      - id: N14CookedFoodDonutChocolate
+      - id: F14CookedFoodDonutChocolate
         prob: 0.25
         amount: 3
         orGroup: Sweets
-      - id: N14CookedFoodDonutPink
+      - id: F14CookedFoodDonutPink
         prob: 0.25
         amount: 3
         orGroup: Sweets
-      - id: N14CookedFoodDonutHomer
+      - id: F14CookedFoodDonutHomer
         prob: 0.2
         amount: 3
         orGroup: Sweets
-      - id: N14CookedFoodDonutCaramel
+      - id: F14CookedFoodDonutCaramel
         prob: 0.25
         amount: 3
         orGroup: Sweets
-      - id: N14CookedFoodCakeTarberrySlice
+      - id: F14CookedFoodCakeTarberrySlice
         prob: 0.2
         amount: 3
         orGroup: Sweets
-      - id: N14CookedFoodCakeCheeseSlice
+      - id: F14CookedFoodCakeCheeseSlice
         prob: 0.25
         amount: 3
         orGroup: Sweets
-      - id: N14CookedFoodCakeChocolateSlice
+      - id: F14CookedFoodCakeChocolateSlice
         prob: 0.25
         amount: 3
         orGroup: Sweets
-      - id: N14CookedFoodCakePlainSlice
+      - id: F14CookedFoodCakePlainSlice
         prob: 0.25
         amount: 3
         orGroup: Sweets
-      - id: N14CookedFoodCakeMutfruitSlice
+      - id: F14CookedFoodCakeMutfruitSlice
         prob: 0.25
         amount: 3
         orGroup: Sweets
-      - id: N14CookedFoodCakeCarrotSlice
+      - id: F14CookedFoodCakeCarrotSlice
         prob: 0.25
         amount: 3
         orGroup: Sweets
-      - id: N14CookedFoodBakedChevreChaud
+      - id: F14CookedFoodBakedChevreChaud
         prob: 0.25
         amount: 3
         orGroup: Sweets
-      - id: N14CookedFoodBreadBanana
+      - id: F14CookedFoodBreadBanana
         prob: 0.15
         orGroup: Sweets
-      - id: N14CookedFoodBreadCreamcheese
+      - id: F14CookedFoodBreadCreamcheese
         prob: 0.15
         orGroup: Sweets
 

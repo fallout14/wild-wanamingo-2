@@ -39,8 +39,8 @@ public sealed class WeaponRevisionTest
         {
             var entMan = pair.Client.EntMan;
             var appearance = entMan.System<AppearanceSystem>();
-            foreach (var prototype in new[] { "MisfitsWeaponRifle556Rangemaster", "N14WeaponSniper556Tribal",
-                         "N14WeaponSniper556TribalUpgraded", "N14WeaponSniper556VarmintRifle", "MisfitsWeaponShotgunBlowback" })
+            foreach (var prototype in new[] { "F14WeaponRifle556Rangemaster", "F14WeaponSniper556Tribal",
+                         "F14WeaponSniper556TribalUpgraded", "F14WeaponSniper556VarmintRifle", "F14WeaponShotgunBlowback" })
             {
                 var gun = entMan.Spawn(prototype);
                 var sprite = entMan.GetComponent<SpriteComponent>(gun);
@@ -85,7 +85,7 @@ public sealed class WeaponRevisionTest
         var map = await pair.CreateTestMap();
         await server.WaitAssertion(() =>
         {
-            var gun = entMan.SpawnEntity("MisfitsWeaponRifle10mmM1Carbine", map.GridCoords);
+            var gun = entMan.SpawnEntity("F14WeaponRifle10mmM1Carbine", map.GridCoords);
             var fold = entMan.GetComponent<FoldableComponent>(gun);
             var folding = entMan.System<FoldableSystem>();
             var item = entMan.GetComponent<ItemComponent>(gun);
@@ -122,17 +122,17 @@ public sealed class WeaponRevisionTest
         await pair.CleanReturnAsync();
     }
 
-    [TestCase("MisfitsWeaponRifle556Marksman", "N14Magazine556Rifle")]
-    [TestCase("MisfitsWeaponRifle556Rangemaster", "N14Magazine556Rifle")]
-    [TestCase("MisfitsWeaponRifle556Marksman", "N14LongMagazine556Rifle")]
-    [TestCase("N14WeaponSMG10mmPipe", "N14MagazineSMG10mm")]
-    [TestCase("N14WeaponPistol10mmPipe", "N14MagazinePistol10mm")]
-    [TestCase("MisfitsWeaponRifle10mmM1Carbine", "N14MagazineSMG10mm")]
-    [TestCase("MisfitsWeaponRifle10mmM1Carbine", "N14MagazinePistol10mm")]
-    [TestCase("MisfitsWeaponRifle10mmSkirmisher", "N14MagazineSMG10mm")]
-    [TestCase("MisfitsWeaponRifle10mmSkirmisher", "N14MagazinePistol10mm")]
-    [TestCase("N14WeaponSniper556Tribal", "N14Magazine556Rifle")]
-    [TestCase("N14WeaponSniper556TribalUpgraded", "N14Magazine556Rifle")]
+    [TestCase("F14WeaponRifle556Marksman", "F14Magazine556Rifle")]
+    [TestCase("F14WeaponRifle556Rangemaster", "F14Magazine556Rifle")]
+    [TestCase("F14WeaponRifle556Marksman", "F14LongMagazine556Rifle")]
+    [TestCase("F14WeaponSMG10mmPipe", "F14MagazineSMG10mm")]
+    [TestCase("F14WeaponPistol10mmPipe", "F14MagazinePistol10mm")]
+    [TestCase("F14WeaponRifle10mmM1Carbine", "F14MagazineSMG10mm")]
+    [TestCase("F14WeaponRifle10mmM1Carbine", "F14MagazinePistol10mm")]
+    [TestCase("F14WeaponRifle10mmSkirmisher", "F14MagazineSMG10mm")]
+    [TestCase("F14WeaponRifle10mmSkirmisher", "F14MagazinePistol10mm")]
+    [TestCase("F14WeaponSniper556Tribal", "F14Magazine556Rifle")]
+    [TestCase("F14WeaponSniper556TribalUpgraded", "F14Magazine556Rifle")]
     public async Task DetachableMagazineCanBeReloadedAndFired(string gunId, string magazineId)
     {
         await using var pair = await PoolManager.GetServerClient();
@@ -174,16 +174,16 @@ public sealed class WeaponRevisionTest
 
         await server.WaitAssertion(() =>
         {
-            var svt = entMan.SpawnEntity("MisfitsWeaponRifle308SVT40", map.GridCoords);
+            var svt = entMan.SpawnEntity("F14WeaponRifle308SVT40", map.GridCoords);
             Assert.That(entMan.GetComponent<MetaDataComponent>(svt).EntityName, Is.EqualTo("SVT-40"));
             var user = entMan.SpawnEntity("MobHuman", map.GridCoords);
             Assert.That(entMan.System<SharedHandsSystem>().TryPickupAnyHand(user, svt), Is.True);
-            var optic = entMan.SpawnEntity("MisfitsWeaponScopeVariable", map.GridCoords);
+            var optic = entMan.SpawnEntity("F14WeaponScopeVariable", map.GridCoords);
             Assert.That(entMan.System<ItemSlotsSystem>().TryInsert(svt, "weapon_optic", optic, null), Is.True);
             Assert.That(entMan.GetComponent<FirearmAttachmentHostComponent>(svt).OpticToggleActionEntity, Is.Not.Null);
             Assert.That(entMan.HasComponent<ChamberMagazineAmmoProviderComponent>(svt), Is.False);
             Assert.That(TakeAmmo(entMan, svt, 11), Has.Count.EqualTo(10));
-            var rifle = entMan.SpawnEntity("MisfitsWeaponRifle9mmMarksmanChinese", map.GridCoords);
+            var rifle = entMan.SpawnEntity("F14WeaponRifle9mmMarksmanChinese", map.GridCoords);
             Assert.That(entMan.GetComponent<FirearmAttachmentHostComponent>(rifle).ShowMuzzleVisual, Is.False);
             var suppressed = new IsGunSuppressedEvent();
             entMan.EventBus.RaiseLocalEvent(rifle, ref suppressed);

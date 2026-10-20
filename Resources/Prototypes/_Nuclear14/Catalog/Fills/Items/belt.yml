@@ -2,21 +2,21 @@
 # Resources/Prototypes/_Nuclear14/Catalog/Fills/Items/belt.yml
 
 - type: entity
-  id: N14ClothingBeltUtilityFilled
+  id: F14ClothingBeltUtilityFilled
   parent: ClothingBeltUtility
   suffix: Filled
   components:
   - type: StorageFill
     contents:
-      - id: N14Crowbar
-      - id: N14Wrench
-      - id: N14Screwdriver
-      - id: N14Wirecutter
-      - id: N14Welder
-      - id: N14Multitool
+      - id: F14Crowbar
+      - id: F14Wrench
+      - id: F14Screwdriver
+      - id: F14Wirecutter
+      - id: F14Welder
+      - id: F14Multitool
 
 - type: entity
-  id: N14ClothingBeltCleanerFilled
+  id: F14ClothingBeltCleanerFilled
   parent: ClothingBeltJanitor
   suffix: Filled
   components:
@@ -27,22 +27,22 @@
       - id: FlashlightLantern
 
 - type: entity
-  id: N14ClothingBeltMedicalFilled
+  id: F14ClothingBeltMedicalFilled
   parent: ClothingBeltMedical
   suffix: Filled
   components:
   - type: StorageFill
     contents:
-      - id: N14CleanGauze10
+      - id: F14CleanGauze10
         amount: 2
-      - id: N14Ointment10
-      - id: N14Stimpak
-      - id: N14ChemicalSyringeAntidote
-      - id: N14RadAwayBloodbag
+      - id: F14Ointment10
+      - id: F14Stimpak
+      - id: F14ChemicalSyringeAntidote
+      - id: F14RadAwayBloodbag
       - id: Bloodpack
 
 - type: entity
-  id: N14ClothingBeltPlantFilled
+  id: F14ClothingBeltPlantFilled
   parent: ClothingBeltPlant
   suffix: Filled
   components:
@@ -52,27 +52,27 @@
     - id: HydroponicsToolSpade # TODO: Replace with new tools
 
 - type: entity
-  id: N14WalletLottaCash
-  parent: N14Wallet
+  id: F14WalletLottaCash
+  parent: F14Wallet
   suffix: Filled
   components:
   - type: StorageFill
     contents:
-    - id: N14CurrencyPrewarMoney100 # Misfits Change: Replaced bottlecaps with pre-war money — caps removed from starting loadout wallets
+    - id: F14CurrencyPrewarMoney100 # Misfits Change: Replaced bottlecaps with pre-war money — caps removed from starting loadout wallets
 
 - type: entity
-  id: N14WalletCash
-  parent: N14Wallet
+  id: F14WalletCash
+  parent: F14Wallet
   suffix: Filled
   components:
   - type: StorageFill
     contents:
-    - id: N14CurrencyPrewarMoney50 # Misfits Change: Replaced bottlecaps with pre-war money — caps removed from starting loadout wallets
+    - id: F14CurrencyPrewarMoney50 # Misfits Change: Replaced bottlecaps with pre-war money — caps removed from starting loadout wallets
 
 # Military
 
 - type: entity
-  id: N14ClothingBeltPoliceFilled
+  id: F14ClothingBeltPoliceFilled
   parent: ClothingBeltSecurity
   suffix: Filled
   components:
@@ -82,7 +82,7 @@
       - id: Handcuffs
 
 - type: entity
-  id: N14ClothingBeltMilitaryFilled
+  id: F14ClothingBeltMilitaryFilled
   parent: ClothingBeltAssault
   suffix: Filled
   components:
@@ -91,7 +91,7 @@
       - id: GrenadeFlashBang
 
 - type: entity
-  id: N14ClothingBeltWebbingFilled
+  id: F14ClothingBeltWebbingFilled
   parent: ClothingBeltSecurityWebbing
   suffix: Filled
   components:

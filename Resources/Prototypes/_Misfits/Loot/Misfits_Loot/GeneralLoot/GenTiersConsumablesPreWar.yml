@@ -1,76 +1,76 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/GeneralLoot/GenTiersConsumablesPreWar.yml
 
 - type: entityTable
-  id: MisfitsM14ConsumableLootTier0_PreWarAll
+  id: F14ConsumableLootTier0PreWarAll
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14ConsumableLootTier0_PreWarGrocery
+      tableId: F14ConsumableLootTier0PreWarGrocery
     - !type:NestedSelector
-      tableId: MisfitsM14ConsumableLootTier0_PreWarCanned
+      tableId: F14ConsumableLootTier0PreWarCanned
     - !type:EntSelector
-      id: N14FoodMouldy
+      id: F14FoodMouldy
 
 - type: entityTable
-  id: MisfitsM14ConsumableLootTier0_PreWarGrocery
+  id: F14ConsumableLootTier0PreWarGrocery
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FoodBlamcomaccheese
+      id: F14FoodBlamcomaccheese
     - !type:EntSelector
-      id: N14FoodBlamcomaccheeseLarge
+      id: F14FoodBlamcomaccheeseLarge
     - !type:EntSelector
-      id: N14FoodCrisps
+      id: F14FoodCrisps
     - !type:EntSelector
-      id: N14FoodDandyboyapples
+      id: F14FoodDandyboyapples
     - !type:EntSelector
-      id: N14FoodSalisburysteak
+      id: F14FoodSalisburysteak
     - !type:EntSelector
-      id: N14FoodYumyumdeviledeggs
+      id: F14FoodYumyumdeviledeggs
     - !type:EntSelector
-      id: N14FoodInstamash
+      id: F14FoodInstamash
       # sweets
     - !type:EntSelector
-      id: N14FoodBubblegum
+      id: F14FoodBubblegum
     - !type:EntSelector
-      id: N14FoodSugarbombs
+      id: F14FoodSugarbombs
     - !type:EntSelector
-      id: N14FoodFancyladssnackcakes
+      id: F14FoodFancyladssnackcakes
 
 - type: entityTable
-  id: MisfitsM14ConsumableLootTier0_PreWarCanned
+  id: F14ConsumableLootTier0PreWarCanned
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14ConsumableLootTier0_PreWarCannedDogFood
+      tableId: F14ConsumableLootTier0PreWarCannedDogFood
     - !type:NestedSelector
-      tableId: MisfitsM14ConsumableLootTier0_PreWarCannedNoDogFood
+      tableId: F14ConsumableLootTier0PreWarCannedNoDogFood
 
 - type: entityTable
-  id: MisfitsM14ConsumableLootTier0_PreWarCannedDogFood
+  id: F14ConsumableLootTier0PreWarCannedDogFood
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FoodDogfood
+      id: F14FoodDogfood
     - !type:EntSelector
-      id: N14FoodDinki-Di
+      id: F14FoodDinkiDi
 
 - type: entityTable
-  id: MisfitsM14ConsumableLootTier0_PreWarCannedNoDogFood
+  id: F14ConsumableLootTier0PreWarCannedNoDogFood
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FoodCram
+      id: F14FoodCram
     - !type:EntSelector
-      id: N14FoodPorkBeans
+      id: F14FoodPorkBeans
 
 - type: entityTable
-  id: MisfitsM14ConsumableLootTier0_PreWarSweets
+  id: F14ConsumableLootTier0PreWarSweets
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FoodBubblegum
+      id: F14FoodBubblegum
     - !type:EntSelector
-      id: N14FoodSugarbombs
+      id: F14FoodSugarbombs
     - !type:EntSelector
-      id: N14FoodFancyladssnackcakes
+      id: F14FoodFancyladssnackcakes

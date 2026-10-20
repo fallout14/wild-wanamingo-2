@@ -4,7 +4,7 @@
   name: Tier1 Weapon Spawner
   abstract: true
   suffix: Tier1
-  id: MisfitsM14Tier1Spawner_RefThrowablesAll
+  id: F14Tier1SpawnerRefThrowablesAll
   parent: MarkerBase
   components:
   - type: Sprite
@@ -21,41 +21,41 @@
 - type: entity
   name: Tier1 Throwables All Spawner
   suffix: Tier1
-  id: MisfitsM14Tier1WeaponSpawner_Single_ThrowablesAll
-  parent: MisfitsM14Tier1Spawner_RefThrowablesAll
+  id: F14Tier1WeaponSpawnerSingleThrowablesAll
+  parent: F14Tier1SpawnerRefThrowablesAll
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier1_ThrowablesAll
+        tableId: F14WeaponLootTier1ThrowablesAll
 
 - type: entity
   name: Tier1 Throwables All Spawner 0-3
   suffix: Tier1
-  id: MisfitsM14Tier1WeaponSpawner_Mult0_3_ThrowablesAll
-  parent: MisfitsM14Tier1Spawner_RefThrowablesAll
+  id: F14Tier1WeaponSpawnerMult03ThrowablesAll
+  parent: F14Tier1SpawnerRefThrowablesAll
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier1_ThrowablesAll
+        tableId: F14WeaponLootTier1ThrowablesAll
 
 - type: entity
   name: Tier1 Throwables All Spawner 1-2
   suffix: Tier1
-  id: MisfitsM14Tier1WeaponSpawner_Mult1_2_ThrowablesAll
-  parent: MisfitsM14Tier1Spawner_RefThrowablesAll
+  id: F14Tier1WeaponSpawnerMult12ThrowablesAll
+  parent: F14Tier1SpawnerRefThrowablesAll
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier1_ThrowablesAll
+        tableId: F14WeaponLootTier1ThrowablesAll
 
 
 # THROWABLES EXPLOSIVES SPRITE/COLOR REF
@@ -64,7 +64,7 @@
   name: Tier1 Weapon Spawner
   abstract: true
   suffix: Tier1
-  id: MisfitsM14Tier1Spawner_RefThrowablesExplosive
+  id: F14Tier1SpawnerRefThrowablesExplosive
   parent: MarkerBase
   components:
   - type: Sprite
@@ -81,41 +81,41 @@
 - type: entity
   name: Tier1 Throwables Explosive Spawner
   suffix: Tier1
-  id: MisfitsM14Tier1WeaponSpawner_Single_ThrowablesExplosive
-  parent: MisfitsM14Tier1Spawner_RefThrowablesExplosive
+  id: F14Tier1WeaponSpawnerSingleThrowablesExplosive
+  parent: F14Tier1SpawnerRefThrowablesExplosive
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier1_ThrowablesExplosive
+        tableId: F14WeaponLootTier1ThrowablesExplosive
 
 - type: entity
   name: Tier1 Throwables Explosive Spawner 0-3
   suffix: Tier1
-  id: MisfitsM14Tier1WeaponSpawner_Mult0_3_ThrowablesExplosive
-  parent: MisfitsM14Tier1Spawner_RefThrowablesExplosive
+  id: F14Tier1WeaponSpawnerMult03ThrowablesExplosive
+  parent: F14Tier1SpawnerRefThrowablesExplosive
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier1_ThrowablesExplosive
+        tableId: F14WeaponLootTier1ThrowablesExplosive
 
 - type: entity
   name: Tier1 Throwables Explosive Spawner 1-2
   suffix: Tier1
-  id: MisfitsM14Tier1WeaponSpawner_Mult1_2_ThrowablesExplosive
-  parent: MisfitsM14Tier1Spawner_RefThrowablesExplosive
+  id: F14Tier1WeaponSpawnerMult12ThrowablesExplosive
+  parent: F14Tier1SpawnerRefThrowablesExplosive
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier1_ThrowablesExplosive
+        tableId: F14WeaponLootTier1ThrowablesExplosive
 
 # NORMAL THROWABLES SPRITE/COLOR REF
 
@@ -123,7 +123,7 @@
   name: Tier1 Weapon Spawner
   abstract: true
   suffix: Tier1
-  id: MisfitsM14Tier1Spawner_RefThrowables
+  id: F14Tier1SpawnerRefThrowables
   parent: MarkerBase
   components:
   - type: Sprite
@@ -141,38 +141,38 @@
 - type: entity
   name: Tier1 Throwables Normal Spawner
   suffix: Tier1
-  id: MisfitsM14Tier1WeaponSpawner_Single_Throwables
-  parent: MisfitsM14Tier1Spawner_RefThrowables
+  id: F14Tier1WeaponSpawnerSingleThrowables
+  parent: F14Tier1SpawnerRefThrowables
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier1_Throwables
+        tableId: F14WeaponLootTier1Throwables
 
 - type: entity
   name: Tier1 Throwables Normal Spawner 0-3
   suffix: Tier1
-  id: MisfitsM14Tier1WeaponSpawner_Mult0_3_Throwables
-  parent: MisfitsM14Tier1Spawner_RefThrowables
+  id: F14Tier1WeaponSpawnerMult03Throwables
+  parent: F14Tier1SpawnerRefThrowables
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier1_Throwables
+        tableId: F14WeaponLootTier1Throwables
 
 - type: entity
   name: Tier1 Throwables Normal Spawner 1-2
   suffix: Tier1
-  id: MisfitsM14Tier1WeaponSpawner_Mult1_2_Throwables
-  parent: MisfitsM14Tier1Spawner_RefThrowables
+  id: F14Tier1WeaponSpawnerMult12Throwables
+  parent: F14Tier1SpawnerRefThrowables
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier1_Throwables
+        tableId: F14WeaponLootTier1Throwables

@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14WreckTractor
+  id: F14WreckTractor
   name: wrecked tractor
   description: an old fusion tractor
   suffix: Mapping
@@ -37,10 +37,10 @@
           SheetSteel1:
             min: 5
             max: 15
-          N14ScrapSteel1:
+          F14ScrapSteel1:
             min: 4
             max: 16
-          N14ScrapLead1:
+          F14ScrapLead1:
             min: 4
             max: 8
       - !type:EmptyAllContainersBehaviour

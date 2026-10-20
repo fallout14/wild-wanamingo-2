@@ -25,9 +25,9 @@ public sealed class WizdenContentFreeze : GameTest
 
         var protoMan = server.ProtoMan;
 
-        // WW Change - only Wizden's recipes are frozen; the Fallout ones (N14/Misfits IDs) are added on top
+        // WW Change - only Wizden's recipes are frozen; the Fallout ones (F14 IDs) are added on top
         var recipesCount = protoMan.EnumeratePrototypes<MicrowaveMealRecipePrototype>()
-            .Count(p => !p.ID.StartsWith("N14") && !p.ID.StartsWith("Misfits"));
+            .Count(p => !p.ID.StartsWith("F14"));
         var recipesLimit = 218;
 
         if (recipesCount > recipesLimit)

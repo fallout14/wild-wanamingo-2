@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14BaseHealingItem
+  id: F14BaseHealingItem
   abstract: true
   components:
   - type: Sprite
@@ -17,14 +17,14 @@
 
 - type: entity
   name: roll of gauze
-  id: N14DirtyGauze10
+  id: F14DirtyGauze10
   description: Some dirty gauze to wrap around bloody wounds, might not be the best for your long-term health.
-  parent: N14BaseHealingItem
+  parent: F14BaseHealingItem
   suffix: Stack
   components:
   - type: Tag
     tags:
-    - N14DirtyGauze
+    - F14DirtyGauze
     - Gauze
   - type: Sprite
     scale: 0.66, 0.66
@@ -48,7 +48,7 @@
     healingEndSound:
       path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
-    stackType: N14DirtyGauze10
+    stackType: F14DirtyGauze10
     count: 10
   - type: StackPrice
     price: 2 # Forge-Change
@@ -58,24 +58,24 @@
       amount: 2
 
 - type: entity
-  id: N14DirtyGauze1
-  parent: N14DirtyGauze10
+  id: F14DirtyGauze1
+  parent: F14DirtyGauze10
   suffix: Single
   components:
   - type: Stack
-    stackType: N14DirtyGauze10
+    stackType: F14DirtyGauze10
     count: 1
 
 - type: entity
   name: roll of gauze
-  id: N14CleanGauze10
+  id: F14CleanGauze10
   description: Some sterile gauze to wrap around bloody wounds.
-  parent: N14BaseHealingItem
+  parent: F14BaseHealingItem
   suffix: Stack
   components:
   - type: Tag
     tags:
-    - N14CleanGauze
+    - F14CleanGauze
     - Gauze
   - type: Sprite
     scale: 0.66, 0.66
@@ -98,7 +98,7 @@
     healingEndSound:
       path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
-    stackType: N14CleanGauze10
+    stackType: F14CleanGauze10
     count: 10
   - type: StackPrice
     price: 2 # Forge-Change
@@ -108,19 +108,19 @@
       amount: 2
 
 - type: entity
-  id: N14CleanGauze1
-  parent: N14CleanGauze10
+  id: F14CleanGauze1
+  parent: F14CleanGauze10
   suffix: Single
   components:
   - type: Stack
-    stackType: N14CleanGauze10
+    stackType: F14CleanGauze10
     count: 1
 
 - type: entity
   name: ointment
-  id: N14Ointment10
+  id: F14Ointment10
   description: Used to treat those nasty burns. Less effective on caustic burns.
-  parent: N14BaseHealingItem
+  parent: F14BaseHealingItem
   suffix: Stack
   components:
   - type: Tag
@@ -145,17 +145,17 @@
     healingEndSound:
       path: "/Audio/Items/Medical/ointment_end.ogg"
   - type: Stack
-    stackType: N14Ointment10
+    stackType: F14Ointment10
     count: 10
   - type: StackPrice
     price: 2 # Forge-Change
 
 - type: entity
-  id: N14Ointment1
-  parent: N14Ointment10
+  id: F14Ointment1
+  parent: F14Ointment10
   suffix: Single
   components:
   - type: Stack
-    stackType: N14Ointment10
+    stackType: F14Ointment10
     count: 1
 #misfit add

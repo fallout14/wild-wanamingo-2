@@ -1,33 +1,33 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/TierNWeaponRef/TierNWeaponTables/TierNWeaponBallistic/TwoHanded/TierNWeaponBallisticLMGTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTierN_GunsBulletLMG
+  id: F14WeaponLootTierNGunsBulletLMG
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponLMGchinese # 776
+      id: F14WeaponLMGchinese # 776
       weight: 1
     - !type:EntSelector
-      id: N14WeaponHMGcanadian # 776
+      id: F14WeaponHMGcanadian # 776
       weight: 1
     - !type:EntSelector
-      id: MisfitsWeaponUSHMG #Legion canadian
+      id: F14WeaponUSHMG #Legion canadian
       weight: 1
     - !type:EntSelector
-      id: N14WeaponM60GPMG #308
+      id: F14WeaponM60GPMG #308
       weight: 1
     - !type:EntSelector
-      id: MisfitsWeaponRangerPowerArmorLMG # 556
+      id: F14WeaponRangerPowerArmorLMG # 556
       weight: 1
     - !type:EntSelector
-      id: MisfitsWeaponRifle556HeavyAssault # 556 lol my testies are heavier than that
+      id: F14WeaponRifle556HeavyAssault # 556 lol my testies are heavier than that
       weight: 1
     - !type:EntSelector
-      id: N14WeaponLMG # 556
+      id: F14WeaponLMG # 556
       weight: 1
     - !type:EntSelector
-      id: N14WeaponLMGAutoRifle # 308
+      id: F14WeaponLMGAutoRifle # 308
       weight: 1
     - !type:EntSelector
-      id: N14WeaponLMGBren # 308
+      id: F14WeaponLMGBren # 308
       weight: 1

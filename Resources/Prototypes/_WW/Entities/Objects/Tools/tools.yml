@@ -2,7 +2,7 @@
 # Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
 
 - type: entity
-  parent: Crowbar
+  parent: F14CrowbarBase # WW: MS13 sprite on the merged N14 item
   id: F14Crowbar
   name: crowbar
   components:
@@ -16,7 +16,7 @@
       state: icon
 
 - type: entity
-  parent: Screwdriver
+  parent: F14ScrewdriverBase # WW: MS13 sprite on the merged N14 item
   id: F14Screwdriver
   name: screwdriver
   components:
@@ -34,7 +34,7 @@
     available: [] # MS13 tools have one fixed colour
 
 - type: entity
-  parent: Wirecutter
+  parent: F14WirecutterBase # WW: MS13 sprite on the merged N14 item
   id: F14Wirecutter
   name: wirecutters
   components:
@@ -52,7 +52,7 @@
     available: [] # MS13 tools have one fixed colour
 
 - type: entity
-  parent: Wrench
+  parent: F14WrenchBase # WW: MS13 sprite on the merged N14 item
   id: F14Wrench
   name: wrench
   components:
@@ -151,7 +151,7 @@
       state: icon
 
 - type: entity
-  parent: HydroponicsToolHatchet
+  parent: F14HydroponicsToolHatchetBase # WW: MS13 sprite on the merged N14 item
   id: F14HydroponicsToolHatchet
   name: hatchet
   components:

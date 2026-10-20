@@ -1,18 +1,18 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Recipes/Lathes/weapons.yml
 
 - type: latheRecipe
-  id: MisfitsTribalBow
+  id: F14TribalBow
   icon:
     sprite: Objects/Weapons/Guns/Bow/bow.rsi
     state: unwielded
-  result: MisfitsTribalBow
+  result: F14TribalBow
   categories:
-  - N14Weapons
+  - F14Weapons
   completetime: 12
   materials:
     Wood: 500
     Cloth: 200
-    N14Thread: 200
+    F14Thread: 200
 
 # MARK: Melee
 
@@ -23,11 +23,11 @@
     state: landmine-inactive
   result: LandMineKick
   categories:
-  - N14Weapons
+  - F14Weapons
   completetime: 12
   materials:
     Steel: 500
-    N14Iron: 200
+    F14Iron: 200
 
 # Misfits Add - explosive mine; large charge, ~4 tile radius
 
@@ -38,11 +38,11 @@
     state: landmine-inactive
   result: LandMineExplosive
   categories:
-  - N14Weapons
+  - F14Weapons
   completetime: 25
   materials:
     Steel: 1000
-    N14Gunpowder: 1000
+    F14Gunpowder: 1000
     Lead: 400
 
 # Misfits Add - modular mine casing; empty shell, receives any payload
@@ -54,19 +54,19 @@
     state: landmine-inactive
   result: LandMineModular
   categories:
-  - N14Weapons
+  - F14Weapons
   completetime: 15
   materials:
     Steel: 600
 
 - type: latheRecipe
-  id: MisfitsModularGrenade
+  id: F14ModularGrenade
   icon:
     sprite: Objects/Weapons/Grenades/modular.rsi
     state: empty
   result: ModularGrenade
   categories:
-  - N14Weapons
+  - F14Weapons
   completetime: 10
   materials:
     Steel: 500
@@ -75,41 +75,41 @@
 # Misfits Add: Recipes for payloads because there is none for modular mines.
 
 - type: latheRecipe
-  id: MisfitsChemicalPayload
+  id: F14ChemicalPayload
   result: ChemicalPayload
   categories:
-  - N14Weapons
+  - F14Weapons
   completetime: 10
   materials:
     Circuitry: 200
     Steel: 400
 
 - type: latheRecipe
-  id: MisfitsExplosivePayload
+  id: F14ExplosivePayload
   result: ExplosivePayload
   categories:
-  - N14Weapons
+  - F14Weapons
   completetime: 10
   materials:
-    N14Gunpowder: 1000
+    F14Gunpowder: 1000
     Lead: 400
 
 - type: latheRecipe
-  id: MisfitsFlashPayload
+  id: F14FlashPayload
   result: FlashPayload
   categories:
-  - N14Weapons
+  - F14Weapons
   completetime: 10
   materials:
-    N14Aluminum: 100
+    F14Aluminum: 100
     Sulfur: 400
 
 - type: latheRecipe
   id: ThrowingKnife
   result: ThrowingKnife
   categories:
-  - N14Weapons
+  - F14Weapons
   completetime: 5
   materials:
     Steel: 500
-    N14Iron: 100
+    F14Iron: 100

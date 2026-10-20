@@ -2,7 +2,7 @@
 
 - type: entity
   parent: BaseItem
-  id: MisfitsAmmoBoxGlock45
+  id: F14AmmoBoxGlock45
   name: ammo box (.45M)
   description: A box of custom .45 Magnum rounds, hand-loaded for the Glock 37M.
   components:
@@ -11,7 +11,7 @@
     whitelist:
       tags:
         - CartridgeMagnum
-    proto: MisfitsCartridgeGlock45
+    proto: F14CartridgeGlock45
     capacity: 30
   - type: ContainerContainer
     containers:

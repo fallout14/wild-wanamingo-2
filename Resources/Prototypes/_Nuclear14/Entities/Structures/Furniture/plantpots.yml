@@ -3,7 +3,7 @@
 
 - type: entity
   parent: PottedPlantBase
-  id: N14Plantpot
+  id: F14Plantpot
   name: plant pot
   abstract: true
   components:
@@ -15,36 +15,36 @@
     noRot: true
 
 - type: entity
-  parent: N14Plantpot
-  id: N14Plantpot1
+  parent: F14Plantpot
+  id: F14Plantpot1
   components:
   - type: Sprite
     state: pot-1
 
 - type: entity
-  parent: N14Plantpot
-  id: N14Plantpot2
+  parent: F14Plantpot
+  id: F14Plantpot2
   components:
   - type: Sprite
     state: pot-2
 
 - type: entity
-  parent: N14Plantpot
-  id: N14Plantpot3
+  parent: F14Plantpot
+  id: F14Plantpot3
   components:
   - type: Sprite
     state: pot-3
 
 - type: entity
-  parent: N14Plantpot
-  id: N14Plantpot4
+  parent: F14Plantpot
+  id: F14Plantpot4
   components:
   - type: Sprite
     state: pot-4
 
 - type: entity
-  parent: N14Plantpot
-  id: N14Plantpot5
+  parent: F14Plantpot
+  id: F14Plantpot5
   components:
   - type: Sprite
     state: pot-5
@@ -52,30 +52,30 @@
 # Dirty
 
 - type: entity
-  parent: N14Plantpot
-  id: N14PlantpotDirty1
+  parent: F14Plantpot
+  id: F14PlantpotDirty1
   suffix: dirty
   components:
   - type: Sprite
     state: pot-1-dirty
 
 - type: entity
-  parent: N14PlantpotDirty1
-  id: N14PlantpotDirty2
+  parent: F14PlantpotDirty1
+  id: F14PlantpotDirty2
   components:
   - type: Sprite
     state: pot-2-dirty
 
 - type: entity
-  parent: N14PlantpotDirty1
-  id: N14PlantpotDirty3
+  parent: F14PlantpotDirty1
+  id: F14PlantpotDirty3
   components:
   - type: Sprite
     state: pot-3-dirty
 
 - type: entity
-  parent: N14PlantpotDirty1
-  id: N14PlantpotDirty4
+  parent: F14PlantpotDirty1
+  id: F14PlantpotDirty4
   components:
   - type: Sprite
     state: pot-4-dirty
@@ -83,8 +83,8 @@
 # Broken
 
 - type: entity
-  parent: N14PlantpotDirty1
-  id: N14PlantpotBroken1
+  parent: F14PlantpotDirty1
+  id: F14PlantpotBroken1
   description: A broken plant pot.
   suffix: broken
   components:
@@ -92,29 +92,29 @@
     state: pot-1-broken
 
 - type: entity
-  parent: N14PlantpotBroken1
-  id: N14PlantpotBroken2
+  parent: F14PlantpotBroken1
+  id: F14PlantpotBroken2
   components:
   - type: Sprite
     state: pot-2-broken
 
 - type: entity
-  parent: N14PlantpotBroken1
-  id: N14PlantpotBroken3
+  parent: F14PlantpotBroken1
+  id: F14PlantpotBroken3
   components:
   - type: Sprite
     state: pot-3-broken
 
 - type: entity
-  parent: N14PlantpotBroken1
-  id: N14PlantpotBroken4
+  parent: F14PlantpotBroken1
+  id: F14PlantpotBroken4
   components:
   - type: Sprite
     state: pot-4-broken
 
 - type: entity
-  parent: N14PlantpotBroken1
-  id: N14PlantpotBroken5
+  parent: F14PlantpotBroken1
+  id: F14PlantpotBroken5
   components:
   - type: Sprite
     state: pot-5-broken

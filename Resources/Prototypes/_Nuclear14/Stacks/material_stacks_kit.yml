@@ -5,107 +5,121 @@
   id: Circuitry
   name: misfits-kit-circuitry
   icon: { sprite: Nuclear14/Objects/Misc/materials.rsi, state: circuits_3 }
-  spawn: N14MaterialCircuitry1
+  spawn: F14MaterialCircuitry1
   maxCount: 15
 
 - type: stack
-  id: N14BrahminHide
+  id: F14BrahminHide
   name: misfits-kit-brahmin-hides
   icon: { sprite: Nuclear14/Objects/Misc/mob_drops.rsi, state: hide_brahmin_2 }
-  spawn: N14MaterialBrahminHide1
+  spawn: F14MaterialBrahminHide1
   maxCount: 4
 
 - type: stack
-  id: N14Gunpowder
+  id: F14Gunpowder
   name: misfits-kit-gunpowder
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: powder_lead }
-  spawn: N14Gunpowder1
+  spawn: F14Gunpowder1
   maxCount: 10
 
 - type: stack
-  id: N14Paper
+  id: F14Paper
   name: misfits-kit-paper
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/clutter.rsi", state: paper }
-  spawn: N14Paper1
+  spawn: F14Paper1
   maxCount: 10
 
 - type: stack
-  id: N14Leather
+  id: F14Timber
+  name: misfits-kit-timber
+  icon: { sprite: "Nuclear14/Structures/Decoration/flora.rsi", state: tree_timber }
+  spawn: F14FloraLogTimber
+  maxCount: 6
+
+- type: stack
+  id: F14Compost
+  name: misfits-kit-compost
+  icon: { sprite: "Nuclear14/Objects/Misc/crafting_material.rsi", state: compost }
+  spawn: F14CompostRotted
+  maxCount: 5
+
+- type: stack
+  id: F14Leather
   name: misfits-kit-leather
   icon: { sprite: Nuclear14/Objects/Misc/materials.rsi, state: leather_3 }
-  spawn: N14MaterialLeather1
+  spawn: F14MaterialLeather1
   maxCount: 15
 
 - type: stack
-  id: N14RawLeather
+  id: F14RawLeather
   name: misfits-kit-raw-leather
   icon: { sprite: Nuclear14/Objects/Misc/materials.rsi, state: raw_leather_2 }
-  spawn: N14MaterialRawLeather1
+  spawn: F14MaterialRawLeather1
   maxCount: 15
 
 - type: stack
-  id: N14AntChitin
+  id: F14AntChitin
   name: misfits-kit-ant-chitin
   icon: { sprite: Nuclear14/Objects/Misc/mob_drops.rsi, state: chitin_3 }
-  spawn: N14MaterialAntChitin1
+  spawn: F14MaterialAntChitin1
   maxCount: 3
 
 - type: stack
-  id: N14Thread
+  id: F14Thread
   name: misfits-kit-thread
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: thread }
-  spawn: N14MaterialThread1
+  spawn: F14MaterialThread1
   maxCount: 10
 
 # Ores
 
 - type: stack
-  id: N14LeadOre
+  id: F14LeadOre
   name: misfits-kit-lead-ore
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: lead }
-  spawn: N14LeadOre1
+  spawn: F14LeadOre1
   maxCount: 10
 
 - type: stack
-  id: N14CopperOre
+  id: F14CopperOre
   name: misfits-kit-copper-ore
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: copper }
-  spawn: N14CopperOre1
+  spawn: F14CopperOre1
   maxCount: 30
 
 - type: stack
-  id: N14IronOre
+  id: F14IronOre
   name: misfits-kit-iron-ore
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: iron }
-  spawn: N14IronOre1
+  spawn: F14IronOre1
   maxCount: 30
 
 - type: stack
-  id: N14GoldOre
+  id: F14GoldOre
   name: misfits-kit-gold-ore
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: gold }
-  spawn: N14GoldOre1
+  spawn: F14GoldOre1
   maxCount: 30
 
 - type: stack
-  id: N14SilverOre
+  id: F14SilverOre
   name: misfits-kit-silver-ore
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: silver }
-  spawn: N14SilverOre1
+  spawn: F14SilverOre1
   maxCount: 30
 
 - type: stack
-  id: N14SulfurOre
+  id: F14SulfurOre
   name: misfits-kit-sulfur-ore
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: sulfur }
-  spawn: N14SulfurOre1
+  spawn: F14SulfurOre1
   maxCount: 10
 
 - type: stack
-  id: N14FertilizerOre
+  id: F14FertilizerOre
   name: misfits-kit-fertilizer-ore
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/crafting_material.rsi", state: ore_fertilizer }
-  spawn: N14FertilizerOre1
+  spawn: F14FertilizerOre1
   maxCount: 10
 
 
@@ -115,107 +129,107 @@
   id: Lead
   name: misfits-kit-lead
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: ingot_lead }
-  spawn: N14IngotLead1
+  spawn: F14IngotLead1
   maxCount: 30
 
 - type: stack
-  id: N14Aluminum
+  id: F14Aluminum
   name: misfits-kit-aluminum
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: ingot_aluminum }
-  spawn: N14IngotAluminum1
+  spawn: F14IngotAluminum1
   maxCount: 30
 
 - type: stack
-  id: N14Copper
+  id: F14Copper
   name: misfits-kit-copper
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: ingot_copper }
-  spawn: N14IngotCopper1
+  spawn: F14IngotCopper1
   maxCount: 30
 
 - type: stack
-  id: N14Brass
+  id: F14Brass
   name: misfits-kit-brass
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: ingot_brass }
-  spawn: N14IngotBrass1
+  spawn: F14IngotBrass1
   maxCount: 30
 
 - type: stack
-  id: N14Gold
+  id: F14Gold
   name: misfits-kit-gold
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: ingot_gold }
-  spawn: N14IngotGold1
+  spawn: F14IngotGold1
   maxCount: 30
 
 - type: stack
-  id: N14Silver
+  id: F14Silver
   name: misfits-kit-silver
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: ingot_silver }
-  spawn: N14IngotSilver1
+  spawn: F14IngotSilver1
   maxCount: 30
 
 - type: stack
   id: Sulfur
   name: misfits-kit-sulfur
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: powder_brass }
-  spawn: N14SulfurPowder1
+  spawn: F14SulfurPowder1
   maxCount: 30
 
 - type: stack
   id: Charcoal
   name: misfits-kit-charcoal
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: powder_lead }
-  spawn: N14Charcoal1
+  spawn: F14Charcoal1
   maxCount: 30
 
 #Scrap
 
 - type: stack
-  id: N14ScrapElectronic
+  id: F14ScrapElectronic
   name: misfits-kit-electronic-scrap
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: scrap_electronic_2 }
-  spawn: N14ScrapElectronic1
+  spawn: F14ScrapElectronic1
   maxCount: 30
 
 - type: stack
-  id: N14ScrapSteel
+  id: F14ScrapSteel
   name: misfits-kit-steel-scrap
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: scrap_steel_2 }
-  spawn: N14ScrapSteel1
+  spawn: F14ScrapSteel1
   maxCount: 30
 
 - type: stack
-  id: N14ScrapGold
+  id: F14ScrapGold
   name: misfits-kit-gold-scrap
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: scrap_gold }
-  spawn: N14ScrapGold1
+  spawn: F14ScrapGold1
   maxCount: 30
 
 - type: stack
-  id: N14ScrapCopper
+  id: F14ScrapCopper
   name: misfits-kit-copper-scrap
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: scrap_copper }
-  spawn: N14ScrapCopper1
+  spawn: F14ScrapCopper1
   maxCount: 30
 
 - type: stack
-  id: N14ScrapBrass
+  id: F14ScrapBrass
   name: misfits-kit-brass-scrap
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: scrap_brass }
-  spawn: N14ScrapBrass1
+  spawn: F14ScrapBrass1
   maxCount: 30
 
 - type: stack
-  id: N14Scrap
+  id: F14Scrap
   name: misfits-kit-scrap
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: scrap_3 }
-  spawn: N14Scrap1
+  spawn: F14Scrap1
   maxCount: 30
 
 - type: stack
-  id: N14ScrapLead
+  id: F14ScrapLead
   name: misfits-kit-lead-scrap
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: scrap_lead }
-  spawn: N14ScrapLead1
+  spawn: F14ScrapLead1
   maxCount: 30
 
 # #Misfits Add: Construction materials for building

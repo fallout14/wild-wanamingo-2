@@ -3,7 +3,7 @@
 
 - type: material
   id: Circuitry
-  stackEntity: N14MaterialCircuitry1
+  stackEntity: F14MaterialCircuitry1
   name: materials-circuitry # N14TODO: Localise
   unit: materials-unit-piece
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: circuits_3 }
@@ -14,7 +14,7 @@
 
 - type: material
   id: Lead
-  stackEntity: N14IngotLead1
+  stackEntity: F14IngotLead1
   name: materials-lead
   unit: materials-unit-bar
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: ingot_lead }
@@ -23,7 +23,7 @@
 
 - type: material
   id: Sulfur
-  stackEntity: N14SulfurPowder1
+  stackEntity: F14SulfurPowder1
   name: materials-sulfur
   unit: materials-unit-bar
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: powder_brass }
@@ -31,8 +31,8 @@
   price: 0.01
 
 - type: material
-  id: N14Aluminum
-  stackEntity: N14IngotAluminum1
+  id: F14Aluminum
+  stackEntity: F14IngotAluminum1
   name: materials-aluminum
   unit: materials-unit-bar
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: ingot_aluminum }
@@ -40,8 +40,8 @@
   price: 0.01
 
 - type: material
-  id: N14Copper
-  stackEntity: N14IngotCopper1
+  id: F14Copper
+  stackEntity: F14IngotCopper1
   name: materials-copper
   unit: materials-unit-bar
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: ingot_copper }
@@ -49,8 +49,8 @@
   price: 0.01
 
 - type: material
-  id: N14Brass
-  stackEntity: N14IngotBrass1
+  id: F14Brass
+  stackEntity: F14IngotBrass1
   name: materials-N14brass
   unit: materials-unit-bar
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: ingot_brass }
@@ -58,8 +58,8 @@
   price: 0.01
 
 - type: material
-  id: N14Gold
-  stackEntity: N14IngotGold1
+  id: F14Gold
+  stackEntity: F14IngotGold1
   name: materials-N14gold
   unit: materials-unit-bar
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: ingot_gold }
@@ -67,8 +67,8 @@
   price: 0.14
 
 - type: material
-  id: N14Silver
-  stackEntity: N14IngotSilver1
+  id: F14Silver
+  stackEntity: F14IngotSilver1
   name: materials-N14silver
   unit: materials-unit-bar
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: ingot_silver }
@@ -76,15 +76,15 @@
   price: 0.05 # Corvax-Change
 
 # Materials
-# Misfits Fix: N14Paper needs its own material prototype so lathe-type machines
-# (ammo workshop, etc.) eject N14Paper1 instead of vanilla SheetPaper1.
-# N14Paper entities previously used PhysicalComposition: Paper: 100, which caused
+# Misfits Fix: F14Paper needs its own material prototype so lathe-type machines
+# (ammo workshop, etc.) eject F14Paper1 instead of vanilla SheetPaper1.
+# F14Paper entities previously used PhysicalComposition: Paper: 100, which caused
 # them to enter the upstream Paper material pool and eject as SheetPaper1 —
 # making the output unusable in N14 hand-crafting recipes (e.g. cardboard).
 
 - type: material
-  id: N14Paper
-  stackEntity: N14Paper1
+  id: F14Paper
+  stackEntity: F14Paper1
   name: materials-N14paper
   unit: materials-unit-piece
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/clutter.rsi, state: paper }
@@ -92,8 +92,8 @@
   price: 0.0003
 
 - type: material
-  id: N14Gunpowder
-  stackEntity: N14Gunpowder1
+  id: F14Gunpowder
+  stackEntity: F14Gunpowder1
   name: materials-gunpowder
   unit: materials-unit-piece
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: powder_lead }
@@ -101,8 +101,8 @@
   price: 0.075
 
 - type: material
-  id: N14ScrapElectronic
-  stackEntity: N14ScrapElectronic1
+  id: F14ScrapElectronic
+  stackEntity: F14ScrapElectronic1
   name: materials-scrap-electronic
   unit: materials-unit-bunch
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: scrap_electronic_3 }
@@ -110,15 +110,15 @@
 
 - type: material
   id: ScrapSteel
-  stackEntity: N14ScrapSteel1
+  stackEntity: F14ScrapSteel1
   name: materials-scrap-steel
   unit: materials-unit-bunch
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: scrap_steel_3 }
   price: 0.005
 
 - type: material
-  id: N14ScrapGold
-  stackEntity: N14ScrapGold1
+  id: F14ScrapGold
+  stackEntity: F14ScrapGold1
   name: materials-scrap-gold
   unit: materials-unit-bunch
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: scrap_gold }
@@ -126,8 +126,8 @@
   price: 0.007
 
 - type: material
-  id: N14ScrapCopper
-  stackEntity: N14ScrapCopper1
+  id: F14ScrapCopper
+  stackEntity: F14ScrapCopper1
   name: materials-scrap-copper
   unit: materials-unit-bunch
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: scrap_copper }
@@ -135,8 +135,8 @@
   price: 0.005
 
 - type: material
-  id: N14ScrapBrass
-  stackEntity: N14ScrapBrass1
+  id: F14ScrapBrass
+  stackEntity: F14ScrapBrass1
   name: materials-scrap-brass
   unit: materials-unit-bunch
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: scrap_brass }
@@ -144,8 +144,8 @@
   price: 0.005
 
 - type: material
-  id: N14Scrap
-  stackEntity: N14Scrap1
+  id: F14Scrap
+  stackEntity: F14Scrap1
   name: materials-scrap
   unit: materials-unit-bunch
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: scrap_2 }
@@ -153,8 +153,8 @@
   price: 0.003
 
 - type: material
-  id: N14ScrapLead
-  stackEntity: N14ScrapLead1
+  id: F14ScrapLead
+  stackEntity: F14ScrapLead1
   name: materials-lead-scrap
   unit: materials-unit-bunch
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: scrap_lead }
@@ -162,7 +162,7 @@
   price: 0.005
 
 - type: reagent
-  id: N14Gunpowder
+  id: F14Gunpowder
   group: Wasteland
   name: reagent-name-gunpowder
   desc: reagent-desc-gunpowder
@@ -181,7 +181,7 @@
 
 - type: material
   id: Charcoal
-  stackEntity: N14Charcoal1
+  stackEntity: F14Charcoal1
   name: materials-charcoal
   unit: materials-unit-piece
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: powder_lead }
@@ -189,8 +189,8 @@
   price: 0.005
 
 - type: material
-  id: N14Fertilizer
-  stackEntity: N14FertilizerOre1
+  id: F14Fertilizer
+  stackEntity: F14FertilizerOre1
   name: materials-fertilizer
   unit: materials-unit-piece
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/Sacks/daesack2.rsi, state: icon }
@@ -198,7 +198,7 @@
   price: 0.05
 
 - type: reagent
-  id: N14Fertilizer
+  id: F14Fertilizer
   name: reagent-name-fertilizer
   group: Wasteland
   desc: reagent-desc-fertilizer
@@ -226,7 +226,7 @@
         probability: 0.45
 
 - type: reagent
-  id: N14Dung
+  id: F14Dung
   name: reagent-name-dung
   group: Wasteland
   desc: reagent-desc-dung
@@ -244,40 +244,40 @@
         probability: 0.80
 
 - type: material
-  id: N14Leather
-  stackEntity: N14MaterialLeather1
+  id: F14Leather
+  stackEntity: F14MaterialLeather1
   name: materials-leather
   unit: materials-unit-roll
   icon: { sprite: Nuclear14/Objects/Misc/materials.rsi, state: leather_3 }
   price: 0.02
 
 - type: material
-  id: N14Exoskeleton
-  stackEntity: N14MaterialExoskeleton
+  id: F14Exoskeleton
+  stackEntity: F14MaterialExoskeleton
   name: materials-exoskeleton
   unit: materials-unit-piece
   icon: { sprite: Nuclear14/Objects/Misc/mob_drops.rsi, state: rad_exo }
   price: 0.05
 
 - type: material
-  id: N14AntChitin
-  stackEntity: N14MaterialAntChitin1
+  id: F14AntChitin
+  stackEntity: F14MaterialAntChitin1
   name: materials-antchitin
   unit: materials-unit-piece
   icon: { sprite: Nuclear14/Objects/Misc/mob_drops.rsi, state: chitin_3 }
   price: 0.05
 
 - type: material
-  id: N14RawLeather
-  stackEntity: N14MaterialRawLeather1
+  id: F14RawLeather
+  stackEntity: F14MaterialRawLeather1
   name: materials-raw-leather
   unit: materials-unit-roll
   icon: { sprite: Nuclear14/Objects/Misc/materials.rsi, state: raw_leather_2 }
   price: 0.01
 
 - type: material
-  id: N14Thread
-  stackEntity: N14MaterialThread1
+  id: F14Thread
+  stackEntity: F14MaterialThread1
   name: materials-thread
   unit: materials-unit-roll
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: thread }

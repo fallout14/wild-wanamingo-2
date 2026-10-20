@@ -3,16 +3,16 @@
 
 - type: entity
   parent: IngotBase
-  id: N14IngotIron
+  id: F14IngotIron
   name: iron bar
   suffix: Full, 30
   components:
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14Iron: 100
+      F14Iron: 100
   - type: Stack
-    stackType: N14Iron
+    stackType: F14Iron
     baseLayer: base
     layerStates:
     - ingot_iron
@@ -37,8 +37,8 @@
         Quantity: 10
 
 - type: entity
-  parent: N14IngotIron
-  id: N14IngotIron1
+  parent: F14IngotIron
+  id: F14IngotIron1
   name: iron bar
   suffix: Single
   components:

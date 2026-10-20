@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/Structures/walls.yml
 
 - type: constructionGraph
-  id: MisfitsAdobeWall
+  id: F14AdobeWall
   start: start
   graph:
     - node: start
@@ -11,7 +11,7 @@
             - !type:SnapToGrid
               southRotation: true
           steps:
-            - material: MisfitsBrick
+            - material: F14Brick
               amount: 6
               doAfter: 4
 
@@ -20,17 +20,17 @@
             - !type:SnapToGrid
               southRotation: true
           steps:
-            - material: MisfitsBrick
+            - material: F14Brick
               amount: 10
               doAfter: 5
 
     - node: AdobeWall
-      entity: N14WallAdobeSlanted
+      entity: F14WallAdobeSlanted
       edges:
         - to: start
           completed:
             - !type:GivePrototype
-              prototype: MisfitsMaterialBrick1
+              prototype: F14MaterialBrick1
               amount: 3
             - !type:DeleteEntity
           steps:
@@ -38,12 +38,12 @@
               doAfter: 20
 
     - node: AdobeWallTall
-      entity: N14WallAdobeTall
+      entity: F14WallAdobeTall
       edges:
         - to: start
           completed:
             - !type:GivePrototype
-              prototype: MisfitsMaterialBrick1
+              prototype: F14MaterialBrick1
               amount: 5
             - !type:DeleteEntity
           steps:

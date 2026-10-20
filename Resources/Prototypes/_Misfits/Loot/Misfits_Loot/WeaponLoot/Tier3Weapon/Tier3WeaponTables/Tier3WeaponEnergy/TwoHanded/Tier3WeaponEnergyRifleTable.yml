@@ -1,64 +1,64 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3WeaponEnergy/TwoHanded/Tier3WeaponEnergyRifleTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_LaserRifleAuto
+  id: F14WeaponLootTier3LaserRifleAuto
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponLaserRifleAuto
+      id: F14WeaponLaserRifleAuto
       weight: 1
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_PlasmaRifleAuto
+  id: F14WeaponLootTier3PlasmaRifleAuto
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: Error
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_OtherRifleAuto
+  id: F14WeaponLootTier3OtherRifleAuto
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponFlamer
+      id: F14WeaponFlamer
       weight: 1
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_LaserRifleSemi
+  id: F14WeaponLootTier3LaserRifleSemi
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponLaserRifleCrude
+      id: F14WeaponLaserRifleCrude
       weight: 1
     - !type:EntSelector
-      id: N14WeaponLaserRifleMakeshift
+      id: F14WeaponLaserRifleMakeshift
       weight: 1
     - !type:EntSelector
-      id: N14WeaponLaserRifleWattz2000
+      id: F14WeaponLaserRifleWattz2000
       weight: 1
     - !type:EntSelector
-      id: MisfitsWeaponLaserRifleWattz2000Extended
+      id: F14WeaponLaserRifleWattz2000Extended
       weight: 1
     - !type:EntSelector
-      id: N14WeaponLaserRifleRecharger
+      id: F14WeaponLaserRifleRecharger
       weight: 1
     - !type:EntSelector
-      id: N14WeaponLaserRifle
+      id: F14WeaponLaserRifle
       weight: 1
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_PlasmaRifleSemi
+  id: F14WeaponLootTier3PlasmaRifleSemi
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponPlasmaRifleCrude
+      id: F14WeaponPlasmaRifleCrude
       weight: 1
     - !type:EntSelector
-      id: N14WeaponPlasmaRifle
+      id: F14WeaponPlasmaRifle
       weight: 1
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_OtherRifleSemi
+  id: F14WeaponLootTier3OtherRifleSemi
   table: !type:GroupSelector
     children:
     - !type:EntSelector

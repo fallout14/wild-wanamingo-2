@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Specific/Kits/UndecidedLoadout.yml
 
 - type: entity
-  id: N14BaseLoadoutKit
+  id: F14BaseLoadoutKit
   name: Undecided Loadout Kit
   description: Please only take one.
   parent: BaseItem
@@ -23,9 +23,9 @@
 # New California Republic Army
 
 - type: entity
-  id: N14NCRcadetloadoutkits
+  id: F14NCRcadetloadoutkits
   name: Undecided NCRA Recruit Loadout Kit
-  parent: N14BaseLoadoutKit
+  parent: F14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -40,9 +40,9 @@
     - NCRA_CadetScoutSet
 
 - type: entity
-  id: N14NCRtrooperloadoutkits
+  id: F14NCRtrooperloadoutkits
   name: Undecided NCRA Private Loadout Kit
-  parent: N14NCRcadetloadoutkits
+  parent: F14NCRcadetloadoutkits
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -98,9 +98,9 @@
 #    - NCRA_SniperSet
 
 - type: entity
-  id: N14NCRengineerloadoutkits
+  id: F14NCRengineerloadoutkits
   name: Undecided NCRA Engineer Loadout Kit
-  parent: N14NCRcadetloadoutkits
+  parent: F14NCRcadetloadoutkits
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -117,9 +117,9 @@
 # Removed NCR Surgeon kit, gave directly to NCR doctor
 
 - type: entity
-  id: N14NCRmedicloadoutkits
+  id: F14NCRmedicloadoutkits
   name: Undecided NCRA Medic Loadout Kit
-  parent: N14NCRcadetloadoutkits
+  parent: F14NCRcadetloadoutkits
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -133,9 +133,9 @@
     - NCRA_ComMedSet
 
 - type: entity
-  id: N14NCRwsloadoutkits
+  id: F14NCRwsloadoutkits
   name: Undecided NCRA Weapon Specialist Loadout Kit
-  parent: N14NCRcadetloadoutkits
+  parent: F14NCRcadetloadoutkits
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -151,9 +151,9 @@
     - NCRA_StealthSet
 
 - type: entity
-  id: N14NCRSGTloadoutkits
+  id: F14NCRSGTloadoutkits
   name: Undecided NCRA Sergeant Loadout Kit
-  parent: N14NCRcadetloadoutkits
+  parent: F14NCRcadetloadoutkits
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -170,9 +170,9 @@
     - NCRA_SGTMSLSet
 
 - type: entity
-  id: N14NCRLTloadoutkits
+  id: F14NCRLTloadoutkits
   name: Undecided NCRA Lieutenant Loadout Kit
-  parent: N14NCRcadetloadoutkits
+  parent: F14NCRcadetloadoutkits
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -189,14 +189,14 @@
   - type: ActivatableUI
 
 - type: entity
-  id: N14NCRrangerloadoutkits
+  id: F14NCRrangerloadoutkits
   name: Undecided NCR Ranger Loadout Kit
-  parent: MisfitsNCRpatrolrangerloadoutkits
+  parent: F14NCRpatrolrangerloadoutkits
 
 - type: entity
-  id: N14NCRveteranrangerloadoutkits
+  id: F14NCRveteranrangerloadoutkits
   name: Undecided NCR Veteran Ranger Loadout Kit
-  parent: N14NCRcadetloadoutkits
+  parent: F14NCRcadetloadoutkits
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -215,9 +215,9 @@
 # Brotherhood Initiates
 
 - type: entity
-  id: N14BoSMidwestInitSet
+  id: F14BoSMidwestInitSet
   name: Undecided BoS Initiate Kit
-  parent: N14BaseLoadoutKit
+  parent: F14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -247,9 +247,9 @@
 # Brotherhood Knights
 
 - type: entity
-  id: N14BoSMidwestKnightSet
+  id: F14BoSMidwestKnightSet
   name: Undecided BoS Knight Kit
-  parent: N14BaseLoadoutKit
+  parent: F14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -279,9 +279,9 @@
 # Brotherhood Scribes
 
 - type: entity
-  id: N14BoSMidwestScribeKits
+  id: F14BoSMidwestScribeKits
   name: Undecided BoS Scribe Kit
-  parent: N14BaseLoadoutKit
+  parent: F14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -298,9 +298,9 @@
 # Brotherhood Paladins
 
 - type: entity
-  id: N14BoSMidwestPaladinKits
+  id: F14BoSMidwestPaladinKits
   name: Undecided BoS Paladin Kit
-  parent: N14BaseLoadoutKit
+  parent: F14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -334,9 +334,9 @@
 # Tribal kits
 
 - type: entity
-  id: N14Triballoadoutkits
+  id: F14Triballoadoutkits
   name: Undecided Tribal Loadout Kit
-  parent: N14BaseLoadoutKit
+  parent: F14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -356,9 +356,9 @@
 # Town's Guard kits, the only one
 
 - type: entity
-  id: N14TownGuardKits
+  id: F14TownGuardKits
   name: Undecided Town's Guard Kit
-  parent: N14BaseLoadoutKit
+  parent: F14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -385,7 +385,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitNCR_CadetRifleman
+  - F14KitNCRCadetRifleman
 
 - type: thiefBackpackSet
   id: NCRA_CadetStormSet
@@ -395,7 +395,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitNCR_CadetStorm
+  - F14KitNCRCadetStorm
 
 - type: thiefBackpackSet
   id: NCRA_CadetScoutSet
@@ -405,7 +405,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - N14KitNCR_CadetScout
+  - F14KitNCRCadetScout
 
 # NCRA Soldier / Trooper Kits
 
@@ -417,7 +417,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitNCR_Rifleman
+  - F14KitNCRRifleman
 
 - type: thiefBackpackSet
   id: NCRA_StormSet
@@ -427,7 +427,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitNCR_Storm
+  - F14KitNCRStorm
 
 - type: thiefBackpackSet
   id: NCRA_ScoutSet
@@ -437,7 +437,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - N14KitNCR_Scout
+  - F14KitNCRScout
 
 - type: thiefBackpackSet
   id: NCRA_PointSet
@@ -447,7 +447,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - N14KitNCR_Point
+  - F14KitNCRPoint
 
 - type: thiefBackpackSet
   id: NCRA_MoraleSet
@@ -457,7 +457,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - N14KitNCR_Morale
+  - F14KitNCRMorale
 
 # NCRA Engineer Kits
 
@@ -469,7 +469,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitNCR_EngiMechanic
+  - F14KitNCREngiMechanic
 
 - type: thiefBackpackSet
   id: NCRA_DemolitionSet
@@ -479,7 +479,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - N14KitNCR_EngiDemo
+  - F14KitNCREngiDemo
 
 - type: thiefBackpackSet
   id: NCRA_BreacherSet
@@ -489,7 +489,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - N14KitNCR_EngiBreach
+  - F14KitNCREngiBreach
 
 # NCRA Medic Kits
 
@@ -501,7 +501,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: medic
   content:
-  - N14KitNCR_MedDoctor
+  - F14KitNCRMedDoctor
 
 - type: thiefBackpackSet
   id: NCRA_ComMedSet
@@ -511,7 +511,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: medic
   content:
-  - N14KitNCR_MedCombat
+  - F14KitNCRMedCombat
 
 # NCRA Weapon Specialist Kits
 
@@ -523,7 +523,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: gunner
   content:
-  - N14KitNCR_WSGunner
+  - F14KitNCRSpecialistSniper
 
 - type: thiefBackpackSet
   id: NCRA_GrenadierSet
@@ -533,7 +533,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - N14KitNCR_WSGrenadier
+  - F14KitNCRSpecialistGrenadier
 
 - type: thiefBackpackSet
   id: NCRA_SniperSet
@@ -543,7 +543,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - N14KitNCR_WSSniper
+  - F14KitNCRWSSniper
 
 - type: thiefBackpackSet
   id: NCRA_StealthSet
@@ -553,7 +553,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitNCR_WSStealth
+  - F14KitNCRWSStealth
 
 # NCRA Sergeant Kits
 
@@ -565,7 +565,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitNCR_SGTRifleman
+  - F14KitNCRSGTRifleman
 
 - type: thiefBackpackSet
   id: NCRA_SGTGunnerSet
@@ -575,7 +575,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: gunner
   content:
-  - N14KitNCR_SGTGunner
+  - F14KitNCRSGTGunner
 
 - type: thiefBackpackSet
   id: NCRA_SGTScoutSet
@@ -585,7 +585,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - N14KitNCR_SGTScout
+  - F14KitNCRSGTScout
 
 - type: thiefBackpackSet
   id: NCRA_SGTPointSet
@@ -595,7 +595,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - N14KitNCR_SGTPoint
+  - F14KitNCRSGTPoint
 
 # NCRA Lieutenant Kits
 
@@ -607,7 +607,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - N14KitNCR_LTPencil
+  - F14KitNCRLTPencil
 
 - type: thiefBackpackSet
   id: NCRA_LTScoutSet
@@ -617,7 +617,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - N14KitNCR_LTScout
+  - F14KitNCRLTScout
 
 - type: thiefBackpackSet
   id: NCRA_LTTacticalSet
@@ -627,7 +627,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitNCR_LTTactical
+  - F14KitNCRLTTactical
 
 - type: thiefBackpackSet
   id: NCRA_LTCommissarSet
@@ -637,7 +637,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - MisfitsKitNCR_LTCommissar
+  - F14KitNCRLTCommissar
 
   #MARK: Ranger Kits
 
@@ -649,7 +649,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - N14KitServiceRanger
+  - F14KitServiceRanger
 
 - type: thiefBackpackSet
   id: RangerRiflemanSet
@@ -659,7 +659,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - N14KitRiflemanRanger
+  - F14KitRiflemanRanger
 
 - type: thiefBackpackSet
   id: RangerMarksmanSet
@@ -669,7 +669,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - N14KitMarksmanRanger
+  - F14KitMarksmanRanger
 
 - type: thiefBackpackSet
   id: RangerCQBSet
@@ -679,7 +679,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - N14KitCQBRanger
+  - F14KitCQBRanger
 
 - type: thiefBackpackSet
   id: RangerTrailmanSet
@@ -689,7 +689,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - N14KitTrailmanRanger
+  - F14KitTrailmanRanger
 
 #forge-add
 
@@ -701,7 +701,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - MisfitsKitSniperRanger
+  - F14KitSniperRanger
 
 #MARK: Veteran Kits
 
@@ -713,7 +713,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitServiceRangerVeteran
+  - F14KitServiceRangerVeteran
 
 - type: thiefBackpackSet
   id: VeteranRangerRiflemanSet
@@ -723,7 +723,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitRiflemanRangerVeteran
+  - F14KitRiflemanRangerVeteran
 
 - type: thiefBackpackSet
   id: VeteranRangerHeavySniperSet
@@ -733,7 +733,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - N14KitHeavySniperRangerVeteran
+  - F14KitHeavySniperRangerVeteran
 
 - type: thiefBackpackSet
   id: VeteranRangerAssaultSet
@@ -743,7 +743,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitAssaultRangerVeteran
+  - F14KitAssaultRangerVeteran
 
 - type: thiefBackpackSet
   id: VeteranRangerMarksmanSet
@@ -753,7 +753,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - N14KitMarksmanRangerVeteran
+  - F14KitMarksmanRangerVeteran
 
 # MBoS Initiate
 
@@ -765,7 +765,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitMBoS_IniLas
+  - F14KitMBoSIniLas
 
 - type: thiefBackpackSet
   id: MBoS_IniBal_Set
@@ -775,7 +775,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitMBoS_IniBal
+  - F14KitMBoSIniBal
 
 # MBoS Knight
 
@@ -787,7 +787,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitMBoS_KniLas
+  - F14KitMBoSKniLas
 
 - type: thiefBackpackSet
   id: MBoS_KniBal_Set
@@ -797,7 +797,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitMBoS_KniBal
+  - F14KitMBoSKniBal
 
 - type: thiefBackpackSet
   id: MBoS_SKniBal_Set
@@ -807,7 +807,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - MisfitsKitMBoS_SKniBal
+  - F14KitMBoSSKniBal
 
 - type: thiefBackpackSet
   id: MBoS_SKniLas_Set
@@ -817,7 +817,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - MisfitsKitMBoS_SKniLas
+  - F14KitMBoSSKniLas
 
 - type: thiefBackpackSet
   id: MBoS_Recon_Set
@@ -827,7 +827,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - MisfitsKitMBoS_Recon
+  - F14KitMBoSRecon
 
 # MBoS Scribes
 
@@ -839,7 +839,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: medic
   content:
-  - N14KitMBoS_ScrMed
+  - F14KitMBoSScrMed
 
 - type: thiefBackpackSet
   id: MBoS_ScrFld_Set
@@ -849,7 +849,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: gunner
   content:
-  - N14KitMBoS_ScrFld
+  - F14KitMBoSScrFld
 
 - type: thiefBackpackSet
   id: MBoS_ScrEng_Set
@@ -859,7 +859,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: gunner
   content:
-  - N14KitMBoS_ScrEng
+  - F14KitMBoSScrEng
 
 # MBoS Paladin
 
@@ -871,7 +871,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitMBoS_PalLas
+  - F14KitMBoSPalLas
 
 - type: thiefBackpackSet
   id: MBoS_PalSlay_Set
@@ -881,7 +881,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - MisfitsKitMBoS_PalSlay
+  - F14KitMBoSPalSlay
 
 - type: thiefBackpackSet
   id: MBoS_PalBal_Set
@@ -891,7 +891,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitMBoS_PalBal
+  - F14KitMBoSPalBal
 
 - type: thiefBackpackSet
   id: MBoS_PalSni_Set
@@ -901,7 +901,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - N14KitMBoS_PalSni
+  - F14KitMBoSPalSni
 
 - type: thiefBackpackSet
   id: MBoS_PalPla_Set
@@ -911,7 +911,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitMBoS_PalPla
+  - F14KitMBoSPalPla
 
 #Misfits Change /Comment-out/: Washington BoS set definitions removed — will create new prototypes.
 ## WBoS Initiate
@@ -1038,7 +1038,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14Kittribalstalker
+  - F14Kittribalstalker
 
 - type: thiefBackpackSet
   id: TribalFireHand
@@ -1048,7 +1048,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14Kittribalfirehand
+  - F14Kittribalfirehand
 
 - type: thiefBackpackSet
   id: TribalChampionSet
@@ -1058,7 +1058,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14Kittribalchampion
+  - F14Kittribalchampion
 
 - type: thiefBackpackSet
   id: TribalHunterSet
@@ -1068,7 +1068,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14Kittribalhunter
+  - F14Kittribalhunter
 
 - type: thiefBackpackSet
   id: TribalBoneBreakerSet
@@ -1078,7 +1078,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14Kittribalbonebreaker
+  - F14Kittribalbonebreaker
 
 - type: thiefBackpackSet
   id: TribalPainBringerSet
@@ -1088,7 +1088,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14Kittribalpainbringer
+  - F14Kittribalpainbringer
 
 # Town Guard kits individually
 
@@ -1100,7 +1100,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitTownGuard_Cere
+  - F14KitTownGuardCere
 
 - type: thiefBackpackSet
   id: TownGuard_Patr_Set
@@ -1110,7 +1110,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitTownGuard_Patr
+  - F14KitTownGuardPatr
 
 - type: thiefBackpackSet
   id: TownGuard_Brea_Set
@@ -1120,7 +1120,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitTownGuard_Brea
+  - F14KitTownGuardBrea
 
 - type: thiefBackpackSet
   id: TownGuard_Riot_Set
@@ -1130,4 +1130,4 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - N14KitTownGuard_Riot
+  - F14KitTownGuardRiot

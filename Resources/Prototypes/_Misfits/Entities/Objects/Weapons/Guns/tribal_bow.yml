@@ -2,7 +2,7 @@
 
 - type: entity
   parent: BowImprovised
-  id: MisfitsBaseBow
+  id: F14BaseBow
   name: tribal bow BASE LOL
   description: shluldnt see dis
   components:
@@ -18,8 +18,8 @@
 # Tribal Bow
 
 - type: entity
-  parent: MisfitsBaseBow
-  id: MisfitsTribalBow
+  parent: F14BaseBow
+  id: F14TribalBow
   name: tribal bow
   description: A bone-and-sinew bow crafted using pre-war tribal techniques. Crude by Wasteland standards but surprisingly effective at close range — and completely silent.
   components:
@@ -29,8 +29,8 @@
 # #Misfits Add - War Bow: heavy draw weight, slower but hits harder with a higher projectile speed.
 
 - type: entity
-  parent: MisfitsBaseBow
-  id: MisfitsTribalWarBow
+  parent: F14BaseBow
+  id: F14TribalWarBow
   name: war bow
   description: A heavy-draw tribal war bow reinforced with braided sinew and bone laminates. Slower to fire but the arrows fly with devastating force.
   components:
@@ -47,8 +47,8 @@
 # #Misfits Add - Recurve Bow: lighter and faster, favored by tribal hunters for quick follow-up shots.
 
 - type: entity
-  parent: MisfitsBaseBow
-  id: MisfitsTribalRecurveBow
+  parent: F14BaseBow
+  id: F14TribalRecurveBow
   name: recurve bow
   description: A compact recurve bow with reflexed limb tips, designed for rapid shooting at the cost of raw stopping power. Popular among tribal hunters who value speed over force.
   components:

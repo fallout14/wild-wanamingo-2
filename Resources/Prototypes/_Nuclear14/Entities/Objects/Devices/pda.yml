@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: BasePDA
-  id: N14BasePipboy
+  id: F14BasePipboy
   name: Pip-Boy 3000 MKIV
   description: A RobCo Industries Pip-Boy 3000 Mark IV Personal Information Processor.
   components:
@@ -58,11 +58,11 @@
         components:
         - IdCard # #Misfits Add - accept any entity with IdCard component (belt-and-suspenders with tag list)
         tags:
-        - N14IdCardVault # Misfits Change
-        - MisfitsIdCardBrotherhood #Misfits Change
-        - MisfitsIdCardNCR #Misfits Change
-        - MisfitsIdCardLegion # #Misfits Change
-        - MisfitsIdCardWastelander # #Misfits Add - allows wastelander dogtags to be inserted
+        - F14IdCardVault # Misfits Change
+        - F14IdCardBrotherhood #Misfits Change
+        - F14IdCardNCR #Misfits Change
+        - F14IdCardLegion # #Misfits Change
+        - F14IdCardWastelander # #Misfits Add - allows wastelander dogtags to be inserted
   # #Misfits Add - Pip-Boy can read holotapes when they are used on it.
   # Opens the holotape's own UI (not the Pip-Boy's) since the PDA already has its own UserInterface.
   - type: HolotapeReader
@@ -73,7 +73,7 @@
   - type: RadiationReceiver
   - type: Tag
     tags:
-    - MisfitsPipBoy
+    - F14PipBoy
   - type: EntityTableContainerFill
     containers:
       preinstalled-program-container: !type:AllSelector
@@ -81,12 +81,20 @@
         - id: CrewManifestCartridge
         - id: NotekeeperCartridge
         - id: NewsReaderCartridge
-        - id: DeltaVNanoChatCartridge
-        - id: MisfitsPipBoyContactsCartridge
-        - id: MisfitsPipBoyGroupsCartridge
-        - id: MisfitsPipBoyDirectoryCartridge
-        - id: MisfitsPipBoySettingsCartridge
+        - id: F14NanoChatCartridge
+        - id: F14PipBoyContactsCartridge
+        - id: F14PipBoyGroupsCartridge
+        - id: F14PipBoyDirectoryCartridge
+        - id: F14PipBoySettingsCartridge
 
 - type: entity
-  parent: N14BasePipboy
-  id: N14Pipboy
+  parent: F14BasePipboy
+  id: F14Pipboy
+
+- type: entity
+  parent: F14BasePipboy
+  id: F14VaultPDA
+  suffix: Vault
+  components:
+  - type: Pda
+    id: F14IDCardVault

@@ -2,7 +2,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: MisfitsClothingNeckDogtags
+  id: F14ClothingNeckDogtags
   name: wastelander dogtags
   description: A pair of engraved metal identification tags. Can be inserted into a Pip-Boy.
   components:
@@ -19,8 +19,8 @@
   - type: NanoChatCard
   - type: StationRecordKeyStorage
   - type: PresetIdCard
-    job: N14Wastelander
+    job: F14Wastelander
   - type: Tag
     tags:
-    - MisfitsIdCardWastelander
+    - F14IdCardWastelander
     - DoorBumpOpener

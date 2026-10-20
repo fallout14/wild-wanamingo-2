@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Clothing/Uniform/ncr_submission_additions.yml
 
 - type: entity
-  parent: N14ClothingUniformBase
-  id: MisfitsClothingUniformNCRFatiguePants
+  parent: F14ClothingUniformBase
+  id: F14ClothingUniformNCRFatiguePants
   name: NCR fatigue pants
   description: NCR fatigue trousers paired with a utility belt rig.
   components:
@@ -12,8 +12,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSuits/ncrfatiguepants.rsi
 
 - type: entity
-  parent: N14ClothingUniformBase
-  id: MisfitsClothingUniformNCRFatigueShirt
+  parent: F14ClothingUniformBase
+  id: F14ClothingUniformNCRFatigueShirt
   name: NCR fatigue shirt
   description: A light NCR field shirt for desert operations.
   components:
@@ -23,8 +23,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSuits/ncrfatigueshirt.rsi
 
 - type: entity
-  parent: N14ClothingUniformBase
-  id: MisfitsClothingUniformNCRMedicVariant
+  parent: F14ClothingUniformBase
+  id: F14ClothingUniformNCRMedicVariant
   name: NCR medic uniform
   description: An NCR uniform variant marked for medical staff.
   components:
@@ -34,8 +34,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSuits/ncrmedic.rsi
 
 - type: entity
-  parent: N14ClothingUniformBase
-  id: MisfitsClothingUniformNCRPatrolRanger
+  parent: F14ClothingUniformBase
+  id: F14ClothingUniformNCRPatrolRanger
   name: NCR patrol ranger uniform
   description: A service uniform commonly worn by NCR patrol rangers.
   components:
@@ -45,8 +45,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSuits/ncrpatrolrangeruniform.rsi
 
 - type: entity
-  parent: N14ClothingUniformBase
-  id: MisfitsClothingUniformNCRRecon
+  parent: F14ClothingUniformBase
+  id: F14ClothingUniformNCRRecon
   name: NCR recon uniform
   description: A lighter NCR uniform intended for recon units.
   components:
@@ -56,8 +56,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSuits/ncrrecon.rsi
 
 - type: entity
-  parent: N14ClothingUniformBase
-  id: MisfitsClothingUniformNCRReconLongSleeve
+  parent: F14ClothingUniformBase
+  id: F14ClothingUniformNCRReconLongSleeve
   name: NCR recon uniform
   description: A long-sleeve recon uniform for NCR patrols in rougher weather.
   components:
@@ -67,8 +67,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSuits/ncrreconlongsleeve.rsi
 
 - type: entity
-  parent: N14ClothingUniformBase
-  id: MisfitsClothingUniformNCRShorts
+  parent: F14ClothingUniformBase
+  id: F14ClothingUniformNCRShorts
   name: NCR shorts uniform
   description: A hot-weather NCR uniform cut down for desert comfort.
   components:
@@ -78,8 +78,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSuits/ncrshorts.rsi
 
 - type: entity
-  parent: N14ClothingUniformBase
-  id: MisfitsClothingUniformNCRUtilityShirt
+  parent: F14ClothingUniformBase
+  id: F14ClothingUniformNCRUtilityShirt
   name: NCR utility shirt
   description: A compact NCR duty uniform with extra utility pockets.
   components:

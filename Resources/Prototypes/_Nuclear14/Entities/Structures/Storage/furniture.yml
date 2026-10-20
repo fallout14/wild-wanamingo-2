@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClosetBase
-  id: N14FurnitureWashingmachine
+  id: F14FurnitureWashingmachine
   name: washing machine
   description: wishy washy.
   components:
@@ -25,8 +25,8 @@
     noRot: false
 
 - type: entity
-  parent: N14FurnitureWashingmachine
-  id: N14FurnitureWashingmachineIndustrial
+  parent: F14FurnitureWashingmachine
+  id: F14FurnitureWashingmachineIndustrial
   suffix: Industrial
   components:
   - type: Physics  # spawn state
@@ -37,8 +37,8 @@
 # Safes
 
 - type: entity
-  parent: N14ClosetBaseW
-  id: N14ClosetSafe
+  parent: F14ClosetBaseW
+  id: F14ClosetSafe
   name: safe
   description: Might be filled with valuables.
   components:
@@ -46,23 +46,23 @@
     sprite: Nuclear14/Structures/Storage/Furniture/safe.rsi
 
 - type: entity
-  parent: [ N14ClosetSafe, N14BaseMilitaryStorageFill ]
-  id: N14LootClosetSafe
+  parent: [ F14ClosetSafe, F14BaseMilitaryStorageFill ]
+  id: F14LootClosetSafe
   suffix: Loot, Random Military
 
 - type: entity
-  parent: [ N14ClosetSafe, N14StorageFillCurrencyFill ]
-  id: N14LootClosetSafeCurrency
+  parent: [ F14ClosetSafe, F14StorageFillCurrencyFill ]
+  id: F14LootClosetSafeCurrency
   suffix: Loot, Currency one stack random
 
 - type: entity
-  parent: [ N14ClosetSafe, N14StorageFillSafePrewarFill ]
-  id: N14LootClosetSafePrewar
+  parent: [ F14ClosetSafe, F14StorageFillSafePrewarFill ]
+  id: F14LootClosetSafePrewar
   suffix: Loot, safe pre-war
 
 - type: entity
-  parent: N14ClosetSafe
-  id: N14ClosetSafeSpinner
+  parent: F14ClosetSafe
+  id: F14ClosetSafeSpinner
   suffix: spinner
   components:
   - type: Sprite

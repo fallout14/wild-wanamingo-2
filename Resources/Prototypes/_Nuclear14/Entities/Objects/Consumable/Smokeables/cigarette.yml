@@ -3,7 +3,7 @@
 
 - type: entity
   parent: Cigarette
-  id: N14Cigarette
+  id: F14Cigarette
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi
@@ -11,7 +11,7 @@
     scale: 0.5, 0.5
   - type: Tag
     tags:
-      - MisfitsSuperMutantWearable
+      - F14SuperMutantWearable
       - Cigarette
       - Trash
   - type: SpaceGarbage
@@ -23,8 +23,8 @@
     size: Tiny
 
 - type: entity
-  parent: N14Cigarette
-  id: N14CigaretteSpent
+  parent: F14Cigarette
+  id: F14CigaretteSpent
   suffix: spent
   components:
   - type: Sprite
@@ -33,14 +33,14 @@
     state: Burnt
   - type: Tag
     tags:
-      - MisfitsSuperMutantWearable
+      - F14SuperMutantWearable
       - Cigarette
       - Trash
       - Burnt
 
 - type: entity
-  parent: N14Cigarette
-  id: N14CigaretteKool
+  parent: F14Cigarette
+  id: F14CigaretteKool
   description: A Kool brand cigarette.
   suffix: kool
   components:
@@ -50,14 +50,14 @@
     sprite: Nuclear14/Objects/Consumable/Smokeables/Cigarettes/kool.rsi
 
 - type: entity
-  parent: N14CigaretteKool
-  id: N14CigaretteSalem
+  parent: F14CigaretteKool
+  id: F14CigaretteSalem
   description: A Salem brand cigarette.
   suffix: salem
 
 - type: entity
-  parent: N14Cigarette
-  id: N14CigaretteMarlboro
+  parent: F14Cigarette
+  id: F14CigaretteMarlboro
   description: A Marlboro brand cigarette.
   suffix: marlboro
   components:
@@ -67,8 +67,8 @@
     sprite: Nuclear14/Objects/Consumable/Smokeables/Cigarettes/marl.rsi
 
 - type: entity
-  parent: N14Cigarette
-  id: N14CigaretteRepublic
+  parent: F14Cigarette
+  id: F14CigaretteRepublic
   description: A Republic brand cigarette.
   suffix: republic
   components:
@@ -78,8 +78,8 @@
     sprite: Nuclear14/Objects/Consumable/Smokeables/Cigarettes/republic.rsi
 
 - type: entity
-  parent: N14Cigarette
-  id: N14CigaretteRollie
+  parent: F14Cigarette
+  id: F14CigaretteRollie
   description: A roll up cigarette.
   suffix: rollie
   components:
@@ -89,8 +89,8 @@
     sprite: Nuclear14/Objects/Consumable/Smokeables/Cigarettes/rollie.rsi
 
 - type: entity
-  parent: N14Cigarette
-  id: N14CigaretteWinston
+  parent: F14Cigarette
+  id: F14CigaretteWinston
   description: A Winston brand cigarette.
   suffix: winston
   components:

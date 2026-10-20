@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Machines/grill.yml
 
 - type: entity
-  id: N14CookingStove
+  id: F14CookingStove
   parent: KitchenElectricGrill
   name: stove
   description: A pre-war stove for cooking things.
@@ -67,8 +67,8 @@
       path: /Audio/Misfits/Machines/grill.ogg
 
 - type: entity
-  id: N14CookingStoveWide
-  parent: N14CookingStove
+  id: F14CookingStoveWide
+  parent: F14CookingStove
   suffix: wide
   components:
   - type: Sprite
@@ -87,8 +87,8 @@
           High: { visible: true, state: stove_wide_on }
 
 - type: entity
-  parent: N14CookingStove
-  id: N14KitchenGrill
+  parent: F14CookingStove
+  id: F14KitchenGrill
   name: propane grill
   description: A microwave? No, a real man cooks steaks on a grill!
   components:
@@ -132,8 +132,8 @@
           High: { visible: true, state: propane }
 
 - type: entity
-  parent: N14KitchenGrill
-  id: N14KitchenGrillWide
+  parent: F14KitchenGrill
+  id: F14KitchenGrillWide
   suffix: wide
   components:
   - type: Sprite

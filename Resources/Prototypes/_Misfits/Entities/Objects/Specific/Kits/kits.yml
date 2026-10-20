@@ -2,8 +2,8 @@
 
 - type: entity
   name: lieutenant's commissar kit
-  parent: N14KitBase
-  id: MisfitsKitNCR_LTCommissar
+  parent: F14KitBase
+  id: F14KitNCRLTCommissar
   description: A crate containing all an NCR Commissar needs to execute their tro- duties.
   components:
   - type: Sprite
@@ -12,22 +12,22 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsClothingOuterNCRCommissarPlate
-      - id: N14ClothingBeltNCR
-      - id: MisfitsNCRCommissarSabre
-      - id: MisfitsClothingNeckNCRCommissarJacket
-      - id: N14WeaponLaserdotDesertEagle44
-      - id: N14MagazinePistol44
+      - id: F14ClothingOuterNCRCommissarPlate
+      - id: F14ClothingBeltNCR
+      - id: F14NCRCommissarSabre
+      - id: F14ClothingNeckNCRCommissarJacket
+      - id: F14WeaponLaserdotDesertEagle44
+      - id: F14MagazinePistol44
         amount: 4
-      - id: MisfitsClothingMaskCommissar
-      - id: MisfitsClothingHeadHatNCRCommissarHat
-      - id: N14BoxCardboardMREBoxCFilled
-      - id: N14Stimpak
-      - id: N14SuperStimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
+      - id: F14ClothingMaskCommissar
+      - id: F14ClothingHeadHatNCRCommissarHat
+      - id: F14BoxCardboardMREBoxCFilled
+      - id: F14Stimpak
+      - id: F14SuperStimpak
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
         amount: 2
-      - id: N14Flare
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
@@ -35,8 +35,8 @@
 
 - type: entity
   name: ranger sniper kit
-  parent: N14KitBase
-  id: MisfitsKitSniperRanger
+  parent: F14KitBase
+  id: F14KitSniperRanger
   description: A crate containing advanced weaponry for members of the Rangers.
   components:
   - type: Sprite
@@ -45,15 +45,15 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingBeltNCRPouches
-      - id: MisfitsWeaponRifle308SniperRifle
-      - id: MisfitsMagazine308RifleSniper
+      - id: F14ClothingBeltNCRPouches
+      - id: F14WeaponRifle308SniperRifle
+      - id: F14Magazine308RifleSniper
         amount: 3
-      - id: N14MagazineBox308
-      - id: N14Stimpak
-      - id: N14Stimpak
-      - id: N14BoxCardboardMREBoxKFilled
-      - id: N14CombatKnife
+      - id: F14MagazineBox308
+      - id: F14Stimpak
+      - id: F14Stimpak
+      - id: F14BoxCardboardMREBoxKFilled
+      - id: F14CombatKnife
     sound:
       path: /Audio/Effects/unwrap.ogg
 
@@ -61,8 +61,8 @@
 
 - type: entity
   name: BoS Senior Knight Ballistic Kit
-  parent: N14KitBase
-  id: MisfitsKitMBoS_SKniBal
+  parent: F14KitBase
+  id: F14KitMBoSSKniBal
   description: A crate containing everything a member of the Brotherhood might need.
   components:
   - type: Sprite
@@ -71,23 +71,23 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponRifle5mmCarbine
-      - id: MisfitsMagazineCarbine5mm
+      - id: F14WeaponRifle5mmCarbine
+      - id: F14MagazineCarbine5mm
         amount: 3
-      - id: N14WeaponPistol12mm
-      - id: N14MagazinePistol12mm
+      - id: F14WeaponPistol12mm
+      - id: F14MagazinePistol12mm
         amount: 2
-      - id: N14CleanGauze10
-      - id: N14Stimpak
-      - id: N14BoxCardboardMREBoxKFilled
-      - id: N14ClothingOuterCombatArmorSeniorBOS
-      - id: MisfitsGrenadeFragDefensive # #Misfits Add - faction council Senior Knight ordnance
+      - id: F14CleanGauze10
+      - id: F14Stimpak
+      - id: F14BoxCardboardMREBoxKFilled
+      - id: F14ClothingOuterCombatArmorSeniorBOS
+      - id: F14GrenadeFragDefensive # #Misfits Add - faction council Senior Knight ordnance
       - id: EmpGrenade
 
 - type: entity
   name: BoS Senior Knight Laser Kit
-  parent: N14KitBase
-  id: MisfitsKitMBoS_SKniLas
+  parent: F14KitBase
+  id: F14KitMBoSSKniLas
   description: A crate containing everything a member of the Brotherhood might need.
   components:
   - type: Sprite
@@ -96,23 +96,23 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponLaserRifle
-      - id: MisfitsMicrofusionCell
+      - id: F14WeaponLaserRifle
+      - id: F14MicrofusionCell
         amount: 1
-      - id: N14WeaponPistol12mm
-      - id: N14MagazinePistol12mm
+      - id: F14WeaponPistol12mm
+      - id: F14MagazinePistol12mm
         amount: 2
-      - id: N14CleanGauze10
-      - id: N14Stimpak
-      - id: N14BoxCardboardMREBoxKFilled
-      - id: N14ClothingOuterCombatArmorSeniorBOS
-      - id: MisfitsGrenadeFragDefensive # #Misfits Add - faction council Senior Knight ordnance
+      - id: F14CleanGauze10
+      - id: F14Stimpak
+      - id: F14BoxCardboardMREBoxKFilled
+      - id: F14ClothingOuterCombatArmorSeniorBOS
+      - id: F14GrenadeFragDefensive # #Misfits Add - faction council Senior Knight ordnance
       - id: EmpGrenade
 
 - type: entity
   name: BoS Recon Knight Kit
-  parent: N14KitBase
-  id: MisfitsKitMBoS_Recon
+  parent: F14KitBase
+  id: F14KitMBoSRecon
   description: A crate containing everything a recon knight may need.
   components:
   - type: Sprite
@@ -121,21 +121,21 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponRevolver44Magnum
-      - id: MisfitsSpeedLoader44Magnum
+      - id: F14WeaponRevolver44Magnum
+      - id: F14SpeedLoader44Magnum
         amount: 2
-      - id: MisfitsAmmoBox44Magnum
-      - id: N14CleanGauze10
-      - id: N14Stimpak
-      - id: N14BoxCardboardMREBoxKFilled
-      - id: N14ClothingOuterMidwestReconArmor
-      - id: N14ClothingHeadHatBrotherhoodMidwestHelmetRecon
+      - id: F14AmmoBox44Magnum
+      - id: F14CleanGauze10
+      - id: F14Stimpak
+      - id: F14BoxCardboardMREBoxKFilled
+      - id: F14ClothingOuterMidwestReconArmor
+      - id: F14ClothingHeadHatBrotherhoodMidwestHelmetRecon
       - id: SmokeGrenade # #Misfits Add - faction council Recon Knight ordnance
 
 - type: entity
   name: BoS Paladin Enclave Slayer Kit
-  parent: N14KitBase
-  id: MisfitsKitMBoS_PalSlay
+  parent: F14KitBase
+  id: F14KitMBoSPalSlay
   description: A crate containing everything a member of the Brotherhood might need.
   components:
   - type: Sprite
@@ -144,10 +144,10 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponLaserPistol
-      - id: N14PowerCellSmall
+      - id: F14WeaponLaserPistol
+      - id: F14PowerCellSmall
         amount: 4
-      - id: N14CleanGauze10
-      - id: N14Stimpak
+      - id: F14CleanGauze10
+      - id: F14Stimpak
         amount: 2
-      - id: N14BoxCardboardMREBoxKFilled
+      - id: F14BoxCardboardMREBoxKFilled

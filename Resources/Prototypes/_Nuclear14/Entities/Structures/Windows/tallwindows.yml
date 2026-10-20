@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14WindowTallBase
+  id: F14WindowTallBase
   name: window frame
   abstract: true
   components:
@@ -46,8 +46,8 @@
         - TableLayer
 
 - type: entity
-  parent: N14WindowBase
-  id: N14WindowTall
+  parent: F14WindowBase
+  id: F14WindowTall
   description: A window for seeing into places.
   name: window
   categories: [ HideSpawnMenu ]
@@ -90,14 +90,14 @@
             max: 2
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14WindowTallBroken:
+          F14WindowTallBroken:
             min: 1
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
 - type: entity
-  id: N14WindowTallBroken
+  id: F14WindowTallBroken
   name: broken glass
   description: Broken remains of a window.
   categories: [ HideSpawnMenu ]
@@ -165,8 +165,8 @@
     damageContainer: Inorganic
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowBrickTall
+  parent: F14WindowTallBase
+  id: F14WindowBrickTall
   categories: [ HideSpawnMenu ]
   suffix: brick
   components:
@@ -176,8 +176,8 @@
     state: brick
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowBrickTallAlt
+  parent: F14WindowTallBase
+  id: F14WindowBrickTallAlt
   categories: [ HideSpawnMenu ]
   suffix: brick alt
   components:
@@ -209,8 +209,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowBrickGrayTall
+  parent: F14WindowTallBase
+  id: F14WindowBrickGrayTall
   categories: [ HideSpawnMenu ]
   suffix:  brick gray
   components:
@@ -242,8 +242,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowConcreteTall
+  parent: F14WindowTallBase
+  id: F14WindowConcreteTall
   categories: [ HideSpawnMenu ]
   suffix: concrete
   components:
@@ -275,8 +275,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowConcreteTallAlt
+  parent: F14WindowTallBase
+  id: F14WindowConcreteTallAlt
   categories: [ HideSpawnMenu ]
   suffix: concrete alt
   components:
@@ -308,8 +308,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowDungeonTall
+  parent: F14WindowTallBase
+  id: F14WindowDungeonTall
   categories: [ HideSpawnMenu ]
   suffix: dungeon
   components:
@@ -341,8 +341,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowDungeonTallAlt
+  parent: F14WindowTallBase
+  id: F14WindowDungeonTallAlt
   categories: [ HideSpawnMenu ]
   suffix: dungeon alt
   components:
@@ -374,8 +374,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowMetalTall
+  parent: F14WindowTallBase
+  id: F14WindowMetalTall
   categories: [ HideSpawnMenu ]
   suffix: metal
   components:
@@ -407,8 +407,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowMetalReinforcedTall
+  parent: F14WindowTallBase
+  id: F14WindowMetalReinforcedTall
   categories: [ HideSpawnMenu ]
   suffix: metal reinforced
   components:
@@ -440,8 +440,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowScrapTall
+  parent: F14WindowTallBase
+  id: F14WindowScrapTall
   categories: [ HideSpawnMenu ]
   suffix: scrap
   components:
@@ -473,8 +473,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowScrapBlueTall
+  parent: F14WindowTallBase
+  id: F14WindowScrapBlueTall
   categories: [ HideSpawnMenu ]
   suffix: scrap blue
   components:
@@ -506,8 +506,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowScrapRedTall
+  parent: F14WindowTallBase
+  id: F14WindowScrapRedTall
   categories: [ HideSpawnMenu ]
   suffix: scrap red
   components:
@@ -539,8 +539,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowScrapWhiteTall
+  parent: F14WindowTallBase
+  id: F14WindowScrapWhiteTall
   categories: [ HideSpawnMenu ]
   suffix: scrap white
   components:
@@ -572,8 +572,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowSidingTall
+  parent: F14WindowTallBase
+  id: F14WindowSidingTall
   categories: [ HideSpawnMenu ]
   suffix: siding
   components:
@@ -605,8 +605,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowSidingBlueTall
+  parent: F14WindowTallBase
+  id: F14WindowSidingBlueTall
   categories: [ HideSpawnMenu ]
   suffix: siding blue
   components:
@@ -638,8 +638,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowSidingGreenTall
+  parent: F14WindowTallBase
+  id: F14WindowSidingGreenTall
   categories: [ HideSpawnMenu ]
   suffix: siding green
   components:
@@ -671,8 +671,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowSidingRedTall
+  parent: F14WindowTallBase
+  id: F14WindowSidingRedTall
   categories: [ HideSpawnMenu ]
   suffix: siding red
   components:
@@ -704,8 +704,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowVaultTall
+  parent: F14WindowTallBase
+  id: F14WindowVaultTall
   categories: [ HideSpawnMenu ]
   suffix: vault
   components:
@@ -737,8 +737,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowWoodTall
+  parent: F14WindowTallBase
+  id: F14WindowWoodTall
   categories: [ HideSpawnMenu ]
   suffix: wood
   components:
@@ -770,8 +770,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14WindowTallBase
-  id: N14WindowWoodTallAlt
+  parent: F14WindowTallBase
+  id: F14WindowWoodTallAlt
   categories: [ HideSpawnMenu ]
   suffix: wood alt
   components:

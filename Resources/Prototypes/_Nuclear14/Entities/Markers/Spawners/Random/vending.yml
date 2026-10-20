@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Markers/Spawners/Random/vending.yml
 
 - type: entity
-  id: N14RandomVending
+  id: F14RandomVending
   name: random vending machine spawner
   suffix: N14, Any
   parent: MarkerBase
@@ -14,8 +14,8 @@
         state: any
   - type: RandomSpawner
     prototypes:
-      - N14VendingMachineNukaColaNewFilled
-      - N14VendingMachineVimFilled
-      - N14VendingMachineCigaretteFilled
-      - N14VendingMachineCigaretteFilledRepublic
+      - F14VendingMachineNukaColaNewFilled
+      - F14VendingMachineVimFilled
+      - F14VendingMachineCigaretteFilled
+      - F14VendingMachineCigaretteFilledRepublic
     chance: 1

@@ -4,7 +4,7 @@
 - type: entity
   name: base shield
   parent: BaseItem
-  id: N14BaseShield
+  id: F14BaseShield
   description: Debug item, you shouldn't see it!
   abstract: true
   components:
@@ -34,7 +34,7 @@
               acts: [ "Destruction" ]
             - !type:SpawnEntitiesBehavior
               spawn:
-                N14Scrap:
+                F14Scrap:
                   min: 3
                   max: 3
     - type: Blocking
@@ -70,14 +70,14 @@
 
 - type: entity
   name: light metal shield
-  parent: N14BaseShield
-  id: N14ShieldMetalLight
+  parent: F14BaseShield
+  id: F14ShieldMetalLight
   description: A sheet of metal with some bolts and welds here and there, it can protect you from some damage.
 
 - type: entity
   name: heavy metal shield
-  parent: N14BaseShield
-  id: N14ShieldMetalHeavy
+  parent: F14BaseShield
+  id: F14ShieldMetalHeavy
   description: A large chunk of metal with screws and fine welds, it can protect you from beast and gunfire.
   components:
     - type: Sprite
@@ -97,7 +97,7 @@
               acts: [ "Destruction" ]
             - !type:SpawnEntitiesBehavior
               spawn:
-                N14Scrap:
+                F14Scrap:
                   min: 5
                   max: 5
     - type: Blocking
@@ -131,7 +131,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14InsectShield
+  id: F14InsectShield
   name: insect shield
   description: A shield made from various pieces of insects.
   components:

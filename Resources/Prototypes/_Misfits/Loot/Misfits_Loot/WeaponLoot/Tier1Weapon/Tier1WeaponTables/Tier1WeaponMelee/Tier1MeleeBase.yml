@@ -1,39 +1,39 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier1Weapon/Tier1WeaponTables/Tier1WeaponMelee/Tier1MeleeBase.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier1_MeleeAll
+  id: F14WeaponLootTier1MeleeAll
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier1_MeleeBlunt
+          tableId: F14WeaponLootTier1MeleeBlunt
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier1_MeleeSharp
+          tableId: F14WeaponLootTier1MeleeSharp
 #      - !type:NestedSelector
 #          tableId: M14WeaponLootTier1_MeleeOther
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier1_MeleeBlunt
+  id: F14WeaponLootTier1MeleeBlunt
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier1_MeleeBluntOneHanded
+          tableId: F14WeaponLootTier1MeleeBluntOneHanded
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier1_MeleeBluntTwoHanded
+          tableId: F14WeaponLootTier1MeleeBluntTwoHanded
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier1_MeleeSharp
+  id: F14WeaponLootTier1MeleeSharp
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier1_MeleeSharpOneHanded
+          tableId: F14WeaponLootTier1MeleeSharpOneHanded
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier1_MeleeSharpTwoHanded
+          tableId: F14WeaponLootTier1MeleeSharpTwoHanded
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier1_MeleeOther
+  id: F14WeaponLootTier1MeleeOther
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier1_MeleeOtherOneHanded
+          tableId: F14WeaponLootTier1MeleeOtherOneHanded
 #      - !type:NestedSelector
 #          tableId: M14WeaponLootTier1_MeleeOtherTwoHanded

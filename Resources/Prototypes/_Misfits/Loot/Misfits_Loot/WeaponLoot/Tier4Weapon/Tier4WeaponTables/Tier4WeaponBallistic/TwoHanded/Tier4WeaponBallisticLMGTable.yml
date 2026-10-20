@@ -1,12 +1,12 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier4Weapon/Tier4WeaponTables/Tier4WeaponBallistic/TwoHanded/Tier4WeaponBallisticLMGTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_GunsBulletLMG
+  id: F14WeaponLootTier4GunsBulletLMG
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponLMGchinese # 776
+      id: F14WeaponLMGchinese # 776
       weight: 1
     - !type:EntSelector
-      id: N14WeaponLMG # 556
+      id: F14WeaponLMG # 556
       weight: 1

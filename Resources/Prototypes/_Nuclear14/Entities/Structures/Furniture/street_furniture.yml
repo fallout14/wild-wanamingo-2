@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Furniture/street_furniture.yml
 
 - type: entity
-  id: N14SignFloorBase
+  id: F14SignFloorBase
   name: sign
   description: It's a sign!
   suffix: Mapping
@@ -48,8 +48,8 @@
 # Billboards
 
 - type: entity
-  id: N14StreetFurnitureBillboardNukacola1
-  parent: N14SignFloorBase
+  id: F14StreetFurnitureBillboardNukacola1
+  parent: F14SignFloorBase
   name: billboard
   description: A billboard advertising nuka cola.
   components:
@@ -80,8 +80,8 @@
         - WallLayer
 
 - type: entity
-  id: N14StreetFurnitureBillboardNukacola1worn
-  parent: N14StreetFurnitureBillboardNukacola1
+  id: F14StreetFurnitureBillboardNukacola1worn
+  parent: F14StreetFurnitureBillboardNukacola1
   description: A billboard advertising nuka cola.
   components:
   - type: Sprite
@@ -91,8 +91,8 @@
     - state: nukacola1-worn
 
 - type: entity
-  id: N14StreetFurnitureBillboardMassfusion1
-  parent: N14StreetFurnitureBillboardNukacola1
+  id: F14StreetFurnitureBillboardMassfusion1
+  parent: F14StreetFurnitureBillboardNukacola1
   description: A billboard advertising the Mass Fusion company.
   components:
   - type: Sprite
@@ -102,8 +102,8 @@
     - state: massfusion1
 
 - type: entity
-  id: N14StreetFurnitureBillboardMassfusion1worn
-  parent: N14StreetFurnitureBillboardNukacola1
+  id: F14StreetFurnitureBillboardMassfusion1worn
+  parent: F14StreetFurnitureBillboardNukacola1
   description: A billboard advertising the Mass Fusion company.
   components:
   - type: Sprite
@@ -113,8 +113,8 @@
     - state: massfusion1-worn
 
 - type: entity
-  id: N14StreetFurnitureBillboardRedrocket1
-  parent: N14StreetFurnitureBillboardNukacola1
+  id: F14StreetFurnitureBillboardRedrocket1
+  parent: F14StreetFurnitureBillboardNukacola1
   description: A billboard advertising the Red Rocket fuel company.
   components:
   - type: Sprite
@@ -124,8 +124,8 @@
     - state: redrocket1
 
 - type: entity
-  id: N14StreetFurnitureBillboardRedrocket1worn
-  parent: N14StreetFurnitureBillboardNukacola1
+  id: F14StreetFurnitureBillboardRedrocket1worn
+  parent: F14StreetFurnitureBillboardNukacola1
   description: A billboard advertising the Red Rocket fuel company.
   components:
   - type: Sprite
@@ -135,8 +135,8 @@
     - state: redrocket1-worn
 
 - type: entity
-  parent: N14StreetFurnitureBillboardNukacola1
-  id: N14StreetFurnitureBillboardHorizonAirlines
+  parent: F14StreetFurnitureBillboardNukacola1
+  id: F14StreetFurnitureBillboardHorizonAirlines
   description: A billboard advertising the Horizon Airlines company.
   components:
   - type: Sprite
@@ -145,8 +145,8 @@
     - state: horizonairlines
 
 - type: entity
-  parent: N14StreetFurnitureBillboardHorizonAirlines
-  id: N14StreetFurnitureBillboardHorizonAirlinesWorn
+  parent: F14StreetFurnitureBillboardHorizonAirlines
+  id: F14StreetFurnitureBillboardHorizonAirlinesWorn
   components:
   - type: Sprite
     layers:
@@ -154,8 +154,8 @@
     - state: horizonairlines-worn
 
 - type: entity
-  parent: N14StreetFurnitureBillboardNukacola1
-  id: N14StreetFurnitureBillboardSchoelt
+  parent: F14StreetFurnitureBillboardNukacola1
+  id: F14StreetFurnitureBillboardSchoelt
   description: A billboard advertising the Schoelt propane company.
   components:
   - type: Sprite
@@ -166,8 +166,8 @@
 # Floor Signs
 
 - type: entity
-  parent: N14SignFloorBase
-  id: N14SignFloorBazaar
+  parent: F14SignFloorBase
+  id: F14SignFloorBazaar
   suffix: bazaar
   description: A sign for a bazaar. How bizarre!
   components:
@@ -178,8 +178,8 @@
     state: bazaar
 
 - type: entity
-  parent: N14SignFloorBase
-  id: N14SignFloorOpen
+  parent: F14SignFloorBase
+  id: F14SignFloorOpen
   suffix: we are open
   description: We are open!
   components:
@@ -204,8 +204,8 @@
 # Base floor sign
 
 - type: entity
-  parent: N14SignFloorBase
-  id: N14SignStreetBase
+  parent: F14SignFloorBase
+  id: F14SignStreetBase
   name: street sign
   description: It's a sign!
   abstract: true
@@ -218,8 +218,8 @@
     noRot: false
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetInterstate
+  parent: F14SignStreetBase
+  id: F14SignStreetInterstate
   name: interstate sign
   suffix: 6 directions
   description: An old interstate road sign.
@@ -230,8 +230,8 @@
     state: interstate
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetInterstateShot
+  parent: F14SignStreetBase
+  id: F14SignStreetInterstateShot
   name: interstate sign
   suffix: shot
   description: An old interstate road sign that's been shot.
@@ -242,8 +242,8 @@
     state: interstate80_shot
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetStop
+  parent: F14SignStreetBase
+  id: F14SignStreetStop
   name: stop sign
   suffix: 4 directions
   description: An old road stop sign.
@@ -254,8 +254,8 @@
     state: stop
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetNoturning
+  parent: F14SignStreetBase
+  id: F14SignStreetNoturning
   name: no turning sign
   suffix: 4 directions
   description: An old no turning sign.
@@ -266,8 +266,8 @@
     state: noturn
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetNoparking
+  parent: F14SignStreetBase
+  id: F14SignStreetNoparking
   name: no parking sign
   description: An old no parking sign.
   components:
@@ -277,8 +277,8 @@
     state: noparking
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetSign
+  parent: F14SignStreetBase
+  id: F14SignStreetSign
   name: street sign
   description: An old street sign
   components:
@@ -288,8 +288,8 @@
     state: street
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetOneway
+  parent: F14SignStreetBase
+  id: F14SignStreetOneway
   name: one way sign
   suffix: 2 directions
   description: An old one way road sign.
@@ -300,8 +300,8 @@
     state: direction
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetBusstop
+  parent: F14SignStreetBase
+  id: F14SignStreetBusstop
   name: bus stop sign
   description: An old bus stop sign.
   components:
@@ -311,8 +311,8 @@
     state: busstop
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetRailcrossing
+  parent: F14SignStreetBase
+  id: F14SignStreetRailcrossing
   name: rail crossing sign
   description: An old rail crossing sign.
   components:
@@ -322,8 +322,8 @@
     state: railcrossing
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetOnedirection
+  parent: F14SignStreetBase
+  id: F14SignStreetOnedirection
   name: ahead only sign
   suffix: 4 directions
   description: An old one direction sign.
@@ -334,8 +334,8 @@
     state: onlydir
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetSpeedlimit
+  parent: F14SignStreetBase
+  id: F14SignStreetSpeedlimit
   name: speed limit sign
   suffix: 4 directions
   description: An old speed limit sign.
@@ -346,8 +346,8 @@
     state: speed
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetWarning
+  parent: F14SignStreetBase
+  id: F14SignStreetWarning
   name: warning sign
   suffix: 4 directions
   description: An old road warning sign.
@@ -358,8 +358,8 @@
     state: warnings
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetTurn
+  parent: F14SignStreetBase
+  id: F14SignStreetTurn
   name: turn sign
   suffix: 6 directions
   description: An old road turn sign.
@@ -370,8 +370,8 @@
     state: turn
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetExit
+  parent: F14SignStreetBase
+  id: F14SignStreetExit
   name: exit sign
   suffix: 2 directions
   description: An old road exit sign.
@@ -383,8 +383,8 @@
     state: exit
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetNopedestrians
+  parent: F14SignStreetBase
+  id: F14SignStreetNopedestrians
   name: no pedestrians sign
   description: An old no pedestrians sign.
   components:
@@ -394,8 +394,8 @@
     state: nopedestrian
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetMerge
+  parent: F14SignStreetBase
+  id: F14SignStreetMerge
   name: merge ahead sign
   description: An old merge ahead sign.
   components:
@@ -405,8 +405,8 @@
     state: merge
 
 - type: entity
-  parent: N14SignStreetBase
-  id: N14SignStreetSnake
+  parent: F14SignStreetBase
+  id: F14SignStreetSnake
   name: snake ahead sign
   description: An old road curves ahead sign.
   components:
@@ -418,8 +418,8 @@
 # Street Poles
 
 - type: entity
-  parent: N14SignFloorBase
-  id: N14StreetPowerPoleRight
+  parent: F14SignFloorBase
+  id: F14StreetPowerPoleRight
   name: power pole
   suffix: right
   description: An old wooden post mounted transformer for power distribution.
@@ -431,8 +431,8 @@
     state: powerpole1
 
 - type: entity
-  parent: N14StreetPowerPoleRight
-  id: N14StreetPowerPoleRightLeft
+  parent: F14StreetPowerPoleRight
+  id: F14StreetPowerPoleRightLeft
   suffix: left
   components:
   - type: Physics  # spawn state
@@ -444,8 +444,8 @@
 
 - type: entity
   abstract: true
-  parent: N14StreetPowerPoleRight
-  id: N14BaseLightStructure
+  parent: F14StreetPowerPoleRight
+  id: F14BaseLightStructure
   name: lamp post
   description: Let there be light.
   components:
@@ -461,8 +461,8 @@
       - Toggle
 
 - type: entity
-  parent: N14BaseLightStructure
-  id: N14LightStreetLampPostAlwaysPoweredRight
+  parent: F14BaseLightStructure
+  id: F14LightStreetLampPostAlwaysPoweredRight
   suffix: Always Powered, Right
   components:
   - type: Physics  # spawn state
@@ -481,8 +481,8 @@
     offset: "0, -0.5"
 
 - type: entity
-  parent: N14LightStreetLampPostAlwaysPoweredRight
-  id: N14LightStreetLampPostAlwaysPoweredLeft
+  parent: F14LightStreetLampPostAlwaysPoweredRight
+  id: F14LightStreetLampPostAlwaysPoweredLeft
   description: This light doesn't have an obvious power source.
   suffix: Always Powered, Left
   components:
@@ -497,8 +497,8 @@
     state: on
 
 - type: entity
-  parent: N14BaseLightStructure
-  id: N14LightStreetLampPostPoweredEmptyRight
+  parent: F14BaseLightStructure
+  id: F14LightStreetLampPostPoweredEmptyRight
   suffix: Empty, Right
   components:
   - type: Physics  # spawn state
@@ -520,8 +520,8 @@
       path: "/Audio/Machines/light_tube_on.ogg"
 
 - type: entity
-  parent: N14LightStreetLampPostPoweredEmptyRight
-  id: N14LightStreetLampPostPoweredEmptyLeft
+  parent: F14LightStreetLampPostPoweredEmptyRight
+  id: F14LightStreetLampPostPoweredEmptyLeft
   suffix: Empty, Left
   components:
   - type: Physics  # spawn state
@@ -531,8 +531,8 @@
     state: off
 
 - type: entity
-  parent: N14LightStreetLampPostPoweredEmptyRight
-  id: N14LightStreetLampPostPoweredRight
+  parent: F14LightStreetLampPostPoweredEmptyRight
+  id: F14LightStreetLampPostPoweredRight
   suffix: Powered, Right
   description: A light fixture. Draws power and produces light when equipped with a light tube.
   components:
@@ -547,8 +547,8 @@
     hasLampOnSpawn: LightTube
 
 - type: entity
-  parent: N14LightStreetLampPostPoweredEmptyLeft
-  id: N14LightStreetLampPostPoweredLeft
+  parent: F14LightStreetLampPostPoweredEmptyLeft
+  id: F14LightStreetLampPostPoweredLeft
   suffix: Powered, Left
   description: A light fixture. Draws power and produces light when equipped with a light tube.
   components:
@@ -563,8 +563,8 @@
     hasLampOnSpawn: LightTube
 
 - type: entity
-  parent: N14LightStreetLampPostAlwaysPoweredRight
-  id: N14LightStreetLampPostRaiderAlwaysPoweredRight
+  parent: F14LightStreetLampPostAlwaysPoweredRight
+  id: F14LightStreetLampPostRaiderAlwaysPoweredRight
   suffix: Always Powered, Right
   components:
   - type: Physics  # spawn state
@@ -573,8 +573,8 @@
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight1_raider_right.rsi
 
 - type: entity
-  parent: N14LightStreetLampPostAlwaysPoweredLeft
-  id: N14LightStreetLampPostRaiderAlwaysPoweredLeft
+  parent: F14LightStreetLampPostAlwaysPoweredLeft
+  id: F14LightStreetLampPostRaiderAlwaysPoweredLeft
   suffix: Always Powered, Left
   components:
   - type: Physics  # spawn state
@@ -583,8 +583,8 @@
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight1_raider_left.rsi
 
 - type: entity
-  parent: N14LightStreetLampPostPoweredEmptyRight
-  id: N14LightStreetLampPostRaiderPoweredEmptyRight
+  parent: F14LightStreetLampPostPoweredEmptyRight
+  id: F14LightStreetLampPostRaiderPoweredEmptyRight
   suffix: Empty, Right
   components:
   - type: Physics  # spawn state
@@ -594,8 +594,8 @@
     state: off
 
 - type: entity
-  parent: N14LightStreetLampPostPoweredEmptyLeft
-  id: N14LightStreetLampPostRaiderPoweredEmptyLeft
+  parent: F14LightStreetLampPostPoweredEmptyLeft
+  id: F14LightStreetLampPostRaiderPoweredEmptyLeft
   suffix: Empty, Left
   components:
   - type: Physics  # spawn state
@@ -605,8 +605,8 @@
     state: off
 
 - type: entity
-  parent: [ N14LightStreetLampPostRaiderPoweredEmptyRight, N14LightStreetLampPostPoweredRight]
-  id: N14LightStreetLampPostRaiderPoweredRight
+  parent: [ F14LightStreetLampPostRaiderPoweredEmptyRight, F14LightStreetLampPostPoweredRight]
+  id: F14LightStreetLampPostRaiderPoweredRight
   suffix: Powered, Right
   components:
   - type: Physics  # spawn state
@@ -618,8 +618,8 @@
       map: [ "enum.PoweredLightLayers.Base" ]
 
 - type: entity
-  parent: [ N14LightStreetLampPostRaiderPoweredEmptyLeft, N14LightStreetLampPostPoweredLeft]
-  id: N14LightStreetLampPostRaiderPoweredLeft
+  parent: [ F14LightStreetLampPostRaiderPoweredEmptyLeft, F14LightStreetLampPostPoweredLeft]
+  id: F14LightStreetLampPostRaiderPoweredLeft
   suffix: Powered, Left
   components:
   - type: Physics  # spawn state
@@ -631,8 +631,8 @@
       map: [ "enum.PoweredLightLayers.Base" ]
 
 - type: entity
-  parent: N14LightStreetLampPostAlwaysPoweredRight
-  id: N14LightStreetLampPostAlwaysPoweredRight2
+  parent: F14LightStreetLampPostAlwaysPoweredRight
+  id: F14LightStreetLampPostAlwaysPoweredRight2
   suffix: Always Powered, Right
   components:
   - type: Physics  # spawn state
@@ -641,8 +641,8 @@
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_right.rsi
 
 - type: entity
-  parent: N14LightStreetLampPostAlwaysPoweredLeft
-  id: N14LightStreetLampPostAlwaysPoweredLeft2
+  parent: F14LightStreetLampPostAlwaysPoweredLeft
+  id: F14LightStreetLampPostAlwaysPoweredLeft2
   suffix: Always Powered, Left
   components:
   - type: Physics  # spawn state
@@ -651,8 +651,8 @@
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_left.rsi
 
 - type: entity
-  parent: N14LightStreetLampPostPoweredEmptyRight
-  id: N14LightStreetLampPostPoweredEmptyRight2
+  parent: F14LightStreetLampPostPoweredEmptyRight
+  id: F14LightStreetLampPostPoweredEmptyRight2
   suffix: Empty, Right
   components:
   - type: Physics  # spawn state
@@ -662,8 +662,8 @@
     state: off
 
 - type: entity
-  parent: N14LightStreetLampPostPoweredEmptyLeft
-  id: N14LightStreetLampPostPoweredEmptyLeft2
+  parent: F14LightStreetLampPostPoweredEmptyLeft
+  id: F14LightStreetLampPostPoweredEmptyLeft2
   suffix: Empty, Left
   components:
   - type: Physics  # spawn state
@@ -673,8 +673,8 @@
     state: off
 
 - type: entity
-  parent: N14LightStreetLampPostPoweredRight
-  id: N14LightStreetLampPostPoweredRight2
+  parent: F14LightStreetLampPostPoweredRight
+  id: F14LightStreetLampPostPoweredRight2
   suffix: Powered, Right
   components:
   - type: Physics  # spawn state
@@ -687,8 +687,8 @@
       map: [ "enum.PoweredLightLayers.Base" ]
 
 - type: entity
-  parent: N14LightStreetLampPostPoweredLeft
-  id: N14LightStreetLampPostPoweredLeft2
+  parent: F14LightStreetLampPostPoweredLeft
+  id: F14LightStreetLampPostPoweredLeft2
   suffix: Powered, Left
   components:
   - type: Physics  # spawn state
@@ -701,8 +701,8 @@
       map: [ "enum.PoweredLightLayers.Base" ]
 
 - type: entity
-  parent: N14LightStreetLampPostAlwaysPoweredRight
-  id: N14LightStreetLampPostRaiderAlwaysPoweredRight2
+  parent: F14LightStreetLampPostAlwaysPoweredRight
+  id: F14LightStreetLampPostRaiderAlwaysPoweredRight2
   suffix: Always Powered, Right
   components:
   - type: Physics  # spawn state
@@ -711,8 +711,8 @@
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_raider_right.rsi
 
 - type: entity
-  parent: N14LightStreetLampPostAlwaysPoweredLeft
-  id: N14LightStreetLampPostRaiderAlwaysPoweredLeft2
+  parent: F14LightStreetLampPostAlwaysPoweredLeft
+  id: F14LightStreetLampPostRaiderAlwaysPoweredLeft2
   suffix: Always Powered, Left
   components:
   - type: Physics  # spawn state
@@ -721,8 +721,8 @@
     sprite: Nuclear14/Structures/Furniture/Street_Furniture/streetlight2_raider_left.rsi
 
 - type: entity
-  parent: N14LightStreetLampPostPoweredEmptyRight
-  id: N14LightStreetLampPostRaiderPoweredEmptyRight2
+  parent: F14LightStreetLampPostPoweredEmptyRight
+  id: F14LightStreetLampPostRaiderPoweredEmptyRight2
   suffix: Empty, Right
   components:
   - type: Physics  # spawn state
@@ -732,8 +732,8 @@
     state: off
 
 - type: entity
-  parent: N14LightStreetLampPostPoweredEmptyLeft
-  id: N14LightStreetLampPostRaiderPoweredEmptyLeft2
+  parent: F14LightStreetLampPostPoweredEmptyLeft
+  id: F14LightStreetLampPostRaiderPoweredEmptyLeft2
   suffix: Empty, Left
   components:
   - type: Physics  # spawn state
@@ -743,8 +743,8 @@
     state: off
 
 - type: entity
-  parent: N14LightStreetLampPostPoweredRight
-  id: N14LightStreetLampPostRaiderPoweredRight2
+  parent: F14LightStreetLampPostPoweredRight
+  id: F14LightStreetLampPostRaiderPoweredRight2
   suffix: Powered, Right
   components:
   - type: Physics  # spawn state
@@ -757,8 +757,8 @@
       map: [ "enum.PoweredLightLayers.Base" ]
 
 - type: entity
-  parent: N14LightStreetLampPostPoweredLeft
-  id: N14LightStreetLampPostRaiderPoweredLeft2
+  parent: F14LightStreetLampPostPoweredLeft
+  id: F14LightStreetLampPostRaiderPoweredLeft2
   suffix: Powered, Left
   components:
   - type: Physics  # spawn state
@@ -774,7 +774,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14DecorStreetPayphone
+  id: F14DecorStreetPayphone
   name: payphone
   description: An old payphone
   components:
@@ -821,8 +821,8 @@
         - LowImpassable
 
 - type: entity
-  parent: N14DecorStreetPayphone
-  id: N14DecorStreetMailbox
+  parent: F14DecorStreetPayphone
+  id: F14DecorStreetMailbox
   name: mailbox
   description: An old mailbox
   components:
@@ -843,8 +843,8 @@
   - type: InteractionOutline
 
 - type: entity
-  parent: N14DecorStreetMailbox
-  id: N14DecorStreetMailboxWide
+  parent: F14DecorStreetMailbox
+  id: F14DecorStreetMailboxWide
   suffix: Wide
   name: mailbox
   description: An old wide mailbox
@@ -853,8 +853,8 @@
     state: mailbox
 
 - type: entity
-  parent: N14DecorStreetMailbox
-  id: N14DecorStreetTrashbin
+  parent: F14DecorStreetMailbox
+  id: F14DecorStreetTrashbin
   name: trash bin
   description: You get the feeling it hasn't been changed in awhile.
   components:
@@ -862,8 +862,8 @@
     state: trashbin
 
 - type: entity
-  parent: N14DecorStreetTrashbin
-  id: N14DecorStreetTrashbinDamaged
+  parent: F14DecorStreetTrashbin
+  id: F14DecorStreetTrashbinDamaged
   suffix: damaged, random
   components:
   - type: Sprite

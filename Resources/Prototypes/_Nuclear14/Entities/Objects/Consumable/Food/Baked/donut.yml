@@ -3,7 +3,7 @@
 
 - type: entity
   parent: FoodInjectableBase
-  id: N14CookedFoodDonutBase
+  id: F14CookedFoodDonutBase
   abstract: true
   description: Goes great with robust coffee.
   components:
@@ -36,8 +36,8 @@
 
 - type: entity
   name: plain donut
-  parent: N14CookedFoodDonutBase
-  id: N14CookedFoodDonutPlain
+  parent: F14CookedFoodDonutBase
+  id: F14CookedFoodDonutPlain
   components:
   - type: FlavorProfile
     flavors:
@@ -47,8 +47,8 @@
 
 - type: entity
   name: plain jelly-donut
-  parent: N14CookedFoodDonutBase
-  id: N14CookedFoodDonutJellyPlain
+  parent: F14CookedFoodDonutBase
+  id: F14CookedFoodDonutJellyPlain
   components:
   - type: FlavorProfile
     flavors:
@@ -66,8 +66,8 @@
 
 - type: entity
   name: donut
-  parent: N14CookedFoodDonutBase
-  id: N14CookedFoodDonutHomer
+  parent: F14CookedFoodDonutBase
+  id: F14CookedFoodDonutHomer
   components:
   - type: FlavorProfile
     flavors:
@@ -79,8 +79,8 @@
 
 - type: entity
   name: meat donut
-  parent: N14CookedFoodDonutBase
-  id: N14CookedFoodDonutMeat
+  parent: F14CookedFoodDonutBase
+  id: F14CookedFoodDonutMeat
   description: Tastes as gross as it looks.
   components:
   - type: FlavorProfile
@@ -95,8 +95,8 @@
 
 - type: entity
   name: pink donut
-  parent: N14CookedFoodDonutBase
-  id: N14CookedFoodDonutPink
+  parent: F14CookedFoodDonutBase
+  id: F14CookedFoodDonutPink
   description: Goes great with a soy latte.
   components:
   - type: FlavorProfile
@@ -109,8 +109,8 @@
 
 - type: entity
   name: apple donut
-  parent: N14CookedFoodDonutBase
-  id: N14CookedFoodDonutApple
+  parent: F14CookedFoodDonutBase
+  id: F14CookedFoodDonutApple
   description: Goes great with a shot of cinnamon schnapps.
   components:
   - type: FlavorProfile
@@ -123,8 +123,8 @@
 
 - type: entity
   name: caramel donut
-  parent: N14CookedFoodDonutBase
-  id: N14CookedFoodDonutCaramel
+  parent: F14CookedFoodDonutBase
+  id: F14CookedFoodDonutCaramel
   description: Goes great with a mug of hot coco.
   components:
   - type: Sprite
@@ -133,8 +133,8 @@
 
 - type: entity
   name: chocolate donut
-  parent: N14CookedFoodDonutBase
-  id: N14CookedFoodDonutChocolate
+  parent: F14CookedFoodDonutBase
+  id: F14CookedFoodDonutChocolate
   description: Goes great with a glass of warm milk.
   components:
   - type: FlavorProfile
@@ -153,8 +153,8 @@
 
 - type: entity
   name: jelly-donut
-  parent: N14CookedFoodDonutBase
-  id: N14CookedFoodDonutJellyHomer
+  parent: F14CookedFoodDonutBase
+  id: F14CookedFoodDonutJellyHomer
   description: You jelly?
   components:
   - type: Sprite
@@ -172,8 +172,8 @@
 
 - type: entity
   name: pink jelly-donut
-  parent: N14CookedFoodDonutBase
-  id: N14CookedFoodDonutJellyPink
+  parent: F14CookedFoodDonutBase
+  id: F14CookedFoodDonutJellyPink
   description: Goes great with a soy latte.
   components:
   - type: Sprite
@@ -191,8 +191,8 @@
 
 - type: entity
   name: apple jelly-donut
-  parent: N14CookedFoodDonutBase
-  id: N14CookedFoodDonutJellyApple
+  parent: F14CookedFoodDonutBase
+  id: F14CookedFoodDonutJellyApple
   description: Goes great with a shot of cinnamon schnapps.
   components:
   - type: Sprite
@@ -212,8 +212,8 @@
 
 - type: entity
   name: caramel jelly-donut
-  parent: N14CookedFoodDonutBase
-  id: N14CookedFoodDonutJellyCaramel
+  parent: F14CookedFoodDonutBase
+  id: F14CookedFoodDonutJellyCaramel
   description: Goes great with a mug of hot coco.
   components:
   - type: Sprite
@@ -229,8 +229,8 @@
 
 - type: entity
   name: chocolate jelly-donut
-  parent: N14CookedFoodDonutBase
-  id: N14CookedFoodDonutJellyChocolate
+  parent: F14CookedFoodDonutBase
+  id: F14CookedFoodDonutJellyChocolate
   description: Goes great with a glass of warm milk.
   components:
   - type: Sprite

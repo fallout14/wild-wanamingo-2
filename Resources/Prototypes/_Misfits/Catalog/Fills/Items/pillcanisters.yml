@@ -2,14 +2,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterAntibiotics
+  id: F14PillCanisterAntibiotics
   suffix: Antibiotics, 5
   components:
   - type: Label
     localizedLabel: misfits-label-antibiotics-20u
   - type: StorageFill
     contents:
-    - id: MisfitsPillAntibiotics
+    - id: F14PillAntibiotics
       amount: 5
 
 # ============================================================================
@@ -18,14 +18,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterRadShield
+  id: F14PillCanisterRadShield
   suffix: Rad Shield, 5
   components:
   - type: Label
     localizedLabel: misfits-label-rad-shield-15u
   - type: StorageFill
     contents:
-    - id: MisfitsPillRadShield
+    - id: F14PillRadShield
       amount: 5
 
 # ============================================================================
@@ -34,14 +34,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterX111Compound
+  id: F14PillCanisterX111Compound
   suffix: X-111 Compound, 5
   components:
   - type: Label
     localizedLabel: misfits-label-x-111-compound-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillX111Compound
+    - id: F14PillX111Compound
       amount: 5
 
 # ============================================================================
@@ -50,14 +50,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterRushingWater
+  id: F14PillCanisterRushingWater
   suffix: Rushing Water, 5
   components:
   - type: Label
     localizedLabel: misfits-label-rushing-water-10u
   - type: StorageFill
     contents:
-    - id: MisfitsPillRushingWater
+    - id: F14PillRushingWater
       amount: 5
 
 # ============================================================================
@@ -66,14 +66,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterBloodShield
+  id: F14PillCanisterBloodShield
   suffix: Blood Shield, 5
   components:
   - type: Label
     localizedLabel: misfits-label-blood-shield-15u
   - type: StorageFill
     contents:
-    - id: MisfitsPillBloodShield
+    - id: F14PillBloodShield
       amount: 5
 
 # ============================================================================
@@ -82,14 +82,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterFieryPurgative
+  id: F14PillCanisterFieryPurgative
   suffix: Fiery Purgative, 5
   components:
   - type: Label
     localizedLabel: misfits-label-fiery-purgative-10u
   - type: StorageFill
     contents:
-    - id: MisfitsPillFieryPurgative
+    - id: F14PillFieryPurgative
       amount: 5
 
 # ============================================================================
@@ -98,14 +98,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterRefreshingBeverage
+  id: F14PillCanisterRefreshingBeverage
   suffix: Refreshing Beverage, 5
   components:
   - type: Label
     localizedLabel: misfits-label-refreshing-beverage-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillRefreshingBeverage
+    - id: F14PillRefreshingBeverage
       amount: 5
 
 # ============================================================================
@@ -114,14 +114,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterHerbalStimulant
+  id: F14PillCanisterHerbalStimulant
   suffix: Herbal Stimulant, 5
   components:
   - type: Label
     localizedLabel: misfits-label-herbal-stimulant-20u
   - type: StorageFill
     contents:
-    - id: MisfitsPillHerbalStimulant
+    - id: F14PillHerbalStimulant
       amount: 5
 
 # ============================================================================
@@ -130,14 +130,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterSkeetoSpit
+  id: F14PillCanisterSkeetoSpit
   suffix: Skeeto Spit, 5
   components:
   - type: Label
     localizedLabel: misfits-label-skeeto-spit-15u
   - type: StorageFill
     contents:
-    - id: MisfitsPillSkeetoSpit
+    - id: F14PillSkeetoSpit
       amount: 5
 
 # ============================================================================
@@ -146,14 +146,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterPenicillin
+  id: F14PillCanisterPenicillin
   suffix: Penicillin, 5
   components:
   - type: Label
     localizedLabel: misfits-label-penicillin-20u
   - type: StorageFill
     contents:
-    - id: MisfitsPillPenicillin
+    - id: F14PillPenicillin
       amount: 5
 
 # ============================================================================
@@ -162,14 +162,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterPrussianBlue
+  id: F14PillCanisterPrussianBlue
   suffix: Prussian Blue, 5
   components:
   - type: Label
     localizedLabel: misfits-label-prussian-blue-20u
   - type: StorageFill
     contents:
-    - id: MisfitsPillPrussianBlue
+    - id: F14PillPrussianBlue
       amount: 5
 
 # ============================================================================
@@ -178,14 +178,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterPilgrimsRemedy
+  id: F14PillCanisterPilgrimsRemedy
   suffix: Pilgrim's Remedy, 5
   components:
   - type: Label
     localizedLabel: misfits-label-pilgrim-s-remedy-20u
   - type: StorageFill
     contents:
-    - id: MisfitsPillPilgrimsRemedy
+    - id: F14PillPilgrimsRemedy
       amount: 5
 
 # ============================================================================
@@ -194,14 +194,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterFury
+  id: F14PillCanisterFury
   suffix: Fury, 5
   components:
   - type: Label
     localizedLabel: misfits-label-fury-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillFury
+    - id: F14PillFury
       amount: 5
 
 # ============================================================================
@@ -210,14 +210,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterCalmex
+  id: F14PillCanisterCalmex
   suffix: Calmex, 5
   components:
   - type: Label
     localizedLabel: misfits-label-calmex-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillCalmex
+    - id: F14PillCalmex
       amount: 5
 
 # ============================================================================
@@ -226,14 +226,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterOverdrive
+  id: F14PillCanisterOverdrive
   suffix: Overdrive, 5
   components:
   - type: Label
     localizedLabel: misfits-label-overdrive-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillOverdrive
+    - id: F14PillOverdrive
       amount: 5
 
 # ============================================================================
@@ -242,14 +242,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterXCell
+  id: F14PillCanisterXCell
   suffix: X-cell, 5
   components:
   - type: Label
     localizedLabel: misfits-label-x-cell-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillXCell
+    - id: F14PillXCell
       amount: 5
 
 # ============================================================================
@@ -258,14 +258,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterCrank
+  id: F14PillCanisterCrank
   suffix: Crank, 5
   components:
   - type: Label
     localizedLabel: misfits-label-crank-10u
   - type: StorageFill
     contents:
-    - id: MisfitsPillCrank
+    - id: F14PillCrank
       amount: 5
 
 # ============================================================================
@@ -274,14 +274,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterLazarusCompound
+  id: F14PillCanisterLazarusCompound
   suffix: Lazarus Compound, 5
   components:
   - type: Label
     localizedLabel: misfits-label-lazarus-compound-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillLazarusCompound
+    - id: F14PillLazarusCompound
       amount: 5
 
 # ============================================================================
@@ -290,14 +290,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterClearwake
+  id: F14PillCanisterClearwake
   suffix: Clearwake, 5
   components:
   - type: Label
     localizedLabel: misfits-label-clearwake-10u
   - type: StorageFill
     contents:
-    - id: MisfitsPillClearwake
+    - id: F14PillClearwake
       amount: 5
 
 # ============================================================================
@@ -306,14 +306,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterWidowbane
+  id: F14PillCanisterWidowbane
   suffix: Widowbane, 5
   components:
   - type: Label
     localizedLabel: misfits-label-widowbane-10u
   - type: StorageFill
     contents:
-    - id: MisfitsPillWidowbane
+    - id: F14PillWidowbane
       amount: 5
 
 # ============================================================================
@@ -322,14 +322,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterCinderSerum
+  id: F14PillCanisterCinderSerum
   suffix: Cinder Serum, 5
   components:
   - type: Label
     localizedLabel: misfits-label-cinder-serum-10u
   - type: StorageFill
     contents:
-    - id: MisfitsPillCinderSerum
+    - id: F14PillCinderSerum
       amount: 5
 
 # ============================================================================
@@ -338,26 +338,26 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterGravesalt
+  id: F14PillCanisterGravesalt
   suffix: Gravesalt, 5
   components:
   - type: Label
     localizedLabel: misfits-label-gravesalt-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillGravesalt
+    - id: F14PillGravesalt
       amount: 5
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterClearhead
+  id: F14PillCanisterClearhead
   suffix: Clearhead, 5
   components:
   - type: Label
     localizedLabel: misfits-label-clearhead-15u
   - type: StorageFill
     contents:
-    - id: MisfitsPillClearhead
+    - id: F14PillClearhead
       amount: 5
 
 # ============================================================================
@@ -366,14 +366,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterChlorpromazine
+  id: F14PillCanisterChlorpromazine
   suffix: Chlorpromazine, 5
   components:
   - type: Label
     localizedLabel: misfits-label-chlorpromazine-10u
   - type: StorageFill
     contents:
-    - id: MisfitsPillChlorpromazine
+    - id: F14PillChlorpromazine
       amount: 5
 
 # ============================================================================
@@ -382,14 +382,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterLucidine
+  id: F14PillCanisterLucidine
   suffix: Lucidine, 5
   components:
   - type: Label
     localizedLabel: misfits-label-lucidine-10u
   - type: StorageFill
     contents:
-    - id: MisfitsPillLucidine
+    - id: F14PillLucidine
       amount: 5
 
 # ============================================================================
@@ -398,14 +398,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterPsychocline
+  id: F14PillCanisterPsychocline
   suffix: Psychocline, 5
   components:
   - type: Label
     localizedLabel: misfits-label-psychocline-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillPsychocline
+    - id: F14PillPsychocline
       amount: 5
 
 # ============================================================================
@@ -414,14 +414,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterNeurostatic
+  id: F14PillCanisterNeurostatic
   suffix: Neurostatic, 5
   components:
   - type: Label
     localizedLabel: misfits-label-neurostatic-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillNeurostatic
+    - id: F14PillNeurostatic
       amount: 5
 
 # ============================================================================
@@ -430,14 +430,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterWillowbark
+  id: F14PillCanisterWillowbark
   suffix: Willowbark Analgesic, 5
   components:
   - type: Label
     localizedLabel: misfits-label-willowbark-analgesic-20u
   - type: StorageFill
     contents:
-    - id: MisfitsPillWillowbark
+    - id: F14PillWillowbark
       amount: 5
 
 # ============================================================================
@@ -446,14 +446,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterAnodyne
+  id: F14PillCanisterAnodyne
   suffix: Anodyne, 5
   components:
   - type: Label
     localizedLabel: misfits-label-anodyne-15u
   - type: StorageFill
     contents:
-    - id: MisfitsPillAnodyne
+    - id: F14PillAnodyne
       amount: 5
 
 # ============================================================================
@@ -462,14 +462,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterAnalgesine
+  id: F14PillCanisterAnalgesine
   suffix: Analgesine, 5
   components:
   - type: Label
     localizedLabel: misfits-label-analgesine-10u
   - type: StorageFill
     contents:
-    - id: MisfitsPillAnalgesine
+    - id: F14PillAnalgesine
       amount: 5
 
 # ============================================================================
@@ -478,14 +478,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterNerveblock
+  id: F14PillCanisterNerveblock
   suffix: Nerveblock, 5
   components:
   - type: Label
     localizedLabel: misfits-label-nerveblock-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillNerveblock
+    - id: F14PillNerveblock
       amount: 5
 
 # ============================================================================
@@ -494,14 +494,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterTraumadol
+  id: F14PillCanisterTraumadol
   suffix: Traumadol, 5
   components:
   - type: Label
     localizedLabel: misfits-label-traumadol-10u
   - type: StorageFill
     contents:
-    - id: MisfitsPillTraumadol
+    - id: F14PillTraumadol
       amount: 5
 
 # ============================================================================
@@ -510,14 +510,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterAnesthezine
+  id: F14PillCanisterAnesthezine
   suffix: Anesthezine, 5
   components:
   - type: Label
     localizedLabel: misfits-label-anesthezine-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillAnesthezine
+    - id: F14PillAnesthezine
       amount: 5
 
 # ============================================================================
@@ -526,14 +526,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterNeuroblock
+  id: F14PillCanisterNeuroblock
   suffix: Neuroblock, 5
   components:
   - type: Label
     localizedLabel: misfits-label-neuroblock-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillNeuroblock
+    - id: F14PillNeuroblock
       amount: 5
 
 # ============================================================================
@@ -542,26 +542,26 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterNeuroreguline
+  id: F14PillCanisterNeuroreguline
   suffix: Neuroreguline, 5
   components:
   - type: Label
     localizedLabel: misfits-label-neuroreguline-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillNeuroreguline
+    - id: F14PillNeuroreguline
       amount: 5
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterVigilazine
+  id: F14PillCanisterVigilazine
   suffix: Vigilazine, 5
   components:
   - type: Label
     localizedLabel: misfits-label-vigilazine-15u
   - type: StorageFill
     contents:
-    - id: MisfitsPillVigilazine
+    - id: F14PillVigilazine
       amount: 5
 
 # ============================================================================
@@ -570,14 +570,14 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterWakeguard
+  id: F14PillCanisterWakeguard
   suffix: Wakeguard, 5
   components:
   - type: Label
     localizedLabel: misfits-label-wakeguard-10u
   - type: StorageFill
     contents:
-    - id: MisfitsPillWakeguard
+    - id: F14PillWakeguard
       amount: 5
 
 # ============================================================================
@@ -586,12 +586,12 @@
 
 - type: entity
   parent: PillCanister
-  id: MisfitsPillCanisterSomnoreguline
+  id: F14PillCanisterSomnoreguline
   suffix: Somnoreguline, 5
   components:
   - type: Label
     localizedLabel: misfits-label-somnoreguline-5u
   - type: StorageFill
     contents:
-    - id: MisfitsPillSomnoreguline
+    - id: F14PillSomnoreguline
       amount: 5

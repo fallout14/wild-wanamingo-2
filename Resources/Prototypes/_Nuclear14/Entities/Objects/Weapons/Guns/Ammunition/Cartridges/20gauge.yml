@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Cartridges/20gauge.yml
 
 - type: entity
-  id: N14BaseShell20Shotgun
+  id: F14BaseShell20Shotgun
   name: shell (20 gauge)
   parent: BaseCartridge
   abstract: true
@@ -10,11 +10,11 @@
   - type: Tag
     tags:
     - Cartridge
-    - N14ShellShotgun20
+    - F14ShellShotgun20
   - type: CartridgeAmmo
-    proto: N14PelletShotgun20Spread
+    proto: F14PelletShotgun20Spread
     soundEject:
-      collection: N14ShellEject
+      collection: F14ShellEject
   - type: Sprite
     netsync: false
     sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
@@ -25,33 +25,33 @@
   - type: SpentAmmoVisuals
   - type: EmitSoundOnLand
     sound:
-      collection: N14ShellEject
+      collection: F14ShellEject
       params:
         volume: -1
   - type: EmitSoundOnCollide
     sound:
-      collection: N14ShellEject
+      collection: F14ShellEject
       params:
         volume: -1
 
 - type: entity
-  id: N14ShellShotgun20
+  id: F14ShellShotgun20
   name: shell (20 gauge)
-  parent: N14BaseShell20Shotgun
+  parent: F14BaseShell20Shotgun
   components:
   - type: Sprite
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
-    proto: N14PelletShotgun20Spread
+    proto: F14PelletShotgun20Spread
   - type: EmitSoundOnLand
     sound:
-      collection: N14ShellEject
+      collection: F14ShellEject
       params:
         volume: -1
   - type: EmitSoundOnCollide
     sound:
-      collection: N14ShellEject
+      collection: F14ShellEject
       params:
         volume: -1

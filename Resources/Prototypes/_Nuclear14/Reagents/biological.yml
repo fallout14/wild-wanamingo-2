@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Reagents/biological.yml
 
 - type: reagent
-  id: N14NightstalkerBlood
+  id: F14NightstalkerBlood
   name: reagent-name-nightstalker-blood
   group: Wasteland
   desc: reagent-desc-nightstalker-blood
@@ -27,7 +27,7 @@
             type: [ Human ]
             inverted: true
       - !type:AdjustReagent
-        reagent: N14UncookedAnimalProteinsRad
+        reagent: F14UncookedAnimalProteinsRad
         amount: 0.5
     Bloodstream:
       effects:

@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseItem
-  id: GoobstationBaseKey
+  id: F14BaseKey
   abstract: true
   categories: [ HideSpawnMenu ]
   components:
@@ -11,4 +11,4 @@
     size: Tiny
   - type: Tag
     tags:
-    - MisfitsVehicleKey
+    - F14VehicleKey

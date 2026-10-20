@@ -1,21 +1,21 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Structures/Doors/doors_bos.yml
 
 - type: entity
-  parent: N14DoorCell
-  id: MisfitsDoorCellBoSMidwestKnight
+  parent: F14DoorCell
+  id: F14DoorCellBoSMidwestKnight
   suffix: BoSMidwest, Locked, Knight
   components:
   - type: AccessReader
-    access: [["MisfitsBOSKnight"]]
+    access: [["F14BOSKnight"]]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorCellRust
-  id: MisfitsDoorCellRustBoSMidwestKnight
+  parent: F14DoorCellRust
+  id: F14DoorCellRustBoSMidwestKnight
   suffix: BoSMidwest, Locked, Knight
   components:
   - type: AccessReader
-    access: [["MisfitsBOSKnight"]]
+    access: [["F14BOSKnight"]]
   - type: Wires
     layoutId: HighSec

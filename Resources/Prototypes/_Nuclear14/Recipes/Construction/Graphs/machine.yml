@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/machine.yml
 
 - type: constructionGraph
-  id: N14TallMachineFrame
+  id: F14TallMachineFrame
   start: start
   graph:
     - node: start
@@ -23,7 +23,7 @@
               doAfter: 3
 
     - node: missingWires
-      entity: N14MachineFrameTall
+      entity: F14MachineFrameTall
       edges:
         - to: machineFrame
           steps:
@@ -39,7 +39,7 @@
               doAfter: 5
 
     - node: machineFrame
-      entity: N14MachineFrameTallWired
+      entity: F14MachineFrameTallWired
       edges:
         - to: ElectronicsRack
           steps:
@@ -66,7 +66,7 @@
               doAfter: 1
 
     - node: ElectronicsRack
-      entity: N14MachineRackElectronics
+      entity: F14MachineRackElectronics
       edges:
         - to: machineFrame
           steps:
@@ -74,15 +74,15 @@
               doAfter: 2
           completed:
             - !type:SpawnPrototype
-              prototype: N14MachineFrameTallWired
+              prototype: F14MachineFrameTallWired
               amount: 1
             - !type:SpawnPrototype
-              prototype: N14MaterialCircuitry1
+              prototype: F14MaterialCircuitry1
               amount: 1
             - !type:DeleteEntity {}
             
     - node: ServerRack
-      entity: N14MachineRackServer
+      entity: F14MachineRackServer
       edges:
         - to: machineFrame
           steps:
@@ -90,15 +90,15 @@
               doAfter: 2
           completed:
             - !type:SpawnPrototype
-              prototype: N14MachineFrameTallWired
+              prototype: F14MachineFrameTallWired
               amount: 1
             - !type:SpawnPrototype
-              prototype: N14MaterialCircuitry1
+              prototype: F14MaterialCircuitry1
               amount: 1
             - !type:DeleteEntity {}
             
     - node: RecorderRack
-      entity: N14MachineRackRecorder
+      entity: F14MachineRackRecorder
       edges:
         - to: machineFrame
           steps:
@@ -106,15 +106,15 @@
               doAfter: 2
           completed:
             - !type:SpawnPrototype
-              prototype: N14MachineFrameTallWired
+              prototype: F14MachineFrameTallWired
               amount: 1
             - !type:SpawnPrototype
-              prototype: N14MaterialCircuitry1
+              prototype: F14MaterialCircuitry1
               amount: 1
             - !type:DeleteEntity {}
 
     - node: destroyedMachineFrame
-      entity: N14MachineFrameTallDestroyed
+      entity: F14MachineFrameTallDestroyed
       edges:
         - to: start
           steps:

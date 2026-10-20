@@ -1,0 +1,31 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Roles/Jobs/, _Nuclear14/Roles/Jobs/
+# Changed for Wild Wanamingo: Yuma's roster. Names, slots and whitelists from the server's roster; gear is
+# Misfits' (minus the wallet slot and the skirt/satchel/duffel choices, which are loadouts in Wizden).
+# Misfits' playtime and species requirements are left out for now.
+
+- type: job
+  id: F14Wastelander
+  name: job-name-wastelander
+  description: job-description-wastelander
+  playTimeTracker: F14Wastelander
+  startingGear: F14WastelanderGear
+  icon: F14JobIconWastelander
+  supervisors: job-supervisors-wastelander
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+
+- type: startingGear
+  id: F14WastelanderGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitRags
+    ears: F14ClothingHeadsetWastelandScrap
+    back: F14ClothingBackpackExplorer
+    shoes: F14ClothingShoesRags
+    id: F14ClothingNeckDogtags
+  storage:
+    back:
+    - F14SurvivalKitWastelander

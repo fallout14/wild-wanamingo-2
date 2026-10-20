@@ -2,25 +2,25 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Cartridges/44.yml
 
 - type: entity
-  id: N14Cartridge44Magnum
+  id: F14Cartridge44Magnum
   name: cartridge (.44 magnum)
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
-    proto: N14Bullet44
+    proto: F14Bullet44
     soundEject:
-      collection: N14PistolCasingEject
+      collection: F14PistolCasingEject
   - type: Tag
     tags:
       - Cartridge
-      - N14Cartridge44Magnum
+      - F14Cartridge44Magnum
   - type: EmitSoundOnLand
     sound:
-      collection: N14PistolCasingEject
+      collection: F14PistolCasingEject
       params:
         volume: -1
   - type: EmitSoundOnCollide
     sound:
-      collection: N14PistolCasingEject
+      collection: F14PistolCasingEject
       params:
         volume: -1

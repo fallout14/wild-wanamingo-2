@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: Clothing
-  id: N14ClothingHeadsetAlt
+  id: F14ClothingHeadsetAlt
   name: headset
   description: An earpiece with an intercom built into it, almost like a radio? Takes encryption keys.
   components:
@@ -16,7 +16,7 @@
     containers:
       key_slots:
       - EncryptionKeyCommon
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keySlots: 4
   - type: Sprite
@@ -30,44 +30,44 @@
     size: Small
 
 - type: entity
-  parent: N14ClothingHeadsetAlt
-  id: N14ClothingHeadsetVaulttec #No longer used, all Vault dwellers got the same headset now
+  parent: F14ClothingHeadsetAlt
+  id: F14ClothingHeadsetVaulttec #No longer used, all Vault dwellers got the same headset now
   name: Vault-Tec over-ear headset
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - EncryptionKeyStationMaster
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
   - type: Sprite
     sprite: Clothing/Ears/Headsets/centcom.rsi
   - type: Clothing
     sprite: Clothing/Ears/Headsets/centcom.rsi
 
 - type: entity
-  parent: N14ClothingHeadsetAlt
-  id: N14ClothingHeadsetVaultCommand #No longer used, all Vault dwellers got the same headset now
+  parent: F14ClothingHeadsetAlt
+  id: F14ClothingHeadsetVaultCommand #No longer used, all Vault dwellers got the same headset now
   name: command over-ear headset
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - EncryptionKeyStationMaster
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
   - type: Sprite
     sprite: Clothing/Ears/Headsets/command.rsi
   - type: Clothing
     sprite: Clothing/Ears/Headsets/command.rsi
 
 - type: entity
-  parent: N14ClothingHeadsetAlt
-  id: N14ClothingHeadsetVaultDweller
+  parent: F14ClothingHeadsetAlt
+  id: F14ClothingHeadsetVaultDweller
   name: vault over-ear headset
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - N14EncryptionKeyVault
+      - F14EncryptionKeyVault
   - type: EncryptionKeyHolder
     keysUnlocked: false
   - type: Sprite
@@ -76,8 +76,8 @@
     sprite: Misfits/Clothing/Ears/Headsets/vault.rsi
 
 - type: entity
-  parent: N14ClothingHeadsetAlt
-  id: N14ClothingHeadsetVaultMedical #No longer used, all Vault dwellers got the same headset now
+  parent: F14ClothingHeadsetAlt
+  id: F14ClothingHeadsetVaultMedical #No longer used, all Vault dwellers got the same headset now
   name: medical over-ear headset
   components:
   - type: ContainerFill
@@ -85,7 +85,7 @@
       key_slots:
       - EncryptionKeyMedical
       - EncryptionKeyCommon
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keysUnlocked: false
   - type: Sprite
@@ -94,8 +94,8 @@
     sprite: Clothing/Ears/Headsets/medical.rsi
 
 - type: entity
-  parent: N14ClothingHeadsetAlt
-  id: N14ClothingHeadsetVaultSecurity #No longer used, all Vault dwellers got the same headset now
+  parent: F14ClothingHeadsetAlt
+  id: F14ClothingHeadsetVaultSecurity #No longer used, all Vault dwellers got the same headset now
   name: security over-ear headset
   components:
   - type: ContainerFill
@@ -103,7 +103,7 @@
       key_slots:
       - EncryptionKeySecurity
       - EncryptionKeyCommon
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keysUnlocked: false
   - type: Sprite
@@ -112,8 +112,8 @@
     sprite: Clothing/Ears/Headsets/security.rsi
 
 - type: entity
-  parent: N14ClothingHeadsetAlt
-  id: N14ClothingHeadsetVaultEngineering #No longer used, all Vault dwellers got the same headset now
+  parent: F14ClothingHeadsetAlt
+  id: F14ClothingHeadsetVaultEngineering #No longer used, all Vault dwellers got the same headset now
   name: engineering over-ear headset
   components:
   - type: ContainerFill
@@ -121,7 +121,7 @@
       key_slots:
       - EncryptionKeyEngineering
       - EncryptionKeyCommon
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keysUnlocked: false
   - type: Sprite
@@ -130,8 +130,8 @@
     sprite: Clothing/Ears/Headsets/engineering.rsi
 
 - type: entity
-  parent: N14ClothingHeadsetAlt
-  id: N14ClothingHeadsetVaultScience #No longer used, all Vault dwellers got the same headset now
+  parent: F14ClothingHeadsetAlt
+  id: F14ClothingHeadsetVaultScience #No longer used, all Vault dwellers got the same headset now
   name: science over-ear headset
   components:
   - type: ContainerFill
@@ -139,7 +139,7 @@
       key_slots:
       - EncryptionKeyScience
       - EncryptionKeyCommon
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keysUnlocked: false
   - type: Sprite
@@ -149,7 +149,7 @@
 
 #Misfits Change /Comment-out/: Duplicate BoS headsets removed — consolidated into Misfits/Entities/Clothing/Ears/bos_headsets.yml.
 #- type: entity
-#  parent: N14ClothingHeadsetAlt
+#  parent: F14ClothingHeadsetAlt
 #  id: N14ClothingHeadsetBOSMidwest
 #  name: Brotherhood radio earpiece
 #  components:
@@ -164,7 +164,7 @@
 #    sprite: Clothing/Ears/Headsets/command.rsi
 #
 #- type: entity
-#  parent: N14ClothingHeadsetAlt
+#  parent: F14ClothingHeadsetAlt
 #  id: N14ClothingHeadsetBOSWashington
 #  name: Brotherhood radio earpiece
 #  components:
@@ -181,15 +181,15 @@
 #    sprite: Clothing/Ears/Headsets/security.rsi
 
 - type: entity
-  parent: N14ClothingHeadsetAlt
-  id: N14ClothingHeadsetEnclave
+  parent: F14ClothingHeadsetAlt
+  id: F14ClothingHeadsetEnclave
   name: U.S. Army radio earpiece
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - N14EncryptionKeyEnclave
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyEnclave
+      - F14EncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keysUnlocked: false
   - type: Sprite
@@ -198,15 +198,15 @@
     sprite: Misfits/Clothing/Ears/Headsets/enclave_headset.rsi
 
 - type: entity
-  parent: N14ClothingHeadsetAlt
-  id: N14ClothingHeadsetNCR
+  parent: F14ClothingHeadsetAlt
+  id: F14ClothingHeadsetNCR
   name: NCR radio earpiece
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - N14EncryptionKeyNCR
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyNCR
+      - F14EncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keysUnlocked: false
   - type: Sprite

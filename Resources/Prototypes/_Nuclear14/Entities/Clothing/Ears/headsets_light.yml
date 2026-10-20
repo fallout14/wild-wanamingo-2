@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: Clothing
-  id: N14ClothingHeadsetLightScribe
+  id: F14ClothingHeadsetLightScribe
   name: headset
   description: A modular intercom that fits over the head. Takes encryption keys and has a powerful light.
   components:
@@ -32,7 +32,7 @@
     containers:
       key_slots:
       - EncryptionKeyCommon
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keySlots: 4
   - type: Appearance
@@ -84,7 +84,7 @@
 
 #Misfits Change /Comment-out/: Duplicate BoS light scribe headsets removed — consolidated into Misfits/Entities/Clothing/Ears/bos_headsets.yml.
 #- type: entity
-#  parent: N14ClothingHeadsetLightScribe
+#  parent: F14ClothingHeadsetLightScribe
 #  id: N14ClothingHeadsetBOSMidwestLightScribe
 #  name: Brotherhood scribe headset
 #  components:
@@ -95,7 +95,7 @@
 #      - EncryptionKeyWastelandGlobal
 #
 #- type: entity
-#  parent: N14ClothingHeadsetLightScribe
+#  parent: F14ClothingHeadsetLightScribe
 #  id: N14ClothingHeadsetBOSWashingtonLightScribe
 #  name: Brotherhood scribe headset
 #  components:

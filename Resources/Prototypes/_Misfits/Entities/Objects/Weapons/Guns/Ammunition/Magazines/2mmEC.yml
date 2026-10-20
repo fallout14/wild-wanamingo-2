@@ -1,18 +1,18 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/2mmEC.yml
 
 - type: entity
-  id: MisfitsBaseMagazine2mmECRifle
+  id: F14BaseMagazine2mmECRifle
   name: 2mmEC 20 capacity magazine
   parent: BaseItem
   components:
   - type: Tag
     tags:
-    - MisfitsMagazine2mmECRifle
+    - F14Magazine2mmECRifle
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - MisfitsCartridge2mmEC
+        - F14Cartridge2mmEC
     capacity: 12
     soundRack:
       path: /Audio/Weapons/Guns/Cock/smg_cock.ogg
@@ -34,26 +34,26 @@
   - type: Appearance
 
 - type: entity
-  id: MisfitsMagazine2mmECRifle
+  id: F14Magazine2mmECRifle
   name: 2mmEC 12 capacity magazine
-  parent: MisfitsBaseMagazine2mmECRifle
+  parent: F14BaseMagazine2mmECRifle
   components:
   - type: BallisticAmmoProvider
-    proto: MisfitsCartridge2mmEC
+    proto: F14Cartridge2mmEC
 
 - type: entity
-  id: MisfitsBaseMagazine2mmECPistol
+  id: F14BaseMagazine2mmECPistol
   name: 2mmEC 12 capacity magazine
   parent: BaseItem
   components:
   - type: Tag
     tags:
-    - MisfitsMagazine2mmECPistol
+    - F14Magazine2mmECPistol
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - MisfitsCartridge2mmEC
+        - F14Cartridge2mmEC
     capacity: 8
     soundRack:
       path: /Audio/Weapons/Guns/Cock/smg_cock.ogg
@@ -75,9 +75,9 @@
   - type: Appearance
 
 - type: entity
-  id: MisfitsMagazine2mmECPistol
+  id: F14Magazine2mmECPistol
   name: 2mmEC 8 capacity magazine
-  parent: MisfitsBaseMagazine2mmECPistol
+  parent: F14BaseMagazine2mmECPistol
   components:
   - type: BallisticAmmoProvider
-    proto: MisfitsCartridge2mmEC
+    proto: F14Cartridge2mmEC

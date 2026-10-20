@@ -59,7 +59,7 @@ public sealed class FlamerTest : GameTest
         await server.WaitPost(() =>
         {
             user = entMan.SpawnEntity("MobHuman", new EntityCoordinates(map.Grid, 0.5f, 0.5f));
-            gun = entMan.SpawnEntity("N14WeaponFlamer", new EntityCoordinates(map.Grid, 0.5f, 0.5f));
+            gun = entMan.SpawnEntity("F14WeaponFlamer", new EntityCoordinates(map.Grid, 0.5f, 0.5f));
         });
         await server.WaitRunTicks(2);
 
@@ -139,7 +139,7 @@ public sealed class FlamerTest : GameTest
         var timing = server.ResolveDependency<IGameTiming>();
         EntityUid handy = default;
 
-        await server.WaitPost(() => handy = entMan.SpawnEntity("MisfitsPlayerSyntheticMrHandy", map.GridCoords));
+        await server.WaitPost(() => handy = entMan.SpawnEntity("F14PlayerSyntheticMrHandy", map.GridCoords));
         await server.WaitRunTicks(2);
 
         var solution = entMan.System<SharedSolutionContainerSystem>();

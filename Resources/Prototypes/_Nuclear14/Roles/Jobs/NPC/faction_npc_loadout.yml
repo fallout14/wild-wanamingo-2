@@ -2,114 +2,114 @@
 # Resources/Prototypes/_Nuclear14/Roles/Jobs/NPC/faction_npc_loadout.yml
 
 - type: startingGear
-  id: N14TownMilitiaNPC
+  id: F14TownMilitiaNPC
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitTownGuard
-    outerClothing: N14ClothingOuterTownGuardLight
-    mask: N14ClothingMaskBlackBalaclava
-    shoes: N14ClothingBootsLeather
+    jumpsuit: F14ClothingUniformJumpsuitTownGuard
+    outerClothing: F14ClothingOuterTownGuardLight
+    mask: F14ClothingMaskBlackBalaclava
+    shoes: F14ClothingBootsLeather
 
 - type: startingGear
-  id: N14TownMilitiaGuardNPC
+  id: F14TownMilitiaGuardNPC
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitTownGuardLight
-    outerClothing: N14ClothingOuterTownGuardLight
-    shoes: N14ClothingBootsCombat
-    head: N14ClothingHeadTownGuardBrodieVisor
-    gloves: N14ClothingHandsGlovesBrownBiker
+    jumpsuit: F14ClothingUniformJumpsuitTownGuardLight
+    outerClothing: F14ClothingOuterTownGuardLight
+    shoes: F14ClothingBootsCombat
+    head: F14ClothingHeadTownGuardBrodieVisor
+    gloves: F14ClothingHandsGlovesBrownBiker
 
 # Midwest chapter NPCs
 
 - type: startingGear
-  id: N14MBoSSerfNPC
+  id: F14MBoSSerfNPC
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitSettlerRags
-    shoes: N14ClothingShoesTribal
+    jumpsuit: F14ClothingUniformJumpsuitSettlerRags
+    shoes: F14ClothingShoesTribal
     eyes: ClothingEyesEyepatch
     gloves: ClothingHandsGlovesFingerless
-    belt: N14ClothingBeltRope
+    belt: F14ClothingBeltRope
 
 - type: startingGear
-  id: N14MBoSKnightNPC
+  id: F14MBoSKnightNPC
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitBOSGreen
-    outerClothing: N14ClothingOuterMBoSKnightArmor
-    shoes: N14ClothingBootsLeather
-    head: N14ClothingHeadHatArmyCap
-    gloves: N14ClothingHandsGlovesBrownBiker
+    jumpsuit: F14ClothingUniformJumpsuitBOSGreen
+    outerClothing: F14ClothingOuterMBoSKnightArmor
+    shoes: F14ClothingBootsLeather
+    head: F14ClothingHeadHatArmyCap
+    gloves: F14ClothingHandsGlovesBrownBiker
 
 #Misfits Change /Comment-out/: Washington chapter NPCs removed — will create new prototypes.
 ## Washington chapter NPCs
 #- type: startingGear
 #  id: WBoSInitiateNPC
 #  equipment:
-#    jumpsuit: N14ClothingUniformJumpsuitMechanic
-#    outerClothing: N14ClothingOuterWBoSInitiateArmor
-#    shoes: N14ClothingBootsBlack
-#    mask: N14ClothingMaskBrownBalaclava
+#    jumpsuit: F14ClothingUniformJumpsuitMechanic
+#    outerClothing: F14ClothingOuterWBoSInitiateArmor
+#    shoes: F14ClothingBootsBlack
+#    mask: F14ClothingMaskBrownBalaclava
 #    belt: ClothingBeltRope
 #
 #- type: startingGear
 #  id: WBoSKnightNPC
 #  equipment:
-#    jumpsuit: N14ClothingUniformJumpsuitBOSRed
-#    outerClothing: N14ClothingOuterWBoSKnightArmor
-#    shoes: N14ClothingBootsBlack
-#    head: N14ClothingHeadHatBrotherhoodBeret
-#    mask: N14ClothingMaskBlackBalaclava
-#    gloves: N14ClothingHandsGlovesBlackBiker
+#    jumpsuit: F14ClothingUniformJumpsuitBOSRed
+#    outerClothing: F14ClothingOuterWBoSKnightArmor
+#    shoes: F14ClothingBootsBlack
+#    head: F14ClothingHeadHatBrotherhoodBeret
+#    mask: F14ClothingMaskBlackBalaclava
+#    gloves: F14ClothingHandsGlovesBlackBiker
 
 # NCR Army NPCs
 
 - type: startingGear
-  id: N14NCRAGuardNPC
+  id: F14NCRAGuardNPC
   equipment:
-    jumpsuit: N14ClothingMPUniformNCRSnow
-    shoes: N14ClothingBootsLeather
-    gloves: N14ClothingHandsGlovesFur
-    head: N14ClothingHeadHatNCRHelmetMetalMilitaryPolice
-    belt: N14ClothingBeltRope
+    jumpsuit: F14ClothingMPUniformNCRSnow
+    shoes: F14ClothingBootsLeather
+    gloves: F14ClothingHandsGlovesFur
+    head: F14ClothingHeadHatNCRHelmetMetalMilitaryPolice
+    belt: F14ClothingBeltRope
 
 - type: startingGear
-  id: N14NCRATrooperNPC
+  id: F14NCRATrooperNPC
   equipment:
-    jumpsuit: N14ClothingUniformNCRSnow
-    outerClothing: N14ClothingOuterNCRVestSnow
-    shoes: N14ClothingBootsLeather
-    head: N14ClothingHeadHatNCRHelmetMetalSnow
-    mask: N14ClothingMaskBrownBalaclava
-    gloves: N14ClothingHandsGlovesNCR
+    jumpsuit: F14ClothingUniformNCRSnow
+    outerClothing: F14ClothingOuterNCRVestSnow
+    shoes: F14ClothingBootsLeather
+    head: F14ClothingHeadHatNCRHelmetMetalSnow
+    mask: F14ClothingMaskBrownBalaclava
+    gloves: F14ClothingHandsGlovesNCR
 
 # Blue Line (Caravan) NPCs
 
 - type: startingGear
-  id: N14CaravanMercNPC
+  id: F14CaravanMercNPC
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitCaravanOveralls
-    outerClothing: N14ClothingOuterPoliceVest
-    shoes: N14ClothingBootsBlack
-    head: N14ClothingHeadHatArmyBeret
+    jumpsuit: F14ClothingUniformJumpsuitCaravanOveralls
+    outerClothing: F14ClothingOuterPoliceVest
+    shoes: F14ClothingBootsBlack
+    head: F14ClothingHeadHatArmyBeret
 
 # Tribal faction NPCs
 
 - type: startingGear
-  id: N14TribalSkirmisherNPC
+  id: F14TribalSkirmisherNPC
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitdrylanderTribal
-    outerClothing: N14ClothingOuterTribalArmor
-    head: N14ClothingDrylanderGoggles
-    gloves: N14ClothingHandsGlovesTribal
-    belt: N14ClothingHandsGlovesFur
-    shoes: DeltaVClothingShoesBootsRyuzo
+    jumpsuit: F14ClothingUniformJumpsuitdrylanderTribal
+    outerClothing: F14ClothingOuterTribalArmor
+    head: F14ClothingDrylanderGoggles
+    gloves: F14ClothingHandsGlovesTribal
+    belt: F14ClothingHandsGlovesFur
+    shoes: F14ClothingShoesBootsRyuzo
 
 - type: startingGear
-  id: N14TribalWarriorNPC
+  id: F14TribalWarriorNPC
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuittribalpantsm
-    outerClothing: N14ClothingOuterTribalArmorHeavy
-    head: N14ClothingTribalMuffaloskull
-    gloves: N14ClothingHandsGlovesTribal
-    shoes: N14ClothingShoesTribal
-    neck: N14ClothingNeckMantleLeather
+    jumpsuit: F14ClothingUniformJumpsuittribalpantsm
+    outerClothing: F14ClothingOuterTribalArmorHeavy
+    head: F14ClothingTribalMuffaloskull
+    gloves: F14ClothingHandsGlovesTribal
+    shoes: F14ClothingShoesTribal
+    neck: F14ClothingNeckMantleLeather
   inhand:
-  - N14WastelandTribalSpear
+  - F14WastelandTribalSpear

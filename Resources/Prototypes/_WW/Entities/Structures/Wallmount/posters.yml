@@ -2,7 +2,7 @@
 # Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14PosterNCR1
   name: NCR poster
   components:
@@ -14,7 +14,7 @@
     state: NCR_1
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14PosterNCR2
   name: NCR poster
   components:
@@ -26,7 +26,7 @@
     state: NCR_2
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14PosterCorporate
   name: corporate poster
   components:
@@ -38,7 +38,7 @@
     state: corporate
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14PosterHandgun
   name: handgun poster
   components:
@@ -50,7 +50,7 @@
     state: handgun
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14PosterProtectron
   name: Protectron poster
   components:
@@ -62,7 +62,7 @@
     state: protectron
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14PosterVaulttec
   name: Vault-Tec poster
   components:
@@ -74,7 +74,7 @@
     state: vaulttec
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14PosterVacation
   name: vacation poster
   components:
@@ -86,7 +86,7 @@
     state: vacation
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14PosterMoon
   name: moon poster
   components:
@@ -98,7 +98,7 @@
     state: moon
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14PosterPlanet
   name: planet poster
   components:
@@ -110,7 +110,7 @@
     state: planet
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14PosterPinup1
   name: pinup poster
   components:
@@ -122,7 +122,7 @@
     state: pinup_1
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14PosterPinup2
   name: pinup poster
   components:
@@ -134,7 +134,7 @@
     state: pinup_2
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14PosterPinup3
   name: pinup poster
   components:
@@ -146,7 +146,7 @@
     state: pinup_3
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14WallDecorFlagWestbos
   name: Brotherhood flag
   components:
@@ -158,7 +158,7 @@
     state: flag_westbos
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14WallDecorMineWarn
   name: mine warning sign
   components:
@@ -170,7 +170,7 @@
     state: mine_warn
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14WallDecorCrossBase # WW: MS13 sprite on the merged N14 item
   id: F14WallDecorCross
   name: wall cross
   components:
@@ -182,7 +182,7 @@
     state: cross
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14WallDecorNoticeRobot
   name: robot notice
   components:
@@ -194,7 +194,7 @@
     state: notice_robot
 
 - type: entity
-  parent: N14SignNotice
+  parent: F14SignNotice
   id: F14WallDecorNoisefoam
   name: noise foam
   components:

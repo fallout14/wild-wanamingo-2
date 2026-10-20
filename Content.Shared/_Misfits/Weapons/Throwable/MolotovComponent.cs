@@ -21,13 +21,13 @@ public sealed partial class MolotovComponent : Component
     [DataField, AutoNetworkedField] public Vector2 WickOffset;
 
     /// <summary>Fire used for ordinary flammable reagents.</summary>
-    [DataField] public EntProtoId FireTilePrototype = "MisfitsTileFire";
+    [DataField] public EntProtoId FireTilePrototype = "F14TileFire";
 
     /// <summary>Longer-lived fire selected when enough oil is present.</summary>
-    [DataField] public EntProtoId OilFireTilePrototype = "MisfitsTileFireOil";
+    [DataField] public EntProtoId OilFireTilePrototype = "F14TileFireOil";
 
     /// <summary>Longer-lived, more damaging fire selected when enough napalm is present.</summary>
-    [DataField] public EntProtoId NapalmFireTilePrototype = "MisfitsTileFireNapalm";
+    [DataField] public EntProtoId NapalmFireTilePrototype = "F14TileFireNapalm";
 
     /// <summary>Minimum flammable volume required to create any fire.</summary>
     [DataField] public float MinimumFuel = 5f;

@@ -1,20 +1,20 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/blueprint_recipes_enclave_weapons.yml
 
 - type: latheCategory
-  id: MisfitsBlueprintEnclaveWeapons
+  id: F14BlueprintEnclaveWeapons
   name: lathe-category-blueprint-enclave-weapons
 
 # =====================================================================
-# PLASMA WEAPONS - all feed on N14PlasmaCartridge
+# PLASMA WEAPONS - all feed on F14PlasmaCartridge
 # =====================================================================
 
 # Plasma pistol - 80 steel
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveWeaponPlasmaPistol
-  result: N14WeaponPlasmaPistol
+  id: F14BPEnclaveWeaponPlasmaPistol
+  result: F14WeaponPlasmaPistol
   categories:
-  - MisfitsBlueprintEnclaveWeapons
+  - F14BlueprintEnclaveWeapons
   completetime: 20
   materials:
     Steel: 8000
@@ -25,10 +25,10 @@
 # Plasma defender - 100 steel
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveWeaponPlasmaDefender
-  result: N14WeaponPlasmaDefender
+  id: F14BPEnclaveWeaponPlasmaDefender
+  result: F14WeaponPlasmaDefender
   categories:
-  - MisfitsBlueprintEnclaveWeapons
+  - F14BlueprintEnclaveWeapons
   completetime: 24
   materials:
     Steel: 10000
@@ -39,10 +39,10 @@
 # Plasma rifle - 140 steel
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveWeaponPlasmaRifle
-  result: N14WeaponPlasmaRifle
+  id: F14BPEnclaveWeaponPlasmaRifle
+  result: F14WeaponPlasmaRifle
   categories:
-  - MisfitsBlueprintEnclaveWeapons
+  - F14BlueprintEnclaveWeapons
   completetime: 30
   materials:
     Steel: 14000
@@ -53,10 +53,10 @@
 # Urban plasma rifle - 150 steel
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveWeaponPlasmaRifleUrban
-  result: N14WeaponPlasmaRifleUrban
+  id: F14BPEnclaveWeaponPlasmaRifleUrban
+  result: F14WeaponPlasmaRifleUrban
   categories:
-  - MisfitsBlueprintEnclaveWeapons
+  - F14BlueprintEnclaveWeapons
   completetime: 32
   materials:
     Steel: 15000
@@ -67,10 +67,10 @@
 # Automatic plasma rifle - 160 steel, top of the plasma line
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveWeaponPlasmaRifleAuto
-  result: N14WeaponPlasmaRifleAuto
+  id: F14BPEnclaveWeaponPlasmaRifleAuto
+  result: F14WeaponPlasmaRifleAuto
   categories:
-  - MisfitsBlueprintEnclaveWeapons
+  - F14BlueprintEnclaveWeapons
   completetime: 35
   materials:
     Steel: 16000
@@ -85,10 +85,10 @@
 # Magneto-laser pistol - 80 steel. Feeds on N14MicrofusionCell.
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveWeaponLaserMagnetoPistol
-  result: CorvaxWeaponLaserMagnetoPistol
+  id: F14BPEnclaveWeaponLaserMagnetoPistol
+  result: F14WeaponLaserMagnetoPistol
   categories:
-  - MisfitsBlueprintEnclaveWeapons
+  - F14BlueprintEnclaveWeapons
   completetime: 20
   materials:
     Steel: 8000
@@ -99,10 +99,10 @@
 # Pulse pistol - 90 steel. Feeds on N14ElectronChargePack.
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveWeaponPulsePistol
-  result: MisfitsWeaponPulsePistol
+  id: F14BPEnclaveWeaponPulsePistol
+  result: F14WeaponPulsePistol
   categories:
-  - MisfitsBlueprintEnclaveWeapons
+  - F14BlueprintEnclaveWeapons
   completetime: 22
   materials:
     Steel: 9000
@@ -113,10 +113,10 @@
 # Laser RCW - 110 steel. Feeds on N14ElectronChargePack.
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveWeaponLaserRCW
-  result: MisfitsWeaponLaserRCW
+  id: F14BPEnclaveWeaponLaserRCW
+  result: F14WeaponLaserRCW
   categories:
-  - MisfitsBlueprintEnclaveWeapons
+  - F14BlueprintEnclaveWeapons
   completetime: 26
   materials:
     Steel: 11000
@@ -127,10 +127,10 @@
 # Pulse carbine - 120 steel. Feeds on N14ElectronChargePack.
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveWeaponPulseCarbine
-  result: MisfitsWeaponPulseCarbine
+  id: F14BPEnclaveWeaponPulseCarbine
+  result: F14WeaponPulseCarbine
   categories:
-  - MisfitsBlueprintEnclaveWeapons
+  - F14BlueprintEnclaveWeapons
   completetime: 28
   materials:
     Steel: 12000
@@ -141,10 +141,10 @@
 # Wattz 2000 laser rifle - 120 steel. Feeds on N14MicrofusionCell.
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveWeaponLaserRifleWattz2000
-  result: N14WeaponLaserRifleWattz2000
+  id: F14BPEnclaveWeaponLaserRifleWattz2000
+  result: F14WeaponLaserRifleWattz2000
   categories:
-  - MisfitsBlueprintEnclaveWeapons
+  - F14BlueprintEnclaveWeapons
   completetime: 28
   materials:
     Steel: 12000
@@ -155,10 +155,10 @@
 # Wattz 3000 laser rifle - 130 steel. Feeds on N14MicrofusionCell.
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveWeaponLaserRifleWattz3000
-  result: MisfitsWeaponLaserRifleWattz2000Extended
+  id: F14BPEnclaveWeaponLaserRifleWattz3000
+  result: F14WeaponLaserRifleWattz2000Extended
   categories:
-  - MisfitsBlueprintEnclaveWeapons
+  - F14BlueprintEnclaveWeapons
   completetime: 30
   materials:
     Steel: 13000
@@ -169,10 +169,10 @@
 # AER-9 auto laser rifle - 140 steel. Feeds on N14MicrofusionCell.
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveWeaponLaserRifleAER9Auto
-  result: N14WeaponLaserRifleAuto
+  id: F14BPEnclaveWeaponLaserRifleAER9Auto
+  result: F14WeaponLaserRifleAuto
   categories:
-  - MisfitsBlueprintEnclaveWeapons
+  - F14BlueprintEnclaveWeapons
   completetime: 32
   materials:
     Steel: 14000
@@ -183,10 +183,10 @@
 # AER-12 laser rifle - 150 steel, top of the laser line. Feeds on N14MicrofusionCell.
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveWeaponLaserRifleAER12
-  result: MisfitsWeaponLaserRifleAER12
+  id: F14BPEnclaveWeaponLaserRifleAER12
+  result: F14WeaponLaserRifleAER12
   categories:
-  - MisfitsBlueprintEnclaveWeapons
+  - F14BlueprintEnclaveWeapons
   completetime: 34
   materials:
     Steel: 15000

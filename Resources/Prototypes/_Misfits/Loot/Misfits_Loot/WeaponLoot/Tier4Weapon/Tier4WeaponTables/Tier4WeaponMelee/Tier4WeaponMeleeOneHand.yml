@@ -1,49 +1,49 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier4Weapon/Tier4WeaponTables/Tier4WeaponMelee/Tier4WeaponMeleeOneHand.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_MeleeBluntOneHanded
+  id: F14WeaponLootTier4MeleeBluntOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14BrokenPipe
+      id: F14BrokenPipe
     - !type:EntSelector
-      id: N14PoliceBaton
+      id: F14PoliceBaton
     - !type:EntSelector
-      id: N14TribalClub
+      id: F14TribalClub
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_MeleeSharpOneHanded
+  id: F14WeaponLootTier4MeleeSharpOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14Machete
+      id: F14Machete
     - !type:EntSelector
-      id: N14TribalMachete
+      id: F14TribalMachete
     - !type:EntSelector
-      id: N14CeremonialSword
+      id: F14CeremonialSword
     - !type:EntSelector
-      id: N14LongSword
+      id: F14LongSword
     - !type:EntSelector
-      id: N14TribalSword
+      id: F14TribalSword
     - !type:EntSelector
-      id: CorvaxGladius
+      id: F14Gladius
     - !type:EntSelector
-      id: N14Ripper
+      id: F14Ripper
     - !type:EntSelector
-      id: N14Hatchet
+      id: F14Hatchet
     - !type:EntSelector
-      id: N14CombatKnife
+      id: F14CombatKnife
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_MeleeOtherOneHanded
+  id: F14WeaponLootTier4MeleeOtherOneHanded
   table: !type:GroupSelector
     children: []
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_Shield
+  id: F14WeaponLootTier4Shield
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: CorvaxLegionnaireShield
+      id: F14LegionnaireShield
     - !type:EntSelector
       id: MakeshiftShield

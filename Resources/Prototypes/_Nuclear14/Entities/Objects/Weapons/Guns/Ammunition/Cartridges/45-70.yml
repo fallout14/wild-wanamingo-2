@@ -2,25 +2,25 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Cartridges/45-70.yml
 
 - type: entity
-  id: N14Cartridge45-70
+  id: F14Cartridge4570
   name: cartridge (.45-70 gov't)
   parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
-    proto: N14Bullet45-70
+    proto: F14Bullet4570
     soundEject:
-      collection: N14RifleCasingEject
+      collection: F14RifleCasingEject
   - type: Tag
     tags:
       - Cartridge
-      - N14Cartridge45-70
+      - F14Cartridge4570
   - type: EmitSoundOnLand
     sound:
-      collection: N14RifleCasingEject
+      collection: F14RifleCasingEject
       params:
         volume: -1
   - type: EmitSoundOnCollide
     sound:
-      collection: N14RifleCasingEject
+      collection: F14RifleCasingEject
       params:
         volume: -1

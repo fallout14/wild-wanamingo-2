@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Machines/computers.yml
 
 - type: entity
-  id: N14BaseComputer
+  id: F14BaseComputer
   parent: BaseComputer
   name: computer
   description: An old heavy computer.
@@ -22,8 +22,8 @@
   # to better match Legion theming and avoid console-based access inheritance.
 
 - type: entity
-  id: N14ComputerCargoOrders
-  parent: N14BaseComputer
+  id: F14ComputerCargoOrders
+  parent: F14BaseComputer
   name: cargo request computer
   description: Used to order supplies.
   components:
@@ -51,8 +51,8 @@
       - OrderSender
 
 - type: entity
-  parent: N14ComputerTerminalWallDisplays
-  id: N14ComputerCameraDisplay
+  parent: F14ComputerTerminalWallDisplays
+  id: F14ComputerCameraDisplay
   name: camera display unit
   description: A surveillance camera monitor. You're watching them. Maybe.
   abstract: true
@@ -83,11 +83,11 @@
 # In Use
 
 - type: entity
-  parent: N14ComputerCameraDisplay
-  id: N14ComputerCameraDisplayBrotherhoodWashington
+  parent: F14ComputerCameraDisplay
+  id: F14ComputerCameraDisplayBrotherhoodWashington
   suffix: BOS Washington
   components:
   - type: DeviceNetwork
     deviceNetId: Wired
     receiveFrequencyId: SurveillanceCamera
-    transmitFrequencyId: N14SurveillanceCameraBrotherhoodWashington
+    transmitFrequencyId: F14SurveillanceCameraBrotherhoodWashington

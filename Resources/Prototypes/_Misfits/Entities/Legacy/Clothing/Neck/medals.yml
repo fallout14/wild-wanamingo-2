@@ -1,0 +1,13 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Entities/Clothing/Neck/medals.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMedalBase
+  abstract: true
+  name: medal
+  description: not given to anyone
+  components:
+  - type: Tag
+    tags:
+    - WhitelistChameleon

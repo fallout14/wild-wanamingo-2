@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Consumable/Drinks/zoy.yml
 
 - type: entity
-  parent: [N14DrinkGlassVisualsOpenable, N14DrinkBottleBaseFull50]
-  id: MisfitsDrinkZoyMilk
+  parent: [F14DrinkGlassVisualsOpenable, F14DrinkBottleBaseFull50]
+  id: F14DrinkZoyMilk
   name: zoy milk
   description: A glass bottle of zoy milk.
   components:
@@ -13,7 +13,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: MisfitsMilkZoy
+      - ReagentId: F14MilkZoy
         Quantity: 50
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Drinks/milk.rsi

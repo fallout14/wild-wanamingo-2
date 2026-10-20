@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14Dung
+  id: F14Dung
   name: dung pile
   description: Flip those cowpatties into free fertilizer!
   components:
@@ -19,7 +19,7 @@
     solution:
       maxVol: 25
       reagents:
-      - ReagentId: N14Dung
+      - ReagentId: F14Dung
         Quantity: 25
   - type: DrainableSolution
     solution: dung
@@ -32,8 +32,8 @@
     lifetime: 300
 
 - type: entity
-  parent: N14Dung
-  id: N14BrahminDung
+  parent: F14Dung
+  id: F14BrahminDung
   name: brahmin dung
   description: A dung pile more acrid and vile than the rest, rancher's gold.
   components:
@@ -42,7 +42,39 @@
     solution:
       maxVol: 25
       reagents:
-      - ReagentId: N14Dung
+      - ReagentId: F14Dung
         Quantity: 15
       - ReagentId: Ammonia
         Quantity: 10
+
+- type: entity
+  parent: BaseItem
+  id: F14CompostRotted
+  name: compost
+  description: Rotting remains, like compost. Good for fertilizing.
+  components:
+  - type: Sprite
+    sprite: /Textures/Nuclear14/Objects/Misc/crafting_material.rsi
+    state: compost
+  - type: Solution
+    id: compost
+    solution:
+      maxVol: 25
+      reagents:
+      - ReagentId: F14Fertilizer
+        Quantity: 25
+  - type: DrainableSolution
+    solution: compost
+  - type: SolutionTransfer
+    canChangeTransferAmount: false
+  - type: DeleteOnSolutionEmpty
+    solution: compost
+  # Match the dung cleanup window so rotted compost does not accumulate on the map.
+  - type: TimedDespawn
+    lifetime: 300
+  # Pause the despawn timer while compost is stored in a crate so storage works as expected.
+  - type: PauseTimedDespawnInEntityStorage
+  - type: Material
+  - type: Stack
+    stackType: F14Compost
+    count: 1

@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Misc/identification.yml
 
 - type: entity # Forge-Add-Start
-  parent: N14IDPassportTownsfolk
-  id: MisfitsIDShopkeeperHelperTown
+  parent: F14IDPassportTownsfolk
+  id: F14IDShopkeeperHelperTown
   name: ShopkeepersHelper ID
   description: A passport ID used by a town shopkeeper helper.
   components:
@@ -12,58 +12,58 @@
   - type: PresetIdCard
 
 - type: entity
-  parent: N14IDDoctor
-  id: MisfitsIDFollowerVolunteer
+  parent: F14IDDoctor
+  id: F14IDFollowerVolunteer
   name: followers (volunteer) ID
   description: An ID card worn by the Followers of the Apocalypse.
   components:
   - type: Tag
     tags:
-    - MisfitsIdCardFollowers
+    - F14IdCardFollowers
   - type: Access
     tags:
-    - MisfitsFotA
+    - F14FotA
 
 - type: entity
-  parent: N14IDDoctor
-  id: MisfitsIDFollowerDoctor
+  parent: F14IDDoctor
+  id: F14IDFollowerDoctor
   name: followers (doctor) ID
   description: An ID card worn by the Followers of the Apocalypse.
   components:
   - type: Tag
     tags:
-    - MisfitsIdCardFollowers
+    - F14IdCardFollowers
   - type: Access
     tags:
-    - MisfitsFotA
-    - MisfitsFotADoctor
+    - F14FotA
+    - F14FotADoctor
 
 - type: entity
-  parent: N14IDDoctor
-  id: MisfitsIDFollowerGuard
+  parent: F14IDDoctor
+  id: F14IDFollowerGuard
   name: followers (guard) ID
   description: An ID card worn by the Followers of the Apocalypse.
   components:
   - type: Tag
     tags:
-    - MisfitsIdCardFollowers
+    - F14IdCardFollowers
   - type: Access
     tags:
-    - MisfitsFotA
+    - F14FotA
 
 - type: entity
-  parent: N14IDDoctor
-  id: MisfitsIDFollowerHead
+  parent: F14IDDoctor
+  id: F14IDFollowerHead
   name: followers (head) ID
   description: An ID card worn by the Followers of the Apocalypse.
   components:
   - type: Tag
     tags:
-    - MisfitsIdCardFollowers
+    - F14IdCardFollowers
   - type: Access
     tags:
-    - MisfitsFotA
-    - MisfitsFotADoctor
-    - MisfitsFotAHead
+    - F14FotA
+    - F14FotADoctor
+    - F14FotAHead
 
 #MARK: Keys

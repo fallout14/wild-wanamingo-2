@@ -2,10 +2,10 @@
 # Resources/Prototypes/_Nuclear14/Catalog/Fills/gatherables.yml
 
 - type: entityTable
-  id: N14WildAgave
+  id: F14WildAgave
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildAgave
+    - id: F14FloraProduceWildAgave
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 2
@@ -14,7 +14,7 @@
   id: WildAgaveAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildAgave
+    - id: F14FloraProduceWildAgave
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -23,14 +23,14 @@
   id: WildAgaveClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildAgaveClippingSeed
+    - id: F14FloraWildAgaveClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildBananaYuccaAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildBananaYucca
+    - id: F14FloraProduceWildBananaYucca
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -39,14 +39,14 @@
   id: WildBananaYuccaClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildBananaYuccaClippingSeed
+    - id: F14FloraWildBananaYuccaClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildBarrelCactusAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildBarrelCactusFruit
+    - id: F14FloraProduceWildBarrelCactusFruit
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -55,14 +55,14 @@
   id: WildBarrelCactusClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildBarrelCactusClippingSeed
+    - id: F14FloraWildBarrelCactusClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildBlackberriesAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildBlackberries
+    - id: F14FloraProduceWildBlackberries
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -71,14 +71,14 @@
   id: WildBlackberriesClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildBlackberryClippingSeed
+    - id: F14FloraWildBlackberryClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildBuffaloGourdAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildBuffaloGourd
+    - id: F14FloraProduceWildBuffaloGourd
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -87,14 +87,14 @@
   id: WildBuffaloGourdClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildBuffaloGourdClippingSeed
+    - id: F14FloraWildBuffaloGourdClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildBrocFlowerAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildBrocFlower
+    - id: F14FloraProduceWildBrocFlower
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -103,14 +103,14 @@
   id: WildBrocFlowerClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildBrocFlowerClippingSeed
+    - id: F14FloraWildBrocFlowerClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildCarrotAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildCarrot
+    - id: F14FloraProduceWildCarrot
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -119,14 +119,14 @@
   id: WildCarrotClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildCarrotClippingSeed
+    - id: F14FloraWildCarrotClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildCabbageAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildCabbage
+    - id: F14FloraProduceWildCabbage
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 2
@@ -135,14 +135,14 @@
   id: WildCabbageClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildCabbageClippingSeed
+    - id: F14FloraWildCabbageClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildCaveFungusAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildCaveFungus
+    - id: F14FloraProduceWildCaveFungus
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -151,7 +151,7 @@
   id: WildCaveFungusRadAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildCaveFungusRad
+    - id: F14FloraProduceWildCaveFungusRad
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -178,7 +178,7 @@
   id: WildCoyoteTobaccoAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildCoyoteTobacco
+    - id: F14FloraProduceWildCoyoteTobacco
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -187,14 +187,14 @@
   id: WildCoyoteTobaccoClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildCoyoteTobaccoClippingSeed
+    - id: F14FloraWildCoyoteTobaccoClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildCannabisAll
   table: !type:AllSelector
     children:
-    - id: MisfitsFloraProduceWildCannabis
+    - id: F14FloraProduceWildCannabis
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -203,14 +203,14 @@
   id: WildCannabisClippers
   table: !type:AllSelector
     children:
-    - id: MisfitsFloraWildCannabisClippingSeed
+    - id: F14FloraWildCannabisClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildDaturaAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildDaturaFlower
+    - id: F14FloraProduceWildDaturaFlower
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -219,14 +219,14 @@
   id: WildDaturaClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraDaturaClippingSeed
+    - id: F14FloraDaturaClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildGlowpepperAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildGlowpepper
+    - id: F14FloraProduceWildGlowpepper
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 4
@@ -235,14 +235,14 @@
   id: WildGlowpepperClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildGlowpepperClippingSeed
+    - id: F14FloraWildGlowpepperClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildMaizeAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildMaize
+    - id: F14FloraProduceWildMaize
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -251,14 +251,14 @@
   id: WildMaizeClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildMaizeClippingSeed
+    - id: F14FloraWildMaizeClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildMesquiteAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildMesquitePods
+    - id: F14FloraProduceWildMesquitePods
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 6
@@ -267,14 +267,14 @@
   id: WildMesquiteClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildHoneyMesquiteClippingSeed
+    - id: F14FloraWildHoneyMesquiteClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildMutfruitAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildMutfruit
+    - id: F14FloraProduceWildMutfruit
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -283,14 +283,14 @@
   id: WildMutfruitClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildMutfruitClippingSeed
+    - id: F14FloraWildMutfruitClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildNettleAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildNettle
+    - id: F14FloraProduceWildNettle
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -299,14 +299,14 @@
   id: WildNettleClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildNettleClippingSeed
+    - id: F14FloraWildNettleClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildOnionAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildOnion
+    - id: F14FloraProduceWildOnion
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -315,14 +315,14 @@
   id: WildOnionClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildOnionClippingSeed
+    - id: F14FloraWildOnionClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildPinyonAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildPinyonNuts
+    - id: F14FloraProduceWildPinyonNuts
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -331,14 +331,14 @@
   id: WildPinyonClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildPinyonClippingSeed
+    - id: F14FloraWildPinyonClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildPricklyPearAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildPricklyPearFruit
+    - id: F14FloraProduceWildPricklyPearFruit
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -347,14 +347,14 @@
   id: WildPricklyPearClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildPricklyPearClippingSeed
+    - id: F14FloraWildPricklyPearClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildRazorgrainAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildRazorgrain
+    - id: F14FloraProduceWildRazorgrain
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -363,14 +363,14 @@
   id: WildRazorgrainClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildRazorgrainClippingSeed
+    - id: F14FloraWildRazorgrainClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildStarlightBerriesAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildStarlightBerries
+    - id: F14FloraProduceWildStarlightBerries
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -379,14 +379,14 @@
   id: WildStarlightBerriesClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildStarlightBerryClippingSeed
+    - id: F14FloraWildStarlightBerryClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildTarberriesAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildTarberries
+    - id: F14FloraProduceWildTarberries
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -395,11 +395,11 @@
   id: WildTarberriesClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildTarberryClippingSeed
+    - id: F14FloraWildTarberryClippingSeed
       prob: 0.75
 
 - type: entityTable
-  id: N14FloraWildTarberryClippingSeed
+  id: F14FloraWildTarberryClippingSeed
   table: !type:AllSelector
     children:
     - id: SpaceCash
@@ -409,7 +409,7 @@
   id: WildTatoAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildTato
+    - id: F14FloraProduceWildTato
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -418,14 +418,14 @@
   id: WildTatoClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildTatoClippingSeed
+    - id: F14FloraWildTatoClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildWhiteHorsenettleAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildWhiteHorsenettle
+    - id: F14FloraProduceWildWhiteHorsenettle
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -434,14 +434,14 @@
   id: WildWhiteHorsenettleClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildWhiteHorsenettleClippingSeed
+    - id: F14FloraWildWhiteHorsenettleClippingSeed
       prob: 0.75
 
 - type: entityTable
   id: WildXanderAll
   table: !type:AllSelector
     children:
-    - id: N14FloraProduceWildXander
+    - id: F14FloraProduceWildXander
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 2
@@ -450,5 +450,5 @@
   id: WildXanderClippers
   table: !type:AllSelector
     children:
-    - id: N14FloraWildXanderRootClippingSeed
+    - id: F14FloraWildXanderRootClippingSeed
       prob: 0.75

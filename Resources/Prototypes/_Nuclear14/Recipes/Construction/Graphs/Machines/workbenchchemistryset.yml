@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/Machines/workbenchchemistryset.yml
 
 - type: constructionGraph
-  id: N14WorkbenchChemistryset
+  id: F14WorkbenchChemistryset
   start: start
   graph:
     - node: start
@@ -19,7 +19,7 @@
     - node: WorkbenchChemistrysetFrame
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchChemistrysetFrame
+      entity: F14WorkbenchChemistrysetFrame
       edges:
         - to: WorkbenchChemistrysetSteel
           steps:
@@ -30,7 +30,7 @@
     - node: WorkbenchChemistrysetSteel
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchChemistrysetFrame
+      entity: F14WorkbenchChemistrysetFrame
       edges:
         - to: WorkbenchChemistrysetGears
           steps:
@@ -41,11 +41,11 @@
     - node: WorkbenchChemistrysetGears
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchChemistrysetFrame
+      entity: F14WorkbenchChemistrysetFrame
       edges:
         - to: WorkbenchChemistrysetScrews
           steps:
-            - tag: N14Gear
+            - tag: F14Gear
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: gear_large
@@ -55,23 +55,23 @@
     - node: WorkbenchChemistrysetScrews
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchChemistrysetFrame
+      entity: F14WorkbenchChemistrysetFrame
       edges:
         - to: WorkbenchChemistrysetUnwelded
           steps:
-            - tag: N14Screw
+            - tag: F14Screw
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: screw
               name: misfits-kit-screws
               doAfter: 1
-            - tag: N14Screw
+            - tag: F14Screw
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: screw
               name: misfits-kit-screws
               doAfter: 1
-            - tag: N14Screw
+            - tag: F14Screw
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: screw
@@ -81,7 +81,7 @@
     - node: WorkbenchChemistrysetUnwelded
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchChemistrysetFrame
+      entity: F14WorkbenchChemistrysetFrame
       edges:
         - to: WorkbenchChemistrysetUnwrenched
           steps:
@@ -91,7 +91,7 @@
     - node: WorkbenchChemistrysetUnwrenched
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchChemistrysetFrame
+      entity: F14WorkbenchChemistrysetFrame
       edges:
         - to: WorkbenchChemistrysetUnscrewed
           steps:
@@ -101,7 +101,7 @@
     - node: WorkbenchChemistrysetUnscrewed
       actions:
       - !type:AppearanceChange
-      entity: N14WorkbenchChemistrysetFrame
+      entity: F14WorkbenchChemistrysetFrame
       edges:
         - to: WorkbenchChemistryset
           steps:
@@ -109,4 +109,4 @@
               doAfter: 2
 
     - node: WorkbenchChemistryset
-      entity: N14WorkbenchChemistryset
+      entity: F14WorkbenchChemistryset

@@ -2,20 +2,20 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/5.56.yml
 
 - type: entity
-  id: N14BaseMagazine556Rifle
+  id: F14BaseMagazine556Rifle
   name: "magazine (5.56mm)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - N14Magazine556Rifle
+      - F14Magazine556Rifle
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14Cartridge556Rifle
-    proto: N14Cartridge556Rifle
+        - F14Cartridge556Rifle
+    proto: F14Cartridge556Rifle
     capacity: 25
   - type: ContainerContainer
     containers:
@@ -36,38 +36,38 @@
   # - type: Craftable  # #Misfits Remove: Stalker14 crafting system
 
 - type: entity
-  id: N14Magazine556Rifle
+  id: F14Magazine556Rifle
   name: "magazine (5.56mm)"
-  parent: N14BaseMagazine556Rifle
+  parent: F14BaseMagazine556Rifle
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge556Rifle
+    proto: F14Cartridge556Rifle
 
 - type: entity
-  id: N14LongMagazine556Rifle
+  id: F14LongMagazine556Rifle
   name: "carbine magazine (5.56mm)"
-  parent: N14BaseMagazine556Rifle
+  parent: F14BaseMagazine556Rifle
   components:
   - type: Tag
     tags:
-      - N14LongMagazine556Rifle
+      - F14LongMagazine556Rifle
   - type: BallisticAmmoProvider
-    proto: N14Cartridge556Rifle
+    proto: F14Cartridge556Rifle
     capacity: 35
   - type: Sprite
     netsync: false
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Magazines/5.56/mag2.rsi
 
 - type: entity
-  id: N14LMGMagazine556Rifle
+  id: F14LMGMagazine556Rifle
   name: "LMG magazine (5.56mm)"
-  parent: N14BaseMagazine556Rifle
+  parent: F14BaseMagazine556Rifle
   components:
   - type: Tag
     tags:
-      - N14LMGMagazine556Rifle
+      - F14LMGMagazine556Rifle
   - type: BallisticAmmoProvider
-    proto: N14Cartridge556Rifle
+    proto: F14Cartridge556Rifle
     capacity: 55
   - type: Sprite
     netsync: false

@@ -1,81 +1,73 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/blueprint_ammo_aliases.yml
 
 - type: entity
-  parent: N14MagazineBox10mm
-  id: MisfitsAmmoBox10mm
+  parent: F14MagazineBox10mm
+  id: F14AmmoBox10mm
 
 - type: entity
-  parent: N14MagazineBox44
-  id: MisfitsAmmoBox44Magnum
+  parent: F14MagazineBox44
+  id: F14AmmoBox44Magnum
 
 - type: entity
-  parent: N14SpeedLoader44
-  id: MisfitsSpeedLoader44Magnum
+  parent: F14SpeedLoader44
+  id: F14SpeedLoader44Magnum
 
 - type: entity
-  parent: N14MagazineBox12gauge
-  id: MisfitsAmmoBox12gauge
+  parent: F14MagazineBox12gauge
+  id: F14AmmoBox12gauge
 
 - type: entity
-  parent: N14MagazineBox556
-  id: MisfitsAmmoBox556
+  parent: F14MagazineBox556
+  id: F14AmmoBox556
 
 - type: entity
-  parent: N14MagazineBox12
-  id: MisfitsAmmoBox127
+  parent: F14MagazineBox12
+  id: F14AmmoBox127
 
 - type: entity
-  parent: N14MagazineBox308
-  id: MisfitsAmmoBox308
+  parent: F14MagazineBox308
+  id: F14AmmoBox308
 
 - type: entity
-  parent: MisfitsMagazineBoxOver308
-  id: MisfitsAmmoBoxOver308
+  parent: F14MagazineBoxOver308
+  id: F14AmmoBoxOver308
 
 - type: entity
-  parent: N14SpeedLoader45-70
-  id: MisfitsSpeedLoader45-70
+  parent: F14MagazineBox50
+  id: F14AmmoBox50
 
 - type: entity
-  parent: N14MagazineBox50
-  id: MisfitsAmmoBox50
+  parent: F14MagazineBox4570
+  id: F14AmmoBox4570
 
 - type: entity
-  parent: N14MagazineBox45-70
-  id: MisfitsAmmoBox45-70
+  parent: F14MagazineBox9mm
+  id: F14AmmoBox9mm
 
 - type: entity
-  parent: N14MagazineBox9mm
-  id: MisfitsAmmoBox9mm
+  parent: F14MagazineBox22
+  id: F14AmmoBox22lr
 
 - type: entity
-  parent: N14MagazineBox22
-  id: MisfitsAmmoBox22lr
+  parent: F14MagazineBox45
+  id: F14AmmoBox45
 
 - type: entity
-  parent: N14MagazineBox45
-  id: MisfitsAmmoBox45
+  parent: F14MagazineBox762
+  id: F14AmmoBox762
 
 - type: entity
-  parent: N14MagazineBox762
-  id: MisfitsAmmoBox762
+  parent: F14MagazineMinigun5mm
+  id: F14AmmoBox5mm
 
 - type: entity
-  parent: N14MagazineMinigun5mm
-  id: MisfitsAmmoBox5mm
+  parent: F14LMGMagazine556Rifle
+  id: F14MagazineLMG308
 
 - type: entity
-  parent: N14LMGMagazine556Rifle
-  id: MisfitsMagazineLMG308
+  parent: F1440mmGrenadeFrag
+  id: F14CartridgeGrenade40mm
 
 - type: entity
-  parent: N1440mmGrenadeFrag
-  id: MisfitsCartridgeGrenade40mm
-
-- type: entity
-  parent: N14CartridgeMissile
-  id: MisfitsCartridgeMissile
-
-- type: entity
-  parent: N1440mmGrenadeFire
-  id: MisfitsCartridgeGrenadeIncendiary40mm
+  parent: F1440mmGrenadeFire
+  id: F14CartridgeGrenadeIncendiary40mm

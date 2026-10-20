@@ -3,77 +3,77 @@
 - type: entity
   name: Tier3 Parts GunParts Single
   suffix: Tier3
-  id: MisfitsM14PartsTier3Spawner_Single_GunParts
-  parent: MisfitsM14Tier3Spawner_RefParts
+  id: F14PartsTier3SpawnerSingleGunParts
+  parent: F14Tier3SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier3_GunParts
+      tableId: F14PartsLootTier3GunParts
 
 - type: entity
   name: Tier3 Parts GunParts 0-3
   suffix: Tier3
-  id: MisfitsM14PartsTier3Spawner_Mult0_3_GunParts
-  parent: MisfitsM14Tier3Spawner_RefParts
+  id: F14PartsTier3SpawnerMult03GunParts
+  parent: F14Tier3SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier3_GunParts
+      tableId: F14PartsLootTier3GunParts
 
 - type: entity
   name: Tier3 Parts GunParts 1-2
   suffix: Tier3
-  id: MisfitsM14PartsTier3Spawner_Mult1_2_GunParts
-  parent: MisfitsM14Tier3Spawner_RefParts
+  id: F14PartsTier3SpawnerMult12GunParts
+  parent: F14Tier3SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier3_GunParts
+      tableId: F14PartsLootTier3GunParts
 
 - type: entity
   name: Tier3 Parts ElectricComp Single
   suffix: Tier3
-  id: MisfitsM14PartsTier3Spawner_Single_ElectricComp
-  parent: MisfitsM14Tier3Spawner_RefParts
+  id: F14PartsTier3SpawnerSingleElectricComp
+  parent: F14Tier3SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier3_ElectricComp
+      tableId: F14PartsLootTier3ElectricComp
 
 - type: entity
   name: Tier3 Parts ElectricComp 0-3
   suffix: Tier3
-  id: MisfitsM14PartsTier3Spawner_Mult0_3_ElectricComp
-  parent: MisfitsM14Tier3Spawner_RefParts
+  id: F14PartsTier3SpawnerMult03ElectricComp
+  parent: F14Tier3SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier3_ElectricComp
+      tableId: F14PartsLootTier3ElectricComp
 
 - type: entity
   name: Tier3 Parts ElectricComp 1-2
   suffix: Tier3
-  id: MisfitsM14PartsTier3Spawner_Mult1_2_ElectricComp
-  parent: MisfitsM14Tier3Spawner_RefParts
+  id: F14PartsTier3SpawnerMult12ElectricComp
+  parent: F14Tier3SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier3_ElectricComp
+      tableId: F14PartsLootTier3ElectricComp

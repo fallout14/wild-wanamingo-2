@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14WindowBase # use for single tile / standalone windows & broken windows
+  id: F14WindowBase # use for single tile / standalone windows & broken windows
   description: A window for seeing into places.
   abstract: true
   name: window
@@ -65,8 +65,8 @@
         
 
 - type: entity
-  parent: N14WindowBase
-  id: N14WindowBaseAirtight # use for single tile / standalone windows that are intact
+  parent: F14WindowBase
+  id: F14WindowBaseAirtight # use for single tile / standalone windows that are intact
   description: A window for seeing into places. 
   abstract: true
   components:
@@ -85,8 +85,8 @@
       
 
 - type: entity
-  parent: N14WindowBase
-  id: N14WindowSmoothBase # Use for windows that smooth together
+  parent: F14WindowBase
+  id: F14WindowSmoothBase # Use for windows that smooth together
   description: A window for seeing into places.
   abstract: true
   components:
@@ -106,8 +106,8 @@
     
 
 - type: entity
-  parent: N14WindowSmoothBase
-  id: N14WindowSmoothBaseAirtight # use for windows that smooth together that are intact
+  parent: F14WindowSmoothBase
+  id: F14WindowSmoothBaseAirtight # use for windows that smooth together that are intact
   description: A window for seeing into places.
   abstract: true
   components:
@@ -128,13 +128,13 @@
 ## Smooth Windows
 
 - type: entity
-  id: N14Window
-  parent: N14WindowSmoothBaseAirtight
+  id: F14Window
+  parent: F14WindowSmoothBaseAirtight
     
 
 - type: entity
-  parent: N14WindowSmoothBase
-  id: N14WindowBroken
+  parent: F14WindowSmoothBase
+  id: F14WindowBroken
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Windows/windowbroken.rsi
@@ -146,8 +146,8 @@
 # Ruins
 
 - type: entity
-  parent: N14WindowBaseAirtight
-  id: N14WindowRuins
+  parent: F14WindowBaseAirtight
+  id: F14WindowRuins
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Windows/window_ruins.rsi
@@ -158,8 +158,8 @@
     
 
 - type: entity
-  parent: N14WindowBaseAirtight
-  id: N14WindowRuinsVertical
+  parent: F14WindowBaseAirtight
+  id: F14WindowRuinsVertical
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Windows/window_ruins.rsi
@@ -170,8 +170,8 @@
     
 
 - type: entity
-  parent: N14WindowBase
-  id: N14WindowRuinsBroken
+  parent: F14WindowBase
+  id: F14WindowRuinsBroken
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Windows/window_ruins.rsi
@@ -182,8 +182,8 @@
     
 
 - type: entity
-  parent: N14WindowBase
-  id: N14WindowRuinsVerticalBroken
+  parent: F14WindowBase
+  id: F14WindowRuinsVerticalBroken
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Windows/window_ruins.rsi
@@ -194,8 +194,8 @@
     
 
 - type: entity
-  parent: N14WindowBase
-  id: N14WindowRuinsDestroyed
+  parent: F14WindowBase
+  id: F14WindowRuinsDestroyed
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Windows/window_ruins.rsi
@@ -207,8 +207,8 @@
 # Wood / House
 
 - type: entity
-  parent: N14WindowBaseAirtight
-  id: N14WindowHouse
+  parent: F14WindowBaseAirtight
+  id: F14WindowHouse
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Windows/window_ruins.rsi
@@ -219,8 +219,8 @@
     
 
 - type: entity
-  parent: N14WindowBaseAirtight
-  id: N14WindowHouseVertical
+  parent: F14WindowBaseAirtight
+  id: F14WindowHouseVertical
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Windows/window_ruins.rsi
@@ -231,8 +231,8 @@
     
 
 - type: entity
-  parent: N14WindowBaseAirtight
-  id: N14WindowHouseWood
+  parent: F14WindowBaseAirtight
+  id: F14WindowHouseWood
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Windows/window_ruins.rsi
@@ -243,8 +243,8 @@
     
 
 - type: entity
-  parent: N14WindowBase
-  id: N14WindowHouseBroken
+  parent: F14WindowBase
+  id: F14WindowHouseBroken
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Windows/window_ruins.rsi
@@ -255,8 +255,8 @@
     
 
 - type: entity
-  parent: N14WindowBase
-  id: N14WindowHouseBrokenVertical
+  parent: F14WindowBase
+  id: F14WindowHouseBrokenVertical
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Windows/window_ruins.rsi
@@ -267,8 +267,8 @@
     
 
 - type: entity
-  parent: N14WindowBase
-  id: N14WindowHouseWoodBroken
+  parent: F14WindowBase
+  id: F14WindowHouseWoodBroken
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Windows/window_ruins.rsi
@@ -280,8 +280,8 @@
 # Store windows
 
 - type: entity
-  parent: N14WindowBaseAirtight
-  id: N14WindowStoreLeft
+  parent: F14WindowBaseAirtight
+  id: F14WindowStoreLeft
   suffix: left
   name: store window
   components:
@@ -294,8 +294,8 @@
     
 
 - type: entity
-  parent: N14WindowStoreLeft
-  id: N14WindowStoreMiddleHorizontal
+  parent: F14WindowStoreLeft
+  id: F14WindowStoreMiddleHorizontal
   suffix: middle horizontal
   name: store window
   components:
@@ -308,8 +308,8 @@
     
 
 - type: entity
-  parent: N14WindowStoreLeft
-  id: N14WindowStoreRight
+  parent: F14WindowStoreLeft
+  id: F14WindowStoreRight
   suffix: right
   name: store window
   components:
@@ -322,8 +322,8 @@
     
 
 - type: entity
-  parent: N14WindowStoreLeft
-  id: N14WindowStoreBottom
+  parent: F14WindowStoreLeft
+  id: F14WindowStoreBottom
   suffix: bottom
   name: store window
   components:
@@ -336,8 +336,8 @@
     
 
 - type: entity
-  parent: N14WindowStoreLeft
-  id: N14WindowStoreMiddleVertical
+  parent: F14WindowStoreLeft
+  id: F14WindowStoreMiddleVertical
   suffix: middle vertical
   name: store window
   components:
@@ -350,8 +350,8 @@
     
 
 - type: entity
-  parent: N14WindowStoreLeft
-  id: N14WindowStoreTop
+  parent: F14WindowStoreLeft
+  id: F14WindowStoreTop
   suffix: top
   name: store window
   components:

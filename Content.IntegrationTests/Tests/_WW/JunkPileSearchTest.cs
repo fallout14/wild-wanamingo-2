@@ -19,14 +19,14 @@ public sealed class JunkPileSearchTest : InteractionTest
     [Test]
     public async Task SearchFindsLootThenCoolsDown()
     {
-        await SpawnTarget("N14JunkPile1");
+        await SpawnTarget("F14JunkPile1");
         var pile = STarget!.Value;
 
         // A guaranteed find, so the test doesn't depend on the pile's loot odds.
         await Server.WaitPost(() =>
         {
             var comp = SEntMan.GetComponent<JunkPileSearchableComponent>(pile);
-            comp.Contents = [new EntitySpawnEntry { PrototypeId = "N14Paper1" }];
+            comp.Contents = [new EntitySpawnEntry { PrototypeId = "F14Paper1" }];
         });
 
         var before = await CountPaper();
@@ -49,7 +49,7 @@ public sealed class JunkPileSearchTest : InteractionTest
             var query = SEntMan.AllEntityQueryEnumerator<MetaDataComponent>();
             while (query.MoveNext(out _, out var meta))
             {
-                if (meta.EntityPrototype?.ID == "N14Paper1")
+                if (meta.EntityPrototype?.ID == "F14Paper1")
                     count++;
             }
         });

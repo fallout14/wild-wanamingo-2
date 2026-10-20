@@ -2,8 +2,8 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/furniture.yml
 
 - type: construction
-  id: N14Bed
-  graph: N14Bed
+  id: F14Bed
+  graph: F14Bed
   startNode: start
   targetNode: bed
   category: construction-category-furniture
@@ -15,8 +15,8 @@
   hide: false
 
 - type: construction
-  id: N14BedWood
-  graph: N14Bed
+  id: F14BedWood
+  graph: F14Bed
   startNode: start
   targetNode: bedwood
   category: construction-category-furniture
@@ -30,8 +30,8 @@
 # start Misfits change
 
 - type: construction
-  id: N14BedWoodBunk
-  graph: N14Bed
+  id: F14BedWoodBunk
+  graph: F14Bed
   startNode: start
   targetNode: bedwoodbunk
   category: construction-category-furniture
@@ -42,8 +42,8 @@
 # end Misfits change
 
 - type: construction
-  id: N14Bedroll
-  graph: N14Bed
+  id: F14Bedroll
+  graph: F14Bed
   startNode: start
   targetNode: bedroll
   category: construction-category-furniture
@@ -55,8 +55,8 @@
   hide: false
 
 - type: construction
-  id: N14BedMattress0 # Forge-Change
-  graph: N14Bed
+  id: F14BedMattress0 # Forge-Change
+  graph: F14Bed
   startNode: start
   targetNode: mattress
   category: construction-category-furniture
@@ -70,10 +70,10 @@
 # Chairs
 
 - type: construction
-  id: N14ChairSchool
+  id: F14ChairSchool
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairSchool
+  targetNode: F14ChairSchool
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -83,10 +83,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairWood
+  id: F14ChairWood
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairWood
+  targetNode: F14ChairWood
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -96,10 +96,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairWood1
+  id: F14ChairWood1
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairWood1
+  targetNode: F14ChairWood1
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -109,10 +109,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairWoodPadded
+  id: F14ChairWoodPadded
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairWoodPadded
+  targetNode: F14ChairWoodPadded
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -122,10 +122,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairWoodSettler
+  id: F14ChairWoodSettler
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairWoodSettler
+  targetNode: F14ChairWoodSettler
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -135,10 +135,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairStoolBarBlack
+  id: F14ChairStoolBarBlack
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairStoolBarBlack
+  targetNode: F14ChairStoolBarBlack
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -148,10 +148,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairStoolBarTan
+  id: F14ChairStoolBarTan
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairStoolBarTan
+  targetNode: F14ChairStoolBarTan
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -161,10 +161,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairStoolBarRed
+  id: F14ChairStoolBarRed
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairStoolBarRed
+  targetNode: F14ChairStoolBarRed
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -174,10 +174,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairArmchair
+  id: F14ChairArmchair
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairArmchair
+  targetNode: F14ChairArmchair
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -187,10 +187,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairMetalGreen
+  id: F14ChairMetalGreen
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairMetalGreen
+  targetNode: F14ChairMetalGreen
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -200,10 +200,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairMetalBlue
+  id: F14ChairMetalBlue
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairMetalBlue
+  targetNode: F14ChairMetalBlue
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -213,10 +213,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairMetalRed
+  id: F14ChairMetalRed
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairMetalRed
+  targetNode: F14ChairMetalRed
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -226,10 +226,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairOfficeRed
+  id: F14ChairOfficeRed
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairOfficeRed
+  targetNode: F14ChairOfficeRed
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -239,10 +239,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairOfficeBlue
+  id: F14ChairOfficeBlue
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairOfficeBlue
+  targetNode: F14ChairOfficeBlue
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -252,10 +252,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairOfficeGreen
+  id: F14ChairOfficeGreen
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairOfficeGreen
+  targetNode: F14ChairOfficeGreen
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -265,10 +265,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairOfficeErgonomic
+  id: F14ChairOfficeErgonomic
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairOfficeErgonomic
+  targetNode: F14ChairOfficeErgonomic
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -278,10 +278,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairMetalFolding
+  id: F14ChairMetalFolding
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairMetalFolding
+  targetNode: F14ChairMetalFolding
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -291,10 +291,10 @@
   hide: false
 
 - type: construction
-  id: N14ChairPlastic
+  id: F14ChairPlastic
   graph: MisfitsSeat
   startNode: start
-  targetNode: N14ChairPlastic
+  targetNode: F14ChairPlastic
   category: construction-category-furniture
   objectType: Structure
   placementMode: SnapgridCenter
@@ -306,8 +306,8 @@
 # Tables
 
 - type: construction
-  id: N14TableCounterBar
-  graph: N14TableCounterBarRecipes
+  id: F14TableCounterBar
+  graph: F14TableCounterBarRecipes
   startNode: start
   targetNode: TableCounterBar
   category: construction-category-furniture
@@ -320,8 +320,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14TableMetalGrate
-  graph: N14TableMetalGrateRecipes
+  id: F14TableMetalGrate
+  graph: F14TableMetalGrateRecipes
   startNode: start
   targetNode: TableMetalGrate
   category: construction-category-furniture
@@ -334,8 +334,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14TableWoodSettler
-  graph: N14TableRecipes
+  id: F14TableWoodSettler
+  graph: F14TableRecipes
   startNode: start
   targetNode: TableWoodSettler
   category: construction-category-furniture

@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14BaseTallObstacle
+  id: F14BaseTallObstacle
   suffix: tall
   abstract: true
   components:
@@ -40,8 +40,8 @@
         
 
 - type: entity
-  parent: N14BaseTallObstacle
-  id: N14BarricadeWoodTall
+  parent: F14BaseTallObstacle
+  id: F14BarricadeWoodTall
   name: wooden barricade
   suffix: tall
   components:
@@ -52,7 +52,7 @@
   - type: Injurable
     damageContainer: Inorganic
   - type: Construction
-    graph: MisfitsBarricadeWoodTall
+    graph: F14BarricadeWoodTall
     node: WoodTall
   - type: Destructible
     thresholds:
@@ -78,8 +78,8 @@
     
 
 - type: entity
-  parent: N14BaseTallObstacle
-  id: N14CellBars
+  parent: F14BaseTallObstacle
+  id: F14CellBars
   name: cell bars
   components:
   - type: Sprite
@@ -92,8 +92,8 @@
     
 
 - type: entity
-  parent: N14CellBars
-  id: N14CellBarsSlot
+  parent: F14CellBars
+  id: F14CellBarsSlot
   suffix: slot
   components:
   - type: Sprite
@@ -121,8 +121,8 @@
     
 
 - type: entity
-  parent: N14CellBars
-  id: N14CellBarsCorner
+  parent: F14CellBars
+  id: F14CellBarsCorner
   suffix: corner
   components:
   - type: Sprite
@@ -151,8 +151,8 @@
     
 
 - type: entity
-  parent: N14CellBars
-  id: N14CellBarsRust
+  parent: F14CellBars
+  id: F14CellBarsRust
   name: cell bars
   components:
   - type: Sprite
@@ -160,8 +160,8 @@
     
 
 - type: entity
-  parent: N14CellBarsSlot
-  id: N14CellBarsSlotRust
+  parent: F14CellBarsSlot
+  id: F14CellBarsSlotRust
   suffix: slot
   components:
   - type: Sprite
@@ -169,8 +169,8 @@
     
 
 - type: entity
-  parent: N14CellBarsCorner
-  id: N14CellBarsCornerRust
+  parent: F14CellBarsCorner
+  id: F14CellBarsCornerRust
   suffix: corner
   components:
   - type: Sprite

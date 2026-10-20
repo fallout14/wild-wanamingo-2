@@ -3,7 +3,7 @@
 
 - type: entity
   parent: FoodTinBase
-  id: N14FoodTinC1
+  id: F14FoodTinC1
   name: c ration type 1
   description: A canned food product containing the entree portion of a military combat ration.
   components:
@@ -11,18 +11,18 @@
     sprite: Nuclear14/Objects/Consumable/Food/Tins/c_ration_1.rsi
   - type: FlavorProfile
     flavors:
-    - MisfitsRationCornedBrahminHash
+    - F14RationCornedBrahminHash
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodTinC1Trash
+    - F14FoodTinC1Trash
   - type: Tag
     tags:
     - Meat
 
 - type: entity
-  parent: N14FoodTinC1
-  id: N14FoodTinC1Open
+  parent: F14FoodTinC1
+  id: F14FoodTinC1Open
   suffix: Open
   components:
   - type: Sprite
@@ -34,7 +34,7 @@
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: N14FoodTinC1Trash
+  id: F14FoodTinC1Trash
   name: c ration type 1
   components:
   - type: Sprite
@@ -44,7 +44,7 @@
 
 - type: entity
   parent: [FoodTinBase, BaseSlicingRefinableFood]
-  id: N14FoodTinC2
+  id: F14FoodTinC2
   name: c ration crackers
   description: A canned food product containing crackers as part of a military combat ration. Use a knife to portion the crackers out.
   components:
@@ -52,7 +52,7 @@
     sprite: Nuclear14/Objects/Consumable/Food/Tins/c_ration_2.rsi
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodCrackerCSlice
+    - id: F14FoodCrackerCSlice
       amount: 1
   - type: FlavorProfile
     flavors:
@@ -62,14 +62,14 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodTinC2Trash
+    - F14FoodTinC2Trash
   - type: Tag
     tags:
     - Bread
 
 - type: entity
-  parent: N14FoodTinC2
-  id: N14FoodTinC2Open
+  parent: F14FoodTinC2
+  id: F14FoodTinC2Open
   suffix: Open
   components:
   - type: Sprite
@@ -81,7 +81,7 @@
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: N14FoodTinC2Trash
+  id: F14FoodTinC2Trash
   name: c ration type 2
   components:
   - type: Sprite
@@ -91,7 +91,7 @@
 
 - type: entity
   parent: FoodTinBase
-  id: N14FoodTinC3
+  id: F14FoodTinC3
   name: c ration type 3
   description: A canned food product containing the dessert portion of a military combat ration.
   components:
@@ -99,18 +99,18 @@
     sprite: Nuclear14/Objects/Consumable/Food/Tins/c_ration_3.rsi
   - type: FlavorProfile
     flavors:
-    - MisfitsRationBakedApples
+    - F14RationBakedApples
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodTinC3Trash
+    - F14FoodTinC3Trash
   - type: Tag
     tags:
     - Fruit
 
 - type: entity
-  parent: N14FoodTinC3
-  id: N14FoodTinC3Open
+  parent: F14FoodTinC3
+  id: F14FoodTinC3Open
   suffix: Open
   components:
   - type: Sprite
@@ -122,7 +122,7 @@
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: N14FoodTinC3Trash
+  id: F14FoodTinC3Trash
   name: c ration type 3
   components:
   - type: Sprite
@@ -132,7 +132,7 @@
 
 - type: entity
   parent: FoodTinBase
-  id: N14FoodTinK
+  id: F14FoodTinK
   name: k ration
   description: A canned food product containing the field option of a military combat ration.
   components:
@@ -140,18 +140,18 @@
     sprite: Nuclear14/Objects/Consumable/Food/Tins/k_ration.rsi
   - type: FlavorProfile
     flavors:
-    - MisfitsRationBighornerJalapenos
+    - F14RationBighornerJalapenos
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodTinKTrash
+    - F14FoodTinKTrash
   - type: Tag
     tags:
     - Meat
 
 - type: entity
-  parent: N14FoodTinK
-  id: N14FoodTinKOpen
+  parent: F14FoodTinK
+  id: F14FoodTinKOpen
   suffix: Open
   components:
   - type: Sprite
@@ -163,7 +163,7 @@
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: N14FoodTinKTrash
+  id: F14FoodTinKTrash
   name: K ration
   components:
   - type: Sprite
@@ -173,7 +173,7 @@
 
 - type: entity
   parent: [FoodTinBase, BaseSlicingRefinableFood]
-  id: N14FoodTinKCracker
+  id: F14FoodTinKCracker
   name: k ration crackers
   description: A canned food product containing crackers as part of a military combat ration. Use a knife to portion the crackers out.
   components:
@@ -181,7 +181,7 @@
     sprite: Nuclear14/Objects/Consumable/Food/Tins/c_ration_2.rsi
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodCrackerKSlice
+    - id: F14FoodCrackerKSlice
       amount: 1
   - type: FlavorProfile
     flavors:
@@ -190,14 +190,14 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodTinC2Trash
+    - F14FoodTinC2Trash
   - type: Tag
     tags:
     - Bread
 
 - type: entity
-  parent: N14FoodTinKCracker
-  id: N14FoodTinKCrackerOpen
+  parent: F14FoodTinKCracker
+  id: F14FoodTinKCrackerOpen
   suffix: Open
   components:
   - type: Sprite
@@ -208,6 +208,6 @@
     opened: true
 
 - type: entity
-  parent: N14FoodTinC2Trash
-  id: N14FoodTinKCrackerTrash
+  parent: F14FoodTinC2Trash
+  id: F14FoodTinKCrackerTrash
   name: k ration crackers

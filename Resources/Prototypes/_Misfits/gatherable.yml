@@ -1,21 +1,21 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/gatherable.yml, Resources/Prototypes/_Nuclear14/gatherable.yml
 
 - type: ore
-  id: MisfitsWildZoy
-  oreEntity: MisfitsFloraProduceWildZoybeans
+  id: F14WildZoy
+  oreEntity: F14FloraProduceWildZoybeans
 
 - type: weightedRandomOre
-  id: MisfitsRandomOreDistributionHigh
+  id: F14RandomOreDistributionHigh
   weights:
-    N14OreIron: 1
+    F14OreIron: 1
     OreSpaceQuartz: 2
-    N14OreGold: 10
-    N14OreSilver: 4
+    F14OreGold: 10
+    F14OreSilver: 4
     OreUranium: 6
     OreArtifactFragment: 0.5
 
 # Plants
 
 - type: ore
-  id: MisfitsWildCannabis
-  oreEntity: MisfitsFloraProduceWildCannabis
+  id: F14WildCannabis
+  oreEntity: F14FloraProduceWildCannabis

@@ -3,17 +3,17 @@
 
 - type: entity
   parent: BaseCartridge
-  id: N14Cartridge50
+  id: F14Cartridge50
   name: cartridge (.50 anti-materiel)
   components:
   - type: Tag
     tags:
     - Cartridge
-    - N14Cartridge50
+    - F14Cartridge50
   - type: CartridgeAmmo
-    proto: N14Bullet50
+    proto: F14Bullet50
     soundEject:
-      collection: N14RifleCasingEject
+      collection: F14RifleCasingEject
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
     layers:
@@ -25,29 +25,29 @@
     price: 2
   - type: EmitSoundOnLand
     sound:
-      collection: N14RifleCasingEject
+      collection: F14RifleCasingEject
       params:
         volume: -1
   - type: EmitSoundOnCollide
     sound:
-      collection: N14RifleCasingEject
+      collection: F14RifleCasingEject
       params:
         volume: -1
 
 - type: entity
   parent: BaseCartridge
-  id: N14Cartridge50HEIAP
+  id: F14Cartridge50HEIAP
   name: cartridge (.50 HEIAP anti-materiel)
   suffix: HEIAP
   components:
   - type: Tag
     tags:
     - Cartridge
-    - N14Cartridge50HEIAP
+    - F14Cartridge50HEIAP
   - type: CartridgeAmmo
-    proto: N14Bullet50HEIAP
+    proto: F14Bullet50HEIAP
     soundEject:
-      collection: N14RifleCasingEject
+      collection: F14RifleCasingEject
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
     layers:
@@ -59,11 +59,11 @@
     price: 4
   - type: EmitSoundOnLand
     sound:
-      collection: N14RifleCasingEject
+      collection: F14RifleCasingEject
       params:
         volume: -1
   - type: EmitSoundOnCollide
     sound:
-      collection: N14RifleCasingEject
+      collection: F14RifleCasingEject
       params:
         volume: -1

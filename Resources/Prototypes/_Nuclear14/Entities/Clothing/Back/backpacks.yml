@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: N14ClothingBackpackTrekker
+  id: F14ClothingBackpackTrekker
   name: trekker backpack
   description: A hard-wearing backpack for travelling the wastes.
   components:
@@ -13,7 +13,7 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: N14ClothingBackpackHiking
+  id: F14ClothingBackpackHiking
   name: hiking backpack
   description: A hard-wearing backpack for hiking the wastes.
   components:
@@ -23,7 +23,7 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: N14ClothingBackpackExplorer
+  id: F14ClothingBackpackExplorer
   name: explorer backpack
   description: A hard-wearing backpack for exploring the wastes.
   components:
@@ -34,7 +34,7 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: N14ClothingBackpackMilitary
+  id: F14ClothingBackpackMilitary
   name: military backpack
   description: A hard-wearing backpack worn by soldiers.
   components:
@@ -44,7 +44,7 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: N14ClothingBackpackNCR
+  id: F14ClothingBackpackNCR
   name: NCR backpack
   description: A hard-wearing backpack worn by the NCR.
   components:
@@ -54,7 +54,7 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: N14ClothingBackpackRadioNCR
+  id: F14ClothingBackpackRadioNCR
   name: NCR radio backpack
   description: A hard-wearing radio backpack worn by the NCR.
   components:
@@ -76,7 +76,7 @@
   - type: ContainerFill
     containers:
       key_slots:
-      - N14EncryptionKeyNCR
+      - F14EncryptionKeyNCR
   - type: EncryptionKeyHolder
     keySlots: 4
   - type: ClothingSpeedModifier
@@ -86,7 +86,7 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: N14ClothingBackpackTribal
+  id: F14ClothingBackpackTribal
   name: trekker backpack
   description: A hard-wearing backpack for travelling the wastes. # placeholder
   components:
@@ -97,7 +97,7 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: N14ClothingBackpackVaultBlue
+  id: F14ClothingBackpackVaultBlue
   name: vault 14 backpack
   description: It's a very robust backpack.
   components:
@@ -107,7 +107,7 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: N14ClothingBackpackVaultOrange
+  id: F14ClothingBackpackVaultOrange
   name: vault 14 backpack
   description: It's a very robust backpack. This one is orange.
   components:
@@ -117,7 +117,7 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: N14ClothingBackpackVaultGreen
+  id: F14ClothingBackpackVaultGreen
   name: vault 14 backpack
   description: It's a very robust backpack. This one is green.
   components:
@@ -127,7 +127,7 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: N14ClothingBackpackVaultGreenDark
+  id: F14ClothingBackpackVaultGreenDark
   name: vault 14 backpack
   description: It's a very robust backpack. This one is dark green.
   components:
@@ -137,7 +137,7 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: N14ClothingBackpackVaultPurple
+  id: F14ClothingBackpackVaultPurple
   name: vault 14 backpack
   description: It's a very robust backpack. This one is purple.
   components:
@@ -147,7 +147,7 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: N14ClothingBackpackVaultRed
+  id: F14ClothingBackpackVaultRed
   name: vault 14 backpack
   description: It's a very robust backpack. This one is red.
   components:
@@ -157,7 +157,7 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: N14ClothingBackpackVaultBlueDark
+  id: F14ClothingBackpackVaultBlueDark
   name: vault 14 backpack
   description: It's a very robust backpack. This one is dark blue.
   components:

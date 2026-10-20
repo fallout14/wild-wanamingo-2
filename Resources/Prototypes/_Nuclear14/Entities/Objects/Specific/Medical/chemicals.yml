@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14ChemicalSyringe
+  id: F14ChemicalSyringe
   name: chemical syringe
   description: A syringe filled with an unknown chemical. Chem junkies would kill you for it.
   components:
@@ -52,7 +52,7 @@
   name: doctors syringe
   parent: BaseItem
   description: Used to draw blood samples from mobs, or to inject them with reagents. Chem junkies would kill you for it.
-  id: N14BaseSyringe
+  id: F14BaseSyringe
   abstract: true
   components:
   - type: Item
@@ -99,18 +99,18 @@
   - type: DoAfter
 
 - type: entity
-  parent: N14BaseSyringe
-  id: N14DoctorSyringe
+  parent: F14BaseSyringe
+  id: F14DoctorSyringe
   components:
   - type: Tag
     tags:
     - Syringe # Forge-Change
-    - MisfitsEmptySyringe
+    - F14EmptySyringe
     - Trash
 
 - type: entity
-  parent: N14ChemicalSyringe
-  id: N14Stimpak
+  parent: F14ChemicalSyringe
+  id: F14Stimpak
   name: stimpak
   description: A syringe filled with a wondrous mixture of medical reagents. Essential for those with little to no medical knowledge.
   components:
@@ -149,18 +149,18 @@
     solution:
       maxVol: 25
       reagents:
-      - ReagentId: N14HealingMixture
+      - ReagentId: F14HealingMixture
         Quantity: 25
   - type: Tag # #Misfits Add - Allow empty stimpaks to be reused in crafting recipes
     tags:
     - Syringe
-    - MisfitsEmptySyringe
+    - F14EmptySyringe
   - type: UseDelay
     delay: 0.75
 
 - type: entity
-  parent: N14Stimpak
-  id: N14StimpakDirty
+  parent: F14Stimpak
+  id: F14StimpakDirty
   name: dirty stimpak
   description: A syringe filled with a once-wondrous mixture of medical reagents, now tainted by the wastes. Essential for those with little to no medical knowledge.
   components:
@@ -171,12 +171,12 @@
     solution:
       maxVol: 25
       reagents:
-      - ReagentId: N14DirtyStimpak
+      - ReagentId: F14DirtyStimpak
         Quantity: 25
 
 - type: entity
-  parent: N14ChemicalSyringe
-  id: N14SuperStimpak
+  parent: F14ChemicalSyringe
+  id: F14SuperStimpak
   name: super stimpak
   description: A stronger version of the stimpak. Be careful, however, as you can overdose from taking too much.
   components:
@@ -215,18 +215,18 @@
     solution:
       maxVol: 25
       reagents:
-      - ReagentId: N14RobustHealingMixture
+      - ReagentId: F14RobustHealingMixture
         Quantity: 25
   - type: Tag # #Misfits Add - Allow empty super stimpaks to be reused in crafting recipes
     tags:
     - Syringe
-    - MisfitsEmptySyringe
+    - F14EmptySyringe
   - type: UseDelay
     delay: 1.5
 
 - type: entity
-  parent: N14ChemicalSyringe
-  id: N14ChemicalSyringeAntidoteEmpty
+  parent: F14ChemicalSyringe
+  id: F14ChemicalSyringeAntidoteEmpty
   suffix: empty
   name: antidote syringe
   description: A syringe filled with an effective antitoxin.
@@ -256,8 +256,8 @@
     delay: 0.75
 
 - type: entity
-  parent: N14ChemicalSyringeAntidoteEmpty
-  id: N14ChemicalSyringeAntidote
+  parent: F14ChemicalSyringeAntidoteEmpty
+  id: F14ChemicalSyringeAntidote
   suffix: filled
   name: antidote syringe
   description: A syringe filled with an effective antitoxin.
@@ -267,12 +267,12 @@
     solution:
       maxVol: 15
       reagents:
-      - ReagentId: N14Antidote
+      - ReagentId: F14Antidote
         Quantity: 15
 
 - type: entity
-  parent: N14ChemicalSyringe
-  id: N14JetInhaler
+  parent: F14ChemicalSyringe
+  id: F14JetInhaler
   suffix: empty
   name: Jet inhaler
   description: A rare injector filled with a narcotic reagent that makes you feel as though you're speeding up. It's weaker but lasts longer than Turbo.
@@ -304,14 +304,14 @@
     - HyposprayInjectMode
   - type: Tag
     tags:
-    - N14Jet
+    - F14Jet
     - Syringe
   - type: UseDelay
     delay: 0.5
 
 - type: entity
-  parent: N14JetInhaler
-  id: N14Jet
+  parent: F14JetInhaler
+  id: F14Jet
   suffix: filled
   name: Jet inhaler
   description: A rare injector filled with a narcotic reagent that makes you feel as though you're speeding up. It's weaker but lasts longer than Turbo.
@@ -321,12 +321,12 @@
     solution:
       maxVol: 15
       reagents:
-      - ReagentId: N14MovespeedMixture
+      - ReagentId: F14MovespeedMixture
         Quantity: 15
 
 - type: entity
-  parent: N14ChemicalSyringe
-  id: N14TurboInhaler
+  parent: F14ChemicalSyringe
+  id: F14TurboInhaler
   suffix: empty
   #Misfits Change /Fix:/ add explicit crafting tags for supported construction graph tag steps.
   name: Turbo inhaler
@@ -363,14 +363,14 @@
       maxVol: 10
   - type: Tag
     tags:
-    - MisfitsTurbo
+    - F14Turbo
     - Syringe
   - type: UseDelay
     delay: 0.25
 
 - type: entity
-  parent: N14TurboInhaler
-  id: N14Turbo
+  parent: F14TurboInhaler
+  id: F14Turbo
   suffix: filled
   name: Turbo inhaler
   description: A small injector filled with a narcotic reagent that makes you feel as though the world around you is slowing down. It's stronger and more dangerous than Jet.
@@ -380,12 +380,12 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14RobustMovespeedMixture
+      - ReagentId: F14RobustMovespeedMixture
         Quantity: 10
 
 - type: entity
-  parent: MisfitsMed-XInjector
-  id: N14Med-X
+  parent: F14MedXInjector
+  id: F14MedX
   suffix: filled
   name: med-x
   description: A syringe filled with a powerful painkiller. Some believe that it makes you more resistant to pain.
@@ -395,12 +395,12 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: N14DamageResistMixture
+      - ReagentId: F14DamageResistMixture
         Quantity: 20
 
 - type: entity
-  parent: N14ChemicalSyringe
-  id: N14HydraInhaler
+  parent: F14ChemicalSyringe
+  id: F14HydraInhaler
   suffix: empty
   name: hydra inhaler
   description: A bottle of Supa Yum soda with several vials attached to it. Contains an addictive painkiller cocktail that functions like a wasteland Med-X.
@@ -432,14 +432,14 @@
     - HyposprayInjectMode
   - type: Tag
     tags:
-    - MisfitsHydraInhaler
+    - F14HydraInhaler
     - Syringe
   - type: UseDelay
     delay: 0.5
 
 - type: entity
-  parent: N14HydraInhaler
-  id: N14Hydra
+  parent: F14HydraInhaler
+  id: F14Hydra
   suffix: filled
   name: hydra
   description: A bottle of Supa Yum soda with several vials attached to it. Contains an addictive painkiller cocktail that functions like a wasteland Med-X.
@@ -449,12 +449,12 @@
     solution:
       maxVol: 15
       reagents:
-      - ReagentId: N14Hydra
+      - ReagentId: F14Hydra
         Quantity: 15
 
 - type: entity
-  parent: N14ChemicalSyringe
-  id: N14PsychoSyringe
+  parent: F14ChemicalSyringe
+  id: F14PsychoSyringe
   suffix: empty
   name: psycho syringe
   description: A syringe filled with a reagent designed to make you more violent. Legend has it that these have a military origin.
@@ -492,8 +492,8 @@
     delay: 1.5
 
 - type: entity
-  parent: N14PsychoSyringe
-  id: N14Psycho
+  parent: F14PsychoSyringe
+  id: F14Psycho
   suffix: full
   name: psycho syringe
   description: A syringe filled with a reagent designed to make you more violent. Legend has it that these have a military origin.
@@ -503,12 +503,12 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: N14DamageModifyingMixture
+      - ReagentId: F14DamageModifyingMixture
         Quantity: 20
 
 - type: entity
-  parent: N14ChemicalSyringe
-  id: N14RadAwayBloodbag
+  parent: F14ChemicalSyringe
+  id: F14RadAwayBloodbag
   name: RadAway
   description: A bloodbag filled with an odd oily reagent that cures any radiation you've sustained.
   components:
@@ -541,14 +541,14 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: N14RadAway
+      - ReagentId: F14RadAway
         Quantity: 20
   - type: UseDelay
     delay: 1.25
 
 - type: entity
-  parent: N14ChemicalSyringe
-  id: N14RadAwayInhalerBase
+  parent: F14ChemicalSyringe
+  id: F14RadAwayInhalerBase
   name: RadAway inhaler
   description: A jet inhaler with a RadAway phial screwed on top of it. Three puffs away from being rad free.
   abstract: true
@@ -581,13 +581,13 @@
     delay: 0.5
 
 - type: entity
-  parent: N14RadAwayInhalerBase
-  id: N14RadAwayInhalerTrash
+  parent: F14RadAwayInhalerBase
+  id: F14RadAwayInhalerTrash
   suffix: Trash
 
 - type: entity
-  parent: N14RadAwayInhalerBase
-  id: N14RadAwayInhaler
+  parent: F14RadAwayInhalerBase
+  id: F14RadAwayInhaler
   name: RadAway inhaler
   description: A jet inhaler with a RadAway phial screwed on top of it. Three puffs away from being rad free.
   components:
@@ -596,12 +596,12 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14RadAway
+      - ReagentId: F14RadAway
         Quantity: 30
 
 - type: entity
   parent: BaseBeaker
-  id: N14RadAwayPhialBase
+  id: F14RadAwayPhialBase
   name: RadAway phial
   description: A coloured phial containing RadAway. This one appears to be empty.
   abstract: true
@@ -631,7 +631,7 @@
 
 #TODO: Needs a C# code to support its crafting
 # - type: entity
-#   parent: N14RadAwayPhialBase
+#   parent: F14RadAwayPhialBase
 #   id: N14RadAwayPhialCraft
 #   name: RadAway phial
 #   description: A coloured phial containing RadAway. This one appears to be empty.
@@ -643,13 +643,13 @@
 #     defaultTarget: fill
 
 - type: entity
-  parent: N14RadAwayPhialBase
-  id: N14RadAwayPhialEmpty
+  parent: F14RadAwayPhialBase
+  id: F14RadAwayPhialEmpty
   suffix: empty
 
 - type: entity
-  parent: N14JunkItemBaseBreak
-  id: N14RadAwayPhial
+  parent: F14JunkItemBaseBreak
+  id: F14RadAwayPhial
   name: RadAway phial
   description: A coloured phial containing RadAway.
   components:
@@ -675,23 +675,23 @@
     id: drink
     solution:
       reagents:
-      - ReagentId: N14RadAway
+      - ReagentId: F14RadAway
         Quantity: 30
   - type: Spillable
     solution: drink
   - type: Tag
     tags:
-    - N14Phial
+    - F14Phial
 
 - type: entity
   name: healing powder
   parent: BaseItem
-  id: N14HealingPowder
+  id: F14HealingPowder
   description: A bag of tribal healing powder. Nauseating.
   components:
   - type: Tag
     tags:
-    - MisfitsTribalMedicine # #Misfits Fix: tag allows storage in the Medical Belt
+    - F14TribalMedicine # #Misfits Fix: tag allows storage in the Medical Belt
   - type: Sprite
     sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
     state: healingpowder
@@ -702,7 +702,7 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: N14HealingPowder
+      - ReagentId: F14HealingPowder
         Quantity: 20
   - type: Edible
     edible: Food
@@ -730,8 +730,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: MisfitsAntidoteBottleBase
-  id: N14Antidote
+  parent: F14AntidoteBottleBase
+  id: F14Antidote
   name: antidote
   description: A toxin antidote made from radscorpion tail, ethanol, and tarberries.
   components:
@@ -740,13 +740,13 @@
     solution:
       maxVol: 60
       reagents:
-      - ReagentId: N14Antidote
+      - ReagentId: F14Antidote
         Quantity: 60
 
 - type: entity
   # #Misfits Change /Tweak/ - Smelling salts use a long resuscitation interaction instead of injecting a reagent.
   parent: BaseItem
-  id: N14SmellingSalts
+  id: F14SmellingSalts
   name: smelling salts
   description: A small glass ampoule containing smelling salts. Their smell is said to wake up even a dead ghoul.
   components:
@@ -763,8 +763,8 @@
   - type: DoAfter
 
 - type: entity
-  parent: N14HealingPowder
-  id: N14HealingPoultice
+  parent: F14HealingPowder
+  id: F14HealingPoultice
   name: healing poultice
   description: A bag of poultice to help with all common ailments if slowly.
   components:
@@ -777,12 +777,12 @@
     solution:
       maxVol: 25
       reagents:
-      - ReagentId: N14HealingPoultice
+      - ReagentId: F14HealingPoultice
         Quantity: 25
 
 - type: entity
-  parent: MisfitsBitterdrinkBottleBase
-  id: N14Bitterdrink
+  parent: F14BitterdrinkBottleBase
+  id: F14Bitterdrink
   name: Bitterdrink
   description: A bottle containing a mixture of plants to aid against poisons and radiation.
   components:
@@ -791,12 +791,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14Bitterdrink
+      - ReagentId: F14Bitterdrink
         Quantity: 50
 
 - type: entity
-  parent: N14HealingPowder
-  id: N14MourningPoultice
+  parent: F14HealingPowder
+  id: F14MourningPoultice
   name: mourning poultice
   description: A bag of powder made from poisonous flowers for use within tribal ceremonies.
   components:
@@ -809,12 +809,12 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: N14MourningPoultice
+      - ReagentId: F14MourningPoultice
         Quantity: 20
 
 - type: entity
-  parent: N14SuperStimpak
-  id: N14UltraStimpak
+  parent: F14SuperStimpak
+  id: F14UltraStimpak
   name: ultra stimpak
   description: A special type of super-stimpak with an additional mixture of chemicals which makes a man near invincible at a great cost. It is widely deemed inhumane and outlawed.
   components:
@@ -830,12 +830,12 @@
     solution:
       maxVol: 25
       reagents:
-      - ReagentId: N14UltraRobustHealingMixture
+      - ReagentId: F14UltraRobustHealingMixture
         Quantity: 25
 
 - type: entity
-  parent: N14HealingPowder
-  id: N14Traumapack #TODO: N14Traumapack needs new sound
+  parent: F14HealingPowder
+  id: F14Traumapack #TODO: F14Traumapack needs new sound
   name: traumapack
   description: A backpack filled with a blend of healing chemicals that inject automatically upon the wearer being hurt. The mechanism seems to be broken, however.
   components:
@@ -848,7 +848,7 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: N14TraumaPowder
+      - ReagentId: F14TraumaPowder
         Quantity: 30
   - type: Destructible
     thresholds:
@@ -863,14 +863,14 @@
 
 - type: entity
   parent: BaseHealingItem
-  id: N14Bandage #! Corvax-Change
+  id: F14Bandage #! Corvax-Change
   name: bandage
   description: A long strip of cloth which can stop bleeding. Mostly sterile.
   suffix: full
   components:
   - type: Tag
     tags:
-    - N14Bandage
+    - F14Bandage
   - type: Sprite
     sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
     state: bandage
@@ -891,7 +891,7 @@
     healingEndSound:
       path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
-    stackType: N14Bandage
+    stackType: F14Bandage
     count: 15 #Was 10, Buffed due to limb damage changes
   - type: StackPrice
     price: 2 # Corvax-Change
@@ -900,11 +900,11 @@
   name: aloe salve
   description: Used to treat those nasty burns. Less effective on caustic burns.
   parent: Ointment
-  id: N14AloeSalve
+  id: F14AloeSalve
   suffix: Full
   components:
   - type: Stack
-    stackType: N14AloeSalve
+    stackType: F14AloeSalve
     count: 10
     baseLayer: base
     layerStates:
@@ -918,12 +918,12 @@
       map: ["base"]
 
 - type: entity
-  id: N14AloeSalve1
-  parent: N14AloeSalve
+  id: F14AloeSalve1
+  parent: F14AloeSalve
   suffix: Single
   components:
   - type: Stack
-    stackType: N14AloeSalve
+    stackType: F14AloeSalve
     count: 1
   - type: Sprite
     state: aloe1

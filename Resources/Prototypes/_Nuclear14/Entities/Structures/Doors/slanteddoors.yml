@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseMaterialDoorNavMap
-  id: N14DoorMetalBlueSlanted
+  id: F14DoorMetalBlueSlanted
   name: blue metal door
   suffix: slanted
   description: An old blue metal door.
@@ -51,12 +51,12 @@
   - type: Occluder
   - type: BlockWeather
   - type: Construction # Forge-Change
-    graph: N14DoorGraph
+    graph: F14DoorGraph
     node: MetalBlue
 
 - type: entity
-  parent: N14DoorMetalBlueSlanted
-  id: N14DoorMetalRedSlanted
+  parent: F14DoorMetalBlueSlanted
+  id: F14DoorMetalRedSlanted
   name: red metal door
   suffix: Slanted
   description: An old red metal door.
@@ -70,12 +70,12 @@
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
   - type: Construction # Forge-Change
-    graph: N14DoorGraph
+    graph: F14DoorGraph
     node: MetalBlue
 
 - type: entity
-  parent: N14DoorMetalBlueSlanted
-  id: N14DoorMetalBlueAltSlanted
+  parent: F14DoorMetalBlueSlanted
+  id: F14DoorMetalBlueAltSlanted
   name: alt blue metal door
   components:
   - type: Tag
@@ -87,12 +87,12 @@
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
   - type: Construction # Forge-Change
-    graph: N14DoorGraph
+    graph: F14DoorGraph
     node: MetalBlueAlt
 
 - type: entity
-  parent: N14DoorMetalBlueSlanted
-  id: N14DoorMetalBlueWindowSlanted
+  parent: F14DoorMetalBlueSlanted
+  id: F14DoorMetalBlueWindowSlanted
   name: metal windowed door
   suffix: Slanted, windowed
   description: An old blue metal door with a window.
@@ -110,12 +110,12 @@
   - type: Occluder
     enabled: false
   - type: Construction # Forge-Change
-    graph: N14DoorGraph
+    graph: F14DoorGraph
     node: MetalBlueWindow
 
 - type: entity
-  parent: N14DoorMetalBlueWindowSlanted
-  id: N14DoorMetalGrateSlanted
+  parent: F14DoorMetalBlueWindowSlanted
+  id: F14DoorMetalGrateSlanted
   name: metal grated door
   suffix: Slanted, grate
   description: A metal mesh door.
@@ -130,8 +130,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorMetalBlueWindowSlanted
-  id: N14DoorMetalBarSlanted
+  parent: F14DoorMetalBlueWindowSlanted
+  id: F14DoorMetalBarSlanted
   name: cell door
   suffix: Slanted, bar
   description: A metal bar door.
@@ -151,8 +151,8 @@
       path: /Audio/Nuclear14/Effects/Doors/DRS_Metal_Jail_Swing_Close_01.ogg
 
 - type: entity
-  parent: N14DoorMetalBlueWindowSlanted
-  id: N14DoorMetalFenceSlanted
+  parent: F14DoorMetalBlueWindowSlanted
+  id: F14DoorMetalFenceSlanted
   name: fence gate
   suffix: Slanted, fence
   description: A metal fence gate.
@@ -167,8 +167,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorMetalBlueWindowSlanted
-  id: N14DoorMetalFenceBarbedSlanted
+  parent: F14DoorMetalBlueWindowSlanted
+  id: F14DoorMetalFenceBarbedSlanted
   name: barbed fence gate
   suffix: Slanted, fence barbed
   description: A metal barbed fence gate.
@@ -185,8 +185,8 @@
 #MARK: Wooden
 
 - type: entity
-  parent: N14DoorMetalBlueSlanted
-  id: N14DoorWoodSlanted
+  parent: F14DoorMetalBlueSlanted
+  id: F14DoorWoodSlanted
   name: wooden door
   suffix: Slanted
   description: A wooden door.
@@ -222,18 +222,18 @@
           MaterialWoodPlank:
             min: 1
             max: 1
-          N14ScrapBrass1:
+          F14ScrapBrass1:
             min: 2
             max: 2
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Construction # Forge-Change
-    graph: N14DoorGraph
+    graph: F14DoorGraph
     node: WoodDoor
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: N14DoorWoodBlueSlanted
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodBlueSlanted
   name: blue wooden door
   components:
   - type: Tag
@@ -246,8 +246,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: N14DoorWoodGreenSlanted
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodGreenSlanted
   name: green wooden door
   components:
   - type: Sprite
@@ -257,8 +257,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: N14DoorWoodRedSlanted
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodRedSlanted
   name: red wooden door
   components:
   - type: Tag
@@ -271,8 +271,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: N14DoorWoodWhiteSlanted
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodWhiteSlanted
   name: white wooden door
   components:
   - type: Tag
@@ -287,8 +287,8 @@
 #MARK: Airlocks
 
 - type: entity
-  parent: N14DoorMetalBlueSlanted
-  id: N14DoorAirlockSlanted
+  parent: F14DoorMetalBlueSlanted
+  id: F14DoorAirlockSlanted
   name: airlock
   suffix: slanted
   description: An old bunker airlock.

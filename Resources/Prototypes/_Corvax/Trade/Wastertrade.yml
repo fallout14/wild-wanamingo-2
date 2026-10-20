@@ -1,0 +1,1067 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Trade/Wastertrade.yml
+
+- type: entity
+  id: F14TrademachineWaster
+  parent: F14Trademachine
+  abstract: true
+  name: Waster Caravan Wagon
+  description: A caravan operated by Wastelanders, offering goods from all across the wastes.
+  components:
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: NcStoreStructuredBoundUi
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 300
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    sprite: Misfits/Legacy/Structures/Machines/VendingMachines/caravanwagon.rsi
+    layers:
+    - state: caravanwagon
+  - type: PointLight
+    enabled: false
+
+- type: entity
+  id: F14TrademachineWasterCity
+  parent: F14TrademachineWaster
+  name: Waster Caravan Wagon
+  description: A caravan operated by Wastelanders, offering goods from all across the wastes.
+  suffix: vendor, normal
+  components:
+  - type: NcStore
+    buyPresets:
+    - F14WasterBuy2
+    sellPresets:
+    - F14WasterSell2
+    contractPresets:
+    - F14PresetBazar
+  # #Misfits Change — restored TownieShopkeeper access restriction (players must be shopkeeper to use terminal)
+  # #Misfits Add — track Hall of Fame roster for the tier contract system
+  - type: AccessReader
+    access:
+    - [ "F14WasterTrader" ]
+  - type: NcContractRoster
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Drinks
+  name: "Drinks"
+  entries:
+  - proto: F14DrinkRoentgenRum
+    price: 30
+  - proto: F14DrinkWhisky
+    price: 30
+  - proto: DrinkBeerCan
+    price: 15
+  - proto: DrinkBeerBottleFull
+    price: 15
+  - proto: F14DrinkNukaColaIceCold
+    price: 10
+  - proto: F14DrinkNukaColaCherryIceCold
+    price: 10
+  - proto: F14DrinkNukaColaGrapeIceCold
+    price: 10
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Food
+  name: "Food"
+  entries:
+  - proto: F14FoodMeatBrahminCooked
+    price: 20
+  - proto: F14FoodMeatRadstagCooked
+    price: 20
+  - proto: F14FoodMeatBighornerCooked
+    price: 20
+  - proto: F14FoodMeatRadscorpionCooked
+    price: 20
+  - proto: F14FoodMeatGeckoCooked
+    price: 20
+  - proto: F14FoodDandyboyapples
+    price: 10
+  - proto: F14FoodInstamash
+    price: 10
+  - proto: F14FoodYumyumdeviledeggs
+    price: 10
+  - proto: F14FoodCrisps
+    price: 10
+  - proto: F14FoodSalisburysteak
+    price: 10
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2SurvivalGear
+  name: "Survival Gear"
+  entries:
+  - proto: PowerCellHigh
+    price: 25
+  - proto: OreBag
+    price: 50
+  - proto: F14Flashlight
+    price: 10
+  - proto: F14Charcoal1
+    amount: 1
+    price: 20
+  - proto: BoxFlare
+    price: 35
+  - proto: Torch
+    price: 1
+  - proto: DrinkWaterBottleFull
+    price: 25
+  - proto: Pickaxe
+    price: 40
+  - proto: GeigerCounter
+    price: 50
+  - proto: F14RadXCanisterFilled
+    price: 100
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Melee
+  name: "Melee"
+  entries:
+  - proto: KukriKnife
+    price: 20
+  - proto: SurvivalKnife
+    price: 20
+  - proto: F14TrenchClub
+    price: 75
+  - proto: F14FireAxe
+    price: 150
+  - proto: F14TribalSword
+    price: 300
+  - proto: F14LongSword
+    price: 200
+  - proto: F14ChineseSword
+    price: 400
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Longguns
+  name: "Long guns"
+  entries:
+  - proto: F14WeaponLaserRifleCrude
+    price: 200
+  - proto: F14WeaponPlasmaRifleCrude
+    price: 240
+  - proto: F14WeaponLaserRifle
+    price: 450
+  - proto: F14WeaponSniper50Pipe
+    price: 1200
+    count: 4
+  - proto: F14WeaponSMG10mmPipe
+    price: 170
+  - proto: F14WeaponSMG12mmPipe
+    price: 125
+  - proto: F14WeaponSMG12mmAdvancedChinese
+    price: 350
+    count: 2
+  - proto: F14WeaponLMGchinese
+    price: 3600
+    count: 2
+  - proto: F14WeaponRifle9mmMarksmanChinese
+    price: 550
+    count: 5
+  - proto: F14WeaponShotgunCanadian
+    price: 450
+    count: 4
+  - proto: F14WeaponSniperHunting
+    price: 125
+  - proto: F14WeaponRifle556Pipe
+    price: 120
+  - proto: F14WeaponShotgun
+    price: 50
+  - proto: F14WeaponRifle762SKS
+    price: 150
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Handguns
+  name: "Handguns"
+  entries:
+  - proto: F14WeaponPistolWebley
+    price: 30
+  - proto: F14WeaponPistol12mm
+    price: 35
+  - proto: F14WeaponPistol45Colt
+    price: 45
+  - proto: F14WeaponRevolver44Magnum
+    price: 70
+  - proto: F14WeaponPistol22lr
+    price: 20
+  - proto: F14WeaponLaserPistol
+    price: 60
+  - proto: F14WeaponPistol9mmChinese
+    price: 18
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Armor
+  name: "Armor"
+  entries:
+  - proto: F14ClothingOuterCombatTribal
+    price: 350
+  - proto: F14ClothingOuterCombatArmorRCMP
+    price: 450
+  - proto: F14ClothingOuterRaiderCombat1
+    price: 500
+  - proto: F14ClothingOuterPoliceCombat
+    price: 300
+  - proto: F14ClothingOuterCombatArmorMK2
+    price: 800
+  - proto: F14ClothingOuterCombatArmorChinese
+    price: 500
+  - proto: F14ClothingOuterPainspike
+    price: 100
+  - proto: F14ClothingOuterVestChinese
+    price: 200
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Clothes
+  name: "Clothes"
+  entries:
+  - proto: F14ClothingUniformJumpsuitChinese
+    price: 100
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Headgear
+  name: "Headgear"
+  entries:
+  - proto: F14ClothingHeadHatCombatHelmetMK2Cargo
+    price: 150
+  - proto: F14ClothingHeadHatChineseHelmet
+    price: 100
+  - proto: F14ClothingHeadHatChinese
+    price: 50
+  - proto: F14ClothingHeadHatChineseHelmetMk2
+    price: 175
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Footwear
+  name: "Footwear"
+  entries:
+  - proto: ClothingShoesBootsJack
+    price: 25
+  - proto: F14ClothingBootsLeather
+    price: 10
+  - proto: F14ClothingBootsCombatFilled
+    price: 35
+  - proto: F14ClothingBootsCombatMK2Filled
+    price: 50
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Ammo
+  name: "Ammo"
+  entries:
+  - proto: F14PowerCellSmall
+    price: 250
+  - proto: F14MicrofusionCell
+    price: 350
+  - proto: F14AmmoBox50
+    price: 350
+  - proto: F14AmmoBox9mm
+    price: 120
+  - proto: F14AmmoBox10mm
+    price: 180
+  - proto: F14AmmoBox44Magnum
+    price: 220
+  - proto: F14AmmoBox22lr
+    price: 100
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Medicine
+  name: "Medicine"
+  entries:
+  - proto: F14CleanGauze10
+    amount: 10
+    price: 75
+  - proto: F14AloeSalve
+    amount: 10
+    price: 100
+  - proto: F14Stimpak
+    price: 150
+  - proto: F14HealingPowder
+    price: 80
+  - proto: F14RadAwayBloodbag
+    price: 100
+  - proto: F14RadAwayInhaler
+    price: 300
+  - proto: F14MedkitCombatFilled
+    price: 600
+  - proto: F14BuffoutCanisterFilled
+    price: 400
+  - proto: F14Jet
+    price: 200
+  - proto: F14Psycho
+    price: 400
+  - proto: F14MedX
+    price: 700
+  - proto: F14Turbo
+    price: 450
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Materials
+  name: "Materials"
+  entries:
+  - proto: SheetSteel
+    amount: 30
+    price: 350
+  - proto: MaterialWoodPlank
+    amount: 30
+    price: 100
+  - proto: F14MaterialLeather10
+    amount: 10
+    price: 250
+  - proto: F14FertilizerOre
+    amount: 10
+    price: 200
+  - proto: F14MaterialCircuitry
+    amount: 10
+    price: 375
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Cosmetic
+  name: "Cosmetic"
+  entries: [] # WW: every item here is unavailable
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Storage
+  name: "Storage"
+  entries:
+  - proto: ClothingBackpackSatchelLeather
+    price: 150
+  - proto: ClothingBackpackSatchelSalvage
+    price: 150
+  - proto: ClothingBackpackDuffel
+    price: 200
+  - proto: ClothingBeltSecurityWebbing
+    price: 300
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Sprouts
+  name: "Cuttings"
+  entries:
+  - proto: F14FloraWildAgaveClippingSeed
+    price: 5
+  - proto: F14FloraWildBananaYuccaClippingSeed
+    price: 5
+  - proto: F14FloraWildBarrelCactusClippingSeed
+    price: 5
+  - proto: F14FloraWildBlackberryClippingSeed
+    price: 5
+  - proto: F14FloraWildBrocFlowerClippingSeed
+    price: 5
+  - proto: F14FloraWildBuffaloGourdClippingSeed
+    price: 5
+  - proto: F14FloraWildCabbageClippingSeed
+    price: 5
+  - proto: F14FloraWildCarrotClippingSeed
+    price: 5
+  - proto: F14FloraWildCoyoteTobaccoClippingSeed
+    price: 5
+  - proto: F14FloraWildCannabisClippingSeed
+    price: 5
+  - proto: F14FloraDaturaClippingSeed
+    price: 5
+  - proto: F14FloraWildGlowpepperClippingSeed
+    price: 5
+  - proto: F14FloraWildMaizeClippingSeed
+    price: 5
+  - proto: F14FloraWildHoneyMesquiteClippingSeed
+    price: 5
+  - proto: F14FloraWildMutfruitClippingSeed
+    price: 5
+  - proto: F14FloraWildNettleClippingSeed
+    price: 5
+  - proto: F14FloraWildOnionClippingSeed
+    price: 5
+  - proto: F14FloraWildPinyonClippingSeed
+    price: 5
+  - proto: F14FloraWildPricklyPearClippingSeed
+    price: 5
+  - proto: F14FloraWildRazorgrainClippingSeed
+    price: 5
+  - proto: F14FloraWildStarlightBerryClippingSeed
+    price: 5
+  - proto: F14FloraWildTarberryClippingSeed
+    price: 5
+  - proto: F14FloraWildTatoClippingSeed
+    price: 5
+  - proto: F14FloraWildWhiteHorsenettleClippingSeed
+    price: 5
+  - proto: F14FloraWildXanderRootClippingSeed
+    price: 5
+
+- type: storeCategoryStructured
+  id: F14WasterBuy2Currency # IF YOU CHANGE ONE EXCHANGE RATE, YOU MUST CHANGE ALL OTHERS ACROSS ALL FOUR FILES TO MATCH, OR YOU WILL CREATE AN INFINITE MONEY GLITCH
+  name: "Currency"
+  entries:
+  - proto: F14CurrencyNCRDollar2
+    amount: 2
+    price: 1
+  - proto: F14CurrencyLegionDenarius
+    price: 4
+  - proto: F14CurrencyLegionAureus
+    price: 40
+
+- type: storePresetStructured #list of categories
+  id: F14WasterBuy2
+  currency: F14Caps
+  categories:
+  - F14WasterBuy2Drinks
+  - F14WasterBuy2Food
+  - F14WasterBuy2SurvivalGear
+  - F14WasterBuy2Melee
+  - F14WasterBuy2Longguns
+  - F14WasterBuy2Handguns
+  - F14WasterBuy2Armor
+  - F14WasterBuy2Clothes
+  - F14WasterBuy2Headgear
+  - F14WasterBuy2Footwear
+  - F14WasterBuy2Ammo
+  - F14WasterBuy2Medicine
+  - F14WasterBuy2Materials
+  - F14WasterBuy2Cosmetic
+  - F14WasterBuy2Storage
+  - F14WasterBuy2Currency
+  - F14WasterBuy2Sprouts
+  - F14WasterBuy2Animals
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Drinks
+  name: "Drinks"
+  entries:
+  - proto: F14DrinkRoentgenRum
+    price: 15
+  - proto: F14DrinkWhisky
+    price: 15
+  - proto: DrinkBeerCan
+    price: 8
+  - proto: DrinkBeerBottleFull
+    price: 8
+  - proto: F14DrinkNukaColaIceCold
+    price: 5
+  - proto: F14DrinkNukaColaCherryIceCold
+    price: 5
+  - proto: F14DrinkNukaColaGrapeIceCold
+    price: 5
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Food
+  name: "Food"
+  entries:
+  - proto: F14FoodMeatBrahminCooked
+    price: 10
+  - proto: F14FoodMeatRadstagCooked
+    price: 10
+  - proto: F14FoodMeatBighornerCooked
+    price: 10
+  - proto: F14FoodMeatRadscorpionCooked
+    price: 10
+  - proto: F14FoodMeatGeckoCooked
+    price: 10
+  - proto: F14FoodDandyboyapples
+    price: 5
+  - proto: F14FoodInstamash
+    price: 5
+  - proto: F14FoodYumyumdeviledeggs
+    price: 5
+  - proto: F14FoodCrisps
+    price: 5
+  - proto: F14FoodSalisburysteak
+    price: 5
+
+- type: storeCategoryStructured
+  id: F14WasterSell2SurvivalGear
+  name: "Survival Gear"
+  entries:
+  - proto: PowerCellHigh
+    price: 13
+  - proto: OreBag
+    price: 25
+  - proto: F14Flashlight
+    price: 5
+  - proto: Charcoal
+    price: 10
+  - proto: BoxFlare
+    price: 18
+  - proto: Torch
+    price: 1
+  - proto: DrinkWaterBottleFull
+    price: 13
+  - proto: Pickaxe
+    price: 20
+  - proto: GeigerCounter
+    price: 25
+  - proto: F14RadXCanisterFilled
+    price: 50
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Melee
+  name: "Melee"
+  entries:
+  - proto: KukriKnife
+    price: 10
+  - proto: SurvivalKnife
+    price: 10
+  - proto: F14TrenchClub
+    price: 38
+  - proto: F14FireAxe
+    price: 75
+  - proto: F14TribalSword
+    price: 150
+  - proto: F14LongSword
+    price: 100
+  - proto: F14ChineseSword
+    price: 200
+  - proto: F14CombatKnife
+    price: 15
+  - proto: F14KitchenKnife
+    price: 15
+  - proto: F14BrassKnife
+    price: 15
+  - proto: F14WastelandSpear
+    price: 15
+  - proto: F14PilumSpear
+    price: 15
+  - proto: F14WastelandPolearm
+    price: 15
+  - proto: F14GolfClub
+    price: 15
+  - proto: F14PoliceBaton
+    price: 25
+  - proto: F14SledgeHammer
+    price: 140
+  - proto: F14BaseAxe
+    price: 30
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Longguns
+  name: "Longguns"
+  entries:
+  - proto: F14WeaponLaserRifleCrude
+    price: 100
+  - proto: F14WeaponPlasmaRifleCrude
+    price: 120
+  - proto: F14WeaponSniper50Pipe
+    price: 400
+  - proto: F14WeaponSMG10mmPipe
+    price: 85
+  - proto: F14WeaponSMG12mmPipe
+    price: 63
+  - proto: F14WeaponLMGchinese
+    price: 1800
+  - proto: F14WeaponRifle9mmMarksmanChinese
+    price: 275
+  - proto: F14WeaponShotgunChinese
+    price: 225
+  - proto: F14WeaponShotgunCanadian
+    price: 225
+  - proto: F14WeaponSniperHunting
+    price: 63
+  - proto: F14WeaponRifle556Pipe
+    price: 60
+  - proto: F14WeaponShotgun
+    price: 25
+  - proto: F14WeaponRifle762SKS
+    price: 75
+  - proto: F14WeaponLaserPistol
+    price: 33
+  - proto: F14WeaponLaserRifleMakeshift
+    price: 41
+  - proto: F14WeaponLaserRevolver
+    price: 44
+  - proto: F14WeaponLaserPistolRecharger
+    price: 56
+  - proto: F14WeaponLaserRifle
+    price: 120
+  - proto: F14WeaponPlasmaPistol
+    price: 140
+  - proto: F14WeaponLaserRifleRecharger
+    price: 140
+  - proto: F14WeaponLaserRiflePrototypeAER14
+    price: 180
+  - proto: F14WeaponPlasmaDefender
+    price: 180
+  - proto: F14WeaponPlasmaRifle
+    price: 185
+  - proto: F14WeaponPlasmaRifleUrban
+    price: 210
+  - proto: F14WeaponSniper308PipeRifle
+    price: 15
+  - proto: F14WeaponSniper556Tribal
+    price: 45
+  - proto: F14WeaponSniper556VarmintRifle
+    price: 20
+  - proto: F14WeaponSniper556TribalUpgraded
+    price: 55
+  - proto: F14WeaponSniper303Ross
+    price: 75
+  - proto: F14WeaponSniper4570BrushGun
+    price: 55
+  - proto: F14WeaponSniperCowboyRepeater
+    price: 55
+  - proto: F14WeaponSniper308Tribal
+    price: 110
+  - proto: F14WeaponSniper308TribalUpgraded
+    price: 120
+  - proto: F14WeaponSniperEnfield
+    price: 110
+  - proto: F14WeaponRifle308Battle
+    price: 55
+  - proto: F14WeaponRifle308SniperRifle
+    price: 275
+  - proto: F14WeaponLMGBren
+    price: 990
+  - proto: F14WeaponHMGcanadian
+    price: 825
+  - proto: F14WeaponRifle556Service
+    price: 85
+  - proto: F14WeaponRifle556ServiceScoped
+    price: 102
+  - proto: F14WeaponRifle308M14
+    price: 110
+  - proto: F14WeaponRifle556R91
+    price: 120
+  - proto: F14WeaponRifle556Chinese
+    price: 200
+  - proto: F14WeaponRifle10mmSkirmisher
+    price: 125
+  - proto: F14WeaponRifleAk112
+    price: 130
+  - proto: F14WeaponRifle5mmCarbine
+    price: 248
+  - proto: F14WeaponSniper308Canadian
+    price: 165
+  - proto: F14WeaponRifle556EM2
+    price: 135
+  - proto: F14WeaponRifle556Marksman
+    price: 275
+  - proto: F14WeaponRifle308Fal
+    price: 193
+  - proto: F14WeaponRifle762Canadian
+    price: 330
+  - proto: F14WeaponRifle762MarksmanCanadian
+    price: 220
+  - proto: F14WeaponLMGAutoRifle
+    price: 245
+  - proto: F14WeaponShotgunPipe
+    price: 10
+  - proto: F14WeaponShotgunLever
+    price: 10
+  - proto: F14WeaponShotgunDoubleBarrel
+    price: 15
+  - proto: F14WeaponShotgunBoomstick
+    price: 14
+  - proto: F14WeaponShotgunBloodyStick
+    price: 15
+  - proto: F14WeaponShotgunCaravan
+    price: 15
+  - proto: F14WeaponShotgunSawedOff
+    price: 70
+  - proto: F14WeaponShotgunTrench
+    price: 40
+  - proto: F14WeaponShotgunShort
+    price: 30
+  - proto: F14WeaponShotgunAuto
+    price: 165
+  - proto: F14WeaponShotgunRiot
+    price: 160
+  - proto: F14WeaponShotgunBlowback
+    price: 550
+  - proto: F14WeaponSMGAmerican180
+    price: 30
+  - proto: F14WeaponSMG45GreaseGun
+    price: 72
+  - proto: F14WeaponSMG10mm
+    price: 110
+  - proto: F14WeaponSMG9mminfiltrator
+    price: 138
+  - proto: F14WeaponSMG10mmSuppressed
+    price: 165
+  - proto: F14WeaponSMGPPSh41
+    price: 100
+  - proto: F14WeaponSMG45Thompson
+    price: 83
+  - proto: F14WeaponSMG9mmCanadian
+    price: 110
+  - proto: F14WeaponSMG10mmChinese
+    price: 182
+  - proto: F14WeaponSMG12mmAdvancedChinese
+    price: 220
+  - proto: F14WeaponSMG12mmAdvancedCanadian
+    price: 138
+  - proto: F14WeaponSMG12mmAdvanced
+    price: 330
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Handguns
+  name: "Handguns"
+  entries:
+  - proto: F14WeaponPistolWebley
+    price: 15
+  - proto: F14WeaponPistol12mm
+    price: 18
+  - proto: F14WeaponPistol45Colt
+    price: 23
+  - proto: F14WeaponRevolver44Magnum
+    price: 35
+  - proto: F14WeaponPistol22lr
+    price: 10
+  - proto: F14WeaponLaserPistol
+    price: 30
+  - proto: F14WeaponPistol9mmChinese
+    price: 9
+  - proto: F14WeaponRevolver357Detective
+    price: 14
+  - proto: F14WeaponRevolver10mm
+    price: 17
+  - proto: F14WeaponRevolver44Tribal
+    price: 28
+  - proto: F14WeaponRevolver4570Handcannon
+    price: 44
+  - proto: F14WeaponRevolver44TribalUpgraded
+    price: 44
+  - proto: F14WeaponRevolverWebley
+    price: 44
+  - proto: F14WeaponRevolver4570Hunter
+    price: 88
+  - proto: F14WeaponRevolver4570HandcannonUpgraded
+    price: 94
+  - proto: F14WeaponRevolver44TribalUpgradedExtra
+    price: 66
+  - proto: F14WeaponPistol9mm
+    price: 10
+  - proto: F14WeaponPistol10mmPipe
+    price: 8
+  - proto: F14WeaponPistol10mm
+    price: 11
+  - proto: F14WeaponPistol9mmSpy
+    price: 31
+  - proto: F14WeaponDesertEagle44
+    price: 110
+  - proto: F14WeaponLaserdotDesertEagle44
+    price: 150
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Armor
+  name: "Armor"
+  entries:
+  - proto: F14ClothingOuterCombatTribal
+    price: 175
+  - proto: F14ClothingOuterCombatArmorRCMP
+    price: 225
+  - proto: F14ClothingOuterRaiderCombat1
+    price: 250
+  - proto: F14ClothingOuterPoliceCombat
+    price: 150
+  - proto: F14ClothingOuterCombatArmorMK2
+    price: 400
+  - proto: F14ClothingOuterCombatArmorChinese
+    price: 250
+  - proto: F14ClothingOuterPainspike
+    price: 50
+  - proto: F14ClothingOuterVestChinese
+    price: 100
+  - proto: F14ClothingOuterCoatDuster
+    price: 6
+  - proto: F14ClothingOuterCoatLeatherDuster
+    price: 6
+  - proto: F14ClothingOuterCoatLeatherCoat
+    price: 6
+  - proto: F14ClothingOuterRaiderBadlands
+    price: 6
+  - proto: F14ClothingOuterRaiderBlastmaster
+    price: 6
+  - proto: F14ClothingOuterPoliceOfficer
+    price: 8
+  - proto: F14ClothingOuterTownCoat
+    price: 11
+  - proto: F14ClothingOuterPoliceLieutenant
+    price: 11
+  - proto: F14ClothingOuterTownSpecialCoat
+    price: 11
+  - proto: F14ClothingOuterBattlecoatCoat
+    price: 11
+  - proto: F14ClothingOuterBattlecoatTan
+    price: 11
+  - proto: F14ClothingOuterVestLeather
+    price: 19
+  - proto: F14ClothingOuterMetalArmor
+    price: 25
+  - proto: F14ClothingOuterTownMediumCoat
+    price: 28
+  - proto: F14ClothingOuterTownHeavyCoat
+    price: 55
+  - proto: F14ClothingOuterCoatCombatDuster
+    price: 55
+  - proto: F14ClothingOuterCoatFollowersArmored
+    price: 30
+  - proto: F14ClothingOuterInsectArmor
+    price: 30
+  - proto: F14ClothingOuterLightMetalArmor
+    price: 30
+  - proto: F14ClothingOuterLeatherArmor
+    price: 36
+  - proto: F14ClothingOuterPressArmor
+    price: 36
+  - proto: F14ClothingOuterPoliceVest
+    price: 110
+  - proto: ClothingOuterArmorBasicSlim
+    price: 36
+  - proto: F14ClothingOuterCombatRusted
+    price: 36
+  - proto: F14ClothingOuterCombatRaider
+    price: 36
+  - proto: F14ClothingOuterVaultSecVest
+    price: 39
+  - proto: F14ClothingOuterCombatPainspike
+    price: 140
+  - proto: F14ClothingOuterCombatArmor
+    price: 140
+  - proto: F14ClothingOuterNCRPlateDesert
+    price: 100
+  - proto: F14ClothingOuterRangerCoat
+    price: 170
+  - proto: F14ClothingOuterNCRPatrolRangerArmorVariant
+    price: 160
+  - proto: F14ClothingOuterRangerFieldArmor
+    price: 170
+  - proto: F14ClothingOuterRangerVest
+    price: 120
+  - proto: F14ClothingOuterNCRPouchedVestSnow
+    price: 88
+  - proto: F14ClothingOuterNCRPouchedVestWoods
+    price: 88
+  - proto: F14ClothingOuterNCRPouchedVestDesert
+    price: 80
+  - proto: F14ClothingOuterNCRCombatArmor
+    price: 160
+  - proto: F14ClothingOuterNCRCombatArmorMK2
+    price: 210
+  - proto: F14ClothingOuterLegionnaireVeteranArmor
+    price: 160
+  - proto: F14ClothingOuterLegionnaireExplorerArmor
+    price: 80
+  - proto: F14ClothingOuterLegionnaireBaseArmor
+    price: 50
+  - proto: F14ClothingOuterLegionnaireRecruitArmor
+    price: 25
+  - proto: F14ClothingOuterLegionnaireReconnaissanceArmor
+    price: 80
+  - proto: F14ClothingOuterLegionnaireVexillariusArmor
+    price: 80
+  - proto: F14ClothingLegionReconArmor
+    price: 120
+  - proto: F14ClothingOuterDeanLegionnairePrimeArmor
+    price: 200
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Clothes
+  name: "Clothes"
+  entries:
+  - proto: F14ClothingUniformJumpsuitChinese
+    price: 50
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Headgear
+  name: "Headgear"
+  entries:
+  - proto: F14ClothingHeadHatCombatHelmetMK2Cargo
+    price: 75
+  - proto: F14ClothingHeadHatChineseHelmet
+    price: 50
+  - proto: F14ClothingHeadHatChinese
+    price: 25
+  - proto: F14ClothingHeadHatChineseHelmetMk2
+    price: 88
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Footwear
+  name: "Footwear"
+  entries:
+  - proto: ClothingShoesBootsJack
+    price: 13
+  - proto: F14ClothingBootsLeather
+    price: 5
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Ammo
+  name: "Ammo"
+  entries:
+  - proto: F14PowerCellSmall
+    price: 125
+  - proto: F14MicrofusionCell
+    price: 175
+  - proto: F14MicrofusionCellRed
+    price: 45
+  - proto: F14PlasmaCartridge
+    price: 85
+  - proto: F1440mmGrenadeFrag
+    price: 85
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Medicine
+  name: "Medicine"
+  entries:
+  - proto: F14CleanGauze10
+    price: 1
+  - proto: F14AloeSalve
+    price: 5
+  - proto: F14Stimpak
+    price: 75
+  - proto: F14HealingPowder
+    price: 40
+  - proto: F14RadAwayBloodbag
+    price: 50
+  - proto: F14RadAwayInhaler
+    price: 150
+  - proto: F14Jet
+    price: 100
+  - proto: F14Psycho
+    price: 125
+  - proto: F14MedX
+    price: 225
+  - proto: F14Turbo
+    price: 150
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Materials
+  name: "Materials"
+  entries:
+  - proto: SheetSteel
+    price: 5
+  - proto: MaterialWoodPlank
+    price: 1
+  - proto: F14MaterialLeather10
+    price: 15
+  - proto: F14FertilizerOre
+    price: 10
+  - proto: F14MaterialCircuitry
+    price: 15
+  - proto: F14IngotCopper1
+    price: 10
+  - proto: F14IngotAluminum1
+    price: 10
+  - proto: F14IngotIron1
+    price: 10
+  - proto: F14IngotBrass1
+    price: 40
+  - proto: F14IngotLead1
+    price: 10
+  - proto: F14IngotSilver1 # if you fuck with the price of one currency, silver, or gold you need to change all the others to match
+    price: 20
+  - proto: F14IngotGold1
+    price: 25
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Cosmetic
+  name: "Cosmetic"
+  entries: [] # WW: every item here is unavailable
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Storage
+  name: "Storage"
+  entries:
+  - proto: ClothingBackpackSatchelLeather
+    price: 75
+  - proto: ClothingBackpackSatchelSalvage
+    price: 75
+  - proto: ClothingBackpackDuffel
+    price: 100
+  - proto: ClothingBeltSecurityWebbing
+    price: 150
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Currency # IF YOU CHANGE ONE EXCHANGE RATE, YOU MUST CHANGE ALL OTHERS ACROSS ALL FOUR FILES TO MATCH, OR YOU WILL CREATE AN INFINITE MONEY GLITCH
+  name: "Currency"
+  entries:
+  - proto: F14CurrencyLegionDenarius
+    price: 4
+  - proto: F14CurrencyLegionAureus
+    price: 40
+  - proto: F14CurrencyNCRDollar2
+    amount: 2
+    price: 1
+
+- type: storeCategoryStructured
+  id: F14WasterSell2Bulk
+  name: "Bulk"
+  entries:
+  - proto: MaterialCloth1
+    price: 4
+  - proto: F14MaterialThread1
+    price: 4
+  - proto: F14ScrapElectronic1
+    price: 6
+  - proto: F14ScrapGold1
+    price: 6
+  - proto: F14FoodMeatPigrat
+    price: 5
+  - proto: F14FoodMeatRadRaw
+    price: 5
+  - proto: F14MaterialLeather1
+    price: 10
+  - proto: F14MaterialAntChitin1
+    price: 10
+  - proto: F14MaterialHideGecko
+    price: 20
+  - proto: F14MaterialHideGeckoFire
+    price: 20
+  - proto: F14FoodFireantNectar
+    price: 20
+  - proto: F14FoodMeatGeckoGolden
+    price: 20
+  - proto: F14FoodMeatMirelurkClaw
+    price: 20
+  - proto: F14MaterialCircuitry1
+    price: 25
+  - proto: F14FoodMeatRadlurkClaw
+    price: 25
+  - proto: F14FoodEggDeathclaw
+    price: 40
+  - proto: F14MaterialYaoguaiHide
+    price: 40
+  - proto: F14MaterialNightstalkerPelt
+    price: 40
+  - proto: F14FoodCazadorAcidSac
+    price: 45
+  - proto: F14MaterialRadscorpionTail
+    price: 50
+  - proto: F14FoodMeatBrahmin
+    price: 25
+  - proto: F14FoodMeatRadstag
+    price: 30
+
+- type: storePresetStructured #list of categories
+  id: F14WasterSell2
+  currency: F14Caps
+  categories:
+  - F14WasterSell2Drinks
+  - F14WasterSell2Food
+  - F14WasterSell2SurvivalGear
+  - F14WasterSell2Melee
+  - F14WasterSell2Longguns
+  - F14WasterSell2Handguns
+  - F14WasterSell2Armor
+  - F14WasterSell2Clothes
+  - F14WasterSell2Headgear
+  - F14WasterSell2Footwear
+  - F14WasterSell2Ammo
+  - F14WasterSell2Medicine
+  - F14WasterSell2Materials
+  - F14WasterSell2Cosmetic
+  - F14WasterSell2Storage
+  - F14WasterSell2Currency
+  - F14WasterSell2Bulk

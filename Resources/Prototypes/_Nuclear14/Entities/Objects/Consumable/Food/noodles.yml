@@ -3,7 +3,7 @@
 
 - type: entity
   parent: FoodInjectableBase
-  id: N14CookedFoodNoodlesBase
+  id: F14CookedFoodNoodlesBase
   abstract: true
   description: Now that's a nice pasta!
   components:
@@ -20,8 +20,8 @@
 
 - type: entity
   name: boiled spaghetti
-  parent: N14CookedFoodNoodlesBase
-  id: N14CookedFoodNoodlesBoiled
+  parent: F14CookedFoodNoodlesBase
+  id: F14CookedFoodNoodlesBoiled
   description: A plain dish of noodles, this needs more ingredients.
   components:
   - type: FlavorProfile
@@ -33,8 +33,8 @@
 
 - type: entity
   name: spaghetti
-  parent: N14CookedFoodNoodlesBase
-  id: N14CookedFoodNoodles
+  parent: F14CookedFoodNoodlesBase
+  id: F14CookedFoodNoodles
   description: Spaghetti and crushed tatos. People used to eat this slop?
   components:
   - type: FlavorProfile
@@ -51,8 +51,8 @@
 
 - type: entity
   name: spaghetti and meatballs
-  parent: N14CookedFoodNoodlesBase
-  id: N14CookedFoodNoodlesMeatball
+  parent: F14CookedFoodNoodlesBase
+  id: F14CookedFoodNoodlesMeatball
   description: It's kind of annoying to eat, but tasty. #N14 change
   components:
   - type: FlavorProfile
@@ -77,8 +77,8 @@
 
 - type: entity
   name: chow mein
-  parent: N14CookedFoodNoodlesBase
-  id: N14CookedFoodNoodlesChowmein
+  parent: F14CookedFoodNoodlesBase
+  id: F14CookedFoodNoodlesChowmein
   description: A nice mix of noodles and fried vegetables.
   components:
   - type: FlavorProfile
@@ -100,8 +100,8 @@
 
 - type: entity
   name: butter noodles
-  parent: N14CookedFoodNoodlesBase
-  id: N14CookedFoodNoodlesButter
+  parent: F14CookedFoodNoodlesBase
+  id: F14CookedFoodNoodlesButter
   description: Noodles covered in savory butter. Simple and slippery, but delicious.
   components:
   - type: FlavorProfile

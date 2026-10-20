@@ -1,40 +1,40 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier4Weapon/Tier4WeaponTables/Tier4WeaponMelee/Tier4MeleeBase.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_MeleeAll
+  id: F14WeaponLootTier4MeleeAll
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier4_MeleeBlunt
+          tableId: F14WeaponLootTier4MeleeBlunt
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier4_MeleeSharp
+          tableId: F14WeaponLootTier4MeleeSharp
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier4_MeleeOther
+          tableId: F14WeaponLootTier4MeleeOther
 # stuff here
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_MeleeBlunt
+  id: F14WeaponLootTier4MeleeBlunt
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier4_MeleeBluntOneHanded
+          tableId: F14WeaponLootTier4MeleeBluntOneHanded
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier4_MeleeBluntTwoHanded
+          tableId: F14WeaponLootTier4MeleeBluntTwoHanded
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_MeleeSharp
+  id: F14WeaponLootTier4MeleeSharp
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier4_MeleeSharpOneHanded
+          tableId: F14WeaponLootTier4MeleeSharpOneHanded
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier4_MeleeSharpTwoHanded
+          tableId: F14WeaponLootTier4MeleeSharpTwoHanded
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_MeleeOther
+  id: F14WeaponLootTier4MeleeOther
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier4_MeleeOtherOneHanded
+          tableId: F14WeaponLootTier4MeleeOtherOneHanded
 #      - !type:NestedSelector
 #          tableId: M14WeaponLootTier4_MeleeOtherTwoHanded

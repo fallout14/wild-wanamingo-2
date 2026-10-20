@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Misfits/Recipes/Construction/Graphs/structures/bunker_doors.yml
 
 - type: constructionGraph
-  id: N14DoorBunker
+  id: F14DoorBunker
   start: start
   graph:
   - node: start
@@ -17,7 +17,7 @@
         doAfter: 2
 
   - node: n14assembly
-    entity: MisfitsDoorBunkerAssembly
+    entity: F14DoorBunkerAssembly
     actions:
     - !type:SnapToGrid {}
     - !type:SetAnchor {}
@@ -43,7 +43,7 @@
         doAfter: 3
 
   - node: n14wired
-    entity: MisfitsDoorBunkerAssembly
+    entity: F14DoorBunkerAssembly
     edges:
     - to: n14electronics
       conditions:
@@ -92,7 +92,7 @@
         doAfter: 5
 
   - node: n14glassElectronics
-    entity: MisfitsDoorBunkerAssembly
+    entity: F14DoorBunkerAssembly
     edges:
     - to: glassBunker
       conditions:
@@ -119,7 +119,7 @@
 
 ## Glass airlock
   - node: glassBunker
-    entity: N14DoorBunkerGlass
+    entity: F14DoorBunkerGlass
     doNotReplaceInheritingEntities: true
     actions:
     - !type:SetWiresPanelSecurity
@@ -143,7 +143,7 @@
 
 ## Standard airlock
   - node: bunker
-    entity: N14DoorBunker
+    entity: F14DoorBunker
     doNotReplaceInheritingEntities: true
     actions:
     - !type:SetWiresPanelSecurity

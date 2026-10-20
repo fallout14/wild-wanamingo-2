@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: BaseStructure
-  id: N14BaseWallIndestructible
+  id: F14BaseWallIndestructible
   name: wall
   description: You will struggle to break this.
   suffix: indestructible
@@ -51,8 +51,8 @@
   - type: BlockWeather
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14BaseWallSlanted
+  parent: F14BaseWallIndestructible
+  id: F14BaseWallSlanted
   suffix: slanted
   abstract: true
   components:
@@ -70,8 +70,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14BaseWallSlanted
-  id: N14BaseWallSlantedMetalWeak
+  parent: F14BaseWallSlanted
+  id: F14BaseWallSlantedMetalWeak
   abstract: true
   components:
   - type: Damageable
@@ -80,8 +80,8 @@
     damageContainer: Inorganic
 
 - type: entity
-  parent: N14BaseWallSlanted
-  id: N14BaseWallSlantedMetal
+  parent: F14BaseWallSlanted
+  id: F14BaseWallSlantedMetal
   abstract: true
   components:
   - type: Damageable
@@ -98,8 +98,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14BaseWallSlanted
-  id: N14BaseWallSlantedMetalStrong
+  parent: F14BaseWallSlanted
+  id: F14BaseWallSlantedMetalStrong
   abstract: true
   components:
   - type: Damageable
@@ -118,8 +118,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14BaseWallSlanted
-  id: N14BaseWallSlantedWood
+  parent: F14BaseWallSlanted
+  id: F14BaseWallSlantedWood
   abstract: true
   components:
   - type: Damageable
@@ -144,8 +144,8 @@
           collection: WoodDestroyHeavy
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallAdobeSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallAdobeSlantedIndestructible
   name: adobe wall
   components:
   - type: Sprite
@@ -160,19 +160,19 @@
       base: slantedadobe
 
 - type: entity
-  parent: [ N14WallAdobeSlantedIndestructible, N14BaseWallSlanted ]
-  id: N14WallAdobeSlanted
+  parent: [ F14WallAdobeSlantedIndestructible, F14BaseWallSlanted ]
+  id: F14WallAdobeSlanted
   name: adobe wall
   suffix: slanted
   components:
   - type: Construction
     # #Misfits Add - lets the hand-construction adobe recipe deconstruct back through its graph.
-    graph: MisfitsAdobeWall
+    graph: F14AdobeWall
     node: AdobeWall
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallBrickSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallBrickSlantedIndestructible
   name: brick wall
   components:
   - type: Sprite
@@ -187,14 +187,14 @@
       base: slantedbrick
 
 - type: entity
-  parent: [ N14WallBrickSlantedIndestructible, N14BaseWallSlanted ]
-  id: N14WallBrickSlanted
+  parent: [ F14WallBrickSlantedIndestructible, F14BaseWallSlanted ]
+  id: F14WallBrickSlanted
   name: brick wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallBrickAltSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallBrickAltSlantedIndestructible
   name: brick wall
   components:
   - type: Sprite
@@ -209,14 +209,14 @@
       base: slantedbrickalt
 
 - type: entity
-  parent: [ N14WallBrickAltSlantedIndestructible, N14BaseWallSlanted ]
-  id: N14WallBrickAltSlanted
+  parent: [ F14WallBrickAltSlantedIndestructible, F14BaseWallSlanted ]
+  id: F14WallBrickAltSlanted
   name: brick wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallBrickGraySlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallBrickGraySlantedIndestructible
   name: brick wall
   components:
   - type: Sprite
@@ -231,14 +231,14 @@
       base: slantedbrickgray
 
 - type: entity
-  parent: [ N14WallBrickGraySlantedIndestructible, N14BaseWallSlanted ]
-  id: N14WallBrickGraySlanted
+  parent: [ F14WallBrickGraySlantedIndestructible, F14BaseWallSlanted ]
+  id: F14WallBrickGraySlanted
   name: brick wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallBunkerSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallBunkerSlantedIndestructible
   name: bunker wall
   components:
   - type: Sprite
@@ -253,14 +253,14 @@
       base: slantedbunker
 
 - type: entity
-  parent: [ N14WallBunkerSlantedIndestructible, N14BaseWallSlantedMetalStrong ]
-  id: N14WallBunkerSlanted
+  parent: [ F14WallBunkerSlantedIndestructible, F14BaseWallSlantedMetalStrong ]
+  id: F14WallBunkerSlanted
   name: bunker wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallCombSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallCombSlantedIndestructible
   name: comb wall
   components:
   - type: Sprite
@@ -275,14 +275,14 @@
       base: slantedcomb
 
 - type: entity
-  parent: [ N14WallCombSlantedIndestructible, N14BaseWallSlanted ]
-  id: N14WallCombSlanted
+  parent: [ F14WallCombSlantedIndestructible, F14BaseWallSlanted ]
+  id: F14WallCombSlanted
   name: comb wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallConcreteSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallConcreteSlantedIndestructible
   name: concrete wall
   components:
   - type: Sprite
@@ -297,8 +297,8 @@
       base: slantedconcrete
 
 - type: entity
-  parent: [ N14WallCombSlantedIndestructible, N14BaseWallSlanted ]
-  id: N14WallConcreteSlanted
+  parent: [ F14WallCombSlantedIndestructible, F14BaseWallSlanted ]
+  id: F14WallConcreteSlanted
   name: concrete wall
   suffix: slanted
   # Forge-Change-Start
@@ -316,8 +316,8 @@
   # Forge-Change-End
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallConcreteAltSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallConcreteAltSlantedIndestructible
   name: concrete wall
   components:
   - type: Sprite
@@ -332,14 +332,14 @@
       base: slantedconcretealt
 
 - type: entity
-  parent: [ N14WallConcreteAltSlantedIndestructible, N14BaseWallSlanted ]
-  id: N14WallConcreteAltSlanted
+  parent: [ F14WallConcreteAltSlantedIndestructible, F14BaseWallSlanted ]
+  id: F14WallConcreteAltSlanted
   name: concrete wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallDungeonSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallDungeonSlantedIndestructible
   name: dungeon wall
   components:
   - type: Sprite
@@ -354,14 +354,14 @@
       base: slanteddungeon
 
 - type: entity
-  parent: [ N14WallDungeonSlantedIndestructible, N14BaseWallSlanted ]
-  id: N14WallDungeonSlanted
+  parent: [ F14WallDungeonSlantedIndestructible, F14BaseWallSlanted ]
+  id: F14WallDungeonSlanted
   name: dungeon wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallDungeonAltSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallDungeonAltSlantedIndestructible
   name: dungeon wall
   components:
   - type: Sprite
@@ -376,14 +376,14 @@
       base: slanteddungeonalt
 
 - type: entity
-  parent: [ N14WallDungeonAltSlantedIndestructible, N14BaseWallSlanted ]
-  id: N14WallDungeonAltSlanted
+  parent: [ F14WallDungeonAltSlantedIndestructible, F14BaseWallSlanted ]
+  id: F14WallDungeonAltSlanted
   name: dungeon wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallMetalSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallMetalSlantedIndestructible
   name: metal wall
   components:
   - type: Sprite
@@ -398,14 +398,14 @@
       base: slantedmetal
 
 - type: entity
-  parent: [ N14WallMetalSlantedIndestructible, N14BaseWallSlantedMetal ]
-  id: N14WallMetalSlanted
+  parent: [ F14WallMetalSlantedIndestructible, F14BaseWallSlantedMetal ]
+  id: F14WallMetalSlanted
   name: metal wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallPrisonSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallPrisonSlantedIndestructible
   name: prison wall
   components:
   - type: Sprite
@@ -420,14 +420,14 @@
       base: slantedprison
 
 - type: entity
-  parent: [ N14WallPrisonSlantedIndestructible, N14BaseWallSlantedMetal ]
-  id: N14WallPrisonSlanted
+  parent: [ F14WallPrisonSlantedIndestructible, F14BaseWallSlantedMetal ]
+  id: F14WallPrisonSlanted
   name: prison wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallReinfMetalSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallReinfMetalSlantedIndestructible
   name: reinforced metal wall
   components:
   - type: Sprite
@@ -442,14 +442,14 @@
       base: slantedreinfmetal
 
 - type: entity
-  parent: [ N14WallReinfMetalSlantedIndestructible, N14BaseWallSlantedMetal ]
-  id: N14WallReinfMetalSlanted
+  parent: [ F14WallReinfMetalSlantedIndestructible, F14BaseWallSlantedMetal ]
+  id: F14WallReinfMetalSlanted
   name: reinforced metal wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallRockSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallRockSlantedIndestructible
   name: rock wall
   components:
   - type: Sprite
@@ -464,8 +464,8 @@
       base: slantedrock
 
 - type: entity
-  parent: [ N14WallRockSlantedIndestructible, N14BaseWallSlantedMetal ]
-  id: N14WallRockSlanted
+  parent: [ F14WallRockSlantedIndestructible, F14BaseWallSlantedMetal ]
+  id: F14WallRockSlanted
   name: rock wall
   suffix: slanted
   components:
@@ -488,8 +488,8 @@
             acts: ["Destruction"]
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallRockDroughtSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallRockDroughtSlantedIndestructible
   name: drought rock wall
   components:
   - type: Sprite
@@ -504,8 +504,8 @@
       base: slantedrockdrought
 
 - type: entity
-  parent: [ N14WallRockDroughtSlantedIndestructible, N14BaseWallSlantedMetal ]
-  id: N14WallRockDroughtSlanted
+  parent: [ F14WallRockDroughtSlantedIndestructible, F14BaseWallSlantedMetal ]
+  id: F14WallRockDroughtSlanted
   name: rock wall
   suffix: slanted
   components:
@@ -530,8 +530,8 @@
 # Misfits Add - Procedural ore variant for Wendover; ~33% of placed rocks become random ore veins at round start
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallRockMammothSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallRockMammothSlantedIndestructible
   name: mammoth rock wall
   components:
   - type: Sprite
@@ -546,14 +546,14 @@
       base: slantedrockmammoth
 
 - type: entity
-  parent: [ N14WallRockMammothSlantedIndestructible, N14BaseWallSlantedMetal ]
-  id: N14WallRockMammothSlanted
+  parent: [ F14WallRockMammothSlantedIndestructible, F14BaseWallSlantedMetal ]
+  id: F14WallRockMammothSlanted
   name: rock wall
   suffix: slanted
   components:
   - type: OreVein
     oreChance: 0.44
-    oreRarityPrototypeId: N14RandomOreDistributionStandard
+    oreRarityPrototypeId: F14RandomOreDistributionStandard
   - type: Damageable
     damageModifierSet: Rock # Corvax-Change
   - type: Injurable
@@ -568,8 +568,8 @@
             acts: ["Destruction"]
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallRoughScrapSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallRoughScrapSlantedIndestructible
   name: rough scrap wall
   components:
   - type: Sprite
@@ -584,18 +584,18 @@
       base: slantedroughscrap
 
 - type: entity
-  parent: [ N14WallRoughScrapSlantedIndestructible, N14BaseWallSlantedMetalWeak ]
-  id: N14WallRoughScrapSlanted
+  parent: [ F14WallRoughScrapSlantedIndestructible, F14BaseWallSlantedMetalWeak ]
+  id: F14WallRoughScrapSlanted
   name: rough scrap wall
   suffix: slanted
   components:
   - type: Construction
-    graph: N14ScrapWall
+    graph: F14ScrapWall
     node: RoughScrapWall
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallIndustrialRustSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallIndustrialRustSlantedIndestructible
   name: rusty industrial wall
   components:
   - type: Sprite
@@ -610,14 +610,14 @@
       base: slantedrustindustrial
 
 - type: entity
-  parent: [ N14WallIndustrialRustSlantedIndestructible, N14BaseWallSlantedMetal ]
-  id: N14WallIndustrialRustSlanted
+  parent: [ F14WallIndustrialRustSlantedIndestructible, F14BaseWallSlantedMetal ]
+  id: F14WallIndustrialRustSlanted
   name: rusty industrial wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallMetalRustSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallMetalRustSlantedIndestructible
   name: rusty metal wall
   components:
   - type: Sprite
@@ -632,14 +632,14 @@
       base: slantedrustmetal
 
 - type: entity
-  parent: [ N14WallMetalRustSlantedIndestructible, N14BaseWallSlantedMetal ]
-  id: N14WallMetalRustSlantedSlanted
+  parent: [ F14WallMetalRustSlantedIndestructible, F14BaseWallSlantedMetal ]
+  id: F14WallMetalRustSlantedSlanted
   name: rusty metal wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallReinfMetalRustSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallReinfMetalRustSlantedIndestructible
   name: rusty reinforced metal wall
   components:
   - type: Sprite
@@ -654,14 +654,14 @@
       base: slantedrustreinfmetal
 
 - type: entity
-  parent: [ N14WallReinfMetalRustSlantedIndestructible, N14BaseWallSlantedMetal ]
-  id: N14WallReinfMetalRustSlanted
+  parent: [ F14WallReinfMetalRustSlantedIndestructible, F14BaseWallSlantedMetal ]
+  id: F14WallReinfMetalRustSlanted
   name: rusty reinforced metal wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallVaultRustSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallVaultRustSlantedIndestructible
   name: rusty vault wall
   components:
   - type: Sprite
@@ -676,14 +676,14 @@
       base: slantedrustvault
 
 - type: entity
-  parent: [ N14WallVaultRustSlantedIndestructible, N14BaseWallSlantedMetalStrong ]
-  id: N14WallVaultRustSlanted
+  parent: [ F14WallVaultRustSlantedIndestructible, F14BaseWallSlantedMetalStrong ]
+  id: F14WallVaultRustSlanted
   name: rusty vault wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallVaultVentsRustSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallVaultVentsRustSlantedIndestructible
   name: rusty vault vents wall
   components:
   - type: Sprite
@@ -698,14 +698,14 @@
       base: slantedrustvaultvent
 
 - type: entity
-  parent: [ N14WallVaultVentsRustSlantedIndestructible, N14BaseWallSlantedMetal ]
-  id: N14WallVaultVentsRustSlanted
+  parent: [ F14WallVaultVentsRustSlantedIndestructible, F14BaseWallSlantedMetal ]
+  id: F14WallVaultVentsRustSlanted
   name: rusty vault vents wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallScrapSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallScrapSlantedIndestructible
   name: scrap wall
   components:
   - type: Sprite
@@ -720,18 +720,18 @@
       base: slantedscrap
 
 - type: entity
-  parent: [ N14WallScrapSlantedIndestructible, N14BaseWallSlantedMetalWeak ]
-  id: N14WallScrapSlanted
+  parent: [ F14WallScrapSlantedIndestructible, F14BaseWallSlantedMetalWeak ]
+  id: F14WallScrapSlanted
   name: sheet metal wall
   suffix: slanted
   components:
   - type: Construction  
-    graph: N14ScrapWall
+    graph: F14ScrapWall
     node: SheetScrapWall
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallScrapBlueSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallScrapBlueSlantedIndestructible
   name: blue sheet metal wall
   components:
   - type: Sprite
@@ -746,18 +746,18 @@
       base: slantedscrap
 
 - type: entity
-  parent: [ N14WallScrapBlueSlantedIndestructible, N14BaseWallSlantedMetalWeak ]
-  id: N14WallScrapBlueSlanted
+  parent: [ F14WallScrapBlueSlantedIndestructible, F14BaseWallSlantedMetalWeak ]
+  id: F14WallScrapBlueSlanted
   name: blue sheet metal wall
   suffix: slanted
   components:
   - type: Construction
-    graph: N14ScrapWall
+    graph: F14ScrapWall
     node: BlueScrapWall
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallScrapRedSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallScrapRedSlantedIndestructible
   name: red sheet metal wall
   components:
   - type: Sprite
@@ -772,18 +772,18 @@
       base: slantedscrap
 
 - type: entity
-  parent: [ N14WallScrapRedSlantedIndestructible, N14BaseWallSlantedMetalWeak ]
-  id: N14WallScrapRedSlanted
+  parent: [ F14WallScrapRedSlantedIndestructible, F14BaseWallSlantedMetalWeak ]
+  id: F14WallScrapRedSlanted
   name: red sheet metal wall
   suffix: slanted
   components:
   - type: Construction
-    graph: N14ScrapWall
+    graph: F14ScrapWall
     node: RedScrapWall
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallScrapWhiteSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallScrapWhiteSlantedIndestructible
   name: white sheet metal wall
   components:
   - type: Sprite
@@ -798,18 +798,18 @@
       base: slantedscrap
 
 - type: entity
-  parent: [ N14WallScrapWhiteSlantedIndestructible, N14BaseWallSlantedMetalWeak ]
-  id: N14WallScrapWhiteSlanted
+  parent: [ F14WallScrapWhiteSlantedIndestructible, F14BaseWallSlantedMetalWeak ]
+  id: F14WallScrapWhiteSlanted
   name: white sheet metal wall
   suffix: slanted
   components:
   - type: Construction
-    graph: N14ScrapWall
+    graph: F14ScrapWall
     node: WhiteScrapWall
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallSewerSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallSewerSlantedIndestructible
   name: sewer wall
   components:
   - type: Sprite
@@ -824,14 +824,14 @@
       base: slantedsewer
 
 - type: entity
-  parent: [ N14WallSewerSlantedIndestructible, N14BaseWallSlantedMetal ]
-  id: N14WallSewerSlanted
+  parent: [ F14WallSewerSlantedIndestructible, F14BaseWallSlantedMetal ]
+  id: F14WallSewerSlanted
   name: sewer wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallSidingSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallSidingSlantedIndestructible
   name: brick wall
   components:
   - type: Sprite
@@ -846,14 +846,14 @@
       base: slantedsiding
 
 - type: entity
-  parent: [ N14WallSidingSlantedIndestructible, N14BaseWallSlantedWood ]
-  id: N14WallSidingSlanted
+  parent: [ F14WallSidingSlantedIndestructible, F14BaseWallSlantedWood ]
+  id: F14WallSidingSlanted
   name: brick wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallSidingBlueSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallSidingBlueSlantedIndestructible
   name: blue brick wall
   components:
   - type: Sprite
@@ -868,14 +868,14 @@
       base: slantedsiding
 
 - type: entity
-  parent: [ N14WallSidingBlueSlantedIndestructible, N14BaseWallSlantedWood ]
-  id: N14WallSidingBlueSlanted
+  parent: [ F14WallSidingBlueSlantedIndestructible, F14BaseWallSlantedWood ]
+  id: F14WallSidingBlueSlanted
   name: blue brick wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallSidingRedSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallSidingRedSlantedIndestructible
   name: red brick wall
   components:
   - type: Sprite
@@ -890,14 +890,14 @@
       base: slantedsiding
 
 - type: entity
-  parent: [ N14WallSidingRedSlantedIndestructible, N14BaseWallSlantedWood ]
-  id: N14WallSidingRedSlanted
+  parent: [ F14WallSidingRedSlantedIndestructible, F14BaseWallSlantedWood ]
+  id: F14WallSidingRedSlanted
   name: red brick wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallSidingGreenSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallSidingGreenSlantedIndestructible
   name: green brick wall
   components:
   - type: Sprite
@@ -912,14 +912,14 @@
       base: slantedsiding
 
 - type: entity
-  parent: [ N14WallSidingGreenSlantedIndestructible, N14BaseWallSlantedWood ]
-  id: N14WallSidingGreenSlanted
+  parent: [ F14WallSidingGreenSlantedIndestructible, F14BaseWallSlantedWood ]
+  id: F14WallSidingGreenSlanted
   name: green brick wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallVaultSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallVaultSlantedIndestructible
   name: vault wall
   components:
   - type: Sprite
@@ -934,14 +934,14 @@
       base: slantedvault
 
 - type: entity
-  parent: [ N14WallVaultSlantedIndestructible, N14BaseWallSlantedMetalStrong ]
-  id: N14WallVaultSlanted
+  parent: [ F14WallVaultSlantedIndestructible, F14BaseWallSlantedMetalStrong ]
+  id: F14WallVaultSlanted
   name: vault wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallVaultVentSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallVaultVentSlantedIndestructible
   name: vault vent wall
   components:
   - type: Sprite
@@ -956,14 +956,14 @@
       base: slantedvaultvent
 
 - type: entity
-  parent: [ N14WallVaultVentSlantedIndestructible, N14BaseWallSlantedMetal ]
-  id: N14WallVaultVentSlanted
+  parent: [ F14WallVaultVentSlantedIndestructible, F14BaseWallSlantedMetal ]
+  id: F14WallVaultVentSlanted
   name: vault vent wall
   suffix: slanted
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallWoodSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallWoodSlantedIndestructible
   name: wood wall
   components:
   - type: Sprite
@@ -978,18 +978,18 @@
       base: slantedwood
 
 - type: entity
-  parent: [ N14WallWoodSlantedIndestructible, N14BaseWallSlantedWood ]
-  id: N14WallWoodSlanted
+  parent: [ F14WallWoodSlantedIndestructible, F14BaseWallSlantedWood ]
+  id: F14WallWoodSlanted
   name: wood wall
   suffix: slanted
   components:
   - type: Construction
-    graph: N14WoodWall
+    graph: F14WoodWall
     node: WoodWall
 
 - type: entity
-  parent: N14BaseWallIndestructible
-  id: N14WallWoodAltSlantedIndestructible
+  parent: F14BaseWallIndestructible
+  id: F14WallWoodAltSlantedIndestructible
   name: wood wall
   components:
   - type: Sprite
@@ -1004,13 +1004,13 @@
       base: slantedwood
 
 - type: entity
-  parent: [ N14WallWoodAltSlantedIndestructible, N14BaseWallSlantedWood ]
-  id: N14WallWoodAltSlanted
+  parent: [ F14WallWoodAltSlantedIndestructible, F14BaseWallSlantedWood ]
+  id: F14WallWoodAltSlanted
   name: wood wall
   suffix: slanted
 
 - type: entity
-  id: N14WallRebar
+  id: F14WallRebar
   parent: BaseStructure
   name: rebar
   description: Some rebar ready for construction.

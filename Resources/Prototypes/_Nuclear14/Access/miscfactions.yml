@@ -2,115 +2,115 @@
 # Resources/Prototypes/_Nuclear14/Access/miscfactions.yml
 
 - type: accessLevel
-  id: N14TownieLaw
+  id: F14TownieLaw
   name: id-card-access-level-townie-sheriff
 
 - type: accessLevel
-  id: N14TownieMayor
+  id: F14TownieMayor
   name: id-card-access-level-townie-mayor
 
 - type: accessLevel
-  id: N14TownieShopkeeper
+  id: F14TownieShopkeeper
   name: id-card-access-level-townie-shopkeeper
 
 - type: accessLevel
-  id: N14TownieDoctor
+  id: F14TownieDoctor
   name: id-card-access-level-townie-doctor
 
 - type: accessLevel
-  id: N14TownieMechanic
+  id: F14TownieMechanic
   name: id-card-access-level-townie-mechanic
 
 - type: accessLevel
-  id: N14WastelandBartender
+  id: F14WastelandBartender
   name: id-card-access-level-townie-bartender
 
 - type: accessLevel
-  id: N14WastelandReporter
+  id: F14WastelandReporter
   name: id-card-access-level-townie-reporter
 
 - type: accessLevel
-  id: N14InnRoomOne
+  id: F14InnRoomOne
   name: id-card-access-level-townie-inn1
 
 - type: accessLevel
-  id: N14InnRoomTwo
+  id: F14InnRoomTwo
   name: id-card-access-level-townie-inn2
 
 - type: accessLevel
-  id: N14InnRoomThree
+  id: F14InnRoomThree
   name: id-card-access-level-townie-inn3
 
 - type: accessGroup
-  id: N14Townie
+  id: F14Townie
   tags:
-  - N14TownieLaw
-  - N14TownieMayor
-  - N14TownieShopkeeper
-  - N14TownieDoctor
-  - N14TownieMechanic
-  - N14WastelandBartender
-  - N14WastelandReporter
-  - N14WastelandChaplain # Corvax-Change
-  - MisfitsTownsPerson # Corvax-Change
-  - N14WastelandFarmer # Corvax-Change
-  - N14InnRoomOne
-  - N14InnRoomTwo
-  - N14InnRoomThree
+  - F14TownieLaw
+  - F14TownieMayor
+  - F14TownieShopkeeper
+  - F14TownieDoctor
+  - F14TownieMechanic
+  - F14WastelandBartender
+  - F14WastelandReporter
+  - F14WastelandChaplain # Corvax-Change
+  - F14TownsPerson # Corvax-Change
+  - F14WastelandFarmer # Corvax-Change
+  - F14InnRoomOne
+  - F14InnRoomTwo
+  - F14InnRoomThree
 
 # Wastelander
 
 - type: accessLevel
-  id: N14WastelandChaplain
+  id: F14WastelandChaplain
   name: id-card-access-level-waste-chaplain
 
 - type: accessLevel
-  id: N14WastelandFarmer
+  id: F14WastelandFarmer
   name: id-card-access-level-waste-farmer
 
 # Tribal
 
 - type: accessLevel
-  id: N14TribeMember
+  id: F14TribeMember
   name: id-card-access-level-tribe-member
 
 - type: accessLevel
-  id: N14TribeChief
+  id: F14TribeChief
   name: id-card-access-level-tribe-chief
 
 #MARK: Followers
 
 - type: accessLevel
-  id: N14FollowersApocalypse
+  id: F14FollowersApocalypse
   name: id-card-access-level-followers-apocalypse
 
 - type: accessGroup
-  id: N14FollowersApocalypse
+  id: F14FollowersApocalypse
   tags:
-  - N14FollowersApocalypse
+  - F14FollowersApocalypse
 
 #MARK: Zetan
 
 - type: accessLevel
-  id: N14Enclave
+  id: F14Enclave
   name: id-card-access-level-enclave
 
 - type: accessLevel
-  id: N14IronKey
+  id: F14IronKey
   name: id-card-access-level-ironkey
 
 - type: accessLevel
-  id: N14BronzeKey
+  id: F14BronzeKey
   name: id-card-access-level-bronzekey
 
 - type: accessLevel
-  id: N14BrassKey
+  id: F14BrassKey
   name: id-card-access-level-brasskey
 
 - type: accessLevel
-  id: N14SilverKey
+  id: F14SilverKey
   name: id-card-access-level-silverkey
 
 - type: accessLevel
-  id: N14AncientBunker
+  id: F14AncientBunker
   name: id-card-access-level-ancient

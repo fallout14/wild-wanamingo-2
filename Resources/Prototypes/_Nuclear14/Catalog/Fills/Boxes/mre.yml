@@ -4,7 +4,7 @@
 - type: entity
   name: cardboard box
   parent: BoxBase
-  id: N14BoxCardboardMREBox
+  id: F14BoxCardboardMREBox
   description: An old cardboard box for storing things.
   components:
   # #Misfits Change - Desert Rose 2 ration sprites; the box shows open while someone is looking through it, like a toolbox.
@@ -32,28 +32,28 @@
 
 - type: entity
   name: C ration
-  parent: N14BoxCardboardMREBox
-  id: N14BoxCardboardMREBoxCFilled
+  parent: F14BoxCardboardMREBox
+  id: F14BoxCardboardMREBoxCFilled
   description: A military C ration. The olive drab carton holds a meat unit, a bread unit, a dessert unit and an accessory packet.
   components:
     - type: StorageFill
       contents:
-        - id: N14FoodTinC1
-        - id: N14FoodTinC2
-        - id: N14FoodTinC3
+        - id: F14FoodTinC1
+        - id: F14FoodTinC2
+        - id: F14FoodTinC3
         - id: FoodCondimentPacketSalt
         - id: FoodCondimentPacketPepper
         - id: FoodCondimentPacketSugar
-        - id: MisfitsFoodCondimentRationTubeHotsauce
+        - id: F14FoodCondimentRationTubeHotsauce
           prob: 0.5
-        - id: MisfitsFoodCondimentRationTubeKetchup
+        - id: F14FoodCondimentRationTubeKetchup
           prob: 0.5
-        - id: MisfitsFoodCondimentRationTubeBbq
+        - id: F14FoodCondimentRationTubeBbq
           prob: 0.5
-        - id: MisfitsFoodCondimentRationTubeMustard
+        - id: F14FoodCondimentRationTubeMustard
           prob: 0.5
-        - id: MisfitsFoodCondimentRationTubeCondensedMilk
-        - id: MisfitsCigarettePackRation
+        - id: F14FoodCondimentRationTubeCondensedMilk
+        - id: F14CigarettePackRation
         - id: Matchbox
 
 # #Misfits Change - Contents modeled on the WWII K ration: a tinned meat or cheese unit,
@@ -62,8 +62,8 @@
 
 - type: entity
   name: K ration
-  parent: N14BoxCardboardMREBox
-  id: N14BoxCardboardMREBoxKFilled
+  parent: F14BoxCardboardMREBox
+  id: F14BoxCardboardMREBoxKFilled
   description: A military K ration. The waxed carton holds a tinned main, biscuits, a sweet and an accessory packet.
   components:
     - type: Sprite
@@ -75,25 +75,25 @@
       - 0,0,1,1
     - type: StorageFill
       contents:
-        - id: N14FoodTinK
-        - id: N14FoodTinKCracker
+        - id: F14FoodTinK
+        - id: F14FoodTinKCracker
         - id: FoodSnackChocolate
           prob: 0.7
           orGroup: Sweet
-        - id: N14FoodTinC3
+        - id: F14FoodTinC3
           prob: 0.3
           orGroup: Sweet
         - id: FoodCondimentPacketSalt
         - id: FoodCondimentPacketPepper
         - id: FoodCondimentPacketSugar
-        - id: MisfitsFoodCondimentRationTubeHotsauce
+        - id: F14FoodCondimentRationTubeHotsauce
           prob: 0.5
-        - id: MisfitsFoodCondimentRationTubeKetchup
+        - id: F14FoodCondimentRationTubeKetchup
           prob: 0.5
-        - id: MisfitsFoodCondimentRationTubeBbq
+        - id: F14FoodCondimentRationTubeBbq
           prob: 0.5
-        - id: MisfitsFoodCondimentRationTubeMustard
+        - id: F14FoodCondimentRationTubeMustard
           prob: 0.5
-        - id: MisfitsFoodCondimentRationTubeCondensedMilk
-        - id: MisfitsCigarettePackRation
+        - id: F14FoodCondimentRationTubeCondensedMilk
+        - id: F14CigarettePackRation
         - id: Matchbox

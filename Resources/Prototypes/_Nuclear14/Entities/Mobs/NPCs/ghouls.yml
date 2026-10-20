@@ -3,8 +3,8 @@
 
 - type: entity
   name: Feral Ghoul
-  id: N14MobGhoulFeral
-  parent: N14MobBaseHostileFeral
+  id: F14MobGhoulFeral
+  parent: F14MobBaseHostileFeral
   description: Humans who have lost all capacity for thought, driven only by instinct with an increased level of aggression and appetite. They cannot be saved.
   components:
   - type: MobThresholds
@@ -14,7 +14,7 @@
   - type: MeleeWeapon
     hidden: true
     soundHit:
-      collection: MisfitsGhoulAttack #Misfits Change
+      collection: F14GhoulAttack #Misfits Change
     angle: 0
     animation: WeaponArcFist
     damage:
@@ -26,13 +26,13 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsGhoulIdle
+      collection: F14GhoulIdle
       params:
         volume: -15
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsGhoulAggro
+      collection: F14GhoulAggro
       params:
         volume: -12
         maxDistance: 10
@@ -44,15 +44,15 @@
       sprite: Nuclear14/Mobs/Ghouls/ghoul-feral.rsi
 
 - type: entity
-  parent: N14MobBaseHostileFeral
-  id: N14MobGhoulFeralReaver
+  parent: F14MobBaseHostileFeral
+  id: F14MobGhoulFeralReaver
   name: Feral Ghoul Reaver
   description: Wasteland warriors still clad in the remains of their metal armor, their mind may be gone but the muscle memory from years of combat remains.
   components:
   - type: MeleeWeapon
     hidden: true
     soundHit:
-      collection: MisfitsGhoulAttack #Misfits Change
+      collection: F14GhoulAttack #Misfits Change
     angle: 0
     animation: WeaponArcFist
     damage:
@@ -64,13 +64,13 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsGhoulIdle
+      collection: F14GhoulIdle
       params:
         volume: -15
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsGhoulAggro
+      collection: F14GhoulAggro
       params:
         volume: -12
         maxDistance: 10
@@ -86,15 +86,15 @@
       100: Dead
 
 - type: entity
-  parent: N14MobBaseHostileFeral
-  id: N14MobGhoulFeralRotter
+  parent: F14MobBaseHostileFeral
+  id: F14MobGhoulFeralRotter
   name: Feral Ghoul Rotter
   description: Even with their lifespan and regeneration, ghouls can fall apart too. This one is rotting alive, if you can call this festering thing alive.
   components:
   - type: MeleeWeapon
     hidden: true
     soundHit:
-      collection: MisfitsGhoulAttack #Misfits Change
+      collection: F14GhoulAttack #Misfits Change
     angle: 0
     animation: WeaponArcFist
     damage:
@@ -106,13 +106,13 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsGhoulIdle
+      collection: F14GhoulIdle
       params:
         volume: -15
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsGhoulAggro
+      collection: F14GhoulAggro
       params:
         volume: -12
         maxDistance: 10
@@ -124,19 +124,19 @@
       sprite: Nuclear14/Mobs/Ghouls/ghoul-rotter.rsi
 
 - type: entity
-  parent: N14MobBaseHostileFeral
-  id: N14MobGhoulMaypole
+  parent: F14MobBaseHostileFeral
+  id: F14MobGhoulMaypole
   name: Maypole
   description: Towering over everything around it, the massive radiation this mutant gives off attracts a horde of feral ghouls like a radioactive lighthouse.
   components:
   - type: Damageable
-    damageModifierSet: N14ToughAnimal
+    damageModifierSet: F14ToughAnimal
   - type: Injurable
-    damageContainer: MisfitsNPCBiological  # Misfits Change - no starvation for feral ghouls
+    damageContainer: F14NPCBiological  # Misfits Change - no starvation for feral ghouls
   - type: MeleeWeapon
     hidden: true
     soundHit:
-      collection: MisfitsGhoulAttack #Misfits Change
+      collection: F14GhoulAttack #Misfits Change
     angle: 0
     animation: WeaponArcFist
     damage:
@@ -208,7 +208,7 @@
   - type: NoPull #Misfits Add - Maypole is too large to be grabbed
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsGhoulAggro
+      collection: F14GhoulAggro
       params:
         volume: -12
         maxDistance: 10

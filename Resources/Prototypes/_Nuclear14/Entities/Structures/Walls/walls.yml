@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseWall
-  id: N14WallStore
+  id: F14WallStore
   name: store wall
   components:
   - type: Sprite
@@ -26,8 +26,8 @@
       base: store
 
 - type: entity
-  parent: N14WallStore
-  id: N14WallSuperstore
+  parent: F14WallStore
+  id: F14WallSuperstore
   name: store wall
   components:
   - type: Sprite
@@ -36,8 +36,8 @@
     sprite: Nuclear14/Structures/Walls/nc14/superstore.rsi
 
 - type: entity
-  parent: N14WallStore
-  id: N14WallRuins
+  parent: F14WallStore
+  id: F14WallRuins
   name: ruined wall
   description: A ruined wall from a pre-war structure.
   components:
@@ -53,8 +53,8 @@
       base: ruin
 
 - type: entity
-  parent: N14WallStore
-  id: N14WallBrick
+  parent: F14WallStore
+  id: F14WallBrick
   name: brick wall
   components:
   - type: Sprite
@@ -69,8 +69,8 @@
       base: brick
 
 - type: entity
-  parent: N14WallStore
-  id: N14WallConcreteLight
+  parent: F14WallStore
+  id: F14WallConcreteLight
   name: concrete wall
   suffix: light
   components:
@@ -80,8 +80,8 @@
     sprite: Nuclear14/Structures/Walls/nc14/concrete.rsi
 
 - type: entity
-  parent: N14WallConcreteLight
-  id: N14WallConcreteDark
+  parent: F14WallConcreteLight
+  id: F14WallConcreteDark
   suffix: dark
   components:
   - type: Sprite
@@ -93,7 +93,7 @@
 
 - type: entity
   parent: BaseWall
-  id: N14WallMetalEnclave
+  id: F14WallMetalEnclave
   name: metal wall
   components:
   - type: Sprite
@@ -123,13 +123,13 @@
 # Wood walls
 
 - type: entity
-  id: N14WallWoodFrame
+  id: F14WallWoodFrame
   parent: Barricade
   name: wooden wall Frame
   description: A frame for building into a wall.
   components:
   - type: Construction
-    graph: N14WoodWall
+    graph: F14WoodWall
     node: Frame
   - type: Sprite
     sprite: Nuclear14/Structures/Walls/nc14/woodlog.rsi
@@ -153,7 +153,7 @@
 
 - type: entity
   parent: BaseWall
-  id: N14WallWoodWhite
+  id: F14WallWoodWhite
   name: wooden wall
   components:
   - type: Sprite
@@ -189,7 +189,7 @@
 
 - type: entity
   parent: BaseStructureDynamic
-  id: N14WallWoodWhiteFrame
+  id: F14WallWoodWhiteFrame
   name: wall frame
   description: Part of a wooden wall supporting the structure.
   components:
@@ -234,8 +234,8 @@
         acts: ["Destruction"]
 
 - type: entity
-  parent: N14WallWoodWhite
-  id: N14WallWoodDark
+  parent: F14WallWoodWhite
+  id: F14WallWoodDark
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Walls/nc14/wooddark.rsi
@@ -243,16 +243,16 @@
     sprite: Nuclear14/Structures/Walls/nc14/wooddark.rsi
 
 - type: entity
-  parent: N14WallWoodWhiteFrame
-  id: N14WallWoodDarkFrame
+  parent: F14WallWoodWhiteFrame
+  id: F14WallWoodDarkFrame
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Walls/nc14/wooddark.rsi
     state: girder
 
 - type: entity
-  parent: N14WallWoodWhite
-  id: N14WallWoodLog
+  parent: F14WallWoodWhite
+  id: F14WallWoodLog
   name: log wall
   description: A wall made out of wooden logs.
   components:
@@ -267,14 +267,14 @@
       mask: [ log ]
       base: log
   - type: Construction
-    graph: N14WoodWall
+    graph: F14WoodWall
     node: logWall
 
 # Tent Walls
 
 - type: entity
   parent: BaseWall
-  id: N14WallTent
+  id: F14WallTent
   name: tent wall
   description: A tent made from cloth. Keeps the weather out at least.
   components:
@@ -305,7 +305,7 @@
       base: tent
 
 - type: entity
-  id: N14BlastDoorExteriorIndestructible
+  id: F14BlastDoorExteriorIndestructible
   parent: BlastDoor
   suffix: Indestructible, Closed
   components:
@@ -319,7 +319,7 @@
         acts: ["Destruction"]
 
 - type: entity
-  id: N14BlastDoorExteriorIndestructibleOpen
+  id: F14BlastDoorExteriorIndestructibleOpen
   parent: BlastDoorOpen
   suffix: Indestructible, Open
   components:

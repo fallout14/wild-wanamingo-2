@@ -34,7 +34,7 @@ public sealed partial class PowerArmorBraceComponent : Component
 
     /// <summary>ProtoId of the toggle action entity granted to the wearer.</summary>
     [DataField]
-    public EntProtoId BraceAction = "MisfitsActionTogglePowerArmorBrace";
+    public EntProtoId BraceAction = "F14ActionTogglePowerArmorBrace";
 
     /// <summary>Spawned action entity stored on the armor item itself.</summary>
     [DataField, AutoNetworkedField]

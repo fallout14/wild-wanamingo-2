@@ -2,7 +2,7 @@
 # Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
 
 - type: entity
-  parent: N14ClosetFridgeDirty
+  parent: F14ClosetFridgeDirty
   id: F14Fridge
   name: fridge
   components:
@@ -26,7 +26,7 @@
     stateDoorClosed: fridge2_door
 
 - type: entity
-  parent: N14ClosetFridgeDirty
+  parent: F14ClosetFridgeDirty
   id: F14FridgeTall
   name: fridge
   components:
@@ -50,7 +50,7 @@
     stateDoorClosed: fridge3_door
 
 - type: entity
-  parent: N14ClosetBaseW
+  parent: F14ClosetBaseW
   id: F14Safe
   name: safe
   description: A heavy old safe.
@@ -75,7 +75,7 @@
     stateDoorClosed: safe
 
 - type: entity
-  parent: N14ClosetBaseW
+  parent: F14ClosetBaseW
   id: F14SafeSpinner
   name: safe
   description: A heavy old safe with a combination dial.

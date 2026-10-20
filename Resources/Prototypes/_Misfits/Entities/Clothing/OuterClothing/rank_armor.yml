@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/OuterClothing/rank_armor.yml
 
 - type: entity
-  parent: N14ClothingOuterNCRTrenchCoat
-  id: MisfitsClothingOuterNCRTrenchCoat
+  parent: F14ClothingOuterNCRTrenchCoat
+  id: F14ClothingOuterNCRTrenchCoatRank
   name: NCR officer trench coat
   description: Rugged and dependable, this well worn leather coat is used by officers of the Salt Dogs to brave the frontier.
   components:
@@ -14,8 +14,8 @@
 # T3 — NCR Private First Class
 
 - type: entity
-  parent: N14ClothingOuterNCRVestDesert
-  id: MisfitsNCREnhancedVest
+  parent: F14ClothingOuterNCRVestDesert
+  id: F14NCREnhancedVest
   name: NCR reinforced vest
   description: A reinforced desert vest issued to seasoned NCR soldiers with a track record in the field.
   components:
@@ -33,8 +33,8 @@
 # T4 — NCR Specialist (pouched vest variant — retains utility storage)
 
 - type: entity
-  parent: N14ClothingOuterNCRPouchedVestDesert
-  id: MisfitsNCRPouchedCombatArmor
+  parent: F14ClothingOuterNCRPouchedVestDesert
+  id: F14NCRPouchedCombatArmor
   name: NCR specialist vest
   description: A pouched combat vest worn by NCR Specialists; heavier plating than standard issue while keeping all the utility pouches.
   components:
@@ -52,8 +52,8 @@
 # T4 — NCR Officer Mantle (exact same stats as combat armor)
 
 - type: entity
-  parent: N14ClothingOuterNCRCombatArmor
-  id: MisfitsNCROfficerArmor
+  parent: F14ClothingOuterNCRCombatArmor
+  id: F14NCROfficerArmor
   name: NCR officer mantle
   description: Standard combat plating issued to NCR Officers; the mantle serves no tactical function.
   components:
@@ -65,8 +65,8 @@
 # T5 — NCR Sergeant
 
 - type: entity
-  parent: N14ClothingOuterNCRCombatArmor
-  id: MisfitsNCRHeavyCombatArmor
+  parent: F14ClothingOuterNCRCombatArmor
+  id: F14NCRHeavyCombatArmor
   name: NCR combat mantle
   description: Upgraded combat plating issued to NCR Sergeants; noticeably heavier than standard line armor.
   components:
@@ -88,8 +88,8 @@
 # T6 — NCR Staff Sergeant
 
 - type: entity
-  parent: N14ClothingOuterNCRCombatArmor
-  id: MisfitsNCREliteCombatArmor
+  parent: F14ClothingOuterNCRCombatArmor
+  id: F14NCREliteCombatArmor
   name: NCR elite combat mantle
   description: Elite-grade combat armor worn by NCR Staff Sergeants; the best widely-issued plating in the Republic's arsenal.
   components:
@@ -111,8 +111,8 @@
 # T7 — NCR First Sergeant
 
 - type: entity
-  parent: N14ClothingOuterNCRCombatArmor
-  id: MisfitsNCRCommandArmor
+  parent: F14ClothingOuterNCRCombatArmor
+  id: F14NCRCommandArmor
   name: NCR command mantle
   description: Command-grade armor, the pinnacle of standard Republic military equipment.
   components:
@@ -138,8 +138,8 @@
 # T3 — Warrior Legionnaire
 
 - type: entity
-  parent: CorvaxClothingOuterLegionnaireBaseArmor
-  id: MisfitsLegionWarriorArmor
+  parent: F14ClothingOuterLegionnaireBaseArmor
+  id: F14LegionWarriorArmor
   name: legionnaire warrior armor
   description: Hardened Legionnaire armor pieced together from the most battle-proven components; a step above recruit kit.
   components:
@@ -156,8 +156,8 @@
 # T6 — Prime Decanus
 
 - type: entity
-  parent: CorvaxClothingOuterDeanLegionnairePrimeArmor
-  id: MisfitsLegionPrimeDecanusArmor
+  parent: F14ClothingOuterDeanLegionnairePrimeArmor
+  id: F14LegionPrimeDecanusArmor
   name: prime decanus armor
   description: Reinforced Decanus armor bearing the insignia of a Prime Decanus; it has refined craftsmanship compared to a regular Decanus' armor.
   components:
@@ -178,8 +178,8 @@
 # T7 — Veteran Decanus
 
 - type: entity
-  parent: CorvaxClothingOuterDeanLegionnaireVeteranArmor
-  id: MisfitsLegionVeteranDecanusArmor
+  parent: F14ClothingOuterDeanLegionnaireVeteranArmor
+  id: F14LegionVeteranDecanusArmor
   name: veteran decanus armor
   description: The finest Legion field armor, worn only by a Veteran Decanus who has led countless soldiers into battle.
   components:
@@ -201,12 +201,12 @@
 # Brotherhood of Steel
 # ---------------------------------------------------------------------------
 
-# T2 — Initiate (weakest BoS armor; base N14ClothingOuterMBoSInitiateArmor carries these stats)
+# T2 — Initiate (weakest BoS armor; base F14ClothingOuterMBoSInitiateArmor carries these stats)
 # T3 — Squire (one step above Initiate, below Knight; still in training)
 
 - type: entity
-  parent: N14ClothingOuterMidwestArmor
-  id: MisfitsBoSSquireArmor
+  parent: F14ClothingOuterMidwestArmor
+  id: F14BoSSquireArmor
   name: Brotherhood squire armor
   description: Light Brotherhood-issue armor worn by Squires; sturdy enough for patrol duty but not yet the full combat kit of a Knight.
   components:
@@ -224,8 +224,8 @@
 # T4 — Knight (equivalent to NCR Specialist / Legion Veteran Legionnaire)
 
 - type: entity
-  parent: N14ClothingOuterCombatArmorBOSMK2
-  id: MisfitsBoSKnightArmor
+  parent: F14ClothingOuterCombatArmorBOSMK2
+  id: F14BoSKnightArmor
   name: Brotherhood knight armor
   description: Standard Brotherhood combat armor worn by Knights. Well-maintained and reliable, though not yet the heavy plating of a Paladin.
   components:
@@ -243,8 +243,8 @@
 # T6 — Head Knight (equivalent to NCR Staff Sergeant / Legion Prime Decanus)
 
 - type: entity
-  parent: N14ClothingOuterCombatArmorCaptainBOS
-  id: MisfitsBoSHeadKnightArmor
+  parent: F14ClothingOuterCombatArmorCaptainBOS
+  id: F14BoSHeadKnightArmor
   name: Brotherhood head knight armor
   description: Elite Brotherhood armor reserved for Head Knights; layered plating that reflects years of field service and the trust of the Elder.
   components:

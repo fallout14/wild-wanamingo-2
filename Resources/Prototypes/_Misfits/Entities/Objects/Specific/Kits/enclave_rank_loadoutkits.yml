@@ -1,9 +1,9 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Kits/enclave_rank_loadoutkits.yml
 
 - type: entity
-  id: MisfitsEnclaveOfficerloadoutkits
+  id: F14EnclaveOfficerloadoutkits
   name: Undecided U.S. Army Officer Loadout Kit
-  parent: N14BaseLoadoutKit
+  parent: F14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -18,9 +18,9 @@
     - Enclave_CommandPlasmaSet
 
 - type: entity
-  id: MisfitsEnclaveSoldierloadoutkits
+  id: F14EnclaveSoldierloadoutkits
   name: Undecided U.S. Army Soldier Loadout Kit
-  parent: N14BaseLoadoutKit
+  parent: F14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -35,9 +35,9 @@
     - Enclave_SuppressorSet
 
 - type: entity
-  id: MisfitsEnclaveScientistloadoutkits
+  id: F14EnclaveScientistloadoutkits
   name: Undecided U.S. Army Scientist Loadout Kit
-  parent: N14BaseLoadoutKit
+  parent: F14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -59,7 +59,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - MisfitsKitEnclave_CommandLaser
+  - F14KitEnclaveCommandLaser
 
 - type: thiefBackpackSet
   id: Enclave_CommandShockSet
@@ -69,7 +69,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - MisfitsKitEnclave_CommandShock
+  - F14KitEnclaveCommandShock
 
 - type: thiefBackpackSet
   id: Enclave_CommandPlasmaSet
@@ -79,7 +79,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - MisfitsKitEnclave_CommandPlasma
+  - F14KitEnclaveCommandPlasma
 
 - type: thiefBackpackSet
   id: Enclave_RiflemanSet
@@ -89,7 +89,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - MisfitsKitEnclave_Rifleman
+  - F14KitEnclaveRifleman
 
 - type: thiefBackpackSet
   id: Enclave_ShocktrooperSet
@@ -99,7 +99,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: gunner
   content:
-  - MisfitsKitEnclave_Shocktrooper
+  - F14KitEnclaveShocktrooper
 
 - type: thiefBackpackSet
   id: Enclave_SuppressorSet
@@ -109,7 +109,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - MisfitsKitEnclave_Suppressor
+  - F14KitEnclaveSuppressor
 
 - type: thiefBackpackSet
   id: Enclave_FieldResearchSet
@@ -119,7 +119,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: medic
   content:
-  - MisfitsKitEnclave_FieldResearch
+  - F14KitEnclaveFieldResearch
 
 - type: thiefBackpackSet
   id: Enclave_MedicalScienceSet
@@ -129,7 +129,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: medic
   content:
-  - MisfitsKitEnclave_MedicalScience
+  - F14KitEnclaveMedicalScience
 
 - type: thiefBackpackSet
   id: Enclave_EngineeringScienceSet
@@ -139,12 +139,12 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - MisfitsKitEnclave_EngineeringScience
+  - F14KitEnclaveEngineeringScience
 
 - type: entity
-  id: MisfitsKitEnclave_CommandLaser
+  id: F14KitEnclaveCommandLaser
   name: command laser kit
-  parent: N14KitBase
+  parent: F14KitBase
   description: A crate containing officer-grade laser weaponry, signaling tools, and sustain items for a U.S. Army commander.
   components:
   - type: Sprite
@@ -153,26 +153,26 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingOuterEnclaverOfficerCoat
-      - id: N14ClothingBeltMilitary
-      - id: N14WeaponLaserRifleWattz2000
-      - id: N14WeaponLaserPistol
+      - id: F14ClothingOuterEnclaverOfficerCoat
+      - id: F14ClothingBeltMilitary
+      - id: F14WeaponLaserRifleWattz2000
+      - id: F14WeaponLaserPistol
       - id: RadioHandheld
       - id: SmokeGrenade
         amount: 2
       - id: GrenadeFrag
-      - id: N14Stimpak
-      - id: N14SuperStimpak
-      - id: N14CleanGauze10
+      - id: F14Stimpak
+      - id: F14SuperStimpak
+      - id: F14CleanGauze10
         amount: 2
-      - id: N14Flare
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  id: MisfitsKitEnclave_CommandShock
+  id: F14KitEnclaveCommandShock
   name: command shock kit
-  parent: N14KitBase
+  parent: F14KitBase
   description: A crate containing heavier command gear for a U.S. Army officer leading an aggressive push.
   components:
   - type: Sprite
@@ -181,25 +181,25 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingOuterEnclaveArmor
-      - id: N14ClothingBeltMilitary
-      - id: N14WeaponLaserRifleAuto
-      - id: N14WeaponLaserPistolRecharger
+      - id: F14ClothingOuterEnclaveArmor
+      - id: F14ClothingBeltMilitary
+      - id: F14WeaponLaserRifleAuto
+      - id: F14WeaponLaserPistolRecharger
       - id: RadioHandheld
       - id: SmokeGrenade
       - id: GrenadeFrag
-      - id: N14Stimpak
-      - id: N14SuperStimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
-      - id: N14Flare
+      - id: F14Stimpak
+      - id: F14SuperStimpak
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  id: MisfitsKitEnclave_CommandPlasma
+  id: F14KitEnclaveCommandPlasma
   name: command plasma kit
-  parent: N14KitBase
+  parent: F14KitBase
   description: A crate containing compact plasma arms and battlefield control tools for a U.S. Army officer.
   components:
   - type: Sprite
@@ -208,26 +208,26 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingOuterEnclaverOfficerCoat
-      - id: N14ClothingBeltMilitary
-      - id: N14WeaponPlasmaDefender
-      - id: N14PowerCellSmall
+      - id: F14ClothingOuterEnclaverOfficerCoat
+      - id: F14ClothingBeltMilitary
+      - id: F14WeaponPlasmaDefender
+      - id: F14PowerCellSmall
         amount: 3
       - id: RadioHandheld
       - id: SmokeGrenade
         amount: 2
-      - id: N14Stimpak
-      - id: N14SuperStimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
-      - id: N14Flare
+      - id: F14Stimpak
+      - id: F14SuperStimpak
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  id: MisfitsKitEnclave_Rifleman
+  id: F14KitEnclaveRifleman
   name: trooper rifleman kit
-  parent: N14KitBase
+  parent: F14KitBase
   description: A crate containing a dependable U.S. Army line trooper package built around a recharger rifle and field sustain.
   components:
   - type: Sprite
@@ -236,22 +236,22 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingOuterEnclavePeacekeeper
-      - id: N14ClothingBeltMilitary
-      - id: N14WeaponLaserRifleRecharger
-      - id: N14WeaponLaserPistol
+      - id: F14ClothingOuterEnclavePeacekeeper
+      - id: F14ClothingBeltMilitary
+      - id: F14WeaponLaserRifleRecharger
+      - id: F14WeaponLaserPistol
       - id: RadioHandheld
       - id: SmokeGrenade
-      - id: N14Stimpak
-      - id: N14CleanGauze10
-      - id: N14Flare
+      - id: F14Stimpak
+      - id: F14CleanGauze10
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  id: MisfitsKitEnclave_Shocktrooper
+  id: F14KitEnclaveShocktrooper
   name: trooper shock kit
-  parent: N14KitBase
+  parent: F14KitBase
   description: A crate containing an aggressive U.S. Army assault package for breaching and overrunning resistance.
   components:
   - type: Sprite
@@ -260,26 +260,26 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingOuterEnclaveArmor
-      - id: N14ClothingBeltMilitary
-      - id: N14WeaponPlasmaRifleAuto
-      - id: MisfitsMicrofusionCellGreen
+      - id: F14ClothingOuterEnclaveArmor
+      - id: F14ClothingBeltMilitary
+      - id: F14WeaponPlasmaRifleAuto
+      - id: F14MicrofusionCellGreen
         amount: 2
-      - id: N14WeaponPlasmaPistol
-      - id: N14PowerCellSmall
+      - id: F14WeaponPlasmaPistol
+      - id: F14PowerCellSmall
         amount: 2
       - id: SmokeGrenade
-      - id: N14Stimpak
-      - id: N14SuperStimpak
-      - id: N14CleanGauze10
-      - id: N14Flare
+      - id: F14Stimpak
+      - id: F14SuperStimpak
+      - id: F14CleanGauze10
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  id: MisfitsKitEnclave_Suppressor
+  id: F14KitEnclaveSuppressor
   name: trooper suppressor kit
-  parent: N14KitBase
+  parent: F14KitBase
   description: A crate containing automatic laser arms and grenades for U.S. Army suppression and controlled advances.
   components:
   - type: Sprite
@@ -288,24 +288,24 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingOuterEnclavePeacekeeper
-      - id: N14ClothingBeltMilitary
-      - id: N14WeaponLaserRifleAuto
-      - id: N14WeaponLaserPistol
+      - id: F14ClothingOuterEnclavePeacekeeper
+      - id: F14ClothingBeltMilitary
+      - id: F14WeaponLaserRifleAuto
+      - id: F14WeaponLaserPistol
       - id: SmokeGrenade
         amount: 2
       - id: GrenadeFrag
-      - id: N14Stimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
-      - id: N14Flare
+      - id: F14Stimpak
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  id: MisfitsKitEnclave_FieldResearch
+  id: F14KitEnclaveFieldResearch
   name: field research kit
-  parent: N14KitBase
+  parent: F14KitBase
   description: A crate containing a sidearm and field study tools for a U.S. Army scientist operating beyond the bunker.
   components:
   - type: Sprite
@@ -314,20 +314,20 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponLaserPistolRecharger
+      - id: F14WeaponLaserPistolRecharger
       - id: RadioHandheld
-      - id: N14MedkitRadiationFilled
-      - id: N14Stimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
-      - id: N14Flare
+      - id: F14MedkitRadiationFilled
+      - id: F14Stimpak
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  id: MisfitsKitEnclave_MedicalScience
+  id: F14KitEnclaveMedicalScience
   name: medical science kit
-  parent: N14KitBase
+  parent: F14KitBase
   description: A crate containing advanced trauma and radiation support for a U.S. Army scientist assigned to medical duties.
   components:
   - type: Sprite
@@ -336,22 +336,22 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponPlasmaPistol
-      - id: N14PowerCellSmall
+      - id: F14WeaponPlasmaPistol
+      - id: F14PowerCellSmall
         amount: 2
-      - id: N14MedkitCombatFilled
-      - id: N14SuperStimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
+      - id: F14MedkitCombatFilled
+      - id: F14SuperStimpak
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
         amount: 2
       - id: RadioHandheld
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  id: MisfitsKitEnclave_EngineeringScience
+  id: F14KitEnclaveEngineeringScience
   name: engineering science kit
-  parent: N14KitBase
+  parent: F14KitBase
   description: A crate containing technical tools and a compact energy sidearm for a U.S. Army scientist maintaining infrastructure.
   components:
   - type: Sprite
@@ -360,13 +360,13 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponLaserPistol
+      - id: F14WeaponLaserPistol
       - id: ToolboxMechanicalFilled
       - id: ToolboxElectricalFilled
-      - id: MisfitsMilitaryDetonator # #Misfits Add - long-range initiator for Enclave engineering work
+      - id: F14MilitaryDetonator # #Misfits Add - long-range initiator for Enclave engineering work
       - id: RadioHandheld
-      - id: N14Stimpak
-      - id: N14CleanGauze10
-      - id: N14Flare
+      - id: F14Stimpak
+      - id: F14CleanGauze10
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg

@@ -1,12 +1,12 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/TierNWeaponRef/TierNWeaponTables/TierNWeaponEnergy/TierNEnergyBase.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTierN_GunsEnergyAll
+  id: F14WeaponLootTierNGunsEnergyAll
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_EnergyRifle
+          tableId: F14WeaponLootTierNEnergyRifle
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_EnergyHeavy
+          tableId: F14WeaponLootTierNEnergyHeavy
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_EnergyPistol
+          tableId: F14WeaponLootTierNEnergyPistol

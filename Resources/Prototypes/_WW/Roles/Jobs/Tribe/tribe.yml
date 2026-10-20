@@ -1,0 +1,163 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Roles/Jobs/, _Nuclear14/Roles/Jobs/
+# Changed for Wild Wanamingo: Yuma's roster. Names, slots and whitelists from the server's roster; gear is
+# Misfits' (minus the wallet slot and the skirt/satchel/duffel choices, which are loadouts in Wizden).
+# Misfits' playtime and species requirements are left out for now.
+
+- type: job
+  id: F14TribalElder
+  name: job-name-tribal-elder
+  description: job-description-tribal-elder
+  playTimeTracker: F14TribalElder
+  startingGear: F14TribalElderGear
+  icon: F14JobIconTribalLeader
+  supervisors: job-supervisors-tribal-elder
+  access:
+  - F14TribeMember
+  - F14TribeChief
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Tribal
+
+- type: startingGear
+  id: F14TribalElderGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitTribal
+    suitstorage: F14TribalBigClubDecorated
+    outerClothing: F14ClothingOuterTribalCoat
+    belt: F14ClothingBeltElderRevolver
+    shoes: F14ClothingShoesTribal
+    gloves: F14ClothingHandsGlovesTribal
+    back: F14ClothingBackpackTrekker
+    pocket1: F14TribalKnife
+    pocket2: F14Triballoadoutkits
+    id: F14IDTribeBossPendant
+  storage:
+    back:
+    - Torch
+    - Torch
+    - Torch
+    - F14Bandage
+    - Ointment
+    - F14ClothingDeathclawHelm
+
+- type: job
+  id: F14Tribal
+  name: job-name-tribal
+  description: job-description-tribal
+  playTimeTracker: F14Tribal
+  startingGear: F14TribalGear
+  icon: F14JobIconTribal
+  supervisors: job-supervisors-tribal
+  access:
+  - F14TribeMember
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Tribal
+
+- type: startingGear
+  id: F14TribalGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitTribal
+    outerClothing: F14ClothingOuterTribalArmor
+    shoes: F14ClothingShoesTribal
+    gloves: F14ClothingHandsGlovesTribal
+    back: F14ClothingBackpackTrekker
+    pocket1: F14TribalKnife
+    pocket2: F14Triballoadoutkits
+    id: F14IDTribeBulletsPendant
+  storage:
+    back:
+    - Torch
+    - Torch
+    - Torch
+    - F14Bandage
+    - Ointment
+    - F14HealingPowder
+
+- type: job
+  id: F14TribalFarmer
+  name: job-name-tribal-farmer
+  description: job-description-tribal-farmer
+  playTimeTracker: F14TribalFarmer
+  startingGear: F14TribalFarmerGear
+  icon: F14JobIconTribalFarmer
+  supervisors: job-supervisors-tribal
+  access:
+  - F14TribeMember
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Tribal
+
+- type: startingGear
+  id: F14TribalFarmerGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitTribal
+    outerClothing: F14ClothingOuterTribalArmor
+    shoes: F14ClothingShoesTribal
+    gloves: F14ClothingHandsGlovesTribal
+    back: F14ClothingBackpackTrekker
+    belt: F14ClothingBeltFarmerFilled
+    pocket1: F14TribalKnife
+    pocket2: F14Triballoadoutkits
+    id: F14IDTribeEnforcerPendant
+  storage:
+    back:
+    - Torch
+    - Torch
+    - Torch
+    - F14Bandage
+    - Ointment
+
+- type: job
+  id: F14TribalShaman
+  name: job-name-tribal-shaman
+  description: job-description-tribal-shaman
+  playTimeTracker: F14TribalShaman
+  startingGear: F14TribalShamanGear
+  icon: F14JobIconTribalMedic
+  supervisors: job-supervisors-tribal
+  access:
+  - F14TribeMember
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Tribal
+
+- type: startingGear
+  id: F14TribalShamanGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitTribal
+    outerClothing: F14ClothingOuterTribalArmor
+    shoes: F14ClothingShoesTribal
+    gloves: F14ClothingHandsGlovesTribal
+    back: F14ClothingBackpackTrekker
+    pocket1: F14TribalKnife
+    pocket2: F14WeaponRevolver44Tribal
+    id: F14IDTribeSawbonePendant
+  storage:
+    back:
+    - Torch
+    - Torch
+    - Torch
+    - F14Bandage
+    - F14Bandage
+    - Ointment
+    - F14HealingPowder
+    - F14HealingPowder
+    - F14HealingPoultice
+    - F14HealingPoultice

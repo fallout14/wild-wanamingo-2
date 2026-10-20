@@ -14,9 +14,9 @@ namespace Content.IntegrationTests.Tests._WW;
 [TestOf(typeof(FlatpackExtrasSystem))]
 public sealed class FlatpackExtrasTest : GameTest
 {
-    private static readonly EntProtoId Flatpack = "MisfitsEightiesGreenMotorbikeFlatpack";
-    private static readonly EntProtoId Bike = "MisfitsVehicleBikeGreen";
-    private static readonly EntProtoId Key = "MisfitsVehicleKeyMotorbike";
+    private static readonly EntProtoId Flatpack = "F14EightiesGreenMotorbikeFlatpack";
+    private static readonly EntProtoId Bike = "F14VehicleBikeGreen";
+    private static readonly EntProtoId Key = "F14VehicleKeyMotorbike";
     private static readonly EntProtoId Multitool = "Multitool";
     private static readonly EntProtoId User = "MobHuman";
 

@@ -1,25 +1,25 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier1Weapon/Tier1WeaponTables/Tier1WeaponBallistic/TwoHanded/Tier1WeaponBallisticRifleTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier1_GunsBulletRifleAuto
+  id: F14WeaponLootTier1GunsBulletRifleAuto
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponRifle556Butchered # #Misfits Add - cheap 5.56 carbine
+      id: F14WeaponRifle556Butchered # #Misfits Add - cheap 5.56 carbine
       weight: 4
     - !type:EntSelector
       id: Error
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier1_GunsBulletRifleSemi
+  id: F14WeaponLootTier1GunsBulletRifleSemi
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: MisfitsWeaponRifle10mmM1Carbine
+      id: F14WeaponRifle10mmM1Carbine
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniper556VarmintRifle
+      id: F14WeaponSniper556VarmintRifle
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponSniper357TrailCarbine # #Misfits Add - entry-level lever action
+      id: F14WeaponSniper357TrailCarbine # #Misfits Add - entry-level lever action
       weight: 5

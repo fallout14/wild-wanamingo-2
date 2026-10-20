@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/40mm_payloads.yml
 
 - type: entity
-  id: Misfits40mmHEDPProjectile
+  id: F1440mmHEDPProjectile
   parent: BaseBulletTrigger
   name: HEDP grenade
   categories: [ HideSpawnMenu ]
@@ -11,26 +11,26 @@
       types:
         Blunt: 0
   - type: SpawnOnTrigger
-    proto: Misfits40mmHEDPPayload
+    proto: F1440mmHEDPPayload
   - type: DeleteOnTrigger
 
 - type: entity
-  id: Misfits40mmHEDPPayload
+  id: F1440mmHEDPPayload
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn
   - type: ProjectileGrenade
     triggerKey: trigger
-    fillPrototype: Misfits40mmHEDPFragment
+    fillPrototype: F1440mmHEDPFragment
     capacity: 20
   - type: SpawnOnTrigger
-    proto: Misfits40mmHEDPExplosion
+    proto: F1440mmHEDPExplosion
   - type: ContainerContainer
     containers:
       cluster-payload: !type:Container
 
 - type: entity
-  id: Misfits40mmHEDPFragment
+  id: F1440mmHEDPFragment
   parent: PelletClusterLethal
   name: HEDP fragment
   categories: [ HideSpawnMenu ]
@@ -45,7 +45,7 @@
     lifetime: 0.25
 
 - type: entity
-  id: Misfits40mmHEDPExplosion
+  id: F1440mmHEDPExplosion
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn
@@ -53,7 +53,7 @@
   - type: Explosive
     # 4.8 x (6.25 Heat + 6.25 Blunt) = 60 maximum blast damage.
     # Fragment hits are additional and depend on direction, cover, and distance.
-    explosionType: Misfits40mmHE
+    explosionType: F1440mmHE
     maxIntensity: 4.8
     intensitySlope: 4
     totalIntensity: 20
@@ -62,16 +62,16 @@
     tileBreakScale: 0
 
 - type: entity
-  id: Misfits40mmPulseProjectile
-  parent: Misfits40mmHEDPProjectile
+  id: F1440mmPulseProjectile
+  parent: F1440mmHEDPProjectile
   name: pulse grenade
   categories: [ HideSpawnMenu ]
   components:
   - type: SpawnOnTrigger
-    proto: Misfits40mmPulsePayload
+    proto: F1440mmPulsePayload
 
 - type: entity
-  id: Misfits40mmPulsePayload
+  id: F1440mmPulsePayload
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn
@@ -80,11 +80,11 @@
     range: 4
     energyConsumption: 2700000
   - type: SpawnOnTrigger
-    proto: MisfitsPulseGrenadeExplosion
+    proto: F14PulseGrenadeExplosion
   - type: DeleteOnTrigger
 
 - type: entity
-  id: Misfits40mmPlasmaProjectile
+  id: F1440mmPlasmaProjectile
   parent: BaseBulletTrigger
   name: plasma grenade
   categories: [ HideSpawnMenu ]
@@ -96,7 +96,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     # 6 x 15 = 90 maximum caustic damage; smaller than the hand grenade.
-    explosionType: MisfitsPlasma
+    explosionType: F14Plasma
     maxIntensity: 6
     intensitySlope: 4
     totalIntensity: 30

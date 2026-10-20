@@ -2,71 +2,71 @@
 # Resources/Prototypes/_Nuclear14/Catalog/Fills/Items/pillcanisters.yml
 
 - type: entity
-  id: N14BuffoutCanisterFilled
+  id: F14BuffoutCanisterFilled
   suffix: Filled
-  parent: N14BuffoutCanister
+  parent: F14BuffoutCanister
   components:
   - type: StorageFill
     contents:
-      - id: N14BuffoutPill
+      - id: F14BuffoutPill
         amount: 6
 
 - type: entity
-  id: N14BuffjetCanisterFilled
+  id: F14BuffjetCanisterFilled
   suffix: Filled
-  parent: N14BuffoutCanister
+  parent: F14BuffoutCanister
   components:
   - type: StorageFill
     contents:
-      - id: N14BuffjetPill
+      - id: F14BuffjetPill
         amount: 6
 
 - type: entity
-  id: N14BufftatsCanisterFilled
+  id: F14BufftatsCanisterFilled
   suffix: Filled
-  parent: N14BuffoutCanister
+  parent: F14BuffoutCanister
   components:
   - type: StorageFill
     contents:
-      - id: N14BufftatsPill
+      - id: F14BufftatsPill
         amount: 6
 
 - type: entity
-  id: N14FixerCanisterFilled
+  id: F14FixerCanisterFilled
   suffix: Filled
-  parent: N14FixerCanister
+  parent: F14FixerCanister
   components:
   - type: StorageFill
     contents:
-      - id: N14FixerPill
+      - id: F14FixerPill
         amount: 6
 
 - type: entity
-  id: N14CateyeCanisterFilled
+  id: F14CateyeCanisterFilled
   suffix: Filled
-  parent: N14CateyeCanister
+  parent: F14CateyeCanister
   components:
   - type: StorageFill
     contents:
-      - id: N14CateyePill
+      - id: F14CateyePill
         amount: 6
 
 - type: entity
-  id: N14RadXCanisterFilled
+  id: F14RadXCanisterFilled
   suffix: Filled
-  parent: N14RadXCanister
+  parent: F14RadXCanister
   components:
   - type: StorageFill
     contents:
-      - id: N14RadXPill
+      - id: F14RadXPill
         amount: 6
 
 - type: entity
-  id: N14MentatsCanisterFilled
+  id: F14MentatsCanisterFilled
   suffix: Filled
-  parent: N14MentatsCanister
+  parent: F14MentatsCanister
   components:
   - type: StorageFill
     contents:
-      - id: N14MentatsPill
+      - id: F14MentatsPill
         amount: 6

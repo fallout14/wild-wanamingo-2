@@ -3,7 +3,7 @@
 
 - type: entity
   parent: FoodBase
-  id: N14FoodSnackBase
+  id: F14FoodSnackBase
   abstract: true
   components:
   - type: Edible
@@ -26,8 +26,8 @@
 
 - type: entity
   name: BlamCo Mac & Cheese
-  parent: N14FoodSnackBase
-  id: N14FoodBlamcomaccheese
+  parent: F14FoodSnackBase
+  id: F14FoodBlamcomaccheese
   description: Highly processed macaroni with white cheese sauce and a healthy dose of preservatives.
   components:
   - type: Sprite  # MS13 art
@@ -36,12 +36,12 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodBlamcomaccheeseTrash
+    - F14FoodBlamcomaccheeseTrash
 
 - type: entity
   name: Large BlamCo Mac & Cheese
-  parent: N14FoodSnackBase
-  id: N14FoodBlamcomaccheeseLarge
+  parent: F14FoodSnackBase
+  id: F14FoodBlamcomaccheeseLarge
   description: Highly processed macaroni with white cheese sauce and a healthy dose of preservatives. This is a larger family box.
   components:
   - type: Sprite
@@ -49,12 +49,12 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodBlamcomaccheeseLargeTrash
+    - F14FoodBlamcomaccheeseLargeTrash
 
 - type: entity
   name: Bubblegum
-  parent: N14FoodSnackBase
-  id: N14FoodBubblegum
+  parent: F14FoodSnackBase
+  id: F14FoodBubblegum
   description: Chewy. I hope there's still a pirate tattoo inside.
   components:
   - type: Sprite
@@ -62,7 +62,7 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodBubblegumTrash
+    - F14FoodBubblegumTrash
   - type: Solution
     solution:
       maxVol: 30
@@ -74,8 +74,8 @@
 
 - type: entity
   name: Cram
-  parent: N14FoodSnackBase
-  id: N14FoodCram
+  parent: F14FoodSnackBase
+  id: F14FoodCram
   description: People thought this was meat?
   components:
   - type: Sprite  # MS13 art
@@ -84,12 +84,12 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodCramTrash
+    - F14FoodCramTrash
 
 - type: entity
   name: crisps
-  parent: N14FoodSnackBase
-  id: N14FoodCrisps
+  parent: F14FoodSnackBase
+  id: F14FoodCrisps
   description: Salty, stale, and one of your five-a-day!
   components:
   - type: Sprite  # MS13 art
@@ -98,12 +98,12 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodCrispsTrash
+    - F14FoodCrispsTrash
 
 - type: entity
   name: Dandy Boy Apples
-  parent: N14FoodSnackBase
-  id: N14FoodDandyboyapples
+  parent: F14FoodSnackBase
+  id: F14FoodDandyboyapples
   description: Extremely sweet candied apples. Well preserved.
   components:
   - type: Sprite  # MS13 art
@@ -112,11 +112,11 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodDandyboyapplesTrash
+    - F14FoodDandyboyapplesTrash
 
 - type: entity
   parent: FoodTinBase
-  id: N14FoodDogfood
+  id: F14FoodDogfood
   name: canned dog food
   description: A can of beef stew meant for dogs.
   components:
@@ -137,7 +137,7 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodDogFoodTrash
+    - F14FoodDogFoodTrash
   - type: Tag
     tags:
     - Meat
@@ -145,7 +145,7 @@
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: N14FoodDogFoodTrash
+  id: F14FoodDogFoodTrash
   name: canned dog food
   components:
   - type: Sprite  # MS13 art
@@ -154,7 +154,7 @@
 
 - type: entity
   parent: FoodTinBase
-  id: N14FoodDinki-Di
+  id: F14FoodDinkiDi
   name: Dinki Di Dog Food
   description: A can of Gen-u-ine premium dog food, a worthy meal for any road warrior canine or not.
   components:
@@ -166,7 +166,7 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodDinki-DiTrash
+    - F14FoodDinkiDiTrash
   - type: Tag
     tags:
     - Meat
@@ -174,7 +174,7 @@
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: N14FoodDinki-DiTrash
+  id: F14FoodDinkiDiTrash
   name: Dinki-Di Dog Food
   components:
   - type: Sprite
@@ -182,8 +182,8 @@
 
 - type: entity
   name: Fancy Lads Snack Cakes
-  parent: N14FoodSnackBase
-  id: N14FoodFancyladssnackcakes
+  parent: F14FoodSnackBase
+  id: F14FoodFancyladssnackcakes
   description: Small frosted cakes laden with sugar and other sweeteners.
   components:
   - type: Sprite  # MS13 art
@@ -192,12 +192,12 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodFancyladssnackcakesTrash
+    - F14FoodFancyladssnackcakesTrash
 
 - type: entity
   name: InstaMash
-  parent: N14FoodSnackBase
-  id: N14FoodInstamash
+  parent: F14FoodSnackBase
+  id: F14FoodInstamash
   description: A packet of freeze-dried powdered mashed potato. Just add water! # TODO add a reaction for this
   components:
   - type: Sprite  # MS13 art
@@ -206,12 +206,12 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodInstamashTrash
+    - F14FoodInstamashTrash
 
 - type: entity
   name: Pork n' Beans
-  parent: N14FoodSnackBase
-  id: N14FoodPorkBeans
+  parent: F14FoodSnackBase
+  id: F14FoodPorkBeans
   description: Beans stewed in tomato sauce with chunks of cured pork belly. Savory.
   components:
   - type: Sprite  # MS13 art
@@ -220,15 +220,15 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodTinCanTrash
+    - F14FoodTinCanTrash
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
 
 - type: entity
   name: mouldy food
-  parent: N14FoodSnackBase
-  id: N14FoodMouldy
+  parent: F14FoodSnackBase
+  id: F14FoodMouldy
   description: A plate of mouldy food. Looks like it was once bread.
   components:
   - type: Sprite
@@ -243,15 +243,15 @@
       reagents:
       - ReagentId: Nutriment
         Quantity: 1
-      - ReagentId: N14RadParticleFood
+      - ReagentId: F14RadParticleFood
         Quantity: 3
       - ReagentId: Ipecac
         Quantity: 2
 
 - type: entity
   name: Salisbury Steak
-  parent: N14FoodSnackBase
-  id: N14FoodSalisburysteak
+  parent: F14FoodSnackBase
+  id: F14FoodSalisburysteak
   description: A ready-to-eat meal of ground beef mixed with bread crumbs, onion, and egg, served with gravy.
   components:
   - type: Sprite  # MS13 art
@@ -260,20 +260,20 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodSalisburysteakTrash
+    - F14FoodSalisburysteakTrash
   - type: Solution
     solution:
       maxVol: 10
       reagents:
       - ReagentId: Nutriment
         Quantity: 9
-      - ReagentId: N14RadParticleFood
+      - ReagentId: F14RadParticleFood
         Quantity: 1
 
 - type: entity
   name: Sugar Bombs
-  parent: N14FoodSnackBase
-  id: N14FoodSugarbombs
+  parent: F14FoodSnackBase
+  id: F14FoodSugarbombs
   description: A sugary pre-war food with little to no nutritional value. Enjoy the explosive great taste!
   components:
   - type: Sprite  # MS13 art
@@ -282,22 +282,22 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodSugarbombsTrash
+    - F14FoodSugarbombsTrash
   - type: Solution
     solution:
       maxVol: 10
       reagents:
       - ReagentId: Nutriment
         Quantity: 4
-      - ReagentId: N14RadParticleFood
+      - ReagentId: F14RadParticleFood
         Quantity: 1
       - ReagentId: Sugar
         Quantity: 5
 
 - type: entity
   name: YumYum Deviled Eggs
-  parent: N14FoodSnackBase
-  id: N14FoodYumyumdeviledeggs
+  parent: F14FoodSnackBase
+  id: F14FoodYumyumdeviledeggs
   description: Hard-boiled eggs stuffed with a spicy filling. Somehow still good.
   components:
   - type: Sprite  # MS13 art
@@ -306,14 +306,14 @@
   - type: Edible
     edible: Food
     trash: 
-    - N14FoodYumyumdeviledeggsTrash
+    - F14FoodYumyumdeviledeggsTrash
 
 # Trash
 
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseItem
-  id: N14FoodPacketTrash
+  id: F14FoodPacketTrash
   description: This is rubbish.
   components:
   - type: Sprite
@@ -331,7 +331,7 @@
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: N14FoodTinCanTrash
+  id: F14FoodTinCanTrash
   name: empty tin can
   components:
   - type: Sprite
@@ -346,11 +346,11 @@
   #Misfits Add: Allow people to use this tin can for grenades
   - type: Tag
     tags:
-    - N14Tincan
+    - F14Tincan
 
 - type: entity
-  parent: N14FoodPacketTrash
-  id: N14FoodBlamcomaccheeseTrash
+  parent: F14FoodPacketTrash
+  id: F14FoodBlamcomaccheeseTrash
   name: empty Blamco box
   components:
   - type: Sprite  # MS13 art
@@ -358,24 +358,24 @@
     state: macncheese_trash
 
 - type: entity
-  parent: N14FoodPacketTrash
-  id: N14FoodBlamcomaccheeseLargeTrash
+  parent: F14FoodPacketTrash
+  id: F14FoodBlamcomaccheeseLargeTrash
   name: empty Blamco box
   components:
   - type: Sprite
     state: blamco_large_trash
 
 - type: entity
-  parent: N14FoodPacketTrash
-  id: N14FoodBubblegumTrash
+  parent: F14FoodPacketTrash
+  id: F14FoodBubblegumTrash
   name: empty bubblegum pack
   components:
   - type: Sprite
     state: bubblegum_trash
 
 - type: entity
-  parent: N14FoodPacketTrash
-  id: N14FoodCramTrash
+  parent: F14FoodPacketTrash
+  id: F14FoodCramTrash
   name: empty cram box
   components:
   - type: Sprite  # MS13 art
@@ -383,8 +383,8 @@
     state: cram_trash
 
 - type: entity
-  parent: N14FoodPacketTrash
-  id: N14FoodCrispsTrash
+  parent: F14FoodPacketTrash
+  id: F14FoodCrispsTrash
   name: empty crisps pack
   components:
   - type: Sprite  # MS13 art
@@ -392,8 +392,8 @@
     state: crisps_trash
 
 - type: entity
-  parent: N14FoodPacketTrash
-  id: N14FoodDandyboyapplesTrash
+  parent: F14FoodPacketTrash
+  id: F14FoodDandyboyapplesTrash
   name: empty Dandyboy Apples box
   components:
   - type: Sprite  # MS13 art
@@ -401,8 +401,8 @@
     state: dandy_trash
 
 - type: entity
-  parent: N14FoodPacketTrash
-  id: N14FoodFancyladssnackcakesTrash
+  parent: F14FoodPacketTrash
+  id: F14FoodFancyladssnackcakesTrash
   name: empty Fancy Lads Snack Cakes box
   components:
   - type: Sprite  # MS13 art
@@ -410,8 +410,8 @@
     state: snackcake_trash
 
 - type: entity
-  parent: N14FoodPacketTrash
-  id: N14FoodInstamashTrash
+  parent: F14FoodPacketTrash
+  id: F14FoodInstamashTrash
   name: empty Instamash box
   components:
   - type: Sprite  # MS13 art
@@ -419,8 +419,8 @@
     state: instamash_trash
 
 - type: entity
-  parent: N14FoodPacketTrash
-  id: N14FoodSalisburysteakTrash
+  parent: F14FoodPacketTrash
+  id: F14FoodSalisburysteakTrash
   name: empty Salisbury Steak box
   components:
   - type: Sprite  # MS13 art
@@ -428,8 +428,8 @@
     state: salisbury_trash
 
 - type: entity
-  parent: N14FoodPacketTrash
-  id: N14FoodSugarbombsTrash
+  parent: F14FoodPacketTrash
+  id: F14FoodSugarbombsTrash
   name: empty Sugar bombs box
   components:
   - type: Sprite  # MS13 art
@@ -437,8 +437,8 @@
     state: sugarbombs_trash
 
 - type: entity
-  parent: N14FoodPacketTrash
-  id: N14FoodYumyumdeviledeggsTrash
+  parent: F14FoodPacketTrash
+  id: F14FoodYumyumdeviledeggsTrash
   name: empty Yumyum Deviled Eggs box
   components:
   - type: Sprite  # MS13 art

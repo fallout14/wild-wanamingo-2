@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Consumable/Flora/wastelandflora.yml, Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Flora/wastelandflora.yml
 
 - type: entity
-  parent: N14WastelandFlora
-  id: MisfitsWastelandFloraWildZoy
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildZoy
   name: wild zoybean plant
   description: A wild zoybean plant. It looks healthy.
   components:
@@ -12,7 +12,7 @@
     sprite: Misfits/Objects/Specific/Hydroponics/zoybeans.rsi
     state: harvest
   - type: OreVein
-    currentOre: MisfitsWildZoy
+    currentOre: F14WildZoy
   - type: Gatherable
     toolWhitelist:
       components:
@@ -24,8 +24,8 @@
         tableId: WildZoyAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: MisfitsWastelandFloraWildCannabis
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildCannabis
   name: wild cannabis plant
   description: A cannabis plant growing wild. It's healthy.
   components:
@@ -34,7 +34,7 @@
   - type: Sprite
     state: wild_cannabis
   - type: OreVein
-    currentOre: MisfitsWildCannabis
+    currentOre: F14WildCannabis
   - type: Gatherable
     toolWhitelist:
       components:
@@ -46,8 +46,8 @@
         tableId: WildCannabisAll
 
 - type: entity
-  parent: N14FloraProduce
-  id: MisfitsFloraProduceWildCannabis
+  parent: F14FloraProduce
+  id: F14FloraProduceWildCannabis
   name: cannabis leaves
   description: Wild cannabis plant leaves.
   components:
@@ -55,20 +55,20 @@
     sprite: Nuclear14/Objects/Specific/Hydroponics/cannabis.rsi
     state: produce
   - type: Stack
-    stackType: MisfitsCannabis
+    stackType: F14Cannabis
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: MisfitsExtractCannabis
+      - ReagentId: F14ExtractCannabis
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: MisfitsExtractCannabis
+      - ReagentId: F14ExtractCannabis
         Quantity: 10
   - type: Produce
-    plantId: N14WildCannabis
+    plantId: F14WildCannabis
   - type: Seed
-    plantId: N14WildCannabis
+    plantId: F14WildCannabis

@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/Structures/doors.yml
 
 - type: constructionGraph
-  id: N14DoorGraph
+  id: F14DoorGraph
   start: start
   graph:
     - node: start
@@ -16,7 +16,7 @@
           steps:
             - material: WoodPlank
               amount: 4
-            - material: N14ScrapBrass
+            - material: F14ScrapBrass
               amount: 2
               doAfter: 10
 
@@ -26,7 +26,7 @@
           steps:
             - material: WoodPlank
               amount: 3
-            - material: N14ScrapBrass
+            - material: F14ScrapBrass
               amount: 2
               doAfter: 10
 
@@ -36,7 +36,7 @@
           steps:
             - material: WoodPlank
               amount: 4
-            - material: N14ScrapBrass
+            - material: F14ScrapBrass
               amount: 2
               doAfter: 10
 
@@ -46,7 +46,7 @@
           steps:
             - material: WoodPlank
               amount: 4
-            - material: N14ScrapBrass
+            - material: F14ScrapBrass
               amount: 2
               doAfter: 10
 # Forge-Change-Start
@@ -54,9 +54,9 @@
           completed:
             - !type:SnapToGrid { }
           steps:
-            - material: N14Iron
+            - material: F14Iron
               amount: 4
-            - material: N14Brass
+            - material: F14Brass
               amount: 2
               doAfter: 10
 
@@ -64,9 +64,9 @@
           completed:
             - !type:SnapToGrid { }
           steps:
-            - material: N14Iron
+            - material: F14Iron
               amount: 4
-            - material: N14Brass
+            - material: F14Brass
               amount: 2
               doAfter: 10
 
@@ -74,9 +74,9 @@
           completed:
             - !type:SnapToGrid { }
           steps:
-            - material: N14Iron
+            - material: F14Iron
               amount: 4
-            - material: N14Brass
+            - material: F14Brass
               amount: 2
               doAfter: 10
 
@@ -86,9 +86,9 @@
           steps:
             - material: Glass
               amount: 1
-            - material: N14Iron
+            - material: F14Iron
               amount: 3
-            - material: N14Brass
+            - material: F14Brass
               amount: 2
               doAfter: 10
 
@@ -96,9 +96,9 @@
           completed:
             - !type:SnapToGrid { }
           steps:
-            - material: N14Iron
+            - material: F14Iron
               amount: 6
-            - material: N14Brass
+            - material: F14Brass
               amount: 2
               doAfter: 10
 
@@ -106,9 +106,9 @@
           completed:
             - !type:SnapToGrid { }
           steps:
-            - material: N14Iron
+            - material: F14Iron
               amount: 6
-            - material: N14Brass
+            - material: F14Brass
               amount: 2
               doAfter: 10
 
@@ -116,9 +116,9 @@
           completed:
             - !type:SnapToGrid { }
           steps:
-            - material: N14Iron
+            - material: F14Iron
               amount: 6
-            - material: N14Brass
+            - material: F14Brass
               amount: 2
               doAfter: 10
 
@@ -128,14 +128,14 @@
           steps:
             - material: Glass
               amount: 1
-            - material: N14Iron
+            - material: F14Iron
               amount: 6
-            - material: N14Brass
+            - material: F14Brass
               amount: 2
               doAfter: 10
 # Forge-Change-End
     - node: WoodDoor
-      entity: N14DoorWoodSlanted
+      entity: F14DoorWoodSlanted
       edges:
         - to: start
           completed:
@@ -143,14 +143,14 @@
               prototype: MaterialWoodPlank1
               amount: 4
             - !type:SpawnPrototype
-              prototype: N14ScrapBrass1
+              prototype: F14ScrapBrass1
               amount: 2
           steps:
             - tool: Anchoring
               doAfter: 15
 
     - node: woodDoorMakeshift
-      entity: N14DoorMakeshift
+      entity: F14DoorMakeshift
       edges:
         - to: start
           completed:
@@ -158,14 +158,14 @@
               prototype: MaterialWoodPlank1
               amount: 3 # Forge-Change
             - !type:SpawnPrototype
-              prototype: N14ScrapBrass1
+              prototype: F14ScrapBrass1
               amount: 2
           steps:
             - tool: Anchoring
               doAfter: 15
 
     - node: woodDoorlocked
-      entity: N14DoorWoodSecure
+      entity: F14DoorWoodSecure
       edges:
         - to: start
           completed:
@@ -173,14 +173,14 @@
               prototype: MaterialWoodPlank1
               amount: 4
             - !type:SpawnPrototype
-              prototype: N14ScrapBrass1
+              prototype: F14ScrapBrass1
               amount: 2
           steps:
             - tool: Anchoring
               doAfter: 15
 
     - node: woodDoorSecureNCR
-      entity: N14DoorWoodSecureNCR
+      entity: F14DoorWoodSecureNCR
       edges:
         - to: start
           completed:
@@ -188,84 +188,84 @@
               prototype: MaterialWoodPlank1
               amount: 4
             - !type:SpawnPrototype
-              prototype: N14ScrapBrass1
+              prototype: F14ScrapBrass1
               amount: 2
           steps:
             - tool: Anchoring
               doAfter: 15
 # Forge-Change-Start
     - node: MetalBlue
-      entity: N14DoorMetalBlueSlanted
+      entity: F14DoorMetalBlueSlanted
       edges:
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: N14IngotIron1
+              prototype: F14IngotIron1
               amount: 4
             - !type:SpawnPrototype
-              prototype: N14IngotBrass1
+              prototype: F14IngotBrass1
               amount: 2
           steps:
             - tool: Anchoring
               doAfter: 15
 
     - node: MetalRed
-      entity: N14DoorMetalRedSlanted
+      entity: F14DoorMetalRedSlanted
       edges:
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: N14IngotIron1
+              prototype: F14IngotIron1
               amount: 4
             - !type:SpawnPrototype
-              prototype: N14IngotBrass1
+              prototype: F14IngotBrass1
               amount: 2
           steps:
             - tool: Anchoring
               doAfter: 15
 
     - node: MetalBlueAlt
-      entity: N14DoorMetalBlueAltSlanted
+      entity: F14DoorMetalBlueAltSlanted
       edges:
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: N14IngotIron1
+              prototype: F14IngotIron1
               amount: 4
             - !type:SpawnPrototype
-              prototype: N14IngotBrass1
+              prototype: F14IngotBrass1
               amount: 2
           steps:
             - tool: Anchoring
               doAfter: 15
 
     - node: MetalBlueWindow
-      entity: N14DoorMetalBlueWindowSlanted
+      entity: F14DoorMetalBlueWindowSlanted
       edges:
         - to: start
           completed:
             - !type:SpawnPrototype
               prototype: SheetGlass1
             - !type:SpawnPrototype
-              prototype: N14IngotIron1
+              prototype: F14IngotIron1
               amount: 3
             - !type:SpawnPrototype
-              prototype: N14IngotBrass1
+              prototype: F14IngotBrass1
               amount: 2
           steps:
             - tool: Anchoring
               doAfter: 15
 
     - node: MetalBlueLoced
-      entity: CorvaxDoorMetalBlueSlantedLoced
+      entity: F14DoorMetalBlueSlantedLoced
       edges:
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: N14IngotIron1
+              prototype: F14IngotIron1
               amount: 6
             - !type:SpawnPrototype
-              prototype: N14IngotBrass1
+              prototype: F14IngotBrass1
               amount: 2
           steps:
             - tool: Screwing
@@ -274,15 +274,15 @@
               doAfter: 15
 
     - node: MetalRedLoced
-      entity: CorvaxDoorMetalRedSlantedLoced
+      entity: F14DoorMetalRedSlantedLoced
       edges:
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: N14IngotIron1
+              prototype: F14IngotIron1
               amount: 6
             - !type:SpawnPrototype
-              prototype: N14IngotBrass1
+              prototype: F14IngotBrass1
               amount: 2
           steps:
             - tool: Screwing
@@ -291,15 +291,15 @@
               doAfter: 15
 
     - node: MetalBlueAltLoced
-      entity: CorvaxDoorMetalBlueAltSlantedLoced
+      entity: F14DoorMetalBlueAltSlantedLoced
       edges:
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: N14IngotIron1
+              prototype: F14IngotIron1
               amount: 6
             - !type:SpawnPrototype
-              prototype: N14IngotBrass1
+              prototype: F14IngotBrass1
               amount: 2
           steps:
             - tool: Screwing
@@ -308,17 +308,17 @@
               doAfter: 15
 
     - node: MetalBlueWindowLoced
-      entity: CorvaxDoorMetalBlueWindowSlantedLoced
+      entity: F14DoorMetalBlueWindowSlantedLoced
       edges:
         - to: start
           completed:
             - !type:SpawnPrototype
               prototype: SheetGlass1
             - !type:SpawnPrototype
-              prototype: N14IngotIron1
+              prototype: F14IngotIron1
               amount: 6
             - !type:SpawnPrototype
-              prototype: N14IngotBrass1
+              prototype: F14IngotBrass1
               amount: 2
           steps:
             - tool: Screwing

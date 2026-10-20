@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Construction/sandbag.yml
 
 - type: construction
-  id: MisfitsBarricadeSandbagSingleConstruction
-  graph: MisfitsSandbagBarricade
+  id: F14BarricadeSandbagSingleConstruction
+  graph: F14SandbagBarricade
   startNode: start
   targetNode: sandbag
   category: construction-category-structures
@@ -15,18 +15,18 @@
 # Construction graph defining the build steps
 
 - type: constructionGraph
-  id: MisfitsSandbagBarricade
+  id: F14SandbagBarricade
   start: start
   graph:
     - node: start
       edges:
         - to: sandbag
           steps:
-            - material: MisfitsSand
+            - material: F14Sand
               amount: 2
               doAfter: 2
-            - material: N14Thread
+            - material: F14Thread
               amount: 2
               doAfter: 1
     - node: sandbag
-      entity: N14BarricadeSandbagSingle
+      entity: F14BarricadeSandbagSingle

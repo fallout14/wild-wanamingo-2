@@ -4,7 +4,7 @@
 - type: entity
   save: false
   abstract: true
-  id: N14MobFriendlyRobot
+  id: F14MobFriendlyRobot
   categories: [ HideSpawnMenu ]
   components:
   - type: LagCompensation
@@ -30,7 +30,6 @@
   - type: StatusEffects
     allowed:
     - Stun
-    - KnockedDown
     - SlowedDown
     - Stutter
     - Electrocution
@@ -83,8 +82,8 @@
 
 - type: entity
   name: Waster Eyebot
-  id: N14MobPetEyebot #Basic Eyebot every other inherits from.
-  parent: N14MobFriendlyRobot
+  id: F14MobPetEyebot #Basic Eyebot every other inherits from.
+  parent: F14MobFriendlyRobot
   description: A military Eyebot with a smiling face to look at!
   components:
   - type: HTN
@@ -144,7 +143,7 @@
     angleDecay: 4
     fireRate: 1
     soundGunshot:
-      collection: N14RechargerRifleGunshot
+      collection: F14RechargerRifleGunshot
     useKey: false
     selectedMode: SemiAuto
     availableModes:
@@ -159,7 +158,7 @@
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: RadioSpeaker
     channels:
-    - N14PBS
+    - F14PBS
     enabled: true
     toggleOnInteract: true
   - type: IntrinsicRadioReceiver # Misfits Add - Eyebot speaks binary on the Binary radio channel
@@ -232,20 +231,20 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsEyebotIdle
+      collection: F14EyebotIdle
       params:
         volume: -5
         maxDistance: 5
 
 - type: entity
   name: BoS Eyebot
-  id: N14MobPetEyebotMBoS
-  parent: N14MobPetEyebot
+  id: F14MobPetEyebotMBoS
+  parent: F14MobPetEyebot
   description: A military Eyebot in the colours of the Brotherhood of Steel!
   components:
   - type: NpcFactionMember
     factions:
-    - MisfitsBrotherhoodOfSteel # #Misfits Fix - Eyebot should be in the BoS faction for playtime tracking and faction relations
+    - F14BrotherhoodOfSteel # #Misfits Fix - Eyebot should be in the BoS faction for playtime tracking and faction relations
   - type: GhostRole
     name: ghost-role-information-n14pet-eyebot-mbos-name
     description: ghost-role-information-n14pet-eyebot-description
@@ -253,7 +252,7 @@
     makeSentient: false
     allowMovement: true
   - type: GhostRoleJob # #Misfits Add - Attribute BoS playtime when a player takes this ghost role
-    job: MisfitsBoSEyebot
+    job: F14BoSEyebot
   - type: Sprite
     sprite: Nuclear14/Mobs/Pets/eyebot_mbos.rsi
     layers:
@@ -263,8 +262,8 @@
 
 - type: entity
   name: Washington BoS Eyebot
-  id: N14MobPetEyebotWBoS
-  parent: N14MobPetEyebot
+  id: F14MobPetEyebotWBoS
+  parent: F14MobPetEyebot
   description: A military Eyebot in the colours of the Washington Brotherhood!
   components:
   - type: NpcFactionMember

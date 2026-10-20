@@ -3,7 +3,7 @@
 
 # Rock
 - type: entity
-  id: N14RockGrey
+  id: F14RockGrey
   parent: BaseWall
   name: asteroid rock
   description: A rocky asteroid.
@@ -43,8 +43,8 @@
 
 # Ore veins
 - type: entity
-  id: N14RockGreyCoal
-  parent: N14RockGrey
+  id: F14RockGreyCoal
+  parent: F14RockGrey
   description: An ore vein rich with coal.
   suffix: Coal
   components:
@@ -57,8 +57,8 @@
         - state: rock_coal
 
 - type: entity
-  id: N14RockGreyGold
-  parent: N14RockGrey
+  id: F14RockGreyGold
+  parent: F14RockGrey
   description: An ore vein rich with gold.
   suffix: Gold
   components:
@@ -71,8 +71,8 @@
         - state: rock_gold
 
 - type: entity
-  id: N14RockGreySilver
-  parent: N14RockGrey
+  id: F14RockGreySilver
+  parent: F14RockGrey
   description: An ore vein rich with silver.
   suffix: Silver
   components:
@@ -85,8 +85,8 @@
         - state: rock_silver
 
 - type: entity
-  id: N14RockGreySteel
-  parent: N14RockGrey
+  id: F14RockGreySteel
+  parent: F14RockGrey
   description: An ore vein rich with Steel.
   suffix: Steel
   components:
@@ -99,8 +99,8 @@
         - state: rock_tin
 
 - type: entity
-  id: N14RockGreyUranium
-  parent: N14RockGrey
+  id: F14RockGreyUranium
+  parent: F14RockGrey
   description: An ore vein rich with uranium.
   suffix: Uranium
   components:
@@ -113,8 +113,8 @@
         - state: rock_uranium
 
 - type: entity
-  id: N14RockGreyMining
-  parent: N14RockGrey # AsteroidAltRock no longer exists
+  id: F14RockGreyMining
+  parent: F14RockGrey # AsteroidAltRock no longer exists
   name: ore vein
   suffix: higher ore yield .44
   description: An asteroid.
@@ -136,8 +136,8 @@
             acts: ["Destruction"]
 
 - type: entity
-  id: N14SteelRock
-  parent: N14RockGrey
+  id: F14SteelRock
+  parent: F14RockGrey
   name: ore vein
   suffix: Low Ore Yield
   description: A rocky asteroid.
@@ -154,8 +154,8 @@
       - state: rock_asteroid_south
 
 - type: entity
-  id: N14RockGreySalt
-  parent: N14RockGrey
+  id: F14RockGreySalt
+  parent: F14RockGrey
   description: An ore vein rich with salt.
   suffix: Salt
   components:
@@ -168,8 +168,8 @@
         - state: rock_salt
 
 - type: entity
-  id: N14RockMining
-  parent: N14SteelRock
+  id: F14RockMining
+  parent: F14SteelRock
   name: ore evin
   suffix: higher ore yield
   description: An asteroid.
@@ -181,7 +181,7 @@
 
 # Rocks and ore veins
 - type: entity
-  id: N14WallRock
+  id: F14WallRock
   parent: BaseWall
   name: rock
   suffix: planetmap
@@ -221,8 +221,8 @@
 
 # Ore veins
 - type: entity
-  id: N14WallRockCoal
-  parent: N14WallRock
+  id: F14WallRockCoal
+  parent: F14WallRock
   description: An ore vein rich with coal.
   suffix: Coal
   components:
@@ -235,8 +235,8 @@
         - state: rock_coal
 
 - type: entity
-  id: N14WallRockGold
-  parent: N14WallRock
+  id: F14WallRockGold
+  parent: F14WallRock
   description: An ore vein rich with gold.
   suffix: Gold
   components:
@@ -249,8 +249,8 @@
         - state: rock_gold
 
 - type: entity
-  id: N14WallRockSilver
-  parent: N14WallRock
+  id: F14WallRockSilver
+  parent: F14WallRock
   description: An ore vein rich with silver.
   suffix: Silver
   components:
@@ -263,8 +263,8 @@
         - state: rock_silver
 
 - type: entity
-  id: N14WallRockSteel
-  parent: N14WallRock
+  id: F14WallRockSteel
+  parent: F14WallRock
   description: An ore vein rich with Steel.
   suffix: Steel
   components:
@@ -277,8 +277,8 @@
         - state: rock_tin
 
 - type: entity
-  id: N14WallRockUranium
-  parent: N14WallRock
+  id: F14WallRockUranium
+  parent: F14WallRock
   description: An ore vein rich with uranium.
   suffix: Uranium
   components:
@@ -291,8 +291,8 @@
         - state: rock_uranium
 
 - type: entity
-  id: N14WallRockSalt
-  parent: N14WallRock
+  id: F14WallRockSalt
+  parent: F14WallRock
   description: An ore vein rich with salt.
   suffix: Salt
   components:
@@ -306,8 +306,8 @@
 
 # Misfits Add - Procedural ore vein variant for random distribution on Wendover
 - type: entity
-  id: MisfitsWallRockMining
-  parent: N14WallRock
+  id: F14WallRockMining
+  parent: F14WallRock
   name: rock
   suffix: Random Ore Yield
   description: A rocky outcrop. Could be hiding something.
@@ -318,9 +318,9 @@
 
 # Basalt variants
 - type: entity
-  id: N14WallRockBasalt
+  id: F14WallRockBasalt
   name: basalt
-  parent: N14WallRock
+  parent: F14WallRock
   components:
     - type: Icon
       sprite: Nuclear14/Structures/Walls/rock.rsi
@@ -331,8 +331,8 @@
         - state: rock_wall
 
 - type: entity
-  id: N14WallRockBasaltCoal
-  parent: N14WallRockBasalt
+  id: F14WallRockBasaltCoal
+  parent: F14WallRockBasalt
   description: An ore vein rich with coal.
   suffix: Coal
   components:
@@ -345,8 +345,8 @@
         - state: rock_coal
 
 - type: entity
-  id: N14WallRockBasaltGold
-  parent: N14WallRockBasalt
+  id: F14WallRockBasaltGold
+  parent: F14WallRockBasalt
   description: An ore vein rich with gold.
   suffix: Gold
   components:
@@ -359,8 +359,8 @@
         - state: rock_gold
 
 - type: entity
-  id: N14WallRockBasaltSilver
-  parent: N14WallRockBasalt
+  id: F14WallRockBasaltSilver
+  parent: F14WallRockBasalt
   description: An ore vein rich with silver.
   suffix: Silver
   components:
@@ -373,8 +373,8 @@
         - state: rock_silver
 
 - type: entity
-  id: N14WallRockBasaltSteel
-  parent: N14WallRockBasalt
+  id: F14WallRockBasaltSteel
+  parent: F14WallRockBasalt
   description: An ore vein rich with Steel.
   suffix: Steel
   components:
@@ -387,8 +387,8 @@
         - state: rock_tin
 
 - type: entity
-  id: N14WallRockBasaltUranium
-  parent: N14WallRockBasalt
+  id: F14WallRockBasaltUranium
+  parent: F14WallRockBasalt
   description: An ore vein rich with uranium.
   suffix: Uranium
   components:
@@ -401,8 +401,8 @@
         - state: rock_uranium
 
 - type: entity
-  id: N14WallRockBasaltSalt
-  parent: N14WallRockBasalt
+  id: F14WallRockBasaltSalt
+  parent: F14WallRockBasalt
   description: An ore vein rich with salt.
   suffix: Salt
   components:
@@ -416,8 +416,8 @@
 
 # Misfits Add - Procedural ore vein variant for random distribution on Wendover
 - type: entity
-  id: MisfitsWallRockBasaltMining
-  parent: N14WallRockBasalt
+  id: F14WallRockBasaltMining
+  parent: F14WallRockBasalt
   name: basalt
   suffix: Random Ore Yield
   description: A basalt outcrop. Could be hiding something.
@@ -428,9 +428,9 @@
 
 # Sand variants
 - type: entity
-  id: N14WallRockSand
+  id: F14WallRockSand
   name: sandstone
-  parent: N14WallRock
+  parent: F14WallRock
   components:
     - type: Icon
       sprite: Nuclear14/Structures/Walls/rock.rsi
@@ -441,8 +441,8 @@
         - state: rock_sand
 
 - type: entity
-  id: N14WallRockSandCoal
-  parent: N14WallRockSand
+  id: F14WallRockSandCoal
+  parent: F14WallRockSand
   description: An ore vein rich with coal.
   suffix: Coal
   components:
@@ -455,8 +455,8 @@
         - state: rock_coal
 
 - type: entity
-  id: N14WallRockSandGold
-  parent: N14WallRockSand
+  id: F14WallRockSandGold
+  parent: F14WallRockSand
   description: An ore vein rich with gold.
   suffix: Gold
   components:
@@ -469,8 +469,8 @@
         - state: rock_gold
 
 - type: entity
-  id: N14WallRockSandSilver
-  parent: N14WallRockSand
+  id: F14WallRockSandSilver
+  parent: F14WallRockSand
   description: An ore vein rich with silver.
   suffix: Silver
   components:
@@ -483,8 +483,8 @@
         - state: rock_silver
 
 - type: entity
-  id: N14WallRockSandSteel
-  parent: N14WallRockSand
+  id: F14WallRockSandSteel
+  parent: F14WallRockSand
   description: An ore vein rich with Steel.
   suffix: Steel
   components:
@@ -497,8 +497,8 @@
         - state: rock_tin
 
 - type: entity
-  id: N14WallRockSandUranium
-  parent: N14WallRockSand
+  id: F14WallRockSandUranium
+  parent: F14WallRockSand
   description: An ore vein rich with uranium.
   suffix: Uranium
   components:
@@ -511,8 +511,8 @@
         - state: rock_uranium
 
 - type: entity
-  id: N14WallRockSandSalt
-  parent: N14WallRockSand
+  id: F14WallRockSandSalt
+  parent: F14WallRockSand
   description: An ore vein rich with salt.
   suffix: Salt
   components:
@@ -526,8 +526,8 @@
 
 # Misfits Add - Procedural ore vein variant for random distribution on Wendover
 - type: entity
-  id: MisfitsWallRockSandMining
-  parent: N14WallRockSand
+  id: F14WallRockSandMining
+  parent: F14WallRockSand
   name: sandstone
   suffix: Random Ore Yield
   description: A sandstone outcrop. Could be hiding something.
@@ -538,9 +538,9 @@
 
 # Andesite variants
 - type: entity
-  id: N14WallRockAndesite
+  id: F14WallRockAndesite
   name: andesite
-  parent: N14WallRock
+  parent: F14WallRock
   components:
     - type: Icon
       sprite: Nuclear14/Structures/Walls/rock.rsi
@@ -551,8 +551,8 @@
         - state: rock_andesite
 
 - type: entity
-  id: N14WallRockAndesiteCoal
-  parent: N14WallRockAndesite
+  id: F14WallRockAndesiteCoal
+  parent: F14WallRockAndesite
   description: An ore vein rich with coal.
   suffix: Coal
   components:
@@ -565,8 +565,8 @@
         - state: rock_coal
 
 - type: entity
-  id: N14WallRockAndesiteGold
-  parent: N14WallRockAndesite
+  id: F14WallRockAndesiteGold
+  parent: F14WallRockAndesite
   description: An ore vein rich with gold.
   suffix: Gold
   components:
@@ -579,8 +579,8 @@
         - state: rock_gold
 
 - type: entity
-  id: N14WallRockAndesiteSilver
-  parent: N14WallRockAndesite
+  id: F14WallRockAndesiteSilver
+  parent: F14WallRockAndesite
   description: An ore vein rich with silver.
   suffix: Silver
   components:
@@ -593,8 +593,8 @@
         - state: rock_silver
 
 - type: entity
-  id: N14WallRockAndesiteSteel
-  parent: N14WallRockAndesite
+  id: F14WallRockAndesiteSteel
+  parent: F14WallRockAndesite
   description: An ore vein rich with Steel.
   suffix: Steel
   components:
@@ -607,8 +607,8 @@
         - state: rock_tin
 
 - type: entity
-  id: N14WallRockAndesiteUranium
-  parent: N14WallRockAndesite
+  id: F14WallRockAndesiteUranium
+  parent: F14WallRockAndesite
   description: An ore vein rich with uranium.
   suffix: Uranium
   components:
@@ -621,8 +621,8 @@
         - state: rock_uranium
 
 - type: entity
-  id: N14WallRockAndesiteSalt
-  parent: N14WallRockAndesite
+  id: F14WallRockAndesiteSalt
+  parent: F14WallRockAndesite
   description: An ore vein rich with salt.
   suffix: Salt
   components:
@@ -636,8 +636,8 @@
 
 # Misfits Add - Procedural ore vein variant for random distribution on Wendover
 - type: entity
-  id: MisfitsWallRockAndesiteMining
-  parent: N14WallRockAndesite
+  id: F14WallRockAndesiteMining
+  parent: F14WallRockAndesite
   name: andesite
   suffix: Random Ore Yield
   description: An andesite outcrop. Could be hiding something.
@@ -648,7 +648,7 @@
 
 # Cold Mountain Rock.
 - type: entity
-  id: N14ColdMountainRock
+  id: F14ColdMountainRock
   parent: BaseStructure
   name: cold mountain rock
   suffix: Un-mineable

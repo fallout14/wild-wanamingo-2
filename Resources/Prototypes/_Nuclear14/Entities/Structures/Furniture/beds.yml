@@ -3,7 +3,7 @@
 
 - type: entity
   parent: Bed
-  id: N14Bed
+  id: F14Bed
   name: Bed
   description: A clean mattress for sleeping on.
   components:
@@ -12,15 +12,15 @@
     sprite: Nuclear14/Structures/Furniture/bedsandchairs.rsi
     state: bed
   - type: Construction
-    graph: N14Bed
+    graph: F14Bed
     node: bed
   - type: Transform
     anchored: false
     noRot: false
 
 - type: entity
-  parent: N14Bed
-  id: N14BedBunk
+  parent: F14Bed
+  id: F14BedBunk
   name: "Bunk Bed"
   description: A clean bunk bed. I call top bunk!
   components:
@@ -33,8 +33,8 @@
     buckleOffset: 0,0.3
 
 - type: entity
-  parent: N14Bed
-  id: N14BedDirty
+  parent: F14Bed
+  id: F14BedDirty
   name: "Dirty Bed"
   description: A bed that looks like it's seen better days.
   components:
@@ -43,20 +43,20 @@
     snapCardinals: true
 
 - type: entity
-  parent: N14Bed
-  id: N14BedWood
+  parent: F14Bed
+  id: F14BedWood
   name: "wooden bed"
   description: A bed with a wooden frame.
   components:
   - type: Sprite
     state: bed_wood
   - type: Construction
-    graph: N14Bed
+    graph: F14Bed
     node: bedwood
 
 - type: entity
-  parent: N14Bed
-  id: N14BedWoodBunk
+  parent: F14Bed
+  id: F14BedWoodBunk
   name: "wooden bunk bed"
   description: A bunk bed with a wooden frame.
   components:
@@ -68,13 +68,13 @@
     rotation: -270
     buckleOffset: 0,0.3
   - type: Construction
-    graph: N14Bed
+    graph: F14Bed
     node: bedwoodbunk
 
 # TODO: Reduce the healing rate of all these at some point compared to a proper bed.
 
 - type: entity
-  id: N14Bedroll
+  id: F14Bedroll
   parent: RollerBed
   name: bedroll
   description: A bedroll for sleeping on the road. Not very comfy.
@@ -123,14 +123,14 @@
       rotation: -90
       buckleOffset: "0.05,-0.10"
     - type: Construction
-      graph: N14Bed
+      graph: F14Bed
       node: bedroll
     - type: StaticPrice
       price: 25
 
 - type: entity
-  parent: N14Bedroll
-  id: N14BedrollFolded
+  parent: F14Bedroll
+  id: F14BedrollFolded
   suffix: rolled
   components:
   - type: Strap  # spawn state
@@ -139,15 +139,15 @@
     folded: true
 
 - type: entity
-  parent: N14Bed
-  id: N14BedMattress0
+  parent: F14Bed
+  id: F14BedMattress0
   name: Mattress
   description: A mattress on the floor. Better than nothing.
   components:
   - type: Sprite
     state: mattress0
   - type: Construction
-    graph: N14Bed
+    graph: F14Bed
     node: mattress
   - type: Destructible
     thresholds:
@@ -164,8 +164,8 @@
                 max: 2
 
 - type: entity
-  parent: N14Bed
-  id: N14BedMattressDirty1
+  parent: F14Bed
+  id: F14BedMattressDirty1
   name: Mattress
   description: A mattress on the floor. A little rough.
   components:
@@ -187,8 +187,8 @@
                 max: 2
 
 - type: entity
-  parent: N14BedMattressDirty1
-  id: N14BedMattressDirty2
+  parent: F14BedMattressDirty1
+  id: F14BedMattressDirty2
   name: Mattress
   description: A mattress on the floor. Filthy.
   components:
@@ -196,8 +196,8 @@
     state: mattress2
 
 - type: entity
-  parent: N14BedMattressDirty1
-  id: N14BedMattressDirty3
+  parent: F14BedMattressDirty1
+  id: F14BedMattressDirty3
   name: Mattress
   description: A mattress on the floor. Is that blood?
   components:
@@ -205,8 +205,8 @@
     state: mattress3
 
 - type: entity
-  parent: N14BedMattressDirty1
-  id: N14BedMattressDirty4
+  parent: F14BedMattressDirty1
+  id: F14BedMattressDirty4
   name: Mattress
   description: A mattress on the floor. That's definitely blood.
   components:
@@ -214,8 +214,8 @@
     state: mattress4
 
 - type: entity
-  parent: N14BedMattressDirty1
-  id: N14BedMattressDirty5
+  parent: F14BedMattressDirty1
+  id: F14BedMattressDirty5
   suffix: mouldy
   name: Mattress
   description: A mattress on the floor. I'm not sleeping on that.

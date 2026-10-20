@@ -3,131 +3,131 @@
 
 - type: entity
   abstract: true
-  id: N14MobDespawning
+  id: F14MobDespawning
   components:
   - type: TimedDespawn
     lifetime: 2400 # 40 minutes
 
 - type: entity
-  parent: [ N14MobMolerat, N14MobDespawning ]
-  id: N14MobMoleratDespawning
+  parent: [ F14MobMolerat, F14MobDespawning ]
+  id: F14MobMoleratDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobDogFeral, N14MobDespawning ]
-  id: N14MobDogFeralDespawning
+  parent: [ F14MobDogFeral, F14MobDespawning ]
+  id: F14MobDogFeralDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobNightstalkerCub, N14MobDespawning ]
-  id: N14MobNightstalkerCubDespawning
+  parent: [ F14MobNightstalkerCub, F14MobDespawning ]
+  id: F14MobNightstalkerCubDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobGecko, N14MobDespawning ]
-  id: N14MobGeckoDespawning
+  parent: [ F14MobGecko, F14MobDespawning ]
+  id: F14MobGeckoDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobNightstalker, N14MobDespawning ]
-  id: N14MobNightstalkerDespawning
+  parent: [ F14MobNightstalker, F14MobDespawning ]
+  id: F14MobNightstalkerDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobYaoguai, N14MobDespawning ]
-  id: N14MobYaoguaiDespawning
+  parent: [ F14MobYaoguai, F14MobDespawning ]
+  id: F14MobYaoguaiDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobDeathclaw, N14MobDespawning ]
-  id: N14MobDeathclawDespawning
+  parent: [ F14MobDeathclaw, F14MobDespawning ]
+  id: F14MobDeathclawDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobDeathclawAlbino, N14MobDespawning ]
-  id: N14MobDeathclawAlbinoDespawning
+  parent: [ F14MobDeathclawAlbino, F14MobDespawning ]
+  id: F14MobDeathclawAlbinoDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobDeathclawMetal, N14MobDespawning ]
-  id: N14MobDeathclawMetalDespawning
+  parent: [ F14MobDeathclawMetal, F14MobDespawning ]
+  id: F14MobDeathclawMetalDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobRadroach, N14MobDespawning ]
-  id: N14MobRadroachDespawning
+  parent: [ F14MobRadroach, F14MobDespawning ]
+  id: F14MobRadroachDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobBloatfly, N14MobDespawning ]
-  id: N14MobBloatflyDespawning
+  parent: [ F14MobBloatfly, F14MobDespawning ]
+  id: F14MobBloatflyDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobGiantAnt, N14MobDespawning ]
-  id: N14MobGiantAntDespawning
+  parent: [ F14MobGiantAnt, F14MobDespawning ]
+  id: F14MobGiantAntDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobGiantFireAnt, N14MobDespawning ]
-  id: N14MobGiantFireAntDespawning
+  parent: [ F14MobGiantFireAnt, F14MobDespawning ]
+  id: F14MobGiantFireAntDespawning
   categories: [ HideSpawnMenu ]
 
 - type: entity
-  parent: [ N14MobCazador, N14MobDespawning ]
-  id: N14MobCazadorDespawning
-  categories: [ HideSpawnMenu ]
-  
-
-- type: entity
-  parent: [ N14MobRadscorpion, N14MobDespawning ]
-  id: N14MobRadscorpionDespawning
+  parent: [ F14MobCazador, F14MobDespawning ]
+  id: F14MobCazadorDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobRadscorpionBark, N14MobDespawning ]
-  id: N14MobRadscorpionBarkDespawning
+  parent: [ F14MobRadscorpion, F14MobDespawning ]
+  id: F14MobRadscorpionDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobRaiderPsychoRanged, N14MobDespawning ]
-  id: N14MobRRaiderPsychoRangedDespawning
+  parent: [ F14MobRadscorpionBark, F14MobDespawning ]
+  id: F14MobRadscorpionBarkDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobRaiderBoss, N14MobDespawning ]
-  id: N14MobRaiderBossDespawning
+  parent: [ F14MobRaiderPsychoRanged, F14MobDespawning ]
+  id: F14MobRRaiderPsychoRangedDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobRaiderPsycho, N14MobDespawning ]
-  id: N14MobRaiderPsychoDespawning
+  parent: [ F14MobRaiderBoss, F14MobDespawning ]
+  id: F14MobRaiderBossDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobRaiderHunter, N14MobDespawning ]
-  id: N14MobRRaiderPsychoHunterDespawning
+  parent: [ F14MobRaiderPsycho, F14MobDespawning ]
+  id: F14MobRaiderPsychoDespawning
   categories: [ HideSpawnMenu ]
   
 
 - type: entity
-  parent: [ N14MobRaiderSkrimisher, N14MobDespawning ]
-  id: N14MobRRaiderPsychoSkrimisherDespawning
+  parent: [ F14MobRaiderHunter, F14MobDespawning ]
+  id: F14MobRRaiderPsychoHunterDespawning
+  categories: [ HideSpawnMenu ]
+  
+
+- type: entity
+  parent: [ F14MobRaiderSkrimisher, F14MobDespawning ]
+  id: F14MobRRaiderPsychoSkrimisherDespawning
   categories: [ HideSpawnMenu ]

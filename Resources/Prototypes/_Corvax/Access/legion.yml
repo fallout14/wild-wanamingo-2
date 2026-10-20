@@ -2,155 +2,155 @@
 # Resources/Prototypes/Corvax/Access/legion.yml
 
 - type: accessLevel
-  id: CorvaxCaesarLegion
+  id: F14CaesarLegion
   name: id-card-access-level-legion
 
 - type: accessLevel
-  id: CorvaxCaesarLegionSlave
+  id: F14CaesarLegionSlave
   name: id-card-access-level-legion-slave
 
 - type: accessLevel
-  id: CorvaxCaesarLegionRecruit
+  id: F14CaesarLegionRecruit
   name: id-card-access-level-legion-recruit
 
 - type: accessLevel
-  id: CorvaxCaesarLegionTrader
+  id: F14CaesarLegionTrader
   name: id-card-access-level-legion-trader
 
 - type: accessLevel
-  id: CorvaxCaesarLegionHoundmaster
+  id: F14CaesarLegionHoundmaster
   name: id-card-access-level-legion-houndmaster
 
 - type: accessLevel
-  id: CorvaxCaesarLegionFrumentarii
+  id: F14CaesarLegionFrumentarii
   name: id-card-access-level-legion-frumentarii
 
 - type: accessLevel
-  id: CorvaxCaesarLegionVexillarius
+  id: F14CaesarLegionVexillarius
   name: id-card-access-level-legion-vexillarius
 
 - type: accessLevel
-  id: CorvaxCaesarLegionExplorer
+  id: F14CaesarLegionExplorer
   name: id-card-access-level-legion-explorer
 
 - type: accessLevel
-  id: CorvaxCaesarLegionLegionnaireRecruit
+  id: F14CaesarLegionLegionnaireRecruit
   name: id-card-access-level-legion-recruit-legionary
 
 - type: accessLevel
-  id: CorvaxCaesarLegionLegionnaireWarrior
+  id: F14CaesarLegionLegionnaireWarrior
   name: id-card-access-level-legion-prime-legionary
 
 - type: accessLevel
-  id: CorvaxCaesarLegionLegionnaireVeteran
+  id: F14CaesarLegionLegionnaireVeteran
   name: id-card-access-level-legion-veteran-legionary
 
 - type: accessLevel
-  id: CorvaxCaesarLegionDean
+  id: F14CaesarLegionDean
   name: id-card-access-level-legion-decanus
 
 - type: accessLevel
-  id: CorvaxCaesarLegionVeteranDecanus
+  id: F14CaesarLegionVeteranDecanus
   name: id-card-access-level-legion-veteran-decanus
 
 - type: accessLevel
-  id: CorvaxCaesarLegionPriestessOfMars
+  id: F14CaesarLegionPriestessOfMars
   name: id-card-access-level-legion-priestess-of-mars
 
 - type: accessLevel
-  id: CorvaxCaesarLegionAcolyteOfMars
+  id: F14CaesarLegionAcolyteOfMars
   name: id-card-access-level-legion-acolyte-of-mars
 
 - type: accessLevel
-  id: CorvaxCaesarLegionOptio
+  id: F14CaesarLegionOptio
   name: id-card-access-level-legion-optio
 
 - type: accessLevel
-  id: CorvaxCaesarLegionCenturion
+  id: F14CaesarLegionCenturion
   name: id-card-access-level-legion-centurion
 
 - type: accessGroup
-  id: CorvaxCaesarLegionSlave
+  id: F14CaesarLegionSlave
   tags:
-  - CorvaxCaesarLegionSlave
+  - F14CaesarLegionSlave
 
 - type: accessGroup
-  id: CorvaxCaesarLegionRecruit
+  id: F14CaesarLegionRecruit
   tags:
-  - CorvaxCaesarLegion
-  - CorvaxCaesarLegionRecruit
+  - F14CaesarLegion
+  - F14CaesarLegionRecruit
 
 - type: accessGroup
-  id: CorvaxCaesarLegionHoundmaster
+  id: F14CaesarLegionHoundmaster
   tags:
-  - CorvaxCaesarLegion
-  - CorvaxCaesarLegionRecruit
-  - CorvaxCaesarLegionHoundmaster
+  - F14CaesarLegion
+  - F14CaesarLegionRecruit
+  - F14CaesarLegionHoundmaster
 
 - type: accessGroup
-  id: CorvaxCaesarLegionVexillarius
+  id: F14CaesarLegionVexillarius
   tags:
-  - CorvaxCaesarLegion
-  - CorvaxCaesarLegionRecruit
-  - CorvaxCaesarLegionVexillarius
+  - F14CaesarLegion
+  - F14CaesarLegionRecruit
+  - F14CaesarLegionVexillarius
 
 - type: accessGroup
-  id: CorvaxCaesarLegionExplorer
+  id: F14CaesarLegionExplorer
   tags:
-  - CorvaxCaesarLegion
-  - CorvaxCaesarLegionRecruit
-  - CorvaxCaesarLegionExplorer
+  - F14CaesarLegion
+  - F14CaesarLegionRecruit
+  - F14CaesarLegionExplorer
 
 - type: accessGroup
-  id: CorvaxCaesarLegionLegionnaireRecruit
+  id: F14CaesarLegionLegionnaireRecruit
   tags:
-  - CorvaxCaesarLegion
-  - CorvaxCaesarLegionRecruit
-  - CorvaxCaesarLegionLegionnaireRecruit
+  - F14CaesarLegion
+  - F14CaesarLegionRecruit
+  - F14CaesarLegionLegionnaireRecruit
 
 - type: accessGroup
-  id: CorvaxCaesarLegionLegionnaireWarrior
+  id: F14CaesarLegionLegionnaireWarrior
   tags:
-  - CorvaxCaesarLegion
-  - CorvaxCaesarLegionRecruit
-  - CorvaxCaesarLegionLegionnaireRecruit
-  - CorvaxCaesarLegionLegionnaireWarrior
+  - F14CaesarLegion
+  - F14CaesarLegionRecruit
+  - F14CaesarLegionLegionnaireRecruit
+  - F14CaesarLegionLegionnaireWarrior
 
 - type: accessGroup
-  id: CorvaxCaesarLegionLegionnaireVeteran
+  id: F14CaesarLegionLegionnaireVeteran
   tags:
-  - CorvaxCaesarLegion
-  - CorvaxCaesarLegionRecruit
-  - CorvaxCaesarLegionLegionnaireRecruit
-  - CorvaxCaesarLegionLegionnaireWarrior
-  - CorvaxCaesarLegionLegionnaireVeteran
+  - F14CaesarLegion
+  - F14CaesarLegionRecruit
+  - F14CaesarLegionLegionnaireRecruit
+  - F14CaesarLegionLegionnaireWarrior
+  - F14CaesarLegionLegionnaireVeteran
 
 - type: accessGroup
-  id: CorvaxCaesarLegionDean
+  id: F14CaesarLegionDean
   tags:
-  - CorvaxCaesarLegion
-  - CorvaxCaesarLegionRecruit
-  - CorvaxCaesarLegionLegionnaireRecruit
-  - CorvaxCaesarLegionLegionnaireWarrior
-  - CorvaxCaesarLegionLegionnaireVeteran
-  - CorvaxCaesarLegionDean
+  - F14CaesarLegion
+  - F14CaesarLegionRecruit
+  - F14CaesarLegionLegionnaireRecruit
+  - F14CaesarLegionLegionnaireWarrior
+  - F14CaesarLegionLegionnaireVeteran
+  - F14CaesarLegionDean
 
 - type: accessGroup
-  id: CorvaxCaesarLegionCenturion
+  id: F14CaesarLegionCenturion
   tags:
-  - CorvaxCaesarLegion
-  - CorvaxCaesarLegionRecruit
-  - CorvaxCaesarLegionTrader
-  - CorvaxCaesarLegionHoundmaster
-  - CorvaxCaesarLegionFrumentarii
-  - CorvaxCaesarLegionVexillarius
-  - CorvaxCaesarLegionExplorer
-  - CorvaxCaesarLegionOptio
-  - CorvaxCaesarLegionLegionnaireRecruit
-  - CorvaxCaesarLegionLegionnaireWarrior
-  - CorvaxCaesarLegionLegionnaireVeteran
-  - CorvaxCaesarLegionDean
-  - CorvaxCaesarLegionVeteranDecanus
-  - CorvaxCaesarLegionCenturion
-  - CorvaxCaesarLegionAcolyteOfMars
-  - CorvaxCaesarLegionPriestessOfMars
+  - F14CaesarLegion
+  - F14CaesarLegionRecruit
+  - F14CaesarLegionTrader
+  - F14CaesarLegionHoundmaster
+  - F14CaesarLegionFrumentarii
+  - F14CaesarLegionVexillarius
+  - F14CaesarLegionExplorer
+  - F14CaesarLegionOptio
+  - F14CaesarLegionLegionnaireRecruit
+  - F14CaesarLegionLegionnaireWarrior
+  - F14CaesarLegionLegionnaireVeteran
+  - F14CaesarLegionDean
+  - F14CaesarLegionVeteranDecanus
+  - F14CaesarLegionCenturion
+  - F14CaesarLegionAcolyteOfMars
+  - F14CaesarLegionPriestessOfMars

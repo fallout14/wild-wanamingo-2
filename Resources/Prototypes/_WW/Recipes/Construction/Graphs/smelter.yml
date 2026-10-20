@@ -11,7 +11,7 @@
       - !type:SnapToGrid
         southRotation: true
       steps:
-      - material: MisfitsBrick
+      - material: F14Brick
         amount: 10
         doAfter: 5
       - material: Steel
@@ -27,7 +27,7 @@
         doAfter: 5
       completed:
       - !type:SpawnPrototype
-        prototype: MisfitsMaterialBrick1
+        prototype: F14MaterialBrick1
         amount: 5
       - !type:SpawnPrototype
         prototype: SheetSteel1

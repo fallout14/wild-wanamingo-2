@@ -1,54 +1,54 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/MedLoot/Tier1Meds/Tier1MedRecipeTables.yml
 
 - type: entityTable
-  id: MisfitsM14MedsConsumableLootTier1_HealRecipeBasket
+  id: F14MedsConsumableLootTier1HealRecipeBasket
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FloraProduceWildBrocFlower
+      id: F14FloraProduceWildBrocFlower
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildXander
+      id: F14FloraProduceWildXander
       weight: 10
 
 - type: entityTable
-  id: MisfitsM14MedsConsumableLootTier1_UncommonPoulticeRecipeBasket
+  id: F14MedsConsumableLootTier1UncommonPoulticeRecipeBasket
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FloraProduceWildBrocFlower
+      id: F14FloraProduceWildBrocFlower
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildXander
+      id: F14FloraProduceWildXander
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildCaveFungusRad
+      id: F14FloraProduceWildCaveFungusRad
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildAgave
+      id: F14FloraProduceWildAgave
       weight: 10
 
 - type: entityTable
-  id: MisfitsM14MedsConsumableLootTier2_UncommonBitterDrinkRecipeBasket
+  id: F14MedsConsumableLootTier2UncommonBitterDrinkRecipeBasket
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FloraProduceWildGlowpepper
+      id: F14FloraProduceWildGlowpepper
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildPinyonNuts
+      id: F14FloraProduceWildPinyonNuts
       weight: 10
     - !type:EntSelector
-      id: N14DrinkMilkBrahmin
+      id: F14DrinkMilkBrahmin
       weight: 10
 
 - type: entityTable
-  id: MisfitsM14MedsConsumableLootTier1_UncommonAntidoteWeakRecipeBasket
+  id: F14MedsConsumableLootTier1UncommonAntidoteWeakRecipeBasket
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FloraProduceWildTarberries
+      id: F14FloraProduceWildTarberries
       weight: 10
     - !type:EntSelector
-      id: N14MaterialRadscorpionTail
+      id: F14MaterialRadscorpionTail
       weight: 10

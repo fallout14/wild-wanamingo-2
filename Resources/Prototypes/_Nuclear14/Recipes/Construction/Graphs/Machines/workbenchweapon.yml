@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/Machines/workbenchweapon.yml
 
 - type: constructionGraph
-  id: N14WorkbenchWeaponbench
+  id: F14WorkbenchWeaponbench
   start: start
   graph:
     - node: start
@@ -19,7 +19,7 @@
     - node: WorkbenchWeaponbenchFrame
       actions:
       - !type:AppearanceChange
-      entity: MisfitsWorkbenchWeaponbenchFrame
+      entity: F14WorkbenchWeaponbenchFrame
       edges:
         - to: WorkbenchWeaponbenchSteel
           steps:
@@ -30,7 +30,7 @@
     - node: WorkbenchWeaponbenchSteel
       actions:
       - !type:AppearanceChange
-      entity: MisfitsWorkbenchWeaponbenchFrame
+      entity: F14WorkbenchWeaponbenchFrame
       edges:
         - to: WorkbenchWeaponbenchUnwelded
           steps: 
@@ -40,7 +40,7 @@
     - node: WorkbenchWeaponbenchUnwelded
       actions:
       - !type:AppearanceChange
-      entity: MisfitsWorkbenchWeaponbenchFrame
+      entity: F14WorkbenchWeaponbenchFrame
       edges:
         - to: WorkbenchWeaponbenchCircuitry
           steps:
@@ -51,7 +51,7 @@
     - node: WorkbenchWeaponbenchCircuitry
       actions:
       - !type:AppearanceChange
-      entity: MisfitsWorkbenchWeaponbenchFrame
+      entity: F14WorkbenchWeaponbenchFrame
       edges:
         - to: WorkbenchWeaponbenchUnscrewed
           steps: 
@@ -61,7 +61,7 @@
     - node: WorkbenchWeaponbenchUnscrewed
       actions:
       - !type:AppearanceChange
-      entity: MisfitsWorkbenchWeaponbenchFrame
+      entity: F14WorkbenchWeaponbenchFrame
       edges:
         - to: WorkbenchWeaponbench
           steps:
@@ -69,4 +69,4 @@
               doAfter: 6
 
     - node: WorkbenchWeaponbench
-      entity: N14WorkbenchWeaponbench
+      entity: F14WorkbenchWeaponbench

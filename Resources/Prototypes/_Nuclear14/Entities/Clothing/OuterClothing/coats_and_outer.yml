@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: [Clothing, AllowSuitStorageClothing]
-  id: N14ClothingOuterBase
+  id: F14ClothingOuterBase
   components:
   - type: Clothing
     slots:
@@ -27,8 +27,8 @@
 #MARK: Plain Coats and Clothing
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterGhostEchoes
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterGhostEchoes
   name: Ghost Echoes
   description: A coat filled with bullets holes... Seems like his previous owner wasn't so lucky
   components:
@@ -40,8 +40,8 @@
   #  luckModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterHarperCoat
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterHarperCoat
   name: Harper Coat
   description: A dark coat with some red lining.
   components:
@@ -53,8 +53,8 @@
   #  charismaModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterJacketLettermanRed
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterJacketLettermanRed
   name: letterman jacket
   description: A red letterman jacket.
   components:
@@ -66,8 +66,8 @@
     # charismaModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterJacketLettermanBrown
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterJacketLettermanBrown
   description: A brown letterman jacket.
   components:
   - type: Sprite
@@ -78,8 +78,8 @@
     # charismaModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterBlackRobes
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterBlackRobes
   name: black robe
   description: robe tinted in black with some gold lining.
   components:
@@ -98,12 +98,12 @@
   - type: Clothing
     sprite: Nuclear14/Clothing/OuterClothing/Coats/falloutblackrobes.rsi
   - type: ToggleableClothing
-    clothingPrototype: N14ClothingHeadHatHoodBlackRobe
+    clothingPrototype: F14ClothingHeadHatHoodBlackRobe
     slot: head
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterLeatherRobes
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterLeatherRobes
   name: leather robe
   description: A robe made of leather, with a mystic symbol in the chest.
   components:
@@ -122,12 +122,12 @@
   - type: Clothing
     sprite: Nuclear14/Clothing/OuterClothing/Coats/falloutleatherrobes.rsi
   - type: ToggleableClothing
-    clothingPrototype: N14ClothingHeadHatHoodLeatherRobe
+    clothingPrototype: F14ClothingHeadHatHoodLeatherRobe
     slot: head
 
 - type: entity
   parent: ClothingOuterBase
-  id: N14ClothingOuterRobeHubologist
+  id: F14ClothingOuterRobeHubologist
   name: hubologist robes
   description: Hubologist robes... ominous.
   components:
@@ -139,8 +139,8 @@
     # intelligenceModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterFlannelRed
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterFlannelRed
   name: flannel shirt
   description: A red flannel shirt
   components:
@@ -152,8 +152,8 @@
     # charismaModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterFlannelAqua
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterFlannelAqua
   name: flannel shirt
   description: An aqua flannel shirt.
   components:
@@ -165,8 +165,8 @@
     # charismaModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterFlannelBrown
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterFlannelBrown
   name: flannel shirt
   description: A brown flannel shirt.
   components:
@@ -178,8 +178,8 @@
     # charismaModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterCoatFollowerLab
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterCoatFollowerLab
   name: follower's lab coat
   description: A lab coat worn by the Followers of the Apocalypse.
   components:
@@ -189,13 +189,13 @@
     sprite: Nuclear14/Clothing/OuterClothing/Coats/falloutfollowerlabcoat.rsi
   - type: Tag #For crafting
     tags:
-      - N14FollowerLabcoat
+      - F14FollowerLabcoat
   # - type: ClothingSpecialModifier
     # intelligenceModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterJacketBomber
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterJacketBomber
   name: bomber jacket
   description: A nice bomber jacket.
   components:
@@ -207,8 +207,8 @@
     # strengthModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterCoatDuster
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterCoatDuster
   name: duster
   description: Don't get dust on it, partner.
   components:
@@ -226,14 +226,14 @@
     priceMultiplier: 0.5
   - type: Butcherable
     spawned:
-    - id: N14MaterialLeather1
+    - id: F14MaterialLeather1
       amount: 1
     - id: MaterialCloth1
       amount: 1
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterCoatLeatherDuster
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterCoatLeatherDuster
   name: leather duster
   description: Why, yes, I do own a brahmin farm. How did you know?
   components:
@@ -251,14 +251,14 @@
     priceMultiplier: 0.5
   - type: Butcherable
     spawned:
-    - id: N14MaterialLeather1
+    - id: F14MaterialLeather1
       amount: 2
     - id: MaterialCloth1
       amount: 1
 
 - type: entity
-  parent: N14ClothingOuterBase # #Misfits Fix - was ClothingOuterBase; lacked AllowSuitStorage so rifles couldn't be stored in armour slot
-  id: N14ClothingOuterCoatLeatherJacket
+  parent: F14ClothingOuterBase # #Misfits Fix - was ClothingOuterBase; lacked AllowSuitStorage so rifles couldn't be stored in armour slot
+  id: F14ClothingOuterCoatLeatherJacket
   name: leather jacket
   description: A slick and smooth leather jacket. Perfect for any greaser.
   components:
@@ -276,14 +276,14 @@
     priceMultiplier: 0.5
   - type: Butcherable
     spawned:
-    - id: N14MaterialLeather1
+    - id: F14MaterialLeather1
       amount: 1
     - id: MaterialCloth1
       amount: 1
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterCoatLeatherCoat
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterCoatLeatherCoat
   name: leather coat
   description: A slick and smooth long black leather coat.
   components:
@@ -301,12 +301,12 @@
     priceMultiplier: 0.5
   - type: Butcherable
     spawned:
-    - id: N14MaterialLeather1
+    - id: F14MaterialLeather1
       amount: 2
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterCoatSoldierCoat
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterCoatSoldierCoat
   name: soldier coat
   description: A dapper-looking soldier's coat.
   components:
@@ -324,8 +324,8 @@
     priceMultiplier: 0.5
 
 - type: entity
-  parent: N14ClothingOuterBase # balance this?
-  id: N14ClothingOuterPoliceOfficer
+  parent: F14ClothingOuterBase # balance this?
+  id: F14ClothingOuterPoliceOfficer
   name: police officer uniform
   description: Respect my authoritay.
   components:
@@ -343,8 +343,8 @@
     priceMultiplier: 0.5
 
 - type: entity
-  parent: N14ClothingOuterBase # balance this?
-  id: N14ClothingOuterPoliceLieutenant
+  parent: F14ClothingOuterBase # balance this?
+  id: F14ClothingOuterPoliceLieutenant
   name: police lieutenant uniform
   description: A police uniform worn by lieutenants.
   components:
@@ -362,8 +362,8 @@
     priceMultiplier: 0.5
 
 - type: entity
-  parent: N14ClothingOuterBase # balance this?
-  id: N14ClothingOuterPoliceChief
+  parent: F14ClothingOuterBase # balance this?
+  id: F14ClothingOuterPoliceChief
   name: police chief uniform
   description: A police uniform worn by the chief of police.
   components:
@@ -382,7 +382,7 @@
 
 - type: entity
   parent: ClothingOuterStorageFoldableBase
-  id: N14ClothingOuterCoatLab
+  id: F14ClothingOuterCoatLab
   name: lab coat
   description: A coat that protects against staining, chemical or otherwise, a quality particularly useful in these less civilised times.
   components:
@@ -401,15 +401,15 @@
     priceMultiplier: 0.5
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBaseOpened, N14ClothingOuterCoatLab]
-  id: N14ClothingOuterCoatLabOpened
+  parent: [ClothingOuterStorageFoldableBaseOpened, F14ClothingOuterCoatLab]
+  id: F14ClothingOuterCoatLabOpened
   name: lab coat
 
 #MARK: Armored Coats
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterCoatWinterArmored
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterCoatWinterArmored
   name: armored winter coat
   description: A winter coat equipped with makeshift armor for when you need to protect yourself from something other than the cold.
   components:
@@ -429,8 +429,8 @@
     priceMultiplier: 0.5
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterBattlecoatCoat
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterBattlecoatCoat
   name: battlecoat
   description: For when you're going into battle.
   components:
@@ -448,14 +448,14 @@
     priceMultiplier: 0.5
   - type: Butcherable
     spawned:
-    - id: N14MaterialLeather1
+    - id: F14MaterialLeather1
       amount: 2
     - id: MaterialCloth1
       amount: 1
 
 - type: entity
-  parent: N14ClothingOuterBattlecoatCoat
-  id: N14ClothingOuterBattlecoatTan
+  parent: F14ClothingOuterBattlecoatCoat
+  id: F14ClothingOuterBattlecoatTan
   name: tan battlecoat
   components:
   - type: Sprite
@@ -464,8 +464,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Coats/falloutbattlecoattan.rsi
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterCoatCombatDuster
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterCoatCombatDuster
   name: combat duster
   description: Refurbished combat armor under a weathered duster. Simple metal plates replace the ceramic plates that have gotten damaged over time.
   components:
@@ -485,8 +485,8 @@
 #MARK: Brotherhood
 
 - type: entity
-  parent: N14ClothingOuterCoatWinterArmored
-  id: N14ClothingOuterBrotherhoodElderCoat
+  parent: F14ClothingOuterCoatWinterArmored
+  id: F14ClothingOuterBrotherhoodElderCoat
   name: Elder greatcoat
   description: Coat of the biggest brother.
   components:
@@ -496,8 +496,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Coats/brotherhoodeldercoat.rsi
 
 - type: entity
-  parent: N14ClothingOuterCoatWinterArmored
-  id: N14ClothingOuterBrotherhoodFieldScribeCoat
+  parent: F14ClothingOuterCoatWinterArmored
+  id: F14ClothingOuterBrotherhoodFieldScribeCoat
   name: BoS Field Scribe Coat
   description: A warm coat worn by Brotherhood field Scribes.
   components:
@@ -509,8 +509,8 @@
 #MARK: Enclave
 
 - type: entity
-  parent: N14ClothingOuterCoatWinterArmored
-  id: N14ClothingOuterEnclaverOfficerCoat
+  parent: F14ClothingOuterCoatWinterArmored
+  id: F14ClothingOuterEnclaverOfficerCoat
   name: enclave officer coat
   description: A coat worn by Enclave officers. It has armor underneath.
   components:
@@ -519,7 +519,7 @@
   - type: Clothing
     sprite: Nuclear14/Clothing/OuterClothing/Coats/falloutarmoredofficer.rsi
   # Misfits Tweak - flat 35% protection. The coat previously inherited
-  # 0.9/0.9/0.85/0.85 from N14ClothingOuterCoatWinterArmored and had no blast
+  # 0.9/0.9/0.85/0.85 from F14ClothingOuterCoatWinterArmored and had no blast
   # resistance at all, making it by far the weakest Enclave outer layer.
   - type: Armor
     modifiers:
@@ -532,7 +532,7 @@
     damageCoefficient: 0.75
   - type: Butcherable
     spawned:
-    - id: N14MaterialLeather1
+    - id: F14MaterialLeather1
       amount: 2
     - id: MaterialCloth1
       amount: 1
@@ -540,8 +540,8 @@
 #MARK: NCR
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterNCRCorrectional
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterNCRCorrectional
   name: NCR CF uniform
   description: The uniform of NCR Correctional Facility staff.
   components:
@@ -553,8 +553,8 @@
     # strengthModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterBattlecoatCoat
-  id: N14ClothingOuterNCRTrenchCoat
+  parent: F14ClothingOuterBattlecoatCoat
+  id: F14ClothingOuterNCRTrenchCoat
   name: NCR officer trench coat
   description: Warm and comfy, this nice white coat is used by officers of the 3rd battalion to warm themselves.
   components:
@@ -572,8 +572,8 @@
     priceMultiplier: 0.5
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterNCRDressJacket
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterNCRDressJacket
   name: NCR dress jacket
   description: An NCR dress uniform.
   components:
@@ -585,8 +585,8 @@
     # charismaModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterNCRDressJacketCO
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterNCRDressJacketCO
   name: NCR CO dress jacket
   description: An NCR Commanding Officer dress uniform.
   components:
@@ -598,8 +598,8 @@
     # charismaModifier: 1
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterNCRQuartermaster
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterNCRQuartermaster
   name: NCR QM uniform
   description: The uniform of an NCR Quartermaster.
   components:
@@ -613,8 +613,8 @@
 #MARK: Vault
 
 - type: entity
-  parent: N14ClothingOuterBattlecoatCoat
-  id: N14ClothingOuterOverseerCoat
+  parent: F14ClothingOuterBattlecoatCoat
+  id: F14ClothingOuterOverseerCoat
   name: "overseer's coat"
   description: A coat worn by someone important. It has the number 14 on the back.
   components:
@@ -628,8 +628,8 @@
 #MARK: Midwest BoS
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterMidwestBoSCoat
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterMidwestBoSCoat
   name: Engineer Scribe Coat # #Misfits Tweak - Renamed from "Scribe Quilted Armor" for role clarity
   description: A piece of quilted cloth with Brotherhood of Steel marks and metal plates, it has some pouches for tools storage.
   components:
@@ -659,12 +659,12 @@
   # - type: ExplosionResistance
   #   damageCoefficient: 0.8
   - type: ToggleableClothing
-    clothingPrototype: N14ClothingHeadHatHoodScribeTabard
+    clothingPrototype: F14ClothingHeadHatHoodScribeTabard
     slot: head
 
 - type: entity
-  parent: N14ClothingOuterCoatWinterArmored
-  id: N14ClothingOuterBrotherhoodMidwestFieldScribeCoat
+  parent: F14ClothingOuterCoatWinterArmored
+  id: F14ClothingOuterBrotherhoodMidwestFieldScribeCoat
   name: Field Scribe Coat # #Misfits Tweak - Renamed for role clarity
   description: A warm coat worn by Brotherhood field Scribes, a patch on each arm signifying membership of the chapter.
   components:
@@ -682,8 +682,8 @@
     priceMultiplier: 0.5
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterBrotherhoodMidwestMedicalScribeRobes
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterBrotherhoodMidwestMedicalScribeRobes
   name: Medical Scribe Coat # #Misfits Tweak - Renamed for role clarity
   description: A finely made robe affixed with leather worn by medical Scribes, a symbol of the Brotherhood emblazoned across the chest and back.
   components:
@@ -703,8 +703,8 @@
 #MARK: Washington BoS
 
 - type: entity
-  parent: N14ClothingOuterBattlecoatCoat
-  id: N14ClothingOuterBrotherhoodWashingtonScribe
+  parent: F14ClothingOuterBattlecoatCoat
+  id: F14ClothingOuterBrotherhoodWashingtonScribe
   name: Scribe Clothes
   description: An outfit traditionally worn by Brotherhood Scribes.
   components:
@@ -722,8 +722,8 @@
     priceMultiplier: 0.5
 
 - type: entity
-  parent: N14ClothingOuterBrotherhoodElderCoat
-  id: N14ClothingOuterBrotherhoodWashingtonCommander
+  parent: F14ClothingOuterBrotherhoodElderCoat
+  id: F14ClothingOuterBrotherhoodWashingtonCommander
   name: elder clothes
   description: An outfit traditionally worn by Brotherhood Elders.
   components:
@@ -733,8 +733,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Coats/washington_bos_elder.rsi
 
 - type: entity
-  parent: N14ClothingOuterBrotherhoodMidwestMedicalScribeRobes
-  id: N14ClothingOuterBrotherhoodMedicalScribeRobes
+  parent: F14ClothingOuterBrotherhoodMidwestMedicalScribeRobes
+  id: F14ClothingOuterBrotherhoodMedicalScribeRobes
   name: Washington BoS Medical Scribe Coat
   description: A finely made robe affixed with leather worn by medical Scribes, a symbol of the Brotherhood emblazoned across the chest and back.
   components:
@@ -744,8 +744,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Coats/brotherhoodmedicalscribe.rsi
 
 - type: entity
-  parent: N14ClothingOuterBattlecoatCoat
-  id: N14ClothingOuterBrotherhoodWashingtonCoat
+  parent: F14ClothingOuterBattlecoatCoat
+  id: F14ClothingOuterBrotherhoodWashingtonCoat
   name: Brotherhood of Steel Coat
   description: A finely made coat made with dark leather, a symbol of the Brotherhood emblazoned across the chest and back.
   components:
@@ -757,8 +757,8 @@
 #MARK: Tribal
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterTribalCoat
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterTribalCoat
   name: tribal armored coat
   description: A heavy armor with ballistic inserts, now sleeveless for temperature control and hanging an ornamental animal skull from the back.
   components:
@@ -776,8 +776,8 @@
     priceMultiplier: 0.5
 
 - type: entity
-  parent: N14ClothingOuterTribalCoat
-  id: N14ClothingOuterElderwintercoat
+  parent: F14ClothingOuterTribalCoat
+  id: F14ClothingOuterElderwintercoat
   name: tribal elders winter coat
   description: A long winters coat with ballistic inserts, hanging an ornamental animal skull from the back.
   components:
@@ -787,8 +787,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Coats/Tribalelderswintercoat.rsi
 
 - type: entity
-  parent: N14ClothingOuterTribalCoat
-  id: N14ClothingOuterdrylandelder
+  parent: F14ClothingOuterTribalCoat
+  id: F14ClothingOuterdrylandelder
   name: tribal elders robe
   description: Tribal robes in the style of the drylanders with ballistic inserts for protection.
   components:
@@ -800,8 +800,8 @@
 #MARK: Town
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterTownCoat
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterTownCoat
   name: town trenchcoat
   description: A non-descript black trenchcoat.
   components:
@@ -819,8 +819,8 @@
     priceMultiplier: 0.5
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterTownMediumCoat
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterTownMediumCoat
   name: armored town trenchcoat
   description: An armored trench coat with added shoulderpads, a chestplate, and leg guards.
   components:
@@ -838,8 +838,8 @@
     priceMultiplier: 0.5
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterTownHeavyCoat
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterTownHeavyCoat
   name: combat town trenchcoat
   description: A trenchcoat which does not attempt to hide the full-body worn-down combat armor beneath it.
   components:
@@ -857,8 +857,8 @@
     priceMultiplier: 0.5
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterTownSpecialCoat
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterTownSpecialCoat
   name: embroidered trenchcoat
   description: A custom armored trench coat with extra-length and a raised collar. There's a flower embroidered onto the back, although the color is a little faded.
   components:
@@ -876,8 +876,8 @@
     priceMultiplier: 0.5
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterPreventorJacket
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterPreventorJacket
   name: preventor paded jacket
   description: A winter leather jacket with internal armor layers, the regular piece of armor used by the vancouver law enforcers and preventors.
   components:
@@ -898,7 +898,7 @@
 
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: N14ClothingOuterHazmatSuit
+  id: F14ClothingOuterHazmatSuit
   name: hazmat suit
   description: Designed to protect its wearer from viruses and environments.
   components:
@@ -914,12 +914,12 @@
     walkModifier: 1
     sprintModifier: 1
   - type: ToggleableClothing
-    clothingPrototype: N14ClothingMaskHazmatHelmet
+    clothingPrototype: F14ClothingMaskHazmatHelmet
     slot: mask
 
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: N14ClothingOuterSpaceSuit
+  id: F14ClothingOuterSpaceSuit
   name: Space Suit
   description: Advanced life support and sensors. Smells kind of minty.
   components:
@@ -931,12 +931,12 @@
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
   - type: ToggleableClothing
-    clothingPrototype: N14ClothingHeadHatHelmetSpaceHelmet
+    clothingPrototype: F14ClothingHeadHatHelmetSpaceHelmet
     slot: head
 
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: N14ClothingOuterFirefighterSuit
+  id: F14ClothingOuterFirefighterSuit
   name: fire resistant suit
   description: Designed to protect its wearer from high temperatures and fires.
   components:
@@ -949,14 +949,14 @@
       coefficients:
         Heat: 0.30
   - type: ToggleableClothing
-    clothingPrototype: N14ClothingHeadHatHelmetFirefighterHelmet
+    clothingPrototype: F14ClothingHeadHatHelmetFirefighterHelmet
     slot: head
 
 # Town's Guard
 
 - type: entity
-  parent: N14ClothingOuterBase
-  id: N14ClothingOuterTownGuardCoat
+  parent: F14ClothingOuterBase
+  id: F14ClothingOuterTownGuardCoat
   name: the Guard's coat
   description: An old coat from a war, or a replica of one. It was designed to be highly useful with pockets and provide some protection too.
   components:

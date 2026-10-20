@@ -2,8 +2,8 @@
 
 - type: entity
   categories: [ HideSpawnMenu ] # Forge-change
-  parent: N14WorkbenchBase
-  id: MisfitsWorkbenchWeaponbenchFrame
+  parent: F14WorkbenchBase
+  id: F14WorkbenchWeaponbenchFrame
   description: A workbench with weapon working tools for crafting. This one is still being built!
   name: weapon workbench frame
   components:
@@ -23,14 +23,14 @@
           WorkbenchWeaponbenchCircuitry: { state: weaponbenchframe3 }
           WorkbenchWeaponbenchUnscrewed: { state: weaponbenchframe4 }
   - type: Construction
-    graph: N14WorkbenchWeaponbench
+    graph: F14WorkbenchWeaponbench
     node: WorkbenchWeaponbenchFrame
     defaultTarget: WorkbenchWeaponbench
 
 - type: entity
   categories: [ HideSpawnMenu ] # Forge-change
-  parent: N14WorkbenchBase
-  id: MisfitsWorkbenchArmorbenchFrame
+  parent: F14WorkbenchBase
+  id: F14WorkbenchArmorbenchFrame
   description: A workbench with armor working tools for crafting. This one is still being built!
   name: armor workbench frame
   components:
@@ -52,14 +52,14 @@
           WorkbenchArmorbenchUnscrewed: { state: armorbenchframe3 }
           WorkbenchArmorbenchIron: { state: armorbenchframe4 }
   - type: Construction
-    graph: N14WorkbenchArmorbench
+    graph: F14WorkbenchArmorbench
     node: WorkbenchArmorbenchFrame
     defaultTarget: WorkbenchArmorbench
 
 - type: entity
   categories: [ HideSpawnMenu ] # Forge-change
-  parent: N14WorkbenchBase
-  id: MisfitsWorkbenchTinkerbenchFrame
+  parent: F14WorkbenchBase
+  id: F14WorkbenchTinkerbenchFrame
   description: A workbench with tinkering tools for crafting. This one is still being built!
   name: tinker workbench frame
   components:
@@ -83,6 +83,6 @@
           WorkbenchTinkerbenchUnwrench: { state: tinkerbench5 }
           WorkbenchTinkerbenchUnscrewed: { state: tinkerbench6 }
   - type: Construction
-    graph: N14WorkbenchTinkerbench
+    graph: F14WorkbenchTinkerbench
     node: WorkbenchTinkerbenchFrame
     defaultTarget: WorkbenchTinkerbench

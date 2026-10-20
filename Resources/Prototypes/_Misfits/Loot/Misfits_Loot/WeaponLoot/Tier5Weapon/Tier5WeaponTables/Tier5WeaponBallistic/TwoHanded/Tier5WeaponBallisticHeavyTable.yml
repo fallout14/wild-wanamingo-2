@@ -1,21 +1,21 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier5Weapon/Tier5WeaponTables/Tier5WeaponBallistic/TwoHanded/Tier5WeaponBallisticHeavyTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier5_GunsBulletHeavy
+  id: F14WeaponLootTier5GunsBulletHeavy
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponMinigun
+      id: F14WeaponMinigun
       weight: 7
     - !type:EntSelector
-      id: N14WeaponMinigunAvenger
+      id: F14WeaponMinigunAvenger
       weight: 7
     - !type:EntSelector
-      id: N14WeaponMinigun
+      id: F14WeaponMinigun
       weight: 7
     - !type:EntSelector
-      id: N14WeaponMinigun
+      id: F14WeaponMinigun
       weight: 7
     - !type:EntSelector
-      id: N14WeaponMinigun
+      id: F14WeaponMinigun
       weight: 7

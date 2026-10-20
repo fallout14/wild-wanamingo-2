@@ -3,12 +3,12 @@
 
 - type: entity
   parent: OreBase # From Entities\Objects\Materials\ore.yml
-  id: N14LeadOre
+  id: F14LeadOre
   name: lead ore
   suffix: Full
   components:
   - type: Stack
-    stackType: N14LeadOre
+    stackType: F14LeadOre
     count: 10
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
@@ -16,7 +16,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14RawLead: 500
+      F14RawLead: 500
   - type: Extractable
     grindableSolutionName: leadore
   - type: Solution
@@ -27,8 +27,8 @@
         Quantity: 10
 
 - type: entity
-  id: N14LeadOre1
-  parent: N14LeadOre
+  id: F14LeadOre1
+  parent: F14LeadOre
   suffix: Single
   components:
   - type: Stack
@@ -36,12 +36,12 @@
 
 - type: entity
   parent: OreBase
-  id: N14CopperOre
+  id: F14CopperOre
   name: copper ore
   suffix: Full
   components:
   - type: Stack
-    stackType: N14CopperOre
+    stackType: F14CopperOre
     count: 30
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
@@ -49,7 +49,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14RawCopper: 500
+      F14RawCopper: 500
   - type: Extractable
     grindableSolutionName: copperore
   - type: Solution
@@ -60,8 +60,8 @@
         Quantity: 10
 
 - type: entity
-  id: N14CopperOre1
-  parent: N14CopperOre
+  id: F14CopperOre1
+  parent: F14CopperOre
   suffix: Single
   components:
     - type: Stack
@@ -69,12 +69,12 @@
 
 - type: entity
   parent: OreBase
-  id: N14IronOre
+  id: F14IronOre
   name: iron ore
   suffix: Full
   components:
   - type: Stack
-    stackType: N14IronOre
+    stackType: F14IronOre
     count: 30
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
@@ -82,7 +82,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14RawIron: 500
+      F14RawIron: 500
   - type: Extractable
     grindableSolutionName: ironore
   - type: Solution
@@ -93,8 +93,8 @@
         Quantity: 10
 
 - type: entity
-  parent: N14IronOre
-  id: N14IronOre1
+  parent: F14IronOre
+  id: F14IronOre1
   suffix: Single
   components:
   - type: Stack
@@ -102,12 +102,12 @@
 
 - type: entity
   parent: OreBase
-  id: N14GoldOre
+  id: F14GoldOre
   name: gold ore
   suffix: Full
   components:
   - type: Stack
-    stackType: N14GoldOre
+    stackType: F14GoldOre
     count: 30
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
@@ -115,7 +115,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14RawGold: 500
+      F14RawGold: 500
   - type: Extractable
     grindableSolutionName: goldore
   - type: Solution
@@ -126,8 +126,8 @@
         Quantity: 10
 
 - type: entity
-  parent: N14GoldOre
-  id: N14GoldOre1
+  parent: F14GoldOre
+  id: F14GoldOre1
   suffix: Single
   components:
   - type: Stack
@@ -135,12 +135,12 @@
 
 - type: entity
   parent: OreBase
-  id: N14SilverOre
+  id: F14SilverOre
   name: silver ore
   suffix: Full
   components:
   - type: Stack
-    stackType: N14SilverOre
+    stackType: F14SilverOre
     count: 30
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
@@ -148,7 +148,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14RawSilver: 500
+      F14RawSilver: 500
   - type: Extractable
     grindableSolutionName: silverore
   - type: Solution
@@ -159,8 +159,8 @@
         Quantity: 10
 
 - type: entity
-  parent: N14SilverOre
-  id: N14SilverOre1
+  parent: F14SilverOre
+  id: F14SilverOre1
   suffix: Single
   components:
   - type: Stack
@@ -168,12 +168,12 @@
 
 - type: entity
   parent: OreBase
-  id: N14SulfurOre
+  id: F14SulfurOre
   name: sulfur ore
   suffix: Full
   components:
   - type: Stack
-    stackType: N14SulfurOre
+    stackType: F14SulfurOre
     count: 10
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
@@ -181,7 +181,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14RawSulfur: 500
+      F14RawSulfur: 500
   - type: Extractable
     grindableSolutionName: sulfurore
   - type: Solution
@@ -192,8 +192,8 @@
         Quantity: 10
 
 - type: entity
-  id: N14SulfurOre1
-  parent: N14SulfurOre
+  id: F14SulfurOre1
+  parent: F14SulfurOre
   suffix: Single
   components:
   - type: Stack
@@ -201,12 +201,12 @@
 
 - type: entity
   parent: OreBase
-  id: N14FertilizerOre
+  id: F14FertilizerOre
   name: fertilizer
   suffix: Full
   components:
   - type: Stack # Misfits Fix - re-enabled fertilizer ore stacking
-    stackType: N14FertilizerOre
+    stackType: F14FertilizerOre
     count: 10
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/crafting_material.rsi
@@ -214,19 +214,19 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14Fertilizer: 50
+      F14Fertilizer: 50
   - type: Extractable
     grindableSolutionName: fertilizer
   - type: Solution
     id: fertilizer
     solution:
       reagents:
-      - ReagentId: N14Fertilizer
+      - ReagentId: F14Fertilizer
         Quantity: 50
 
 - type: entity
-  id: N14FertilizerOre1
-  parent: N14FertilizerOre
+  id: F14FertilizerOre1
+  parent: F14FertilizerOre
   suffix: Single
   components:
     - type: Stack # Misfits Fix - re-enabled fertilizer ore stacking

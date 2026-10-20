@@ -24,7 +24,7 @@ public abstract partial class SharedAddictionSystem : EntitySystem
     /// <summary>
     ///     Status effect key used for the addiction status.
     /// </summary>
-    public ProtoId<StatusEffectPrototype> StatusEffectKey = "MisfitsAddicted";
+    public ProtoId<StatusEffectPrototype> StatusEffectKey = "F14Addicted";
 
     /// <summary>
     ///     Server-side time bookkeeping for suppression windows.

@@ -2,8 +2,8 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Food/crackers.yml
 
 - type: entity
-  parent: N14CookedFoodBreadSliceBase
-  id: N14FoodCrackerBase
+  parent: F14CookedFoodBreadSliceBase
+  id: F14FoodCrackerBase
   name: cracker
   abstract: true
   components:
@@ -18,8 +18,8 @@
 
 - type: entity
   name: c ration cracker
-  parent: N14FoodCrackerBase
-  id: N14FoodCrackerCSlice
+  parent: F14FoodCrackerBase
+  id: F14FoodCrackerCSlice
   description: A c type cracker, plain and old cracker. Little stale.
   components:
   - type: Edible
@@ -27,8 +27,8 @@
 
 - type: entity
   name: k ration cracker
-  parent: N14FoodCrackerBase
-  id: N14FoodCrackerKSlice
+  parent: F14FoodCrackerBase
+  id: F14FoodCrackerKSlice
   description: A k type cracker, also called ranger cracker due to it's buttery flavour.
   components:
   - type: FlavorProfile

@@ -1,10 +1,10 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier2Weapon/Tier2WeaponTables/Tier2WeaponExplosives/Tier2ExplosiveBase.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier2_GunsExplosiveAll
+  id: F14WeaponLootTier2GunsExplosiveAll
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier2_GunsExplosiveSmallArm
+          tableId: F14WeaponLootTier2GunsExplosiveSmallArm
 #      - !type:NestedSelector
 #          tableId: M14WeaponLootTier2_GunsExplosiveHeavy

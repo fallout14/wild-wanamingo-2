@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BasePlant
-  id: N14WildAgave
+  id: F14WildAgave
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -11,8 +11,8 @@
   - type: PlantData
     name: clipping-wild-agave-name
     noun: clipping-wild-agave-noun
-    packetPrototype: N14FloraWildAgaveClippingSeed
-    productPrototypes: [ N14FloraProduceWildAgave ]
+    packetPrototype: F14FloraWildAgaveClippingSeed
+    productPrototypes: [ F14FloraProduceWildAgave ]
   - type: Plant
     lifespan: 25
     maturation: 20
@@ -24,14 +24,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractAgaveNectar:
+      F14ExtractAgaveNectar:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14WildBananaYucca
+  id: F14WildBananaYucca
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -39,8 +39,8 @@
   - type: PlantData
     name: clipping-wild-banana-yucca-name
     noun: clipping-wild-banana-yucca-noun
-    packetPrototype: N14FloraWildBananaYuccaClippingSeed
-    productPrototypes: [ N14FloraProduceWildBananaYucca ]
+    packetPrototype: F14FloraWildBananaYuccaClippingSeed
+    productPrototypes: [ F14FloraProduceWildBananaYucca ]
   - type: Plant
     lifespan: 25
     maturation: 20
@@ -52,14 +52,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractBananaYucca:
+      F14ExtractBananaYucca:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14WildBarrelCactus
+  id: F14WildBarrelCactus
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -67,8 +67,8 @@
   - type: PlantData
     name: clipping-wild-barrel-cactus-name
     noun: clipping-wild-barrel-cactus-noun
-    packetPrototype: N14FloraWildBarrelCactusClippingSeed
-    productPrototypes: [ N14FloraProduceWildBarrelCactusFruit ]
+    packetPrototype: F14FloraWildBarrelCactusClippingSeed
+    productPrototypes: [ F14FloraProduceWildBarrelCactusFruit ]
   - type: Plant
     lifespan: 25
     maturation: 20
@@ -80,14 +80,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractCactusWater:
+      F14ExtractCactusWater:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14WildBlackberry
+  id: F14WildBlackberry
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -95,8 +95,8 @@
   - type: PlantData
     name: clipping-wild-blackberry-name
     noun: clipping-wild-blackberry-noun
-    packetPrototype: N14FloraWildBlackberryClippingSeed
-    productPrototypes: [ N14FloraProduceWildBlackberries ]
+    packetPrototype: F14FloraWildBlackberryClippingSeed
+    productPrototypes: [ F14FloraProduceWildBlackberries ]
   - type: Plant
     lifespan: 25
     maturation: 20
@@ -108,14 +108,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractBlackberries:
+      F14ExtractBlackberries:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14WildBroc
+  id: F14WildBroc
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -123,8 +123,8 @@
   - type: PlantData
     name: clipping-wild-broc-name
     noun: clipping-wild-broc-noun
-    packetPrototype: N14FloraWildBrocFlowerClippingSeed
-    productPrototypes: [ N14FloraProduceWildBrocFlower ]
+    packetPrototype: F14FloraWildBrocFlowerClippingSeed
+    productPrototypes: [ F14FloraProduceWildBrocFlower ]
   - type: Plant
     lifespan: 25
     maturation: 20
@@ -136,14 +136,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractBroc:
+      F14ExtractBroc:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14WildBuffaloGourd
+  id: F14WildBuffaloGourd
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -151,8 +151,8 @@
   - type: PlantData
     name: clipping-wild-buffalo-gourd-name
     noun: clipping-wild-buffalo-gourd-noun
-    packetPrototype: N14FloraWildBuffaloGourdClippingSeed
-    productPrototypes: [ N14FloraProduceWildBuffaloGourd ]
+    packetPrototype: F14FloraWildBuffaloGourdClippingSeed
+    productPrototypes: [ F14FloraProduceWildBuffaloGourd ]
   - type: Plant
     lifespan: 25
     maturation: 20
@@ -164,14 +164,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractBuffaloGourd:
+      F14ExtractBuffaloGourd:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14WildCabbage
+  id: F14WildCabbage
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -179,8 +179,8 @@
   - type: PlantData
     name: clipping-wild-cabbage-name
     noun: clipping-wild-cabbage-noun
-    packetPrototype: N14FloraWildCabbageClippingSeed
-    productPrototypes: [ N14FloraProduceWildCabbage ]
+    packetPrototype: F14FloraWildCabbageClippingSeed
+    productPrototypes: [ F14FloraProduceWildCabbage ]
   - type: Plant
     lifespan: 25
     maturation: 20
@@ -192,14 +192,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractCabbage:
+      F14ExtractCabbage:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14WildCarrot
+  id: F14WildCarrot
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -207,8 +207,8 @@
   - type: PlantData
     name: clipping-wild-carrot-name
     noun: clipping-wild-carrot-noun
-    packetPrototype: N14FloraWildCarrotClippingSeed
-    productPrototypes: [ N14FloraProduceWildCarrot ]
+    packetPrototype: F14FloraWildCarrotClippingSeed
+    productPrototypes: [ F14FloraProduceWildCarrot ]
   - type: Plant
     lifespan: 25
     maturation: 20
@@ -220,14 +220,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractCarrot:
+      F14ExtractCarrot:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14CoyoteTobacco
+  id: F14CoyoteTobacco
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -235,8 +235,8 @@
   - type: PlantData
     name: clipping-coyote-tobacco-name
     noun: clipping-coyote-tobacco-noun
-    packetPrototype: N14FloraWildCoyoteTobaccoClippingSeed
-    productPrototypes: [ N14FloraProduceWildCoyoteTobacco ]
+    packetPrototype: F14FloraWildCoyoteTobaccoClippingSeed
+    productPrototypes: [ F14FloraProduceWildCoyoteTobacco ]
   - type: Plant
     lifespan: 25
     maturation: 20
@@ -248,14 +248,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractCoyoteTobacco:
+      F14ExtractCoyoteTobacco:
         min: 1
         max: 10
         potencyDivisor: 20
 
 - type: entity
   parent: BasePlant
-  id: N14WildCannabis
+  id: F14WildCannabis
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -263,8 +263,8 @@
   - type: PlantData
     name: clipping-cannabis-name
     noun: clipping-cannabis-noun
-    packetPrototype: MisfitsFloraWildCannabisClippingSeed
-    productPrototypes: [ MisfitsFloraProduceWildCannabis ]
+    packetPrototype: F14FloraWildCannabisClippingSeed
+    productPrototypes: [ F14FloraProduceWildCannabis ]
   - type: Plant
     lifespan: 25
     maturation: 20
@@ -276,14 +276,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      MisfitsExtractCannabis:
+      F14ExtractCannabis:
         min: 1
         max: 10
         potencyDivisor: 20
 
 - type: entity
   parent: BasePlant
-  id: N14Datura
+  id: F14Datura
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -291,8 +291,8 @@
   - type: PlantData
     name: clipping-datura-name
     noun: clipping-datura-noun
-    packetPrototype: N14FloraDaturaClippingSeed
-    productPrototypes: [ N14FloraProduceWildDaturaFlower ]
+    packetPrototype: F14FloraDaturaClippingSeed
+    productPrototypes: [ F14FloraProduceWildDaturaFlower ]
   - type: Plant
     lifespan: 25
     maturation: 20
@@ -304,14 +304,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractDatura:
+      F14ExtractDatura:
         min: 1
         max: 10
         potencyDivisor: 20
 
 - type: entity
   parent: BasePlant
-  id: N14WildGlowpepper
+  id: F14WildGlowpepper
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -319,8 +319,8 @@
   - type: PlantData
     name: clipping-glowpepper-name
     noun: clipping-glowpepper-noun
-    packetPrototype: N14FloraWildGlowpepperClippingSeed
-    productPrototypes: [ N14FloraProduceWildGlowpepper ]
+    packetPrototype: F14FloraWildGlowpepperClippingSeed
+    productPrototypes: [ F14FloraProduceWildGlowpepper ]
   - type: Plant
     lifespan: 25
     maturation: 20
@@ -332,14 +332,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractGlowpepper:
+      F14ExtractGlowpepper:
         min: 1
         max: 10
         potencyDivisor: 20
 
 - type: entity
   parent: BasePlant
-  id: N14WildMaize
+  id: F14WildMaize
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -347,8 +347,8 @@
   - type: PlantData
     name: clipping-maize-name
     noun: clipping-maize-noun
-    packetPrototype: N14FloraWildMaizeClippingSeed
-    productPrototypes: [ N14FloraProduceWildMaize ]
+    packetPrototype: F14FloraWildMaizeClippingSeed
+    productPrototypes: [ F14FloraProduceWildMaize ]
   - type: Plant
     lifespan: 25
     maturation: 15
@@ -371,7 +371,7 @@
 
 - type: entity
   parent: BasePlant
-  id: N14WildMesquite
+  id: F14WildMesquite
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -379,8 +379,8 @@
   - type: PlantData
     name: clipping-mesquite-name
     noun: clipping-mesquite-noun
-    packetPrototype: N14FloraWildHoneyMesquiteClippingSeed
-    productPrototypes: [ N14FloraProduceWildMesquitePods ]
+    packetPrototype: F14FloraWildHoneyMesquiteClippingSeed
+    productPrototypes: [ F14FloraProduceWildMesquitePods ]
   - type: Plant
     lifespan: 25
     maturation: 15
@@ -392,14 +392,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractHoneyMesquitePod:
+      F14ExtractHoneyMesquitePod:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14WildMutfruit
+  id: F14WildMutfruit
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -407,8 +407,8 @@
   - type: PlantData
     name: clipping-mutfruit-name
     noun: clipping-mutfruit-noun
-    packetPrototype: N14FloraWildMutfruitClippingSeed
-    productPrototypes: [ N14FloraProduceWildMutfruit ]
+    packetPrototype: F14FloraWildMutfruitClippingSeed
+    productPrototypes: [ F14FloraProduceWildMutfruit ]
   - type: Plant
     lifespan: 25
     maturation: 15
@@ -420,14 +420,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractMutfruit:
+      F14ExtractMutfruit:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14WildNettle
+  id: F14WildNettle
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -435,8 +435,8 @@
   - type: PlantData
     name: seeds-nettle-name
     noun: seeds-noun-seeds
-    packetPrototype: N14FloraWildNettleClippingSeed
-    productPrototypes: [ N14FloraProduceWildNettle ]
+    packetPrototype: F14FloraWildNettleClippingSeed
+    productPrototypes: [ F14FloraProduceWildNettle ]
   - type: Plant
     lifespan: 25
     maturation: 8
@@ -455,7 +455,7 @@
 
 - type: entity
   parent: BasePlant
-  id: N14WildOnion
+  id: F14WildOnion
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -463,8 +463,8 @@
   - type: PlantData
     name: clipping-wild-onion-name
     noun: clipping-wild-onion-noun
-    packetPrototype: N14FloraWildOnionClippingSeed
-    productPrototypes: [ N14FloraProduceWildOnion ]
+    packetPrototype: F14FloraWildOnionClippingSeed
+    productPrototypes: [ F14FloraProduceWildOnion ]
   - type: Plant
     lifespan: 30
     maturation: 15
@@ -491,7 +491,7 @@
 
 - type: entity
   parent: BasePlant
-  id: N14WildPinyon
+  id: F14WildPinyon
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -499,8 +499,8 @@
   - type: PlantData
     name: clipping-pinyon-name
     noun: clipping-pinyon-noun
-    packetPrototype: N14FloraWildPinyonClippingSeed
-    productPrototypes: [ N14FloraProduceWildPinyonNuts ]
+    packetPrototype: F14FloraWildPinyonClippingSeed
+    productPrototypes: [ F14FloraProduceWildPinyonNuts ]
   - type: Plant
     lifespan: 25
     maturation: 15
@@ -523,7 +523,7 @@
 
 - type: entity
   parent: BasePlant
-  id: N14WildPricklyPear
+  id: F14WildPricklyPear
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -531,8 +531,8 @@
   - type: PlantData
     name: clipping-prickly-pear-name
     noun: clipping-prickly-pear-noun
-    packetPrototype: N14FloraWildPricklyPearClippingSeed
-    productPrototypes: [ N14FloraProduceWildPricklyPearFruit ]
+    packetPrototype: F14FloraWildPricklyPearClippingSeed
+    productPrototypes: [ F14FloraProduceWildPricklyPearFruit ]
   - type: Plant
     lifespan: 25
     maturation: 15
@@ -544,14 +544,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractPricklyPearFruit:
+      F14ExtractPricklyPearFruit:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14WildRazorgrain
+  id: F14WildRazorgrain
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -559,8 +559,8 @@
   - type: PlantData
     name: clipping-wild-razorgrain-name
     noun: clipping-wild-razorgrain-noun
-    packetPrototype: N14FloraWildRazorgrainClippingSeed
-    productPrototypes: [ N14FloraProduceWildRazorgrain ]
+    packetPrototype: F14FloraWildRazorgrainClippingSeed
+    productPrototypes: [ F14FloraProduceWildRazorgrain ]
   - type: Plant
     lifespan: 25
     maturation: 6
@@ -573,14 +573,14 @@
     nutrientConsumption: 0.15
   - type: PlantChemicals
     chemicals:
-      N14ExtractRazorgrainFlour:
+      F14ExtractRazorgrainFlour:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14Starlight
+  id: F14Starlight
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -588,8 +588,8 @@
   - type: PlantData
     name: seeds-starlight-name
     noun: seeds-starlight-seeds
-    packetPrototype: N14FloraWildStarlightBerryClippingSeed
-    productPrototypes: [ N14FloraProduceWildStarlightBerries ]
+    packetPrototype: F14FloraWildStarlightBerryClippingSeed
+    productPrototypes: [ F14FloraProduceWildStarlightBerries ]
   - type: Plant
     lifespan: 30
     maturation: 20
@@ -612,7 +612,7 @@
 
 - type: entity
   parent: BasePlant
-  id: N14Tarberry
+  id: F14Tarberry
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -620,8 +620,8 @@
   - type: PlantData
     name: seeds-tarberry-name
     noun: seeds-tarberry-seeds
-    packetPrototype: N14FloraWildTarberryClippingSeed
-    productPrototypes: [ N14FloraProduceWildTarberries ]
+    packetPrototype: F14FloraWildTarberryClippingSeed
+    productPrototypes: [ F14FloraProduceWildTarberries ]
   - type: Plant
     lifespan: 30
     maturation: 20
@@ -633,14 +633,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractTarberries:
+      F14ExtractTarberries:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14WildTato
+  id: F14WildTato
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -648,8 +648,8 @@
   - type: PlantData
     name: clipping-wild-tato-name
     noun: clipping-wild-tato-noun
-    packetPrototype: N14FloraWildTatoClippingSeed
-    productPrototypes: [ N14FloraProduceWildTato ]
+    packetPrototype: F14FloraWildTatoClippingSeed
+    productPrototypes: [ F14FloraProduceWildTato ]
   - type: Plant
     lifespan: 30
     maturation: 20
@@ -661,14 +661,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractTato:
+      F14ExtractTato:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14WildWhiteHorsenettle
+  id: F14WildWhiteHorsenettle
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -676,8 +676,8 @@
   - type: PlantData
     name: clipping-wild-white-horsenettle-name
     noun: clipping-wild-white-horsenettle-noun
-    packetPrototype: N14FloraWildWhiteHorsenettleClippingSeed
-    productPrototypes: [ N14FloraProduceWildWhiteHorsenettle ]
+    packetPrototype: F14FloraWildWhiteHorsenettleClippingSeed
+    productPrototypes: [ F14FloraProduceWildWhiteHorsenettle ]
   - type: Plant
     lifespan: 30
     maturation: 20
@@ -689,14 +689,14 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractWhiteHorsenettle:
+      F14ExtractWhiteHorsenettle:
         min: 1
         max: 10
         potencyDivisor: 25
 
 - type: entity
   parent: BasePlant
-  id: N14WildXander
+  id: F14WildXander
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -704,8 +704,8 @@
   - type: PlantData
     name: clipping-wild-xander-name
     noun: clipping-wild-xander-noun
-    packetPrototype: N14FloraWildXanderRootClippingSeed
-    productPrototypes: [ N14FloraProduceWildXander ]
+    packetPrototype: F14FloraWildXanderRootClippingSeed
+    productPrototypes: [ F14FloraProduceWildXander ]
   - type: Plant
     lifespan: 30
     maturation: 20
@@ -717,7 +717,7 @@
     waterConsumption: 2
   - type: PlantChemicals
     chemicals:
-      N14ExtractXander:
+      F14ExtractXander:
         min: 1
         max: 10
         potencyDivisor: 25

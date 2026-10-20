@@ -4,7 +4,7 @@
 - type: entity
   name: filing cabinet
   parent: BaseStructureDynamic
-  id: N14FilingCabinet
+  id: F14FilingCabinetBase
   suffix: Empty
   description: "Remember: only you can prevent corporate espionage!"
   components:
@@ -44,13 +44,13 @@
       storagebase: !type:Container
 
 - type: entity
-  parent: [ N14FilingCabinet, MisfitsFilingCabinetTimedStorageFill ] # #Misfits Change: was N14BaseSmallLockerTimedStorageFill; new fill avoids grid overflow on 4x9 grid
-  id: N14FilingCabinetRefilling
+  parent: [ F14FilingCabinetBase, F14FilingCabinetTimedStorageFill ] # #Misfits Change: was F14BaseSmallLockerTimedStorageFill; new fill avoids grid overflow on 4x9 grid
+  id: F14FilingCabinetRefilling
   suffix: Refilling,Random
 
 - type: entity
-  parent: [ N14FilingCabinet, N14BaseSmallLockerStorageFill ]
-  id: N14LootFilingCabinet
+  parent: [ F14FilingCabinetBase, F14BaseSmallLockerStorageFill ]
+  id: F14LootFilingCabinet
   suffix: Loot,Random
   components:
   - type: Storage

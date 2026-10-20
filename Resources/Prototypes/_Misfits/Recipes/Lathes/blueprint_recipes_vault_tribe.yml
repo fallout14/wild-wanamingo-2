@@ -1,30 +1,30 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/blueprint_recipes_vault_tribe.yml
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponPistol10mm
-  result: N14WeaponPistol10mm
+  id: F14BPVaultWeaponPistol10mm
+  result: F14WeaponPistol10mm
   categories:
-  - MisfitsBlueprintVaultWeaponsT1
+  - F14BlueprintVaultWeaponsT1
   completetime: 5
   materials:
     Steel: 2500
     Plastic: 250
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponPoliceBaton
-  result: N14PoliceBaton
+  id: F14BPVaultWeaponPoliceBaton
+  result: F14PoliceBaton
   categories:
-  - MisfitsBlueprintVaultWeaponsT1
+  - F14BlueprintVaultWeaponsT1
   completetime: 3
   materials:
     Steel: 2500
     Plastic: 500
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponLaserPistol
-  result: N14WeaponLaserPistol
+  id: F14BPVaultWeaponLaserPistol
+  result: F14WeaponLaserPistol
   categories:
-  - MisfitsBlueprintVaultWeaponsT1
+  - F14BlueprintVaultWeaponsT1
   completetime: 6
   materials:
     Steel: 1000
@@ -34,30 +34,30 @@
 # #Misfits Add - mediocre kinetic security guns (T1)
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponPistol9mmChinese
-  result: N14WeaponPistol9mmChinese
+  id: F14BPVaultWeaponPistol9mmChinese
+  result: F14WeaponPistol9mmChinese
   categories:
-  - MisfitsBlueprintVaultWeaponsT1
+  - F14BlueprintVaultWeaponsT1
   completetime: 4
   materials:
     Steel: 1500
     Plastic: 100
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponPistolM1911
-  result: MisfitsWeaponPistolM1911
+  id: F14BPVaultWeaponPistolM1911
+  result: F14WeaponPistolM1911
   categories:
-  - MisfitsBlueprintVaultWeaponsT1
+  - F14BlueprintVaultWeaponsT1
   completetime: 6
   materials:
     Steel: 2500
     Plastic: 100
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponShotgunSawedOff
-  result: N14WeaponShotgunSawedOff
+  id: F14BPVaultWeaponShotgunSawedOff
+  result: F14WeaponShotgunSawedOff
   categories:
-  - MisfitsBlueprintVaultWeaponsT1
+  - F14BlueprintVaultWeaponsT1
   completetime: 6
   materials:
     Steel: 2000
@@ -66,23 +66,23 @@
 # --- Vault Tier 2 Weapons (Advanced security) ---
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponSMG10mm
-  result: N14WeaponSMG10mm
+  id: F14BPVaultWeaponSMG10mm
+  result: F14WeaponSMG10mm
   categories:
-  - MisfitsBlueprintVaultWeaponsT2
+  - F14BlueprintVaultWeaponsT2
   completetime: 10
   materials:
     Steel: 3500
     Plastic: 100
-    N14Iron: 500
+    F14Iron: 500
 
 # Recharger variants are intentionally excluded from blueprint crafting.
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponCombatKnife
-  result: N14CombatKnife
+  id: F14BPVaultWeaponCombatKnife
+  result: F14CombatKnife
   categories:
-  - MisfitsBlueprintVaultWeaponsT2
+  - F14BlueprintVaultWeaponsT2
   completetime: 4
   materials:
     Steel: 200
@@ -91,55 +91,55 @@
 # #Misfits Add - mediocre kinetic security guns (T2)
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponRifle10mmM1Carbine
-  result: MisfitsWeaponRifle10mmM1Carbine
+  id: F14BPVaultWeaponRifle10mmM1Carbine
+  result: F14WeaponRifle10mmM1Carbine
   categories:
-  - MisfitsBlueprintVaultWeaponsT2
+  - F14BlueprintVaultWeaponsT2
   completetime: 9
   materials:
     Steel: 3500
     Plastic: 200
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponShotgunTrench
-  result: MisfitsWeaponShotgunTrench
+  id: F14BPVaultWeaponShotgunTrench
+  result: F14WeaponShotgunTrench
   categories:
-  - MisfitsBlueprintVaultWeaponsT2
+  - F14BlueprintVaultWeaponsT2
   completetime: 9
   materials:
     Steel: 3500
-    N14Iron: 700
+    F14Iron: 700
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponSMG10mmChinese
-  result: N14WeaponSMG10mmChinese
+  id: F14BPVaultWeaponSMG10mmChinese
+  result: F14WeaponSMG10mmChinese
   categories:
-  - MisfitsBlueprintVaultWeaponsT2
+  - F14BlueprintVaultWeaponsT2
   completetime: 10
   materials:
     Steel: 3500
     Plastic: 100
-    N14Iron: 500
+    F14Iron: 500
 
 # --- Vault Tier 3 Weapons (R&D energy weapons) ---
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponPlasmaPistol
-  result: N14WeaponPlasmaPistol
+  id: F14BPVaultWeaponPlasmaPistol
+  result: F14WeaponPlasmaPistol
   categories:
-  - MisfitsBlueprintVaultWeaponsT3
+  - F14BlueprintVaultWeaponsT3
   completetime: 14
   materials:
     Steel: 4000
     Glass: 375
     Circuitry: 200
-    N14ScrapElectronic: 200
+    F14ScrapElectronic: 200
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponLaserRifle
-  result: N14WeaponLaserRifle
+  id: F14BPVaultWeaponLaserRifle
+  result: F14WeaponLaserRifle
   categories:
-  - MisfitsBlueprintVaultWeaponsT3
+  - F14BlueprintVaultWeaponsT3
   completetime: 14
   materials:
     Steel: 5000
@@ -148,92 +148,92 @@
     Plastic: 750
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponPlasmaDefender
-  result: N14WeaponPlasmaDefender
+  id: F14BPVaultWeaponPlasmaDefender
+  result: F14WeaponPlasmaDefender
   categories:
-  - MisfitsBlueprintVaultWeaponsT3
+  - F14BlueprintVaultWeaponsT3
   completetime: 14
   materials:
     Steel: 6000
     Glass: 500
     Circuitry: 400
-    N14ScrapElectronic: 250
+    F14ScrapElectronic: 250
 
 # --- Vault Tier 4 Weapons (Experimental prototypes) ---
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponPlasmaRifle
-  result: N14WeaponPlasmaRifle
+  id: F14BPVaultWeaponPlasmaRifle
+  result: F14WeaponPlasmaRifle
   categories:
-  - MisfitsBlueprintVaultWeaponsT4
+  - F14BlueprintVaultWeaponsT4
   completetime: 20
   materials:
     Steel: 4000
     Glass: 1500
     Circuitry: 200
-    N14ScrapElectronic: 150
+    F14ScrapElectronic: 150
     Plastic: 500
-    N14Gold: 200
+    F14Gold: 200
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponLaserRifleWattz2000
-  result: N14WeaponLaserRifleWattz2000
+  id: F14BPVaultWeaponLaserRifleWattz2000
+  result: F14WeaponLaserRifleWattz2000
   categories:
-  - MisfitsBlueprintVaultWeaponsT4
+  - F14BlueprintVaultWeaponsT4
   completetime: 22
   materials:
     Steel: 4000
     Glass: 3500
     Circuitry: 200
-    N14ScrapElectronic: 500
-    N14Gold: 1000
-    N14Copper: 500
+    F14ScrapElectronic: 500
+    F14Gold: 1000
+    F14Copper: 500
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponLaserRifleAuto
-  result: N14WeaponLaserRifleAuto
+  id: F14BPVaultWeaponLaserRifleAuto
+  result: F14WeaponLaserRifleAuto
   categories:
-  - MisfitsBlueprintVaultWeaponsT4
+  - F14BlueprintVaultWeaponsT4
   completetime: 20
   materials:
     Steel: 7000
     Glass: 1500
     Circuitry: 400
-    N14ScrapElectronic: 500
+    F14ScrapElectronic: 500
     Plastic: 750
-    N14Gold: 300
-    N14Silver: 300
+    F14Gold: 300
+    F14Silver: 300
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponLaserRCW
-  result: MisfitsWeaponLaserRCW
+  id: F14BPVaultWeaponLaserRCW
+  result: F14WeaponLaserRCW
   categories:
-  - MisfitsBlueprintVaultWeaponsT4
+  - F14BlueprintVaultWeaponsT4
   completetime: 20
   materials:
     Steel: 6000
     Glass: 2500
     Circuitry: 700
-    N14ScrapElectronic: 575
+    F14ScrapElectronic: 575
     Plastic: 750
-    N14Gold: 500
+    F14Gold: 500
 
 # THE PLASMA CASTER RECIPE (rewards the grind)
 
 - type: latheRecipe
-  id: MisfitsBPVaultWeaponPlasmaCaster
-  result: N14WeaponPlasmaCaster
+  id: F14BPVaultWeaponPlasmaCaster
+  result: F14WeaponPlasmaCaster
   categories:
-  - MisfitsBlueprintVaultWeaponsT4
+  - F14BlueprintVaultWeaponsT4
   completetime: 40
   materials:
     Steel: 40000
     Glass: 5000
     Circuitry: 2000
-    N14ScrapElectronic: 1000
+    F14ScrapElectronic: 1000
     Plastic: 1000
-    N14Gold: 500
-    N14Silver: 500
+    F14Gold: 500
+    F14Silver: 500
 
 # =====================================================================
 # VAULT ARMOR RECIPES
@@ -242,101 +242,101 @@
 # --- Vault Tier 1 Armor ---
 
 - type: latheRecipe
-  id: MisfitsBPVaultArmorVaultSecVest
-  result: N14ClothingOuterVaultSecVest
+  id: F14BPVaultArmorVaultSecVest
+  result: F14ClothingOuterVaultSecVest
   categories:
-  - MisfitsBlueprintVaultArmorT1
+  - F14BlueprintVaultArmorT1
   completetime: 6
   materials:
     Cloth: 1250
-    N14Thread: 500
+    F14Thread: 500
     Plastic: 500
 
 # --- Vault Tier 2 Armor ---
 
 - type: latheRecipe
-  id: MisfitsM14BPVaultAdvancedVestArmor
-  result: MisfitsM14ClothingOuterVaultAdvancedVest
+  id: F14BPVaultAdvancedVestArmor
+  result: F14ClothingOuterVaultAdvancedVest
   categories:
-  - MisfitsBlueprintVaultArmorT2
+  - F14BlueprintVaultArmorT2
   completetime: 8
   materials:
     Cloth: 900
-    N14Thread: 600
+    F14Thread: 600
     Plastic: 1000
     Steel: 1000
-    N14Iron: 100
-    N14Leather: 250
+    F14Iron: 100
+    F14Leather: 250
 
 # --- Vault Tier 3 Armor ---
 
 - type: latheRecipe
-  id: MisfitsBPVaultArmorCombatArmor
-  result: N14ClothingOuterCombatArmor
+  id: F14BPVaultArmorCombatArmor
+  result: F14ClothingOuterCombatArmor
   categories:
-  - MisfitsBlueprintVaultArmorT3
+  - F14BlueprintVaultArmorT3
   completetime: 15
   materials:
     Steel: 4000
     Cloth: 500
-    N14Thread: 250
+    F14Thread: 250
     Plastic: 250
     Circuitry: 200
 
 - type: latheRecipe
-  id: MisfitsBPVaultArmorPoliceCombat
-  result: N14ClothingOuterPoliceCombat
+  id: F14BPVaultArmorPoliceCombat
+  result: F14ClothingOuterPoliceCombat
   categories:
-  - MisfitsBlueprintVaultArmorT3
+  - F14BlueprintVaultArmorT3
   completetime: 14
   materials:
     Steel: 4300
     Cloth: 650
-    N14Thread: 300
+    F14Thread: 300
     Plastic: 500
 
 # --- Vault Tier 4 Armor ---
 
 - type: latheRecipe
-  id: MisfitsBPVaultArmorCombatArmorMK2
-  result: N14ClothingOuterCombatArmorMK2
+  id: F14BPVaultArmorCombatArmorMK2
+  result: F14ClothingOuterCombatArmorMK2
   categories:
-  - MisfitsBlueprintVaultArmorT4
+  - F14BlueprintVaultArmorT4
   completetime: 20
   materials:
     Steel: 7000
     Cloth: 500
-    N14Thread: 200
+    F14Thread: 200
     Circuitry: 400
-    N14ScrapElectronic: 250
+    F14ScrapElectronic: 250
     Plastic: 500
 
 - type: latheRecipe
-  id: MisfitsBPVaultArmorMarineArmor
-  result: N14ClothingOuterMarineArmor
+  id: F14BPVaultArmorMarineArmor
+  result: F14ClothingOuterMarineArmor
   categories:
-  - MisfitsBlueprintVaultArmorT4
+  - F14BlueprintVaultArmorT4
   completetime: 25
   materials:
     Steel: 9000
     Cloth: 800
-    N14Thread: 750
+    F14Thread: 750
     Circuitry: 400
-    N14ScrapElectronic: 1000
-    N14Iron: 1500
+    F14ScrapElectronic: 1000
+    F14Iron: 1500
 
 - type: latheRecipe
-  id: MisfitsBPVaultArmorScoutSuit
-  result: MisfitsClothingOuterVaultScoutSuit
+  id: F14BPVaultArmorScoutSuit
+  result: F14ClothingOuterVaultScoutSuit
   categories:
-  - MisfitsBlueprintVaultArmorT4
+  - F14BlueprintVaultArmorT4
   completetime: 50
   materials:
     Steel: 20000
     Cloth: 1500
-    N14Thread: 1000
+    F14Thread: 1000
     Circuitry: 1500
-    N14ScrapElectronic: 1000
+    F14ScrapElectronic: 1000
     Plastic: 1200
 
 # =====================================================================
@@ -346,130 +346,130 @@
 # --- Vault Tier 1 Ammo ---
 
 - type: latheRecipe
-  id: MisfitsBPVaultAmmoBox10mm
-  result: MisfitsAmmoBox10mm
+  id: F14BPVaultAmmoBox10mm
+  result: F14AmmoBox10mm
   categories:
-  - MisfitsBlueprintVaultAmmoT1
+  - F14BlueprintVaultAmmoT1
   completetime: 4
   materials:
     Lead: 1
-    N14Brass: 50
-    N14Gunpowder: 50
+    F14Brass: 50
+    F14Gunpowder: 50
 
 - type: latheRecipe
-  id: MisfitsBPVaultAmmoMag10mmPistol
-  result: N14MagazinePistol10mm
+  id: F14BPVaultAmmoMag10mmPistol
+  result: F14MagazinePistol10mm
   categories:
-  - MisfitsBlueprintVaultAmmoT1
+  - F14BlueprintVaultAmmoT1
   completetime: 3
   materials:
     Steel: 750
     Lead: 50
-    N14Gunpowder: 25
+    F14Gunpowder: 25
 
 # #Misfits Add - ammo for T1 mediocre security guns (9mm / .45 / 12ga / .22)
 
 - type: latheRecipe
-  id: MisfitsBPVaultAmmoBox9mm
-  result: MisfitsAmmoBox9mm
+  id: F14BPVaultAmmoBox9mm
+  result: F14AmmoBox9mm
   categories:
-  - MisfitsBlueprintVaultAmmoT1
+  - F14BlueprintVaultAmmoT1
   completetime: 4
   materials:
     Lead: 20
-    N14Brass: 10
-    N14Gunpowder: 10
+    F14Brass: 10
+    F14Gunpowder: 10
 
 - type: latheRecipe
-  id: MisfitsBPVaultAmmoMag9mmPistol
-  result: N14MagazinePistol9mm
+  id: F14BPVaultAmmoMag9mmPistol
+  result: F14MagazinePistol9mm
   categories:
-  - MisfitsBlueprintVaultAmmoT1
+  - F14BlueprintVaultAmmoT1
   completetime: 3
   materials:
     Steel: 70
     Lead: 5
-    N14Gunpowder: 5
+    F14Gunpowder: 5
 
 - type: latheRecipe
-  id: MisfitsBPVaultAmmoBox45
-  result: MisfitsAmmoBox45
+  id: F14BPVaultAmmoBox45
+  result: F14AmmoBox45
   categories:
-  - MisfitsBlueprintVaultAmmoT1
+  - F14BlueprintVaultAmmoT1
   completetime: 5
   materials:
     Lead: 25
-    N14Brass: 15
-    N14Gunpowder: 15
+    F14Brass: 15
+    F14Gunpowder: 15
 
 - type: latheRecipe
-  id: MisfitsBPVaultAmmoMag45Pistol
-  result: N14MagazinePistol45
+  id: F14BPVaultAmmoMag45Pistol
+  result: F14MagazinePistol45
   categories:
-  - MisfitsBlueprintVaultAmmoT1
+  - F14BlueprintVaultAmmoT1
   completetime: 4
   materials:
     Steel: 80
     Lead: 5
-    N14Gunpowder: 5
+    F14Gunpowder: 5
 
 - type: latheRecipe
-  id: MisfitsBPVaultAmmoBox12gauge
-  result: MisfitsAmmoBox12gauge
+  id: F14BPVaultAmmoBox12gauge
+  result: F14AmmoBox12gauge
   categories:
-  - MisfitsBlueprintVaultAmmoT1
+  - F14BlueprintVaultAmmoT1
   completetime: 5
   materials:
     Lead: 25
     Plastic: 5
-    N14Gunpowder: 15
+    F14Gunpowder: 15
 
 - type: latheRecipe
-  id: MisfitsBPVaultAmmoBox22lr
-  result: MisfitsAmmoBox22lr
+  id: F14BPVaultAmmoBox22lr
+  result: F14AmmoBox22lr
   categories:
-  - MisfitsBlueprintVaultAmmoT1
+  - F14BlueprintVaultAmmoT1
   completetime: 4
   materials:
     Lead: 20
-    N14Brass: 10
-    N14Gunpowder: 10
+    F14Brass: 10
+    F14Gunpowder: 10
 
 - type: latheRecipe
-  id: MisfitsBPVaultAmmoMagAmerican180Drum
-  result: MisfitsMagazineAmerican180Drum
+  id: F14BPVaultAmmoMagAmerican180Drum
+  result: F14MagazineAmerican180Drum
   categories:
-  - MisfitsBlueprintVaultAmmoT1
+  - F14BlueprintVaultAmmoT1
   completetime: 5
   materials:
     Steel: 120
     Lead: 20
-    N14Gunpowder: 20
+    F14Gunpowder: 20
 
 # --- Vault Tier 2 Ammo ---
 
 - type: latheRecipe
-  id: MisfitsBPVaultAmmoPowerCellSmall
-  result: MisfitsMicrofusionCell # #Misfits Change - consolidated to single generic MFC; weapon controls beam color
+  id: F14BPVaultAmmoPowerCellSmall
+  result: F14MicrofusionCell # #Misfits Change - consolidated to single generic MFC; weapon controls beam color
   categories:
-  - MisfitsBlueprintVaultAmmoT2
+  - F14BlueprintVaultAmmoT2
   completetime: 4
   materials:
     Glass: 500
     Circuitry: 100
-    N14ScrapElectronic: 200
-    N14Gold: 800
+    F14ScrapElectronic: 200
+    F14Gold: 800
 
 - type: latheRecipe
-  id: MisfitsBPVaultAmmoMag10mmSMG
-  result: N14MagazineSMG10mm
+  id: F14BPVaultAmmoMag10mmSMG
+  result: F14MagazineSMG10mm
   categories:
-  - MisfitsBlueprintVaultAmmoT2
+  - F14BlueprintVaultAmmoT2
   completetime: 5
   materials:
     Steel: 500
     Lead: 200
-    N14Gunpowder: 300
+    F14Gunpowder: 300
 
 # --- Vault Tier 3 Ammo ---
 # #Misfits Removed - MFC recipe commented out; consolidated to single generic cell at T2
@@ -479,41 +479,41 @@
 #   category: N14BlueprintVaultAmmoT3
 
 - type: latheRecipe
-  id: MisfitsBPVaultAmmoPlasmaCell
-  result: N14PlasmaCartridge
+  id: F14BPVaultAmmoPlasmaCell
+  result: F14PlasmaCartridge
   categories:
-  - MisfitsBlueprintVaultAmmoT3
+  - F14BlueprintVaultAmmoT3
   completetime: 8
   materials:
     Glass: 450
     Circuitry: 100
-    N14ScrapElectronic: 100
+    F14ScrapElectronic: 100
     Lead: 450
 
 # --- Vault Tier 4 Ammo ---
 
 - type: latheRecipe
-  id: MisfitsBPVaultAmmoPlasmaCartridge
-  result: N14PlasmaShell
+  id: F14BPVaultAmmoPlasmaCartridge
+  result: F14PlasmaShell
   categories:
-  - MisfitsBlueprintVaultAmmoT4
+  - F14BlueprintVaultAmmoT4
   completetime: 10
   materials:
     Glass: 600
     Circuitry: 100
-    N14ScrapElectronic: 100
+    F14ScrapElectronic: 100
     Lead: 600
 
 - type: latheRecipe
-  id: MisfitsBPVaultAmmoElectronChargePack
-  result: MisfitsElectronChargePack
+  id: F14BPVaultAmmoElectronChargePack
+  result: F14ElectronChargePack
   categories:
-  - MisfitsBlueprintVaultAmmoT4
+  - F14BlueprintVaultAmmoT4
   completetime: 4
   materials:
     Glass: 100
     Circuitry: 100
-    N14ScrapElectronic: 100
+    F14ScrapElectronic: 100
     Lead: 100
 
 # #Misfits Removed - MFC recipe commented out; consolidated to single generic cell at T2
@@ -529,353 +529,353 @@
 # --- Tribe Tier 1 Weapons (Basic hunting tools) ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponTribalKnife
-  result: N14TribalKnife
+  id: F14BPTribeWeaponTribalKnife
+  result: F14TribalKnife
   categories:
-  - MisfitsBlueprintTribeWeaponsT1
+  - F14BlueprintTribeWeaponsT1
   completetime: 3
   materials:
-    N14Iron: 750
-    N14Leather: 250
+    F14Iron: 750
+    F14Leather: 250
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponTribalClub
-  result: N14TribalClub
+  id: F14BPTribeWeaponTribalClub
+  result: F14TribalClub
   categories:
-  - MisfitsBlueprintTribeWeaponsT1
+  - F14BlueprintTribeWeaponsT1
   completetime: 3
   materials:
     Wood: 1500
-    N14Leather: 100
+    F14Leather: 100
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponWastelandSpear
-  result: N14WastelandSpear
+  id: F14BPTribeWeaponWastelandSpear
+  result: F14WastelandSpear
   categories:
-  - MisfitsBlueprintTribeWeaponsT1
+  - F14BlueprintTribeWeaponsT1
   completetime: 4
   materials:
     Wood: 1200
-    N14Iron: 500
-    N14Leather: 150
+    F14Iron: 500
+    F14Leather: 150
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponRevolver44Tribal
-  result: N14WeaponRevolver44Tribal
+  id: F14BPTribeWeaponRevolver44Tribal
+  result: F14WeaponRevolver44Tribal
   categories:
-  - MisfitsBlueprintTribeWeaponsT1
+  - F14BlueprintTribeWeaponsT1
   completetime: 5
   materials:
-    N14Iron: 500
-    N14Scrap: 250
+    F14Iron: 500
+    F14Scrap: 250
     Wood: 250
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponBrokenPipe
-  result: N14BrokenPipe
+  id: F14BPTribeWeaponBrokenPipe
+  result: F14BrokenPipe
   categories:
-  - MisfitsBlueprintTribeWeaponsT1
+  - F14BlueprintTribeWeaponsT1
   completetime: 2
   materials:
-    N14Scrap: 1000
+    F14Scrap: 1000
     ScrapSteel: 300
 
 # #Misfits Add - mediocre scavenged kinetic guns (T1)
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponPistol9mmChinese
-  result: N14WeaponPistol9mmChinese
+  id: F14BPTribeWeaponPistol9mmChinese
+  result: F14WeaponPistol9mmChinese
   categories:
-  - MisfitsBlueprintTribeWeaponsT1
+  - F14BlueprintTribeWeaponsT1
   completetime: 4
   materials:
     Steel: 1000
-    N14Scrap: 50
+    F14Scrap: 50
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponPistol12mm
-  result: N14WeaponPistol12mm
+  id: F14BPTribeWeaponPistol12mm
+  result: F14WeaponPistol12mm
   categories:
-  - MisfitsBlueprintTribeWeaponsT1
+  - F14BlueprintTribeWeaponsT1
   completetime: 6
   materials:
     Steel: 2500
-    N14Iron: 500
+    F14Iron: 500
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponShotgunSawedOff
-  result: N14WeaponShotgunSawedOff
+  id: F14BPTribeWeaponShotgunSawedOff
+  result: F14WeaponShotgunSawedOff
   categories:
-  - MisfitsBlueprintTribeWeaponsT1
+  - F14BlueprintTribeWeaponsT1
   completetime: 6
   materials:
     Steel: 2000
     Wood: 1000
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponSniperCowboyRepeater
-  result: MisfitsWeaponSniperCowboyRepeater
+  id: F14BPTribeWeaponSniperCowboyRepeater
+  result: F14WeaponSniperCowboyRepeater
   categories:
-  - MisfitsBlueprintTribeWeaponsT1
+  - F14BlueprintTribeWeaponsT1
   completetime: 6
   materials:
     Steel: 2500
     Wood: 1000
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponRevolver357Detective
-  result: MisfitsWeaponRevolver357Detective
+  id: F14BPTribeWeaponRevolver357Detective
+  result: F14WeaponRevolver357Detective
   categories:
-  - MisfitsBlueprintTribeWeaponsT1
+  - F14BlueprintTribeWeaponsT1
   completetime: 5
   materials:
     Steel: 1500
-    N14Iron: 100
+    F14Iron: 100
 
 # --- Tribe Tier 2 Weapons (Warrior weapons) ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponTribalMachete
-  result: N14TribalMachete
+  id: F14BPTribeWeaponTribalMachete
+  result: F14TribalMachete
   categories:
-  - MisfitsBlueprintTribeWeaponsT2
+  - F14BlueprintTribeWeaponsT2
   completetime: 6
   materials:
-    N14Iron: 1250
-    N14Leather: 250
+    F14Iron: 1250
+    F14Leather: 250
     Wood: 500
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponTribalHatchet
-  result: N14TribalHatchet
+  id: F14BPTribeWeaponTribalHatchet
+  result: F14TribalHatchet
   categories:
-  - MisfitsBlueprintTribeWeaponsT2
+  - F14BlueprintTribeWeaponsT2
   completetime: 5
   materials:
-    N14Iron: 1000
+    F14Iron: 1000
     Wood: 500
-    N14Leather: 100
+    F14Leather: 100
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponTribalSword
-  result: N14TribalSword
+  id: F14BPTribeWeaponTribalSword
+  result: F14TribalSword
   categories:
-  - MisfitsBlueprintTribeWeaponsT2
+  - F14BlueprintTribeWeaponsT2
   completetime: 7
   materials:
-    N14Iron: 1400
-    N14Leather: 300
+    F14Iron: 1400
+    F14Leather: 300
     Cloth: 500
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponRevolver44TribalUpgraded
-  result: N14WeaponRevolver44TribalUpgraded
+  id: F14BPTribeWeaponRevolver44TribalUpgraded
+  result: F14WeaponRevolver44TribalUpgraded
   categories:
-  - MisfitsBlueprintTribeWeaponsT2
+  - F14BlueprintTribeWeaponsT2
   completetime: 7
   materials:
-    N14Iron: 1250
-    N14Scrap: 200
+    F14Iron: 1250
+    F14Scrap: 200
     Steel: 700
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponPistol10mmPipe
-  result: N14WeaponPistol10mmPipe
+  id: F14BPTribeWeaponPistol10mmPipe
+  result: F14WeaponPistol10mmPipe
   categories:
-  - MisfitsBlueprintTribeWeaponsT2
+  - F14BlueprintTribeWeaponsT2
   completetime: 5
   materials:
-    N14Scrap: 1250
+    F14Scrap: 1250
     ScrapSteel: 350
     Wood: 500
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponShotgunPipe
-  result: N14WeaponShotgunPipe
+  id: F14BPTribeWeaponShotgunPipe
+  result: F14WeaponShotgunPipe
   categories:
-  - MisfitsBlueprintTribeWeaponsT2
+  - F14BlueprintTribeWeaponsT2
   completetime: 6
   materials:
-    N14Scrap: 1000
+    F14Scrap: 1000
     ScrapSteel: 700
     Wood: 500
 
 # #Misfits Add - mediocre scavenged kinetic guns (T2)
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponSMGPPSh41
-  result: MisfitsWeaponSMGPPSh41
+  id: F14BPTribeWeaponSMGPPSh41
+  result: F14WeaponSMGPPSh41
   categories:
-  - MisfitsBlueprintTribeWeaponsT2
+  - F14BlueprintTribeWeaponsT2
   completetime: 9
   materials:
     Steel: 3500
-    N14Iron: 700
-    N14Brass: 250
+    F14Iron: 700
+    F14Brass: 250
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponRifle10mmM1Carbine
-  result: MisfitsWeaponRifle10mmM1Carbine
+  id: F14BPTribeWeaponRifle10mmM1Carbine
+  result: F14WeaponRifle10mmM1Carbine
   categories:
-  - MisfitsBlueprintTribeWeaponsT2
+  - F14BlueprintTribeWeaponsT2
   completetime: 9
   materials:
     Steel: 3500
     Wood: 1000
-    N14Iron: 500
+    F14Iron: 500
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponSniper308Ross
-  result: MisfitsWeaponSniper303Ross
+  id: F14BPTribeWeaponSniper308Ross
+  result: F14WeaponSniper303Ross
   categories:
-  - MisfitsBlueprintTribeWeaponsT2
+  - F14BlueprintTribeWeaponsT2
   completetime: 9
   materials:
     Steel: 3500
     Wood: 1500
-    N14Iron: 500
+    F14Iron: 500
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponSniper44LeverShortCarbine
-  result: N14WeaponSniper44LeverShortCarbine
+  id: F14BPTribeWeaponSniper44LeverShortCarbine
+  result: F14WeaponSniper44LeverShortCarbine
   categories:
-  - MisfitsBlueprintTribeWeaponsT2
+  - F14BlueprintTribeWeaponsT2
   completetime: 9
   materials:
     Steel: 3500
     Wood: 1500
-    N14Iron: 500
+    F14Iron: 500
 
 # --- Tribe Tier 3 Weapons (Elder's war knowledge) ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponRevolver44TribalExtra
-  result: N14WeaponRevolver44TribalUpgradedExtra
+  id: F14BPTribeWeaponRevolver44TribalExtra
+  result: F14WeaponRevolver44TribalUpgradedExtra
   categories:
-  - MisfitsBlueprintTribeWeaponsT3
+  - F14BlueprintTribeWeaponsT3
   completetime: 10
   materials:
     Steel: 2000
-    N14Iron: 750
-    N14Scrap: 100
-    N14Brass: 300
+    F14Iron: 750
+    F14Scrap: 100
+    F14Brass: 300
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponHandcannon
-  result: N14WeaponRevolver45-70Handcannon
+  id: F14BPTribeWeaponHandcannon
+  result: F14WeaponRevolver4570Handcannon
   categories:
-  - MisfitsBlueprintTribeWeaponsT3
+  - F14BlueprintTribeWeaponsT3
   completetime: 10
   materials:
     Steel: 4000
-    N14Iron: 800
-    N14Scrap: 300
+    F14Iron: 800
+    F14Scrap: 300
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponTribalBigClub
-  result: N14TribalBigClub
+  id: F14BPTribeWeaponTribalBigClub
+  result: F14TribalBigClub
   categories:
-  - MisfitsBlueprintTribeWeaponsT3
+  - F14BlueprintTribeWeaponsT3
   completetime: 8
   materials:
     Wood: 3000
-    N14Iron: 500
-    N14Leather: 200
+    F14Iron: 500
+    F14Leather: 200
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponTribalSpear
-  result: N14WastelandTribalSpear
+  id: F14BPTribeWeaponTribalSpear
+  result: F14WastelandTribalSpear
   categories:
-  - MisfitsBlueprintTribeWeaponsT3
+  - F14BlueprintTribeWeaponsT3
   completetime: 7
   materials:
     Wood: 1800
-    N14Iron: 1050
-    N14Leather: 150
+    F14Iron: 1050
+    F14Leather: 150
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponSMG12mmPipe
-  result: N14WeaponSMG12mmPipe
+  id: F14BPTribeWeaponSMG12mmPipe
+  result: F14WeaponSMG12mmPipe
   categories:
-  - MisfitsBlueprintTribeWeaponsT3
+  - F14BlueprintTribeWeaponsT3
   completetime: 8
   materials:
-    N14Scrap: 800
+    F14Scrap: 800
     ScrapSteel: 900
-    N14Iron: 1050
+    F14Iron: 1050
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponRifle556Pipe
-  result: N14WeaponRifle556Pipe
+  id: F14BPTribeWeaponRifle556Pipe
+  result: F14WeaponRifle556Pipe
   categories:
-  - MisfitsBlueprintTribeWeaponsT3
+  - F14BlueprintTribeWeaponsT3
   completetime: 8
   materials:
-    N14Scrap: 1150
+    F14Scrap: 1150
     ScrapSteel: 800
     Wood: 1050
 
 # --- Tribe Tier 4 Weapons (Shaman's sacred weapons) ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponHandcannonUpgraded
-  result: N14WeaponRevolver45-70HandcannonUpgraded
+  id: F14BPTribeWeaponHandcannonUpgraded
+  result: F14WeaponRevolver4570HandcannonUpgraded
   categories:
-  - MisfitsBlueprintTribeWeaponsT4
+  - F14BlueprintTribeWeaponsT4
   completetime: 14
   materials:
     Steel: 3500
-    N14Iron: 1000
-    N14Brass: 200
-    N14Leather: 100
+    F14Iron: 1000
+    F14Brass: 200
+    F14Leather: 100
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponTribalBigClubDecorated
-  result: N14TribalBigClubDecorated
+  id: F14BPTribeWeaponTribalBigClubDecorated
+  result: F14TribalBigClubDecorated
   categories:
-  - MisfitsBlueprintTribeWeaponsT4
+  - F14BlueprintTribeWeaponsT4
   completetime: 12
   materials:
     Wood: 3800
-    N14Iron: 1200
-    N14Leather: 500
-    N14Gold: 250
+    F14Iron: 1200
+    F14Leather: 500
+    F14Gold: 250
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponPolearm
-  result: N14WastelandPolearm
+  id: F14BPTribeWeaponPolearm
+  result: F14WastelandPolearm
   categories:
-  - MisfitsBlueprintTribeWeaponsT4
+  - F14BlueprintTribeWeaponsT4
   completetime: 10
   materials:
     Steel: 2500
-    N14Iron: 1000
+    F14Iron: 1000
     Wood: 2000
-    N14Leather: 350
+    F14Leather: 350
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponSniper50Pipe
-  result: N14WeaponSniper50Pipe
+  id: F14BPTribeWeaponSniper50Pipe
+  result: F14WeaponSniper50Pipe
   categories:
-  - MisfitsBlueprintTribeWeaponsT4
+  - F14BlueprintTribeWeaponsT4
   completetime: 14
   materials:
-    N14Scrap: 2000
+    F14Scrap: 2000
     ScrapSteel: 1500
-    N14Iron: 5000
+    F14Iron: 5000
     Wood: 1500
 
 - type: latheRecipe
-  id: MisfitsBPTribeWeaponSuperSledgeHammer
-  result: N14SuperSledgeHammer
+  id: F14BPTribeWeaponSuperSledgeHammer
+  result: F14SuperSledgeHammer
   categories:
-  - MisfitsBlueprintTribeWeaponsT4
+  - F14BlueprintTribeWeaponsT4
   completetime: 16
   materials:
     Steel: 30000
-    N14Iron: 3500
+    F14Iron: 3500
     Wood: 900
-    N14Scrap: 5000
+    F14Scrap: 5000
 
 # =====================================================================
 # TRIBE ARMOR RECIPES
@@ -884,148 +884,148 @@
 # --- Tribe Tier 1 Armor ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorTribalArmor
-  result: N14ClothingOuterTribalArmor
+  id: F14BPTribeArmorTribalArmor
+  result: F14ClothingOuterTribalArmor
   categories:
-  - MisfitsBlueprintTribeArmorT1
+  - F14BlueprintTribeArmorT1
   completetime: 5
   materials:
-    N14Leather: 100
+    F14Leather: 100
     Cloth: 750
-    N14Thread: 500
+    F14Thread: 500
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorDrylanderSimple
-  result: N14ClothingOuterdrylandersimple
+  id: F14BPTribeArmorDrylanderSimple
+  result: F14ClothingOuterdrylandersimple
   categories:
-  - MisfitsBlueprintTribeArmorT1
+  - F14BlueprintTribeArmorT1
   completetime: 4
   materials:
     Cloth: 100
-    N14Thread: 750
-    N14Leather: 50
+    F14Thread: 750
+    F14Leather: 50
 
 # --- Tribe Tier 2 Armor ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorBandito
-  result: N14ClothingOuterBandito
+  id: F14BPTribeArmorBandito
+  result: F14ClothingOuterBandito
   categories:
-  - MisfitsBlueprintTribeArmorT2
+  - F14BlueprintTribeArmorT2
   completetime: 7
   materials:
-    N14Leather: 175
+    F14Leather: 175
     Cloth: 1250
-    N14Thread: 100
+    F14Thread: 100
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorForager
-  result: N14ClothingOuterforager
+  id: F14BPTribeArmorForager
+  result: F14ClothingOuterforager
   categories:
-  - MisfitsBlueprintTribeArmorT2
+  - F14BlueprintTribeArmorT2
   completetime: 7
   materials:
-    N14Leather: 150
+    F14Leather: 150
     Cloth: 150
-    N14Thread: 100
+    F14Thread: 100
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorHunter
-  result: N14ClothingOuterhunter
+  id: F14BPTribeArmorHunter
+  result: F14ClothingOuterhunter
   categories:
-  - MisfitsBlueprintTribeArmorT2
+  - F14BlueprintTribeArmorT2
   completetime: 7
   materials:
-    N14Leather: 175
+    F14Leather: 175
     Cloth: 1250
-    N14Thread: 100
+    F14Thread: 100
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorPoncho
-  result: N14ClothingOuterponcho
+  id: F14BPTribeArmorPoncho
+  result: F14ClothingOuterponcho
   categories:
-  - MisfitsBlueprintTribeArmorT2
+  - F14BlueprintTribeArmorT2
   completetime: 6
   materials:
     Cloth: 1200
-    N14Thread: 125
-    N14Leather: 50
+    F14Thread: 125
+    F14Leather: 50
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorHeadtaker
-  result: N14ClothingOuterheadtaker
+  id: F14BPTribeArmorHeadtaker
+  result: F14ClothingOuterheadtaker
   categories:
-  - MisfitsBlueprintTribeArmorT2
+  - F14BlueprintTribeArmorT2
   completetime: 11
   materials:
-    N14Leather: 275
-    N14Iron: 100
+    F14Leather: 275
+    F14Iron: 100
     Cloth: 1750
-    N14Thread: 750
+    F14Thread: 750
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorShaman
-  result: N14ClothingOutershaman
+  id: F14BPTribeArmorShaman
+  result: F14ClothingOutershaman
   categories:
-  - MisfitsBlueprintTribeArmorT2
+  - F14BlueprintTribeArmorT2
   completetime: 10
   materials:
     Cloth: 2000
-    N14Thread: 1750
-    N14Leather: 1500
+    F14Thread: 1750
+    F14Leather: 1500
 
 # --- Tribe Tier 3 Armor ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorTribalArmorHeavy
-  result: N14ClothingOuterTribalArmorHeavy
+  id: F14BPTribeArmorTribalArmorHeavy
+  result: F14ClothingOuterTribalArmorHeavy
   categories:
-  - MisfitsBlueprintTribeArmorT3
+  - F14BlueprintTribeArmorT3
   completetime: 12
   materials:
-    N14Leather: 200
-    N14Iron: 1200
+    F14Leather: 200
+    F14Iron: 1200
     Cloth: 200
-    N14Thread: 150
+    F14Thread: 150
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorCombatTribal
-  result: N14ClothingOuterCombatTribal
+  id: F14BPTribeArmorCombatTribal
+  result: F14ClothingOuterCombatTribal
   categories:
-  - MisfitsBlueprintTribeArmorT3
+  - F14BlueprintTribeArmorT3
   completetime: 14
   materials:
-    N14Leather: 300
+    F14Leather: 300
     Steel: 3000
     Cloth: 1050
-    N14Thread: 900
+    F14Thread: 900
 
 # --- Tribe Tier 4 Armor ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorRadArmor
-  result: N14ClothingOuterRadArmor
+  id: F14BPTribeArmorRadArmor
+  result: F14ClothingOuterRadArmor
   categories:
-  - MisfitsBlueprintTribeArmorT4
+  - F14BlueprintTribeArmorT4
   completetime: 18
   materials:
-    N14Leather: 300
+    F14Leather: 300
     Steel: 2500
-    N14Iron: 1300
+    F14Iron: 1300
     Cloth: 200
-    N14Thread: 150
+    F14Thread: 150
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorInsectArmor
-  result: N14ClothingOuterInsectArmor
+  id: F14BPTribeArmorInsectArmor
+  result: F14ClothingOuterInsectArmor
   categories:
-  - MisfitsBlueprintTribeArmorT4
+  - F14BlueprintTribeArmorT4
   completetime: 16
   materials:
-    N14Leather: 350
+    F14Leather: 350
     Cloth: 200
-    N14Thread: 150
-    N14Iron: 1200
+    F14Thread: 150
+    F14Iron: 1200
 
 # =====================================================================
 # TRIBE AMMO RECIPES
@@ -1034,213 +1034,213 @@
 # --- Tribe Tier 1 Ammo ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoBox44Magnum
-  result: MisfitsAmmoBox44Magnum
+  id: F14BPTribeAmmoBox44Magnum
+  result: F14AmmoBox44Magnum
   categories:
-  - MisfitsBlueprintTribeAmmoT1
+  - F14BlueprintTribeAmmoT1
   completetime: 5
   materials:
     Lead: 1
-    N14Scrap: 50
-    N14Gunpowder: 75
+    F14Scrap: 50
+    F14Gunpowder: 75
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoBox10mm
-  result: MisfitsAmmoBox10mm
+  id: F14BPTribeAmmoBox10mm
+  result: F14AmmoBox10mm
   categories:
-  - MisfitsBlueprintTribeAmmoT1
+  - F14BlueprintTribeAmmoT1
   completetime: 4
   materials:
     Lead: 1
-    N14Scrap: 50
-    N14Gunpowder: 50
+    F14Scrap: 50
+    F14Gunpowder: 50
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoSpeedLoader44
-  result: MisfitsSpeedLoader44Magnum
+  id: F14BPTribeAmmoSpeedLoader44
+  result: F14SpeedLoader44Magnum
   categories:
-  - MisfitsBlueprintTribeAmmoT1
+  - F14BlueprintTribeAmmoT1
   completetime: 3
   materials:
     Lead: 75
-    N14Scrap: 50
-    N14Gunpowder: 50
+    F14Scrap: 50
+    F14Gunpowder: 50
 
 # #Misfits Add - ammo for T1 mediocre guns (9mm / 12mm mag / .357)
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoBox9mm
-  result: MisfitsAmmoBox9mm
+  id: F14BPTribeAmmoBox9mm
+  result: F14AmmoBox9mm
   categories:
-  - MisfitsBlueprintTribeAmmoT1
+  - F14BlueprintTribeAmmoT1
   completetime: 4
   materials:
     Lead: 20
-    N14Scrap: 10
-    N14Gunpowder: 10
+    F14Scrap: 10
+    F14Gunpowder: 10
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoMag9mmPistol
-  result: N14MagazinePistol9mm
+  id: F14BPTribeAmmoMag9mmPistol
+  result: F14MagazinePistol9mm
   categories:
-  - MisfitsBlueprintTribeAmmoT1
+  - F14BlueprintTribeAmmoT1
   completetime: 3
   materials:
     Steel: 70
     Lead: 5
-    N14Gunpowder: 5
+    F14Gunpowder: 5
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoMagPistol12mm
-  result: N14MagazinePistol12mm
+  id: F14BPTribeAmmoMagPistol12mm
+  result: F14MagazinePistol12mm
   categories:
-  - MisfitsBlueprintTribeAmmoT1
+  - F14BlueprintTribeAmmoT1
   completetime: 4
   materials:
     Steel: 90
     Lead: 6
-    N14Gunpowder: 6
+    F14Gunpowder: 6
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoBox357
-  result: MisfitsAmmoBox357
+  id: F14BPTribeAmmoBox357
+  result: F14AmmoBox357
   categories:
-  - MisfitsBlueprintTribeAmmoT1
+  - F14BlueprintTribeAmmoT1
   completetime: 4
   materials:
     Lead: 25
-    N14Scrap: 15
-    N14Gunpowder: 15
+    F14Scrap: 15
+    F14Gunpowder: 15
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoSpeedLoader357
-  result: MisfitsSpeedLoader357
+  id: F14BPTribeAmmoSpeedLoader357
+  result: F14SpeedLoader357
   categories:
-  - MisfitsBlueprintTribeAmmoT1
+  - F14BlueprintTribeAmmoT1
   completetime: 3
   materials:
     Lead: 10
-    N14Scrap: 5
-    N14Gunpowder: 5
+    F14Scrap: 5
+    F14Gunpowder: 5
 
 # --- Tribe Tier 2 Ammo ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoBox12gauge
-  result: MisfitsAmmoBox12gauge
+  id: F14BPTribeAmmoBox12gauge
+  result: F14AmmoBox12gauge
   categories:
-  - MisfitsBlueprintTribeAmmoT2
+  - F14BlueprintTribeAmmoT2
   completetime: 5
   materials:
     Lead: 150
-    N14Scrap: 75
-    N14Gunpowder: 1
+    F14Scrap: 75
+    F14Gunpowder: 1
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoBox556
-  result: MisfitsAmmoBox556
+  id: F14BPTribeAmmoBox556
+  result: F14AmmoBox556
   categories:
-  - MisfitsBlueprintTribeAmmoT2
+  - F14BlueprintTribeAmmoT2
   completetime: 6
   materials:
     Lead: 150
-    N14Scrap: 75
-    N14Gunpowder: 1
+    F14Scrap: 75
+    F14Gunpowder: 1
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoMag10mmPipe
-  result: N14MagazinePistol10mm
+  id: F14BPTribeAmmoMag10mmPipe
+  result: F14MagazinePistol10mm
   categories:
-  - MisfitsBlueprintTribeAmmoT2
+  - F14BlueprintTribeAmmoT2
   completetime: 4
   materials:
-    N14Scrap: 75
+    F14Scrap: 75
     Lead: 75
-    N14Gunpowder: 50
+    F14Gunpowder: 50
 
 # #Misfits Add - ammo for T2 mediocre guns (9mm drum; .308 box already exists at T3)
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoMag9mmSMGDrum
-  result: MisfitsMagazineSMG9mmDrum
+  id: F14BPTribeAmmoMag9mmSMGDrum
+  result: F14MagazineSMG9mmDrum
   categories:
-  - MisfitsBlueprintTribeAmmoT2
+  - F14BlueprintTribeAmmoT2
   completetime: 6
   materials:
     Steel: 200
     Lead: 60
-    N14Gunpowder: 60
+    F14Gunpowder: 60
 
 # --- Tribe Tier 3 Ammo ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoBox127
-  result: MisfitsAmmoBox127
+  id: F14BPTribeAmmoBox127
+  result: F14AmmoBox127
   categories:
-  - MisfitsBlueprintTribeAmmoT3
+  - F14BlueprintTribeAmmoT3
   completetime: 7
   materials:
     Lead: 2
-    N14Scrap: 1
-    N14Gunpowder: 150
+    F14Scrap: 1
+    F14Gunpowder: 150
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoBox308
-  result: MisfitsAmmoBox308
+  id: F14BPTribeAmmoBox308
+  result: F14AmmoBox308
   categories:
-  - MisfitsBlueprintTribeAmmoT3
+  - F14BlueprintTribeAmmoT3
   completetime: 8
   materials:
     Lead: 250
-    N14Scrap: 125
-    N14Gunpowder: 175
+    F14Scrap: 125
+    F14Gunpowder: 175
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoSpeedLoader45-70
-  result: MisfitsSpeedLoader45-70
+  id: F14BPTribeAmmoSpeedLoader4570
+  result: F14SpeedLoader4570
   categories:
-  - MisfitsBlueprintTribeAmmoT3
+  - F14BlueprintTribeAmmoT3
   completetime: 5
   materials:
     Lead: 125
-    N14Scrap: 75
-    N14Gunpowder: 1
+    F14Scrap: 75
+    F14Gunpowder: 1
 
 # --- Tribe Tier 4 Ammo ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoBox50
-  result: MisfitsAmmoBox50
+  id: F14BPTribeAmmoBox50
+  result: F14AmmoBox50
   categories:
-  - MisfitsBlueprintTribeAmmoT4
+  - F14BlueprintTribeAmmoT4
   completetime: 12
   materials:
     Lead: 4
-    N14Scrap: 2
-    N14Gunpowder: 3
-    N14Iron: 1
+    F14Scrap: 2
+    F14Gunpowder: 3
+    F14Iron: 1
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoBox45-70
-  result: MisfitsAmmoBox45-70
+  id: F14BPTribeAmmoBox4570
+  result: F14AmmoBox4570
   categories:
-  - MisfitsBlueprintTribeAmmoT4
+  - F14BlueprintTribeAmmoT4
   completetime: 10
   materials:
     Lead: 350
-    N14Scrap: 175
-    N14Gunpowder: 250
+    F14Scrap: 175
+    F14Gunpowder: 250
 
 - type: latheRecipe
-  id: MisfitsBPTribeAmmoMag556Pipe
-  result: N14Magazine556Rifle
+  id: F14BPTribeAmmoMag556Pipe
+  result: F14Magazine556Rifle
   categories:
-  - MisfitsBlueprintTribeAmmoT4
+  - F14BlueprintTribeAmmoT4
   completetime: 6
   materials:
-    N14Scrap: 150
+    F14Scrap: 150
     Lead: 150
-    N14Gunpowder: 1
+    F14Gunpowder: 1
 
 # =====================================================================
 # #Misfits Add - HELMET RECIPES
@@ -1252,10 +1252,10 @@
 # --- Vault Tier 1 Helmets (security riot) ---
 
 - type: latheRecipe
-  id: MisfitsBPVaultArmorHelmetVaultRiot
-  result: N14ClothingHeadHatVaultRiot
+  id: F14BPVaultArmorHelmetVaultRiot
+  result: F14ClothingHeadHatVaultRiot
   categories:
-  - MisfitsBlueprintVaultArmorT1
+  - F14BlueprintVaultArmorT1
   completetime: 4
   materials:
     Steel: 300
@@ -1265,190 +1265,190 @@
 # --- Vault Tier 2 Helmets (basic metal) ---
 
 - type: latheRecipe
-  id: MisfitsM14BPVaultArmorHelmetAdvancedRiot
-  result: MisfitsM14ClothingHeadHatVaultRiotHelmet
+  id: F14BPVaultArmorHelmetAdvancedRiot
+  result: F14ClothingHeadHatVaultRiotHelmet
   categories:
-  - MisfitsBlueprintVaultArmorT2
+  - F14BlueprintVaultArmorT2
   completetime: 5
   materials:
     Steel: 500
     Cloth: 500
-    N14Leather: 100
+    F14Leather: 100
     Plastic: 500
 
 - type: latheRecipe
-  id: MisfitsBPVaultArmorHelmetMetal
-  result: MisfitsClothingHeadHatVaultBlueprintHelmetMetal
+  id: F14BPVaultArmorHelmetMetal
+  result: F14ClothingHeadHatVaultBlueprintHelmetMetal
   categories:
-  - MisfitsBlueprintVaultArmorT2
+  - F14BlueprintVaultArmorT2
   completetime: 5
   materials:
     Steel: 800
     Cloth: 300
-    N14Leather: 30
+    F14Leather: 30
 
 # --- Vault Tier 3 Helmets (combat) ---
 
 - type: latheRecipe
-  id: MisfitsBPVaultArmorHelmetCombat
-  result: N14ClothingHeadHatCombatHelmet
+  id: F14BPVaultArmorHelmetCombat
+  result: F14ClothingHeadHatCombatHelmet
   categories:
-  - MisfitsBlueprintVaultArmorT3
+  - F14BlueprintVaultArmorT3
   completetime: 8
   materials:
     Steel: 800
     Cloth: 800
-    N14Leather: 40
+    F14Leather: 40
     Plastic: 600
 
 # --- Vault Tier 4 Helmets (combat MK2 / marine) ---
 
 - type: latheRecipe
-  id: MisfitsBPVaultArmorHelmetCombatMK2
-  result: N14ClothingHeadHatCombatHelmetMK2
+  id: F14BPVaultArmorHelmetCombatMK2
+  result: F14ClothingHeadHatCombatHelmetMK2
   categories:
-  - MisfitsBlueprintVaultArmorT4
+  - F14BlueprintVaultArmorT4
   completetime: 12
   materials:
     Steel: 900
     Cloth: 100
-    N14Leather: 50
+    F14Leather: 50
     Circuitry: 50
 
 - type: latheRecipe
-  id: MisfitsBPVaultArmorHelmetMarine
-  result: N14ClothingHeadHatBaseHelmetmarine
+  id: F14BPVaultArmorHelmetMarine
+  result: F14ClothingHeadHatBaseHelmetmarine
   categories:
-  - MisfitsBlueprintVaultArmorT4
+  - F14BlueprintVaultArmorT4
   completetime: 12
   materials:
     Steel: 3000
     Cloth: 1000
-    N14Leather: 500
+    F14Leather: 500
     Circuitry: 400
 
 # --- Tribe Tier 1 Helmets (head wraps / drylander) ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorRadstagSkull
-  result: N14ClothingTribalRadstagSkull
+  id: F14BPTribeArmorRadstagSkull
+  result: F14ClothingTribalRadstagSkull
   categories:
-  - MisfitsBlueprintTribeArmorT1
+  - F14BlueprintTribeArmorT1
   completetime: 8
   materials:
-    N14Leather: 25
-    N14Thread: 8
+    F14Leather: 25
+    F14Thread: 8
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorHelmetTribalShamanHeadband
-  result: N14ClothingTribalShamanHeadband
+  id: F14BPTribeArmorHelmetTribalShamanHeadband
+  result: F14ClothingTribalShamanHeadband
   categories:
-  - MisfitsBlueprintTribeArmorT1
+  - F14BlueprintTribeArmorT1
   completetime: 5
   materials:
     Cloth: 12
-    N14Thread: 8
-    N14Leather: 5
+    F14Thread: 8
+    F14Leather: 5
 
 # --- Tribe Tier 2 Helmets (warrior wraps / hunter hood) ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorHelmetTribalHeadWraps
-  result: N14ClothingTribalHeadWraps
+  id: F14BPTribeArmorHelmetTribalHeadWraps
+  result: F14ClothingTribalHeadWraps
   categories:
-  - MisfitsBlueprintTribeArmorT1
+  - F14BlueprintTribeArmorT1
   completetime: 3
   materials:
     Cloth: 8
-    N14Thread: 5
+    F14Thread: 5
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorHelmetDrylanderGoggles
-  result: N14ClothingDrylanderGoggles
+  id: F14BPTribeArmorHelmetDrylanderGoggles
+  result: F14ClothingDrylanderGoggles
   categories:
-  - MisfitsBlueprintTribeArmorT2
+  - F14BlueprintTribeArmorT2
   completetime: 4
   materials:
-    N14Leather: 5
+    F14Leather: 5
     Cloth: 4
     Glass: 100
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorHelmetTribalShemagh
-  result: N14ClothingTribalShemagh
+  id: F14BPTribeArmorHelmetTribalShemagh
+  result: F14ClothingTribalShemagh
   categories:
-  - MisfitsBlueprintTribeArmorT2
+  - F14BlueprintTribeArmorT2
   completetime: 4
   materials:
     Cloth: 10
-    N14Thread: 6
+    F14Thread: 6
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorHelmetTribalHunterHood
-  result: N14ClothingTribalHunterHood
+  id: F14BPTribeArmorHelmetTribalHunterHood
+  result: F14ClothingTribalHunterHood
   categories:
-  - MisfitsBlueprintTribeArmorT2
+  - F14BlueprintTribeArmorT2
   completetime: 5
   materials:
     Cloth: 12
-    N14Thread: 8
-    N14Leather: 5
+    F14Thread: 8
+    F14Leather: 5
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorHelmetTribalShamanHat
-  result: N14ClothingTribalShamanHat
+  id: F14BPTribeArmorHelmetTribalShamanHat
+  result: F14ClothingTribalShamanHat
   categories:
-  - MisfitsBlueprintTribeArmorT2
+  - F14BlueprintTribeArmorT2
   completetime: 6
   materials:
     Cloth: 15
-    N14Thread: 10
-    N14Leather: 11
+    F14Thread: 10
+    F14Leather: 11
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorHelmetHeadtakerwraps
-  result: N14ClothingHeadTakerwraps
+  id: F14BPTribeArmorHelmetHeadtakerwraps
+  result: F14ClothingHeadTakerwraps
   categories:
-  - MisfitsBlueprintTribeArmorT2
+  - F14BlueprintTribeArmorT2
   completetime: 6
   materials:
     Cloth: 15
-    N14Thread: 10
-    N14Leather: 8
+    F14Thread: 10
+    F14Leather: 8
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorHelmetHelmetOfPeace
-  result: MisfitsTribalHelmetofPeace
+  id: F14BPTribeArmorHelmetHelmetOfPeace
+  result: F14TribalHelmetofPeace
   categories:
-  - MisfitsBlueprintTribeArmorT2
+  - F14BlueprintTribeArmorT2
   completetime: 10
   materials: # TODO: use Broc and Xander in the actual construction, when Tribe gets its BP adjustments
     Cloth: 15
-    N14Thread: 10
-    N14Leather: 11
+    F14Thread: 10
+    F14Leather: 11
 
 # --- Tribe Tier 3 Helmets (champion / shaman) ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorHelmetRadstagSkull
-  result: MisfitsClothingHeadRadstagHelmet
+  id: F14BPTribeArmorHelmetRadstagSkull
+  result: F14ClothingHeadRadstagHelmet
   categories:
-  - MisfitsBlueprintTribeArmorT3
+  - F14BlueprintTribeArmorT3
   completetime: 8
   materials:
-    N14Leather: 20
+    F14Leather: 20
     Steel: 500
-    N14Thread: 10
+    F14Thread: 10
 
 # --- Tribe Tier 4 Helmets (sacred / elder) ---
 
 - type: latheRecipe
-  id: MisfitsBPTribeArmorHelmetEdlerSkullhelm
-  result: N14ClothingHeadHatEdlerSkullhelm
+  id: F14BPTribeArmorHelmetEdlerSkullhelm
+  result: F14ClothingHeadHatEdlerSkullhelm
   categories:
-  - MisfitsBlueprintTribeArmorT4
+  - F14BlueprintTribeArmorT4
   completetime: 10
   materials:
-    N14Leather: 32
+    F14Leather: 32
     Steel: 1500
-    N14Thread: 10
+    F14Thread: 10

@@ -2,7 +2,7 @@
 
 - type: entity
   name: Pickles
-  id: MisfitsMobPetPickles
+  id: F14MobPetPickles
   parent: MobPossum
   description: A heavyset wasteland opossum, genetically enhanced into a cuddly, domesticated companion. Truly patriotic.
   components:
@@ -15,7 +15,7 @@
   - type: DamageStateVisuals # MobPossum has no Critical entry, so it must be redeclared here
     states:
       Alive:
-        Base: MisfitsPickles
+        Base: F14Pickles
       Critical:
         Base: pickles_dead
       Dead:
@@ -28,7 +28,7 @@
     allowRevives: true # so medics can bring Pickles back, same as every other N14 pet
   - type: Inventory
     speciesId: possum
-    templateId: MisfitsPickles
+    templateId: F14Pickles
   - type: Hands # on its own this only allows dragging - BorgHands is what makes real slots
   - type: BorgHands # #Misfits Add - AddHand on MapInit, gives Pickles actual holdable hand slots
     handCount: 2
@@ -41,4 +41,4 @@
       proper: true
   - type: NpcFactionMember
     factions:
-      - N14Enclave
+      - F14Enclave

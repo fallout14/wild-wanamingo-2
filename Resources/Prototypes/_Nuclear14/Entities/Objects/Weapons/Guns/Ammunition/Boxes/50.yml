@@ -4,15 +4,15 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: N14BaseMagazineBox50
+  id: F14BaseMagazineBox50
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14Cartridge50
-        - N14Cartridge50HEIAP
-    proto: N14Cartridge50
+        - F14Cartridge50
+        - F14Cartridge50HEIAP
+    proto: F14Cartridge50
     capacity: 30
   - type: ContainerContainer
     containers:
@@ -28,25 +28,25 @@
   - type: FoldableAmmoBox #Misfits Change /Add/: Empty cardboard ammo boxes can fold back into one cardboard sheet.
 
 - type: entity
-  parent: N14BaseMagazineBox50
-  id: N14MagazineBox50
+  parent: F14BaseMagazineBox50
+  id: F14MagazineBox50
   name: ammunition box (.50 anti materiel)
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge50
+    proto: F14Cartridge50
   - type: Sprite
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
 
 - type: entity
-  parent: N14BaseMagazineBox50
-  id: N14MagazineBox50HEIAP
+  parent: F14BaseMagazineBox50
+  id: F14MagazineBox50HEIAP
   name: ammunition box (.50 anti materiel)
   suffix: HEIAP
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge50HEIAP
+    proto: F14Cartridge50HEIAP
   - type: Sprite
     layers:
     - state: base

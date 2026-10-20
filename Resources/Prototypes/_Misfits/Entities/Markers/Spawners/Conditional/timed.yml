@@ -2,8 +2,8 @@
 
 - type: entity
   name: Raider Timed Spawner - Rifle
-  id: MisfitsTimedSpawnerRaiderPsychoHunter
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerRaiderPsychoHunter
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -13,7 +13,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRaiderHunter
+        - F14MobRaiderHunter
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -21,8 +21,8 @@
 
 - type: entity
   name: Raider Timed Spawner - Shotgun
-  id: MisfitsTimedSpawnerRaiderPsychoSkrimisher
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerRaiderPsychoSkrimisher
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -32,7 +32,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRaiderSkrimisher
+        - F14MobRaiderSkrimisher
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -40,8 +40,8 @@
 
 - type: entity
   name: Gunners Timed Spawner - Private
-  id: MisfitsTimedSpawnerRaiderFernPrivate
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerRaiderFernPrivate
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -51,7 +51,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobFernMercPrivate
+        - F14MobFernMercPrivate
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -59,8 +59,8 @@
 
 - type: entity
   name: Gunners Timed Spawner - Sergeant
-  id: MisfitsTimedSpawnerRaiderFernSergeant
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerRaiderFernSergeant
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -70,7 +70,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobFernMercSergeant
+        - F14MobFernMercSergeant
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -78,8 +78,8 @@
 
 - type: entity
   name: Gunners Timed Spawner - Lieutenant
-  id: MisfitsTimedSpawnerRaiderFern
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerRaiderFern
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -89,7 +89,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobFernMercLieutenant
+        - F14MobFernMercLieutenant
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -97,8 +97,8 @@
 
 - type: entity
   name: Enforcer Timed Spawner - Trooper
-  id: MisfitsTimedSpawnerRaiderEnforcerTrooper
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerRaiderEnforcerTrooper
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -108,7 +108,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobEnforcerTrooper
+        - F14MobEnforcerTrooper
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -116,8 +116,8 @@
 
 - type: entity
   name: Enforcer Timed Spawner - Warden
-  id: MisfitsTimedSpawnerRaiderEnforcerWarden
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerRaiderEnforcerWarden
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -127,7 +127,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobEnforcerWarden
+        - F14MobEnforcerWarden
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -135,8 +135,8 @@
 
 - type: entity
   name: Enforcer Timed Spawner - Chief
-  id: MisfitsTimedSpawnerRaiderEnforcerChief
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerRaiderEnforcerChief
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -146,7 +146,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobEnforcerChief
+        - F14MobEnforcerChief
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -156,8 +156,8 @@
 
 - type: entity
   name: Gunners Timed Spawner - Melee
-  id: MisfitsTimedSpawnerRaiderFernMelee
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerRaiderFernMelee
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -167,7 +167,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRaiderFernMelee
+        - F14MobRaiderFernMelee
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -175,8 +175,8 @@
 
 - type: entity
   name: Enforcer Timed Spawner - Melee
-  id: MisfitsTimedSpawnerRaiderEnforcerMelee
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerRaiderEnforcerMelee
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -186,7 +186,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRaiderEnforcerMelee
+        - F14MobRaiderEnforcerMelee
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -196,8 +196,8 @@
 
 - type: entity
   name: Feral Ghoul Timed Spawner
-  id: MisfitsTimedSpawnerFeralGhoul
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerFeralGhoul
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -207,7 +207,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobGhoulFeral
+        - F14MobGhoulFeral
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -215,8 +215,8 @@
 
 - type: entity
   name: Feral Ghoul Reaver Timed Spawner
-  id: MisfitsTimedSpawnerFeralGhoulReaver
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerFeralGhoulReaver
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -226,7 +226,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobGhoulFeralReaver
+        - F14MobGhoulFeralReaver
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -234,8 +234,8 @@
 
 - type: entity
   name: Feral Ghoul Rotter Timed Spawner
-  id: MisfitsTimedSpawnerFeralGhoulRotter
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerFeralGhoulRotter
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -245,7 +245,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobGhoulFeralRotter
+        - F14MobGhoulFeralRotter
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -253,8 +253,8 @@
 
 - type: entity
   name: Maypole Timed Spawner
-  id: MisfitsTimedSpawnerGhoulMaypole
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerGhoulMaypole
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -264,7 +264,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobGhoulMaypole
+        - F14MobGhoulMaypole
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -274,8 +274,8 @@
 
 - type: entity
   name: Assaultron Timed Spawner
-  id: MisfitsTimedSpawnerAssaultron
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerAssaultron
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -285,7 +285,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRobotAssaultronHostile
+        - F14MobRobotAssaultronHostile
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -293,8 +293,8 @@
 
 - type: entity
   name: Protectron Timed Spawner
-  id: MisfitsTimedSpawnerProtectron
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerProtectron
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -304,7 +304,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRobotProtectronHostile
+        - F14MobRobotProtectronHostile
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -312,8 +312,8 @@
 
 - type: entity
   name: Protectron Builder Timed Spawner
-  id: MisfitsTimedSpawnerProtectronBuilder
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerProtectronBuilder
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -323,7 +323,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRobotProtectronBuilderHostile
+        - F14MobRobotProtectronBuilderHostile
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -331,8 +331,8 @@
 
 - type: entity
   name: Protectron Fire Timed Spawner
-  id: MisfitsTimedSpawnerProtectronFire
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerProtectronFire
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -342,7 +342,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRobotProtectronFireHostile
+        - F14MobRobotProtectronFireHostile
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -350,8 +350,8 @@
 
 - type: entity
   name: Protectron Police Timed Spawner
-  id: MisfitsTimedSpawnerProtectronPoliceHostile
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerProtectronPoliceHostile
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -361,7 +361,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRobotProtectronPoliceHostile
+        - F14MobRobotProtectronPoliceHostile
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -369,8 +369,8 @@
 
 - type: entity
   name: Mr Handy Timed Spawner
-  id: MisfitsTimedSpawnerMrHandyClaw
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerMrHandyClaw
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -380,7 +380,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRobotMrHandyClaw
+        - F14MobRobotMrHandyClaw
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -388,8 +388,8 @@
 
 - type: entity
   name: Mr Handy Gun Timed Spawner
-  id: MisfitsTimedSpawnerMrHandyGun
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerMrHandyGun
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -399,7 +399,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRobotMrHandyGun
+        - F14MobRobotMrHandyGun
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -407,8 +407,8 @@
 
 - type: entity
   name: Mr Handy Saw Timed Spawner
-  id: MisfitsTimedSpawnerMrHandySaw
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerMrHandySaw
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -418,7 +418,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRobotMrHandySaw
+        - F14MobRobotMrHandySaw
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -426,8 +426,8 @@
 
 - type: entity
   name: Mr Gutsy Timed Spawner
-  id: MisfitsTimedSpawnerMrHandyGutsy
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerMrHandyGutsy
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -437,7 +437,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRobotMrHandyGutsy
+        - F14MobRobotMrHandyGutsy
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -445,8 +445,8 @@
 
 - type: entity
   name: Robobrain Timed Spawner
-  id: MisfitsTimedSpawnerRobobrain
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerRobobrain
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -456,7 +456,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRobotRobobrain
+        - F14MobRobotRobobrain
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -464,8 +464,8 @@
 
 - type: entity
   name: Eyebot Timed Spawner
-  id: MisfitsTimedSpawnerEyebot
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerEyebot
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -475,7 +475,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRobotEyebot
+        - F14MobRobotEyebot
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1
@@ -483,8 +483,8 @@
 
 - type: entity
   name: Spore Plant Timed Spawner
-  id: MisfitsTimedSpawnerSporePlant
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerSporePlant
+  parent: F14TimedSpawnerMolerat
   components:
     - type: Sprite
       layers:
@@ -494,7 +494,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobSporeplant
+        - F14MobSporeplant
       chance: 0.65
       intervalSeconds: 1500
       minimumEntitiesSpawned: 1

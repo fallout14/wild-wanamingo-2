@@ -3,7 +3,7 @@
 - type: entity
   name: Radtoad
   parent: SimpleMobBase
-  id: MisfitsMobRadtoad
+  id: F14MobRadtoad
   description: Mutated offspring of the Boreal Toad, they are bred and domesticated by the Willowers Tribe. Nearly extinct when discovered, their spawning pool is fiecely protected within the village.
   components:
   - type: Sprite
@@ -42,7 +42,7 @@
     # #Misfits Fix - Super Mutants and Power Armor wearers are too heavy to ride
     blacklist:
       tags:
-      - MisfitsCannotRide
+      - F14CannotRide
       components:
       - PowerArmorWorn
   - type: Mountable

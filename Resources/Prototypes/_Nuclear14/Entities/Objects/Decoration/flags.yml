@@ -1,0 +1,48 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Decoration/flags.yml
+
+- type: entity
+  parent: BaseItem
+  id: F14DecorationFlagpoleNCR
+  name: New California Republic Flagpole
+  description: The banner of the New California Republic, a nation that despite enemies within and without, has done its best to provide comfort and equality to its citizens. The flag stands proud and tall, a challenge to those around it.
+  suffix: Mapping
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Decoration/Flags/ncr_flagpole.rsi
+    state: icon
+    noRot: true
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 10
+    soundHit:
+      collection: MetalThud
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 5
+  - type: Item
+    size: Huge
+  - type: UseDelay
+    delay: 1
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+        # N14TODO: Needs inhands sprites
+
+  #MBoS Flagpole

@@ -1,244 +1,244 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/MedLoot/Tier2Meds/Tier2MedTables.yml
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2_Common
+  id: F14MedsLootTier2Common
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14HealingPowder
+      id: F14HealingPowder
       weight: 20
     - !type:EntSelector
-      id: N14StimpakDirty
+      id: F14StimpakDirty
       weight: 10
     - !type:EntSelector
-      id: N14CleanGauze10
+      id: F14CleanGauze10
       weight: 20
     - !type:EntSelector
-      id: N14DirtyGauze10
+      id: F14DirtyGauze10
       weight: 30
     - !type:EntSelector
-      id: N14RadAwayInhalerTrash
+      id: F14RadAwayInhalerTrash
       weight: 15
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2_AntiRad
+  id: F14MedsLootTier2AntiRad
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14RadAwayInhalerTrash
+      id: F14RadAwayInhalerTrash
       weight: 10
     - !type:EntSelector
-      id: N14RadXPill
+      id: F14RadXPill
       weight: 25
     - !type:EntSelector
-      id: MisfitsCleansingPowder
+      id: F14CleansingPowder
       weight: 10
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2Plus_AntiRadRare
+  id: F14MedsLootTier2PlusAntiRadRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14RadAwayInhaler
+      id: F14RadAwayInhaler
       weight: 10
     - !type:EntSelector
-      id: N14RadXCanisterFilled
+      id: F14RadXCanisterFilled
       weight: 10
     - !type:EntSelector
-      id: N14RadAwayBloodbag
+      id: F14RadAwayBloodbag
       weight: 5
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2_UncommonPowder
+  id: F14MedsLootTier2UncommonPowder
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14HealingPowder
+      id: F14HealingPowder
       weight: 15
     - !type:EntSelector
-      id: N14CleanGauze10
+      id: F14CleanGauze10
       weight: 4
     - !type:EntSelector
-      id: N14DirtyGauze10
+      id: F14DirtyGauze10
       weight: 10
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2_UncommonStim
+  id: F14MedsLootTier2UncommonStim
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14StimpakDirty
+      id: F14StimpakDirty
       weight: 8
     - !type:EntSelector
-      id: N14CleanGauze10
+      id: F14CleanGauze10
       weight: 6
     - !type:EntSelector
-      id: N14DirtyGauze10
+      id: F14DirtyGauze10
       weight: 12
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2_UncommonPureHeal
+  id: F14MedsLootTier2UncommonPureHeal
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14HealingPowder
+      id: F14HealingPowder
       weight: 12
     - !type:EntSelector
-      id: N14StimpakDirty
+      id: F14StimpakDirty
       weight: 6
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2_PlusRareTribal
+  id: F14MedsLootTier2PlusRareTribal
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14SmellingSalts
+      id: F14SmellingSalts
       weight: 6
     - !type:EntSelector
-      id: N14HealingPoultice
+      id: F14HealingPoultice
       weight: 10
     - !type:EntSelector
-      id: N14Bitterdrink
+      id: F14Bitterdrink
       weight: 8
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2_PlusRare
+  id: F14MedsLootTier2PlusRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14SmellingSalts
+      id: F14SmellingSalts
       weight: 5
     - !type:EntSelector
-      id: N14Stimpak
+      id: F14Stimpak
       weight: 8
     - !type:EntSelector
-      id: N14HealingPoultice
+      id: F14HealingPoultice
       weight: 8
     - !type:EntSelector
-      id: N14RadAwayInhaler
+      id: F14RadAwayInhaler
       weight: 8
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2_SuperRare
+  id: F14MedsLootTier2SuperRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14SmellingSalts
+      id: F14SmellingSalts
       weight: 4
     - !type:EntSelector
-      id: N14Stimpak
+      id: F14Stimpak
       weight: 2
     - !type:EntSelector
-      id: N14RadAwayBloodbag
+      id: F14RadAwayBloodbag
       weight: 2
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2_Drugs
+  id: F14MedsLootTier2Drugs
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14RadXPill
+      id: F14RadXPill
       weight: 10
     - !type:EntSelector
-      id: N14CateyePill
+      id: F14CateyePill
       weight: 5
     - !type:EntSelector
-      id: N14MentatsPill
+      id: F14MentatsPill
       weight: 10
     - !type:EntSelector
-      id: N14BuffoutPill
+      id: F14BuffoutPill
       weight: 8
     - !type:EntSelector
-      id: N14BuffjetPill
+      id: F14BuffjetPill
       weight: 1
     - !type:EntSelector
-      id: N14BufftatsPill
+      id: F14BufftatsPill
       weight: 1
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2_DrugsUncommon
+  id: F14MedsLootTier2DrugsUncommon
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14RadXPill
+      id: F14RadXPill
       weight: 10
     - !type:EntSelector
-      id: N14MentatsPill
+      id: F14MentatsPill
       weight: 10
     - !type:EntSelector
-      id: N14BuffoutPill
+      id: F14BuffoutPill
       weight: 8
     - !type:EntSelector
-      id: N14BuffjetPill
+      id: F14BuffjetPill
       weight: 1
     - !type:EntSelector
-      id: N14BufftatsPill
+      id: F14BufftatsPill
       weight: 1
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2_DrugsUncommonAlt
+  id: F14MedsLootTier2DrugsUncommonAlt
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14RadXPill
+      id: F14RadXPill
       weight: 8
     - !type:EntSelector
-      id: N14MentatsPill
+      id: F14MentatsPill
       weight: 8
     - !type:EntSelector
-      id: N14BuffoutPill
+      id: F14BuffoutPill
       weight: 15
     - !type:EntSelector
-      id: N14CateyeCanisterFilled
+      id: F14CateyeCanisterFilled
       weight: 8
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2Plus_DrugsRare
+  id: F14MedsLootTier2PlusDrugsRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14RadXCanisterFilled
+      id: F14RadXCanisterFilled
       weight: 10
     - !type:EntSelector
-      id: N14BuffoutCanisterFilled
+      id: F14BuffoutCanisterFilled
       weight: 10
     - !type:EntSelector
-      id: N14MentatsCanisterFilled
+      id: F14MentatsCanisterFilled
       weight: 15
     - !type:EntSelector
-      id: N14BuffjetPill
+      id: F14BuffjetPill
       weight: 25
     - !type:EntSelector
-      id: N14BufftatsPill
+      id: F14BufftatsPill
       weight: 25
     - !type:EntSelector
-      id: N14JetInhaler
+      id: F14JetInhaler
       weight: 20
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2Plus_DrugsSuperRare
+  id: F14MedsLootTier2PlusDrugsSuperRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14BuffoutCanisterFilled
+      id: F14BuffoutCanisterFilled
       weight: 50
     - !type:EntSelector
-      id: N14FixerPill
+      id: F14FixerPill
       weight: 10
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier2Plus_AltDrugsSuperRare
+  id: F14MedsLootTier2PlusAltDrugsSuperRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14Med-X
+      id: F14MedX
       weight: 10
     - !type:EntSelector
-      id: N14Psycho
+      id: F14Psycho
       weight: 15
     - !type:EntSelector
-      id: N14Hydra
+      id: F14Hydra
       weight: 5
     - !type:EntSelector
-      id: N14Turbo
+      id: F14Turbo
       weight: 5

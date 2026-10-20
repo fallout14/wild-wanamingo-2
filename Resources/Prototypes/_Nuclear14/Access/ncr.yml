@@ -2,61 +2,61 @@
 # Resources/Prototypes/_Nuclear14/Access/ncr.yml
 
 - type: accessLevel
-  id: N14NCRLT
+  id: F14NCRLT
   name: id-card-access-level-ncr-lt
 
 - type: accessLevel
-  id: N14NCRRanger
+  id: F14NCRRanger
   name: id-card-access-level-ncr-ranger
 
 - type: accessLevel
-  id: N14NCRSGT
+  id: F14NCRSGT
   name: id-card-access-level-ncr-sgt
 
 - type: accessLevel
-  id: N14NCRMedic
+  id: F14NCRMedic
   name: id-card-access-level-ncr-medic
 
 - type: accessLevel
-  id: N14NCR
+  id: F14NCR
   name: id-card-access-level-ncr
 
 # #Misfits Add - Office of Science and Industry records and laboratory access.
 
 - type: accessGroup
-  id: N14NCR
+  id: F14NCR
   #Misfits Change /Fix/: Base NCR access should only open base NCR doors.
   tags:
-  - N14NCR
+  - F14NCR
 
 - type: accessGroup
-  id: N14NCRMedic
+  id: F14NCRMedic
   #Misfits Change /Fix/: NCR medics inherit base NCR access plus medic spaces.
   tags:
-  - N14NCR
-  - N14NCRMedic
+  - F14NCR
+  - F14NCRMedic
 
 - type: accessGroup
-  id: N14NCRSGT
+  id: F14NCRSGT
   #Misfits Change /Fix/: NCR NCOs inherit base NCR access plus NCO spaces.
   tags:
-  - N14NCR
-  - N14NCRSGT
+  - F14NCR
+  - F14NCRSGT
 
 - type: accessGroup
-  id: N14NCRLT
+  id: F14NCRLT
   #Misfits Change /Fix/: NCR officers inherit base, NCO, medical, and officer spaces.
   tags:
-  - N14NCR
-  - N14NCRSGT
-  - N14NCRMedic
-  - N14NCRLT
+  - F14NCR
+  - F14NCRSGT
+  - F14NCRMedic
+  - F14NCRLT
 
 - type: accessGroup
-  id: N14NCRRanger
+  id: F14NCRRanger
   #Misfits Change /Fix/: NCR Rangers inherit their specialist access alongside shared NCR base access.
   tags:
-  - N14NCR
-  - N14NCRSGT
-  - N14NCRMedic
-  - N14NCRRanger
+  - F14NCR
+  - F14NCRSGT
+  - F14NCRMedic
+  - F14NCRRanger

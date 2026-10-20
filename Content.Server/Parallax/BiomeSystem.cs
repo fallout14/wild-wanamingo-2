@@ -381,6 +381,11 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
             if (biome.LifeStage < ComponentLifeStage.Running)
                 continue;
 
+            // WW Change - also skip maps that haven't been initialized (mapping mode): admin ghosts load terrain, and
+            // the generated rocks and flora would be saved into the map.
+            if (!_mapSystem.IsInitialized(Transform(gridUid).MapUid))
+                continue;
+
             if (!biome.Enabled)
                 continue;
 

@@ -1,35 +1,35 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Structures/Doors/access_slanted.yml
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: MisfitsDoorAirlockSlantedVaultCargo
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedVaultCargo
   suffix: Vault Cargo Specialist, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ MisfitsDoorElectronicsVaultCargo ]
+      board: [ F14DoorElectronicsVaultCargo ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: MisfitsDoorAirlockSlantedVaultCourier
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedVaultCourier
   suffix: Vault Courier, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ MisfitsDoorElectronicsVaultCourier ]
+      board: [ F14DoorElectronicsVaultCourier ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: MisfitsDoorAirlockSlantedVaultSalvage
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedVaultSalvage
   suffix: Vault Salvage Specialist, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ MisfitsDoorElectronicsVaultSalvage ]
+      board: [ F14DoorElectronicsVaultSalvage ]
   - type: Wires
     layoutId: HighSec
 

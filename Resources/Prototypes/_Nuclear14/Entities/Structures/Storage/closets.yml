@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClosetBase
-  id: N14ClosetBase
+  id: F14ClosetBase
   abstract: true
   components:
   - type: Sprite
@@ -25,8 +25,8 @@
     delay: 3600
 
 - type: entity
-  parent: N14ClosetBase
-  id: N14ClosetBaseW
+  parent: F14ClosetBase
+  id: F14ClosetBaseW
   name: closet
   description: A basic closet for storing things.
   components:
@@ -49,75 +49,75 @@
     stateDoorClosed: closet_door
 
 - type: entity
-  parent: N14ClosetBaseW
-  id: N14ClosetGrey1
+  parent: F14ClosetBaseW
+  id: F14ClosetGrey1
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/Closets/closetgrey.rsi
   - type: Weldable
 
 - type: entity
-  parent: [ N14ClosetGrey1, N14TimedStorageFillDomestic ]
-  id: N14ClosetGrey1Refilling
+  parent: [ F14ClosetGrey1, F14TimedStorageFillDomestic ]
+  id: F14ClosetGrey1Refilling
   suffix: Refilling,Domestic,Random
 
 - type: entity
-  parent: [ N14ClosetGrey1, N14StorageFillDomestic ]
-  id: N14LootClosetGrey1
+  parent: [ F14ClosetGrey1, F14StorageFillDomestic ]
+  id: F14LootClosetGrey1
   suffix: Loot,Domestic,Random
   components:
   - type: EntityStorage
     capacity: 34
 
 - type: entity
-  parent: [ N14ClosetGrey1, N14BaseLockerTimedStorageFill ]
-  id: N14ClosetGrey1RefillingGeneric
+  parent: [ F14ClosetGrey1, F14BaseLockerTimedStorageFill ]
+  id: F14ClosetGrey1RefillingGeneric
   suffix: Refilling,Generic,Random
 
 - type: entity
-  parent: [ N14ClosetGrey1, N14BaseLockerStorageFill ]
-  id: N14LootGenericClosetGrey1
+  parent: [ F14ClosetGrey1, F14BaseLockerStorageFill ]
+  id: F14LootGenericClosetGrey1
   suffix: Loot,Generic,Random
   components:
   - type: EntityStorage
     capacity: 40
 
 - type: entity
-  id: N14ClosetGrey2
-  parent: N14ClosetBaseW
+  id: F14ClosetGrey2
+  parent: F14ClosetBaseW
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/Closets/closetgrey2.rsi
 
 - type: entity
-  parent: [ N14ClosetGrey2, N14TimedStorageFillDomestic ]
-  id: N14ClosetGrey2Refilling
+  parent: [ F14ClosetGrey2, F14TimedStorageFillDomestic ]
+  id: F14ClosetGrey2Refilling
   suffix: Refilling,Domestic,Random
 
 - type: entity
-  parent: [ N14ClosetGrey2, N14StorageFillDomestic ]
-  id: N14LootClosetGrey2
+  parent: [ F14ClosetGrey2, F14StorageFillDomestic ]
+  id: F14LootClosetGrey2
   suffix: Loot,Domestic,Random
   components:
   - type: EntityStorage
     capacity: 34
 
 - type: entity
-  parent: [ N14ClosetGrey2, N14BaseLockerTimedStorageFill ]
-  id: N14ClosetGrey2RefillingGeneric
+  parent: [ F14ClosetGrey2, F14BaseLockerTimedStorageFill ]
+  id: F14ClosetGrey2RefillingGeneric
   suffix: Refilling,Generic,Random
 
 - type: entity
-  parent: [ N14ClosetGrey2, N14BaseLockerStorageFill ]
-  id: N14LootGenericClosetGrey2
+  parent: [ F14ClosetGrey2, F14BaseLockerStorageFill ]
+  id: F14LootGenericClosetGrey2
   suffix: Loot,Generic,Random
   components:
   - type: EntityStorage
     capacity: 40
 
 - type: entity
-  parent: N14ClosetBaseW
-  id: N14ClosetRusty
+  parent: F14ClosetBaseW
+  id: F14ClosetRusty
   name: rusty closet
   description: A rusty old closet for storing things.
   components:
@@ -125,34 +125,34 @@
     sprite: Nuclear14/Structures/Storage/Closets/closetold.rsi
 
 - type: entity
-  parent: [ N14ClosetRusty, N14TimedStorageFillDomestic ]
-  id: N14ClosetRustyRefilling
+  parent: [ F14ClosetRusty, F14TimedStorageFillDomestic ]
+  id: F14ClosetRustyRefilling
   suffix: Refilling,Domestic,Random
 
 - type: entity
-  parent: [ N14ClosetRusty, N14StorageFillDomestic ]
-  id: N14LootClosetRusty
+  parent: [ F14ClosetRusty, F14StorageFillDomestic ]
+  id: F14LootClosetRusty
   suffix: Loot,Domestic,Random
   components:
   - type: EntityStorage
     capacity: 34
 
 - type: entity
-  parent: [ N14ClosetRusty, N14BaseLockerTimedStorageFill ]
-  id: N14ClosetRustyRefillingGeneric
+  parent: [ F14ClosetRusty, F14BaseLockerTimedStorageFill ]
+  id: F14ClosetRustyRefillingGeneric
   suffix: Refilling,Generic,Random
 
 - type: entity
-  parent: [ N14ClosetRusty, N14BaseLockerStorageFill ]
-  id: N14LootGenericClosetRusty
+  parent: [ F14ClosetRusty, F14BaseLockerStorageFill ]
+  id: F14LootGenericClosetRusty
   suffix: Loot,Generic,Random
   components:
   - type: EntityStorage
     capacity: 40
 
 - type: entity
-  parent: N14ClosetBaseW
-  id: N14ClosetGunCabinet
+  parent: F14ClosetBaseW
+  id: F14ClosetGunCabinet
   name: gun cabinet
   description: A secure cabinet for storing guns.
   components:
@@ -160,18 +160,18 @@
     sprite: Nuclear14/Structures/Storage/Closets/guncabinet.rsi
 
 - type: entity
-  parent: [ N14ClosetGunCabinet, N14BaseMilitaryTimedStorageFill ]
-  id: N14ClosetGunCabinetRefilling
+  parent: [ F14ClosetGunCabinet, F14BaseMilitaryTimedStorageFill ]
+  id: F14ClosetGunCabinetRefilling
   suffix: Refilling,Military,Random
 
 - type: entity
-  parent: [ N14ClosetGunCabinet, N14BaseMilitaryStorageFill ]
-  id: N14LootClosetGunCabinet
+  parent: [ F14ClosetGunCabinet, F14BaseMilitaryStorageFill ]
+  id: F14LootClosetGunCabinet
   suffix: Loot,Military,Random
 
 - type: entity
-  parent: N14ClosetBaseW
-  id: N14ClosetFridgeDirty
+  parent: F14ClosetBaseW
+  id: F14ClosetFridgeDirty
   name: fridge
   description: A dirty old fridge for keeping food fresh
   components:
@@ -182,8 +182,8 @@
   - type: AntiRottingContainer
 
 - type: entity
-  parent: N14ClosetFridgeDirty
-  id: N14ClosetFridgeWideDirty
+  parent: F14ClosetFridgeDirty
+  id: F14ClosetFridgeWideDirty
   name: fridge
   description: A dirty old fridge for keeping food fresh
   components:
@@ -191,13 +191,13 @@
     sprite: Nuclear14/Structures/Storage/Closets/fridgewidedirty.rsi
 
 - type: entity
-  parent: [ N14ClosetFridgeDirty, N14ClosetFridgeWideDirty, N14ClosetFridgeFill ]
-  id: N14LootClosetFridge
+  parent: [ F14ClosetFridgeDirty, F14ClosetFridgeWideDirty, F14ClosetFridgeFill ]
+  id: F14LootClosetFridge
   suffix: Loot,Domestic,Random
 
 - type: entity
-  parent: N14ClosetBaseW
-  id: N14ClosetDouble
+  parent: F14ClosetBaseW
+  id: F14ClosetDouble
   name: double closet
   description: A double closet for holding twice the things.
   components:
@@ -216,26 +216,26 @@
         - MachineLayer
 
 - type: entity
-  parent: [ N14ClosetDouble, N14TimedStorageFillDomestic ]
-  id: N14ClosetDoubleRefilling
+  parent: [ F14ClosetDouble, F14TimedStorageFillDomestic ]
+  id: F14ClosetDoubleRefilling
   suffix: Refilling,Domestic,Random
 
 - type: entity
-  parent: [ N14ClosetDouble, N14StorageFillDomestic ]
-  id: N14LootClosetDouble
+  parent: [ F14ClosetDouble, F14StorageFillDomestic ]
+  id: F14LootClosetDouble
   suffix: Loot,Domestic,Random
   components:
   - type: EntityStorage
     capacity: 34
 
 - type: entity
-  parent: [ N14ClosetDouble, N14BaseLockerTimedStorageFill ]
-  id: N14ClosetDoubleRefillingGeneric
+  parent: [ F14ClosetDouble, F14BaseLockerTimedStorageFill ]
+  id: F14ClosetDoubleRefillingGeneric
   suffix: Refilling,Generic,Random
 
 - type: entity
-  parent: [ N14ClosetDouble, N14BaseLockerStorageFill ]
-  id: N14LootGenericClosetDouble
+  parent: [ F14ClosetDouble, F14BaseLockerStorageFill ]
+  id: F14LootGenericClosetDouble
   suffix: Loot,Generic,Random
 
 # Wooden Closets
@@ -244,8 +244,8 @@
     capacity: 40
 
 - type: entity
-  parent: N14ClosetBase
-  id: N14ClosetCabinetWood
+  parent: F14ClosetBase
+  id: F14ClosetCabinetWood
   name: cabinet
   description: An old pre-war wooden cabinet.
   components:
@@ -269,7 +269,7 @@
           MaterialWoodPlank:
             min: 0
             max: 1
-          N14ScrapBrass1:
+          F14ScrapBrass1:
             min: 0
             max: 1
       - !type:DoActsBehavior
@@ -279,56 +279,56 @@
     - Wooden
 
 - type: entity
-  parent: [ N14ClosetCabinetWood, N14TimedStorageFillDomestic ]
-  id: N14ClosetCabinetWoodRefilling
+  parent: [ F14ClosetCabinetWood, F14TimedStorageFillDomestic ]
+  id: F14ClosetCabinetWoodRefilling
   suffix: Refilling,Domestic,Random
 
 - type: entity
-  parent: [ N14ClosetCabinetWood, N14StorageFillDomestic ]
-  id: N14LootClosetCabinetWood
+  parent: [ F14ClosetCabinetWood, F14StorageFillDomestic ]
+  id: F14LootClosetCabinetWood
   suffix: Loot,Domestic,Random
   components:
   - type: EntityStorage
     capacity: 34
 
 - type: entity
-  parent: N14ClosetBaseW
-  id: N14ClosetEnclave
+  parent: F14ClosetBaseW
+  id: F14ClosetEnclave
   suffix: enclave roller
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/Closets/closetenclave.rsi
 
 - type: entity
-  parent: N14ClosetBaseW
-  id: N14ClosetGeneric
+  parent: F14ClosetBaseW
+  id: F14ClosetGeneric
   suffix: generic roller
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/Closets/closetgeneric.rsi
 
 - type: entity
-  parent: [ N14ClosetGeneric, N14BaseLockerStorageFill ]
-  id: N14LootClosetGeneric
+  parent: [ F14ClosetGeneric, F14BaseLockerStorageFill ]
+  id: F14LootClosetGeneric
   suffix: Loot,Generic,Random
   components:
   - type: EntityStorage
     capacity: 40
 
 - type: entity
-  parent: [ N14ClosetGeneric, N14BaseMilitaryStorageFill ]
-  id: N14LootMilitaryClosetGeneric
+  parent: [ F14ClosetGeneric, F14BaseMilitaryStorageFill ]
+  id: F14LootMilitaryClosetGeneric
   suffix: Loot,Military,Random
 
 - type: entity
-  parent: [ N14ClosetGeneric, N14BaseMilitaryTimedStorageFill ]
-  id: N14ClosetGenericRefillingMilitary
+  parent: [ F14ClosetGeneric, F14BaseMilitaryTimedStorageFill ]
+  id: F14ClosetGenericRefillingMilitary
   suffix: Refilling,Military,Random
 
 # Wallmounted Closets
 
 - type: entity
-  id: N14ClosetWallMedicabinet
+  id: F14ClosetWallMedicabinet
   placement:
     mode: SnapgridCenter
   name: medicabinet
@@ -387,11 +387,11 @@
             max: 1
 
 - type: entity
-  parent: [ N14ClosetWallMedicabinet, N14TimedStorageFillMedical ]
-  id: N14ClosetWallMedicabinetRefilling
+  parent: [ F14ClosetWallMedicabinet, F14TimedStorageFillMedical ]
+  id: F14ClosetWallMedicabinetRefilling
   suffix: Refilling,Medical,Random
 
 - type: entity
-  parent: [ N14ClosetWallMedicabinet, N14StorageFillMedical ]
-  id: N14LootClosetWallMedicabinet
+  parent: [ F14ClosetWallMedicabinet, F14StorageFillMedical ]
+  id: F14LootClosetWallMedicabinet
   suffix: Loot,Medical,Random

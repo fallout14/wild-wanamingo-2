@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Projectiles/impacts.yml
 
 - type: entity
-  id: MisfitsPlasmaMuzzleFlashEffect
+  id: F14PlasmaMuzzleFlashEffect
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
@@ -20,7 +20,7 @@
   - type: AnimationPlayer
 
 - type: entity
-  id: MisfitsBulletPlasmaImpactEffect
+  id: F14BulletPlasmaImpactEffect
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn

@@ -1,0 +1,54 @@
+// Ported from Corvax Forge content carried by Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Content.Shared/_NC/Trade/Ui/Contracts/ContractClientData.cs
+
+using Robust.Shared.Serialization;
+
+namespace Content.Shared._Forge.Trade;
+
+[Serializable, NetSerializable]
+public sealed class ContractClientData
+{
+    public bool Completed;
+    public string Description = string.Empty;
+    public string Difficulty = string.Empty;
+    public string Id = string.Empty;
+    // #Misfits Add — true when the player has not yet unlocked this tier
+    public bool Locked;
+    public string Name = string.Empty;
+    public int Progress;
+
+    public bool Repeatable;
+    public int Required;
+    public List<ContractRewardData> Rewards = new();
+
+    public string TargetItem = string.Empty;
+
+    public List<ContractTargetClientData> Targets = new();
+
+    public ContractClientData() { }
+
+    public ContractClientData(
+        string id,
+        string name,
+        string difficulty,
+        string description,
+        bool repeatable,
+        bool completed,
+        string targetItem,
+        int required,
+        int progress,
+        List<ContractTargetClientData> targets,
+        List<ContractRewardData> rewards)
+    {
+        Id = id;
+        Name = name;
+        Difficulty = difficulty;
+        Description = description;
+        Repeatable = repeatable;
+        Completed = completed;
+        TargetItem = targetItem;
+        Required = required;
+        Progress = progress;
+        Targets = targets;
+        Rewards = rewards;
+    }
+}

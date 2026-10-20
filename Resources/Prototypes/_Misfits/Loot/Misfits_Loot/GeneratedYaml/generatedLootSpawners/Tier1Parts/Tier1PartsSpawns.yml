@@ -3,1091 +3,1091 @@
 - type: entity
   name: Tier1 Parts ScrapHomeAll Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_ScrapHomeAll
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleScrapHomeAll
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeAll
+      tableId: F14PartsLootTier1ScrapHomeAll
 
 - type: entity
   name: Tier1 Parts ScrapHomeAll 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_ScrapHomeAll
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03ScrapHomeAll
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeAll
+      tableId: F14PartsLootTier1ScrapHomeAll
 
 - type: entity
   name: Tier1 Parts ScrapHomeAll 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_ScrapHomeAll
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12ScrapHomeAll
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeAll
+      tableId: F14PartsLootTier1ScrapHomeAll
 
 - type: entity
   name: Tier1 Parts ScrapHomeGarage Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_ScrapHomeGarage
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleScrapHomeGarage
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeGarage
+      tableId: F14PartsLootTier1ScrapHomeGarage
 
 - type: entity
   name: Tier1 Parts ScrapHomeGarage 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_ScrapHomeGarage
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03ScrapHomeGarage
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeGarage
+      tableId: F14PartsLootTier1ScrapHomeGarage
 
 - type: entity
   name: Tier1 Parts ScrapHomeGarage 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_ScrapHomeGarage
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12ScrapHomeGarage
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeGarage
+      tableId: F14PartsLootTier1ScrapHomeGarage
 
 - type: entity
   name: Tier1 Parts ScrapHomeEntertainment Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_ScrapHomeEntertainment
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleScrapHomeEntertainment
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeEntertainment
+      tableId: F14PartsLootTier1ScrapHomeEntertainment
 
 - type: entity
   name: Tier1 Parts ScrapHomeEntertainment 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_ScrapHomeEntertainment
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03ScrapHomeEntertainment
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeEntertainment
+      tableId: F14PartsLootTier1ScrapHomeEntertainment
 
 - type: entity
   name: Tier1 Parts ScrapHomeEntertainment 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_ScrapHomeEntertainment
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12ScrapHomeEntertainment
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeEntertainment
+      tableId: F14PartsLootTier1ScrapHomeEntertainment
 
 - type: entity
   name: Tier1 Parts ScrapHomeLaundry Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_ScrapHomeLaundry
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleScrapHomeLaundry
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeLaundry
+      tableId: F14PartsLootTier1ScrapHomeLaundry
 
 - type: entity
   name: Tier1 Parts ScrapHomeLaundry 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_ScrapHomeLaundry
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03ScrapHomeLaundry
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeLaundry
+      tableId: F14PartsLootTier1ScrapHomeLaundry
 
 - type: entity
   name: Tier1 Parts ScrapHomeLaundry 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_ScrapHomeLaundry
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12ScrapHomeLaundry
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeLaundry
+      tableId: F14PartsLootTier1ScrapHomeLaundry
 
 - type: entity
   name: Tier1 Parts ScrapKitchenAll Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_ScrapKitchenAll
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleScrapKitchenAll
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenAll
+      tableId: F14PartsLootTier1ScrapKitchenAll
 
 - type: entity
   name: Tier1 Parts ScrapKitchenAll 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_ScrapKitchenAll
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03ScrapKitchenAll
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenAll
+      tableId: F14PartsLootTier1ScrapKitchenAll
 
 - type: entity
   name: Tier1 Parts ScrapKitchenAll 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_ScrapKitchenAll
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12ScrapKitchenAll
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenAll
+      tableId: F14PartsLootTier1ScrapKitchenAll
 
 - type: entity
   name: Tier1 Parts ScrapKitchenCeramics Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_ScrapKitchenCeramics
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleScrapKitchenCeramics
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenCeramics
+      tableId: F14PartsLootTier1ScrapKitchenCeramics
 
 - type: entity
   name: Tier1 Parts ScrapKitchenCeramics 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_ScrapKitchenCeramics
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03ScrapKitchenCeramics
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenCeramics
+      tableId: F14PartsLootTier1ScrapKitchenCeramics
 
 - type: entity
   name: Tier1 Parts ScrapKitchenCeramics 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_ScrapKitchenCeramics
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12ScrapKitchenCeramics
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenCeramics
+      tableId: F14PartsLootTier1ScrapKitchenCeramics
 
 - type: entity
   name: Tier1 Parts ScrapKitchenAppliances Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_ScrapKitchenAppliances
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleScrapKitchenAppliances
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenAppliances
+      tableId: F14PartsLootTier1ScrapKitchenAppliances
 
 - type: entity
   name: Tier1 Parts ScrapKitchenAppliances 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_ScrapKitchenAppliances
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03ScrapKitchenAppliances
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenAppliances
+      tableId: F14PartsLootTier1ScrapKitchenAppliances
 
 - type: entity
   name: Tier1 Parts ScrapKitchenAppliances 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_ScrapKitchenAppliances
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12ScrapKitchenAppliances
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenAppliances
+      tableId: F14PartsLootTier1ScrapKitchenAppliances
 
 - type: entity
   name: Tier1 Parts ScrapKitchenOther Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_ScrapKitchenOther
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleScrapKitchenOther
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenOther
+      tableId: F14PartsLootTier1ScrapKitchenOther
 
 - type: entity
   name: Tier1 Parts ScrapKitchenOther 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_ScrapKitchenOther
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03ScrapKitchenOther
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenOther
+      tableId: F14PartsLootTier1ScrapKitchenOther
 
 - type: entity
   name: Tier1 Parts ScrapKitchenOther 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_ScrapKitchenOther
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12ScrapKitchenOther
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenOther
+      tableId: F14PartsLootTier1ScrapKitchenOther
 
 - type: entity
   name: Tier1 Parts ScrapToys Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_ScrapToys
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleScrapToys
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_ScrapToys
+      tableId: F14PartsLootTier1ScrapToys
 
 - type: entity
   name: Tier1 Parts ScrapToys 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_ScrapToys
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03ScrapToys
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_ScrapToys
+      tableId: F14PartsLootTier1ScrapToys
 
 - type: entity
   name: Tier1 Parts ScrapToys 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_ScrapToys
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12ScrapToys
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_ScrapToys
+      tableId: F14PartsLootTier1ScrapToys
 
 - type: entity
   name: Tier1 Parts ScrapHomeBathroom Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_ScrapHomeBathroom
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleScrapHomeBathroom
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeBathroom
+      tableId: F14PartsLootTier1ScrapHomeBathroom
 
 - type: entity
   name: Tier1 Parts ScrapHomeBathroom 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_ScrapHomeBathroom
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03ScrapHomeBathroom
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeBathroom
+      tableId: F14PartsLootTier1ScrapHomeBathroom
 
 - type: entity
   name: Tier1 Parts ScrapHomeBathroom 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_ScrapHomeBathroom
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12ScrapHomeBathroom
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeBathroom
+      tableId: F14PartsLootTier1ScrapHomeBathroom
 
 - type: entity
   name: Tier1 Parts PaperAshSource Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_PaperAshSource
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSinglePaperAshSource
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_PaperAshSource
+      tableId: F14PartsLootTier1PaperAshSource
 
 - type: entity
   name: Tier1 Parts PaperAshSource 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_PaperAshSource
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03PaperAshSource
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_PaperAshSource
+      tableId: F14PartsLootTier1PaperAshSource
 
 - type: entity
   name: Tier1 Parts PaperAshSource 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_PaperAshSource
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12PaperAshSource
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_PaperAshSource
+      tableId: F14PartsLootTier1PaperAshSource
 
 - type: entity
   name: Tier1 Parts Cigars Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_Cigars
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleCigars
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_Cigars
+      tableId: F14PartsLootTier1Cigars
 
 - type: entity
   name: Tier1 Parts Cigars 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_Cigars
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03Cigars
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_Cigars
+      tableId: F14PartsLootTier1Cigars
 
 - type: entity
   name: Tier1 Parts Cigars 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_Cigars
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12Cigars
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_Cigars
+      tableId: F14PartsLootTier1Cigars
 
 - type: entity
   name: Tier1 Parts MoneyPreWar Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_MoneyPreWar
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleMoneyPreWar
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_MoneyPreWar
+      tableId: F14PartsLootTier1MoneyPreWar
 
 - type: entity
   name: Tier1 Parts MoneyPreWar 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_MoneyPreWar
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03MoneyPreWar
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_MoneyPreWar
+      tableId: F14PartsLootTier1MoneyPreWar
 
 - type: entity
   name: Tier1 Parts MoneyPreWar 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_MoneyPreWar
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12MoneyPreWar
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_MoneyPreWar
+      tableId: F14PartsLootTier1MoneyPreWar
 
 - type: entity
   name: Tier1 Parts Usables Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_Usables
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleUsables
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_Usables
+      tableId: F14PartsLootTier1Usables
 
 - type: entity
   name: Tier1 Parts Usables 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_Usables
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03Usables
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_Usables
+      tableId: F14PartsLootTier1Usables
 
 - type: entity
   name: Tier1 Parts Usables 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_Usables
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12Usables
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_Usables
+      tableId: F14PartsLootTier1Usables
 
 - type: entity
   name: Tier1 Parts UsablesElectric Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_UsablesElectric
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleUsablesElectric
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_UsablesElectric
+      tableId: F14PartsLootTier1UsablesElectric
 
 - type: entity
   name: Tier1 Parts UsablesElectric 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_UsablesElectric
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03UsablesElectric
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_UsablesElectric
+      tableId: F14PartsLootTier1UsablesElectric
 
 - type: entity
   name: Tier1 Parts UsablesElectric 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_UsablesElectric
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12UsablesElectric
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_UsablesElectric
+      tableId: F14PartsLootTier1UsablesElectric
 
 - type: entity
   name: Tier1 Parts UsablesTools Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_UsablesTools
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleUsablesTools
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_UsablesTools
+      tableId: F14PartsLootTier1UsablesTools
 
 - type: entity
   name: Tier1 Parts UsablesTools 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_UsablesTools
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03UsablesTools
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_UsablesTools
+      tableId: F14PartsLootTier1UsablesTools
 
 - type: entity
   name: Tier1 Parts UsablesTools 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_UsablesTools
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12UsablesTools
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_UsablesTools
+      tableId: F14PartsLootTier1UsablesTools
 
 - type: entity
   name: Tier1 Parts UsablesOther Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_UsablesOther
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleUsablesOther
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_UsablesOther
+      tableId: F14PartsLootTier1UsablesOther
 
 - type: entity
   name: Tier1 Parts UsablesOther 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_UsablesOther
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03UsablesOther
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_UsablesOther
+      tableId: F14PartsLootTier1UsablesOther
 
 - type: entity
   name: Tier1 Parts UsablesOther 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_UsablesOther
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12UsablesOther
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_UsablesOther
+      tableId: F14PartsLootTier1UsablesOther
 
 - type: entity
   name: Tier1 Parts TrashFood Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_TrashFood
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleTrashFood
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_TrashFood
+      tableId: F14PartsLootTier1TrashFood
 
 - type: entity
   name: Tier1 Parts TrashFood 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_TrashFood
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03TrashFood
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_TrashFood
+      tableId: F14PartsLootTier1TrashFood
 
 - type: entity
   name: Tier1 Parts TrashFood 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_TrashFood
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12TrashFood
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_TrashFood
+      tableId: F14PartsLootTier1TrashFood
 
 - type: entity
   name: Tier1 Parts ScrapHomeSafeItems Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_ScrapHomeSafeItems
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleScrapHomeSafeItems
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeSafeItems
+      tableId: F14PartsLootTier1ScrapHomeSafeItems
 
 - type: entity
   name: Tier1 Parts ScrapHomeSafeItems 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_ScrapHomeSafeItems
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03ScrapHomeSafeItems
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeSafeItems
+      tableId: F14PartsLootTier1ScrapHomeSafeItems
 
 - type: entity
   name: Tier1 Parts ScrapHomeSafeItems 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_ScrapHomeSafeItems
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12ScrapHomeSafeItems
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeSafeItems
+      tableId: F14PartsLootTier1ScrapHomeSafeItems
 
 - type: entity
   name: Tier1 Parts JunkElectronics Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_JunkElectronics
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleJunkElectronics
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_JunkElectronics
+      tableId: F14PartsLootTier1JunkElectronics
 
 - type: entity
   name: Tier1 Parts JunkElectronics 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_JunkElectronics
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03JunkElectronics
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_JunkElectronics
+      tableId: F14PartsLootTier1JunkElectronics
 
 - type: entity
   name: Tier1 Parts JunkElectronics 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_JunkElectronics
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12JunkElectronics
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_JunkElectronics
+      tableId: F14PartsLootTier1JunkElectronics
 
 - type: entity
   name: Tier1 Parts JunkMetalFocus Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_JunkMetalFocus
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleJunkMetalFocus
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_JunkMetalFocus
+      tableId: F14PartsLootTier1JunkMetalFocus
 
 - type: entity
   name: Tier1 Parts JunkMetalFocus 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_JunkMetalFocus
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03JunkMetalFocus
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_JunkMetalFocus
+      tableId: F14PartsLootTier1JunkMetalFocus
 
 - type: entity
   name: Tier1 Parts JunkMetalFocus 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_JunkMetalFocus
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12JunkMetalFocus
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_JunkMetalFocus
+      tableId: F14PartsLootTier1JunkMetalFocus
 
 - type: entity
   name: Tier1 Parts JunkPlasticFocus Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_JunkPlasticFocus
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleJunkPlasticFocus
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_JunkPlasticFocus
+      tableId: F14PartsLootTier1JunkPlasticFocus
 
 - type: entity
   name: Tier1 Parts JunkPlasticFocus 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_JunkPlasticFocus
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03JunkPlasticFocus
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_JunkPlasticFocus
+      tableId: F14PartsLootTier1JunkPlasticFocus
 
 - type: entity
   name: Tier1 Parts JunkPlasticFocus 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_JunkPlasticFocus
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12JunkPlasticFocus
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_JunkPlasticFocus
+      tableId: F14PartsLootTier1JunkPlasticFocus
 
 - type: entity
   name: Tier1 Parts ElectricComp Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_ElectricComp
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleElectricComp
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_ElectricComp
+      tableId: F14PartsLootTier1ElectricComp
 
 - type: entity
   name: Tier1 Parts ElectricComp 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_ElectricComp
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03ElectricComp
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_ElectricComp
+      tableId: F14PartsLootTier1ElectricComp
 
 - type: entity
   name: Tier1 Parts ElectricComp 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_ElectricComp
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12ElectricComp
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_ElectricComp
+      tableId: F14PartsLootTier1ElectricComp
 
 - type: entity
   name: Tier1 Parts Machine Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_Machine
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleMachine
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_Machine
+      tableId: F14PartsLootTier1Machine
 
 - type: entity
   name: Tier1 Parts Machine 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_Machine
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03Machine
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_Machine
+      tableId: F14PartsLootTier1Machine
 
 - type: entity
   name: Tier1 Parts Machine 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_Machine
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12Machine
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_Machine
+      tableId: F14PartsLootTier1Machine
 
 - type: entity
   name: Tier1 Parts RepairKitRecipe Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_RepairKitRecipe
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleRepairKitRecipe
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_RepairKitRecipe
+      tableId: F14PartsLootTier1RepairKitRecipe
 
 - type: entity
   name: Tier1 Parts RepairKitRecipe 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_RepairKitRecipe
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03RepairKitRecipe
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_RepairKitRecipe
+      tableId: F14PartsLootTier1RepairKitRecipe
 
 - type: entity
   name: Tier1 Parts RepairKitRecipe 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_RepairKitRecipe
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12RepairKitRecipe
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_RepairKitRecipe
+      tableId: F14PartsLootTier1RepairKitRecipe
 
 - type: entity
   name: Tier1 Parts Adhesives Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_Adhesives
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleAdhesives
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_Adhesives
+      tableId: F14PartsLootTier1Adhesives
 
 - type: entity
   name: Tier1 Parts Adhesives 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_Adhesives
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03Adhesives
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_Adhesives
+      tableId: F14PartsLootTier1Adhesives
 
 - type: entity
   name: Tier1 Parts Adhesives 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_Adhesives
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12Adhesives
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_Adhesives
+      tableId: F14PartsLootTier1Adhesives
 
 - type: entity
   name: Tier1 Parts Chemicals Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_Chemicals
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleChemicals
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_Chemicals
+      tableId: F14PartsLootTier1Chemicals
 
 - type: entity
   name: Tier1 Parts Chemicals 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_Chemicals
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03Chemicals
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_Chemicals
+      tableId: F14PartsLootTier1Chemicals
 
 - type: entity
   name: Tier1 Parts Chemicals 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_Chemicals
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12Chemicals
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_Chemicals
+      tableId: F14PartsLootTier1Chemicals
 
 - type: entity
   name: Tier1 Parts GunParts Single
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Single_GunParts
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerSingleGunParts
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14PartsLootTier1_GunParts
+      tableId: F14PartsLootTier1GunParts
 
 - type: entity
   name: Tier1 Parts GunParts 0-3
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult0_3_GunParts
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult03GunParts
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14PartsLootTier1_GunParts
+      tableId: F14PartsLootTier1GunParts
 
 - type: entity
   name: Tier1 Parts GunParts 1-2
   suffix: Tier1
-  id: MisfitsM14PartsTier1Spawner_Mult1_2_GunParts
-  parent: MisfitsM14Tier1Spawner_RefParts
+  id: F14PartsTier1SpawnerMult12GunParts
+  parent: F14Tier1SpawnerRefParts
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14PartsLootTier1_GunParts
+      tableId: F14PartsLootTier1GunParts

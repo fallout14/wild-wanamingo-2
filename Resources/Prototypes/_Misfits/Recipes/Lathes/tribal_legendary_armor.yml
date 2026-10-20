@@ -1,21 +1,21 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/tribal_legendary_armor.yml
 
 - type: latheRecipe
-  id: MisfitsTribalLegendaryArmorHeadRecipe
+  id: F14TribalLegendaryArmorHeadRecipe
   name: recipe-tribal-legendary-helm-name
   description: recipe-tribal-legendary-helm-desc
   completetime: 45
   materials:
-    MisfitsTribalLegendaryLeather: 2
-  result: MisfitsClothingHeadDeathclawHood
+    F14TribalLegendaryLeather: 2
+  result: F14ClothingHeadDeathclawHood
 
 - type: latheRecipe
-  id: MisfitsTribalLegendaryArmorChestRecipe
+  id: F14TribalLegendaryArmorChestRecipe
   name: recipe-tribal-legendary-chest-name
   description: recipe-tribal-legendary-chest-desc
   completetime: 60
   materials:
-    MisfitsTribalLegendaryLeather: 4
-  result: MisfitsClothingOuterDeathclawCloak
+    F14TribalLegendaryLeather: 4
+  result: F14ClothingOuterDeathclawCloak
 
 # Blueprint entities for crafting terminal access

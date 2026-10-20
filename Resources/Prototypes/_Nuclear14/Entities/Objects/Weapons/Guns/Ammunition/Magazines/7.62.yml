@@ -2,20 +2,20 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/7.62.yml
 
 - type: entity
-  id: N14BaseMagazine762Rifle
+  id: F14BaseMagazine762Rifle
   name: "magazine (7.62mm)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - N14Magazine762Rifle
+      - F14Magazine762Rifle
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14Cartridge762Rifle
-    proto: N14Cartridge762Rifle
+        - F14Cartridge762Rifle
+    proto: F14Cartridge762Rifle
     capacity: 30
   - type: ContainerContainer
     containers:
@@ -35,27 +35,27 @@
   - type: Appearance
 
 - type: entity
-  id: N14Magazine762Rifle
+  id: F14Magazine762Rifle
   name: "magazine (7.62mm)"
-  parent: N14BaseMagazine762Rifle
+  parent: F14BaseMagazine762Rifle
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge762Rifle
+    proto: F14Cartridge762Rifle
 
 - type: entity
-  id: N14Magazine762AmmoBelt
+  id: F14Magazine762AmmoBelt
   name: "ammo belt (7.62mm)"
-  parent: N14BaseMagazine762Rifle
+  parent: F14BaseMagazine762Rifle
   components:
   - type: Tag
     tags:
-      - N14Magazine762Belt
+      - F14Magazine762Belt
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14Cartridge762Rifle
-    proto: N14Cartridge762Rifle
+        - F14Cartridge762Rifle
+    proto: F14Cartridge762Rifle
     capacity: 100
   - type: Item # Forge-Change
     size: Normal
@@ -76,19 +76,19 @@
     zeroVisible: false
 
 - type: entity
-  id: N14Magazine762AmmoShort
+  id: F14Magazine762AmmoShort
   name: "short magazine (7.62mm)"
-  parent: N14BaseMagazine762Rifle
+  parent: F14BaseMagazine762Rifle
   components:
   - type: Tag
     tags:
-      - N14Magazine762Short
+      - F14Magazine762Short
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14Cartridge762Rifle
-    proto: N14Cartridge762Rifle
+        - F14Cartridge762Rifle
+    proto: F14Cartridge762Rifle
     capacity: 20
   - type: Sprite
     netsync: false

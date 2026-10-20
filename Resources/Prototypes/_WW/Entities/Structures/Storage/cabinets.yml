@@ -2,7 +2,7 @@
 # Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
 
 - type: entity
-  parent: N14FilingCabinet
+  parent: F14FilingCabinetBase
   id: F14FilingCabinet
   name: filing cabinet
   components:
@@ -22,7 +22,7 @@
     noRot: false
 
 - type: entity
-  parent: N14FilingCabinet
+  parent: F14FilingCabinetBase
   id: F14FilingCabinetBusted
   name: busted filing cabinet
   components:
@@ -42,7 +42,7 @@
     noRot: false
 
 - type: entity
-  parent: N14FilingCabinet
+  parent: F14FilingCabinetBase
   id: F14FilingCabinetEmpty
   name: filing cabinet
   components:
@@ -62,7 +62,7 @@
     noRot: false
 
 - type: entity
-  parent: N14FilingCabinet
+  parent: F14FilingCabinetBase
   id: F14FilingCabinetSmall
   name: small filing cabinet
   components:
@@ -82,7 +82,7 @@
     noRot: false
 
 - type: entity
-  parent: N14FilingCabinet
+  parent: F14FilingCabinetBase
   id: F14FilingCabinetSmallBusted
   name: busted small filing cabinet
   components:
@@ -102,7 +102,7 @@
     noRot: false
 
 - type: entity
-  parent: N14FilingCabinet
+  parent: F14FilingCabinetBase
   id: F14CabinetOrange
   name: cabinet
   suffix: orange
@@ -119,7 +119,7 @@
     state: circabinet_orange
 
 - type: entity
-  parent: N14FilingCabinet
+  parent: F14FilingCabinetBase
   id: F14CabinetPristineOrange
   name: cabinet
   suffix: orange, pristine
@@ -136,7 +136,7 @@
     state: pristine_circabinet_orange
 
 - type: entity
-  parent: N14FilingCabinet
+  parent: F14FilingCabinetBase
   id: F14CabinetTallOrange
   name: tall cabinet
   suffix: orange
@@ -153,7 +153,7 @@
     state: circabinet_orange_tall
 
 - type: entity
-  parent: N14FilingCabinet
+  parent: F14FilingCabinetBase
   id: F14CabinetTurquoise
   name: cabinet
   suffix: turquoise
@@ -170,7 +170,7 @@
     state: circabinet_torquise
 
 - type: entity
-  parent: N14FilingCabinet
+  parent: F14FilingCabinetBase
   id: F14CabinetPristineTurquoise
   name: cabinet
   suffix: turquoise, pristine
@@ -187,7 +187,7 @@
     state: pristine_circabinet_torquise
 
 - type: entity
-  parent: N14FilingCabinet
+  parent: F14FilingCabinetBase
   id: F14CabinetTallTurquoise
   name: tall cabinet
   suffix: turquoise

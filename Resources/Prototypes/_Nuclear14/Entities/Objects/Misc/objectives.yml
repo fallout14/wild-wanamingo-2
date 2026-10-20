@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14Holotape
+  id: F14Holotape
   name: holotape
   description: A holotape for storing data.
   components:
@@ -20,16 +20,16 @@
         type: HolotapeBoundUserInterface
 
 - type: entity
-  parent: N14Holotape
-  id: N14HolotapeBlue
+  parent: F14Holotape
+  id: F14HolotapeBlue
   name: blue holotape
   components:
   - type: Sprite
     state: holotape_blue
 
 - type: entity
-  parent: N14Holotape
-  id: N14HolotapeEnclave
+  parent: F14Holotape
+  id: F14HolotapeEnclave
   name: enclave holotape
   components:
   - type: Sprite
@@ -40,24 +40,24 @@
     content: holotape-enclave-base-content
 
 - type: entity
-  parent: N14Holotape
-  id: N14HolotapeGreen
+  parent: F14Holotape
+  id: F14HolotapeGreen
   name: green holotape
   components:
   - type: Sprite
     state: holotape_green
 
 - type: entity
-  parent: N14Holotape
-  id: N14HolotapeRed
+  parent: F14Holotape
+  id: F14HolotapeRed
   name: red holotape
   components:
   - type: Sprite
     state: holotape_red
 
 - type: entity
-  parent: N14Holotape
-  id: N14HolotapeYellow
+  parent: F14Holotape
+  id: F14HolotapeYellow
   name: yellow holotape
   components:
   - type: Sprite
@@ -66,8 +66,8 @@
 #MARK: Holotapes for Objectives
 
 - type: entity
-  parent: N14HolotapeYellow
-  id: N14HolotapeQuestFusionplans # BoS / Town find objective
+  parent: F14HolotapeYellow
+  id: F14HolotapeQuestFusionplans # BoS / Town find objective
   name: fusion plans holotape
   description: A holotape containing plans for optimising fusion reactors.
   components:
@@ -77,8 +77,8 @@
     content: holotape-quest-fusion-plans-content
 
 - type: entity
-  parent: N14HolotapeEnclave
-  id: N14HolotapeQuestEnclaveplans # Enclave secure objective / NCR, BoS Find Objective
+  parent: F14HolotapeEnclave
+  id: F14HolotapeQuestEnclaveplans # Enclave secure objective / NCR, BoS Find Objective
   name: enclave plans holotape
   description: A holotape containing plans for restoring America.
   components:
@@ -88,8 +88,8 @@
     content: holotape-quest-enclave-plans-content
 
 - type: entity
-  parent: N14HolotapeGreen
-  id: N14HolotapeQuestGECK
+  parent: F14HolotapeGreen
+  id: F14HolotapeQuestGECK
   name: GECK location holotape # Vault secure objective / Enclave, NCR, BoS Find Objective
   description: A holotape containing details on remaining G.E.C.K's.
   components:
@@ -99,8 +99,8 @@
     content: holotape-quest-geck-content
 
 - type: entity
-  parent: N14HolotapeRed
-  id: N14HolotapeQuestNCRplans
+  parent: F14HolotapeRed
+  id: F14HolotapeQuestNCRplans
   name: NCR plans holotape # NCR secure objective
   description: A holotape containing battle plans and base locations for the NCR.
   components:

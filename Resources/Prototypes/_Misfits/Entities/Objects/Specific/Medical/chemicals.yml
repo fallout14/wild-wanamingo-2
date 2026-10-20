@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Specific/Medical/chemicals.yml
 
 - type: entity
-  parent: N14ChemicalSyringe
-  id: MisfitsMed-XInjector
+  parent: F14ChemicalSyringe
+  id: F14MedXInjector
   name: med-x
   description: A syringe filled with a powerful painkiller. Some believe that it makes you more resistant to pain.
   components:
@@ -39,8 +39,8 @@
     delay: 0.75
 
 - type: entity
-  parent: N14ChemicalSyringe
-  id: MisfitsCombatInjector
+  parent: F14ChemicalSyringe
+  id: F14CombatInjector
   suffix: empty
   name: combat injector
   description: A glass ampule attached to a rudimentary injector, used to house any number of medicines.
@@ -83,8 +83,8 @@
 #MARK: RadAway Inhaler
 
 - type: entity
-  parent: N14HealingPowder
-  id: MisfitsCleansingPowder
+  parent: F14HealingPowder
+  id: F14CleansingPowder
   name: cleansing powder
   description: A bag of anti-rad powder used by tribal and Legion healers. Makes the user drowsy.
   components:
@@ -100,12 +100,12 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: MisfitsCleansingPowder
+      - ReagentId: F14CleansingPowder
         Quantity: 10 # Misfits Change - Cleansing Powder is bargain bin anti-rad. Low quantity with side-effects.
 
 - type: entity
-  parent: N14HealingPowder
-  id: MisfitsBerserkerPowder
+  parent: F14HealingPowder
+  id: F14BerserkerPowder
   name: berserker powder
   description: A pouch of berserker powder, enhances physical abilities with some side effects.
   components:
@@ -120,12 +120,12 @@
     solution:
       maxVol: 25
       reagents:
-      - ReagentId: MisfitsBerserkermix
+      - ReagentId: F14Berserkermix
         Quantity: 25 # less than what youd get from minmaxxing with chem, od is 26.
 
 - type: entity
   parent: DrinkBase
-  id: MisfitsAntidoteBottleBase
+  id: F14AntidoteBottleBase
   abstract: true
   name: antidote bottle
   description: A glass bottle for storing wasteland antidotes.
@@ -145,15 +145,15 @@
     sprite: Nuclear14/Objects/Specific/Medical/fallout2.rsi
 
 - type: entity
-  parent: MisfitsAntidoteBottleBase
-  id: MisfitsAntidoteEmpty
+  parent: F14AntidoteBottleBase
+  id: F14AntidoteEmpty
   suffix: empty
   name: antidote bottle
   description: An empty glass bottle sized for antidote batches.
 
 - type: entity
   parent: DrinkBase
-  id: MisfitsBitterdrinkBottleBase
+  id: F14BitterdrinkBottleBase
   abstract: true
   name: bitterdrink bottle
   description: A bottle for storing brewed tribal remedies.
@@ -173,15 +173,15 @@
     sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
 
 - type: entity
-  parent: MisfitsBitterdrinkBottleBase
-  id: MisfitsBitterdrinkEmpty
+  parent: F14BitterdrinkBottleBase
+  id: F14BitterdrinkEmpty
   suffix: empty
   name: bitterdrink bottle
   description: An empty bottle meant for bitterdrink and similar herbal brews.
 
 - type: entity
-  parent: N14Bandage
-  id: MisfitsBandage1
+  parent: F14Bandage
+  id: F14Bandage1
   suffix: Single
   components:
   - type: Stack

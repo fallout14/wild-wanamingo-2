@@ -1,10 +1,10 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Kits/UndecidedLoadout.yml, Resources/Prototypes/_Nuclear14/Entities/Objects/Specific/Kits/UndecidedLoadout.yml
 
 - type: entity
-  id: MisfitsLegionPriestessLoadoutKits
+  id: F14LegionPriestessLoadoutKits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -26,7 +26,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - MisfitsKitPriestessHealing
+  - F14KitPriestessHealing
 
 - type: thiefBackpackSet
   id: PriestessZealotSet
@@ -36,7 +36,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - MisfitsKitPriestessZealot
+  - F14KitPriestessZealot
 
 - type: thiefBackpackSet
   id: PriestessPurifierSet
@@ -46,15 +46,15 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - MisfitsKitPriestessPurifier
+  - F14KitPriestessPurifier
 
   # acolyte kits
 
 - type: entity
-  id: MisfitsLegionAcolyteLoadoutKits
+  id: F14LegionAcolyteLoadoutKits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -76,7 +76,7 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - MisfitsKitAcolyteHealing
+  - F14KitAcolyteHealing
 
 - type: thiefBackpackSet
   id: AcolyteZealotSet
@@ -86,12 +86,12 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - MisfitsKitAcolyteZealot
+  - F14KitAcolyteZealot
 
 - type: entity
-  id: MisfitsNCRstaffsergeantloadoutkits
+  id: F14NCRstaffsergeantloadoutkits
   name: Undecided NCRA Staff Sergeant Loadout Kit
-  parent: N14NCRcadetloadoutkits
+  parent: F14NCRcadetloadoutkits
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -115,15 +115,15 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - MisfitsKitAcolyteSlaver
+  - F14KitAcolyteSlaver
 
 # temple guard kits
 
 - type: entity
-  id: MisfitsLegionTempleGuardLoadoutKits
+  id: F14LegionTempleGuardLoadoutKits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -138,9 +138,9 @@
     - TempleGuardExecutorSet
 
 - type: entity
-  id: MisfitsNCRfirstsergeantloadoutkits
+  id: F14NCRfirstsergeantloadoutkits
   name: Undecided NCRA Sergeant First Class Loadout Kit
-  parent: N14NCRcadetloadoutkits
+  parent: F14NCRcadetloadoutkits
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -163,12 +163,12 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - MisfitsKitTempleGuardProtector
+  - F14KitTempleGuardProtector
 
 - type: entity
-  id: MisfitsNCRcaptainloadoutkits
+  id: F14NCRcaptainloadoutkits
   name: Undecided NCRA Captain Loadout Kit
-  parent: N14NCRcadetloadoutkits
+  parent: F14NCRcadetloadoutkits
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -193,12 +193,12 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - MisfitsKitTempleGuardEnforcer
+  - F14KitTempleGuardEnforcer
 
 - type: entity
-  id: MisfitsNCRpatrolrangerloadoutkits
+  id: F14NCRpatrolrangerloadoutkits
   name: Undecided NCR Patrol Ranger Loadout Kit
-  parent: N14NCRcadetloadoutkits
+  parent: F14NCRcadetloadoutkits
   components:
   - type: Sprite
     state: rifleman
@@ -219,12 +219,12 @@
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
     state: base
   content:
-  - MisfitsKitTempleGuardExecutor
+  - F14KitTempleGuardExecutor
 
 - type: entity
-  id: MisfitsNCRfieldrangerloadoutkits
+  id: F14NCRfieldrangerloadoutkits
   name: Undecided NCR Field Ranger Loadout Kit
-  parent: N14NCRcadetloadoutkits
+  parent: F14NCRcadetloadoutkits
   components:
   - type: Sprite
     state: marksman

@@ -4,7 +4,7 @@
 - type: entity
   name: microfusion cell
   description: A microfusion cell, typically used as ammunition for large energy weapons.
-  id: N14BasePowerCell
+  id: F14BasePowerCell
   abstract: true
   parent: BaseItem
   components:
@@ -12,13 +12,13 @@
     pricePerJoule: 0.015
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 200
     intensitySlope: 1.5
   - type: Tag
     tags:
-      - MisfitsMicrofusionCell
-      - N14AmmoCell
+      - F14MicrofusionCell
+      - F14AmmoCell
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/microfusion.rsi
   - type: Solution
@@ -50,9 +50,9 @@
 - type: entity
   name: fusion core
   description: A heavy fusion core containing concentrated fusion fuel. Provides massive charge reserves for heavy energy weapons. Beam characteristics are determined by the weapon's optics.
-  id: N14FusionCore
+  id: F14FusionCore
   suffix: Full
-  parent: N14BasePowerCell
+  parent: F14BasePowerCell
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/fusion.rsi
@@ -64,8 +64,8 @@
         shader: unshaded
   - type: Tag
     tags:
-      - N14FusionCore
-      - N14AmmoCell
+      - F14FusionCore
+      - F14AmmoCell
   - type: Item
     size: Normal
   - type: Battery
@@ -75,9 +75,9 @@
 - type: entity
   name: energy cell
   description: An energy cell, typically used as ammunition for small-arms energy weapons.
-  id: N14PowerCellSmall
+  id: F14PowerCellSmall
   suffix: Full
-  parent: N14BasePowerCell
+  parent: F14BasePowerCell
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/EC.rsi
@@ -91,8 +91,8 @@
         scale: 0.5, 0.5
   - type: Tag
     tags:
-      - N14PowerCellSmall
-      - N14AmmoCell
+      - F14PowerCellSmall
+      - F14AmmoCell
   - type: Battery
     maxCharge: 600
     startingCharge: 600
@@ -100,7 +100,7 @@
 - type: entity
   name: base plasma cell
   description: A small green glowing cartridge, commonly used as ammo for any kind of plasma weapon.
-  id: N14BasePlasmaCell
+  id: F14BasePlasmaCell
   abstract: true
   parent: BaseItem
   components:
@@ -108,7 +108,7 @@
     pricePerJoule: 0.015
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 200
     intensitySlope: 1.5
   - type: Sprite
@@ -141,9 +141,9 @@
 - type: entity
   name: plasma cartridge
   description: A small green glowing cartridge, commonly used as ammo for any kind of plasma weapon.
-  id: N14PlasmaCartridge
+  id: F14PlasmaCartridge
   suffix: Full
-  parent: N14BasePlasmaCell
+  parent: F14BasePlasmaCell
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/plasma.rsi
@@ -155,17 +155,17 @@
         shader: unshaded
   - type: Tag
     tags:
-      - N14PlasmaCartridge
-      - N14AmmoCell
+      - F14PlasmaCartridge
+      - F14AmmoCell
   - type: Battery
     maxCharge: 1800
     startingCharge: 1800
 
-#MARK: Legacy Plasma Cells (commented out — all plasma weapons now use N14PlasmaCartridge)
+#MARK: Legacy Plasma Cells (commented out — all plasma weapons now use F14PlasmaCartridge)
 
 # - type: entity
 #   name: plasma cell
-#   parent: N14BasePlasmaCell
+#   parent: F14BasePlasmaCell
 #   description: A small green glowing cartridge, commonly used as ammo for light plasma weaponry.
 #   id: N14PlasmaCell
 #   suffix: Full
@@ -181,7 +181,7 @@
 #   - type: Tag
 #     tags:
 #       - N14PlasmaCell
-#       - N14AmmoCell
+#       - F14AmmoCell
 #   - type: Battery
 #     maxCharge: 900
 #     startingCharge: 900
@@ -192,9 +192,9 @@
 - type: entity
   name: plasma shell
   description: A big green glowing shell, commonly used as ammo for heavy plasma weapons.
-  id: N14PlasmaShell
+  id: F14PlasmaShell
   suffix: Full
-  parent: N14BasePlasmaCell
+  parent: F14BasePlasmaCell
   components:
    - type: Sprite
      sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/plasma_big.rsi
@@ -211,8 +211,8 @@
      - 0,1,0,1
    - type: Tag
      tags:
-       - N14PlasmaShell
-       - N14AmmoCell
+       - F14PlasmaShell
+       - F14AmmoCell
    - type: Battery
      maxCharge: 7500
      startingCharge: 7500

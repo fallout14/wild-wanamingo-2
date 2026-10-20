@@ -4,7 +4,7 @@
 # Marks a spot; everyone near it is warned, and the missile flies a few seconds later.
 - type: entity
   parent: BaseAction
-  id: MisfitsActionSentryBotMissileLaunch
+  id: F14ActionSentryBotMissileLaunch
   name: Launch Missile
   description: Launch a missile at the targeted location. Nearby entities receive a warning.
   components:

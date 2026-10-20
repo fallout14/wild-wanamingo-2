@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/80s/uniforms.yml
 
 - type: entity
-  parent: N14ClothingUniformBase
-  id: MisfitsClothingUniform80sPants
+  parent: F14ClothingUniformBase
+  id: F14ClothingUniform80sPants
   name: oiled pants
   description: A battered piece of cloth, distinguish itself from the smells of oils and stains of dirt.
   components:
@@ -12,8 +12,8 @@
     sprite: Misfits/Clothing/80s/Uniforms/pants.rsi
 
 - type: entity
-  parent: N14ClothingUniformBase
-  id: MisfitsClothingTheBlockPants
+  parent: F14ClothingUniformBase
+  id: F14ClothingTheBlockPants
   name: The Block Pants
   description: A pair of pants with some shards of metal sticking out of it.
   components:

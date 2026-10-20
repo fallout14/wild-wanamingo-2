@@ -1,74 +1,74 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/MedLoot/Tier1Meds/Tier1MedTables.yml
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier1_Common
+  id: F14MedsLootTier1Common
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14DirtyGauze10
+      id: F14DirtyGauze10
       weight: 15
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier1_CommonPlus
+  id: F14MedsLootTier1CommonPlus
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14StimpakDirty
+      id: F14StimpakDirty
       weight: 5
     - !type:EntSelector
-      id: N14HealingPowder
+      id: F14HealingPowder
       weight: 5
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier1_UncommonAntiRad
+  id: F14MedsLootTier1UncommonAntiRad
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14RadXPill
+      id: F14RadXPill
       weight: 10
     - !type:EntSelector
-      id: MisfitsCleansingPowder
+      id: F14CleansingPowder
       weight: 20
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier1_PlusSuperRare
+  id: F14MedsLootTier1PlusSuperRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14StimpakDirty
+      id: F14StimpakDirty
       weight: 5
     - !type:EntSelector
-      id: N14HealingPowder
+      id: F14HealingPowder
       weight: 5
     - !type:EntSelector
-      id: N14SmellingSalts
+      id: F14SmellingSalts
       weight: 5
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier1_DrugsUncommon
+  id: F14MedsLootTier1DrugsUncommon
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14RadXPill
+      id: F14RadXPill
     - !type:EntSelector
-      id: N14CateyePill
+      id: F14CateyePill
     - !type:EntSelector
-      id: N14MentatsPill
+      id: F14MentatsPill
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier1_DrugsRare
+  id: F14MedsLootTier1DrugsRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14RadXPill
+      id: F14RadXPill
     - !type:EntSelector
-      id: N14BuffoutPill
+      id: F14BuffoutPill
 
 - type: entityTable
-  id: MisfitsM14MedsLootTier1_DrugsSuperRare
+  id: F14MedsLootTier1DrugsSuperRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14BuffoutCanisterFilled
+      id: F14BuffoutCanisterFilled
     - !type:EntSelector
-      id: N14RadXCanisterFilled
+      id: F14RadXCanisterFilled

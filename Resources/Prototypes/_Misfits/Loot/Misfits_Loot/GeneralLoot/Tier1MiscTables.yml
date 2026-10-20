@@ -1,166 +1,166 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/GeneralLoot/Tier1MiscTables.yml
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_ScrapHomeAll
+  id: F14PartsLootTier1ScrapHomeAll
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenAll
+      tableId: F14PartsLootTier1ScrapKitchenAll
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeLaundry
+      tableId: F14PartsLootTier1ScrapHomeLaundry
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeEntertainment
+      tableId: F14PartsLootTier1ScrapHomeEntertainment
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_PaperAshSource
+      tableId: F14PartsLootTier1PaperAshSource
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeGarage
+      tableId: F14PartsLootTier1ScrapHomeGarage
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_ScrapHomeBathroom
+      tableId: F14PartsLootTier1ScrapHomeBathroom
     - !type:EntSelector
       id: MopItem
     - !type:EntSelector
-      id: N14JunkCrutch
+      id: F14JunkCrutch
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_ScrapHomeGarage
+  id: F14PartsLootTier1ScrapHomeGarage
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_UsablesTools
+      tableId: F14PartsLootTier1UsablesTools
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_ScrapHomeEntertainment
+  id: F14PartsLootTier1ScrapHomeEntertainment
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_ScrapToys
+      tableId: F14PartsLootTier1ScrapToys
     - !type:EntSelector
       id: AcousticGuitarInstrument
     - !type:EntSelector
       id: SaxophoneInstrument
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_ScrapHomeLaundry
+  id: F14PartsLootTier1ScrapHomeLaundry
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14ClothingBeltCleanerFilled
+      id: F14ClothingBeltCleanerFilled
     - !type:EntSelector
-      id: N14JunkIron
+      id: F14JunkIron
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_Chemicals
+      tableId: F14PartsLootTier1Chemicals
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_ScrapKitchenAll
+  id: F14PartsLootTier1ScrapKitchenAll
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenCeramics
+      tableId: F14PartsLootTier1ScrapKitchenCeramics
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenAppliances
+      tableId: F14PartsLootTier1ScrapKitchenAppliances
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_ScrapKitchenOther
+      tableId: F14PartsLootTier1ScrapKitchenOther
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_ScrapKitchenCeramics
+  id: F14PartsLootTier1ScrapKitchenCeramics
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkCookpot
+      id: F14JunkCookpot
     - !type:EntSelector
-      id: N14JunkCoffeepot
+      id: F14JunkCoffeepot
     - !type:EntSelector
-      id: N14JunkTeapot
+      id: F14JunkTeapot
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_ScrapKitchenAppliances
+  id: F14PartsLootTier1ScrapKitchenAppliances
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkToaster
+      id: F14JunkToaster
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_ScrapKitchenOther
+  id: F14PartsLootTier1ScrapKitchenOther
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkTincan
+      id: F14JunkTincan
     - !type:EntSelector
-      id: N14FoodTinCanTrash
+      id: F14FoodTinCanTrash
     - !type:EntSelector
-      id: N14JunkTimer
+      id: F14JunkTimer
     - !type:EntSelector
-      id: N14JunkLunchbox
+      id: F14JunkLunchbox
     - !type:EntSelector
-      id: N14DrinkNukaColaBroken
+      id: F14DrinkNukaColaBroken
     - !type:EntSelector
-      id: N14JunkVaultCanteen
+      id: F14JunkVaultCanteen
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_ScrapToys
+  id: F14PartsLootTier1ScrapToys
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14Junk8Ball
+      id: F14Junk8Ball
     - !type:EntSelector
-      id: N14JunkToyNukaTruck
+      id: F14JunkToyNukaTruck
     - !type:EntSelector
-      id: N14JunkToyRacecar
+      id: F14JunkToyRacecar
     - !type:EntSelector
-      id: N14JunkBaseball
+      id: F14JunkBaseball
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_ScrapHomeBathroom
+  id: F14PartsLootTier1ScrapHomeBathroom
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14DoctorSyringe
+      id: F14DoctorSyringe
 # drugss herrree
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_PaperAshSource
+  id: F14PartsLootTier1PaperAshSource
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: PaperOffice
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_Cigars
+      tableId: F14PartsLootTier1Cigars
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_MoneyPreWar
+      tableId: F14PartsLootTier1MoneyPreWar
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_Cigars
+  id: F14PartsLootTier1Cigars
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14Cigarette
+      id: F14Cigarette
     - !type:EntSelector
       id: CigarCase
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_MoneyPreWar
+  id: F14PartsLootTier1MoneyPreWar
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14CurrencyPrewarMoney10
+      id: F14CurrencyPrewarMoney10
     - !type:EntSelector
-      id: N14CurrencyPrewarMoney50
+      id: F14CurrencyPrewarMoney50
     - !type:EntSelector
-      id: N14CurrencyPrewarMoney100
+      id: F14CurrencyPrewarMoney100
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_Usables
+  id: F14PartsLootTier1Usables
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_UsablesElectric
+      tableId: F14PartsLootTier1UsablesElectric
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_UsablesTools
+      tableId: F14PartsLootTier1UsablesTools
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_UsablesOther
+      tableId: F14PartsLootTier1UsablesOther
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_UsablesElectric
+  id: F14PartsLootTier1UsablesElectric
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -169,24 +169,24 @@
       id: RadioHandheld
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_UsablesTools
+  id: F14PartsLootTier1UsablesTools
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14Crowbar
+      id: F14Crowbar
     - !type:EntSelector
-      id: N14Wrench
+      id: F14Wrench
     - !type:EntSelector
-      id: N14Screwdriver
+      id: F14Screwdriver
     - !type:EntSelector
-      id: N14Wirecutter
+      id: F14Wirecutter
     - !type:EntSelector
-      id: N14Welder
+      id: F14Welder
     - !type:EntSelector
-      id: N14Multitool
+      id: F14Multitool
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_UsablesOther
+  id: F14PartsLootTier1UsablesOther
   table: !type:GroupSelector
     children:
     - !type:EntSelector
@@ -196,111 +196,111 @@
     - !type:EntSelector
       id: BriefcaseBrown
     - !type:EntSelector
-      id: N14JunkCrutch
+      id: F14JunkCrutch
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_TrashFood
+  id: F14PartsLootTier1TrashFood
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FoodTinCanTrash
+      id: F14FoodTinCanTrash
     - !type:EntSelector
-      id: N14FoodPacketTrash
+      id: F14FoodPacketTrash
     - !type:EntSelector
-      id: N14FoodBlamcomaccheeseTrash
+      id: F14FoodBlamcomaccheeseTrash
     - !type:EntSelector
-      id: N14FoodBlamcomaccheeseLargeTrash
+      id: F14FoodBlamcomaccheeseLargeTrash
     - !type:EntSelector
-      id: N14FoodBubblegumTrash
+      id: F14FoodBubblegumTrash
     - !type:EntSelector
-      id: N14FoodCramTrash
+      id: F14FoodCramTrash
     - !type:EntSelector
-      id: N14FoodCrispsTrash
+      id: F14FoodCrispsTrash
     - !type:EntSelector
-      id: N14FoodDandyboyapplesTrash
+      id: F14FoodDandyboyapplesTrash
     - !type:EntSelector
-      id: N14FoodFancyladssnackcakesTrash
+      id: F14FoodFancyladssnackcakesTrash
     - !type:EntSelector
-      id: N14FoodInstamashTrash
+      id: F14FoodInstamashTrash
     - !type:EntSelector
-      id: N14FoodSalisburysteakTrash
+      id: F14FoodSalisburysteakTrash
     - !type:EntSelector
-      id: N14FoodSugarbombsTrash
+      id: F14FoodSugarbombsTrash
     - !type:EntSelector
-      id: N14FoodYumyumdeviledeggsTrash
+      id: F14FoodYumyumdeviledeggsTrash
     - !type:EntSelector
-      id: N14DrinkNukaColaBroken
+      id: F14DrinkNukaColaBroken
 
         #- id: Torch craft it
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_ScrapHomeSafeItems
+  id: F14PartsLootTier1ScrapHomeSafeItems
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkVaultCanteen
+      id: F14JunkVaultCanteen
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_MoneyPreWar
+      tableId: F14PartsLootTier1MoneyPreWar
 # gun, low chance gold lol, and other stuff we will see
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_JunkElectronics
+  id: F14PartsLootTier1JunkElectronics
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkTimer
+      id: F14JunkTimer
     - !type:EntSelector
-      id: N14JunkIron
+      id: F14JunkIron
     - !type:EntSelector
-      id: N14Junk8Ball
+      id: F14Junk8Ball
     - !type:EntSelector
-      id: N14JunkToaster
+      id: F14JunkToaster
     - !type:EntSelector
-      id: N14Multitool
+      id: F14Multitool
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier0_EletricMisc
+      tableId: F14PartsLootTier0EletricMisc
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_UsablesElectric
+      tableId: F14PartsLootTier1UsablesElectric
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_ElectricComp
+      tableId: F14PartsLootTier1ElectricComp
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_JunkMetalFocus
+  id: F14PartsLootTier1JunkMetalFocus
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkTincan
+      id: F14JunkTincan
     - !type:EntSelector
-      id: N14FoodTinCanTrash
+      id: F14FoodTinCanTrash
     - !type:EntSelector
-      id: N14JunkTimer
+      id: F14JunkTimer
     - !type:EntSelector
-      id: N14JunkLunchbox
+      id: F14JunkLunchbox
     - !type:EntSelector
-      id: N14JunkIron
+      id: F14JunkIron
     - !type:EntSelector
-      id: N14JunkVaultCanteen
+      id: F14JunkVaultCanteen
     - !type:EntSelector
-      id: N14JunkTurpentine
+      id: F14JunkTurpentine
     - !type:EntSelector
       id: SaxophoneInstrument
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_UsablesTools
+      tableId: F14PartsLootTier1UsablesTools
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_JunkPlasticFocus
+  id: F14PartsLootTier1JunkPlasticFocus
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_TrashFood
+      tableId: F14PartsLootTier1TrashFood
     - !type:NestedSelector
-      tableId: MisfitsM14PartsLootTier1_ScrapToys
+      tableId: F14PartsLootTier1ScrapToys
     - !type:EntSelector
-      id: N14IDPassport
+      id: F14IDPassport
 
 #- type: entityTable
 #  id: M14PartsLootTier1_JunkOddParts
 #  table: !type:GroupSelector
 #    children:
 #    - !type:EntSelector
-#      id: N14IDPassport
+#      id: F14IDPassport

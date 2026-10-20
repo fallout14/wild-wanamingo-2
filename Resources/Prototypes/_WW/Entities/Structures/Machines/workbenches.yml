@@ -2,7 +2,7 @@
 # Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
 
 - type: entity
-  parent: N14WorkbenchTinkerbench
+  parent: F14WorkbenchTinkerbenchBase
   id: F14WorkbenchTinkerbench
   name: tinkering workbench
   suffix: MS13
@@ -15,7 +15,7 @@
     state: tinkerbench
 
 - type: entity
-  parent: N14WorkbenchForge
+  parent: F14WorkbenchForge
   id: F14WorkbenchForgeStation
   name: forge station
   suffix: MS13

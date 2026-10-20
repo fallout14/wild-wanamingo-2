@@ -66,25 +66,25 @@ tilemap:
   15: FloorWoodLarge
   17: FloorWoodTile
   153: Lattice
-  168: N14FloorMS13ConcreteIndustrialAlt
-  160: N14FloorMS13MetalGrate
-  155: N14FloorMS13MetalIndustrial
-  167: N14FloorMS13MetalSolid
-  173: N14FloorMS13MetalTile
-  165: N14FloorMS13TileBlack
-  157: N14FloorMS13TileBlackFull
-  158: N14FloorMS13TileBlackLarge
-  170: N14FloorMS13TileCheck
-  161: N14FloorMS13TileGrey
-  156: N14FloorMS13TileGreyLarge
-  172: N14FloorMS13TileGreyLong
-  169: N14FloorMS13TileLongBlue
-  171: N14FloorMS13TileNavy
-  162: N14FloorMS13TileOrnate
-  163: N14FloorMS13TileWhiteFull
-  159: N14FloorMS13TileWhiteLarge
-  166: N14FloorMS13WoodCommon
-  164: N14FloorMS13WoodWide
+  168: F14FloorMS13ConcreteIndustrialAlt
+  160: F14FloorMS13MetalGrate
+  155: F14FloorMS13MetalIndustrial
+  167: F14FloorMS13MetalSolid
+  173: F14FloorMS13MetalTile
+  165: F14FloorMS13TileBlack
+  157: F14FloorMS13TileBlackFull
+  158: F14FloorMS13TileBlackLarge
+  170: F14FloorMS13TileCheck
+  161: F14FloorMS13TileGrey
+  156: F14FloorMS13TileGreyLarge
+  172: F14FloorMS13TileGreyLong
+  169: F14FloorMS13TileLongBlue
+  171: F14FloorMS13TileNavy
+  162: F14FloorMS13TileOrnate
+  163: F14FloorMS13TileWhiteFull
+  159: F14FloorMS13TileWhiteLarge
+  166: F14FloorMS13WoodCommon
+  164: F14FloorMS13WoodWide
   147: Plating
   150: PlatingAsteroid
   36: PlatingDamaged
@@ -21289,7 +21289,7 @@ entities:
       parent: 23
       rot: 1.5707963267948966 rad
       pos: 81.338554,6.671567
-- proto: N14WallVaultSlanted
+- proto: F14WallVaultSlanted
   entities:
   - uid: 3691
     components:
@@ -24921,7 +24921,7 @@ entities:
     - type: Transform
       pos: 87.5,30.5
       parent: 23
-- proto: N14DoorBunkerGlass
+- proto: F14DoorBunkerGlass
   entities:
   - uid: 4418
     components:
@@ -24933,14 +24933,14 @@ entities:
     - type: Transform
       pos: 34.5,14.5
       parent: 23
-- proto: N14ChairWoodPadded
+- proto: F14ChairWoodPadded
   entities:
   - uid: 4420
     components:
     - type: Transform
       pos: 41.5,17.5
       parent: 23
-- proto: N14TableMetalGrate
+- proto: F14TableMetalGrate
   entities:
   - uid: 4421
     components:

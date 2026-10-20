@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Mobs/NPCs/robots.yml
 
 - type: entity
-  parent: N14MobRobotProtectronPoliceHostile
-  id: MisfitsMobRobotSecuritronHostile
+  parent: F14MobRobotProtectronPoliceHostile
+  id: F14MobRobotSecuritronHostile
   name: Securitron
   description: A securitron rolling patrol looking for a fight.
   components:
@@ -10,7 +10,7 @@
     minInterval: 12
     maxInterval: 45
     sound:
-      collection: MisfitsSecuritronIdle
+      collection: F14SecuritronIdle
       params:
         volume: -7
         maxDistance: 6
@@ -39,14 +39,14 @@
     baseSprintSpeed: 3.5
   - type: AggroSound
     sound:
-      collection: MisfitsSecuritronAttack
+      collection: F14SecuritronAttack
       params:
         volume: -3
         maxDistance: 12
 
 - type: entity
-  parent: MisfitsMobRobotSecuritronHostile
-  id: MisfitsMobRobotSecuritronBlueHostile
+  parent: F14MobRobotSecuritronHostile
+  id: F14MobRobotSecuritronBlueHostile
   name: Securitron
   description: A blue securitron rolling patrol looking for a fight.
   components:
@@ -54,8 +54,8 @@
     sprite: Nuclear14/Mobs/Robots/securitron-blue.rsi
 
 - type: entity
-  parent: MisfitsMobRobotSecuritronHostile
-  id: MisfitsMobRobotSecuritronBrownHostile
+  parent: F14MobRobotSecuritronHostile
+  id: F14MobRobotSecuritronBrownHostile
   name: Securitron
   description: A brown securitron rolling patrol looking for a fight.
   components:
@@ -63,8 +63,8 @@
     sprite: Nuclear14/Mobs/Robots/securitron-brown.rsi
 
 - type: entity
-  parent: MisfitsMobRobotSecuritronHostile
-  id: MisfitsMobRobotSecuritronRedHostile
+  parent: F14MobRobotSecuritronHostile
+  id: F14MobRobotSecuritronRedHostile
   name: Securitron
   description: A red securitron rolling patrol looking for a fight.
   components:
@@ -72,8 +72,8 @@
     sprite: Nuclear14/Mobs/Robots/securitron-red.rsi
 
 - type: entity
-  parent: MisfitsMobRobotSecuritronHostile
-  id: MisfitsMobRobotSecuritronYellowHostile
+  parent: F14MobRobotSecuritronHostile
+  id: F14MobRobotSecuritronYellowHostile
   name: Securitron
   description: A yellow securitron rolling patrol looking for a fight.
   components:
@@ -81,7 +81,7 @@
     sprite: Nuclear14/Mobs/Robots/securitron-yellow.rsi
 
 - type: entity
-  id: MisfitsSentryBotOverloadLightEmitter
+  id: F14SentryBotOverloadLightEmitter
   name: sentry bot overload light emitter
   description: A hidden helper entity for the sentry bot's overload warning lights.
   save: false
@@ -98,8 +98,8 @@
 # Misfits Change /Add: Sentry Bot - hostile NPC with twin gatling lasers, high HP, and armor
 
 - type: entity
-  parent: N14MobRobotHostile
-  id: MisfitsMobRobotSentryBot
+  parent: F14MobRobotHostile
+  id: F14MobRobotSentryBot
   name: Sentry Bot
   description: A pre-war military robot armed with a gatling laser and covered in thick armor plating. A terrifying relic of humanity's last war.
   suffix: hostile, gatling laser
@@ -109,13 +109,13 @@
     minInterval: 12
     maxInterval: 40
     sound:
-      collection: MisfitsSentryIdle
+      collection: F14SentryIdle
       params:
         volume: -6
         maxDistance: 7
   - type: AggroSound #Misfits Change - separate aggro alert on combat entry
     sound:
-      collection: MisfitsSentryAttack
+      collection: F14SentryAttack
       params:
         volume: -3
         maxDistance: 12
@@ -135,7 +135,7 @@
       Dead: HumanDead
   - type: Damageable
     # Hardened military armor - resistant to physical and burn damage
-    damageModifierSet: N14HeavyRobot
+    damageModifierSet: F14HeavyRobot
   - type: Injurable
     damageContainer: Biological
   - type: Sprite
@@ -185,7 +185,7 @@
     # Misfits Tweak: reduced from 8 → 6 shots/sec to be slightly less overwhelming.
     fireRate: 6
     soundGunshot:
-      collection: N14LaserGatlingGunshot
+      collection: F14LaserGatlingGunshot
     useKey: false
     selectedMode: FullAuto
     availableModes:
@@ -197,7 +197,7 @@
     # Misfits Change /Tweak: Extremely large charge pool — effectively infinite ammo.
     maxCharge: 9999999
     startingCharge: 9999999
-  # Misfits Change /Add: Melee stomp/ram attack used by N14RangedHostileCompound as a fallback
+  # Misfits Change /Add: Melee stomp/ram attack used by F14RangedHostileCompound as a fallback
   # when the gatling laser battery is depleted (HTN tries ranged first, then melee).
   # Misfits Change /Tweak: bumped to 40 brute, extended reach, added knockback like power armor.
   - type: MeleeWeapon
@@ -218,7 +218,7 @@
     distance: 0.25
   - type: HTN
     rootTask:
-      task: N14RangedHostileCompound
+      task: F14RangedHostileCompound
     blackboard:
       NavSmash: !type:Bool
         true
@@ -241,7 +241,7 @@
         volume: -2
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 4
     intensitySlope: 4
     totalIntensity: 24
@@ -254,16 +254,16 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14ScrapElectronic1:
+          F14ScrapElectronic1:
             min: 2
             max: 5
-          N14MaterialCircuitry1:
+          F14MaterialCircuitry1:
             min: 2
             max: 5
-          N14Scrap1:
+          F14Scrap1:
             min: 2
             max: 5
-          N14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (10-40)
+          F14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (10-40)
             min: 10
             max: 40
       - !type:PlaySoundBehavior
@@ -277,8 +277,8 @@
   # Misfits Add - robot/broadcast languages when player-controlled.
 
 - type: entity
-  parent: N14MobRobotHostile
-  id: MisfitsMobRobotSentryBotBallistic
+  parent: F14MobRobotHostile
+  id: F14MobRobotSentryBotBallistic
   name: Sentry Bot
   description: A pre-war military robot armed with a 5mm minigun and covered in thick armor plating. A terrifying relic of humanity's last war.
   suffix: hostile, minigun
@@ -288,13 +288,13 @@
     minInterval: 12
     maxInterval: 40
     sound:
-      collection: MisfitsSentryIdle
+      collection: F14SentryIdle
       params:
         volume: -6
         maxDistance: 7
   - type: AggroSound #Misfits Change /Add - same aggro alert as laser variant
     sound:
-      collection: MisfitsSentryAttack
+      collection: F14SentryAttack
       params:
         volume: -3
         maxDistance: 12
@@ -312,7 +312,7 @@
       Alive: BorgHealth
       Dead: HumanDead
   - type: Damageable
-    damageModifierSet: N14HeavyRobot
+    damageModifierSet: F14HeavyRobot
   - type: Injurable
     damageContainer: Biological
   - type: Sprite
@@ -363,13 +363,13 @@
     # Misfits Change /Tweak: bumped to 8 shots/sec for faster suppression fire.
     fireRate: 8
     soundGunshot:
-      collection: N14MinigunGunshot
+      collection: F14MinigunGunshot
     useKey: false
     selectedMode: FullAuto
     availableModes:
       - FullAuto
   - type: BasicEntityAmmoProvider
-    proto: N14Bullet5mm
+    proto: F14Bullet5mm
     # Misfits Change /Tweak: Extremely large drum — effectively infinite ammo.
     capacity: 99999
     count: 99999
@@ -398,7 +398,7 @@
     distance: 0.25
   - type: HTN
     rootTask:
-      task: N14RangedHostileCompound
+      task: F14RangedHostileCompound
     blackboard:
       NavSmash: !type:Bool
         true
@@ -421,7 +421,7 @@
         volume: -2
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 4
     intensitySlope: 4
     totalIntensity: 24
@@ -434,16 +434,16 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14ScrapElectronic1:
+          F14ScrapElectronic1:
             min: 2
             max: 10
-          N14MaterialCircuitry1:
+          F14MaterialCircuitry1:
             min: 2
             max: 20
-          N14Scrap1:
+          F14Scrap1:
             min: 2
             max: 30
-          N14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (10-40)
+          F14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (10-40)
             min: 10
             max: 40
       - !type:PlaySoundBehavior

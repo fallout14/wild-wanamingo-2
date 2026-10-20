@@ -2,188 +2,188 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Lathes/tools.yml
 
 - type: latheRecipe
-  id: N14Wirecutter
+  id: F14Wirecutter
   icon:
     sprite: Objects/Tools/wirecutters.rsi
     state: cutters-map
-  result: N14Wirecutter
+  result: F14Wirecutter
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 2
   materials:
     Steel: 200
     Plastic: 50
 
 - type: latheRecipe
-  id: N14Screwdriver
+  id: F14Screwdriver
   icon:
     sprite: Objects/Tools/screwdriver.rsi
     state: screwdriver-map
-  result: N14Screwdriver
+  result: F14Screwdriver
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 2
   materials:
     Steel: 200
     Plastic: 50
 
 - type: latheRecipe
-  id: N14Welder
-  result: N14Welder
+  id: F14Welder
+  result: F14Welder
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 2
   materials:
     Steel: 400
 
 - type: latheRecipe
-  id: N14Wrench
-  result: N14Wrench
+  id: F14Wrench
+  result: F14Wrench
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 2
   materials:
     Steel: 200
 
 - type: latheRecipe
-  id: N14CableStack
+  id: F14CableStack
   result: CableApcStack1
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 1
   materials:
-    N14Copper: 10 #Misfits Change: Makes More sense
+    F14Copper: 10 #Misfits Change: Makes More sense
     Cloth: 1
 
 - type: latheRecipe
-  id: N14CableMVStack
+  id: F14CableMVStack
   result: CableMVStack1
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 1
   materials:
-    N14Copper: 20 #Misfits Change: Makes More sense
+    F14Copper: 20 #Misfits Change: Makes More sense
     Cloth: 5
 
 - type: latheRecipe
-  id: N14CableHVStack
+  id: F14CableHVStack
   result: CableHVStack1
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 2
   materials:
-    N14Copper: 30 #Misfits Change: Makes More sense
+    F14Copper: 30 #Misfits Change: Makes More sense
     Cloth: 10
 
 - type: latheRecipe
-  id: N14Crowbar
+  id: F14Crowbar
   result: Crowbar
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 2
   materials:
     Steel: 200
 
 - type: latheRecipe
-  id: N14Pickaxe
+  id: F14PickaxeWorkbench
   result: Pickaxe
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 4
   materials:
     Steel: 1000
     Wood: 500
 
 - type: latheRecipe
-  id: N14Multitool
-  result: N14Multitool
+  id: F14Multitool
+  result: F14Multitool
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 2
   materials:
-    N14Copper: 200 #Misfits Change: Makes More sense
+    F14Copper: 200 #Misfits Change: Makes More sense
     Plastic: 400
 
 - type: latheRecipe
-  id: N14NetworkConfigurator
+  id: F14NetworkConfigurator
   result: NetworkConfigurator
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 2
   materials:
-    N14Copper: 200 #Misfits Change: Makes More sense
+    F14Copper: 200 #Misfits Change: Makes More sense
     Plastic: 200
 
 - type: latheRecipe
-  id: N14PowerDrill
-  result: N14PowerDrill
+  id: F14PowerDrill
+  result: F14PowerDrill
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 2
   materials:
-    N14Copper: 500 #Misfits Change: Makes More sense
+    F14Copper: 500 #Misfits Change: Makes More sense
     Steel: 300
     Plastic: 200
 
 - type: latheRecipe
-  id: N14HandheldGPSBasic
+  id: F14HandheldGPSBasic
   result: HandheldGPSBasic
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 2
   materials:
     Plastic: 300
-    N14Copper: 200 #Misfits Change: Makes More sense
+    F14Copper: 200 #Misfits Change: Makes More sense
     Glass: 300
 
 - type: latheRecipe
-  id: N14TRayScanner
+  id: F14TRayScanner
   result: trayScanner
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 2
   materials:
     Plastic: 300
-    N14Copper: 200 #Misfits Change: Makes More sense
+    F14Copper: 200 #Misfits Change: Makes More sense
     Glass: 300
 
 - type: latheRecipe
-  id: N14GasAnalyzer
+  id: F14GasAnalyzer
   result: GasAnalyzer
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 2
   materials:
     Plastic: 300
-    N14Copper: 200 #Misfits Change: Makes More sense
+    F14Copper: 200 #Misfits Change: Makes More sense
     Glass: 300
 
 - type: latheRecipe
-  id: N14SprayPainter
+  id: F14SprayPainter
   result: SprayPainter
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 2
   materials:
     Steel: 300
     Plastic: 100
 
 - type: latheRecipe
-  id: N14MiningDrill
+  id: F14MiningDrill
   result: MiningDrill
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 3
   materials:
     Steel: 300
-    N14Copper: 200 #Misfits Change: Makes More sense
+    F14Copper: 200 #Misfits Change: Makes More sense
     Plastic: 100
 
 - type: latheRecipe
-  id: N14ClothingEyesGlassesWelding
-  result: N14ClothingEyesGlassesWelding
+  id: F14ClothingEyesGlassesWelding
+  result: F14ClothingEyesGlassesWelding
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 5
   materials:
     Steel: 50
@@ -191,67 +191,67 @@
     Plastic: 100
 
 - type: latheRecipe
-  id: N14HandheldRadio
+  id: F14HandheldRadio
   result: RadioHandheld
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 5
   materials:
     Steel: 100
     Circuitry: 100
 
 - type: latheRecipe
-  id: N14HydroponicsToolClippers
-  result: N14HydroponicsToolClippers
+  id: F14HydroponicsToolClippers
+  result: F14HydroponicsToolClippers
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 3
   materials:
     Steel: 100
 
 - type: latheRecipe
-  id: N14HydroponicsToolHatchet
-  result: N14HydroponicsToolHatchet
+  id: F14HydroponicsToolHatchet
+  result: F14HydroponicsToolHatchet
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 3
   materials:
     Steel: 100
 
 - type: latheRecipe
-  id: N14HydroponicsToolScythe
-  result: N14HydroponicsToolScythe
+  id: F14HydroponicsToolScythe
+  result: F14HydroponicsToolScythe
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 5
   materials:
     Steel: 200
 
 - type: latheRecipe
-  id: N14HydroponicsToolHoe
-  result: N14HydroponicsToolHoe
+  id: F14HydroponicsToolHoe
+  result: F14HydroponicsToolHoe
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 3
   materials:
     Steel: 100
 
 - type: latheRecipe
-  id: N14HandLabeler
+  id: F14HandLabeler
   result: HandLabeler
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 2
   materials:
     Plastic: 100
 
 - type: latheRecipe
-  id: N14HandheldHealthAnalyzer
-  result: N14HandheldHealthAnalyzer
+  id: F14HandheldHealthAnalyzer
+  result: F14HandheldHealthAnalyzer
   categories:
-  - N14Tools
+  - F14Tools
   completetime: 2
   materials:
-    N14Gold: 50
+    F14Gold: 50
     Plastic: 300
     Circuitry: 100

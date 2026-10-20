@@ -8,7 +8,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - MisfitsKitNCR_StaffSergeantLine
+  - F14KitNCRStaffSergeantLine
 
 - type: thiefBackpackSet
   id: NCRA_SGTMSLSet
@@ -18,7 +18,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - MisfitsKitNCR_SGTMSL
+  - F14KitNCRSGTMSL
 
 - type: thiefBackpackSet
   id: NCRA_FirstSergeantVeteranSet
@@ -28,7 +28,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - MisfitsKitNCR_FirstSergeantVeteran
+  - F14KitNCRFirstSergeantVeteran
 
 - type: thiefBackpackSet
   id: NCRA_CaptainCommandSet
@@ -38,7 +38,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - MisfitsKitNCR_CaptainCommand
+  - F14KitNCRCaptainCommand
 
 - type: thiefBackpackSet
   id: NCRA_CaptainMarksmanSet
@@ -48,12 +48,12 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: marksman
   content:
-  - MisfitsKitNCR_CaptainMarksman
+  - F14KitNCRCaptainMarksman
 
 - type: entity
   name: private first class fireteam kit
-  parent: N14KitBase
-  id: MisfitsKitNCR_PFCFireteam
+  parent: F14KitBase
+  id: F14KitNCRPFCFireteam
   description: A crate containing trusted fireteam gear for a dependable NCR private first class.
   components:
   - type: Sprite
@@ -62,27 +62,27 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingBeltNCRPouches
-      - id: N14WeaponRifle556ServiceScoped
-      - id: N14Magazine556Rifle
+      - id: F14ClothingBeltNCRPouches
+      - id: F14WeaponRifle556ServiceScoped
+      - id: F14Magazine556Rifle
         amount: 4
-      - id: N14WeaponPistol9mm
-      - id: N14MagazinePistol9mm
+      - id: F14WeaponPistol9mm
+      - id: F14MagazinePistol9mm
         amount: 2
       - id: RadioHandheld
       - id: SmokeGrenade
-      - id: N14BoxCardboardMREBoxCFilled
-      - id: N14Stimpak
-      - id: N14RadXPill
-      - id: N14CleanGauze10
-      - id: N14Flare
+      - id: F14BoxCardboardMREBoxCFilled
+      - id: F14Stimpak
+      - id: F14RadXPill
+      - id: F14CleanGauze10
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: specialist patrol leader kit # #Misfits Tweak - renamed from corporal
-  parent: N14KitBase
-  id: MisfitsKitNCR_CorporalPatrol
+  parent: F14KitBase
+  id: F14KitNCRCorporalPatrol
   description: A crate containing field leadership gear for an NCR specialist tasked with pushing scouts and screening a column.
   components:
   - type: Sprite
@@ -91,29 +91,29 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingHeadHatNCRHelmetMetalDesert
-      - id: N14ClothingBeltNCR
-      - id: N14WeaponRifle556ServiceScoped
-      - id: N14Magazine556Rifle
+      - id: F14ClothingHeadHatNCRHelmetMetalDesert
+      - id: F14ClothingBeltNCR
+      - id: F14WeaponRifle556ServiceScoped
+      - id: F14Magazine556Rifle
         amount: 4
-      - id: N14WeaponPistol9mm
-      - id: N14MagazinePistol9mm
+      - id: F14WeaponPistol9mm
+      - id: F14MagazinePistol9mm
         amount: 2
       - id: RadioHandheld
       - id: SmokeGrenade
         amount: 2
-      - id: N14BoxCardboardMREBoxCFilled
-      - id: N14Stimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
-      - id: N14Flare
+      - id: F14BoxCardboardMREBoxCFilled
+      - id: F14Stimpak
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: staff sergeant linebreaker kit
-  parent: N14KitBase
-  id: MisfitsKitNCR_StaffSergeantLine
+  parent: F14KitBase
+  id: F14KitNCRStaffSergeantLine
   description: A crate containing veteran line gear for an NCR staff sergeant expected to steady a wavering push.
   components:
   - type: Sprite
@@ -122,28 +122,28 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingBeltNCR
-      - id: N14WeaponRifle308Battle
-      - id: N14ClipMagazine308Rifle
+      - id: F14ClothingBeltNCR
+      - id: F14WeaponRifle308Battle
+      - id: F14ClipMagazine308Rifle
         amount: 6
-      - id: N14WeaponPistol9mm
-      - id: N14MagazinePistol9mm
+      - id: F14WeaponPistol9mm
+      - id: F14MagazinePistol9mm
         amount: 2
       - id: RadioHandheld
       - id: SmokeGrenade
-      - id: N14BoxCardboardMREBoxCFilled
-      - id: N14Stimpak
-      - id: N14SuperStimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
-      - id: N14Flare
+      - id: F14BoxCardboardMREBoxCFilled
+      - id: F14Stimpak
+      - id: F14SuperStimpak
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: Morale Trooper Squad Lead kit
-  parent: N14KitBase
-  id: MisfitsKitNCR_SGTMSL
+  parent: F14KitBase
+  id: F14KitNCRSGTMSL
   description: "A crate containing an NCR squad leader's MSL package: custom mantle, trench shotgun, close-range ammunition, and a combat-stim field dose."
   components:
   - type: Sprite
@@ -152,33 +152,33 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsNCRMSLUniform
-      - id: MisfitsNCRMSLHelmet
-      - id: MisfitsNCRMSLGloves
-      - id: MisfitsNCRMSLBoots
-      - id: MisfitsNCRMSLMask
-      - id: MisfitsNCRMSLArmor
-      - id: MisfitsClothingBeltNCRShotgunner
-      - id: MisfitsWeaponShotgunTrench
-      - id: N14MagazineShotgun12
+      - id: F14NCRMSLUniform
+      - id: F14NCRMSLHelmet
+      - id: F14NCRMSLGloves
+      - id: F14NCRMSLBoots
+      - id: F14NCRMSLMask
+      - id: F14NCRMSLArmor
+      - id: F14ClothingBeltNCRShotgunner
+      - id: F14WeaponShotgunTrench
+      - id: F14MagazineShotgun12
         amount: 4
-      - id: N14WeaponPistol9mm
-      - id: N14MagazinePistol9mm
+      - id: F14WeaponPistol9mm
+      - id: F14MagazinePistol9mm
         amount: 2
       - id: RadioHandheld
       - id: SmokeGrenade
-      - id: N14BoxCardboardMREBoxCFilled
-      - id: N14Stimpak
-      - id: N14Psycho
-      - id: N14CleanGauze10
-      - id: N14Flare
+      - id: F14BoxCardboardMREBoxCFilled
+      - id: F14Stimpak
+      - id: F14Psycho
+      - id: F14CleanGauze10
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: sergeant first class veteran kit
-  parent: N14KitBase
-  id: MisfitsKitNCR_FirstSergeantVeteran
+  parent: F14KitBase
+  id: F14KitNCRFirstSergeantVeteran
   description: A crate containing campaign-proven command gear for a sergeant first class who leads by example.
   components:
   - type: Sprite
@@ -187,29 +187,29 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsClothingOuterNCRTrenchCoat
-      - id: N14ClothingBeltRevolverfilled
-      - id: MisfitsWeaponRifle5mmCarbine
-      - id: MisfitsMagazineCarbine5mm
+      - id: F14ClothingOuterNCRTrenchCoatRank
+      - id: F14ClothingBeltRevolverfilled
+      - id: F14WeaponRifle5mmCarbine
+      - id: F14MagazineCarbine5mm
         amount: 3
       - id: RadioHandheld
       - id: SmokeGrenade
         amount: 2
-      - id: N14Dynamite # #Misfits Fix - GrenadeFrag is a GL-only round (no matching launcher in kit); replaced with throwable dynamite
-      - id: N14BoxCardboardMREBoxCFilled
-      - id: N14Stimpak
-      - id: N14SuperStimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
+      - id: F14Dynamite # #Misfits Fix - GrenadeFrag is a GL-only round (no matching launcher in kit); replaced with throwable dynamite
+      - id: F14BoxCardboardMREBoxCFilled
+      - id: F14Stimpak
+      - id: F14SuperStimpak
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
         amount: 2
-      - id: N14Flare
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: captain command kit
-  parent: N14KitBase
-  id: MisfitsKitNCR_CaptainCommand
+  parent: F14KitBase
+  id: F14KitNCRCaptainCommand
   description: A crate containing stronger command gear for an NCR captain who may need to hold the line personally.
   components:
   - type: Sprite
@@ -218,29 +218,29 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingBeltRevolverCaptainfilled
-      - id: N14WeaponRifle308Battle
-      - id: N14ClipMagazine308Rifle
+      - id: F14ClothingBeltRevolverCaptainfilled
+      - id: F14WeaponRifle308Battle
+      - id: F14ClipMagazine308Rifle
         amount: 6
       - id: RadioHandheld
       - id: SmokeGrenade
         amount: 2
-      - id: N14Dynamite # #Misfits Fix - GrenadeFrag is a GL-only round (no matching launcher in kit); replaced with throwable dynamite
-      - id: N14BoxCardboardMREBoxCFilled
-      - id: N14Stimpak
-      - id: N14SuperStimpak
+      - id: F14Dynamite # #Misfits Fix - GrenadeFrag is a GL-only round (no matching launcher in kit); replaced with throwable dynamite
+      - id: F14BoxCardboardMREBoxCFilled
+      - id: F14Stimpak
+      - id: F14SuperStimpak
         amount: 2
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
         amount: 2
-      - id: N14Flare
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: captain frontier marksman kit
-  parent: N14KitBase
-  id: MisfitsKitNCR_CaptainMarksman
+  parent: F14KitBase
+  id: F14KitNCRCaptainMarksman
   description: A crate containing a precision marksman package for an NCR captain — the Republic's Pride scoped M1C, issued to scout captains by the Gunrunners.
   components:
   - type: Sprite
@@ -249,19 +249,19 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingBeltRevolverCaptainfilled
-      - id: MisfitsWeaponRifleM1GarandRepublicsPride # #Misfits Change: Republic's Pride scoped M1C replaces .50 rifle
-      - id: N14Magazine308Rifle # #Misfits Change - replaced GarandEnbloc308
+      - id: F14ClothingBeltRevolverCaptainfilled
+      - id: F14WeaponRifleM1GarandRepublicsPride # #Misfits Change: Republic's Pride scoped M1C replaces .50 rifle
+      - id: F14Magazine308Rifle # #Misfits Change - replaced GarandEnbloc308
         amount: 2
       - id: RadioHandheld
       - id: SmokeGrenade
-      - id: N14BoxCardboardMREBoxCFilled
-      - id: N14Stimpak
-      - id: N14SuperStimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
+      - id: F14BoxCardboardMREBoxCFilled
+      - id: F14Stimpak
+      - id: F14SuperStimpak
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
         amount: 2
-      - id: N14Flare
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
@@ -273,12 +273,12 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - MisfitsKitNCR_CaptainServiceRifle
+  - F14KitNCRCaptainServiceRifle
 
 - type: entity
   name: captain field officer kit
-  parent: N14KitBase
-  id: MisfitsKitNCR_CaptainServiceRifle
+  parent: F14KitBase
+  id: F14KitNCRCaptainServiceRifle
   description: A crate containing field officer gear for an NCR captain who favors the marksman carbine on the front line.
   components:
   - type: Sprite
@@ -287,32 +287,32 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingBeltNCR
-      - id: MisfitsWeaponRifle556Marksman
-      - id: N14Magazine556Rifle
+      - id: F14ClothingBeltNCR
+      - id: F14WeaponRifle556Marksman
+      - id: F14Magazine556Rifle
         amount: 4
-      - id: N14WeaponPistol9mm
-      - id: N14MagazinePistol9mm
+      - id: F14WeaponPistol9mm
+      - id: F14MagazinePistol9mm
         amount: 3
       - id: RadioHandheld
       - id: SmokeGrenade
         amount: 2
-      - id: N14Dynamite # #Misfits Fix - GrenadeFrag is a GL-only round (no matching launcher in kit); replaced with throwable dynamite
-      - id: N14BoxCardboardMREBoxCFilled
-      - id: N14Stimpak
-      - id: N14SuperStimpak
+      - id: F14Dynamite # #Misfits Fix - GrenadeFrag is a GL-only round (no matching launcher in kit); replaced with throwable dynamite
+      - id: F14BoxCardboardMREBoxCFilled
+      - id: F14Stimpak
+      - id: F14SuperStimpak
         amount: 2
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
         amount: 2
-      - id: N14Flare
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: Heavy Trooper Veteran Kit
-  parent: N14KitBase
-  id: MisfitsKitNCR_HeavyTrooperVeteran
+  parent: F14KitBase
+  id: F14KitNCRHeavyTrooperVeteran
   description: A crate containing campaign-proven Heavy Trooper gear for warmongering.
   components:
   - type: Sprite
@@ -321,25 +321,25 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponRifle5mmCarbine
-      - id: MisfitsMagazineCarbine5mm
+      - id: F14WeaponRifle5mmCarbine
+      - id: F14MagazineCarbine5mm
         amount: 4
       - id: SmokeGrenade
         amount: 2
-      - id: N14Dynamite # #Misfits Fix - GrenadeFrag is a GL-only round (no matching launcher in kit); replaced with throwable dynamite
-      - id: N14BoxCardboardMREBoxCFilled
-      - id: N14Stimpak
-      - id: N14SuperStimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
+      - id: F14Dynamite # #Misfits Fix - GrenadeFrag is a GL-only round (no matching launcher in kit); replaced with throwable dynamite
+      - id: F14BoxCardboardMREBoxCFilled
+      - id: F14Stimpak
+      - id: F14SuperStimpak
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
         amount: 2
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: Heavy Trooper Linebreaker Kit
-  parent: N14KitBase
-  id: MisfitsKitNCR_HeavyTrooperLinebreaker
+  parent: F14KitBase
+  id: F14KitNCRHeavyTrooperLinebreaker
   description: A crate containing a heavy-hitting weapon, built to contend with enemy heavy infantry.
   components:
   - type: Sprite
@@ -348,26 +348,26 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponLMGAutoRifle
-      - id: N14Magazine308Rifle
+      - id: F14WeaponLMGAutoRifle
+      - id: F14Magazine308Rifle
         amount: 2
       - id: SmokeGrenade
         amount: 2
-      - id: N14Dynamite # #Misfits Fix - GrenadeFrag is a GL-only round (no matching launcher in kit); replaced with throwable dynamite
+      - id: F14Dynamite # #Misfits Fix - GrenadeFrag is a GL-only round (no matching launcher in kit); replaced with throwable dynamite
         amount: 2
-      - id: N14BoxCardboardMREBoxCFilled
-      - id: N14Stimpak
-      - id: N14SuperStimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
+      - id: F14BoxCardboardMREBoxCFilled
+      - id: F14Stimpak
+      - id: F14SuperStimpak
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
         amount: 2
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: Heavy Trooper Minigun Kit
-  parent: N14KitBase
-  id: MisfitsKitNCR_HeavyTrooperMinigun
+  parent: F14KitBase
+  id: F14KitNCRHeavyTrooperMinigun
   description: A crate containing a standard minigun and supplies for sustained fire.
   components:
   - type: Sprite
@@ -376,26 +376,26 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponMinigun
-      - id: N14MagazineMinigun5mm
+      - id: F14WeaponMinigun
+      - id: F14MagazineMinigun5mm
         amount: 2
       - id: SmokeGrenade
         amount: 2
-      - id: N14Dynamite
+      - id: F14Dynamite
         amount: 2
-      - id: N14BoxCardboardMREBoxCFilled
-      - id: N14Stimpak
-      - id: N14SuperStimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
+      - id: F14BoxCardboardMREBoxCFilled
+      - id: F14Stimpak
+      - id: F14SuperStimpak
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
         amount: 2
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: Heavy Trooper Defender Kit
-  parent: N14KitBase
-  id: MisfitsKitNCR_HeavyTrooperDefender
+  parent: F14KitBase
+  id: F14KitNCRHeavyTrooperDefender
   description: A crate containing everything a Heavy Trooper needs to hold the line against the tide.
   components:
   - type: Sprite
@@ -404,15 +404,15 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-    - id: N14WeaponLMG
-    - id: N14LMGMagazine556Rifle
-    - id: N14Dynamite # #Misfits Fix - GrenadeFrag is a GL-only round (no matching launcher in kit); replaced with throwable dynamite
+    - id: F14WeaponLMG
+    - id: F14LMGMagazine556Rifle
+    - id: F14Dynamite # #Misfits Fix - GrenadeFrag is a GL-only round (no matching launcher in kit); replaced with throwable dynamite
       amount: 3
-    - id: N14BoxCardboardMREBoxCFilled
-    - id: N14Stimpak
-    - id: N14SuperStimpak
-    - id: N14RadAwayBloodbag
-    - id: N14CleanGauze10
+    - id: F14BoxCardboardMREBoxCFilled
+    - id: F14Stimpak
+    - id: F14SuperStimpak
+    - id: F14RadAwayBloodbag
+    - id: F14CleanGauze10
       amount: 2
     sound:
       path: /Audio/Effects/unwrap.ogg
@@ -425,7 +425,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - MisfitsKitNCR_HeavyTrooperVeteran
+  - F14KitNCRHeavyTrooperVeteran
 
 - type: thiefBackpackSet
   id: NCR_HeavyTrooperLinebreakerSet
@@ -435,7 +435,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - MisfitsKitNCR_HeavyTrooperLinebreaker
+  - F14KitNCRHeavyTrooperLinebreaker
 
 - type: thiefBackpackSet
   id: NCR_HeavyTrooperMinigunSet
@@ -445,7 +445,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - MisfitsKitNCR_HeavyTrooperMinigun
+  - F14KitNCRHeavyTrooperMinigun
 
 - type: thiefBackpackSet
   id: NCR_HeavyTrooperDefenderSet
@@ -455,12 +455,12 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - MisfitsKitNCR_HeavyTrooperDefender
+  - F14KitNCRHeavyTrooperDefender
 
 - type: entity
-  id: MisfitsNCRHeavyTrooperLoadoutKits
+  id: F14NCRHeavyTrooperLoadoutKits
   name: Undecided NCR Heavy Trooper Kit
-  parent: N14BaseLoadoutKit
+  parent: F14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -475,9 +475,9 @@
     - NCR_HeavyTrooperDefenderSet
 
 - type: entity
-  id: MisfitsNCRHeavyTrooperLeadLoadoutKits
+  id: F14NCRHeavyTrooperLeadLoadoutKits
   name: Undecided NCR Heavy Trooper Lead Kit
-  parent: N14BaseLoadoutKit
+  parent: F14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi

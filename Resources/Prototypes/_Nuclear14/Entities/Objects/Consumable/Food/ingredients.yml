@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: N14ReagentContainerBase
+  id: F14ReagentContainerBase
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/ingredients.rsi
@@ -37,8 +37,8 @@
 
 - type: entity
   abstract: true
-  parent: N14ReagentContainerBase
-  id: N14ReagentPacketBase
+  parent: F14ReagentContainerBase
+  id: F14ReagentPacketBase
   components:
   - type: Openable
     sound:
@@ -66,8 +66,8 @@
         Blunt: 0
 
 - type: entity
-  parent: [N14ReagentPacketBase, ItemHeftyBase]
-  id: N14ReagentContainerFlour
+  parent: [F14ReagentPacketBase, ItemHeftyBase]
+  id: F14ReagentContainerFlour
   name: flour bag
   description: A big bag of flour. Good for baking!
   components:
@@ -77,12 +77,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14ExtractRazorgrainFlour
+      - ReagentId: F14ExtractRazorgrainFlour
         Quantity: 50
 
 - type: entity
-  parent: [N14ReagentPacketBase, ItemHeftyBase]
-  id: N14ReagentContainerFlourSmall
+  parent: [F14ReagentPacketBase, ItemHeftyBase]
+  id: F14ReagentContainerFlourSmall
   name: flour pack
   description: A pack of flour. Good for baking!
   components:
@@ -92,12 +92,12 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: N14ExtractRazorgrainFlour
+      - ReagentId: F14ExtractRazorgrainFlour
         Quantity: 20
 
 - type: entity
-  parent: N14ReagentPacketBase
-  id: N14ReagentContainerCornmeal
+  parent: F14ReagentPacketBase
+  id: F14ReagentContainerCornmeal
   name: cornmeal bag
   description: A big bag of cornmeal. Good for cooking!
   components:
@@ -106,12 +106,12 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: N14ExtractMaize
+      - ReagentId: F14ExtractMaize
         Quantity: 50
 
 - type: entity
-  parent: N14ReagentPacketBase
-  id: N14ReagentContainerCornmealSmall
+  parent: F14ReagentPacketBase
+  id: F14ReagentContainerCornmealSmall
   name: cornmeal pack
   description: A pack of cornmeal. Good for cooking!
   components:
@@ -121,12 +121,12 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: N14ExtractMaize
+      - ReagentId: F14ExtractMaize
         Quantity: 20
 
 - type: entity
-  parent: N14ReagentPacketBase
-  id: N14ReagentContainerRice
+  parent: F14ReagentPacketBase
+  id: F14ReagentContainerRice
   name: rice bag
   description: A big bag of rice. Good for cooking!
   components:
@@ -139,8 +139,8 @@
         Quantity: 50
 
 - type: entity
-  parent: N14ReagentPacketBase
-  id: N14ReagentContainerRiceSmall
+  parent: F14ReagentPacketBase
+  id: F14ReagentContainerRiceSmall
   name: rice pack
   description: A pack of rice. Good for cooking!
   components:
@@ -154,8 +154,8 @@
         Quantity: 20
 
 - type: entity
-  parent: N14ReagentPacketBase
-  id: N14ReagentContainerSugar
+  parent: F14ReagentPacketBase
+  id: F14ReagentContainerSugar
   name: sugar bag
   description: A big bag of tasty sugar. Tiny graffiti reads 'SPACE IS FAKE.' #N14 change
   components:
@@ -168,8 +168,8 @@
         Quantity: 50
 
 - type: entity
-  parent: N14ReagentPacketBase
-  id: N14ReagentContainerSugarSmall
+  parent: F14ReagentPacketBase
+  id: F14ReagentContainerSugarSmall
   name: sugar pack
   description: A pack of tasty sugar. #N14 change
   components:
@@ -183,8 +183,8 @@
         Quantity: 20
 
 - type: entity
-  parent: N14ReagentPacketBase
-  id: N14ReagentContainerOliveoil
+  parent: F14ReagentPacketBase
+  id: F14ReagentContainerOliveoil
   name: olive oil
   description: Olive oil. From a long dead, faraway land, presumably. #N14 change
   components:
@@ -198,8 +198,8 @@
         Quantity: 20
 
 - type: entity
-  parent: N14ReagentPacketBase
-  id: N14ReagentContainerMayo
+  parent: F14ReagentPacketBase
+  id: F14ReagentContainerMayo
   name: mayonnaise
   description: Bottle of mayonnaise.
   components:
@@ -235,7 +235,7 @@
 - type: entity
   abstract: true
   parent: FoodBase
-  id: N14FoodBakingBase
+  id: F14FoodBakingBase
   description: Used in various recipes.
   components:
   - type: Sprite
@@ -249,8 +249,8 @@
 
 - type: entity
   name: dough
-  parent: [N14FoodBakingBase, BaseSlicingRefinableFood]
-  id: N14FoodDough
+  parent: [F14FoodBakingBase, BaseSlicingRefinableFood]
+  id: F14FoodDough
   description: A piece of dough.
   components:
   - type: FlavorProfile
@@ -260,7 +260,7 @@
     state: dough
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodDoughSlice
+    - id: F14FoodDoughSlice
       amount: 3
   - type: Construction
     graph: Pizza
@@ -268,8 +268,8 @@
 
 - type: entity
   name: dough slice
-  parent: N14FoodBakingBase
-  id: N14FoodDoughSlice
+  parent: F14FoodBakingBase
+  id: F14FoodDoughSlice
   description: A slice of dough. Can be cooked into a bun.
   components:
   - type: FlavorProfile
@@ -280,8 +280,8 @@
 
 - type: entity
   name: cornmeal dough
-  parent: [N14FoodBakingBase, BaseSlicingRefinableFood]
-  id: N14FoodDoughCornmeal
+  parent: [F14FoodBakingBase, BaseSlicingRefinableFood]
+  id: F14FoodDoughCornmeal
   description: A piece of cornmeal dough.
   components:
   - type: FlavorProfile
@@ -292,13 +292,13 @@
     state: cornmealdough
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodDoughCornmealSlice
+    - id: F14FoodDoughCornmealSlice
       amount: 3
 
 - type: entity
   name: cornmeal dough slice
-  parent: N14FoodBakingBase
-  id: N14FoodDoughCornmealSlice
+  parent: F14FoodBakingBase
+  id: F14FoodDoughCornmealSlice
   description: A slice of cornmeal dough.
   components:
   - type: FlavorProfile
@@ -310,8 +310,8 @@
 
 - type: entity
   name: tortilla dough
-  parent: [N14FoodBakingBase, BaseSlicingRefinableFood]
-  id: N14FoodDoughTortilla
+  parent: [F14FoodBakingBase, BaseSlicingRefinableFood]
+  id: F14FoodDoughTortilla
   description: A piece of tortilla dough.
   components:
   - type: FlavorProfile
@@ -322,13 +322,13 @@
     state: tortilladough
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodDoughTortillaSlice
+    - id: F14FoodDoughTortillaSlice
       amount: 3
 
 - type: entity
   name: tortilla dough slice
-  parent: N14FoodBakingBase
-  id: N14FoodDoughTortillaSlice
+  parent: F14FoodBakingBase
+  id: F14FoodDoughTortillaSlice
   description: A slice of tortilla dough.
   components:
   - type: FlavorProfile
@@ -340,8 +340,8 @@
 
 - type: entity
   name: flattened tortilla dough
-  parent: N14FoodBakingBase
-  id: N14FoodDoughTortillaFlat
+  parent: F14FoodBakingBase
+  id: F14FoodDoughTortillaFlat
   description: A flattened slice of tortilla dough, cook this to get a taco shell.
   components:
   - type: FlavorProfile
@@ -353,8 +353,8 @@
 
 - type: entity
   name: raw pastry base
-  parent: N14FoodBakingBase
-  id: N14FoodDoughPastryBaseRaw
+  parent: F14FoodBakingBase
+  id: F14FoodDoughPastryBaseRaw
   description: Must be cooked before use.
   components:
   - type: Sprite
@@ -362,8 +362,8 @@
 
 - type: entity
   name: pastry base
-  parent: N14FoodBakingBase
-  id: N14FoodDoughPastryBase
+  parent: F14FoodBakingBase
+  id: F14FoodDoughPastryBase
   description: A base for any self-respecting pastry.
   components:
   - type: Sprite
@@ -371,8 +371,8 @@
 
 - type: entity
   name: pie dough
-  parent: N14FoodBakingBase
-  id: N14FoodDoughPie
+  parent: F14FoodBakingBase
+  id: F14FoodDoughPie
   description: Cook it to get a pie.
   components:
   - type: Sprite
@@ -380,8 +380,8 @@
 
 - type: entity
   name: flat dough
-  parent: N14FoodBakingBase
-  id: N14FoodDoughFlat
+  parent: F14FoodBakingBase
+  id: F14FoodDoughFlat
   description: A flattened dough.
   components:
   - type: Sprite
@@ -392,8 +392,8 @@
 
 - type: entity
   name: pizza bread
-  parent: N14FoodBakingBase
-  id: N14FoodDoughPizzaBaked
+  parent: F14FoodBakingBase
+  id: F14FoodDoughPizzaBaked
   description: Add ingredients to make a pizza.
   components:
   - type: Sprite
@@ -401,8 +401,8 @@
 
 - type: entity
   name: cake batter
-  parent: N14FoodBakingBase
-  id: N14FoodCakeBatter
+  parent: F14FoodBakingBase
+  id: F14FoodCakeBatter
   description: Cook it to get a cake.
   components:
   - type: FlavorProfile
@@ -413,8 +413,8 @@
 
 - type: entity
   name: stick of butter
-  parent: [N14FoodBakingBase, BaseSlicingRefinableFood]
-  id: N14FoodButter
+  parent: [F14FoodBakingBase, BaseSlicingRefinableFood]
+  id: F14FoodButter
   description: A stick of delicious, golden, fatty goodness.
   components:
   - type: Sprite
@@ -427,13 +427,13 @@
         Quantity: 15
   - type: ToolRefinable
     refineResult:
-    - id: MisfitsFoodButterSlice
+    - id: F14FoodButterSlice
       amount: 3
 
 - type: entity
   name: stick of cannabis butter
-  parent: N14FoodBakingBase
-  id: N14FoodCannabisButter
+  parent: F14FoodBakingBase
+  id: F14FoodCannabisButter
   description: Add this to your favorite baked goods for an irie time.
   components:
   - type: Sprite
@@ -452,8 +452,8 @@
 
 - type: entity
   name: cheese wheel
-  parent: [N14FoodBakingBase, BaseSlicingRefinableFood]
-  id: N14FoodCheese
+  parent: [F14FoodBakingBase, BaseSlicingRefinableFood]
+  id: F14FoodCheese
   description: A big wheel of delicious Cheddar.
   components:
   - type: FlavorProfile
@@ -463,13 +463,13 @@
     state: cheesewheel
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodCheeseSlice
+    - id: F14FoodCheeseSlice
       amount: 3
 
 - type: entity
   name: cheese wedge
-  parent: N14FoodBakingBase
-  id: N14FoodCheeseSlice
+  parent: F14FoodBakingBase
+  id: F14FoodCheeseSlice
   description: A wedge of delicious Cheddar. The cheese wheel it was cut from can't have gone far.
   components:
   - type: FlavorProfile
@@ -486,8 +486,8 @@
 
 - type: entity
   name: chèvre log
-  parent: [N14FoodBakingBase, BaseSlicingRefinableFood]
-  id: N14FoodChevre
+  parent: [F14FoodBakingBase, BaseSlicingRefinableFood]
+  id: F14FoodChevre
   description: A soft log of creamy Chèvre.
   components:
   - type: FlavorProfile
@@ -498,7 +498,7 @@
     state: chevrelog
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodChevreSlice
+    - id: F14FoodChevreSlice
       amount: 3
   - type: Solution
     solution:
@@ -511,8 +511,8 @@
 
 - type: entity
   name: chèvre disk
-  parent: N14FoodBakingBase
-  id: N14FoodChevreSlice
+  parent: F14FoodBakingBase
+  id: F14FoodChevreSlice
   description: A small disk of creamy Chèvre. An ideal adornment for French side dishes.
   components:
   - type: FlavorProfile
@@ -532,8 +532,8 @@
 
 - type: entity
   name: tofu
-  parent: [N14FoodBakingBase, BaseSlicingRefinableFood]
-  id: N14FoodTofu
+  parent: [F14FoodBakingBase, BaseSlicingRefinableFood]
+  id: F14FoodTofu
   description: Solid white block with a subtle flavor.
   components:
   - type: FlavorProfile
@@ -551,13 +551,13 @@
         Quantity: 6
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodTofuSlice
+    - id: F14FoodTofuSlice
       amount: 3
 
 - type: entity
   name: tofu slice
-  parent: N14FoodBakingBase
-  id: N14FoodTofuSlice
+  parent: F14FoodBakingBase
+  id: F14FoodTofuSlice
   description: A slice of tofu. Ingredient of various vegetarian dishes.
   components:
   - type: FlavorProfile
@@ -576,8 +576,8 @@
 
 - type: entity
   name: burned mess
-  parent: N14FoodBakingBase
-  id: N14FoodBadRecipe
+  parent: F14FoodBakingBase
+  id: F14FoodBadRecipe
   description: Someone should be demoted from cook for this.
   components:
   - type: FlavorProfile
@@ -600,7 +600,7 @@
 - type: entity
   name: cocoa beans
   parent: FoodProduceBase
-  id: N14FoodCocoaBeans
+  id: F14FoodCocoaBeans
   description: You can never have too much chocolate!
   components:
   - type: FlavorProfile
@@ -626,8 +626,8 @@
         Quantity: 2
 
 - type: entity
-  parent: N14BaseFoodCondimentPacket
-  id: N14FoodCondimentPacketProtein
+  parent: F14BaseFoodCondimentPacket
+  id: F14FoodCondimentPacketProtein
   name: protein powder packet
   description: Contains 10u of powdered protein. Mix with 20u of water
   components:

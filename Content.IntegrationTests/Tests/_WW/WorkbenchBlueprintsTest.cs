@@ -17,9 +17,9 @@ namespace Content.IntegrationTests.Tests._WW;
 [TestOf(typeof(WorkbenchBlueprintsSystem))]
 public sealed class WorkbenchBlueprintsTest : GameTest
 {
-    private static readonly EntProtoId Bench = "N14WorkbenchWeaponbench";
-    private static readonly EntProtoId Blueprint = "MisfitsBlueprintEightiesWeaponsT1";
-    private static readonly ProtoId<LatheRecipePrototype> PipePistol = "MisfitsBlueprintPipePistolEighties";
+    private static readonly EntProtoId Bench = "F14WorkbenchWeaponbench";
+    private static readonly EntProtoId Blueprint = "F14BlueprintEightiesWeaponsT1";
+    private static readonly ProtoId<LatheRecipePrototype> PipePistol = "F14BlueprintPipePistolEighties";
 
     [Test]
     public async Task StoredBlueprintAddsRecipes()

@@ -3,8 +3,8 @@
 
 - type: entity
   name: legate-praetorian kit
-  parent: N14KitBase
-  id: CorvaxKitLegatePraetorian
+  parent: F14KitBase
+  id: F14KitLegatePraetorian
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -14,26 +14,26 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: CorvaxWeaponThermospear
-      - id: CorvaxLegionnaireShield
-      - id: N14ClothingBeltRope
+      - id: F14WeaponThermospear
+      - id: F14LegionnaireShield
+      - id: F14ClothingBeltRope
       - id: Bola
         amount: 2
-      - id: N14HealingPowder #Misfits Change /Tweak/: Legion uses tribal medicine, not stimpaks
+      - id: F14HealingPowder #Misfits Change /Tweak/: Legion uses tribal medicine, not stimpaks
         amount: 2
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces super stimpak
-      #- id: N14MedkitCombatFilled #Misfits Change /Remove/: Legion does not use stimpak medkits
-      - id: N14FoodTinK
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces super stimpak
+      #- id: F14MedkitCombatFilled #Misfits Change /Remove/: Legion does not use stimpak medkits
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
-      - id: N14DrinkTeaBroc
+      - id: F14JunkCeramicFlask
+      - id: F14DrinkTeaBroc
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: legate-sagitaria kit
-  parent: N14KitBase
-  id: CorvaxKitLegateSagitaria
+  parent: F14KitBase
+  id: F14KitLegateSagitaria
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -43,24 +43,24 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponRifle556Chinese
-      - id: N14ClothingBeltRope
-      - id: N14Magazine556Rifle
+      - id: F14WeaponRifle556Chinese
+      - id: F14ClothingBeltRope
+      - id: F14Magazine556Rifle
         amount: 2
-      - id: N14MagazineBox762
+      - id: F14MagazineBox762
       - id: SmokeGrenade
-      - id: N14HealingPowder #Misfits Change /Tweak/: Legion uses tribal medicine, not stimpaks
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces super stimpak
-      - id: N14FoodTinK
+      - id: F14HealingPowder #Misfits Change /Tweak/: Legion uses tribal medicine, not stimpaks
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces super stimpak
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: legate-imperator kit
-  parent: N14KitBase
-  id: CorvaxKitLegateImperator
+  parent: F14KitBase
+  id: F14KitLegateImperator
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -70,27 +70,27 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14CeremonialSword
-      - id: N14WeaponPistol45Colt
-      - id: N14MagazinePistol45
+      - id: F14CeremonialSword
+      - id: F14WeaponPistol45Colt
+      - id: F14MagazinePistol45
         amount: 2
-      - id: N14MagazineBox45
+      - id: F14MagazineBox45
       - id: Bola
         amount: 2
-      - id: N14HealingPowder #Misfits Change /Tweak/: Legion uses tribal medicine, not stimpaks
+      - id: F14HealingPowder #Misfits Change /Tweak/: Legion uses tribal medicine, not stimpaks
         amount: 2
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces super stimpak
-      - id: N14FoodTinK
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces super stimpak
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
-      - id: N14DrinkTeaBroc
+      - id: F14JunkCeramicFlask
+      - id: F14DrinkTeaBroc
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: centurion-command kit
-  parent: N14KitBase
-  id: CorvaxKitCenturionCommand
+  parent: F14KitBase
+  id: F14KitCenturionCommand
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -100,25 +100,25 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponRifle556Marksman
-      - id: CorvaxLegionnaireShield
-      - id: N14ClothingBeltRope
-      - id: N14Magazine556Rifle
+      - id: F14WeaponRifle556Marksman
+      - id: F14LegionnaireShield
+      - id: F14ClothingBeltRope
+      - id: F14Magazine556Rifle
         amount: 3
       - id: BoxHandcuff
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
         amount: 2
-      #- id: N14MedkitFilled #Misfits Change /Remove/: Legion does not use stimpak medkits
-      - id: N14FoodTinK
+      #- id: F14MedkitFilled #Misfits Change /Remove/: Legion does not use stimpak medkits
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: centurion-marksman kit
-  parent: N14KitBase
-  id: CorvaxKitCenturionMarksman
+  parent: F14KitBase
+  id: F14KitCenturionMarksman
   description: "A set of Legion command-tier marksman equipment."
   components:
   - type: Sprite
@@ -128,23 +128,23 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponRifleM1GarandRepublicsDemise # #Misfits Change: Republic's Demise scoped M1C for Centurion marksman
-      - id: N14Magazine308Rifle # #Misfits Change - replaced GarandEnbloc308
+      - id: F14WeaponRifleM1GarandRepublicsDemise # #Misfits Change: Republic's Demise scoped M1C for Centurion marksman
+      - id: F14Magazine308Rifle # #Misfits Change - replaced GarandEnbloc308
         amount: 2
-      - id: N14ClothingBeltRope
+      - id: F14ClothingBeltRope
       - id: SmokeGrenade
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: centurion-vanquisher kit
-  parent: N14KitBase
-  id: CorvaxKitCenturionVanquisher
+  parent: F14KitBase
+  id: F14KitCenturionVanquisher
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -154,24 +154,24 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: CorvaxWeaponThermospear
-      - id: N14ClothingBeltRope
-      - id: MisfitsWeaponRifle5mmCarbine
-      - id: MisfitsMagazineCarbine5mm
+      - id: F14WeaponThermospear
+      - id: F14ClothingBeltRope
+      - id: F14WeaponRifle5mmCarbine
+      - id: F14MagazineCarbine5mm
         amount: 4
-      - id: N14HealingPoultice #Misfits Change /Tweak/: Legion uses tribal medicine, not stimpaks
+      - id: F14HealingPoultice #Misfits Change /Tweak/: Legion uses tribal medicine, not stimpaks
         amount: 2
-      #- id: N14MedkitFilled #Misfits Change /Remove/: Legion does not use stimpak medkits
-      - id: N14FoodTinK
+      #- id: F14MedkitFilled #Misfits Change /Remove/: Legion does not use stimpak medkits
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: venator-sagitaria kit
-  parent: N14KitBase
-  id: CorvaxKitVenatorSagitaria
+  parent: F14KitBase
+  id: F14KitVenatorSagitaria
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -181,25 +181,25 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponRifle308SniperRifle  # #Misfits Change - bolt-action .50 replaces semi-auto AMR; Frumentarii use a slower, precise weapon for covert ops
-      - id: N14ClothingBeltRope
+      - id: F14WeaponRifle308SniperRifle  # #Misfits Change - bolt-action .50 replaces semi-auto AMR; Frumentarii use a slower, precise weapon for covert ops
+      - id: F14ClothingBeltRope
       # #Misfits Change - AMR magazines removed; bolt-action uses single cartridges from ammo boxes
-      - id: MisfitsMagazineOver308RifleSniper
+      - id: F14MagazineOver308RifleSniper
         amount: 4
       - id: ClothingEyesNightVisionGoggles
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
       - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: venator-stalker kit
-  parent: N14KitBase
-  id: CorvaxKitVenatorStalker
+  parent: F14KitBase
+  id: F14KitVenatorStalker
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -209,24 +209,24 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSMG12mmAdvanced
-      - id: N14TopMagazineSMG12mm
+      - id: F14WeaponSMG12mmAdvanced
+      - id: F14TopMagazineSMG12mm
         amount: 3
-      - id: N14ClothingBeltRope
+      - id: F14ClothingBeltRope
       - id: ClothingEyesNightVisionGoggles
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
       - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: venator-triaria kit
-  parent: N14KitBase
-  id: CorvaxKitVenatorTriaria
+  parent: F14KitBase
+  id: F14KitVenatorTriaria
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -236,25 +236,25 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponShotgunBlowback
-      - id: N14ClothingBeltRope
-      - id: N14MagazineBox12gauge
+      - id: F14WeaponShotgunBlowback
+      - id: F14ClothingBeltRope
+      - id: F14MagazineBox12gauge
         amount: 2
-      - id: N14CeremonialSword
+      - id: F14CeremonialSword
       - id: ClothingEyesNightVisionGoggles
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
       - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: vexillarius-standard kit
-  parent: N14KitBase
-  id: CorvaxKitVexillariusStandard
+  parent: F14KitBase
+  id: F14KitVexillariusStandard
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -264,28 +264,28 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14CeremonialSword #
-      - id: MisfitsClothingHandsPowerFistGoliath
-      - id: CorvaxLegionnaireShield
-      - id: N14ClothingBeltQuiverSpear
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14CeremonialSword #
+      - id: F14ClothingHandsPowerFistGoliath
+      - id: F14LegionnaireShield
+      - id: F14ClothingBeltQuiverSpear
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
-      - id: CorvaxPilumSpear
+      - id: F14PilumSpear
         amount: 3
       - id: Bola
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
-      - id: N14HealingPowder
-      - id: N14FoodTinK
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14HealingPowder
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: vexillarius-herald kit
-  parent: N14KitBase
-  id: CorvaxKitVexillariusHerald
+  parent: F14KitBase
+  id: F14KitVexillariusHerald
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -295,28 +295,28 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponRifle308SVT40 # #Misfits Change: hunting rifle as Legion baseline primary
-      - id: N14MagazineBox308
+      - id: F14WeaponRifle308SVT40 # #Misfits Change: hunting rifle as Legion baseline primary
+      - id: F14MagazineBox308
         amount: 1
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt # existing .45 sidearm kept
-      - id: N14MagazinePistol45
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt # existing .45 sidearm kept
+      - id: F14MagazinePistol45
         amount: 2
       - id: SmokeGrenade
-      - id: N14Bandage
+      - id: F14Bandage
         amount: 2
-      - id: N14HealingPoultice
-      - id: N14HealingPowder #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
-      - id: N14FoodTinK
+      - id: F14HealingPoultice
+      - id: F14HealingPowder #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: vexillarius-skirmisher kit
-  parent: N14KitBase
-  id: CorvaxKitVexillariusSkirmisher
+  parent: F14KitBase
+  id: F14KitVexillariusSkirmisher
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -326,26 +326,26 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSMG10mm # #Misfits Change: hunting rifle as Legion baseline primary (replaces SMG)
-      - id: N14MagazineSMG10mm
+      - id: F14WeaponSMG10mm # #Misfits Change: hunting rifle as Legion baseline primary (replaces SMG)
+      - id: F14MagazineSMG10mm
         amount: 3
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
-      - id: CorvaxPilumSpear
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
-      - id: N14HealingPowder
-      - id: N14FoodTinK
+      - id: F14PilumSpear
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14HealingPowder
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: houndmaster-hunter kit
-  parent: N14KitBase
-  id: CorvaxKitHoundmasterHunter
+  parent: F14KitBase
+  id: F14KitHoundmasterHunter
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -355,26 +355,26 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSniper45-70BrushGun #Misfits Change by RedBookcase: Houndmaster is a single slot role, has specialist gear
-      - id: N14SpeedLoader45-70Tube
+      - id: F14WeaponSniper4570BrushGun #Misfits Change by RedBookcase: Houndmaster is a single slot role, has specialist gear
+      - id: F14SpeedLoader4570Tube
         amount: 2
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
       - id: Bola
         amount: 2
-      - id: N14HealingPoultice
-      - id: N14FoodTinK
+      - id: F14HealingPoultice
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: houndmaster-tamer kit
-  parent: N14KitBase
-  id: CorvaxKitHoundmasterTamer
+  parent: F14KitBase
+  id: F14KitHoundmasterTamer
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -384,26 +384,26 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponRifle308SVT40 #Misfits Change by RedBookcase: Houndmaster is a single slot role, has specialist gear
-      - id: N14MagazineBox308
+      - id: F14WeaponRifle308SVT40 #Misfits Change by RedBookcase: Houndmaster is a single slot role, has specialist gear
+      - id: F14MagazineBox308
         amount: 1
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
       - id: Zipties
         amount: 2
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
-      - id: N14FoodTinK
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: houndmaster-medic kit
-  parent: N14KitBase
-  id: CorvaxKitHoundmasterMedic
+  parent: F14KitBase
+  id: F14KitHoundmasterMedic
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -413,29 +413,29 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSniperHunting # #Misfits Change: hunting rifle as Legion baseline primary
-      - id: MisfitsAmmoBox308
-      - id: N14WeaponPistol45Colt # existing .45 sidearm kept
-      - id: N14MagazinePistol45
+      - id: F14WeaponSniperHunting # #Misfits Change: hunting rifle as Legion baseline primary
+      - id: F14AmmoBox308
+      - id: F14WeaponPistol45Colt # existing .45 sidearm kept
+      - id: F14MagazinePistol45
         amount: 2
-      - id: N14Bandage
+      - id: F14Bandage
         amount: 2
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 2
-      - id: N14Hydra
-      - id: N14HealingPowder
+      - id: F14Hydra
+      - id: F14HealingPowder
         amount: 2
       - id: ClothingBeltMedical
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: auxilia-skirmisher kit
-  parent: N14KitBase
-  id: CorvaxKitAuxiliaSkirmisher
+  parent: F14KitBase
+  id: F14KitAuxiliaSkirmisher
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -445,23 +445,23 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSniperHunting # #Misfits Change: hunting rifle as Legion baseline primary (equiv to NCR service rifle)
-      - id: MisfitsAmmoBox308
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol as Legion universal sidearm
-      - id: N14MagazinePistol45
+      - id: F14WeaponSniperHunting # #Misfits Change: hunting rifle as Legion baseline primary (equiv to NCR service rifle)
+      - id: F14AmmoBox308
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol as Legion universal sidearm
+      - id: F14MagazinePistol45
         amount: 2
-      - id: N14HealingPoultice
-      - id: N14FoodTinK
+      - id: F14HealingPoultice
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: auxilia-spearman kit
-  parent: N14KitBase
-  id: CorvaxKitAuxiliaSpearman
+  parent: F14KitBase
+  id: F14KitAuxiliaSpearman
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -471,22 +471,22 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSniperHunting # #Misfits Change: hunting rifle baseline
-      - id: MisfitsAmmoBox308
-      - id: N14ClothingBeltQuiverSpear
-      - id: CorvaxPilumSpear
+      - id: F14WeaponSniperHunting # #Misfits Change: hunting rifle baseline
+      - id: F14AmmoBox308
+      - id: F14ClothingBeltQuiverSpear
+      - id: F14PilumSpear
         amount: 3
-      - id: N14HealingPoultice
-      - id: N14FoodTinK
+      - id: F14HealingPoultice
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: auxilia-medic kit
-  parent: N14KitBase
-  id: CorvaxKitAuxiliaMedic
+  parent: F14KitBase
+  id: F14KitAuxiliaMedic
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -496,28 +496,28 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponSMG45GreaseGun # #Misfits Change: hunting rifle as Legion baseline primary
-      - id: N14Magazine45SubMachineGun
+      - id: F14WeaponSMG45GreaseGun # #Misfits Change: hunting rifle as Legion baseline primary
+      - id: F14Magazine45SubMachineGun
         amount: 2
-      - id: N14HandheldHealthAnalyzer # #Misfits Add - Legion Auxilia medics should spawn with health analyzer
+      - id: F14HandheldHealthAnalyzer # #Misfits Add - Legion Auxilia medics should spawn with health analyzer
       - id: ClothingBeltMedical
-      - id: N14Bandage
+      - id: F14Bandage
         amount: 2
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 2
-      - id: N14HealingPowder
+      - id: F14HealingPowder
         amount: 2
-      - id: N14TribalMachete
-      - id: N14FoodTinK
+      - id: F14TribalMachete
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: recruit-decanus-command kit
-  parent: N14KitBase
-  id: CorvaxKitRecruitDecanusCommand
+  parent: F14KitBase
+  id: F14KitRecruitDecanusCommand
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -527,30 +527,30 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: CorvaxLegionnaireShield
-      - id: MisfitsWeaponShotgunBlowback
-      - id: N14MagazineBox12gauge
+      - id: F14LegionnaireShield
+      - id: F14WeaponShotgunBlowback
+      - id: F14MagazineBox12gauge
         amount: 3
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
       - id: BoxHandcuff
-      - id: MisfitsClothingHandsPowerFistGoliath
+      - id: F14ClothingHandsPowerFistGoliath
       - id: Bola
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
         amount: 2
-      #- id: N14MedkitFilled #Misfits Change /Remove/: Legion does not use stimpak medkits
-      - id: N14FoodTinK
+      #- id: F14MedkitFilled #Misfits Change /Remove/: Legion does not use stimpak medkits
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: recruit-decanus-hunter kit
-  parent: N14KitBase
-  id: CorvaxKitRecruitDecanusHunter
+  parent: F14KitBase
+  id: F14KitRecruitDecanusHunter
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -560,25 +560,25 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSniper50Pipe # #Misfits Change by BILL CLINTON!: Armor hunter. hunt and kill their tankies while the other decani hold the line down.
-      - id: N14MagazineBox50 # #Misfits Change by bill - one box? ...two box.
+      - id: F14WeaponSniper50Pipe # #Misfits Change by BILL CLINTON!: Armor hunter. hunt and kill their tankies while the other decani hold the line down.
+      - id: F14MagazineBox50 # #Misfits Change by bill - one box? ...two box.
         amount: 2
-      - id: N14ClothingBeltRope
-      - id: MisfitsWeaponSMG45GreaseGun # #Misfits Change: legion smg for hunting armor.
-      - id: N14Magazine45SubMachineGun
+      - id: F14ClothingBeltRope
+      - id: F14WeaponSMG45GreaseGun # #Misfits Change: legion smg for hunting armor.
+      - id: F14Magazine45SubMachineGun
         amount: 2
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: recruit-decanus-crusher kit
-  parent: N14KitBase
-  id: CorvaxKitRecruitDecanusCrusher
+  parent: F14KitBase
+  id: F14KitRecruitDecanusCrusher
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -588,26 +588,26 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14TribalBigClubDecorated
-      - id: N14WeaponRifleGrenade # #Misfits Change by BILL CLINTON!: 40mm parity with NCR specialists. Billions must slaughter.
-      - id: N1440mmGrenadeFrag # #Misfits Change - ammo for 40mm
+      - id: F14TribalBigClubDecorated
+      - id: F14WeaponRifleGrenade # #Misfits Change by BILL CLINTON!: 40mm parity with NCR specialists. Billions must slaughter.
+      - id: F1440mmGrenadeFrag # #Misfits Change - ammo for 40mm
         amount: 4
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm (replaces tribal .44)
-      - id: N14MagazinePistol45
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm (replaces tribal .44)
+      - id: F14MagazinePistol45
         amount: 2
       - id: SmokeGrenade
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: decanus gladiator kit
-  parent: N14KitBase
-  id: CorvaxKitDeanGladiator
+  parent: F14KitBase
+  id: F14KitDeanGladiator
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -617,29 +617,29 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponM60GPMG
-      - id: N14CeremonialSword
-      - id: N14Magazine308M60Box
+      - id: F14WeaponM60GPMG
+      - id: F14CeremonialSword
+      - id: F14Magazine308M60Box
         amount: 2
       - id: SmokeGrenade
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt
-      - id: N14MagazinePistol45
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt
+      - id: F14MagazinePistol45
       - id: Handcuffs
         amount: 2
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
       - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: decanus crusher kit
-  parent: N14KitBase
-  id: CorvaxKitDeanCrusher
+  parent: F14KitBase
+  id: F14KitDeanCrusher
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -649,28 +649,28 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsClothingHandsPowerFistGoliath
-      - id: MisfitsAmmoBox12gauge
+      - id: F14ClothingHandsPowerFistGoliath
+      - id: F14AmmoBox12gauge
         amount: 2
       - id: SmokeGrenade
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt
-      - id: N14MagazinePistol45
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt
+      - id: F14MagazinePistol45
       - id: Handcuffs
         amount: 2
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
       - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: decanus demolitionist kit
-  parent: N14KitBase
-  id: CorvaxKitDeanDemolitionist
+  parent: F14KitBase
+  id: F14KitDeanDemolitionist
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -680,32 +680,32 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14TribalBigClubDecorated
-      - id: N14WeaponRifleGrenade
-      - id: N1440mmGrenadeFrag
+      - id: F14TribalBigClubDecorated
+      - id: F14WeaponRifleGrenade
+      - id: F1440mmGrenadeFrag
         amount: 5
-      - id: N1440mmGrenadeFire
+      - id: F1440mmGrenadeFire
         amount: 2
       - id: ExGrenade
         amount: 2
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt
-      - id: N14MagazinePistol45
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt
+      - id: F14MagazinePistol45
       - id: Handcuffs
         amount: 2
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
       - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: decanus sharpshooter kit
-  parent: N14KitBase
-  id: CorvaxKitDeanSharpshooter
+  parent: F14KitBase
+  id: F14KitDeanSharpshooter
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -715,22 +715,22 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponSMGPPSh41
-      - id: N14WeaponSniper50Pipe
-      - id: MisfitsAmmoBox50
-      - id: MisfitsMagazineSMG9mmDrum
+      - id: F14WeaponSMGPPSh41
+      - id: F14WeaponSniper50Pipe
+      - id: F14AmmoBox50
+      - id: F14MagazineSMG9mmDrum
         amount: 2
       - id: SmokeGrenade
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt
-      - id: N14MagazinePistol45
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt
+      - id: F14MagazinePistol45
       - id: Handcuffs
         amount: 2
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
       - id: FoodCondimentPacketMustard
 
     sound:
@@ -738,8 +738,8 @@
 
 - type: entity
   name: decanus destroyer kit
-  parent: N14KitBase
-  id: CorvaxKitDeanDestroyer
+  parent: F14KitBase
+  id: F14KitDeanDestroyer
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -749,28 +749,28 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-    - id: MisfitsWeaponUSHMG
-    - id: N14Magazine762AmmoBelt
+    - id: F14WeaponUSHMG
+    - id: F14Magazine762AmmoBelt
       amount: 2
     - id: SmokeGrenade
-    - id: N14ClothingBeltRope
-    - id: N14WeaponPistol45Colt
-    - id: N14MagazinePistol45
+    - id: F14ClothingBeltRope
+    - id: F14WeaponPistol45Colt
+    - id: F14MagazinePistol45
     - id: Handcuffs
       amount: 2
-    - id: N14HealingPoultice
+    - id: F14HealingPoultice
       amount: 2
-    - id: N14FoodTinK
+    - id: F14FoodTinK
       amount: 2
-    - id: N14JunkCeramicFlask
+    - id: F14JunkCeramicFlask
     - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: veteran-firearm kit
-  parent: N14KitBase
-  id: CorvaxKitVeteranFirearm
+  parent: F14KitBase
+  id: F14KitVeteranFirearm
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -780,28 +780,28 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponRifle308M14 # #Misfits Change by BILL CLINTON!: Small number role made to be paired with the NCR sarge or basic ranger kits.
-      - id: N14Magazine762AmmoShort
+      - id: F14WeaponRifle308M14 # #Misfits Change by BILL CLINTON!: Small number role made to be paired with the NCR sarge or basic ranger kits.
+      - id: F14Magazine762AmmoShort
         amount: 4
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
-      - id: CorvaxGladius
+      - id: F14Gladius
       - id: SmokeGrenade
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
       - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: veteran-berserker kit
-  parent: N14KitBase
-  id: CorvaxKitVeteranBerserker
+  parent: F14KitBase
+  id: F14KitVeteranBerserker
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -811,29 +811,29 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponSMG45Thompson # #Misfits Change by BILL CLINTON!: Small number role made to be paired with the NCR sarge or basic ranger kits.
-      - id: N14Magazine45SubMachineGun
+      - id: F14WeaponSMG45Thompson # #Misfits Change by BILL CLINTON!: Small number role made to be paired with the NCR sarge or basic ranger kits.
+      - id: F14Magazine45SubMachineGun
         amount: 4
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
-      - id: N14TribalBigClubDecorated #swapped with fireaxe, the fireaxe is utter trash
+      - id: F14TribalBigClubDecorated #swapped with fireaxe, the fireaxe is utter trash
       - id: ThrowingKnife
         amount: 3
-      - id: N14HealingPoultice #Misfits Change /Tweak/: Legion uses tribal medicine, not stimpaks
+      - id: F14HealingPoultice #Misfits Change /Tweak/: Legion uses tribal medicine, not stimpaks
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
       - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: veteran-goliath kit
-  parent: N14KitBase
-  id: CorvaxKitVeteranGoliath
+  parent: F14KitBase
+  id: F14KitVeteranGoliath
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -843,27 +843,27 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRevolver45-70Hunter # #Misfits Change by BILL CLINTON!: Small number role made to be paired with the NCR sarge or basic ranger kits.
-      - id: MisfitsSpeedLoader45-70
+      - id: F14WeaponRevolver4570Hunter # #Misfits Change by BILL CLINTON!: Small number role made to be paired with the NCR sarge or basic ranger kits.
+      - id: F14SpeedLoader4570
         amount: 2
-      - id: MisfitsAmmoBox45-70
-      - id: N14ClothingBeltRope
-      - id: MisfitsClothingHandsPowerFistGoliath
+      - id: F14AmmoBox4570
+      - id: F14ClothingBeltRope
+      - id: F14ClothingHandsPowerFistGoliath
       - id: ThrowingKnife
         amount: 3
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
       - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: warrior-healer kit
-  parent: N14KitBase
-  id: CorvaxKitWarriorHealer
+  parent: F14KitBase
+  id: F14KitWarriorHealer
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -873,28 +873,28 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponSMG45GreaseGun # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14Magazine45SubMachineGun
+      - id: F14WeaponSMG45GreaseGun # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14Magazine45SubMachineGun
         amount: 2
-      - id: N14TribalMachete
-      #- id: N14ClothingBeltMedicalFilled #Misfits Change /Remove/: Legion does not use stimpak medical belts
-      - id: N14HealingPowder
+      - id: F14TribalMachete
+      #- id: F14ClothingBeltMedicalFilled #Misfits Change /Remove/: Legion does not use stimpak medical belts
+      - id: F14HealingPowder
         amount: 2
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 2
-      - id: N14Bandage
+      - id: F14Bandage
         amount: 2
-      - id: N14AloeSalve
-      - id: N14FoodTinK
+      - id: F14AloeSalve
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: warrior-firearm kit
-  parent: N14KitBase
-  id: CorvaxKitWarriorFirearm
+  parent: F14KitBase
+  id: F14KitWarriorFirearm
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -904,25 +904,25 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSniperHunting # #Misfits Change: hunting rifle as Legion baseline primary (replaces SMG)
-      - id: MisfitsAmmoBox308
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14WeaponSniperHunting # #Misfits Change: hunting rifle as Legion baseline primary (replaces SMG)
+      - id: F14AmmoBox308
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
-      - id: N14TribalMachete
-      - id: N14HealingPowder #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
-      - id: N14FoodTinK
+      - id: F14TribalMachete
+      - id: F14HealingPowder #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
       - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: warrior-melee kit
-  parent: N14KitBase
-  id: CorvaxKitWarriorMelee
+  parent: F14KitBase
+  id: F14KitWarriorMelee
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -932,24 +932,24 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 4
-      - id: N14TribalBigClub
-      - id: N14HealingPowder
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
-      - id: N14FoodTinK
+      - id: F14TribalBigClub
+      - id: F14HealingPowder
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
       - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: recruit-base kit
-  parent: N14KitBase
-  id: CorvaxKitRecruitBase
+  parent: F14KitBase
+  id: F14KitRecruitBase
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -959,21 +959,21 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponSMG45GreaseGun
-      - id: N14Magazine45SubMachineGun
+      - id: F14WeaponSMG45GreaseGun
+      - id: F14Magazine45SubMachineGun
         amount: 2
-      - id: N14TribalMachete
-      - id: N14HealingPowder #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
-      - id: N14FoodTinK
+      - id: F14TribalMachete
+      - id: F14HealingPowder #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: recruit-spear kit
-  parent: N14KitBase
-  id: CorvaxKitRecruitSpear
+  parent: F14KitBase
+  id: F14KitRecruitSpear
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -983,22 +983,22 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingBeltQuiverSpear
-      - id: CorvaxPilumSpear
+      - id: F14ClothingBeltQuiverSpear
+      - id: F14PilumSpear
         amount: 4
-      - id: N14HealingPowder
-      - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
-      - id: N14FoodTinK
+      - id: F14HealingPowder
+      - id: F14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
       - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: recruit-melee kit
-  parent: N14KitBase
-  id: CorvaxKitRecruitMelee
+  parent: F14KitBase
+  id: F14KitRecruitMelee
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -1008,19 +1008,19 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14LongSword
-      - id: N14HealingPowder #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
-      - id: N14FoodTinK
+      - id: F14LongSword
+      - id: F14HealingPowder #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
       - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: recruit-healer kit
-  parent: N14KitBase
-  id: CorvaxKitRecruitHealer
+  parent: F14KitBase
+  id: F14KitRecruitHealer
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -1030,24 +1030,24 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14TribalMachete
+      - id: F14TribalMachete
       - id: ClothingBeltMedical
-      - id: N14Bandage
+      - id: F14Bandage
         amount: 2
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 2
-      - id: N14AloeSalve
-      - id: N14HealingPowder
-      - id: N14FoodTinK
+      - id: F14AloeSalve
+      - id: F14HealingPowder
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: recruit-initiate kit
-  parent: N14KitBase
-  id: CorvaxKitRecruitInitiate
+  parent: F14KitBase
+  id: F14KitRecruitInitiate
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -1057,18 +1057,18 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14TribalMachete
-      - id: N14HealingPowder
-      - id: N14FoodTinK
+      - id: F14TribalMachete
+      - id: F14HealingPowder
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: recruit-porter kit
-  parent: N14KitBase
-  id: CorvaxKitRecruitPorter
+  parent: F14KitBase
+  id: F14KitRecruitPorter
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -1078,20 +1078,20 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingBeltQuiverSpear
-      - id: CorvaxPilumSpear
+      - id: F14ClothingBeltQuiverSpear
+      - id: F14PilumSpear
         amount: 3
-      - id: N14HealingPowder
-      - id: N14FoodTinK
+      - id: F14HealingPowder
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: recruit-camp-medic kit
-  parent: N14KitBase
-  id: CorvaxKitRecruitCampMedic
+  parent: F14KitBase
+  id: F14KitRecruitCampMedic
   description: "A set of Legion equipment."
   components:
   - type: Sprite
@@ -1102,15 +1102,15 @@
   - type: SpawnItemsOnUse
     items:
       - id: ClothingBeltMedical
-      - id: N14TribalMachete
-      - id: N14Bandage
+      - id: F14TribalMachete
+      - id: F14Bandage
         amount: 2
-      - id: N14AloeSalve
-      - id: N14HealingPoultice
+      - id: F14AloeSalve
+      - id: F14HealingPoultice
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
@@ -1129,13 +1129,13 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserPistol
-#      - id: N14PowerCellSmall
+#      - id: F14WeaponLaserPistol
+#      - id: F14PowerCellSmall
 #        amount: 2
-#      - id: N14WeaponLaserRifleAuto
+#      - id: F14WeaponLaserRifleAuto
 #      - id: N14PowerCellHigh
 #        amount: 3
-#      - id: N14Stimpak
+#      - id: F14Stimpak
 #      - id: BoxMRE
 #    sound:
 #      path: /Audio/Effects/unwrap.ogg
@@ -1152,13 +1152,13 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserPistol
-#      - id: N14PowerCellSmall
+#      - id: F14WeaponLaserPistol
+#      - id: F14PowerCellSmall
 #        amount: 2
-#      - id: N14WeaponLaserRifleWattz2000
+#      - id: F14WeaponLaserRifleWattz2000
 #      - id: N14PowerCellFocused
 #        amount: 2
-#      - id: N14Stimpak
+#      - id: F14Stimpak
 #      - id: BoxMRE
 #    sound:
 #      path: /Audio/Effects/unwrap.ogg
@@ -1175,11 +1175,11 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserPistol
-#      - id: N14PowerCellSmall
+#      - id: F14WeaponLaserPistol
+#      - id: F14PowerCellSmall
 #        amount: 2
-#      - id: N14WeaponLaserRifleRecharger
-#      - id: N14Stimpak
+#      - id: F14WeaponLaserRifleRecharger
+#      - id: F14Stimpak
 #      - id: BoxMRE
 #    sound:
 #      path: /Audio/Effects/unwrap.ogg
@@ -1196,13 +1196,13 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserPistol
-#      - id: N14PowerCellSmall
+#      - id: F14WeaponLaserPistol
+#      - id: F14PowerCellSmall
 #        amount: 2
-#      - id: N14WeaponLaserRiflePrototypeAER14
-#      - id: N14PowerCellAdvanced
+#      - id: F14WeaponLaserRiflePrototypeAER14
+#      - id: F14PowerCellAdvanced
 #        amount: 3
-#      - id: N14Stimpak
+#      - id: F14Stimpak
 #      - id: BoxMRE
 #    sound:
 #      path: /Audio/Effects/unwrap.ogg
@@ -1219,13 +1219,13 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserPistol
-#      - id: N14PowerCellSmall
+#      - id: F14WeaponLaserPistol
+#      - id: F14PowerCellSmall
 #        amount: 2
-#      - id: N14WeaponLaserRifleAuto
+#      - id: F14WeaponLaserRifleAuto
 #      - id: N14PowerCellHigh
 #        amount: 3
-#      - id: N14Stimpak
+#      - id: F14Stimpak
 #      - id: BoxMRE
 #    sound:
 #      path: /Audio/Effects/unwrap.ogg
@@ -1242,13 +1242,13 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserPistol
-#      - id: N14PowerCellSmall
+#      - id: F14WeaponLaserPistol
+#      - id: F14PowerCellSmall
 #        amount: 2
 #      - id: N14WeaponLaserRifleYk42b
 #      - id: N14PowerCellFocusedYk42b
 #        amount: 3
-#      - id: N14Stimpak
+#      - id: F14Stimpak
 #      - id: BoxMRE
 #    sound:
 #      path: /Audio/Effects/unwrap.ogg
@@ -1265,11 +1265,11 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserPistol
-#      - id: N14PowerCellSmall
+#      - id: F14WeaponLaserPistol
+#      - id: F14PowerCellSmall
 #        amount: 2
-#      - id: N14WeaponLaserRifleRecharger
-#      - id: N14Stimpak
+#      - id: F14WeaponLaserRifleRecharger
+#      - id: F14Stimpak
 #      - id: BoxMRE
 #    sound:
 #      path: /Audio/Effects/unwrap.ogg
@@ -1286,13 +1286,13 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserPistol
-#      - id: N14PowerCellSmall
+#      - id: F14WeaponLaserPistol
+#      - id: F14PowerCellSmall
 #        amount: 2
 #      - id: N14WeaponLaserRifleWattz2000Extended
 #      - id: N14PowerCellFocused
 #        amount: 3
-#      - id: N14Stimpak
+#      - id: F14Stimpak
 #      - id: BoxMRE
 #    sound:
 #      path: /Audio/Effects/unwrap.ogg
@@ -1309,12 +1309,12 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserPistol
-#      - id: N14PowerCellSmall
+#      - id: F14WeaponLaserPistol
+#      - id: F14PowerCellSmall
 #        amount: 2
-#      - id: N14WeaponLaserGatling
+#      - id: F14WeaponLaserGatling
 #      - id: N14PowerCellFusion
-#      - id: N14Stimpak
+#      - id: F14Stimpak
 #      - id: BoxMRE
 #    sound:
 #      path: /Audio/Effects/unwrap.ogg
@@ -1334,15 +1334,15 @@
 #      - id: SheetSteel10
 #      - id: SheetPlastic10
 #      - id: ClothingHandsGlovesColorYellow
-#      - id: N14ClothingBeltUtilityFilled
+#      - id: F14ClothingBeltUtilityFilled
 #      - id: ClothingHeadBrotherhoodScribeHeadset
-#      - id: N14WeaponLaserPistol
-#      - id: N14PowerCellSmall
+#      - id: F14WeaponLaserPistol
+#      - id: F14PowerCellSmall
 #        amount: 2
-#      - id: N14WeaponLaserRifleAuto
+#      - id: F14WeaponLaserRifleAuto
 #      - id: N14PowerCellHigh
 #        amount: 3
-#      - id: N14Stimpak
+#      - id: F14Stimpak
 #      - id: BoxMRE
 #    sound:
 #      path: /Audio/Effects/unwrap.ogg
@@ -1359,13 +1359,13 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14MedkitBruteFilled
-#      - id: N14CombatKnife
-#      - id: N14ClothingBeltMedicalFilled
+#      - id: F14MedkitBruteFilled
+#      - id: F14CombatKnife
+#      - id: F14ClothingBeltMedicalFilled
 #      - id: ClothingHeadBrotherhoodScribeHeadset
-#      - id: N14WeaponLaserPistolRecharger
+#      - id: F14WeaponLaserPistolRecharger
 #      - id: ClothingHandsGlovesChemist
-#      - id: N14Stimpak
+#      - id: F14Stimpak
 #      - id: BoxMRE
 #    sound:
 #      path: /Audio/Effects/unwrap.ogg
@@ -1374,8 +1374,8 @@
 
 - type: entity
   name: ranger submachine gun kit
-  parent: N14KitBase
-  id: CorvaxKitSMGRanger
+  parent: F14KitBase
+  id: F14KitSMGRanger
   components:
   - type: Sprite
     state: rifleman
@@ -1383,15 +1383,15 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingBeltNCR
-      - id: MisfitsWeaponSMG45GreaseGun
-      - id: N14Magazine45SubMachineGun
+      - id: F14ClothingBeltNCR
+      - id: F14WeaponSMG45GreaseGun
+      - id: F14Magazine45SubMachineGun
         amount: 4
-      - id: N14MagazineBox45
-      - id: N14Stimpak
+      - id: F14MagazineBox45
+      - id: F14Stimpak
         amount: 2
-      - id: N14BoxCardboardMREBoxKFilled
-      - id: N14CombatKnife
+      - id: F14BoxCardboardMREBoxKFilled
+      - id: F14CombatKnife
     sound:
       path: /Audio/Effects/unwrap.ogg
 
@@ -1415,8 +1415,8 @@
 #        amount: 2
 #      - id: N14PowerCellFocusedYk42b
 #        amount: 3
-#      - id: N14CleanGauze10
-#      - id: N14Stimpak
+#      - id: F14CleanGauze10
+#      - id: F14Stimpak
 #      - id: GrenadeShrapnel
 #
 #- type: entity
@@ -1432,13 +1432,13 @@
 #  - type: SpawnItemsOnUse
 #    items:
 #      - id: N14WeaponRifleAk112
-#      - id: N14WeaponPistol45Colt
-#      - id: N14MagazinePistol45
+#      - id: F14WeaponPistol45Colt
+#      - id: F14MagazinePistol45
 #        amount: 3
 #      - id: MagazineDrum545Rifle
 #        amount: 2
-#      - id: N14CleanGauze10
-#      - id: N14Stimpak
+#      - id: F14CleanGauze10
+#      - id: F14Stimpak
 #      - id: MagazineBox545
 #      - id: GrenadeShrapnel
 #
@@ -1454,14 +1454,14 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserRifleAuto
-#      - id: N14WeaponLaserPistol
-#      - id: N14PowerCellSmall
+#      - id: F14WeaponLaserRifleAuto
+#      - id: F14WeaponLaserPistol
+#      - id: F14PowerCellSmall
 #        amount: 2
 #      - id: N14PowerCellHigh
 #        amount: 3
-#      - id: N14CleanGauze10
-#      - id: N14Stimpak
+#      - id: F14CleanGauze10
+#      - id: F14Stimpak
 #
 #- type: entity
 #  name: Paladin Rifle kit
@@ -1476,13 +1476,13 @@
 #  - type: SpawnItemsOnUse
 #    items:
 #      - id: N14WeaponRifleAk112
-#      - id: N14WeaponPistol45Colt
-#      - id: N14MagazinePistol45
+#      - id: F14WeaponPistol45Colt
+#      - id: F14MagazinePistol45
 #        amount: 3
 #      - id: MagazineDrum545Rifle
 #        amount: 2
-#      - id: N14CleanGauze10
-#      - id: N14Stimpak
+#      - id: F14CleanGauze10
+#      - id: F14Stimpak
 #      - id: MagazineBox545
 #
 #- type: entity
@@ -1497,14 +1497,14 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserRiflePrototypeAER14
+#      - id: F14WeaponLaserRiflePrototypeAER14
 #      - id: N14WeaponLaserMagnetoPistol
 #      - id: N14PowerCellMagnetoSmall
 #        amount: 2
-#      - id: N14PowerCellAdvanced
+#      - id: F14PowerCellAdvanced
 #        amount: 3
-#      - id: N14CleanGauze10
-#      - id: N14Stimpak
+#      - id: F14CleanGauze10
+#      - id: F14Stimpak
 #      - id: CigaretteWeldingFuel
 
 #Misfits Change /Comment-out/: Western BoS kits removed — no Western BoS chapter.
@@ -1521,13 +1521,13 @@
 #  - type: SpawnItemsOnUse
 #    items:
 #      - id: N14WeaponRifleAk112
-#      - id: N14WeaponPistol45Colt
-#      - id: N14MagazinePistol45
+#      - id: F14WeaponPistol45Colt
+#      - id: F14MagazinePistol45
 #        amount: 2
 #      - id: Magazine545Rifle
 #        amount: 3
-#      - id: N14CleanGauze10
-#      - id: N14Stimpak
+#      - id: F14CleanGauze10
+#      - id: F14Stimpak
 #      - id: MagazineBox545
 #      - id: N14ClothingHeadHatBrotherCapralHelmet
 #      - id: ClothingMaskGasBrootherWestern
@@ -1545,14 +1545,14 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserRifle
-#      - id: N14WeaponLaserPistol
-#      - id: N14PowerCellSmall
+#      - id: F14WeaponLaserRifle
+#      - id: F14WeaponLaserPistol
+#      - id: F14PowerCellSmall
 #        amount: 2
 #      - id: N14PowerCellHigh
 #        amount: 3
-#      - id: N14CleanGauze10
-#      - id: N14Stimpak
+#      - id: F14CleanGauze10
+#      - id: F14Stimpak
 #      - id: N14ClothingHeadHatBeretknighBoS
 #      - id: N14ClothingEyesGlassesMachinegun
 #      - id: ClothingMaskGasBrootherWestern
@@ -1569,15 +1569,15 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserRifleCrude
-#      - id: N14WeaponPistol12mm
-#      - id: N14MagazinePistol12mm
+#      - id: F14WeaponLaserRifleCrude
+#      - id: F14WeaponPistol12mm
+#      - id: F14MagazinePistol12mm
 #        amount: 2
 #      - id: N14PowerCellHigh
 #        amount: 3
-#      - id: N14CleanGauze10
-#      - id: N14Stimpak
-#      - id: N14NukaNade
+#      - id: F14CleanGauze10
+#      - id: F14Stimpak
+#      - id: F14NukaNade
 #      - id: N14ClothingHeadHatCapkhighbluBoS
 #      - id: N14ClothingEyesGlassesMachinegun
 #      - id: ClothingMaskGasBrootherWestern
@@ -1597,8 +1597,8 @@
 #      - id: N14WeaponRifleAk112
 #      - id: Magazine545Rifle
 #        amount: 3
-#      - id: N14CleanGauze10
-#      - id: N14Stimpak
+#      - id: F14CleanGauze10
+#      - id: F14Stimpak
 #      - id: MagazineBox545
 #      - id: N14ClothingHeadHatBrotherHelmet
 #      - id: N14ClothingEyesGlassesMachinegun
@@ -1616,11 +1616,11 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserRifleCrude
+#      - id: F14WeaponLaserRifleCrude
 #      - id: N14PowerCellHigh
 #        amount: 3
-#      - id: N14CleanGauze10
-#      - id: N14Stimpak
+#      - id: F14CleanGauze10
+#      - id: F14Stimpak
 #      - id: N14ClothingEyesGlassesMachinegun
 #
 #- type: entity
@@ -1635,12 +1635,12 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserPistol
-#      - id: N14PowerCellSmall
+#      - id: F14WeaponLaserPistol
+#      - id: F14PowerCellSmall
 #        amount: 2
-#      - id: N14CleanGauze10
-#      - id: N14Stimpak
-#      - id: N14NukaNade
+#      - id: F14CleanGauze10
+#      - id: F14Stimpak
+#      - id: F14NukaNade
 #        amount: 1
 #      - id: ClothingMaskGasBrootherWestern
 #
@@ -1656,13 +1656,13 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponShotgunSawedOff
+#      - id: F14WeaponShotgunSawedOff
 #      - id: MagazineBox12gauge
-#      - id: N14CleanGauze10
-#      - id: N14Stimpak
+#      - id: F14CleanGauze10
+#      - id: F14Stimpak
 #      - id: N14ClothingBeltBosLeatherunl
-#      - id: N14Gunpowder10
-#      - id: N14IngotLead1
+#      - id: F14Gunpowder10
+#      - id: F14IngotLead1
 #        amount: 5
 #
 #- type: entity
@@ -1680,10 +1680,10 @@
 #      - id: N14WeaponLaserMagnetoPistol
 #      - id: N14PowerCellMagnetoSmall
 #        amount: 3
-#      - id: N14HandheldHealthAnalyzer
-#      - id: N14Stimpak
-#      - id: N14MedkitFilled
-#      - id: N14ClothingBeltMedicalFilled
+#      - id: F14HandheldHealthAnalyzer
+#      - id: F14Stimpak
+#      - id: F14MedkitFilled
+#      - id: F14ClothingBeltMedicalFilled
 #
 #- type: entity
 #  name: Scribe Engineer kit
@@ -1697,13 +1697,13 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserPistol
-#      - id: N14PowerCellSmall
+#      - id: F14WeaponLaserPistol
+#      - id: F14PowerCellSmall
 #        amount: 2
 #      - id: N14ClothingOuterRadSuit
-#      - id: N14Stimpak
-#      - id: N14ClothingMaskHazmatHelmet
-#      - id: N14ClothingBeltUtilityFilled
+#      - id: F14Stimpak
+#      - id: F14ClothingMaskHazmatHelmet
+#      - id: F14ClothingBeltUtilityFilled
 #      - id: SheetSteel
 #      - id: SheetGlass
 
@@ -1721,17 +1721,17 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponRevolver45-70Hunter
-#      - id: N14CeremonialSword
+#      - id: F14WeaponRevolver4570Hunter
+#      - id: F14CeremonialSword
 #      - id: ClothingBeltRevolver
-#      - id: N14Stimpak
+#      - id: F14Stimpak
 #        amount: 2
-#      - id: N14MedkitCombatFilled
+#      - id: F14MedkitCombatFilled
 #      - id: SpeedLoader45-70
 #        amount: 2
 #      - id: MagazineBox45-70
-#      - id: N14BoxCardboardMREBoxKFilled
-#      - id: N14CleanGauze10
+#      - id: F14BoxCardboardMREBoxKFilled
+#      - id: F14CleanGauze10
 #
 #- type: entity
 #  name: Inquisitor Crusader Kit
@@ -1746,14 +1746,14 @@
 #  - type: SpawnItemsOnUse
 #    items:
 #      - id: N14WeaponRifle5mmCarbine
-#      - id: N14ClothingBeltBoSWebbing
-#      - id: N14Stimpak
+#      - id: F14ClothingBeltBoSWebbing
+#      - id: F14Stimpak
 #        amount: 2
 #      - id: N14MagazineCarbine5mm
 #        amount: 3
 #      - id: MagazineBox556
-#      - id: N14BoxCardboardMREBoxKFilled
-#      - id: N14CleanGauze10
+#      - id: F14BoxCardboardMREBoxKFilled
+#      - id: F14CleanGauze10
 #
 #- type: entity
 #  name: Inquisitor Laser Kit
@@ -1768,20 +1768,20 @@
 #  - type: SpawnItemsOnUse
 #    items:
 #      - id: N14WeaponLaserRifleWattz2000Extended
-#      - id: N14ClothingBeltBoSWebbing
-#      - id: N14Stimpak
+#      - id: F14ClothingBeltBoSWebbing
+#      - id: F14Stimpak
 #        amount: 2
 #      - id: N14PowerCellFocused
 #        amount: 3
-#      - id: N14SuperStimpak
-#      - id: N14BoxCardboardMREBoxKFilled
-#      - id: N14CleanGauze10
-#      - id: N14Ointment10
+#      - id: F14SuperStimpak
+#      - id: F14BoxCardboardMREBoxKFilled
+#      - id: F14CleanGauze10
+#      - id: F14Ointment10
 
 - type: entity
   name: Military Police Kit
-  parent: N14KitBase
-  id: CorvaxKitNCRMPMilitaryPolice
+  parent: F14KitBase
+  id: F14KitNCRMPMilitaryPolice
   description: Standard Military Police Kit
   components:
   - type: Sprite
@@ -1790,22 +1790,22 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponShotgunRiot
-      - id: N14Stimpak
+      - id: F14WeaponShotgunRiot
+      - id: F14Stimpak
         amount: 2
-      - id: N14MagazineShotgun12
+      - id: F14MagazineShotgun12
         amount: 2
-      - id: N14MagazineBox12gauge
-      - id: N14BoxCardboardMREBoxKFilled
-      - id: N14CleanGauze10
-      - id: N14PoliceBaton
+      - id: F14MagazineBox12gauge
+      - id: F14BoxCardboardMREBoxKFilled
+      - id: F14CleanGauze10
+      - id: F14PoliceBaton
       - id: Handcuffs
         amount: 2
 
 - type: entity
   name: NCRMP investigator kit
-  parent: N14KitBase
-  id: CorvaxKitNCRMPinvestigator
+  parent: F14KitBase
+  id: F14KitNCRMPinvestigator
   description: Standard investigator kit
   components:
   - type: Sprite
@@ -1814,22 +1814,22 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle308Battle
-      - id: N14Stimpak
+      - id: F14WeaponRifle308Battle
+      - id: F14Stimpak
         amount: 2
-      - id: N14ClipMagazine308Rifle
+      - id: F14ClipMagazine308Rifle
         amount: 2
-      - id: N14MagazineBox308
-      - id: N14BoxCardboardMREBoxKFilled
-      - id: N14CleanGauze10
-      - id: N14PoliceBaton
+      - id: F14MagazineBox308
+      - id: F14BoxCardboardMREBoxKFilled
+      - id: F14CleanGauze10
+      - id: F14PoliceBaton
       - id: Handcuffs
         amount: 2
 
 - type: entity
   name: NCRMP bailiff Kit
-  parent: N14KitBase
-  id: CorvaxKitNCRMPbailiff
+  parent: F14KitBase
+  id: F14KitNCRMPbailiff
   description: Standard bailiff kit
   components:
   - type: Sprite
@@ -1838,22 +1838,22 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponSMG45GreaseGun
-      - id: N14Stimpak
+      - id: F14WeaponSMG45GreaseGun
+      - id: F14Stimpak
         amount: 2
-      - id: N14PoliceBaton
-      - id: N14Magazine45SubMachineGun
+      - id: F14PoliceBaton
+      - id: F14Magazine45SubMachineGun
         amount: 2
-      - id: N14MagazineBox45
-      - id: N14BoxCardboardMREBoxKFilled
-      - id: N14CleanGauze10
+      - id: F14MagazineBox45
+      - id: F14BoxCardboardMREBoxKFilled
+      - id: F14CleanGauze10
       - id: Handcuffs
         amount: 2
 
 - type: entity
   name: explorer-tracker kit
-  parent: N14KitBase
-  id: CorvaxKitExplorerTracker
+  parent: F14KitBase
+  id: F14KitExplorerTracker
   description: "A set of Legion long-range tracking equipment."
   components:
   - type: Sprite
@@ -1863,27 +1863,27 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSniper308Canadian
-      - id: MisfitsAmmoBox308
+      - id: F14WeaponSniper308Canadian
+      - id: F14AmmoBox308
         amount: 2
-      - id: N14WeaponPistol45Colt # #Misfits Change: standardised to .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14WeaponPistol45Colt # #Misfits Change: standardised to .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
-      - id: N14ClothingBeltRope
+      - id: F14ClothingBeltRope
       - id: Bola
         amount: 2
-      - id: N14HealingPowder
-      - id: N14HealingPoultice
-      - id: N14FoodTinK
+      - id: F14HealingPowder
+      - id: F14HealingPoultice
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: explorer-raider kit
-  parent: N14KitBase
-  id: CorvaxKitExplorerRaider
+  parent: F14KitBase
+  id: F14KitExplorerRaider
   description: "A set of Legion ambush equipment."
   components:
   - type: Sprite
@@ -1893,27 +1893,27 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSMG10mmChinese
-      - id: N14MagazineSMG10mm
+      - id: F14WeaponSMG10mmChinese
+      - id: F14MagazineSMG10mm
         amount: 2
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
-      - id: N14ClothingBeltRope
+      - id: F14ClothingBeltRope
       - id: Bola
         amount: 2
-      - id: N14HealingPowder
-      - id: N14HealingPoultice
-      - id: N14FoodTinK
+      - id: F14HealingPowder
+      - id: F14HealingPoultice
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: optio-preacher kit
-  parent: N14KitBase
-  id: CorvaxKitOptioPreacher
+  parent: F14KitBase
+  id: F14KitOptioPreacher
   description: "A set of Legion propaganda and support equipment."
   components:
   - type: Sprite
@@ -1923,29 +1923,29 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14MagazineBox12gauge
+      - id: F14MagazineBox12gauge
         amount: 2
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt # .45 revolver — was already the Orator sidearm, kept
-      - id: N14MagazinePistol45
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt # .45 revolver — was already the Orator sidearm, kept
+      - id: F14MagazinePistol45
         amount: 2
       - id: SmokeGrenade
         amount: 2
-      - id: N14Bandage
+      - id: F14Bandage
         amount: 2
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 2
-      - id: N14HealingPowder
-      - id: N14FoodTinK
+      - id: F14HealingPowder
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: optio-defender kit
-  parent: N14KitBase
-  id: CorvaxKitOptioDefender
+  parent: F14KitBase
+  id: F14KitOptioDefender
   description: "A set of Legion armed escort equipment."
   components:
   - type: Sprite
@@ -1955,25 +1955,25 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14TribalBigClubDecorated #anyone gets close to cent they skull go bye bye
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14TribalBigClubDecorated #anyone gets close to cent they skull go bye bye
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
       - id: SmokeGrenade
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 2
-      - id: N14HealingPowder
-      - id: N14FoodTinK
+      - id: F14HealingPowder
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: optio-inquisitor kit
-  parent: N14KitBase
-  id: CorvaxKitOptioInquisitor
+  parent: F14KitBase
+  id: F14KitOptioInquisitor
   description: "A set of Legion enforcement equipment."
   components:
   - type: Sprite
@@ -1983,21 +1983,21 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsWeaponRifle308SVT40
-      - id: N14MagazineBox308
+      - id: F14WeaponRifle308SVT40
+      - id: F14MagazineBox308
         amount: 1
-      - id: N14ClothingBeltRope
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 revolver Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14ClothingBeltRope
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 revolver Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
-      - id: N14CeremonialSword
+      - id: F14CeremonialSword
       - id: Bola
       - id: Handcuffs
-      - id: N14HealingPowder
+      - id: F14HealingPowder
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
@@ -2006,8 +2006,8 @@
 
 - type: entity
   name: centurion-armor-standard kit
-  parent: N14KitBase
-  id: CorvaxKitCenturionArmorStandard
+  parent: F14KitBase
+  id: F14KitCenturionArmorStandard
   description: "Standard centurion heavy armor and galea helmet."
   components:
   - type: Sprite
@@ -2017,14 +2017,14 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: CorvaxClothingHeadHatCenturionHelmet
+      - id: F14ClothingHeadHatCenturionHelmet
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: centurion-cinder-kit
-  parent: N14KitBase
-  id: CorvaxKitCenturionCinder
+  parent: F14KitBase
+  id: F14KitCenturionCinder
   description: "Cinder centurion armor and matching helmet."
   components:
   - type: Sprite
@@ -2034,15 +2034,15 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsCenturionCinderCohort
-      - id: MisfitsCenturionCinderCohortHelmet
+      - id: F14CenturionCinderCohort
+      - id: F14CenturionCinderCohortHelmet
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: centurion-salt-column-kit
-  parent: N14KitBase
-  id: CorvaxKitCenturionSaltColumn
+  parent: F14KitBase
+  id: F14KitCenturionSaltColumn
   description: "Salt column centurion armor and matching helmet."
   components:
   - type: Sprite
@@ -2052,15 +2052,15 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsCenturionSaltColumn
-      - id: MisfitsCenturionSaltColumnHelmet
+      - id: F14CenturionSaltColumn
+      - id: F14CenturionSaltColumnHelmet
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: centurion-unbroken-kit
-  parent: N14KitBase
-  id: CorvaxKitCenturionUnbroken
+  parent: F14KitBase
+  id: F14KitCenturionUnbroken
   description: "Unbroken centurion armor and matching helmet."
   components:
   - type: Sprite
@@ -2070,15 +2070,15 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsCenturionUnbroken
-      - id: MisfitsCenturionUnbrokenHelmet
+      - id: F14CenturionUnbroken
+      - id: F14CenturionUnbrokenHelmet
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: centurion-warforged-kit
-  parent: N14KitBase
-  id: CorvaxKitCenturionWarforged
+  parent: F14KitBase
+  id: F14KitCenturionWarforged
   description: "Warforged centurion armor and matching helmet."
   components:
   - type: Sprite
@@ -2088,15 +2088,15 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsCenturionWarforged
-      - id: MisfitsCenturionWarforgedHelmet
+      - id: F14CenturionWarforged
+      - id: F14CenturionWarforgedHelmet
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: centurion-warlord-kit
-  parent: N14KitBase
-  id: CorvaxKitCenturionWarlord
+  parent: F14KitBase
+  id: F14KitCenturionWarlord
   description: "Warlord centurion armor and matching helmet."
   components:
   - type: Sprite
@@ -2106,7 +2106,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: MisfitsCenturionWarlord
-      - id: MisfitsCenturionWarlordHelmet
+      - id: F14CenturionWarlord
+      - id: F14CenturionWarlordHelmet
     sound:
       path: /Audio/Effects/unwrap.ogg

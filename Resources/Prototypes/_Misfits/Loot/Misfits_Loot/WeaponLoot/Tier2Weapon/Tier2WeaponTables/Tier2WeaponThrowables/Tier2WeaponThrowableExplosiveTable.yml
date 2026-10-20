@@ -1,20 +1,20 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier2Weapon/Tier2WeaponTables/Tier2WeaponThrowables/Tier2WeaponThrowableExplosiveTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier2_ThrowablesExplosive
+  id: F14WeaponLootTier2ThrowablesExplosive
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14TinNade
+      id: F14TinNade
     - !type:EntSelector
-      id: N14BaseballNade
+      id: F14BaseballNade
     - !type:EntSelector
-      id: N14KettleBomb
+      id: F14KettleBomb
     - !type:EntSelector
-      id: N14Dynamite
+      id: F14Dynamite
     - !type:EntSelector
-      id: N14FirecrackerFull
+      id: F14FirecrackerFull
     - !type:EntSelector
-      id: N14FirecrackerHalf
+      id: F14FirecrackerHalf
     - !type:EntSelector
-      id: N14Firecracker
+      id: F14Firecracker

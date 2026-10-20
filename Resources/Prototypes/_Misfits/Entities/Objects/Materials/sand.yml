@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Materials/sand.yml
 
 - type: entity
-  parent: N14MaterialBase
-  id: MisfitsSand
+  parent: F14MaterialBase
+  id: F14Sand
   name: sand
   description: A pile of coarse desert sand. Can be smelted into glass at a forge.
   categories: [ HideSpawnMenu ]
@@ -15,7 +15,7 @@
     - state: powder_brass
       map: ["base"]
   - type: Stack
-    stackType: MisfitsSand
+    stackType: F14Sand
     count: 15
     baseLayer: base
     layerStates:
@@ -24,7 +24,7 @@
     - powder_brass
   - type: PhysicalComposition
     materialComposition:
-      MisfitsSand: 100
+      F14Sand: 100
   - type: Item
     heldPrefix: powder_brass
     size: Small
@@ -35,24 +35,24 @@
     price: 1
 
 - type: entity
-  parent: MisfitsSand
-  id: MisfitsSand10
+  parent: F14Sand
+  id: F14Sand10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: MisfitsSand
-  id: MisfitsSand1
+  parent: F14Sand
+  id: F14Sand1
   suffix: Single
   components:
   - type: Stack
     count: 1
 
 - type: entity
-  parent: MisfitsSand
-  id: MisfitsSand5
+  parent: F14Sand
+  id: F14Sand5
   suffix: 5
   components:
   - type: Stack

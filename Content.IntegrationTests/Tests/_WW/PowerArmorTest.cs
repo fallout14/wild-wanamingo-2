@@ -18,7 +18,7 @@ namespace Content.IntegrationTests.Tests._WW;
 [TestOf(typeof(PowerArmorIntegritySystem))]
 public sealed class PowerArmorTest : GameTest
 {
-    private const string Suit = "N14ClothingOuterPowerArmorT45";
+    private const string Suit = "F14ClothingOuterPowerArmorT45";
     private static readonly ProtoId<Content.Shared.Damage.Prototypes.DamageTypePrototype> Blunt = "Blunt";
 
     [Test]

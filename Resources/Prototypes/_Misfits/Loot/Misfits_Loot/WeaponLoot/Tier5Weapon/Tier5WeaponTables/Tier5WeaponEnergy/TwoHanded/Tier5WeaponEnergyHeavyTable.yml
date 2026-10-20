@@ -1,25 +1,25 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier5Weapon/Tier5WeaponTables/Tier5WeaponEnergy/TwoHanded/Tier5WeaponEnergyHeavyTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier5_LaserHeavy
+  id: F14WeaponLootTier5LaserHeavy
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponLaserGatling
+      id: F14WeaponLaserGatling
       weight: 1
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier5_PlasmaHeavy
+  id: F14WeaponLootTier5PlasmaHeavy
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponPlasmaCaster
+      id: F14WeaponPlasmaCaster
       weight: 1
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier5_OtherHeavy
+  id: F14WeaponLootTier5OtherHeavy
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: MisfitsWeaponLegionScorcher
+      id: F14WeaponLegionScorcher
       weight: 1

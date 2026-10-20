@@ -3,8 +3,8 @@
 
 - type: entity
   name: bun
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadBun
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadBun
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Edible
@@ -22,7 +22,7 @@
 
 - type: entity
   parent: FoodInjectableBase
-  id: N14FoodBurgerBase #Fucking with the bases screws something up in robust toolbox. -Hazel
+  id: F14FoodBurgerBase #Fucking with the bases screws something up in robust toolbox. -Hazel
   abstract: true
   components:
   - type: FlavorProfile
@@ -49,8 +49,8 @@
 
 - type: entity
   name: jelly burger
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerJelly
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerJelly
   description: Culinary delight..?
   components:
   - type: FlavorProfile
@@ -68,8 +68,8 @@
 
 - type: entity
   name: appendix burger
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerAppendix
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerAppendix
   description: Tastes like appendicitis.
   components:
   - type: FlavorProfile
@@ -95,8 +95,8 @@
 
 - type: entity
   name: bacon burger
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerBacon
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerBacon
   description: The perfect combination of all things American.
   components:
   - type: FlavorProfile
@@ -120,8 +120,8 @@
 
 - type: entity
   name: bearger
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerBear
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerBear
   description: Savor your kill, hunter. #N14 change
   components:
   - type: FlavorProfile
@@ -146,8 +146,8 @@
 
 - type: entity
   name: big bite burger
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerBig
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerBig
   description: Food fit for the ultimate wasteland hedonists. #N14 change
   components:
   - type: FlavorProfile
@@ -173,8 +173,8 @@
 
 - type: entity
   name: brain burger
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerBrain
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerBrain
   description: Like an edible robobrain. Jesus christ. #N14 change
   components:
   - type: FlavorProfile
@@ -200,8 +200,8 @@
 
 - type: entity
   name: cheese burger
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerCheese
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerCheese
   description: This. This is what you've been missing all your life. #N14 change
   components:
   - type: FlavorProfile
@@ -236,8 +236,8 @@
 
 - type: entity
   name: chicken sandwich
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerChicken
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerChicken
   description: Deliciously portable. #N14 change
   components:
   - type: FlavorProfile
@@ -265,8 +265,8 @@
 
 - type: entity
   name: crab burger
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerCrab
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerCrab
   description: A delicious patty of the crabby kind, slapped in between a bun.
   components:
   - type: FlavorProfile
@@ -291,8 +291,8 @@
 
 - type: entity
   name: duck sandwich
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerDuck
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerDuck
   description: A duck sandwich. Are ducks even real?
   components:
   - type: FlavorProfile
@@ -318,8 +318,8 @@
 
 - type: entity
   name: fillet-o-carp burger
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerCarp
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerCarp
   description: Mythical wasteland fish. Eat to become a goddess. #N14 change
   components:
   - type: FlavorProfile
@@ -335,8 +335,8 @@
 
 - type: entity
   name: five alarm burger
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerFive
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerFive
   description: HOT! HOT! HOT!
   components:
   - type: FlavorProfile
@@ -360,8 +360,8 @@
 
 - type: entity
   name: McGuffin
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerMcguffin
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerMcguffin
   description: A cheap and greasy imitation of an eggs Benedict.
   components:
   - type: FlavorProfile
@@ -386,8 +386,8 @@
 
 - type: entity
   name: BBQ Rib Sandwich
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerMcrib
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerMcrib
   description: The strong flavor of bighorner meat marries the sweet-smoky sauce so, so well... #N14 change
   components:
   - type: Edible
@@ -419,8 +419,8 @@
 
 - type: entity
   name: plain burger
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerPlain
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerPlain
   description: A simple, plain burger. For the wasteland, this is pretty good eating. #N14 change
   components:
   - type: FlavorProfile
@@ -445,8 +445,8 @@
 
 - type: entity
   name: rat burger
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerRat
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerRat
   description: Pretty much what you'd expect...
   components:
   - type: FlavorProfile
@@ -472,8 +472,8 @@
 
 - type: entity
   name: super bite burger
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerSuper
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerSuper
   description: This is a mountain of a burger. FOOD!
   components:
   - type: FlavorProfile
@@ -502,8 +502,8 @@
 
 - type: entity
   name: tofu burger
-  parent: N14FoodBurgerBase
-  id: N14CookedFoodBurgerTofu
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerTofu
   description: What... is that meat?
   components:
   - type: FlavorProfile

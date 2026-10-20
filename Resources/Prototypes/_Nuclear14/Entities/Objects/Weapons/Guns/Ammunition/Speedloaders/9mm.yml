@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Speedloaders/9mm.yml
 
 - type: entity
-  id: N14BaseSpeedLoader9
+  id: F14BaseSpeedLoader9
   name: "speed loader (9mm)"
   parent: BaseItem
   abstract: true
@@ -11,12 +11,12 @@
     size: Tiny
   - type: Tag
     tags:
-      - N14SpeedLoader9
+      - F14SpeedLoader9
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - N14CartridgePistol9
+        - F14CartridgePistol9
     capacity: 6
   - type: Sprite
   - type: ContainerContainer
@@ -25,12 +25,12 @@
         ents: []
 
 - type: entity
-  id: N14SpeedLoader9
+  id: F14SpeedLoader9
   name: "speed loader (9mm)"
-  parent: N14BaseSpeedLoader9
+  parent: F14BaseSpeedLoader9
   components:
   - type: BallisticAmmoProvider
-    proto: N14CartridgePistol9
+    proto: F14CartridgePistol9
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Speedloaders/9mmloader.rsi
     layers:

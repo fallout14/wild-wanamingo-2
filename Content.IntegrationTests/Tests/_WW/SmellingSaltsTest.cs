@@ -20,7 +20,7 @@ public sealed class SmellingSaltsTest : InteractionTest
 {
     protected override string PlayerPrototype => "MobHuman";
 
-    private static readonly EntProtoId Salts = "N14SmellingSalts";
+    private static readonly EntProtoId Salts = "F14SmellingSalts";
     private static readonly ProtoId<DamageTypePrototype> Asphyxiation = "Asphyxiation";
 
     [Test]

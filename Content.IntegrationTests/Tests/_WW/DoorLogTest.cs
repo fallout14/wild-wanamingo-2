@@ -31,7 +31,7 @@ public sealed class DoorLogTest : GameTest
         await server.WaitAssertion(() =>
         {
             mapSys.CreateMap(out var map);
-            var door = entMan.SpawnEntity("N14DoorWoodRoom", new MapCoordinates(0, 0, map));
+            var door = entMan.SpawnEntity("F14DoorWoodRoom", new MapCoordinates(0, 0, map));
             var attacker = entMan.SpawnEntity("MobHuman", new MapCoordinates(1, 0, map));
             var before = doorLogs.GetEntries().Count;
 
@@ -40,7 +40,7 @@ public sealed class DoorLogTest : GameTest
 
             var entries = doorLogs.GetEntries();
             Assert.That(entries, Has.Count.EqualTo(before + 1));
-            Assert.That(entries[0].DoorPrototype, Is.EqualTo("N14DoorWoodRoom"));
+            Assert.That(entries[0].DoorPrototype, Is.EqualTo("F14DoorWoodRoom"));
             Assert.That(entries[0].DestroyedBy, Does.Contain(entMan.GetComponent<MetaDataComponent>(attacker).EntityName));
 
             entMan.DeleteEntity(mapSys.GetMap(map));

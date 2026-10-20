@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/OuterClothing/ncr_msl.yml
 
 - type: entity
-  parent: MisfitsNCRHeavyCombatArmor
-  id: MisfitsNCRMSLArmor
+  parent: F14NCRHeavyCombatArmor
+  id: F14NCRMSLArmor
   name: Morale Squad Leader Armor
   description: A reinforced NCR mantle reserved for squad leaders who favor trench-clearing work and close-range pushes.
   components:
@@ -12,8 +12,8 @@
     sprite: Misfits/Clothing/OuterClothing/Armor/ncr_msl.rsi
 
 - type: entity
-  parent: N14ClothingHeadHatNCRHelmetMetalRadioWood
-  id: MisfitsNCRMSLHelmet
+  parent: F14ClothingHeadHatNCRHelmetMetalRadioWood
+  id: F14NCRMSLHelmet
   name: NCR MSL helmet
   description: A custom NCR squad leader helmet paired with the MSL pattern set.
   components:
@@ -23,8 +23,8 @@
     sprite: Misfits/Clothing/Head/FalloutHelmets/msl_helmet.rsi
 
 - type: entity
-  parent: N14ClothingHandsGlovesNCR
-  id: MisfitsNCRMSLGloves
+  parent: F14ClothingHandsGlovesNCR
+  id: F14NCRMSLGloves
   name: NCR MSL gloves
   description: Fingerless field gloves matched to the MSL kit.
   components:
@@ -34,8 +34,8 @@
     sprite: Misfits/Clothing/Hands/Gloves/msl_gloves.rsi
 
 - type: entity
-  parent: N14ClothingBootsCombat
-  id: MisfitsNCRMSLBoots
+  parent: F14ClothingBootsCombat
+  id: F14NCRMSLBoots
   name: NCR MSL boots
   description: Reinforced combat boots issued with the MSL pattern kit.
   components:
@@ -45,8 +45,8 @@
     sprite: Misfits/Clothing/Shoes/FalloutBoots/msl_boots.rsi
 
 - type: entity
-  parent: N14ClothingMaskDesertMask
-  id: MisfitsNCRMSLMask
+  parent: F14ClothingMaskDesertMask
+  id: F14NCRMSLMask
   name: NCR MSL mask
   description: A lead-lined combat mask issued with the MSL pattern set.
   components:
@@ -65,8 +65,8 @@
     priceMultiplier: 0.5
 
 - type: entity
-  parent: N14ClothingOfficerUniformNCRDesert
-  id: MisfitsNCRMSLUniform
+  parent: F14ClothingOfficerUniformNCRDesert
+  id: F14NCRMSLUniform
   name: NCR MSL uniform
   description: A platoon-leader style field uniform used as the base layer for the MSL kit.
   components:

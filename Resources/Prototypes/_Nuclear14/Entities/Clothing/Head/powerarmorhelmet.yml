@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: N14ClothingHeadHelmetPowerArmorT45
+  id: F14ClothingHeadHelmetPowerArmorT45
   name: t-45 power armor helmet
   description: An old helmet used with T-45 Power Armor suits. It's amazing these still exist.
   components:
@@ -71,7 +71,7 @@
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: N14ClothingHeadHelmetPowerArmorT51
+  id: F14ClothingHeadHelmetPowerArmorT51
   name: T-51 Power Armor Helmet
   description: An old helmet used with suits of T-51 Power Armor. The gaze of these visors became commonplace in pre-war victory footage across television sets nationwide.
   components:
@@ -139,7 +139,7 @@
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: N14ClothingHeadHelmetPowerArmorT60
+  id: F14ClothingHeadHelmetPowerArmorT60
   name: T-60 Power Armor Helmet
   description: An old helmet used with T-60 Power Armor suits, nearly identical to the T-45 variant. These helmets saw more use on the domestic front, issed only months before the bombs dropped.
   components:
@@ -210,7 +210,7 @@
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: N14ClothingHeadHelmetPowerArmorX01
+  id: F14ClothingHeadHelmetPowerArmorX01
   # #Misfits Change - Renamed X-01 -> APA MK I
   name: APA MK I power armor helmet
   description: An advanced helmet used with APA MK I Power Armor suits.
@@ -285,8 +285,8 @@
   # End Misfits Change
 
 - type: entity
-  parent: N14ClothingHeadHelmetPowerArmorX01
-  id: N14ClothingHeadHelmetPowerArmorX02
+  parent: F14ClothingHeadHelmetPowerArmorX01
+  id: F14ClothingHeadHelmetPowerArmorX02
   # #Misfits Change - Renamed X-02 -> APA MK II
   name: APA MK II power armor helmet
   description: The U.S. Army Mark II Powered Combat Armor helmet.
@@ -316,8 +316,8 @@
   # End Misfits Change
 
 - type: entity
-  parent: N14ClothingHeadHelmetPowerArmorX01
-  id: N14ClothingHeadHelmetPowerArmorHellfire
+  parent: F14ClothingHeadHelmetPowerArmorX01
+  id: F14ClothingHeadHelmetPowerArmorHellfire
   name: hellfire power armor helmet
   description: A deep black helmet of U.S. Army-manufactured heavy Power Armor with yellow ballistic glass, based on pre-war designs such as the T-51 and improving off of data gathered by post-war designs such as the APA MK I. Most commonly fielded on the East Coast, no other helmet rivals its strength.
   components:
@@ -347,7 +347,7 @@
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: N14ClothingHeadHelmetPowerArmorT51BC
+  id: F14ClothingHeadHelmetPowerArmorT51BC
   name: t-51bc power armor helmet
   description: The pinnacle of pre-war technology appropriated by the Brotherhood of Steel. Commonly worn by Paladin Commanders.
   components:
@@ -411,7 +411,7 @@
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: N14ClothingHeadHelmetPowerArmorT45NCR
+  id: F14ClothingHeadHelmetPowerArmorT45NCR
   name: t-45 NCR power armor helmet
   description: Originally existing as T-45d power armor that was recovered by and repurposed for the use within NCR.
   components:
@@ -474,8 +474,8 @@
   - type: IngestionBlocker # Misfits Change
 
 - type: entity
-  parent: N14ClothingHeadHelmetPowerArmorT45
-  id: N14ClothingHeadHelmetPowerArmorMidwest
+  parent: F14ClothingHeadHelmetPowerArmorT45
+  id: F14ClothingHeadHelmetPowerArmorMidwest
   name: BoS Power Armor Helmet
   description: A unknown model of Power Armor helmet adopted by the Brotherhood of Steel chapter.
   components:
@@ -504,8 +504,8 @@
 ## Misfit
 
 - type: entity
-  parent: N14ClothingHeadHelmetPowerArmorX01
-  id: N14ClothingHeadHelmetPowerArmorMidwestCommander
+  parent: F14ClothingHeadHelmetPowerArmorX01
+  id: F14ClothingHeadHelmetPowerArmorMidwestCommander
   name: BoS Commander Power Armor Helmet
   description: A unknown model of Power Armor helmet adopted by the Brotherhood of Steel chapter. This modified version is commonly used by high-ranking Brotherhood of Steel Paladins.
   components:
@@ -536,8 +536,8 @@
     toggleAction: PulseThermalVision
 
 - type: entity
-  parent: N14ClothingHeadHelmetPowerArmorT51
-  id: N14ClothingHeadHelmetPowerArmorT51Wash
+  parent: F14ClothingHeadHelmetPowerArmorT51
+  id: F14ClothingHeadHelmetPowerArmorT51Wash
   name: T-51 Power Armor Helmet
   description: An old helmet used with suits of T-51 Power Armor. The gaze of these visors became commonplace in pre-war victory footage across television sets nationwide.
   components:
@@ -553,8 +553,8 @@
       map: [ "light" ]
 
 - type: entity
-  parent: N14ClothingHeadHelmetPowerArmorT51
-  id: N14ClothingHeadHelmetPowerArmorT51WashElite
+  parent: F14ClothingHeadHelmetPowerArmorT51
+  id: F14ClothingHeadHelmetPowerArmorT51WashElite
   name: T-51 Power Armor Helmet
   description: An old helmet used with suits of T-51 Power Armor. The gaze of these visors became commonplace in pre-war victory footage across television sets nationwide.
   components:

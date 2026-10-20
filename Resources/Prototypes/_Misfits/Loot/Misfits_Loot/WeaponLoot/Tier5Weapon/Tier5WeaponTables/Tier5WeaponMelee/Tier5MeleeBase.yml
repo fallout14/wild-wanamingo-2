@@ -1,40 +1,40 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier5Weapon/Tier5WeaponTables/Tier5WeaponMelee/Tier5MeleeBase.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier5_MeleeAll
+  id: F14WeaponLootTier5MeleeAll
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier5_MeleeBlunt
+          tableId: F14WeaponLootTier5MeleeBlunt
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier5_MeleeSharp
+          tableId: F14WeaponLootTier5MeleeSharp
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier5_MeleeOther
+          tableId: F14WeaponLootTier5MeleeOther
 # stuff here
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier5_MeleeBlunt
+  id: F14WeaponLootTier5MeleeBlunt
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier5_MeleeBluntOneHanded
+          tableId: F14WeaponLootTier5MeleeBluntOneHanded
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier5_MeleeBluntTwoHanded
+          tableId: F14WeaponLootTier5MeleeBluntTwoHanded
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier5_MeleeSharp
+  id: F14WeaponLootTier5MeleeSharp
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier5_MeleeSharpOneHanded
+          tableId: F14WeaponLootTier5MeleeSharpOneHanded
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier5_MeleeSharpTwoHanded
+          tableId: F14WeaponLootTier5MeleeSharpTwoHanded
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier5_MeleeOther
+  id: F14WeaponLootTier5MeleeOther
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier5_MeleeOtherOneHanded
+          tableId: F14WeaponLootTier5MeleeOtherOneHanded
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier5_MeleeOtherTwoHanded
+          tableId: F14WeaponLootTier5MeleeOtherTwoHanded

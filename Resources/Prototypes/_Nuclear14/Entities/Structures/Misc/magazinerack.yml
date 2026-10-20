@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Misc/magazinerack.yml
 
 - type: entity
-  id: N14MagazineRack
+  id: F14MagazineRack
   name: magazine rack
   description: wireframe rack to store magazines
   placement:
@@ -47,7 +47,7 @@
     maxItemSize: Small
     whitelist:
       tags:
-        - N14Magazine
+        - F14Magazine
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:

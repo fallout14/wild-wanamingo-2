@@ -3,9 +3,9 @@
 - type: entity
   name: microfusion cell
   description: A standard microfusion cell used as ammunition for energy weapons. The weapon's internal optics determine beam color and output — the cell simply provides charge.
-  id: MisfitsMicrofusionCell
+  id: F14MicrofusionCell
   suffix: Full
-  parent: N14BasePowerCell
+  parent: F14BasePowerCell
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/microfusion.rsi
@@ -22,54 +22,54 @@
 - type: entity
   name: microfusion cell (red)
   description: A standard microfusion cell calibrated to emit a red laser beam.
-  id: MisfitsMicrofusionCellRed
-  parent: MisfitsMicrofusionCell
+  id: F14MicrofusionCellRed
+  parent: F14MicrofusionCell
   suffix: Full
 
 - type: entity
   name: microfusion cell (green)
   description: A tuned microfusion cell calibrated to emit a green laser beam.
-  id: MisfitsMicrofusionCellGreen
-  parent: MisfitsMicrofusionCell
+  id: F14MicrofusionCellGreen
+  parent: F14MicrofusionCell
   suffix: Full
 
 - type: entity
   name: microfusion cell (blue)
   description: An advanced microfusion cell calibrated to emit a blue laser beam.
-  id: MisfitsMicrofusionCellBlue
-  parent: MisfitsMicrofusionCell
+  id: F14MicrofusionCellBlue
+  parent: F14MicrofusionCell
   suffix: Full
 
 - type: entity
   name: microfusion cell (violet)
   description: An experimental microfusion cell calibrated to emit a violet laser beam.
-  id: MisfitsMicrofusionCellViolet
-  parent: MisfitsMicrofusionCell
+  id: F14MicrofusionCellViolet
+  parent: F14MicrofusionCell
   suffix: Full
 
 #MARK: Fusion Core — single consolidated type
 # #Misfits Change - Consolidated from 4 colored variants into one generic fusion core.
-# Only the Laser Gatling accepts these (N14FusionCore tag). Weapon controls beam via override.
+# Only the Laser Gatling accepts these (F14FusionCore tag). Weapon controls beam via override.
 # 5000 charge / 50 fireCost = 100 shots. Intended for heavy sustained-fire weapons.
 
 - type: entity
-  id: MisfitsFusionCoreRed
-  parent: N14FusionCore
+  id: F14FusionCoreRed
+  parent: F14FusionCore
   suffix: Full
 
 - type: entity
-  id: MisfitsFusionCoreGreen
-  parent: N14FusionCore
+  id: F14FusionCoreGreen
+  parent: F14FusionCore
   suffix: Full
 
 - type: entity
-  id: MisfitsFusionCoreBlue
-  parent: N14FusionCore
+  id: F14FusionCoreBlue
+  parent: F14FusionCore
   suffix: Full
 
 - type: entity
-  id: MisfitsFusionCoreViolet
-  parent: N14FusionCore
+  id: F14FusionCoreViolet
+  parent: F14FusionCore
   suffix: Full
 
 #MARK: Electron Charge Pack — single player-facing type
@@ -79,9 +79,9 @@
 - type: entity
   name: electron charge pack
   description: An electron charge pack used as ammunition for pulse weapons. The weapon's emitter array determines pulse characteristics — the pack simply provides charge.
-  id: MisfitsElectronChargePack
+  id: F14ElectronChargePack
   suffix: Full
-  parent: N14BasePowerCell
+  parent: F14BasePowerCell
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/ECP.rsi
@@ -95,8 +95,8 @@
         shader: unshaded
   - type: Tag
     tags:
-      - MisfitsElectronChargePack
-      - N14AmmoCell
+      - F14ElectronChargePack
+      - F14AmmoCell
   - type: Battery
     maxCharge: 1600
     startingCharge: 1600
@@ -104,29 +104,29 @@
 - type: entity
   name: electron charge pack (red)
   description: A standard electron charge pack calibrated for red pulse discharge.
-  id: MisfitsElectronChargePackRed
-  parent: MisfitsElectronChargePack
+  id: F14ElectronChargePackRed
+  parent: F14ElectronChargePack
   suffix: Full
 
 - type: entity
   name: electron charge pack (green)
   description: A tuned electron charge pack calibrated for green pulse discharge.
-  id: MisfitsElectronChargePackGreen
-  parent: MisfitsElectronChargePack
+  id: F14ElectronChargePackGreen
+  parent: F14ElectronChargePack
   suffix: Full
 
 - type: entity
   name: electron charge pack (blue)
   description: An advanced electron charge pack calibrated for blue pulse discharge.
-  id: MisfitsElectronChargePackBlue
-  parent: MisfitsElectronChargePack
+  id: F14ElectronChargePackBlue
+  parent: F14ElectronChargePack
   suffix: Full
 
 - type: entity
   name: electron charge pack (violet)
   description: An experimental electron charge pack calibrated for violet pulse discharge.
-  id: MisfitsElectronChargePackViolet
-  parent: MisfitsElectronChargePack
+  id: F14ElectronChargePackViolet
+  parent: F14ElectronChargePack
   suffix: Full
 
 #MARK: Legacy Power Cells (commented out — replaced by tiered microfusion/ECP system above)
@@ -136,7 +136,7 @@
 #   description: A small energy container that fits in your palm, commonly used as ammo for any kind of laser weapon.
 #   id: N14PowerCellHigh
 #   suffix: Full
-#   parent: N14BasePowerCell
+#   parent: F14BasePowerCell
 #   components:
 #   - type: Sprite
 #     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/microfusion.rsi
@@ -155,7 +155,7 @@
 #   description: A microfusion cell, typically used as ammunition for large energy weapons. Modified to expand a lot more charge at once to deal considerably more destruction per shot.
 #   id: N14PowerCellFocused
 #   suffix: Full
-#   parent: N14BasePowerCell
+#   parent: F14BasePowerCell
 #   components:
 #   - type: Sprite
 #     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/microfusionfocused.rsi
@@ -168,7 +168,7 @@
 #   - type: Tag
 #     tags:
 #       - N14PowerCellFocused
-#       - N14AmmoCell
+#       - F14AmmoCell
 #   - type: Battery
 #     maxCharge: 1200
 #     startingCharge: 1200

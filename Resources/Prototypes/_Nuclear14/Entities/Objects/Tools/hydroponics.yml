@@ -3,7 +3,7 @@
 
 - type: entity
   parent: HydroponicsToolMiniHoe
-  id: N14HydroponicsToolHoe
+  id: F14HydroponicsToolHoe
   name: hoe
   components:
   - type: Sprite
@@ -14,7 +14,7 @@
 
 - type: entity
   parent: HydroponicsToolClippers
-  id: N14HydroponicsToolClippers
+  id: F14HydroponicsToolClippers
   components:
   - type: Sprite
     sprite: Objects/Tools/Hydroponics/clippers.rsi  # N14TODO: Sprite
@@ -24,7 +24,7 @@
 
 - type: entity
   parent: HydroponicsToolScythe
-  id: N14HydroponicsToolScythe
+  id: F14HydroponicsToolScythe
   description: A sharp and curved blade on a long fibremetal handle, this tool makes it easy to reap what you sow.
   components:
   - type: Sprite
@@ -37,7 +37,7 @@
 
 - type: entity
   parent: HydroponicsToolHatchet
-  id: N14HydroponicsToolHatchet
+  id: F14HydroponicsToolHatchetBase
   description: Can I axe you a question?
   components:
   - type: Sprite
@@ -48,7 +48,7 @@
 
 - type: entity
   parent: HydroponicsToolSpade
-  id: N14HydroponicsToolShovel
+  id: F14HydroponicsToolShovel
   name: shovel
   description: A tool for digging holes and moving aggregates.
   components:

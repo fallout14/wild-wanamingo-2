@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Belt/misfits_belts.yml
 
 - type: entity
-  parent: N14ClothingBeltStorageBase
-  id: MisfitsClothingBeltLeatherPouches
+  parent: F14ClothingBeltStorageBase
+  id: F14ClothingBeltLeatherPouches
   name: leather pouches belt
   description: Worn strips of leather stitched into a makeshift belt with small pouches for carrying supplies. Common on wastelanders who can't afford military webbing.
   components:
@@ -13,8 +13,8 @@
   - type: Appearance
 
 - type: entity
-  parent: N14ClothingBeltStorageBase
-  id: MisfitsM14ClothingBeltVaultSecurity
+  parent: F14ClothingBeltStorageBase
+  id: F14ClothingBeltVaultSecurity
   name: vault security belt
   description: A used belt used by vault security, it can carry a few magazines but not much else.
   components:
@@ -28,9 +28,9 @@
     whitelist:
       tags:
         - CigPack
-        - N14AmmoCell
+        - F14AmmoCell
         - Handcuffs
-        - N14PoliceBaton
+        - F14PoliceBaton
         # #Cythisiax Added - belt can store the Wendover map (Document)
         - Document
       components:
@@ -40,8 +40,8 @@
 # #Misfits Add - BoS Squire webbing variants.
 
 - type: entity
-  parent: N14ClothingBeltBoSWebbing
-  id: MisfitsClothingBeltSquireWebbingBlack
+  parent: F14ClothingBeltBoSWebbing
+  id: F14ClothingBeltSquireWebbingBlack
   name: black squire webbing
   description: Lightweight Brotherhood webbing sized for a Squire, with pouches for medicine, tools, and ammunition.
   components:
@@ -51,8 +51,8 @@
     sprite: Misfits/Clothing/Belt/squirewebbing_black.rsi
 
 - type: entity
-  parent: MisfitsClothingBeltSquireWebbingBlack
-  id: MisfitsClothingBeltSquireWebbingBrown
+  parent: F14ClothingBeltSquireWebbingBlack
+  id: F14ClothingBeltSquireWebbingBrown
   name: brown squire webbing
   components:
   - type: Sprite
@@ -63,8 +63,8 @@
 # #Misfits Add - BoS Paladin webbing variant.
 
 - type: entity
-  parent: N14ClothingBeltBoSWebbing
-  id: MisfitsClothingBeltPaladinWebbing
+  parent: F14ClothingBeltBoSWebbing
+  id: F14ClothingBeltPaladinWebbing
   name: paladin webbing
   description: Lightweight Brotherhood webbing sized for a Paladin, with pouches for medicine, tools, and ammunition.
   components:

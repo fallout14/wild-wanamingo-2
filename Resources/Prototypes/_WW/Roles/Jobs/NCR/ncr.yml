@@ -1,0 +1,332 @@
+# ---- from _Misfits/Roles/Jobs/Yuma/ncr.yml
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Roles/Jobs/, _Nuclear14/Roles/Jobs/
+# Changed for Wild Wanamingo: Yuma's roster. Names, slots and whitelists from the server's roster; gear is
+# Misfits' (minus the wallet slot and the skirt/satchel/duffel choices, which are loadouts in Wizden).
+# Misfits' playtime and species requirements are left out for now.
+
+- type: job
+  id: F14NCRCommander
+  name: job-name-ncr-commander
+  description: job-description-ncr-commander
+  playTimeTracker: F14NCRCommander
+  startingGear: F14NCRCommanderGear
+  icon: F14JobIconNcrLeader
+  supervisors: job-supervisors-ncr-commander
+  whitelisted: true
+  access:
+  - F14NCR
+  - F14NCRSGT
+  - F14NCRMedic
+  - F14NCRLT
+  - F14NCRCaptain
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRCommanderGear
+  equipment:
+    head: F14ClothingHeadHatNCRBeretOfficer
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingOfficerUniformNCRDesert
+    outerClothing: F14NCRCommandArmor
+    shoes: F14ClothingBootsCombatFilled
+    belt: F14ClothingBeltNCR
+    eyes: ClothingEyesGlassesSunglasses
+    ears: F14ClothingHeadsetNCR
+    pocket1: F14KitNCRBaseCommander
+    id: F14NCRCommanderPipboy
+  storage:
+    back:
+    - F14IFAKMilitary
+    - SyndicateWhistle
+    - F14Binoculars
+
+- type: job
+  id: F14NCRPlatoonLeader
+  name: job-name-ncr-platoon-leader
+  description: job-description-ncr-platoon-leader
+  playTimeTracker: F14NCRPlatoonLeader
+  startingGear: F14NCRPlatoonLeaderGear
+  icon: F14JobIconNcrLeader
+  supervisors: job-supervisors-ncr-commander
+  access:
+  - F14NCR
+  - F14NCRSGT
+  - F14NCRMedic
+  - F14NCRLT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRPlatoonLeaderGear
+  equipment:
+    head: F14ClothingHeadHatNCRBeretOfficer
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingOfficerUniformNCRDesert
+    outerClothing: F14ClothingOuterNCRDressJacket
+    shoes: F14ClothingBootsCombatFilled
+    belt: F14ClothingBeltNCR
+    eyes: ClothingEyesGlassesSunglasses
+    ears: F14ClothingHeadsetNCR
+    pocket1: F14KitNCRPlatoonLeader
+    pocket2: RadioHandheld
+    id: F14IDNCRDogtagOfficer
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRDoctor
+  name: job-name-ncr-doctor
+  description: job-description-ncr-doctor
+  playTimeTracker: F14NCRDoctor
+  startingGear: F14NCRDoctorGear
+  icon: F14JobIconNcrMedic
+  supervisors: job-supervisors-ncr-commander
+  access:
+  - F14NCR
+  - F14NCRMedic
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRDoctorGear
+  equipment:
+    jumpsuit: F14ClothingUniformNCRDesert
+    outerClothing: F14ClothingOuterCoatFollowersArmored
+    back: F14ClothingBackpackNCR
+    shoes: F14ClothingBootsLeatherFilled
+    ears: F14ClothingHeadsetNCR
+    belt: F14ClothingBeltNCR
+    id: F14IDNCRDogtagDoctorSenior
+    pocket2: F14KitNCRDoctor
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRRO
+  name: job-name-ncr-requisition-officer
+  description: job-description-ncr-requisition-officer
+  playTimeTracker: F14NCRRO
+  startingGear: F14NCRRequisitionOfficerGear
+  icon: F14JobIconNcrLeader
+  supervisors: job-supervisors-ncr-commander
+  access:
+  - F14NCR
+  - F14NCRSGT
+  - F14NCRMedic
+  - F14NCRLT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRRequisitionOfficerGear
+  equipment:
+    head: F14ClothingHeadHatNCRBeretOfficer
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingOfficerUniformNCRDesert
+    outerClothing: F14ClothingOuterNCRDressJacket
+    shoes: F14ClothingBootsCombatFilled
+    belt: F14ClothingBeltNCR
+    eyes: ClothingEyesGlassesSunglasses
+    ears: F14ClothingHeadsetNCR
+    pocket1: F14KitNCRQuartermaster
+    pocket2: RadioHandheld
+    id: F14IDNCRDogtagNCRRO
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRNCO
+  name: job-name-ncr-nco
+  description: job-description-ncr-nco
+  playTimeTracker: F14NCRNCO
+  startingGear: F14NCRNCOGear
+  icon: F14JobIconNcrSerg
+  supervisors: job-supervisors-ncr-nco
+  access:
+  - F14NCR
+  - F14NCRSGT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRNCOGear
+  equipment:
+    back: F14ClothingBackpackNCR
+    hands: F14ClothingHandsGlovesCombat
+    jumpsuit: F14ClothingOfficerUniformNCRDesert
+    shoes: F14ClothingBootsCombatFilled
+    ears: F14ClothingHeadsetNCR
+    belt: F14ClothingBeltNCR
+    outerClothing: F14NCRHeavyCombatArmor
+    pocket1: F14KitNCRSquadLeader
+    pocket2: RadioHandheld
+    id: F14IDNCRDogtagNCO
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRWS
+  name: job-name-ncr-weapon-specialist
+  description: job-description-ncr-weapon-specialist
+  playTimeTracker: F14NCRWS
+  startingGear: F14NCRWSGear
+  icon: F14JobIconNcrSpec
+  supervisors: job-supervisors-ncr-sergeant
+  access:
+  - F14NCR
+  - F14NCRMedic
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRWSGear
+  equipment:
+    head: F14ClothingHeadHatNCRHelmetMetalDesert
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingUniformNCRDesert
+    outerClothing: F14NCRPouchedCombatArmor
+    shoes: F14ClothingBootsLeatherFilled
+    ears: F14ClothingHeadsetNCR
+    belt: F14ClothingBeltNCR
+    pocket1: F14KitSelectNCRWeaponSpecialist
+    id: F14IDNCRDogtagWS
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRMedic
+  name: job-name-ncr-medic
+  description: job-description-ncr-medic
+  playTimeTracker: F14NCRMedic
+  startingGear: F14NCRMedicGear
+  icon: F14JobIconNcrMedic
+  supervisors: job-supervisors-ncr-nco
+  access:
+  - F14NCR
+  - F14NCRMedic
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRMedicGear
+  equipment:
+    jumpsuit: F14ClothingUniformNCRMedicVariant
+    outerClothing: F14ClothingOuterCoatFollowersArmored
+    back: F14ClothingBackpackNCR
+    shoes: F14ClothingBootsLeatherFilled
+    ears: F14ClothingHeadsetNCR
+    head: F14ClothingHeadHatNCRBeretMedic
+    belt: F14ClothingBeltNCR
+    id: F14IDNCRDogtagDoctor
+    pocket2: F14KitNCRFieldMedic
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14NCRCadet
+  name: job-name-ncr-recruit
+  description: job-description-ncr-recruit
+  playTimeTracker: F14NCRCadet
+  startingGear: F14NCRCadetGear
+  icon: F14JobIconNcrCadet
+  supervisors: job-supervisors-ncr
+  access:
+  - F14NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRCadetGear
+  equipment:
+    head: F14ClothingHeadHatNCRSidecap
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingUniformNCRDesert
+    shoes: F14ClothingBootsLeatherFilled
+    ears: F14ClothingHeadsetNCR
+    pocket1: F14KitNCRTrooper
+    id: F14IDNCRDogtag
+  storage:
+    back:
+    - F14IFAKMilitary
+
+# ---- from _WW/Roles/Jobs/Yuma/ncr.yml
+# Wild Wanamingo prototypes generated alongside ncr.yml (Yuma roster).
+
+- type: job
+  id: F14NCRGarrisonTrooper
+  name: job-name-f14-n-c-r-garrison-trooper
+  description: job-description-ncr-recruit
+  playTimeTracker: F14NCRGarrisonTrooper
+  startingGear: F14NCRGarrisonTrooperGear
+  icon: F14JobIconNcrCadet
+  supervisors: job-supervisors-ncr
+  access:
+  - F14NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14NCR
+
+- type: startingGear
+  id: F14NCRGarrisonTrooperGear
+  equipment:
+    head: F14ClothingHeadHatNCRSidecap
+    back: F14ClothingBackpackNCR
+    jumpsuit: F14ClothingUniformNCRDesert
+    shoes: F14ClothingBootsLeatherFilled
+    ears: F14ClothingHeadsetNCR
+    pocket1: F14KitSelectNCRGarrison
+    id: F14IDNCRDogtag
+  storage:
+    back:
+    - F14IFAKMilitary

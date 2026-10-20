@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Misc/wells.yml
 
 - type: entity
-  id: N14WellBoarded
+  id: F14WellBoarded
   name: Boarded well
   description: It's a well that's been boarded up. Maybe a crowbar will reveal it's secrets.
   placement:
@@ -40,8 +40,8 @@
 # N14:TODO Add a way to open this and turn it into a ladder to dungeons.
 
 - type: entity
-  parent: N14WellBoarded
-  id: N14WellWaterClean 
+  parent: F14WellBoarded
+  id: F14WellWaterClean 
   name: water well
   description: A well. Hopefully it's got some water at the bottom. Let's hope it's clean.
   suffix: Clean
@@ -78,37 +78,37 @@
         Quantity: 1
 
 - type: entity
-  parent: N14WellWaterClean
-  id: N14WellWaterDirty
+  parent: F14WellWaterClean
+  id: F14WellWaterDirty
   suffix: Dirty
   components:
   - type: Solution
     id: well
     solution:
       reagents:
-      - ReagentId: N14WaterDirty
+      - ReagentId: F14WaterDirty
         Quantity: 500
   - type: NamedSolutionRegeneration
     solution: well
     generated:
       reagents:
-      - ReagentId: N14WaterDirty
+      - ReagentId: F14WaterDirty
         Quantity: 1
 
 - type: entity
-  parent: N14WellWaterClean
-  id: N14WellWaterIrradiated # N14TODO: As above
+  parent: F14WellWaterClean
+  id: F14WellWaterIrradiated # N14TODO: As above
   suffix: Irradiated
   components:
   - type: Solution
     id: well
     solution:
       reagents:
-      - ReagentId: N14WaterIrradiated
+      - ReagentId: F14WaterIrradiated
         Quantity: 500
   - type: NamedSolutionRegeneration
     solution: well
     generated:
       reagents:
-      - ReagentId: N14WaterIrradiated
+      - ReagentId: F14WaterIrradiated
         Quantity: 1

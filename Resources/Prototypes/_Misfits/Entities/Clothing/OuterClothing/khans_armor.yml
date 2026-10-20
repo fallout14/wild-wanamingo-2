@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/OuterClothing/khans_armor.yml
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsClothingOuterKhansJacket
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterKhansJacket
   name: khans jacket
   description: Jackets popular with the Great Khans show off their skull emblem on the back, with small lead plate inserts providing some protection. Worn by rank-and-file Khan members.
   components:
@@ -21,10 +21,10 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: MisfitsClothingOuterKhansJacket
-  id: MisfitsClothingOuterKhansVest
+  parent: F14ClothingOuterKhansJacket
+  id: F14ClothingOuterKhansVest
   name: khans vest
-  description: Vests popular with the Great Khans show off their skull emblem on the back, with small lead plate inserts providing some protection. Worn by rank-and-file Khan members. #Alternative sprite of Jacket. If there is ever a "alt" click for sprite change put this with MisfitsClothingOuterKhansJacket
+  description: Vests popular with the Great Khans show off their skull emblem on the back, with small lead plate inserts providing some protection. Worn by rank-and-file Khan members. #Alternative sprite of Jacket. If there is ever a "alt" click for sprite change put this with F14ClothingOuterKhansJacket
   components:
   - type: Sprite
     sprite: Misfits/Clothing/OuterClothing/Armor/khansaltjacket.rsi
@@ -32,8 +32,8 @@
     sprite: Misfits/Clothing/OuterClothing/Armor/khansaltjacket.rsi
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsClothingOuterKhansArmoredJacket
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterKhansArmoredJacket
   name: khans armored jacket
   description: A Great Khans armored jacket with ceramic and metal inserts — more protection, same attitude. Standard issue for Khan enforcers looking to make a statement without slowing down.
   components:
@@ -52,8 +52,8 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: MisfitsClothingOuterKhansArmoredJacket
-  id: MisfitsClothingOuterKhansArmoredVest #Alternative sprite of Armored Jacket. If there is ever a "alt" click for sprite change put this with MisfitsClothingOuterKhansArmoredJacket
+  parent: F14ClothingOuterKhansArmoredJacket
+  id: F14ClothingOuterKhansArmoredVest #Alternative sprite of Armored Jacket. If there is ever a "alt" click for sprite change put this with F14ClothingOuterKhansArmoredJacket
   name: khans armored vest
   description: A black leather vest. There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns. The skull has a mongoloid moustache - it's obviously a Great Khans emblem.
   components:
@@ -63,8 +63,8 @@
     sprite: Misfits/Clothing/OuterClothing/Armor/khansaltarmoredjacket.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: MisfitsClothingOuterKhansBattlecoatBlack
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterKhansBattlecoatBlack
   name: khans black battlecoat
   description: Pre-war combat armor repainted in the red and black of the Great Khans. Road warrior chic — the Khan who wears this has seen enough firefights to bother upgrading.
   components:
@@ -74,10 +74,10 @@
     sprite: Misfits/Clothing/OuterClothing/Armor/khansbattlecoatblack.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: MisfitsClothingOuterKhansBattlecoatRed
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterKhansBattlecoatRed
   name: khans red battlecoat
-  description: Pre-war combat armor repainted in the red and black of the Great Khans. Road warrior chic — the Khan who wears this has seen enough firefights to bother upgrading. #Alternative sprite of Combat Jacket. If there is ever a "alt" click for sprite change put this with MisfitsClothingOuterKhansBattlecoatBlack
+  description: Pre-war combat armor repainted in the red and black of the Great Khans. Road warrior chic — the Khan who wears this has seen enough firefights to bother upgrading. #Alternative sprite of Combat Jacket. If there is ever a "alt" click for sprite change put this with F14ClothingOuterKhansBattlecoatBlack
   components:
   - type: Sprite
     sprite: Misfits/Clothing/OuterClothing/Armor/khansbattlecoatred.rsi
@@ -85,8 +85,8 @@
     sprite: Misfits/Clothing/OuterClothing/Armor/khansbattlecoatred.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: MisfitsClothingOuterKhanbatCombatArmor
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterKhanbatCombatArmor
   name: khanbat armor
   description: An old set of combat armor, repainted in the blue color of the Khans.
   components:
@@ -97,8 +97,8 @@
     sprite: Misfits/Clothing/OuterClothing/Armor/khanbatarmor.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmorMK2
-  id: MisfitsClothingOuterKhanbatCombatArmorMK2
+  parent: F14ClothingOuterCombatArmorMK2
+  id: F14ClothingOuterKhanbatCombatArmorMK2
   name: reinforced khanbat combat armor
   description: An old set of combat armor, repainted in the colors of the Khans, with a big mongol on the back."
   components:

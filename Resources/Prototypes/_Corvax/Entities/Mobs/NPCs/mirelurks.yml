@@ -1,0 +1,116 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Mobs/NPCs/mirelurks.yml
+
+- type: entity
+  name: mirelurk
+  id: F14MobMirelurk
+  parent: F14MobBaseHostileInsect
+  description: A crab with a shell? That's something new.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: mirelurk
+      sprite: Misfits/Legacy/Corvax/Mobs/Animals/mirelurk.rsi
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 4
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.3
+        density: 20
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      320: Dead
+  - type: Reflect # #Misfits Change Tweak: Small-caliber rounds (sub-5.56mm) ricochet off power armor at 30% chance. Innate - always active regardless of movement.
+    reflects: [ NonEnergy ]
+    reflectProb: 0.3
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: mirelurk
+      Critical:
+        Base: mirelurk
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 4
+        Piercing: 16
+  - type: Butcherable
+    spawned:
+    - id: F14FoodMeatMirelurkClaw
+      amount: 2
+      prob: 0.8
+  - type: Body # #Misfits Add - override N14Animal with N14PetAnimal to include heart (Medicine/Poison metabolizer)
+  - type: Hands # #Misfits Add - allows player-controlled mirelurk pets to drag items
+  - type: Puller
+    needsHands: false
+  - type: MisfitsPetNoPickup # #Misfits Add - cancels PickupAttemptEvent; drag only, no item pickup
+  - type: PassiveDamage # #Misfits Add - slow natural regeneration for player-controlled pet mirelurks
+    allowedStates:
+    - Alive
+    - Critical
+    damage:
+      types:
+        Blunt: -0.166667
+        Slash: -0.166667
+        Piercing: -0.166667
+        Heat: -0.125
+        Shock: -0.125
+        Cold: -0.125
+        Caustic: -0.125
+        Poison: -0.25
+        Radiation: -0.25
+        Asphyxiation: -1.5
+        Bloodloss: -1.5
+
+- type: entity
+  name: rad mirelurk
+  id: F14MobRadMirelurk
+  parent: F14MobMirelurk
+  description: A crab with a shell, and it even glows? That's something new.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: radmirelurk
+      sprite: Misfits/Legacy/Corvax/Mobs/Animals/radmirelurk.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: radmirelurk
+      Critical:
+        Base: radmirelurk
+      Dead:
+        Base: dead
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#4CBB17FF"
+  - type: RadiationSource
+    intensity: 0.5
+    slope: 0.25
+  - type: Butcherable
+    spawned:
+    - id: F14FoodMeatRadlurkClaw
+      amount: 2
+      prob: 0.8

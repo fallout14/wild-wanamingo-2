@@ -1,27 +1,27 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier2Weapon/Tier2WeaponTables/Tier2WeaponBallistic/TwoHanded/Tier2WeaponBallisticSMGTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier2_GunsBulletSMG
+  id: F14WeaponLootTier2GunsBulletSMG
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponSMG10mmPipe
+      id: F14WeaponSMG10mmPipe
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSMG12mmPipe
+      id: F14WeaponSMG12mmPipe
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponSMG45GreaseGun
+      id: F14WeaponSMG45GreaseGun
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponSMGPPSh41 #9mm
+      id: F14WeaponSMGPPSh41 #9mm
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSMG10mm
+      id: F14WeaponSMG10mm
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponSMGAmerican180
+      id: F14WeaponSMGAmerican180
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponSMG45Reising # #Misfits Add - M50 Reising
+      id: F14WeaponSMG45Reising # #Misfits Add - M50 Reising
       weight: 5

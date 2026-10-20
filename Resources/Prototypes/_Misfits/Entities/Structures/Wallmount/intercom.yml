@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Structures/Wallmount/intercom.yml
 
 - type: entity
-  id: MisfitsIntercomFollowers
+  id: F14IntercomFollowers
   parent: Intercom
   suffix: Followers
   components:
@@ -10,13 +10,13 @@
       board:
       - IntercomElectronics
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
-      - MisfitsEncryptionKeyFollowers
+      - F14EncryptionKeyWastelandGlobal
+      - F14EncryptionKeyFollowers
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 - type: entity
-  id: MisfitsIntercomLegion
+  id: F14IntercomLegion
   parent: Intercom
   suffix: Legion
   components:
@@ -25,13 +25,13 @@
       board:
       - IntercomElectronics
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
-      - MisfitsEncryptionKeyLegion
+      - F14EncryptionKeyWastelandGlobal
+      - F14EncryptionKeyLegion
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 - type: entity
-  id: MisfitsIntercomNCR
+  id: F14IntercomNCR
   parent: Intercom
   suffix: NCR
   components:
@@ -40,13 +40,13 @@
       board:
       - IntercomElectronics
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
-      - N14EncryptionKeyNCR
+      - F14EncryptionKeyWastelandGlobal
+      - F14EncryptionKeyNCR
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 - type: entity
-  id: MisfitsIntercomNCRRanger
+  id: F14IntercomNCRRanger
   parent: Intercom
   suffix: NCR Ranger
   components:
@@ -55,13 +55,13 @@
       board:
       - IntercomElectronics
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
-      - MisfitsEncryptionKeyNCRRangers
+      - F14EncryptionKeyWastelandGlobal
+      - F14EncryptionKeyNCRRangers
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 - type: entity
-  id: MisfitsIntercomOSI
+  id: F14IntercomOSI
   parent: Intercom
   suffix: OSI
   components:
@@ -70,13 +70,13 @@
       board:
       - IntercomElectronics
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
-      - MisfitsEncryptionKeyOSI
+      - F14EncryptionKeyWastelandGlobal
+      - F14EncryptionKeyOSI
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 - type: entity
-  id: MisfitsIntercomEnclave
+  id: F14IntercomEnclave
   parent: Intercom
   suffix: Enclave
   components:
@@ -85,13 +85,13 @@
       board:
       - IntercomElectronics
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
-      - N14EncryptionKeyEnclave
+      - F14EncryptionKeyWastelandGlobal
+      - F14EncryptionKeyEnclave
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 - type: entity
-  id: MisfitsIntercomVaultScience
+  id: F14IntercomVaultScience
   parent: Intercom
   suffix: Vault Science
   components:
@@ -100,13 +100,13 @@
       board:
       - IntercomElectronics
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
       - EncryptionKeyScience
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 - type: entity
-  id: MisfitsIntercomVaultEngineering
+  id: F14IntercomVaultEngineering
   parent: Intercom
   suffix: Vault Engineering
   components:
@@ -115,13 +115,13 @@
       board:
       - IntercomElectronics
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
       - EncryptionKeyEngineering
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 - type: entity
-  id: MisfitsIntercomVaultMedical
+  id: F14IntercomVaultMedical
   parent: Intercom
   suffix: Vault Medical
   components:
@@ -130,13 +130,13 @@
       board:
       - IntercomElectronics
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
       - EncryptionKeyMedical
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 - type: entity
-  id: MisfitsIntercomVaultSecurity
+  id: F14IntercomVaultSecurity
   parent: Intercom
   suffix: Vault Security
   components:
@@ -145,13 +145,13 @@
       board:
       - IntercomElectronics
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
       - EncryptionKeySecurity
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 - type: entity
-  id: MisfitsIntercomVault
+  id: F14IntercomVault
   parent: Intercom
   suffix: Vault
   components:
@@ -160,13 +160,13 @@
       board:
       - IntercomElectronics
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
-      - N14EncryptionKeyVault
+      - F14EncryptionKeyWastelandGlobal
+      - F14EncryptionKeyVault
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 - type: entity
-  id: MisfitsIntercomEighties
+  id: F14IntercomEighties
   parent: Intercom
   suffix: Eighties
   components:
@@ -175,13 +175,13 @@
       board:
       - IntercomElectronics
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
-      - MisfitsEncryptionKeyEighties
+      - F14EncryptionKeyWastelandGlobal
+      - F14EncryptionKeyEighties
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 - type: entity
-  id: MisfitsIntercomTown
+  id: F14IntercomTown
   parent: Intercom
   suffix: Town
   components:
@@ -190,13 +190,13 @@
       board:
       - IntercomElectronics
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
-      - MisfitsEncryptionKeyTown
+      - F14EncryptionKeyWastelandGlobal
+      - F14EncryptionKeyTown
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 - type: entity
-  id: MisfitsIntercomBrotherhoodOfSteel
+  id: F14IntercomBrotherhoodOfSteel
   parent: Intercom
   suffix: BrotherhoodOfSteel
   components:
@@ -205,7 +205,7 @@
       board:
       - IntercomElectronics
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
-      - MisfitsEncryptionKeyBrotherhoodOfSteel
+      - F14EncryptionKeyWastelandGlobal
+      - F14EncryptionKeyBrotherhoodOfSteel
   - type: EncryptionKeyHolder
     keysUnlocked: false

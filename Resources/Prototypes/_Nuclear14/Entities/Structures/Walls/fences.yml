@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: BaseStructure
-  id: N14BaseFence
+  id: F14BaseFence
   name: fence
   description: Helps keep trespassers out.
   placement:
@@ -42,8 +42,8 @@
         density: 100
 
 - type: entity
-  parent: N14BaseFence
-  id: N14WallFenceChain
+  parent: F14BaseFence
+  id: F14WallFenceChain
   name: chainlink fence
   components:
   - type: Sprite

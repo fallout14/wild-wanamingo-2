@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/blueprint_recipes_bos_t60.yml
 
 - type: latheCategory
-  id: MisfitsBlueprintBoSWeaponsT60
+  id: F14BlueprintBoSWeaponsT60
   name: lathe-category-blueprint-bos-weapons-t60
 
 # =====================================================================
@@ -12,17 +12,17 @@
 # Sits just under the Bozar: a heavy pre-war receiver, but no optics or gold contacts.
 
 - type: latheRecipe
-  id: MisfitsBPBoSWeaponRifleHeavyAssault
-  result: MisfitsWeaponRifle556HeavyAssault
+  id: F14BPBoSWeaponRifleHeavyAssault
+  result: F14WeaponRifle556HeavyAssault
   categories:
-  - MisfitsBlueprintBoSWeaponsT60
+  - F14BlueprintBoSWeaponsT60
   completetime: 18
   materials:
     Steel: 9000
 
-    N14Brass: 1500
+    F14Brass: 1500
 
-    N14ScrapElectronic: 200
+    F14ScrapElectronic: 200
 
     Plastic: 400
 
@@ -32,21 +32,21 @@
 # missing iron sights; that is what puts it above an ordinary .44 sidearm.
 
 - type: latheRecipe
-  id: MisfitsBPBoSWeaponPistolT60
-  result: MisfitsWeaponPistolT60
+  id: F14BPBoSWeaponPistolT60
+  result: F14WeaponPistolT60
   categories:
-  - MisfitsBlueprintBoSWeaponsT60
+  - F14BlueprintBoSWeaponsT60
   completetime: 12
   materials:
     Steel: 4500
 
-    N14Brass: 800
+    F14Brass: 800
 
     Circuitry: 600
 
     Glass: 200
 
-    N14ScrapElectronic: 250
+    F14ScrapElectronic: 250
 
 
 # =====================================================================
@@ -58,14 +58,14 @@
 # crafted magazines come out loaded, so the lead and powder cover the rounds.
 
 - type: latheRecipe
-  id: MisfitsBPBoSAmmoMagHeavy556
-  result: MisfitsMagazineHeavy556Rifle
+  id: F14BPBoSAmmoMagHeavy556
+  result: F14MagazineHeavy556Rifle
   categories:
-  - MisfitsBlueprintBoSWeaponsT60
+  - F14BlueprintBoSWeaponsT60
   completetime: 10
   materials:
     Steel: 120
 
     Lead: 150
 
-    N14Gunpowder: 900
+    F14Gunpowder: 900

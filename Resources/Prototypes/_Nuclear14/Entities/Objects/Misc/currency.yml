@@ -3,7 +3,7 @@
 
 - type: entity
   name: wallet
-  id: N14Wallet
+  id: F14Wallet
   parent: BaseStorageItem
   description: A wallet for storing lots of money.
   components:
@@ -22,15 +22,15 @@
     areaInsert: true
     whitelist:
       tags:
-      - MisfitsBottleCap
-      - N14Currency
+      - F14BottleCap
+      - F14Currency
       - DoorBumpOpener
   # Pull loose bottlecaps into the wallet while it is worn, like an OreBag.
   - type: Dumpable
 
 - type: entity
   parent: BaseItem
-  id: N14CurrencyCap
+  id: F14CurrencyCap
   name: bottlecap
   description: A bottlecap from a bottle of Nuka-Cola.
   components:
@@ -43,10 +43,10 @@
     price: 0
   - type: Tag
     tags:
-      - N14Currency
-      - MisfitsBottleCap
+      - F14Currency
+      - F14BottleCap
   - type: Stack
-    stackType: N14Caps
+    stackType: F14Caps
     count: 1
     baseLayer: base
     layerStates:
@@ -80,14 +80,14 @@
   # end cherry-pick from ss#32938
 
 - type: stack
-  id: N14Caps
+  id: F14Caps
   name: misfits-kit-caps
   icon: { sprite: Nuclear14/Objects/Misc/currency.rsi, state: caps3 }
-  spawn: N14CurrencyCap
+  spawn: F14CurrencyCap
 
 - type: entity
-  parent: N14CurrencyCap
-  id: N14CurrencyCap10
+  parent: F14CurrencyCap
+  id: F14CurrencyCap10
   suffix: 10
   components:
   - type: Icon
@@ -97,8 +97,8 @@
     count: 10
 
 - type: entity
-  parent: N14CurrencyCap
-  id: N14CurrencyCap50
+  parent: F14CurrencyCap
+  id: F14CurrencyCap50
   suffix: 50
   components:
   - type: Icon
@@ -108,8 +108,8 @@
     count: 50
 
 - type: entity
-  parent: N14CurrencyCap
-  id: N14CurrencyCap100
+  parent: F14CurrencyCap
+  id: F14CurrencyCap100
   suffix: 100
   components:
   - type: Icon
@@ -119,8 +119,8 @@
     count: 100
 
 - type: entity
-  parent: N14CurrencyCap
-  id: N14CurrencyCap500
+  parent: F14CurrencyCap
+  id: F14CurrencyCap500
   suffix: 500
   components:
   - type: Icon
@@ -133,7 +133,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14CurrencyPrewar
+  id: F14CurrencyPrewar
   name: pre-war money
   description: Wads of useless paper. Make it rain!
   components:
@@ -146,9 +146,9 @@
     price: 0
   - type: Tag
     tags:
-      - N14Currency
+      - F14Currency
   - type: Stack
-    stackType: N14PrewarMoney
+    stackType: F14PrewarMoney
     count: 1
     baseLayer: base
     layerStates:
@@ -166,14 +166,14 @@
     size: Tiny
 
 - type: stack
-  id: N14PrewarMoney
+  id: F14PrewarMoney
   name: misfits-kit-pre-war-money
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/currency.rsi, state: prewar3 }
-  spawn: N14CurrencyPrewar
+  spawn: F14CurrencyPrewar
 
 - type: entity
-  parent: N14CurrencyPrewar
-  id: N14CurrencyPrewarMoney10
+  parent: F14CurrencyPrewar
+  id: F14CurrencyPrewarMoney10
   suffix: 10
   components:
   - type: Icon
@@ -183,8 +183,8 @@
     count: 10
 
 - type: entity
-  parent: N14CurrencyPrewar
-  id: N14CurrencyPrewarMoney50
+  parent: F14CurrencyPrewar
+  id: F14CurrencyPrewarMoney50
   suffix: 50
   components:
   - type: Icon
@@ -194,8 +194,8 @@
     count: 50
 
 - type: entity
-  parent: N14CurrencyPrewar
-  id: N14CurrencyPrewarMoney100
+  parent: F14CurrencyPrewar
+  id: F14CurrencyPrewarMoney100
   suffix: 100
   components:
   - type: Icon
@@ -205,8 +205,8 @@
     count: 100
 
 - type: entity
-  parent: N14CurrencyPrewar
-  id: N14CurrencyPrewarMoney500
+  parent: F14CurrencyPrewar
+  id: F14CurrencyPrewarMoney500
   suffix: 500
   components:
   - type: Icon
@@ -216,10 +216,10 @@
     count: 500
 
 - type: material
-  id: N14NcrCredit
+  id: F14NcrCredit
   name: ncrCredit
   unit: materials-unit-bill
-  stackEntity: N14CurrencyNCRDollar
+  stackEntity: F14CurrencyNCRDollar
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/currency.rsi, state: ncr3 }
   price: 0.5 # Corvax-Change
 
@@ -227,7 +227,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14CurrencyNCRDollar
+  id: F14CurrencyNCRDollar
   name: NCR dollar
   description: Wads of paper, these ones bear the insignia of the NCR. Make it rain!
   components:
@@ -235,14 +235,14 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14NcrCredit: 1
+      F14NcrCredit: 1
   - type: StackPrice
     price: 0
   - type: Tag
     tags:
-      - N14Currency
+      - F14Currency
   - type: Stack
-    stackType: N14NCRDollar
+    stackType: F14NCRDollar
     count: 1
     baseLayer: base
     layerStates:
@@ -272,14 +272,14 @@
     size: Tiny
 
 - type: stack
-  id: N14NCRDollar
+  id: F14NCRDollar
   name: misfits-kit-ncr-dollars
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/currency.rsi, state: ncr3 }
-  spawn: N14CurrencyNCRDollar
+  spawn: F14CurrencyNCRDollar
 
 - type: entity
-  parent: N14CurrencyNCRDollar
-  id: N14CurrencyNCRDollar10
+  parent: F14CurrencyNCRDollar
+  id: F14CurrencyNCRDollar10
   suffix: 10
   components:
   - type: Icon
@@ -289,8 +289,8 @@
     count: 10
 
 - type: entity
-  parent: N14CurrencyNCRDollar
-  id: N14CurrencyNCRDollar50
+  parent: F14CurrencyNCRDollar
+  id: F14CurrencyNCRDollar50
   suffix: 50
   components:
   - type: Icon
@@ -300,8 +300,8 @@
     count: 50
 
 - type: entity
-  parent: N14CurrencyNCRDollar
-  id: N14CurrencyNCRDollar100
+  parent: F14CurrencyNCRDollar
+  id: F14CurrencyNCRDollar100
   suffix: 100
   components:
   - type: Icon
@@ -311,8 +311,8 @@
     count: 100
 
 - type: entity
-  parent: N14CurrencyNCRDollar
-  id: N14CurrencyNCRDollar500
+  parent: F14CurrencyNCRDollar
+  id: F14CurrencyNCRDollar500
   suffix: 500
   components:
   - type: Icon
@@ -322,3 +322,87 @@
     count: 500
 
 # Legion Aureus
+
+- type: entity
+  parent: BaseItem
+  id: F14CurrencyLegionAureus
+  name: aureus
+  description: A gold coin used by the legion and tribes as currency.
+  components:
+  - type: Cash
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      F14LegionAurei: 1
+  - type: StackPrice
+    price: 0
+  - type: Tag
+    tags:
+      - F14Currency
+  - type: Stack
+    stackType: F14LegionAureus
+    count: 1
+    baseLayer: base
+    layerStates:
+    - aurelius
+    - aurelius2
+    - aurelius3
+    - moneybag
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: aurelius
+    scale: 0.6, 0.6
+    layers:
+    - state: aurelius3
+      map: ["base"]
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 30
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.25,0.1"
+        mask:
+        - ItemMask
+  - type: Appearance
+  - type: Item
+    size: Tiny
+
+- type: stack
+  id: F14LegionAureus
+  name: misfits-kit-legion-aurei
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/currency.rsi, state: aurelius3 }
+  spawn: F14CurrencyLegionAureus
+
+- type: entity
+  parent: F14CurrencyCap
+  id: F14CurrencyLegionDenarius
+  name: denarius
+  description: A silver coin used by the legion and tribes as currency.
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      F14LegionDenarius: 1
+  - type: Stack
+    stackType: F14LegionDenarius
+    count: 1
+    baseLayer: base
+    layerStates:
+    - denarius
+    - denarius2
+    - denarius3
+    - moneybag
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: denarius
+    layers:
+    - state: denarius3
+      map: ["base"]
+
+- type: stack
+  id: F14LegionDenarius
+  name: misfits-kit-legion-denarii
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/currency.rsi, state: denarius3 }
+  spawn: F14CurrencyLegionDenarius

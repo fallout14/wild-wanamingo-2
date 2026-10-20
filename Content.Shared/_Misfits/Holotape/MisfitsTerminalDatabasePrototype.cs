@@ -83,5 +83,5 @@ public sealed partial class MisfitsTerminalDatabasePrototype : IPrototype
     /// may override per-database (e.g. NCR red, BoS green) for thematic flavor.
     /// </summary>
     [DataField("exportHolotapePrototype")]
-    public string ExportHolotapePrototype { get; private set; } = "N14HolotapeYellow";
+    public string ExportHolotapePrototype { get; private set; } = "F14HolotapeYellow";
 }

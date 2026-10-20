@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClothingHandsBase
-  id: N14ClothingPAGauntlets
+  id: F14ClothingPAGauntlets
   name: power armor gauntlets
   description: A pair of power suit gauntlets for rough work and battle.
   categories: [ HideSpawnMenu ]
@@ -18,7 +18,7 @@
     slots: gloves
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
   - type: Insulated # Don't electrocute my Paladins!
   - type: MeleeWeapon # Misfits Change - BoS hardsuit punch: wall destruction, slight reach and damage boost
     soundHit:
@@ -44,8 +44,8 @@
         Heat: 0.95
 
 - type: entity
-  parent: N14ClothingPAGauntlets
-  id: N14ClothingPAGauntletsTesla
+  parent: F14ClothingPAGauntlets
+  id: F14ClothingPAGauntletsTesla
   name: tesla armor gauntlets
   description: A pair of power suit gauntlets that allows people near the user feel energised.
   categories: [ HideSpawnMenu ]
@@ -61,8 +61,8 @@
         Structural: 6
 
 - type: entity
-  parent: N14ClothingPAGauntlets
-  id: N14ClothingPAGauntletsDark
+  parent: F14ClothingPAGauntlets
+  id: F14ClothingPAGauntletsDark
   name: power armor gauntlets
   description: A pair of power suit gauntlets for rough work and battle.
   categories: [ HideSpawnMenu ]
@@ -71,8 +71,8 @@
     sprite: Nuclear14/Clothing/Hands/PowerGauntlets/dark.rsi
 
 - type: entity
-  parent: N14ClothingPAGauntlets
-  id: N14ClothingPAGauntletsMBoS
+  parent: F14ClothingPAGauntlets
+  id: F14ClothingPAGauntletsMBoS
   name: power armor gauntlets
   description: A pair of power suit gauntlets for rough work and battle.
   categories: [ HideSpawnMenu ]

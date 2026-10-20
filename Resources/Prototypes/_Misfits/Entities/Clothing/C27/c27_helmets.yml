@@ -3,7 +3,7 @@
 - type: entity
   abstract: true
   parent: ClothingHeadBase
-  id: MisfitsBaseC27Helmet
+  id: F14BaseC27Helmet
   components:
   - type: MisfitsC27Armor
   - type: Tag
@@ -12,8 +12,8 @@
 
 - type: entity
   abstract: true
-  parent: MisfitsBaseC27Helmet
-  id: MisfitsBaseC27HelmetLight
+  parent: F14BaseC27Helmet
+  id: F14BaseC27HelmetLight
   components:
   - type: Armor
     modifiers:
@@ -25,8 +25,8 @@
 
 - type: entity
   abstract: true
-  parent: MisfitsBaseC27Helmet
-  id: MisfitsBaseC27HelmetMedium
+  parent: F14BaseC27Helmet
+  id: F14BaseC27HelmetMedium
   components:
   - type: Armor
     modifiers:
@@ -38,14 +38,14 @@
 
 - type: entity
   abstract: true
-  parent: MisfitsBaseC27Helmet
-  id: MisfitsBaseC27HelmetHeavy
+  parent: F14BaseC27Helmet
+  id: F14BaseC27HelmetHeavy
   components:
   - type: MisfitsC27Armor
     allowedSpecies:
-    - MisfitsC27
-    - MisfitsC27NCR
-    - MisfitsC27BoS
+    - F14C27
+    - F14C27NCR
+    - F14C27BoS
   - type: Armor
     modifiers:
       coefficients:
@@ -61,8 +61,8 @@
 
 - type: entity
   abstract: true
-  parent: MisfitsBaseC27Helmet
-  id: MisfitsBaseC27HelmetCombat
+  parent: F14BaseC27Helmet
+  id: F14BaseC27HelmetCombat
   components:
   - type: Armor
     modifiers:
@@ -79,8 +79,8 @@
 # === Concrete: Light tier ===
 
 - type: entity
-  parent: MisfitsBaseC27HelmetLight
-  id: MisfitsClothingC27HelmetLightGeneric
+  parent: F14BaseC27HelmetLight
+  id: F14ClothingC27HelmetLightGeneric
   name: c-27 light helmet
   description: A basic factory-issue helmet for C-27 chassis. Open visor, easy to swap.
   components:
@@ -90,8 +90,8 @@
     sprite: Misfits/Clothing/Head/Helmets/c27_light_generic.rsi
 
 - type: entity
-  parent: MisfitsBaseC27HelmetLight
-  id: MisfitsClothingC27HelmetLightNCR
+  parent: F14BaseC27HelmetLight
+  id: F14ClothingC27HelmetLightNCR
   name: c-27 light helmet (ncr issue)
   description: NCR-issued light helmet for C-27 conscripts. Painted in republic khaki.
   components:
@@ -101,8 +101,8 @@
     sprite: Misfits/Clothing/Head/Helmets/c27_light_ncr.rsi
 
 - type: entity
-  parent: MisfitsBaseC27HelmetLight
-  id: MisfitsClothingC27HelmetLightBoS
+  parent: F14BaseC27HelmetLight
+  id: F14ClothingC27HelmetLightBoS
   name: c-27 light helmet (brotherhood issue)
   description: Brotherhood of Steel light helmet for C-27 auxiliaries. Brotherhood blue with chrome accents.
   components:
@@ -114,8 +114,8 @@
 # === Concrete: Medium tier ===
 
 - type: entity
-  parent: MisfitsBaseC27HelmetMedium
-  id: MisfitsClothingC27HelmetMediumGeneric
+  parent: F14BaseC27HelmetMedium
+  id: F14ClothingC27HelmetMediumGeneric
   name: c-27 medium helmet
   description: Reinforced factory-issue helmet for C-27 chassis. Closed visor, plated jaw.
   components:
@@ -125,8 +125,8 @@
     sprite: Misfits/Clothing/Head/Helmets/c27_medium_generic.rsi
 
 - type: entity
-  parent: MisfitsBaseC27HelmetMedium
-  id: MisfitsClothingC27HelmetMediumNCR
+  parent: F14BaseC27HelmetMedium
+  id: F14ClothingC27HelmetMediumNCR
   name: c-27 medium helmet (ncr issue)
   description: NCR-issued reinforced helmet for C-27 troopers. Standard republic frontline kit.
   components:
@@ -136,8 +136,8 @@
     sprite: Misfits/Clothing/Head/Helmets/c27_medium_ncr.rsi
 
 - type: entity
-  parent: MisfitsBaseC27HelmetMedium
-  id: MisfitsClothingC27HelmetMediumBoS
+  parent: F14BaseC27HelmetMedium
+  id: F14ClothingC27HelmetMediumBoS
   name: c-27 medium helmet (brotherhood issue)
   description: Brotherhood of Steel reinforced helmet for C-27 knights. Brotherhood blue with riveted steel plating.
   components:
@@ -147,8 +147,8 @@
     sprite: Misfits/Clothing/Head/Helmets/c27_medium_bos.rsi
 
 - type: entity
-  parent: MisfitsBaseC27HelmetMedium
-  id: MisfitsClothingC27HelmetMediumZAX
+  parent: F14BaseC27HelmetMedium
+  id: F14ClothingC27HelmetMediumZAX
   name: c-27 z.a.x augmented medium helmet
   description: A reinforced C-27 medium helmet refit for Z.A.X-linked chassis units. It carries the same protection profile as the standard medium helmet.
   components:
@@ -160,8 +160,8 @@
 # === Concrete: Heavy tier ===
 
 - type: entity
-  parent: MisfitsBaseC27HelmetHeavy
-  id: MisfitsClothingC27HelmetHeavyGeneric
+  parent: F14BaseC27HelmetHeavy
+  id: F14ClothingC27HelmetHeavyGeneric
   name: c-27 heavy helmet
   description: Composite ablative dome with full-face visor and integrated optics. Built for paired-pairing with the heavy chassis plating.
   components:
@@ -171,8 +171,8 @@
     sprite: Misfits/Clothing/Head/Helmets/c27_heavy_generic.rsi
 
 - type: entity
-  parent: MisfitsBaseC27HelmetHeavy
-  id: MisfitsClothingC27HelmetHeavyNCR
+  parent: F14BaseC27HelmetHeavy
+  id: F14ClothingC27HelmetHeavyNCR
   name: c-27 heavy helmet (ncr issue)
   description: NCR-issued heavy composite helmet for C-27 heavy troopers. Republic gold-and-khaki paint over a sealed dome.
   components:
@@ -182,8 +182,8 @@
     sprite: Misfits/Clothing/Head/Helmets/c27_heavy_ncr.rsi
 
 - type: entity
-  parent: MisfitsBaseC27HelmetHeavy
-  id: MisfitsClothingC27HelmetHeavyBoS
+  parent: F14BaseC27HelmetHeavy
+  id: F14ClothingC27HelmetHeavyBoS
   name: c-27 heavy helmet (brotherhood issue)
   description: Brotherhood of Steel heavy composite helmet for C-27 paladins. Battle-worn brotherhood blue, sealed dome.
   components:
@@ -195,8 +195,8 @@
 # === Concrete: Combat Set ===
 
 - type: entity
-  parent: MisfitsBaseC27HelmetCombat
-  id: MisfitsClothingC27HelmetCombatGeneric
+  parent: F14BaseC27HelmetCombat
+  id: F14ClothingC27HelmetCombatGeneric
   name: c-27 combat helmet
   description: Reinforced composite helmet for C-27 units with full-face visor and integrated optics, designed to pair with combat plating.
   components:

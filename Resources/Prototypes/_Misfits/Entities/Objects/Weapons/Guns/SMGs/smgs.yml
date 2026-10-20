@@ -2,8 +2,8 @@
 
 - type: entity
   name: Uzi
-  parent: N14WeaponSMGBase
-  id: MisfitsWeaponSMGUzi
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMGUzi
   description: A compact 9mm submachine gun with a folding stock and a detachable magazine.
   components:
   - type: ContainerContainer  # spawn state
@@ -52,7 +52,7 @@
   - type: Gun
     fireRate: 8.5
     soundGunshot:
-      collection: N14Pistol9mmGunshot
+      collection: F14Pistol9mmGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -70,27 +70,27 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazineSMG9mm
+        startingItem: F14MagazineSMG9mm
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         whitelist:
           tags:
-            - N14MagazineSMG9mm
+            - F14MagazineSMG9mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol9
+        startingItem: F14CartridgePistol9
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol9
+            - F14CartridgePistol9
   - type: StaticPrice
     price: 50
 
 # Temporary artwork inherited from the Uzi; replace with dedicated MP5SD sprites.
 
 - type: entity
-  parent: MisfitsWeaponSMGUzi
-  id: MisfitsWeaponSMGMP5SD
+  parent: F14WeaponSMGUzi
+  id: F14WeaponSMGMP5SD
   name: MP5SD
   description: A 9mm submachine gun with an integral suppressor and a smooth automatic action.
   components:
@@ -112,7 +112,7 @@
     showMuzzleVisual: false
     muzzleSlot:
       name: Integral suppressor
-      startingItem: MisfitsFirearmSuppressor
+      startingItem: F14FirearmSuppressor
       locked: true
       insertOnInteract: false
       ejectOnInteract: false
@@ -121,7 +121,7 @@
   - type: Gun
     fireRate: 9
     soundGunshot:
-      collection: N14PistolSpyGunshot
+      collection: F14PistolSpyGunshot
   - type: StaticPrice
     price: 175
 
@@ -129,8 +129,8 @@
 
 - type: entity
   name: M50 Reising
-  parent: N14WeaponSMGBase
-  id: MisfitsWeaponSMG45Reising
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG45Reising
   description: A Reising M50, a wartime .45 ACP submachine gun built cheaply on a wooden stock. Faster than a grease gun but nowhere near a Thompson, and it can be switched to single shots.
   components:
   - type: Clothing
@@ -154,7 +154,7 @@
   - type: Gun
     fireRate: 9 # ~540 rpm
     soundGunshot:
-      collection: N1445SMGGunshot
+      collection: F1445SMGGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -173,27 +173,27 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine45SubMachineGun
+        startingItem: F14Magazine45SubMachineGun
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         priority: 2 # eject beats the fire-mode toggle on alt-click; with no magazine, alt-click switches fire mode
         whitelist:
           tags:
-            - N14Magazine45SubMachineGun
+            - F14Magazine45SubMachineGun
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol45
+        startingItem: F14CartridgePistol45
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol45
+            - F14CartridgePistol45
   - type: StaticPrice
     price: 60
 
 - type: entity
   name: grease gun
-  parent: N14WeaponSMGBase
-  id: MisfitsWeaponSMG45GreaseGun
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG45GreaseGun
   description: 'An M3 "grease gun": a cheap, stamped-steel .45 ACP submachine gun with a slow, controllable rate of fire and a threaded muzzle for a suppressor.'
   components:
   - type: ContainerContainer  # spawn state
@@ -242,7 +242,7 @@
   - type: Gun
     fireRate: 7.5 # #Misfits Tweak - M3 ~450 rpm
     soundGunshot:
-      collection: N1445SMGGunshot
+      collection: F1445SMGGunshot
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -260,26 +260,26 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine45SubMachineGun
+        startingItem: F14Magazine45SubMachineGun
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         whitelist:
           tags:
-            - N14Magazine45SubMachineGun
+            - F14Magazine45SubMachineGun
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol45
+        startingItem: F14CartridgePistol45
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol45
+            - F14CartridgePistol45
   - type: StaticPrice
     price: 35
 
 - type: entity
   name: Thompson SMG
-  parent: N14WeaponSMGBase
-  id: MisfitsWeaponSMG45Thompson
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG45Thompson
   description: A pre-war Thompson submachine gun with a wooden stock, chambered in .45 ACP. Heavy, loud and fast-firing.
   components:
   - type: Clothing
@@ -303,7 +303,7 @@
   - type: Gun
     fireRate: 11.5 # #Misfits Tweak - M1928A1 ~700 rpm
     soundGunshot:
-      collection: N1445SMGGunshot
+      collection: F1445SMGGunshot
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -321,26 +321,26 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine45SubMachineGun
+        startingItem: F14Magazine45SubMachineGun
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         whitelist:
           tags:
-            - N14Magazine45SubMachineGun
+            - F14Magazine45SubMachineGun
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol45
+        startingItem: F14CartridgePistol45
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol45
+            - F14CartridgePistol45
   - type: StaticPrice
     price: 90
 
 - type: entity
   name: PPSh-41
-  parent: N14WeaponSMGBase
-  id: MisfitsWeaponSMGPPSh41
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMGPPSh41
   description: A Soviet World War II drum-fed submachine gun. Pre-war museums kept one behind glass. Now raiders carry them. Wildly inaccurate at range, devastating up close. The drum holds thirty-five rounds.
   components:
   - type: Clothing
@@ -371,7 +371,7 @@
     availableModes:
     - Fullauto
     soundGunshot:
-      collection: N14Pistol9mmGunshot
+      collection: F14Pistol9mmGunshot
   - type: GunWieldBonus
     minAngle: -10
     maxAngle: -25
@@ -379,26 +379,26 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMagazineSMG9mmDrum
+        startingItem: F14MagazineSMG9mmDrum
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         whitelist:
           tags:
-            - MisfitsMagazineSMG9mmDrum
+            - F14MagazineSMG9mmDrum
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol9
+        startingItem: F14CartridgePistol9
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol9
+            - F14CartridgePistol9
   - type: StaticPrice
     price: 150
 
 - type: entity
   name: American 180
-  parent: N14WeaponSMGBase
-  id: MisfitsWeaponSMGAmerican180
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMGAmerican180
   description: A pre-war .22 LR submachine gun with an integrated suppressor and a large top-loaded drum magazine. Whisper-quiet, with an almost absurd rate of fire. A full drum of .22 vanishes faster than you expect.
   components:
   - type: Clothing
@@ -429,7 +429,7 @@
     availableModes:
     - Fullauto
     soundGunshot:
-      collection: N14Pistol22lrGunshot
+      collection: F14Pistol22lrGunshot
   - type: GunWieldBonus
     minAngle: -3
     maxAngle: -12
@@ -437,18 +437,18 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMagazineAmerican180Drum
+        startingItem: F14MagazineAmerican180Drum
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         whitelist:
           tags:
-            - MisfitsMagazineAmerican180Drum
+            - F14MagazineAmerican180Drum
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol22
+        startingItem: F14CartridgePistol22
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol22
+            - F14CartridgePistol22
   - type: StaticPrice
     price: 250

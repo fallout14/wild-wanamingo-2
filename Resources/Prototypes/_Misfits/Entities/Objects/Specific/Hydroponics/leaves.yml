@@ -3,7 +3,7 @@
 - type: entity
   name: coca leaves
   parent: ProduceBase
-  id: MisfitsLeavesCoca
+  id: F14LeavesCoca
   description: "Drench it in welding fuel to make some fine powder."
   components:
   - type: Sprite
@@ -15,16 +15,16 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: MisfitsCocaSlurry
+      - ReagentId: F14CocaSlurry
         Quantity: 10
 
 - type: entity
   name: dried cannabis leaves
   parent: LeavesCannabisDried
-  id: MisfitsLeavesCannabisDried
+  id: F14LeavesCannabisDried
   components:
     - type: Stack
-      stackType: MisfitsLeavesCannabisDried
+      stackType: F14LeavesCannabisDried
       count: 1
     - type: Sprite
       sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi
@@ -36,11 +36,11 @@
 - type: entity
   name: ground cannabis
   parent: BaseItem
-  id: MisfitsGroundCannabis
+  id: F14GroundCannabis
   description: "Ground cannabis, ready to take you on a trip."
   components:
     - type: Stack
-      stackType: MisfitsGroundCannabis
+      stackType: F14GroundCannabis
       count: 1
     - type: Solution
       solution:
@@ -60,10 +60,10 @@
 - type: entity
   name: dried tobacco leaves
   parent: LeavesTobaccoDried
-  id: MisfitsLeavesTobaccoDried
+  id: F14LeavesTobaccoDried
   components:
     - type: Stack
-      stackType: MisfitsLeavesTobaccoDried
+      stackType: F14LeavesTobaccoDried
       count: 1
     - type: Sprite
       sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi
@@ -73,10 +73,10 @@
 - type: entity
   name: ground tobacco
   parent: GroundTobacco
-  id: MisfitsGroundTobacco
+  id: F14GroundTobacco
   components:
     - type: Stack
-      stackType: MisfitsGroundTobacco
+      stackType: F14GroundTobacco
       count: 1
     - type: Sprite
       sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi

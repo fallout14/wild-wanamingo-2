@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseWeaponRifle
-  id: N14WeaponRifleBase
+  id: F14WeaponRifleBase
   abstract: true
   components:
   - type: Item
@@ -37,7 +37,7 @@
       ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
       whitelist:
         tags:
-        - MisfitsFirearmMuzzleAttachment
+        - F14FirearmMuzzleAttachment
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -52,8 +52,8 @@
 
 - type: entity
   name: R-91 Rifle
-  parent: N14WeaponRifleBase
-  id: N14WeaponRifle556R91
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle556R91
   description: An old-fashioned assault rifle chambered in 5.56 munitions.
   components:
   - type: ContainerContainer  # spawn state
@@ -89,32 +89,32 @@
     angleIncrease: 4
     angleDecay: 16
     soundGunshot:
-      collection: N14RifleR91Gunshot
+      collection: F14RifleR91Gunshot
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine556Rifle
+        startingItem: F14Magazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine556Rifle
+            - F14Magazine556Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge556Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge556Rifle
+            - F14Cartridge556Rifle
   - type: StaticPrice
     price: 100
 
 - type: entity
   name: service rifle
-  parent: N14WeaponRifleBase
-  id: N14WeaponRifle556Service
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle556Service
   description: A cheaply mass-produced post-war rifle made by the NCR, chambered in 5.56 ammo.
   components:
   - type: ContainerContainer  # spawn state
@@ -165,7 +165,7 @@
       disableEject: true
       whitelist:
         tags:
-        - N14RifleScope
+        - F14RifleScope
     muzzleSlot:
       name: Muzzle attachment
       locked: false
@@ -191,7 +191,7 @@
     shotsPerBurst: 3 # Corvax-Add
     burstFireRate: 4 # Corvax-Add
     soundGunshot:
-      collection: N14ServiceGunshot
+      collection: F14ServiceGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -199,27 +199,27 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine556Rifle
+        startingItem: F14Magazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine556Rifle
+            - F14Magazine556Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge556Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge556Rifle
+            - F14Cartridge556Rifle
   - type: StaticPrice
     price: 100
 
 - type: entity
   name: scoped service rifle
-  parent: N14WeaponRifleBase
-  id: N14WeaponRifle556ServiceScoped
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle556ServiceScoped
   description: A cheaply mass-produced post-war rifle made by the NCR, chambered in 5.56 ammo. This one features an optic mounted on the carry handle.
   components:
   - type: ContainerContainer  # spawn state
@@ -273,7 +273,7 @@
     angleDecay: 16
     fireRate: 4 # Corvax-Change
     soundGunshot:
-      collection: N14ServiceGunshot
+      collection: F14ServiceGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -281,28 +281,28 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine556Rifle
+        startingItem: F14Magazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine556Rifle
+            - F14Magazine556Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge556Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge556Rifle
+            - F14Cartridge556Rifle
   # #Misfits Add — built-in scope on scoped service rifle (explicitly described as having an optic)
   # - type: N14Scope
   #   eyeOffset: 5
 
 - type: entity
   name: scout rifle
-  parent: N14WeaponRifleBase
-  id: N14WeaponRifle556Scout
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle556Scout
   description: A modified version of the service rifle made by Rangers in the field. It is capable of using larger 5.56 magazines than its predecessor.
   components:
   - type: ContainerContainer  # spawn state
@@ -340,7 +340,7 @@
       disableEject: true
       whitelist:
         tags:
-        - N14RifleScope
+        - F14RifleScope
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Rifles/scoutrifle.rsi
     quickEquip: false
@@ -361,7 +361,7 @@
     angleDecay: 12
     fireRate: 6
     soundGunshot:
-      collection: N14ServiceGunshot
+      collection: F14ServiceGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -370,28 +370,28 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine556Rifle
+        startingItem: F14Magazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine556Rifle
-            - N14LongMagazine556Rifle
+            - F14Magazine556Rifle
+            - F14LongMagazine556Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge556Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge556Rifle
+            - F14Cartridge556Rifle
   - type: StaticPrice
     price: 150
 
 - type: entity
   name: battle rifle
-  parent: N14WeaponRifleBase
-  id: N14WeaponRifle308Battle
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle308Battle
   description: A long semi-automatic rifle fed by clips, chambered in the powerful 308.
   components:
   - type: ContainerContainer  # spawn state
@@ -423,7 +423,7 @@
       disableEject: true
       whitelist:
         tags:
-        - N14RifleScope
+        - F14RifleScope
     opticVisualState: battlerifle_scope
     opticVisualOffset: 0.09375, 0.375
     muzzleSlot:
@@ -465,7 +465,7 @@
     angleDecay: 16
     fireRate: 3
     soundGunshot:
-      collection: N14BattleRifleGunshot
+      collection: F14BattleRifleGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -473,20 +473,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14ClipMagazine308Rifle
+        startingItem: F14ClipMagazine308Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Clip308Rifle
+            - F14Clip308Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge308Rifle
+        startingItem: F14Cartridge308Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge308Rifle
+            - F14Cartridge308Rifle
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4
@@ -495,8 +495,8 @@
 
 - type: entity
   name: C70 rifle
-  parent: N14WeaponRifleBase
-  id: N14WeaponRifle762Canadian
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle762Canadian
   description: A pre-war canadian assault rifle chambered in 7.62mm, surprisingly in good state for being 200 a years old rifle
   components:
   - type: ContainerContainer  # spawn state
@@ -532,7 +532,7 @@
     angleIncrease: 5 # Corvax-Change
     angleDecay: 16
     soundGunshot:
-      collection: N14MarksmanGunshot
+      collection: F14MarksmanGunshot
     fireRate: 4
     selectedMode: SemiAuto
     availableModes:
@@ -542,20 +542,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine762Rifle
+        startingItem: F14Magazine762Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine762Rifle
+            - F14Magazine762Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge762Rifle
+        startingItem: F14Cartridge762Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge762Rifle
+            - F14Cartridge762Rifle
   - type: StaticPrice
     price: 175
   - type: Scope
@@ -569,8 +569,8 @@
 
 - type: entity
   name: EM2 rifle
-  parent: N14WeaponRifleBase
-  id: N14WeaponRifle556EM2
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle556EM2
   description: A long bullpup assault rifle, uses 5.56 ammo.
   components:
   - type: ContainerContainer  # spawn state
@@ -607,7 +607,7 @@
     angleDecay: 16
     fireRate: 4
     soundGunshot:
-      collection: N14CarbineGunshot
+      collection: F14CarbineGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -616,27 +616,27 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14LongMagazine556Rifle # #Misfits Change - back to 5.56 (was temporarily .303)
+        startingItem: F14LongMagazine556Rifle # #Misfits Change - back to 5.56 (was temporarily .303)
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14LongMagazine556Rifle
+            - F14LongMagazine556Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge556Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge556Rifle
+            - F14Cartridge556Rifle
   - type: StaticPrice
     price: 150
 
 - type: entity
   name: F2 marksman rifle
-  parent: N14WeaponRifleBase
-  id: N14WeaponRifle762MarksmanCanadian
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle762MarksmanCanadian
   description: A pre-war canadian marksman rifle chambered in 7.62mm.
   components:
   - type: ContainerContainer  # spawn state
@@ -675,7 +675,7 @@
     angleIncrease: 4
     angleDecay: 16
     soundGunshot:
-      collection: N14MarksmanGunshot
+      collection: F14MarksmanGunshot
     fireRate: 3
     selectedMode: SemiAuto
     availableModes:
@@ -684,27 +684,27 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine762AmmoShort
+        startingItem: F14Magazine762AmmoShort
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine762Short
+            - F14Magazine762Short
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge762Rifle
+        startingItem: F14Cartridge762Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge762Rifle
+            - F14Cartridge762Rifle
   - type: StaticPrice
     price: 175
 
 - type: entity
   name: SKS chinese carbine
   parent: BaseWeaponSniper
-  id: N14WeaponRifle762SKS
+  id: F14WeaponRifle762SKS
   description: A pre-war chinese rifle chambered in 7.62mm with a fixed internal 10-round magazine. Cheap, simple and easy to use, perfect to arm commie militias from around the world.
   components:
   - type: ItemSlots  # spawn state
@@ -733,7 +733,7 @@
       disableEject: true
       whitelist:
         tags:
-        - N14RifleScope
+        - F14RifleScope
     opticVisualState: svt_scope
     opticVisualOffset: 0.125, 0.4375
     muzzleSlot:
@@ -768,7 +768,7 @@
     angleIncrease: 4
     angleDecay: 16
     soundGunshot:
-      collection: N14MarksmanGunshot
+      collection: F14MarksmanGunshot
     fireRate: 2.5 # Corvax-Change
     selectedMode: SemiAuto
     availableModes:
@@ -794,16 +794,16 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - N14Cartridge762Rifle
+      - F14Cartridge762Rifle
     capacity: 10
-    proto: N14Cartridge762Rifle
+    proto: F14Cartridge762Rifle
   - type: StaticPrice
     price: 175
 
 - type: entity
   name: pipe assault rifle
-  parent: N14WeaponRifleBase
-  id: N14WeaponRifle556Pipe
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle556Pipe
   description: A rusty pipe automatic rifle, light and extremely cheap, chambered in 5.56mm
   components:
   - type: ContainerContainer  # spawn state
@@ -840,7 +840,7 @@
     angleDecay: 16
     fireRate: 3
     soundGunshot:
-      collection: N14ServiceGunshot
+      collection: F14ServiceGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -848,27 +848,27 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine556Rifle
+        startingItem: F14Magazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine556Rifle
+            - F14Magazine556Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge556Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge556Rifle
+            - F14Cartridge556Rifle
   - type: StaticPrice
     price: 20
 
 - type: entity
   name: tribal rifle
-  parent: N14WeaponRifleBase
-  id: N14WeaponSniper556Tribal
+  parent: F14WeaponRifleBase
+  id: F14WeaponSniper556Tribal
   description: A surprisingly decent piece of a gun for being made by tribals, this rustic but trusty rifle accepts detachable 25-round 5.56mm magazines.
   components:
   - type: ContainerContainer  # spawn state
@@ -913,26 +913,26 @@
     angleDecay: 16
     fireRate: 3
     soundGunshot:
-      collection: N14SniperVarmintGunshot
+      collection: F14SniperVarmintGunshot
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine556Rifle
+        startingItem: F14Magazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - N14Magazine556Rifle
+          - F14Magazine556Rifle
 
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge556Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-          - N14Cartridge556Rifle
+          - F14Cartridge556Rifle
   - type: EyeCursorOffset
     maxOffset: 2.5
     pvsIncrease: 0.25
@@ -941,8 +941,8 @@
 
 - type: entity
   name: tribal assault rifle
-  parent: N14WeaponRifleBase
-  id: N14WeaponSniper556TribalUpgraded
+  parent: F14WeaponRifleBase
+  id: F14WeaponSniper556TribalUpgraded
   description: A surprisingly decent piece of a gun for being made by tribals, this rustic but trusty rifle accepts detachable 25-round 5.56mm magazines.
   components:
   - type: ContainerContainer  # spawn state
@@ -988,26 +988,26 @@
     angleDecay: 16
     fireRate: 4
     soundGunshot:
-      collection: N14SniperVarmintGunshot
+      collection: F14SniperVarmintGunshot
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine556Rifle
+        startingItem: F14Magazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - N14Magazine556Rifle
+          - F14Magazine556Rifle
 
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge556Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-          - N14Cartridge556Rifle
+          - F14Cartridge556Rifle
   - type: EyeCursorOffset
     maxOffset: 2.5
     pvsIncrease: 0.25
@@ -1016,8 +1016,8 @@
 
 - type: entity
   name: butchered service rifle
-  parent: N14WeaponRifleBase
-  id: N14WeaponRifle556Butchered
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle556Butchered
   description: A cheaply mass-produced NCR service rifle that has been hacked down into a crude full-auto "carbine". Cheap, wild and unreliable, but it throws a lot of 5.56.
   components:
   - type: ContainerContainer  # spawn state
@@ -1054,7 +1054,7 @@
     angleDecay: 16
     fireRate: 4
     soundGunshot:
-      collection: N14ServiceGunshot
+      collection: F14ServiceGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -1065,20 +1065,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine556Rifle
+        startingItem: F14Magazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine556Rifle
+            - F14Magazine556Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge556Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge556Rifle
+            - F14Cartridge556Rifle
   - type: StaticPrice
     price: 40
 

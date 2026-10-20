@@ -3,7 +3,7 @@
 
 - type: entity
   parent: SeatBase
-  id: N14FitnessWeightsBench1
+  id: F14FitnessWeightsBench1
   name: weights bench
   description: A bench for pumping iron.
   components:
@@ -18,8 +18,8 @@
     state: fitnessweight
 
 - type: entity
-  parent: N14FitnessWeightsBench1
-  id: N14FitnessWeightLifter
+  parent: F14FitnessWeightsBench1
+  id: F14FitnessWeightLifter
   name: weight lifter
   components:
   - type: Sprite
@@ -39,7 +39,7 @@
 #TriggerOnCollide ?
 
 - type: entity
-  id: N14FitnessPunchingBag
+  id: F14FitnessPunchingBag
   parent: BaseStructure
   name: punching bag
   description: A punching bag. Let's get big!

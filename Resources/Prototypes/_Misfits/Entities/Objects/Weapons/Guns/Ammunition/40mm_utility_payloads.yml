@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/40mm_utility_payloads.yml
 
 - type: entity
-  id: Misfits40mmBuckshotPellet
-  parent: N14PelletShotgun12
+  id: F1440mmBuckshotPellet
+  parent: F14PelletShotgun12
   name: 40mm buckshot pellet
   categories: [ HideSpawnMenu ]
   components:
@@ -15,12 +15,12 @@
     deleteOnCollide: true
 
 - type: entity
-  id: Misfits40mmBuckshotSpread
-  parent: Misfits40mmBuckshotPellet
+  id: F1440mmBuckshotSpread
+  parent: F1440mmBuckshotPellet
   categories: [ HideSpawnMenu ]
   components:
   - type: ProjectileSpread
-    proto: Misfits40mmBuckshotPellet
+    proto: F1440mmBuckshotPellet
     count: 20
     spread: 20
 
@@ -28,46 +28,46 @@
 # spawn/delete trigger behavior. No explosive blast is attached to these rounds.
 
 - type: entity
-  id: Misfits40mmSmokeProjectile
-  parent: Misfits40mmHEDPProjectile
+  id: F1440mmSmokeProjectile
+  parent: F1440mmHEDPProjectile
   name: smoke round
   categories: [ HideSpawnMenu ]
   components:
   - type: SpawnOnTrigger
-    proto: Misfits40mmSmokePayload
+    proto: F1440mmSmokePayload
 
 - type: entity
-  id: Misfits40mmWhitePhosphorusProjectile
-  parent: Misfits40mmHEDPProjectile
+  id: F1440mmWhitePhosphorusProjectile
+  parent: F1440mmHEDPProjectile
   name: white phosphorus round
   categories: [ HideSpawnMenu ]
   components:
   - type: SpawnOnTrigger
-    proto: Misfits40mmWhitePhosphorusPayload
+    proto: F1440mmWhitePhosphorusPayload
 
 - type: entity
-  id: Misfits40mmTearGasProjectile
-  parent: Misfits40mmHEDPProjectile
+  id: F1440mmTearGasProjectile
+  parent: F1440mmHEDPProjectile
   name: tear gas round
   categories: [ HideSpawnMenu ]
   components:
   - type: SpawnOnTrigger
-    proto: Misfits40mmTearGasPayload
+    proto: F1440mmTearGasPayload
 
 - type: entity
-  id: Misfits40mmFlashbangProjectile
-  parent: Misfits40mmHEDPProjectile
+  id: F1440mmFlashbangProjectile
+  parent: F1440mmHEDPProjectile
   name: flashbang round
   categories: [ HideSpawnMenu ]
   components:
   - type: SpawnOnTrigger
-    proto: Misfits40mmFlashbangPayload
+    proto: F1440mmFlashbangPayload
 
 # Match the handheld smoke's lifetime and spread. Spread is a tile budget,
 # not a circular radius; walls and available space affect the final cloud.
 
 - type: entity
-  id: Misfits40mmSmokePayload
+  id: F1440mmSmokePayload
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn
@@ -81,8 +81,8 @@
 # Reuse the existing caustic WP reagent; deliberately no fire stacks or ignition.
 
 - type: entity
-  id: Misfits40mmWhitePhosphorusPayload
-  parent: Misfits40mmSmokePayload
+  id: F1440mmWhitePhosphorusPayload
+  parent: F1440mmSmokePayload
   categories: [ HideSpawnMenu ]
   components:
   - type: SmokeOnTrigger
@@ -90,12 +90,12 @@
     spreadAmount: 50
     solution:
       reagents:
-      - ReagentId: MisfitsWhitePhosphorusSmoke
+      - ReagentId: F14WhitePhosphorusSmoke
         Quantity: 50
 
 - type: entity
-  id: Misfits40mmTearGasPayload
-  parent: Misfits40mmSmokePayload
+  id: F1440mmTearGasPayload
+  parent: F1440mmSmokePayload
   categories: [ HideSpawnMenu ]
   components:
   - type: SmokeOnTrigger
@@ -109,7 +109,7 @@
 # Reuse standard flash handling, including visibility and flash protection.
 
 - type: entity
-  id: Misfits40mmFlashbangPayload
+  id: F1440mmFlashbangPayload
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn

@@ -3,7 +3,7 @@
 # Lock and lighting/environment status layers removed: Wizden APCs only drive ChargeState and Equipment.
 # Construction (graph N14APC) removed until its parts are ported.
 - type: entity
-  id: N14APCBreaker
+  id: F14APCBreaker
   name: Electrical Breaker
   description: A breaker box for controlling electrical systems.
   placement:
@@ -96,10 +96,10 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14ScrapSteel1:
+          F14ScrapSteel1:
             min: 2
             max: 4
-          N14ScrapElectronic1:
+          F14ScrapElectronic1:
             min: 2
             max: 3
       - !type:DoActsBehavior
@@ -118,7 +118,7 @@
 # APC under construction
 
 - type: entity
-  id: N14APCBreakerFrame
+  id: F14APCBreakerFrame
   name: APC frame
   description: A breaker box for controlling electrical systems, lacking the electronics.
   placement:
@@ -151,7 +151,7 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14ScrapSteel1:
+          F14ScrapSteel1:
             min: 2
             max: 4
       - !type:DoActsBehavior
@@ -160,8 +160,8 @@
 # Constructed APC
 
 - type: entity
-  parent: N14APCBreaker
-  id: N14APCBreakerConstructed
+  parent: F14APCBreaker
+  id: F14APCBreakerConstructed
   suffix: Open
   components:
   - type: WiresPanel

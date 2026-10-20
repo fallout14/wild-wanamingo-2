@@ -1,21 +1,21 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Structures/Machines/machinepanels.yml
 
 - type: entity
-  parent: N14MachineRackCameraRouterBase
-  id: MisfitsMachineRackCameraRouterZAX
+  parent: F14MachineRackCameraRouterBase
+  id: F14MachineRackCameraRouterZAX
   suffix: ZAX
   components:
     - type: SurveillanceCameraRouter
-      subnetFrequency: MisfitsSurveillanceCameraZAX
+      subnetFrequency: F14SurveillanceCameraZAX
 
 ## Telecoms
 
 - type: entity
-  parent: N14MachineRackTelecomsServer
-  id: MisfitsMachineRackTelecomsServerLegion
+  parent: F14MachineRackTelecomsServer
+  id: F14MachineRackTelecomsServerLegion
   suffix: Legion
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - MisfitsEncryptionKeyLegion
+      - F14EncryptionKeyLegion

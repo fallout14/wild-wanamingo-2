@@ -40,7 +40,7 @@ public sealed partial class SharedVaultDoorConsoleSystem : EntitySystem
         }
     }
 
-    private static readonly ProtoId<TagPrototype> PipBoyTag = "MisfitsPipBoy";
+    private static readonly ProtoId<TagPrototype> PipBoyTag = "F14PipBoy";
 
     private bool HasPipBoy(EntityUid user)
     {

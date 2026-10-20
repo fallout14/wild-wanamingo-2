@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/Structures/walls.yml
 
 - type: constructionGraph
-  id: N14WoodWall
+  id: F14WoodWall
   start: start
   graph:
     - node: start
@@ -39,7 +39,7 @@
               doAfter: 3
 
     - node: Frame
-      entity: N14WallWoodFrame
+      entity: F14WallWoodFrame
       edges:
         - to: start
           completed:
@@ -65,7 +65,7 @@
               doAfter: 2
 
     - node: logWall
-      entity: N14WallWoodLog
+      entity: F14WallWoodLog
       edges:
         - to: start
           completed:
@@ -78,7 +78,7 @@
               doAfter: 10
 
     - node: WoodWall
-      entity: N14WallWoodSlanted
+      entity: F14WallWoodSlanted
       edges:
         - to: Frame
           completed:
@@ -90,7 +90,7 @@
               doAfter: 10
 
     - node: WallWoodTall
-      entity: N14WallWoodTall
+      entity: F14WallWoodTall
       edges:
         - to: start
           completed:
@@ -105,7 +105,7 @@
               doAfter: 10
 
 - type: constructionGraph
-  id: N14ScrapWall
+  id: F14ScrapWall
   start: start
   graph:
     - node: start
@@ -197,12 +197,12 @@
             - !type:SnapToGrid
               southRotation: true
           steps:
-            - material: N14Scrap
+            - material: F14Scrap
               amount: 5
               doAfter: 4
 
     - node: SheetScrapWall
-      entity: N14WallScrapSlanted
+      entity: F14WallScrapSlanted
       edges:
         - to: start
           completed:
@@ -215,7 +215,7 @@
               doAfter: 10
 
     - node: SheetScrapWallTall
-      entity: N14WallScrapTall
+      entity: F14WallScrapTall
       edges:
         - to: start
           completed:
@@ -228,7 +228,7 @@
               doAfter: 10
 
     - node: WhiteScrapWall
-      entity: N14WallScrapWhiteSlanted
+      entity: F14WallScrapWhiteSlanted
       edges:
         - to: start
           completed:
@@ -241,7 +241,7 @@
               doAfter: 10
 
     - node: WhiteScrapWallTall
-      entity: N14WallScrapWhiteTall
+      entity: F14WallScrapWhiteTall
       edges:
         - to: start
           completed:
@@ -254,7 +254,7 @@
               doAfter: 10
 
     - node: BlueScrapWall
-      entity: N14WallScrapBlueSlanted
+      entity: F14WallScrapBlueSlanted
       edges:
         - to: start
           completed:
@@ -267,7 +267,7 @@
               doAfter: 10
 
     - node: BlueScrapWallTall
-      entity: N14WallScrapBlueTall
+      entity: F14WallScrapBlueTall
       edges:
         - to: start
           completed:
@@ -280,7 +280,7 @@
               doAfter: 10
 
     - node: RedScrapWall
-      entity: N14WallScrapRedSlanted
+      entity: F14WallScrapRedSlanted
       edges:
         - to: start
           completed:
@@ -293,7 +293,7 @@
               doAfter: 10
 
     - node: RedScrapWallTall
-      entity: N14WallScrapRedTall
+      entity: F14WallScrapRedTall
       edges:
         - to: start
           completed:
@@ -306,12 +306,12 @@
               doAfter: 10
 
     - node: RoughScrapWall
-      entity: N14WallRoughScrapSlanted
+      entity: F14WallRoughScrapSlanted
       edges:
         - to: start
           completed:
             - !type:GivePrototype
-              prototype: N14Scrap
+              prototype: F14Scrap
               amount: 3
             - !type:DeleteEntity # Forge-Change
           steps:
@@ -319,12 +319,12 @@
               doAfter: 25
 
     - node: RoughScrapWallTall
-      entity: N14WallRoughScrapTall
+      entity: F14WallRoughScrapTall
       edges:
         - to: start
           completed:
             - !type:GivePrototype
-              prototype: N14Scrap
+              prototype: F14Scrap
               amount: 5
             - !type:DeleteEntity
           steps:

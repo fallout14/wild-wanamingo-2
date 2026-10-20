@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Vehicles/landvehicles.yml
 
 - type: entity
-  parent: GoobstationBaseVehicle
-  id: MisfitsVehicleBikeGreen
+  parent: F14BaseVehicle
+  id: F14VehicleBikeGreen
   name: green motorbike
   description: A clean green motorbike.
   components:
@@ -36,7 +36,7 @@
     # #Misfits Fix - Super Mutants and Power Armor wearers are too heavy to ride motorbikes
     blacklist:
       tags:
-      - MisfitsCannotRide
+      - F14CannotRide
       components:
       - PowerArmorWorn
   - type: Sprite
@@ -68,8 +68,8 @@
     keyWhitelist:
       requireAll: true
       tags:
-      - MisfitsVehicleKey
-      - MisfitsMotorbikeKeys
+      - F14VehicleKey
+      - F14MotorbikeKeys
   - type: ItemSlots
     slots:
       key_slot:
@@ -77,16 +77,16 @@
         whitelist:
           requireAll: true
           tags:
-          - MisfitsVehicleKey
-          - MisfitsMotorbikeKeys
+          - F14VehicleKey
+          - F14MotorbikeKeys
         insertSound:
           path: /Audio/Effects/Vehicle/vehiclestartup.ogg
           params:
             volume: -3
 
 - type: entity
-  parent: MisfitsVehicleBikeGreen
-  id: MisfitsVehicleBikeFlamey
+  parent: F14VehicleBikeGreen
+  id: F14VehicleBikeFlamey
   name: flamey motorbike
   description: A motorbike with a flame decal.
   components:
@@ -101,10 +101,10 @@
       map: ["enum.VehicleVisualLayers.AutoAnimate"]
   - type: VehicleDrawOver
     renderOver: None
-    overlayPrototype: MisfitsVehicleBikeFlameyOverlay
+    overlayPrototype: F14VehicleBikeFlameyOverlay
 
 - type: entity
-  id: MisfitsVehicleBikeFlameyOverlay
+  id: F14VehicleBikeFlameyOverlay
   name: flamey overlay
   categories: [ HideSpawnMenu ]
   components:
@@ -120,8 +120,8 @@
   - type: Appearance
 
 - type: entity
-  parent: MisfitsVehicleBikeGreen
-  id: MisfitsVehicleBikeRustLight
+  parent: F14VehicleBikeGreen
+  id: F14VehicleBikeRustLight
   name: rusty motorbike
   description: A rusty motorbike.
   components:
@@ -131,8 +131,8 @@
       map: ["enum.VehicleVisualLayers.AutoAnimate"]
 
 - type: entity
-  parent: MisfitsVehicleBikeGreen
-  id: MisfitsVehicleBikeScrambler
+  parent: F14VehicleBikeGreen
+  id: F14VehicleBikeScrambler
   name: scrambler motorbike
   description: A scrambler type motorbike.
   components:
@@ -142,12 +142,12 @@
       map: ["enum.VehicleVisualLayers.AutoAnimate"]
   - type: VehicleDrawOver
     renderOver: None
-    overlayPrototype: MisfitsVehicleBikeScramblerOverlay
+    overlayPrototype: F14VehicleBikeScramblerOverlay
   - type: MovementSpeedModifier
     acceleration: 0.5 # #Cythisiax Added - Scrambler takes ~4.6s to reach max speed (heavy bike feel)
 
 - type: entity
-  id: MisfitsVehicleBikeScramblerOverlay
+  id: F14VehicleBikeScramblerOverlay
   name: scrambler overlay
   categories: [ HideSpawnMenu ]
   components:
@@ -163,8 +163,8 @@
   - type: Appearance
 
 - type: entity
-  parent: MisfitsVehicleBikeGreen
-  id: MisfitsVehicleBikeClassic
+  parent: F14VehicleBikeGreen
+  id: F14VehicleBikeClassic
   name: classic motorbike
   description: A reliable two-wheeler.
   components:
@@ -174,8 +174,8 @@
       map: ["enum.VehicleVisualLayers.AutoAnimate"]
 
 - type: entity
-  parent: GoobstationBaseVehicle
-  id: MisfitsVehicleBuggyDune
+  parent: F14BaseVehicle
+  id: F14VehicleBuggyDune
   name: dune buggy
   description: A rugged offroad buggy.
   components:
@@ -200,7 +200,7 @@
     keyWhitelist:
       requireAll: true
       tags:
-      - MisfitsVehicleKey
+      - F14VehicleKey
   - type: ItemSlots
     slots:
       key_slot:
@@ -208,15 +208,15 @@
         whitelist:
           requireAll: true
           tags:
-          - MisfitsVehicleKey
+          - F14VehicleKey
         insertSound:
           path: /Audio/Effects/Vehicle/vehiclestartup.ogg
           params:
             volume: -3
 
 - type: entity
-  parent: MisfitsVehicleBuggyDune
-  id: MisfitsVehicleBuggyOlive
+  parent: F14VehicleBuggyDune
+  id: F14VehicleBuggyOlive
   name: olive buggy
   description: A green offroad buggy.
   components:
@@ -228,8 +228,8 @@
       map: ["enum.VehicleVisualLayers.Cover"]
 
 - type: entity
-  parent: MisfitsVehicleBuggyDune
-  id: MisfitsVehicleBuggyRed
+  parent: F14VehicleBuggyDune
+  id: F14VehicleBuggyRed
   name: red buggy
   description: A bright red buggy ready to roll.
   components:
@@ -241,8 +241,8 @@
       map: ["enum.VehicleVisualLayers.Cover"]
 
 - type: entity
-  parent: MisfitsVehicleBuggyDune
-  id: MisfitsVehicleBuggyHot
+  parent: F14VehicleBuggyDune
+  id: F14VehicleBuggyHot
   name: hot buggy
   description: A flashy buggy with flame decals.
   components:
@@ -254,7 +254,7 @@
       map: ["enum.VehicleVisualLayers.Cover"]
 
 - type: entity
-  id: MisfitsVehicleBuggyOverlay
+  id: F14VehicleBuggyOverlay
   name: buggy overlay
   categories: [ HideSpawnMenu ]
   components:
@@ -270,8 +270,8 @@
   - type: Appearance
 
 - type: entity
-  id: MisfitsVehicleBuggy
-  parent: GoobstationBaseVehicle
+  id: F14VehicleBuggy
+  parent: F14BaseVehicle
   name: buggy
   description: Riding in my car after a beer, hey is that bump shaped like a jetfiend?.
   components:
@@ -282,7 +282,7 @@
     noRot: true
   - type: VehicleDrawOver
     renderOver: None
-    overlayPrototype: MisfitsVehicleBuggyOverlay
+    overlayPrototype: F14VehicleBuggyOverlay
   - type: VehicleHandBlocker
     blockedHands: 2
   - type: MovementSpeedModifier
@@ -295,8 +295,8 @@
     keyWhitelist:
       requireAll: true
       tags:
-      - MisfitsVehicleKey
-      - MisfitsMotorbikeKeys
+      - F14VehicleKey
+      - F14MotorbikeKeys
   - type: ItemSlots
     slots:
       key_slot:
@@ -304,8 +304,8 @@
         whitelist:
           requireAll: true
           tags:
-          - MisfitsVehicleKey
-          - MisfitsMotorbikeKeys
+          - F14VehicleKey
+          - F14MotorbikeKeys
         insertSound:
           path: /Audio/Effects/Vehicle/vehiclestartup.ogg
           params:

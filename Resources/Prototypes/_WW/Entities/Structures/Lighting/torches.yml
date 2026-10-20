@@ -2,7 +2,7 @@
 # Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
 
 - type: entity
-  parent: N14TorchWall
+  parent: F14TorchWallBase
   id: F14TorchWall
   name: wall torch
   components:
@@ -17,7 +17,7 @@
     normalState: wall_torch_lit
 
 - type: entity
-  parent: N14Torch
+  parent: F14TorchBase
   id: F14Torch
   name: torch
   components:

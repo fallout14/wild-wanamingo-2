@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Mobs/NPCs/ghoul_submission_variants.yml
 
 - type: entity
-  parent: N14MobGhoulFeral
-  id: MisfitsMobGhoulFeralNCRVictim
+  parent: F14MobGhoulFeral
+  id: F14MobGhoulFeralNCRVictim
   name: Feral Ghoul NCR Victim
   description: A feral ghoul still wearing scraps of NCR field gear.
   components:
@@ -14,8 +14,8 @@
       sprite: Nuclear14/Mobs/Ghouls/ghoul-ncr-light.rsi
 
 - type: entity
-  parent: N14MobGhoulFeral
-  id: MisfitsMobGhoulFeralNCRRecruit
+  parent: F14MobGhoulFeral
+  id: F14MobGhoulFeralNCRRecruit
   name: Feral Ghoul NCR Recruit
   description: A feral ghoul wearing the remains of NCR recruit kit.
   components:
@@ -28,7 +28,7 @@
 
 - type: entity
   parent: BaseItem
-  id: MisfitsMiscCorpseGhoulNCRTrooper
+  id: F14MiscCorpseGhoulNCRTrooper
   name: dead NCR ghoul trooper
   description: A dead feral ghoul in the remains of NCR trooper gear.
   components:

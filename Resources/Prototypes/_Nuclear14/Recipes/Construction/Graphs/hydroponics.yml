@@ -1,0 +1,47 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/hydroponics.yml
+
+- type: constructionGraph
+  id: F14Planter
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: box
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          steps:
+            - material: WoodPlank
+              amount: 4
+              doAfter: 5
+              
+    - node: box
+      entity: F14HydroponicsPlanterEmpty
+      edges:
+        - to: Planter
+          steps:
+            - material: F14Compost
+              amount: 2
+              doAfter: 1
+              
+        - to: start
+          completed:
+          - !type:SpawnPrototype
+            prototype: MaterialWoodPlank1
+            amount: 4
+          - !type:DeleteEntity {}
+          steps:
+          - tool: Prying
+            doAfter: 3
+            
+    - node: Planter
+      entity: F14HydroponicsPlanter
+      edges:
+        - to: box
+          completed:
+          - !type:SpawnPrototype
+                prototype: F14CompostRotted
+                amount: 2
+          steps:
+            - tool: Prying # shoveling

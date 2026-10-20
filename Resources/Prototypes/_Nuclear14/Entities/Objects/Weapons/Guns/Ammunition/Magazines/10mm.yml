@@ -2,19 +2,19 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/10mm.yml
 
 - type: entity
-  id: N14BaseMagazine10mmPistol
+  id: F14BaseMagazine10mmPistol
   name: pistol magazine (10mm)
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - N14MagazinePistol10mm
+      - F14MagazinePistol10mm
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14CartridgePistol10
+        - F14CartridgePistol10
     capacity: 12
   - type: ContainerContainer
     containers:
@@ -34,27 +34,27 @@
   - type: Appearance
 
 - type: entity
-  id: N14MagazinePistol10mm
+  id: F14MagazinePistol10mm
   name: pistol magazine (10mm)
-  parent: N14BaseMagazine10mmPistol
+  parent: F14BaseMagazine10mmPistol
   components:
   - type: BallisticAmmoProvider
-    proto: N14CartridgePistol10
+    proto: F14CartridgePistol10
 
 - type: entity
-  id: N14BaseMagazine10mmSubMachineGun
+  id: F14BaseMagazine10mmSubMachineGun
   name: SMG magazine (10mm)
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - N14MagazineSMG10mm
+      - F14MagazineSMG10mm
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14CartridgePistol10
+        - F14CartridgePistol10
     capacity: 35
   - type: ContainerContainer
     containers:
@@ -74,11 +74,11 @@
   - type: Appearance
 
 - type: entity
-  id: N14MagazineSMG10mm
+  id: F14MagazineSMG10mm
   name: SMG magazine (10mm)
-  parent: N14BaseMagazine10mmSubMachineGun
+  parent: F14BaseMagazine10mmSubMachineGun
   components:
   - type: Sprite # Forge-Change
     scale: 0.70, 0.70
   - type: BallisticAmmoProvider
-    proto: N14CartridgePistol10
+    proto: F14CartridgePistol10

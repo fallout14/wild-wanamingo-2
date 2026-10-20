@@ -2,7 +2,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: MisfitsM14ClothingNeckCloakWesternPoncho
+  id: F14ClothingNeckCloakWesternPoncho
   name: thick decorated poncho
   description: Dark brown with white patterns, thick enough to provide some protection.
   components:
@@ -15,14 +15,14 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: MisfitsClothingNeckCoyoteCloak
+  id: F14ClothingNeckCoyoteCloak
   name: Houndmaster's cloak
   description: A Cloak for Houndmasters made from Coyote hide.
   components:
   - type: Sprite
     sprite: Nuclear14/Clothing/Neck/coyotecape.rsi
   - type: ToggleableClothing
-    clothingPrototype: MisfitsClothingHeadCoyoteCloakHood
+    clothingPrototype: F14ClothingHeadCoyoteCloakHood
     requiredSlot: neck
     slot: head
   - type: ContainerContainer
@@ -31,14 +31,14 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: MisfitsClothingNeckAcolyteCloak
+  id: F14ClothingNeckAcolyteCloak
   name: Acolyte's cloak
   description: A Cloak worn by acolytes during rituals.
   components:
   - type: Sprite
     sprite: Misfits/Clothing/CaesarLegion/acolyterobes.rsi
   - type: ToggleableClothing
-    clothingPrototype: MisfitsClothingHeadAcolyteCloakHood
+    clothingPrototype: F14ClothingHeadAcolyteCloakHood
     requiredSlot: neck
     slot: head
   - type: ContainerContainer

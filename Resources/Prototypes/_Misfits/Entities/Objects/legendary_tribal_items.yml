@@ -1,10 +1,10 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/legendary_tribal_items.yml
 
 - type: entity
-  id: MisfitsTribalLegendaryLeather
+  id: F14TribalLegendaryLeather
   name: Legendary Tribal Leather
   description: Pristine leather from a legendary creature. Shimmers with an otherworldly sheen. Suitable for crafting legendary tribal armor.
-  parent: N14MaterialBase
+  parent: F14MaterialBase
   components:
     - type: Sprite
       sprite: Nuclear14/Objects/Misc/materials.rsi
@@ -16,7 +16,7 @@
     - type: Item
       size: Small
     - type: Stack
-      stackType: MisfitsTribalLegendaryLeather
+      stackType: F14TribalLegendaryLeather
       count: 1
       baseLayer: base
       layerStates:
@@ -33,13 +33,13 @@
           Heat: 1
     - type: PhysicalComposition
       materialComposition:
-        MisfitsTribalLegendaryLeather: 100
+        F14TribalLegendaryLeather: 100
 
 - type: material
-  id: MisfitsTribalLegendaryLeather
+  id: F14TribalLegendaryLeather
   name: materials-legendary-tribal-leather
   unit: materials-unit-piece
-  stackEntity: MisfitsTribalLegendaryLeather
+  stackEntity: F14TribalLegendaryLeather
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: leather_3 }
   color: "#FFD700"
   price: 0.5

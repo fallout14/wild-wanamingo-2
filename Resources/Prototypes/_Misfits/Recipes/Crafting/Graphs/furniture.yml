@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Crafting/Graphs/furniture.yml
 
 - type: constructionGraph
-  id: MisfitsShelvesWood
+  id: F14ShelvesWood
   start: start
   graph:
     - node: start
@@ -37,7 +37,7 @@
               amount: 9
               doAfter: 6
     - node: ShelfWood
-      entity: N14ShelfWood1
+      entity: F14ShelfWood1
       edges: 
         - to: start
           steps:
@@ -49,7 +49,7 @@
               amount: 6
             - !type:DeleteEntity
     - node: ShelfWoodTall
-      entity: N14ShelfWood
+      entity: F14ShelfWoodTall
       edges:
         - to: start
           steps:
@@ -61,7 +61,7 @@
               amount: 9
             - !type:DeleteEntity
     - node: ShelfWoodShowcase
-      entity: N14ShelfWoodShowcase
+      entity: F14ShelfWoodShowcase
       edges:
         - to: start
           steps:
@@ -73,7 +73,7 @@
               amount: 11
             - !type:DeleteEntity
     - node: ShelfWoodStand
-      entity: N14ShelfWoodStand
+      entity: F14ShelfWoodStand
       edges:
         - to: start
           steps:
@@ -85,7 +85,7 @@
               amount: 6
             - !type:DeleteEntity
     - node: ShelfWoodStandSmall
-      entity: N14ShelfWoodStandSmall
+      entity: F14ShelfWoodStandSmall
       edges:
         - to: start
           steps:
@@ -97,7 +97,7 @@
               amount: 5
             - !type:DeleteEntity
     - node: ShelfWoodClothesRack
-      entity: N14ShelfWoodClothesRack
+      entity: F14ShelfWoodClothesRack
       edges:
         - to: start
           steps:
@@ -112,7 +112,7 @@
 # #Cythisiax Added - Crafting menu expansion: furniture graphs (bench, store)
 
 - type: constructionGraph
-  id: MisfitsStoreDeliCounter
+  id: F14StoreDeliCounter
   start: start
   graph:
     - node: start
@@ -126,7 +126,7 @@
             - !type:SnapToGrid
 
     - node: StoreDeliCounter
-      entity: N14StoreDeliCounter
+      entity: F14StoreDeliCounter
       edges:
         - to: start
           steps:
@@ -139,7 +139,7 @@
             - !type:DeleteEntity
 
 - type: constructionGraph
-  id: MisfitsStoreFruitstand
+  id: F14StoreFruitstand
   start: start
   graph:
     - node: start
@@ -174,7 +174,7 @@
             - !type:SnapToGrid
 
     - node: StoreFruitstand
-      entity: N14StoreFruitstand
+      entity: F14StoreFruitstand
       edges:
         - to: start
           steps:
@@ -187,7 +187,7 @@
             - !type:DeleteEntity
 
     - node: StoreFruitstand1
-      entity: N14StoreFruitstand1
+      entity: F14StoreFruitstand1
       edges:
         - to: start
           steps:
@@ -200,7 +200,7 @@
             - !type:DeleteEntity
 
     - node: StoreFruitstand2
-      entity: N14StoreFruitstand2
+      entity: F14StoreFruitstand2
       edges:
         - to: start
           steps:
@@ -213,7 +213,7 @@
             - !type:DeleteEntity
 
     - node: StoreFruitstand3
-      entity: N14StoreFruitstand3
+      entity: F14StoreFruitstand3
       edges:
         - to: start
           steps:

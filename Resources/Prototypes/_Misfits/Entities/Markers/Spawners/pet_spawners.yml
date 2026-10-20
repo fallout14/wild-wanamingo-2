@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Markers/Spawners/pet_spawners.yml
 
 - type: entity
-  id: MisfitsPetSpawnerBase
+  id: F14PetSpawnerBase
   name: pet spawner
   abstract: true
   components:
@@ -13,8 +13,8 @@
 # Dog companion spawner
 
 - type: entity
-  parent: MisfitsPetSpawnerBase
-  id: MisfitsPetSpawnerDog
+  parent: F14PetSpawnerBase
+  id: F14PetSpawnerDog
   name: companion dog spawner
   components:
   - type: GhostRole
@@ -22,13 +22,13 @@
     description: ghost-role-information-n14pet-generic-description
     rules: ghost-role-component-default-rules
   - type: GhostRoleMobSpawner
-    prototype: N14MobPetDog
+    prototype: F14MobPetDog
 
 # Brahmin companion spawner
 
 - type: entity
-  parent: MisfitsPetSpawnerBase
-  id: MisfitsPetSpawnerRoach
+  parent: F14PetSpawnerBase
+  id: F14PetSpawnerRoach
   name: companion roach spawner
   components:
   - type: GhostRole
@@ -36,13 +36,13 @@
     description: ghost-role-information-n14pet-generic-description
     rules: ghost-role-component-default-rules
   - type: GhostRoleMobSpawner
-    prototype: N14MobPetRoach
+    prototype: F14MobPetRoach
 
 # Pigrat companion spawner (Wastelander/Tribe/Townsfolk)
 
 - type: entity
-  parent: MisfitsPetSpawnerBase
-  id: MisfitsPetSpawnerPigrat
+  parent: F14PetSpawnerBase
+  id: F14PetSpawnerPigrat
   name: companion pigrat spawner
   components:
   - type: GhostRole
@@ -50,13 +50,13 @@
     description: ghost-role-information-n14pet-generic-description
     rules: ghost-role-component-default-rules
   - type: GhostRoleMobSpawner
-    prototype: N14MobPetPigrat
+    prototype: F14MobPetPigrat
 
 # Eyebot companion spawner (Wastelander/Townsfolk)
 
 - type: entity
-  parent: MisfitsPetSpawnerBase
-  id: MisfitsPetSpawnerEyebot
+  parent: F14PetSpawnerBase
+  id: F14PetSpawnerEyebot
   name: companion eyebot spawner
   components:
   - type: GhostRole
@@ -64,13 +64,13 @@
     description: ghost-role-information-n14pet-eyebot-description
     rules: ghost-role-component-default-rules
   - type: GhostRoleMobSpawner
-    prototype: N14MobPetEyebot
+    prototype: F14MobPetEyebot
 
 # Eyebot MBoS companion spawner (Brotherhood of Steel)
 
 - type: entity
-  parent: MisfitsPetSpawnerBase
-  id: MisfitsPetSpawnerEyebotMBoS
+  parent: F14PetSpawnerBase
+  id: F14PetSpawnerEyebotMBoS
   name: companion eyebot mbos spawner
   components:
   - type: GhostRole
@@ -78,13 +78,13 @@
     description: ghost-role-information-n14pet-eyebot-description
     rules: ghost-role-component-default-rules
   - type: GhostRoleMobSpawner
-    prototype: N14MobPetEyebotMBoS
+    prototype: F14MobPetEyebotMBoS
 
 # Treyebot (Tribe Eyebot) spawner
 
 - type: entity
-  parent: MisfitsPetSpawnerEyebot
-  id: MisfitsPetSpawnerEyebotOSI
+  parent: F14PetSpawnerEyebot
+  id: F14PetSpawnerEyebotOSI
   name: OSI eyebot companion spawner
   components:
   - type: GhostRole
@@ -92,13 +92,13 @@
     description: ghost-role-information-misfits-pet-eyebot-osi-description
     rules: ghost-role-component-default-rules
   - type: GhostRoleMobSpawner
-    prototype: MisfitsMobPetEyebotOSI
+    prototype: F14MobPetEyebotOSI
 
 # Enclave Eyebot companion, issued only by the Enclave scientist job specials.
 
 - type: entity
-  parent: MisfitsPetSpawnerBase
-  id: MisfitsPetSpawnerDogGeneric
+  parent: F14PetSpawnerBase
+  id: F14PetSpawnerDogGeneric
   name: companion dog generic spawner
   components:
   - type: GhostRole
@@ -106,13 +106,13 @@
     description: ghost-role-information-n14pet-generic-description
     rules: ghost-role-component-default-rules
   - type: GhostRoleMobSpawner
-    prototype: N14MobPetDog
+    prototype: F14MobPetDog
 
 # Dog MBoS companion spawner (Brotherhood of Steel)
 
 - type: entity
-  parent: MisfitsPetSpawnerBase
-  id: MisfitsPetSpawnerDogMBoS
+  parent: F14PetSpawnerBase
+  id: F14PetSpawnerDogMBoS
   name: companion dog mbos spawner
   components:
   - type: GhostRole
@@ -120,13 +120,13 @@
     description: ghost-role-information-n14pet-hauler-description
     rules: ghost-role-component-default-rules
   - type: GhostRoleMobSpawner
-    prototype: N14MobPetDogMBoS
+    prototype: F14MobPetDogMBoS
 
 # Dog Legion companion spawner
 
 - type: entity
-  parent: MisfitsPetSpawnerBase
-  id: MisfitsPetSpawnerDogNCR
+  parent: F14PetSpawnerBase
+  id: F14PetSpawnerDogNCR
   name: companion dog ncr spawner
   components:
   - type: GhostRole
@@ -134,13 +134,13 @@
     description: ghost-role-information-n14pet-generic-description
     rules: ghost-role-component-default-rules
   - type: GhostRoleMobSpawner
-    prototype: N14MobPetDogNCR
+    prototype: F14MobPetDogNCR
 
 # Dog NCR K9 Medical companion spawner
 
 - type: entity
-  parent: MisfitsPetSpawnerBase
-  id: MisfitsPetSpawnerDogNCRK9Medical
+  parent: F14PetSpawnerBase
+  id: F14PetSpawnerDogNCRK9Medical
   name: companion dog ncr k9 medical spawner
   components:
   - type: GhostRole
@@ -148,4 +148,4 @@
     description: ghost-role-information-n14pet-generic-description
     rules: ghost-role-component-default-rules
   - type: GhostRoleMobSpawner
-    prototype: N14MobPetDogNCRMedicK9
+    prototype: F14MobPetDogNCRMedicK9

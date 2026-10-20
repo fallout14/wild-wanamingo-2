@@ -1,12 +1,12 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Structures/Walls/slantedwalls.yml
 
 - type: entity
-  parent: N14WallRockDroughtSlanted
-  id: MisfitsWallRockDroughtSlantedMining
+  parent: F14WallRockDroughtSlanted
+  id: F14WallRockDroughtSlantedMining
   name: rock wall
   suffix: Random Ore Yield
   description: A drought rock wall. Could be hiding something.
   components:
   - type: OreVein
     oreChance: 0.33
-    oreRarityPrototypeId: N14RandomOreDistributionStandard
+    oreRarityPrototypeId: F14RandomOreDistributionStandard

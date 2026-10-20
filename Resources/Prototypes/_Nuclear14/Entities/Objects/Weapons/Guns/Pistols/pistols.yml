@@ -4,7 +4,7 @@
 - type: entity
   name: N14BasePistol
   parent: BaseItem
-  id: N14BaseWeaponPistol
+  id: F14BaseWeaponPistol
   description: A rooty tooty point and shooty.
   abstract: true
   components:
@@ -75,7 +75,7 @@
 - type: entity
   name: N14BaseInternalPistol
   parent: BaseItem
-  id: N14BaseWeaponInternalMagPistol
+  id: F14BaseWeaponInternalMagPistol
   description: A rooty tooty point and shooty.
   abstract: true
   components:
@@ -127,8 +127,8 @@
 
 - type: entity
   name: 9mm Pistol
-  parent: N14BaseWeaponPistol
-  id: N14WeaponPistol9mm
+  parent: F14BaseWeaponPistol
+  id: F14WeaponPistol9mm
   description: The cheap and ubiquitous sidearm, chambered in 9mm ammo.
   components:
   - type: ContainerContainer  # spawn state
@@ -171,29 +171,29 @@
   - type: Gun
     fireRate: 5
     soundGunshot:
-      collection: N14Pistol9mmGunshot
+      collection: F14Pistol9mmGunshot
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazinePistol9mm
+        startingItem: F14MagazinePistol9mm
         whitelist:
           tags:
-            - N14MagazinePistol9mm
+            - F14MagazinePistol9mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol9
+        startingItem: F14CartridgePistol9
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol9
+            - F14CartridgePistol9
   - type: StaticPrice
     price: 10
 
 - type: entity
   name: 10mm Pistol
-  parent: N14BaseWeaponPistol
-  id: N14WeaponPistol10mm
+  parent: F14BaseWeaponPistol
+  id: F14WeaponPistol10mm
   description: A cheap, ubiquitous sidearm, chambered in 10mm munitions. # TODO: Need to create projectiles, magazines and boxes for 10mm.
   components:
   - type: ContainerContainer  # spawn state
@@ -236,29 +236,29 @@
   - type: Gun
     fireRate: 4
     soundGunshot:
-      collection: N14Pistol10mmGunshot
+      collection: F14Pistol10mmGunshot
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazinePistol10mm
+        startingItem: F14MagazinePistol10mm
         whitelist:
           tags:
-            - N14MagazinePistol10mm
+            - F14MagazinePistol10mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol10
+        startingItem: F14CartridgePistol10
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol10
+            - F14CartridgePistol10
   - type: StaticPrice
     price: 30
 
 - type: entity
   name: .45 colt handgun
-  parent: N14BaseWeaponPistol
-  id: N14WeaponPistol45Colt
+  parent: F14BaseWeaponPistol
+  id: F14WeaponPistol45Colt
   description: A rugged handgun chambered in .45.
   components:
   - type: FirearmAttachmentHost
@@ -287,25 +287,25 @@
   - type: Gun
     fireRate: 4
     soundGunshot:
-      collection: N14PistolColtGunshot
+      collection: F14PistolColtGunshot
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazinePistol45
+        startingItem: F14MagazinePistol45
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14MagazinePistol45
+            - F14MagazinePistol45
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol45
+        startingItem: F14CartridgePistol45
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol45
+            - F14CartridgePistol45
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -325,8 +325,8 @@
 
 - type: entity
   name: 12.7mm handgun
-  parent: N14BaseWeaponPistol
-  id: N14WeaponPistol12mm
+  parent: F14BaseWeaponPistol
+  id: F14WeaponPistol12mm
   description: A rugged and robust handgun chambered in 12.7mm ammo. # TODO: Need to create projectiles, magazines and boxes for 12mm.
   components:
   - type: FirearmAttachmentHost
@@ -355,25 +355,25 @@
   - type: Gun
     fireRate: 3
     soundGunshot:
-      collection: N14Pistol12mmGunshot
+      collection: F14Pistol12mmGunshot
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazinePistol12mm
+        startingItem: F14MagazinePistol12mm
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14MagazinePistol12mm
+            - F14MagazinePistol12mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol127
+        startingItem: F14CartridgePistol127
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol127
+            - F14CartridgePistol127
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -393,8 +393,8 @@
 
 - type: entity
   name: 10mm pipe pistol
-  parent: N14BaseWeaponPistol
-  id: N14WeaponPistol10mmPipe
+  parent: F14BaseWeaponPistol
+  id: F14WeaponPistol10mmPipe
   description: A shoddy makeshift 10mm pistol, the grip is incredibly uncomfortable. Uses 10mm ammo.
   components:
   - type: Tag
@@ -416,28 +416,28 @@
     angleDecay: 4
     fireRate: 4
     soundGunshot:
-      collection: N14Pistol10mmGunshot
+      collection: F14Pistol10mmGunshot
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazinePistol10mm
+        startingItem: F14MagazinePistol10mm
         whitelist:
           tags:
-            - N14MagazinePistol10mm
+            - F14MagazinePistol10mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol10
+        startingItem: F14CartridgePistol10
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol10
+            - F14CartridgePistol10
   - type: StaticPrice
     price: 15
 
 - type: entity
-  parent: N14WeaponPistol10mmPipe
-  id: N14WeaponPistol10mmPipeEmpty
+  parent: F14WeaponPistol10mmPipe
+  id: F14WeaponPistol10mmPipeEmpty
   suffix: Empty
   components:
   - type: ItemSlots
@@ -446,18 +446,18 @@
         name: Magazine
         whitelist:
           tags:
-            - N14MagazinePistol10mm
+            - F14MagazinePistol10mm
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol10
+            - F14CartridgePistol10
 
 - type: entity
   name: chinese pistol
-  parent: N14BaseWeaponInternalMagPistol
-  id: N14WeaponPistol9mmChinese
+  parent: F14BaseWeaponInternalMagPistol
+  id: F14WeaponPistol9mmChinese
   description: A foreign long-barrel pistol with an integrated magazine, chambered in 9mm.
   components:
   - type: ContainerContainer  # spawn state
@@ -492,23 +492,23 @@
   - type: Gun
     fireRate: 6
     soundGunshot:
-      collection: N14PistolChineseGunshot
+      collection: F14PistolChineseGunshot
     selectedMode: Semiauto
     availableModes:
     - Semiauto
   - type: BallisticAmmoProvider
     capacity: 14
-    proto: N14CartridgePistol9
+    proto: F14CartridgePistol9
     whitelist:
       tags:
-      - N14CartridgePistol9
+      - F14CartridgePistol9
   - type: StaticPrice
     price: 20
 
 - type: entity
   name: the spy
-  parent: N14BaseWeaponInternalMagPistol
-  id: N14WeaponPistol9mmSpy
+  parent: F14BaseWeaponInternalMagPistol
+  id: F14WeaponPistol9mmSpy
   description: A modified version of the common chinese pistol with a integrated silencer, extended magazine, and full-auto conversion. This gun was designed with passion, chambered in 9mm.
   components:
   - type: ContainerContainer  # spawn state
@@ -540,23 +540,23 @@
   - type: Gun
     fireRate: 6
     soundGunshot:
-      collection: N14PistolSpyGunshot
+      collection: F14PistolSpyGunshot
     selectedMode: Fullauto
     availableModes:
     - Fullauto
   - type: BallisticAmmoProvider
     capacity: 24
-    proto: N14CartridgePistol9
+    proto: F14CartridgePistol9
     whitelist:
       tags:
-      - N14CartridgePistol9
+      - F14CartridgePistol9
   - type: StaticPrice
     price: 75
 
 - type: entity
   name: 22lr Pistol
-  parent: N14BaseWeaponPistol
-  id: N14WeaponPistol22lr
+  parent: F14BaseWeaponPistol
+  id: F14WeaponPistol22lr
   description: A simple and silenced pistol, chambered in 22lr ammo.
   components:
   - type: Tag
@@ -574,29 +574,29 @@
   - type: Gun
     fireRate: 4
     soundGunshot:
-      collection: N14PistolSpyGunshot
+      collection: F14PistolSpyGunshot
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazinePistol22lr
+        startingItem: F14MagazinePistol22lr
         whitelist:
           tags:
-            - N14MagazinePistol22lr
+            - F14MagazinePistol22lr
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol22
+        startingItem: F14CartridgePistol22
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol22
+            - F14CartridgePistol22
   - type: StaticPrice
     price: 15
 
 - type: entity
   name: webley pistol
-  parent: N14BaseWeaponPistol
-  id: N14WeaponPistolWebley
+  parent: F14BaseWeaponPistol
+  id: F14WeaponPistolWebley
   description: A cheap and simple pre-war canadian pistol, chambered in 9mm ammo.
   components:
   - type: Tag
@@ -614,29 +614,29 @@
   - type: Gun
     fireRate: 5
     soundGunshot:
-      collection: N14Pistol9mmGunshot
+      collection: F14Pistol9mmGunshot
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazinePistol9mm
+        startingItem: F14MagazinePistol9mm
         whitelist:
           tags:
-            - N14MagazinePistol9mm
+            - F14MagazinePistol9mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol9
+        startingItem: F14CartridgePistol9
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol9
+            - F14CartridgePistol9
   - type: StaticPrice
     price: 15
 
 - type: entity
   name: desert eagle 44
-  parent: N14BaseWeaponPistol
-  id: N14WeaponDesertEagle44
+  parent: F14BaseWeaponPistol
+  id: F14WeaponDesertEagle44
   description: An ancient Desert Eagle pistol, in .44 Magnum. Interest in late 20th century films made this one of the most popular handguns of all times.
   components:
   - type: Tag
@@ -649,25 +649,25 @@
   - type: Gun
     fireRate: 2.5
     soundGunshot:
-      collection: N14PistolDesertEagleGunshot
+      collection: F14PistolDesertEagleGunshot
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazinePistol44
+        startingItem: F14MagazinePistol44
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14MagazinePistol44
+            - F14MagazinePistol44
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge44Magnum
+        startingItem: F14Cartridge44Magnum
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge44Magnum
+            - F14Cartridge44Magnum
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -675,8 +675,8 @@
 
 - type: entity
   name: lasered desert eagle 44
-  parent: N14BaseWeaponPistol
-  id: N14WeaponLaserdotDesertEagle44
+  parent: F14BaseWeaponPistol
+  id: F14WeaponLaserdotDesertEagle44
   description: An ancient Desert Eagle pistol, in .44 Magnum. This one in particular have a laser dot.
   components:
   - type: Tag
@@ -698,25 +698,25 @@
     angleIncrease: 1
     angleDecay: 6
     soundGunshot:
-      collection: N14PistolDesertEagleGunshot
+      collection: F14PistolDesertEagleGunshot
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazinePistol44
+        startingItem: F14MagazinePistol44
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14MagazinePistol44
+            - F14MagazinePistol44
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge44Magnum
+        startingItem: F14Cartridge44Magnum
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge44Magnum
+            - F14Cartridge44Magnum
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

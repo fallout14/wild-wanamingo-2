@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: MaterialBase
-  id: N14MaterialBase
+  id: F14MaterialBase
   description: A raw material.
   components:
   - type: Sprite
@@ -14,8 +14,8 @@
   # - type: Craftable # Corvax-Change  # #Misfits Remove: Stalker14 crafting system
 
 - type: entity
-  parent: N14MaterialBase
-  id: N14MaterialBasePowder
+  parent: F14MaterialBase
+  id: F14MaterialBasePowder
   abstract: true
   components:
   - type: Sprite
@@ -30,17 +30,17 @@
 #MARK: Gunpowder
 
 - type: entity
-  parent: N14MaterialBasePowder
-  id: N14Gunpowder
+  parent: F14MaterialBasePowder
+  id: F14Gunpowder
   name: gunpowder
   description: Explosive.
   categories: [ HideSpawnMenu ]
   components:
   - type: PhysicalComposition
     materialComposition:
-      N14Gunpowder: 100
+      F14Gunpowder: 100
   - type: Stack
-    stackType: N14Gunpowder
+    stackType: F14Gunpowder
     baseLayer: powder_lead
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/materials.rsi
@@ -54,22 +54,22 @@
     id: powder
     solution:
       reagents:
-      - ReagentId: N14Gunpowder
+      - ReagentId: F14Gunpowder
         Quantity: 10
   - type: StackPrice # Forge-Change
     price: 1 # PH
 
 - type: entity
-  parent: N14Gunpowder
-  id: N14Gunpowder10
+  parent: F14Gunpowder
+  id: F14Gunpowder10
   suffix: Stack
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14Gunpowder
-  id: N14Gunpowder1
+  parent: F14Gunpowder
+  id: F14Gunpowder1
   suffix: Single
   components:
   - type: Stack
@@ -78,8 +78,8 @@
 #MARK: Sulfur
 
 - type: entity
-  parent: N14MaterialBasePowder
-  id: N14SulfurPowder
+  parent: F14MaterialBasePowder
+  id: F14SulfurPowder
   name: sulfur
   categories: [ HideSpawnMenu ]
   components:
@@ -107,16 +107,16 @@
     price: 1 # PH
 
 - type: entity
-  parent: N14SulfurPowder
-  id: N14SulfurPowder10
+  parent: F14SulfurPowder
+  id: F14SulfurPowder10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14SulfurPowder
-  id: N14SulfurPowder1
+  parent: F14SulfurPowder
+  id: F14SulfurPowder1
   suffix: Single
   components:
   - type: Stack
@@ -126,12 +126,12 @@
 
 - type: entity
   parent: [ Paper, SheetOtherBase ]
-  id: N14Paper
+  id: F14Paper
   name: paper
   categories: [ HideSpawnMenu ]
   components:
   - type: Stack
-    stackType: N14Paper
+    stackType: F14Paper
     count: 10
     baseLayer: base
     layerStates:
@@ -179,7 +179,7 @@
         acts: [ "Destruction" ]
   - type: PhysicalComposition
     materialComposition:
-      N14Paper: 100
+      F14Paper: 100
   - type: Extractable
     grindableSolutionName: paper
   - type: Solution
@@ -192,16 +192,16 @@
     price: 0
 
 - type: entity
-  parent: N14Paper
-  id: N14Paper10
+  parent: F14Paper
+  id: F14Paper10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: N14Paper
-  id: N14Paper1
+  parent: F14Paper
+  id: F14Paper1
   suffix: Single
   components:
   - type: Stack
@@ -210,7 +210,7 @@
 #MARK: Charcoal
 
 - type: entity
-  parent: N14MaterialBasePowder
+  parent: F14MaterialBasePowder
   id: Charcoal
   name: charcoal
   categories: [ HideSpawnMenu ]
@@ -242,7 +242,7 @@
 
 - type: entity
   parent: Charcoal
-  id: N14Charcoal10
+  id: F14Charcoal10
   suffix: 10
   components:
   - type: Stack
@@ -250,7 +250,7 @@
 
 - type: entity
   parent: Charcoal
-  id: N14Charcoal1
+  id: F14Charcoal1
   suffix: Single
   components:
   - type: Stack
@@ -259,8 +259,8 @@
 #MARK: Circuitry
 
 - type: entity
-  parent: N14MaterialBase
-  id: N14MaterialCircuitry
+  parent: F14MaterialBase
+  id: F14MaterialCircuitry
   name: circuitry
   categories: [ HideSpawnMenu ]
   components:
@@ -286,8 +286,8 @@
     price: 20
 
 - type: entity
-  parent: N14MaterialCircuitry
-  id: N14MaterialCircuitry10
+  parent: F14MaterialCircuitry
+  id: F14MaterialCircuitry10
   suffix: 10
   components:
   - type: Sprite
@@ -296,8 +296,8 @@
     count: 10
 
 - type: entity
-  parent: N14MaterialCircuitry
-  id: N14MaterialCircuitry1
+  parent: F14MaterialCircuitry
+  id: F14MaterialCircuitry1
   suffix: Single
   components:
   - type: Sprite
@@ -309,8 +309,8 @@
 #MARK: Leather
 
 - type: entity
-  parent: N14MaterialBase
-  id: N14MaterialLeather
+  parent: F14MaterialBase
+  id: F14MaterialLeather
   name: leather
   description: A piece of leather, just non-special leather.
   categories: [ HideSpawnMenu ]
@@ -321,7 +321,7 @@
     - state: leather_3
       map: ["base"]
   - type: Stack
-    stackType: N14Leather
+    stackType: F14Leather
     count: 15
     baseLayer: base
     layerStates:
@@ -330,13 +330,13 @@
     - leather_3
   - type: PhysicalComposition
     materialComposition:
-      N14Leather: 100
+      F14Leather: 100
   - type: StackPrice # Forge-Change
     price: 2
 
 - type: entity
-  parent: N14MaterialLeather
-  id: N14MaterialLeather1
+  parent: F14MaterialLeather
+  id: F14MaterialLeather1
   suffix: Single
   components:
   - type: Stack
@@ -345,8 +345,8 @@
 #MARK: Raw leather
 
 - type: entity
-  parent: N14MaterialBase
-  id: N14MaterialRawLeather
+  parent: F14MaterialBase
+  id: F14MaterialRawLeather
   name: raw leather
   description: A piece of raw, unusable skin. Nothing special.
   categories: [ HideSpawnMenu ]
@@ -357,7 +357,7 @@
     - state: raw_leather_2
       map: ["base"]
   - type: Stack
-    stackType: N14RawLeather
+    stackType: F14RawLeather
     count: 15
     baseLayer: base
     layerStates:
@@ -365,13 +365,13 @@
     - raw_leather_2
   - type: PhysicalComposition
     materialComposition:
-      N14RawLeather: 100
+      F14RawLeather: 100
   - type: StackPrice # Forge-Change
     price: 1 # PH
 
 - type: entity
-  parent: N14MaterialRawLeather
-  id: N14MaterialRawLeather1
+  parent: F14MaterialRawLeather
+  id: F14MaterialRawLeather1
   suffix: Single
   components:
   - type: Stack
@@ -380,8 +380,8 @@
 #MARK: Ant-chitin
 
 - type: entity
-  parent: N14MaterialBase
-  id: N14MaterialAntChitin
+  parent: F14MaterialBase
+  id: F14MaterialAntChitin
   name: ant chitin
   description: A strong and resistent piece of ant "skin".
   categories: [ HideSpawnMenu ]
@@ -393,7 +393,7 @@
     - state: chitin_3
       map: ["base"]
   - type: Stack
-    stackType: N14AntChitin
+    stackType: F14AntChitin
     count: 3
     baseLayer: base
     layerStates:
@@ -403,15 +403,15 @@
     - chitin_3
   - type: PhysicalComposition
     materialComposition:
-      N14AntChitin: 100
+      F14AntChitin: 100
   - type: Item
     size: Small
   - type: StackPrice # Forge-Change
     price: 2
 
 - type: entity
-  parent: N14MaterialAntChitin
-  id: N14MaterialAntChitin1
+  parent: F14MaterialAntChitin
+  id: F14MaterialAntChitin1
   suffix: Single
   components:
   - type: Stack
@@ -420,8 +420,8 @@
 #MARK: Exoskeleton
 
 - type: entity
-  parent: N14MaterialBase
-  id: N14MaterialExoskeleton
+  parent: F14MaterialBase
+  id: F14MaterialExoskeleton
   name: radscorpion exoskeleton piece
   description: A strong and damage-resistant piece of radscorpion exoskeleton.
   suffix: ""
@@ -434,7 +434,7 @@
     state: rad_exo
   - type: PhysicalComposition
     materialComposition:
-      N14Exoskeleton: 100
+      F14Exoskeleton: 100
   - type: Item
     size: Small
   - type: StackPrice # Forge-Change
@@ -443,8 +443,8 @@
 #MARK: Thread
 
 - type: entity
-  parent: N14MaterialBase
-  id: N14MaterialThread
+  parent: F14MaterialBase
+  id: F14MaterialThread
   name: thread
   description: A product made from finely twisted yarn.
   categories: [ HideSpawnMenu ]
@@ -456,7 +456,7 @@
     - state: thread
       map: ["base"]
   - type: Stack
-    stackType: N14Thread
+    stackType: F14Thread
     count: 10
     baseLayer: base
     layerStates:
@@ -465,15 +465,15 @@
     - thread
   - type: PhysicalComposition
     materialComposition:
-      N14Thread: 100
+      F14Thread: 100
   - type: Item
     size: Small
   - type: StackPrice # Forge-Change
     price: 1 # PH
 
 - type: entity
-  parent: N14MaterialThread
-  id: N14MaterialThread1
+  parent: F14MaterialThread
+  id: F14MaterialThread1
   name: thread
   suffix: Single
   components:
@@ -484,7 +484,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14ScrapBase
+  id: F14ScrapBase
   description: A collection of damaged components and materials that are no longer suitable for their original purpose, but may still have some value.
   abstract: true
   components:
@@ -495,21 +495,21 @@
   # - type: Craftable # Corvax-Change  # #Misfits Remove: Stalker14 crafting system
   - type: Tag
     tags:
-    - N14Scrap
+    - F14Scrap
 
 - type: entity
-  parent: N14ScrapBase
-  id: N14Scrap
+  parent: F14ScrapBase
+  id: F14Scrap
   name: scrap
   categories: [ HideSpawnMenu ]
   components:
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14Scrap: 100
+      F14Scrap: 100
   - type: Stack
     count: 30
-    stackType: N14Scrap
+    stackType: F14Scrap
     baseLayer: base
     layerStates:
     - scrap
@@ -526,8 +526,8 @@
     price: 1 # PH
 
 - type: entity
-  parent: N14Scrap
-  id: N14Scrap1
+  parent: F14Scrap
+  id: F14Scrap1
   name: scrap
   suffix: Single
   components:
@@ -537,18 +537,18 @@
 #MARK: Scrap Electronic
 
 - type: entity
-  parent: N14ScrapBase
-  id: N14ScrapElectronic
+  parent: F14ScrapBase
+  id: F14ScrapElectronic
   name: electronic scrap
   categories: [ HideSpawnMenu ]
   components:
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14ScrapElectronic: 100
+      F14ScrapElectronic: 100
   - type: Stack
     count: 30
-    stackType: N14ScrapElectronic
+    stackType: F14ScrapElectronic
     baseLayer: base
     layerStates:
     - scrap_electronic
@@ -565,8 +565,8 @@
     price: 2
 
 - type: entity
-  parent: N14ScrapElectronic
-  id: N14ScrapElectronic1
+  parent: F14ScrapElectronic
+  id: F14ScrapElectronic1
   name: electronic scrap
   suffix: Single
   components:
@@ -576,8 +576,8 @@
 #MARK: Scrap Steel
 
 - type: entity
-  parent: N14ScrapBase
-  id: N14ScrapSteel
+  parent: F14ScrapBase
+  id: F14ScrapSteel
   name: steel scrap
   categories: [ HideSpawnMenu ]
   components:
@@ -587,7 +587,7 @@
       ScrapSteel: 100
   - type: Stack
     count: 30
-    stackType: N14ScrapSteel
+    stackType: F14ScrapSteel
     baseLayer: base
     layerStates:
     - scrap_steel
@@ -604,8 +604,8 @@
     price: 1 # PH
 
 - type: entity
-  parent: N14ScrapSteel
-  id: N14ScrapSteel1
+  parent: F14ScrapSteel
+  id: F14ScrapSteel1
   name: steel scrap
   suffix: Single
   components:
@@ -615,18 +615,18 @@
 #MARK: Scrap Gold
 
 - type: entity
-  parent: N14ScrapBase
-  id: N14ScrapGold
+  parent: F14ScrapBase
+  id: F14ScrapGold
   name: gold scrap
   categories: [ HideSpawnMenu ]
   components:
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14ScrapGold: 100
+      F14ScrapGold: 100
   - type: Stack
     count: 30
-    stackType: N14ScrapGold
+    stackType: F14ScrapGold
     baseLayer: base
   - type: Sprite
     state: scrap_gold
@@ -637,8 +637,8 @@
     price: 2
 
 - type: entity
-  parent: N14ScrapGold
-  id: N14ScrapGold1
+  parent: F14ScrapGold
+  id: F14ScrapGold1
   name: gold scrap
   suffix: Single
   components:
@@ -648,18 +648,18 @@
 #MARK: Scrap Copper
 
 - type: entity
-  parent: N14ScrapBase
-  id: N14ScrapCopper
+  parent: F14ScrapBase
+  id: F14ScrapCopper
   name: copper scrap
   categories: [ HideSpawnMenu ]
   components:
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14ScrapCopper: 100
+      F14ScrapCopper: 100
   - type: Stack
     count: 30
-    stackType: N14ScrapCopper
+    stackType: F14ScrapCopper
     baseLayer: base
   - type: Sprite
     state: scrap_copper
@@ -670,8 +670,8 @@
     price: 1 # PH
 
 - type: entity
-  parent: N14ScrapCopper
-  id: N14ScrapCopper1
+  parent: F14ScrapCopper
+  id: F14ScrapCopper1
   name: copper scrap
   suffix: Single
   components:
@@ -681,18 +681,18 @@
 #MARK: Scrap Brass
 
 - type: entity
-  parent: N14ScrapBase
-  id: N14ScrapBrass
+  parent: F14ScrapBase
+  id: F14ScrapBrass
   name: brass scrap
   categories: [ HideSpawnMenu ]
   components:
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14ScrapBrass: 100
+      F14ScrapBrass: 100
   - type: Stack
     count: 30
-    stackType: N14ScrapBrass
+    stackType: F14ScrapBrass
     baseLayer: base
   - type: Sprite
     state: scrap_brass
@@ -703,8 +703,8 @@
     price: 1 # PH
 
 - type: entity
-  parent: N14ScrapBrass
-  id: N14ScrapBrass1
+  parent: F14ScrapBrass
+  id: F14ScrapBrass1
   name: brass scrap
   suffix: Single
   components:
@@ -714,18 +714,18 @@
 #MARK: Scrap Lead
 
 - type: entity
-  parent: N14ScrapBase
-  id: N14ScrapLead
+  parent: F14ScrapBase
+  id: F14ScrapLead
   name: lead scrap
   categories: [ HideSpawnMenu ]
   components:
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14ScrapLead: 100
+      F14ScrapLead: 100
   - type: Stack
     count: 30
-    stackType: N14ScrapLead
+    stackType: F14ScrapLead
     baseLayer: base
   - type: Sprite
     state: scrap_lead
@@ -736,8 +736,8 @@
     price: 1 # PH
 
 - type: entity
-  parent: N14ScrapLead
-  id: N14ScrapLead1
+  parent: F14ScrapLead
+  id: F14ScrapLead1
   name: lead scrap
   suffix: Single
   components:

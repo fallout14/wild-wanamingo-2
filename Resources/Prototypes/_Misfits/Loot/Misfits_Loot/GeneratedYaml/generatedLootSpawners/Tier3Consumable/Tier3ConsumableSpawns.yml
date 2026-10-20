@@ -3,233 +3,233 @@
 - type: entity
   name: Tier3 Consumable FloraRare Single
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Single_FloraRare
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerSingleFloraRare
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14ConsumableLootTier3_FloraRare
+      tableId: F14ConsumableLootTier3FloraRare
 
 - type: entity
   name: Tier3 Consumable FloraRare 0-3
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Mult0_3_FloraRare
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerMult03FloraRare
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14ConsumableLootTier3_FloraRare
+      tableId: F14ConsumableLootTier3FloraRare
 
 - type: entity
   name: Tier3 Consumable FloraRare 1-2
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Mult1_2_FloraRare
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerMult12FloraRare
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14ConsumableLootTier3_FloraRare
+      tableId: F14ConsumableLootTier3FloraRare
 
 - type: entity
   name: Tier3 Consumable FloraToxic Single
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Single_FloraToxic
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerSingleFloraToxic
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14ConsumableLootSpecialTier3_FloraToxic
+      tableId: F14ConsumableLootSpecialTier3FloraToxic
 
 - type: entity
   name: Tier3 Consumable FloraToxic 0-3
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Mult0_3_FloraToxic
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerMult03FloraToxic
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14ConsumableLootSpecialTier3_FloraToxic
+      tableId: F14ConsumableLootSpecialTier3FloraToxic
 
 - type: entity
   name: Tier3 Consumable FloraToxic 1-2
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Mult1_2_FloraToxic
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerMult12FloraToxic
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14ConsumableLootSpecialTier3_FloraToxic
+      tableId: F14ConsumableLootSpecialTier3FloraToxic
 
 - type: entity
   name: Tier3 Consumable DrinksNukaCola Single
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Single_DrinksNukaCola
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerSingleDrinksNukaCola
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14ConsumableLootTier3_DrinksNukaCola
+      tableId: F14ConsumableLootTier3DrinksNukaCola
 
 - type: entity
   name: Tier3 Consumable DrinksNukaCola 0-3
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Mult0_3_DrinksNukaCola
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerMult03DrinksNukaCola
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14ConsumableLootTier3_DrinksNukaCola
+      tableId: F14ConsumableLootTier3DrinksNukaCola
 
 - type: entity
   name: Tier3 Consumable DrinksNukaCola 1-2
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Mult1_2_DrinksNukaCola
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerMult12DrinksNukaCola
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14ConsumableLootTier3_DrinksNukaCola
+      tableId: F14ConsumableLootTier3DrinksNukaCola
 
 - type: entity
   name: Tier3 Consumable DrinksNukaColaRad Single
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Single_DrinksNukaColaRad
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerSingleDrinksNukaColaRad
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14ConsumableLootTier3_DrinksNukaColaRad
+      tableId: F14ConsumableLootTier3DrinksNukaColaRad
 
 - type: entity
   name: Tier3 Consumable DrinksNukaColaRad 0-3
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Mult0_3_DrinksNukaColaRad
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerMult03DrinksNukaColaRad
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14ConsumableLootTier3_DrinksNukaColaRad
+      tableId: F14ConsumableLootTier3DrinksNukaColaRad
 
 - type: entity
   name: Tier3 Consumable DrinksNukaColaRad 1-2
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Mult1_2_DrinksNukaColaRad
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerMult12DrinksNukaColaRad
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14ConsumableLootTier3_DrinksNukaColaRad
+      tableId: F14ConsumableLootTier3DrinksNukaColaRad
 
 - type: entity
   name: Tier3 Consumable DrinksNukaColaUncommon Single
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Single_DrinksNukaColaUncommon
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerSingleDrinksNukaColaUncommon
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14ConsumableLootTier3_DrinksNukaColaUncommon
+      tableId: F14ConsumableLootTier3DrinksNukaColaUncommon
 
 - type: entity
   name: Tier3 Consumable DrinksNukaColaUncommon 0-3
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Mult0_3_DrinksNukaColaUncommon
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerMult03DrinksNukaColaUncommon
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14ConsumableLootTier3_DrinksNukaColaUncommon
+      tableId: F14ConsumableLootTier3DrinksNukaColaUncommon
 
 - type: entity
   name: Tier3 Consumable DrinksNukaColaUncommon 1-2
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Mult1_2_DrinksNukaColaUncommon
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerMult12DrinksNukaColaUncommon
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14ConsumableLootTier3_DrinksNukaColaUncommon
+      tableId: F14ConsumableLootTier3DrinksNukaColaUncommon
 
 - type: entity
   name: Tier3 Consumable DrinksNukaColaRare Single
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Single_DrinksNukaColaRare
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerSingleDrinksNukaColaRare
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14ConsumableLootTier3_DrinksNukaColaRare
+      tableId: F14ConsumableLootTier3DrinksNukaColaRare
 
 - type: entity
   name: Tier3 Consumable DrinksNukaColaRare 0-3
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Mult0_3_DrinksNukaColaRare
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerMult03DrinksNukaColaRare
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14ConsumableLootTier3_DrinksNukaColaRare
+      tableId: F14ConsumableLootTier3DrinksNukaColaRare
 
 - type: entity
   name: Tier3 Consumable DrinksNukaColaRare 1-2
   suffix: Tier3
-  id: MisfitsM14ConsumableTier3Spawner_Mult1_2_DrinksNukaColaRare
-  parent: MisfitsM14Tier3Spawner_RefConsumable
+  id: F14ConsumableTier3SpawnerMult12DrinksNukaColaRare
+  parent: F14Tier3SpawnerRefConsumable
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14ConsumableLootTier3_DrinksNukaColaRare
+      tableId: F14ConsumableLootTier3DrinksNukaColaRare

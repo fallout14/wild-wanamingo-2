@@ -3,7 +3,7 @@
 
 - type: entity
   parent: FoodInjectableBase
-  id: N14CookedFoodPizzaBase
+  id: F14CookedFoodPizzaBase
   abstract: true
   components:
   - type: FlavorProfile
@@ -31,7 +31,7 @@
 
 - type: entity
   parent: FoodInjectableBase # Not sliceable
-  id: N14CookedFoodPizzaSliceBase
+  id: F14CookedFoodPizzaSliceBase
   abstract: true
   components:
   - type: FlavorProfile
@@ -62,8 +62,8 @@
 
 - type: entity
   name: margherita pizza
-  parent: [N14CookedFoodPizzaBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodPizzaMargherita
+  parent: [F14CookedFoodPizzaBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodPizzaMargherita
   description: The flavor of some place called... Iti-lie..? #N14 change
   components:
   - type: FlavorProfile
@@ -77,13 +77,13 @@
     - state: margherita
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodPizzaMargheritaSlice
+    - id: F14CookedFoodPizzaMargheritaSlice
       amount: 1
 
 - type: entity
   name: slice of margherita pizza
-  parent: N14CookedFoodPizzaSliceBase
-  id: N14CookedFoodPizzaMargheritaSlice
+  parent: F14CookedFoodPizzaSliceBase
+  id: F14CookedFoodPizzaMargheritaSlice
   description: A slice of Iti-lie. #N14 change
   components:
   - type: FlavorProfile
@@ -98,8 +98,8 @@
 
 - type: entity
   name: meat pizza
-  parent: [N14CookedFoodPizzaBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodPizzaMeat
+  parent: [F14CookedFoodPizzaBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodPizzaMeat
   description: Greasy pizza with delicious meat.
   components:
   - type: FlavorProfile
@@ -114,7 +114,7 @@
     - state: meat
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodPizzaMeatSlice
+    - id: F14CookedFoodPizzaMeatSlice
       amount: 1
   - type: Tag
     tags:
@@ -123,8 +123,8 @@
 
 - type: entity
   name: slice of meat pizza
-  parent: N14CookedFoodPizzaSliceBase
-  id: N14CookedFoodPizzaMeatSlice
+  parent: F14CookedFoodPizzaSliceBase
+  id: F14CookedFoodPizzaMeatSlice
   description: A nutritious slice of meatpizza. Meatzza.
   components:
   - type: FlavorProfile
@@ -145,8 +145,8 @@
 
 - type: entity
   name: mushroom pizza
-  parent: [N14CookedFoodPizzaBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodPizzaMushroom
+  parent: [F14CookedFoodPizzaBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodPizzaMushroom
   description: It reeks of the dark, but tastes like delight. #N14 change
   components:
   - type: FlavorProfile
@@ -159,13 +159,13 @@
     - state: mushroom
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodPizzaMushroomSlice
+    - id: F14CookedFoodPizzaMushroomSlice
       amount: 1
 
 - type: entity
   name: slice of mushroom pizza
-  parent: N14CookedFoodPizzaSliceBase
-  id: N14CookedFoodPizzaMushroomSlice
+  parent: F14CookedFoodPizzaSliceBase
+  id: F14CookedFoodPizzaMushroomSlice
   description: Chewy and oddly sweet. #N14 change
   components:
   - type: FlavorProfile
@@ -180,8 +180,8 @@
 
 - type: entity
   name: vegetable pizza
-  parent: [N14CookedFoodPizzaBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodPizzaVegetable
+  parent: [F14CookedFoodPizzaBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodPizzaVegetable
   description: Probably the healthiest thing a waster has ever tasted. #N14 change
   components:
   - type: FlavorProfile
@@ -197,7 +197,7 @@
     - state: vegetable
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodPizzaVegetableSlice
+    - id: F14CookedFoodPizzaVegetableSlice
       amount: 1
   - type: Solution
     solution:
@@ -212,8 +212,8 @@
 
 - type: entity
   name: slice of vegetable pizza
-  parent: N14CookedFoodPizzaSliceBase
-  id: N14CookedFoodPizzaVegetableSlice
+  parent: F14CookedFoodPizzaSliceBase
+  id: F14CookedFoodPizzaVegetableSlice
   description: You feel less diseased just looking at it. #N14 change
   components:
   - type: FlavorProfile
@@ -241,8 +241,8 @@
 
 - type: entity
   name: Hawaiian pizza
-  parent: [N14CookedFoodPizzaBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodPizzaPineapple
+  parent: [F14CookedFoodPizzaBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodPizzaPineapple
   description: Makes people burst into tears. Tears of joy or sadness depends on the persons fondness for pineapple.
   components:
   - type: FlavorProfile
@@ -257,13 +257,13 @@
     - state: pineapple
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodPizzaPineappleSlice
+    - id: F14CookedFoodPizzaPineappleSlice
       amount: 1
 
 - type: entity
   name: slice of pineapple pizza
-  parent: N14CookedFoodPizzaSliceBase
-  id: N14CookedFoodPizzaPineappleSlice
+  parent: F14CookedFoodPizzaSliceBase
+  id: F14CookedFoodPizzaPineappleSlice
   description: A slice of joy/sin.
   components:
   - type: FlavorProfile
@@ -287,8 +287,8 @@
 
 - type: entity
   name: slice of moldy pizza
-  parent: N14CookedFoodPizzaSliceBase
-  id: N14CookedFoodPizzaMoldySlice
+  parent: F14CookedFoodPizzaSliceBase
+  id: F14CookedFoodPizzaMoldySlice
   description: Once a perfectly good slice of pizza pie, but now it lies here, rancid and bursting with spores.
   components:
   - type: FlavorProfile

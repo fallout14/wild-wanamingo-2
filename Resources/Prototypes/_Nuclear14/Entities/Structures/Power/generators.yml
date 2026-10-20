@@ -3,7 +3,7 @@
 
 - type: entity
   abstract: true
-  id: N14BaseGenerator
+  id: F14BaseGenerator
   description: A high efficiency thermoelectric generator.
   name: generator
   placement:
@@ -76,7 +76,7 @@
       - !type:ExplodeBehavior
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 100
     intensitySlope: 2
     totalIntensity: 200
@@ -88,8 +88,8 @@
     highVoltageNode: output
 
 - type: entity
-  parent: N14BaseGenerator
-  id: N14BaseGeneratorPortable
+  parent: F14BaseGenerator
+  id: F14BaseGeneratorPortable
   abstract: true
   description: A generator that uses expendable fusion cores.
   name: generator
@@ -114,8 +114,8 @@
   - type: Pullable
 
 - type: entity
-  parent: N14BaseGeneratorPortable
-  id: N14GeneratorFusioncore
+  parent: F14BaseGeneratorPortable
+  id: F14GeneratorFusioncore
   description: A generator that uses expendable fusion cores.
   name: fusion core generator
   components:
@@ -141,8 +141,8 @@
       shader: unshaded
 
 - type: entity
-  parent: N14BaseGeneratorPortable
-  id: N14GeneratorFusionMini
+  parent: F14BaseGeneratorPortable
+  id: F14GeneratorFusionMini
   description: A generator that uses heavy water for fusion power.
   name: mini fusion generator
   components:
@@ -181,7 +181,7 @@
       - !type:ExplodeBehavior
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14MachineFrameTallDestroyed:
+          F14MachineFrameTallDestroyed:
             min: 1
             max: 1
       - !type:SpawnGasBehavior
@@ -194,8 +194,8 @@
           temperature: 373.15
 
 - type: entity
-  parent: N14GeneratorFusionMini
-  id: N14GeneratorFusionEnclave
+  parent: F14GeneratorFusionMini
+  id: F14GeneratorFusionEnclave
   description: A generator that uses heavy water for fusion power.
   name: U.S. Army fusion generator
   components:
@@ -224,8 +224,8 @@
     supplyRampTolerance: 250
 
 - type: entity
-  parent: N14GeneratorFusionMini
-  id: N14GeneratorFusionMiniRusted
+  parent: F14GeneratorFusionMini
+  id: F14GeneratorFusionMiniRusted
   description: A generator that uses heavy water for fusion power. This ones rusted.
   name: mini fusion generator
   components:
@@ -235,8 +235,8 @@
     - state: generator_rust
 
 - type: entity
-  parent: MisfitsBasePortableGeneratorFuel
-  id: N14GeneratorPrewar
+  parent: F14BasePortableGeneratorFuel
+  id: F14GeneratorPrewar
   description: A dirty old generator that uses fuel to run.
   name: pre-war generator
   components:
@@ -285,8 +285,8 @@
     supplyRampTolerance: 250
 
 - type: entity
-  parent: MisfitsBasePortableGeneratorUranium
-  id: N14GeneratorPrewarUranium
+  parent: F14BasePortableGeneratorUranium
+  id: F14GeneratorPrewarUranium
   description: A dirty old generator that uses raw uranium to run.
   name: pre-war uranium generator
   components:
@@ -335,8 +335,8 @@
     supplyRampTolerance: 250
 
 - type: entity
-  parent: N14BaseGenerator
-  id: N14GeneratorVaultTecReactor
+  parent: F14BaseGenerator
+  id: F14GeneratorVaultTecReactor
   description: A fusion reactor built by Vault-Tec.
   name: Vault-Tec reactor
   components:
@@ -370,8 +370,8 @@
     color: "#B4FCF0"
 
 - type: entity
-  parent: N14GeneratorVaultTecReactor
-  id: N14GeneratorReactorFloor
+  parent: F14GeneratorVaultTecReactor
+  id: F14GeneratorReactorFloor
   description: An old reactor built into the floor.
   name: pre-war reactor
   components:
@@ -398,14 +398,14 @@
     color: "#B4FCF0"
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     totalIntensity: 20000 # ~15 tile radius.
     intensitySlope: 5
     maxIntensity: 50
 
 - type: entity
   parent: BaseStructure
-  id: N14GeneratorReactorFloorDestroyed
+  id: F14GeneratorReactorFloorDestroyed
   description: An old reactor built into the floor. This ones suffered a meltdown.
   name: pre-war reactor
   suffix: destroyed
@@ -441,7 +441,7 @@
     Runs off welding fuel and is rated for up to 8 kW.
     Beware exhaust fumes.
   parent: PortableGeneratorBase
-  id: N14PortableGeneratorWeldingFuel
+  id: F14PortableGeneratorWeldingFuel
   suffix: Welding Fuel, 8 kW
   components:
     - type: Transform
@@ -477,7 +477,7 @@
             False: { state: diesel-off }
 
     - type: Machine
-      board: N14PortableGeneratorWeldingFuelMachineParts
+      board: F14PortableGeneratorWeldingFuelMachineParts
 
     - type: FuelGenerator
       on: true #Misfits Change - generators start on at round start
@@ -523,7 +523,7 @@
       moleRatio: 0.5
     - type: Explosive
       #Misfits Change - use the structural-capable N14 explosion profile.
-      explosionType: MisfitsDefaultStructural
+      explosionType: F14DefaultStructural
       tileBreakScale: 0
     - type: Destructible
       thresholds:

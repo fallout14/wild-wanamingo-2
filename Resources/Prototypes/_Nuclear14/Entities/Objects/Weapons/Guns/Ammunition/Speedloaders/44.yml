@@ -2,19 +2,19 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Speedloaders/44.yml
 
 - type: entity
-  id: N14BaseSpeedLoader44
+  id: F14BaseSpeedLoader44
   name: "speed loader (.44 magnum)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - N14SpeedLoader44
+      - F14SpeedLoader44
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - N14Cartridge44Magnum
+        - F14Cartridge44Magnum
     capacity: 6
   - type: Sprite
   - type: ContainerContainer
@@ -23,12 +23,12 @@
         ents: []
 
 - type: entity
-  id: N14SpeedLoader44
+  id: F14SpeedLoader44
   name: "speed loader (.44 magnum)"
-  parent: N14BaseSpeedLoader44
+  parent: F14BaseSpeedLoader44
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge44Magnum
+    proto: F14Cartridge44Magnum
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Speedloaders/44loader.rsi
     layers:

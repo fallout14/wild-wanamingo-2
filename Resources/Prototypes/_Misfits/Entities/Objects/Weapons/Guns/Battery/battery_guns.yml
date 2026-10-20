@@ -2,12 +2,12 @@
 
 - type: entity
   name: AER-12 laser rifle
-  parent: N14BaseWeaponPowerCellMedium
-  id: MisfitsWeaponLaserRifleAER12
+  parent: F14BaseWeaponPowerCellMedium
+  id: F14WeaponLaserRifleAER12
   description: An advanced pre-war laser rifle featuring upgraded orange-spectrum focusing optics. Higher rate of fire and slightly increased damage over the standard AER-9.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserAmber
+    proto: F14MFLaserAmber
     fireCost: 50
   - type: Wieldable
   - type: GunWieldBonus
@@ -35,18 +35,18 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellRed
+        startingItem: F14MicrofusionCellRed
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: Gun
     minAngle: 25
     maxAngle: 55
     fireRate: 4 # Higher ROF than AER-9 (2.5); reflects advanced pre-war engineering
     soundGunshot:
-      collection: N14LaserAutoRifleGunshot
+      collection: F14LaserAutoRifleGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -54,12 +54,12 @@
 
 - type: entity
   name: AER-15 laser rifle
-  parent: N14BaseWeaponPowerCellMedium
-  id: MisfitsWeaponLaserRifleAER15
+  parent: F14BaseWeaponPowerCellMedium
+  id: F14WeaponLaserRifleAER15
   description: The pinnacle of pre-war laser rifle technology. Experimental violet-spectrum focusing crystals produce exceptional damage output with unmatched precision. Extremely rare — only a handful survived the war, and the manufacturing knowledge is lost.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserViolet
+    proto: F14MFLaserViolet
     fireCost: 50
   - type: Wieldable
   - type: GunWieldBonus
@@ -87,16 +87,16 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellRed
+        startingItem: F14MicrofusionCellRed
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: Gun
     fireRate: 2.5 # Low ROF compensates for highest damage output
     soundGunshot:
-      collection: N14LaserAutoRifleGunshot
+      collection: F14LaserAutoRifleGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -104,12 +104,12 @@
 
 - type: entity
   name: multiplas
-  parent: N14BaseWeaponPowerCellMedium
-  id: MisfitsWeaponPlasmaMultiplas
+  parent: F14BaseWeaponPowerCellMedium
+  id: F14WeaponPlasmaMultiplas
   description: A modified urban plasma rifle, it sacrifices accuracy to instead spread the plasma into multiple projectiles.
   components:
   - type: BatteryAmmoProvider
-    proto: MisfitsBulletPlasmaSpread
+    proto: F14BulletPlasmaSpread
     fireCost: 200
   - type: Wieldable
   - type: GunWieldBonus
@@ -133,12 +133,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
+        startingItem: F14MicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -146,7 +146,7 @@
   - type: Gun
     fireRate: 1 # #Misfits Tweak - reduced from 6; shotgun pacing (1 spread burst per 0.5s) THIS THING EATS PEOPLE ALIVE
     soundGunshot:
-      collection: N14MultiplasGunshot
+      collection: F14MultiplasGunshot
     selectedMode: SemiAuto # #Misfits Fix - was Burst; Multiplas fires multiple bolts simultaneously like a shotgun
     availableModes:
      - SemiAuto
@@ -159,8 +159,8 @@
 
 - type: entity
   name: wattz 2000 laser rifle (extended capacity)
-  parent: N14WeaponLaserRifleWattz2000
-  id: MisfitsWeaponLaserRifleWattz2000Extended
+  parent: F14WeaponLaserRifleWattz2000
+  id: F14WeaponLaserRifleWattz2000Extended
   description: A Wattz 2000 laser rifle fitted with an extended-capacity power system. Same focused yellow beam, twice the shots per cell.
   components:
   - type: BatteryAmmoProvider
@@ -192,16 +192,16 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellRed
+        startingItem: F14MicrofusionCellRed
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: Gun
     fireRate: 1.5
     soundGunshot:
-      collection: N14WattzGunshot
+      collection: F14WattzGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -214,12 +214,12 @@
 
 - type: entity
   name: laser RCW
-  parent: N14BaseWeaponPowerCell
-  id: MisfitsWeaponLaserRCW
+  parent: F14BaseWeaponPowerCell
+  id: F14WeaponLaserRCW
   description: A rapid-cycling Electron laser weapon with the silhouette of a submachine gun. Designed for close-quarters energy weapon deployment. Inaccurate and battery-hungry, but capable of sustained continuous fire.
   components:
   - type: BatteryAmmoProvider
-    proto: N14RCWLaserGreen
+    proto: F14RCWLaserGreen
     fireCost: 50
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Battery/laserrcw.rsi
@@ -243,12 +243,12 @@
     slots:
       gun_magazine:
         name: Power Cell
-        startingItem: MisfitsElectronChargePack
+        startingItem: F14ElectronChargePack
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsElectronChargePack
+            - F14ElectronChargePack
   - type: Item
     size: Large
     shape:
@@ -268,17 +268,17 @@
     availableModes:
     - Fullauto
     soundGunshot:
-      collection: N14LaserAutoRifleGunshot
+      collection: F14LaserAutoRifleGunshot
   # Weapon profile controls damage and beam color; ECP supplies charge.
 
 - type: entity
   name: pulse pistol
-  parent: N14BaseWeaponPowerCellSmall
-  id: MisfitsWeaponPulsePistol
+  parent: F14BaseWeaponPowerCellSmall
+  id: F14WeaponPulsePistol
   description: A compact energy weapon firing focused electromagnetic pulse bursts. Effective against robotic targets. Small power cell limits capacity but the size makes it concealable as a sidearm.
   components:
   - type: BatteryAmmoProvider
-    proto: N14PulseRed
+    proto: F14PulseRed
     fireCost: 50
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Battery/pulsepistol.rsi
@@ -298,12 +298,12 @@
     slots:
       gun_magazine:
         name: Power Cell
-        startingItem: MisfitsPulseEnergyCell
+        startingItem: F14PulseEnergyCell
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsPulseEnergyCell
+            - F14PulseEnergyCell
   - type: Item
     size: Small
     shape:
@@ -316,7 +316,7 @@
     angleIncrease: 1
     angleDecay: 8
     soundGunshot:
-      collection: N14LaserPistolGunshot
+      collection: F14LaserPistolGunshot
   - type: EyeCursorOffset
     maxOffset: 2.5
     pvsIncrease: 0.25
@@ -325,12 +325,12 @@
 
 - type: entity
   name: pulse carbine
-  parent: N14BaseWeaponPowerCell
-  id: MisfitsWeaponPulseCarbine
+  parent: F14BaseWeaponPowerCell
+  id: F14WeaponPulseCarbine
   description: A medium-frame pulse weapon balancing cell capacity and portability. Standard Brotherhood of Steel counter-robot doctrine arms a team member with one. Effective suppressing fire against mechanical targets.
   components:
   - type: BatteryAmmoProvider
-    proto: N14PulseRed
+    proto: F14PulseRed
     fireCost: 50
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Battery/pulsecarbine.rsi
@@ -354,12 +354,12 @@
     slots:
       gun_magazine:
         name: Power Cell
-        startingItem: MisfitsPulseMicrofusionCell
+        startingItem: F14PulseMicrofusionCell
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsPulseMicrofusionCell
+            - F14PulseMicrofusionCell
   - type: Item
     size: Large
     shape:
@@ -376,7 +376,7 @@
     angleIncrease: 2
     angleDecay: 12
     soundGunshot:
-      collection: N14LaserAutoRifleGunshot
+      collection: F14LaserAutoRifleGunshot
   - type: EyeCursorOffset
     maxOffset: 2.5
     pvsIncrease: 0.25
@@ -385,12 +385,12 @@
 
 - type: entity
   name: pulse rifle (YK42b)
-  parent: N14BaseWeaponPowerCell
-  id: MisfitsWeaponPulseRifle
+  parent: F14BaseWeaponPowerCell
+  id: F14WeaponPulseRifle
   description: The YK42b pulse rifle — a long-barrelled electromagnetic pulse weapon designed for sustained fire against armoured and mechanical targets. Brotherhood of Steel issue, though examples have spread across the wasteland over decades of attrition.
   components:
   - type: BatteryAmmoProvider
-    proto: N14PulseRed
+    proto: F14PulseRed
     fireCost: 50
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Battery/pulserifle.rsi
@@ -414,12 +414,12 @@
     slots:
       gun_magazine:
         name: Power Cell
-        startingItem: MisfitsPulseMicrofusionCell
+        startingItem: F14PulseMicrofusionCell
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsPulseMicrofusionCell
+            - F14PulseMicrofusionCell
   - type: Item
     size: Large
     shape:
@@ -436,7 +436,7 @@
     angleIncrease: 2
     angleDecay: 14
     soundGunshot:
-      collection: N14LaserAutoRifleGunshot
+      collection: F14LaserAutoRifleGunshot
   - type: EyeCursorOffset
     maxOffset: 2.5
     pvsIncrease: 0.25
@@ -445,8 +445,8 @@
 
 - type: entity
   name: Tesla Cannon
-  parent: N14BaseWeaponPowerCell
-  id: MisfitsWeaponTeslaCannon
+  parent: F14BaseWeaponPowerCell
+  id: F14WeaponTeslaCannon
   description: A shoulder-mounted heavy energy weapon that fires arcing electrical discharge. Devastating against groups and anything mechanical. Slow to cycle, impossible to misidentify. Brotherhood of Steel heavy ordnance — not commonly seen in the field.
   components:
   - type: BatteryAmmoProvider
@@ -474,12 +474,12 @@
     slots:
       gun_magazine:
         name: Power Cell
-        startingItem: MisfitsTeslaElectronChargePack #Misfits Change — use tesla cell so cannon fires energy ball projectile
+        startingItem: F14TeslaElectronChargePack #Misfits Change — use tesla cell so cannon fires energy ball projectile
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - N14PowerCellAdvanced
+            - F14PowerCellAdvanced
   - type: Item
     size: Huge
     shape:
@@ -504,7 +504,7 @@
     angleIncrease: 2
     angleDecay: 14
     soundGunshot:
-      collection: N14LaserAutoRifleGunshot
+      collection: F14LaserAutoRifleGunshot
   - type: EyeCursorOffset
     maxOffset: 1.5
     pvsIncrease: 0.15

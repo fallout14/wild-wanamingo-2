@@ -1,84 +1,84 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/Blueprints/major_factions.yml
 
 - type: entity
-  id: MisfitsCrateAluminiumBlueprintsNCR
+  id: F14CrateAluminiumBlueprintsNCR
   suffix: Filled, Blueprints, NCR
-  parent: N14CrateAluminium
+  parent: F14CrateAluminium
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsBlueprintNCRAmmoT4
-    - id: MisfitsBlueprintNCRAmmoT3
-    - id: MisfitsBlueprintNCRAmmoT2
-    - id: MisfitsBlueprintNCRAmmoT1
-    - id: MisfitsBlueprintNCRWeaponsT4
-    - id: MisfitsBlueprintNCRWeaponsT3
-    - id: MisfitsBlueprintNCRWeaponsT2
-    - id: MisfitsBlueprintNCRWeaponsT1
-    - id: MisfitsBlueprintNCRArmorT4
-    - id: MisfitsBlueprintNCRArmorT3
-    - id: MisfitsBlueprintNCRArmorT2
-    - id: MisfitsBlueprintNCRArmorT1
-    - id: MisfitsBlueprintC27ArmorNCR
+    - id: F14BlueprintNCRAmmoT4
+    - id: F14BlueprintNCRAmmoT3
+    - id: F14BlueprintNCRAmmoT2
+    - id: F14BlueprintNCRAmmoT1
+    - id: F14BlueprintNCRWeaponsT4
+    - id: F14BlueprintNCRWeaponsT3
+    - id: F14BlueprintNCRWeaponsT2
+    - id: F14BlueprintNCRWeaponsT1
+    - id: F14BlueprintNCRArmorT4
+    - id: F14BlueprintNCRArmorT3
+    - id: F14BlueprintNCRArmorT2
+    - id: F14BlueprintNCRArmorT1
+    - id: F14BlueprintC27ArmorNCR
 
 - type: entity
-  id: MisfitsCrateAluminiumBlueprintsLegion
+  id: F14CrateAluminiumBlueprintsLegion
   suffix: Filled, Blueprints, Legion
-  parent: N14CrateAluminium
+  parent: F14CrateAluminium
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsBlueprintLegionAmmoT4
-    - id: MisfitsBlueprintLegionAmmoT3
-    - id: MisfitsBlueprintLegionAmmoT2
-    - id: MisfitsBlueprintLegionAmmoT1
-    - id: MisfitsBlueprintLegionWeaponsT4
-    - id: MisfitsBlueprintLegionWeaponsT3
-    - id: MisfitsBlueprintLegionWeaponsT2
-    - id: MisfitsBlueprintLegionWeaponsT1
-    - id: MisfitsBlueprintLegionArmorT4
-    - id: MisfitsBlueprintLegionArmorT3
-    - id: MisfitsBlueprintLegionArmorT2
-    - id: MisfitsBlueprintLegionArmorT1
+    - id: F14BlueprintLegionAmmoT4
+    - id: F14BlueprintLegionAmmoT3
+    - id: F14BlueprintLegionAmmoT2
+    - id: F14BlueprintLegionAmmoT1
+    - id: F14BlueprintLegionWeaponsT4
+    - id: F14BlueprintLegionWeaponsT3
+    - id: F14BlueprintLegionWeaponsT2
+    - id: F14BlueprintLegionWeaponsT1
+    - id: F14BlueprintLegionArmorT4
+    - id: F14BlueprintLegionArmorT3
+    - id: F14BlueprintLegionArmorT2
+    - id: F14BlueprintLegionArmorT1
 
 - type: entity
-  id: MisfitsCrateAluminiumBlueprintsBoS
+  id: F14CrateAluminiumBlueprintsBoS
   suffix: Filled, Blueprints, BoS
-  parent: N14CrateAluminium
+  parent: F14CrateAluminium
   components:
   - type: StorageFill
     contents:
-      - id: MisfitsBlueprintBoSAmmoT4
-      - id: MisfitsBlueprintBoSAmmoT3
-      - id: MisfitsBlueprintBoSAmmoT2
-      - id: MisfitsBlueprintBoSAmmoT1
-      - id: MisfitsBlueprintBoSWeaponsT4
-      - id: MisfitsBlueprintBoSWeaponsT3
-      - id: MisfitsBlueprintBoSWeaponsT2
-      - id: MisfitsBlueprintBoSWeaponsT1
-      - id: MisfitsBlueprintBoSArmorT4
-      - id: MisfitsBlueprintBoSArmorT3
-      - id: MisfitsBlueprintBoSArmorT2
-      - id: MisfitsBlueprintBoSArmorT1
-      - id: MisfitsBlueprintC27ArmorBoS
-      - id: MisfitsBlueprintBoSWeaponsT60
+      - id: F14BlueprintBoSAmmoT4
+      - id: F14BlueprintBoSAmmoT3
+      - id: F14BlueprintBoSAmmoT2
+      - id: F14BlueprintBoSAmmoT1
+      - id: F14BlueprintBoSWeaponsT4
+      - id: F14BlueprintBoSWeaponsT3
+      - id: F14BlueprintBoSWeaponsT2
+      - id: F14BlueprintBoSWeaponsT1
+      - id: F14BlueprintBoSArmorT4
+      - id: F14BlueprintBoSArmorT3
+      - id: F14BlueprintBoSArmorT2
+      - id: F14BlueprintBoSArmorT1
+      - id: F14BlueprintC27ArmorBoS
+      - id: F14BlueprintBoSWeaponsT60
 
 - type: entity
-  id: MisfitsCrateAluminiumBlueprintsVault
+  id: F14CrateAluminiumBlueprintsVault
   suffix: Filled, Blueprints, Vault
-  parent: N14CrateAluminium
+  parent: F14CrateAluminium
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsBlueprintVaultAmmoT4
-    - id: MisfitsBlueprintVaultAmmoT3
-    - id: MisfitsBlueprintVaultAmmoT2
-    - id: MisfitsBlueprintVaultAmmoT1
-    - id: MisfitsBlueprintVaultWeaponsT4
-    - id: MisfitsBlueprintVaultWeaponsT3
-    - id: MisfitsBlueprintVaultWeaponsT2
-    - id: MisfitsBlueprintVaultWeaponsT1
-    - id: MisfitsBlueprintVaultArmorT4
-    - id: MisfitsBlueprintVaultArmorT3
-    - id: MisfitsBlueprintVaultArmorT2
-    - id: MisfitsBlueprintVaultArmorT1
+    - id: F14BlueprintVaultAmmoT4
+    - id: F14BlueprintVaultAmmoT3
+    - id: F14BlueprintVaultAmmoT2
+    - id: F14BlueprintVaultAmmoT1
+    - id: F14BlueprintVaultWeaponsT4
+    - id: F14BlueprintVaultWeaponsT3
+    - id: F14BlueprintVaultWeaponsT2
+    - id: F14BlueprintVaultWeaponsT1
+    - id: F14BlueprintVaultArmorT4
+    - id: F14BlueprintVaultArmorT3
+    - id: F14BlueprintVaultArmorT2
+    - id: F14BlueprintVaultArmorT1

@@ -2,8 +2,8 @@
 
 - type: entity
   name: heavy automatic rifle
-  parent: N14WeaponLMGAutoRifle
-  id: MisfitsWeaponLMGAutoRifleHeavy
+  parent: F14WeaponLMGAutoRifle
+  id: F14WeaponLMGAutoRifleHeavy
   description: An M1918A2 Browning Automatic Rifle. Heavier than the A1, with a bipod and a rate reducer that make its full-power .308 far easier to keep on target. It can also be fired one round at a time.
   components:
   - type: Clothing
@@ -32,7 +32,7 @@
     angleDecay: 18
     fireRate: 4
     soundGunshot:
-      collection: N14AutoRifleGunshot
+      collection: F14AutoRifleGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -45,8 +45,8 @@
 
 - type: entity
   name: Colt Monitor
-  parent: N14WeaponLMGAutoRifle
-  id: MisfitsWeaponLMGAutoRifleMonitor
+  parent: F14WeaponLMGAutoRifle
+  id: F14WeaponLMGAutoRifleMonitor
   description: A Colt R80 Monitor, the lightened and shortened Browning Automatic Rifle built for law enforcement. Fast-firing and easier to carry than any other BAR, and it takes the long 40-round .308 magazines as well as standard ones.
   components:
   - type: Clothing
@@ -75,7 +75,7 @@
     angleDecay: 16
     fireRate: 5 # high rate of fire
     soundGunshot:
-      collection: N14AutoRifleGunshot
+      collection: F14AutoRifleGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -84,21 +84,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine308Rifle
+        startingItem: F14Magazine308Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine308Rifle
-            - N14Magazine308RifleLong # the long magazines the Bren used to take
+            - F14Magazine308Rifle
+            - F14Magazine308RifleLong # the long magazines the Bren used to take
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge308Rifle
+        startingItem: F14Cartridge308Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge308Rifle
+            - F14Cartridge308Rifle
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9

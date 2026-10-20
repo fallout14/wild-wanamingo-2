@@ -9,7 +9,7 @@
 # Same marking slots as humans (hair, facial hair...).
 - type: markingsGroup
   parent: Human
-  id: N14Ghoul
+  id: F14Ghoul
 
 # --- Ghoul
 
@@ -42,13 +42,13 @@
       Liver: OrganHumanLiver
       Kidneys: OrganHumanKidneys
   - type: HumanoidProfile
-    species: N14Ghoul
+    species: F14Ghoul
 
 - type: entity
   parent:
   - AppearanceGhoul
   - BaseSpeciesMobOrganic
-  id: N14MobGhoul
+  id: F14MobGhoul
   name: Urist McGhoul
   components:
   - type: Icon
@@ -57,7 +57,7 @@
   - type: Perishable
     rotAfter: 3600 # an entire in-game day
   - type: Damageable
-    damageModifierSet: N14Ghoul
+    damageModifierSet: F14Ghoul
   - type: RadiationReceiver
   - type: RadiationHealing
   - type: MobThresholds
@@ -78,7 +78,7 @@
       sprite: Nuclear14/Mobs/Species/Ghoul/parts.rsi
   - type: VisualOrganMarkings
     markingData:
-      group: N14Ghoul
+      group: F14Ghoul
 
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganGhoulExternal ]
@@ -157,13 +157,13 @@
       Liver: OrganHumanLiver
       Kidneys: OrganHumanKidneys
   - type: HumanoidProfile
-    species: N14GhoulGlowing
+    species: F14GhoulGlowing
 
 - type: entity
   parent:
   - AppearanceGhoulGlowing
   - BaseSpeciesMobOrganic
-  id: N14MobGhoulGlowing
+  id: F14MobGhoulGlowing
   name: Urist McGlow
   components:
   - type: Icon
@@ -172,7 +172,7 @@
   - type: Perishable
     rotAfter: 3600
   - type: Damageable
-    damageModifierSet: F14GhoulGlowing # GhoulGlowing x N14GammaShield (Wizden allows one set)
+    damageModifierSet: F14GhoulGlowing # GhoulGlowing x F14GammaShield (Wizden allows one set)
   - type: RadiationReceiver
   - type: RadiationHealing
   - type: MobThresholds
@@ -199,7 +199,7 @@
       sprite: Nuclear14/Mobs/Species/GhoulGlowing/parts.rsi
   - type: VisualOrganMarkings
     markingData:
-      group: N14Ghoul
+      group: F14Ghoul
 
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganGhoulGlowingExternal ]

@@ -2,19 +2,19 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/5mm.yml
 
 - type: entity
-  id: N14BaseMagazine5mmMinigun
+  id: F14BaseMagazine5mmMinigun
   name: minigun magazine (5mm)
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - N14MagazineMinigun5mm
+      - F14MagazineMinigun5mm
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14CartridgePistol5
+        - F14CartridgePistol5
     capacity: 500 # #Burger - prior proposed round increase (was 200)
   - type: Item # #Burger - larger profile in bag to make up for capacity increase
     size: Large
@@ -34,9 +34,9 @@
   - type: Appearance
 
 - type: entity
-  id: N14MagazineMinigun5mm
+  id: F14MagazineMinigun5mm
   name: minigun box (5mm)
-  parent: N14BaseMagazine5mmMinigun
+  parent: F14BaseMagazine5mmMinigun
   components:
   - type: BallisticAmmoProvider
-    proto: N14CartridgePistol5
+    proto: F14CartridgePistol5

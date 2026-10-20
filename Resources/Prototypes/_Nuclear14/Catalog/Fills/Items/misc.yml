@@ -2,8 +2,8 @@
 # Resources/Prototypes/_Nuclear14/Catalog/Fills/Items/misc.yml
 
 - type: entity
-  id: N14ClothingBootsLeatherFilled
-  parent: N14ClothingBootsLeather
+  id: F14ClothingBootsLeatherFilled
+  parent: F14ClothingBootsLeather
   suffix: Filled
   components:
   - type: ContainerContainer  # spawn state
@@ -12,21 +12,21 @@
   - type: ContainerFill
     containers:
       item:
-      - N14CombatKnife
+      - F14CombatKnife
 
 - type: entity
-  id: N14ClothingBootsCombatFilled
-  parent: N14ClothingBootsCombat
+  id: F14ClothingBootsCombatFilled
+  parent: F14ClothingBootsCombat
   suffix: Filled
   components:
   - type: ContainerFill
     containers:
       item:
-      - N14CombatKnife
+      - F14CombatKnife
 
 - type: entity
-  id: N14ClothingBootsCombatMK2Filled
-  parent: N14ClothingBootsCombatMK2
+  id: F14ClothingBootsCombatMK2Filled
+  parent: F14ClothingBootsCombatMK2
   suffix: Filled
   components:
   - type: ContainerFill

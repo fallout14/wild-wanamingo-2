@@ -2,37 +2,37 @@
 # Resources/Prototypes/Corvax/Stacks/medical_stacks.yml, Resources/Prototypes/_Nuclear14/Stacks/medical_stacks.yml
 
 - type: stack
-  id: N14Bandage
+  id: F14Bandage
   name: misfits-kit-bandage
   icon: { sprite: "Nuclear14/Objects/Specific/Medical/drugs.rsi", state: bandage }
-  spawn: N14Bandage
+  spawn: F14Bandage
   maxCount: 15 #Changed to 15 due to shitmed changes
 
 - type: stack
-  id: N14AloeSalve
+  id: F14AloeSalve
   name: misfits-kit-aloe-salve
   icon: { sprite: "Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi", state: aloe1 }
-  spawn: N14AloeSalve1
+  spawn: F14AloeSalve1
   maxCount: 10 # Forge-Change
 
 - type: stack
-  id: N14DirtyGauze10
+  id: F14DirtyGauze10
   name: misfits-kit-roll-of-gauze
   icon: { sprite: "Nuclear14/Objects/Specific/Medical/ms13_medical.rsi", state: gauze_diy1 }
-  spawn: N14DirtyGauze1
+  spawn: F14DirtyGauze1
   maxCount: 10
 
 - type: stack
-  id: N14CleanGauze10
+  id: F14CleanGauze10
   name: misfits-kit-roll-of-gauze
   icon: { sprite: "Nuclear14/Objects/Specific/Medical/ms13_medical.rsi", state: gauze }
-  spawn: N14CleanGauze1
+  spawn: F14CleanGauze1
   maxCount: 10
 
 - type: stack
-  id: N14Ointment10
+  id: F14Ointment10
   name: misfits-kit-oitnment
   icon: { sprite: "Nuclear14/Objects/Specific/Medical/ms13_medical.rsi", state: tube1 }
-  spawn: N14Ointment1
+  spawn: F14Ointment1
   maxCount: 10
 # misfit add:

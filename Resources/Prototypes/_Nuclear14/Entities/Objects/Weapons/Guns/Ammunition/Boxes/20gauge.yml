@@ -4,14 +4,14 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: N14BaseMagazineBox20gauge
+  id: F14BaseMagazineBox20gauge
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14ShellShotgun20
-    proto: N14ShellShotgun20
+        - F14ShellShotgun20
+    proto: F14ShellShotgun20
     capacity: 30
   - type: ContainerContainer
     containers:
@@ -27,12 +27,12 @@
   - type: FoldableAmmoBox #Misfits Change /Add/: Empty cardboard ammo boxes can fold back into one cardboard sheet.
 
 - type: entity
-  parent: N14BaseMagazineBox20gauge
-  id: N14MagazineBox20gauge
+  parent: F14BaseMagazineBox20gauge
+  id: F14MagazineBox20gauge
   name: ammunition box (20 gauge)
   components:
   - type: BallisticAmmoProvider
-    proto: N14ShellShotgun20
+    proto: F14ShellShotgun20
   - type: Sprite
     layers:
     - state: base

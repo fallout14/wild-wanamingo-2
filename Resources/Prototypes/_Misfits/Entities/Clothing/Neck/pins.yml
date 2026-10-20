@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Clothing/Neck/pins.yml
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: MisfitsClothingNeckPinNCRStaffSergeant
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRStaffSergeant
   name: staff sergeant pin
   components:
   - type: RankTitle
@@ -13,11 +13,11 @@
     - state: mastersergeant
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: MisfitsClothingNeckPinNCR1stSergeant
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCR1stSergeant
   name: first sergeant pin
   components:
   - type: RankTitle
@@ -28,11 +28,11 @@
     - state: sergeantmajor
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: MisfitsClothingNeckPinNCRCommandSergeantMajor
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRCommandSergeantMajor
   name: command sergeant major pin
   components:
   - type: RankTitle
@@ -43,11 +43,11 @@
     - state: sergeantmajor
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: MisfitsClothingNeckPinNCRWarrantOfficer
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRWarrantOfficer
   name: warrant officer pin
   components:
   - type: RankTitle
@@ -58,15 +58,15 @@
     - state: secondlieutenant
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 # #Misfits Add - Chief Warrant Officer grades for the NCR aviation track.
 # No warrant-specific sprites exist, so these borrow officer pin art the same way
 # ClothingNeckPinNCRWarrantOfficer already borrows the second lieutenant state.
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: MisfitsClothingNeckPinNCRChiefWarrantOfficer2
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRChiefWarrantOfficer2
   name: chief warrant officer 2 pin
   components:
   - type: RankTitle
@@ -82,11 +82,11 @@
       - state: silver-equipped
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: MisfitsClothingNeckPinNCRChiefWarrantOfficer3
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRChiefWarrantOfficer3
   name: chief warrant officer 3 pin
   components:
   - type: RankTitle
@@ -102,11 +102,11 @@
       - state: silver-equipped
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: MisfitsClothingNeckPinNCRFirstLieutenant
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRFirstLieutenant
   name: first lieutenant pin
   components:
   - type: RankTitle
@@ -122,11 +122,11 @@
       - state: silver-equipped
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: MisfitsClothingNeckPinNCRFirstLieutenant
-  id: MisfitsClothingNeckPinNCRLtColonel
+  parent: F14ClothingNeckPinNCRFirstLieutenant
+  id: F14ClothingNeckPinNCRLtColonel
   name: lieutenant colonel pin
   components:
   - type: RankTitle
@@ -137,4 +137,4 @@
     - state: major
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable

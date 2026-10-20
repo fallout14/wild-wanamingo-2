@@ -3,7 +3,7 @@
 
 - type: entity
   parent: FoodBase
-  id: N14CookedFoodBowlBase
+  id: F14CookedFoodBowlBase
   abstract: true
   components:
   - type: Item
@@ -68,8 +68,8 @@
 
 - type: entity
   name: pea soup
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSoupPea
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSoupPea
   description: A humble split pea soup.
   components:
   - type: FlavorProfile
@@ -93,8 +93,8 @@
 
 - type: entity
   name: herb salad
-  parent: N14CookedFoodBowlBase #cooked is a stretch but... okay, we tag salads as that for now. We can swap it out later if we want. -Hazel
-  id: N14CookedFoodSaladHerb
+  parent: F14CookedFoodBowlBase #cooked is a stretch but... okay, we tag salads as that for now. We can swap it out later if we want. -Hazel
+  id: F14CookedFoodSaladHerb
   description: A tasty salad with mutfruit on top.
   components:
   - type: FlavorProfile
@@ -120,8 +120,8 @@
 
 - type: entity
   name: coleslaw
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSaladColeslaw
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSaladColeslaw
   description: Shredded cabbage and red onions dressed with a vinaigrette.
   components:
   - type: FlavorProfile
@@ -146,8 +146,8 @@
 
 - type: entity
   name: caesar salad
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSaladCaesar
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSaladCaesar
   description: A simple yet flavorful salad of onions, cabbage, croutons, and shreds of cheese dressed in oil. #N14 change
   components:
   - type: FlavorProfile
@@ -171,8 +171,8 @@
 
 - type: entity
   name: kimchi salad
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSaladKimchi
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSaladKimchi
   description: It really is just a spicy salad.
   components:
   - type: FlavorProfile
@@ -197,8 +197,8 @@
 
 - type: entity
   name: fruit salad
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSaladFruit
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSaladFruit
   description: Your standard fruit salad.
   components:
   - type: FlavorProfile
@@ -223,8 +223,8 @@
 
 - type: entity
   name: jungle salad
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSaladJungle
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSaladJungle
   description: Exotic fruits in a bowl.
   components:
   - type: FlavorProfile
@@ -250,8 +250,8 @@
 
 - type: entity
   name: citrus salad
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSaladCitrus
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSaladCitrus
   description: Citrus overload!
   components:
   - type: FlavorProfile
@@ -279,8 +279,8 @@
 
 - type: entity
   name: boiled rice
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodRiceBoiled
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodRiceBoiled
   description: A warm bowl of rice.
   components:
   - type: FlavorProfile
@@ -304,8 +304,8 @@
 
 - type: entity
   name: egg-fried rice
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodRiceEgg
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodRiceEgg
   description: A bowl of rice with a fried egg.
   components:
   - type: FlavorProfile
@@ -331,8 +331,8 @@
 
 - type: entity
   name: roadkill rice
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodRiceRoadkill
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodRiceRoadkill
   description: Dotted with blackened scraps of waste-meat. #N14 change
   components:
   - type: FlavorProfile
@@ -358,8 +358,8 @@
 
 - type: entity
   name: rice pudding
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodRicePudding
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodRicePudding
   description: Everybody loves rice pudding!
   components:
   - type: FlavorProfile
@@ -378,15 +378,15 @@
         Quantity: 9
       - ReagentId: Vitamin
         Quantity: 3
-      - ReagentId: N14MilkBrahmin
+      - ReagentId: F14MilkBrahmin
         Quantity: 5
       - ReagentId: Sugar
         Quantity: 5
 
 - type: entity
   name: black-eyed gumbo
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodRiceGumbo
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodRiceGumbo
   description: A spicy and savory meat and rice dish.
   components:
   - type: FlavorProfile
@@ -418,8 +418,8 @@
 
 - type: entity
   name: oatmeal
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodOatmeal
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodOatmeal
   description: A nice bowl of oatmeal.
   components:
   - type: FlavorProfile
@@ -438,13 +438,13 @@
         Quantity: 7
       - ReagentId: Vitamin
         Quantity: 2
-      - ReagentId: N14MilkBrahmin
+      - ReagentId: F14MilkBrahmin
         Quantity: 10
 
 - type: entity #I'm leaving this here as a placeholder. Maybe poisonous food will be desirable someday. -Hazel
   name: amanita jelly
   parent: FoodInjectableBase
-  id: N14CookedFoodJellyAmanita
+  id: F14CookedFoodJellyAmanita
   description: It's evil, don't touch it!
   components:
   - type: FlavorProfile
@@ -465,8 +465,8 @@
 
 - type: entity
   name: meatball soup
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSoupMeatball
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSoupMeatball
   description: Meatballs in a soup - well, hell, we work with what we got.
   components:
   - type: FlavorProfile
@@ -493,8 +493,8 @@
 
 - type: entity
   name: mutie soup
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSoupMutie
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSoupMutie
   description: Some kind of mutant cooked in sauce. Looks... uh... unappetizing...
   components:
   - type: FlavorProfile
@@ -518,8 +518,8 @@
 
 - type: entity
   name: bloodtato soup
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSoupBloodtato
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSoupBloodtato
   description: The blood blots out the tato flavor. A surprisingly good, if insane, spin on the meal.
   components:
   - type: FlavorProfile
@@ -547,8 +547,8 @@
 
 - type: entity
   name: vegetable soup
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSoupVegetable
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSoupVegetable
   description: A hearty, healthy meal beloved by foragers and farmers.
   components:
   - type: FlavorProfile
@@ -573,8 +573,8 @@
 
 - type: entity
   name: nettle soup
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSoupNettle
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSoupNettle
   description: Food for foragers. Said to be a potent restorative.
   components:
   - type: FlavorProfile
@@ -601,8 +601,8 @@
 
 - type: entity
   name: bowl of hot chili
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSoupChiliHot
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSoupChiliHot
   description: A Washington five-alarm chili! #N14 change
   components:
   - type: FlavorProfile
@@ -630,8 +630,8 @@
 
 - type: entity
   name: tato soup #N14 change
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSoupTato
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSoupTato
   description: This really doesn't taste good. But it's good for you..? #N14 change
   components:
   - type: FlavorProfile
@@ -660,8 +660,8 @@
 
 - type: entity
   name: eyeball soup
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSoupEyeball
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSoupEyeball
   description: It's looking back at you...
   components:
   - type: FlavorProfile
@@ -687,8 +687,8 @@
 
 - type: entity #not in the game, placeholder
   name: miso soup
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSoupMiso
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSoupMiso
   description: Salty, fishy soup, best had with ramen.
   components:
   - type: FlavorProfile
@@ -719,8 +719,8 @@
 
 - type: entity
   name: mushroom soup
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSoupMushroom
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSoupMushroom
   description: A delicious and hearty mushroom soup.
   components:
   - type: FlavorProfile
@@ -740,13 +740,13 @@
           Quantity: 6
         - ReagentId: Water
           Quantity: 5
-        - ReagentId: N14MilkBrahmin
+        - ReagentId: F14MilkBrahmin
           Quantity: 5
 
 - type: entity
   name: stew
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSoupStew
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSoupStew
   description: A nice and warm stew. Healthy and strong.
   components:
   - type: FlavorProfile
@@ -776,8 +776,8 @@
 
 - type: entity
   name: onion soup
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSoupOnion
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSoupOnion
   description: The cheese thickens it up nicely.
   components:
   - type: FlavorProfile
@@ -800,8 +800,8 @@
 
 - type: entity
   name: bisque
-  parent: N14CookedFoodBowlBase
-  id: N14CookedFoodSoupBisque
+  parent: F14CookedFoodBowlBase
+  id: F14CookedFoodSoupBisque
   description: A fish dish that comes from a guy called Franz.
   components:
   - type: FlavorProfile

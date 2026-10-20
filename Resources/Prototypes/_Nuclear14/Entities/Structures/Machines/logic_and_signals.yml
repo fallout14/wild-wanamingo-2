@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Machines/logic_and_signals.yml
 
 - type: entity
-  id: N14SignalButton # because indestructible, use the SS14 one for destructible
+  id: F14SignalButton # because indestructible, use the SS14 one for destructible
   name: signal button
   description: It's a button for activating something.
   placement:
@@ -37,8 +37,8 @@
       - Pressed
 
 - type: entity
-  parent: [ N14SignalButton, N14ComputerTerminalWallControls ] # See Terminals.yml
-  id: N14ControlTerminalButton
+  parent: [ F14SignalButton, F14ComputerTerminalWallControls ] # See Terminals.yml
+  id: F14ControlTerminalButton
   suffix: button
   components:
   - type: Sprite
@@ -49,8 +49,8 @@
     range: 15
 
 - type: entity
-  parent: N14ControlTerminalButton
-  id: N14ControlTerminalVault
+  parent: F14ControlTerminalButton
+  id: F14ControlTerminalVault
   suffix: vault door
   components:
   - type: AutoLinkTransmitter
@@ -59,8 +59,8 @@
 # Vault Door Controller
 
 - type: entity
-  parent: N14SignalButton
-  id: N14DoorVaultControls
+  parent: F14SignalButton
+  id: F14DoorVaultControls
   name: Vault Door Controls
   description: A handy control panel for opening the vault door.
   components:
@@ -76,8 +76,8 @@
     offset: 0, 0
 
 - type: entity
-  parent: N14DoorVaultControls
-  id: N14DoorVaultControlsLocked
+  parent: F14DoorVaultControls
+  id: F14DoorVaultControlsLocked
   suffix: overseer locked
   components:
   - type: AutoLinkTransmitter
@@ -86,4 +86,4 @@
   - type: Lock
   - type: LockVisuals
   - type: AccessReader
-    access: [["MisfitsVaultControlsPanel"]] # Misfits Change - restricted to N14IDCardVaultOverseer only (not in AllAccess)
+    access: [["F14VaultControlsPanel"]] # Misfits Change - restricted to N14IDCardVaultOverseer only (not in AllAccess)

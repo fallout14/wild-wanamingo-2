@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Decoration/rails.yml
 
 - type: entity
-  id: N14Rails
+  id: F14Rails
   name: railway
   suffix: Mapping
   placement:
@@ -37,64 +37,64 @@
   - type: Clickable
 
 - type: entity
-  parent: N14Rails
-  id: N14RailsJunctionRightTop
+  parent: F14Rails
+  id: F14RailsJunctionRightTop
   suffix: junction right top
   components:
   - type: Sprite
     state: junction-right-top
 
 - type: entity
-  parent: N14Rails
-  id: N14RailsJunctionLeftTop
+  parent: F14Rails
+  id: F14RailsJunctionLeftTop
   suffix: junction left top
   components:
   - type: Sprite
     state: junction-left-top
 
 - type: entity
-  parent: N14Rails
-  id: N14RailsJunctionRightBottom
+  parent: F14Rails
+  id: F14RailsJunctionRightBottom
   suffix: junction right bottom
   components:
   - type: Sprite
     state: junction-right-bottom
 
 - type: entity
-  parent: N14Rails
-  id: N14RailsJunctionLeftBottom
+  parent: F14Rails
+  id: F14RailsJunctionLeftBottom
   suffix: junction left bottom
   components:
   - type: Sprite
     state: junction-left-bottom
 
 - type: entity
-  parent: N14Rails
-  id: N14RailsTurnWS
+  parent: F14Rails
+  id: F14RailsTurnWS
   suffix: turn west-south
   components:
   - type: Sprite
     state: turn-WS
 
 - type: entity
-  parent: N14Rails
-  id: N14RailsTurnNW
+  parent: F14Rails
+  id: F14RailsTurnNW
   suffix: turn north-west
   components:
   - type: Sprite
     state: turn-NW
 
 - type: entity
-  parent: N14Rails
-  id: N14RailsTurnNE
+  parent: F14Rails
+  id: F14RailsTurnNE
   suffix: turn north-east
   components:
   - type: Sprite
     state: turn-NE
 
 - type: entity
-  parent: N14Rails
-  id: N14RailsTurnSE
+  parent: F14Rails
+  id: F14RailsTurnSE
   suffix: turn south-east
   components:
   - type: Sprite

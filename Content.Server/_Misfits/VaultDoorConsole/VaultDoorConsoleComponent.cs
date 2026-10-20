@@ -38,7 +38,7 @@ public sealed partial class VaultDoorConsoleComponent : Component
     public TimeSpan SuccessLockDuration = TimeSpan.FromMinutes(20);
 
     [DataField]
-    public string RaidFaction = "N14Vault";
+    public string RaidFaction = "F14Vault";
 
     // #Misfits Add - Faction flavour. Lets a second faction's door reuse this system instead of
     // forking it: only the wording changes, the minigame is identical. Defaults are the Vault-Tec

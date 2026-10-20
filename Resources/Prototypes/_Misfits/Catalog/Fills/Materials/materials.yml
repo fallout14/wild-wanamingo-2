@@ -1,118 +1,118 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/Materials/materials.yml
 
 - type: entity
-  id: MisfitsShelfMetalIngots5
+  id: F14ShelfMetalIngots5
   suffix: Filled, Ingots, 5
-  parent: N14ShelfMetal
+  parent: F14ShelfMetalBase
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsIngotAluminum5
-    - id: MisfitsIngotCopper5
-    - id: MisfitsIngotGold5
-    - id: MisfitsIngotBrass5
-    - id: MisfitsIngotLead5
-    - id: MisfitsIngotIron5
-    - id: MisfitsIngotSilver5
+    - id: F14IngotAluminum5
+    - id: F14IngotCopper5
+    - id: F14IngotGold5
+    - id: F14IngotBrass5
+    - id: F14IngotLead5
+    - id: F14IngotIron5
+    - id: F14IngotSilver5
 
 - type: entity
-  id: MisfitsShelfMetalIngotsRandom
+  id: F14ShelfMetalIngotsRandom
   suffix: Filled, Ingots, Random
-  parent: N14ShelfMetal
+  parent: F14ShelfMetalBase
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsIngotAluminum5
+    - id: F14IngotAluminum5
       prob: 0.4
-    - id: MisfitsIngotCopper5
+    - id: F14IngotCopper5
       prob: 0.4
-    - id: MisfitsIngotGold5
+    - id: F14IngotGold5
       prob: 0.4
-    - id: MisfitsIngotBrass5
+    - id: F14IngotBrass5
       prob: 0.4
-    - id: MisfitsIngotLead5
+    - id: F14IngotLead5
       prob: 0.4
-    - id: MisfitsIngotIron5
+    - id: F14IngotIron5
       prob: 0.4
-    - id: MisfitsIngotSilver5
+    - id: F14IngotSilver5
       prob: 0.4
 
 - type: entity
-  id: MisfitsShelfMetalScrap
+  id: F14ShelfMetalScrap
   suffix: Filled, Scrap
-  parent: N14ShelfMetal
+  parent: F14ShelfMetalBase
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsScrap10
-    - id: MisfitsScrapGold5
-    - id: MisfitsScrapBrass5
-    - id: MisfitsScrapCopper10
-    - id: MisfitsScrapLead5
-    - id: MisfitsScrapSteel10
-    - id: MisfitsScrapElectronic10
+    - id: F14Scrap10
+    - id: F14ScrapGold5
+    - id: F14ScrapBrass5
+    - id: F14ScrapCopper10
+    - id: F14ScrapLead5
+    - id: F14ScrapSteel10
+    - id: F14ScrapElectronic10
 
 - type: entity
-  id: MisfitsShelfMetalScrapRandom
+  id: F14ShelfMetalScrapRandom
   suffix: Filled, Scrap, Random
-  parent: N14ShelfMetal
+  parent: F14ShelfMetalBase
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsScrap10
+    - id: F14Scrap10
       prob: 0.4
-    - id: MisfitsScrapGold5
+    - id: F14ScrapGold5
       prob: 0.4
-    - id: MisfitsScrapBrass5
+    - id: F14ScrapBrass5
       prob: 0.4
-    - id: MisfitsScrapCopper10
+    - id: F14ScrapCopper10
       prob: 0.4
-    - id: MisfitsScrapLead5
+    - id: F14ScrapLead5
       prob: 0.4
-    - id: MisfitsScrapSteel10
+    - id: F14ScrapSteel10
       prob: 0.4
-    - id: MisfitsScrapElectronic10
+    - id: F14ScrapElectronic10
       prob: 0.4
 
 - type: entity
-  id: MisfitsShelfMetalMaterials10
+  id: F14ShelfMetalMaterials10
   suffix: Filled, Materials, 10
-  parent: N14ShelfMetal
+  parent: F14ShelfMetalBase
   components:
   - type: StorageFill
     contents:
-    - id: N14MaterialCircuitry10
-    - id: MisfitsMaterialLeather10
-    - id: MisfitsMaterialThread10
+    - id: F14MaterialCircuitry10
+    - id: F14MaterialLeather10
+    - id: F14MaterialThread10
     - id: MaterialCardboard10
-    - id: MisfitsMaterialCloth15
-    - id: MisfitsMaterialWoodPlank15
-    - id: MisfitsSheetGlass15
-    - id: MisfitsSheetPlastic15
-    - id: MisfitsSheetSteel15
+    - id: F14MaterialCloth15
+    - id: F14MaterialWoodPlank15
+    - id: F14SheetGlass15
+    - id: F14SheetPlastic15
+    - id: F14SheetSteel15
 
 - type: entity
-  id: MisfitsShelfMetalMaterialsRandom
+  id: F14ShelfMetalMaterialsRandom
   suffix: Filled, Materials, Random
-  parent: N14ShelfMetal
+  parent: F14ShelfMetalBase
   components:
   - type: StorageFill
     contents:
-    - id: N14MaterialCircuitry10
+    - id: F14MaterialCircuitry10
       prob: 0.4
-    - id: MisfitsMaterialLeather10
+    - id: F14MaterialLeather10
       prob: 0.4
-    - id: MisfitsMaterialThread10
+    - id: F14MaterialThread10
       prob: 0.4
     - id: MaterialCardboard10
       prob: 0.4
-    - id: MisfitsMaterialCloth15
+    - id: F14MaterialCloth15
       prob: 0.4
-    - id: MisfitsMaterialWoodPlank15
+    - id: F14MaterialWoodPlank15
       prob: 0.4
-    - id: MisfitsSheetGlass15
+    - id: F14SheetGlass15
       prob: 0.4
-    - id: MisfitsSheetPlastic15
+    - id: F14SheetPlastic15
       prob: 0.4
-    - id: MisfitsSheetSteel15
+    - id: F14SheetSteel15
       prob: 0.4

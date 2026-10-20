@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Misc/bos_identification.yml
 
 - type: entity
-  parent: N14IDPassportBlank
-  id: MisfitsIDBrotherhoodOfSteelHolotagBase
+  parent: F14IDPassportBlank
+  id: F14IDBrotherhoodOfSteelHolotagBase
   name: Brotherhood holotags
   description: An ID holotag worn by the Brotherhood of Steel.
   suffix: Brotherhood
@@ -15,23 +15,23 @@
     fullNameLocId: n14-id-holotag-full-name
   - type: Tag
     tags:
-    - MisfitsIdCardBrotherhood
+    - F14IdCardBrotherhood
   - type: ClothingAddFaction
-    faction: MisfitsBrotherhoodOfSteel
+    faction: F14BrotherhoodOfSteel
 
 - type: entity
-  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
-  id: MisfitsIDBrotherhoodOfSteelHolotagInitiate
+  parent: F14IDBrotherhoodOfSteelHolotagBase
+  id: F14IDBrotherhoodOfSteelHolotagInitiate
   name: initiate's holotags
   description: An ID holotag worn by a Brotherhood initiate.
   suffix: Initiate
   components:
   - type: PresetIdCard
-    job: MisfitsBoSInitiate  #Misfits Change /Tweak/: Updated to new consolidated BoS Initiate job
+    job: F14BoSInitiate  #Misfits Change /Tweak/: Updated to new consolidated BoS Initiate job
 
 - type: entity
-  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
-  id: MisfitsIDBrotherhoodOfSteelHolotagSquire
+  parent: F14IDBrotherhoodOfSteelHolotagBase
+  id: F14IDBrotherhoodOfSteelHolotagSquire
   name: squire's holotags
   description: An ID holotag worn by a Brotherhood squire.
   suffix: Squire
@@ -39,63 +39,63 @@
   - type: PresetIdCard
 
 - type: entity
-  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
-  id: MisfitsIDBrotherhoodOfSteelHolotagScribe
+  parent: F14IDBrotherhoodOfSteelHolotagBase
+  id: F14IDBrotherhoodOfSteelHolotagScribe
   name: scribe's holotags
   description: An ID holotag worn by a Brotherhood scribe.
   suffix: Scribe
   components:
   - type: PresetIdCard
-    job: MisfitsBoSScribe  #Misfits Change /Tweak/: Updated to new consolidated BoS Scribe job
+    job: F14BoSScribe  #Misfits Change /Tweak/: Updated to new consolidated BoS Scribe job
 
 - type: entity
-  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
-  id: MisfitsIDBrotherhoodOfSteelHolotagHeadScribe
+  parent: F14IDBrotherhoodOfSteelHolotagBase
+  id: F14IDBrotherhoodOfSteelHolotagHeadScribe
   name: head scribe's holotags
   description: An ID holotag worn by the Head Scribe of the Brotherhood of Steel.
   suffix: Head Scribe
   components:
   - type: PresetIdCard
-    job: MisfitsBoSWestScribe
+    job: F14BoSWestScribe
 
 - type: entity
-  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
-  id: MisfitsIDBrotherhoodOfSteelHolotagKnight
+  parent: F14IDBrotherhoodOfSteelHolotagBase
+  id: F14IDBrotherhoodOfSteelHolotagKnight
   name: knight's holotags
   description: An ID holotag worn by a Brotherhood knight.
   suffix: Knight
   components:
   - type: PresetIdCard
-    job: MisfitsBoSKnight  #Misfits Change /Tweak/: Updated to new consolidated BoS Knight job
+    job: F14BoSKnight  #Misfits Change /Tweak/: Updated to new consolidated BoS Knight job
 
 - type: entity
-  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
-  id: MisfitsIDBrotherhoodOfSteelHolotagHeadKnight
+  parent: F14IDBrotherhoodOfSteelHolotagBase
+  id: F14IDBrotherhoodOfSteelHolotagHeadKnight
   name: head knight's holotags
   description: An ID holotag worn by the Head Knight of the Brotherhood of Steel.
   suffix: Head Knight
   components:
   - type: PresetIdCard
-    job: MisfitsBoSHeadKnight  #Misfits Change /Tweak/: Updated to new consolidated BoS Head Knight job
+    job: F14BoSHeadKnight  #Misfits Change /Tweak/: Updated to new consolidated BoS Head Knight job
 
 - type: entity
-  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
-  id: MisfitsIDBrotherhoodOfSteelHolotagPaladin
+  parent: F14IDBrotherhoodOfSteelHolotagBase
+  id: F14IDBrotherhoodOfSteelHolotagPaladin
   name: paladin's holotags
   description: An ID holotag worn by a Brotherhood paladin.
   suffix: Paladin
   components:
   - type: PresetIdCard
-    job: MisfitsBoSPaladin  #Misfits Change /Tweak/: Updated to new consolidated BoS Paladin job
+    job: F14BoSPaladin  #Misfits Change /Tweak/: Updated to new consolidated BoS Paladin job
 
 - type: entity
-  parent: MisfitsIDBrotherhoodOfSteelHolotagBase
-  id: MisfitsIDBrotherhoodOfSteelHolotagElder
+  parent: F14IDBrotherhoodOfSteelHolotagBase
+  id: F14IDBrotherhoodOfSteelHolotagElder
   name: elder's holotags
   description: An ID holotag worn by the Elder of the Brotherhood of Steel.
   suffix: Elder
   components:
   - type: PresetIdCard
-    job: MisfitsBoSWestElderCommander
+    job: F14BoSWestElderCommander
 
 # #Cythisiax Added - HONOR GUARD personal-whitelist holotag.

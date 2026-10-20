@@ -4,7 +4,7 @@
   name: Tier5 Weapon Spawner
   abstract: true
   suffix: Tier5
-  id: MisfitsM14Tier5Spawner_RefShotgun
+  id: F14Tier5SpawnerRefShotgun
   parent: MarkerBase
   components:
   - type: Sprite
@@ -20,41 +20,41 @@
 - type: entity
   name: Tier5 Shotgun Spawner
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Single_GunsBulletShotgun
-  parent: MisfitsM14Tier5Spawner_RefShotgun
+  id: F14Tier5WeaponSpawnerSingleGunsBulletShotgun
+  parent: F14Tier5SpawnerRefShotgun
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletShotgun
+        tableId: F14WeaponLootTier5GunsBulletShotgun
 
 - type: entity
   name: Tier5 Shotgun Spawner 0-3
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Mult0_3_GunsBulletShotgun
-  parent: MisfitsM14Tier5Spawner_RefShotgun
+  id: F14Tier5WeaponSpawnerMult03GunsBulletShotgun
+  parent: F14Tier5SpawnerRefShotgun
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletShotgun
+        tableId: F14WeaponLootTier5GunsBulletShotgun
 
 - type: entity
   name: Tier5 Shotgun Spawner 1-2
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Mult1_2_GunsBulletShotgun
-  parent: MisfitsM14Tier5Spawner_RefShotgun
+  id: F14Tier5WeaponSpawnerMult12GunsBulletShotgun
+  parent: F14Tier5SpawnerRefShotgun
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletShotgun
+        tableId: F14WeaponLootTier5GunsBulletShotgun
 
 
 # RIFLE SPRITE/COLOR REF
@@ -63,7 +63,7 @@
   name: Tier5 Weapon Spawner
   abstract: true
   suffix: Tier5
-  id: MisfitsM14Tier5Spawner_RefRifle
+  id: F14Tier5SpawnerRefRifle
   parent: MarkerBase
   components:
   - type: Sprite
@@ -79,41 +79,41 @@
 - type: entity
   name: Tier5 Rifle All Spawner
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Single_GunsBulletRifle
-  parent: MisfitsM14Tier5Spawner_RefRifle
+  id: F14Tier5WeaponSpawnerSingleGunsBulletRifle
+  parent: F14Tier5SpawnerRefRifle
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletRifle
+        tableId: F14WeaponLootTier5GunsBulletRifle
 
 - type: entity
   name: Tier5 Rifle All Spawner 0-3
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Mult0_3_GunsBulletRifle
-  parent: MisfitsM14Tier5Spawner_RefRifle
+  id: F14Tier5WeaponSpawnerMult03GunsBulletRifle
+  parent: F14Tier5SpawnerRefRifle
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletRifle
+        tableId: F14WeaponLootTier5GunsBulletRifle
 
 - type: entity
   name: Tier5 Rifle All Spawner 1-2
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Mult1_2_GunsBulletRifle
-  parent: MisfitsM14Tier5Spawner_RefRifle
+  id: F14Tier5WeaponSpawnerMult12GunsBulletRifle
+  parent: F14Tier5SpawnerRefRifle
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletRifle
+        tableId: F14WeaponLootTier5GunsBulletRifle
 
 # RIFLE SEMI SPRITE/COLOR REF
 
@@ -121,7 +121,7 @@
   name: Tier5 Weapon Spawner
   abstract: true
   suffix: Tier5
-  id: MisfitsM14Tier5Spawner_RefRifleSemi
+  id: F14Tier5SpawnerRefRifleSemi
   parent: MarkerBase
   components:
   - type: Sprite
@@ -137,41 +137,41 @@
 - type: entity
   name: Tier5 Rifle Semi Spawner
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Single_GunsBulletRifleSemi
-  parent: MisfitsM14Tier5Spawner_RefRifleSemi
+  id: F14Tier5WeaponSpawnerSingleGunsBulletRifleSemi
+  parent: F14Tier5SpawnerRefRifleSemi
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletRifleSemi
+        tableId: F14WeaponLootTier5GunsBulletRifleSemi
 
 - type: entity
   name: Tier5 Rifle Semi Spawner 0-3
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Mult0_3_GunsBulletRifleSemi
-  parent: MisfitsM14Tier5Spawner_RefRifleSemi
+  id: F14Tier5WeaponSpawnerMult03GunsBulletRifleSemi
+  parent: F14Tier5SpawnerRefRifleSemi
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletRifleSemi
+        tableId: F14WeaponLootTier5GunsBulletRifleSemi
 
 - type: entity
   name: Tier5 Rifle Semi Spawner 1-2
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Mult1_2_GunsBulletRifleSemi
-  parent: MisfitsM14Tier5Spawner_RefRifleSemi
+  id: F14Tier5WeaponSpawnerMult12GunsBulletRifleSemi
+  parent: F14Tier5SpawnerRefRifleSemi
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletRifleSemi
+        tableId: F14WeaponLootTier5GunsBulletRifleSemi
 
 # RIFLE AUTO SPRITE/COLOR REF
 
@@ -179,7 +179,7 @@
   name: Tier5 Weapon Spawner
   abstract: true
   suffix: Tier5
-  id: MisfitsM14Tier5Spawner_RefRifleAuto
+  id: F14Tier5SpawnerRefRifleAuto
   parent: MarkerBase
   components:
   - type: Sprite
@@ -195,41 +195,41 @@
 - type: entity
   name: Tier5 Rifle Auto Spawner
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Single_GunsBulletRifleAuto
-  parent: MisfitsM14Tier5Spawner_RefRifleAuto
+  id: F14Tier5WeaponSpawnerSingleGunsBulletRifleAuto
+  parent: F14Tier5SpawnerRefRifleAuto
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletRifleAuto
+        tableId: F14WeaponLootTier5GunsBulletRifleAuto
 
 - type: entity
   name: Tier5 Rifle Auto Spawner 0-3
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Mult0_3_GunsBulletRifleAuto
-  parent: MisfitsM14Tier5Spawner_RefRifleAuto
+  id: F14Tier5WeaponSpawnerMult03GunsBulletRifleAuto
+  parent: F14Tier5SpawnerRefRifleAuto
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletRifleAuto
+        tableId: F14WeaponLootTier5GunsBulletRifleAuto
 
 - type: entity
   name: Tier5 Rifle Auto Spawner 1-2
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Mult1_2_GunsBulletRifleAuto
-  parent: MisfitsM14Tier5Spawner_RefRifleAuto
+  id: F14Tier5WeaponSpawnerMult12GunsBulletRifleAuto
+  parent: F14Tier5SpawnerRefRifleAuto
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletRifleAuto
+        tableId: F14WeaponLootTier5GunsBulletRifleAuto
 
 
 # LMG SPRITE/COLOR REF
@@ -238,7 +238,7 @@
   name: Tier5 Weapon Spawner
   abstract: true
   suffix: Tier5
-  id: MisfitsM14Tier5Spawner_RefLMG
+  id: F14Tier5SpawnerRefLMG
   parent: MarkerBase
   components:
   - type: Sprite
@@ -254,38 +254,38 @@
 - type: entity
   name: Tier5 LMG Spawner
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Single_GunsBulletLMG
-  parent: MisfitsM14Tier5Spawner_RefLMG
+  id: F14Tier5WeaponSpawnerSingleGunsBulletLMG
+  parent: F14Tier5SpawnerRefLMG
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletLMG
+        tableId: F14WeaponLootTier5GunsBulletLMG
 
 - type: entity
   name: Tier5 LMG Spawner 0-3
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Mult0_3_GunsBulletLMG
-  parent: MisfitsM14Tier5Spawner_RefLMG
+  id: F14Tier5WeaponSpawnerMult03GunsBulletLMG
+  parent: F14Tier5SpawnerRefLMG
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletLMG
+        tableId: F14WeaponLootTier5GunsBulletLMG
 
 - type: entity
   name: Tier5 LMG Spawner 1-2
   suffix: Tier5
-  id: MisfitsM14Tier5WeaponSpawner_Mult1_2_GunsBulletLMG
-  parent: MisfitsM14Tier5Spawner_RefLMG
+  id: F14Tier5WeaponSpawnerMult12GunsBulletLMG
+  parent: F14Tier5SpawnerRefLMG
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier5_GunsBulletLMG
+        tableId: F14WeaponLootTier5GunsBulletLMG

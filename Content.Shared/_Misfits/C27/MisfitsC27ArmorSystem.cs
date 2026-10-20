@@ -22,7 +22,7 @@ public sealed partial class MisfitsC27ArmorSystem : EntitySystem
     [Dependency] private SharedPopupSystem _popup = default!;
 
     private static readonly HashSet<ProtoId<SpeciesPrototype>> C27Species =
-        ["MisfitsC27", "MisfitsC27NCR", "MisfitsC27BoS"];
+        ["F14C27", "F14C27NCR", "F14C27BoS"];
 
     public override void Initialize()
     {

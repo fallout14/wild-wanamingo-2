@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Legion/assasin.yml
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsExplorerAssasin
+  parent: F14FalloutArmorBase
+  id: F14ExplorerAssasin
   name: veteran legion explorer armor
   description: "A set of hardened and decorated armor. Issued by Legion Forgemasters to Explorers that have spent years as Caesar's eyes and ears."
   components:
@@ -25,7 +25,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: MisfitsExplorerAssasinHelmet
+  id: F14ExplorerAssasinHelmet
   name: veteran legion explorer helmet
   description: "A fire helmet modified by a Veteran Explorer with a fitted gas mask and added plating."
   components:

@@ -2,19 +2,19 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Speedloaders/10mm.yml
 
 - type: entity
-  id: N14BaseSpeedLoader10
+  id: F14BaseSpeedLoader10
   name: "speed loader (10mm)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - N14SpeedLoader10
+      - F14SpeedLoader10
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - N14CartridgePistol10
+        - F14CartridgePistol10
     capacity: 8
   - type: Sprite
   - type: ContainerContainer
@@ -23,12 +23,12 @@
         ents: []
 
 - type: entity
-  id: N14SpeedLoader10
+  id: F14SpeedLoader10
   name: "speed loader (10mm)"
-  parent: N14BaseSpeedLoader10
+  parent: F14BaseSpeedLoader10
   components:
   - type: BallisticAmmoProvider
-    proto: N14CartridgePistol10
+    proto: F14CartridgePistol10
   - type: Item # Forge-Change
     size: Small
     shape:

@@ -1,9 +1,9 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/38special.yml
 
 - type: entity
-  id: MisfitsBullet38
+  id: F14Bullet38
   name: bullet (.38 special)
-  parent: MisfitsBullet357
+  parent: F14Bullet357
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -12,28 +12,28 @@
         Piercing: 16 # .357 is 22
 
 - type: entity
-  id: MisfitsCartridgePistol38
+  id: F14CartridgePistol38
   name: cartridge (.38 special)
-  parent: MisfitsCartridgePistol357
+  parent: F14CartridgePistol357
   description: A lighter .38 special round. Fits any .357 magnum firearm, but hits noticeably softer.
   components:
   - type: CartridgeAmmo
-    proto: MisfitsBullet38
+    proto: F14Bullet38
     soundEject:
-      collection: N14PistolCasingEject
+      collection: F14PistolCasingEject
   - type: Tag
     tags:
       - Cartridge
-      - MisfitsCartridgePistol357
-      - MisfitsCartridgePistol38
+      - F14CartridgePistol357
+      - F14CartridgePistol38
 
 - type: entity
-  parent: MisfitsBaseMagazineBox357
-  id: MisfitsAmmoBox38
+  parent: F14BaseMagazineBox357
+  id: F14AmmoBox38
   name: ammunition box (.38 special)
   components:
   - type: BallisticAmmoProvider
-    proto: MisfitsCartridgePistol38
+    proto: F14CartridgePistol38
   - type: Sprite
     layers:
     - state: base

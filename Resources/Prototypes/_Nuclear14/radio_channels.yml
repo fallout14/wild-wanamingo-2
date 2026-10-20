@@ -2,51 +2,51 @@
 # Resources/Prototypes/_Nuclear14/radio_channels.yml
 
 - type: radioChannel
-  id: N14VaultCommon
+  id: F14VaultCommon
   name: chat-radio-vault-common
   keycode: 'v' # Corvax-Change
   frequency: 1349
   color: "#3E7BD1"
 
 - type: radioChannel
-  id: N14VaultCommand
+  id: F14VaultCommand
   name: chat-radio-vault-command
   frequency: 1350
   color: "#5B9BD5"
 
 - type: radioChannel
-  id: N14VaultEngineering
+  id: F14VaultEngineering
   name: chat-radio-vault-engineering
   frequency: 1351
   color: "#F0A500"
 
 - type: radioChannel
-  id: N14VaultMedical
+  id: F14VaultMedical
   name: chat-radio-vault-medical
   frequency: 1352
   color: "#52B4E9"
 
 - type: radioChannel
-  id: N14VaultScience
+  id: F14VaultScience
   name: chat-radio-vault-science
   frequency: 1353
   color: "#D381C9"
 
 - type: radioChannel
-  id: N14VaultSecurity
+  id: F14VaultSecurity
   name: chat-radio-vault-security
   frequency: 1354
   color: "#A32B2B"
 
 - type: radioChannel
-  id: N14Enclave
+  id: F14Enclave
   name: chat-radio-enclave
   keycode: 'e'
   frequency: 1600
   color: "#c6cf00"
 
 - type: radioChannel
-  id: N14NCR
+  id: F14NCR
   name: chat-radio-ncr
   keycode: 'n' # Corvax-Change
   frequency: 1546
@@ -55,7 +55,7 @@
 # Specialist NCR nets. Their issued headsets also retain the standard NCR key.
 
 - type: radioChannel
-  id: N14PBS
+  id: F14PBS
   name: chat-radio-pbs
   keycode: 'p'
   frequency: 1667
@@ -66,7 +66,7 @@
 # longRange: true so it works without a dedicated telecomms server on the map
 
 - type: radioChannel
-  id: N14Townsfolk
+  id: F14Townsfolk
   name: misfits-kit-bazaar
   keycode: 't'
   frequency: 6767

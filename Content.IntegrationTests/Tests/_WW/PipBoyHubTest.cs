@@ -16,9 +16,9 @@ namespace Content.IntegrationTests.Tests._WW;
 /// </summary>
 public sealed class PipBoyHubTest : GameTest
 {
-    private static readonly EntProtoId PipBoy = "N14Pipboy";
-    private static readonly EntProtoId IdCard = "N14IDCardVault";
-    private static readonly EntProtoId Terminal = "N14ComputerTerminal";
+    private static readonly EntProtoId PipBoy = "F14Pipboy";
+    private static readonly EntProtoId IdCard = "F14IDCardVault";
+    private static readonly EntProtoId Terminal = "F14ComputerTerminal";
 
     [Test]
     public async Task PipBoyHasTheHubAndNanoChat()
@@ -33,11 +33,11 @@ public sealed class PipBoyHubTest : GameTest
             var programs = entMan.System<SharedContainerSystem>()
                 .GetContainer(pipBoy, CartridgeLoaderComponent.UnremovableContainerId).ContainedEntities
                 .Select(e => entMan.GetComponent<MetaDataComponent>(e).EntityPrototype?.ID).ToList();
-            Assert.That(programs, Does.Contain("DeltaVNanoChatCartridge"));
-            Assert.That(programs, Does.Contain("MisfitsPipBoyContactsCartridge"));
-            Assert.That(programs, Does.Contain("MisfitsPipBoyGroupsCartridge"));
-            Assert.That(programs, Does.Contain("MisfitsPipBoyDirectoryCartridge"));
-            Assert.That(programs, Does.Contain("MisfitsPipBoySettingsCartridge"));
+            Assert.That(programs, Does.Contain("F14NanoChatCartridge"));
+            Assert.That(programs, Does.Contain("F14PipBoyContactsCartridge"));
+            Assert.That(programs, Does.Contain("F14PipBoyGroupsCartridge"));
+            Assert.That(programs, Does.Contain("F14PipBoyDirectoryCartridge"));
+            Assert.That(programs, Does.Contain("F14PipBoySettingsCartridge"));
 
             var card = entMan.SpawnEntity(IdCard, map.GridCoords);
             Assert.That(entMan.GetComponent<NanoChatCardComponent>(card).Number, Is.Not.Null, "ID cards get a NanoChat number");

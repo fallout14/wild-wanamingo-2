@@ -3,7 +3,7 @@
 
 - type: entity
   abstract: true
-  id: N14BaseSubstation
+  id: F14BaseSubstation
   parent: BaseMachine
   name: substation
   description: Reduces the voltage of electricity put into it.
@@ -67,7 +67,7 @@
       - !type:ExplodeBehavior
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14SubstationDestroyed:
+          F14SubstationDestroyed:
             min: 1
             max: 1
       - !type:SpawnGasBehavior
@@ -80,7 +80,7 @@
           temperature: 373.15
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 100
     intensitySlope: 2
     totalIntensity: 200
@@ -103,8 +103,8 @@
     mediumVoltageNode: output
 
 - type: entity
-  parent: N14BaseSubstation
-  id: N14SubstationBasic
+  parent: F14BaseSubstation
+  id: F14SubstationBasic
   suffix: Basic, 2.5MJ
   components:
   - type: ContainerContainer  # spawn state
@@ -119,8 +119,8 @@
     startingCharge: 2500000
 
 - type: entity
-  parent: N14SubstationBasic
-  id: N14SubstationBasicEmpty
+  parent: F14SubstationBasic
+  id: F14SubstationBasicEmpty
   suffix: Empty
   components:
   - type: ContainerContainer  # spawn state
@@ -136,8 +136,8 @@
 # Rusty
 
 - type: entity
-  parent: N14SubstationBasic
-  id: N14SubstationBasicRusty
+  parent: F14SubstationBasic
+  id: F14SubstationBasicRusty
   suffix: Basic, 2.5MJ
   components:
   - type: ContainerContainer  # spawn state
@@ -169,7 +169,7 @@
       - !type:ExplodeBehavior
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14SubstationRustyDestroyed:
+          F14SubstationRustyDestroyed:
             min: 1
             max: 1
       - !type:SpawnGasBehavior
@@ -182,8 +182,8 @@
           temperature: 373.15
 
 - type: entity
-  parent: N14SubstationBasicRusty
-  id: N14SubstationBasicRustyEmpty
+  parent: F14SubstationBasicRusty
+  id: F14SubstationBasicRustyEmpty
   suffix: Empty
   components:
   - type: ContainerContainer  # spawn state
@@ -200,7 +200,7 @@
 
 - type: entity
   parent: MachineFrameDestroyed
-  id: N14SubstationDestroyed
+  id: F14SubstationDestroyed
   name: destroyed substation
   components:
   - type: Sprite
@@ -222,19 +222,19 @@
           collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14ScrapGold1:
+          F14ScrapGold1:
            min: 2
            max: 5
-          N14ScrapElectronic1:
+          F14ScrapElectronic1:
            min: 3
            max: 6
-          N14ScrapSteel1:
+          F14ScrapSteel1:
            min: 4
            max: 7
 
 - type: entity
-  parent: N14SubstationDestroyed
-  id: N14SubstationRustyDestroyed
+  parent: F14SubstationDestroyed
+  id: F14SubstationRustyDestroyed
   name: destroyed substation
   components:
   - type: Sprite

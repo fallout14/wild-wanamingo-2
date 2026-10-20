@@ -10,8 +10,8 @@
   - type: PlantData
     name: seeds-lemonade-name
     noun: seeds-noun-seeds
-    packetPrototype: MisfitsLemonadeSeeds
-    productPrototypes: [ MisfitsFoodLemonade ]
+    packetPrototype: F14LemonadeSeeds
+    productPrototypes: [ F14FoodLemonade ]
     mutationPrototypes: [LimePlants ]
   - type: Plant
     lifespan: 55
@@ -46,8 +46,8 @@
   - type: PlantData
     name: seeds-cocaplant-name
     noun: seeds-noun-seeds
-    packetPrototype: MisfitsCocaSeeds
-    productPrototypes: [ MisfitsLeavesCoca ]
+    packetPrototype: F14CocaSeeds
+    productPrototypes: [ F14LeavesCoca ]
   - type: Plant
     lifespan: 75
     maturation: 5
@@ -61,7 +61,7 @@
     harvestRepeat: Repeat
   - type: PlantChemicals
     chemicals:
-      MisfitsCocaSlurry:
+      F14CocaSlurry:
         min: 1
         max: 10
         potencyDivisor: 10
@@ -76,8 +76,8 @@
   - type: PlantData
     name: seeds-coconut-name
     noun: seeds-noun-seeds
-    packetPrototype: MisfitsCoconutSeeds
-    productPrototypes: [ MisfitsFoodCoconut ]
+    packetPrototype: F14CoconutSeeds
+    productPrototypes: [ F14FoodCoconut ]
   - type: Plant
     lifespan: 80
     maturation: 12
@@ -91,7 +91,7 @@
     harvestRepeat: SelfHarvest
   - type: PlantChemicals
     chemicals:
-      MisfitsCoconutFlesh:
+      F14CoconutFlesh:
         min: 1
         max: 20
         potencyDivisor: 2
@@ -114,8 +114,8 @@
   - type: PlantData
     name: seeds-cherrybomb-name
     noun: seeds-noun-seeds
-    packetPrototype: MisfitsCherryBombSeeds
-    productPrototypes: [ MisfitsFoodCherryBomb ]
+    packetPrototype: F14CherryBombSeeds
+    productPrototypes: [ F14FoodCherryBomb ]
   - type: Plant
     lifespan: 55
     maturation: 3
@@ -145,8 +145,8 @@
   - type: PlantData
     name: seeds-zoybean-name
     noun: seeds-noun-seeds
-    packetPrototype: MisfitsZoybeanSeeds
-    productPrototypes: [ MisfitsFloraProduceWildZoybeans ]
+    packetPrototype: F14ZoybeanSeeds
+    productPrototypes: [ F14FloraProduceWildZoybeans ]
   - type: Plant
     lifespan: 30
     maturation: 20

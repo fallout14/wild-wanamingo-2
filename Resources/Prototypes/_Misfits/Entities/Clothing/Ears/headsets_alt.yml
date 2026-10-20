@@ -1,47 +1,47 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Clothing/Ears/headsets_alt.yml
 
 - type: entity
-  parent: N14ClothingHeadsetNCR
-  id: MisfitsClothingHeadsetOSI
+  parent: F14ClothingHeadsetNCR
+  id: F14ClothingHeadsetOSI
   name: OSI radio earpiece
   description: An NCR headset fitted with separate Office of Science and Industry encryption.
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - N14EncryptionKeyNCR
-      - MisfitsEncryptionKeyOSI
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyNCR
+      - F14EncryptionKeyOSI
+      - F14EncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 - type: entity
-  parent: N14ClothingHeadsetNCR
-  id: MisfitsClothingHeadsetNCRRanger
+  parent: F14ClothingHeadsetNCR
+  id: F14ClothingHeadsetNCRRanger
   name: NCR Ranger radio earpiece
   description: An NCR headset fitted with separate Ranger field encryption.
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - N14EncryptionKeyNCR
-      - MisfitsEncryptionKeyNCRRangers
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyNCR
+      - F14EncryptionKeyNCRRangers
+      - F14EncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keysUnlocked: false
 
 # #Misfits Change - Legion headset
 
 - type: entity
-  parent: N14ClothingHeadsetAlt
-  id: MisfitsClothingHeadsetLegion
+  parent: F14ClothingHeadsetAlt
+  id: F14ClothingHeadsetLegion
   name: Legion radio earpiece
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - MisfitsEncryptionKeyLegion
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyLegion
+      - F14EncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keysUnlocked: false
   - type: Sprite
@@ -52,8 +52,8 @@
 # #Misfits Add — Followers of the Apocalypse headset; grants both faction and wasteland channels
 
 - type: entity
-  parent: N14ClothingHeadsetLightScribe
-  id: MisfitsClothingHeadsetFollowers
+  parent: F14ClothingHeadsetLightScribe
+  id: F14ClothingHeadsetFollowers
   name: Followers radio headset
   components:
   - type: Item
@@ -62,8 +62,8 @@
   - type: ContainerFill
     containers:
       key_slots:
-      - MisfitsEncryptionKeyFollowers
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyFollowers
+      - F14EncryptionKeyWastelandGlobal
   - type: EncryptionKeyHolder
     keysUnlocked: false
   - type: Sprite

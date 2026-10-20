@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/OuterClothing/PowerArmor/ranger_pa.yml
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT60
-  id: MisfitsClothingOuterPowerArmorRanger
+  parent: F14ClothingOuterPowerArmorT60
+  id: F14ClothingOuterPowerArmorRanger
   name: NCR Ranger power armor
   description: A rare NCR refit of salvaged T-60 power armor. Ranger combat armor styling, reinforced plates, and sealed machinery make it suitable for fighting the Mojave's most dangerous predators.
   components:
@@ -26,7 +26,7 @@
         Radiation: 0.6
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: MisfitsClothingHeadHelmetPowerArmorRanger
-      gloves: N14ClothingPAGauntlets
-      shoes: N14ClothingPABoots
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorRanger
+      gloves: F14ClothingPAGauntlets
+      shoes: F14ClothingPABoots
+      back: F14ClothingPowerSystemsBack

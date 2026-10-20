@@ -4,74 +4,74 @@
 # animal bodies: no markings, sizes or skin tone (the tone is ignored by their sprite).
 
 - type: species
-  id: N14Deathclaw
+  id: F14Deathclaw
   name: species-name-deathclaw
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: MisfitsMobDeathclawSentient
+  prototype: F14MobDeathclawSentient
   dollPrototype: AppearanceDeathclaw
   skinColoration: Hues
   defaultSkinTone: "#7a5a45"
   sexes:
   - Unsexed
   defaultSoundsBySex: # male, female, unsexed
-  - MisfitsDeathclawEmotes
-  - MisfitsDeathclawEmotes
-  - MisfitsDeathclawEmotes
+  - F14DeathclawEmotes
+  - F14DeathclawEmotes
+  - F14DeathclawEmotes
   voices:
-  - MisfitsDeathclawEmotes
+  - F14DeathclawEmotes
 
 - type: species
-  id: MisfitsDeathclawAdolescent
+  id: F14DeathclawAdolescent
   name: species-name-deathclaw-adolescent
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: MisfitsMobDeathclawSentientAdolescent
+  prototype: F14MobDeathclawSentientAdolescent
   dollPrototype: AppearanceDeathclawAdolescent
   skinColoration: Hues
   defaultSkinTone: "#7a5a45"
   sexes:
   - Unsexed
   defaultSoundsBySex: # male, female, unsexed
-  - MisfitsDeathclawEmotes
-  - MisfitsDeathclawEmotes
-  - MisfitsDeathclawEmotes
+  - F14DeathclawEmotes
+  - F14DeathclawEmotes
+  - F14DeathclawEmotes
   voices:
-  - MisfitsDeathclawEmotes
+  - F14DeathclawEmotes
 
 - type: species
-  id: MisfitsDeathclawHatchling
+  id: F14DeathclawHatchling
   name: species-name-deathclaw-hatchling
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: MisfitsMobDeathclawSentientHatchling
+  prototype: F14MobDeathclawSentientHatchling
   dollPrototype: AppearanceDeathclawHatchling
   skinColoration: Hues
   defaultSkinTone: "#7a5a45"
   sexes:
   - Unsexed
   defaultSoundsBySex: # male, female, unsexed
-  - MisfitsDeathclawEmotes
-  - MisfitsDeathclawEmotes
-  - MisfitsDeathclawEmotes
+  - F14DeathclawEmotes
+  - F14DeathclawEmotes
+  - F14DeathclawEmotes
   voices:
-  - MisfitsDeathclawEmotes
+  - F14DeathclawEmotes
 
 # Separate from the ordinary deathclaw so its whitelist never grants the loa role.
 - type: species
-  id: MisfitsBwonsamdiDeathclaw
+  id: F14BwonsamdiDeathclaw
   name: species-name-bwonsamdi-deathclaw
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: MisfitsMobDeathclawPlayer
+  prototype: F14MobDeathclawPlayer
   dollPrototype: AppearanceBwonsamdi
   skinColoration: Hues
   defaultSkinTone: "#7a5a45"
   sexes:
   - Unsexed
   defaultSoundsBySex: # male, female, unsexed
-  - MisfitsDeathclawEmotes
-  - MisfitsDeathclawEmotes
-  - MisfitsDeathclawEmotes
+  - F14DeathclawEmotes
+  - F14DeathclawEmotes
+  - F14DeathclawEmotes
   voices:
-  - MisfitsDeathclawEmotes
+  - F14DeathclawEmotes

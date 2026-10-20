@@ -1,8 +1,32 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Structures/Doors/vault_door_enclave.yml
 
 - type: entity
-  parent: N14DoorVaultControls
-  id: MisfitsDoorVaultEnclaveControls
+  parent: F14DoorVault
+  id: F14DoorVaultEnclave
+  name: enclave blast door
+  description: A pre-war Enclave blast door. The eagle stencilled across it has not faded.
+  suffix: Enclave
+  components:
+  # Its own channel, so Enclave panels can never drive the Vault-Tec door or the other way round,
+  # even if both ever end up on one grid.
+  - type: AutoLinkReceiver
+    channel: EnclaveVaultdoor
+  - type: BlockNetworkConfigurator
+    allowedSourcePrototypes:
+    - F14DoorVaultEnclaveControls
+    - F14DoorVaultEnclaveControlsLocked
+    - F14DoorVaultEnclaveExteriorControls
+  # Decorative on this door, exactly as VaultOverseer is on the parent: it has clickOpen and
+  # bumpOpen false, and DoorSignalControlSystem opens with no user so signals skip the access check
+  # entirely. That is what lets a successful hack through. The real gate is the Lock on the panel.
+  - type: AccessReader
+    access: [["F14EnclaveNCO"]]
+
+# Inside panel, unlocked. Kept for mappers who want an open control room.
+
+- type: entity
+  parent: F14DoorVaultControls
+  id: F14DoorVaultEnclaveControls
   name: Enclave Blast Door Controls
   description: A handy control panel for opening the Enclave blast door.
   suffix: Enclave
@@ -20,22 +44,22 @@
 # unlocked for everyone until it is re-locked with the alt-click verb. Same as the vault panel.
 
 - type: entity
-  parent: MisfitsDoorVaultEnclaveControls
-  id: MisfitsDoorVaultEnclaveControlsLocked
+  parent: F14DoorVaultEnclaveControls
+  id: F14DoorVaultEnclaveControlsLocked
   suffix: Enclave, NCO locked
   components:
   - type: Appearance
   - type: Lock
   - type: LockVisuals
   - type: AccessReader
-    access: [["MisfitsEnclaveNCO"]]
+    access: [["F14EnclaveNCO"]]
 
 # The outside terminal raiders hack. No AccessReader on purpose - the Pip-Boy check and the active
 # raid check in SharedVaultDoorConsoleSystem are the gate.
 
 - type: entity
-  parent: MisfitsDoorVaultExteriorControls
-  id: MisfitsDoorVaultEnclaveExteriorControls
+  parent: F14DoorVaultExteriorControls
+  id: F14DoorVaultEnclaveExteriorControls
   name: enclave security terminal
   description: A RobCo security terminal wired into the Enclave blast door's control network.
   suffix: Enclave
@@ -43,7 +67,7 @@
   - type: AutoLinkTransmitter
     channel: EnclaveVaultdoor
   - type: VaultDoorConsole
-    raidFaction: N14Enclave
+    raidFaction: F14Enclave
     terminalTitle: Enclave Security Terminal
     doorNoun: blast door
   - type: VaultDoorConsoleGate

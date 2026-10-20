@@ -2,7 +2,7 @@
 
 - type: entity
   parent: SimpleMobBase
-  id: MisfitsMobBrahdo
+  id: F14MobBrahdo
   name: brahdo
   description: "Mutated horses common as mounts and pack animals, they'll bite your fingers if you aren't careful."
   components:
@@ -44,7 +44,7 @@
     # #Misfits Fix - Super Mutants and Power Armor wearers are too heavy to ride
     blacklist:
       tags:
-      - MisfitsCannotRide
+      - F14CannotRide
       components:
       - PowerArmorWorn
     buckleSound:
@@ -62,13 +62,13 @@
   - type: Tag
     tags:
     - FootstepSound
-    - MisfitsBrahdo
+    - F14Brahdo
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadRaw
+    - id: F14FoodMeatRadRaw
       amount: 4
   - type: Damageable
-    damageModifierSet: N14WastelandAnimal
+    damageModifierSet: F14WastelandAnimal
   - type: Injurable
     damageContainer: Biological
   - type: MovementSpeedModifier
@@ -76,10 +76,10 @@
     baseSprintSpeed : 4.5
   - type: FootstepModifier
     footstepSoundCollection:
-      collection: CorvaxHorsestep
+      collection: F14Horsestep
   - type: WastelandSpawner
     prototypes:
-      - N14Dung
+      - F14Dung
     chance: 0.4
     intervalSeconds: 300
     minimumEntitiesSpawned: 1
@@ -91,9 +91,9 @@
     makeOffspringInfant: false
     partnerWhitelist:
       tags:
-      - MisfitsBrahdo
+      - F14Brahdo
     offspring:
-    - id: MisfitsMobBrahdo
+    - id: F14MobBrahdo
       maxAmount: 1
   - type: ReproductivePartner
   - type: HTN
@@ -104,8 +104,8 @@
     price: 300
 
 - type: entity
-  parent: MisfitsMobBrahdo
-  id: MisfitsMobBrahdoLight
+  parent: F14MobBrahdo
+  id: F14MobBrahdoLight
   name: saddled brahdo
   description: "Mutated horses popular among couriers and scouts, treat it right and it'll never let you down."
   suffix: Light
@@ -128,8 +128,8 @@
     baseSprintSpeed : 5.5
 
 - type: entity
-  parent: MisfitsMobBrahdo
-  id: MisfitsMobBrahdoArmor
+  parent: F14MobBrahdo
+  id: F14MobBrahdoArmor
   name: armored brahdo
   description: "Mutated horses that have found purpose as cavalry, hopefully this protection keeps it from meeting its oblivion."
   suffix: Armor
@@ -151,13 +151,13 @@
     baseWalkSpeed : 4
     baseSprintSpeed : 4
   - type: Damageable
-    damageModifierSet: CorvaxWastelandArmoredAnimal
+    damageModifierSet: F14WastelandArmoredAnimal
   - type: Injurable
     damageContainer: Biological
 
 - type: entity
-  parent: MisfitsMobBrahdoArmor
-  id: MisfitsMobBrahdoArmorNCR
+  parent: F14MobBrahdoArmor
+  id: F14MobBrahdoArmorNCR
   name: republic brahdo
   description: "Mutated horses that have become extremely popular among couriers, ranchers, and soldiers of the NCR. Its the dream of many children to own a brahdo."
   suffix: NCR
@@ -177,8 +177,8 @@
         Base: ncr-dead
 
 - type: entity
-  parent: MisfitsMobBrahdoLight
-  id: MisfitsMobBrahdoLightLegion
+  parent: F14MobBrahdoLight
+  id: F14MobBrahdoLightLegion
   name: legion brahdo
   description: "Mutated horses that have found use in the structure of Caesar's Legion, for raiding skirmishes and scouting missions. The Legion's mounts have a famous discipline."
   suffix: Legion
@@ -198,8 +198,8 @@
         Base: legion-dead
 
 - type: entity
-  parent: MisfitsMobBrahdoLight
-  id: MisfitsMobBrahdoLighttribal
+  parent: F14MobBrahdoLight
+  id: F14MobBrahdoLighttribal
   name: tribal brahdo
   description: "Mutated horses that have become an essential part of many tribes, allowing them to migrate with the seasons and outrun the approaching post-war nations and their borders."
   suffix: tribal

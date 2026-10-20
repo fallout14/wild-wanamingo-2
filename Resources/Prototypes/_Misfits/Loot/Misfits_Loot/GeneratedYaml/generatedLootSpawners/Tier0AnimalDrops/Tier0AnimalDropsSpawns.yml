@@ -3,1130 +3,1130 @@
 - type: entity
   name: Tier0 AnimalDrops All Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_All
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleAll
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_All
+      tableId: F14AnimalDropsLootTier0All
 
 - type: entity
   name: Tier0 AnimalDrops All 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_All
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03All
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_All
+      tableId: F14AnimalDropsLootTier0All
 
 - type: entity
   name: Tier0 AnimalDrops All 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_All
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12All
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_All
+      tableId: F14AnimalDropsLootTier0All
 
 - type: entity
   name: Tier0 AnimalDrops Generic Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_Generic
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleGeneric
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_Generic
+      tableId: F14AnimalDropsLootTier0Generic
 
 - type: entity
   name: Tier0 AnimalDrops Generic 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_Generic
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03Generic
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_Generic
+      tableId: F14AnimalDropsLootTier0Generic
 
 - type: entity
   name: Tier0 AnimalDrops Generic 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_Generic
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12Generic
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_Generic
+      tableId: F14AnimalDropsLootTier0Generic
 
 - type: entity
   name: Tier0 AnimalDrops GenericMammal Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_GenericMammal
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleGenericMammal
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_GenericMammal
+      tableId: F14AnimalDropsLootTier0GenericMammal
 
 - type: entity
   name: Tier0 AnimalDrops GenericMammal 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_GenericMammal
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03GenericMammal
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_GenericMammal
+      tableId: F14AnimalDropsLootTier0GenericMammal
 
 - type: entity
   name: Tier0 AnimalDrops GenericMammal 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_GenericMammal
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12GenericMammal
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_GenericMammal
+      tableId: F14AnimalDropsLootTier0GenericMammal
 
 - type: entity
   name: Tier0 AnimalDrops GenericInsect Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_GenericInsect
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleGenericInsect
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_GenericInsect
+      tableId: F14AnimalDropsLootTier0GenericInsect
 
 - type: entity
   name: Tier0 AnimalDrops GenericInsect 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_GenericInsect
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03GenericInsect
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_GenericInsect
+      tableId: F14AnimalDropsLootTier0GenericInsect
 
 - type: entity
   name: Tier0 AnimalDrops GenericInsect 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_GenericInsect
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12GenericInsect
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_GenericInsect
+      tableId: F14AnimalDropsLootTier0GenericInsect
 
 - type: entity
   name: Tier0 AnimalDrops AnyInsect Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_AnyInsect
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleAnyInsect
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_AnyInsect
+      tableId: F14AnimalDropsLootTier0AnyInsect
 
 - type: entity
   name: Tier0 AnimalDrops AnyInsect 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_AnyInsect
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03AnyInsect
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_AnyInsect
+      tableId: F14AnimalDropsLootTier0AnyInsect
 
 - type: entity
   name: Tier0 AnimalDrops AnyInsect 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_AnyInsect
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12AnyInsect
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_AnyInsect
+      tableId: F14AnimalDropsLootTier0AnyInsect
 
 - type: entity
   name: Tier0 AnimalDrops MoleRat Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_MoleRat
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleMoleRat
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_MoleRat
+      tableId: F14AnimalDropsLootTier0MoleRat
 
 - type: entity
   name: Tier0 AnimalDrops MoleRat 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_MoleRat
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03MoleRat
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_MoleRat
+      tableId: F14AnimalDropsLootTier0MoleRat
 
 - type: entity
   name: Tier0 AnimalDrops MoleRat 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_MoleRat
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12MoleRat
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_MoleRat
+      tableId: F14AnimalDropsLootTier0MoleRat
 
 - type: entity
   name: Tier0 AnimalDrops MirelurkFull Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_MirelurkFull
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleMirelurkFull
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_MirelurkFull
+      tableId: F14AnimalDropsLootTier0MirelurkFull
 
 - type: entity
   name: Tier0 AnimalDrops MirelurkFull 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_MirelurkFull
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03MirelurkFull
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_MirelurkFull
+      tableId: F14AnimalDropsLootTier0MirelurkFull
 
 - type: entity
   name: Tier0 AnimalDrops MirelurkFull 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_MirelurkFull
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12MirelurkFull
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_MirelurkFull
+      tableId: F14AnimalDropsLootTier0MirelurkFull
 
 - type: entity
   name: Tier0 AnimalDrops RadroachFull Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_RadroachFull
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleRadroachFull
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_RadroachFull
+      tableId: F14AnimalDropsLootTier0RadroachFull
 
 - type: entity
   name: Tier0 AnimalDrops RadroachFull 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_RadroachFull
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03RadroachFull
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_RadroachFull
+      tableId: F14AnimalDropsLootTier0RadroachFull
 
 - type: entity
   name: Tier0 AnimalDrops RadroachFull 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_RadroachFull
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12RadroachFull
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_RadroachFull
+      tableId: F14AnimalDropsLootTier0RadroachFull
 
 - type: entity
   name: Tier0 AnimalDrops NightstalkerFull Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_NightstalkerFull
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleNightstalkerFull
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_NightstalkerFull
+      tableId: F14AnimalDropsLootTier0NightstalkerFull
 
 - type: entity
   name: Tier0 AnimalDrops NightstalkerFull 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_NightstalkerFull
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03NightstalkerFull
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_NightstalkerFull
+      tableId: F14AnimalDropsLootTier0NightstalkerFull
 
 - type: entity
   name: Tier0 AnimalDrops NightstalkerFull 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_NightstalkerFull
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12NightstalkerFull
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_NightstalkerFull
+      tableId: F14AnimalDropsLootTier0NightstalkerFull
 
 - type: entity
   name: Tier0 AnimalDrops InsectOrgans Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_InsectOrgans
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleInsectOrgans
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_InsectOrgans
+      tableId: F14AnimalDropsLootTier0InsectOrgans
 
 - type: entity
   name: Tier0 AnimalDrops InsectOrgans 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_InsectOrgans
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03InsectOrgans
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_InsectOrgans
+      tableId: F14AnimalDropsLootTier0InsectOrgans
 
 - type: entity
   name: Tier0 AnimalDrops InsectOrgans 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_InsectOrgans
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12InsectOrgans
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_InsectOrgans
+      tableId: F14AnimalDropsLootTier0InsectOrgans
 
 - type: entity
   name: Tier0 AnimalDrops RadScorp Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_RadScorp
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleRadScorp
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_RadScorp
+      tableId: F14AnimalDropsLootTier0RadScorp
 
 - type: entity
   name: Tier0 AnimalDrops RadScorp 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_RadScorp
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03RadScorp
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_RadScorp
+      tableId: F14AnimalDropsLootTier0RadScorp
 
 - type: entity
   name: Tier0 AnimalDrops RadScorp 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_RadScorp
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12RadScorp
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_RadScorp
+      tableId: F14AnimalDropsLootTier0RadScorp
 
 - type: entity
   name: Tier0 AnimalDrops AllGecko Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_AllGecko
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleAllGecko
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_AllGecko
+      tableId: F14AnimalDropsLootTier0AllGecko
 
 - type: entity
   name: Tier0 AnimalDrops AllGecko 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_AllGecko
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03AllGecko
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_AllGecko
+      tableId: F14AnimalDropsLootTier0AllGecko
 
 - type: entity
   name: Tier0 AnimalDrops AllGecko 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_AllGecko
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12AllGecko
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_AllGecko
+      tableId: F14AnimalDropsLootTier0AllGecko
 
 - type: entity
   name: Tier0 AnimalDrops Gecko Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_Gecko
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleGecko
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_Gecko
+      tableId: F14AnimalDropsLootTier0Gecko
 
 - type: entity
   name: Tier0 AnimalDrops Gecko 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_Gecko
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03Gecko
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_Gecko
+      tableId: F14AnimalDropsLootTier0Gecko
 
 - type: entity
   name: Tier0 AnimalDrops Gecko 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_Gecko
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12Gecko
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_Gecko
+      tableId: F14AnimalDropsLootTier0Gecko
 
 - type: entity
   name: Tier0 AnimalDrops FireGecko Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_FireGecko
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleFireGecko
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_FireGecko
+      tableId: F14AnimalDropsLootTier0FireGecko
 
 - type: entity
   name: Tier0 AnimalDrops FireGecko 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_FireGecko
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03FireGecko
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_FireGecko
+      tableId: F14AnimalDropsLootTier0FireGecko
 
 - type: entity
   name: Tier0 AnimalDrops FireGecko 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_FireGecko
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12FireGecko
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_FireGecko
+      tableId: F14AnimalDropsLootTier0FireGecko
 
 - type: entity
   name: Tier0 AnimalDrops GoldGecko Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_GoldGecko
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleGoldGecko
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_GoldGecko
+      tableId: F14AnimalDropsLootTier0GoldGecko
 
 - type: entity
   name: Tier0 AnimalDrops GoldGecko 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_GoldGecko
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03GoldGecko
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_GoldGecko
+      tableId: F14AnimalDropsLootTier0GoldGecko
 
 - type: entity
   name: Tier0 AnimalDrops GoldGecko 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_GoldGecko
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12GoldGecko
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_GoldGecko
+      tableId: F14AnimalDropsLootTier0GoldGecko
 
 - type: entity
   name: Tier0 AnimalDrops YaoGuai Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_YaoGuai
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleYaoGuai
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_YaoGuai
+      tableId: F14AnimalDropsLootTier0YaoGuai
 
 - type: entity
   name: Tier0 AnimalDrops YaoGuai 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_YaoGuai
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03YaoGuai
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_YaoGuai
+      tableId: F14AnimalDropsLootTier0YaoGuai
 
 - type: entity
   name: Tier0 AnimalDrops YaoGuai 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_YaoGuai
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12YaoGuai
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_YaoGuai
+      tableId: F14AnimalDropsLootTier0YaoGuai
 
 - type: entity
   name: Tier0 AnimalDrops Bovine Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_Bovine
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleBovine
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_Bovine
+      tableId: F14AnimalDropsLootTier0Bovine
 
 - type: entity
   name: Tier0 AnimalDrops Bovine 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_Bovine
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03Bovine
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_Bovine
+      tableId: F14AnimalDropsLootTier0Bovine
 
 - type: entity
   name: Tier0 AnimalDrops Bovine 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_Bovine
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12Bovine
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_Bovine
+      tableId: F14AnimalDropsLootTier0Bovine
 
 - type: entity
   name: Tier0 AnimalDrops BovineComplete Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_BovineComplete
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleBovineComplete
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_BovineComplete
+      tableId: F14AnimalDropsLootTier0BovineComplete
 
 - type: entity
   name: Tier0 AnimalDrops BovineComplete 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_BovineComplete
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03BovineComplete
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_BovineComplete
+      tableId: F14AnimalDropsLootTier0BovineComplete
 
 - type: entity
   name: Tier0 AnimalDrops BovineComplete 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_BovineComplete
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12BovineComplete
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_BovineComplete
+      tableId: F14AnimalDropsLootTier0BovineComplete
 
 - type: entity
   name: Tier0 AnimalDrops BovineSkulls Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_BovineSkulls
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleBovineSkulls
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_BovineSkulls
+      tableId: F14AnimalDropsLootTier0BovineSkulls
 
 - type: entity
   name: Tier0 AnimalDrops BovineSkulls 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_BovineSkulls
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03BovineSkulls
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_BovineSkulls
+      tableId: F14AnimalDropsLootTier0BovineSkulls
 
 - type: entity
   name: Tier0 AnimalDrops BovineSkulls 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_BovineSkulls
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12BovineSkulls
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_BovineSkulls
+      tableId: F14AnimalDropsLootTier0BovineSkulls
 
 - type: entity
   name: Tier0 AnimalDrops BovineMeats Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_BovineMeats
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleBovineMeats
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_BovineMeats
+      tableId: F14AnimalDropsLootTier0BovineMeats
 
 - type: entity
   name: Tier0 AnimalDrops BovineMeats 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_BovineMeats
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03BovineMeats
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_BovineMeats
+      tableId: F14AnimalDropsLootTier0BovineMeats
 
 - type: entity
   name: Tier0 AnimalDrops BovineMeats 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_BovineMeats
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12BovineMeats
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_BovineMeats
+      tableId: F14AnimalDropsLootTier0BovineMeats
 
 - type: entity
   name: Tier0 AnimalDrops MammalAll Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_MammalAll
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleMammalAll
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_MammalAll
+      tableId: F14AnimalDropsLootTier0MammalAll
 
 - type: entity
   name: Tier0 AnimalDrops MammalAll 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_MammalAll
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03MammalAll
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_MammalAll
+      tableId: F14AnimalDropsLootTier0MammalAll
 
 - type: entity
   name: Tier0 AnimalDrops MammalAll 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_MammalAll
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12MammalAll
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_MammalAll
+      tableId: F14AnimalDropsLootTier0MammalAll
 
 - type: entity
   name: Tier0 AnimalDrops Brahmin Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_Brahmin
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleBrahmin
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_Brahmin
+      tableId: F14AnimalDropsLootTier0Brahmin
 
 - type: entity
   name: Tier0 AnimalDrops Brahmin 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_Brahmin
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03Brahmin
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_Brahmin
+      tableId: F14AnimalDropsLootTier0Brahmin
 
 - type: entity
   name: Tier0 AnimalDrops Brahmin 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_Brahmin
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12Brahmin
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_Brahmin
+      tableId: F14AnimalDropsLootTier0Brahmin
 
 - type: entity
   name: Tier0 AnimalDrops Bighorner Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_Bighorner
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleBighorner
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_Bighorner
+      tableId: F14AnimalDropsLootTier0Bighorner
 
 - type: entity
   name: Tier0 AnimalDrops Bighorner 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_Bighorner
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03Bighorner
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_Bighorner
+      tableId: F14AnimalDropsLootTier0Bighorner
 
 - type: entity
   name: Tier0 AnimalDrops Bighorner 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_Bighorner
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12Bighorner
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_Bighorner
+      tableId: F14AnimalDropsLootTier0Bighorner
 
 - type: entity
   name: Tier0 AnimalDrops Ragstag Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_Ragstag
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleRagstag
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_Ragstag
+      tableId: F14AnimalDropsLootTier0Ragstag
 
 - type: entity
   name: Tier0 AnimalDrops Ragstag 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_Ragstag
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03Ragstag
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_Ragstag
+      tableId: F14AnimalDropsLootTier0Ragstag
 
 - type: entity
   name: Tier0 AnimalDrops Ragstag 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_Ragstag
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12Ragstag
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_Ragstag
+      tableId: F14AnimalDropsLootTier0Ragstag
 
 - type: entity
   name: Tier0 AnimalDrops AllMeats Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_AllMeats
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleAllMeats
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_AllMeats
+      tableId: F14AnimalDropsLootTier0AllMeats
 
 - type: entity
   name: Tier0 AnimalDrops AllMeats 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_AllMeats
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03AllMeats
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_AllMeats
+      tableId: F14AnimalDropsLootTier0AllMeats
 
 - type: entity
   name: Tier0 AnimalDrops AllMeats 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_AllMeats
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12AllMeats
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_AllMeats
+      tableId: F14AnimalDropsLootTier0AllMeats
 
 - type: entity
   name: Tier0 AnimalDrops AllHides Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_AllHides
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleAllHides
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHides
+      tableId: F14AnimalDropsLootTier0AllHides
 
 - type: entity
   name: Tier0 AnimalDrops AllHides 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_AllHides
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03AllHides
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHides
+      tableId: F14AnimalDropsLootTier0AllHides
 
 - type: entity
   name: Tier0 AnimalDrops AllHides 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_AllHides
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12AllHides
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHides
+      tableId: F14AnimalDropsLootTier0AllHides
 
 - type: entity
   name: Tier0 AnimalDrops AllHidesExoSkeleton Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_AllHidesExoSkeleton
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleAllHidesExoSkeleton
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHidesExoSkeleton
+      tableId: F14AnimalDropsLootTier0AllHidesExoSkeleton
 
 - type: entity
   name: Tier0 AnimalDrops AllHidesExoSkeleton 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_AllHidesExoSkeleton
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03AllHidesExoSkeleton
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHidesExoSkeleton
+      tableId: F14AnimalDropsLootTier0AllHidesExoSkeleton
 
 - type: entity
   name: Tier0 AnimalDrops AllHidesExoSkeleton 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_AllHidesExoSkeleton
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12AllHidesExoSkeleton
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHidesExoSkeleton
+      tableId: F14AnimalDropsLootTier0AllHidesExoSkeleton
 
 - type: entity
   name: Tier0 AnimalDrops AllHidesReptile Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_AllHidesReptile
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleAllHidesReptile
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHidesReptile
+      tableId: F14AnimalDropsLootTier0AllHidesReptile
 
 - type: entity
   name: Tier0 AnimalDrops AllHidesReptile 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_AllHidesReptile
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03AllHidesReptile
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHidesReptile
+      tableId: F14AnimalDropsLootTier0AllHidesReptile
 
 - type: entity
   name: Tier0 AnimalDrops AllHidesReptile 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_AllHidesReptile
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12AllHidesReptile
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHidesReptile
+      tableId: F14AnimalDropsLootTier0AllHidesReptile
 
 - type: entity
   name: Tier0 AnimalDrops AllHidesMammal Single
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Single_AllHidesMammal
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerSingleAllHidesMammal
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:ConstantNumberSelector
         value: 1
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHidesMammal
+      tableId: F14AnimalDropsLootTier0AllHidesMammal
 
 - type: entity
   name: Tier0 AnimalDrops AllHidesMammal 0-3
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult0_3_AllHidesMammal
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult03AllHidesMammal
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHidesMammal
+      tableId: F14AnimalDropsLootTier0AllHidesMammal
 
 - type: entity
   name: Tier0 AnimalDrops AllHidesMammal 1-2
   suffix: Tier0
-  id: MisfitsM14AnimalDropsTier0Spawner_Mult1_2_AllHidesMammal
-  parent: MisfitsM14Tier0Spawner_RefAnimalDrops
+  id: F14AnimalDropsTier0SpawnerMult12AllHidesMammal
+  parent: F14Tier0SpawnerRefAnimalDrops
   components:
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false
     table: !type:NestedSelector
       rolls: !type:RangeNumberSelector
         range: 1, 1
-      tableId: MisfitsM14AnimalDropsLootTier0_AllHidesMammal
+      tableId: F14AnimalDropsLootTier0AllHidesMammal

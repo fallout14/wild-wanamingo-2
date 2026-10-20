@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Projectiles/20gauge.yml
 
 - type: entity
-  id: N14PelletShotgun20
+  id: F14PelletShotgun20
   name: pellet (20 gauge)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
@@ -21,11 +21,11 @@
     minDamageMultiplier: 0.30
 
 - type: entity
-  id: N14PelletShotgun20Spread
+  id: F14PelletShotgun20Spread
   categories: [ HideSpawnMenu ]
-  parent: N14PelletShotgun20
+  parent: F14PelletShotgun20
   components:
   - type: ProjectileSpread
-    proto: N14PelletShotgun20
+    proto: F14PelletShotgun20
     count: 6
     spread: 15

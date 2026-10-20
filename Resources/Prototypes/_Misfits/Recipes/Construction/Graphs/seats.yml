@@ -8,113 +8,113 @@
       actions:
         - !type:DestroyEntity {}
       edges:
-        - to: N14ChairSchool
+        - to: F14ChairSchool
           steps:
             - material: WoodPlank
               amount: 1
               doAfter: 1
-        - to: N14ChairWood
+        - to: F14ChairWood
           steps:
             - material: WoodPlank
               amount: 1
               doAfter: 1
-        - to: N14ChairWood1
+        - to: F14ChairWood1
           steps:
             - material: WoodPlank
               amount: 1
               doAfter: 1
-        - to: N14ChairWoodPadded
+        - to: F14ChairWoodPadded
           steps:
             - material: WoodPlank
               amount: 1
               doAfter: 1
             - material: Cloth
               amount: 1
-        - to: N14ChairWoodSettler
+        - to: F14ChairWoodSettler
           steps:
             - material: WoodPlank
               amount: 1
               doAfter: 1
-        - to: N14ChairStoolBarBlack
+        - to: F14ChairStoolBarBlack
           steps:
             - material: Steel
               amount: 1
               doAfter: 1
-        - to: N14ChairStoolBarTan
+        - to: F14ChairStoolBarTan
           steps:
             - material: Steel
               amount: 1
               doAfter: 1
-        - to: N14ChairStoolBarRed
+        - to: F14ChairStoolBarRed
           steps:
             - material: Steel
               amount: 1
               doAfter: 1
-        - to: N14ChairArmchair
+        - to: F14ChairArmchair
           steps:
             - material: WoodPlank
               amount: 2
               doAfter: 1
             - material: Cloth
               amount: 1
-        - to: N14ChairMetalGreen
+        - to: F14ChairMetalGreen
           steps:
             - material: Steel
               amount: 1
               doAfter: 1
-        - to: N14ChairMetalBlue
+        - to: F14ChairMetalBlue
           steps:
             - material: Steel
               amount: 1
               doAfter: 1
-        - to: N14ChairMetalRed
+        - to: F14ChairMetalRed
           steps:
             - material: Steel
               amount: 1
               doAfter: 1
-        - to: N14ChairOfficeRed
-          steps:
-            - material: Steel
-              amount: 1
-              doAfter: 1
-            - material: Cloth
-              amount: 1
-        - to: N14ChairOfficeBlue
+        - to: F14ChairOfficeRed
           steps:
             - material: Steel
               amount: 1
               doAfter: 1
             - material: Cloth
               amount: 1
-        - to: N14ChairOfficeGreen
+        - to: F14ChairOfficeBlue
           steps:
             - material: Steel
               amount: 1
               doAfter: 1
             - material: Cloth
               amount: 1
-        - to: N14ChairOfficeErgonomic
+        - to: F14ChairOfficeGreen
+          steps:
+            - material: Steel
+              amount: 1
+              doAfter: 1
+            - material: Cloth
+              amount: 1
+        - to: F14ChairOfficeErgonomic
           steps:
             - material: Steel
               amount: 2
               doAfter: 1
             - material: Cloth
               amount: 1
-        - to: N14ChairMetalFolding
+        - to: F14ChairMetalFolding
           steps:
             - material: Plastic
               amount: 1
               doAfter: 1
             - material: MetalRod
               amount: 2
-        - to: N14ChairPlastic
+        - to: F14ChairPlastic
           steps:
             - material: Plastic
               amount: 2
               doAfter: 1
 
-    - node: N14ChairSchool
-      entity: N14ChairSchool
+    - node: F14ChairSchool
+      entity: F14ChairSchool
       edges:
         - to: start
           completed:
@@ -125,8 +125,8 @@
             - tool: Screwing
               doAfter: 1
 
-    - node: N14ChairWood
-      entity: N14ChairWood
+    - node: F14ChairWood
+      entity: F14ChairWood
       edges:
         - to: start
           completed:
@@ -137,8 +137,8 @@
             - tool: Screwing
               doAfter: 1
 
-    - node: N14ChairWood1
-      entity: N14ChairWood1
+    - node: F14ChairWood1
+      entity: F14ChairWood1
       edges:
         - to: start
           completed:
@@ -149,8 +149,8 @@
             - tool: Screwing
               doAfter: 1
               
-    - node: N14ChairWoodPadded
-      entity: N14ChairWoodPadded
+    - node: F14ChairWoodPadded
+      entity: F14ChairWoodPadded
       edges:
         - to: start
           completed:
@@ -164,8 +164,8 @@
             - tool: Screwing
               doAfter: 1
               
-    - node: N14ChairWoodSettler
-      entity: N14ChairWoodSettler
+    - node: F14ChairWoodSettler
+      entity: F14ChairWoodSettler
       edges:
         - to: start
           completed:
@@ -177,8 +177,8 @@
               doAfter: 1
 
 
-    - node: N14ChairStoolBarBlack
-      entity: N14ChairStoolBarBlack
+    - node: F14ChairStoolBarBlack
+      entity: F14ChairStoolBarBlack
       edges:
         - to: start
           completed:
@@ -189,8 +189,8 @@
             - tool: Screwing
               doAfter: 1
               
-    - node: N14ChairStoolBarTan
-      entity: N14ChairStoolBarTan
+    - node: F14ChairStoolBarTan
+      entity: F14ChairStoolBarTan
       edges:
         - to: start
           completed:
@@ -201,8 +201,8 @@
             - tool: Screwing
               doAfter: 1
               
-    - node: N14ChairStoolBarRed
-      entity: N14ChairStoolBarRed
+    - node: F14ChairStoolBarRed
+      entity: F14ChairStoolBarRed
       edges:
         - to: start
           completed:
@@ -213,8 +213,8 @@
             - tool: Screwing
               doAfter: 1
               
-    - node: N14ChairArmchair
-      entity: N14ChairArmchair
+    - node: F14ChairArmchair
+      entity: F14ChairArmchair
       edges:
         - to: start
           completed:
@@ -228,8 +228,8 @@
             - tool: Screwing
               doAfter: 1
               
-    - node: N14ChairMetalGreen
-      entity: N14ChairMetalGreen
+    - node: F14ChairMetalGreen
+      entity: F14ChairMetalGreen
       edges:
         - to: start
           completed:
@@ -240,8 +240,8 @@
             - tool: Screwing
               doAfter: 1
               
-    - node: N14ChairMetalBlue
-      entity: N14ChairMetalBlue
+    - node: F14ChairMetalBlue
+      entity: F14ChairMetalBlue
       edges:
         - to: start
           completed:
@@ -252,8 +252,8 @@
             - tool: Screwing
               doAfter: 1
 
-    - node: N14ChairMetalRed
-      entity: N14ChairMetalRed
+    - node: F14ChairMetalRed
+      entity: F14ChairMetalRed
       edges:
         - to: start
           completed:
@@ -264,8 +264,8 @@
             - tool: Screwing
               doAfter: 1
 
-    - node: N14ChairOfficeRed
-      entity: N14ChairOfficeRed
+    - node: F14ChairOfficeRed
+      entity: F14ChairOfficeRed
       edges:
         - to: start
           completed:
@@ -279,8 +279,8 @@
             - tool: Screwing
               doAfter: 1
               
-    - node: N14ChairOfficeBlue
-      entity: N14ChairOfficeBlue
+    - node: F14ChairOfficeBlue
+      entity: F14ChairOfficeBlue
       edges:
         - to: start
           completed:
@@ -294,8 +294,8 @@
             - tool: Screwing
               doAfter: 1
               
-    - node: N14ChairOfficeGreen
-      entity: N14ChairOfficeGreen
+    - node: F14ChairOfficeGreen
+      entity: F14ChairOfficeGreen
       edges:
         - to: start
           completed:
@@ -309,8 +309,8 @@
             - tool: Screwing
               doAfter: 1
               
-    - node: N14ChairOfficeErgonomic
-      entity: N14ChairOfficeErgonomic
+    - node: F14ChairOfficeErgonomic
+      entity: F14ChairOfficeErgonomic
       edges:
         - to: start
           completed:
@@ -324,8 +324,8 @@
             - tool: Screwing
               doAfter: 1
 
-    - node: N14ChairMetalFolding
-      entity: N14ChairMetalFolding
+    - node: F14ChairMetalFolding
+      entity: F14ChairMetalFolding
       edges:
         - to: start
           completed:
@@ -339,8 +339,8 @@
             - tool: Screwing
               doAfter: 1
               
-    - node: N14ChairPlastic
-      entity: N14ChairPlastic
+    - node: F14ChairPlastic
+      entity: F14ChairPlastic
       edges:
         - to: start
           completed:

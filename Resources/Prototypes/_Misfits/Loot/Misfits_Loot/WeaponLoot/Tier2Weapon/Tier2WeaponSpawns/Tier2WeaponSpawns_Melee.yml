@@ -4,7 +4,7 @@
   name: Tier2 Weapon Spawner
   abstract: true
   suffix: Tier2
-  id: MisfitsM14Tier2Spawner_RefMeleeAll
+  id: F14Tier2SpawnerRefMeleeAll
   parent: MarkerBase
   components:
   - type: Sprite
@@ -21,41 +21,41 @@
 - type: entity
   name: Tier2 Melee All Spawner
   suffix: Tier2
-  id: MisfitsM14Tier2WeaponSpawner_Single_MeleeAll
-  parent: MisfitsM14Tier2Spawner_RefMeleeAll
+  id: F14Tier2WeaponSpawnerSingleMeleeAll
+  parent: F14Tier2SpawnerRefMeleeAll
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier2_MeleeAll
+        tableId: F14WeaponLootTier2MeleeAll
 
 - type: entity
   name: Tier2 Melee All Spawner 0-3
   suffix: Tier2
-  id: MisfitsM14Tier2WeaponSpawner_Mult0_3_MeleeAll
-  parent: MisfitsM14Tier2Spawner_RefMeleeAll
+  id: F14Tier2WeaponSpawnerMult03MeleeAll
+  parent: F14Tier2SpawnerRefMeleeAll
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier2_MeleeAll
+        tableId: F14WeaponLootTier2MeleeAll
 
 - type: entity
   name: Tier2 Melee All Spawner 1-2
   suffix: Tier2
-  id: MisfitsM14Tier2WeaponSpawner_Mult1_2_MeleeAll
-  parent: MisfitsM14Tier2Spawner_RefMeleeAll
+  id: F14Tier2WeaponSpawnerMult12MeleeAll
+  parent: F14Tier2SpawnerRefMeleeAll
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier2_MeleeAll
+        tableId: F14WeaponLootTier2MeleeAll
 
 
 # MELEE ONE HANDED SPRITE/COLOR REF
@@ -64,7 +64,7 @@
   name: Tier2 Weapon Spawner
   abstract: true
   suffix: Tier2
-  id: MisfitsM14Tier2Spawner_RefMeleeOneHanded
+  id: F14Tier2SpawnerRefMeleeOneHanded
   parent: MarkerBase
   components:
   - type: Sprite
@@ -81,8 +81,8 @@
 - type: entity
   name: Tier2 Melee OneHanded Spawner
   suffix: Tier2
-  id: MisfitsM14Tier2WeaponSpawner_Single_MeleeOneHanded
-  parent: MisfitsM14Tier2Spawner_RefMeleeOneHanded
+  id: F14Tier2WeaponSpawnerSingleMeleeOneHanded
+  parent: F14Tier2SpawnerRefMeleeOneHanded
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
@@ -91,17 +91,17 @@
           value: 1
         children:
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeSharpOneHanded
+            tableId: F14WeaponLootTier2MeleeSharpOneHanded
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeBluntOneHanded
+            tableId: F14WeaponLootTier2MeleeBluntOneHanded
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeOtherOneHanded
+            tableId: F14WeaponLootTier2MeleeOtherOneHanded
 
 - type: entity
   name: Tier2 Melee OneHanded Spawner 0-3
   suffix: Tier2
-  id: MisfitsM14Tier2WeaponSpawner_Mult0_3_MeleeOneHanded
-  parent: MisfitsM14Tier2Spawner_RefMeleeOneHanded
+  id: F14Tier2WeaponSpawnerMult03MeleeOneHanded
+  parent: F14Tier2SpawnerRefMeleeOneHanded
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
@@ -110,17 +110,17 @@
           range: 0, 2
         children:
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeSharpOneHanded
+            tableId: F14WeaponLootTier2MeleeSharpOneHanded
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeBluntOneHanded
+            tableId: F14WeaponLootTier2MeleeBluntOneHanded
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeOtherOneHanded
+            tableId: F14WeaponLootTier2MeleeOtherOneHanded
 
 - type: entity
   name: Tier2 Melee OneHanded Spawner 1-2
   suffix: Tier2
-  id: MisfitsM14Tier2WeaponSpawner_Mult1_2_MeleeOneHanded
-  parent: MisfitsM14Tier2Spawner_RefMeleeOneHanded
+  id: F14Tier2WeaponSpawnerMult12MeleeOneHanded
+  parent: F14Tier2SpawnerRefMeleeOneHanded
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
@@ -129,11 +129,11 @@
           range: 1, 1
         children:
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeSharpOneHanded
+            tableId: F14WeaponLootTier2MeleeSharpOneHanded
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeBluntOneHanded
+            tableId: F14WeaponLootTier2MeleeBluntOneHanded
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeOtherOneHanded
+            tableId: F14WeaponLootTier2MeleeOtherOneHanded
 
 # MELEE TWO HANDED SPRITE/COLOR REF
 
@@ -141,7 +141,7 @@
   name: Tier2 Weapon Spawner
   abstract: true
   suffix: Tier2
-  id: MisfitsM14Tier2Spawner_RefMeleeTwoHanded
+  id: F14Tier2SpawnerRefMeleeTwoHanded
   parent: MarkerBase
   components:
   - type: Sprite
@@ -159,8 +159,8 @@
 - type: entity
   name: Tier2 Melee TwoHanded Spawner
   suffix: Tier2
-  id: MisfitsM14Tier2WeaponSpawner_Single_MeleeTwoHanded
-  parent: MisfitsM14Tier2Spawner_RefMeleeTwoHanded
+  id: F14Tier2WeaponSpawnerSingleMeleeTwoHanded
+  parent: F14Tier2SpawnerRefMeleeTwoHanded
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
@@ -169,17 +169,17 @@
           value: 1
         children:
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeSharpTwoHanded
+            tableId: F14WeaponLootTier2MeleeSharpTwoHanded
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeBluntTwoHanded
+            tableId: F14WeaponLootTier2MeleeBluntTwoHanded
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeOtherTwoHanded
+            tableId: F14WeaponLootTier2MeleeOtherTwoHanded
 
 - type: entity
   name: Tier2 Melee TwoHanded Spawner 0-3
   suffix: Tier2
-  id: MisfitsM14Tier2WeaponSpawner_Mult0_3_MeleeTwoHanded
-  parent: MisfitsM14Tier2Spawner_RefMeleeTwoHanded
+  id: F14Tier2WeaponSpawnerMult03MeleeTwoHanded
+  parent: F14Tier2SpawnerRefMeleeTwoHanded
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
@@ -188,17 +188,17 @@
           range: 0, 2
         children:
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeSharpTwoHanded
+            tableId: F14WeaponLootTier2MeleeSharpTwoHanded
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeBluntTwoHanded
+            tableId: F14WeaponLootTier2MeleeBluntTwoHanded
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeOtherTwoHanded
+            tableId: F14WeaponLootTier2MeleeOtherTwoHanded
 
 - type: entity
   name: Tier2 Melee TwoHanded Spawner 1-2
   suffix: Tier2
-  id: MisfitsM14Tier2WeaponSpawner_Mult1_2_MeleeTwoHanded
-  parent: MisfitsM14Tier2Spawner_RefMeleeTwoHanded
+  id: F14Tier2WeaponSpawnerMult12MeleeTwoHanded
+  parent: F14Tier2SpawnerRefMeleeTwoHanded
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
@@ -207,8 +207,8 @@
           range: 1, 1
         children:
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeSharpTwoHanded
+            tableId: F14WeaponLootTier2MeleeSharpTwoHanded
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeBluntTwoHanded
+            tableId: F14WeaponLootTier2MeleeBluntTwoHanded
         - !type:NestedSelector
-            tableId: MisfitsM14WeaponLootTier2_MeleeOtherTwoHanded
+            tableId: F14WeaponLootTier2MeleeOtherTwoHanded

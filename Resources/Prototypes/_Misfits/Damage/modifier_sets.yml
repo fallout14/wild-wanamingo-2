@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Damage/modifier_sets.yml, Resources/Prototypes/_Nuclear14/Damage/modifier_sets.yml
 
 - type: damageModifierSet
-  id: MisfitsC27Silicon
+  id: F14C27Silicon
   coefficients:
     Shock: 1.0       # vulnerable — electrical disrupts motor control / circuitry # Temp disabled untill someone fixes plasma.
     Radiation: 0.0   # full immunity — sealed chassis, no organic components
@@ -10,7 +10,7 @@
   # (raw HP only). Keeps flavor: Shock weakness, Radiation immunity.
 
 - type: damageModifierSet
-  id: MisfitsDeathclawHide
+  id: F14DeathclawHide
   coefficients:
     Blunt: 0.5
     Slash: 0.5
@@ -32,7 +32,7 @@
 # Stage 2: arms and one leg mutated — minor physical resistance, flesh toughening.
 
 - type: damageModifierSet
-  id: MisfitsSuperMutant
+  id: F14SuperMutant
   coefficients:
     Blunt: 0.7
     Slash: 0.7
@@ -52,7 +52,7 @@
 # approximated here as flat Piercing coefficient reduction.
 
 - type: damageModifierSet
-  id: MisfitsSuperMutantMob # Thick mutant hide, highly radiation resistant, shrugs off weak impacts.
+  id: F14SuperMutantMob # Thick mutant hide, highly radiation resistant, shrugs off weak impacts.
   coefficients:
     Blunt: 0.85
     Slash: 0.85

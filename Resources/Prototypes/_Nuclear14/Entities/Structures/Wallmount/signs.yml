@@ -2,8 +2,8 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Wallmount/signs.yml
 
 - type: entity
-  parent: N14SignBase
-  id: N14SignBar
+  parent: F14SignBase
+  id: F14SignBar
   name: bar sign
   description: Bar! Get drunk here.
   suffix: Mapping
@@ -13,8 +13,8 @@
     state: bar
 
 - type: entity
-  parent: N14SignBar
-  id: N14SignClinic
+  parent: F14SignBar
+  id: F14SignClinic
   name: clinic sign
   description: A clinic sign. Hopefully they have meds.
   components:
@@ -26,8 +26,8 @@
     color: '#00ff00'
 
 - type: entity
-  parent: N14SignBar
-  id: N14SignOpen1
+  parent: F14SignBar
+  id: F14SignOpen1
   name: open sign
   description: Open for business. Maybe.
   components:
@@ -39,29 +39,29 @@
     color: '#ff0000'
 
 - type: entity
-  parent: N14SignOpen1
-  id: N14SignOpen2
+  parent: F14SignOpen1
+  id: F14SignOpen2
   components:
   - type: Sprite
     state: open_bar
 
 - type: entity
-  parent: N14SignOpen1
-  id: N14SignOpenOn1
+  parent: F14SignOpen1
+  id: F14SignOpenOn1
   components:
   - type: Sprite
     state: open_on
 
 - type: entity
-  parent: N14SignOpen1
-  id: N14SignOpenOn2
+  parent: F14SignOpen1
+  id: F14SignOpenOn2
   components:
   - type: Sprite
     state: open_bar_on
 
 - type: entity
-  parent: N14SignBase
-  id: N14SignForRent
+  parent: F14SignBase
+  id: F14SignForRent
   name: for rent sign
   description: A sign advertising a place for rent.
   components:
@@ -70,8 +70,8 @@
     state: rent
 
 - type: entity
-  parent: N14SignBase
-  id: N14SignNotice
+  parent: F14SignBase
+  id: F14SignNotice
   name: notice sign
   description: NOTICE!
   components:
@@ -80,8 +80,8 @@
     state: notice_sign
 
 - type: entity
-  parent: N14SignNotice
-  id: N14SignDanger
+  parent: F14SignNotice
+  id: F14SignDanger
   name: danger sign
   description: Danger.
   components:
@@ -89,8 +89,8 @@
     state: danger_sign
 
 - type: entity
-  parent: N14SignNotice
-  id: N14WallDecorExitsign
+  parent: F14SignNotice
+  id: F14WallDecorExitsign
   name: exit sign
   description: A sign that says EXIT. I wonder what it means.
   components:
@@ -102,8 +102,8 @@
 # 64x32
 
 - type: entity
-  parent: N14SignBar
-  id: N14SignBazaarOn
+  parent: F14SignBar
+  id: F14SignBazaarOn
   name: bazaar sign
   description: A sign for a bazaar. How bizarre.
   components:
@@ -116,8 +116,8 @@
     color: '#ff8000'
 
 - type: entity
-  parent: N14SignBazaarOn
-  id: N14SignHotel
+  parent: F14SignBazaarOn
+  id: F14SignHotel
   name: hotel sign
   description: A sign for a hotel. Get a room!
   components:
@@ -125,8 +125,8 @@
     state: hotel
 
 - type: entity
-  parent: N14SignBazaarOn
-  id: N14SignPrivateProperty
+  parent: F14SignBazaarOn
+  id: F14SignPrivateProperty
   name: private property sign
   description: A private property sign.
   components:
@@ -134,8 +134,8 @@
     state: private
 
 - type: entity
-  parent: N14SignBazaarOn
-  id: N14SignOpenBig
+  parent: F14SignBazaarOn
+  id: F14SignOpenBig
   name: open sign
   description: We are open sign. I hope so.
   components:
@@ -147,8 +147,8 @@
     color: '#ff0000'
 
 - type: entity
-  parent: N14SignBazaarOn
-  id: N14SignWorkersOnly
+  parent: F14SignBazaarOn
+  id: F14SignWorkersOnly
   name: workers only sign
   description: No tresspassing!
   components:
@@ -159,8 +159,8 @@
 # Scale these by 0.5, 0.5
 
 - type: entity
-  parent: N14SignBase
-  id: N14SignBarstowStrongExpress
+  parent: F14SignBase
+  id: F14SignBarstowStrongExpress
   name: Barstow Strong Express sign
   description: A sign for Barstow Strong Express.
   components:
@@ -170,8 +170,8 @@
     state: barstow_strong_express
 
 - type: entity
-  parent: N14SignBarstowStrongExpress
-  id: N14SignMassFusion
+  parent: F14SignBarstowStrongExpress
+  id: F14SignMassFusion
   name: Mass Fusion sign
   description: A sign for Mass Fusion.
   components:
@@ -179,8 +179,8 @@
     state: massfusion
 
 - type: entity
-  parent: N14SignBarstowStrongExpress
-  id: N14SignRedRocket
+  parent: F14SignBarstowStrongExpress
+  id: F14SignRedRocket
   name: Red Rocket sign
   description: A sign for Red Rocket. Diesel and Fusion.
   components:
@@ -191,8 +191,8 @@
 # Scale these by 0.75, 0.75
 
 - type: entity
-  parent: N14SignBase
-  id: N14SignGroceries
+  parent: F14SignBase
+  id: F14SignGroceries
   name: Groceries sign
   description: A sign for Cornucopia Fresh Groceries.
   components:
@@ -205,8 +205,8 @@
 # Scale these by 0.5, 0.5
 
 - type: entity
-  parent: N14SignBase
-  id: N14SignAmeliaEspresso
+  parent: F14SignBase
+  id: F14SignAmeliaEspresso
   name: Amelia Espresso sign
   description: A sign for a coffee place.
   components:
@@ -216,8 +216,8 @@
     state: amelia_espresso
 
 - type: entity
-  parent: N14SignAmeliaEspresso
-  id: N14SignBeantownBrewery
+  parent: F14SignAmeliaEspresso
+  id: F14SignBeantownBrewery
   name: Beantown Brewery sign
   description: A sign for Beantown Brewery.
   components:
@@ -225,8 +225,8 @@
     state: beantown_brewery
 
 - type: entity
-  parent: N14SignAmeliaEspresso
-  id: N14SignFizzys
+  parent: F14SignAmeliaEspresso
+  id: F14SignFizzys
   name: Fizzy's sign
   description: A sign for Fizzys fountain drinks.
   components:
@@ -234,8 +234,8 @@
     state: fizzys
 
 - type: entity
-  parent: N14SignAmeliaEspresso
-  id: N14SignFlyHorizon
+  parent: F14SignAmeliaEspresso
+  id: F14SignFlyHorizon
   name: Fly Horizon Skyways sign
   description: An advert for Fly Horizon Skyways.
   components:
@@ -243,8 +243,8 @@
     state: flyhorizonskyways
 
 - type: entity
-  parent: N14SignAmeliaEspresso
-  id: N14SignHubrisComics
+  parent: F14SignAmeliaEspresso
+  id: F14SignHubrisComics
   name: Hubris Comics sign
   description: A sign for Hubris Comics.
   components:
@@ -252,8 +252,8 @@
     state: hubris_comics
 
 - type: entity
-  parent: N14SignAmeliaEspresso
-  id: N14SignMamaDolces
+  parent: F14SignAmeliaEspresso
+  id: F14SignMamaDolces
   name: Mama Dolce's sign
   description: A sign for Mama Dolce's food processing plant.
   components:
@@ -261,8 +261,8 @@
     state: mamadolces
 
 - type: entity
-  parent: N14SignAmeliaEspresso
-  id: N14SignSchoelt
+  parent: F14SignAmeliaEspresso
+  id: F14SignSchoelt
   name: Schoelt sign
   description: A sign for Schoelt's propane fuels.
   components:
@@ -270,8 +270,8 @@
     state: schoelt
 
 - type: entity
-  parent: N14SignAmeliaEspresso
-  id: N14SignSullivans
+  parent: F14SignAmeliaEspresso
+  id: F14SignSullivans
   name: Sullivan's sign
   description: A sign for Sullivan's Irish bar.
   components:
@@ -279,8 +279,8 @@
     state: sullivans
 
 - type: entity
-  parent: N14SignAmeliaEspresso
-  id: N14SignTheJerkShakes
+  parent: F14SignAmeliaEspresso
+  id: F14SignTheJerkShakes
   name: The Jerk sign
   description: A sign for The Jerk fountain drinks and shakes.
   components:
@@ -288,8 +288,8 @@
     state: thejerk_shakes
 
 - type: entity
-  parent: N14SignAmeliaEspresso
-  id: N14SignWickedShipping
+  parent: F14SignAmeliaEspresso
+  id: F14SignWickedShipping
   name: Whicked Shipping sign
   description: A sign for Whicked Shipping Co.
   components:

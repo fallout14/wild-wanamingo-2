@@ -2,7 +2,7 @@
 # Smelted back into ingots/sheets at the smelter. Sprites from Mojave Sun 13.
 
 - type: entity
-  parent: N14ScrapBase
+  parent: F14ScrapBase
   id: F14ScrapAluminum
   name: aluminum scrap
   categories: [ HideSpawnMenu ]
@@ -31,7 +31,7 @@
     count: 1
 
 - type: entity
-  parent: N14ScrapBase
+  parent: F14ScrapBase
   id: F14ScrapSilver
   name: silver scrap
   categories: [ HideSpawnMenu ]
@@ -60,7 +60,7 @@
     count: 1
 
 - type: entity
-  parent: N14ScrapBase
+  parent: F14ScrapBase
   id: F14ScrapGlass
   name: glass scrap
   description: Broken glass. It can be melted back into sheets.

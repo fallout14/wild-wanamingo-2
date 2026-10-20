@@ -1,39 +1,39 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier4Weapon/Tier4WeaponTables/Tier4WeaponMelee/Tier4WeaponMeleeTwoHand.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_MeleeBluntTwoHanded
+  id: F14WeaponLootTier4MeleeBluntTwoHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14SledgeHammer
+      id: F14SledgeHammer
     - !type:EntSelector
-      id: N14SuperSledgeHammer
+      id: F14SuperSledgeHammer
     - !type:EntSelector
-      id: N14BaseBallBat
+      id: F14BaseBallBat
     - !type:EntSelector
-      id: N14TribalBigClub
+      id: F14TribalBigClub
     - !type:EntSelector
-      id: N14TribalBigClubDecorated
+      id: F14TribalBigClubDecorated
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_MeleeSharpTwoHanded
+  id: F14WeaponLootTier4MeleeSharpTwoHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WastelandFlagSpear
+      id: F14WastelandFlagSpear
     - !type:EntSelector
-      id: N14WastelandSpear
+      id: F14WastelandSpear
     - !type:EntSelector
-      id: N14WastelandTribalSpear
+      id: F14WastelandTribalSpear
     - !type:EntSelector
-      id: N14WastelandPolearm
+      id: F14WastelandPolearm
     - !type:EntSelector
-      id: N14FireAxe
+      id: F14FireAxe
     - !type:EntSelector
-      id: N14BaseAxe
+      id: F14BaseAxe
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_MeleeOtherTwoHanded
+  id: F14WeaponLootTier4MeleeOtherTwoHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector

@@ -3,7 +3,7 @@
 
 - type: entity
   abstract: true
-  id: N14GasPipeBase
+  id: F14GasPipeBase
   parent: GasPipeBase
   placement:
     mode: SnapgridCenter
@@ -17,8 +17,8 @@
 #Note: The PipeDirection of the PipeNode should be the south-facing version, because the entity starts at an angle of 0 (south)
 
 - type: entity
-  parent: N14GasPipeBase
-  id: N14GasPipeStraight
+  parent: F14GasPipeBase
+  id: F14GasPipeStraight
   suffix: Straight
   components:
   - type: NodeContainer
@@ -33,8 +33,8 @@
         map: [ "enum.PipeVisualLayers.Pipe" ]
 
 - type: entity
-  parent: N14GasPipeBase
-  id: N14GasPipeBend
+  parent: F14GasPipeBase
+  id: F14GasPipeBend
   suffix: Bend
   components:
   - type: NodeContainer
@@ -49,8 +49,8 @@
         map: [ "enum.PipeVisualLayers.Pipe" ]
 
 - type: entity
-  parent: N14GasPipeBase
-  id: N14GasPipeTJunction
+  parent: F14GasPipeBase
+  id: F14GasPipeTJunction
   suffix: TJunction
   components:
   - type: NodeContainer
@@ -65,8 +65,8 @@
         map: [ "enum.PipeVisualLayers.Pipe" ]
 
 - type: entity
-  parent: N14GasPipeBase
-  id: N14GasPipeFourway
+  parent: F14GasPipeBase
+  id: F14GasPipeFourway
   suffix: Fourway
   components:
   - type: Transform

@@ -2,8 +2,8 @@
 
 - type: entity
   name: human burger
-  parent: N14FoodBurgerBase
-  id: MisfitsCookedFoodBurgerHuman
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodBurgerHuman
   description: Still a good source of protein...
   components:
   - type: FlavorProfile
@@ -28,8 +28,8 @@
 
 - type: entity
   name: supermutant burger
-  parent: N14FoodBurgerBase
-  id: MisfitsCookedFoodSupermutantBurger
+  parent: F14FoodBurgerBase
+  id: F14CookedFoodSupermutantBurger
   description: Tastes alright, but you better have a steel jaw.
   components:
   - type: FlavorProfile

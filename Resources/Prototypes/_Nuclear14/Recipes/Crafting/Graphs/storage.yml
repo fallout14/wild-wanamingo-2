@@ -2,19 +2,19 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Crafting/Graphs/storage.yml
 
 - type: constructionGraph
-  id: N14CrateAluminium
+  id: F14CrateAluminium
   start: start
   graph:
     - node: start
       edges:
         - to: n14cratealuminium
           steps:
-            - material: N14Aluminum
+            - material: F14Aluminum
               amount: 5
               doAfter: 5
 
     - node: n14cratealuminium
-      entity: N14CrateAluminium
+      entity: F14CrateAluminium
       edges:
         - to: start
           steps:
@@ -25,7 +25,7 @@
               welded: false
           completed:
             - !type:SpawnPrototype
-              prototype: N14IngotAluminum1
+              prototype: F14IngotAluminum1
               amount: 5
             - !type:EmptyAllContainers
             - !type:DeleteEntity

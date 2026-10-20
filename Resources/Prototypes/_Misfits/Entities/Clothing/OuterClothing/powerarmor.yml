@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Clothing/OuterClothing/powerarmor.yml
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT45
-  id: MisfitsEnclavePowerArmor
+  parent: F14ClothingOuterPowerArmorT45
+  id: F14EnclavePowerArmor
   # #Misfits Change - Renamed to APA MK I (removed 'Experimental' prefix per rebalance)
   name: APA MK I Power Armor
   description: A set of APA MK I power armor made to fit a supermutant, the extensive modifications have left it less durable than a standard set of APA MK I.
@@ -30,23 +30,23 @@
   - type: Unremoveable # This is your casket. Service guarantees citizenship.
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
   - type: UserInterface
     interfaces:
       enum.MultiToggleClothingUiKey.Key:
         type: MultiToggleableClothingBoundUserInterface
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: MisfitsEnclavePowerArmorHelmet
-      gloves: N14ClothingPAGauntlets
-      shoes: N14ClothingPABoots
-      back: N14ClothingPowerSystemsBack
+      head: F14EnclavePowerArmorHelmet
+      gloves: F14ClothingPAGauntlets
+      shoes: F14ClothingPABoots
+      back: F14ClothingPowerSystemsBack
   - type: ExplosionResistance
     damageCoefficient: 0.12 # #Misfits Tweak: T-51 blast resistance — ~14 HP at ground zero
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT45
-  id: MisfitsT45ClothingOuterPowerArmorBoS
+  parent: F14ClothingOuterPowerArmorT45
+  id: F14T45ClothingOuterPowerArmorBoS
   name: T-45 Power Armor [Bos]
   description: An old suit of T-45 power armor. It's amazing these still exist, given how many have been mangled and destroyed in combat both before and after the bombs dropped.
   components:
@@ -74,27 +74,27 @@
         type: MultiToggleableClothingBoundUserInterface
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: MisfitsClothingHeadHelmetPowerArmorT45BOS
-      gloves: N14ClothingPAGauntlets
-      shoes: N14ClothingPABoots
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorT45BOS
+      gloves: F14ClothingPAGauntlets
+      shoes: F14ClothingPABoots
+      back: F14ClothingPowerSystemsBack
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT60
-  id: MisfitsClothingOuterPowerArmorT60BOS
+  parent: F14ClothingOuterPowerArmorT60
+  id: F14ClothingOuterPowerArmorT60BOS
   name: T-60 Power Armor
   description: An old T-60 power armor suit from the Brotherhood of Steel. It has a tactical map feed built into the heads-up display, and looks well maintained.
   components:
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: MisfitsClothingHeadHelmetPowerArmorT60BOS # #Misfits Change - BOS T60 uses BOS tactical-HUD helmet
-      gloves: N14ClothingPAGauntlets
-      shoes: N14ClothingPABoots
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorT60BOS # #Misfits Change - BOS T60 uses BOS tactical-HUD helmet
+      gloves: F14ClothingPAGauntlets
+      shoes: F14ClothingPABoots
+      back: F14ClothingPowerSystemsBack
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT60 # #Misfits Add - Midwest PA are loadout options for Paladins/Senior Paladins/Head Paladins. Each parents off of the PA that role usually gets - they're drip, identical statwise.
-  id: MisfitsClothingOuterPowerArmorMidwestSilver
+  parent: F14ClothingOuterPowerArmorT60 # #Misfits Add - Midwest PA are loadout options for Paladins/Senior Paladins/Head Paladins. Each parents off of the PA that role usually gets - they're drip, identical statwise.
+  id: F14ClothingOuterPowerArmorMidwestSilver
   name: Midwest Silver Power Armor
   description: An unknown model of power armor manufactured by the Brotherhood of Steel. It has a chain that likely serves some ceremonial purpose, and is decorated in bright silver paint.
   components:
@@ -104,9 +104,9 @@
     sprite: Misfits/Clothing/OuterClothing/PowerArmor/midwest_silver_pa.rsi
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: MisfitsClothingHeadHelmetPowerArmorMidwestSilver
-      gloves: N14ClothingPAGauntlets
-      shoes: N14ClothingPABoots
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorMidwestSilver
+      gloves: F14ClothingPAGauntlets
+      shoes: F14ClothingPABoots
+      back: F14ClothingPowerSystemsBack
 
 #MIsfit

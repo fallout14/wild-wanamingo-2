@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/terminals.yml
 
 - type: constructionGraph
-  id: N14TerminalNew
+  id: F14TerminalNew
   start: start
   graph:
     - node: start
@@ -23,7 +23,7 @@
               doAfter: 3
 
     - node: missingWires
-      entity: N14ComputerTerminalBase
+      entity: F14ComputerTerminalBase
       edges:
         - to: Frame
           steps:
@@ -39,7 +39,7 @@
               doAfter: 2
 
     - node: Frame
-      entity: N14ComputerTerminalNewWired
+      entity: F14ComputerTerminalNewWired
       edges:
         - to: Terminal
           steps:
@@ -56,7 +56,7 @@
               doAfter: 1
 
     - node: Terminal
-      entity: N14ComputerTerminalNew
+      entity: F14ComputerTerminalNew
       edges:
         - to: Frame
           steps:
@@ -64,15 +64,15 @@
               doAfter: 2
           completed:
             - !type:SpawnPrototype
-              prototype: N14ComputerTerminalNewWired
+              prototype: F14ComputerTerminalNewWired
               amount: 1
             - !type:SpawnPrototype
-              prototype: N14MaterialCircuitry1
+              prototype: F14MaterialCircuitry1
               amount: 1
             - !type:DeleteEntity {}
 
     - node: Broken
-      entity: N14ComputerTerminalNewBroken
+      entity: F14ComputerTerminalNewBroken
       edges:
         - to: start
           steps:
@@ -88,7 +88,7 @@
 # Normal Terminal
 
 - type: constructionGraph
-  id: N14Terminal
+  id: F14Terminal
   start: start
   graph:
     - node: start
@@ -109,7 +109,7 @@
               doAfter: 3
 
     - node: missingWires
-      entity: N14ComputerTerminalBase
+      entity: F14ComputerTerminalBase
       edges:
         - to: Frame
           steps:
@@ -125,7 +125,7 @@
               doAfter: 2
 
     - node: Frame
-      entity: N14ComputerTerminalWired
+      entity: F14ComputerTerminalWired
       edges:
         - to: Terminal
           steps:
@@ -142,7 +142,7 @@
               doAfter: 1
 
     - node: Terminal
-      entity: N14ComputerTerminal
+      entity: F14ComputerTerminal
       edges:
         - to: Frame
           steps:
@@ -150,10 +150,10 @@
               doAfter: 2
           completed:
             - !type:SpawnPrototype
-              prototype: N14ComputerTerminalWired
+              prototype: F14ComputerTerminalWired
               amount: 1
             - !type:SpawnPrototype
-              prototype: N14MaterialCircuitry1
+              prototype: F14MaterialCircuitry1
               amount: 1
             - !type:DeleteEntity {}
 
@@ -161,7 +161,7 @@
           steps:
             - tool: Screwing
               doAfter: 1
-            - tag: Bomb # Corvax-Change
+            - tag: F14Bomb # Corvax-Change
               store: bomb
               name: misfits-kit-explosive
               icon:
@@ -169,12 +169,12 @@
                 state: icon
           completed:
             - !type:SpawnPrototype
-              prototype: N14ComputerTerminalRigged
+              prototype: F14ComputerTerminalRigged
               amount: 1
             - !type:DeleteEntity {}
 
     - node: Rigged
-      entity: N14ComputerTerminalRigged
+      entity: F14ComputerTerminalRigged
       edges:
         - to: Terminal
           steps:
@@ -182,7 +182,7 @@
               doAfter: 2
           completed:
             - !type:SpawnPrototype
-              prototype: N14ComputerTerminal
+              prototype: F14ComputerTerminal
               amount: 1
             - !type:SpawnPrototype
               prototype: C4
@@ -190,7 +190,7 @@
             - !type:DeleteEntity {}
 
     - node: Broken
-      entity: N14ComputerTerminalBroken
+      entity: F14ComputerTerminalBroken
       edges:
         - to: start
           steps:

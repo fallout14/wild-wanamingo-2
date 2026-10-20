@@ -43,7 +43,7 @@ public sealed partial class AddictionSystem : SharedAddictionSystem
     [Dependency] private SharedStaminaSystem _stamina = default!;
     [Dependency] private DamageableSystem _damageable = default!;
 
-    private static readonly ProtoId<LocalizedDatasetPrototype> AddictionEffects = "MisfitsAddictionEffects";
+    private static readonly ProtoId<LocalizedDatasetPrototype> AddictionEffects = "F14AddictionEffects";
 
     private const float MinEffectInterval = 120f;
     private const float MaxEffectInterval = 300f;

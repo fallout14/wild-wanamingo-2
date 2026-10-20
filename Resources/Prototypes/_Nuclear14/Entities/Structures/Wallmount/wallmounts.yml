@@ -3,7 +3,7 @@
 # Rewritten for Wizden's stash system (SecretStash + ToolOpenable), same pattern as the toilet stash.
 - type: entity
   parent: BaseSign
-  id: N14WallmountVent
+  id: F14WallmountVent
   name: vent
   description: An airvent. Could be a good stash.
   components:
@@ -32,8 +32,8 @@
           Closed: { state: vent }
 
 - type: entity
-  parent: N14WallmountVent
-  id: N14WallmountVentDamaged
+  parent: F14WallmountVent
+  id: F14WallmountVentDamaged
   suffix: damaged
   components:
   - type: Sprite
@@ -48,8 +48,8 @@
           Closed: { state: vent-damaged }
 
 - type: entity
-  parent: N14WallmountVent
-  id: N14WallmountVentOpen
+  parent: F14WallmountVent
+  id: F14WallmountVentOpen
   suffix: open
   components:
   - type: Sprite

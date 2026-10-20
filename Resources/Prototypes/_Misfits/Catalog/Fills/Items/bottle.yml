@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/Items/bottle.yml
 
 - type: entity
-  id: MisfitsAntibioticsChemistryBottle
+  id: F14AntibioticsChemistryBottle
   name: antibiotics bottle
   description: A broad-spectrum antimicrobial treatment intended for serious or uncertain infections.
   parent: BaseChemistryBottleFilled
@@ -13,11 +13,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsAntibiotics
+      - ReagentId: F14Antibiotics
         Quantity: 30
 
 - type: entity
-  id: MisfitsRadShieldChemistryBottle
+  id: F14RadShieldChemistryBottle
   name: rad shield bottle
   description: A potent radioprotective compound that shields the body from incoming radiation without removing contamination already absorbed.
   parent: BaseChemistryBottleFilled
@@ -29,11 +29,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsRadShield
+      - ReagentId: F14RadShield
         Quantity: 30
 
 - type: entity
-  id: MisfitsX111CompoundChemistryBottle
+  id: F14X111CompoundChemistryBottle
   name: x-111 compound bottle
   description: An advanced radiological treatment that strips large amounts of radiation from the body at alarming speed.
   parent: BaseChemistryBottleFilled
@@ -45,11 +45,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsX111Compound
+      - ReagentId: F14X111Compound
         Quantity: 30
 
 - type: entity
-  id: MisfitsRushingWaterChemistryBottle
+  id: F14RushingWaterChemistryBottle
   name: rushing water bottle
   description: A diluted stimulant mixture that accelerates the body and provides a brief burst of recovery.
   parent: BaseChemistryBottleFilled
@@ -61,11 +61,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsRushingWater
+      - ReagentId: F14RushingWater
         Quantity: 30
 
 - type: entity
-  id: MisfitsBloodShieldChemistryBottle
+  id: F14BloodShieldChemistryBottle
   name: blood shield bottle
   description: A thick wasteland tonic that promotes recovery while helping the body clear circulating toxins.
   parent: BaseChemistryBottleFilled
@@ -77,11 +77,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsBloodShield
+      - ReagentId: F14BloodShield
         Quantity: 30
 
 - type: entity
-  id: MisfitsFieryPurgativeChemistryBottle
+  id: F14FieryPurgativeChemistryBottle
   name: fiery purgative bottle
   description: A foul, burning mixture that purges poison and radiation at the cost of weakness and nausea.
   parent: BaseChemistryBottleFilled
@@ -93,11 +93,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsFieryPurgative
+      - ReagentId: F14FieryPurgative
         Quantity: 30
 
 - type: entity
-  id: MisfitsRefreshingBeverageChemistryBottle
+  id: F14RefreshingBeverageChemistryBottle
   name: refreshing beverage bottle
   description: An extraordinarily rich restorative drink that treats wounds, toxins, radiation and withdrawal all at once.
   parent: BaseChemistryBottleFilled
@@ -109,11 +109,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsRefreshingBeverage
+      - ReagentId: F14RefreshingBeverage
         Quantity: 30
 
 - type: entity
-  id: MisfitsHerbalStimulantChemistryBottle
+  id: F14HerbalStimulantChemistryBottle
   name: herbal stimulant bottle
   description: A sharp herbal tonic that drives away drowsiness and keeps an exhausted patient moving.
   parent: BaseChemistryBottleFilled
@@ -125,11 +125,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsHerbalStimulant
+      - ReagentId: F14HerbalStimulant
         Quantity: 30
 
 - type: entity
-  id: MisfitsSkeetoSpitChemistryBottle
+  id: F14SkeetoSpitChemistryBottle
   name: skeeto spit bottle
   description: A crude blood-based tonic that temporarily bolsters physical endurance.
   parent: BaseChemistryBottleFilled
@@ -141,11 +141,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsSkeetoSpit
+      - ReagentId: F14SkeetoSpit
         Quantity: 30
 
 - type: entity
-  id: MisfitsPenicillinChemistryBottle
+  id: F14PenicillinChemistryBottle
   name: penicillin bottle
   description: A classic antibacterial drug useful against susceptible bacterial infections.
   parent: BaseChemistryBottleFilled
@@ -157,11 +157,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsPenicillin
+      - ReagentId: F14Penicillin
         Quantity: 30
 
 - type: entity
-  id: MisfitsPrussianBlueChemistryBottle
+  id: F14PrussianBlueChemistryBottle
   name: prussian blue bottle
   description: An insoluble binding agent used to slowly draw certain radioactive contaminants and toxins out of the body.
   parent: BaseChemistryBottleFilled
@@ -173,11 +173,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsPrussianBlue
+      - ReagentId: F14PrussianBlue
         Quantity: 30
 
 - type: entity
-  id: MisfitsPilgrimsRemedyChemistryBottle
+  id: F14PilgrimsRemedyChemistryBottle
   name: pilgrim's remedy bottle
   description: A mild wasteland cure-all made from common medicinal plants, useful for wounds, toxins and light radiation exposure.
   parent: BaseChemistryBottleFilled
@@ -189,11 +189,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsPilgrimsRemedy
+      - ReagentId: F14PilgrimsRemedy
         Quantity: 30
 
 - type: entity
-  id: MisfitsFuryChemistryBottle
+  id: F14FuryChemistryBottle
   name: fury bottle
   description: A violent combat chem that greatly increases close-quarters aggression, strength and tolerance for injury.
   parent: BaseChemistryBottleFilled
@@ -205,11 +205,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsFury
+      - ReagentId: F14Fury
         Quantity: 30
 
 - type: entity
-  id: MisfitsCalmexChemistryBottle
+  id: F14CalmexChemistryBottle
   name: calmex bottle
   description: A refined performance drug that sharpens perception and coordination while producing an unnatural sense of calm.
   parent: BaseChemistryBottleFilled
@@ -221,11 +221,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsCalmex
+      - ReagentId: F14Calmex
         Quantity: 30
 
 - type: entity
-  id: MisfitsOverdriveChemistryBottle
+  id: F14OverdriveChemistryBottle
   name: overdrive bottle
   description: A psycho-derived combat stimulant intended to push damage output and combat performance beyond safe limits.
   parent: BaseChemistryBottleFilled
@@ -237,11 +237,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsOverdrive
+      - ReagentId: F14Overdrive
         Quantity: 30
 
 - type: entity
-  id: MisfitsXCellChemistryBottle
+  id: F14XCellChemistryBottle
   name: x-cell bottle
   description: A rare pre-war prototype chem that enhances nearly every aspect of physical and mental performance.
   parent: BaseChemistryBottleFilled
@@ -253,11 +253,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsXCell
+      - ReagentId: F14XCell
         Quantity: 30
 
 - type: entity
-  id: MisfitsCrankChemistryBottle
+  id: F14CrankChemistryBottle
   name: crank bottle
   description: A harsh improvised stimulant that increases speed and wakefulness while placing heavy strain on the body.
   parent: BaseChemistryBottleFilled
@@ -269,11 +269,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsCrank
+      - ReagentId: F14Crank
         Quantity: 30
 
 - type: entity
-  id: MisfitsLazarusCompoundChemistryBottle
+  id: F14LazarusCompoundChemistryBottle
   name: lazarus compound bottle
   description: An experimental emergency serum capable of dragging a critically injured patient back from the edge, while inflicting severe cellular stress.
   parent: BaseChemistryBottleFilled
@@ -285,11 +285,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsLazarusCompound
+      - ReagentId: F14LazarusCompound
         Quantity: 30
 
 - type: entity
-  id: MisfitsClearwakeChemistryBottle
+  id: F14ClearwakeChemistryBottle
   name: clearwake bottle
   description: An emergency wakefulness drug that breaks through sedation and collapse long enough to keep a patient conscious.
   parent: BaseChemistryBottleFilled
@@ -301,11 +301,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsClearwake
+      - ReagentId: F14Clearwake
         Quantity: 30
 
 - type: entity
-  id: MisfitsWidowbaneChemistryBottle
+  id: F14WidowbaneChemistryBottle
   name: widowbane bottle
   description: A specialized antidote formulated to neutralize widow's mercy and relieve its respiratory effects.
   parent: BaseChemistryBottleFilled
@@ -317,11 +317,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsWidowbane
+      - ReagentId: F14Widowbane
         Quantity: 30
 
 - type: entity
-  id: MisfitsCinderSerumChemistryBottle
+  id: F14CinderSerumChemistryBottle
   name: cinder serum bottle
   description: A specialized antidote designed to neutralize red bell poison and stabilize its victim.
   parent: BaseChemistryBottleFilled
@@ -333,11 +333,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsCinderSerum
+      - ReagentId: F14CinderSerum
         Quantity: 30
 
 - type: entity
-  id: MisfitsGravesaltChemistryBottle
+  id: F14GravesaltChemistryBottle
   name: gravesalt bottle
   description: A brutal emergency purgative that clears several dangerous venoms at the cost of violent sickness and bodily strain.
   parent: BaseChemistryBottleFilled
@@ -349,11 +349,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsGravesalt
+      - ReagentId: F14Gravesalt
         Quantity: 30
 
 - type: entity
-  id: MisfitsClearheadChemistryBottle
+  id: F14ClearheadChemistryBottle
   name: clearhead bottle
   description: A basic psychiatric stabilizer used to clear drug haze and reduce mild perceptual disturbances.
   parent: BaseChemistryBottleFilled
@@ -365,11 +365,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsClearhead
+      - ReagentId: F14Clearhead
         Quantity: 30
 
 - type: entity
-  id: MisfitsChlorpromazineChemistryBottle
+  id: F14ChlorpromazineChemistryBottle
   name: chlorpromazine bottle
   description: A sedating antipsychotic intended to control agitation, delirium and hallucinations.
   parent: BaseChemistryBottleFilled
@@ -381,11 +381,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsChlorpromazine
+      - ReagentId: F14Chlorpromazine
         Quantity: 30
 
 - type: entity
-  id: MisfitsLucidineChemistryBottle
+  id: F14LucidineChemistryBottle
   name: lucidine bottle
   description: A refined neural stabilizer designed to suppress persistent hallucinations with less sedation than older antipsychotics.
   parent: BaseChemistryBottleFilled
@@ -397,11 +397,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsLucidine
+      - ReagentId: F14Lucidine
         Quantity: 30
 
 - type: entity
-  id: MisfitsPsychoclineChemistryBottle
+  id: F14PsychoclineChemistryBottle
   name: psychocline bottle
   description: A powerful emergency psychiatric drug used to suppress severe delirium and psychotic episodes, often leaving the patient heavily sedated.
   parent: BaseChemistryBottleFilled
@@ -413,11 +413,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsPsychocline
+      - ReagentId: F14Psychocline
         Quantity: 30
 
 - type: entity
-  id: MisfitsNeurostaticChemistryBottle
+  id: F14NeurostaticChemistryBottle
   name: neurostatic bottle
   description: An advanced neurological stabilizer intended for severe hallucinations, toxic delirium and other forms of neural instability.
   parent: BaseChemistryBottleFilled
@@ -429,11 +429,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsNeurostatic
+      - ReagentId: F14Neurostatic
         Quantity: 30
 
 - type: entity
-  id: MisfitsWillowbarkChemistryBottle
+  id: F14WillowbarkChemistryBottle
   name: willowbark analgesic bottle
   description: A bitter medicinal preparation that dulls persistent pain for a short time.
   parent: BaseChemistryBottleFilled
@@ -445,11 +445,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsWillowbark
+      - ReagentId: F14Willowbark
         Quantity: 30
 
 - type: entity
-  id: MisfitsAnodyneChemistryBottle
+  id: F14AnodyneChemistryBottle
   name: anodyne bottle
   description: A basic clinical painkiller that suppresses chronic pain while producing mild drowsiness.
   parent: BaseChemistryBottleFilled
@@ -461,11 +461,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsAnodyne
+      - ReagentId: F14Anodyne
         Quantity: 30
 
 - type: entity
-  id: MisfitsAnalgesineChemistryBottle
+  id: F14AnalgesineChemistryBottle
   name: analgesine bottle
   description: A refined long-lasting analgesic used when ordinary herbal pain relief is no longer sufficient.
   parent: BaseChemistryBottleFilled
@@ -477,11 +477,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsAnalgesine
+      - ReagentId: F14Analgesine
         Quantity: 30
 
 - type: entity
-  id: MisfitsNerveblockChemistryBottle
+  id: F14NerveblockChemistryBottle
   name: nerveblock bottle
   description: A heavy analgesic that strongly suppresses pain by numbing nerve activity, at the cost of sluggish movement and respiratory risk.
   parent: BaseChemistryBottleFilled
@@ -493,11 +493,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsNerveblock
+      - ReagentId: F14Nerveblock
         Quantity: 30
 
 - type: entity
-  id: MisfitsTraumadolChemistryBottle
+  id: F14TraumadolChemistryBottle
   name: traumadol bottle
   description: A battlefield analgesic that dulls pain while providing limited wound treatment and bleeding control.
   parent: BaseChemistryBottleFilled
@@ -509,11 +509,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsTraumadol
+      - ReagentId: F14Traumadol
         Quantity: 30
 
 - type: entity
-  id: MisfitsAnesthezineChemistryBottle
+  id: F14AnesthezineChemistryBottle
   name: anesthezine bottle
   description: A surgical anesthetic that suppresses pain and induces profound sedation, with dangerous consequences at excessive doses.
   parent: BaseChemistryBottleFilled
@@ -525,11 +525,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsAnesthezine
+      - ReagentId: F14Anesthezine
         Quantity: 30
 
 - type: entity
-  id: MisfitsNeuroblockChemistryBottle
+  id: F14NeuroblockChemistryBottle
   name: neuroblock bottle
   description: A high-grade neural analgesic that provides prolonged pain suppression with far less routine sedation than conventional nerve blockers.
   parent: BaseChemistryBottleFilled
@@ -541,11 +541,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsNeuroblock
+      - ReagentId: F14Neuroblock
         Quantity: 30
 
 - type: entity
-  id: MisfitsNeuroregulineChemistryBottle
+  id: F14NeuroregulineChemistryBottle
   name: neuroreguline bottle
   description: An experimental neural regulator intended to suppress severe pain and stabilize disturbed perception at the same time.
   parent: BaseChemistryBottleFilled
@@ -557,11 +557,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsNeuroreguline
+      - ReagentId: F14Neuroreguline
         Quantity: 30
 
 - type: entity
-  id: MisfitsVigilazineChemistryBottle
+  id: F14VigilazineChemistryBottle
   name: vigilazine bottle
   description: An inexpensive stimulant-derived medicine that postpones narcoleptic attacks without the extreme effects of combat stimulants.
   parent: BaseChemistryBottleFilled
@@ -573,11 +573,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsVigilazine
+      - ReagentId: F14Vigilazine
         Quantity: 30
 
 - type: entity
-  id: MisfitsWakeguardChemistryBottle
+  id: F14WakeguardChemistryBottle
   name: wakeguard bottle
   description: A maintenance drug for narcolepsy that keeps sudden sleep attacks at bay without significantly increasing physical performance.
   parent: BaseChemistryBottleFilled
@@ -589,11 +589,11 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsWakeguard
+      - ReagentId: F14Wakeguard
         Quantity: 30
 
 - type: entity
-  id: MisfitsSomnoregulineChemistryBottle
+  id: F14SomnoregulineChemistryBottle
   name: somnoreguline bottle
   description: An advanced sleep-regulation medicine that delays narcoleptic episodes for an extended period and can break through forced sleep.
   parent: BaseChemistryBottleFilled
@@ -605,5 +605,5 @@
     solution:
       maxVol: 30
       reagents:
-      - ReagentId: MisfitsSomnoreguline
+      - ReagentId: F14Somnoreguline
         Quantity: 30

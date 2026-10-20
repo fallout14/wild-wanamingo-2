@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/OuterClothing/wastelanders_armor.yml
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterHighwayPatrolJacket
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterHighwayPatrolJacket
   name: highway patrol jacket
   description: An old police motorcycle jacket with internal padding and a gold badge with the logo of the Utah State Troopers
   components:
@@ -32,8 +32,8 @@
         type: StorageBoundUserInterface
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterMarlowGangOvercoat
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterMarlowGangOvercoat
   name: marlow gang overcoat
   description: A heavy raw buckskin overcoat littered with aged bullet holes and frays from regular wear-and-tear.
   components:
@@ -63,8 +63,8 @@
         type: StorageBoundUserInterface
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterGunfightersOvercoat
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterGunfightersOvercoat
   name: gunfighters overcoat
   description: A thick double-breasted red leather overcoat worn through with scattered tears and bullet holes.
   components:
@@ -94,8 +94,8 @@
         type: StorageBoundUserInterface
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterVegabondsVest
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterVegabondsVest
   name: vegabonds vest
   description: A padded thick red leather vest, coated in stitched pockets and other mends.
   components:
@@ -125,8 +125,8 @@
         type: StorageBoundUserInterface
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterArmorKit
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterArmorKit
   name: armor kit
   description: Separate armor parts you can wear over your clothing, giving basic protection against bullets entering some of your organs. Very well ventilated.
   components:
@@ -145,8 +145,8 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterArmorKitPunk
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterArmorKitPunk
   name: punk armor kit
   description: A couple of armor parts that can be worn over the clothing for moderate protection against the dangers of wasteland. Do you feel lucky now? Well, do ya, punk?
   components:
@@ -165,8 +165,8 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterArmorKitShoulder
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterArmorKitShoulder
   name: shoulder armor kit
   description: A single big metal shoulderplate for the right side, keeping it turned towards the enemy is advisable.
   components:
@@ -187,8 +187,8 @@
 #East Coast /Organization/ Talon Company. Make up the lore as you play them. Why are they west coast? Thats up to you as the player.
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: MisfitsM14ClothingOuterCombatTalon
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterCombatTalon
   name: talon company combat armor
   description: A set of weathered combat armour spray-painted black, with the Talon Company symbol grafted onto the chest. This set has been stripped down to just the chespiece and kneepads, with the right pauldron removed for ease with shouldering rifles.
   components:
@@ -198,8 +198,8 @@
     sprite: Misfits/Clothing/OuterClothing/Armor/talonarmor.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: MisfitsM14ClothingOuterCombatTalonDuster
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterCombatTalonDuster
   name: talon company combat duster armor
   description: A set of weathered combat armour spray-painted black, with the Talon Company symbol grafted onto the chest. This set has been stripped down to just the chespiece and kneepads, the left pauldron stitched into a dark grey duster.
   components:
@@ -211,8 +211,8 @@
 #Marked Men, The men who survived the Divide. How they ended up to the region that they are is up to the player. Armor exclusive to Ghouls + Glowing Ghouls. As Marked Men are technically a unique ghoul species for NV. But sadly not on Misfits.
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: MisfitsM14ClothingOuterMarkedMenCombatTribalArmor
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterMarkedMenCombatTribalArmor
   name: marked men tribal armor
   description: A set of oddly ornate ruined armour put together with scrap metal, license plates and pure anger. While ugly in look, it seems to have a nice amount of protection in it's plates, bearing a striking resemblance to the armour most commonly worn by a Legatus - although lacking it's golden beauty and flowing red cape.
   components:
@@ -222,8 +222,8 @@
     sprite: Misfits/Clothing/OuterClothing/Armor/markedmentribal.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: MisfitsM14ClothingOuterMarkedMenCombatPatrolArmor
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterMarkedMenCombatPatrolArmor
   name: marked men patrol armor
   description: A set of weathered Ranger Patrol gear that's definitely seen better days. Bits and pieces of it have been modified and replaced with license plates and scrap metal, as opposed to it's usual kevlar padding. The entire kit being caked with dust, bullet holes and stab marks, most definitely a reminder of the past rather than functioning armour.
   components:
@@ -236,8 +236,8 @@
 #All of the armors below are equivalent to White Legs armor. These armors are for Tribals / Wastelanders. All tribes in this category gets two armors outside of the Sorrows.
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterDeadHorsesArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterDeadHorsesArmor
   name: dead horses armor
   description: A simple leather bandolier and gecko hide chest covering, with an engraved metal pauldron and a pair of black leather straps. Commonly worn by the members of the Dead Horses tribe.
   components:
@@ -256,8 +256,8 @@
     damageCoefficient: 0.92
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterDeadHorsesLightArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterDeadHorsesLightArmor
   name: dead horses light armor
   description: A simple leather bandolier and gecko hide chest covering. Worn by the members of the Dead Horses tribe.
   components:
@@ -276,8 +276,8 @@
     damageCoefficient: 0.92
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterSorrowsArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterSorrowsArmor
   name: sorrows armor
   description: A worn ballistic vest from Salt Lake, adorned with feathers and turqoise beads, with an ornamental pattern painted over the sides. Commonly worn by the members of the peaceful Sorrows tribe.
   components:
@@ -296,8 +296,8 @@
     damageCoefficient: 0.92
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterRustwalkersArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterRustwalkersArmor
   name: rustwalkers armor
   description: A chestplate, pauldron and vambrace that bear a distinct resemblance to a coolant tank, engine valves and an exhaust. Commonly worn by members of the Rustwalkers tribe
   components:
@@ -316,8 +316,8 @@
     damageCoefficient: 0.92
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterRustwalkersLightArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterRustwalkersLightArmor
   name: rustwalkers light armor
   description: A duster made from some combination of leather and cloth, probably torn out of an old car. The shoulders appear to have had parts of an engine either strapped or stitched onto them. Commonly worn by members of the Rustwalkers tribe.
   components:
@@ -336,8 +336,8 @@
     damageCoefficient: 0.92
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterWesternWayfarerArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterWesternWayfarerArmor
   name: western wayfarer salvaged armor
   description: A set of scrap and banded metal armor forged by the Wayfarer tribe, due to it's lightweight and unrestrictive nature,  it's used by scouts and agile hunters. A torn cloak hangs around its neck, protecting the user from the harsh desert sands.
   components:
@@ -358,8 +358,8 @@
 #Technically should be considered heavy armor but drip was needed. If it ever becomes a 'heavy' armor then put the stats to this one and Warden Plate to heavy armors.
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterWesternWayfarerHeavyArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterWesternWayfarerHeavyArmor
   name: western wayfarer heavy armor
   description: A Suit of armor crafted by Tribals using pieces of scrap metals and the armor of fallen foes, a bighorner's skull sits on the right pauldron along with bighorner fur lining the collar of the leather bound chest. Along the leather straps adoring it are multiple bone charms with odd markings on them.
   components:
@@ -378,8 +378,8 @@
     damageCoefficient: 0.92
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsM14ClothingOuterWardenPlate
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterWardenPlate
   name: warden plate
   description: Thick metal breastplate with a decorative skull on the shoulder.
   components:

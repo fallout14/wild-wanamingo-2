@@ -14,7 +14,7 @@
       allowedTiles:
       - F14FloorWastelandSand
       entities:
-      - N14WallRockMammothSlanted
+      - F14WallRockMammothSlanted
     # Wild Fallout plants (gatherable)
     - !type:BiomeEntityLayer
       threshold: 0.92
@@ -25,21 +25,21 @@
       allowedTiles:
       - F14FloorWastelandSand
       entities:
-      - N14WastelandFloraWildMutfruit
-      - N14WastelandFloraWildBarrelCactus
-      - N14WastelandFloraWildBananaYucca
-      - N14WastelandFloraWildXander
-      - N14WastelandFloraWildBroc
-      - N14WastelandFloraWildAgave
-      - N14WastelandFloraWildPricklypear
-      - N14WastelandFloraWildBuffaloGourd
-      - N14WastelandFloraWildMesquite
-      - N14WastelandFloraWildPinyon
-      - N14WastelandFloraWildCoyote
-      - N14WastelandFloraWildDatura
-      - N14WastelandFloraWildWhiteHorsenettle
-      - N14WastelandFloraWildRazorgrain
-      - N14WastelandFloraWildTato
+      - F14WastelandFloraWildMutfruit
+      - F14WastelandFloraWildBarrelCactus
+      - F14WastelandFloraWildBananaYucca
+      - F14WastelandFloraWildXander
+      - F14WastelandFloraWildBroc
+      - F14WastelandFloraWildAgave
+      - F14WastelandFloraWildPricklypear
+      - F14WastelandFloraWildBuffaloGourd
+      - F14WastelandFloraWildMesquite
+      - F14WastelandFloraWildPinyon
+      - F14WastelandFloraWildCoyote
+      - F14WastelandFloraWildDatura
+      - F14WastelandFloraWildWhiteHorsenettle
+      - F14WastelandFloraWildRazorgrain
+      - F14WastelandFloraWildTato
     # Cacti
     - !type:BiomeEntityLayer
       threshold: 0.94
@@ -63,8 +63,8 @@
       allowedTiles:
       - F14FloorWastelandSand
       entities:
-      - N14FloraTreeDead1
-      - N14FloraTreeBald
+      - F14FloraTreeDead1
+      - F14FloraTreeBald
     # Dry grass and leafy scrub
     - !type:BiomeDecalLayer
       threshold: 0.4

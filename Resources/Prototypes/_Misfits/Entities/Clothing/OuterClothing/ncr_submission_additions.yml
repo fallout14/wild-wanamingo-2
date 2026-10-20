@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Clothing/OuterClothing/ncr_submission_additions.yml
 
 - type: entity
-  parent: N14ClothingOuterNCRCombatArmor
-  id: MisfitsClothingOuterNCRArmoredFieldJacket
+  parent: F14ClothingOuterNCRCombatArmor
+  id: F14ClothingOuterNCRArmoredFieldJacket
   name: NCR armored field jacket
   description: An NCR field jacket fitted with hidden armor plating.
   components:
@@ -12,8 +12,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrarmoredfieldjacket.rsi
 
 - type: entity
-  parent: N14ClothingOuterNCRCombatArmor
-  id: MisfitsClothingOuterNCRArmoredFieldJacketLogo
+  parent: F14ClothingOuterNCRCombatArmor
+  id: F14ClothingOuterNCRArmoredFieldJacketLogo
   name: NCR armored field jacket
   description: An NCR field jacket fitted with hidden armor plating and a bold Republic insignia.
   components:
@@ -23,8 +23,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrarmoredfieldjacketlogo.rsi
 
 - type: entity
-  parent: N14ClothingOuterNCRCombatArmor
-  id: MisfitsClothingOuterNCRAssaultVest
+  parent: F14ClothingOuterNCRCombatArmor
+  id: F14ClothingOuterNCRAssaultVest
   name: NCR assault vest
   description: A sidegrade NCR combat vest set up for assault troops.
   components:
@@ -34,8 +34,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrassault.rsi
 
 - type: entity
-  parent: N14ClothingOuterNCRPouchedVestDesert
-  id: MisfitsClothingOuterNCREngineerVest
+  parent: F14ClothingOuterNCRPouchedVestDesert
+  id: F14ClothingOuterNCREngineerVest
   name: NCR engineer vest
   description: A sidegrade NCR armored vest for engineers and field support crews.
   components:
@@ -47,8 +47,8 @@
     damageCoefficient: 0.60
 
 - type: entity
-  parent: N14ClothingOuterNCRCombatArmor
-  id: MisfitsClothingOuterNCRFlakVest
+  parent: F14ClothingOuterNCRCombatArmor
+  id: F14ClothingOuterNCRFlakVest
   name: NCR flak vest
   description: A sidegrade NCR flak vest often seen on lighter patrol assignments.
   components:
@@ -58,8 +58,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrflakvest.rsi
 
 - type: entity
-  parent: N14ClothingOuterNCRCombatArmor
-  id: MisfitsClothingOuterNCRFlakVestOpen
+  parent: F14ClothingOuterNCRCombatArmor
+  id: F14ClothingOuterNCRFlakVestOpen
   name: open NCR flak vest
   description: A sidegrade NCR flak vest worn open for comfort in desert heat.
   components:
@@ -69,8 +69,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrflakvestopen.rsi
 
 - type: entity
-  parent: N14ClothingOuterNCRCombatArmor
-  id: MisfitsClothingOuterNCRPatrolRangerArmorVariant
+  parent: F14ClothingOuterNCRCombatArmor
+  id: F14ClothingOuterNCRPatrolRangerArmorVariant
   name: NCR patrol ranger armor
   description: A sidegrade patrol ranger armor set with an NCR field refit.
   components:
@@ -80,8 +80,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrpatrolrangerarmor.rsi
 
 - type: entity
-  parent: N14ClothingOuterNCRVestDesert
-  id: MisfitsClothingOuterNCRTrenchRaider
+  parent: F14ClothingOuterNCRVestDesert
+  id: F14ClothingOuterNCRTrenchRaider
   name: NCR trench raider vest
   description: A stripped-down NCR armored vest intended for aggressive close-range patrol work.
   components:
@@ -91,8 +91,8 @@
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrtrenchraider.rsi
 
 - type: entity
-  parent: N14ClothingOuterNCRCombatArmor
-  id: MisfitsClothingOuterNCRCommissarPlate
+  parent: F14ClothingOuterNCRCombatArmor
+  id: F14ClothingOuterNCRCommissarPlate
   name: NCR commissar plate
   description: A series of forged plates made for frontline NCR Commissars in charge of Penal Units.
   components:

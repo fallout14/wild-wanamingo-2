@@ -3,7 +3,7 @@
 
 - type: entity
   abstract: true
-  id: N14WastelandFlora
+  id: F14WastelandFlora
   description: A plant growing wild in the wasteland.
   components:
   - type: Transform
@@ -40,8 +40,8 @@
 # Plants
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildAgave
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildAgave
   name: wild agave plant
   description: An agave plant growing wild. It looks healthy.
   components:
@@ -50,7 +50,7 @@
   - type: Sprite
     state: wild_agave
   - type: OreVein
-    currentOre: N14WildAgave
+    currentOre: F14WildAgave
   - type: Gatherable
     toolWhitelist:
       components:
@@ -62,8 +62,8 @@
         tableId: WildAgaveAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildBananaYucca
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildBananaYucca
   name: wild banana yucca plant
   description: A wild yucca plant. It looks healthy.
   components:
@@ -75,7 +75,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: N14WildBananaYucca
+    currentOre: F14WildBananaYucca
   - type: Gatherable
     toolWhitelist:
       components:
@@ -87,8 +87,8 @@
         tableId: WildBananaYuccaAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildBarrelCactus
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildBarrelCactus
   name: wild barrel cactus
   description: A barrel cactus plant growing wild. It looks healthy.
   components:
@@ -106,7 +106,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: N14WildBarrelCactus
+    currentOre: F14WildBarrelCactus
   - type: Gatherable
     toolWhitelist:
       components:
@@ -118,8 +118,8 @@
         tableId: WildBarrelCactusAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildBlackberries
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildBlackberries
   name: wild blackberry bush
   description: A wild blackberry plant. It looks healthy.
   components:
@@ -137,7 +137,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: N14WildBlackberries
+    currentOre: F14WildBlackberries
   - type: Gatherable
     toolWhitelist:
       components:
@@ -149,8 +149,8 @@
         tableId: WildBlackberriesAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildBroc
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildBroc
   name: wild broc plant
   description: A broc plant growing wild. It's flowering.
   components:
@@ -167,7 +167,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: N14WildBrocFlower
+    currentOre: F14WildBrocFlower
   - type: Gatherable
     toolWhitelist:
       components:
@@ -179,8 +179,8 @@
         tableId: WildBrocFlowerAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildBuffaloGourd
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildBuffaloGourd
   name: wild buffalo gourd
   description: A wild buffalo gourd plant. It looks healthy.
   components:
@@ -189,7 +189,7 @@
   - type: Sprite
     state: wild_gourd
   - type: OreVein
-    currentOre: N14WildGourd
+    currentOre: F14WildGourd
   - type: Gatherable
     toolWhitelist:
       components:
@@ -201,8 +201,8 @@
         tableId: WildBuffaloGourdAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildCabbage
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildCabbage
   name: wild cabbage plant
   description: A wild cabbage plant. It looks healthy.
   components:
@@ -214,7 +214,7 @@
       - state: harvest
       - state: produce
   - type: OreVein
-    currentOre: N14WildCabbage
+    currentOre: F14WildCabbage
   - type: Gatherable
     toolWhitelist:
       components:
@@ -226,8 +226,8 @@
         tableId: WildCabbageAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildCarrot
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildCarrot
   name: wild carrot plant
   description: A wild carrot plant. It looks healthy.
   components:
@@ -237,7 +237,7 @@
     sprite: Nuclear14/Objects/Specific/Hydroponics/cabbage.rsi
     state: harvest
   - type: OreVein
-    currentOre: N14WildCarrot
+    currentOre: F14WildCarrot
   - type: Gatherable
     toolWhitelist:
       components:
@@ -248,13 +248,13 @@
       All: !type:NestedSelector
         tableId: WildCarrotAll
   - type: Produce
-    plantId: N14WildCarrot
+    plantId: F14WildCarrot
   - type: Seed
-    plantId: N14WildCarrot
+    plantId: F14WildCarrot
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildCaveFungus
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildCaveFungus
   name: cave fungus
   description: A healthy-looking fungi.
   components:
@@ -272,7 +272,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: N14WildCaveFungus
+    currentOre: F14WildCaveFungus
   - type: Gatherable
     toolWhitelist:
       components:
@@ -284,8 +284,8 @@
         tableId: WildCaveFungusAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildCaveFungusRad
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildCaveFungusRad
   name: irradiated fungus
   description: A glowing fungi.
   components:
@@ -303,7 +303,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: N14WildCaveFungusRad
+    currentOre: F14WildCaveFungusRad
   - type: PointLight
     radius: 1.5 # Corvax Change
     energy: 0.7 # Corvax Change
@@ -324,8 +324,8 @@
         tableId: WildCaveFungusRadAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildCotton
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildCotton
   name: wild cotton plant
   description: A cotton plant growing wild. It's healthy.
   components:
@@ -335,7 +335,7 @@
     sprite: Objects/Specific/Hydroponics/cotton.rsi
     state: harvest
   - type: OreVein
-    currentOre: N14WildCotton
+    currentOre: F14WildCotton
   - type: Gatherable
     toolWhitelist:
       components:
@@ -347,8 +347,8 @@
         tableId: WildCottonAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildCoyote
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildCoyote
   name: wild coyote plant
   description: A coyote plant growing wild. It's healthy.
   components:
@@ -357,7 +357,7 @@
   - type: Sprite
     state: wild_coyote
   - type: OreVein
-    currentOre: N14WildCoyote
+    currentOre: F14WildCoyote
   - type: Gatherable
     toolWhitelist:
       components:
@@ -369,8 +369,8 @@
         tableId: WildCoyoteTobaccoAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildDatura
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildDatura
   name: wild datura plant
   description: A datura plant growing wild. It's healthy.
   components:
@@ -379,7 +379,7 @@
   - type: Sprite
     state: wild_datura
   - type: OreVein
-    currentOre: N14WildDatura
+    currentOre: F14WildDatura
   - type: Gatherable
     toolWhitelist:
       components:
@@ -391,8 +391,8 @@
         tableId: WildDaturaAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildGlowpepper #N14 change
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildGlowpepper #N14 change
   name: wild glowpepper plant #N14 change
   description: A glowpepper plant GLOWING wild. AH HA HA HA... it's healthy. #N14 change
   components:
@@ -402,7 +402,7 @@
     sprite: Nuclear14/Objects/Specific/Hydroponics/jalapeno.rsi #I DON'T KNOW WHERE THIS IS
     state: harvest
   - type: OreVein
-    currentOre: N14WildGlowpepper
+    currentOre: F14WildGlowpepper
   - type: PointLight
     radius: 2
     energy: 2
@@ -420,8 +420,8 @@
         tableId: WildGlowpepperAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildMaize
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildMaize
   name: wild maize plant
   description: A wild maize plant. It looks healthy.
   components:
@@ -431,7 +431,7 @@
     sprite: Nuclear14/Objects/Specific/Hydroponics/maize.rsi
     state: harvest
   - type: OreVein
-    currentOre: N14WildMaize
+    currentOre: F14WildMaize
   - type: Gatherable
     toolWhitelist:
       components:
@@ -443,8 +443,8 @@
         tableId: WildMaizeAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildMesquite
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildMesquite
   name: wild mesquite plant
   description: A wild mesquite plant. It looks healthy.
   components:
@@ -453,7 +453,7 @@
   - type: Sprite
     state: wild_mesquite
   - type: OreVein
-    currentOre: N14MesquitePods
+    currentOre: F14MesquitePods
   - type: Gatherable
     toolWhitelist:
       components:
@@ -465,8 +465,8 @@
         tableId: WildMesquiteAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildMutfruit
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildMutfruit
   name: wild mutfruit plant
   description: A wild mutfruit plant. It looks healthy.
   components:
@@ -484,7 +484,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: N14WildMutfruit
+    currentOre: F14WildMutfruit
   - type: Gatherable
     toolWhitelist:
       components:
@@ -496,8 +496,8 @@
         tableId: WildMutfruitAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildNettle
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildNettle
   name: wild nettles
   description: A wild nettle plant. It looks healthy.
   components:
@@ -507,7 +507,7 @@
     sprite: Objects/Specific/Hydroponics/nettle.rsi
     state: harvest
   - type: OreVein
-    currentOre: N14WildNettle
+    currentOre: F14WildNettle
   - type: Gatherable
     toolWhitelist:
       components:
@@ -519,8 +519,8 @@
         tableId: WildNettleAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildOnion
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildOnion
   name: wild onion plant
   description: A wild onion plant. It looks healthy.
   components:
@@ -530,7 +530,7 @@
     sprite: Nuclear14/Objects/Specific/Hydroponics/onion.rsi
     state: harvest
   - type: OreVein
-    currentOre: N14WildOnion
+    currentOre: F14WildOnion
   - type: Gatherable
     toolWhitelist:
       components:
@@ -542,8 +542,8 @@
         tableId: WildOnionAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildPinyon
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildPinyon
   name: wild pinyon plant
   description: A wild pinyon plant. It looks healthy.
   components:
@@ -552,7 +552,7 @@
   - type: Sprite
     state: wild_pinyon
   - type: OreVein
-    currentOre: N14PinyonNuts
+    currentOre: F14PinyonNuts
   - type: Gatherable
     toolWhitelist:
       components:
@@ -564,8 +564,8 @@
         tableId: WildPinyonAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildPricklypear
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildPricklypear
   name: wild prickly pear cactus
   description: A wild prickly pear plant. It looks healthy.
   components:
@@ -574,7 +574,7 @@
   - type: Sprite
     state: wild_prickly
   - type: OreVein
-    currentOre: N14WildPrickly
+    currentOre: F14WildPrickly
   - type: Gatherable
     toolWhitelist:
       components:
@@ -586,8 +586,8 @@
         tableId: WildPricklyPearAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildRazorgrain
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildRazorgrain
   name: wild razorgrain plant
   description: A razorgrain plant. It looks healthy.
   components:
@@ -597,7 +597,7 @@
     sprite: Nuclear14/Objects/Specific/Hydroponics/razorgrain.rsi
     state: harvest
   - type: OreVein
-    currentOre: N14WildRazorgrain
+    currentOre: F14WildRazorgrain
   - type: Gatherable
     toolWhitelist:
       components:
@@ -609,8 +609,8 @@
         tableId: WildRazorgrainAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildStarlightBerries
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildStarlightBerries
   name: wild starlight berry plant
   description: A wild starlight berry plant. It looks healthy.
   components:
@@ -620,7 +620,7 @@
     sprite: Nuclear14/Objects/Specific/Hydroponics/starlight.rsi
     state: harvest
   - type: OreVein
-    currentOre: N14WildStarlightBerries
+    currentOre: F14WildStarlightBerries
   - type: Gatherable
     toolWhitelist:
       components:
@@ -632,8 +632,8 @@
         tableId: WildStarlightBerriesAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildTarberries
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildTarberries
   name: wild tarberry plant
   description: A wild tarberry plant. It looks healthy.
   components: # N14TODO: This should only grow on water
@@ -651,7 +651,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: N14WildTarberries
+    currentOre: F14WildTarberries
   - type: Gatherable
     toolWhitelist:
       components:
@@ -663,8 +663,8 @@
         tableId: WildTarberriesAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildTato
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildTato
   name: wild tato plant
   description: A wild tato plant. It looks healthy.
   components:
@@ -673,7 +673,7 @@
   - type: Sprite
     state: wild_tato
   - type: OreVein
-    currentOre: N14WildTato
+    currentOre: F14WildTato
   - type: Gatherable
     toolWhitelist:
       components:
@@ -685,8 +685,8 @@
         tableId: WildTatoAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildWhiteHorsenettle
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildWhiteHorsenettle
   name: wild horsenettle plant
   description: A wild horsenettle plant. It looks healthy.
   components:
@@ -695,7 +695,7 @@
   - type: Sprite
     state: wild_horsenettle
   - type: OreVein
-    currentOre: N14WildWhiteHorsenettle
+    currentOre: F14WildWhiteHorsenettle
   - type: Gatherable
     toolWhitelist:
       components:
@@ -707,8 +707,8 @@
         tableId: WildWhiteHorsenettleAll
 
 - type: entity
-  parent: N14WastelandFlora
-  id: N14WastelandFloraWildXander
+  parent: F14WastelandFlora
+  id: F14WastelandFloraWildXander
   name: wild xander plant
   description: A xander plant growing wild. It looks healthy.
   components:
@@ -725,7 +725,7 @@
   - type: Physics  # spawn state
     canCollide: False
   - type: OreVein
-    currentOre: N14WildXander
+    currentOre: F14WildXander
   - type: Gatherable
     toolWhitelist:
       components:
@@ -741,7 +741,7 @@
 - type: entity
   abstract: True
   parent: FoodProduceBase
-  id: N14FloraProduce
+  id: F14FloraProduce
   name: wild produce base
   description: A wild plant produce grown in the wastes.
   components:
@@ -753,7 +753,7 @@
         Quantity: 1
       - ReagentId: Vitamin
         Quantity: 1
-      - ReagentId: N14RadParticleFood
+      - ReagentId: F14RadParticleFood
         Quantity: 1
   - type: Sprite
     netsync: false
@@ -764,8 +764,8 @@
 
 - type: entity
   abstract: True
-  parent: N14FloraProduce
-  id: N14FloraProduceFood
+  parent: F14FloraProduce
+  id: F14FloraProduceFood
   name: wild food produce base
   description: A wild plant produce grown in the wastes.
   components:
@@ -777,12 +777,12 @@
         Quantity: 5
       - ReagentId: Vitamin
         Quantity: 4
-      - ReagentId: N14RadParticleFood
+      - ReagentId: F14RadParticleFood
         Quantity: 1
 
 - type: entity
-  parent: N14FloraProduce
-  id: N14FloraProduceWildAgave
+  parent: F14FloraProduce
+  id: F14FloraProduceWildAgave
   name: wild agave leaves
   description: Wild agave plant leaves.
   components:
@@ -790,27 +790,27 @@
     state: AgaveLeaf
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize (was commented out but maps still reference it)
   - type: Stack
-    stackType: N14AgaveLeaf
+    stackType: F14AgaveLeaf
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractAgaveNectar
+      - ReagentId: F14ExtractAgaveNectar
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractAgaveNectar
+      - ReagentId: F14ExtractAgaveNectar
         Quantity: 10
   - type: Produce
-    plantId: N14WildAgave
+    plantId: F14WildAgave
   - type: Seed
-    plantId: N14WildAgave
+    plantId: F14WildAgave
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildBananaYucca
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildBananaYucca
   name: wild banana yucca
   description: Looks like a banana, tastes like sweet tato.
   components:
@@ -818,27 +818,27 @@
     state: BananaYucca
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14WildBananaYucca
+    stackType: F14WildBananaYucca
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractBananaYucca
+      - ReagentId: F14ExtractBananaYucca
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractBananaYucca
+      - ReagentId: F14ExtractBananaYucca
         Quantity: 10
   - type: Produce
-    plantId: N14WildBananaYucca
+    plantId: F14WildBananaYucca
   - type: Seed
-    plantId: N14WildBananaYucca
+    plantId: F14WildBananaYucca
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildBarrelCactusFruit
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildBarrelCactusFruit
   name: barrel cactus fruit
   description: Wild barrel cactus fruit.
   components:
@@ -846,27 +846,27 @@
     state: BarrelCactusFruit
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14BarrelCactusFruit
+    stackType: F14BarrelCactusFruit
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractCactusWater
+      - ReagentId: F14ExtractCactusWater
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractCactusWater
+      - ReagentId: F14ExtractCactusWater
         Quantity: 10
   - type: Produce
-    plantId: N14WildBarrelCactus
+    plantId: F14WildBarrelCactus
   - type: Seed
-    plantId: N14WildBarrelCactus
+    plantId: F14WildBarrelCactus
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildBlackberries
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildBlackberries
   name: wild blackberries
   description: Wild blackberries. Juicy.
   components:
@@ -875,27 +875,27 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14WildBlackberries
+    stackType: F14WildBlackberries
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractBlackberries
+      - ReagentId: F14ExtractBlackberries
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractBlackberries
+      - ReagentId: F14ExtractBlackberries
         Quantity: 10
   - type: Produce
-    plantId: N14WildBlackberry
+    plantId: F14WildBlackberry
   - type: Seed
-    plantId: N14WildBlackberry
+    plantId: F14WildBlackberry
 
 - type: entity
-  parent: N14FloraProduce
-  id: N14FloraProduceWildBrocFlower
+  parent: F14FloraProduce
+  id: F14FloraProduceWildBrocFlower
   name: wild broc flower
   description: A broc flower from a wild plant.
   components:
@@ -903,27 +903,27 @@
     state: BrocFlower
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14BrocFlower
+    stackType: F14BrocFlower
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractBroc
+      - ReagentId: F14ExtractBroc
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractBroc
+      - ReagentId: F14ExtractBroc
         Quantity: 10
   - type: Produce
-    plantId: N14WildBroc
+    plantId: F14WildBroc
   - type: Seed
-    plantId: N14WildBroc
+    plantId: F14WildBroc
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildBuffaloGourd
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildBuffaloGourd
   name: wild buffalo gourd
   description: Wild buffalo gourd.
   components:
@@ -931,27 +931,27 @@
     state: BuffaloGourd
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14WildBuffaloGourd
+    stackType: F14WildBuffaloGourd
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractBuffaloGourd
+      - ReagentId: F14ExtractBuffaloGourd
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractBuffaloGourd
+      - ReagentId: F14ExtractBuffaloGourd
         Quantity: 10
   - type: Produce
-    plantId: N14WildBuffaloGourd
+    plantId: F14WildBuffaloGourd
   - type: Seed
-    plantId: N14WildBuffaloGourd
+    plantId: F14WildBuffaloGourd
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildCabbage
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildCabbage
   name: wild cabbage
   description: Wild cabbage; full of iron.
   components:
@@ -960,7 +960,7 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14WildCabbage
+    stackType: F14WildCabbage
     count: 1
   - type: FlavorProfile
     flavors:
@@ -969,21 +969,21 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractCabbage
+      - ReagentId: F14ExtractCabbage
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractCabbage
+      - ReagentId: F14ExtractCabbage
         Quantity: 10
   - type: Produce
-    plantId: N14WildCabbage
+    plantId: F14WildCabbage
   - type: Seed
-    plantId: N14WildCabbage
+    plantId: F14WildCabbage
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildCarrot
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildCarrot
   name: wild carrot
   description: Wild carrot.
   components:
@@ -992,7 +992,7 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14WildCarrot
+    stackType: F14WildCarrot
     count: 1
   - type: FlavorProfile
     flavors:
@@ -1001,21 +1001,21 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractCarrot
+      - ReagentId: F14ExtractCarrot
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractCarrot
+      - ReagentId: F14ExtractCarrot
         Quantity: 10
   - type: Produce
-    plantId: N14WildCarrot
+    plantId: F14WildCarrot
   - type: Seed
-    plantId: N14WildCarrot
+    plantId: F14WildCarrot
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildCaveFungus
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildCaveFungus
   name: cave fungus
   description: A cave fungi.
   components:
@@ -1023,23 +1023,23 @@
     state: CaveFungus
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14CaveFungus
+    stackType: F14CaveFungus
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractFungus
+      - ReagentId: F14ExtractFungus
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractFungus
+      - ReagentId: F14ExtractFungus
         Quantity: 10
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildCaveFungusRad
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildCaveFungusRad
   name: irradiated fungus
   description: A glowing fungi.
   components:
@@ -1047,23 +1047,23 @@
     state: CaveFungusRad
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14CaveFungusRad
+    stackType: F14CaveFungusRad
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractFungusRad
+      - ReagentId: F14ExtractFungusRad
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractFungusRad
+      - ReagentId: F14ExtractFungusRad
         Quantity: 10
 
 - type: entity
-  parent: N14FloraProduce
-  id: N14FloraProduceWildCoyoteTobacco
+  parent: F14FloraProduce
+  id: F14FloraProduceWildCoyoteTobacco
   name: coyote tobacco leaves
   description: Wild coyote tobacco plant leaves.
   components:
@@ -1071,27 +1071,27 @@
     state: CoyoteTobacco
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14CoyoteTobacco
+    stackType: F14CoyoteTobacco
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractCoyoteTobacco
+      - ReagentId: F14ExtractCoyoteTobacco
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractCoyoteTobacco
+      - ReagentId: F14ExtractCoyoteTobacco
         Quantity: 10
   - type: Produce
-    plantId: N14CoyoteTobacco
+    plantId: F14CoyoteTobacco
   - type: Seed
-    plantId: N14CoyoteTobacco
+    plantId: F14CoyoteTobacco
 
 - type: entity
-  parent: N14FloraProduce
-  id: N14FloraProduceWildDaturaFlower
+  parent: F14FloraProduce
+  id: F14FloraProduceWildDaturaFlower
   name: datura flower
   description: Wild datura flowers.
   components:
@@ -1099,27 +1099,27 @@
     state: Datura
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14DaturaFlower
+    stackType: F14DaturaFlower
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractDatura
+      - ReagentId: F14ExtractDatura
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractDatura
+      - ReagentId: F14ExtractDatura
         Quantity: 10
   - type: Produce
-    plantId: N14Datura
+    plantId: F14Datura
   - type: Seed
-    plantId: N14Datura
+    plantId: F14Datura
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildGlowpepper #N14 change. My mind is going. I may not have tagged all glowpepper changes. Daisy, daisy, give me your answer do.
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildGlowpepper #N14 change. My mind is going. I may not have tagged all glowpepper changes. Daisy, daisy, give me your answer do.
   name: wild glowpepper
   description: Wild glowpepper. Glowy.
   components:
@@ -1128,27 +1128,27 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14WildGlowpepper
+    stackType: F14WildGlowpepper
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractGlowpepper
+      - ReagentId: F14ExtractGlowpepper
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractGlowpepper
+      - ReagentId: F14ExtractGlowpepper
         Quantity: 10
   - type: Produce
-    plantId: N14WildGlowpepper
+    plantId: F14WildGlowpepper
   - type: Seed
-    plantId: N14WildGlowpepper
+    plantId: F14WildGlowpepper
 
 - type: entity
-  parent: N14FloraProduce
-  id: N14FloraProduceWildMaize
+  parent: F14FloraProduce
+  id: F14FloraProduceWildMaize
   name: wild maize
   description: Wild maize. Can be used to make a corn like flour.
   components:
@@ -1157,27 +1157,27 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14WildMaize
+    stackType: F14WildMaize
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractMaize
+      - ReagentId: F14ExtractMaize
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractMaize
+      - ReagentId: F14ExtractMaize
         Quantity: 10
   - type: Produce
-    plantId: N14WildMaize
+    plantId: F14WildMaize
   - type: Seed
-    plantId: N14WildMaize
+    plantId: F14WildMaize
 
 - type: entity
-  parent: N14FloraProduce
-  id: N14FloraProduceWildMesquitePods
+  parent: F14FloraProduce
+  id: F14FloraProduceWildMesquitePods
   name: wild mesquite pods
   description: Honey mesquite pods
   components:
@@ -1185,27 +1185,27 @@
     state: MesquitePod
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14MesquitePods
+    stackType: F14MesquitePods
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractHoneyMesquitePod
+      - ReagentId: F14ExtractHoneyMesquitePod
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractHoneyMesquitePod
+      - ReagentId: F14ExtractHoneyMesquitePod
         Quantity: 10
   - type: Produce
-    plantId: N14WildMesquite
+    plantId: F14WildMesquite
   - type: Seed
-    plantId: N14WildMesquite
+    plantId: F14WildMesquite
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildMutfruit
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildMutfruit
   name: wild mutfruit
   description: Wild mutfruit. Looks tough.
   components:
@@ -1213,27 +1213,27 @@
     state: Mutfruit
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14Mutfruit
+    stackType: F14Mutfruit
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractMutfruit
+      - ReagentId: F14ExtractMutfruit
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractMutfruit
+      - ReagentId: F14ExtractMutfruit
         Quantity: 10
   - type: Produce
-    plantId: N14WildMutfruit
+    plantId: F14WildMutfruit
   - type: Seed
-    plantId: N14WildMutfruit
+    plantId: F14WildMutfruit
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildNettle
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildNettle
   name: wild nettle
   description: Wild nettles. Stingy.
   components:
@@ -1242,27 +1242,27 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14Nettles
+    stackType: F14Nettles
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractNettle
+      - ReagentId: F14ExtractNettle
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractNettle
+      - ReagentId: F14ExtractNettle
         Quantity: 10
   - type: Produce
-    plantId: N14WildNettle
+    plantId: F14WildNettle
   - type: Seed
-    plantId: N14WildNettle
+    plantId: F14WildNettle
 
 - type: entity
-  parent: [N14FloraProduceFood, BaseSlicingRefinableFood]
-  id: N14FloraProduceWildOnion
+  parent: [F14FloraProduceFood, BaseSlicingRefinableFood]
+  id: F14FloraProduceWildOnion
   name: wild onion
   description: Wild onion. Fragrant.
   components:
@@ -1271,7 +1271,7 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14WildOnion
+    stackType: F14WildOnion
     count: 1
   - type: FlavorProfile
     flavors:
@@ -1287,17 +1287,17 @@
       - ReagentId: Allicin
         Quantity: 4
   - type: Produce
-    plantId: N14WildOnion
+    plantId: F14WildOnion
   - type: Seed
-    plantId: N14WildOnion
+    plantId: F14WildOnion
   - type: ToolRefinable
     refineResult:
-    - id: N14FoodOnionRedSlice
+    - id: F14FoodOnionRedSlice
       amount: 4
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildPinyonNuts
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildPinyonNuts
   name: wild pinyon nuts
   description: Wild pinyon nuts. Grainy.
   components:
@@ -1305,27 +1305,27 @@
     state: PinyonNuts
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14PinyonNuts
+    stackType: F14PinyonNuts
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractPinyon
+      - ReagentId: F14ExtractPinyon
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractPinyon
+      - ReagentId: F14ExtractPinyon
         Quantity: 10
   - type: Produce
-    plantId: N14WildPinyon
+    plantId: F14WildPinyon
   - type: Seed
-    plantId: N14WildPinyon
+    plantId: F14WildPinyon
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildPricklyPearFruit
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildPricklyPearFruit
   name: wild prickly pear fruit
   description: Wild pricky pear fruit. Sharp.
   components:
@@ -1333,23 +1333,23 @@
     state: PricklyPear
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14PricklyPear
+    stackType: F14PricklyPear
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractPricklyPearFruit
+      - ReagentId: F14ExtractPricklyPearFruit
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractPricklyPearFruit
+      - ReagentId: F14ExtractPricklyPearFruit
         Quantity: 10
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildRazorgrain
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildRazorgrain
   name: wild razorgrain
   description: a hardier grain that can still be used in baking.
   components:
@@ -1358,16 +1358,16 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: N14ExtractRazorgrainFlour #it should be a goal to make this interchangeable with flour in recipes. -Hazel
+      - ReagentId: F14ExtractRazorgrainFlour #it should be a goal to make this interchangeable with flour in recipes. -Hazel
         Quantity: 10
   - type: Produce
-    plantId: N14WildRazorgrain
+    plantId: F14WildRazorgrain
   - type: Seed
-    plantId: N14WildRazorgrain
+    plantId: F14WildRazorgrain
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildStarlightBerries
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildStarlightBerries
   name: wild starlight berries
   description: Wild starlight berries. Great in tea.
   components:
@@ -1376,27 +1376,27 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14WildStarlightBerries
+    stackType: F14WildStarlightBerries
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractStarlightBerries
+      - ReagentId: F14ExtractStarlightBerries
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractStarlightBerries
+      - ReagentId: F14ExtractStarlightBerries
         Quantity: 10
   - type: Produce
-    plantId: N14Starlight
+    plantId: F14Starlight
   - type: Seed
-    plantId: N14Starlight
+    plantId: F14Starlight
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildTarberries
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildTarberries
   name: tarberries
   description: Wild tarberries. Juicy.
   components:
@@ -1405,27 +1405,27 @@
     state: produce
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14WildTarberries
+    stackType: F14WildTarberries
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractTarberries
+      - ReagentId: F14ExtractTarberries
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractTarberries
+      - ReagentId: F14ExtractTarberries
         Quantity: 10
   - type: Produce
-    plantId: N14Tarberry
+    plantId: F14Tarberry
   - type: Seed
-    plantId: N14Tarberry
+    plantId: F14Tarberry
 
 - type: entity
-  parent: N14FloraProduceFood
-  id: N14FloraProduceWildTato
+  parent: F14FloraProduceFood
+  id: F14FloraProduceWildTato
   name: wild tato
   description: Looks like a tomato, feels like a potato, tastes disgusting.
   components:
@@ -1433,27 +1433,27 @@
     state: Tato
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14WildTato #This should be used in place of... either tomatoes, potatoes, or both, I guess. -Hazel
+    stackType: F14WildTato #This should be used in place of... either tomatoes, potatoes, or both, I guess. -Hazel
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractTato
+      - ReagentId: F14ExtractTato
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractTato
+      - ReagentId: F14ExtractTato
         Quantity: 10
   - type: Produce
-    plantId: N14WildTato
+    plantId: F14WildTato
   - type: Seed
-    plantId: N14WildTato
+    plantId: F14WildTato
 
 - type: entity
-  parent: N14FloraProduce
-  id: N14FloraProduceWildWhiteHorsenettle
+  parent: F14FloraProduce
+  id: F14FloraProduceWildWhiteHorsenettle
   name: white horsenettle flower
   description: White horsenettle flower.
   components:
@@ -1461,27 +1461,27 @@
     state: WhiteHorsenettle
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14WildWhiteHorsenettle
+    stackType: F14WildWhiteHorsenettle
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractWhiteHorsenettle
+      - ReagentId: F14ExtractWhiteHorsenettle
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractWhiteHorsenettle
+      - ReagentId: F14ExtractWhiteHorsenettle
         Quantity: 10
   - type: Produce
-    plantId: N14WildWhiteHorsenettle
+    plantId: F14WildWhiteHorsenettle
   - type: Seed
-    plantId: N14WildWhiteHorsenettle
+    plantId: F14WildWhiteHorsenettle
 
 - type: entity
-  parent: N14FloraProduce
-  id: N14FloraProduceWildXander
+  parent: F14FloraProduce
+  id: F14FloraProduceWildXander
   name: wild xander root
   description: A xander root from a wild plant.
   components:
@@ -1489,20 +1489,20 @@
     state: xander_root
   #Misfits Fix: Re-enabled Stack — map entities require StackComponent to deserialize
   - type: Stack
-    stackType: N14XanderRoot
+    stackType: F14XanderRoot
     count: 1
   - type: Solution
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ExtractXander
+      - ReagentId: F14ExtractXander
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ExtractXander
+      - ReagentId: F14ExtractXander
         Quantity: 10
   - type: Produce
-    plantId: N14WildXander
+    plantId: F14WildXander
   - type: Seed
-    plantId: N14WildXander
+    plantId: F14WildXander

@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: BaseStructure
-  id: N14HalfWallBase
+  id: F14HalfWallBase
   name: basewall
   description: A nice half wall for a window or boundary.
   suffix: half
@@ -63,8 +63,8 @@
     range: 0.05
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallBrickHalf
+  parent: F14HalfWallBase
+  id: F14WallBrickHalf
   name: brick wall
   suffix: half
   components:
@@ -85,8 +85,8 @@
     
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallBunkerHalf
+  parent: F14HalfWallBase
+  id: F14WallBunkerHalf
   name: bunker wall
   components:
   - type: Sprite
@@ -106,8 +106,8 @@
     
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallConcreteHalf
+  parent: F14HalfWallBase
+  id: F14WallConcreteHalf
   name: concrete wall
   components:
   - type: Sprite
@@ -127,8 +127,8 @@
     
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallDungeonHalf
+  parent: F14HalfWallBase
+  id: F14WallDungeonHalf
   name: dungeon wall
   components:
   - type: Sprite
@@ -148,12 +148,12 @@
     
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallMetalHalf
+  parent: F14HalfWallBase
+  id: F14WallMetalHalf
   name: metal wall
   components:
   - type: Construction
-    graph: N14HalfWall
+    graph: F14HalfWall
     node: Metal
   - type: Sprite
     sprite: Nuclear14/Structures/Walls/ms13/half/metal.rsi
@@ -172,8 +172,8 @@
     
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallPrisonHalf
+  parent: F14HalfWallBase
+  id: F14WallPrisonHalf
   name: prison wall
   components:
   - type: Sprite
@@ -193,8 +193,8 @@
     
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallMetalReinforcedHalf
+  parent: F14HalfWallBase
+  id: F14WallMetalReinforcedHalf
   name: reinforced metal wall
   components:
   - type: Sprite
@@ -215,8 +215,8 @@
     
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallRockHalf
+  parent: F14HalfWallBase
+  id: F14WallRockHalf
   name: rock wall
   components:
   - type: Sprite
@@ -244,8 +244,8 @@
     
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallMetalReinforcedRustHalf
+  parent: F14HalfWallBase
+  id: F14WallMetalReinforcedRustHalf
   name: rust reinforced metal wall
   components:
   - type: Sprite
@@ -265,8 +265,8 @@
     
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallMetalRustHalf
+  parent: F14HalfWallBase
+  id: F14WallMetalRustHalf
   name: rust metal wall
   components:
   - type: Sprite
@@ -286,8 +286,8 @@
     
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallScrapHalf
+  parent: F14HalfWallBase
+  id: F14WallScrapHalf
   name: scrap wall
   components:
   - type: Sprite
@@ -307,8 +307,8 @@
     
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallSewerHalf
+  parent: F14HalfWallBase
+  id: F14WallSewerHalf
   name: sewer wall
   components:
   - type: Sprite
@@ -328,8 +328,8 @@
     
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallSidingHalf
+  parent: F14HalfWallBase
+  id: F14WallSidingHalf
   name: siding wall
   components:
   - type: Sprite
@@ -357,8 +357,8 @@
     
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallVaultHalf
+  parent: F14HalfWallBase
+  id: F14WallVaultHalf
   name: vault wall
   components:
   - type: Sprite
@@ -378,8 +378,8 @@
     
 
 - type: entity
-  parent: N14HalfWallBase
-  id: N14WallWoodHalf
+  parent: F14HalfWallBase
+  id: F14WallWoodHalf
   name: wood wall
   components:
   - type: Sprite
@@ -405,5 +405,5 @@
       mask: [ windows ]
       base: wood
   - type: Construction
-    graph: N14HalfWall
+    graph: F14HalfWall
     node: Wood

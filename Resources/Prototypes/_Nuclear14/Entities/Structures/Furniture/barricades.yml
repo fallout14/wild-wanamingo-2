@@ -2,13 +2,13 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Furniture/barricades.yml
 
 - type: entity
-  id: N14BarricadeSandbagSingle
+  id: F14BarricadeSandbagSingle
   parent: BaseStructure
   name: sandbags
   description: A sandbag fortification.
   components:
   - type: Construction # #Misfits Add: constructable via (G) menu using sand + thread
-    graph: MisfitsSandbagBarricade
+    graph: F14SandbagBarricade
     node: sandbag
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/barricades.rsi
@@ -43,8 +43,8 @@
         - TableLayer
 
 - type: entity
-  id: N14BarricadeTanktrap
-  parent: N14BarricadeSandbagSingle
+  id: F14BarricadeTanktrap
+  parent: F14BarricadeSandbagSingle
   name: tank trap
   description: A metal fabricated spike for blocking vehicles.
   components:
@@ -54,7 +54,7 @@
     state: iron_barricade
     snapCardinals: true
   - type: Construction
-    graph: MisfitsBarricadeTanktrap
+    graph: F14BarricadeTanktrap
     node: Tanktrap
   - type: Damageable
     damageModifierSet: Metallic
@@ -84,8 +84,8 @@
         - TableLayer
 
 - type: entity
-  id: N14BarricadeTanktrapRusty
-  parent: N14BarricadeTanktrap
+  id: F14BarricadeTanktrapRusty
+  parent: F14BarricadeTanktrap
   name: tank trap
   description: A rusty metal fabricated spike for blocking vehicles.
   components:
@@ -94,12 +94,12 @@
     netsync: false
     state: iron_barricadeA
   - type: Construction
-    graph: MisfitsBarricadeTanktrap
+    graph: F14BarricadeTanktrap
     node: Tanktrap
 
 - type: entity
   parent: BaseStructure
-  id: N14BarricadeRazorwire
+  id: F14BarricadeRazorwire
   name: razorwire barricade
   description: A razorwire fortification.
   components:
@@ -165,8 +165,8 @@
       knockdownTime: 0
 
 - type: entity
-  parent: N14BarricadeSandbagSingle
-  id: N14BarricadeMetal
+  parent: F14BarricadeSandbagSingle
+  id: F14BarricadeMetal
   name: metal barricade
   description: A metal fortification.
   suffix: black
@@ -175,7 +175,7 @@
     sprite: Nuclear14/Structures/Furniture/ms13_barricades.rsi
     state: black
   - type: Construction
-    graph: MisfitsBarricadeMetal
+    graph: F14BarricadeMetal
     node: Metal
   - type: Damageable
     damageModifierSet: Metallic
@@ -203,29 +203,29 @@
           collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14Scrap1:
+          F14Scrap1:
             min: 1
             max: 3
-          N14ScrapSteel1:
+          F14ScrapSteel1:
             min: 1
             max: 2
       - !type:DoActsBehavior
         acts: ["Destruction"]
 
 - type: entity
-  parent: N14BarricadeMetal
-  id: N14BarricadeMetalGreen
+  parent: F14BarricadeMetal
+  id: F14BarricadeMetalGreen
   suffix: green
   components:
   - type: Sprite
     state: green
   - type: Construction
-    graph: MisfitsBarricadeMetalGreen
+    graph: F14BarricadeMetalGreen
     node:  Green
 
 - type: entity
-  parent: N14BarricadeSandbagSingle
-  id: N14DecorConcreteBarrier
+  parent: F14BarricadeSandbagSingle
+  id: F14DecorConcreteBarrier
   name: concrete barrier
   description: A concrete barrier for stopping traffic.
   components:
@@ -233,7 +233,7 @@
     sprite: Nuclear14/Structures/Decoration/barriers.rsi
     state: concrete_barrier
   - type: Construction
-    graph: MisfitsBarricadeConcrete
+    graph: F14BarricadeConcrete
     node: Concrete
   - type: Fixtures # Corvax-Change
     fixtures:
@@ -248,8 +248,8 @@
         - TableLayer
 
 - type: entity
-  parent: N14DecorConcreteBarrier
-  id: N14DecorConcreteBarrierDamaged
+  parent: F14DecorConcreteBarrier
+  id: F14DecorConcreteBarrierDamaged
   components:
   - type: Sprite
     layers:
@@ -266,8 +266,8 @@
   - type: Climbable
 
 - type: entity
-  parent: N14DecorConcreteBarrier
-  id: N14DecorConcreteBarrierStriped
+  parent: F14DecorConcreteBarrier
+  id: F14DecorConcreteBarrierStriped
   name: concrete barrier
   description: An old concrete barrier for stopping traffic.
   components:
@@ -282,8 +282,8 @@
           concrete_barrier_alt_1: ""
 
 - type: entity
-  parent: N14DecorConcreteBarrier
-  id: N14DecorRoadBarrier
+  parent: F14DecorConcreteBarrier
+  id: F14DecorRoadBarrier
   name: road barrier
   description: An old wooden barrier for stopping traffic.
   components:

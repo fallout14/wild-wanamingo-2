@@ -1,141 +1,141 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Structures/Doors/doors_80s.yml
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: MisfitsDoorWoodSecureLocked80sHead
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodSecureLocked80sHead
   suffix: 80s, Locked, Head
   components:
   - type: AccessReader
-    access: [["Misfits80sHead"]]
+    access: [["F1480sHead"]]
   - type: Wires
     layoutId: AirlockCargo
 
 # regular access doors
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: MisfitsDoorWoodSecureLocked80s
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodSecureLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalBlueSlanted
-  id: MisfitsDoorMetalSlantedLocked80s
+  parent: F14DoorMetalBlueSlanted
+  id: F14DoorMetalSlantedLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalBlueWindowTall
-  id: MisfitsDoorMetalWindowLocked80s
+  parent: F14DoorMetalBlueWindowTall
+  id: F14DoorMetalWindowLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalBlueAltTall
-  id: MisfitsDoorMetalAltLocked80s
+  parent: F14DoorMetalBlueAltTall
+  id: F14DoorMetalAltLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalBar
-  id: MisfitsDoorMetalBarLocked80s
+  parent: F14DoorMetalBar
+  id: F14DoorMetalBarLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorCellMetal
-  id: MisfitsDoorCellMetalLocked80s
+  parent: F14DoorCellMetal
+  id: F14DoorCellMetalLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalBarSlanted
-  id: MisfitsDoorCellSlantedLocked80s
+  parent: F14DoorMetalBarSlanted
+  id: F14DoorCellSlantedLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorCell
-  id: MisfitsDoorCellLocked80s
+  parent: F14DoorCell
+  id: F14DoorCellLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorCellRust
-  id: MisfitsDoorCellRustLocked80s
+  parent: F14DoorCellRust
+  id: F14DoorCellRustLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorWoodWhiteSlanted
-  id: MisfitsDoorWoodSlantedWhiteLocked80s
+  parent: F14DoorWoodWhiteSlanted
+  id: F14DoorWoodSlantedWhiteLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorWoodRedSlanted
-  id: MisfitsDoorWoodSlantedRedLocked80s
+  parent: F14DoorWoodRedSlanted
+  id: F14DoorWoodSlantedRedLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
   parent: FenceMetalGate
-  id: MisfitsDoorFenceMetalGateLocked80s
+  id: F14DoorFenceMetalGateLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 # garage door
 
 - type: entity
-  id: Misfits80sGarageDoor
+  id: F1480sGarageDoor
   parent: BaseShutter
   name: 80s garage door
   description: fancy paint mate.
@@ -191,82 +191,82 @@
 # slave accessible doors
 
 - type: entity
-  parent: N14DoorMetalBarSlanted
-  id: MisfitsDoorCellSlantedLocked80sSlave
+  parent: F14DoorMetalBarSlanted
+  id: F14DoorCellSlantedLocked80sSlave
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80sSlave"]]
+    access: [["F1480sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorCell
-  id: MisfitsDoorCellLocked80sSlave
+  parent: F14DoorCell
+  id: F14DoorCellLocked80sSlave
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80sSlave"]]
+    access: [["F1480sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorCellRust
-  id: MisfitsDoorCellRustLocked80sSlave
+  parent: F14DoorCellRust
+  id: F14DoorCellRustLocked80sSlave
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80sSlave"]]
+    access: [["F1480sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorCellMetal
-  id: MisfitsDoorCellMetalLocked80sSlave
+  parent: F14DoorCellMetal
+  id: F14DoorCellMetalLocked80sSlave
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80sSlave"]]
+    access: [["F1480sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMakeshift
-  id: MisfitsDoorMakeshiftLocked80sSlave
+  parent: F14DoorMakeshift
+  id: F14DoorMakeshiftLocked80sSlave
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80sSlave"]]
+    access: [["F1480sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorSpikedGate
-  id: MisfitsDoorSpikedGateLocked80sSlave
+  parent: F14DoorSpikedGate
+  id: F14DoorSpikedGateLocked80sSlave
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80sSlave"]]
+    access: [["F1480sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalFenceBarbedTall
-  id: MisfitsDoorMetalFenceBarbedTallLocked80sSlave
+  parent: F14DoorMetalFenceBarbedTall
+  id: F14DoorMetalFenceBarbedTallLocked80sSlave
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80sSlave"]]
+    access: [["F1480sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalGrateTall
-  id: MisfitsDoorMetalGrateTallLocked80sSlave
+  parent: F14DoorMetalGrateTall
+  id: F14DoorMetalGrateTallLocked80sSlave
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80sSlave"]]
+    access: [["F1480sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -274,101 +274,101 @@
 # not slanted doors
 
 - type: entity
-  parent: N14DoorGlassStoreBroken
-  id: MisfitsDoorGlassStoreBrokenLocked80s
+  parent: F14DoorGlassStoreBroken
+  id: F14DoorGlassStoreBrokenLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorGlassBroken
-  id: MisfitsDoorGlassBrokenLocked80s
+  parent: F14DoorGlassBroken
+  id: F14DoorGlassBrokenLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorGlassDirty
-  id: MisfitsDoorGlassDirtyLocked80s
+  parent: F14DoorGlassDirty
+  id: F14DoorGlassDirtyLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorGlassStoreDirty
-  id: MisfitsDoorGlassStoreDirtyLocked80s
+  parent: F14DoorGlassStoreDirty
+  id: F14DoorGlassStoreDirtyLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorGlass
-  id: MisfitsDoorGlassLocked80s
+  parent: F14DoorGlass
+  id: F14DoorGlassLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalIron
-  id: MisfitsDoorMetalIronLocked80s
+  parent: F14DoorMetalIron
+  id: F14DoorMetalIronLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMakeshift
-  id: MisfitsDoorMakeshiftLocked80s
+  parent: F14DoorMakeshift
+  id: F14DoorMakeshiftLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorSpikedGate
-  id: MisfitsDoorSpikedGateLocked80s
+  parent: F14DoorSpikedGate
+  id: F14DoorSpikedGateLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalFenceBarbedTall
-  id: MisfitsDoorMetalFenceBarbedTallLocked80s
+  parent: F14DoorMetalFenceBarbedTall
+  id: F14DoorMetalFenceBarbedTallLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalGrateTall
-  id: MisfitsDoorMetalGrateTallLocked80s
+  parent: F14DoorMetalGrateTall
+  id: F14DoorMetalGrateTallLocked80s
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["Misfits80s"]]
+    access: [["F1480s"]]
   - type: Wires
     layoutId: AirlockCargo

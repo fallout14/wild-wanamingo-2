@@ -1,0 +1,15 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Recipes/Lathes/materials.yml
+
+- type: latheRecipe
+  id: F14CurrencyLegionAureus
+  result: F14CurrencyLegionAureus
+  completetime: 1
+  materials:
+    F14Gold: 160 # Tytos change, makes each aureus cost 1.6 gold bars, thus costing 40 caps, ten times the value of denarius
+
+- type: latheRecipe
+  id: F14CurrencyLegionDenarius
+  result: F14CurrencyLegionDenarius
+  completetime: 1
+  materials:
+    F14Silver: 20

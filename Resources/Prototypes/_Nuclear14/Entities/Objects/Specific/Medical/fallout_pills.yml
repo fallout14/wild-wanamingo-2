@@ -4,7 +4,7 @@
 - type: entity
   name: rad-x pill
   parent: Pill
-  id: N14RadXPill
+  id: F14RadXPill
   description: A pill of Rad-X. It makes you more resistant to radiation.
   components:
   - type: Sprite
@@ -21,7 +21,7 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: N14RadX
+      - ReagentId: F14RadX
         Quantity: 20
   - type: SolutionSpiker
     sourceSolution: food
@@ -31,8 +31,8 @@
 
 - type: entity
   name: buffout pill
-  parent: N14RadXPill
-  id: N14BuffoutPill
+  parent: F14RadXPill
+  id: F14BuffoutPill
   description: A pill of Buffout. It makes you stronger, enhances your reflexes, and allows you to endure more.
   components:
   - type: Sprite
@@ -41,13 +41,13 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: N14Buffout
+      - ReagentId: F14Buffout
         Quantity: 20
 
 - type: entity
   name: buffjet pill
-  parent: N14RadXPill
-  id: N14BuffjetPill
+  parent: F14RadXPill
+  id: F14BuffjetPill
   description: A pill of Buffjet. A potent, if highly addictive, mixture of Buffout and Jet. Providing a boost to physical prowess, heightened reflexes, and a burst of adrenaline.
   components:
   - type: Sprite
@@ -56,13 +56,13 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: N14Buffjet
+      - ReagentId: F14Buffjet
         Quantity: 20
 
 - type: entity
   name: bufftats pill
-  parent: N14RadXPill
-  id: N14BufftatsPill
+  parent: F14RadXPill
+  id: F14BufftatsPill
   description: A pill of Bufftat. A potent, if highly addictive, mixture of Buffout and Mentats. Providing a boost to physical prowess, heightened reflexes, and an increase to perception.
   components:
   - type: Sprite
@@ -71,13 +71,13 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: N14Bufftats
+      - ReagentId: F14Bufftats
         Quantity: 20
 
 - type: entity
   name: mentats pill
-  parent: N14RadXPill
-  id: N14MentatsPill
+  parent: F14RadXPill
+  id: F14MentatsPill
   description: A pill of Mentat. It makes you mentally sharper.
   components:
   - type: Sprite
@@ -86,13 +86,13 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: N14Mentats
+      - ReagentId: F14Mentats
         Quantity: 20
 
 - type: entity
   name: fixer pill
-  parent: N14RadXPill
-  id: N14FixerPill
+  parent: F14RadXPill
+  id: F14FixerPill
   description: A pill of Fixer. It helps you get over your addictions.
   components:
   - type: Sprite
@@ -101,13 +101,13 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: N14Fixer
+      - ReagentId: F14Fixer
         Quantity: 20
 
 - type: entity
   name: cateye pill
-  parent: N14RadXPill
-  id: N14CateyePill
+  parent: F14RadXPill
+  id: F14CateyePill
   description: A pill of Cateye. It temporarily grants you better low-light vision.
   components:
   - type: Sprite
@@ -116,5 +116,5 @@
     solution:
       maxVol: 20
       reagents:
-      - ReagentId: N14Cateye
+      - ReagentId: F14Cateye
         Quantity: 30 # Forge-Change

@@ -3,15 +3,15 @@
 
 - type: entity
   parent: EncryptionKey
-  id: N14EncryptionKeyEnclave
+  id: F14EncryptionKeyEnclave
   name: Enclave encryption key
   description: An encryption key used by the Enclave.
   categories: [ HideSpawnMenu ]
   components:
   - type: EncryptionKey
     channels:
-    - N14Enclave
-    defaultChannel: N14Enclave
+    - F14Enclave
+    defaultChannel: F14Enclave
   - type: Sprite
     layers:
     - state: crypt_red
@@ -19,14 +19,14 @@
 
 - type: entity
   parent: EncryptionKey
-  id: N14EncryptionKeyNCR
+  id: F14EncryptionKeyNCR
   name: NCR encryption key
   description: An encryption key used by the NCR.
   components:
   - type: EncryptionKey
     channels:
-    - N14NCR
-    defaultChannel: N14NCR
+    - F14NCR
+    defaultChannel: F14NCR
   - type: Sprite
     layers:
     - state: crypt_gray
@@ -34,14 +34,14 @@
 
 - type: entity
   parent: EncryptionKey
-  id: N14EncryptionKeyVault
+  id: F14EncryptionKeyVault
   name: Vault encryption key
   description: An encryption key used by the local Vault.
   components:
   - type: EncryptionKey
     channels:
-    - N14VaultCommon
-    defaultChannel: N14VaultCommon
+    - F14VaultCommon
+    defaultChannel: F14VaultCommon
   - type: Sprite
     layers:
     - state: crypt_gray
@@ -49,14 +49,14 @@
 
 - type: entity
   parent: EncryptionKey
-  id: N14EncryptionKeyPBS
+  id: F14EncryptionKeyPBS
   name: PBS encryption key
   description: An encryption key used by the local broadcast messages.
   components:
   - type: EncryptionKey
     channels:
-    - N14PBS
-    defaultChannel: N14PBS
+    - F14PBS
+    defaultChannel: F14PBS
   - type: Sprite
     layers:
     - state: crypt_gray

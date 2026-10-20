@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClothingNeckPinBase
-  id: N14ClothingNeckPinNCRRecruit
+  id: F14ClothingNeckPinNCRRecruit
   name: recruit pin
   description: A worn Republic Armed Forces badge showing the wearer's rank.
   components:
@@ -20,11 +20,11 @@
       - state: empty-equipped
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRRecruit
-  id: N14ClothingNeckPinNCRPrivate
+  parent: F14ClothingNeckPinNCRRecruit
+  id: F14ClothingNeckPinNCRPrivate
   name: private pin
   components:
   - type: RankTitle
@@ -40,12 +40,12 @@
       - state: gold-equipped
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
     
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: N14ClothingNeckPinNCRPrivate1st
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRPrivate1st
   name: private first class pin
   components:
   - type: RankTitle
@@ -56,11 +56,11 @@
     - state: private1st
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: N14ClothingNeckPinNCRCorporal
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRCorporal
   name: corporal pin
   components:
   - type: RankTitle
@@ -71,11 +71,11 @@
     - state: corporal
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: N14ClothingNeckPinNCRSpecialist
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRSpecialist
   name: specialist pin
   components:
   - type: RankTitle
@@ -86,11 +86,11 @@
     - state: specialist
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: N14ClothingNeckPinNCRSergeant
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRSergeant
   name: sergeant pin
   components:
   - type: RankTitle
@@ -101,11 +101,11 @@
     - state: sergeant
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: N14ClothingNeckPinNCRSergeant1st
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRSergeant1st
   name: sergeant first class pin
   components:
   - type: RankTitle
@@ -116,11 +116,11 @@
     - state: sergeant1st
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: N14ClothingNeckPinNCRMasterSergeant
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRMasterSergeant
   name: master sergeant pin
   components:
   - type: RankTitle
@@ -131,11 +131,11 @@
     - state: sergeant1st
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: N14ClothingNeckPinNCRSergeantMajor
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRSergeantMajor
   name: sergeant major pin
   components:
   - type: RankTitle
@@ -146,11 +146,11 @@
     - state: sergeantmajor
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: N14ClothingNeckPinNCRSecondLieutenant
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRSecondLieutenant
   name: second lieutenant pin
   components:
   - type: RankTitle
@@ -161,11 +161,11 @@
     - state: secondlieutenant
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: N14ClothingNeckPinNCRCaptain
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRCaptain
   name: captain pin
   components:
   - type: RankTitle
@@ -181,11 +181,11 @@
       - state: silver-equipped
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: N14ClothingNeckPinNCRMajor
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRMajor
   name: major pin
   components:
   - type: RankTitle
@@ -196,11 +196,11 @@
     - state: major
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: N14ClothingNeckPinNCRDoctor
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRDoctor
   name: doctor pin
   components:
   - type: RankTitle
@@ -216,11 +216,11 @@
       - state: red-equipped
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingNeckPinNCRPrivate
-  id: N14ClothingNeckPinNCRChiefPhysician
+  parent: F14ClothingNeckPinNCRPrivate
+  id: F14ClothingNeckPinNCRChiefPhysician
   name: chief physician pin
   components:
   - type: RankTitle
@@ -231,4 +231,4 @@
     - state: chiefphysician
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable

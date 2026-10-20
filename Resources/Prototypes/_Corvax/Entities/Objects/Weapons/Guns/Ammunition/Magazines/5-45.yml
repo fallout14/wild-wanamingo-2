@@ -2,20 +2,20 @@
 # Resources/Prototypes/Corvax/Entities/Objects/Weapons/Guns/Ammunition/Magazines/5-45.yml
 
 - type: entity
-  id: CorvaxBaseMagazine545Rifle
+  id: F14BaseMagazine545Rifle
   name: "magazine (5mm)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags: 
-      - CorvaxMagazine545Rifle
+      - F14Magazine545Rifle
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14CartridgePistol5
-    proto: N14CartridgePistol5
+        - F14CartridgePistol5
+    proto: F14CartridgePistol5
     capacity: 24
   - type: ContainerContainer
     containers:
@@ -35,9 +35,9 @@
   - type: Appearance
 
 - type: entity
-  id: CorvaxMagazine545Rifle
+  id: F14Magazine545Rifle
   name: "magazine (5mm)"
-  parent: CorvaxBaseMagazine545Rifle
+  parent: F14BaseMagazine545Rifle
   components:
   - type: BallisticAmmoProvider
-    proto: N14CartridgePistol5
+    proto: F14CartridgePistol5

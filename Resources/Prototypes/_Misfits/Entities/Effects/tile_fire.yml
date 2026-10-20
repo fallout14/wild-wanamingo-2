@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Effects/tile_fire.yml
 
 - type: entity
-  id: MisfitsTileFire
+  id: F14TileFire
   name: fire
   categories: [ HideSpawnMenu ]
   placement:
@@ -38,8 +38,8 @@
     touchCooldown: 1
 
 - type: entity
-  parent: MisfitsTileFire
-  id: MisfitsTileFireOil
+  parent: F14TileFire
+  id: F14TileFireOil
   name: lingering fire
   categories: [ HideSpawnMenu ]
   components:
@@ -53,8 +53,8 @@
     touchCooldown: 1
 
 - type: entity
-  parent: MisfitsTileFire
-  id: MisfitsTileFireNapalm
+  parent: F14TileFire
+  id: F14TileFireNapalm
   name: napalm fire
   categories: [ HideSpawnMenu ]
   components:

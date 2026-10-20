@@ -2,13 +2,13 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Devices/machine_parts.yml
 
 - type: entity
-  id: N14PortableGeneratorWeldingFuelMachineParts
+  id: F14PortableGeneratorWeldingFuelMachineParts
   parent: BaseMachineCircuitboard
   name: gas powered generator machine parts
   description: Essential parts for making your own gas-powered generator.
   components:
     - type: MachineBoard
-      prototype: N14PortableGeneratorWeldingFuel
+      prototype: F14PortableGeneratorWeldingFuel
       stackRequirements:
         Manipulator: 1
         Cable: 10

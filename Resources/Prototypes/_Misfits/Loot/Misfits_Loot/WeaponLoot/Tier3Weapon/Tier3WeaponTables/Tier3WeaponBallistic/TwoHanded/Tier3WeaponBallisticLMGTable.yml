@@ -1,9 +1,9 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3WeaponBallistic/TwoHanded/Tier3WeaponBallisticLMGTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_GunsBulletLMG
+  id: F14WeaponLootTier3GunsBulletLMG
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponLMG # 556
+      id: F14WeaponLMG # 556
       weight: 1

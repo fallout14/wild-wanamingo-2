@@ -1,51 +1,51 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/Blueprints/minor_factions.yml
 
 - type: entity
-  id: MisfitsCrateAluminiumBlueprintsTribe
+  id: F14CrateAluminiumBlueprintsTribe
   suffix: Filled, Blueprints, Tribe
-  parent: N14CrateAluminium
+  parent: F14CrateAluminium
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsBlueprintTribeAmmoT4
-    - id: MisfitsBlueprintTribeAmmoT3
-    - id: MisfitsBlueprintTribeAmmoT2
-    - id: MisfitsBlueprintTribeAmmoT1
-    - id: MisfitsBlueprintTribeWeaponsT4
-    - id: MisfitsBlueprintTribeWeaponsT3
-    - id: MisfitsBlueprintTribeWeaponsT2
-    - id: MisfitsBlueprintTribeWeaponsT1
-    - id: MisfitsBlueprintTribeArmorT4
-    - id: MisfitsBlueprintTribeArmorT3
-    - id: MisfitsBlueprintTribeArmorT2
-    - id: MisfitsBlueprintTribeArmorT1
+    - id: F14BlueprintTribeAmmoT4
+    - id: F14BlueprintTribeAmmoT3
+    - id: F14BlueprintTribeAmmoT2
+    - id: F14BlueprintTribeAmmoT1
+    - id: F14BlueprintTribeWeaponsT4
+    - id: F14BlueprintTribeWeaponsT3
+    - id: F14BlueprintTribeWeaponsT2
+    - id: F14BlueprintTribeWeaponsT1
+    - id: F14BlueprintTribeArmorT4
+    - id: F14BlueprintTribeArmorT3
+    - id: F14BlueprintTribeArmorT2
+    - id: F14BlueprintTribeArmorT1
 
 - type: entity
-  id: MisfitsCrateAluminiumBlueprints80s
+  id: F14CrateAluminiumBlueprints80s
   suffix: Filled, Blueprints, 80s
-  parent: N14CrateAluminium
+  parent: F14CrateAluminium
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsBlueprintEightiesOrdnance
-    - id: MisfitsBlueprintEightiesAmmoT4
-    - id: MisfitsBlueprintEightiesAmmoT3
-    - id: MisfitsBlueprintEightiesAmmoT2
-    - id: MisfitsBlueprintEightiesAmmoT1
-    - id: MisfitsBlueprintEightiesWeaponsT5
-    - id: MisfitsBlueprintEightiesWeaponsT4
-    - id: MisfitsBlueprintEightiesWeaponsT3
-    - id: MisfitsBlueprintEightiesWeaponsT2
-    - id: MisfitsBlueprintEightiesWeaponsT1
-    - id: MisfitsBlueprintEightiesArmorT4
-    - id: MisfitsBlueprintEightiesArmorT3
-    - id: MisfitsBlueprintEightiesArmorT2
-    - id: MisfitsBlueprintEightiesArmorT1
+    - id: F14BlueprintEightiesOrdnance
+    - id: F14BlueprintEightiesAmmoT4
+    - id: F14BlueprintEightiesAmmoT3
+    - id: F14BlueprintEightiesAmmoT2
+    - id: F14BlueprintEightiesAmmoT1
+    - id: F14BlueprintEightiesWeaponsT5
+    - id: F14BlueprintEightiesWeaponsT4
+    - id: F14BlueprintEightiesWeaponsT3
+    - id: F14BlueprintEightiesWeaponsT2
+    - id: F14BlueprintEightiesWeaponsT1
+    - id: F14BlueprintEightiesArmorT4
+    - id: F14BlueprintEightiesArmorT3
+    - id: F14BlueprintEightiesArmorT2
+    - id: F14BlueprintEightiesArmorT1
 
 - type: entity
-  id: MisfitsCrateAluminiumBlueprintsEnclave
+  id: F14CrateAluminiumBlueprintsEnclave
   suffix: Filled, Blueprints, Enclave
-  parent: N14CrateAluminium
+  parent: F14CrateAluminium
   components:
   - type: StorageFill
     contents:
@@ -54,7 +54,7 @@
     # Enclave map and Wendover but held only the folder above, so none of the
     # Enclave blueprints had an obtain path. The gauss ordnance plans below are
     # pre-existing and were likewise unobtainable outside admin spawn.
-    - id: MisfitsBlueprintEnclaveArmor
-    - id: MisfitsBlueprintEnclaveWeapons
-    - id: MisfitsBlueprintEnclaveAmmo
-    - id: MisfitsEnclaveheavyordnancet5
+    - id: F14BlueprintEnclaveArmor
+    - id: F14BlueprintEnclaveWeapons
+    - id: F14BlueprintEnclaveAmmo
+    - id: F14Enclaveheavyordnancet5

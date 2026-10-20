@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Clothing/OuterClothing/ncr_salvaged_pa.yml
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT45NCR
-  id: MisfitsClothingOuterPowerArmorT45NCRSalvaged
+  parent: F14ClothingOuterPowerArmorT45NCR
+  id: F14ClothingOuterPowerArmorT45NCRSalvaged
   name: t-45 salvaged NCR trooper armor
   description: >-
     A heavily-worn T-45 suit stripped of its full servo-motor assembly and
@@ -39,9 +39,9 @@
   # #Misfits Tweak - Spawns helmet, gauntlets, and boots; NO fusion core (not needed for salvaged variant).
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorT45NCR
-      gloves: N14ClothingPAGauntlets
-      shoes: N14ClothingPABoots
+      head: F14ClothingHeadHelmetPowerArmorT45NCR
+      gloves: F14ClothingPAGauntlets
+      shoes: F14ClothingPABoots
   # #Misfits Tweak - Disable brace stance (servos stripped); slot mismatch prevents action from being granted.
   - type: PowerArmorBrace
     requiredSlot: BELT

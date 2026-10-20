@@ -127,7 +127,6 @@ microwave-meal-recipe-n14-n14-recipe-radroll-name = radroll recipe
 microwave-meal-recipe-n14-n14-recipe-radscorpion-leg-name = boiled radscorpion leg recipe
 microwave-meal-recipe-n14-n14-recipe-raisin-cookie-name = raisin cookie recipe
 microwave-meal-recipe-n14-n14-recipe-rat-burger-name = rat burger recipe
-microwave-meal-recipe-n14-n14-recipe-rat-burger-upstream-bun-name = rat burger recipe
 microwave-meal-recipe-n14-n14-recipe-ribs-name = BBQ ribs recipe
 microwave-meal-recipe-n14-n14-recipe-rice-gumbo-name = black-eyed gumbo recipe
 microwave-meal-recipe-n14-n14-recipe-rice-pudding-name = rice pudding recipe

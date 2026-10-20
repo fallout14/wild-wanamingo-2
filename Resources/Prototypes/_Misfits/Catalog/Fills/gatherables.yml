@@ -4,7 +4,7 @@
   id: WildZoyAll
   table: !type:AllSelector
     children:
-    - id: MisfitsFloraProduceWildZoybeans
+    - id: F14FloraProduceWildZoybeans
       prob: 0.75
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -13,4 +13,4 @@
   id: WildZoyClippers
   table: !type:AllSelector
     children:
-    - id: MisfitsZoybeanSeeds
+    - id: F14ZoybeanSeeds

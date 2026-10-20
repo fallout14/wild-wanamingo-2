@@ -1,15 +1,15 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Blueprints/enclave_blueprint.yml
 
 - type: entity
-  parent: MisfitsBlueprintBase
-  id: MisfitsEnclaveheavyordnancet5
+  parent: F14BlueprintBase
+  id: F14Enclaveheavyordnancet5
   name: Enclave Heavy Ordnance Plans
   description: Classified Enclave engineering schematics for 2mm electromagnetic gauss weapons — the PPK12 sidearm, the M72 rifle, their magazines, and cartridge boxes. Tier 5 heavy ordnance.
   components:
   - type: Blueprint
     providedRecipes:
-    - MisfitsBPEnclaveWeaponGaussRifle
-    - MisfitsBPEnclaveWeaponGaussPistol
-    - MisfitsBPEnclaveAmmoMag2mmECRifle
-    - MisfitsBPEnclaveAmmoMag2mmECPistol
-    - MisfitsBPEnclaveAmmoBox2mmEC
+    - F14BPEnclaveWeaponGaussRifle
+    - F14BPEnclaveWeaponGaussPistol
+    - F14BPEnclaveAmmoMag2mmECRifle
+    - F14BPEnclaveAmmoMag2mmECPistol
+    - F14BPEnclaveAmmoBox2mmEC

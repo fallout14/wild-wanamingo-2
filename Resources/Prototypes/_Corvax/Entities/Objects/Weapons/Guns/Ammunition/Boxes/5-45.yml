@@ -4,14 +4,14 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: CorvaxBaseMagazineBox545Rifle
+  id: F14BaseMagazineBox545Rifle
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - CorvaxCartridge545Rifle
-    proto: CorvaxCartridge545Rifle
+        - F14Cartridge545Rifle
+    proto: F14Cartridge545Rifle
     capacity: 75
   - type: ContainerContainer
     containers:
@@ -27,15 +27,15 @@
   - type: FoldableAmmoBox #Misfits Change /Add/: Empty cardboard ammo boxes can fold back into one cardboard sheet.
 
 - type: entity
-  parent: CorvaxBaseMagazineBox545Rifle
-  id: CorvaxMagazineBox5mm
+  parent: F14BaseMagazineBox545Rifle
+  id: F14MagazineBox5mm
   name: ammunition box (5mm)
   components:
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - N14CartridgePistol5
-    proto: N14CartridgePistol5
+        - F14CartridgePistol5
+    proto: F14CartridgePistol5
   - type: Sprite
     layers:
     - state: base

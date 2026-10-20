@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClothingBeltStorageBase
-  id: N14ClothingBeltStorageBase
+  id: F14ClothingBeltStorageBase
   name: Abstract Belt
   description: You shouldn't be seeing this.
   abstract: true
@@ -12,7 +12,7 @@
     whitelist:
       tags:
         - CigPack
-        - N14AmmoCell
+        - F14AmmoCell
         # #Cythisiax Added - every N14 belt can store the Wendover map (Document)
         - Document
       components:
@@ -20,8 +20,8 @@
         - CartridgeAmmo
 
 - type: entity
-  parent: N14ClothingBeltStorageBase
-  id: N14ClothingBeltBoSCarrier
+  parent: F14ClothingBeltStorageBase
+  id: F14ClothingBeltBoSCarrier
   name: Brotherhood of Steel Carrier
   description: A simple black carrier capable of holding all kind of ammo.
   components:
@@ -35,8 +35,8 @@
     whitelist:
       tags:
         - CigPack
-        - N14AmmoCell
-        - N14Welder
+        - F14AmmoCell
+        - F14Welder
         - Document
         - ThrowingKnife
       components:
@@ -44,8 +44,8 @@
         - CartridgeAmmo
 
 - type: entity
-  parent: N14ClothingBeltStorageBase
-  id: N14ClothingBeltBoSWebbing
+  parent: F14ClothingBeltStorageBase
+  id: F14ClothingBeltBoSWebbing
   name: Brotherhood of Steel Webbing
   description: A simple black carrier, capable of holding all kind of ammo and medicine for field-use.
   components:
@@ -70,11 +70,11 @@
         - DiscreteHealthAnalyzer
         - SurgeryTool
         - CigPack
-        - N14AmmoCell
+        - F14AmmoCell
         # #Cythisiax Added - BoS webbing carries welders for field repairs (also covers Squire webbings)
-        - N14Welder
+        - F14Welder
         # #Cythisiax Added - tool sterilizers (Abraxo) & Wendover map (Document)
-        - N14Abraxo
+        - F14Abraxo
         - Document
         - ThrowingKnife
       components:
@@ -85,8 +85,8 @@
         - CartridgeAmmo
 
 - type: entity
-  parent: N14ClothingBeltStorageBase
-  id: N14ClothingBeltMilitary
+  parent: F14ClothingBeltStorageBase
+  id: F14ClothingBeltMilitary
   name: military carrier
   description: A simple brown carrier capable of holding all kind of ammo, it was commonly used by the military of the pre-war.
   components:
@@ -111,8 +111,8 @@
         - Radio
         - DiscreteHealthAnalyzer
         - SurgeryTool
-        - N14AmmoCell
-        - N14Abraxo
+        - F14AmmoCell
+        - F14Abraxo
         - Document
       components:
         - Injector
@@ -122,8 +122,8 @@
         - CartridgeAmmo
 
 - type: entity
-  parent: N14ClothingBeltStorageBase
-  id: N14ClothingBeltNCR
+  parent: F14ClothingBeltStorageBase
+  id: F14ClothingBeltNCR
   name: NCR belt
   description: A leather belt designed by the NCR for their troops.
   components:
@@ -148,11 +148,11 @@
         - DiscreteHealthAnalyzer
         - SurgeryTool
         - CigPack
-        - N14AmmoCell
+        - F14AmmoCell
         # #Cythisiax Added - NCR belt carries welders for field repairs
-        - N14Welder
+        - F14Welder
         # #Cythisiax Added - tool sterilizers (Abraxo) & Wendover map (Document)
-        - N14Abraxo
+        - F14Abraxo
         - Document
         - ThrowingKnife
       components:
@@ -163,8 +163,8 @@
         - CartridgeAmmo
 
 - type: entity
-  parent: N14ClothingBeltStorageBase
-  id: N14ClothingBeltNCRPouches
+  parent: F14ClothingBeltStorageBase
+  id: F14ClothingBeltNCRPouches
   name: NCR pouches bandolier
   description: A leather bandolier with multiple pouches designed by the NCR for their troops.
   components:
@@ -189,9 +189,9 @@
         - Radio
         - DiscreteHealthAnalyzer
         - SurgeryTool
-        - N14AmmoCell
-        - N14Welder
-        - N14Abraxo
+        - F14AmmoCell
+        - F14Welder
+        - F14Abraxo
         - Document
         - ThrowingKnife
       components:
@@ -202,8 +202,8 @@
         - CartridgeAmmo
 
 - type: entity
-  parent: N14ClothingBeltStorageBase
-  id: N14ClothingBeltNCRHarness
+  parent: F14ClothingBeltStorageBase
+  id: F14ClothingBeltNCRHarness
   name: NCR Harness
   description: A leather harness designed by the NCR for their troops.
   components:
@@ -228,9 +228,9 @@
         - DiscreteHealthAnalyzer
         - SurgeryTool
         - CigPack
-        - N14AmmoCell
+        - F14AmmoCell
         # #Cythisiax Added - tool sterilizers (Abraxo) & Wendover map (Document)
-        - N14Abraxo
+        - F14Abraxo
         - Document
         - ThrowingKnife
       components:
@@ -241,8 +241,8 @@
         - CartridgeAmmo
 
 - type: entity
-  parent: N14ClothingBeltStorageBase
-  id: N14ClothingBeltNCRBandolier
+  parent: F14ClothingBeltStorageBase
+  id: F14ClothingBeltNCRBandolier
   name: bandolier
   description: A bandolier commonly used to carry single shells or cartridges, modified by the NCR for more capacity.
   components:
@@ -252,8 +252,8 @@
     sprite: Nuclear14/Clothing/Belt/bandolier.rsi
 
 - type: entity
-  parent: N14ClothingBeltStorageBase
-  id: N14ClothingBeltRope
+  parent: F14ClothingBeltStorageBase
+  id: F14ClothingBeltRope
   name: rope belt
   description: A handmade belt with a rope, not the best but at least works.
   components:
@@ -268,8 +268,8 @@
     - 0,0,5,1
 
 - type: entity
-  parent: N14ClothingBeltStorageBase
-  id: N14ClothingBeltQuiverSpear
+  parent: F14ClothingBeltStorageBase
+  id: F14ClothingBeltQuiverSpear
   name: spear quiver
   description: A simple quiver for holding spears
   components:
@@ -290,8 +290,8 @@
     # fillBaseName: fill-
 
 - type: entity
-  parent: N14ClothingBeltStorageBase
-  id: N14ClothingBeltRevolver
+  parent: F14ClothingBeltStorageBase
+  id: F14ClothingBeltRevolver
   name: pistol holster
   description: Can hold pistols, revolvers, magazines, speedloaders and cells.
   components:
@@ -305,14 +305,14 @@
         - Sidearm
         - MisfitsSpeedLoader
         # #Cythisiax Added - revolver belt fits energy cells
-        - N14AmmoCell
+        - F14AmmoCell
       components:
         - BallisticAmmoProvider
   - type: Appearance
 
 - type: entity
-  parent: N14ClothingBeltRevolver
-  id: N14ClothingBeltCowboy
+  parent: F14ClothingBeltRevolver
+  id: F14ClothingBeltCowboy
   name: cowboy belt
   components:
   - type: Sprite
@@ -321,8 +321,8 @@
     sprite: Nuclear14/Clothing/Belt/cowboy.rsi
 
 - type: entity
-  parent: N14ClothingBeltStorageBase
-  id: N14ClothingBeltEnclave
+  parent: F14ClothingBeltStorageBase
+  id: F14ClothingBeltEnclave
   name: U.S. Army belt
   description: A leather belt designed by the U.S. Army.
   components:
@@ -333,7 +333,7 @@
 
 - type: entity
   parent: ClothingBeltPlant
-  id: N14ClothingBeltFarmer
+  id: F14ClothingBeltFarmer
   name: farmers belt
   components:
   - type: Sprite
@@ -342,8 +342,8 @@
     sprite: Nuclear14/Clothing/Belt/gardener.rsi
 
 - type: entity
-  parent: N14ClothingBeltStorageBase
-  id: N14ClothingBeltMountie
+  parent: F14ClothingBeltStorageBase
+  id: F14ClothingBeltMountie
   name: mountie pouched bandolier
   description: A simple brown bandolier capable of holding all kind of ammo.
   components:

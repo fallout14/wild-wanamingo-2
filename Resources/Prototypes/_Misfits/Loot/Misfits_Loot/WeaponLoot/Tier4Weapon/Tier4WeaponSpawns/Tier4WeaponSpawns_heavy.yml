@@ -4,7 +4,7 @@
   name: Tier4 Weapon Spawner
   abstract: true
   suffix: Tier4
-  id: MisfitsM14Tier4Spawner_RefBulletHeavy
+  id: F14Tier4SpawnerRefBulletHeavy
   parent: MarkerBase
   components:
   - type: Sprite
@@ -20,41 +20,41 @@
 - type: entity
   name: Tier4 Heavy Spawner
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Single_GunsBulletHeavy
-  parent: MisfitsM14Tier4Spawner_RefBulletHeavy
+  id: F14Tier4WeaponSpawnerSingleGunsBulletHeavy
+  parent: F14Tier4SpawnerRefBulletHeavy
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier4_GunsBulletHeavy
+        tableId: F14WeaponLootTier4GunsBulletHeavy
 
 - type: entity
   name: Tier4 Heavy Spawner 0-3
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Mult0_3_GunsBulletHeavy
-  parent: MisfitsM14Tier4Spawner_RefBulletHeavy
+  id: F14Tier4WeaponSpawnerMult03GunsBulletHeavy
+  parent: F14Tier4SpawnerRefBulletHeavy
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier4_GunsBulletHeavy
+        tableId: F14WeaponLootTier4GunsBulletHeavy
 
 - type: entity
   name: Tier4 Heavy Spawner 1-2
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Mult1_2_GunsBulletHeavy
-  parent: MisfitsM14Tier4Spawner_RefBulletHeavy
+  id: F14Tier4WeaponSpawnerMult12GunsBulletHeavy
+  parent: F14Tier4SpawnerRefBulletHeavy
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier4_GunsBulletHeavy
+        tableId: F14WeaponLootTier4GunsBulletHeavy
 
 # EXPLOSIVES ALL SPRITE/COLOR REF
 
@@ -62,7 +62,7 @@
   name: Tier4 Weapon Spawner
   abstract: true
   suffix: Tier4
-  id: MisfitsM14Tier4Spawner_RefGunsExplosiveAll
+  id: F14Tier4SpawnerRefGunsExplosiveAll
   parent: MarkerBase
   components:
   - type: Sprite
@@ -80,41 +80,41 @@
 - type: entity
   name: Tier4 Gun All Explosive Spawner
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Single_GunsExplosiveAll
-  parent: MisfitsM14Tier4Spawner_RefGunsExplosiveAll
+  id: F14Tier4WeaponSpawnerSingleGunsExplosiveAll
+  parent: F14Tier4SpawnerRefGunsExplosiveAll
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier4_GunsExplosiveAll
+        tableId: F14WeaponLootTier4GunsExplosiveAll
 
 - type: entity
   name: Tier4 Gun All Explosive Spawner 0-3
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Mult0_3_GunsExplosive
-  parent: MisfitsM14Tier4Spawner_RefGunsExplosiveAll
+  id: F14Tier4WeaponSpawnerMult03GunsExplosive
+  parent: F14Tier4SpawnerRefGunsExplosiveAll
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier4_GunsExplosiveAll
+        tableId: F14WeaponLootTier4GunsExplosiveAll
 
 - type: entity
   name: Tier4 Gun All Explosive Spawner 1-2
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Mult1_2_GunsExplosive
-  parent: MisfitsM14Tier4Spawner_RefGunsExplosiveAll
+  id: F14Tier4WeaponSpawnerMult12GunsExplosive
+  parent: F14Tier4SpawnerRefGunsExplosiveAll
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier4_GunsExplosiveAll
+        tableId: F14WeaponLootTier4GunsExplosiveAll
 
 # SMALL ARM EXPLOSIVES SPRITE/COLOR REF
 
@@ -122,7 +122,7 @@
   name: Tier4 Weapon Spawner
   abstract: true
   suffix: Tier4
-  id: MisfitsM14Tier4Spawner_RefGunsExplosiveSmallArm
+  id: F14Tier4SpawnerRefGunsExplosiveSmallArm
   parent: MarkerBase
   components:
   - type: Sprite
@@ -138,41 +138,41 @@
 - type: entity
   name: Tier4 SmallArm Explosive Spawner
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Single_GunsExplosiveSmallArm
-  parent: MisfitsM14Tier4Spawner_RefGunsExplosiveSmallArm
+  id: F14Tier4WeaponSpawnerSingleGunsExplosiveSmallArm
+  parent: F14Tier4SpawnerRefGunsExplosiveSmallArm
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier4_GunsExplosiveSmallArm
+        tableId: F14WeaponLootTier4GunsExplosiveSmallArm
 
 - type: entity
   name: Tier4 SmallArm Explosive Spawner 0-3
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Mult0_3_GunsExplosiveSmallArm
-  parent: MisfitsM14Tier4Spawner_RefGunsExplosiveSmallArm
+  id: F14Tier4WeaponSpawnerMult03GunsExplosiveSmallArm
+  parent: F14Tier4SpawnerRefGunsExplosiveSmallArm
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier4_GunsExplosiveSmallArm
+        tableId: F14WeaponLootTier4GunsExplosiveSmallArm
 
 - type: entity
   name: Tier4 SmallArm Explosive Spawner 1-2
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Mult1_2_GunsExplosiveSmallArm
-  parent: MisfitsM14Tier4Spawner_RefGunsExplosiveSmallArm
+  id: F14Tier4WeaponSpawnerMult12GunsExplosiveSmallArm
+  parent: F14Tier4SpawnerRefGunsExplosiveSmallArm
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier4_GunsExplosiveSmallArm
+        tableId: F14WeaponLootTier4GunsExplosiveSmallArm
 
 # HEAVY GUN EXPLOSIVES SPRITE/COLOR REF
 
@@ -180,7 +180,7 @@
   name: Tier4 Weapon Spawner
   abstract: true
   suffix: Tier4
-  id: MisfitsM14Tier4Spawner_RefGunsExplosiveHeavy
+  id: F14Tier4SpawnerRefGunsExplosiveHeavy
   parent: MarkerBase
   components:
   - type: Sprite
@@ -196,41 +196,41 @@
 - type: entity
   name: Tier4 Heavy Explosive Spawner
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Single_GunsExplosiveHeavy
-  parent: MisfitsM14Tier4Spawner_RefGunsExplosiveHeavy
+  id: F14Tier4WeaponSpawnerSingleGunsExplosiveHeavy
+  parent: F14Tier4SpawnerRefGunsExplosiveHeavy
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier4_GunsExplosiveHeavy
+        tableId: F14WeaponLootTier4GunsExplosiveHeavy
 
 - type: entity
   name: Tier4 Heavy Explosive Spawner 0-3
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Mult0_3_GunsExplosiveHeavy
-  parent: MisfitsM14Tier4Spawner_RefGunsExplosiveHeavy
+  id: F14Tier4WeaponSpawnerMult03GunsExplosiveHeavy
+  parent: F14Tier4SpawnerRefGunsExplosiveHeavy
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier4_GunsExplosiveHeavy
+        tableId: F14WeaponLootTier4GunsExplosiveHeavy
 
 - type: entity
   name: Tier4 Heavy Explosive Spawner 1-2
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Mult1_2_GunsExplosiveHeavy
-  parent: MisfitsM14Tier4Spawner_RefGunsExplosiveHeavy
+  id: F14Tier4WeaponSpawnerMult12GunsExplosiveHeavy
+  parent: F14Tier4SpawnerRefGunsExplosiveHeavy
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier4_GunsExplosiveHeavy
+        tableId: F14WeaponLootTier4GunsExplosiveHeavy
 
 # HEAVY ENERGY SPRITE/COLOR REF
 
@@ -238,7 +238,7 @@
   name: Tier4 Weapon Spawner
   abstract: true
   suffix: Tier4
-  id: MisfitsM14Tier4Spawner_RefEnergyHeavy
+  id: F14Tier4SpawnerRefEnergyHeavy
   parent: MarkerBase
   components:
   - type: Sprite
@@ -254,38 +254,38 @@
 - type: entity
   name: Tier4 Heavy Energy Spawner
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Single_EnergyHeavy
-  parent: MisfitsM14Tier4Spawner_RefEnergyHeavy
+  id: F14Tier4WeaponSpawnerSingleEnergyHeavy
+  parent: F14Tier4SpawnerRefEnergyHeavy
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:ConstantNumberSelector
           value: 1
-        tableId: MisfitsM14WeaponLootTier4_EnergyHeavy
+        tableId: F14WeaponLootTier4EnergyHeavy
 
 - type: entity
   name: Tier4 Heavy Energy Spawner 0-3
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Mult0_3_EnergyHeavy
-  parent: MisfitsM14Tier4Spawner_RefEnergyHeavy
+  id: F14Tier4WeaponSpawnerMult03EnergyHeavy
+  parent: F14Tier4SpawnerRefEnergyHeavy
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 0, 2
-        tableId: MisfitsM14WeaponLootTier4_EnergyHeavy
+        tableId: F14WeaponLootTier4EnergyHeavy
 
 - type: entity
   name: Tier4 Heavy Energy Spawner 1-2
   suffix: Tier4
-  id: MisfitsM14Tier4WeaponSpawner_Mult1_2_EnergyHeavy
-  parent: MisfitsM14Tier4Spawner_RefEnergyHeavy
+  id: F14Tier4WeaponSpawnerMult12EnergyHeavy
+  parent: F14Tier4SpawnerRefEnergyHeavy
   components:
     - type: EntityTableSpawner
       deleteSpawnerAfterSpawn: false
       table: !type:NestedSelector
         rolls: !type:RangeNumberSelector
           range: 1, 1
-        tableId: MisfitsM14WeaponLootTier4_EnergyHeavy
+        tableId: F14WeaponLootTier4EnergyHeavy

@@ -2,19 +2,19 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/44.yml
 
 - type: entity
-  id: N14BaseMagazine44Pistol
+  id: F14BaseMagazine44Pistol
   name: pistol magazine (44)
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - N14MagazinePistol44
+      - F14MagazinePistol44
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14Cartridge44Magnum
+        - F14Cartridge44Magnum
     capacity: 8
   - type: ContainerContainer
     containers:
@@ -34,9 +34,9 @@
   - type: Appearance
 
 - type: entity
-  id: N14MagazinePistol44
+  id: F14MagazinePistol44
   name: pistol magazine (.44) # Forge-Change
-  parent: N14BaseMagazine44Pistol
+  parent: F14BaseMagazine44Pistol
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge44Magnum
+    proto: F14Cartridge44Magnum

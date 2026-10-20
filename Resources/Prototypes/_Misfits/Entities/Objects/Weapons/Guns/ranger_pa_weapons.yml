@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/ranger_pa_weapons.yml
 
 - type: entity
-  parent: N14WeaponLMG
-  id: MisfitsWeaponRangerPowerArmorLMG
+  parent: F14WeaponLMG
+  id: F14WeaponRangerPowerArmorLMG
   name: Ranger power armor light machine gun
   description: A power-armor-braced NCR light machine gun. Its heavy receiver and reinforced grip are intended for use in powered gauntlets.
   components:
@@ -19,8 +19,8 @@
     sprite: Misfits/Objects/Weapons/Guns/LMGs/ranger_lmg_icon.rsi
 
 - type: entity
-  parent: N14WeaponPistol10mm
-  id: MisfitsWeaponRangerPowerArmorPistol
+  parent: F14WeaponPistol10mm
+  id: F14WeaponRangerPowerArmorPistol
   name: Ranger power armor pistol
   description: A rugged 10mm sidearm modified for NCR Ranger power armor gauntlets.
   components:

@@ -1,81 +1,81 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Structures/Doors/doors_fota.yml
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: MisfitsDoorWoodSecureLockedFotA
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodSecureLockedFotA
   suffix: FotA, Locked
   components:
   - type: AccessReader
-    access: [["MisfitsFotA"]]
+    access: [["F14FotA"]]
   - type: Wires
     layoutId: AirlockService
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: MisfitsDoorWoodSecureLockedFotADoctor
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodSecureLockedFotADoctor
   suffix: FotA, Locked, Doctor
   components:
   - type: AccessReader
-    access: [["MisfitsFotADoctor"]]
+    access: [["F14FotADoctor"]]
   - type: Wires
     layoutId: AirlockService
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: MisfitsDoorWoodSecureLockedFotAHead
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodSecureLockedFotAHead
   suffix: FotA, Locked, Head
   components:
   - type: AccessReader
-    access: [["MisfitsFotAHead"]]
+    access: [["F14FotAHead"]]
   - type: Wires
     layoutId: AirlockService
 
 - type: entity
-  parent: N14DoorMetalBlueSlanted
-  id: MisfitsDoorMetalSlantedLockedFotA
+  parent: F14DoorMetalBlueSlanted
+  id: F14DoorMetalSlantedLockedFotA
   suffix: FotA, Locked
   components:
   - type: AccessReader
-    access: [["MisfitsFotA"]]
+    access: [["F14FotA"]]
   - type: Wires
     layoutId: AirlockService
 
 - type: entity
-  parent: N14DoorMetalBarSlanted
-  id: MisfitsDoorCellSlantedLockedFotA
+  parent: F14DoorMetalBarSlanted
+  id: F14DoorCellSlantedLockedFotA
   suffix: FotA, Locked
   components:
   - type: AccessReader
-    access: [["MisfitsFotA"]]
+    access: [["F14FotA"]]
   - type: Wires
     layoutId: AirlockService
 
 - type: entity
-  parent: N14DoorWoodWhiteSlanted
-  id: MisfitsDoorWoodSlantedWhiteLockedFotA
+  parent: F14DoorWoodWhiteSlanted
+  id: F14DoorWoodSlantedWhiteLockedFotA
   suffix: FotA, Locked
   components:
   - type: AccessReader
-    access: [["MisfitsFotA"]]
+    access: [["F14FotA"]]
   - type: Wires
     layoutId: AirlockService
 
 - type: entity
-  parent: N14DoorWoodRedSlanted
-  id: MisfitsDoorWoodSlantedRedLockedFotA
+  parent: F14DoorWoodRedSlanted
+  id: F14DoorWoodSlantedRedLockedFotA
   suffix: FotA, Locked
   components:
   - type: AccessReader
-    access: [["MisfitsFotA"]]
+    access: [["F14FotA"]]
   - type: Wires
     layoutId: AirlockService
 
 - type: entity
   parent: FenceMetalGate
-  id: MisfitsDoorFenceMetalGateLockedFotA
+  id: F14DoorFenceMetalGateLockedFotA
   suffix: FotA, Locked
   components:
   - type: AccessReader
-    access: [["MisfitsFotA"]]
+    access: [["F14FotA"]]
   - type: Wires
     layoutId: AirlockService

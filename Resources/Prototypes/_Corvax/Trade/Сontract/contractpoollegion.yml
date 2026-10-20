@@ -1,0 +1,411 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Trade/Сontract/contractpoollegion.yml
+
+- type: ncContractRewardPool
+  id: F14LegionBronze
+  entries:
+  - type: Item
+    id: F14HealingPoultice
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Bitterdrink
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Gunpowder1
+    amount: { min: 4, max: 8 }
+    weight: 2
+  - type: Item
+    id: F14IngotBrass1
+    amount: { min: 4, max: 8 }
+    weight: 2
+  - type: Item
+    id: F14IngotLead1
+    amount: { min: 4, max: 8 }
+    weight: 2
+  - type: Item
+    id: SheetSteel1
+    amount: { min: 4, max: 8 }
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterLeatherArmor
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterCombatRusted
+    weight: 1
+  - type: Item
+    id: F14WeaponPistol10mmPipe
+    weight: 1
+  - type: Item
+    id: F14ScrapMachete
+    weight: 2
+
+- type: ncContractRewardPool
+  id: F14LegionBronzeNonweapons
+  entries:
+  - type: Item
+    id: F14HealingPoultice
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Bitterdrink
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Gunpowder1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: F14IngotBrass1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: F14IngotLead1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: SheetSteel1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: F14ClothingOuterLeatherArmor
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterCombatRusted
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatPrewarMilitaryHelmet
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14LegionIron
+  entries:
+  - type: Item
+    id: F14HealingPoultice
+    amount: { min: 1, max: 2 }
+    weight: 2
+  - type: Item
+    id: F14Bitterdrink
+    amount: { min: 1, max: 2 }
+    weight: 2
+  - type: Item
+    id: F14WeaponPistol9mmChinese
+    weight: 1
+  - type: Item
+    id: F14WeaponSMG12mmPipe
+    weight: 1
+  - type: Item
+    id: F14WeaponPistol9mmSpy
+    weight: 1
+  - type: Item
+    id: F14ScrapMachete
+    weight: 1
+  - type: Item
+    id: F14LongSword
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterLeatherArmor
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterCombatRusted
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterPainspike
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatPrewarMilitaryHelmet
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14LegionIronNonweapons
+  entries:
+  - type: Item
+    id: F14HealingPoultice
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14RadAwayBloodbag
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Bitterdrink
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Gunpowder1
+    amount: { min: 4, max: 8 }
+    weight: 2
+  - type: Item
+    id: F14IngotLead1
+    amount: { min: 4, max: 8 }
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterLeatherArmor
+    weight: 2
+  - type: Item
+    id: F14ClothingHeadHatPrewarMilitaryHelmet
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterCombatRusted
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14LegionSilver
+  entries:
+  - type: Item
+    id: F14HealingPoultice
+    amount: { min: 2, max: 3 }
+    weight: 2
+  - type: Item
+    id: F14RadAwayInhaler
+    amount: { min: 1, max: 2 }
+    weight: 2
+  - type: Item
+    id: F14Bitterdrink
+    amount: { min: 2, max: 3 }
+    weight: 2
+  - type: Item
+    id: F14MedkitFilled
+    weight: 1
+  - type: Item
+    id: F14WeaponShotgun
+    weight: 1
+  - type: Item
+    id: F14WeaponSMG10mm
+    weight: 1
+  - type: Item
+    id: F14WeaponRifle762SKS
+    weight: 1
+  - type: Item
+    id: F14Gladius
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterCombatArmor
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterLegionnaireVeteranArmor
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterPoliceVest
+    weight: 2
+  - type: Item
+    id: F14ClothingScavengerHeavyArmor
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatCombatHelmet
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatBaseballHelmet
+    weight: 1
+  - type: Item
+    id: F14WeaponSniperCowboyRepeater
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14LegionSilverNonweapons
+  entries:
+  - type: Item
+    id: F14HealingPoultice
+    amount: { min: 2, max: 3 }
+    weight: 3
+  - type: Item
+    id: F14RadAwayInhaler
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Bitterdrink
+    amount: { min: 2, max: 3 }
+    weight: 3
+  - type: Item
+    id: F14MedkitFilled
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterCombatArmor
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterPoliceVest
+    weight: 2
+  - type: Item
+    id: F14ClothingScavengerHeavyArmor
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatCombatHelmet
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatBaseballHelmet
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterLegionnaireVeteranArmor
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14LegionGold
+  entries:
+  - type: Item
+    id: F14HealingPoultice
+    amount: { min: 2, max: 4 }
+    weight: 2
+  - type: Item
+    id: F14RadAwayInhaler
+    amount: { min: 2, max: 3 }
+    weight: 2
+  - type: Item
+    id: F14Bitterdrink
+    amount: { min: 2, max: 3 }
+    weight: 2
+  - type: Item
+    id: F14MedkitFilled
+    weight: 1
+  - type: Item
+    id: F14WeaponRifle556R91
+    weight: 1
+  - type: Item
+    id: F14WeaponRifle10mmSkirmisher
+    weight: 1
+  - type: Item
+    id: F14WeaponShotgunChinese
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterCombatArmor
+    weight: 2
+  - type: Item
+    id: F14ClothingHeadHatCombatHelmet
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterZealotDuster
+    weight: 1
+  - type: Item
+    id: F14Gladius
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatBaseballHelmet
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterLegionnaireVeteranArmor
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterDeanLegionnairePrimeArmor
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14LegionGoldNonweapons
+  entries:
+  - type: Item
+    id: F14HealingPoultice
+    amount: { min: 2, max: 4 }
+    weight: 3
+  - type: Item
+    id: F14RadAwayInhaler
+    amount: { min: 2, max: 3 }
+    weight: 3
+  - type: Item
+    id: F14Bitterdrink
+    amount: { min: 2, max: 3 }
+    weight: 3
+  - type: Item
+    id: F14MedkitFilled
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterCombatArmor
+    weight: 2
+  - type: Item
+    id: F14ClothingHeadHatCombatHelmet
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterCombatArmorMK2
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatBaseballHelmet
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterLegionnaireVeteranArmor
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterDeanLegionnairePrimeArmor
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14LegionMithril
+  entries:
+  - type: Item
+    id: F14HealingPoultice
+    amount: { min: 2, max: 4 }
+    weight: 3
+  - type: Item
+    id: F14BerserkerPowder
+    amount: { min: 2, max: 4 }
+    weight: 3
+  - type: Item
+    id: F14RadAwayInhaler
+    amount: { min: 2, max: 4 }
+    weight: 3
+  - type: Item
+    id: F14MedkitFilled
+    weight: 2
+  - type: Item
+    id: F14WeaponRifle762MarksmanCanadian
+    weight: 1
+  - type: Item
+    id: F14WeaponShotgunCanadian
+    weight: 1
+  - type: Item
+    id: F14WeaponSMG12mmAdvanced
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterLegionnaireVeteranArmor
+    weight: 2
+  - type: Item
+    id: F14ClothingHeadHatCombatHelmet
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterCombatArmorMK2
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterDeanLegionnairePrimeArmor
+    weight: 1
+  - type: Item
+    id: F14WeaponShotgunBlowback
+    weight: 1
+  - type: Item
+    id: F14CeremonialSword
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14LegionDiamond
+  entries:
+  - type: Item
+    id: F14BerserkerPowder
+    amount: { min: 2, max: 4 }
+    weight: 3
+  - type: Item
+    id: F14MedkitCombatFilled
+    weight: 2
+  - type: Item
+    id: F14RadAwayInhaler
+    amount: { min: 3, max: 5 }
+    weight: 4
+  - type: Item
+    id: F14WeaponRifle762MarksmanCanadian
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterCombatArmorMK2
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatCombatHelmetMK2
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterDeanLegionnairePrimeArmor
+    weight: 1
+  - type: Item
+    id: F14WeaponShotgunBlowback
+    weight: 1
+  - type: Item
+    id: F14CeremonialSword
+    weight: 1
+  - type: Item
+    id: F14WeaponLMGBren
+    weight: 1
+  - type: Item
+    id: F14WeaponM60GPMG
+    weight: 1

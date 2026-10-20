@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Robotics/borg_modules.yml
 
 - type: entity
-  id: MisfitsBorgWeaponFlamer
+  id: F14BorgWeaponFlamer
   parent: BaseItem
   name: integrated flamer
   description: A built-in incendiary projector integrated into the chassis. Draws power from the robot's internal reserves and recharges automatically.
@@ -23,7 +23,7 @@
   - type: FlamerAmmoProvider
     solutionId: chamber
     fireCost: 5
-    fireTilePrototype: MisfitsTileFire
+    fireTilePrototype: F14TileFire
     range: 6
   - type: NamedSolutionRegeneration
     solution: chamber
@@ -51,7 +51,7 @@
     pvsIncrease: 0.2
 
 - type: entity
-  id: MisfitsBorgModuleFlamer
+  id: F14BorgModuleFlamer
   parent: [ BaseBorgModule, BaseProviderBorgModule ]
   name: flamer cyborg module
   description: An incendiary projector module. Provides an integrated flamer for close-range combat. The weapon draws from internal power reserves and recharges automatically.
@@ -62,10 +62,10 @@
     - state: icon-fire-extinguisher
   - type: ItemBorgModule
     hands:
-    - item: MisfitsBorgWeaponFlamer
+    - item: F14BorgWeaponFlamer
 
 - type: entity
-  id: MisfitsBorgWeaponStunbaton
+  id: F14BorgWeaponStunbaton
   parent: Stunbaton
   name: integrated stun baton
   description: A stun baton integrated into a Protectron chassis. Its internal cell draws from the robot's power reserves and recharges automatically.
@@ -78,7 +78,7 @@
 # Self-recharging high-capacity cell used by borg-integrated lights. # #Misfits Fix
 
 - type: entity
-  id: MisfitsBorgPowerCellHigh
+  id: F14BorgPowerCellHigh
   parent: PowerCellHigh
   name: borg microreactor power cell
   description: A high-capacity power cell with an integrated microreactor. Recharges itself slowly over time.
@@ -91,7 +91,7 @@
 # Integrated security flashlight for Police Protectron — self-recharging cell. # #Misfits Fix
 
 - type: entity
-  id: MisfitsBorgWeaponSeclite
+  id: F14BorgWeaponSeclite
   parent: FlashlightSeclite
   name: integrated security flashlight
   description: A robust security flashlight integrated into a Protectron chassis. Its microreactor cell recharges automatically.
@@ -102,12 +102,12 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: MisfitsBorgPowerCellHigh
+        startingItem: F14BorgPowerCellHigh
 
 # Security module — provides stun baton, handcuffs, and a flashlight for Police Protectrons.
 
 - type: entity
-  id: MisfitsBorgModuleSecurity
+  id: F14BorgModuleSecurity
   parent: [ BaseBorgModule, BaseProviderBorgModule ]
   name: security cyborg module
   description: A law-enforcement module. Provides a stun baton, handcuffs, and a security flashlight for patrol and detainment duties.
@@ -118,143 +118,145 @@
     - state: security
   - type: ItemBorgModule
     hands:
-    - item: MisfitsBorgWeaponStunbaton
+    - item: F14BorgWeaponStunbaton
     - item: Handcuffs
-    - item: MisfitsBorgWeaponSeclite
+    - item: F14BorgWeaponSeclite
 
 - type: entity
-  id: MisfitsTribalRCD
+  id: F14TribalRCD
   parent: RCDRecharging
   name: tribal construction RCD
   description: A battered construction device programmed with plans for tribal settlements.
   components:
   - type: RCD
     availablePrototypes:
-    - MisfitsRCDTribalLogWall
-    - MisfitsRCDTribalWoodWall
-    - MisfitsRCDTribalTallWoodWall
-    - MisfitsRCDTribalHalfWoodWall
-    - MisfitsRCDTribalAdobeWall
-    - MisfitsRCDTribalMakeshiftDoor
-    - MisfitsRCDTribalWoodDoor
-    - MisfitsRCDTribalLeatherTentWall
-    - MisfitsRCDTribalLeatherTentCorner
-    - MisfitsRCDTribalClothTentWall
-    - MisfitsRCDTribalClothTentCorner
-    - MisfitsRCDTribalLeatherTentFlap
-    - MisfitsRCDTribalClothTentFlap
-    - MisfitsRCDTribalWoodWindow
-    - MisfitsRCDTribalBedroll
-    - MisfitsRCDTribalSettlerChair
-    - MisfitsRCDTribalSettlerTable
-    - MisfitsRCDTribalBanner
-    - MisfitsRCDTribalFloorTorch
-    - MisfitsRCDTribalWallTorch
-    - MisfitsRCDBunkerDoor
-    - MisfitsRCDBunkerGlassDoor
-    - MisfitsRCDBunkerDoor3X
-    - MisfitsRCDBunkerGlassDoor3X
-    - MisfitsRCDAirlockSlanted
-    - MisfitsRCDAirlockTall
-    - MisfitsRCDMetalDoorReinforced
-    - MisfitsRCDMetalDoorCell
-    - MisfitsRCDMetalDoorBar
-    - MisfitsRCDMetalDoorIron
-    - MisfitsRCDMetalDoorSecure
-    - MisfitsRCDMetalDoorBlueSlanted
-    - MisfitsRCDMetalDoorRedSlanted
-    - MisfitsRCDMetalDoorBlueAltSlanted
-    - MisfitsRCDMetalDoorBlueWindowSlanted
-    - MisfitsRCDMetalDoorGrateSlanted
-    - MisfitsRCDMetalDoorBarSlanted
-    - MisfitsRCDMetalDoorFenceSlanted
-    - MisfitsRCDMetalDoorFenceBarbedSlanted
-    - MisfitsRCDMetalDoorBlueTall
-    - MisfitsRCDMetalDoorRedTall
-    - MisfitsRCDMetalDoorBlueAltTall
-    - MisfitsRCDMetalDoorBlueWindowTall
-    - MisfitsRCDMetalDoorGrateTall
-    - MisfitsRCDMetalDoorBarTall
-    - MisfitsRCDMetalDoorFenceTall
-    - MisfitsRCDMetalDoorFenceBarbedTall
-    - MisfitsRCDMetalDoorCellTall
-    - MisfitsRCDMetalDoorCellRustTall
-    - MisfitsRCDWallMetalSlanted
-    - MisfitsRCDWallReinfMetalSlanted
-    - MisfitsRCDWallMetalRustSlanted
-    - MisfitsRCDWallReinfMetalRustSlanted
-    - MisfitsRCDWallMetalTall
-    - MisfitsRCDWallReinfMetalTall
-    - MisfitsRCDWallMetalRustTall
-    - MisfitsRCDWallReinfMetalRustTall
-    - MisfitsRCDWallMetalHalf
-    - MisfitsRCDWallMetalReinforcedHalf
-    - MisfitsRCDWallMetalRustHalf
-    - MisfitsRCDWallMetalReinforcedRustHalf
-    - MisfitsRCDWallScrapSlanted
-    - MisfitsRCDWallScrapTall
-    - MisfitsRCDWallScrapHalf
-    - MisfitsRCDWallScrapWhiteSlanted
-    - MisfitsRCDWallScrapWhiteTall
-    - MisfitsRCDWallScrapBlueSlanted
-    - MisfitsRCDWallScrapBlueTall
-    - MisfitsRCDWallScrapRedSlanted
-    - MisfitsRCDWallScrapRedTall
-    - MisfitsRCDWallRoughScrapSlanted
-    - MisfitsRCDWallRoughScrapTall
-    - MisfitsRCDFloorMetalBlue
-    - MisfitsRCDFloorMetalBlueSolid
-    - MisfitsRCDFloorMetalGreen
-    - MisfitsRCDFloorMetalGreenSolid
-    - MisfitsRCDFloorMetalGrey
-    - MisfitsRCDFloorMetalGreySolid
-    - MisfitsRCDFloorMetalGreyDark
-    - MisfitsRCDFloorMetalGreyDarkSolid
-    - MisfitsRCDFloorMetalPurple
-    - MisfitsRCDFloorMetalPurpleSolid
-    - MisfitsRCDFloorMetalRed
-    - MisfitsRCDFloorMetalRedSolid
-    - MisfitsRCDFloorMetalTeal
-    - MisfitsRCDFloorMetalTealSolid
-    - MisfitsRCDFloorMetalWhite
-    - MisfitsRCDFloorMetalWhiteSolid
-    - MisfitsRCDFloorMetalYellow
-    - MisfitsRCDFloorMetalYellowSolid
-    - MisfitsRCDFloorMetalFreezer
-    - MisfitsRCDFloorMetalTunnel
-    - MisfitsRCDFloorMetalTunnelRusty
-    - MisfitsRCDFloorMetalTunnelWasteland
-    - MisfitsRCDFloorMS13MetalIndustrial
-    - MisfitsRCDFloorMS13MetalTile
-    - MisfitsRCDFloorMS13MetalGrate
-    - MisfitsRCDFloorMS13MetalSolid
-    - MisfitsRCDFloorConcrete
-    - MisfitsRCDFloorConcreteTileGoon
-    - MisfitsRCDFloorConcreteGreyBay
-    - MisfitsRCDFloorConcreteHexacrete
-    - MisfitsRCDFloorConcreteHexacreteDark
-    - MisfitsRCDFloorConcreteDark
-    - MisfitsRCDFloorConcreteRoad
-    - MisfitsRCDFloorMS13BrickConcrete
-    - MisfitsRCDFloorMS13Concrete
-    - MisfitsRCDFloorMS13ConcreteIndustrial
-    - MisfitsRCDFloorMS13ConcreteIndustrialAlt
-    - MisfitsRCDFloorMS13ConcreteIndustrialSplit
-    - MisfitsRCDFloorMS13TileConcreteSmall
+    - F14RCDTribalLogWall
+    - F14RCDTribalWoodWall
+    - F14RCDTribalTallWoodWall
+    - F14RCDTribalHalfWoodWall
+    - F14RCDTribalAdobeWall
+    - F14RCDTribalMakeshiftDoor
+    - F14RCDTribalWoodDoor
+    - F14RCDTribalLeatherTentWall
+    - F14RCDTribalLeatherTentCorner
+    - F14RCDTribalClothTentWall
+    - F14RCDTribalClothTentCorner
+    - F14RCDTribalLeatherTentFlap
+    - F14RCDTribalClothTentFlap
+    - F14RCDTribalWoodWindow
+    - F14RCDTribalBedroll
+    - F14RCDTribalSettlerChair
+    - F14RCDTribalSettlerTable
+    - F14RCDTribalBanner
+    - F14RCDTribalSoil
+    - F14RCDTribalPlanter
+    - F14RCDTribalFloorTorch
+    - F14RCDTribalWallTorch
+    - F14RCDBunkerDoor
+    - F14RCDBunkerGlassDoor
+    - F14RCDBunkerDoor3X
+    - F14RCDBunkerGlassDoor3X
+    - F14RCDAirlockSlanted
+    - F14RCDAirlockTall
+    - F14RCDMetalDoorReinforced
+    - F14RCDMetalDoorCell
+    - F14RCDMetalDoorBar
+    - F14RCDMetalDoorIron
+    - F14RCDMetalDoorSecure
+    - F14RCDMetalDoorBlueSlanted
+    - F14RCDMetalDoorRedSlanted
+    - F14RCDMetalDoorBlueAltSlanted
+    - F14RCDMetalDoorBlueWindowSlanted
+    - F14RCDMetalDoorGrateSlanted
+    - F14RCDMetalDoorBarSlanted
+    - F14RCDMetalDoorFenceSlanted
+    - F14RCDMetalDoorFenceBarbedSlanted
+    - F14RCDMetalDoorBlueTall
+    - F14RCDMetalDoorRedTall
+    - F14RCDMetalDoorBlueAltTall
+    - F14RCDMetalDoorBlueWindowTall
+    - F14RCDMetalDoorGrateTall
+    - F14RCDMetalDoorBarTall
+    - F14RCDMetalDoorFenceTall
+    - F14RCDMetalDoorFenceBarbedTall
+    - F14RCDMetalDoorCellTall
+    - F14RCDMetalDoorCellRustTall
+    - F14RCDWallMetalSlanted
+    - F14RCDWallReinfMetalSlanted
+    - F14RCDWallMetalRustSlanted
+    - F14RCDWallReinfMetalRustSlanted
+    - F14RCDWallMetalTall
+    - F14RCDWallReinfMetalTall
+    - F14RCDWallMetalRustTall
+    - F14RCDWallReinfMetalRustTall
+    - F14RCDWallMetalHalf
+    - F14RCDWallMetalReinforcedHalf
+    - F14RCDWallMetalRustHalf
+    - F14RCDWallMetalReinforcedRustHalf
+    - F14RCDWallScrapSlanted
+    - F14RCDWallScrapTall
+    - F14RCDWallScrapHalf
+    - F14RCDWallScrapWhiteSlanted
+    - F14RCDWallScrapWhiteTall
+    - F14RCDWallScrapBlueSlanted
+    - F14RCDWallScrapBlueTall
+    - F14RCDWallScrapRedSlanted
+    - F14RCDWallScrapRedTall
+    - F14RCDWallRoughScrapSlanted
+    - F14RCDWallRoughScrapTall
+    - F14RCDFloorMetalBlue
+    - F14RCDFloorMetalBlueSolid
+    - F14RCDFloorMetalGreen
+    - F14RCDFloorMetalGreenSolid
+    - F14RCDFloorMetalGrey
+    - F14RCDFloorMetalGreySolid
+    - F14RCDFloorMetalGreyDark
+    - F14RCDFloorMetalGreyDarkSolid
+    - F14RCDFloorMetalPurple
+    - F14RCDFloorMetalPurpleSolid
+    - F14RCDFloorMetalRed
+    - F14RCDFloorMetalRedSolid
+    - F14RCDFloorMetalTeal
+    - F14RCDFloorMetalTealSolid
+    - F14RCDFloorMetalWhite
+    - F14RCDFloorMetalWhiteSolid
+    - F14RCDFloorMetalYellow
+    - F14RCDFloorMetalYellowSolid
+    - F14RCDFloorMetalFreezer
+    - F14RCDFloorMetalTunnel
+    - F14RCDFloorMetalTunnelRusty
+    - F14RCDFloorMetalTunnelWasteland
+    - F14RCDFloorMS13MetalIndustrial
+    - F14RCDFloorMS13MetalTile
+    - F14RCDFloorMS13MetalGrate
+    - F14RCDFloorMS13MetalSolid
+    - F14RCDFloorConcrete
+    - F14RCDFloorConcreteTileGoon
+    - F14RCDFloorConcreteGreyBay
+    - F14RCDFloorConcreteHexacrete
+    - F14RCDFloorConcreteHexacreteDark
+    - F14RCDFloorConcreteDark
+    - F14RCDFloorConcreteRoad
+    - F14RCDFloorMS13BrickConcrete
+    - F14RCDFloorMS13Concrete
+    - F14RCDFloorMS13ConcreteIndustrial
+    - F14RCDFloorMS13ConcreteIndustrialAlt
+    - F14RCDFloorMS13ConcreteIndustrialSplit
+    - F14RCDFloorMS13TileConcreteSmall
     - Deconstruct
 
 - type: entity
-  id: MisfitsBorgModuleTribalConstruction
+  id: F14BorgModuleTribalConstruction
   parent: BorgModuleConstruction
   name: tribal construction module
   description: A settlement-building module assembled from a damaged Protectron construction system.
   components:
   - type: ItemBorgModule
     hands:
-    - item: MisfitsTribalRCD
+    - item: F14TribalRCD
 
 - type: entity
-  id: MisfitsBorgModuleTribalSpirit
+  id: F14BorgModuleTribalSpirit
   parent: [ BaseBorgModule, BaseProviderBorgModule ]
   name: spirit-tender module
   description: A borg "module" that has been haphazardly jammed together over decades or centuries.
@@ -266,13 +268,13 @@
     - state: icon-gardening
   - type: ItemBorgModule
     hands:
-    - item: N14HydroponicsToolHoe
-    - item: N14HydroponicsToolClippers
+    - item: F14HydroponicsToolHoe
+    - item: F14HydroponicsToolClippers
     - item: WelderMini
-    - item: N14Screwdriver
+    - item: F14Screwdriver
 
 - type: entity
-  id: MisfitsBorgModuleTribalHarvest
+  id: F14BorgModuleTribalHarvest
   parent: [ BaseBorgModule, BaseProviderBorgModule ]
   name: harvest module
   description: The half-broken remains of an agricultural protectron module
@@ -284,7 +286,7 @@
     - state: icon-harvesting
   - type: ItemBorgModule
     hands:
-    - item: N14Ripper
-    - item: N14HydroponicsToolShovel
+    - item: F14Ripper
+    - item: F14HydroponicsToolShovel
     - item: Bucket
     - item: Syringe

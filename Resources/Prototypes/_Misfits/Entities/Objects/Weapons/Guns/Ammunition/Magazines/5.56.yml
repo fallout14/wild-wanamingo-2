@@ -1,15 +1,15 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/Magazines/5.56.yml
 
 - type: entity
-  id: MisfitsMagazineHeavy556Rifle
+  id: F14MagazineHeavy556Rifle
   name: "heavy magazine (5.56mm)"
-  parent: N14BaseMagazine556Rifle
+  parent: F14BaseMagazine556Rifle
   components:
   - type: Tag
     tags:
-      - MisfitsMagazineHeavy556Rifle
+      - F14MagazineHeavy556Rifle
   - type: BallisticAmmoProvider
-    proto: N14Cartridge556Rifle
+    proto: F14Cartridge556Rifle
     capacity: 80
   - type: Sprite
     netsync: false

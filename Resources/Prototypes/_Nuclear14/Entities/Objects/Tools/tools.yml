@@ -3,7 +3,7 @@
 
 - type: entity
   parent: PowerDrill
-  id: N14PowerDrill
+  id: F14PowerDrill
   components:
   - type: StaticPrice
     price: 65
@@ -11,7 +11,7 @@
 - type: entity
   name: wirecutters
   parent: Wirecutter
-  id: N14Wirecutter
+  id: F14WirecutterBase
   description: This kills the wire.
   components:
   - type: Sprite
@@ -37,7 +37,7 @@
 - type: entity
   name: screwdriver
   parent: Screwdriver
-  id: N14Screwdriver
+  id: F14ScrewdriverBase
   description: Industrial grade torque in a small screwdriving package.
   components:
   - type: Sprite
@@ -62,7 +62,7 @@
 - type: entity
   name: wrench
   parent: Wrench
-  id: N14Wrench
+  id: F14WrenchBase
   description: 'A common tool for assembly and disassembly. Remember: righty tighty, lefty loosey.'
   components:
   - type: Sprite
@@ -85,7 +85,7 @@
 - type: entity
   name: crowbar
   parent: Crowbar
-  id: N14Crowbar
+  id: F14CrowbarBase
   description: A multipurpose tool to pry open doors and fighting inter uhh planet invaders from China?
   components:
   - type: MeleeWeapon
@@ -101,7 +101,7 @@
 - type: entity
   name: multitool
   parent: Multitool
-  id: N14Multitool
+  id: F14Multitool
   description: An advanced tool to copy, store, and send electrical pulses and signals through wires and machines.
   components:
   - type: EmitSoundOnLand
@@ -119,7 +119,7 @@
 
 - type: entity
   name: saw
-  id: N14Saw
+  id: F14Saw
   parent: Saw
   components:
   - type: Utensil
@@ -145,8 +145,8 @@
 
 - type: entity
   name: choppa
-  id: N14SawImprovised
-  parent: N14Saw
+  id: F14SawImprovised
+  parent: F14Saw
   description: A wicked serrated blade made of whatever nasty sharp things you could find. # It would make a pretty decent weapon, given there are more space for some tool mods too.
   components:
   - type: Sprite
@@ -159,8 +159,8 @@
     speedModifier: 0.5
 
 - type: entity
-  parent: N14Saw
-  id: N14SawAdvanced
+  parent: F14Saw
+  id: F14SawAdvanced
   name: advanced circular saw
   description: You think you can cut anything with it.
   components:

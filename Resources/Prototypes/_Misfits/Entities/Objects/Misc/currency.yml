@@ -1,0 +1,41 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Misc/currency.yml
+
+- type: entity
+  parent: F14CurrencyCap
+  id: F14CurrencyCap4
+  suffix: 4
+  components:
+  - type: Icon
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: caps3
+  - type: Stack
+    count: 4 #added to make fair exchange rates possible in trade terminals
+
+- type: entity
+  parent: F14CurrencyNCRDollar
+  id: F14CurrencyNCRDollar2
+  suffix: 2
+  components:
+  - type: Icon
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: ncr2
+  - type: Stack
+    count: 2 #added to make fair exchange rates possible in trade terminals
+
+- type: material
+  id: F14LegionAurei
+  name: legionAurei
+  unit: materials-unit-bill
+  stackEntity: F14CurrencyLegionAureus
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/currency.rsi, state: aurelius3 }
+  price: 100 # Forge-Change
+
+# Legion Denarius
+
+- type: material
+  id: F14LegionDenarius
+  name: legiondenarius
+  unit: materials-unit-bill
+  stackEntity: F14CurrencyLegionDenarius
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/currency.rsi, state: denarius3 }
+  price: 4 # Forge-Change

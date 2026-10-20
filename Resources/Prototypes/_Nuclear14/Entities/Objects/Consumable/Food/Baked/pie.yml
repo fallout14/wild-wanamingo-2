@@ -3,7 +3,7 @@
 
 - type: entity
   parent: FoodInjectableBase
-  id: N14CookedFoodPieBase
+  id: F14CookedFoodPieBase
   abstract: true
   components:
   - type: Item
@@ -31,7 +31,7 @@
 
 - type: entity
   parent: FoodInjectableBase # Not sliceable
-  id: N14CookedFoodPieSliceBase
+  id: F14CookedFoodPieSliceBase
   abstract: true
   description: A slice of pie. Tasty!
   components:
@@ -53,8 +53,8 @@
 
 - type: entity
   name: mutfruit pie #N14 change
-  parent: [N14CookedFoodPieBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodPieMutfruit
+  parent: [F14CookedFoodPieBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodPieMutfruit
   description: It's all... gloppy. #N14 change
   components:
   - type: FlavorProfile
@@ -67,7 +67,7 @@
     - state: apple
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodPieMutfruitSlice
+    - id: F14CookedFoodPieMutfruitSlice
       amount: 1
   - type: Tag
     tags:
@@ -76,8 +76,8 @@
 
 - type: entity
   name: slice of mutfruit pie #N14 change
-  parent: N14CookedFoodPieSliceBase
-  id: N14CookedFoodPieMutfruitSlice
+  parent: F14CookedFoodPieSliceBase
+  id: F14CookedFoodPieMutfruitSlice
   components:
   - type: FlavorProfile
     flavors:
@@ -97,8 +97,8 @@
 
 - type: entity
   name: baklava
-  parent: [N14CookedFoodPieBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodPieBaklava
+  parent: [F14CookedFoodPieBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodPieBaklava
   description: A delightful healthy snack made of nut layers with thin bread.
   components:
   - type: FlavorProfile
@@ -111,13 +111,13 @@
     - state: baklava
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodPieBaklavaSlice
+    - id: F14CookedFoodPieBaklavaSlice
       amount: 1
 
 - type: entity
   name: slice of baklava
-  parent: N14CookedFoodPieSliceBase
-  id: N14CookedFoodPieBaklavaSlice
+  parent: F14CookedFoodPieSliceBase
+  id: F14CookedFoodPieBaklavaSlice
   description: A portion of a delightful healthy snack made of nut layers with thin bread.
   components:
   - type: FlavorProfile
@@ -130,8 +130,8 @@
 
 - type: entity
   name: blackberry pie #N14 change
-  parent: [N14CookedFoodPieBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodPieBlackberry
+  parent: [F14CookedFoodPieBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodPieBlackberry
   description: Sweet, light berry pie that stains your teeth purple. You're living large, friend. #N14 change
   components:
   - type: FlavorProfile
@@ -145,7 +145,7 @@
     - state: berryclafoutis
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodPieBlackberrySlice
+    - id: F14CookedFoodPieBlackberrySlice
       amount: 1
   - type: Tag
     tags:
@@ -154,8 +154,8 @@
 
 - type: entity
   name: slice of blackberry pie #N14 change
-  parent: N14CookedFoodPieSliceBase
-  id: N14CookedFoodPieBlackberrySlice
+  parent: F14CookedFoodPieSliceBase
+  id: F14CookedFoodPieBlackberrySlice
   components:
   - type: FlavorProfile
     flavors:
@@ -175,8 +175,8 @@
 
 - type: entity
   name: meat pie
-  parent: [N14CookedFoodPieBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodPieMeat
+  parent: [F14CookedFoodPieBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodPieMeat
   description: Tastes like the wastes. #N14 change
   components:
   - type: FlavorProfile
@@ -188,7 +188,7 @@
     - state: meat
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodPieMeatSlice
+    - id: F14CookedFoodPieMeatSlice
       amount: 1
   - type: Tag
     tags:
@@ -197,8 +197,8 @@
 
 - type: entity
   name: slice of meat pie
-  parent: N14CookedFoodPieSliceBase
-  id: N14CookedFoodPieMeatSlice
+  parent: F14CookedFoodPieSliceBase
+  id: F14CookedFoodPieMeatSlice
   components:
   - type: FlavorProfile
     flavors:
@@ -219,8 +219,8 @@
 
 - type: entity
   name: chocolate lava tart
-  parent: N14CookedFoodPieBase
-  id: N14CookedFoodTartCoco
+  parent: F14CookedFoodPieBase
+  id: F14CookedFoodTartCoco
   description: A tasty dessert made of chocolate, with a liquid core.
   components:
   - type: FlavorProfile

@@ -3,12 +3,12 @@
 - type: entity
   name: legion headset box
   parent: BoxCardboard
-  id: MisfitsBoxHeadsetLegion
+  id: F14BoxHeadsetLegion
   description: A box of spare headsets.
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsClothingHeadsetLegion
+    - id: F14ClothingHeadsetLegion
       amount: 6
   - type: Sprite
     layers:
@@ -21,14 +21,14 @@
 - type: entity
   name: brotherhood headset box
   parent: BoxCardboard
-  id: MisfitsBoxHeadsetBrotherhoodOfSteel
+  id: F14BoxHeadsetBrotherhoodOfSteel
   description: A box of spare headsets.
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsClothingHeadsetBrotherhoodOfSteel
+    - id: F14ClothingHeadsetBrotherhoodOfSteel
       amount: 4
-    - id: N14ClothingHeadBrotherhoodScribeHeadset
+    - id: F14ClothingHeadBrotherhoodScribeHeadset
   - type: Sprite
     layers:
     - state: box
@@ -40,12 +40,12 @@
 - type: entity
   name: ncr headset box
   parent: BoxCardboard
-  id: MisfitsBoxHeadsetNCR
+  id: F14BoxHeadsetNCR
   description: A box of spare headsets.
   components:
   - type: StorageFill
     contents:
-    - id: N14ClothingHeadsetNCR
+    - id: F14ClothingHeadsetNCR
       amount: 6
   - type: Sprite
     layers:
@@ -58,12 +58,12 @@
 - type: entity
   name: vault headset box
   parent: BoxCardboard
-  id: MisfitsBoxHeadsetVault
+  id: F14BoxHeadsetVault
   description: A box of spare headsets.
   components:
   - type: StorageFill
     contents:
-    - id: N14ClothingHeadsetVaultDweller
+    - id: F14ClothingHeadsetVaultDweller
       amount: 6
   - type: Sprite
     layers:
@@ -76,12 +76,12 @@
 - type: entity
   name: wasteland headset box
   parent: BoxCardboard
-  id: MisfitsBoxHeadsetWasteland
+  id: F14BoxHeadsetWasteland
   description: A box of spare headsets.
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsEncryptionKeyWastelandGlobal
+    - id: F14EncryptionKeyWastelandGlobal
       amount: 6
   - type: Sprite
     layers:
@@ -94,12 +94,12 @@
 - type: entity
   name: followers headset box
   parent: BoxCardboard
-  id: MisfitsBoxHeadsetFollowers
+  id: F14BoxHeadsetFollowers
   description: A box of spare headsets.
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsClothingHeadsetFollowers
+    - id: F14ClothingHeadsetFollowers
       amount: 6
   - type: Sprite
     layers:
@@ -112,12 +112,12 @@
 - type: entity
   name: U.S. Army headset box
   parent: BoxCardboard
-  id: MisfitsBoxHeadsetEnclave
+  id: F14BoxHeadsetEnclave
   description: A box of spare headsets.
   components:
   - type: StorageFill
     contents:
-    - id: N14ClothingHeadsetEnclave
+    - id: F14ClothingHeadsetEnclave
       amount: 6
   - type: Sprite
     layers:

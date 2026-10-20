@@ -3,17 +3,17 @@
 
 - type: entity
   parent: MobHuman
-  id: N14BaseMobRaider
+  id: F14BaseMobRaider
   abstract: true
   name: Raider
   suffix: AI
   components:
     - type: Damageable    # Misfits Add - Override from BaseMobSpeciesOrganic to prevent hunger/thirst damage
     - type: Injurable
-      damageContainer: MisfitsNPCBiological
+      damageContainer: F14NPCBiological
     - type: NpcFactionMember
       factions:
-      - N14Raider
+      - F14Raider
     - type: MobThresholds
       thresholds:
         0: Alive
@@ -26,7 +26,7 @@
         behaviors:
         - !type:SpawnEntitiesBehavior
           spawn:
-            N14CurrencyCap:
+            F14CurrencyCap:
               min: 1
               max: 7
     - type: PassiveDamage # It's mostly for the faction NPCs, but can be here nonetheless.
@@ -44,7 +44,7 @@
     - type: ProximityNPC # Misfits Add — sleep distant NPCs to reduce tick load
     - type: HTN
       rootTask:
-        task: N14RangedHostileCompound
+        task: F14RangedHostileCompound
       blackboard:
         NavSmash: !type:Bool
           true
@@ -62,8 +62,8 @@
     - type: Perishable
       rotAfter: 1800 # Rots after half of an in-game day
     - type: RotInto
-      entity: N14FoodMeatRadRaw # and becomes a single chunk of meat.
+      entity: F14FoodMeatRadRaw # and becomes a single chunk of meat.
     - type: Butcherable
       spawned:
-      - id: N14FoodMeatRadRaw
+      - id: F14FoodMeatRadRaw
         amount: 5

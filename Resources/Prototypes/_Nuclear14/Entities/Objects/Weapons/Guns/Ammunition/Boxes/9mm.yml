@@ -4,13 +4,13 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: N14BaseMagazineBox9mm
+  id: F14BaseMagazineBox9mm
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14CartridgePistol9
+        - F14CartridgePistol9
     proto: NN14CartridgePistol9
     capacity: 80
   - type: ContainerContainer
@@ -27,12 +27,12 @@
   - type: FoldableAmmoBox #Misfits Change /Add/: Empty cardboard ammo boxes can fold back into one cardboard sheet.
 
 - type: entity
-  parent: N14BaseMagazineBox9mm
-  id: N14MagazineBox9mm
+  parent: F14BaseMagazineBox9mm
+  id: F14MagazineBox9mm
   name: ammunition box (9mm)
   components:
   - type: BallisticAmmoProvider
-    proto: N14CartridgePistol9
+    proto: F14CartridgePistol9
   - type: Sprite
     layers:
     - state: base

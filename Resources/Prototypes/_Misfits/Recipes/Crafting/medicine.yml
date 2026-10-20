@@ -1,53 +1,53 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Crafting/medicine.yml
 
 - type: stack
-  id: MisfitsDaturaHide
+  id: F14DaturaHide
   name: misfits-kit-datura-hide
   icon:
     sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
     state: ointment4
-  spawn: MisfitsDaturaHide
+  spawn: F14DaturaHide
   maxCount: 10
 
 - type: stack
-  id: MisfitsSnakebiteTourniquet
+  id: F14SnakebiteTourniquet
   name: misfits-kit-snakebite-tourniquet
   icon:
     sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
     state: tourniquet
-  spawn: MisfitsSnakebiteTourniquet
+  spawn: F14SnakebiteTourniquet
   maxCount: 10
 
 - type: stack
-  id: MisfitsHealingSalve
+  id: F14HealingSalve
   name: misfits-kit-healing-salve
   icon:
     sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
     state: ointment1
-  spawn: MisfitsHealingSalve
+  spawn: F14HealingSalve
   maxCount: 10
 
 - type: stack
-  id: MisfitsHerbalAnodyne
+  id: F14HerbalAnodyne
   name: misfits-kit-herbal-anodyne
   icon:
     sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
     state: aloe2
-  spawn: MisfitsHerbalAnodyne
+  spawn: F14HerbalAnodyne
   maxCount: 10
 
 - type: stack
-  id: MisfitsHerbalAntimicrobial
+  id: F14HerbalAntimicrobial
   name: misfits-kit-herbal-antimicrobial
   icon:
     sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
     state: aloe3
-  spawn: MisfitsHerbalAntimicrobial
+  spawn: F14HerbalAntimicrobial
   maxCount: 10
 
 - type: entity
   parent: BaseHealingItem
-  id: MisfitsDaturaHide
+  id: F14DaturaHide
   name: datura hide
   description: A numbing datura ointment for severe thermal burns. It is specialized for Heat damage and is poor treatment for other wounds.
   components:
@@ -70,12 +70,12 @@
     healingEndSound:
       path: "/Audio/Items/Medical/ointment_end.ogg"
   - type: Stack
-    stackType: MisfitsDaturaHide
+    stackType: F14DaturaHide
     count: 1
 
 - type: entity
   parent: BaseHealingItem
-  id: MisfitsSnakebiteTourniquet
+  id: F14SnakebiteTourniquet
   name: snakebite tourniquet
   description: A treated binding packed with ground buffalo gourd for venomous bites and severe bleeding.
   components:
@@ -98,12 +98,12 @@
     healingEndSound:
       path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
-    stackType: MisfitsSnakebiteTourniquet
+    stackType: F14SnakebiteTourniquet
     count: 1
 
 - type: entity
-  parent: N14HealingPowder
-  id: MisfitsFieryPurgative
+  parent: F14HealingPowder
+  id: F14FieryPurgative
   name: fiery purgative
   description: A viciously hot herbal purge used to flush venom and radiation from the body.
   components:
@@ -114,12 +114,12 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: MisfitsFieryPurgative
+      - ReagentId: F14FieryPurgative
         Quantity: 10
 
 - type: entity
-  parent: N14HealingPowder
-  id: MisfitsBloodShield
+  parent: F14HealingPowder
+  id: F14BloodShield
   name: blood shield
   description: A bitter herbal mash used to strengthen the body against poison.
   components:
@@ -130,12 +130,12 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: MisfitsBloodShield
+      - ReagentId: F14BloodShield
         Quantity: 10
 
 - type: entity
-  parent: N14HealingPowder
-  id: MisfitsPilgrimsRemedy
+  parent: F14HealingPowder
+  id: F14PilgrimsRemedy
   name: pilgrim's remedy
   description: A mild wasteland mixture of medicinal roots, fungus and agave intended for long journeys.
   components:
@@ -146,12 +146,12 @@
     solution:
       maxVol: 15
       reagents:
-      - ReagentId: MisfitsPilgrimsRemedy
+      - ReagentId: F14PilgrimsRemedy
         Quantity: 15
 
 - type: entity
   parent: BaseHealingItem
-  id: MisfitsHealingSalve
+  id: F14HealingSalve
   name: healing salve
   description: A sticky herbal salve used to close lacerations and other slashing wounds. It is deliberately specialized rather than a universal ointment.
   components:
@@ -175,12 +175,12 @@
     healingEndSound:
       path: "/Audio/Items/Medical/ointment_end.ogg"
   - type: Stack
-    stackType: MisfitsHealingSalve
+    stackType: F14HealingSalve
     count: 1
 
 - type: entity
-  parent: N14HealingPowder
-  id: MisfitsGravesalt
+  parent: F14HealingPowder
+  id: F14Gravesalt
   name: gravesalt
   description: A harsh pouch of ash, bitter herbs and mineral-rich plant matter used as an emergency poison purge.
   components:
@@ -191,12 +191,12 @@
     solution:
       maxVol: 5
       reagents:
-      - ReagentId: MisfitsGravesalt
+      - ReagentId: F14Gravesalt
         Quantity: 5
 
 - type: entity
-  parent: N14RadAwayBloodbag
-  id: MisfitsGlowingBloodPack
+  parent: F14RadAwayBloodbag
+  id: F14GlowingBloodPack
   name: glowing blood pack
   description: A blood pack treated with irradiated fungus and medical alcohol. It emits a faint, unhealthy glow.
   components:
@@ -205,7 +205,7 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: MisfitsGlowingBloodPack
+      - ReagentId: F14GlowingBloodPack
         Quantity: 10
   - type: Injector
     solutionName: pen
@@ -217,7 +217,7 @@
 
 - type: entity
   parent: BaseHealingItem
-  id: MisfitsHerbalAnodyne
+  id: F14HerbalAnodyne
   name: herbal anodyne
   description: A soothing herbal balm massaged into bruised and battered tissue. It is specialized for blunt trauma rather than cuts or burns.
   components:
@@ -239,12 +239,12 @@
     healingEndSound:
       path: "/Audio/Items/Medical/ointment_end.ogg"
   - type: Stack
-    stackType: MisfitsHerbalAnodyne
+    stackType: F14HerbalAnodyne
     count: 1
 
 - type: entity
   parent: BaseHealingItem
-  id: MisfitsHerbalAntimicrobial
+  id: F14HerbalAntimicrobial
   name: herbal antimicrobial
   description: A pungent herbal poultice used to neutralize chemical burns and clean contaminated tissue.
   components:
@@ -269,12 +269,12 @@
     healingEndSound:
       path: "/Audio/Items/Medical/ointment_end.ogg"
   - type: Stack
-    stackType: MisfitsHerbalAntimicrobial
+    stackType: F14HerbalAntimicrobial
     count: 1
 
 - type: entity
-  parent: N14HealingPowder
-  id: MisfitsHerbalStimulant
+  parent: F14HealingPowder
+  id: F14HerbalStimulant
   name: herbal stimulant
   description: A sharp herbal mixture prepared to keep an exhausted traveler awake and moving.
   components:
@@ -285,5 +285,5 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: MisfitsHerbalStimulant
+      - ReagentId: F14HerbalStimulant
         Quantity: 10

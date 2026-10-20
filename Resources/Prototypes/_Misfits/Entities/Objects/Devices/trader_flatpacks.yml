@@ -1,0 +1,55 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Devices/trader_flatpacks.yml
+
+- type: entity
+  parent: BaseFlatpack
+  id: F14LegionTraderFlatpack
+  name: legion market flatpack
+  description: turns into a legion marketplace upon unpacking. warning - once its placed, theres no moving it.
+  components:
+  - type: Flatpack
+    entity: F14TrademachineLegionCity
+  - type: Sprite
+    layers:
+    - state: base
+    - state: overlay
+      color: "#d72919"
+      map: ["enum.FlatpackVisualLayers.Overlay"]
+    - state: icon-default
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: BaseFlatpack
+  id: F14NCRTraderFlatpack
+  name: NCR Caravan flatpack
+  description: turns into an NCR Caravan upon unpacking. warning - once its placed, theres no moving it.
+  components:
+  - type: Flatpack
+    entity: F14TrademachineNCRCity
+  - type: Sprite
+    layers:
+    - state: base
+    - state: overlay
+      color: "#22d719"
+      map: ["enum.FlatpackVisualLayers.Overlay"]
+    - state: icon-default
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: BaseFlatpack
+  id: F14WasterTraderFlatpack
+  name: Waster Caravan flatpack
+  description: turns into a Waster Caravan upon unpacking. warning - once its placed, theres no moving it.
+  components:
+  - type: Flatpack
+    entity: F14TrademachineWasterCity
+  - type: Sprite
+    layers:
+    - state: base
+    - state: overlay
+      color: "#c6eb0f"
+      map: ["enum.FlatpackVisualLayers.Overlay"]
+    - state: icon-default
+  - type: StaticPrice
+    price: 1500

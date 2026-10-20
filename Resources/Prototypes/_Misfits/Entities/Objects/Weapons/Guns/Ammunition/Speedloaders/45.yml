@@ -1,19 +1,19 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/Speedloaders/45.yml
 
 - type: entity
-  id: MisfitsBaseSpeedLoader45
+  id: F14BaseSpeedLoader45
   name: "speed loader (.45 ACP)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - MisfitsSpeedLoader45
+      - F14SpeedLoader45
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - N14CartridgePistol45
+        - F14CartridgePistol45
     capacity: 6
   - type: Sprite
   - type: ContainerContainer
@@ -22,12 +22,12 @@
         ents: []
 
 - type: entity
-  id: MisfitsSpeedLoader45
+  id: F14SpeedLoader45
   name: "speed loader (.45 ACP)"
-  parent: MisfitsBaseSpeedLoader45
+  parent: F14BaseSpeedLoader45
   components:
   - type: BallisticAmmoProvider
-    proto: N14CartridgePistol45
+    proto: F14CartridgePistol45
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Speedloaders/44loader.rsi
     layers:
@@ -44,19 +44,19 @@
 # Uses its own tag instead of the shared SpeedLoaderInternal so it cannot load other calibers.
 
 - type: entity
-  id: MisfitsBaseSpeedLoaderTube45
+  id: F14BaseSpeedLoaderTube45
   name: "speed loader tube (.45 ACP)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - MisfitsSpeedLoaderTube45
+      - F14SpeedLoaderTube45
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - N14CartridgePistol45
+        - F14CartridgePistol45
     capacity: 10
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Speedloaders/45_70loadertube.rsi
@@ -66,12 +66,12 @@
         ents: []
 
 - type: entity
-  id: MisfitsSpeedLoaderTube45
+  id: F14SpeedLoaderTube45
   name: "speed loader tube (.45 ACP)"
-  parent: MisfitsBaseSpeedLoaderTube45
+  parent: F14BaseSpeedLoaderTube45
   components:
   - type: BallisticAmmoProvider
-    proto: N14CartridgePistol45
+    proto: F14CartridgePistol45
   - type: Sprite
     layers:
     - state: base

@@ -3,12 +3,12 @@
 
 - type: entity
   name: Magneto-laser pistol
-  parent: N14BaseWeaponPowerCellSmall
-  id: CorvaxWeaponLaserMagnetoPistol
+  parent: F14BaseWeaponPowerCellSmall
+  id: F14WeaponLaserMagnetoPistol
   description: This 1000-watt laser gun has been upgraded with a magnetic calibration system that condenses the laser beam, increasing its penetrating power.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Weapons/Guns/Laser/magnetolaserpistol.rsi
@@ -28,12 +28,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellRed
+        startingItem: F14MicrofusionCellRed
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: Item
     size: Small
     shape:
@@ -42,7 +42,7 @@
   - type: Gun
     fireRate: 1.5
     soundGunshot:
-      collection: N14LaserPistolGunshot
+      collection: F14LaserPistolGunshot
   - type: EyeCursorOffset
     maxOffset: 2
     pvsIncrease: 0.2

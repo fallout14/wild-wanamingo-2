@@ -3,30 +3,30 @@
 - type: latheRecipe
   abstract: true
   parent: BaseElectronicsRecipe
-  id: MisfitsBaseCircuitboardRecipe
+  id: F14BaseCircuitboardRecipe
   categories:
   - Circuitry
   completetime: 4
   materials:
     Circuitry: 200
-    N14Copper: 300
+    F14Copper: 300
 
 - type: latheRecipe
-  id: MisfitsElectrolysisUnitMachineCircuitboard
-  parent: MisfitsBaseCircuitboardRecipe
+  id: F14ElectrolysisUnitMachineCircuitboard
+  parent: F14BaseCircuitboardRecipe
   result: ElectrolysisUnitMachineCircuitboard
 
 - type: latheRecipe
-  id: MisfitsCentrifugeMachineCircuitboard
-  parent: MisfitsBaseCircuitboardRecipe
+  id: F14CentrifugeMachineCircuitboard
+  parent: F14BaseCircuitboardRecipe
   result: CentrifugeMachineCircuitboard
 
 - type: latheRecipe
-  id: MisfitsDoorElectronics
-  parent: MisfitsBaseCircuitboardRecipe
+  id: F14DoorElectronics
+  parent: F14BaseCircuitboardRecipe
   result: DoorElectronics
 
 - type: latheRecipe
-  id: MisfitsJukeboxCircuitBoard
-  parent: MisfitsBaseCircuitboardRecipe
+  id: F14JukeboxCircuitBoard
+  parent: F14BaseCircuitboardRecipe
   result: JukeboxCircuitBoard

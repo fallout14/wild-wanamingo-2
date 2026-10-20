@@ -4,7 +4,7 @@
 - type: entity
   parent: MopItem
   name: mop
-  id: N14Mop
+  id: F14Mop
   description: A mop that can't be stopped, viscera cleanup detail awaits.
   components:
   - type: Sprite
@@ -13,7 +13,7 @@
 
 - type: entity
   parent: MopBucket
-  id: N14MopBucket
+  id: F14MopBucket
   name: mop bucket
   description: Holds water and the tears of the janitor.
   components:
@@ -28,8 +28,8 @@
     drawdepth: Objects
 
 - type: entity
-  parent: N14MopBucket
-  id: N14MopBucketFull
+  parent: F14MopBucket
+  id: F14MopBucketFull
   suffix: full
   name: mop bucket
   components:

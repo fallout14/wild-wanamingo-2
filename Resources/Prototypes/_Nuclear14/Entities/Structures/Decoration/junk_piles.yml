@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Decoration/junk_piles.yml
 
 - type: entity
-  id: N14JunkPileBase
+  id: F14JunkPileBase
   suffix: Mapping
   abstract: true
   components:
@@ -15,22 +15,22 @@
       prob: 0.05
     - id: Pen
       prob: 0.04
-    - id: N14Paper1 # #Misfits Change
+    - id: F14Paper1 # #Misfits Change
       prob: 0.07
       amount: 1
       maxAmount: 3
-    - id: MisfitsBinoculars # #Misfits Add — rare binoculars find in junkpiles
+    - id: F14Binoculars # #Misfits Add — rare binoculars find in junkpiles
       prob: 0.02
-    - id: N14CombatKnife
+    - id: F14CombatKnife
       prob: 0.03
       orGroup: Tools
-    - id: N14Screwdriver
+    - id: F14Screwdriver
       prob: 0.06
       orGroup: Tools
-    - id: N14Wirecutter
+    - id: F14Wirecutter
       prob: 0.06
       orGroup: Tools
-    - id: N14Wrench
+    - id: F14Wrench
       prob: 0.06
       orGroup: Tools
     - id: JugWeldingFuel
@@ -40,512 +40,512 @@
       prob: 0.04
       amount: 1
       maxAmount: 3
-    - id: N14DrinkNukaColaBottleFull
+    - id: F14DrinkNukaColaBottleFull
       prob: 0.05
       amount: 1
       maxAmount: 2
       orGroup: Consumables
-    - id: N14DirtyGauze10
+    - id: F14DirtyGauze10
       prob: 0.05
       orGroup: Consumables
-    - id: N14SmellingSalts
+    - id: F14SmellingSalts
       prob: 0.055
       orGroup: Consumables
-    - id: N14Stimpak
+    - id: F14Stimpak
       prob: 0.02
       orGroup: Consumables
-    - id: N14RadAwayBloodbag
+    - id: F14RadAwayBloodbag
       prob: 0.05
       orGroup: Consumables
-    - id: N14Antidote
+    - id: F14Antidote
       prob: 0.05
       orGroup: Consumables
     - id: Bloodpack
       prob: 0.05
       orGroup: Consumables
-    - id: N14ChemicalSyringeAntidote
+    - id: F14ChemicalSyringeAntidote
       prob: 0.01
       orGroup: Consumables
-    - id: N14SuperStimpak
+    - id: F14SuperStimpak
       prob: 0.01
       orGroup: Consumables
-    - id: N14DrinkIrradiatedNukaColaBottleFull
+    - id: F14DrinkIrradiatedNukaColaBottleFull
       prob: 0.02
       orGroup: Consumables
-    - id: N14FoodDogfood
+    - id: F14FoodDogfood
       prob: 0.03
-    - id: N14FoodBubblegum
+    - id: F14FoodBubblegum
       prob: 0.03
-    - id: N14ClothingOuterCoatLeatherDuster
+    - id: F14ClothingOuterCoatLeatherDuster
       prob: 0.12
       orGroup: Clothing
-    - id: N14ClothingOuterCoatDuster
+    - id: F14ClothingOuterCoatDuster
       prob: 0.12
       orGroup: Clothing
-    - id: N14ClothingOuterCoatFollowerLab
+    - id: F14ClothingOuterCoatFollowerLab
       prob: 0.09
       orGroup: Clothing
-    - id: N14ClothingOuterBattlecoatTan
+    - id: F14ClothingOuterBattlecoatTan
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingOuterBattlecoatCoat
+    - id: F14ClothingOuterBattlecoatCoat
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingHeadHatBaseball
+    - id: F14ClothingHeadHatBaseball
       prob: 0.12
       orGroup: Clothing
-    - id: N14ClothingHeadHatBandit
+    - id: F14ClothingHeadHatBandit
       prob: 0.12
       orGroup: Clothing
-    - id: N14ClothingShoesJamrock
+    - id: F14ClothingShoesJamrock
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingShoesRags
+    - id: F14ClothingShoesRags
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingShoesRaider
+    - id: F14ClothingShoesRaider
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtFalloutBlack
+    - id: F14ClothingUniformJumpskirtFalloutBlack
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtFalloutBlue
+    - id: F14ClothingUniformJumpskirtFalloutBlue
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtDressBlack
+    - id: F14ClothingUniformJumpskirtDressBlack
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtDressBlue
+    - id: F14ClothingUniformJumpskirtDressBlue
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtSundress
+    - id: F14ClothingUniformJumpskirtSundress
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtWastelandDoc
+    - id: F14ClothingUniformJumpskirtWastelandDoc
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtMerc
+    - id: F14ClothingUniformJumpskirtMerc
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtTribal
+    - id: F14ClothingUniformJumpskirtTribal
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtFalloutBlue
+    - id: F14ClothingUniformJumpskirtFalloutBlue
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtDressBlack
+    - id: F14ClothingUniformJumpskirtDressBlack
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtDressBlue
+    - id: F14ClothingUniformJumpskirtDressBlue
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtSundress
+    - id: F14ClothingUniformJumpskirtSundress
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtWastelandDoc
+    - id: F14ClothingUniformJumpskirtWastelandDoc
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtMerc
+    - id: F14ClothingUniformJumpskirtMerc
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpskirtTribal
+    - id: F14ClothingUniformJumpskirtTribal
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitVault
+    - id: F14ClothingUniformJumpsuitVault
       prob: 0.05
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitVault14
+    - id: F14ClothingUniformJumpsuitVault14
       prob: 0.05
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitDetectiveAlt
+    - id: F14ClothingUniformJumpsuitDetectiveAlt
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitBartenderAlt
+    - id: F14ClothingUniformJumpsuitBartenderAlt
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitRags
+    - id: F14ClothingUniformJumpsuitRags
       prob: 0.12
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitSettlerRags
+    - id: F14ClothingUniformJumpsuitSettlerRags
       prob: 0.12
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitCheckered
+    - id: F14ClothingUniformJumpsuitCheckered
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitWastelandDoc
+    - id: F14ClothingUniformJumpsuitWastelandDoc
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitMerc
+    - id: F14ClothingUniformJumpsuitMerc
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitMerchant
+    - id: F14ClothingUniformJumpsuitMerchant
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitTrader
+    - id: F14ClothingUniformJumpsuitTrader
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitCaravan
+    - id: F14ClothingUniformJumpsuitCaravan
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitMechanic
+    - id: F14ClothingUniformJumpsuitMechanic
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitPreWarRelaxed
+    - id: F14ClothingUniformJumpsuitPreWarRelaxed
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitPreWarCasual
+    - id: F14ClothingUniformJumpsuitPreWarCasual
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitManagerSuit
+    - id: F14ClothingUniformJumpsuitManagerSuit
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitPreWarManager
+    - id: F14ClothingUniformJumpsuitPreWarManager
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitBlueSuit
+    - id: F14ClothingUniformJumpsuitBlueSuit
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitPreWarLumberjack
+    - id: F14ClothingUniformJumpsuitPreWarLumberjack
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitCombat
+    - id: F14ClothingUniformJumpsuitCombat
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitBrahminFarmer
+    - id: F14ClothingUniformJumpsuitBrahminFarmer
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitFollowers
+    - id: F14ClothingUniformJumpsuitFollowers
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitCowboyBrown
+    - id: F14ClothingUniformJumpsuitCowboyBrown
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingUniformJumpsuitCowboyGrey
+    - id: F14ClothingUniformJumpsuitCowboyGrey
       prob: 0.1
       orGroup: Clothing
-    - id: N14ClothingBootsCowboy
+    - id: F14ClothingBootsCowboy
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingBootsFire
+    - id: F14ClothingBootsFire
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingEyesGlassesWelding
+    - id: F14ClothingEyesGlassesWelding
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingHandsGlovesLeather
+    - id: F14ClothingHandsGlovesLeather
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingHandsGlovesDriver
+    - id: F14ClothingHandsGlovesDriver
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingHandsGlovesCombat
+    - id: F14ClothingHandsGlovesCombat
       prob: 0.05
       orGroup: Clothing
-    - id: N14ClothingHandsGlovesNitrile
+    - id: F14ClothingHandsGlovesNitrile
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingHeadHatArmyBeret
+    - id: F14ClothingHeadHatArmyBeret
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingMaskRedMask
+    - id: F14ClothingMaskRedMask
       prob: 0.07
       orGroup: Clothing
-    - id: N14ClothingMaskDesertMask
+    - id: F14ClothingMaskDesertMask
       prob: 0.07
       orGroup: Clothing
-    #- id: N14ClothingHeadHatCombatHelmet # Forge-Change
+    #- id: F14ClothingHeadHatCombatHelmet # Forge-Change
     #  prob: 0.05
     #  orGroup: Clothing
-    - id: N14ClothingBootsCombat
+    - id: F14ClothingBootsCombat
       prob: 0.05
       orGroup: Clothing
-    - id: N14ClothingBootsLeather
+    - id: F14ClothingBootsLeather
       prob: 0.05
       orGroup: Clothing
-    - id: N14Magazine762Rifle
+    - id: F14Magazine762Rifle
       prob: 0.07
       orGroup: Ammunition
-    - id: N14MagazinePistol9mm
+    - id: F14MagazinePistol9mm
       prob: 0.1
       orGroup: Ammunition
-    - id: N14MagazinePistol10mm
+    - id: F14MagazinePistol10mm
       prob: 0.1
       orGroup: Ammunition
-    - id: N14MagazineSMG10mm
+    - id: F14MagazineSMG10mm
       prob: 0.07
       orGroup: Ammunition
-    - id: N14MagazinePistol12mm
+    - id: F14MagazinePistol12mm
       prob: 0.07
       orGroup: Ammunition
-    - id: N14MagazineSMG12mm
+    - id: F14MagazineSMG12mm
       prob: 0.07
       orGroup: Ammunition
-    - id: N14MagazineShotgun12
+    - id: F14MagazineShotgun12
       prob: 0.07
       orGroup: Ammunition
-    - id: N14MagazineShotgun20
+    - id: F14MagazineShotgun20
       prob: 0.07
       orGroup: Ammunition
-    - id: N14MagazinePistol22lr
+    - id: F14MagazinePistol22lr
       prob: 0.07
       orGroup: Ammunition
-    - id: N14MagazinePistol45
+    - id: F14MagazinePistol45
       prob: 0.07
       orGroup: Ammunition
-    - id: N14LongMagazine556Rifle
+    - id: F14LongMagazine556Rifle
       prob: 0.07
       orGroup: Ammunition
-    - id: N14Magazine556Rifle
+    - id: F14Magazine556Rifle
       prob: 0.07
       orGroup: Ammunition
-    - id: N14Magazine45SubMachineGun
+    - id: F14Magazine45SubMachineGun
       prob: 0.09
       orGroup: Ammunition
     # #Misfits Add - rare loose 40mm finds. Other than existing upstream
     # availability, these variants enter circulation through junk or crafting.
-    - id: N1440mmGrenadeFrag
+    - id: F1440mmGrenadeFrag
       prob: 0.0025
       orGroup: Ammunition
-    - id: N1440mmGrenadeFire
+    - id: F1440mmGrenadeFire
       prob: 0.0025
       orGroup: Ammunition
-    - id: Misfits40mmGrenadeHEDP
+    - id: F1440mmGrenadeHEDP
       prob: 0.0025
       orGroup: Ammunition
-    - id: Misfits40mmGrenadePulse
+    - id: F1440mmGrenadePulse
       prob: 0.0025
       orGroup: Ammunition
-    - id: Misfits40mmGrenadePlasma
+    - id: F1440mmGrenadePlasma
       prob: 0.0025
       orGroup: Ammunition
-    - id: Misfits40mmGrenadeBuckshot
+    - id: F1440mmGrenadeBuckshot
       prob: 0.0025
       orGroup: Ammunition
-    - id: Misfits40mmGrenadeSmoke
+    - id: F1440mmGrenadeSmoke
       prob: 0.0025
       orGroup: Ammunition
-    - id: Misfits40mmGrenadeWhitePhosphorus
+    - id: F1440mmGrenadeWhitePhosphorus
       prob: 0.0025
       orGroup: Ammunition
-    - id: Misfits40mmGrenadeFlashbang
+    - id: F1440mmGrenadeFlashbang
       prob: 0.0025
       orGroup: Ammunition
-    - id: Misfits40mmGrenadeTearGas
+    - id: F1440mmGrenadeTearGas
       prob: 0.0025
       orGroup: Ammunition
     # #Misfits Add - exceptionally rare, intact grenade finds in junk piles.
     - id: GrenadeShrapnel
       prob: 0.005
       orGroup: Ammunition
-    - id: MisfitsGrenadeFragDefensive
+    - id: F14GrenadeFragDefensive
       prob: 0.005
       orGroup: Ammunition
-    - id: MisfitsGrenadeImpact
+    - id: F14GrenadeImpact
       prob: 0.005
       orGroup: Ammunition
-    - id: N14Junk8Ball
+    - id: F14Junk8Ball
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkBaseball
+    - id: F14JunkBaseball
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkCoffeepot
+    - id: F14JunkCoffeepot
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkComponentBoard1
+    - id: F14JunkComponentBoard1
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentBoard2
+    - id: F14JunkComponentBoard2
       orGroup: Junk
       prob: 0.08
-    - id: N14JunkComponentBoard3
+    - id: F14JunkComponentBoard3
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentBulb1
+    - id: F14JunkComponentBulb1
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentBulb2
+    - id: F14JunkComponentBulb2
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentBulb3
+    - id: F14JunkComponentBulb3
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentBuzzer
+    - id: F14JunkComponentBuzzer
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentDiode1
+    - id: F14JunkComponentDiode1
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentDiode2
+    - id: F14JunkComponentDiode2
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentDiode3
+    - id: F14JunkComponentDiode3
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentFuse1
+    - id: F14JunkComponentFuse1
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentFuse2
+    - id: F14JunkComponentFuse2
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentGearLarge
+    - id: F14JunkComponentGearLarge
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkComponentGearSmall
+    - id: F14JunkComponentGearSmall
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkComponentIgniter
+    - id: F14JunkComponentIgniter
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentMainboard
+    - id: F14JunkComponentMainboard
       prob: 0.07
       orGroup: Junk
-    - id: N14JunkComponentResistor1
+    - id: F14JunkComponentResistor1
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentResistor2
+    - id: F14JunkComponentResistor2
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentResistor3
+    - id: F14JunkComponentResistor3
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentScrew
+    - id: F14JunkComponentScrew
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkComponentSensor
+    - id: F14JunkComponentSensor
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentSensorModule
+    - id: F14JunkComponentSensorModule
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentSwitch
+    - id: F14JunkComponentSwitch
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentTransistor1
+    - id: F14JunkComponentTransistor1
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentTransistor2
+    - id: F14JunkComponentTransistor2
       prob: 0.08
       orGroup: Junk
-    - id: N14JunkComponentTransistor3
+    - id: F14JunkComponentTransistor3
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkCookpot
+    - id: F14JunkCookpot
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkCrutch
+    - id: F14JunkCrutch
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkDuctTape
+    - id: F14JunkDuctTape
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkGunpartsAction
+    - id: F14JunkGunpartsAction
       prob: 0.03
       orGroup: Junk
-    - id: N14JunkGunpartsAdvancedFrame
+    - id: F14JunkGunpartsAdvancedFrame
       prob: 0.01
       orGroup: Junk
-    - id: N14JunkGunpartsBarrel
+    - id: F14JunkGunpartsBarrel
       prob: 0.03
       orGroup: Junk
-    - id: N14JunkGunpartsBolt
+    - id: F14JunkGunpartsBolt
       prob: 0.03
       orGroup: Junk
-    - id: N14JunkGunpartsFrame
+    - id: F14JunkGunpartsFrame
       prob: 0.03
       orGroup: Junk
-    - id: N14JunkGunpartsFramePistol
+    - id: F14JunkGunpartsFramePistol
       prob: 0.03
       orGroup: Junk
-    - id: N14JunkGunpartsReceiver
+    - id: F14JunkGunpartsReceiver
       prob: 0.03
       orGroup: Junk
-    - id: N14JunkGunpartsRecoilComp
+    - id: F14JunkGunpartsRecoilComp
       prob: 0.03
       orGroup: Junk
-    - id: N14JunkGunpartsRifleFrame
+    - id: F14JunkGunpartsRifleFrame
       prob: 0.03
       orGroup: Junk
-    - id: N14JunkGunpartsRifleScope
+    - id: F14JunkGunpartsRifleScope
       prob: 0.03
       orGroup: Junk
-    - id: N14JunkGunpartsRifleStock
+    - id: F14JunkGunpartsRifleStock
       prob: 0.03
       orGroup: Junk
-    - id: N14JunkGunpartsStock
+    - id: F14JunkGunpartsStock
       prob: 0.03
       orGroup: Junk
-    - id: N14JunkGunpartsStockWood
+    - id: F14JunkGunpartsStockWood
       prob: 0.03
       orGroup: Junk
-    - id: N14JunkGunpartsTrigger
+    - id: F14JunkGunpartsTrigger
       prob: 0.03
       orGroup: Junk
-    - id: N14JunkGunpartsWeaponParts1
+    - id: F14JunkGunpartsWeaponParts1
       prob: 0.01
       orGroup: Junk
-    - id: N14JunkGunpartsWeaponParts2
+    - id: F14JunkGunpartsWeaponParts2
       prob: 0.01
       orGroup: Junk
-    - id: N14JunkGunpartsWeaponParts3
+    - id: F14JunkGunpartsWeaponParts3
       prob: 0.01
       orGroup: Junk
-    - id: N14JunkIron
+    - id: F14JunkIron
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkLunchbox
+    - id: F14JunkLunchbox
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkTeapot
+    - id: F14JunkTeapot
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkTimer
+    - id: F14JunkTimer
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkTincan
+    - id: F14JunkTincan
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkToaster
+    - id: F14JunkToaster
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkToyNukaTruck
+    - id: F14JunkToyNukaTruck
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkToyRacecar
+    - id: F14JunkToyRacecar
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkTurpentine
+    - id: F14JunkTurpentine
       prob: 0.05
       orGroup: Junk
-    - id: N14JunkVaultCanteen
+    - id: F14JunkVaultCanteen
       prob: 0.05
       orGroup: Junk
     # #Misfits Change - Extremely rare pipboy (0.5%) and low-chance wasteland scrap headset (2%) for junk pile finds
-    - id: N14Pipboy
+    - id: F14Pipboy
       prob: 0.005
     # #Misfits Add - Shoddy power armor manual, even rarer than the pipboy (0.1%)
-    - id: MisfitsWastelandPowerArmor
+    - id: F14WastelandPowerArmor
       prob: 0.001
-    - id: MisfitsClothingHeadsetWastelandScrap
+    - id: F14ClothingHeadsetWastelandScrap
       prob: 0.02
-    - id: N14CurrencyCap
+    - id: F14CurrencyCap
       prob: 1
-      orGroup: N14Currency
+      orGroup: F14Currency
       amount: 1
       maxAmount: 25
-    - id: N14CurrencyPrewar
+    - id: F14CurrencyPrewar
       prob: 1
-      orGroup: N14Currency
+      orGroup: F14Currency
       amount: 1
       maxAmount: 25
-    - id: N14CurrencyNCRDollar
+    - id: F14CurrencyNCRDollar
       prob: 1
-      orGroup: N14Currency
+      orGroup: F14Currency
       amount: 1
       maxAmount: 25
     - id: null
       prob: 0.75
-      orGroup: N14Currency
+      orGroup: F14Currency
       amount: 1
       maxAmount: 25
     - id: null
@@ -604,7 +604,7 @@
   - type: Clickable
   - type: Tag
     tags:
-    - N14JunkPile
+    - F14JunkPile
 # No fixture on this base, inherit from further down for fixture
 
 # TODO: Add a loot box mechanic where using the pile does a doAfter then spits out useful items from a loot table.
@@ -612,8 +612,8 @@
 # Decorative Piles
 
 - type: entity
-  parent: N14JunkPileBase
-  id: N14JunkPile1
+  parent: F14JunkPileBase
+  id: F14JunkPile1
   name: junk pile
   description: Could be something useful in here.
   components:
@@ -623,8 +623,8 @@
     state: Junk_1
 
 - type: entity
-  parent: N14JunkPile1
-  id: N14JunkPile2
+  parent: F14JunkPile1
+  id: F14JunkPile2
   components:
   - type: Physics  # spawn state
     canCollide: False
@@ -632,8 +632,8 @@
     state: Junk_2
 
 - type: entity
-  parent: N14JunkPile1
-  id: N14JunkPile3
+  parent: F14JunkPile1
+  id: F14JunkPile3
   components:
   - type: Physics  # spawn state
     canCollide: False
@@ -641,8 +641,8 @@
     state: Junk_3
 
 - type: entity
-  parent: N14JunkPile1
-  id: N14JunkPile4
+  parent: F14JunkPile1
+  id: F14JunkPile4
   components:
   - type: Physics  # spawn state
     canCollide: False
@@ -650,8 +650,8 @@
     state: Junk_4
 
 - type: entity
-  parent: N14JunkPile1
-  id: N14JunkPile5
+  parent: F14JunkPile1
+  id: F14JunkPile5
   components:
   - type: Physics  # spawn state
     canCollide: False
@@ -659,8 +659,8 @@
     state: Junk_5
 
 - type: entity
-  parent: N14JunkPile1
-  id: N14JunkPile6
+  parent: F14JunkPile1
+  id: F14JunkPile6
   components:
   - type: Physics  # spawn state
     canCollide: False
@@ -668,8 +668,8 @@
     state: Junk_6
 
 - type: entity
-  parent: N14JunkPile1
-  id: N14JunkPile7
+  parent: F14JunkPile1
+  id: F14JunkPile7
   components:
   - type: Physics  # spawn state
     canCollide: False
@@ -677,8 +677,8 @@
     state: Junk_7
 
 - type: entity
-  parent: N14JunkPile1
-  id: N14JunkPile8
+  parent: F14JunkPile1
+  id: F14JunkPile8
   components:
   - type: Physics  # spawn state
     canCollide: False
@@ -686,8 +686,8 @@
     state: Junk_8
 
 - type: entity
-  parent: N14JunkPile1
-  id: N14JunkPile9
+  parent: F14JunkPile1
+  id: F14JunkPile9
   components:
   - type: Physics  # spawn state
     canCollide: False
@@ -695,8 +695,8 @@
     state: Junk_9
 
 - type: entity
-  parent: N14JunkPile1
-  id: N14JunkPile10
+  parent: F14JunkPile1
+  id: F14JunkPile10
   components:
   - type: Physics  # spawn state
     canCollide: False
@@ -704,8 +704,8 @@
     state: Junk_10
 
 - type: entity
-  parent: N14JunkPile1
-  id: N14JunkPile11
+  parent: F14JunkPile1
+  id: F14JunkPile11
   components:
   - type: Physics  # spawn state
     canCollide: False
@@ -713,8 +713,8 @@
     state: Junk_11
 
 - type: entity
-  parent: N14JunkPile1
-  id: N14JunkPile12
+  parent: F14JunkPile1
+  id: F14JunkPile12
   components:
   - type: Physics  # spawn state
     canCollide: False
@@ -722,61 +722,61 @@
     state: Junk_12
 
 - type: entity
-  parent: N14JunkPile1
-  id: N14JunkPile1Refilling1
+  parent: F14JunkPile1
+  id: F14JunkPile1Refilling1
   suffix: Loot,Random
 
 - type: entity
-  parent: N14JunkPile2
-  id: N14JunkPile1Refilling2
+  parent: F14JunkPile2
+  id: F14JunkPile1Refilling2
   suffix: Loot,Random
 
 - type: entity
-  parent: N14JunkPile3
-  id: N14JunkPile1Refilling3
+  parent: F14JunkPile3
+  id: F14JunkPile1Refilling3
   suffix: Loot,Random
 
 - type: entity
-  parent: N14JunkPile4
-  id: N14JunkPile1Refilling4
+  parent: F14JunkPile4
+  id: F14JunkPile1Refilling4
   suffix: Loot,Random
 
 - type: entity
-  parent: N14JunkPile5
-  id: N14JunkPile1Refilling5
+  parent: F14JunkPile5
+  id: F14JunkPile1Refilling5
   suffix: Loot,Random
 
 - type: entity
-  parent: N14JunkPile6
-  id: N14JunkPile1Refilling6
+  parent: F14JunkPile6
+  id: F14JunkPile1Refilling6
   suffix: Loot,Random
 
 - type: entity
-  parent: N14JunkPile7
-  id: N14JunkPile1Refilling7
+  parent: F14JunkPile7
+  id: F14JunkPile1Refilling7
   suffix: Loot,Random
 
 - type: entity
-  parent: N14JunkPile8
-  id: N14JunkPile1Refilling8
+  parent: F14JunkPile8
+  id: F14JunkPile1Refilling8
   suffix: Loot,Random
 
 - type: entity
-  parent: N14JunkPile9
-  id: N14JunkPile1Refilling9
+  parent: F14JunkPile9
+  id: F14JunkPile1Refilling9
   suffix: Loot,Random
 
 - type: entity
-  parent: N14JunkPile10
-  id: N14JunkPile1Refilling10
+  parent: F14JunkPile10
+  id: F14JunkPile1Refilling10
   suffix: Loot,Random
 
 - type: entity
-  parent: N14JunkPile11
-  id: N14JunkPile1Refilling11
+  parent: F14JunkPile11
+  id: F14JunkPile1Refilling11
   suffix: Loot,Random
 
 - type: entity
-  parent: N14JunkPile12
-  id: N14JunkPile1Refilling12
+  parent: F14JunkPile12
+  id: F14JunkPile1Refilling12
   suffix: Loot,Random

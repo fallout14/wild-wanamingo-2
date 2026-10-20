@@ -2,8 +2,8 @@
 
 - type: entity
   name: Glock 37M
-  parent: N14BaseWeaponPistol
-  id: MisfitsGlock
+  parent: F14BaseWeaponPistol
+  id: F14Glock
   suffix: Admin Only
   description: An exceedingly rare Glock chambered in .45 Magnum. Its unusual caliber and limited production make it a true collector's piece if you are pro.
   components:
@@ -31,7 +31,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMagGlock
+        startingItem: F14MagGlock
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/Pistols/pistol_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/Pistols/pistol_magout.ogg
         priority: 2
@@ -40,7 +40,7 @@
             - MagazineMagnum
       gun_chamber:
         name: Chamber
-        startingItem: MisfitsCartridgeGlock45
+        startingItem: F14CartridgeGlock45
         priority: 1
         whitelist:
           tags:

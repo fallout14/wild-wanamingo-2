@@ -3,7 +3,7 @@
 - type: entity
   abstract: true
   parent: PortableGeneratorBase
-  id: MisfitsBasePortableGeneratorFuel
+  id: F14BasePortableGeneratorFuel
   components:
     - type: AmbientSound
       range: 4
@@ -37,13 +37,13 @@
       moleRatio: 0.5
     - type: Explosive
       #Misfits Change - use the structural-capable N14 explosion profile.
-      explosionType: MisfitsDefaultStructural
+      explosionType: F14DefaultStructural
       tileBreakScale: 0
 
 - type: entity
   abstract: true
   parent: PortableGeneratorBase
-  id: MisfitsBasePortableGeneratorUranium
+  id: F14BasePortableGeneratorUranium
   components:
     - type: PortableGenerator
       startChance: 0.7
@@ -66,5 +66,5 @@
         Uranium: 3000
     - type: Explosive
       #Misfits Change - use the structural-capable N14 explosion profile.
-      explosionType: MisfitsDefaultStructural
+      explosionType: F14DefaultStructural
       tileBreakScale: 0

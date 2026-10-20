@@ -2,412 +2,412 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Doors/access_slanted.yml
 
 - type: entity
-  parent: N14DoorWoodRedSlanted
-  id: N14DoorWoodSlantedLockedNCR
+  parent: F14DoorWoodRedSlanted
+  id: F14DoorWoodSlantedLockedNCR
   suffix: NCR, Locked
   components:
   - type: AccessReader
-    access: [["N14NCR"]]
+    access: [["F14NCR"]]
   - type: Wires
     layoutId: AirlockSecurity
 
 - type: entity
-  parent: N14DoorWoodRedSlanted
-  id: N14DoorWoodSlantedLockedNCRNCO
+  parent: F14DoorWoodRedSlanted
+  id: F14DoorWoodSlantedLockedNCRNCO
   suffix: NCR, Locked, SGT
   components:
   - type: AccessReader
-    access: [["N14NCRSGT"]]
+    access: [["F14NCRSGT"]]
   - type: Wires
     layoutId: AirlockSecurity
 
 - type: entity
-  parent: N14DoorWoodRedSlanted
-  id: N14DoorWoodSlantedLockedNCRMedic
+  parent: F14DoorWoodRedSlanted
+  id: F14DoorWoodSlantedLockedNCRMedic
   suffix: NCR, Locked, Medic
   components:
   - type: AccessReader
-    access: [["N14NCRMedic"]]
+    access: [["F14NCRMedic"]]
   - type: Wires
     layoutId: AirlockSecurity
 
 - type: entity
-  parent: N14DoorWoodRedSlanted
-  id: N14DoorWoodSlantedLockedNCRMP
+  parent: F14DoorWoodRedSlanted
+  id: F14DoorWoodSlantedLockedNCRMP
   suffix: NCR, Locked, SGT
   components:
   - type: AccessReader
-    access: [["N14NCRSGT"]]
+    access: [["F14NCRSGT"]]
   - type: Wires
     layoutId: AirlockSecurity
 
 - type: entity
-  parent: N14DoorMetalBarSlanted
-  id: N14DoorCellSlantedLockedNCRMP
+  parent: F14DoorMetalBarSlanted
+  id: F14DoorCellSlantedLockedNCRMP
   suffix: NCR, Locked, SGT
   components:
   - type: AccessReader
-    access: [["N14NCRSGT"]]
+    access: [["F14NCRSGT"]]
   - type: Wires
     layoutId: AirlockSecurity
 
 - type: entity
-  parent: N14DoorWoodRedSlanted
-  id: N14DoorWoodSlantedLockedNCRO
+  parent: F14DoorWoodRedSlanted
+  id: F14DoorWoodSlantedLockedNCRO
   suffix: NCR, Locked, LT
   components:
   - type: AccessReader
-    access: [["N14NCRLT"]]
+    access: [["F14NCRLT"]]
   - type: Wires
     layoutId: AirlockSecurity
 
 - type: entity
-  parent: N14DoorWoodRedSlanted
-  id: N14DoorWoodSlantedLockedNCRRanger
+  parent: F14DoorWoodRedSlanted
+  id: F14DoorWoodSlantedLockedNCRRanger
   suffix: NCR, Locked, Ranger
   components:
   - type: AccessReader
-    access: [["N14NCRRanger"]]
+    access: [["F14NCRRanger"]]
   - type: Wires
     layoutId: HighSec
 
 #MARK: BoS Midwest
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: N14DoorAirlockSlantedLockedBoSMidwest
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedLockedBoSMidwest
   suffix: BoSMidwest, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ N14DoorElectronicsBOSMidwestGeneral ]
+      board: [ F14DoorElectronicsBOSMidwestGeneral ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: N14DoorAirlockSlantedLockedBoSPaladin
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedLockedBoSPaladin
   suffix: BoSMidwest, Locked, Paladin
   components:
   - type: ContainerFill
     containers:
-      board: [ N14DoorElectronicsBOSMidwestPaladin ]
+      board: [ F14DoorElectronicsBOSMidwestPaladin ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: N14DoorAirlockSlantedLockedBoSCommander
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedLockedBoSCommander
   suffix: BOSMidwest, Locked, Commander
   components:
   - type: ContainerFill
     containers:
-      board: [ N14DoorElectronicsBOSMidwestPaladinCommander ]
+      board: [ F14DoorElectronicsBOSMidwestPaladinCommander ]
   - type: Wires
     layoutId: HighSec
 
 #MARK: BoS Washington
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: N14DoorAirlockSlantedLockedBoSWashington
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedLockedBoSWashington
   suffix: BoSWashington, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ N14DoorElectronicsBOSWashington ]
+      board: [ F14DoorElectronicsBOSWashington ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: N14DoorAirlockSlantedLockedBoSWashingtonScribe
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedLockedBoSWashingtonScribe
   suffix: BoSWashington, Locked, Scribe
   components:
   - type: ContainerFill
     containers:
-      board: [ N14DoorElectronicsBOSWashingtonScribe ]
+      board: [ F14DoorElectronicsBOSWashingtonScribe ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: N14DoorAirlockSlantedLockedBoSWashingtonKnight
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedLockedBoSWashingtonKnight
   suffix: BoSWashington, Locked, Knight
   components:
   - type: ContainerFill
     containers:
-      board: [ N14DoorElectronicsBOSWashingtonKnight ]
+      board: [ F14DoorElectronicsBOSWashingtonKnight ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: N14DoorAirlockSlantedLockedBoSWashingtonPaladin
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedLockedBoSWashingtonPaladin
   suffix: BoSWashington, Locked, PaladinTall
   components:
   - type: ContainerFill
     containers:
-      board: [ N14DoorElectronicsBOSWashingtonPaladin ]
+      board: [ F14DoorElectronicsBOSWashingtonPaladin ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: N14DoorAirlockSlantedLockedBoSWashingtonCommander
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedLockedBoSWashingtonCommander
   suffix: BOSWashington, Locked, Elder
   components:
   - type: ContainerFill
     containers:
-      board: [ N14DoorElectronicsBoSWashingtonCommander ]
+      board: [ F14DoorElectronicsBoSWashingtonCommander ]
   - type: Wires
     layoutId: HighSec
 
 #MARK: Townie
 
 - type: entity
-  parent: N14DoorWoodWhiteSlanted
-  id: N14DoorWoodSlantedLockedSheriff
+  parent: F14DoorWoodWhiteSlanted
+  id: F14DoorWoodSlantedLockedSheriff
   suffix: Townie, Locked, Law
   components:
   - type: AccessReader
-    access: [["N14TownieLaw"]]
+    access: [["F14TownieLaw"]]
   - type: Wires
     layoutId: AirlockService
 
 - type: entity
-  parent: N14DoorMetalBarSlanted
-  id: N14DoorCellSlantedLockedSheriff
+  parent: F14DoorMetalBarSlanted
+  id: F14DoorCellSlantedLockedSheriff
   suffix: Townie, Locked, Law
   components:
   - type: AccessReader
-    access: [["N14TownieLaw"]]
+    access: [["F14TownieLaw"]]
   - type: Wires
     layoutId: AirlockService
 
 - type: entity
-  parent: N14DoorWoodWhiteSlanted
-  id: N14DoorWoodSlantedLockedMayor
+  parent: F14DoorWoodWhiteSlanted
+  id: F14DoorWoodSlantedLockedMayor
   suffix: Townie, Locked, Mayor
   components:
   - type: AccessReader
-    access: [["N14TownieMayor"]]
+    access: [["F14TownieMayor"]]
   - type: Wires
     layoutId: AirlockService
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: N14DoorWoodSlantedLockedShopkeeper
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodSlantedLockedShopkeeper
   suffix: Townie, Locked, Shopkeeper
   components:
   - type: AccessReader
-    access: [["N14TownieShopkeeper"]]
+    access: [["F14TownieShopkeeper"]]
   - type: Wires
     layoutId: AirlockService
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: N14DoorWoodSlantedLockedDoctor
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodSlantedLockedDoctor
   suffix: Townie, Locked, Doctor
   components:
   - type: AccessReader
-    access: [["N14TownieDoctor"]]
+    access: [["F14TownieDoctor"]]
   - type: Wires
     layoutId: AirlockService
 
 #MARK: Vault
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: N14DoorAirlockSlantedLockedVaultDweller
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedLockedVaultDweller
   suffix: Vault Dweller, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ N14DoorElectronicsVaultDweller ]
+      board: [ F14DoorElectronicsVaultDweller ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: N14DoorAirlockSlantedVaultEngineer
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedVaultEngineer
   suffix: Vault Engineer, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ N14DoorElectronicsVaultEngineer ]
+      board: [ F14DoorElectronicsVaultEngineer ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: N14DoorAirlockSlantedVaultMedical
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedVaultMedical
   suffix: Vault Medical, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ N14DoorElectronicsVaultMedical ]
+      board: [ F14DoorElectronicsVaultMedical ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: N14DoorAirlockSlantedVaultSecurity
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedVaultSecurity
   suffix: Vault Security, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ N14DoorElectronicsVaultSecurity ]
+      board: [ F14DoorElectronicsVaultSecurity ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: N14DoorAirlockSlantedVaultGatekeeper
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedVaultGatekeeper
   suffix: Vault Gatekeeper, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ N14DoorElectronicsVaultGatekeeper ]
+      board: [ F14DoorElectronicsVaultGatekeeper ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorAirlockSlanted
-  id: N14DoorAirlockSlantedVaultOverseer
+  parent: F14DoorAirlockSlanted
+  id: F14DoorAirlockSlantedVaultOverseer
   suffix: Vault Overseer, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ N14DoorElectronicsVaultOverseer ]
+      board: [ F14DoorElectronicsVaultOverseer ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: N14DoorWoodSlantedLockedIron
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodSlantedLockedIron
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["N14IronKey"]]
+    access: [["F14IronKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalBlueSlanted
-  id: N14DoorMetalSlantedLockedIron
+  parent: F14DoorMetalBlueSlanted
+  id: F14DoorMetalSlantedLockedIron
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["N14IronKey"]]
+    access: [["F14IronKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalBarSlanted
-  id: N14DoorCellSlantedLockedIron
+  parent: F14DoorMetalBarSlanted
+  id: F14DoorCellSlantedLockedIron
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["N14IronKey"]]
+    access: [["F14IronKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
 #BronzeKey
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: N14DoorWoodSlantedLockedBronze
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodSlantedLockedBronze
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["N14BronzeKey"]]
+    access: [["F14BronzeKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalBlueSlanted
-  id: N14DoorMetalSlantedLockedBronze
+  parent: F14DoorMetalBlueSlanted
+  id: F14DoorMetalSlantedLockedBronze
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["N14BronzeKey"]]
+    access: [["F14BronzeKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalBarSlanted
-  id: N14DoorCellSlantedLockedBronze
+  parent: F14DoorMetalBarSlanted
+  id: F14DoorCellSlantedLockedBronze
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["N14BronzeKey"]]
+    access: [["F14BronzeKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
 #BrassKey
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: N14DoorWoodSlantedLockedBrass
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodSlantedLockedBrass
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["N14BrassKey"]]
+    access: [["F14BrassKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalBlueSlanted
-  id: N14DoorMetalSlantedLockedBrass
+  parent: F14DoorMetalBlueSlanted
+  id: F14DoorMetalSlantedLockedBrass
   suffix: Locked, IronKey
   components:
   - type: Tag
     tags:
     - ForceNoFixRotations
   - type: AccessReader
-    access: [["N14BrassKey"]]
+    access: [["F14BrassKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalBarSlanted
-  id: N14DoorCellSlantedLockedBrass
+  parent: F14DoorMetalBarSlanted
+  id: F14DoorCellSlantedLockedBrass
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["N14BrassKey"]]
+    access: [["F14BrassKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
 #SilverKey
 
 - type: entity
-  parent: N14DoorWoodSlanted
-  id: N14DoorWoodSlantedLockedSilver
+  parent: F14DoorWoodSlanted
+  id: F14DoorWoodSlantedLockedSilver
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["N14SilverKey"]]
+    access: [["F14SilverKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalBlueSlanted
-  id: N14DoorMetalSlantedLockedSilver
+  parent: F14DoorMetalBlueSlanted
+  id: F14DoorMetalSlantedLockedSilver
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["N14SilverKey"]]
+    access: [["F14SilverKey"]]
   - type: Wires
     layoutId: AirlockCargo
 
 - type: entity
-  parent: N14DoorMetalBarSlanted
-  id: N14DoorCellSlantedLockedSilver
+  parent: F14DoorMetalBarSlanted
+  id: F14DoorCellSlantedLockedSilver
   suffix: Locked, IronKey
   components:
   - type: AccessReader
-    access: [["N14SilverKey"]]
+    access: [["F14SilverKey"]]
   - type: Wires
     layoutId: AirlockCargo

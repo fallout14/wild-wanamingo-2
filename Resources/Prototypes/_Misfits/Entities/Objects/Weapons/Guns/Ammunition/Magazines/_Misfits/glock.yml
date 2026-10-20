@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/_Misfits/glock.yml
 
 - type: entity
-  id: MisfitsMagGlock
+  id: F14MagGlock
   name: glock magazine
   parent: BaseItem
   components:
@@ -13,7 +13,7 @@
     whitelist:
       tags:
         - CartridgeMagnum
-    proto: MisfitsCartridgeGlock45
+    proto: F14CartridgeGlock45
     capacity: 15
   - type: ContainerContainer
     containers:

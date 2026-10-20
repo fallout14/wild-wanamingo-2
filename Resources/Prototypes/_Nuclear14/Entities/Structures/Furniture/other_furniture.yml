@@ -3,7 +3,7 @@
 
 - type: entity
   parent: Dresser
-  id: N14Dresser
+  id: F14Dresser
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/np13_misc.rsi
@@ -11,7 +11,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14GrandfatherClock
+  id: F14GrandfatherClock
   name: grandfather clock
   description: An old pre-war clock. Looks grand.
   components:
@@ -23,7 +23,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14Television
+  id: F14Television
   name: television
   description: An old pre-war television.
   components:
@@ -32,39 +32,39 @@
     state: wood_tv
 
 - type: entity
-  parent: N14Television
-  id: N14TelevisionCabinetOpen
+  parent: F14Television
+  id: F14TelevisionCabinetOpen
   components:
   - type: Sprite
     state: cabinet_tv
 
 - type: entity
-  parent: N14Television
-  id: N14TelevisionRadking
+  parent: F14Television
+  id: F14TelevisionRadking
   description: A Radking brand television.
   components:
   - type: Sprite
     state: radking_tv
 
 - type: entity
-  parent: N14Television
-  id: N14TelevisionRedwood
+  parent: F14Television
+  id: F14TelevisionRedwood
   description: A television in a redwood cabinet.
   components:
   - type: Sprite
     state: redwood_tv
 
 - type: entity
-  parent: N14Television
-  id: N14TelevisionTube
+  parent: F14Television
+  id: F14TelevisionTube
   description: An old pre-war tube television.
   components:
   - type: Sprite
     state: tube_tv
 
 - type: entity
-  parent: N14Television
-  id: N14TelevisionSmall
+  parent: F14Television
+  id: F14TelevisionSmall
   description: A television in a small case.
   components:
   - type: Sprite
@@ -81,8 +81,8 @@
           - TabletopMachineMask
 
 - type: entity
-  parent: N14TelevisionSmall
-  id: N14TelevisionTiny
+  parent: F14TelevisionSmall
+  id: F14TelevisionTiny
   description: A tiny television.
   components:
   - type: Sprite
@@ -91,8 +91,8 @@
 # Washroom
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14Shower
+  parent: F14DecorFloorBase
+  id: F14Shower
   name: shower
   description: Wash off that scum...wait, then there would be nothing left.
   placement:
@@ -140,7 +140,7 @@
 
 - type: entity
   parent: SeatBase
-  id: N14Toilet
+  id: F14Toilet
   name: toilet
   description: Waste not, want not
   components:
@@ -192,13 +192,13 @@
       maxVol: 500
   - type: SolutionManager
     solutions:
-    - N14ToiletSolutionToilet
+    - F14ToiletSolutionToilet
   - type: DumpableSolution
     solution: drainBuffer
 
 - type: entity
   parent: Solution
-  id: N14ToiletSolutionToilet
+  id: F14ToiletSolutionToilet
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -207,8 +207,8 @@
       maxVol: 250
 
 - type: entity
-  parent: N14Toilet
-  id: N14ToiletWater
+  parent: F14Toilet
+  id: F14ToiletWater
   suffix: filled water
   components:
   - type: Solution
@@ -227,15 +227,15 @@
         Quantity: 2
 
 - type: entity
-  parent: N14Toilet
-  id: N14ToiletDirty
+  parent: F14Toilet
+  id: F14ToiletDirty
   suffix: filled dirty water
   components:
   - type: Solution
     id: toilet
     solution:
       reagents:
-      - ReagentId: N14WaterDirty
+      - ReagentId: F14WaterDirty
         Quantity: 180
       - ReagentId: GastroToxin
         Quantity: 20
@@ -245,21 +245,21 @@
     solution: toilet
     generated:
       reagents:
-      - ReagentId: N14WaterDirty
+      - ReagentId: F14WaterDirty
         Quantity: 3
       - ReagentId: GastroToxin
         Quantity: 1
 
 - type: entity
-  parent: N14Toilet
-  id: N14ToiletIrradiated
+  parent: F14Toilet
+  id: F14ToiletIrradiated
   suffix: filled rad water
   components:
   - type: Solution
     id: toilet
     solution:
       reagents:
-      - ReagentId: N14WaterIrradiated
+      - ReagentId: F14WaterIrradiated
         Quantity: 180
       - ReagentId: GastroToxin
         Quantity: 20
@@ -267,14 +267,14 @@
     solution: toilet
     generated:
       reagents:
-      - ReagentId: N14WaterIrradiated
+      - ReagentId: F14WaterIrradiated
         Quantity: 3
       - ReagentId: GastroToxin
         Quantity: 1
 
 - type: entity
-  parent: N14Shower
-  id: N14Sink
+  parent: F14Shower
+  id: F14Sink
   name: sink
   description: Waste not, want not
   components:
@@ -286,7 +286,7 @@
       maxVol: 100
   - type: SolutionManager
     solutions:
-    - N14SinkSolutionTank
+    - F14SinkSolutionTank
   - type: DrainableSolution
     solution: tank
   - type: ReagentTank
@@ -295,7 +295,7 @@
 
 - type: entity
   parent: Solution
-  id: N14SinkSolutionTank
+  id: F14SinkSolutionTank
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -304,8 +304,8 @@
       maxVol: 200
 
 - type: entity
-  parent: N14Sink
-  id: N14SinkFilledWater
+  parent: F14Sink
+  id: F14SinkFilledWater
   suffix: filled water
   components:
   - type: Solution
@@ -314,7 +314,7 @@
       maxVol: 200
   - type: SolutionManager
     solutions:
-    - N14SinkFilledWaterSolutionTank
+    - F14SinkFilledWaterSolutionTank
   - type: NamedSolutionRegeneration
     solution: tank
     generated:
@@ -324,7 +324,7 @@
 
 - type: entity
   parent: Solution
-  id: N14SinkFilledWaterSolutionTank
+  id: F14SinkFilledWaterSolutionTank
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -335,8 +335,8 @@
         Quantity: 200
 
 - type: entity
-  parent: N14Sink
-  id: N14SinkFilledWaterDirty
+  parent: F14Sink
+  id: F14SinkFilledWaterDirty
   suffix: filled water dirty
   components:
   - type: Solution
@@ -345,29 +345,29 @@
       maxVol: 200
   - type: SolutionManager
     solutions:
-    - N14SinkFilledWaterDirtySolutionTank
+    - F14SinkFilledWaterDirtySolutionTank
   - type: NamedSolutionRegeneration
     solution: tank
     generated:
       reagents:
-      - ReagentId: N14WaterDirty
+      - ReagentId: F14WaterDirty
         Quantity: 1
 
 - type: entity
   parent: Solution
-  id: N14SinkFilledWaterDirtySolutionTank
+  id: F14SinkFilledWaterDirtySolutionTank
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
     id: tank
     solution:
       reagents:
-      - ReagentId: N14WaterDirty
+      - ReagentId: F14WaterDirty
         Quantity: 200
 
 - type: entity
-  parent: N14Sink
-  id: N14SinkFilledWaterIrradiated
+  parent: F14Sink
+  id: F14SinkFilledWaterIrradiated
   suffix: filled water irradiated
   components:
   - type: Solution
@@ -376,22 +376,22 @@
       maxVol: 200
   - type: SolutionManager
     solutions:
-    - N14SinkFilledWaterIrradiatedSolutionTank
+    - F14SinkFilledWaterIrradiatedSolutionTank
   - type: NamedSolutionRegeneration
     solution: tank
     generated:
       reagents:
-      - ReagentId: N14WaterIrradiated
+      - ReagentId: F14WaterIrradiated
         Quantity: 1
 
 - type: entity
   parent: Solution
-  id: N14SinkFilledWaterIrradiatedSolutionTank
+  id: F14SinkFilledWaterIrradiatedSolutionTank
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
     id: tank
     solution:
       reagents:
-      - ReagentId: N14WaterIrradiated
+      - ReagentId: F14WaterIrradiated
         Quantity: 200

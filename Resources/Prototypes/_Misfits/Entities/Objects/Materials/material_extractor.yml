@@ -2,12 +2,12 @@
 
 - type: entity
   parent: OreBase
-  id: MisfitsZincOre
+  id: F14ZincOre
   name: zinc ore
   suffix: Full
   components:
   - type: Stack
-    stackType: MisfitsZincOre
+    stackType: F14ZincOre
     count: 30
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
@@ -15,7 +15,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      MisfitsRawZinc: 500
+      F14RawZinc: 500
   - type: Extractable
     grindableSolutionName: zincore
   - type: Solution
@@ -26,8 +26,8 @@
         Quantity: 10
 
 - type: entity
-  parent: MisfitsZincOre
-  id: MisfitsZincOre1
+  parent: F14ZincOre
+  id: F14ZincOre1
   suffix: Single
   components:
   - type: Stack
@@ -35,12 +35,12 @@
 
 - type: entity
   parent: OreBase
-  id: MisfitsBauxiteOre
+  id: F14BauxiteOre
   name: bauxite ore
   suffix: Full
   components:
   - type: Stack
-    stackType: MisfitsBauxiteOre
+    stackType: F14BauxiteOre
     count: 30
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
@@ -48,7 +48,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      MisfitsRawBauxite: 500
+      F14RawBauxite: 500
   - type: Extractable
     grindableSolutionName: bauxiteore
   - type: Solution
@@ -59,8 +59,8 @@
         Quantity: 10
 
 - type: entity
-  parent: MisfitsBauxiteOre
-  id: MisfitsBauxiteOre1
+  parent: F14BauxiteOre
+  id: F14BauxiteOre1
   suffix: Single
   components:
   - type: Stack
@@ -68,7 +68,7 @@
 
 - type: entity
   parent: IngotBase
-  id: MisfitsIngotZinc
+  id: F14IngotZinc
   name: zinc bar
   suffix: Full, 30
   components:
@@ -102,8 +102,8 @@
         Quantity: 10
 
 - type: entity
-  parent: MisfitsIngotZinc
-  id: MisfitsIngotZinc1
+  parent: F14IngotZinc
+  id: F14IngotZinc1
   suffix: Single
   components:
   - type: Stack

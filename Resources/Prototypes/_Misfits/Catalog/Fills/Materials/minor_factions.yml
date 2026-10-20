@@ -1,45 +1,45 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/Materials/minor_factions.yml
 
 - type: entity
-  id: MisfitsShelfWoodMedicalTribe
+  id: F14ShelfWoodMedicalTribe
   suffix: Filled, Medical, Tribe
-  parent: N14ShelfWood1
+  parent: F14ShelfWood1
   components:
   - type: StorageFill
     contents:
-    - id: N14MedkitFilled
-    - id: N14AloeSalve
+    - id: F14MedkitFilled
+    - id: F14AloeSalve
       amount: 3
-    - id: N14CleanGauze10
+    - id: F14CleanGauze10
       amount: 3
     - id: Bloodpack
       amount: 3
-    - id: N14HandheldHealthAnalyzer
-    - id: N14Bitterdrink
+    - id: F14HandheldHealthAnalyzer
+    - id: F14Bitterdrink
       amount: 2
-    - id: N14DirtyGauze10
+    - id: F14DirtyGauze10
       amount: 3
-    - id: N14SmellingSalts
+    - id: F14SmellingSalts
       amount: 2
 
 - type: entity
-  id: MisfitsShelfWoodMedicalTribeChems
+  id: F14ShelfWoodMedicalTribeChems
   suffix: Filled, Medical, Tribe, Chems
-  parent: N14ShelfWood1
+  parent: F14ShelfWood1
   components:
   - type: StorageFill
     contents:
-    - id: N14HealingPowder
+    - id: F14HealingPowder
       amount: 4
-    - id: N14HealingPoultice
+    - id: F14HealingPoultice
       amount: 4
-    - id: N14MourningPoultice
+    - id: F14MourningPoultice
       amount: 2
-    - id: N14RadAwayBloodbag
+    - id: F14RadAwayBloodbag
       amount: 2
-    - id: N14Bitterdrink
+    - id: F14Bitterdrink
       amount: 2
-    - id: N14DirtyGauze10
+    - id: F14DirtyGauze10
       amount: 3
-    - id: N14SmellingSalts
+    - id: F14SmellingSalts
       amount: 2

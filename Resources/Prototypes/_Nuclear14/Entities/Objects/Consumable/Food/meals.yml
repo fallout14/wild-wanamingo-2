@@ -3,7 +3,7 @@
 
 - type: entity
   parent: FoodInjectableBase
-  id: N14CookedFoodMealBase
+  id: F14CookedFoodMealBase
   abstract: true
   description: A delicious meal, cooked with love.
   components:
@@ -22,8 +22,8 @@
 
 - type: entity
   name: loaded baked potato
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealPotatoLoaded
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealPotatoLoaded
   description: Totally baked.
   components:
   - type: FlavorProfile
@@ -36,8 +36,8 @@
 
 - type: entity
   name: fries #N14 change. I don't think I need to change anything else, the ID is the same...
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealFries
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealFries
   description: You hear these used to be fried in oil. Baked, salty tatos are just about 'alright'. #N14 change
   components:
   - type: FlavorProfile
@@ -50,8 +50,8 @@
 
 - type: entity
   name: cheesy fries
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealFriesCheesy
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealFriesCheesy
   description: Alright, this is good shit. You can barely taste the tato. #N14 change
   components:
   - type: FlavorProfile
@@ -65,8 +65,8 @@
 
 - type: entity
   name: carrot fries
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealFriesCarrot
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealFriesCarrot
   description: Tasty fries from fresh carrots.
   components:
   - type: FlavorProfile
@@ -89,8 +89,8 @@
 
 - type: entity
   name: nachos
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealNachos
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealNachos
   description: Corn chips. #N14 change
   components:
   - type: FlavorProfile
@@ -102,8 +102,8 @@
 
 - type: entity
   name: cheesy nachos
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealNachosCheesy
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealNachosCheesy
   description: The delicious combination of nachos and melting cheese.
   components:
   - type: FlavorProfile
@@ -125,8 +125,8 @@
 
 - type: entity
   name: Cuban nachos
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealNachosCuban
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealNachosCuban
   description: That's some dangerously spicy nachos.
   components:
   - type: FlavorProfile
@@ -149,8 +149,8 @@
 
 - type: entity
   name: mint
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealMint
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealMint
   description: It's wafer thin.
   components:
   - type: FlavorProfile
@@ -168,8 +168,8 @@
 
 - type: entity
   name: Cuban carp
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealCubancarp
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealCubancarp
   description: An impossible meal. The gods smile on you.
   components:
   - type: FlavorProfile
@@ -196,8 +196,8 @@
 
 - type: entity
   name: bbq ribs
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealRibs
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealRibs
   description: Big, big, bighorner ribs, slathered in sweet smokey paradise. #N14 change
   components:
   - type: Edible
@@ -227,8 +227,8 @@
 
 - type: entity
   name: eggs benedict
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealEggsbenedict
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealEggsbenedict
   description: There is only one egg on this, how rude.
   components:
   - type: FlavorProfile
@@ -253,8 +253,8 @@
 
 - type: entity
   name: cheese omelette
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealOmelette
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealOmelette
   description: Cheesy.
   components:
   - type: FlavorProfile
@@ -276,8 +276,8 @@
 
 - type: entity
   name: fried egg
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealFriedegg
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealFriedegg
   description: A fried egg, with a touch of salt and pepper.
   components:
   - type: FlavorProfile
@@ -304,8 +304,8 @@
 
 - type: entity
   name: queso
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealQueso
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealQueso
   description: A classic dipping sauce that you can't go wrong with.
   components:
     - type: FlavorProfile
@@ -317,8 +317,8 @@
 
 - type: entity
   name: sashimi
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealSashimi
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealSashimi
   description: Its taste can only be described as "Exotic".
   components:
   - type: FlavorProfile
@@ -342,8 +342,8 @@
 
 - type: entity
   name: enchiladas
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealEnchiladas
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealEnchiladas
   description: Viva La Mexico!
   components:
     - type: FlavorProfile
@@ -366,8 +366,8 @@
 
 - type: entity
   name: melon fruit bowl
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodSaladWatermelonFruitBowl
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodSaladWatermelonFruitBowl
   description: The only salad where you can eat the bowl.
   components:
   - type: FlavorProfile
@@ -396,8 +396,8 @@
 
 - type: entity
   name: corn in butter
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealCornInButter
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealCornInButter
   description: Buttery.
   components:
   - type: Edible
@@ -422,7 +422,7 @@
 - type: entity #It felt weird to make an entire snacks folder just for this, so it's here in meals.yml, our catch-all. -Hazel
   name: popcorn
   parent: FoodSnackBase
-  id: N14FoodSnackPopcorn
+  id: F14FoodSnackPopcorn
   description: Feel it in your hands. Nice and warm...
   components:
   - type: FlavorProfile

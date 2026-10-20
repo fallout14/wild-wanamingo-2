@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14WallRockIndestructible
+  id: F14WallRockIndestructible
   suffix: Indestructible
   name: rock
   components:
@@ -34,7 +34,7 @@
 - type: entity
   abstract: true
   parent: BaseStructure
-  id: N14BaseFenceIndestructible
+  id: F14BaseFenceIndestructible
   name: fence
   description: Helps keep trespassers out.
   placement:
@@ -62,8 +62,8 @@
         density: 100
 
 - type: entity
-  parent: N14BaseFenceIndestructible
-  id: N14WallFenceChainMapBoundary
+  parent: F14BaseFenceIndestructible
+  id: F14WallFenceChainMapBoundary
   suffix: Indestructible
   name: chainlink fence
   components:

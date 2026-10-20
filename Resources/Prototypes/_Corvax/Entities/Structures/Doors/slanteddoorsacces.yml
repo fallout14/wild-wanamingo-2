@@ -2,37 +2,37 @@
 # Resources/Prototypes/Corvax/Entities/Structures/Doors/slanteddoorsacces.yml
 
 - type: entity
-  parent: N14DoorMetalBlueSlanted
-  id: CorvaxDoorMetalBlueSlantedLoced
+  parent: F14DoorMetalBlueSlanted
+  id: F14DoorMetalBlueSlantedLoced
   categories: [HideSpawnMenu]
   components:
   - type: Construction
-    graph: N14DoorGraph
+    graph: F14DoorGraph
     node: MetalBlueLoced
 
 - type: entity
-  parent: N14DoorMetalRedSlanted
-  id: CorvaxDoorMetalRedSlantedLoced
+  parent: F14DoorMetalRedSlanted
+  id: F14DoorMetalRedSlantedLoced
   categories: [HideSpawnMenu]
   components:
   - type: Construction
-    graph: N14DoorGraph
+    graph: F14DoorGraph
     node: MetalRedLoced
 
 - type: entity
-  parent: N14DoorMetalBlueAltSlanted
-  id: CorvaxDoorMetalBlueAltSlantedLoced
+  parent: F14DoorMetalBlueAltSlanted
+  id: F14DoorMetalBlueAltSlantedLoced
   categories: [HideSpawnMenu]
   components:
   - type: Construction
-    graph: N14DoorGraph
+    graph: F14DoorGraph
     node: MetalBlueAltLoced
 
 - type: entity
-  parent: N14DoorMetalBlueWindowSlanted
-  id: CorvaxDoorMetalBlueWindowSlantedLoced
+  parent: F14DoorMetalBlueWindowSlanted
+  id: F14DoorMetalBlueWindowSlantedLoced
   categories: [HideSpawnMenu]
   components:
   - type: Construction
-    graph: N14DoorGraph
+    graph: F14DoorGraph
     node: MetalBlueWindowLoced

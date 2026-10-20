@@ -2,7 +2,7 @@
 
 - type: entity
   parent: ClothingNeckPinBase
-  id: MisfitsClothingNeckPinEnclavePrivate
+  id: F14ClothingNeckPinEnclavePrivate
   name: U.S. Army private pin
   description: A United States Government rank insignia showing the wearer's rank.
   components:
@@ -21,13 +21,13 @@
   # other Enclave pin inherits from this one, so tagging the base covers the whole set.
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 # Enlisted ranks
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclavePrivate
-  id: MisfitsClothingNeckPinEnclavePFC
+  parent: F14ClothingNeckPinEnclavePrivate
+  id: F14ClothingNeckPinEnclavePFC
   name: U.S. Army private first class pin
   components:
   - type: RankTitle
@@ -38,8 +38,8 @@
     - state: private1st
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclavePrivate
-  id: MisfitsClothingNeckPinEnclaveSpecialist
+  parent: F14ClothingNeckPinEnclavePrivate
+  id: F14ClothingNeckPinEnclaveSpecialist
   name: U.S. Army specialist pin
   components:
   - type: RankTitle
@@ -52,8 +52,8 @@
 # NCO ranks
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclavePrivate
-  id: MisfitsClothingNeckPinEnclaveSergeant
+  parent: F14ClothingNeckPinEnclavePrivate
+  id: F14ClothingNeckPinEnclaveSergeant
   name: U.S. Army sergeant pin
   components:
   - type: RankTitle
@@ -64,8 +64,8 @@
     - state: sergeant
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclavePrivate
-  id: MisfitsClothingNeckPinEnclaveStaffSergeant
+  parent: F14ClothingNeckPinEnclavePrivate
+  id: F14ClothingNeckPinEnclaveStaffSergeant
   name: U.S. Army staff sergeant pin
   components:
   - type: RankTitle
@@ -76,8 +76,8 @@
     - state: sergeant1st
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclavePrivate
-  id: MisfitsClothingNeckPinEnclaveSFC
+  parent: F14ClothingNeckPinEnclavePrivate
+  id: F14ClothingNeckPinEnclaveSFC
   name: U.S. Army sergeant first class pin
   components:
   - type: RankTitle
@@ -88,8 +88,8 @@
     - state: mastersergeant
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclavePrivate
-  id: MisfitsClothingNeckPinEnclaveMasterSergeant
+  parent: F14ClothingNeckPinEnclavePrivate
+  id: F14ClothingNeckPinEnclaveMasterSergeant
   name: U.S. Army master sergeant pin
   components:
   - type: RankTitle
@@ -102,8 +102,8 @@
 # pins.rsi has no E-9 art, so this borrows the sergeantmajor state like the NCR senior NCO pins do.
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclavePrivate
-  id: MisfitsClothingNeckPinEnclaveSergeantMajor
+  parent: F14ClothingNeckPinEnclavePrivate
+  id: F14ClothingNeckPinEnclaveSergeantMajor
   name: U.S. Army sergeant major pin
   components:
   - type: RankTitle
@@ -116,8 +116,8 @@
 # Junior Officer ranks
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclavePrivate
-  id: MisfitsClothingNeckPinEnclaveSecondLieutenant
+  parent: F14ClothingNeckPinEnclavePrivate
+  id: F14ClothingNeckPinEnclaveSecondLieutenant
   name: U.S. Army second lieutenant pin
   components:
   - type: RankTitle
@@ -133,8 +133,8 @@
       - state: silver-equipped
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclaveSecondLieutenant
-  id: MisfitsClothingNeckPinEnclaveFirstLieutenant
+  parent: F14ClothingNeckPinEnclaveSecondLieutenant
+  id: F14ClothingNeckPinEnclaveFirstLieutenant
   name: U.S. Army first lieutenant pin
   components:
   - type: RankTitle
@@ -147,8 +147,8 @@
 # Senior Officer ranks
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclaveSecondLieutenant
-  id: MisfitsClothingNeckPinEnclaveCaptain
+  parent: F14ClothingNeckPinEnclaveSecondLieutenant
+  id: F14ClothingNeckPinEnclaveCaptain
   name: U.S. Army captain pin
   components:
   - type: RankTitle
@@ -159,8 +159,8 @@
     - state: captain
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclaveSecondLieutenant
-  id: MisfitsClothingNeckPinEnclaveMajor
+  parent: F14ClothingNeckPinEnclaveSecondLieutenant
+  id: F14ClothingNeckPinEnclaveMajor
   name: U.S. Army major pin
   components:
   - type: RankTitle
@@ -173,8 +173,8 @@
 # Commander ranks
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclaveSecondLieutenant
-  id: MisfitsClothingNeckPinEnclaveLtColonel
+  parent: F14ClothingNeckPinEnclaveSecondLieutenant
+  id: F14ClothingNeckPinEnclaveLtColonel
   name: U.S. Army lieutenant colonel pin
   components:
   - type: RankTitle
@@ -185,8 +185,8 @@
     - state: major
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclaveSecondLieutenant
-  id: MisfitsClothingNeckPinEnclaveColonel
+  parent: F14ClothingNeckPinEnclaveSecondLieutenant
+  id: F14ClothingNeckPinEnclaveColonel
   name: U.S. Army colonel pin
   components:
   - type: RankTitle
@@ -197,8 +197,8 @@
     - state: captain
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclaveSecondLieutenant
-  id: MisfitsClothingNeckPinEnclaveGeneral
+  parent: F14ClothingNeckPinEnclaveSecondLieutenant
+  id: F14ClothingNeckPinEnclaveGeneral
   name: U.S. Army general pin
   components:
   - type: RankTitle
@@ -211,8 +211,8 @@
 # Science ranks
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclavePrivate
-  id: MisfitsClothingNeckPinEnclaveJuniorScientist
+  parent: F14ClothingNeckPinEnclavePrivate
+  id: F14ClothingNeckPinEnclaveJuniorScientist
   name: U.S. Army junior scientist pin
   description: A United States Government research division insignia showing the wearer's rank.
   components:
@@ -229,8 +229,8 @@
       - state: empty-equipped
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclaveJuniorScientist
-  id: MisfitsClothingNeckPinEnclaveScientist
+  parent: F14ClothingNeckPinEnclaveJuniorScientist
+  id: F14ClothingNeckPinEnclaveScientist
   name: U.S. Army scientist pin
   components:
   - type: RankTitle
@@ -246,8 +246,8 @@
       - state: red-equipped
 
 - type: entity
-  parent: MisfitsClothingNeckPinEnclaveScientist
-  id: MisfitsClothingNeckPinEnclaveHeadScientist
+  parent: F14ClothingNeckPinEnclaveScientist
+  id: F14ClothingNeckPinEnclaveHeadScientist
   name: U.S. Army head scientist pin
   components:
   - type: RankTitle

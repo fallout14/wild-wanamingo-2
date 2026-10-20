@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Machines/terminals.yml
 
 - type: entity
-  id: N14ComputerTerminalBase
+  id: F14ComputerTerminalBase
   parent: BaseStructure
   name: terminal frame
   placement:
@@ -22,7 +22,7 @@
   - type: Rotatable
   - type: Anchorable
   - type: Construction
-    graph: N14TerminalNew
+    graph: F14TerminalNew
     node: missingWires
   - type: Damageable
     damageModifierSet: Metallic
@@ -47,8 +47,8 @@
     state: frame
 
 - type: entity
-  id: N14ComputerTerminalBasePowered
-  parent: N14ComputerTerminalBase
+  id: F14ComputerTerminalBasePowered
+  parent: F14ComputerTerminalBase
   abstract: true
   components:
   - type: ApcPowerReceiver
@@ -77,7 +77,7 @@
   - type: TerminalDatabaseAccess
   - type: TerminalRandomContent
     contentPool:
-      - MisfitsTerminalEntries
+      - F14TerminalEntries
   # #Misfits Add - Persistent player-written notes notebook on each terminal.
   # terminalId should be overridden in child entities for unique storage per placement.
   - type: TerminalNotebook
@@ -103,7 +103,7 @@
   - type: EmitSoundOnUIOpen
     sound:
       # #Misfits Change: Swap the generic keyboard collection for imported Fallout terminal taps.
-      collection: MisfitsTerminalKeyboard
+      collection: F14TerminalKeyboard
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -132,8 +132,8 @@
 # New
 
 - type: entity
-  parent: N14ComputerTerminalBasePowered
-  id: N14ComputerTerminalNew
+  parent: F14ComputerTerminalBasePowered
+  id: F14ComputerTerminalNew
   suffix: new
   name: terminal
   description: A computer terminal. This one looks new.
@@ -145,12 +145,12 @@
     - map: ["computerLayerScreen"]
       state: screens
   - type: Construction
-    graph: N14TerminalNew
+    graph: F14TerminalNew
     node: Terminal
 
 - type: entity
-  parent: N14ComputerTerminalBase
-  id: N14ComputerTerminalNewBroken
+  parent: F14ComputerTerminalBase
+  id: F14ComputerTerminalNewBroken
   suffix: new
   name: broken terminal
   description: A computer terminal. This one looks broken.
@@ -170,25 +170,25 @@
         acts: ["Destruction"]
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14ScrapGold1:
+          F14ScrapGold1:
            min: 1
            max: 3
-          N14ScrapElectronic1:
+          F14ScrapElectronic1:
            min: 2
            max: 5
-          N14ScrapSteel1:
+          F14ScrapSteel1:
            min: 3
            max: 6
   - type: Construction
-    graph: N14TerminalNew
+    graph: F14TerminalNew
     node: Broken
 
 - type: entity
-  parent: N14ComputerTerminalBase
-  id: N14ComputerTerminalNewWired
+  parent: F14ComputerTerminalBase
+  id: F14ComputerTerminalNewWired
   components:
   - type: Construction
-    graph: N14TerminalNew
+    graph: F14TerminalNew
     node: Frame
   - type: Sprite
     sprite: Nuclear14/Structures/Machines/Terminals/terminal_new.rsi
@@ -197,8 +197,8 @@
 # Normal
 
 - type: entity
-  parent: N14ComputerTerminalBasePowered
-  id: N14ComputerTerminal
+  parent: F14ComputerTerminalBasePowered
+  id: F14ComputerTerminal
   name: terminal
   description: A computer terminal. Looks aged.
   components:
@@ -222,22 +222,22 @@
         acts: ["Destruction"]
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14ScrapGold1:
+          F14ScrapGold1:
            min: 1
            max: 3
-          N14ScrapElectronic1:
+          F14ScrapElectronic1:
            min: 2
            max: 5
-          N14ScrapSteel1:
+          F14ScrapSteel1:
            min: 3
            max: 6
   - type: Construction
-    graph: N14Terminal
+    graph: F14Terminal
     node: Terminal
 
 - type: entity
-  parent: N14ComputerTerminalBase
-  id: N14ComputerTerminalBroken
+  parent: F14ComputerTerminalBase
+  id: F14ComputerTerminalBroken
   name: broken terminal
   description: An old computer terminal. This one looks broken.
   components:
@@ -257,36 +257,36 @@
         acts: ["Destruction"]
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14ScrapGold1:
+          F14ScrapGold1:
            min: 1
            max: 3
-          N14ScrapElectronic1:
+          F14ScrapElectronic1:
            min: 2
            max: 5
-          N14ScrapSteel1:
+          F14ScrapSteel1:
            min: 3
            max: 6
   - type: Construction
-    graph: N14Terminal
+    graph: F14Terminal
     node: Broken
 
 - type: entity
-  parent: N14ComputerTerminalBase
-  id: N14ComputerTerminalFrame
+  parent: F14ComputerTerminalBase
+  id: F14ComputerTerminalFrame
   components:
   - type: Construction
-    graph: N14Terminal
+    graph: F14Terminal
     node: missingWires
   - type: Sprite
     sprite: Nuclear14/Structures/Machines/Terminals/terminal.rsi
     state: frame
 
 - type: entity
-  parent: N14ComputerTerminalFrame
-  id: N14ComputerTerminalWired
+  parent: F14ComputerTerminalFrame
+  id: F14ComputerTerminalWired
   components:
   - type: Construction
-    graph: N14Terminal
+    graph: F14Terminal
     node: Frame
   - type: Sprite
     sprite: Nuclear14/Structures/Machines/Terminals/terminal.rsi
@@ -295,8 +295,8 @@
 # Rusted
 
 - type: entity
-  parent: N14ComputerTerminalBasePowered
-  id: N14ComputerTerminalRusted
+  parent: F14ComputerTerminalBasePowered
+  id: F14ComputerTerminalRusted
   suffix: rusted
   name: terminal
   description: A computer terminal. Looks rusty.
@@ -310,8 +310,8 @@
       state: screens
 
 - type: entity
-  parent: N14ComputerTerminalBase
-  id: N14ComputerTerminalRustedBroken
+  parent: F14ComputerTerminalBase
+  id: F14ComputerTerminalRustedBroken
   suffix: rusted
   name: broken terminal
   description: An old computer terminal. This one looks rusty and broken.
@@ -323,8 +323,8 @@
 # Handmade
 
 - type: entity
-  parent: N14ComputerTerminalBasePowered
-  id: N14ComputerTerminalHandmade
+  parent: F14ComputerTerminalBasePowered
+  id: F14ComputerTerminalHandmade
   suffix: handmade
   name: terminal
   description: A computer terminal. Looks handmade.
@@ -340,8 +340,8 @@
 # Rigged Terminals
 
 - type: entity
-  parent: N14ComputerTerminalBasePowered
-  id: N14ComputerTerminalRigged
+  parent: F14ComputerTerminalBasePowered
+  id: F14ComputerTerminalRigged
   suffix: rigged
   name: terminal
   description: A computer terminal. Looks old.
@@ -365,7 +365,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 5
     intensitySlope: 3
     totalIntensity: 30 # about a ~1 tile radius
@@ -384,12 +384,12 @@
     beepInterval: 1 # 2 beeps total (at 0 and 2)
     examinable: false
   - type: Construction
-    graph: N14Terminal
+    graph: F14Terminal
     node: Rigged
 
 - type: entity
-  parent: N14ComputerTerminalRigged
-  id: N14ComputerTerminalRustedRigged
+  parent: F14ComputerTerminalRigged
+  id: F14ComputerTerminalRustedRigged
   suffix: rigged, rusted
   name: terminal
   description: A computer terminal. Looks rusty.
@@ -406,8 +406,8 @@
 # Base
 
 - type: entity
-  parent: N14ComputerTerminalBase
-  id: N14ComputerTerminalWallBase
+  parent: F14ComputerTerminalBase
+  id: F14ComputerTerminalWallBase
   abstract: true
   placement:
     mode: SnapgridCenter
@@ -416,7 +416,7 @@
     bodyType: Static
   - type: Rotatable
   - type: Construction
-    graph: N14TerminalNew
+    graph: F14TerminalNew
     node: missingWires
   - type: Damageable
     damageModifierSet: Metallic
@@ -444,8 +444,8 @@
 # N14TODO: Needs a way to use it to use the off state.
 
 - type: entity
-  parent: [ N14ComputerTerminalWallBase, N14ComputerTerminalBasePowered ]
-  id: N14ComputerTerminalWall
+  parent: [ F14ComputerTerminalWallBase, F14ComputerTerminalBasePowered ]
+  id: F14ComputerTerminalWall
   name: wall terminal
   description: A computer terminal. Looks old.
   components:
@@ -458,8 +458,8 @@
       state: screens
 
 - type: entity
-  parent: N14ComputerTerminalWallBase
-  id: N14ComputerTerminalWallBroken
+  parent: F14ComputerTerminalWallBase
+  id: F14ComputerTerminalWallBroken
   name: broken wall terminal
   description: A wall mounted computer terminal. This one looks broken.
   components:
@@ -470,8 +470,8 @@
 # New
 
 - type: entity
-  parent: [ N14ComputerTerminalWallBase, N14ComputerTerminalBasePowered ]
-  id: N14ComputerTerminalWallNew
+  parent: [ F14ComputerTerminalWallBase, F14ComputerTerminalBasePowered ]
+  id: F14ComputerTerminalWallNew
   suffix: new
   name: wall terminal
   description: A wall mounted computer terminal. Looks new.
@@ -485,8 +485,8 @@
       state: screens
 
 - type: entity
-  parent: N14ComputerTerminalWallBase
-  id: N14ComputerTerminalWallNewBroken
+  parent: F14ComputerTerminalWallBase
+  id: F14ComputerTerminalWallNewBroken
   suffix: new
   name: broken wall terminal
   description: A wall mounted computer terminal This one looks broken.
@@ -498,8 +498,8 @@
 # Rusted
 
 - type: entity
-  parent: [ N14ComputerTerminalWallBase, N14ComputerTerminalBasePowered ]
-  id: N14ComputerTerminalWallRusted
+  parent: [ F14ComputerTerminalWallBase, F14ComputerTerminalBasePowered ]
+  id: F14ComputerTerminalWallRusted
   suffix: rusted
   name: wall terminal
   description: A wall mounted computer terminal. Looks new.
@@ -513,8 +513,8 @@
       state: screens
 
 - type: entity
-  parent: N14ComputerTerminalWallBase
-  id: N14ComputerTerminalWallRustedBroken
+  parent: F14ComputerTerminalWallBase
+  id: F14ComputerTerminalWallRustedBroken
   suffix: rusted
   name: broken wall terminal
   description: A wall mounted computer terminal This one looks broken.
@@ -526,8 +526,8 @@
 # Security
 
 - type: entity
-  parent: [ N14ComputerTerminalWallBase, N14ComputerTerminalBasePowered ]
-  id: N14ComputerTerminalWallDisplays
+  parent: [ F14ComputerTerminalWallBase, F14ComputerTerminalBasePowered ]
+  id: F14ComputerTerminalWallDisplays
   name: display terminal
   description: A wall mounted computer terminal. Lots of displays.
   components:
@@ -542,8 +542,8 @@
 # Classic
 
 - type: entity
-  parent: [ N14ComputerTerminalWallBase, N14ComputerTerminalBasePowered ]
-  id: N14ComputerTerminalWallControls
+  parent: [ F14ComputerTerminalWallBase, F14ComputerTerminalBasePowered ]
+  id: F14ComputerTerminalWallControls
   name: control terminal
   description: A wall mounted computer terminal.
   components:

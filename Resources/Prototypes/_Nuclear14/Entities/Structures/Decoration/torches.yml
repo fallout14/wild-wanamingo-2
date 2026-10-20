@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Decoration/torches.yml
 
 - type: entity
-  id: N14Torch
+  id: F14TorchBase
   name: torch
   suffix: floor, mapping
   description: A flaming torch for lighting an area.
@@ -64,8 +64,8 @@
     power: 16
 
 - type: entity
-  parent: N14Torch
-  id: N14TorchWall
+  parent: F14TorchBase
+  id: F14TorchWallBase
   suffix: wall, mapping
   components:
   - type: Sprite

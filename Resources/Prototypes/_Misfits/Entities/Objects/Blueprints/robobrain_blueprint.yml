@@ -1,0 +1,31 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Blueprints/robobrain_blueprint.yml
+
+- type: entity
+  parent: F14BlueprintBase
+  id: F14BlueprintRobobrainBoard
+  name: Robobrain Assembly Manual
+  description: >
+    A classified Pre-War military field manual for the RB-2851 Robobrain chassis.
+    Contains full fabrication schematics for the cranial housing, motivator array,
+    and optical assembly. Insert it into a weapon workbench to unlock the build schematic.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - F14BPRobobrainCircuitboard
+
+# Machine circuit board produced by the blueprint recipe.
+# Used in the standard machine frame construction graph (Machine graph):
+#   MachineFrame + this board + screwdriver → N14MobPlayerRobobrain
+
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: F14RobobrainMachineCircuitboard
+  name: Robobrain chassis board
+  description: >
+    A complex Pre-War military circuit board encoding the base firmware and
+    hardware configuration for a Robobrain chassis frame. Used in machine frame construction.
+  suffix: Machine Board
+  components:
+  - type: MachineBoard
+    # No extra machine part requirements — cost is front-loaded into the blueprint recipe
+    prototype: F14MobPlayerRobobrain

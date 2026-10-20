@@ -2,7 +2,7 @@
 
 - type: entity
   name: Brahdo Spawner
-  id: MisfitsSpawnMobBrahdo
+  id: F14SpawnMobBrahdo
   parent: MarkerBase
   components:
   - type: Sprite
@@ -11,11 +11,11 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobBrahdo
+      - F14MobBrahdo
 
 - type: entity
   name: Brahdo Spawner
-  id: MisfitsSpawnMobBrahdoLight
+  id: F14SpawnMobBrahdoLight
   parent: MarkerBase
   suffix: LeLight
   components:
@@ -25,11 +25,11 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobBrahdoLight
+      - F14MobBrahdoLight
 
 - type: entity
   name: Brahdo Spawner
-  id: MisfitsSpawnMobBrahdoArmor
+  id: F14SpawnMobBrahdoArmor
   parent: MarkerBase
   suffix: Armor
   components:
@@ -39,11 +39,11 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobBrahdoArmor
+      - F14MobBrahdoArmor
 
 - type: entity
   name: Brahdo Spawner
-  id: MisfitsSpawnMobBrahdoArmorNCR
+  id: F14SpawnMobBrahdoArmorNCR
   parent: MarkerBase
   suffix: NCR
   components:
@@ -53,11 +53,11 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobBrahdoArmorNCR
+      - F14MobBrahdoArmorNCR
 
 - type: entity
   name: Brahdo Spawner
-  id: MisfitsSpawnMobBrahdoLightLegion
+  id: F14SpawnMobBrahdoLightLegion
   parent: MarkerBase
   suffix: Legion
   components:
@@ -67,11 +67,11 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobBrahdoLightLegion
+      - F14MobBrahdoLightLegion
 
 - type: entity
   name: Brahdo Spawner
-  id: MisfitsSpawnMobBrahdoLightTribal
+  id: F14SpawnMobBrahdoLightTribal
   parent: MarkerBase
   suffix: Tribal
   components:
@@ -81,4 +81,4 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobBrahdoLighttribal
+      - F14MobBrahdoLighttribal

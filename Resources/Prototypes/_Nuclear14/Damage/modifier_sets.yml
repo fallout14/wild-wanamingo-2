@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Damage/modifier_sets.yml
 
 - type: damageModifierSet
-  id: N14Ghoul
+  id: F14Ghoul
   coefficients:
     Blunt: 1.05
     Slash: 1.05
@@ -15,20 +15,7 @@
     Bloodloss: 0.8
 
 - type: damageModifierSet
-  id: N14GhoulGlowing
-  coefficients:
-    Blunt: 1.1
-    Slash: 1.1
-    Piercing: 1.1
-    Cold: 0.6
-    Poison: 0.6
-    Cellular: 0.1
-    Radiation: 0
-    Asphyxiation: 0.1
-    Bloodloss: 0.8
-
-- type: damageModifierSet
-  id: N14GhoulNPC
+  id: F14GhoulNPC
   coefficients:
     Blunt: 1
     Slash: 1
@@ -43,7 +30,7 @@
 # immune to everything except physical and heat damage
 
 - type: damageModifierSet
-  id: N14WastelandAnimal
+  id: F14WastelandAnimal
   coefficients:
     Blunt: 1
     Slash: 1
@@ -56,13 +43,13 @@
     Cellular: 1
 
 - type: damageModifierSet
-  id: N14Insect # Exo-skeleton, should have simillarities to skeleton resistances.
+  id: F14Insect # Exo-skeleton, should have simillarities to skeleton resistances.
   coefficients:
     Blunt: 1.1
     Heat: 1.5
 
 - type: damageModifierSet
-  id: N14Scale # Skin tougher, bones weaker, strong stomachs, cold-blooded (kindof)
+  id: F14Scale # Skin tougher, bones weaker, strong stomachs, cold-blooded (kindof)
   coefficients:
     Blunt: 1.1
     Slash: 0.9
@@ -71,7 +58,7 @@
     Poison: 0.9
 
 - type: damageModifierSet
-  id: N14ScaleFireresist
+  id: F14ScaleFireresist
   coefficients:
     Blunt: 1.1
     Slash: 0.9
@@ -82,7 +69,7 @@
     Heat: 10
 
 - type: damageModifierSet
-  id: N14ToughAnimal # Made especially for deathclaws and other larger "boss" creatures.
+  id: F14ToughAnimal # Made especially for deathclaws and other larger "boss" creatures.
   coefficients:
     Blunt: 0.8
     Slash: 0.8
@@ -95,7 +82,7 @@
 # #Cythisiax Added - Sentient deathclaw (Bwonsamdi) hide: 50% damage taken across the board.
 
 - type: damageModifierSet
-  id: N14GammaShield
+  id: F14GammaShield
   coefficients:
     Heat: 0.95
     Cold: 0.95
@@ -109,7 +96,7 @@
 # Misfits Add - Temporary Med-X style protection shared by Med-X and Hydra.
 
 - type: damageModifierSet
-  id: N14HeavyRobot # Boss fights like Sentry Bot and whatnot.
+  id: F14HeavyRobot # Boss fights like Sentry Bot and whatnot.
   coefficients:
     Blunt: 0.8
     Slash: 0.75

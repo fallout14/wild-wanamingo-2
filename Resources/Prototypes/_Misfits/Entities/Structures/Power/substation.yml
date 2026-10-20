@@ -2,7 +2,7 @@
 
 - type: entity # Corvax-Change
   parent: BaseMachine
-  id: MisfitsBaseSubstationFrame
+  id: F14BaseSubstationFrame
   name: substation frame
   description: Reduces the voltage of electricity put into it.
   placement:
@@ -35,7 +35,7 @@
           collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14ScrapSteel1:
+          F14ScrapSteel1:
            min: 4
            max: 7
 

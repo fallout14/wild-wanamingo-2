@@ -3,7 +3,7 @@
 # Rewritten for Wizden's cabinet system (ItemSlots + Openable via BaseItemCabinet).
 - type: entity
   parent: BaseItemCabinet
-  id: N14WallmountFireHydrant
+  id: F14WallmountFireHydrant
   name: fire hydrant
   description: A wall mounted hydrant for putting out large fires.
   placement:
@@ -54,23 +54,23 @@
           collection: MetalBreak
 
 - type: entity
-  parent: N14WallmountFireHydrant
-  id: N14WallmountFireHydrantOpen
+  parent: F14WallmountFireHydrant
+  id: F14WallmountFireHydrantOpen
   suffix: Open
   components:
   - type: Openable
     opened: true
 
 - type: entity
-  parent: N14WallmountFireHydrant
-  id: N14WallmountFireHydrantOld
+  parent: F14WallmountFireHydrant
+  id: F14WallmountFireHydrantOld
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Wallmounts/hydrantold.rsi
 
 - type: entity
-  parent: N14WallmountFireHydrantOld
-  id: N14WallmountFireHydrantOldOpen
+  parent: F14WallmountFireHydrantOld
+  id: F14WallmountFireHydrantOldOpen
   suffix: Open
   components:
   - type: Openable

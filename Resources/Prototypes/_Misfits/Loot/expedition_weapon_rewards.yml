@@ -3,59 +3,59 @@
 - type: entity
   name: Expedition Weapon Loot Spawner
   suffix: Guaranteed Tier 1
-  id: MisfitsM14ExpeditionWeaponLootTier1Guaranteed
+  id: F14ExpeditionWeaponLootTier1Guaranteed
   parent: MarkerBase
   components:
   - type: EntityTableSpawner
     table: !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier1
+      tableId: F14WeaponLootTier1
       prob: 1.0
     deleteSpawnerAfterSpawn: false
 
 - type: entity
   name: Expedition Weapon Loot Spawner
   suffix: Guaranteed Tier 2
-  id: MisfitsM14ExpeditionWeaponLootTier2Guaranteed
+  id: F14ExpeditionWeaponLootTier2Guaranteed
   parent: MarkerBase
   components:
   - type: EntityTableSpawner
     table: !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier2
+      tableId: F14WeaponLootTier2
       prob: 1.0
     deleteSpawnerAfterSpawn: false
 
 - type: entity
   name: Expedition Weapon Loot Spawner
   suffix: Guaranteed Tier 3
-  id: MisfitsM14ExpeditionWeaponLootTier3Guaranteed
+  id: F14ExpeditionWeaponLootTier3Guaranteed
   parent: MarkerBase
   components:
   - type: EntityTableSpawner
     table: !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier3
+      tableId: F14WeaponLootTier3
       prob: 1.0
     deleteSpawnerAfterSpawn: false
 
 - type: entity
   name: Expedition Weapon Loot Spawner
   suffix: Guaranteed Tier 4
-  id: MisfitsM14ExpeditionWeaponLootTier4Guaranteed
+  id: F14ExpeditionWeaponLootTier4Guaranteed
   parent: MarkerBase
   components:
   - type: EntityTableSpawner
     table: !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier4
+      tableId: F14WeaponLootTier4
       prob: 1.0
     deleteSpawnerAfterSpawn: false
 
 - type: entity
   name: Expedition Weapon Loot Spawner
   suffix: Guaranteed Tier 5
-  id: MisfitsM14ExpeditionWeaponLootTier5Guaranteed
+  id: F14ExpeditionWeaponLootTier5Guaranteed
   parent: MarkerBase
   components:
   - type: EntityTableSpawner
     table: !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier5
+      tableId: F14WeaponLootTier5
       prob: 1.0
     deleteSpawnerAfterSpawn: false

@@ -1,52 +1,52 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/tribal_weapons.yml
 
 - type: latheRecipe
-  id: MisfitsTribalWarBow
+  id: F14TribalWarBow
   icon:
     sprite: Misfits/Objects/Weapons/Guns/Bow/tribal_bow.rsi
     state: unwielded
-  result: MisfitsTribalWarBow
+  result: F14TribalWarBow
   categories:
-  - N14Weapons
+  - F14Weapons
   completetime: 16
   materials:
     Wood: 750
     Cloth: 400
 
 - type: latheRecipe
-  id: MisfitsTribalRecurveBow
+  id: F14TribalRecurveBow
   icon:
     sprite: Misfits/Objects/Weapons/Guns/Bow/tribal_bow.rsi
     state: unwielded
-  result: MisfitsTribalRecurveBow
+  result: F14TribalRecurveBow
   categories:
-  - N14Weapons
+  - F14Weapons
   completetime: 8
   materials:
     Wood: 400
     Cloth: 200
 
 - type: latheRecipe
-  id: MisfitsArrowTribal
+  id: F14ArrowTribal
   icon:
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
     state: tip
-  result: MisfitsArrowTribal
+  result: F14ArrowTribal
   categories:
-  - N14Ammo
+  - F14Ammo
   completetime: 2
   materials:
     Steel: 25
     Cloth: 10
 
 - type: latheRecipe
-  id: MisfitsArrowBroadHead
+  id: F14ArrowBroadHead
   icon:
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
     state: tip
-  result: MisfitsArrowBroadHead
+  result: F14ArrowBroadHead
   categories:
-  - N14Ammo
+  - F14Ammo
   completetime: 2
   materials:
     Steel: 25

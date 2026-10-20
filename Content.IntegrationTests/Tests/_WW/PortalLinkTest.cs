@@ -14,10 +14,10 @@ namespace Content.IntegrationTests.Tests._WW;
 [TestOf(typeof(F14PortalLinkSystem))]
 public sealed class PortalLinkTest : GameTest
 {
-    private static readonly EntProtoId LadderTop = "N14LadderTop";
-    private static readonly EntProtoId LadderBottom = "N14LadderBottom";
-    private static readonly EntProtoId Hatch = "MisfitsBunkerHatchTunnel";
-    private static readonly EntProtoId TunnelDoor = "MisfitsBunkerTunnelDoor";
+    private static readonly EntProtoId LadderTop = "F14LadderTop";
+    private static readonly EntProtoId LadderBottom = "F14LadderBottom";
+    private static readonly EntProtoId Hatch = "F14BunkerHatchTunnel";
+    private static readonly EntProtoId TunnelDoor = "F14BunkerTunnelDoor";
 
     [Test]
     public async Task LaddersPairByLinkId()

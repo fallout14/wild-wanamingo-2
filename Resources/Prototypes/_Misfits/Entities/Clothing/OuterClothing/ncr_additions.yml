@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/OuterClothing/ncr_additions.yml
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsClothingOuterNCRSalvagedMetalArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterNCRSalvagedMetalArmor
   name: NCR salvaged metal armor
   description: Pre-war metal armor repaired and re-issued to NCR heavy infantry. Durable if not elegant — the Republic takes what it can get after years of campaigning in the Mojave. Heavier than standard NCR vests.
   components:
@@ -24,8 +24,8 @@
     damageCoefficient: 0.78
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsClothingOuterNCRFieldMedicVest
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterNCRFieldMedicVest
   name: NCR field medic vest
   description: A reinforced NCR medic vest with a prominent red cross emblem. Relatively light armor — the medic needs to move quickly between fallen soldiers, and bulkier protection would just slow them down.
   components:
@@ -41,8 +41,8 @@
         Piercing: 0.82
 
 - type: entity
-  parent: [N14FalloutArmorBase, N14ClothingOuterBase]
-  id: MisfitsFalloutNCRmilitarypolicevest
+  parent: [F14FalloutArmorBase, F14ClothingOuterBase]
+  id: F14FalloutNCRmilitarypolicevest
   name: NCR Military Police Vest
   description: A vest used by the NCR Military Police.
   components:
@@ -58,8 +58,8 @@
         Piercing: 0.85
 
 - type: entity
-  parent: MisfitsFalloutNCRmilitarypolicevest
-  id: MisfitsNCRMPRecruitArmor
+  parent: F14FalloutNCRmilitarypolicevest
+  id: F14NCRMPRecruitArmor
   name: NCR military police recruit armor
   description: Reinforced NCR Military Police armor issued to recruits for base defense and riot control.
   components:
@@ -75,8 +75,8 @@
     damageCoefficient: 0.80
 
 - type: entity
-  parent: MisfitsFalloutNCRmilitarypolicevest
-  id: MisfitsNCRMPCombatArmor
+  parent: F14FalloutNCRmilitarypolicevest
+  id: F14NCRMPCombatArmor
   name: NCR military police combat armor
   description: Reinforced NCR Military Police armor for base defense and riot control.
   components:
@@ -92,8 +92,8 @@
     damageCoefficient: 0.75
 
 - type: entity
-  parent: MisfitsFalloutNCRmilitarypolicevest
-  id: MisfitsNCRMPLieutenantArmor
+  parent: F14FalloutNCRmilitarypolicevest
+  id: F14NCRMPLieutenantArmor
   name: NCR military police lieutenant armor
   description: Command-grade NCR Military Police armor issued to First Lieutenants.
   components:

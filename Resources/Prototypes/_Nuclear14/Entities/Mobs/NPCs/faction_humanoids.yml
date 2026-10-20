@@ -3,28 +3,28 @@
 
 - type: entity
   name: Civil Militia
-  parent: N14BaseMobRaider
-  id: N14MobNPCTown
+  parent: F14BaseMobRaider
+  id: F14MobNPCTown
   suffix: NPC
   description: Uniformed angry mob ready to defend their homes, might not be the best at combat but he is trying his best.
   components:
     - type: NpcFactionMember
       factions:
-      - N14Townsfolk
+      - F14Townsfolk
     - type: Loadout
       prototypes:
-        - N14TownMilitiaNPC
+        - F14TownMilitiaNPC
 
 - type: entity
   name: Town Enforcer
-  parent: N14BaseMobRaider
-  id: N14MobNPCTownGuard
+  parent: F14BaseMobRaider
+  id: F14MobNPCTownGuard
   suffix: NPC
   description: Professional mercenary armed with a combat shotgun. He won't show mercy to anyone if they can't prove proof of their citizenship in a moment's notice.
   components:
     - type: NpcFactionMember
       factions:
-      - N14TownsfolkSecureArea # Especialy made for the clinic & store, will attack anyone who steps in the storage and not a legal resident.
+      - F14TownsfolkSecureArea # Especialy made for the clinic & store, will attack anyone who steps in the storage and not a legal resident.
     - type: Gun
       minAngle: 23
       maxAngle: 104
@@ -32,13 +32,13 @@
       angleDecay: 16
       fireRate: 1
       soundGunshot:
-        collection: N14AutoShotgunGunshot
+        collection: F14AutoShotgunGunshot
       useKey: false
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
     - type: BasicEntityAmmoProvider
-      proto: N14ShellShotgun12
+      proto: F14ShellShotgun12
       capacity: 8
       count: 8
     - type: RechargeBasicEntityAmmo
@@ -47,7 +47,7 @@
         path: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
     - type: Loadout
       prototypes:
-        - N14TownMilitiaGuardNPC
+        - F14TownMilitiaGuardNPC
     - type: Sprite
       layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
@@ -101,28 +101,28 @@
 
 - type: entity
   name: Chapter Serf
-  parent: N14BaseMobRaider
-  id: N14MobNPCMBoSSerf
+  parent: F14BaseMobRaider
+  id: F14MobNPCMBoSSerf
   suffix: NPC
   description: A servant of the Brotherhood chapter, not a full member. He likely works for food and shelter.
   components:
     - type: NpcFactionMember
       factions:
-      - MisfitsBrotherhoodOfSteelSecureArea
+      - F14BrotherhoodOfSteelSecureArea
     - type: Loadout
       prototypes:
-        - N14MBoSSerfNPC
+        - F14MBoSSerfNPC
 
 - type: entity
   name: BoS Knight
-  parent: N14BaseMobRaider
-  id: N14MobNPCMBoSKnight
+  parent: F14BaseMobRaider
+  id: F14MobNPCMBoSKnight
   suffix: NPC
   description: A soldier of the Brotherhood, not the most skilled and easily forgetable. Still, he might be dangerous.
   components:
     - type: NpcFactionMember
       factions:
-      - MisfitsBrotherhoodOfSteelSecureArea
+      - F14BrotherhoodOfSteelSecureArea
     - type: Gun
       minAngle: 4
       maxAngle: 9
@@ -130,13 +130,13 @@
       angleDecay: 16
       fireRate: 2.5
       soundGunshot:
-        collection: N14CarbineGunshot
+        collection: F14CarbineGunshot
       useKey: false
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
     - type: BasicEntityAmmoProvider
-      proto: N14Cartridge556Rifle
+      proto: F14Cartridge556Rifle
       capacity: 35
       count: 35
     - type: RechargeBasicEntityAmmo
@@ -145,32 +145,32 @@
         path: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
     - type: Loadout
       prototypes:
-        - N14MBoSKnightNPC
+        - F14MBoSKnightNPC
 
 - type: entity
   name: NCR Army Guard
-  parent: N14BaseMobRaider
-  id: N14MobNPCNCRGuard
+  parent: F14BaseMobRaider
+  id: F14MobNPCNCRGuard
   suffix: NPC
   description: An trooper in the uniform of the NCR Army's Military Police section. He's here to keep the order by spraying lead.
   components:
     - type: NpcFactionMember
       factions:
-      - N14NCRSecureArea
+      - F14NCRSecureArea
     - type: Loadout
       prototypes:
-        - N14NCRAGuardNPC
+        - F14NCRAGuardNPC
 
 - type: entity
   name: NCR Army Trooper
-  parent: N14BaseMobRaider
-  id: N14MobNPCNCRTrooper
+  parent: F14BaseMobRaider
+  id: F14MobNPCNCRTrooper
   suffix: NPC
   description: An Army trooper of the NCR. He's tasked to guard places and is quite easy to forget, but he's still dangerous.
   components:
     - type: NpcFactionMember
       factions:
-      - N14NCRSecureArea
+      - F14NCRSecureArea
     - type: Gun
       minAngle: 2
       maxAngle: 14
@@ -178,13 +178,13 @@
       angleDecay: 16
       fireRate: 2.5
       soundGunshot:
-        collection: N14ServiceGunshot
+        collection: F14ServiceGunshot
       useKey: false
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
     - type: BasicEntityAmmoProvider
-      proto: N14Cartridge556Rifle
+      proto: F14Cartridge556Rifle
       capacity: 25
       count: 25
     - type: RechargeBasicEntityAmmo
@@ -193,7 +193,7 @@
         path: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
     - type: Loadout
       prototypes:
-        - N14NCRATrooperNPC
+        - F14NCRATrooperNPC
     - type: Sprite
       layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
@@ -247,14 +247,14 @@
 
 - type: entity
   name: Caravan Mercenary
-  parent: N14BaseMobRaider
-  id: N14MobNPCCaravanMerc
+  parent: F14BaseMobRaider
+  id: F14MobNPCCaravanMerc
   suffix: NPC
   description: A man hired to stand guard and ensure the safety of the Blue Line station. Surely he won't do anything else, right?
   components:
     - type: NpcFactionMember
       factions:
-      - N14CaravanCompanySecureArea
+      - F14CaravanCompanySecureArea
     - type: Gun
       minAngle: 4
       maxAngle: 20
@@ -262,13 +262,13 @@
       angleDecay: 16
       fireRate: 4.3
       soundGunshot:
-        collection: N14Pistol9mmGunshot
+        collection: F14Pistol9mmGunshot
       useKey: false
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
     - type: BasicEntityAmmoProvider
-      proto: N14CartridgePistol9
+      proto: F14CartridgePistol9
       capacity: 31
       count: 31
     - type: RechargeBasicEntityAmmo
@@ -277,7 +277,7 @@
         path: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
     - type: Loadout
       prototypes:
-        - N14CaravanMercNPC
+        - F14CaravanMercNPC
     - type: Sprite
       layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
@@ -331,14 +331,14 @@
 
 - type: entity
   name: Tribal Skirmisher
-  parent: N14BaseMobRaider
-  id: N14MobNPCTribeSkir
+  parent: F14BaseMobRaider
+  id: F14MobNPCTribeSkir
   suffix: NPC
   description: A skirmisher of the local tribes, he bears a firearm to protect his kin. A silent hero.
   components:
     - type: NpcFactionMember
       factions:
-      - N14TribalSecureArea
+      - F14TribalSecureArea
     - type: Gun
       minAngle: 4
       maxAngle: 20
@@ -346,13 +346,13 @@
       angleDecay: 4
       fireRate: 1
       soundGunshot:
-        collection: N14RevolverMagnunGunshot
+        collection: F14RevolverMagnunGunshot
       useKey: false
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
     - type: BasicEntityAmmoProvider
-      proto: N14Cartridge44Magnum
+      proto: F14Cartridge44Magnum
       capacity: 4
       count: 4
     - type: RechargeBasicEntityAmmo
@@ -361,7 +361,7 @@
         path: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
     - type: Loadout
       prototypes:
-        - N14TribalSkirmisherNPC
+        - F14TribalSkirmisherNPC
     - type: Sprite
       layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
@@ -413,18 +413,18 @@
 
 - type: entity
   name: Tribal Warrior
-  parent: N14BaseMobRaider
-  id: N14MobNPCTribeWarr
+  parent: F14BaseMobRaider
+  id: F14MobNPCTribeWarr
   suffix: NPC
   description: A large and tough warrior, not many could best him in a melee battle. He shall stand guard.
   components: # No gun or ammo components because this is a melee variant.
     - type: NpcFactionMember
       factions:
-      - N14TribalSecureArea
+      - F14TribalSecureArea
     - type: MobThresholds
       thresholds:
         0: Alive
         125: Dead
     - type: Loadout
       prototypes:
-        - N14TribalWarriorNPC
+        - F14TribalWarriorNPC

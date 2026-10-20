@@ -2,7 +2,7 @@
 # Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
 
 - type: entity
-  parent: FireAxe
+  parent: F14FireAxeBase # WW: MS13 sprite on the merged N14 item
   id: F14FireAxe
   name: fire axe
   components:
@@ -20,7 +20,7 @@
     - back
 
 - type: entity
-  parent: KitchenKnife
+  parent: F14KitchenKnifeBase # WW: MS13 sprite on the merged N14 item
   id: F14KitchenKnife
   name: kitchen knife
   components:
@@ -161,7 +161,7 @@
       state: icon
 
 - type: entity
-  parent: Machete
+  parent: F14MacheteBase # WW: MS13 sprite on the merged N14 item
   id: F14Machete
   name: machete
   components:
@@ -179,7 +179,7 @@
     - Belt
 
 - type: entity
-  parent: Machete
+  parent: F14GladiusBase # WW: MS13 sprite on the merged N14 item
   id: F14Gladius
   name: gladius
   components:

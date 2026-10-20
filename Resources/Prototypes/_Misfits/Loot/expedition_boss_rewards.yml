@@ -1,105 +1,105 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/expedition_boss_rewards.yml
 
 - type: entityTable
-  id: MisfitsM14ExpeditionBossPrimaryReward
+  id: F14ExpeditionBossPrimaryReward
   table: !type:GroupSelector
     children:
     # Weapons remain possible, but high-end guns are a minority of final-boss drops.
     - !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier3
+      tableId: F14WeaponLootTier3
       weight: 30
     - !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier4
+      tableId: F14WeaponLootTier4
       weight: 10
     # Equipment outcomes are deliberately faction-neutral and portable.
     - !type:EntSelector
-      id: N14ClothingOuterLeatherArmor
+      id: F14ClothingOuterLeatherArmor
       weight: 18
     - !type:EntSelector
-      id: N14ClothingOuterMetalArmor
+      id: F14ClothingOuterMetalArmor
       weight: 14
     - !type:EntSelector
-      id: N14ClothingOuterCombatArmor
+      id: F14ClothingOuterCombatArmor
       weight: 8
     - !type:EntSelector
-      id: N14ClothingOuterJacketBomber
+      id: F14ClothingOuterJacketBomber
       weight: 10
     - !type:EntSelector
-      id: N14ClothingOuterPoliceVest
+      id: F14ClothingOuterPoliceVest
       weight: 10
 
 - type: entityTable
-  id: MisfitsM14ExpeditionBossRecoveryReward
+  id: F14ExpeditionBossRecoveryReward
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14Stimpak
+      id: F14Stimpak
       weight: 35
     - !type:EntSelector
-      id: N14RadAwayInhaler
+      id: F14RadAwayInhaler
       weight: 20
     - !type:EntSelector
-      id: N14Hydra
+      id: F14Hydra
       weight: 10
     - !type:EntSelector
-      id: N14MedkitBruteFilled
+      id: F14MedkitBruteFilled
       weight: 20
     - !type:EntSelector
-      id: N14MedkitCombatFilled
+      id: F14MedkitCombatFilled
       weight: 15
 
 - type: entityTable
-  id: MisfitsM14ExpeditionBossMaterialsReward
+  id: F14ExpeditionBossMaterialsReward
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: MisfitsScrapElectronic10
+      id: F14ScrapElectronic10
       weight: 28
     - !type:EntSelector
-      id: MisfitsScrapSteel10
+      id: F14ScrapSteel10
       weight: 28
     - !type:EntSelector
-      id: MisfitsScrapCopper10
+      id: F14ScrapCopper10
       weight: 18
     - !type:EntSelector
-      id: MisfitsScrapBrass10
+      id: F14ScrapBrass10
       weight: 14
     - !type:EntSelector
-      id: MisfitsScrapLead10
+      id: F14ScrapLead10
       weight: 12
 
 - type: entityTable
-  id: MisfitsM14ExpeditionBossReward
+  id: F14ExpeditionBossReward
   table: !type:AllSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14ExpeditionBossPrimaryReward
+      tableId: F14ExpeditionBossPrimaryReward
     - !type:NestedSelector
-      tableId: MisfitsM14ExpeditionBossRecoveryReward
+      tableId: F14ExpeditionBossRecoveryReward
     - !type:NestedSelector
-      tableId: MisfitsM14ExpeditionBossMaterialsReward
+      tableId: F14ExpeditionBossMaterialsReward
 
 # Optional deep guardians pay a meaningful but deliberately smaller reward.
 # The table favors recovery, materials, and Tier 2 over another high-end gun.
 
 - type: entityTable
-  id: MisfitsM14ExpeditionGuardianReward
+  id: F14ExpeditionGuardianReward
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier2
+      tableId: F14WeaponLootTier2
       weight: 45
     - !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier3
+      tableId: F14WeaponLootTier3
       weight: 12
     - !type:EntSelector
-      id: N14ClothingOuterLeatherArmor
+      id: F14ClothingOuterLeatherArmor
       weight: 14
     - !type:EntSelector
-      id: N14Stimpak
+      id: F14Stimpak
       weight: 14
     - !type:EntSelector
-      id: MisfitsScrapElectronic10
+      id: F14ScrapElectronic10
       weight: 15
 
 # Retains the previous two guaranteed Tier 3 caches for dangerous focused
@@ -107,12 +107,12 @@
 # final guardian's corpse rather than placing loot before the fight.
 
 - type: entityTable
-  id: MisfitsM14ExpeditionHighRiskBossReward
+  id: F14ExpeditionHighRiskBossReward
   table: !type:AllSelector
     children:
     - !type:NestedSelector
-      tableId: MisfitsM14ExpeditionBossReward
+      tableId: F14ExpeditionBossReward
     - !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier3
+      tableId: F14WeaponLootTier3
     - !type:NestedSelector
-      tableId: MisfitsM14WeaponLootTier3
+      tableId: F14WeaponLootTier3

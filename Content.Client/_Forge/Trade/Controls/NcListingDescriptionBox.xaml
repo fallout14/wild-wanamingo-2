@@ -1,0 +1,15 @@
+<!-- Ported from Corvax Forge content carried by Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Content.Client/_NC/Trade/Controls/NcListingDescriptionBox.xaml -->
+
+<PanelContainer xmlns="https://spacestation14.io"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                RectClipContent="True"
+                HorizontalExpand="True"
+                VerticalExpand="True"
+                Margin="0">
+    <RichTextLabel Name="Label"
+                   HorizontalExpand="True"
+                   VerticalExpand="True"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   Margin="0"/>
+</PanelContainer>

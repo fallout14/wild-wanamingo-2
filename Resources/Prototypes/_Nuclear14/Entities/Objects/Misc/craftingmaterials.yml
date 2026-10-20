@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14MaterialRadscorpionTail
+  id: F14MaterialRadscorpionTail
   name: radscorpion tail
   description: It's the stinger from a radscorpion.
   components:
@@ -14,12 +14,12 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14ScorpionTail
+      - ReagentId: F14ScorpionTail
         Quantity: 10
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: N14ScorpionTail
+      - ReagentId: F14ScorpionTail
         Quantity: 10
   # - type: Craftable # Corvax-Change  # #Misfits Remove: Stalker14 crafting system
 
@@ -27,7 +27,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14MaterialBaseHide
+  id: F14MaterialBaseHide
   abstract: true
   components:
   - type: Sprite
@@ -35,18 +35,18 @@
     state: hide_brahmin
   - type: Tag
     tags:
-      - N14RawLeather
+      - F14RawLeather
   - type: PhysicalComposition
     materialComposition:
-      N14RawLeather: 400
+      F14RawLeather: 400
   - type: Material
   - type: Item
     size: Normal
   # - type: Craftable # Corvax-Change  # #Misfits Remove: Stalker14 crafting system
 
 - type: entity
-  parent: N14MaterialBaseHide
-  id: N14MaterialBrahminHide
+  parent: F14MaterialBaseHide
+  id: F14MaterialBrahminHide
   name: brahmin hide
   description: The hide of a brahmin. Leather-like and tough.
   suffix: Full, 4
@@ -57,7 +57,7 @@
     - state: hide_brahmin_2
       map: ["base"]
   - type: Stack
-    stackType: N14BrahminHide
+    stackType: F14BrahminHide
     count: 4
     baseLayer: base
     layerStates:
@@ -69,17 +69,17 @@
     price: 1 # PH
 
 - type: entity
-  parent: N14MaterialBrahminHide
-  id: N14MaterialBrahminHide1
+  parent: F14MaterialBrahminHide
+  id: F14MaterialBrahminHide1
   suffix: Single
   components:
   - type: Stack
-    stackType: N14BrahminHide
+    stackType: F14BrahminHide
     count: 1
 
 - type: entity
-  parent: N14MaterialBaseHide
-  id: N14MaterialNightstalkerPelt
+  parent: F14MaterialBaseHide
+  id: F14MaterialNightstalkerPelt
   name: nightstalker pelt
   description: A pelt of fresh nightstalker leather.
   components:
@@ -87,16 +87,16 @@
     state: pelt_nightstalker
   - type: Tag
     tags:
-      - N14NightstalkerPelt
+      - F14NightstalkerPelt
   - type: PhysicalComposition
     materialComposition:
-      N14RawLeather: 300
+      F14RawLeather: 300
   - type: StaticPrice # Forge-Change
     price: 30
 
 - type: entity
-  parent: N14MaterialBaseHide
-  id: N14MaterialYaoguaiHide
+  parent: F14MaterialBaseHide
+  id: F14MaterialYaoguaiHide
   name: Yao Guai hide
   description: The big hide of a Yao Guai, heavy and strong.
   components:
@@ -104,17 +104,17 @@
     state: hide_yaoguai
   - type: Tag
     tags:
-      - N14YaoguaiHide
-      - N14RawLeather
+      - F14YaoguaiHide
+      - F14RawLeather
   - type: PhysicalComposition
     materialComposition:
-      N14RawLeather: 600
+      F14RawLeather: 600
   - type: StaticPrice # Forge-Change
     price: 50
 
 - type: entity
   parent: BaseItem
-  id: N14MaterialHideGecko
+  id: F14MaterialHideGecko
   name: silver gecko hide
   description: A thick hide from a gecko.
   components:
@@ -123,11 +123,11 @@
     state: hide_gecko
   - type: Tag
     tags:
-      - N14RawLeather
+      - F14RawLeather
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      N14RawLeather: 600
+      F14RawLeather: 600
   - type: Item
     size: Normal
   # - type: Craftable # Corvax-Change  # #Misfits Remove: Stalker14 crafting system
@@ -135,8 +135,8 @@
     price: 3
 
 - type: entity
-  parent: N14MaterialHideGecko
-  id: N14MaterialHideGeckoFire
+  parent: F14MaterialHideGecko
+  id: F14MaterialHideGeckoFire
   name: fire gecko hide
   description: A thick flame resistant hide from a fire gecko.
   components:
@@ -144,8 +144,8 @@
     price: 9
 
 - type: entity
-  parent: N14MaterialHideGecko
-  id: N14MaterialHideGeckoGolden
+  parent: F14MaterialHideGecko
+  id: F14MaterialHideGeckoGolden
   name: golden gecko hide
   description: A thick beautiful hide from a golden gecko.
   components:

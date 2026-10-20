@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckCloakBrotherhoodWashington
+  id: F14ClothingNeckCloakBrotherhoodWashington
   name: Brotherhood of Steel Cloak
   description: A black cloak with a circular red Brotherhood of Steel logo.
   components:
@@ -14,7 +14,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckCloakNCR
+  id: F14ClothingNeckCloakNCR
   name: NCR cloak
   description: A comfy cloak with a NCR logo on one side. These kinds of cloaks are commonly used by the troopers during harsh weather.
   components:
@@ -23,7 +23,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckCloakNCRSnow
+  id: F14ClothingNeckCloakNCRSnow
   name: NCR winter cloak
   description: A comfy cloak with a NCR logo on one side these kinds of cloaks are commonly used by the troopers during harsh weather. This one is snow white.
   components:
@@ -32,7 +32,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckCloakNCRWoods
+  id: F14ClothingNeckCloakNCRWoods
   name: NCR woods cloak
   description: A comfy cloak with a NCR logo on one side. These kinds of cloaks are commonly used by the troopers during harsh weather. This one is green.
   components:
@@ -41,14 +41,14 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckCloakRanger
+  id: F14ClothingNeckCloakRanger
   name: NCR ranger cape
   description: Ranger cape made from what looks like and old poncho fitted with a star, stripes, and a bear. Most likely has a holster hidden underneath.
   components:
   - type: Sprite
     sprite: Nuclear14/Clothing/Neck/NCRrangercape.rsi
   - type: ToggleableClothing
-    clothingPrototype: N14ClothingHeadHatHoodRangerCloak
+    clothingPrototype: F14ClothingHeadHatHoodRangerCloak
     requiredSlot: neck
     slot: head
   - type: ContainerContainer
@@ -57,14 +57,14 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckCloakRangerPoncho
+  id: F14ClothingNeckCloakRangerPoncho
   name: ranger poncho
   description: A durable muslin poncho. Tough enough to bear the elements and serve as handy blanket.
   components:
   - type: Sprite
     sprite: Nuclear14/Clothing/Neck/NCRrangerponcho.rsi
   - type: ToggleableClothing
-    clothingPrototype: N14ClothingHeadHatHoodPonchoCloak
+    clothingPrototype: F14ClothingHeadHatHoodPonchoCloak
     requiredSlot: neck
     slot: head
   - type: ContainerContainer
@@ -73,7 +73,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckCloakTribal
+  id: F14ClothingNeckCloakTribal
   name: tribal cloak
   description: A handmade cloak, comfy and warm. This piece is used by the most wise tribals.
   components:
@@ -84,14 +84,14 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckCloakLeather
+  id: F14ClothingNeckCloakLeather
   name: leather cloak
   description: A handmade cloak, comfy and warm.
   components:
   - type: Sprite
     sprite: Nuclear14/Clothing/Neck/leathercloak.rsi
   - type: ToggleableClothing
-    clothingPrototype: N14ClothingHeadHatHoodLeatherCloak
+    clothingPrototype: F14ClothingHeadHatHoodLeatherCloak
     requiredSlot: neck
     slot: head
   - type: ContainerContainer
@@ -99,12 +99,12 @@
       toggleable-clothing: !type:ContainerSlot
   - type: Butcherable
     spawned:
-    - id: N14MaterialLeather1
+    - id: F14MaterialLeather1
       amount: 2
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckCloakYaoguai
+  id: F14ClothingNeckCloakYaoguai
   name: Yao Guai cloak
   description: A handmade cloak, comfy and warm. This piece comes from a dangerous Yao Guai.
   components:
@@ -112,12 +112,12 @@
     sprite: Nuclear14/Clothing/Neck/yaoguai.rsi
   - type: Butcherable
     spawned:
-    - id: N14MaterialYaoguaiHide
+    - id: F14MaterialYaoguaiHide
       amount: 1
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckCloakDarkCloak
+  id: F14ClothingNeckCloakDarkCloak
   name: dark cloak
   description: A dark tinted cloak.
   components:
@@ -126,14 +126,14 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckCloakGhillie
+  id: F14ClothingNeckCloakGhillie
   name: ghillie cloak
   description: A cloak of ghillie forest camo.
   components:
   - type: Sprite
     sprite: Nuclear14/Clothing/Neck/ghilliecloak.rsi
   - type: ToggleableClothing
-    clothingPrototype: N14ClothingHeadHatHoodGhillieCloak
+    clothingPrototype: F14ClothingHeadHatHoodGhillieCloak
     requiredSlot: neck
     slot: head
   - type: ContainerContainer
@@ -142,7 +142,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckShawl
+  id: F14ClothingNeckShawl
   name: shawl
   description: A shawl worn around the neck.
   components:
@@ -154,14 +154,14 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckTribalCloak
+  id: F14ClothingNeckTribalCloak
   name: tribal cloak
   description: A handmade cloak from the local tribe. It will keep you warm on a cold winter.
   components:
   - type: Sprite
     sprite: Nuclear14/Clothing/Neck/Tribal-Cloak.rsi
   - type: ToggleableClothing
-    clothingPrototype: N14ClothingHeadTribalCloakHood
+    clothingPrototype: F14ClothingHeadTribalCloakHood
     requiredSlot: neck
     slot: head
   - type: ContainerContainer
@@ -174,14 +174,14 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckTribalCloakBr
+  id: F14ClothingNeckTribalCloakBr
   name: tribal cloak
   description: A brown handmade cloak from the local tribe. It will keep you warm on a cold winter.
   components:
   - type: Sprite
     sprite: Nuclear14/Clothing/Neck/Tribal-Cloak-Br.rsi
   - type: ToggleableClothing
-    clothingPrototype: N14ClothingHeadTribalCloakHoodBr
+    clothingPrototype: F14ClothingHeadTribalCloakHoodBr
     requiredSlot: neck
     slot: head
   - type: ContainerContainer
@@ -194,7 +194,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: N14ClothingNeckTownGuardCloak
+  id: F14ClothingNeckTownGuardCloak
   name: old cloak
   description: A brown old cloak, which will keep you warm on a cold winter, probably.
   components:

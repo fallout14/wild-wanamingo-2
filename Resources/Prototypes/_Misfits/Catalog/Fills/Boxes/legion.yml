@@ -2,20 +2,20 @@
 
 - type: entity
   name: legion medical box
-  parent: N14BoxPlastic
-  id: MisfitsBoxPlasticFilledMilitaryLegion
+  parent: F14BoxPlastic
+  id: F14BoxPlasticFilledMilitaryLegion
   components:
     - type: StorageFill
       contents:
-        - id: N14HealingPowder    # common medical item (replaces stimpak)
+        - id: F14HealingPowder    # common medical item (replaces stimpak)
           prob: 0.7
           orGroup: RandomMed
-        - id: N14HealingPoultice  # uncommon tribal remedy (replaces antidote syringe)
+        - id: F14HealingPoultice  # uncommon tribal remedy (replaces antidote syringe)
           prob: 0.3
           orGroup: RandomMed
-        - id: N14CleanGauze10
+        - id: F14CleanGauze10
           amount: 1
-        - id: MisfitsCleansingPowder  #Misfits Fix: Legion doesn't use Rad-x, uses herbal remedies.
+        - id: F14CleansingPowder  #Misfits Fix: Legion doesn't use Rad-x, uses herbal remedies.
           amount: 1
         - id: Flare
           amount: 2

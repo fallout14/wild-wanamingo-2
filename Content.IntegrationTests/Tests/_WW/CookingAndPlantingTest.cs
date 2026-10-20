@@ -48,8 +48,8 @@ public sealed class CookingAndPlantingTest : GameTest
     requireHot: true
 ";
 
-    private const string RawSteak = "N14FoodMeatBrahmin";
-    private const string CookedSteak = "N14FoodMeatBrahminCooked";
+    private const string RawSteak = "F14FoodMeatBrahmin";
+    private const string CookedSteak = "F14FoodMeatBrahminCooked";
 
     [Test]
     public async Task HeaterCooksRawSteak()
@@ -125,7 +125,7 @@ public sealed class CookingAndPlantingTest : GameTest
             mapSys.CreateMap(out var map);
             var tray = entMan.SpawnEntity("HydroponicsTrayEmpty", new MapCoordinates(0, 0, map));
             var user = entMan.SpawnEntity("MobHuman", new MapCoordinates(1, 0, map));
-            var leaves = entMan.SpawnEntity("N14FloraProduceWildAgave", new MapCoordinates(1, 0, map));
+            var leaves = entMan.SpawnEntity("F14FloraProduceWildAgave", new MapCoordinates(1, 0, map));
             Assert.That(entMan.HasComponent<SeedComponent>(leaves), "Wild agave leaves should be plantable");
             stackSys.SetCount(leaves, 5);
 

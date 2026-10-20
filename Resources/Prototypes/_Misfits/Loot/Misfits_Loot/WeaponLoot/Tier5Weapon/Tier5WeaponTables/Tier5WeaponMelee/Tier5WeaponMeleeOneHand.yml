@@ -1,73 +1,73 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier5Weapon/Tier5WeaponTables/Tier5WeaponMelee/Tier5WeaponMeleeOneHand.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier5_MeleeBluntOneHanded
+  id: F14WeaponLootTier5MeleeBluntOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14BrokenPipe
+      id: F14BrokenPipe
 
     - !type:EntSelector
-      id: N14PoliceBaton
+      id: F14PoliceBaton
     - !type:EntSelector
-      id: N14TribalClub
+      id: F14TribalClub
     - !type:EntSelector
-      id: N14TrenchClub
+      id: F14TrenchClub
     - !type:EntSelector
-      id: N14PoliceBaton
+      id: F14PoliceBaton
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier5_MeleeSharpOneHanded
+  id: F14WeaponLootTier5MeleeSharpOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14ScrapMachete
+      id: F14ScrapMachete
     - !type:EntSelector
-      id: N14Machete
+      id: F14Machete
     - !type:EntSelector
-      id: N14TribalMachete
+      id: F14TribalMachete
 
     - !type:EntSelector
-      id: N14CeremonialSword
+      id: F14CeremonialSword
     - !type:EntSelector
-      id: N14ChineseSword
+      id: F14ChineseSword
     - !type:EntSelector
-      id: N14LongSword
+      id: F14LongSword
     - !type:EntSelector
-      id: N14TribalSword
+      id: F14TribalSword
     - !type:EntSelector
-      id: CorvaxGladius
+      id: F14Gladius
 
     - !type:EntSelector
-      id: N14Ripper
+      id: F14Ripper
 
     - !type:EntSelector
-      id: N14Hatchet
+      id: F14Hatchet
     - !type:EntSelector
-      id: N14TribalHatchet
+      id: F14TribalHatchet
     - !type:EntSelector
-      id: N14KitchenKnife
+      id: F14KitchenKnife
     - !type:EntSelector
-      id: N14TribalKnife
+      id: F14TribalKnife
     - !type:EntSelector
-      id: N14BrassKnife
+      id: F14BrassKnife
     - !type:EntSelector
-      id: N14ButchersCleaver
+      id: F14ButchersCleaver
     - !type:EntSelector
-      id: N14CombatKnife
+      id: F14CombatKnife
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier5_MeleeOtherOneHanded
+  id: F14WeaponLootTier5MeleeOtherOneHanded
   table: !type:GroupSelector
     children: []
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier5_Shield
+  id: F14WeaponLootTier5Shield
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: CorvaxLegionnaireShield
+      id: F14LegionnaireShield
     - !type:EntSelector
-      id: N14InsectShield
+      id: F14InsectShield
     - !type:EntSelector
       id: MakeshiftShield

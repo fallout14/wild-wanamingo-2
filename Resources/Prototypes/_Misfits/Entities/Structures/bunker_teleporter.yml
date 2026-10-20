@@ -1,15 +1,15 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Structures/bunker_teleporter.yml
 
 - type: entity
-  id: MisfitsBaseBunkerTeleporter
+  id: F14BaseBunkerTeleporter
   parent: BaseStructure
   abstract: true
   components:
   - type: InteractionOutline
 
 - type: entity
-  parent: MisfitsBaseBunkerTeleporter
-  id: MisfitsBunkerHatchTunnel
+  parent: F14BaseBunkerTeleporter
+  id: F14BunkerHatchTunnel
   name: bunker hatch
   description: This hatch leads to a maze of tunnels.
   components:
@@ -41,8 +41,8 @@
         hard: false
 
 - type: entity
-  parent: MisfitsBaseBunkerTeleporter
-  id: MisfitsBunkerTunnelDoor
+  parent: F14BaseBunkerTeleporter
+  id: F14BunkerTunnelDoor
   name: bunker tunnel door
   description: Leads to the maze of tunnels.
   components:

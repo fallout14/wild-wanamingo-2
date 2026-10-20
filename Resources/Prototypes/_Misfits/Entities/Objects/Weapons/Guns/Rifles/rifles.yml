@@ -2,8 +2,8 @@
 
 - type: entity
   name: makeshift auto rifle
-  parent: N14WeaponRifleBase
-  id: MisfitsWeaponAutoRifle556Legion
+  parent: F14WeaponRifleBase
+  id: F14WeaponAutoRifle556Legion
   description: A makeshift automatic rifle of legion origin, light and extremely cheap, chambered in 5.56mm
   components:
   - type: ContainerContainer  # spawn state
@@ -40,7 +40,7 @@
     angleDecay: 16
     fireRate: 3
     soundGunshot:
-      collection: N14ServiceGunshot
+      collection: F14ServiceGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -48,27 +48,27 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine556Rifle
+        startingItem: F14Magazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine556Rifle
+            - F14Magazine556Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge556Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge556Rifle
+            - F14Cartridge556Rifle
   - type: StaticPrice
     price: 20
 
 - type: entity
   name: M72 rifle
   parent: BaseItem
-  id: MisfitsWeaponGaussRifle
+  id: F14WeaponGaussRifle
   description: The M72 rifle is of German design. It uses an electromagnetic field to propel rounds at tremendous speed... and pierce almost any obstacle. Its range, accuracy and stopping power is almost unparalleled.
   components:
   - type: Sprite
@@ -100,18 +100,18 @@
     availableModes:
     - FullAuto
     soundGunshot:
-      collection: N14AutoShotgunGunshot
+      collection: F14AutoShotgunGunshot
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMagazine2mmECRifle
+        startingItem: F14Magazine2mmECRifle
         priority: 2
         whitelist:
           tags:
-          - MisfitsMagazine2mmECRifle
+          - F14Magazine2mmECRifle
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
   - type: ContainerContainer
@@ -129,14 +129,14 @@
 
 # #Misfits Add - Heavy Assault Rifle. A pre-war 5.56 automatic rifle issued to power
 # armored infantry. Ballistics and handling are a straight copy of the R-91 assault
-# rifle (N14WeaponRifle556R91); the only mechanical difference is the 80-round heavy
+# rifle (F14WeaponRifle556R91); the only mechanical difference is the 80-round heavy
 # magazine it feeds from. World sprite lives in a wider 48x32 icon RSI (same split-RSI
 # pattern as the service rifle and the M72), held/equipped art in the 32x32 RSI.
 
 - type: entity
   name: chinese assault rifle
-  parent: N14WeaponRifleBase
-  id: MisfitsWeaponRifle556Chinese
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle556Chinese
   description: An old foreign assault rifle with strange symbols on it, it is chambered in 5.56mm ammunition.
   components:
   - type: ContainerContainer  # spawn state
@@ -177,32 +177,32 @@
     angleDecay: 16
     fireRate: 4
     soundGunshot:
-      collection: N14ChineseRifleGunshot
+      collection: F14ChineseRifleGunshot
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine556Rifle
+        startingItem: F14Magazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine556Rifle
+            - F14Magazine556Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge556Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge556Rifle
+            - F14Cartridge556Rifle
   - type: StaticPrice
     price: 125
 
 - type: entity
   name: heavy assault rifle
-  parent: N14WeaponRifleBase
-  id: MisfitsWeaponRifle556HeavyAssault
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle556HeavyAssault
   description: An assault rifle chambered for 5.56 that was designed pre-war for power armored units. It's large and unwieldy, but boasts an impressive fire rate and magazine capacity.
   components:
   - type: ContainerContainer  # spawn state
@@ -240,32 +240,32 @@
     angleIncrease: 4
     angleDecay: 16
     soundGunshot:
-      collection: N14RifleR91Gunshot
+      collection: F14RifleR91Gunshot
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMagazineHeavy556Rifle
+        startingItem: F14MagazineHeavy556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MisfitsMagazineHeavy556Rifle
+            - F14MagazineHeavy556Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge556Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge556Rifle
+            - F14Cartridge556Rifle
   - type: StaticPrice
     price: 150
 
 - type: entity
   name: assault carbine
-  parent: N14WeaponRifleBase
-  id: MisfitsWeaponRifle5mmCarbine
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle5mmCarbine
   description: A sleek black compact assault rifle, uses 5mm ammo.
   components:
   - type: ContainerContainer  # spawn state
@@ -303,7 +303,7 @@
       disableEject: true
       whitelist:
         tags:
-        - N14RifleScope
+        - F14RifleScope
     muzzleSlot:
       name: Muzzle attachment
       locked: false
@@ -340,7 +340,7 @@
     angleIncrease: 4
     angleDecay: 16
     soundGunshot:
-      collection: N14CarbineGunshot
+      collection: F14CarbineGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -349,27 +349,27 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMagazineCarbine5mm
+        startingItem: F14MagazineCarbine5mm
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MisfitsMagazineCarbine5mm
+            - F14MagazineCarbine5mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol5
+        startingItem: F14CartridgePistol5
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol5
+            - F14CartridgePistol5
   - type: StaticPrice
     price: 100
 
 - type: entity
   name: marksman carbine
-  parent: N14WeaponRifleBase
-  id: MisfitsWeaponRifle556Marksman
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle556Marksman
   description: A heavy semiautomatic rifle with a scope, uses 5.56 ammo.
   components:
   - type: ContainerContainer  # spawn state
@@ -412,7 +412,7 @@
     angleIncrease: 4
     angleDecay: 16
     soundGunshot:
-      collection: N14MarksmanGunshot
+      collection: F14MarksmanGunshot
     fireRate: 4
     selectedMode: SemiAuto
     availableModes:
@@ -421,21 +421,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine556Rifle
+        startingItem: F14Magazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine556Rifle
-            - N14LongMagazine556Rifle
+            - F14Magazine556Rifle
+            - F14LongMagazine556Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge556Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge556Rifle
+            - F14Cartridge556Rifle
   - type: StaticPrice
     price: 125
   - type: Scope
@@ -449,8 +449,8 @@
 
 - type: entity
   name: skirmisher carbine
-  parent: N14WeaponRifleBase
-  id: MisfitsWeaponRifle10mmSkirmisher
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle10mmSkirmisher
   description: A compact pre-war M1 carbine with a fixed stock, rechambered for detachable 10mm magazines. A handy personal defense weapon for skirmishers.
   components:
   - type: ContainerContainer  # spawn state
@@ -491,7 +491,7 @@
     angleDecay: 16
     fireRate: 4
     soundGunshot:
-      collection: N14OldCarbineGunshot
+      collection: F14OldCarbineGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -499,21 +499,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazinePistol10mm
+        startingItem: F14MagazinePistol10mm
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14MagazineSMG10mm
-            - N14MagazinePistol10mm
+            - F14MagazineSMG10mm
+            - F14MagazinePistol10mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol10
+        startingItem: F14CartridgePistol10
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol10
+            - F14CartridgePistol10
   - type: FirearmAttachmentHost
     bayonetVisualOffset: 0.71875, 0.75
   - type: StaticPrice
@@ -521,8 +521,8 @@
 
 - type: entity
   name: FAL rifle
-  parent: N14WeaponRifleBase
-  id: MisfitsWeaponRifle308Fal
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle308Fal
   description: A pre-war battle rifle chambered in .308, strong and reliable. It was once called "the right arm of the free world", but there is not much left of the world to confirm it.
   components:
   - type: ContainerContainer  # spawn state
@@ -558,7 +558,7 @@
     angleIncrease: 6 # #Misfits Tweak - full-power .308 on full auto kicks hard
     angleDecay: 16
     soundGunshot:
-      collection: N14MarksmanGunshot
+      collection: F14MarksmanGunshot
     fireRate: 3.5
     selectedMode: FullAuto
     availableModes:
@@ -568,27 +568,27 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine308Rifle # #Misfits Change - rechambered to .308
+        startingItem: F14Magazine308Rifle # #Misfits Change - rechambered to .308
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine308Rifle
+            - F14Magazine308Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge308Rifle
+        startingItem: F14Cartridge308Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge308Rifle
+            - F14Cartridge308Rifle
   - type: StaticPrice
     price: 175
 
 - type: entity
   name: M14 rifle
-  parent: N14WeaponRifleBase
-  id: MisfitsWeaponRifle308M14
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle308M14
   description: A pre-war designated marksman rifle chambered in .308. Built to replace the M1 Garand, it was soon superseded by the R91 in general service, but it stayed on as a precise semi-automatic marksman's rifle.
   components:
   - type: ContainerContainer  # spawn state
@@ -620,7 +620,7 @@
       disableEject: true
       whitelist:
         tags:
-        - N14RifleScope
+        - F14RifleScope
     muzzleSlot:
       name: Muzzle attachment
       locked: false
@@ -654,7 +654,7 @@
     angleIncrease: 4
     angleDecay: 16
     soundGunshot:
-      collection: N14MarksmanGunshot
+      collection: F14MarksmanGunshot
     fireRate: 2.5
     selectedMode: SemiAuto
     availableModes:
@@ -663,20 +663,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine308Rifle # #Misfits Change - rechambered to .308
+        startingItem: F14Magazine308Rifle # #Misfits Change - rechambered to .308
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine308Rifle
+            - F14Magazine308Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge308Rifle
+        startingItem: F14Cartridge308Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge308Rifle
+            - F14Cartridge308Rifle
   - type: StaticPrice
     price: 175
   - type: GunDamageModifier
@@ -686,8 +686,8 @@
 
 - type: entity
   name: chinese marksman rifle
-  parent: N14WeaponRifleBase
-  id: MisfitsWeaponRifle9mmMarksmanChinese
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle9mmMarksmanChinese
   description: 'A pre-war Chinese suppressed marksman rifle in the mold of the VSS Vintorez. Fires a heavy subsonic 9mm load from a 24-round magazine: hits hard at close and medium range, but the rounds lose their punch quickly beyond that.'
   components:
   - type: ContainerContainer  # spawn state
@@ -708,7 +708,7 @@
     showMuzzleVisual: false
     muzzleSlot:
       name: Integral suppressor
-      startingItem: MisfitsFirearmSuppressor
+      startingItem: F14FirearmSuppressor
       locked: true
       insertOnInteract: false
       ejectOnInteract: false
@@ -740,7 +740,7 @@
     angleIncrease: 4
     angleDecay: 16
     soundGunshot:
-      collection: N14MarksmanGunshot
+      collection: F14MarksmanGunshot
     fireRate: 4 # #Misfits Tweak - was 5
     selectedMode: FullAuto
     availableModes:
@@ -750,20 +750,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMagazineRifle9mm
+        startingItem: F14MagazineRifle9mm
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MisfitsMagazineRifle9mm
+            - F14MagazineRifle9mm
       gun_chamber:
         name: Chamber
         startingItem: null
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol9
+            - F14CartridgePistol9
   - type: StaticPrice
     price: 175
   - type: Scope
@@ -781,8 +781,8 @@
 
 - type: entity
   name: Old Glory
-  parent: N14WeaponRifle308Battle
-  id: MisfitsWeaponRifleM1GarandOldGlory
+  parent: F14WeaponRifle308Battle
+  id: F14WeaponRifleM1GarandOldGlory
   description: An M1 Garand with Old Glory herself painted down the stock. "This Machine kills communists!" is scratched into the receiver. Don't let it out of your sight.
   components:
   - type: ContainerContainer  # spawn state
@@ -808,7 +808,7 @@
       path: /Audio/Nuclear14/Weapons/Guns/Rifles/N14WeaponM1Garand/garand_ping.ogg
   - type: Gun
     soundGunshot:
-      collection: MisfitsGarandGunshot
+      collection: F14GarandGunshot
       params:
         volume: -4
     minAngle: 20
@@ -837,8 +837,8 @@
 
 - type: entity
   name: Pawolski's Retribution
-  parent: N14WeaponRifle308Battle
-  id: MisfitsWeaponRifleM1GarandPawolskis
+  parent: F14WeaponRifle308Battle
+  id: F14WeaponRifleM1GarandPawolskis
   description: An NCR veteran's M1 Garand, engraved with the motto "I am your rifle, you are on guard duty." Named after the first NCR soldier to fall at Hoover Dam.
   components:
   - type: ContainerContainer  # spawn state
@@ -864,7 +864,7 @@
       path: /Audio/Nuclear14/Weapons/Guns/Rifles/N14WeaponM1Garand/garand_ping.ogg
   - type: Gun
     soundGunshot:
-      collection: MisfitsGarandGunshot
+      collection: F14GarandGunshot
       params:
         volume: -4
     minAngle: 20
@@ -893,8 +893,8 @@
 
 - type: entity
   name: Republic's Pride
-  parent: N14WeaponRifleBase
-  id: MisfitsWeaponRifleM1GarandRepublicsPride
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifleM1GarandRepublicsPride
   description: A well-tuned scoped M1C rifle crafted by a master gunsmith from the Gunrunners. Modified to accept standard 21-round magazines. Proudly issued to NCR Scout Captains. Chambered in .308 and fitted with a long-range optic.
   components:
   - type: ContainerContainer  # spawn state
@@ -915,20 +915,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine308Rifle
+        startingItem: F14Magazine308Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - N14Magazine308Rifle
+          - F14Magazine308Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge308Rifle
+        startingItem: F14Cartridge308Rifle
         priority: 1
         whitelist:
           tags:
-          - N14Cartridge308Rifle
+          - F14Cartridge308Rifle
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/hunting.rsi # #Misfits Tweak: hunting rifle RSI back-slot placeholder, same as base Garand
     quickEquip: false
@@ -953,7 +953,7 @@
     angleDecay: 18
     fireRate: 3
     soundGunshot:
-      collection: MisfitsGarandGunshot
+      collection: F14GarandGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -982,8 +982,8 @@
 
 - type: entity
   name: Republic's Demise
-  parent: MisfitsWeaponRifleM1GarandRepublicsPride
-  id: MisfitsWeaponRifleM1GarandRepublicsDemise
+  parent: F14WeaponRifleM1GarandRepublicsPride
+  id: F14WeaponRifleM1GarandRepublicsDemise
   description: A well-tuned scoped M1C rifle looted from a dead NCR lieutenant by the Legion. The NCR star on the stock has been crudely replaced with a Legion bull. Chambered in 7.62x51.
   components:
   - type: ContainerContainer  # spawn state
@@ -1039,7 +1039,7 @@
 - type: entity
   name: SVT-40
   parent: BaseWeaponSniper
-  id: MisfitsWeaponRifle308SVT40
+  id: F14WeaponRifle308SVT40
   description: An old hunting rifle taken from discovered stockpiles and refurbished in Legion workshops. The standard heavy rifle of the Legion, still rare. An SVT-40 rebuilt for .308 ammunition, semi-auto only, with a fixed internal 10-round magazine and a mount for an optional scope.
   components:
   - type: ItemSlots  # spawn state
@@ -1079,7 +1079,7 @@
       disableEject: true
       whitelist:
         tags:
-        - N14RifleScope
+        - F14RifleScope
     muzzleSlot:
       name: Muzzle attachment
       locked: false
@@ -1116,16 +1116,16 @@
     angleDecay: 16
     fireRate: 2.5 # #Misfits Tweak - DMR pace, was 3
     soundGunshot:
-      collection: MisfitsGarandGunshot
+      collection: F14GarandGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - N14Cartridge308Rifle
+      - F14Cartridge308Rifle
     capacity: 10
-    proto: N14Cartridge308Rifle
+    proto: F14Cartridge308Rifle
   - type: StaticPrice
     price: 300
   - type: GunDamageModifier
@@ -1138,8 +1138,8 @@
 
 - type: entity
   name: Infiltrator
-  parent: N14WeaponRifle556R91
-  id: MisfitsWeaponRifleInfiltrator
+  parent: F14WeaponRifle556R91
+  id: F14WeaponRifleInfiltrator
   description: A heavily modified R91 assault rifle with an integrated suppressor, a fixed scope and polymer furniture. It has no official designation; whoever built it just started calling it the Infiltrator.
   components:
   - type: ContainerContainer  # spawn state
@@ -1165,14 +1165,14 @@
     - FullAuto
     - SemiAuto
     soundGunshot:
-      collection: N14RifleR91Gunshot
+      collection: F14RifleR91Gunshot
   - type: StaticPrice
     price: 500
   - type: FirearmAttachmentHost
     showMuzzleVisual: false
     muzzleSlot:
       name: Integral suppressor
-      startingItem: MisfitsFirearmSuppressor
+      startingItem: F14FirearmSuppressor
       locked: true
       insertOnInteract: false
       ejectOnInteract: false

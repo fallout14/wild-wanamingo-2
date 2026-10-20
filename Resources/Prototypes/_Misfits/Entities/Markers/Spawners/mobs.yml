@@ -2,7 +2,7 @@
 
 - type: entity
   name: Sentry Bot Spawner
-  id: MisfitsSpawnMobSentryBot
+  id: F14SpawnMobSentryBot
   parent: MarkerBase
   components:
   - type: Sprite
@@ -13,13 +13,13 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobRobotSentryBot
+      - F14MobRobotSentryBot
 
 # Misfits Change /Add: Spawner for the ballistic (minigun) sentry bot variant.
 
 - type: entity
   name: Sentry Bot Spawner (Ballistic)
-  id: MisfitsSpawnMobSentryBotBallistic
+  id: F14SpawnMobSentryBotBallistic
   parent: MarkerBase
   components:
   - type: Sprite
@@ -30,11 +30,11 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobRobotSentryBotBallistic
+      - F14MobRobotSentryBotBallistic
 
 - type: entity
   name: Super Mutant Spawner
-  id: MisfitsSpawnMobSuperMutant
+  id: F14SpawnMobSuperMutant
   parent: MarkerBase
   components:
   - type: Sprite
@@ -45,11 +45,11 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobSuperMutantNPC
+      - F14MobSuperMutantNPC
 
 - type: entity
   name: Super Mutant Brute Spawner
-  id: MisfitsSpawnMobSuperMutantMelee
+  id: F14SpawnMobSuperMutantMelee
   parent: MarkerBase
   components:
   - type: Sprite
@@ -60,11 +60,11 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobSuperMutantMelee
+      - F14MobSuperMutantMelee
 
 - type: entity
   name: Super Mutant Hunter Spawner
-  id: MisfitsSpawnMobSuperMutantRanged
+  id: F14SpawnMobSuperMutantRanged
   parent: MarkerBase
   components:
   - type: Sprite
@@ -75,11 +75,11 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobSuperMutantRanged
+      - F14MobSuperMutantRanged
 
 - type: entity
   name: Nightkin Spawner
-  id: MisfitsSpawnMobNightkin
+  id: F14SpawnMobNightkin
   parent: MarkerBase
   components:
   - type: Sprite
@@ -90,11 +90,11 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobNightkin
+      - F14MobNightkin
 
 - type: entity
   name: Nightkin Veteran Spawner
-  id: MisfitsSpawnMobNightkinVeteran
+  id: F14SpawnMobNightkinVeteran
   parent: MarkerBase
   components:
   - type: Sprite
@@ -105,11 +105,11 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobNightkinVeteran
+      - F14MobNightkinVeteran
 
 - type: entity
   name: Nightkin Elite Spawner
-  id: MisfitsSpawnMobNightkinElite
+  id: F14SpawnMobNightkinElite
   parent: MarkerBase
   components:
   - type: Sprite
@@ -120,11 +120,11 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobNightkinElite
+      - F14MobNightkinElite
 
 - type: entity
   name: Super Mutant Suicider Spawner
-  id: MisfitsSpawnMobSuperMutantSuicider
+  id: F14SpawnMobSuperMutantSuicider
   parent: MarkerBase
   components:
   - type: Sprite
@@ -135,11 +135,11 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobSuperMutantSuicider
+      - F14MobSuperMutantSuicider
 
 - type: entity
   name: Super Mutant Armored Spawner
-  id: MisfitsSpawnMobSuperMutantArmored
+  id: F14SpawnMobSuperMutantArmored
   parent: MarkerBase
   components:
   - type: Sprite
@@ -150,11 +150,11 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobSuperMutantArmored
+      - F14MobSuperMutantArmored
 
 - type: entity
   name: Centaur Spawner
-  id: MisfitsSpawnMobCentaur
+  id: F14SpawnMobCentaur
   parent: MarkerBase
   components:
   - type: Sprite
@@ -165,5 +165,5 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MisfitsMobCentaur
-      - MisfitsMobSuperMutantArmored
+      - F14MobCentaur
+      - F14MobSuperMutantArmored

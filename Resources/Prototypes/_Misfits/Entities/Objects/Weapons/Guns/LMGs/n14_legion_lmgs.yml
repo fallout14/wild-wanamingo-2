@@ -3,8 +3,8 @@
 - type: entity
   name: M240B
   parent: BaseWeaponRifle
-  id: MisfitsWeaponUSHMG
-  # #Misfits Add - US M240B GPMG, clone of N14WeaponHMGcanadian with Legion crafting hook
+  id: F14WeaponUSHMG
+  # #Misfits Add - US M240B GPMG, clone of F14WeaponHMGcanadian with Legion crafting hook
   description: A reliable American general-purpose machine gun chambered in 7.62mm ammunition. Considered modern before the bombs, it now bears a brass bull on its handguard. Looted from national guard depots, it now serves legion.
   components:
   - type: Clothing
@@ -34,7 +34,7 @@
     angleDecay: 16
     fireRate: 8
     soundGunshot:
-      collection: N14AutoRifleGunshot
+      collection: F14AutoRifleGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -42,20 +42,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine762AmmoBelt
+        startingItem: F14Magazine762AmmoBelt
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine762Belt
+            - F14Magazine762Belt
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge762Rifle
+        startingItem: F14Cartridge762Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge762Rifle
+            - F14Cartridge762Rifle
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85

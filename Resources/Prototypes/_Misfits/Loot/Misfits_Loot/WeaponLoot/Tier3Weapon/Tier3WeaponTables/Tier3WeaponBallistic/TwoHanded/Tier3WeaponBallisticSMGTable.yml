@@ -1,48 +1,48 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3WeaponBallistic/TwoHanded/Tier3WeaponBallisticSMGTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_GunsBulletSMG
+  id: F14WeaponLootTier3GunsBulletSMG
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponSMG10mmPipe
+      id: F14WeaponSMG10mmPipe
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSMG12mmPipe
+      id: F14WeaponSMG12mmPipe
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponSMG45GreaseGun
+      id: F14WeaponSMG45GreaseGun
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponSMGPPSh41 #9mm
+      id: F14WeaponSMGPPSh41 #9mm
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSMG9mmCanadian
+      id: F14WeaponSMG9mmCanadian
       weight: 7
     - !type:EntSelector
-      id: N14WeaponSMG10mm
+      id: F14WeaponSMG10mm
       weight: 7
     - !type:EntSelector
-      id: N14WeaponSMG10mmChinese
+      id: F14WeaponSMG10mmChinese
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponSMG45Thompson
+      id: F14WeaponSMG45Thompson
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponSMG45GreaseGun #.45 acp
+      id: F14WeaponSMG45GreaseGun #.45 acp
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSMG12mmAdvanced
+      id: F14WeaponSMG12mmAdvanced
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSMG9mminfiltrator
+      id: F14WeaponSMG9mminfiltrator
       weight: 7
     - !type:EntSelector
-      id: N14WeaponSMG10mmSuppressed
+      id: F14WeaponSMG10mmSuppressed
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponSMGAmerican180
+      id: F14WeaponSMGAmerican180
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponSMG45Reising # #Misfits Add - M50 Reising
+      id: F14WeaponSMG45Reising # #Misfits Add - M50 Reising
       weight: 5

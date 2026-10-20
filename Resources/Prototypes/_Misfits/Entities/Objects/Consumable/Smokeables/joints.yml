@@ -2,14 +2,14 @@
 
 - type: entity
   parent: Joint
-  id: MisfitsJoint
+  id: F14Joint
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Smokeables/Cannabis/joint.rsi
     state: unlit-icon
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
     - Cigarette
     - Trash
   - type: Clothing
@@ -18,8 +18,8 @@
     equippedPrefix: unlit
 
 - type: entity
-  parent: MisfitsJoint
-  id: MisfitsJointSpent
+  parent: F14Joint
+  id: F14JointSpent
   suffix: spent
   components:
   - type: Sprite
@@ -28,13 +28,13 @@
     state: Burnt
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
     - Cigarette
     - Trash
     - Burnt
 
 - type: entity
-  id: MisfitsBlunt
+  id: F14Blunt
   parent: Blunt
   components:
   - type: Sprite
@@ -42,7 +42,7 @@
     state: unlit-icon
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
     - Cigarette
     - Trash
   - type: SpaceGarbage
@@ -52,8 +52,8 @@
     equippedPrefix: unlit
 
 - type: entity
-  parent: MisfitsBlunt
-  id: MisfitsBluntSpent
+  parent: F14Blunt
+  id: F14BluntSpent
   suffix: spent
   components:
   - type: Sprite
@@ -62,7 +62,7 @@
     state: Burnt
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
     - Cigarette
     - Trash
     - Burnt

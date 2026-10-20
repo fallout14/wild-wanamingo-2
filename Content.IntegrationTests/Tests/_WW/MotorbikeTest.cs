@@ -22,8 +22,8 @@ namespace Content.IntegrationTests.Tests._WW;
 [TestOf(typeof(MotorbikeSystem))]
 public sealed class MotorbikeTest : GameTest
 {
-    private static readonly EntProtoId Bike = "MisfitsVehicleBikeGreen";
-    private static readonly EntProtoId Key = "MisfitsVehicleKeyMotorbike";
+    private static readonly EntProtoId Bike = "F14VehicleBikeGreen";
+    private static readonly EntProtoId Key = "F14VehicleKeyMotorbike";
     private static readonly ProtoId<DamageTypePrototype> Blunt = "Blunt";
 
     [Test]

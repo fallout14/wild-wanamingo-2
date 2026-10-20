@@ -4,7 +4,7 @@
 - type: entity
   name: hunting rifle
   parent: BaseWeaponSniper
-  id: N14WeaponSniperHunting
+  id: F14WeaponSniperHunting
   description: A rugged bolt action rifle. Uses .308 ammo.
   components:
   - type: ItemSlots  # spawn state
@@ -33,7 +33,7 @@
       disableEject: true
       whitelist:
         tags:
-        - N14RifleScope
+        - F14RifleScope
     muzzleSlot:
       locked: true
   - type: ManualAction
@@ -55,13 +55,13 @@
     angleDecay: 16
     fireRate: 1.5
     soundGunshot:
-      collection: N14SniperHuntingGunshot
+      collection: F14SniperHuntingGunshot
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - N14Cartridge308Rifle
+      - F14Cartridge308Rifle
     capacity: 8
-    proto: N14Cartridge308Rifle
+    proto: F14Cartridge308Rifle
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4
@@ -83,7 +83,7 @@
 - type: entity
   name: lee enfield rifle
   parent: BaseWeaponSniper
-  id: N14WeaponSniperEnfield
+  id: F14WeaponSniperEnfield
   description: A classic bolt-action service rifle. Uses .303 British ammo.
   components:
   - type: ItemSlots  # spawn state
@@ -112,7 +112,7 @@
       disableEject: true
       whitelist:
         tags:
-        - N14RifleScope
+        - F14RifleScope
     opticVisualState: svt_scope
     opticVisualOffset: 0.125, 0.375
     muzzleSlot:
@@ -148,12 +148,12 @@
     angleDecay: 16
     fireRate: 1.5
     soundGunshot:
-      collection: N14SniperHuntingGunshot
+      collection: F14SniperHuntingGunshot
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - MisfitsCartridge303Rifle
-    proto: MisfitsCartridge303
+      - F14Cartridge303Rifle
+    proto: F14Cartridge303
   - type: StaticPrice
     price: 100
   # #Misfits Add — scope attachment slot on Lee Enfield
@@ -168,7 +168,7 @@
 - type: entity
   name: Anti-Materiel rifle
   parent: BaseWeaponRifle
-  id: N14WeaponSniper50AntiMateriel
+  id: F14WeaponSniper50AntiMateriel
   description: "An anti-materiel rifle with an ergonomic, sleek, skeletonized design. Simply looking at it can you tell it'll rip some limbs apart. Uses .50 anti-material ammo."
   components:
   - type: ManualAction
@@ -201,7 +201,7 @@
     angleDecay: 16
     fireRate: 0.9
     soundGunshot:
-      collection: N14AntiMaterielGunshot
+      collection: F14AntiMaterielGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -209,22 +209,22 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine50AMR
+        startingItem: F14Magazine50AMR
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine50AMR
-            - N14Magazine50AMRHEIAP
+            - F14Magazine50AMR
+            - F14Magazine50AMRHEIAP
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge50
+        startingItem: F14Cartridge50
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge50
-            - N14Cartridge50HEIAP
+            - F14Cartridge50
+            - F14Cartridge50HEIAP
   - type: Scope
     requireWielding: true
     zoomLevels:
@@ -257,7 +257,7 @@
 - type: entity
   name: .50 NCR rifle
   parent: BaseWeaponSniper
-  id: N14WeaponSniper50NCRRifle
+  id: F14WeaponSniper50NCRRifle
   description: An attempt by the NCR to mass-produce .50 ammo weapons for normal infantry, very cheap but still deals a lot of damage. Uses .50 anti-material ammo.
   components:
   - type: ManualAction
@@ -271,9 +271,9 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - N14Cartridge50
+      - F14Cartridge50
     capacity: 1
-    proto: N14Cartridge50
+    proto: F14Cartridge50
   - type: Wieldable
   - type: SpeedModifiedOnWield
     walkModifier: 0.75
@@ -289,7 +289,7 @@
     angleDecay: 16
     fireRate: 1.2
     soundGunshot:
-      collection: N14AntiMaterielGunshot
+      collection: F14AntiMaterielGunshot
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4
@@ -318,8 +318,8 @@
 
 - type: entity
   name: brush gun
-  parent: N14WeaponSniperHunting
-  id: N14WeaponSniper45-70BrushGun
+  parent: F14WeaponSniperHunting
+  id: F14WeaponSniper4570BrushGun
   description: A powerful lever action carbine. Uses .45-70 gov't ammo.
   components:
   - type: ItemSlots  # spawn state
@@ -344,14 +344,14 @@
   - type: Gun
     fireRate: 2.5 # Forge-Change
     soundGunshot:
-      collection: N14BrushGunGunshot
+      collection: F14BrushGunGunshot
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - N14Cartridge45-70
-      - N14SpeedLoaderInternal
+      - F14Cartridge4570
+      - F14SpeedLoaderInternal
     capacity: 10
-    proto: N14Cartridge45-70
+    proto: F14Cartridge4570
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4
@@ -367,8 +367,8 @@
 
 - type: entity
   name: pipe rifle
-  parent: N14WeaponSniperHunting
-  id: N14WeaponSniper308PipeRifle
+  parent: F14WeaponSniperHunting
+  id: F14WeaponSniper308PipeRifle
   description: A piece of metal pipe with a wooden stock, barely works as a gun and uses .308 ammo.
   components:
   - type: ItemSlots  # spawn state
@@ -394,12 +394,12 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - N14Cartridge308Rifle
+      - F14Cartridge308Rifle
     capacity: 1
-    proto: N14Cartridge308Rifle
+    proto: F14Cartridge308Rifle
   - type: Gun
     soundGunshot:
-      collection: N14PipeRifleGunshot
+      collection: F14PipeRifleGunshot
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4
@@ -413,7 +413,7 @@
 - type: entity
   name: varmint rifle
   parent: BaseWeaponRifle
-  id: N14WeaponSniper556VarmintRifle
+  id: F14WeaponSniper556VarmintRifle
   description: A pre-war low-power bolt action rifle, originally designed to hunt small animals. This gun also works fine on anything human-sized. Uses standard service rifle magazines (5.56mm).
   components:
   - type: ManualAction
@@ -424,7 +424,7 @@
   - type: Appearance
   - type: Tag
     tags:
-    - MisfitsVarmintRifle
+    - F14VarmintRifle
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/varmint.rsi
   - type: Sprite
@@ -460,26 +460,26 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      collection: N14SniperVarmintGunshot
+      collection: F14SniperVarmintGunshot
   - type: ChamberMagazineAmmoProvider
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine556Rifle
+        startingItem: F14Magazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - N14Magazine556Rifle
+          - F14Magazine556Rifle
       gun_chamber:
         name: Chamber
         startingItem: null
         priority: 1
         whitelist:
           tags:
-          - N14Cartridge556Rifle
+          - F14Cartridge556Rifle
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -492,8 +492,8 @@
 
 - type: entity
   name: stockless lever action carbine
-  parent: N14WeaponSniperHunting
-  id: N14WeaponSniper44LeverShortCarbine
+  parent: F14WeaponSniperHunting
+  id: F14WeaponSniper44LeverShortCarbine
   description: An extra short lever action carbine. Uses .44 ammo.
   components:
   - type: ItemSlots  # spawn state
@@ -531,11 +531,11 @@
     angleDecay: 16
     fireRate: 2
     soundGunshot:
-      collection: N14LeverCarbineGunshot
+      collection: F14LeverCarbineGunshot
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - N14Cartridge44Magnum
+      - F14Cartridge44Magnum
     capacity: 14
     proto: null
   - type: EyeCursorOffset
@@ -551,7 +551,7 @@
 - type: entity
   name: .50 pipe rifle
   parent: BaseWeaponSniper
-  id: N14WeaponSniper50Pipe
+  id: F14WeaponSniper50Pipe
   description: A bunch of scrap and pipe held together in a desperate attemp of countering power armor. Uses .50 anti-material ammo.
   components:
   - type: ManualAction
@@ -565,9 +565,9 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - N14Cartridge50
+      - F14Cartridge50
     capacity: 1
-    proto: N14Cartridge50
+    proto: F14Cartridge50
   - type: Wieldable
   - type: SpeedModifiedOnWield
     walkModifier: 0.75
@@ -583,7 +583,7 @@
     angleDecay: 16
     fireRate: 1.2
     soundGunshot:
-      collection: N14AntiMaterielGunshot
+      collection: F14AntiMaterielGunshot
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4
@@ -592,8 +592,8 @@
 
 - type: entity
   name: huntstick
-  parent: N14WeaponSniperHunting
-  id: N14WeaponSniper308Tribal
+  parent: F14WeaponSniperHunting
+  id: F14WeaponSniper308Tribal
   description: A tribal lever action rifle. Uses .308 ammo.
   components:
   - type: ItemSlots  # spawn state
@@ -618,7 +618,7 @@
   - type: Gun
     fireRate: 1.2
     soundGunshot:
-      collection: N14LeverRifleGunshot
+      collection: F14LeverRifleGunshot
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4
@@ -627,8 +627,8 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - N14SpeedLoaderInternal
-      - N14Cartridge308Rifle
+      - F14SpeedLoaderInternal
+      - F14Cartridge308Rifle
   - type: FirearmAttachmentHost
     opticVisualState: leveraction_scope
     opticVisualOffset: 0.21875, 0.46875
@@ -639,8 +639,8 @@
 
 - type: entity
   name: master huntstick
-  parent: N14WeaponSniperHunting
-  id: N14WeaponSniper308TribalUpgraded
+  parent: F14WeaponSniperHunting
+  id: F14WeaponSniper308TribalUpgraded
   description: A tribal decorated lever action rifle. Uses .308 ammo and has a fixed variable-power scope.
   components:
   - type: ItemSlots  # spawn state
@@ -687,7 +687,7 @@
   - type: Gun
     fireRate: 2
     soundGunshot:
-      collection: N14LeverRifleGunshot
+      collection: F14LeverRifleGunshot
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4
@@ -696,13 +696,13 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - N14SpeedLoaderInternal
-      - N14Cartridge308Rifle
+      - F14SpeedLoaderInternal
+      - F14Cartridge308Rifle
 
 - type: entity
   name: F1 sniper rifle
-  parent: N14WeaponSniperHunting
-  id: N14WeaponSniper308Canadian
+  parent: F14WeaponSniperHunting
+  id: F14WeaponSniper308Canadian
   description: A pre-war bolt action canadian sniper rifle. Uses .308 ammo.
   components:
   - type: ItemSlots  # spawn state
@@ -727,7 +727,7 @@
   - type: Gun
     fireRate: 2
     soundGunshot:
-      collection: N14SniperHuntingGunshot
+      collection: F14SniperHuntingGunshot
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4

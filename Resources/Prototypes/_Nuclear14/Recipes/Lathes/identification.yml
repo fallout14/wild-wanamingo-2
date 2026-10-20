@@ -2,84 +2,28 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Lathes/identification.yml
 
 - type: latheRecipe
-  id: N14HolotagMidwestScribe
-  result: N14IDBrotherhoodHolotag
+  id: F14HolotagMidwestScribe
+  result: F14IDBrotherhoodHolotag
   categories:
-  - N14Identification
+  - F14Identification
   completetime: 5
   materials:
     Steel: 100
 
 - type: latheRecipe
-  id: N14DogtagNCR
-  result: N14IDNCRDogtag
+  id: F14DogtagNCR
+  result: F14IDNCRDogtag
   categories:
-  - N14Identification
+  - F14Identification
   completetime: 5
   materials:
     Steel: 100
 
 - type: latheRecipe
-  id: N14DogtagNCRNCO
-  result: N14IDNCRDogtagNCO
+  id: F14DogtagNCRNCO
+  result: F14IDNCRDogtagNCO
   categories:
-  - N14Identification
-  completetime: 5
-  materials:
-    Steel: 100
-
-#MARK: Townsfolk
-
-- type: latheRecipe
-  id: N14PassportTownsfolk
-  result: N14IDPassportTownsfolk
-  categories:
-  - N14Identification
-  completetime: 5
-  materials:
-    N14Paper: 100
-
-- type: latheRecipe
-  id: N14PassportTownsfolkShopkeeper
-  result: N14IDShopkeeperTown
-  categories:
-  - N14Identification
-  completetime: 5
-  materials:
-    N14Paper: 100
-
-- type: latheRecipe
-  id: N14PassportTownsfolkMechanic
-  result: N14IDPassportTownMechanic
-  categories:
-  - N14Identification
-  completetime: 5
-  materials:
-    N14Paper: 100
-
-- type: latheRecipe
-  id: N14PassportTownsfolkDeputy
-  result: N14IDBadgeTownDeputy
-  categories:
-  - N14Identification
-  completetime: 5
-  materials:
-    Steel: 100
-
-- type: latheRecipe
-  id: N14PassportTownsfolkSheriff
-  result: N14IDBadgeTownSheriff
-  categories:
-  - N14Identification
-  completetime: 5
-  materials:
-    Steel: 100
-
-- type: latheRecipe
-  id: N14PassportTownsfolkMayor
-  result: N14IDBadgeTownMayor
-  categories:
-  - N14Identification
+  - F14Identification
   completetime: 5
   materials:
     Steel: 100
@@ -87,37 +31,93 @@
 #MARK: Townsfolk
 
 - type: latheRecipe
-  id: N14IDVault
-  result: N14IDCardVault
+  id: F14PassportTownsfolk
+  result: F14IDPassportTownsfolk
   categories:
-  - N14Identification
+  - F14Identification
+  completetime: 5
+  materials:
+    F14Paper: 100
+
+- type: latheRecipe
+  id: F14PassportTownsfolkShopkeeper
+  result: F14IDShopkeeperTown
+  categories:
+  - F14Identification
+  completetime: 5
+  materials:
+    F14Paper: 100
+
+- type: latheRecipe
+  id: F14PassportTownsfolkMechanic
+  result: F14IDPassportTownMechanic
+  categories:
+  - F14Identification
+  completetime: 5
+  materials:
+    F14Paper: 100
+
+- type: latheRecipe
+  id: F14PassportTownsfolkDeputy
+  result: F14IDBadgeTownDeputy
+  categories:
+  - F14Identification
   completetime: 5
   materials:
     Steel: 100
 
 - type: latheRecipe
-  id: N14IDVaultEngineer
-  result: N14IDCardVaultEngineer
+  id: F14PassportTownsfolkSheriff
+  result: F14IDBadgeTownSheriff
   categories:
-  - N14Identification
+  - F14Identification
   completetime: 5
   materials:
     Steel: 100
 
 - type: latheRecipe
-  id: N14IDVaultSecurity
-  result: N14IDCardVaultSecurity
+  id: F14PassportTownsfolkMayor
+  result: F14IDBadgeTownMayor
   categories:
-  - N14Identification
+  - F14Identification
+  completetime: 5
+  materials:
+    Steel: 100
+
+#MARK: Townsfolk
+
+- type: latheRecipe
+  id: F14IDVault
+  result: F14IDCardVault
+  categories:
+  - F14Identification
   completetime: 5
   materials:
     Steel: 100
 
 - type: latheRecipe
-  id: N14IDVaultDoctor
-  result: N14IDCardVaultDoctor
+  id: F14IDVaultEngineer
+  result: F14IDCardVaultEngineer
   categories:
-  - N14Identification
+  - F14Identification
+  completetime: 5
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: F14IDVaultSecurity
+  result: F14IDCardVaultSecurity
+  categories:
+  - F14Identification
+  completetime: 5
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: F14IDVaultDoctor
+  result: F14IDCardVaultDoctor
+  categories:
+  - F14Identification
   completetime: 5
   materials:
     Steel: 100

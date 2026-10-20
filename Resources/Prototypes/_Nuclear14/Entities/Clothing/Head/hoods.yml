@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: N14ClothingHeadHatHoodLeatherCloak
+  id: F14ClothingHeadHatHoodLeatherCloak
   name: leather cloak hood
   description: A hood of a leather cloak, it is made from the hide of brahmin leather.
   components:
@@ -17,7 +17,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: N14ClothingHeadHatHoodGhillieCloak
+  id: F14ClothingHeadHatHoodGhillieCloak
   name: ghillie cloak hood
   description: A hood of ghillie forest camo.
   components:
@@ -32,7 +32,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: N14ClothingHeadHatHoodRangerCloak
+  id: F14ClothingHeadHatHoodRangerCloak
   name: ranger cloak hood
   description: A hood of a Ranger cloak, it is made from salvaged wasteland material.
   components:
@@ -54,7 +54,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: N14ClothingHeadHatHoodPonchoCloak
+  id: F14ClothingHeadHatHoodPonchoCloak
   name: poncho cloak hood
   description: A hood of a poncho cloak, it is made from muslin cotton.
   components:
@@ -76,7 +76,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: N14ClothingHeadHatHoodScribeTabard
+  id: F14ClothingHeadHatHoodScribeTabard
   name: Scribe Tabard Hood
   description: A hood attached to the tabard, affixed with an optical lens.
   components:
@@ -95,7 +95,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: N14ClothingHeadHatHoodBlackRobe
+  id: F14ClothingHeadHatHoodBlackRobe
   name: black robe hood
   description: A black hood covering all the head.
   components:
@@ -110,8 +110,8 @@
     - FacialHair
 
 - type: entity
-  parent: N14ClothingHeadHatHoodBlackRobe
-  id: N14ClothingHeadHatHoodLeatherRobe
+  parent: F14ClothingHeadHatHoodBlackRobe
+  id: F14ClothingHeadHatHoodLeatherRobe
   name: Leather robe hood
   description: A leather hood covering all the head.
   components:
@@ -122,7 +122,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: N14ClothingHeadTribalCloakHood
+  id: F14ClothingHeadTribalCloakHood
   name: tribal cloak hood
   description: The hood for a tribal cloak.
   components:
@@ -136,7 +136,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: N14ClothingHeadTribalCloakHoodBr
+  id: F14ClothingHeadTribalCloakHoodBr
   name: tribal cloak hood
   description: The hood for a tribal cloak.
   components:

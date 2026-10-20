@@ -3,7 +3,7 @@
 
 - type: entity
   parent: DrinkBottleGlassBaseFull
-  id: N14DrinkBottleBaseFull50
+  id: F14DrinkBottleBaseFull50
   abstract: true
   components:
   - type: Solution
@@ -12,15 +12,15 @@
       maxVol: 50
 
 - type: entity
-  parent: N14DrinkBottleBaseFull50
-  id: N14DrinkBottleBaseEmpty50
+  parent: F14DrinkBottleBaseFull50
+  id: F14DrinkBottleBaseEmpty50
   abstract: true
   suffix: empty
 
 # Allows for caps and fill levels
 
 - type: entity
-  id: N14DrinkGlassVisualsOpenable
+  id: F14DrinkGlassVisualsOpenable
   abstract: true
   components:
   - type: Appearance
@@ -39,8 +39,8 @@
 # Empty Bottle
 
 - type: entity
-  parent: N14DrinkBottleBaseEmpty50
-  id: N14DrinkBottleMilkEmpty
+  parent: F14DrinkBottleBaseEmpty50
+  id: F14DrinkBottleMilkEmpty
   name: milk bottle
   description: Looks good at holding milky substances.
   components:
@@ -52,8 +52,8 @@
 # Basic Milk Bottle
 
 - type: entity
-  parent: [N14DrinkGlassVisualsOpenable, N14DrinkBottleBaseFull50]
-  id: N14DrinkMilkBrahmin
+  parent: [F14DrinkGlassVisualsOpenable, F14DrinkBottleBaseFull50]
+  id: F14DrinkMilkBrahmin
   name: brahmin milk
   description: A glass bottle of brahmin milk.
   components:
@@ -64,7 +64,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14MilkBrahmin
+      - ReagentId: F14MilkBrahmin
         Quantity: 50
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Drinks/milk.rsi
@@ -79,8 +79,8 @@
     fillBaseName: fill
 
 - type: entity
-  parent: N14DrinkMilkBrahmin
-  id: N14DrinkMilkBighorner
+  parent: F14DrinkMilkBrahmin
+  id: F14DrinkMilkBighorner
   name: bighorner milk
   description: A glass bottle of bighorner milk.
   components:
@@ -89,12 +89,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14MilkBighorner
+      - ReagentId: F14MilkBighorner
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkMilkBrahmin
-  id: N14DrinkMilkRadstag
+  parent: F14DrinkMilkBrahmin
+  id: F14DrinkMilkRadstag
   name: radstag milk
   description: A glass bottle of radstag milk.
   components:
@@ -103,12 +103,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14MilkRadstag
+      - ReagentId: F14MilkRadstag
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkBottleBaseEmpty50
-  id: N14DrinkCreamGlassEmpty
+  parent: F14DrinkBottleBaseEmpty50
+  id: F14DrinkCreamGlassEmpty
   name: cream glass
   description: Aw look, theres a little cow on the front.
   components:
@@ -118,8 +118,8 @@
 # Filled Cream Bottle
 
 - type: entity
-  parent: [N14DrinkGlassVisualsOpenable, N14DrinkBottleBaseFull50]
-  id: N14DrinkCreamGlass
+  parent: [F14DrinkGlassVisualsOpenable, F14DrinkBottleBaseFull50]
+  id: F14DrinkCreamGlass
   name: cream
   description: Aw look, theres a little cow on the front. Seems to be filled with heavy cream.
   components:
@@ -145,8 +145,8 @@
 # Soda
 
 - type: entity
-  parent: N14DrinkBottleBaseFull50
-  id: N14DrinkNukaColaBottleFull
+  parent: F14DrinkBottleBaseFull50
+  id: F14DrinkNukaColaBottleFull
   name: Nuka-Cola bottle
   description: A refreshing beverage that has a extremely sugary taste. Reminds you of vanilla and cinnamon.
   components:
@@ -161,21 +161,21 @@
     closeable: false
   - type: SpawnWhenOpened # Forge-Add
     prototypes:
-    - id: N14CurrencyCap
+    - id: F14CurrencyCap
       amount: 1
   - type: Solution
     id: drink
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14NukaCola
+      - ReagentId: F14NukaCola
         Quantity: 50
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola.rsi
 
 - type: entity
-  parent: N14DrinkBottleBaseFull50
-  id: N14DrinkIrradiatedNukaColaBottleFull
+  parent: F14DrinkBottleBaseFull50
+  id: F14DrinkIrradiatedNukaColaBottleFull
   name: irradiated Nuka-Cola bottle
   description: An unrefreshing beverage that has a extremely sugary taste. The aftertaste is bitter and burnt.
   components:
@@ -190,14 +190,14 @@
     closeable: false
   - type: SpawnWhenOpened # Forge-Add
     prototypes:
-    - id: N14CurrencyCap
+    - id: F14CurrencyCap
       amount: 1
   - type: Solution
     id: drink
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14IrradiatedNukaCola
+      - ReagentId: F14IrradiatedNukaCola
         Quantity: 50
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola.rsi
@@ -205,14 +205,14 @@
 # New Soda
 
 - type: entity
-  parent: N14DrinkBottleBaseEmpty50
-  id: N14DrinkNukaColaEmpty
+  parent: F14DrinkBottleBaseEmpty50
+  id: F14DrinkNukaColaEmpty
   name: Nuka-Cola bottle
   description: The leading cola since 2044.
   components:
   - type: Tag
     tags:
-    - MisfitsEmptyNukaBottle
+    - F14EmptyNukaBottle
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola_new.rsi
     state: empty
@@ -220,7 +220,7 @@
     closeable: false
   - type: SpawnWhenOpened # Forge-Add
     prototypes:
-    - id: N14CurrencyCap
+    - id: F14CurrencyCap
       amount: 1
   - type: Destructible
     thresholds:
@@ -234,7 +234,7 @@
       - !type:SpillBehavior { }
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14DrinkNukaColaBroken:
+          F14DrinkNukaColaBroken:
             min: 1
             max: 1
       - !type:DoActsBehavior
@@ -251,7 +251,7 @@
 
 - type: entity
   parent: BrokenBottle
-  id: N14DrinkNukaColaBroken
+  id: F14DrinkNukaColaBroken
   name: broken Nuka-Cola bottle
   description: The leading cola since 2044.
   components:
@@ -260,8 +260,8 @@
     state: broken
 
 - type: entity
-  parent: N14DrinkNukaColaEmpty # ohohohohoho
-  id: N14DrinkNukaCola
+  parent: F14DrinkNukaColaEmpty # ohohohohoho
+  id: F14DrinkNukaCola
   name: Nuka-Cola
   description: The leading cola since 2044.
   suffix: full
@@ -276,12 +276,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14NukaCola
+      - ReagentId: F14NukaCola
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkNukaCola
-  id: N14DrinkNukaColaCherry
+  parent: F14DrinkNukaCola
+  id: F14DrinkNukaColaCherry
   name: Nuka-Cola Cherry
   description: Classic Nuka-Cola taste, but with a twist! You can taste cherries and syrup! It tingles the tongue.
   components:
@@ -293,12 +293,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14NukaColaCherry
+      - ReagentId: F14NukaColaCherry
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkNukaCola
-  id: N14DrinkNukaColaGrape
+  parent: F14DrinkNukaCola
+  id: F14DrinkNukaColaGrape
   name: Nuka-Cola Grape
   description: Classic Nuka-Cola taste, but with a twist! You can taste grapes and syrup! It tingles the tongue.
   components:
@@ -310,12 +310,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14NukaColaGrape
+      - ReagentId: F14NukaColaGrape
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkNukaCola
-  id: N14DrinkNukaColaOrange
+  parent: F14DrinkNukaCola
+  id: F14DrinkNukaColaOrange
   name: Nuka-Cola Orange
   description: Classic Nuka-Cola taste, but with a twist! You can taste oranges and syrup! It tingles the tongue.
 
@@ -328,12 +328,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14NukaColaOrange
+      - ReagentId: F14NukaColaOrange
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkNukaCola
-  id: N14DrinkNukaColaYellow
+  parent: F14DrinkNukaCola
+  id: F14DrinkNukaColaYellow
   name: Nuka-Cola Yellow
   description: A rare flavor of Nuka-Cola from crazy naked Roshambo. You're unsure of what this tastes or smells like and you feel like you shouldn't be drinking this.
 
@@ -346,12 +346,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14NukaColaYellow
+      - ReagentId: F14NukaColaYellow
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkNukaCola
-  id: N14DrinkNukaColaQuantum
+  parent: F14DrinkNukaCola
+  id: F14DrinkNukaColaQuantum
   name: Nuka-Cola Quantum
   description: An explosion of sweetness and fruit! You can taste various berry flavours.. And a lot of sugar!
   components:
@@ -365,7 +365,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14NukaColaQuantum
+      - ReagentId: F14NukaColaQuantum
         Quantity: 50
   - type: PointLight
     color: "#8DB6FF"
@@ -373,8 +373,8 @@
     energy: 0.2
 
 - type: entity
-  parent: N14DrinkNukaCola
-  id: N14DrinkNukaColaQuartz
+  parent: F14DrinkNukaCola
+  id: F14DrinkNukaColaQuartz
   name: Nuka-Cola Quartz
   description: Minty, fresh, extra fizzy.. This soda is a blast to the mouth of freshness.
   components:
@@ -388,7 +388,7 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14NukaColaQuartz
+      - ReagentId: F14NukaColaQuartz
         Quantity: 50
   - type: PointLight
     color: "#B2FFFF"
@@ -396,8 +396,8 @@
     energy: 0.2
 
 - type: entity
-  parent: N14DrinkNukaCola
-  id: N14DrinkNukaColaVictory
+  parent: F14DrinkNukaCola
+  id: F14DrinkNukaColaVictory
   name: Nuka-Cola Victory
   description: A mixture of vanilla, cinnamon, dash of cream, and a bit of spice.. It tingles the tongue.
   components:
@@ -409,12 +409,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14NukaColaVictory
+      - ReagentId: F14NukaColaVictory
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkNukaCola
-  id: N14DrinkNukaColaWild
+  parent: F14DrinkNukaCola
+  id: F14DrinkNukaColaWild
   name: Nuka-Cola Wild
   description: Creamy, heavy, spicy, good ol' fashioned root beer-like taste.. It tingles the tongue.
   components:
@@ -426,12 +426,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14NukaColaWild
+      - ReagentId: F14NukaColaWild
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkNukaCola
-  id: N14DrinkVim
+  parent: F14DrinkNukaCola
+  id: F14DrinkVim
   name: Vim!
   description: Pure Maine spring water, extracts, and syrups. Tastes medicinal.
   components:
@@ -447,8 +447,8 @@
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkVim
-  id: N14DrinkVimCaptainsBlend
+  parent: F14DrinkVim
+  id: F14DrinkVimCaptainsBlend
   name: Vim! Captain's Blend
   description: A taste of Maine in a bottle. Fishy.
   components:
@@ -460,12 +460,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14VimCaptainsblend
+      - ReagentId: F14VimCaptainsblend
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkVim
-  id: N14DrinkVimRefresh
+  parent: F14DrinkVim
+  id: F14DrinkVimRefresh
   name: Vim! Refresh
   description: Apple and lime flavor with oddly no rads.
   components:
@@ -477,12 +477,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14VimRefresh
+      - ReagentId: F14VimRefresh
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkVim
-  id: N14DrinkVimQuartz
+  parent: F14DrinkVim
+  id: F14DrinkVimQuartz
   name: Vim! Quartz
   description: Bubblegum flavored Vim! with extra oomph.
   components:
@@ -494,17 +494,17 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14VimQuartz
+      - ReagentId: F14VimQuartz
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkBottleBaseFull50
-  id: N14DrinkGammagulpBeer
+  parent: F14DrinkBottleBaseFull50
+  id: F14DrinkGammagulpBeer
   name: Gamma Gulp Beer
   description: One of Gecko's biggest exports. A mild, radioactive alcohol.
   components:
   - type: Item
-    size: Small # #Misfits Change: match DrinkAleBottleFull size so 12 fit in N14CrateBreakPlain
+    size: Small # #Misfits Change: match DrinkAleBottleFull size so 12 fit in F14CrateBreakPlain
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Drinks/alcohol.rsi
     state: gammagulp
@@ -513,12 +513,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14GammaGulpBeer
+      - ReagentId: F14GammaGulpBeer
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkBottleBaseFull50
-  id: N14DrinkRoentgenRum
+  parent: F14DrinkBottleBaseFull50
+  id: F14DrinkRoentgenRum
   name: Roentgen Rum
   description: One of Gecko's biggest exports. A strong, tingly alcohol.
   components:
@@ -530,12 +530,12 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14RoentgenRum
+      - ReagentId: F14RoentgenRum
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkBottleBaseFull50
-  id: N14DrinkWhisky
+  parent: F14DrinkBottleBaseFull50
+  id: F14DrinkWhisky
   name: whiskey
   description: A bottle of standard looking whiskey
   components:
@@ -551,8 +551,8 @@
         Quantity: 50
 
 - type: entity
-  parent: N14DrinkBottleBaseFull50
-  id: N14DrinkWine
+  parent: F14DrinkBottleBaseFull50
+  id: F14DrinkWine
   name: wine
   description: Nappa Valley Wine.
   components:
@@ -564,5 +564,5 @@
     solution:
       maxVol: 50
       reagents:
-      - ReagentId: N14Wine
+      - ReagentId: F14Wine
         Quantity: 50

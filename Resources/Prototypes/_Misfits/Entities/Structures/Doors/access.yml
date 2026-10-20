@@ -1,41 +1,41 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Structures/Doors/access.yml
 
 - type: entity
-  parent: N14DoorBunkerVault
-  id: MisfitsDoorBunkerLockedVaultCargo
+  parent: F14DoorBunkerVault
+  id: F14DoorBunkerLockedVaultCargo
   suffix: Vault Cargo Specialist, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ MisfitsDoorElectronicsVaultCargo ]
+      board: [ F14DoorElectronicsVaultCargo ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorBunkerVault
-  id: MisfitsDoorBunkerLockedVaultCourier
+  parent: F14DoorBunkerVault
+  id: F14DoorBunkerLockedVaultCourier
   suffix: Vault Courier, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ MisfitsDoorElectronicsVaultCourier ]
+      board: [ F14DoorElectronicsVaultCourier ]
   - type: Wires
     layoutId: HighSec
 
 - type: entity
-  parent: N14DoorBunkerVault
-  id: MisfitsDoorBunkerLockedVaultSalvage
+  parent: F14DoorBunkerVault
+  id: F14DoorBunkerLockedVaultSalvage
   suffix: Vault Salvage Specialist, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ MisfitsDoorElectronicsVaultSalvage ]
+      board: [ F14DoorElectronicsVaultSalvage ]
   - type: Wires
     layoutId: HighSec
 
 #MARK: Caravan Company
 #- type: entity
-#  parent: N14DoorWoodSecure
+#  parent: F14DoorWoodSecure
 #  id: N14DoorWoodSecureLockedCaravanGuard
 #  suffix: Caravan Guard, Locked
 #  components:
@@ -45,8 +45,8 @@
 #    layoutId: AirlockService
 #
 #- type: entity
-#  parent: N14DoorCellMetal
-#  id: N14DoorCellMetalLockedCaravanGuard
+#  parent: F14DoorCellMetal
+#  id: F14DoorCellMetalLockedCaravanGuard
 #  suffix: Caravan Guard, Locked
 #  components:
 #  - type: AccessReader
@@ -55,7 +55,7 @@
 #    layoutId: AirlockService
 #
 #- type: entity
-#  parent: N14DoorWoodSecure
+#  parent: F14DoorWoodSecure
 #  id: N14DoorWoodSecureLockedCaravanTrader
 #  suffix: Caravan Trader, Locked
 #  components:
@@ -65,7 +65,7 @@
 #    layoutId: AirlockService
 #
 #- type: entity
-#  parent: N14DoorWoodSecure
+#  parent: F14DoorWoodSecure
 #  id: N14DoorWoodSecureLockedCaravanLeader
 #  suffix: Caravan Leader, Locked
 #  components:

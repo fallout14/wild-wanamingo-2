@@ -26,7 +26,7 @@ public sealed partial class NanoChatSystem : SharedNanoChatSystem
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private NameIdentifierSystem _name = default!;
 
-    private readonly ProtoId<NameIdentifierGroupPrototype> _nameIdentifierGroup = "DeltaVNanoChat"; // WW: ported IDs carry their origin prefix
+    private readonly ProtoId<NameIdentifierGroupPrototype> _nameIdentifierGroup = "F14NanoChat"; // WW: ported IDs carry their origin prefix
 
     public override void Initialize()
     {

@@ -1,15 +1,15 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Boxes/308.yml
 
 - type: entity
-  parent: N14BaseMagazineBox308
-  id: MisfitsMagazineBoxOver308
+  parent: F14BaseMagazineBox308
+  id: F14MagazineBoxOver308
   name: ammunition box (Overpressure .308)
   components:
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - MisfitsCartridgeOver308Rifle
-    proto: MisfitsCartridgeOver308Rifle
+      - F14CartridgeOver308Rifle
+    proto: F14CartridgeOver308Rifle
     capacity: 24
   - type: Sprite
     layers:

@@ -2,44 +2,44 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Lathes/materials.yml
 
 - type: latheRecipe
-  id: N14IngotLead
-  result: N14IngotLead1
+  id: F14IngotLead
+  result: F14IngotLead1
   applyMaterialDiscount: false
   completetime: 2
   materials:
-    N14RawLead: 100
+    F14RawLead: 100
     Coal: 50
 
 - type: latheRecipe
-  id: N14IngotCopper
-  result: N14IngotCopper1
+  id: F14IngotCopper
+  result: F14IngotCopper1
   completetime: 2
   materials:
-    N14RawCopper: 100
+    F14RawCopper: 100
     Coal: 50
 
 - type: latheRecipe
-  id: N14IngotGold
-  result: N14IngotGold1
+  id: F14IngotGold
+  result: F14IngotGold1
   completetime: 3
   materials:
-    N14RawGold: 100
+    F14RawGold: 100
     Coal: 50
 
 - type: latheRecipe
-  id: N14IngotIron
-  result: N14IngotIron1
+  id: F14IngotIron
+  result: F14IngotIron1
   completetime: 2
   materials:
-    N14RawIron: 100
+    F14RawIron: 100
     Coal: 50
 
 - type: latheRecipe
-  id: N14IngotSilver
-  result: N14IngotSilver1
+  id: F14IngotSilver
+  result: F14IngotSilver1
   completetime: 2
   materials:
-    N14RawSilver: 100
+    F14RawSilver: 100
     Coal: 50
 
 #Misfits Change /Add/: Let the forge mint Legion currency directly from the matching precious metal.
@@ -47,80 +47,80 @@
 #Misfits tweak: Reduced materials cost so it can be a used currency.
 
 - type: latheRecipe
-  id: N14IngotIronScrap
-  result: N14IngotIron1
+  id: F14IngotIronScrap
+  result: F14IngotIron1
   completetime: 2
   materials:
-    N14Scrap: 200
+    F14Scrap: 200
 
 - type: latheRecipe
-  id: N14SheetPlasticScrap
+  id: F14SheetPlasticScrap
   result: SheetPlastic1
   completetime: 2
   materials:
-    N14ScrapElectronic: 200
+    F14ScrapElectronic: 200
 
 - type: latheRecipe
-  id: N14IngotBrassScrap
-  result: N14IngotBrass1
+  id: F14IngotBrassScrap
+  result: F14IngotBrass1
   completetime: 2
   materials:
-    N14ScrapBrass: 200
+    F14ScrapBrass: 200
 
 - type: latheRecipe
-  id: N14IngotCopperScrap
-  result: N14IngotCopper1
+  id: F14IngotCopperScrap
+  result: F14IngotCopper1
   completetime: 2
   materials:
-    N14ScrapCopper: 200
+    F14ScrapCopper: 200
 
 - type: latheRecipe
-  id: N14IngotGoldScrap
-  result: N14IngotGold1
+  id: F14IngotGoldScrap
+  result: F14IngotGold1
   completetime: 2
   materials:
-    N14ScrapGold: 200
+    F14ScrapGold: 200
 
 - type: latheRecipe
-  id: N14IngotSteelScrap
+  id: F14IngotSteelScrap
   result: SheetSteel1
   completetime: 2
   materials:
     ScrapSteel: 200
 
 - type: latheRecipe
-  id: N14IngotLeadScrap
-  result: N14IngotLead1
+  id: F14IngotLeadScrap
+  result: F14IngotLead1
   completetime: 2
   materials:
-    N14ScrapLead: 200
+    F14ScrapLead: 200
 
 - type: latheRecipe
-  id: N14SulfurPowder
-  result: N14SulfurPowder1
+  id: F14SulfurPowder
+  result: F14SulfurPowder1
   applyMaterialDiscount: false
   completetime: 2
   materials:
-    N14RawSulfur: 100
+    F14RawSulfur: 100
 
 - type: latheRecipe
   id: Charcoal
-  result: N14Charcoal1
+  result: F14Charcoal1
   applyMaterialDiscount: false
   completetime: 2
   materials:
     Wood: 100
 
 - type: latheRecipe
-  id: N14SheetSteel
+  id: F14SheetSteel
   result: SheetSteel1
   completetime: 2
   materials:
-    N14RawIron: 100
+    F14RawIron: 100
     Coal: 50
 
 - type: latheRecipe
-  id: N14SheetGlass
+  id: F14SheetGlass
   result: SheetGlass1
   applyMaterialDiscount: false
   completetime: 2
@@ -128,16 +128,16 @@
     RawQuartz: 100
 
 - type: latheRecipe
-  id: N14MaterialLeather
-  result: N14MaterialLeather1
+  id: F14MaterialLeather
+  result: F14MaterialLeather1
   categories:
-  - N14Misc
+  - F14Misc
   completetime: 2
   materials:
-    N14RawLeather: 100
+    F14RawLeather: 100
 
 - type: latheRecipe
-  id: N14CharcoalToCoal
+  id: F14CharcoalToCoal
   result: Coal1
   applyMaterialDiscount: false
   completetime: 2

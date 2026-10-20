@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14FuelTankHandy
+  id: F14FuelTankHandy
   name: fuel tank
   description: A tank of Mr Handy fuel.
   components:
@@ -71,7 +71,7 @@
   - type: PacifismDangerousAttack
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     totalIntensity: 20 # ~ 4 tile radius
   - type: MeleeWeapon
     soundNoDamage:
@@ -96,8 +96,8 @@
     size: Huge
 
 - type: entity
-  parent: N14FuelTankHandy
-  id: N14FuelTankHandyRusty
+  parent: F14FuelTankHandy
+  id: F14FuelTankHandyRusty
   name: fuel tank
   suffix: rusty
   description: A rusty tank of Mr Handy fuel.

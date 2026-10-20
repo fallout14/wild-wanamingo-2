@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/tables.yml
 
 - type: constructionGraph
-  id: MisfitsWoodTableRecipes
+  id: F14WoodTableRecipes
   start: start
   graph:
     - node: start
@@ -133,7 +133,7 @@
               doAfter: 2
 
     - node: TableDeskSchoolDamaged
-      entity: N14TableDeskSchoolDamaged
+      entity: F14TableDeskSchoolDamaged
       edges:
         - to: start
           completed:
@@ -146,7 +146,7 @@
               doAfter: 5
 
     - node: TableWoodEnd
-      entity: N14TableWoodEnd
+      entity: F14TableWoodEnd
       edges:
         - to: start
           completed:
@@ -159,7 +159,7 @@
               doAfter: 5
 
     - node: TableWoodSquare
-      entity: N14TableWoodSquare
+      entity: F14TableWoodSquare
       edges:
         - to: TableWoodRound
           completed:
@@ -182,7 +182,7 @@
               doAfter: 5
 
     - node: TableWoodRound
-      entity: N14TableWoodRound
+      entity: F14TableWoodRound
       edges:
         - to: TableWoodSquare
           steps:
@@ -196,7 +196,7 @@
               doAfter: 2
   
     - node: TableWoodLow
-      entity: N14TableWoodLow
+      entity: F14TableWoodLow
       edges:
         - to: start
           completed:
@@ -209,7 +209,7 @@
               doAfter: 5
 
     - node: TableCasinoDice
-      entity: N14TableCasinoDice
+      entity: F14TableCasinoDice
       edges:
         - to: TableWoodRound
           completed:
@@ -231,7 +231,7 @@
               doAfter: 3
 
     - node: TableWoodStand
-      entity: N14TableWoodStand
+      entity: F14TableWoodStand
       edges:
         - to: start
           completed:
@@ -244,7 +244,7 @@
               doAfter: 5
 
     - node: TableWoodCabledrum
-      entity: N14TableWoodCabledrum
+      entity: F14TableWoodCabledrum
       edges:
         - to: start
           completed:
@@ -257,7 +257,7 @@
               doAfter: 5
 
     - node: TableDeskWood
-      entity: N14TableDeskWood
+      entity: F14TableDeskWood
       edges:
         - to: TableDeskWood2
           completed:
@@ -279,7 +279,7 @@
               doAfter: 5
 
     - node: TableDeskWood2
-      entity: N14TableDeskWood2
+      entity: F14TableDeskWood2
       edges:
         - to: TableDeskWood
           steps:
@@ -287,7 +287,7 @@
               doAfter: 5
 
     - node: TableDeskWoodSmall
-      entity: N14TableDeskWoodSmall
+      entity: F14TableDeskWoodSmall
       edges:
         - to: start
           completed:
@@ -300,7 +300,7 @@
               doAfter: 5
 
     - node: TableWoodenSquareWide
-      entity: N14TableWoodenSquareWide
+      entity: F14TableWoodenSquareWide
       edges:
         - to: TableCasinoPool
           steps:
@@ -319,7 +319,7 @@
               doAfter: 5
 
     - node: TableCasinoCards
-      entity: N14TableCasinoCards
+      entity: F14TableCasinoCards
       edges:
         - to: TableCasinoPool
           completed:
@@ -330,7 +330,7 @@
               doAfter: 3
 
     - node: TableCasinoPool
-      entity: N14TableCasinoPool
+      entity: F14TableCasinoPool
       edges:
         - to: TableCasinoCards
           completed:
@@ -350,7 +350,7 @@
               doAfter: 4
 
     - node: TableWoodenOvalWide
-      entity: N14TableWoodenOvalWide
+      entity: F14TableWoodenOvalWide
       edges:
         - to: start
           completed:
@@ -363,7 +363,7 @@
               doAfter: 5
 
     - node: TableCounterCraft
-      entity: N14TableCounterCraft
+      entity: F14TableCounterCraft
       edges:
         - to: start
           completed:
@@ -376,7 +376,7 @@
               doAfter: 5
 
     - node: TableCounterCraftBend
-      entity: N14TableCounterCraftBend
+      entity: F14TableCounterCraftBend
       edges:
         - to: start
           completed:
@@ -389,7 +389,7 @@
               doAfter: 5
 
     - node: TableCounterCraftIntersect
-      entity: N14TableCounterCraftIntersect
+      entity: F14TableCounterCraftIntersect
       edges:
         - to: start
           completed:
@@ -402,7 +402,7 @@
               doAfter: 5
 
     - node: TableCounterCraftCross
-      entity: N14TableCounterCraftCross
+      entity: F14TableCounterCraftCross
       edges:
         - to: start
           completed:

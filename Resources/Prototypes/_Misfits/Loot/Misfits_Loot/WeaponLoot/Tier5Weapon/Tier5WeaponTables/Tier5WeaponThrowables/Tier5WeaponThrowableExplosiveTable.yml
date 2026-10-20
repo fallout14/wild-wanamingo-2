@@ -1,33 +1,33 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier5Weapon/Tier5WeaponTables/Tier5WeaponThrowables/Tier5WeaponThrowableExplosiveTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier5_ThrowablesExplosive
+  id: F14WeaponLootTier5ThrowablesExplosive
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14TinNade
+      id: F14TinNade
     - !type:EntSelector
-      id: N14BaseballNade
+      id: F14BaseballNade
     - !type:EntSelector
-      id: N14KettleBomb
+      id: F14KettleBomb
 
     - !type:EntSelector
-      id: N14Dynamite
+      id: F14Dynamite
     - !type:EntSelector
-      id: N14NukaNade
+      id: F14NukaNade
     - !type:EntSelector
-      id: N14NukaCocktail
+      id: F14NukaCocktail
 
     - !type:EntSelector
-      id: N14FirecrackerFull
+      id: F14FirecrackerFull
     - !type:EntSelector
-      id: N14FirecrackerHalf
+      id: F14FirecrackerHalf
     - !type:EntSelector
-      id: N14Firecracker
+      id: F14Firecracker
 
     - !type:EntSelector
-      id: N14PlasmaGrenade
+      id: F14PlasmaGrenade
     - !type:EntSelector
-      id: N14CryoGrenade
+      id: F14CryoGrenade
     - !type:EntSelector
-      id: N14CryoGrenade
+      id: F14CryoGrenade

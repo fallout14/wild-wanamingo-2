@@ -2,15 +2,15 @@
 
 - type: entity
   parent: BaseFlatpack
-  id: MisfitsEightiesGreenMotorbikeFlatpack
+  id: F14EightiesGreenMotorbikeFlatpack
   name: green motorbike flatpack
   description: A flatpack used by the Eighties to unpack a green motorbike.
   components:
   - type: FlatpackExtras
     entities:
-    - MisfitsVehicleKeyMotorbike
+    - F14VehicleKeyMotorbike
   - type: Flatpack
-    entity: MisfitsVehicleBikeGreen
+    entity: F14VehicleBikeGreen
   - type: Sprite
     layers:
     - state: base
@@ -23,15 +23,15 @@
 
 - type: entity
   parent: BaseFlatpack
-  id: MisfitsEightiesFlameyMotorbikeFlatpack
+  id: F14EightiesFlameyMotorbikeFlatpack
   name: flamey motorbike flatpack
   description: A flatpack used by the Eighties to unpack a flamey motorbike.
   components:
   - type: FlatpackExtras
     entities:
-    - MisfitsVehicleKeyMotorbike
+    - F14VehicleKeyMotorbike
   - type: Flatpack
-    entity: MisfitsVehicleBikeFlamey
+    entity: F14VehicleBikeFlamey
   - type: Sprite
     layers:
     - state: base
@@ -44,15 +44,15 @@
 
 - type: entity
   parent: BaseFlatpack
-  id: MisfitsEightiesRustyMotorbikeFlatpack
+  id: F14EightiesRustyMotorbikeFlatpack
   name: rusty motorbike flatpack
   description: A flatpack used by the Eighties to unpack a rusty motorbike.
   components:
   - type: FlatpackExtras
     entities:
-    - MisfitsVehicleKeyMotorbike
+    - F14VehicleKeyMotorbike
   - type: Flatpack
-    entity: MisfitsVehicleBikeRustLight
+    entity: F14VehicleBikeRustLight
   - type: Sprite
     layers:
     - state: base
@@ -65,15 +65,15 @@
 
 - type: entity
   parent: BaseFlatpack
-  id: MisfitsEightiesScramblerMotorbikeFlatpack
+  id: F14EightiesScramblerMotorbikeFlatpack
   name: scrambler motorbike flatpack
   description: A flatpack used by the Eighties to unpack a scrambler motorbike.
   components:
   - type: FlatpackExtras
     entities:
-    - MisfitsVehicleKeyMotorbike
+    - F14VehicleKeyMotorbike
   - type: Flatpack
-    entity: MisfitsVehicleBikeScrambler
+    entity: F14VehicleBikeScrambler
   - type: Sprite
     layers:
     - state: base
@@ -86,15 +86,15 @@
 
 - type: entity
   parent: BaseFlatpack
-  id: MisfitsEightiesClassicMotorbikeFlatpack
+  id: F14EightiesClassicMotorbikeFlatpack
   name: classic motorbike flatpack
   description: A flatpack used by the Eighties to unpack a classic motorbike.
   components:
   - type: FlatpackExtras
     entities:
-    - MisfitsVehicleKeyMotorbike
+    - F14VehicleKeyMotorbike
   - type: Flatpack
-    entity: MisfitsVehicleBikeClassic
+    entity: F14VehicleBikeClassic
   - type: Sprite
     layers:
     - state: base

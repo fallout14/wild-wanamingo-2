@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Structures/Furniture/barricades.yml
 
 - type: entity
-  parent: N14BarricadeSandbagSingle # Corvax-Change
-  id: MisfitsBarricadeConcreteBarrier
+  parent: F14BarricadeSandbagSingle # Corvax-Change
+  id: F14BarricadeConcreteBarrier
   name: concrete barricade
   description: A concrete fortification barrier for stopping traffic.
   components:
@@ -10,7 +10,7 @@
     sprite: Nuclear14/Structures/Decoration/barriers.rsi
     state: concrete_barrier
   - type: Construction
-    graph: MisfitsBarricadeConcrete
+    graph: F14BarricadeConcrete
     node: Concrete
   - type: Damageable
     damageModifierSet: Metallic
@@ -38,10 +38,10 @@
           collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14Scrap1:
+          F14Scrap1:
             min: 1
             max: 3
-          MisfitsMaterialCement1:
+          F14MaterialCement1:
             min: 1
             max: 2
       - !type:DoActsBehavior

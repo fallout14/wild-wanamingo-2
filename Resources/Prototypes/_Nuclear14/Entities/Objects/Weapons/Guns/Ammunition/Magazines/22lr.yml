@@ -2,19 +2,19 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/22lr.yml
 
 - type: entity
-  id: N14BaseMagazine22Pistol
+  id: F14BaseMagazine22Pistol
   name: pistol magazine (.22lr)
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - N14MagazinePistol22lr
+      - F14MagazinePistol22lr
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14CartridgePistol22
+        - F14CartridgePistol22
     capacity: 18
   - type: ContainerContainer
     containers:
@@ -34,9 +34,9 @@
   - type: Appearance
 
 - type: entity
-  id: N14MagazinePistol22lr
+  id: F14MagazinePistol22lr
   name: pistol magazine (.22lr)
-  parent: N14BaseMagazine22Pistol
+  parent: F14BaseMagazine22Pistol
   components:
   - type: BallisticAmmoProvider
-    proto: N14CartridgePistol22
+    proto: F14CartridgePistol22

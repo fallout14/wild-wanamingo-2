@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClothingBackpackDuffel
-  id: N14ClothingBackpackDuffel
+  id: F14ClothingBackpackDuffel
   name: duffel bag
   description: A large duffel bag for holding extra things.
   components:
@@ -12,8 +12,8 @@
     state: icon
 
 - type: entity
-  parent: N14ClothingBackpackDuffel
-  id: N14ClothingBackpackDuffelSalvage
+  parent: F14ClothingBackpackDuffel
+  id: F14ClothingBackpackDuffelSalvage
   name: salvage duffel bag
   description: A large duffel bag for holding extra exotic treasures.
   components:
@@ -21,8 +21,8 @@
       sprite: Clothing/Back/Duffels/salvage.rsi
 
 - type: entity
-  parent: N14ClothingBackpackDuffel
-  id: N14ClothingBackpackDuffelMilitary
+  parent: F14ClothingBackpackDuffel
+  id: F14ClothingBackpackDuffelMilitary
   name: military duffel bag
   description: A large duffel bag for holding heavy equipment.
   components:
@@ -30,8 +30,8 @@
     sprite: Clothing/Back/Duffels/syndicate.rsi
 
 - type: entity
-  parent: N14ClothingBackpackDuffelMilitary
-  id: N14ClothingBackpackDuffelMilitaryMedical
+  parent: F14ClothingBackpackDuffelMilitary
+  id: F14ClothingBackpackDuffelMilitaryMedical
   name: military medical duffel bag
   description: A large duffel bag for holding medical equipment.
   components:

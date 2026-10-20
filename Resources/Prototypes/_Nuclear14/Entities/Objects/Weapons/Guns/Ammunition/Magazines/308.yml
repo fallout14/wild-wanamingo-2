@@ -2,20 +2,20 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/308.yml
 
 - type: entity
-  id: N14BaseMagazine308Rifle
+  id: F14BaseMagazine308Rifle
   name: "magazine (308.)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - N14Magazine308Rifle
+      - F14Magazine308Rifle
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14Cartridge308Rifle
-    proto: N14Cartridge308Rifle
+        - F14Cartridge308Rifle
+    proto: F14Cartridge308Rifle
     capacity: 21
   - type: ContainerContainer
     containers:
@@ -35,23 +35,23 @@
   - type: Appearance
 
 - type: entity
-  id: N14Magazine308Rifle
+  id: F14Magazine308Rifle
   name: "magazine (.308)"
-  parent: N14BaseMagazine308Rifle
+  parent: F14BaseMagazine308Rifle
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge308Rifle
+    proto: F14Cartridge308Rifle
 
 - type: entity
-  id: N14Magazine308RifleLong
+  id: F14Magazine308RifleLong
   name: "long magazine (.308)"
-  parent: N14BaseMagazine308Rifle
+  parent: F14BaseMagazine308Rifle
   components:
   - type: Tag
     tags:
-      - N14Magazine308RifleLong
+      - F14Magazine308RifleLong
   - type: BallisticAmmoProvider
-    proto: N14Cartridge308Rifle
+    proto: F14Cartridge308Rifle
     capacity: 40
   - type: Sprite
     netsync: false
@@ -63,16 +63,16 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: N14ClipMagazine308Rifle
+  id: F14ClipMagazine308Rifle
   name: "clip (.308)"
   description: A 8-round clip for .308 rifles.
-  parent: N14BaseMagazine308Rifle
+  parent: F14BaseMagazine308Rifle
   components:
   - type: Tag
     tags:
-      - N14Clip308Rifle
+      - F14Clip308Rifle
   - type: BallisticAmmoProvider
-    proto: N14Cartridge308Rifle
+    proto: F14Cartridge308Rifle
     capacity: 8
   - type: Sprite
     netsync: false
@@ -83,20 +83,20 @@
     - 0,0,0,0
 
 - type: entity
-  id: N14Magazine308M60Box
+  id: F14Magazine308M60Box
   name: "M60 Box (.308)"
-  parent: N14BaseMagazine308Rifle
+  parent: F14BaseMagazine308Rifle
   components:
   - type: Tag
     tags:
-      - N14Magazine308M60Box
+      - F14Magazine308M60Box
   - type: Item # Forge-Change
     size: Normal
     shape:
     - 0,0,1,1
     - 0,1,0,1
   - type: BallisticAmmoProvider
-    proto: N14Cartridge308Rifle
+    proto: F14Cartridge308Rifle
     capacity: 50
   - type: Sprite
     netsync: false
@@ -119,7 +119,7 @@
 #    tags:
 #      - N14GarandEnbloc308
 #  - type: BallisticAmmoProvider
-#    proto: N14Cartridge308Rifle
+#    proto: F14Cartridge308Rifle
 #    capacity: 8
 #  - type: Sprite
 #    netsync: false

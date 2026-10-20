@@ -4,7 +4,7 @@
 - type: entity
   name: minigun
   parent: BaseItem
-  id: N14BaseWeaponMinigun
+  id: F14BaseWeaponMinigun
   abstract: true
   components:
   - type: Sprite
@@ -45,7 +45,7 @@
     availableModes:
       - FullAuto
     soundGunshot:
-      collection: N14MinigunGunshot
+      collection: F14MinigunGunshot
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
@@ -53,20 +53,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazineMinigun5mm
+        startingItem: F14MagazineMinigun5mm
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14MagazineMinigun5mm
+            - F14MagazineMinigun5mm
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol5
+        startingItem: F14CartridgePistol5
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol5
+            - F14CartridgePistol5
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -101,8 +101,8 @@
 
 - type: entity
   name: minigun
-  parent: N14BaseWeaponMinigun
-  id: N14WeaponMinigun
+  parent: F14BaseWeaponMinigun
+  id: F14WeaponMinigun
   description: An extremely heavy minigun with 3 barrels, it uses 5mm ammo. # TODO: Need to create projectiles, magazines and boxes for 5.56.
   components:
   - type: MinigunToggle
@@ -123,8 +123,8 @@
 
 - type: entity
   name: avenger minigun
-  parent: N14BaseWeaponMinigun
-  id: N14WeaponMinigunAvenger
+  parent: F14BaseWeaponMinigun
+  id: F14WeaponMinigunAvenger
   description: An extremely heavy advanced minigun with multiple barrels, it uses 5mm ammo. # TODO: Need to create projectiles, magazines and boxes for 5.56.
   components:
   - type: MinigunToggle

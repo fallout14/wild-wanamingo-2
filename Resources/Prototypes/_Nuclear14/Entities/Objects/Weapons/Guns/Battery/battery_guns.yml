@@ -2,12 +2,12 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Battery/battery_guns.yml
 
 - type: entity
-  id: N14BaseWeaponPowerCell
+  id: F14BaseWeaponPowerCell
   parent: BaseItem
   abstract: true
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: Sprite
   - type: Item
@@ -30,12 +30,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellRed
+        startingItem: F14MicrofusionCellRed
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: Appearance
   - type: StaticPrice
     price: 25
@@ -45,12 +45,12 @@
   # - type: Craftable  # #Misfits Remove: Stalker14 crafting system
 
 - type: entity
-  id: N14BaseWeaponPowerCellSmall
-  parent: N14BaseWeaponPowerCell
+  id: F14BaseWeaponPowerCellSmall
+  parent: F14BaseWeaponPowerCell
   abstract: true
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/taser.rsi
@@ -71,12 +71,12 @@
     angleDecay: 4
 
 - type: entity
-  id: N14BaseWeaponPowerCellMedium
-  parent: N14BaseWeaponPowerCell
+  id: F14BaseWeaponPowerCellMedium
+  parent: F14BaseWeaponPowerCell
   abstract: true
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: Item
     size: Large
@@ -90,12 +90,12 @@
 
 - type: entity
   name: AEP-7 laser pistol
-  parent: N14BaseWeaponPowerCellSmall
-  id: N14WeaponLaserPistol
+  parent: F14BaseWeaponPowerCellSmall
+  id: F14WeaponLaserPistol
   description: A basic energy-based laser gun that fires concentrated beams of light.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: Tag
     tags:
@@ -118,12 +118,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14PowerCellSmall
+        startingItem: F14PowerCellSmall
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - N14PowerCellSmall
+            - F14PowerCellSmall
   - type: Item
     size: Small
     shape:
@@ -132,7 +132,7 @@
   - type: Gun
     fireRate: 2
     soundGunshot:
-      collection: N14LaserPistolGunshot
+      collection: F14LaserPistolGunshot
   - type: EyeCursorOffset
     maxOffset: 2
     pvsIncrease: 0.2
@@ -141,12 +141,12 @@
 
 - type: entity
   name: makeshift laser revolver
-  parent: N14BaseWeaponPowerCellSmall
-  id: N14WeaponLaserRevolver
+  parent: F14BaseWeaponPowerCellSmall
+  id: F14WeaponLaserRevolver
   description: A crude makeshift energy revolver cobbled together from scrap parts. Fires a red laser beam — inaccurate but functional.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Battery/laser_revolver.rsi
@@ -166,12 +166,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14PowerCellSmall
+        startingItem: F14PowerCellSmall
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - N14PowerCellSmall
+            - F14PowerCellSmall
   - type: Item
     size: Small
     shape:
@@ -180,7 +180,7 @@
   - type: Gun
     fireRate: 2.0
     soundGunshot:
-      collection: N14LaserPistolGunshot
+      collection: F14LaserPistolGunshot
   - type: EyeCursorOffset
     maxOffset: 2
     pvsIncrease: 0.2
@@ -189,12 +189,12 @@
 
 - type: entity
   name: plasma pistol
-  parent: N14BaseWeaponPowerCellSmall
-  id: N14WeaponPlasmaPistol
+  parent: F14BaseWeaponPowerCellSmall
+  id: F14WeaponPlasmaPistol
   description: A highly advanced plasma pistol.
   components:
   - type: BatteryAmmoProvider
-    proto: N14BulletPlasma
+    proto: F14BulletPlasma
     fireCost: 33.3
   - type: Tag
     tags:
@@ -213,19 +213,19 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14PowerCellSmall # #Misfits Change - plasma weapons run on standard cells
+        startingItem: F14PowerCellSmall # #Misfits Change - plasma weapons run on standard cells
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - N14PowerCellSmall
+            - F14PowerCellSmall
   - type: MagazineVisuals
     magState: mag
     steps: 5
     zeroVisible: true
   - type: Gun
     soundGunshot:
-      collection: N14PlasmaPistolGunshot
+      collection: F14PlasmaPistolGunshot
     fireRate: 1
   - type: EyeCursorOffset
     maxOffset: 2
@@ -235,12 +235,12 @@
 
 - type: entity
   name: plasma defender
-  parent: N14BaseWeaponPowerCellSmall
-  id: N14WeaponPlasmaDefender
+  parent: F14BaseWeaponPowerCellSmall
+  id: F14WeaponPlasmaDefender
   description: A highly advanced plasma pistol with an upgraded rate of fire.
   components:
   - type: BatteryAmmoProvider
-    proto: N14BulletPlasma
+    proto: F14BulletPlasma
     fireCost: 33.3
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Battery/plasma_pistol.rsi
@@ -256,19 +256,19 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14PowerCellSmall # #Misfits Change - plasma weapons run on standard cells
+        startingItem: F14PowerCellSmall # #Misfits Change - plasma weapons run on standard cells
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - N14PowerCellSmall
+            - F14PowerCellSmall
   - type: MagazineVisuals
     magState: mag
     steps: 5
     zeroVisible: true
   - type: Gun
     soundGunshot:
-      collection: N14PlasmaDefenderGunshot
+      collection: F14PlasmaDefenderGunshot
     fireRate: 1.5
   - type: EyeCursorOffset
     maxOffset: 2
@@ -279,7 +279,7 @@
 - type: entity
   name: recharger rifle
   parent: BaseWeaponBattery
-  id: N14WeaponLaserRifleRecharger
+  id: F14WeaponLaserRifleRecharger
   description: The first model for a self-charging laser rifle, its low energy consumption and advanced internal battery lets this gun last for centuries without recharging.
   components:
   - type: Wieldable
@@ -304,7 +304,7 @@
     angleIncrease: 4 # Corvax-Change
     angleDecay: 16 # Corvax-Change
     soundGunshot:
-      collection: N14RechargerRifleGunshot
+      collection: F14RechargerRifleGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -320,7 +320,7 @@
 - type: entity
   name: recharger pistol
   parent: BaseWeaponBatterySmall
-  id: N14WeaponLaserPistolRecharger
+  id: F14WeaponLaserPistolRecharger
   description: The upgraded version of the recharger rifle, compact but maintaining the same power, its low energy consumption and advanced internal battery makes this gun last for centuries without recharging.
   components:
   - type: Sprite
@@ -335,7 +335,7 @@
     sprite: Nuclear14/Objects/Weapons/Guns/Battery/recharger_pistol.rsi
   - type: Gun
     soundGunshot:
-      collection: N14RechargerPistolGunshot
+      collection: F14RechargerPistolGunshot
   - type: BatteryAmmoProvider
     proto: RedLaser
     fireCost: 50
@@ -357,12 +357,12 @@
 
 - type: entity
   name: AER-9 auto laser rifle
-  parent: N14BaseWeaponPowerCellMedium
-  id: N14WeaponLaserRifleAuto
+  parent: F14BaseWeaponPowerCellMedium
+  id: F14WeaponLaserRifleAuto
   description: A jury-rigged AER-9 with a rotating barrel assembly for full-auto fire. Fires a red laser beam — inaccurate but devastating in volume.
   components:
   - type: BatteryAmmoProvider
-    proto: N14AER9AutoLaser
+    proto: F14AER9AutoLaser
     fireCost: 50
   - type: Wieldable
   - type: GunWieldBonus
@@ -390,16 +390,16 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellRed
+        startingItem: F14MicrofusionCellRed
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: Gun
     fireRate: 5.0
     soundGunshot:
-      collection: N14LaserAutoRifleGunshot
+      collection: F14LaserAutoRifleGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -407,12 +407,12 @@
 
 - type: entity
   name: automatic plasma rifle
-  parent: N14BaseWeaponPowerCellMedium
-  id: N14WeaponPlasmaRifleAuto
+  parent: F14BaseWeaponPowerCellMedium
+  id: F14WeaponPlasmaRifleAuto
   description: A highly advanced automatic plasma rifle in pristine condition.
   components:
   - type: BatteryAmmoProvider
-    proto: N14BulletPlasma
+    proto: F14BulletPlasma
     fireCost: 66.65
   - type: Wieldable
   - type: GunWieldBonus
@@ -439,12 +439,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
+        startingItem: F14MicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: MagazineVisuals
     magState: mag
     steps: 3
@@ -452,7 +452,7 @@
   - type: Gun
     fireRate: 3.5
     soundGunshot:
-      collection: N14PlasmaAutoRifleGunshot
+      collection: F14PlasmaAutoRifleGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -465,12 +465,12 @@
 
 - type: entity
   name: prototype AER-14 laser rifle
-  parent: N14BaseWeaponPowerCellMedium
-  id: N14WeaponLaserRiflePrototypeAER14
+  parent: F14BaseWeaponPowerCellMedium
+  id: F14WeaponLaserRiflePrototypeAER14
   description: A cutting-edge pre-war prototype laser rifle with experimental focusing optics. Its weapon profile produces a distinctive blue beam with high damage output.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserBlue
+    proto: F14MFLaserBlue
     fireCost: 50
   - type: Wieldable
   - type: GunWieldBonus
@@ -498,16 +498,16 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellRed
+        startingItem: F14MicrofusionCellRed
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: Gun
     fireRate: 2.75
     soundGunshot:
-      collection: N14LaserAutoRifleGunshot
+      collection: F14LaserAutoRifleGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -515,12 +515,12 @@
 
 - type: entity
   name: AER-9
-  parent: N14BaseWeaponPowerCellMedium
-  id: N14WeaponLaserRifle
+  parent: F14BaseWeaponPowerCellMedium
+  id: F14WeaponLaserRifle
   description: A sturdy pre-war laser rifle. Fires a standard red laser beam — reliable, well-understood technology that remains the backbone of energy weapon armories.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: Wieldable
   - type: GunWieldBonus
@@ -548,16 +548,16 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellRed
+        startingItem: F14MicrofusionCellRed
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: Gun
     fireRate: 3.5
     soundGunshot:
-      collection: N14LaserAutoRifleGunshot
+      collection: F14LaserAutoRifleGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -565,12 +565,12 @@
 
 - type: entity
   name: crude laser rifle
-  parent: N14WeaponLaserRifle
-  id: N14WeaponLaserRifleCrude
+  parent: F14WeaponLaserRifle
+  id: F14WeaponLaserRifleCrude
   description: A crude laser rifle, a cheap imitation of the pre-war AER-9. Fires a red laser beam — inaccurate and prone to overheating.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: Wieldable
   - type: GunWieldBonus
@@ -594,16 +594,16 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellRed
+        startingItem: F14MicrofusionCellRed
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: Gun
     fireRate: 2
     soundGunshot:
-      collection: N14LaserAutoRifleGunshot
+      collection: F14LaserAutoRifleGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -612,12 +612,12 @@
 
 - type: entity
   name: makeshift laser rifle
-  parent: N14BaseWeaponPowerCellMedium
-  id: N14WeaponLaserRifleMakeshift
+  parent: F14BaseWeaponPowerCellMedium
+  id: F14WeaponLaserRifleMakeshift
   description: A makeshift laser rifle cobbled from scrap. Fires a red laser beam — unreliable but gets the job done.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: Wieldable
   - type: GunWieldBonus
@@ -645,16 +645,16 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellRed
+        startingItem: F14MicrofusionCellRed
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: Gun
     fireRate: 3
     soundGunshot:
-      collection: N14LaserAutoRifleGunshot
+      collection: F14LaserAutoRifleGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -666,12 +666,12 @@
 
 - type: entity
   name: plasma rifle
-  parent: N14BaseWeaponPowerCellMedium
-  id: N14WeaponPlasmaRifle
+  parent: F14BaseWeaponPowerCellMedium
+  id: F14WeaponPlasmaRifle
   description: An advanced plasma rifle in almost pristine condition.
   components:
   - type: BatteryAmmoProvider
-    proto: N14BulletPlasma
+    proto: F14BulletPlasma
     fireCost: 66.65
   - type: Wieldable
   - type: GunWieldBonus
@@ -698,12 +698,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
+        startingItem: F14MicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: MagazineVisuals
     magState: mag
     steps: 3
@@ -711,7 +711,7 @@
   - type: Gun
     fireRate: 2
     soundGunshot:
-      collection: N14PlasmaAutoRifleGunshot
+      collection: F14PlasmaAutoRifleGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -724,12 +724,12 @@
 
 - type: entity
   name: crude plasma rifle
-  parent: N14WeaponPlasmaRifle
-  id: N14WeaponPlasmaRifleCrude
+  parent: F14WeaponPlasmaRifle
+  id: F14WeaponPlasmaRifleCrude
   description: A cheap knock-off of a much more advanced plasma rifle.
   components:
   - type: BatteryAmmoProvider
-    proto: N14BulletPlasma
+    proto: F14BulletPlasma
     fireCost: 66.65
   - type: Wieldable
   - type: GunWieldBonus
@@ -756,16 +756,16 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
+        startingItem: F14MicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: Gun
     fireRate: 1.5
     soundGunshot:
-      collection: N14PlasmaAutoRifleGunshot
+      collection: F14PlasmaAutoRifleGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -775,12 +775,12 @@
 
 - type: entity
   name: urban plasma rifle
-  parent: N14BaseWeaponPowerCellMedium
-  id: N14WeaponPlasmaRifleUrban
+  parent: F14BaseWeaponPowerCellMedium
+  id: F14WeaponPlasmaRifleUrban
   description: A mass-produced pre-war plasma rifle designed for close quarters combat in urban environments.
   components:
   - type: BatteryAmmoProvider
-    proto: N14BulletPlasma
+    proto: F14BulletPlasma
     fireCost: 66.65
   - type: Wieldable
   - type: GunWieldBonus
@@ -807,12 +807,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
+        startingItem: F14MicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: MagazineVisuals
     magState: mag
     steps: 3
@@ -820,7 +820,7 @@
   - type: Gun
     fireRate: 2.5
     soundGunshot:
-      collection: N14PlasmaAutoRifleGunshot
+      collection: F14PlasmaAutoRifleGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -833,8 +833,8 @@
 
 - type: entity
   name: wattz 2000 laser rifle
-  parent: N14BaseWeaponPowerCellMedium
-  id: N14WeaponLaserRifleWattz2000
+  parent: F14BaseWeaponPowerCellMedium
+  id: F14WeaponLaserRifleWattz2000
   description: Wattz 2000 Laser Rifle. Precision focusing optics produce a wide yellow beam with heavy damage per shot. Slower rate of fire but each hit packs a serious punch at the cost of higher cell drain.
   components:
   - type: BatteryAmmoProvider
@@ -866,16 +866,16 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMicrofusionCellRed
+        startingItem: F14MicrofusionCellRed
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - MisfitsMicrofusionCell
+            - F14MicrofusionCell
   - type: Gun
     fireRate: 1.5
     soundGunshot:
-      collection: N14WattzGunshot
+      collection: F14WattzGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -888,12 +888,12 @@
 
 - type: entity
   name: plasma caster
-  parent: N14BaseWeaponPowerCellMedium
-  id: N14WeaponPlasmaCaster
+  parent: F14BaseWeaponPowerCellMedium
+  id: F14WeaponPlasmaCaster
   description: A massive plasma gun with a pretty sharp barrel, this gun is fed with plasma shells.
   components:
   - type: BatteryAmmoProvider
-    proto: N14BulletPlasma
+    proto: F14BulletPlasma
     fireCost: 100
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Battery/plasma_caster.rsi
@@ -919,12 +919,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14PlasmaShell
+        startingItem: F14PlasmaShell
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - N14PlasmaShell
+            - F14PlasmaShell
   - type: Gun
     minAngle: 2
     maxAngle: 12
@@ -932,7 +932,7 @@
     angleDecay: 12
     fireRate: 2
     soundGunshot:
-      collection: N14PlasmaCasterGunshot
+      collection: F14PlasmaCasterGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -950,12 +950,12 @@
 
 - type: entity
   name: laser gatling gun
-  parent: N14BaseWeaponPowerCellMedium
-  id: N14WeaponLaserGatling
+  parent: F14BaseWeaponPowerCellMedium
+  id: F14WeaponLaserGatling
   description: A minigun, but laser — for those who prefer ash piles to perforated corpses. Spews a torrent of red laser bolts downrange at eight rounds per second. Requires a fusion core to operate.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Battery/laser_gatling.rsi
@@ -996,12 +996,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14FusionCore # #Misfits Change - consolidated to single generic fusion core
+        startingItem: F14FusionCore # #Misfits Change - consolidated to single generic fusion core
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - N14FusionCore # #Misfits Change - Gatling now only accepts fusion cores, not standard MFCs
+            - F14FusionCore # #Misfits Change - Gatling now only accepts fusion cores, not standard MFCs
   - type: MinigunToggle
     ActivatedFireRate: 8
     InactiveWeaponFireRate: 1
@@ -1012,7 +1012,7 @@
     angleDecay: 12
     fireRate: 8
     soundGunshot:
-      collection: N14LaserGatlingGunshot
+      collection: F14LaserGatlingGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto

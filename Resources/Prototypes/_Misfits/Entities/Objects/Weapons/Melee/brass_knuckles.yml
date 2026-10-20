@@ -2,7 +2,7 @@
 
 - type: entity
   parent: ClothingHandsBase
-  id: MisfitsMeleeHandsBrassKnuckle
+  id: F14MeleeHandsBrassKnuckle
   name: brass knuckle
   description: A Hardened knuckle grip that is actually made out of steel. They protect your hand, and do more damage, in unarmed combat.
   components:
@@ -29,7 +29,7 @@
 
 - type: entity
   parent: ClothingHandsBase
-  id: MisfitsMeleeHandsSpikedBrassKnuckle
+  id: F14MeleeHandsSpikedBrassKnuckle
   name: spiked brass knuckle
   description: A spiked variant of a brass knuckle, seems more lethal.
   components:
@@ -55,8 +55,8 @@
     damage: 10
 
 - type: entity
-  parent: MisfitsMeleeHandsSpikedBrassKnuckle
-  id: MisfitsMeleeHandsSpikedBrassKnuckleSpecial
+  parent: F14MeleeHandsSpikedBrassKnuckle
+  id: F14MeleeHandsSpikedBrassKnuckleSpecial
   name: logan
   description: A spiked variant of a brass knuckle, seems more lethal.
   components:
@@ -79,7 +79,7 @@
 
 - type: entity
   parent: ClothingHandsBase
-  id: MisfitsMeleeHandsGoldenKnuckle
+  id: F14MeleeHandsGoldenKnuckle
   name: golden knuckle
   description: A Hardened knuckle grip that is actually made out of gold. They protect your hand, and do more damage, in unarmed combat.
   components:
@@ -107,8 +107,8 @@
     damage: 10
 
 - type: entity
-  parent: MisfitsMeleeHandsGoldenKnuckle
-  id: MisfitsMeleeHandsGoldenKnuckleSpecial
+  parent: F14MeleeHandsGoldenKnuckle
+  id: F14MeleeHandsGoldenKnuckleSpecial
   name: love and hate
   description: golden knuckles with the words (Love and Hate) engraved on them.
   components:

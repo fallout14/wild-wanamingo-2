@@ -3,7 +3,7 @@
 
 - type: entity
   name: bench
-  id: SimpleStationBenchBaseMiddle
+  id: F14BenchBaseMiddle
   suffix: Middle
   abstract: true
   parent: SeatBase
@@ -21,31 +21,31 @@
 
 - type: entity
   name: sofa
-  id: SimpleStationBenchSofaMiddle
-  parent: SimpleStationBenchBaseMiddle
+  id: F14BenchSofaMiddle
+  parent: F14BenchBaseMiddle
   components:
   - type: Sprite
     sprite: Misfits/Legacy/SimpleStation14/Structures/Furniture/Benches/sofa.rsi
 
 - type: entity
-  id: SimpleStationBenchSofaLeft
+  id: F14BenchSofaLeft
   suffix: Left
-  parent: SimpleStationBenchSofaMiddle
+  parent: F14BenchSofaMiddle
   components:
   - type: Sprite
     state: left
 
 - type: entity
-  id: SimpleStationBenchSofaRight
+  id: F14BenchSofaRight
   suffix: Right
-  parent: SimpleStationBenchSofaMiddle
+  parent: F14BenchSofaMiddle
   components:
   - type: Sprite
     state: right
 
 - type: entity
   name: sofa
-  id: SimpleStationBenchSofaCorner
+  id: F14BenchSofaCorner
   suffix: Corner
 #  parent: BenchSofaMiddle
   placement:
@@ -80,31 +80,31 @@
 
 - type: entity
   name: grey sofa
-  id: SimpleStationBenchSofaCorpMiddle
-  parent: SimpleStationBenchBaseMiddle
+  id: F14BenchSofaCorpMiddle
+  parent: F14BenchBaseMiddle
   components:
   - type: Sprite
     sprite: Misfits/Legacy/SimpleStation14/Structures/Furniture/Benches/sofa_corp.rsi
 
 - type: entity
-  id: SimpleStationBenchSofaCorpLeft
+  id: F14BenchSofaCorpLeft
   suffix: Left
-  parent: SimpleStationBenchSofaCorpMiddle
+  parent: F14BenchSofaCorpMiddle
   components:
   - type: Sprite
     state: left
 
 - type: entity
-  id: SimpleStationBenchSofaCorpRight
+  id: F14BenchSofaCorpRight
   suffix: Right
-  parent: SimpleStationBenchSofaCorpMiddle
+  parent: F14BenchSofaCorpMiddle
   components:
   - type: Sprite
     state: right
 
 - type: entity
   name: grey sofa
-  id: SimpleStationBenchSofaCorpCorner
+  id: F14BenchSofaCorpCorner
   suffix: Corner
 #  parent: BenchSofaCorpMiddle
   placement:

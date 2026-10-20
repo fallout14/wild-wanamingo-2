@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14RollingPin
+  id: F14RollingPin
   name: rolling pin
   description: A versatile tool that can be used to prepare bread or squish radroaches.
   components:
@@ -24,7 +24,7 @@
       types:
         Blunt: 10
     soundHit:
-      collection: N14SmallSwing
+      collection: F14SmallSwing
   - type: Tool
     qualities:
     - Rolling #N14TODO: change to N14Rolling when pizza.yml situation is solved

@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Markers/Spawners/latejoin.yml
 
 - type: entity
-  id: N14LatejoinMarkerBase
+  id: F14LatejoinMarkerBase
   abstract: true
   description: right click > enter, to leave the round.
   placement:
@@ -26,8 +26,8 @@
 
 - type: entity
   name: latejoin spawn point
-  parent: N14LatejoinMarkerBase
-  id: N14SpawnPointLatejoin
+  parent: F14LatejoinMarkerBase
+  id: F14SpawnPointLatejoin
   suffix: Wastelander
   components:
   - type: SpawnPoint

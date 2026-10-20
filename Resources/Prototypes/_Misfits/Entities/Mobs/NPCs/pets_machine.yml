@@ -2,13 +2,13 @@
 
 - type: entity
   name: OSI Eyebot
-  id: MisfitsMobPetEyebotOSI
-  parent: N14MobPetEyebot
+  id: F14MobPetEyebotOSI
+  parent: F14MobPetEyebot
   description: A professionally maintained Eyebot assigned to the NCR Office of Science and Industry. Its laser is kept calibrated for field research.
   components:
   - type: NpcFactionMember
     factions:
-    - N14NCR
+    - F14NCR
   - type: GhostRole
     name: ghost-role-information-misfits-pet-eyebot-osi-name
     description: ghost-role-information-misfits-pet-eyebot-osi-description
@@ -16,4 +16,4 @@
     makeSentient: false
     allowMovement: true
   - type: GhostRoleJob
-    job: MisfitsOSIEyebot
+    job: F14OSIEyebot

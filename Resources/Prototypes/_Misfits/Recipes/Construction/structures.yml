@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Recipes/Construction/structures.yml
 
 - type: construction
-  id: MisfitsWindowSlanted # Forge-Change
-  graph: N14WindowPane
+  id: F14WindowSlanted # Forge-Change
+  graph: F14WindowPane
   startNode: start
   targetNode: N14WindowSlanted
   category: construction-category-structures
@@ -15,8 +15,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: MisfitsWallAdobe
-  graph: MisfitsAdobeWall
+  id: F14WallAdobe
+  graph: F14AdobeWall
   startNode: start
   targetNode: AdobeWall
   category: construction-category-structures

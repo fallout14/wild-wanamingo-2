@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/Projectiles/grenade.yml
 
 - type: entity
-  id: MisfitsPelletClusterDefensive
+  id: F14PelletClusterDefensive
   name: defensive grenade fragment
   categories: [ HideSpawnMenu ]
   parent: PelletClusterLethal
@@ -14,7 +14,7 @@
 # weaker and shorter-lived than the fragments from a military frag grenade.
 
 - type: entity
-  id: MisfitsPelletTinFragment
+  id: F14PelletTinFragment
   name: tin grenade fragment
   categories: [ HideSpawnMenu ]
   parent: PelletClusterLethal

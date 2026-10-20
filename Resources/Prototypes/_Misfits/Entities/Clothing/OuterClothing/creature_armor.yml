@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/OuterClothing/creature_armor.yml
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsClothingOuterDeathclawCloak
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterDeathclawCloak
   name: deathclaw cloak
   description: A cloak fashioned from deathclaw hide, treated and cured by a skilled wasteland craftsman. Heavy and uncomfortable, but undeniably impressive. Pair with the matching hood for full coverage.
   components:
@@ -23,8 +23,8 @@
     damageCoefficient: 0.62
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsClothingOuterRazorclawArmour
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterRazorclawArmour
   name: razorclaw armour
   description: Armor fashioned from the hide of a particularly large and vicious deathclaw specimen — the kind that other deathclaws stepped around. Heavier than the standard cloak, with natural plate-like scales left intact.
   components:
@@ -47,8 +47,8 @@
     damageCoefficient: 0.52
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsClothingOuterRavenCloak
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterRavenCloak
   name: raven cloak
   description: A cloak assembled from hundreds of iridescent black feathers. Offers minimal protection but is disturbingly silent to move in. Favoured by wasteland scavengers who prefer not to be noticed at all.
   components:

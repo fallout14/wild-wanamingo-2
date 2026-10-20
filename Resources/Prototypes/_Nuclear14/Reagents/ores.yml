@@ -2,24 +2,24 @@
 # Resources/Prototypes/_Nuclear14/Reagents/ores.yml
 
 - type: material
-  id: N14RawLead
-  stackEntity: N14LeadOre1
+  id: F14RawLead
+  stackEntity: F14LeadOre1
   name: materials-raw-lead
   unit: materials-unit-chunk
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: lead }
   price: 0.05
 
 - type: material
-  id: N14RawSulfur
-  stackEntity: N14SulfurOre1
+  id: F14RawSulfur
+  stackEntity: F14SulfurOre1
   name: materials-raw-sulfur
   unit: materials-unit-chunk
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: sulfur }
   price: 0.05
 
 - type: material
-  id: N14RawCopper
-  stackEntity: N14CopperOre1
+  id: F14RawCopper
+  stackEntity: F14CopperOre1
   name: materials-raw-N14copper
   unit: materials-unit-chunk
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: copper }
@@ -27,8 +27,8 @@
   price: 0.05
 
 - type: material
-  id: N14RawIron
-  stackEntity: N14IronOre1
+  id: F14RawIron
+  stackEntity: F14IronOre1
   name: materials-raw-N14iron
   unit: materials-unit-chunk
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: iron }
@@ -36,8 +36,8 @@
   price: 0.05
 
 - type: material
-  id: N14RawGold
-  stackEntity: N14GoldOre1
+  id: F14RawGold
+  stackEntity: F14GoldOre1
   name: materials-raw-N14gold
   unit: materials-unit-chunk
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: gold }
@@ -45,8 +45,8 @@
   price: 0.10 # Corvax-Change
 
 - type: material
-  id: N14RawSilver
-  stackEntity: N14SilverOre1
+  id: F14RawSilver
+  stackEntity: F14SilverOre1
   name: materials-raw-N14silver
   unit: materials-unit-chunk
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: silver }

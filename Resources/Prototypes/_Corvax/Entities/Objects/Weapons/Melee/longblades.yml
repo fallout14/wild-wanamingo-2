@@ -2,8 +2,8 @@
 # Resources/Prototypes/Corvax/Entities/Objects/Weapons/Melee/longblades.yml
 
 - type: entity
-  parent: N14Machete
-  id: CorvaxGladius
+  parent: F14MacheteBase
+  id: F14GladiusBase
   name: gladius
   description: The old sword of the Roman Empire. It is now in use by the Legion...
   components:
@@ -33,7 +33,7 @@
 
 - type: entity
   parent: BaseItem
-  id: CorvaxWeaponThermospear
+  id: F14WeaponThermospear
   name: thermic lance
   description: "A long two-handed thermic lance. Fuel is needed for use."
   components:

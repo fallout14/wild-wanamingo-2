@@ -1,23 +1,23 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier2Weapon/Tier2WeaponTables/Tier2WeaponEnergy/OneHanded/Tier2WeaponEnergyPistolTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier2_LaserPistol
+  id: F14WeaponLootTier2LaserPistol
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponLaserPistolRecharger
+      id: F14WeaponLaserPistolRecharger
       weight: 2
 # need like crude/makeshift pistols
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier2_PlasmaPistol
+  id: F14WeaponLootTier2PlasmaPistol
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: Error
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier2_OtherPistol
+  id: F14WeaponLootTier2OtherPistol
   table: !type:GroupSelector
     children:
     - !type:EntSelector

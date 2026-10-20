@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Cooking/cutlets.yml
 
 - type: constructionGraph
-  id: N14MeatRadCutlet
+  id: F14MeatRadCutlet
   start: start
   graph:
   - node: start
@@ -14,10 +14,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: CutletCooked
-    entity: N14FoodMeatRadCutletCooked
+    entity: F14FoodMeatRadCutletCooked
 
 - type: constructionGraph
-  id: N14MeatBrahminCutlet
+  id: F14MeatBrahminCutlet
   start: start
   graph:
   - node: start
@@ -29,10 +29,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: CutletCooked
-    entity: N14FoodMeatBrahminCutletCooked
+    entity: F14FoodMeatBrahminCutletCooked
 
 - type: constructionGraph
-  id: N14MeatBighornerCutlet
+  id: F14MeatBighornerCutlet
   start: start
   graph:
   - node: start
@@ -44,10 +44,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: CutletCooked
-    entity: N14FoodMeatBighornerCutletCooked
+    entity: F14FoodMeatBighornerCutletCooked
 
 - type: constructionGraph
-  id: N14MeatRadstagCutlet
+  id: F14MeatRadstagCutlet
   start: start
   graph:
   - node: start
@@ -59,10 +59,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: CutletCooked
-    entity: N14FoodMeatRadstagCutletCooked
+    entity: F14FoodMeatRadstagCutletCooked
 
 - type: constructionGraph
-  id: N14MeatRadhogCutlet
+  id: F14MeatRadhogCutlet
   start: start
   graph:
   - node: start
@@ -74,10 +74,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: CutletCooked
-    entity: N14FoodMeatRadhogCutletCooked
+    entity: F14FoodMeatRadhogCutletCooked
 
 - type: constructionGraph
-  id: N14MeatYaoguaiCutlet
+  id: F14MeatYaoguaiCutlet
   start: start
   graph:
   - node: start
@@ -89,10 +89,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: CutletCooked
-    entity: N14FoodMeatYaoguaiCutletCooked
+    entity: F14FoodMeatYaoguaiCutletCooked
 
 - type: constructionGraph
-  id: N14MeatRadchickenCutlet
+  id: F14MeatRadchickenCutlet
   start: start
   graph:
   - node: start
@@ -104,10 +104,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: CutletCooked
-    entity: N14FoodMeatRadchickenCutletCooked
+    entity: F14FoodMeatRadchickenCutletCooked
 
 - type: constructionGraph
-  id: N14MeatRadscorpionCutlet
+  id: F14MeatRadscorpionCutlet
   start: start
   graph:
   - node: start
@@ -119,4 +119,4 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: CutletCooked
-    entity: N14FoodMeatRadscorpionCutletCooked
+    entity: F14FoodMeatRadscorpionCutletCooked

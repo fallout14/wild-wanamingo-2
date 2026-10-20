@@ -1,65 +1,65 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Blueprints/enclave_faction_blueprints.yml
 
 - type: entity
-  parent: MisfitsBlueprintBase
-  id: MisfitsBlueprintEnclaveArmor
+  parent: F14BlueprintBase
+  id: F14BlueprintEnclaveArmor
   name: Enclave Advanced Armor Schematics
   description: Classified Enclave fabrication plans for X-series advanced power armor and Zulu Squad combat gear. Covers the full power armor rig - shell, servo assemblies, helmet and power systems. Restricted distribution.
   components:
   - type: Blueprint
     providedRecipes:
-    - MisfitsBPEnclaveArmorPowerArmorX01
-    - MisfitsBPEnclaveArmorPowerArmorX02Tesla
-    - MisfitsBPEnclaveArmorZuluAdvancedCombatArmor
-    - MisfitsBPEnclaveArmorZuluCombatHelmet
+    - F14BPEnclaveArmorPowerArmorX01
+    - F14BPEnclaveArmorPowerArmorX02Tesla
+    - F14BPEnclaveArmorZuluAdvancedCombatArmor
+    - F14BPEnclaveArmorZuluCombatHelmet
 
 # --- Enclave Weapons ---
 # Recipes in Misfits/Recipes/Lathes/blueprint_recipes_enclave_weapons.yml
 
 - type: entity
-  parent: MisfitsBlueprintBase
-  id: MisfitsBlueprintEnclaveWeapons
+  parent: F14BlueprintBase
+  id: F14BlueprintEnclaveWeapons
   name: Enclave Energy Armaments Schematics
   description: Enclave ordnance schematics for the plasma and directed-energy arms carried by remnant forces - plasma rifles and sidearms, wattz and AER pattern lasers, and pulse weaponry.
   components:
   - type: Blueprint
     providedRecipes:
-    - MisfitsBPEnclaveWeaponPlasmaPistol
-    - MisfitsBPEnclaveWeaponPlasmaDefender
-    - MisfitsBPEnclaveWeaponPlasmaRifle
-    - MisfitsBPEnclaveWeaponPlasmaRifleUrban
-    - MisfitsBPEnclaveWeaponPlasmaRifleAuto
-    - MisfitsBPEnclaveWeaponLaserMagnetoPistol
-    - MisfitsBPEnclaveWeaponPulsePistol
-    - MisfitsBPEnclaveWeaponLaserRCW
-    - MisfitsBPEnclaveWeaponPulseCarbine
-    - MisfitsBPEnclaveWeaponLaserRifleWattz2000
-    - MisfitsBPEnclaveWeaponLaserRifleWattz3000
-    - MisfitsBPEnclaveWeaponLaserRifleAER9Auto
-    - MisfitsBPEnclaveWeaponLaserRifleAER12
+    - F14BPEnclaveWeaponPlasmaPistol
+    - F14BPEnclaveWeaponPlasmaDefender
+    - F14BPEnclaveWeaponPlasmaRifle
+    - F14BPEnclaveWeaponPlasmaRifleUrban
+    - F14BPEnclaveWeaponPlasmaRifleAuto
+    - F14BPEnclaveWeaponLaserMagnetoPistol
+    - F14BPEnclaveWeaponPulsePistol
+    - F14BPEnclaveWeaponLaserRCW
+    - F14BPEnclaveWeaponPulseCarbine
+    - F14BPEnclaveWeaponLaserRifleWattz2000
+    - F14BPEnclaveWeaponLaserRifleWattz3000
+    - F14BPEnclaveWeaponLaserRifleAER9Auto
+    - F14BPEnclaveWeaponLaserRifleAER12
 
 # --- Enclave Ammo ---
 # Recipes in Misfits/Recipes/Lathes/blueprint_recipes_enclave_ammo.yml
 
 - type: entity
-  parent: MisfitsBlueprintBase
-  id: MisfitsBlueprintEnclaveAmmo
+  parent: F14BlueprintBase
+  id: F14BlueprintEnclaveAmmo
   name: Enclave Energy Cell Schematics
   description: Enclave assembly notes for the cells that feed its energy arms - plasma cartridges, microfusion cells and electron charge packs.
   components:
   - type: Blueprint
     providedRecipes:
-    - MisfitsBPEnclaveGrenadeFragOffensive # #Misfits Add - BoS-equivalent conventional ordnance
-    - MisfitsBPEnclaveGrenadeFragDefensive
+    - F14BPEnclaveGrenadeFragOffensive # #Misfits Add - BoS-equivalent conventional ordnance
+    - F14BPEnclaveGrenadeFragDefensive
     # #Misfits Add - complete 40mm family.
-    - MisfitsBPEnclave40mmHE
-    - MisfitsBPEnclave40mmBuckshot
-    - MisfitsBPEnclave40mmSmoke
-    - MisfitsBPEnclave40mmWhitePhosphorus
-    - MisfitsBPEnclave40mmFlashbang
-    - MisfitsBPEnclave40mmTearGas
-    - MisfitsBPEnclave40mmHEDP
-    - MisfitsBPEnclave40mmIncendiary
-    - MisfitsBPEnclaveAmmoPlasmaCartridge
-    - MisfitsBPEnclaveAmmoMicrofusionCell
-    - MisfitsBPEnclaveAmmoElectronChargePack
+    - F14BPEnclave40mmHE
+    - F14BPEnclave40mmBuckshot
+    - F14BPEnclave40mmSmoke
+    - F14BPEnclave40mmWhitePhosphorus
+    - F14BPEnclave40mmFlashbang
+    - F14BPEnclave40mmTearGas
+    - F14BPEnclave40mmHEDP
+    - F14BPEnclave40mmIncendiary
+    - F14BPEnclaveAmmoPlasmaCartridge
+    - F14BPEnclaveAmmoMicrofusionCell
+    - F14BPEnclaveAmmoElectronChargePack

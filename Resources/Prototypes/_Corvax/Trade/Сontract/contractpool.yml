@@ -1,0 +1,645 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Trade/Сontract/contractpool.yml
+
+- type: ncContractRewardPool
+  id: F14CaravanEasy
+  entries:
+  - type: Item
+    id: F14Stimpak
+    amount: { min: 1, max: 2 }
+    weight: 2
+  - type: Item
+    id: F14ScrapMachete
+    weight: 2
+  - type: Item
+    id: F14WeaponLaserRevolver
+    weight: 1
+  - type: Item
+    id: F14WeaponPistol9mmChinese
+    weight: 1
+  - type: Item
+    id: F14Gunpowder1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: SheetSteel1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: F14IngotLead1
+    amount: { min: 4, max: 8 }
+    weight: 2
+  - type: Item
+    id: F14IngotBrass1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: F14WeaponSMG10mmSuppressed
+    weight: 1
+  - type: Item
+    id: F14RadAwayBloodbag
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Antidote
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14ClothingOuterLeatherArmor
+    weight: 3
+  - type: Item
+    id: F14WeaponPistol10mmPipe
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatPrewarMilitaryHelmet
+    weight: 1
+  - type: Item
+    id: F14WeaponPistol9mmSpy
+    weight: 1
+  - type: Item
+    id: F14LongSword
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterCombatRusted
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterPainspike
+    weight: 2
+  - type: Item
+    id: F14WeaponSMG12mmPipe
+    weight: 1
+  # Misfits Add — new easy reward pool items
+  - type: Item
+    id: F14PilumSpear
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14CaravanMedium
+  entries:
+  - type: Item
+    id: F14Stimpak
+    amount: { min: 2, max: 4 }
+    weight: 2
+  - type: Item
+    id: F14WeaponShotgun
+    weight: 1
+  - type: Item
+    id: F14WeaponLaserRifleCrude
+    weight: 1
+  - type: Item
+    id: F14WeaponPistol9mmSpy
+    weight: 1
+  - type: Item
+    id: F14MedkitFilled
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterTownHeavyCoat
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterZealotDuster
+    weight: 1
+  - type: Item
+    id: F14ClothingMaskGasZealotGasMask
+    weight: 1
+  - type: Item
+    id: F14WeaponSniper308TribalUpgraded
+    weight: 2
+  - type: Item
+    id: F14RadAwayInhaler
+    amount: { min: 2, max: 3 }
+    weight: 2
+  - type: Item
+    id: F14Antidote
+    amount: { min: 2, max: 3 }
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterCombatArmor
+    weight: 1
+  - type: Item
+    id: F14WeaponSMG10mm
+    weight: 2
+  - type: Item
+    id: F14ClothingHeadHatCombatHelmet
+    weight: 1
+  - type: Item
+    id: F14ChineseSword
+    weight: 2
+  - type: Item
+    id: F14WeaponRifle762SKS
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatChineseHelmet
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterPoliceVest
+    weight: 2
+  - type: Item
+    id: F14ClothingScavengerHeavyArmor
+    weight: 2
+  - type: Item
+    id: F14WeaponSniperCowboyRepeater
+    weight: 1
+  - type: Item
+    id: F14WeaponSniperHunting
+    weight: 1
+  - type: Item
+    id: F14WeaponRifle556R91
+    weight: 1
+  - type: Item
+    id: F14WeaponRifle10mmSkirmisher
+    weight: 1
+  # Misfits Add — new medium reward pool items
+  - type: Item
+    id: F14WeaponLaserPistol
+    weight: 1
+  - type: Item
+    id: F14WeaponRifleAk112
+    weight: 1
+  - type: Item
+    id: F14Gladius
+    weight: 2
+
+- type: ncContractRewardPool
+  id: F14CaravanHard
+  entries:
+  - type: Item
+    id: F14SuperStimpak
+    amount: { min: 1, max: 2 }
+    weight: 2
+  - type: Item
+    id: F14UltraStimpak
+    amount: { min: 1, max: 2 }
+    weight: 2
+  - type: Item
+    id: F14WeaponShotgunCanadian
+    weight: 1
+  - type: Item
+    id: F14WeaponShotgunChinese
+    weight: 1
+  - type: Item
+    id: F14WeaponSMG12mmAdvanced
+    weight: 1
+  - type: Item
+    id: F14MedkitCombatFilled
+    weight: 1
+  - type: Item
+    id: F14WeaponPlasmaRifleUrban
+    weight: 1
+  - type: Item
+    id: F14WeaponRifle762MarksmanCanadian
+    weight: 1
+  - type: Item
+    id: F14RadAwayInhaler
+    amount: { min: 3, max: 5 }
+    weight: 4
+  - type: Item
+    id: F14ChemicalSyringeAntidote
+    amount: { min: 3, max: 5 }
+    weight: 4
+  - type: Item
+    id: F14ClothingOuterCombatArmorMK2
+    weight: 1
+  - type: Item
+    id: F14WeaponSMG12mmAdvanced
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatCombatHelmetMK2
+    weight: 1
+  - type: Item
+    id: F14WeaponShotgunAuto
+    weight: 1
+  - type: Item
+    id: F14WeaponRifle9mmMarksmanChinese
+    weight: 1
+  - type: Item
+    id: F14WeaponRifleBozarGRA
+    weight: 1
+  # Misfits Add — new hard reward pool items (moderate tier, no power armor)
+  - type: Item
+    id: F14ClothingLegionReconArmor
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14CaravanEasyNonweapons
+  entries:
+  - type: Item
+    id: F14Stimpak
+    amount: { min: 1, max: 2 }
+    weight: 2
+  - type: Item
+    id: F14Gunpowder1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: SheetSteel1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: F14IngotLead1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: F14IngotBrass1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: F14RadAwayBloodbag
+    amount: { min: 1, max: 3 }
+    weight: 3
+  - type: Item
+    id: F14Antidote
+    amount: { min: 1, max: 3 }
+    weight: 3
+  - type: Item
+    id: F14ClothingOuterReinforcedLeatherArmor
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatPrewarMilitaryHelmet
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterCombatRusted
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterPainspike
+    weight: 2
+
+# Misfits Add — 6-tier reward pools (Road Kill/Lazy Lizard/Junktown Rat/Hub Mercenary/Bunker Buster/Wasteland Legend)
+# The four original pools above are preserved for history; these replace them functionally.
+
+- type: ncContractRewardPool
+  id: F14CaravanBronze
+  entries:
+  - type: Item
+    id: F14Stimpak
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14RadAwayBloodbag
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Antidote
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Gunpowder1
+    amount: { min: 4, max: 8 }
+    weight: 2
+  - type: Item
+    id: F14IngotBrass1
+    amount: { min: 4, max: 8 }
+    weight: 2
+  - type: Item
+    id: F14IngotLead1
+    amount: { min: 4, max: 8 }
+    weight: 2
+  - type: Item
+    id: SheetSteel1
+    amount: { min: 4, max: 8 }
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterLeatherArmor
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterCombatRusted
+    weight: 1
+  - type: Item
+    id: F14WeaponPistol10mmPipe
+    weight: 1
+  - type: Item
+    id: F14ScrapMachete
+    weight: 2
+
+- type: ncContractRewardPool
+  id: F14CaravanBronzeNonweapons
+  entries:
+  - type: Item
+    id: F14Stimpak
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14RadAwayBloodbag
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Antidote
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Gunpowder1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: F14IngotBrass1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: F14IngotLead1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: SheetSteel1
+    amount: { min: 4, max: 8 }
+    weight: 3
+  - type: Item
+    id: F14ClothingOuterLeatherArmor
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterCombatRusted
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatPrewarMilitaryHelmet
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14CaravanIron
+  entries:
+  - type: Item
+    id: F14Stimpak
+    amount: { min: 1, max: 2 }
+    weight: 2
+  - type: Item
+    id: F14RadAwayBloodbag
+    amount: { min: 1, max: 2 }
+    weight: 2
+  - type: Item
+    id: F14Antidote
+    amount: { min: 1, max: 2 }
+    weight: 2
+  - type: Item
+    id: F14WeaponPistol9mmChinese
+    weight: 1
+  - type: Item
+    id: F14WeaponSMG12mmPipe
+    weight: 1
+  - type: Item
+    id: F14WeaponPistol9mmSpy
+    weight: 1
+  - type: Item
+    id: F14ScrapMachete
+    weight: 1
+  - type: Item
+    id: F14LongSword
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterLeatherArmor
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterCombatRusted
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterPainspike
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatPrewarMilitaryHelmet
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14CaravanIronNonweapons
+  entries:
+  - type: Item
+    id: F14Stimpak
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14RadAwayBloodbag
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Antidote
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Gunpowder1
+    amount: { min: 4, max: 8 }
+    weight: 2
+  - type: Item
+    id: F14IngotLead1
+    amount: { min: 4, max: 8 }
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterLeatherArmor
+    weight: 2
+  - type: Item
+    id: F14ClothingHeadHatPrewarMilitaryHelmet
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterCombatRusted
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14CaravanSilver
+  entries:
+  - type: Item
+    id: F14Stimpak
+    amount: { min: 2, max: 3 }
+    weight: 2
+  - type: Item
+    id: F14RadAwayInhaler
+    amount: { min: 1, max: 2 }
+    weight: 2
+  - type: Item
+    id: F14Antidote
+    amount: { min: 2, max: 3 }
+    weight: 2
+  - type: Item
+    id: F14MedkitFilled
+    weight: 1
+  - type: Item
+    id: F14WeaponShotgun
+    weight: 1
+  - type: Item
+    id: F14WeaponSMG10mm
+    weight: 1
+  - type: Item
+    id: F14WeaponRifle762SKS
+    weight: 1
+  - type: Item
+    id: F14ChineseSword
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterCombatArmor
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterPoliceVest
+    weight: 2
+  - type: Item
+    id: F14ClothingScavengerHeavyArmor
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatCombatHelmet
+    weight: 1
+  - type: Item
+    id: F14WeaponSniperCowboyRepeater
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14CaravanSilverNonweapons
+  entries:
+  - type: Item
+    id: F14Stimpak
+    amount: { min: 2, max: 3 }
+    weight: 3
+  - type: Item
+    id: F14RadAwayInhaler
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14Antidote
+    amount: { min: 2, max: 3 }
+    weight: 3
+  - type: Item
+    id: F14MedkitFilled
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterCombatArmor
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterPoliceVest
+    weight: 2
+  - type: Item
+    id: F14ClothingScavengerHeavyArmor
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatCombatHelmet
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14CaravanGold
+  entries:
+  - type: Item
+    id: F14Stimpak
+    amount: { min: 2, max: 4 }
+    weight: 2
+  - type: Item
+    id: F14RadAwayInhaler
+    amount: { min: 2, max: 3 }
+    weight: 2
+  - type: Item
+    id: F14Antidote
+    amount: { min: 2, max: 3 }
+    weight: 2
+  - type: Item
+    id: F14MedkitFilled
+    weight: 1
+  - type: Item
+    id: F14WeaponRifle556R91
+    weight: 1
+  - type: Item
+    id: F14WeaponRifle10mmSkirmisher
+    weight: 1
+  - type: Item
+    id: F14WeaponShotgunChinese
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterCombatArmor
+    weight: 2
+  - type: Item
+    id: F14ClothingHeadHatCombatHelmet
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterZealotDuster
+    weight: 1
+  - type: Item
+    id: F14WeaponLaserPistol
+    weight: 1
+  - type: Item
+    id: F14Gladius
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14CaravanGoldNonweapons
+  entries:
+  - type: Item
+    id: F14Stimpak
+    amount: { min: 2, max: 4 }
+    weight: 3
+  - type: Item
+    id: F14RadAwayInhaler
+    amount: { min: 2, max: 3 }
+    weight: 3
+  - type: Item
+    id: F14Antidote
+    amount: { min: 2, max: 3 }
+    weight: 3
+  - type: Item
+    id: F14MedkitFilled
+    weight: 2
+  - type: Item
+    id: F14ClothingOuterCombatArmor
+    weight: 2
+  - type: Item
+    id: F14ClothingHeadHatCombatHelmet
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterCombatArmorMK2
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14CaravanMithril
+  entries:
+  - type: Item
+    id: F14SuperStimpak
+    amount: { min: 1, max: 2 }
+    weight: 3
+  - type: Item
+    id: F14RadAwayInhaler
+    amount: { min: 2, max: 4 }
+    weight: 3
+  - type: Item
+    id: F14ChemicalSyringeAntidote
+    amount: { min: 2, max: 3 }
+    weight: 3
+  - type: Item
+    id: F14MedkitFilled
+    weight: 2
+  - type: Item
+    id: F14WeaponRifle762MarksmanCanadian
+    weight: 1
+  - type: Item
+    id: F14WeaponShotgunCanadian
+    weight: 1
+  - type: Item
+    id: F14WeaponSMG12mmAdvanced
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterCombatArmor
+    weight: 2
+  - type: Item
+    id: F14ClothingHeadHatCombatHelmet
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterCombatArmorMK2
+    weight: 1
+
+- type: ncContractRewardPool
+  id: F14CaravanDiamond
+  entries:
+  - type: Item
+    id: F14SuperStimpak
+    amount: { min: 2, max: 3 }
+    weight: 3
+  - type: Item
+    id: F14UltraStimpak
+    amount: { min: 1, max: 2 }
+    weight: 2
+  - type: Item
+    id: F14MedkitCombatFilled
+    weight: 2
+  - type: Item
+    id: F14ChemicalSyringeAntidote
+    amount: { min: 3, max: 5 }
+    weight: 4
+  - type: Item
+    id: F14RadAwayInhaler
+    amount: { min: 3, max: 5 }
+    weight: 4
+  - type: Item
+    id: F14WeaponRifle762MarksmanCanadian
+    weight: 1
+  - type: Item
+    id: F14ClothingOuterCombatArmorMK2
+    weight: 1
+  - type: Item
+    id: F14ClothingHeadHatCombatHelmetMK2
+    weight: 1

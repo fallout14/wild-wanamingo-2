@@ -2,17 +2,17 @@
 
 - type: entity
   parent: BaseCartridge
-  id: MisfitsCartridge2mmEC
+  id: F14Cartridge2mmEC
   name: cartridge (2mmEC)
   components:
   - type: Tag
     tags:
     - Cartridge
-    - MisfitsCartridge2mmEC
+    - F14Cartridge2mmEC
   - type: CartridgeAmmo
-    proto: MisfitsBullet2mmEC
+    proto: F14Bullet2mmEC
     soundEject:
-      collection: N14RifleCasingEject
+      collection: F14RifleCasingEject
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
     layers:
@@ -24,11 +24,11 @@
     price: 2
   - type: EmitSoundOnLand
     sound:
-      collection: N14RifleCasingEject
+      collection: F14RifleCasingEject
       params:
         volume: -1
   - type: EmitSoundOnCollide
     sound:
-      collection: N14RifleCasingEject
+      collection: F14RifleCasingEject
       params:
         volume: -1

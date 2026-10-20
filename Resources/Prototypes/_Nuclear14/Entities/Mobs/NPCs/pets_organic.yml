@@ -3,8 +3,8 @@
 
 - type: entity
   name: Basic Pet
-  id: N14MobPetBasic
-  parent: MisfitsMobBaseHostileNoAccent
+  id: F14MobPetBasic
+  parent: F14MobBaseHostileNoAccent
   categories: [ HideSpawnMenu ]
   description: Why are you even reading this?
   components:
@@ -62,7 +62,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsDogAttack #Misfits Change
+      collection: F14DogAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -75,7 +75,7 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsDogIdle
+      collection: F14DogIdle
       params:
         volume: -10
         maxDistance: 5
@@ -100,8 +100,8 @@
 
 - type: entity
   name: Basic Mutt
-  id: N14MobPetDog
-  parent: N14MobPetBasic
+  id: F14MobPetDog
+  parent: F14MobPetBasic
   description: A rather normal dog, seems to have a collar with a name on it.
   components:
   - type: RadiationReceiver
@@ -112,7 +112,7 @@
     interactFailureString: petting-failure-generic
     interactSuccessSpawn: EffectHearts
     interactSuccessSound:
-      collection: MisfitsDogBark #Misfits Change
+      collection: F14DogBark #Misfits Change
   - type: GhostRole
     name: ghost-role-information-n14pet-dog-name
     description: ghost-role-information-n14pet-generic-description
@@ -131,7 +131,7 @@
   - type: PetCollarHolder
   - type: Inventory
     speciesId: cat
-    templateId: MisfitsCat_pet
+    templateId: F14CatPet
   - type: Emoting
   - type: Hands # #Misfits Add - allows dragging and item handling
   - type: BorgHands # #Misfits Add - gives cats actual holdable hand slots
@@ -146,8 +146,8 @@
 
 - type: entity
   name: BoS Mutt
-  id: N14MobPetDogMBoS
-  parent: N14MobPetDog
+  id: F14MobPetDogMBoS
+  parent: F14MobPetDog
   description: A rather normal dog, seems to have a whole vest with a name on it.
   components:
   - type: RadiationReceiver
@@ -155,7 +155,7 @@
     nameSegments: [names_N14pet_dog]
   - type: NpcFactionMember
     factions:
-      - MisfitsBrotherhoodOfSteel
+      - F14BrotherhoodOfSteel
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -190,15 +190,15 @@
 
 - type: entity
   name: Washington BoS Mutt
-  id: N14MobPetDogWBoS
-  parent: N14MobPetDog
+  id: F14MobPetDogWBoS
+  parent: F14MobPetDog
   description: A butchered but overall not-too-rusted cybernetic dog with a name engraved into it.
   components: #This dog is intentionally missing the RadiationReceiver due cybernetic shenanigans
   - type: RandomMetadata
     nameSegments: [names_N14pet_dog]
   - type: NpcFactionMember
     factions:
-      - MisfitsBrotherhoodOfSteel
+      - F14BrotherhoodOfSteel
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -216,8 +216,8 @@
 
 - type: entity
   name: NCR Mutt
-  id: N14MobPetDogNCR
-  parent: N14MobPetDog
+  id: F14MobPetDogNCR
+  parent: F14MobPetDog
   description: A rather big & charming dog, seems to have a collar with a name on it.
   components:
   - type: RadiationReceiver
@@ -225,7 +225,7 @@
     nameSegments: [names_N14pet_dog]
   - type: NpcFactionMember
     factions:
-      - N14NCR
+      - F14NCR
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -260,8 +260,8 @@
 
 - type: entity
   name: NCR Medical K9
-  id: N14MobPetDogNCRMedicK9
-  parent: N14MobPetDog
+  id: F14MobPetDogNCRMedicK9
+  parent: F14MobPetDog
   description: A rather normal dog, seems to have a whole vest with a name on it.
   components:
   - type: RadiationReceiver
@@ -269,7 +269,7 @@
     nameSegments: [names_N14pet_dog]
   - type: NpcFactionMember
     factions:
-      - N14NCR
+      - F14NCR
   - type: Sprite
     scale: 0.9, 0.9
     drawdepth: Mobs
@@ -305,8 +305,8 @@
 
 - type: entity
   name: CC Mutt
-  id: N14MobPetDogCC
-  parent: N14MobPetDog
+  id: F14MobPetDogCC
+  parent: F14MobPetDog
   description: A rather tiny dog, seems to have a collar with a name on it.
   components:
   - type: RadiationReceiver
@@ -314,7 +314,7 @@
     nameSegments: [names_N14pet_dog]
   - type: NpcFactionMember
     factions:
-      - N14CaravanCompany
+      - F14CaravanCompany
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -342,8 +342,8 @@
 
 - type: entity
   name: Pet Roach
-  id: N14MobPetRoach
-  parent: N14MobPetBasic
+  id: F14MobPetRoach
+  parent: F14MobPetBasic
   description: A rather cultured radroach, seems to have a sticker with a name on it.
   components:
   - type: RandomMetadata
@@ -397,7 +397,7 @@
     baseSprintSpeed : 4
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadroachFillet
+    - id: F14FoodMeatRadroachFillet
       amount: 1
   - type: InteractionPopup
     interactSuccessString: petting-success-crab
@@ -420,8 +420,8 @@
 
 - type: entity
   name: Pet Ant
-  id: N14MobPetAnt
-  parent: N14MobPetRoach
+  id: F14MobPetAnt
+  parent: F14MobPetRoach
   description: It's an ant... but giant. Seems to be relatively peaceful.
   components:
   - type: Sprite
@@ -432,7 +432,7 @@
       sprite: Nuclear14/Mobs/Pets/muleant.rsi
   - type: NpcFactionMember
     factions:
-      - N14CaravanCompany
+      - F14CaravanCompany
       - Passive
   - type: DamageStateVisuals
     states:
@@ -474,9 +474,9 @@
       storagebase: !type:Container
   - type: Butcherable
     spawned:
-    - id: N14MaterialAntChitin1
+    - id: F14MaterialAntChitin1
       amount: 2
-    - id: N14FoodMeatRadRaw
+    - id: F14FoodMeatRadRaw
       amount: 3
   - type: MeleeWeapon
     altDisarm: false
@@ -494,8 +494,8 @@
 
 - type: entity
   name: Pet Rat
-  id: N14MobPetPigrat
-  parent: N14MobPetBasic
+  id: F14MobPetPigrat
+  parent: F14MobPetBasic
   description: Part pig, part rat, full pest. Watch out for the cleaned teeth?
   components:
   - type: RandomMetadata
@@ -548,7 +548,7 @@
         Radiation: 2
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatPigrat
+    - id: F14FoodMeatPigrat
       amount: 3
   - type: InteractionPopup
     interactSuccessString: petting-success-crab

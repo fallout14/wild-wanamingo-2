@@ -1,29 +1,29 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Stacks/medical_stacks.yml, Resources/Prototypes/_Nuclear14/Stacks/medical_stacks.yml
 
 - type: stack
-  id: MisfitsSuture
+  id: F14Suture
   name: misfits-kit-suture
   icon: { sprite: "/Textures/Misfits/Objects/Specific/Medical/wound_care.rsi", state: suture_3 }
-  spawn: MisfitsSuture
+  spawn: F14Suture
   maxCount: 10
 
 - type: stack
-  id: MisfitsImprovisedSuture
+  id: F14ImprovisedSuture
   name: misfits-kit-improvised-suture
   icon: { sprite: "/Textures/Misfits/Objects/Specific/Medical/wound_care.rsi", state: suture_imp_3 }
-  spawn: MisfitsImprovisedSuture
+  spawn: F14ImprovisedSuture
   maxCount: 10
 
 - type: stack
-  id: MisfitsAloeMesh
+  id: F14AloeMesh
   name: misfits-kit-aloe-regenerative-mesh
   icon: { sprite: "/Textures/Misfits/Objects/Specific/Medical/wound_care.rsi", state: aloe_mesh_closed }
-  spawn: MisfitsAloeMesh
+  spawn: F14AloeMesh
   maxCount: 10
 
 - type: stack
-  id: MisfitsOintmentAdv10
+  id: F14OintmentAdv10
   name: regenerative-mesh
   icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: regenerative-mesh}
-  spawn: MisfitsOintmentAdv1
+  spawn: F14OintmentAdv1
   maxCount: 10

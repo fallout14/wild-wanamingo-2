@@ -3,7 +3,7 @@
 
 - type: entity
   name: Molerat Timed Spawner
-  id: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerMolerat
   parent: MarkerBase
   components:
     - type: Sprite
@@ -14,7 +14,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobMolerat
+        - F14MobMolerat
       chance: 0.65
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
@@ -24,7 +24,7 @@
 
 - type: entity
   name: Pigrat Timed Spawner
-  id: N14TimedSpawnerPigrat
+  id: F14TimedSpawnerPigrat
   parent: MarkerBase
   components:
     - type: Sprite
@@ -35,7 +35,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobPigrat
+        - F14MobPigrat
       chance: 0.65
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
@@ -45,7 +45,7 @@
 
 - type: entity
   name: Radhog Timed Spawner
-  id: N14TimedSpawnerRadhog
+  id: F14TimedSpawnerRadhog
   parent: MarkerBase
   components:
     - type: Sprite
@@ -56,7 +56,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRadhog
+        - F14MobRadhog
       chance: 0.65
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
@@ -65,8 +65,8 @@
       maxAlivePerPrototype: 12 # #Misfits Add - Cap alive mobs of this type per map
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerDogFeral
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerDogFeral
   name: Feral Dog Timed Spawner
   components:
     - type: Sprite
@@ -77,15 +77,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobDogFeral
+        - F14MobDogFeral
       chance: 0.65
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerGecko
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerGecko
   name: Gecko Timed Spawner
   components:
     - type: Sprite
@@ -96,15 +96,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobGecko
+        - F14MobGecko
       chance: 0.65
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerGeckoFire
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerGeckoFire
   name: Fire Gecko Timed Spawner
   components:
     - type: Sprite
@@ -115,15 +115,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobGeckoFire
+        - F14MobGeckoFire
       chance: 0.65
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerGeckoGolden
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerGeckoGolden
   name: Golden Gecko Timed Spawner
   components:
     - type: Sprite
@@ -134,15 +134,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobGeckoGolden
+        - F14MobGeckoGolden
       chance: 0.65
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerNightstalkerCub
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerNightstalkerCub
   name: Nightstalker Cub Timed Spawner
   components:
     - type: Sprite
@@ -153,15 +153,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobNightstalkerCub
+        - F14MobNightstalkerCub
       chance: 0.65
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 2
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerNightstalker
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerNightstalker
   name: Nightstalker Timed Spawner
   components:
     - type: Sprite
@@ -172,15 +172,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobNightstalker
+        - F14MobNightstalker
       chance: 0.65
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 2
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerYaoguai
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerYaoguai
   name: Yao Guai Timed Spawner
   components:
     - type: Sprite
@@ -191,7 +191,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobYaoguai
+        - F14MobYaoguai
       chance: 0.75
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
@@ -200,8 +200,8 @@
 #MARK: Scaley Animals
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerDeathclaw
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerDeathclaw
   name: Deathclaw Timed Spawner
   components:
     - type: Sprite
@@ -212,15 +212,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobDeathclaw
+        - F14MobDeathclaw
       chance: 0.75
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 1
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerDeathclawAlbino
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerDeathclawAlbino
   name: Deathclaw Albino Timed Spawner
   components:
     - type: Sprite
@@ -231,15 +231,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobDeathclawAlbino
+        - F14MobDeathclawAlbino
       chance: 0.75
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 1
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerDeathclawMetal
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerDeathclawMetal
   name: Deathclaw Metal Timed Spawner
   components:
     - type: Sprite
@@ -250,7 +250,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobDeathclawMetal
+        - F14MobDeathclawMetal
       chance: 0.65
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
@@ -259,8 +259,8 @@
 #MARK: Insects
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerBloatfly
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerBloatfly
   name: Bloatfly Timed Spawner
   components:
     - type: Sprite
@@ -271,15 +271,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobBloatfly
+        - F14MobBloatfly
       chance: 0.75
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 4
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerAnt
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerAnt
   name: Ant Timed Spawner
   components:
     - type: Sprite
@@ -290,15 +290,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobGiantAnt
+        - F14MobGiantAnt
       chance: 0.75
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 2
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerFireant
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerFireant
   name: Fire Ant Timed Spawner
   components:
     - type: Sprite
@@ -309,15 +309,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobGiantFireAnt
+        - F14MobGiantFireAnt
       chance: 0.75
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 2
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerRadroach
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerRadroach
   name: Radroach Timed Spawner
   components:
     - type: Sprite
@@ -328,15 +328,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRadroach
+        - F14MobRadroach
       chance: 0.75
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 4
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerRadscorpion
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerRadscorpion
   name: Radscorpion Timed Spawner
   components:
     - type: Sprite
@@ -347,15 +347,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRadscorpion
+        - F14MobRadscorpion
       chance: 0.75
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 2
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerRadscorpionBark
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerRadscorpionBark
   name: Radscorpion Bark Timed Spawner
   components:
     - type: Sprite
@@ -366,15 +366,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRadscorpionBark
+        - F14MobRadscorpionBark
       chance: 0.75
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 2
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerCazador
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerCazador
   name: Cazador Timed Spawner
   components:
     - type: Sprite
@@ -385,7 +385,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobCazador
+        - F14MobCazador
       chance: 0.75
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
@@ -395,8 +395,8 @@
 
 - type: entity
   name: Raider Ranged Psycho Timed Spawner
-  id: N14TimedSpawnerMobRaiderPsychoRanged
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerMobRaiderPsychoRanged
+  parent: F14TimedSpawnerMolerat
   components:
   - type: Sprite
     layers:
@@ -406,7 +406,7 @@
       - state: timed
   - type: WastelandSpawner
     prototypes:
-      - N14MobRaiderPsychoRanged
+      - F14MobRaiderPsychoRanged
     chance: 0.95
     intervalSeconds: 2400
     minimumEntitiesSpawned: 1
@@ -414,8 +414,8 @@
 
 - type: entity
   name: Raider Psycho Boss Timed Spawner
-  id: N14TimedSpawnerMobRaiderBoss
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerMobRaiderBoss
+  parent: F14TimedSpawnerMolerat
   components:
   - type: Sprite
     layers:
@@ -425,7 +425,7 @@
       - state: timed
   - type: WastelandSpawner
     prototypes:
-      - N14MobRaiderBoss
+      - F14MobRaiderBoss
     chance: 0.95
     intervalSeconds: 2400
     minimumEntitiesSpawned: 1
@@ -433,8 +433,8 @@
 
 - type: entity
   name: Raider Psycho Timed Spawner
-  id: N14TimedSpawnerMobRaiderPsycho
-  parent: N14TimedSpawnerMolerat
+  id: F14TimedSpawnerMobRaiderPsycho
+  parent: F14TimedSpawnerMolerat
   components:
   - type: Sprite
     layers:
@@ -444,15 +444,15 @@
       - state: timed
   - type: WastelandSpawner
     prototypes:
-      - N14MobRaiderPsycho
+      - F14MobRaiderPsycho
     chance: 0.95
     intervalSeconds: 2400
     minimumEntitiesSpawned: 1
     maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerRadstag
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerRadstag
   name: Radstag Timed Spawner
   components:
     - type: Sprite
@@ -463,15 +463,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobRadstag
+        - F14MobRadstag
       chance: 0.95
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerChicken
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerChicken
   name: Chicken Timed Spawner
   components:
     - type: Sprite
@@ -482,15 +482,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobChicken
+        - F14MobChicken
       chance: 0.95
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerBighorner
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerBighorner
   name: Bighorner Timed Spawner
   components:
     - type: Sprite
@@ -501,15 +501,15 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobBighorner
+        - F14MobBighorner
       chance: 0.95
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: N14TimedSpawnerMolerat
-  id: N14TimedSpawnerBrahmin
+  parent: F14TimedSpawnerMolerat
+  id: F14TimedSpawnerBrahmin
   name: Brahmin Timed Spawner
   components:
     - type: Sprite
@@ -520,7 +520,7 @@
         - state: timed
     - type: WastelandSpawner
       prototypes:
-        - N14MobBrahmin
+        - F14MobBrahmin
       chance: 0.95
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1

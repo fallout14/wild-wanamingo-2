@@ -1,70 +1,70 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/TierNWeaponRef/TierNWeaponTables/TierNLoot.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTierN
+  id: F14WeaponLootTierN
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_GunsAll
+          tableId: F14WeaponLootTierNGunsAll
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_MeleeAll
+          tableId: F14WeaponLootTierNMeleeAll
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_ThrowablesAll
+          tableId: F14WeaponLootTierNThrowablesAll
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTierN_GunsAll
+  id: F14WeaponLootTierNGunsAll
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_GunsBulletAll
+          tableId: F14WeaponLootTierNGunsBulletAll
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_GunsEnergyAll
+          tableId: F14WeaponLootTierNGunsEnergyAll
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_GunsExplosiveAll
+          tableId: F14WeaponLootTierNGunsExplosiveAll
 
 # unused
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTierN_CallIn
+  id: F14WeaponLootTierNCallIn
   table: !type:GroupSelector
     children: []
 #unused
 
 - type: entityTable
-  id: MisfitsM14TurretTableTierN_Any_Unused
+  id: F14TurretTableTierNAnyUnused
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponTurretBroken
+      id: F14WeaponTurretBroken
     - !type:EntSelector
-      id: N14WeaponTurretBrotherhoodMidwest
+      id: F14WeaponTurretBrotherhoodMidwest
     - !type:EntSelector
-      id: N14WeaponTurretBrotherhoodMidwestSecureArea
+      id: F14WeaponTurretBrotherhoodMidwestSecureArea
     - !type:EntSelector
-      id: N14WeaponTurretBrotherhoodMidwestSpawnpoint
+      id: F14WeaponTurretBrotherhoodMidwestSpawnpoint
     - !type:EntSelector
-      id: N14WeaponTurretBrotherhoodWashington
+      id: F14WeaponTurretBrotherhoodWashington
     - !type:EntSelector
-      id: N14WeaponTurretBrotherhoodWashingtonSecureArea
+      id: F14WeaponTurretBrotherhoodWashingtonSecureArea
     - !type:EntSelector
-      id: N14WeaponTurretBrotherhoodWashingtonSpawnpoint
+      id: F14WeaponTurretBrotherhoodWashingtonSpawnpoint
     - !type:EntSelector
-      id: N14WeaponTurretCaravan
+      id: F14WeaponTurretCaravan
     - !type:EntSelector
-      id: N14WeaponTurretMobileBroken
+      id: F14WeaponTurretMobileBroken
     - !type:EntSelector
-      id: N14WeaponTurretNCR
+      id: F14WeaponTurretNCR
     - !type:EntSelector
-      id: N14WeaponTurretNCRSecureArea
+      id: F14WeaponTurretNCRSecureArea
     - !type:EntSelector
-      id: N14WeaponTurretNCRSpawnpoint
+      id: F14WeaponTurretNCRSpawnpoint
     - !type:EntSelector
-      id: N14WeaponTurretRaider
+      id: F14WeaponTurretRaider
     - !type:EntSelector
-      id: N14WeaponTurretRobot
+      id: F14WeaponTurretRobot
     - !type:EntSelector
-      id: N14WeaponTurretVault
+      id: F14WeaponTurretVault
     - !type:EntSelector
-      id: N14WeaponTurretVaultSecureArea
+      id: F14WeaponTurretVaultSecureArea
     - !type:EntSelector
-      id: N14WeaponTurretVaultSpawnpoint
+      id: F14WeaponTurretVaultSpawnpoint

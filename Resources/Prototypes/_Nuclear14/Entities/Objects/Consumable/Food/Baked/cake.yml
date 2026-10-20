@@ -3,7 +3,7 @@
 
 - type: entity
   parent: FoodInjectableBase
-  id: N14CookedFoodCakeBase
+  id: F14CookedFoodCakeBase
   abstract: true
   components:
   - type: FlavorProfile
@@ -28,8 +28,8 @@
     - Cake
 
 - type: entity
-  parent: N14CookedFoodCakeBase
-  id: N14CookedFoodCakeSliceBase
+  parent: F14CookedFoodCakeBase
+  id: F14CookedFoodCakeSliceBase
   abstract: true
   description: A decadent slice of simple cake.
   components:
@@ -57,8 +57,8 @@
 
 - type: entity
   name: tarberry cake #N14 change
-  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodCakeTarberry
+  parent: [F14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodCakeTarberry
   description: A hearty, filling tarberry cake. #N14 change
   components:
   - type: Sprite
@@ -68,7 +68,7 @@
       color: blue
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodCakeTarberrySlice
+    - id: F14CookedFoodCakeTarberrySlice
       amount: 1
   - type: Tag
     tags:
@@ -76,8 +76,8 @@
 
 - type: entity
   name: tarberry slice #N14 change
-  parent: N14CookedFoodCakeSliceBase
-  id: N14CookedFoodCakeTarberrySlice
+  parent: F14CookedFoodCakeSliceBase
+  id: F14CookedFoodCakeTarberrySlice
   description: Stains - and sticks to - your teeth. #N14 change
   components:
   - type: Sprite
@@ -94,21 +94,21 @@
 
 - type: entity
   name: cake
-  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodCakePlain
+  parent: [F14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodCakePlain
   description: A plain cake. Obscene luxury, even so. #N14 change
   components:
   - type: Sprite
     state: plain
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodCakePlainSlice
+    - id: F14CookedFoodCakePlainSlice
       amount: 1
 
 - type: entity
   name: slice of cake
-  parent: N14CookedFoodCakeSliceBase
-  id: N14CookedFoodCakePlainSlice
+  parent: F14CookedFoodCakeSliceBase
+  id: F14CookedFoodCakePlainSlice
   description: A decadent slice of simple cake. #N14 change
   components:
   - type: Sprite
@@ -117,15 +117,15 @@
 
 - type: entity
   name: carrot cake
-  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodCakeCarrot
+  parent: [F14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodCakeCarrot
   description: Cake? Actual cake in the wasteland? Pinch yourself. Make sure you're not in heaven. #N14 change
   components:
   - type: Sprite
     state: carrot
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodCakeCarrotSlice
+    - id: F14CookedFoodCakeCarrotSlice
       amount: 1
   - type: Solution
     solution:
@@ -142,8 +142,8 @@
 
 - type: entity
   name: slice of carrot cake
-  parent: N14CookedFoodCakeSliceBase
-  id: N14CookedFoodCakeCarrotSlice
+  parent: F14CookedFoodCakeSliceBase
+  id: F14CookedFoodCakeCarrotSlice
   description: Delicious! Also good for your eyes, if you're a dumbfuck who welded without protection. #N14 change
   components:
   - type: Sprite
@@ -163,21 +163,21 @@
 
 - type: entity
   name: brain cake
-  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodCakeBrain
+  parent: [F14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodCakeBrain
   description: Food for thought. #N14 change
   components:
   - type: Sprite
     state: brain
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodCakeBrainSlice
+    - id: F14CookedFoodCakeBrainSlice
       amount: 1
 
 - type: entity
   name: slice of brain cake
-  parent: N14CookedFoodCakeSliceBase
-  id: N14CookedFoodCakeBrainSlice
+  parent: F14CookedFoodCakeSliceBase
+  id: F14CookedFoodCakeBrainSlice
   description: Lemme tell you something about prions. THEY'RE DELICIOUS.
   components:
   - type: Sprite
@@ -186,21 +186,21 @@
 
 - type: entity
   name: cheese cake
-  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodCakeCheese
+  parent: [F14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodCakeCheese
   description: DANGEROUSLY cheesy.
   components:
   - type: Sprite
     state: cheese
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodCakeCheeseSlice
+    - id: F14CookedFoodCakeCheeseSlice
       amount: 1
 
 - type: entity
   name: slice of cheese cake
-  parent: N14CookedFoodCakeSliceBase
-  id: N14CookedFoodCakeCheeseSlice
+  parent: F14CookedFoodCakeSliceBase
+  id: F14CookedFoodCakeCheeseSlice
   description: Slice of pure cheestisfaction. #god this should be changed sometime
   components:
   - type: Sprite
@@ -209,8 +209,8 @@
 
 - type: entity
   name: orange cake
-  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodCakeOrange
+  parent: [F14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodCakeOrange
   description: A cake with added orange.
   components:
   - type: Sprite
@@ -218,7 +218,7 @@
     state: orange
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodCakeOrangeSlice
+    - id: F14CookedFoodCakeOrangeSlice
       amount: 1
   - type: Tag
     tags:
@@ -227,8 +227,8 @@
 
 - type: entity
   name: slice of orange cake
-  parent: N14CookedFoodCakeSliceBase
-  id: N14CookedFoodCakeOrangeSlice
+  parent: F14CookedFoodCakeSliceBase
+  id: F14CookedFoodCakeOrangeSlice
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Objects/Consumable/Food/Baked/cake.rsi
@@ -242,8 +242,8 @@
 
 - type: entity
   name: lime cake
-  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodCakeLime
+  parent: [F14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodCakeLime
   description: A cake with added lime.
   components:
   - type: Sprite
@@ -251,7 +251,7 @@
     state: lime
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodCakeLimeSlice
+    - id: F14CookedFoodCakeLimeSlice
       amount: 1
   - type: Tag
     tags:
@@ -260,8 +260,8 @@
 
 - type: entity
   name: slice of lime cake
-  parent: N14CookedFoodCakeSliceBase
-  id: N14CookedFoodCakeLimeSlice
+  parent: F14CookedFoodCakeSliceBase
+  id: F14CookedFoodCakeLimeSlice
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Objects/Consumable/Food/Baked/cake.rsi
@@ -275,8 +275,8 @@
 
 - type: entity
   name: lemon cake
-  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodCakeLemon
+  parent: [F14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodCakeLemon
   description: A cake with added lemon.
   components:
   - type: Sprite
@@ -284,7 +284,7 @@
     state: lemon
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodCakeLemonSlice
+    - id: F14CookedFoodCakeLemonSlice
       amount: 1
   - type: Tag
     tags:
@@ -293,8 +293,8 @@
 
 - type: entity
   name: slice of lemon cake
-  parent: N14CookedFoodCakeSliceBase
-  id: N14CookedFoodCakeLemonSlice
+  parent: F14CookedFoodCakeSliceBase
+  id: F14CookedFoodCakeLemonSlice
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Objects/Consumable/Food/Baked/cake.rsi
@@ -308,8 +308,8 @@
 
 - type: entity
   name: chocolate cake
-  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodCakeChocolate
+  parent: [F14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodCakeChocolate
   description: A cake with added chocolate.
   components:
   - type: Sprite
@@ -317,7 +317,7 @@
     state: chocolate
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodCakeChocolateSlice
+    - id: F14CookedFoodCakeChocolateSlice
       amount: 1
   - type: Solution
     solution:
@@ -332,8 +332,8 @@
 
 - type: entity
   name: slice of chocolate cake
-  parent: N14CookedFoodCakeSliceBase
-  id: N14CookedFoodCakeChocolateSlice
+  parent: F14CookedFoodCakeSliceBase
+  id: F14CookedFoodCakeChocolateSlice
   description: All for you... #N14 change
   components:
   - type: Sprite
@@ -352,8 +352,8 @@
 
 - type: entity
   name: mutfruit cake #N14 change
-  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodCakeMutfruit
+  parent: [F14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodCakeMutfruit
   description: A cake with a gooey mutfruit centre. #N14 change
   components:
   - type: Sprite
@@ -361,7 +361,7 @@
     state: apple
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodCakeMutfruitSlice
+    - id: F14CookedFoodCakeMutfruitSlice
       amount: 1
   - type: Tag
     tags:
@@ -370,8 +370,8 @@
 
 - type: entity
   name: slice of apple cake
-  parent: N14CookedFoodCakeSliceBase
-  id: N14CookedFoodCakeMutfruitSlice
+  parent: F14CookedFoodCakeSliceBase
+  id: F14CookedFoodCakeMutfruitSlice
   description: A slice of heavenly cake. Squishy. #N14 change
   components:
   - type: Sprite
@@ -386,15 +386,15 @@
 
 - type: entity
   name: pumpkin-spice cake
-  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodCakePumpkin
+  parent: [F14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodCakePumpkin
   description: A hollow cake with real pumpkin.
   components:
   - type: Sprite
     state: pumpkinspice
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodCakePumpkinSlice
+    - id: F14CookedFoodCakePumpkinSlice
       amount: 1
   - type: Solution
     solution:
@@ -411,8 +411,8 @@
 
 - type: entity
   name: slice of pumpkin-spice cake
-  parent: N14CookedFoodCakeSliceBase
-  id: N14CookedFoodCakePumpkinSlice
+  parent: F14CookedFoodCakeSliceBase
+  id: F14CookedFoodCakePumpkinSlice
   description: A spicy slice of pumpkin goodness.
   components:
   - type: Sprite
@@ -434,21 +434,21 @@
 
 - type: entity
   name: birthday cake
-  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodCakeBirthday
+  parent: [F14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodCakeBirthday
   description: You made it another year in the wastes AND you got cake. #N14 change
   components:
   - type: Sprite
     state: birthday
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodCakeBirthdaySlice
+    - id: F14CookedFoodCakeBirthdaySlice
       amount: 1
 
 - type: entity
   name: slice of birthday cake
-  parent: N14CookedFoodCakeSliceBase
-  id: N14CookedFoodCakeBirthdaySlice
+  parent: F14CookedFoodCakeSliceBase
+  id: F14CookedFoodCakeBirthdaySlice
   description: A slice of your birthday.
   components:
   - type: Sprite
@@ -457,15 +457,15 @@
 
 - type: entity
   name: vanilla cake
-  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodCakeVanilla
+  parent: [F14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodCakeVanilla
   description: A vanilla frosted cake.
   components:
   - type: Sprite
     state: vanilla
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodCakeVanillaSlice
+    - id: F14CookedFoodCakeVanillaSlice
       amount: 1
   - type: Solution
     solution:
@@ -480,8 +480,8 @@
 
 - type: entity
   name: slice of vanilla cake
-  parent: N14CookedFoodCakeSliceBase
-  id: N14CookedFoodCakeVanillaSlice
+  parent: F14CookedFoodCakeSliceBase
+  id: F14CookedFoodCakeVanillaSlice
   description: A slice of vanilla frosted cake.
   components:
   - type: Sprite

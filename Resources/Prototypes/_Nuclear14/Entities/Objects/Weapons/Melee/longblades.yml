@@ -4,7 +4,7 @@
 - type: entity
   name: machete
   parent: Machete
-  id: N14Machete
+  id: F14MacheteBase
   description: A large, vicious looking blade.
   components:
   - type: EmbeddableProjectile
@@ -31,8 +31,8 @@
 
 - type: entity
   name: tribal machete
-  parent: N14Machete
-  id: N14TribalMachete
+  parent: F14MacheteBase
+  id: F14TribalMachete
   description: A tribal machete, made from the materials given by nature, this long blade has the perfect balance between tool and weapon.
   components:
   - type: Clothing
@@ -63,8 +63,8 @@
 
 - type: entity
   name: scrap machete
-  parent: N14Machete
-  id: N14ScrapMachete
+  parent: F14MacheteBase
+  id: F14ScrapMachete
   description: A makeshift long blade machete, not the sharpest blade but it can still cut some meat.
   components:
   - type: Clothing
@@ -95,8 +95,8 @@
 
 - type: entity
   name: ripper
-  parent: N14Machete
-  id: N14Ripper
+  parent: F14MacheteBase
+  id: F14Ripper
   description: A light one-handed chainsaw originally designed for the pre-war army sappers to clean selvatic and wooded paths, it also works well against flesh.
   components:
   - type: Clothing
@@ -151,8 +151,8 @@
 
 - type: entity
   name: ceremonial sword
-  parent: N14Machete
-  id: N14CeremonialSword
+  parent: F14MacheteBase
+  id: F14CeremonialSword
   description: "An impressive double-edged sword, this weapon's size and sharpness make you think it could cleave a man in two."
   components:
   - type: Clothing
@@ -184,8 +184,8 @@
 
 - type: entity
   name: chinese officer sword
-  parent: N14Machete
-  id: N14ChineseSword
+  parent: F14MacheteBase
+  id: F14ChineseSword
   description: "An impressive double-edged sword used by pre-war chinese officers, this weapon's size and sharpness make you think it could cleave a man in two."
   components:
   - type: Clothing
@@ -215,8 +215,8 @@
 
 - type: entity
   name: longsword
-  parent: N14Machete
-  id: N14LongSword
+  parent: F14MacheteBase
+  id: F14LongSword
   description: You feel like you're in the medieval ages already...
   components:
   - type: Sprite
@@ -236,8 +236,8 @@
 
 - type: entity
   name: tribal sword
-  parent: N14Machete
-  id: N14TribalSword
+  parent: F14MacheteBase
+  id: F14TribalSword
   description: A tribal sword, made from teeth and claws from the hunts and bound to a piece of wood.
   components:
   - type: Clothing

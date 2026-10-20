@@ -4,7 +4,7 @@
 - type: entity
   name: sledgehammer
   parent: BaseItem
-  id: N14SledgeHammer
+  id: F14SledgeHammer
   description: A robust sledgehammer that requires considerable strength to be wielded.
   components:
   - type: Sprite
@@ -40,8 +40,8 @@
 
 - type: entity
   name: super sledgehammer
-  parent: N14SledgeHammer
-  id: N14SuperSledgeHammer
+  parent: F14SledgeHammer
+  id: F14SuperSledgeHammer
   description: A bigger, heavier, and more destructive sledgehammer. You really need some strong arms to swing it.
   components:
   - type: Sprite
@@ -73,8 +73,8 @@
 
 - type: entity
   name: tribal heavy club
-  parent: N14SledgeHammer
-  id: N14TribalBigClub
+  parent: F14SledgeHammer
+  id: F14TribalBigClub
   description: A big and heavy tribal club that requires considerable strength to be wielded.
   components:
   - type: Sprite
@@ -101,8 +101,8 @@
 
 - type: entity
   name: tribal decorated heavy club
-  parent: N14SledgeHammer
-  id: N14TribalBigClubDecorated
+  parent: F14SledgeHammer
+  id: F14TribalBigClubDecorated
   description: A big and heavy tribal hammer that requires considerable strength to be wielded, animal teeth have been added to this one.
   components:
   - type: Sprite
@@ -133,7 +133,7 @@
 - type: entity
   name: nail board
   parent: BaseItem
-  id: N14NailBoard
+  id: F14NailBoard
   description: A crude makeshift board outfitted with nails to pierce living things.
   components:
   - type: Sprite

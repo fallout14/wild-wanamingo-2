@@ -1,12 +1,12 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3WeaponEnergy/OneHanded/Tier3EnergyOneHandBase.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_EnergyPistol
+  id: F14WeaponLootTier3EnergyPistol
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier3_LaserPistol
+          tableId: F14WeaponLootTier3LaserPistol
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier3_PlasmaPistol
+          tableId: F14WeaponLootTier3PlasmaPistol
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier3_OtherPistol
+          tableId: F14WeaponLootTier3OtherPistol

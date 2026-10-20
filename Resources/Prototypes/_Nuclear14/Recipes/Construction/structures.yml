@@ -2,8 +2,8 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/structures.yml
 
 - type: construction
-  id: N14WallWoodLog # Forge-Change
-  graph: N14WoodWall
+  id: F14WallWoodLog # Forge-Change
+  graph: F14WoodWall
   startNode: start
   targetNode: logWall
   category: construction-category-structures
@@ -18,8 +18,8 @@
 # # Doors
 
 - type: construction
-  id: N14DoorMakeshift # Forge-Change
-  graph: N14DoorGraph
+  id: F14DoorMakeshift # Forge-Change
+  graph: F14DoorGraph
   startNode: start
   targetNode: woodDoorMakeshift
   category: construction-category-structures
@@ -31,8 +31,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14DoorBunker
-  graph: N14DoorBunker
+  id: F14DoorBunker
+  graph: F14DoorBunker
   startNode: start
   targetNode: bunker
   category: construction-category-structures
@@ -44,8 +44,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14DoorBunkerGlass
-  graph: N14DoorBunker
+  id: F14DoorBunkerGlass
+  graph: F14DoorBunker
   startNode: start
   targetNode: glassBunker
   category: construction-category-structures
@@ -60,8 +60,8 @@
 ## Walls
 
 - type: construction
-  id: N14WallWoodSlanted
-  graph: N14WoodWall
+  id: F14WallWoodSlanted
+  graph: F14WoodWall
   startNode: start
   targetNode: WoodWall
   category: construction-category-structures
@@ -74,8 +74,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14WallWoodTall
-  graph: N14WoodWall
+  id: F14WallWoodTall
+  graph: F14WoodWall
   startNode: start
   targetNode: WallWoodTall
   category: construction-category-structures
@@ -88,8 +88,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14WallScrapSlanted
-  graph: N14ScrapWall
+  id: F14WallScrapSlanted
+  graph: F14ScrapWall
   startNode: start
   targetNode: SheetScrapWall
   category: construction-category-structures
@@ -102,8 +102,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14WallScrapTall
-  graph: N14ScrapWall
+  id: F14WallScrapTall
+  graph: F14ScrapWall
   startNode: start
   targetNode: SheetScrapWallTall
   category: construction-category-structures
@@ -116,8 +116,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14WallScrapWhiteSlanted
-  graph: N14ScrapWall
+  id: F14WallScrapWhiteSlanted
+  graph: F14ScrapWall
   startNode: start
   targetNode: WhiteScrapWall
   category: construction-category-structures
@@ -130,8 +130,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14WallScrapWhiteTall
-  graph: N14ScrapWall
+  id: F14WallScrapWhiteTall
+  graph: F14ScrapWall
   startNode: start
   targetNode: WhiteScrapWallTall
   category: construction-category-structures
@@ -144,8 +144,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14WallScrapBlueSlanted
-  graph: N14ScrapWall
+  id: F14WallScrapBlueSlanted
+  graph: F14ScrapWall
   startNode: start
   targetNode: BlueScrapWall
   category: construction-category-structures
@@ -158,8 +158,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14WallScrapBlueTall
-  graph: N14ScrapWall
+  id: F14WallScrapBlueTall
+  graph: F14ScrapWall
   startNode: start
   targetNode: BlueScrapWallTall
   category: construction-category-structures
@@ -172,8 +172,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14WallScrapRedSlanted
-  graph: N14ScrapWall
+  id: F14WallScrapRedSlanted
+  graph: F14ScrapWall
   startNode: start
   targetNode: RedScrapWall
   category: construction-category-structures
@@ -186,8 +186,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14WallScrapRedTall
-  graph: N14ScrapWall
+  id: F14WallScrapRedTall
+  graph: F14ScrapWall
   startNode: start
   targetNode: RedScrapWallTall
   category: construction-category-structures
@@ -200,8 +200,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14WallRoughScrapSlanted
-  graph: N14ScrapWall
+  id: F14WallRoughScrapSlanted
+  graph: F14ScrapWall
   startNode: start
   targetNode: RoughScrapWall
   category: construction-category-structures
@@ -214,8 +214,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14WallRoughScrapTall
-  graph: N14ScrapWall
+  id: F14WallRoughScrapTall
+  graph: F14ScrapWall
   startNode: start
   targetNode: RoughScrapWallTall
   category: construction-category-structures
@@ -230,8 +230,8 @@
 ## Half Walls
 
 - type: construction
-  id: N14WallWoodHalf # Forge-Change
-  graph: N14HalfWall
+  id: F14WallWoodHalf # Forge-Change
+  graph: F14HalfWall
   startNode: start
   targetNode: Wood
   category: construction-category-structures
@@ -246,8 +246,8 @@
 ## Doors
 
 - type: construction
-  id: N14DoorWoodSlanted # Forge-Change
-  graph: N14DoorGraph
+  id: F14DoorWoodSlanted # Forge-Change
+  graph: F14DoorGraph
   startNode: start
   targetNode: WoodDoor
   category: construction-category-structures
@@ -261,8 +261,8 @@
 ## Windows
 
 - type: construction
-  id: N14WallMetalHalf
-  graph: N14HalfWall
+  id: F14WallMetalHalf
+  graph: F14HalfWall
   startNode: start
   targetNode: Metal
   category: construction-category-structures
@@ -275,8 +275,8 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: N14WindowBars
-  graph: N14WindowBars
+  id: F14WindowBars
+  graph: F14WindowBars
   startNode: start
   targetNode: bars
   category: construction-category-structures
@@ -292,8 +292,8 @@
 # #Misfits Add: Concrete and brick wall construction recipes
 
 - type: construction
-  id: N14WallAdobeTall
-  graph: MisfitsAdobeWall
+  id: F14WallAdobeTall
+  graph: F14AdobeWall
   startNode: start
   targetNode: AdobeWallTall
   category: construction-category-structures

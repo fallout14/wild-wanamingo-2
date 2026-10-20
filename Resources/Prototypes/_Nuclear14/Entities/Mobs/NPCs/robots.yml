@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: MobSiliconBase
-  id: N14MobRobotHostile
+  id: F14MobRobotHostile
   suffix: hostile npc
   name: robot
   description: Designed to serve humankind. Maybe it ended it.
@@ -13,12 +13,12 @@
   - type: MobMover
   - type: NpcFactionMember
     factions:
-    - N14HostileRobot
+    - F14HostileRobot
   #- type: MobRobotAggro #Misfits Change — removed: NPC hostile robots should be hostile to player robots, not neutral.
   - type: ProximityNPC # Misfits Add — sleep distant NPCs to reduce tick load
   - type: HTN
     rootTask:
-      task: N14HostileCompound
+      task: F14HostileCompound
     blackboard:
       NavSmash: !type:Bool
         true
@@ -73,7 +73,7 @@
   - type: ReplacementAccent
     accent: genericAggressive
   - type: Damageable
-    damageModifierSet: N14WastelandAnimal
+    damageModifierSet: F14WastelandAnimal
   - type: Injurable
     damageContainer: Biological
   - type: Puller
@@ -94,16 +94,16 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14ScrapElectronic1:
+          F14ScrapElectronic1:
             min: 1
             max: 3
-          N14MaterialCircuitry1:
+          F14MaterialCircuitry1:
             min: 1
             max: 3
-          N14Scrap1:
+          F14Scrap1:
             min: 1
             max: 3
-          N14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (5-25)
+          F14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (5-25)
             min: 5
             max: 25
       - !type:PlaySoundBehavior # Misfits Change - robot death sound
@@ -123,8 +123,8 @@
 
 - type: entity
   abstract: true
-  parent: N14MobRobotHostile
-  id: N14MobRobotHostileMelee
+  parent: F14MobRobotHostile
+  id: F14MobRobotHostileMelee
   components:
   - type: MeleeWeapon
     hidden: true
@@ -139,8 +139,8 @@
         Piercing: 1.66667
 
 - type: entity
-  parent: N14MobRobotHostileMelee
-  id: N14MobRobotAssaultronHostile
+  parent: F14MobRobotHostileMelee
+  id: F14MobRobotAssaultronHostile
   name: Assaultron
   description: Horrifying. Fast. Deadly.
   components:
@@ -149,13 +149,13 @@
     minInterval: 10
     maxInterval: 35
     sound:
-      collection: MisfitsAssaultronIdle
+      collection: F14AssaultronIdle
       params:
         volume: -6
         maxDistance: 7
   - type: HTN
     rootTask:
-      task: N14RangedHostileCompound
+      task: F14RangedHostileCompound
     blackboard:
       NavClimb: !type:Bool
         true
@@ -173,16 +173,16 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14ScrapElectronic1:
+          F14ScrapElectronic1:
             min: 1
             max: 3
-          N14MaterialCircuitry1:
+          F14MaterialCircuitry1:
             min: 1
             max: 3
-          N14Scrap1:
+          F14Scrap1:
             min: 1
             max: 3
-          N14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (5-25)
+          F14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (5-25)
             min: 5
             max: 25
       - !type:PlaySoundBehavior # Misfits Change - robot death sound
@@ -196,7 +196,7 @@
   - type: MeleeWeapon #Misfits Change - replace generic clangs with Assaultron attack vocals
     hidden: true
     soundHit:
-      collection: MisfitsAssaultronAttack
+      collection: F14AssaultronAttack
     angle: 0
     animation: WeaponArcPunch
     damage:
@@ -238,15 +238,15 @@
         Base: dead
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsAssaultronAttack
+      collection: F14AssaultronAttack
       params:
         volume: -3
         maxDistance: 12
   # Misfits Add - robot/broadcast languages when player-controlled.
 
 - type: entity
-  parent: N14MobRobotHostileMelee
-  id: N14MobRobotProtectronHostile
+  parent: F14MobRobotHostileMelee
+  id: F14MobRobotProtectronHostile
   name: Protectron
   description: A common protectron looking for a fight.
   components:
@@ -255,7 +255,7 @@
     minInterval: 12
     maxInterval: 45
     sound:
-      collection: MisfitsProtectronIdle
+      collection: F14ProtectronIdle
       params:
         volume: -7
         maxDistance: 6
@@ -265,7 +265,7 @@
   - type: MeleeWeapon #Misfits Change - replace generic clangs with Protectron attack vocals
     hidden: true
     soundHit:
-      collection: MisfitsProtectronAttack
+      collection: F14ProtectronAttack
     angle: 0
     animation: WeaponArcPunch
     damage:
@@ -301,21 +301,21 @@
       # Protect your area and remove any trespassers.
   - type: HTN
     rootTask:
-      task: N14HostileCompound
+      task: F14HostileCompound
     blackboard:
       NavSmash: !type:Bool
         true
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsProtectronAttack
+      collection: F14ProtectronAttack
       params:
         volume: -3
         maxDistance: 12
   # Misfits Add - robot/broadcast languages when player-controlled.
 
 - type: entity
-  parent: N14MobRobotProtectronHostile
-  id: N14MobRobotProtectronBuilderHostile
+  parent: F14MobRobotProtectronHostile
+  id: F14MobRobotProtectronBuilderHostile
   name: Protectron
   description: A protectron builder looking for a fight.
   components:
@@ -335,8 +335,8 @@
   # Misfits Add - robot/broadcast languages when player-controlled.
 
 - type: entity
-  parent: N14MobRobotProtectronHostile
-  id: N14MobRobotProtectronFireHostile
+  parent: F14MobRobotProtectronHostile
+  id: F14MobRobotProtectronFireHostile
   name: Protectron
   description: A protectron firefighter looking for a fight.
   components:
@@ -356,8 +356,8 @@
   # Misfits Add - robot/broadcast languages when player-controlled.
 
 - type: entity
-  parent: N14MobRobotProtectronHostile
-  id: N14MobRobotProtectronPoliceHostile
+  parent: F14MobRobotProtectronHostile
+  id: F14MobRobotProtectronPoliceHostile
   name: Protectron
   description: A protectron police bot looking for a fight.
   components:
@@ -381,7 +381,7 @@
     angleDecay: 4
     fireRate: 1
     soundGunshot:
-      collection: N14RechargerRifleGunshot
+      collection: F14RechargerRifleGunshot
     useKey: false
     selectedMode: SemiAuto
     availableModes:
@@ -396,15 +396,15 @@
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: HTN
     rootTask:
-      task: N14RangedHostileCompound
+      task: F14RangedHostileCompound
     blackboard:
       NavSmash: !type:Bool
         true
   # Misfits Add - robot/broadcast languages when player-controlled.
 
 - type: entity
-  parent: N14MobRobotHostileMelee
-  id: N14MobRobotMrHandyClaw
+  parent: F14MobRobotHostileMelee
+  id: F14MobRobotMrHandyClaw
   name: Mr Handy
   description: A domestic Mr Handy model with a claw attachment.
   suffix: hostile, claw
@@ -414,7 +414,7 @@
     minInterval: 12
     maxInterval: 45
     sound:
-      collection: MisfitsHandyIdle
+      collection: F14HandyIdle
       params:
         volume: -7
         maxDistance: 6
@@ -424,7 +424,7 @@
   - type: MeleeWeapon
     hidden: true
     soundHit:
-      collection: MisfitsHandyAttack
+      collection: F14HandyAttack
     angle: 0
     animation: WeaponArcPunch
     damage:
@@ -459,16 +459,16 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14ScrapElectronic1:
+          F14ScrapElectronic1:
             min: 1
             max: 3
-          N14MaterialCircuitry1:
+          F14MaterialCircuitry1:
             min: 1
             max: 3
-          N14Scrap1:
+          F14Scrap1:
             min: 1
             max: 3
-          N14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (5-25)
+          F14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (5-25)
             min: 5
             max: 25
       - !type:PlaySoundBehavior
@@ -489,15 +489,15 @@
   # - type: AmbientOnPowered
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsHandyAttack
+      collection: F14HandyAttack
       params:
         volume: -3
         maxDistance: 10
   # Misfits Add - robot/broadcast languages when player-controlled.
 
 - type: entity
-  parent: N14MobRobotMrHandyClaw
-  id: N14MobRobotMrHandySaw
+  parent: F14MobRobotMrHandyClaw
+  id: F14MobRobotMrHandySaw
   description: A domestic Mr Handy model with a saw attachment.
   suffix: hostile, saw
   components:
@@ -526,15 +526,15 @@
       visible: false
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsHandyAttack
+      collection: F14HandyAttack
       params:
         volume: -3
         maxDistance: 10
   # Misfits Add - robot/broadcast languages when player-controlled.
 
 - type: entity
-  parent: N14MobRobotHostile
-  id: N14MobRobotMrHandyGun
+  parent: F14MobRobotHostile
+  id: F14MobRobotMrHandyGun
   name: Mr Handy
   description: A domestic Mr Handy model with a gun attachment.
   suffix: hostile, gun
@@ -544,7 +544,7 @@
     minInterval: 12
     maxInterval: 45
     sound:
-      collection: MisfitsHandyIdle
+      collection: F14HandyIdle
       params:
         volume: -7
         maxDistance: 6
@@ -577,7 +577,7 @@
     angleDecay: 4
     fireRate: 1
     soundGunshot:
-      collection: N14RechargerRifleGunshot
+      collection: F14RechargerRifleGunshot
     useKey: false
     selectedMode: SemiAuto
     availableModes:
@@ -592,24 +592,24 @@
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: Loadout
     prototypes:
-      - N14RaiderPistolGear
+      - F14RaiderPistolGear
   - type: HTN
     rootTask:
-      task: N14RangedHostileCompound
+      task: F14RangedHostileCompound
     blackboard:
       NavSmash: !type:Bool
         true
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsHandyAttack
+      collection: F14HandyAttack
       params:
         volume: -3
         maxDistance: 10
   # Misfits Add - robot/broadcast languages when player-controlled.
 
 - type: entity
-  parent: N14MobRobotHostile
-  id: N14MobRobotMrHandyGutsy
+  parent: F14MobRobotHostile
+  id: F14MobRobotMrHandyGutsy
   name: Mr Gutsy
   description: A military Mr Gutsy model with a plasma attachment.
   suffix: hostile, plasma
@@ -619,7 +619,7 @@
     minInterval: 12
     maxInterval: 45
     sound:
-      collection: MisfitsGutsyIdle
+      collection: F14GutsyIdle
       params:
         volume: -7
         maxDistance: 6
@@ -653,13 +653,13 @@
     angleDecay: 4
     fireRate: 1
     soundGunshot:
-      collection: N14PlasmaPistolGunshot
+      collection: F14PlasmaPistolGunshot
     useKey: false
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
   - type: BasicEntityAmmoProvider
-    proto: N14BulletPlasma
+    proto: F14BulletPlasma
     capacity: 9
     count: 9
   - type: RechargeBasicEntityAmmo
@@ -668,21 +668,21 @@
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: HTN
     rootTask:
-      task: N14RangedHostileCompound
+      task: F14RangedHostileCompound
     blackboard:
       NavSmash: !type:Bool
         true
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsGutsyAttack
+      collection: F14GutsyAttack
       params:
         volume: -3
         maxDistance: 10
   # Misfits Add - robot/broadcast languages when player-controlled.
 
 - type: entity
-  parent: N14MobRobotHostile
-  id: N14MobRobotRobobrain
+  parent: F14MobRobotHostile
+  id: F14MobRobotRobobrain
   name: Robobrain
   description: A military Robobrain outfitted with a laser weapon.
   suffix: hostile, laser
@@ -716,7 +716,7 @@
     angleDecay: 4
     fireRate: 1
     soundGunshot:
-      collection: N14RechargerRifleGunshot
+      collection: F14RechargerRifleGunshot
     useKey: false
     selectedMode: SemiAuto
     availableModes:
@@ -731,21 +731,21 @@
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: HTN
     rootTask:
-      task: N14RangedHostileCompound
+      task: F14RangedHostileCompound
     blackboard:
       NavSmash: !type:Bool
         true
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsProtectronAttack
+      collection: F14ProtectronAttack
       params:
         volume: -3
         maxDistance: 12
   # Misfits Add - robot/broadcast languages when player-controlled.
 
 - type: entity
-  parent: N14MobRobotHostile
-  id: N14MobRobotEyebot
+  parent: F14MobRobotHostile
+  id: F14MobRobotEyebot
   name: Eyebot
   description: A military Eyebot playing a catchy tune.
   suffix: hostile, laser
@@ -771,7 +771,7 @@
     angleDecay: 4
     fireRate: 1
     soundGunshot:
-      collection: N14RechargerRifleGunshot
+      collection: F14RechargerRifleGunshot
     useKey: false
     selectedMode: SemiAuto
     availableModes:
@@ -786,7 +786,7 @@
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: HTN
     rootTask:
-      task: N14RangedHostileCompound
+      task: F14RangedHostileCompound
     blackboard:
       NavSmash: !type:Bool
         true
@@ -798,16 +798,16 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14ScrapElectronic1:
+          F14ScrapElectronic1:
             min: 1
             max: 3
-          N14MaterialCircuitry1:
+          F14MaterialCircuitry1:
             min: 1
             max: 3
-          N14Scrap1:
+          F14Scrap1:
             min: 1
             max: 3
-          N14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (5-25)
+          F14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (5-25)
             min: 5
             max: 25
       - !type:PlaySoundBehavior
@@ -819,19 +819,19 @@
     range: 6
     volume: -3
     sound:
-      collection: N14AmbienceEyebot
+      collection: F14AmbienceEyebot
   - type: IdleSound #Misfits Change - layer in the dedicated Eyebot chatter set alongside the ambient music loop
   - type: SpamEmitSound #Misfits Change - periodic Eyebot beeps and announcements
     minInterval: 10
     maxInterval: 35
     sound:
-      collection: MisfitsEyebotIdle
+      collection: F14EyebotIdle
       params:
         volume: -6
         maxDistance: 6
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsEyebotAttack
+      collection: F14EyebotAttack
       params:
         volume: -3
         maxDistance: 12

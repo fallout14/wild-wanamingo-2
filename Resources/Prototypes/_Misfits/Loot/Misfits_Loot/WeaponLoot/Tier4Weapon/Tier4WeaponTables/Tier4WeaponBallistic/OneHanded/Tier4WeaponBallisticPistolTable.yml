@@ -1,42 +1,42 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier4Weapon/Tier4WeaponTables/Tier4WeaponBallistic/OneHanded/Tier4WeaponBallisticPistolTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_GunsBulletPistol
+  id: F14WeaponLootTier4GunsBulletPistol
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: MisfitsWeaponPistolM1911
+      id: F14WeaponPistolM1911
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponRangerPowerArmorPistol
+      id: F14WeaponRangerPowerArmorPistol
       weight: 7
     - !type:EntSelector
-      id: N14WeaponDesertEagle44
+      id: F14WeaponDesertEagle44
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistol10mm
+      id: F14WeaponPistol10mm
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistol45Colt
+      id: F14WeaponPistol45Colt
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponPistolM1911 # .45acp
+      id: F14WeaponPistolM1911 # .45acp
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistol12mm
+      id: F14WeaponPistol12mm
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponPistol223
+      id: F14WeaponPistol223
       weight: 7
     - !type:EntSelector
-      id: N14WeaponLaserdotDesertEagle44 # laser sight deagle
+      id: F14WeaponLaserdotDesertEagle44 # laser sight deagle
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponPistolM1911Custom # .45acp fancy
+      id: F14WeaponPistolM1911Custom # .45acp fancy
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistol9mmSpy #stealth
+      id: F14WeaponPistol9mmSpy #stealth
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponPistol357Automag # #Misfits Add - .357 automag
+      id: F14WeaponPistol357Automag # #Misfits Add - .357 automag
       weight: 4

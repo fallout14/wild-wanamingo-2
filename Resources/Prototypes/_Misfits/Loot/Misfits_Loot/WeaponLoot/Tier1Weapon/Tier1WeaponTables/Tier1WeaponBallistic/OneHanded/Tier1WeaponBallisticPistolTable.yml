@@ -1,15 +1,15 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier1Weapon/Tier1WeaponTables/Tier1WeaponBallistic/OneHanded/Tier1WeaponBallisticPistolTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier1_GunsBulletPistol
+  id: F14WeaponLootTier1GunsBulletPistol
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponPistol22lr
+      id: F14WeaponPistol22lr
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistol9mm
+      id: F14WeaponPistol9mm
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistol10mmPipe
+      id: F14WeaponPistol10mmPipe
       weight: 7

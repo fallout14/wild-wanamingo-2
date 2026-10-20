@@ -1,215 +1,215 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/GeneralLoot/GenTiersConsumablesFloraTables.yml
 
 - type: entityTable
-  id: MisfitsM14ConsumableLootTier0_FloraAll
+  id: F14ConsumableLootTier0FloraAll
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FloraProduceWildBrocFlower
+      id: F14FloraProduceWildBrocFlower
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildXander
+      id: F14FloraProduceWildXander
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildCaveFungusRad
+      id: F14FloraProduceWildCaveFungusRad
       weight: 2
     - !type:EntSelector
-      id: N14FloraProduceWildAgave
+      id: F14FloraProduceWildAgave
       weight: 5
     - !type:EntSelector
-      id: N14FloraProduceWildGlowpepper
+      id: F14FloraProduceWildGlowpepper
       weight: 5
     - !type:EntSelector
-      id: N14FloraProduceWildNettle
+      id: F14FloraProduceWildNettle
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildWhiteHorsenettle
+      id: F14FloraProduceWildWhiteHorsenettle
       weight: 5
     - !type:EntSelector
-      id: N14FloraProduceWildBananaYucca
+      id: F14FloraProduceWildBananaYucca
       weight: 5
     - !type:EntSelector
-      id: N14FloraProduceWildBarrelCactusFruit
+      id: F14FloraProduceWildBarrelCactusFruit
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildBlackberries
+      id: F14FloraProduceWildBlackberries
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildBuffaloGourd
+      id: F14FloraProduceWildBuffaloGourd
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildCabbage
+      id: F14FloraProduceWildCabbage
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildCarrot
+      id: F14FloraProduceWildCarrot
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildMaize
+      id: F14FloraProduceWildMaize
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildOnion
+      id: F14FloraProduceWildOnion
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildMutfruit
+      id: F14FloraProduceWildMutfruit
       weight: 1
     - !type:EntSelector
-      id: N14FloraProduceWildPricklyPearFruit
+      id: F14FloraProduceWildPricklyPearFruit
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildRazorgrain
+      id: F14FloraProduceWildRazorgrain
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildStarlightBerries
+      id: F14FloraProduceWildStarlightBerries
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildTarberries
+      id: F14FloraProduceWildTarberries
       weight: 5
     - !type:EntSelector
-      id: N14FloraProduceWildTato
+      id: F14FloraProduceWildTato
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildCaveFungus
+      id: F14FloraProduceWildCaveFungus
       weight: 5
     - !type:EntSelector
-      id: N14WastelandFloraWildCotton
+      id: F14WastelandFloraWildCotton
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildCoyoteTobacco
+      id: F14FloraProduceWildCoyoteTobacco
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildDaturaFlower
+      id: F14FloraProduceWildDaturaFlower
       weight: 1
     - !type:EntSelector
-      id: N14FloraProduceWildMesquitePods
+      id: F14FloraProduceWildMesquitePods
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildPinyonNuts
+      id: F14FloraProduceWildPinyonNuts
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildNettle
+      id: F14FloraProduceWildNettle
       weight: 10
 
 - type: entityTable
-  id: MisfitsM14ConsumableLootTier0_FloraCommon
+  id: F14ConsumableLootTier0FloraCommon
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FloraProduceWildNettle
+      id: F14FloraProduceWildNettle
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildBarrelCactusFruit
+      id: F14FloraProduceWildBarrelCactusFruit
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildBlackberries
+      id: F14FloraProduceWildBlackberries
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildBuffaloGourd
+      id: F14FloraProduceWildBuffaloGourd
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildCabbage
+      id: F14FloraProduceWildCabbage
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildCarrot
+      id: F14FloraProduceWildCarrot
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildMaize
+      id: F14FloraProduceWildMaize
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildOnion
+      id: F14FloraProduceWildOnion
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildPricklyPearFruit
+      id: F14FloraProduceWildPricklyPearFruit
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildRazorgrain
+      id: F14FloraProduceWildRazorgrain
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildStarlightBerries
+      id: F14FloraProduceWildStarlightBerries
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildTato
+      id: F14FloraProduceWildTato
       weight: 10
     - !type:EntSelector
-      id: N14WastelandFloraWildCotton
+      id: F14WastelandFloraWildCotton
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildMesquitePods
+      id: F14FloraProduceWildMesquitePods
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildPinyonNuts
+      id: F14FloraProduceWildPinyonNuts
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildNettle
+      id: F14FloraProduceWildNettle
       weight: 10
 
 # should be stuff that cant be craftable into meds and doesnt have side effects good or bad
 # just if u wanna lay food stuff around
 
 - type: entityTable
-  id: MisfitsM14ConsumableLootTier0_FloraBad
+  id: F14ConsumableLootTier0FloraBad
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FloraProduceWildBarrelCactusFruit
+      id: F14FloraProduceWildBarrelCactusFruit
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildBlackberries
+      id: F14FloraProduceWildBlackberries
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildMaize
+      id: F14FloraProduceWildMaize
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildOnion
+      id: F14FloraProduceWildOnion
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildPricklyPearFruit
+      id: F14FloraProduceWildPricklyPearFruit
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildRazorgrain
+      id: F14FloraProduceWildRazorgrain
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildTato
+      id: F14FloraProduceWildTato
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildPinyonNuts
+      id: F14FloraProduceWildPinyonNuts
       weight: 10
 
 - type: entityTable
-  id: MisfitsM14ConsumableLootTier0_FloraFarm
+  id: F14ConsumableLootTier0FloraFarm
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WastelandFloraWildCotton
+      id: F14WastelandFloraWildCotton
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildPinyonNuts
+      id: F14FloraProduceWildPinyonNuts
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildCarrot
+      id: F14FloraProduceWildCarrot
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildMaize
+      id: F14FloraProduceWildMaize
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildOnion
+      id: F14FloraProduceWildOnion
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildPricklyPearFruit
+      id: F14FloraProduceWildPricklyPearFruit
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildRazorgrain
+      id: F14FloraProduceWildRazorgrain
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildTato
+      id: F14FloraProduceWildTato
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildPinyonNuts
+      id: F14FloraProduceWildPinyonNuts
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildBuffaloGourd
+      id: F14FloraProduceWildBuffaloGourd
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildCabbage
+      id: F14FloraProduceWildCabbage
       weight: 10
 
 # not really strict or in-lore rlly
@@ -217,99 +217,99 @@
 # if it is used in a tribal type recipe will prolly be here
 
 - type: entityTable
-  id: MisfitsM14ConsumableLootTier0_FloraTribal
+  id: F14ConsumableLootTier0FloraTribal
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FloraProduceWildBrocFlower
+      id: F14FloraProduceWildBrocFlower
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildXander
+      id: F14FloraProduceWildXander
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildAgave
+      id: F14FloraProduceWildAgave
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildGlowpepper
+      id: F14FloraProduceWildGlowpepper
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildWhiteHorsenettle
+      id: F14FloraProduceWildWhiteHorsenettle
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildBananaYucca
+      id: F14FloraProduceWildBananaYucca
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildBarrelCactusFruit
+      id: F14FloraProduceWildBarrelCactusFruit
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildStarlightBerries
+      id: F14FloraProduceWildStarlightBerries
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildTarberries
+      id: F14FloraProduceWildTarberries
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildCoyoteTobacco
+      id: F14FloraProduceWildCoyoteTobacco
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildDaturaFlower
+      id: F14FloraProduceWildDaturaFlower
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildMesquitePods
+      id: F14FloraProduceWildMesquitePods
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildNettle
+      id: F14FloraProduceWildNettle
       weight: 10
 
 # "Uncommon" useful but not rare or hard to get. Nice prize very early on, especially for crafting
 # Can be Common on tier 2
 
 - type: entityTable
-  id: MisfitsM14ConsumableLootTier2_FloraUncommon
+  id: F14ConsumableLootTier2FloraUncommon
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FloraProduceWildBrocFlower
+      id: F14FloraProduceWildBrocFlower
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildXander
+      id: F14FloraProduceWildXander
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildAgave
+      id: F14FloraProduceWildAgave
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildGlowpepper
+      id: F14FloraProduceWildGlowpepper
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildBananaYucca
+      id: F14FloraProduceWildBananaYucca
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildTarberries
+      id: F14FloraProduceWildTarberries
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildCoyoteTobacco
+      id: F14FloraProduceWildCoyoteTobacco
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildCaveFungus
+      id: F14FloraProduceWildCaveFungus
       weight: 10
 
 # "Rare" as they get. Tied to higher end crafting recipes
 # Can be Common on tier 3
 
 - type: entityTable
-  id: MisfitsM14ConsumableLootTier3_FloraRare
+  id: F14ConsumableLootTier3FloraRare
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FloraProduceWildCaveFungusRad
+      id: F14FloraProduceWildCaveFungusRad
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildWhiteHorsenettle
+      id: F14FloraProduceWildWhiteHorsenettle
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildMutfruit
+      id: F14FloraProduceWildMutfruit
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildDaturaFlower
+      id: F14FloraProduceWildDaturaFlower
       weight: 10
 
 
@@ -317,18 +317,18 @@
 # careful since most of these are rare crafting ingredients so dont just spam it. dats why it special
 
 - type: entityTable
-  id: MisfitsM14ConsumableLootSpecialTier3_FloraToxic
+  id: F14ConsumableLootSpecialTier3FloraToxic
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14FloraProduceWildCaveFungusRad
+      id: F14FloraProduceWildCaveFungusRad
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildCaveFungus
+      id: F14FloraProduceWildCaveFungus
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildWhiteHorsenettle
+      id: F14FloraProduceWildWhiteHorsenettle
       weight: 10
     - !type:EntSelector
-      id: N14FloraProduceWildDaturaFlower
+      id: F14FloraProduceWildDaturaFlower
       weight: 10

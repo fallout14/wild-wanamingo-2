@@ -2,13 +2,13 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Lathes/weapons.yml
 
 - type: latheRecipe
-  id: N14WastelandSpear
+  id: F14WastelandSpear
   icon:
     sprite: Nuclear14/Objects/Weapons/Melee/spear.rsi
     state: spear
-  result: N14WastelandSpear
+  result: F14WastelandSpear
   categories:
-  - N14WeaponMelee
+  - F14WeaponMelee
   completetime: 12
   materials:
     Steel: 100
@@ -16,55 +16,55 @@
     Cloth: 100
 
 - type: latheRecipe
-  id: N14ScrapMachete
+  id: F14ScrapMachete
   icon:
     sprite: Nuclear14/Objects/Weapons/Melee/scrap_machete.rsi
     state: icon
-  result: N14ScrapMachete
+  result: F14ScrapMachete
   categories:
-  - N14WeaponMelee
+  - F14WeaponMelee
   completetime: 12
   materials:
-    N14Scrap: 600
+    F14Scrap: 600
     Cloth: 200
 
 - type: latheRecipe
-  id: N14BrassKnife
-  result: N14BrassKnife
+  id: F14BrassKnife
+  result: F14BrassKnife
   categories:
-  - N14WeaponMelee
+  - F14WeaponMelee
   completetime: 12
   materials:
-    N14Brass: 200
-    N14Iron: 100
+    F14Brass: 200
+    F14Iron: 100
     Cloth: 200
 
 - type: latheRecipe
-  id: N14TrainingSword
-  result: N14TrainingSword
+  id: F14TrainingSword
+  result: F14TrainingSword
   categories:
-  - N14WeaponMelee
+  - F14WeaponMelee
   completetime: 5
   materials:
     Wood: 300
 
 - type: latheRecipe
-  id: N14LongSword
-  result: N14LongSword
+  id: F14LongSword
+  result: F14LongSword
   categories:
-  - N14WeaponMelee
+  - F14WeaponMelee
   completetime: 30
   materials:
     Wood: 300
-    N14Iron: 500
-    N14Brass: 200
-    N14Leather: 200
+    F14Iron: 500
+    F14Brass: 200
+    F14Leather: 200
 
 - type: latheRecipe
-  id: N14Bola
+  id: F14Bola
   result: Bola
   categories:
-  - N14Weapons
+  - F14Weapons
   completetime: 12
   materials:
     Steel: 200
@@ -73,119 +73,119 @@
 #MARK: Gun Parts
 
 - type: latheRecipe
-  id: N14JunkGunpartsAction
-  result: N14JunkGunpartsAction
+  id: F14JunkGunpartsAction
+  result: F14JunkGunpartsAction
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 2
   materials:
-    N14Iron: 50
+    F14Iron: 50
 
 - type: latheRecipe
-  id: N14JunkGunpartsBarrel
-  result: N14JunkGunpartsBarrel
+  id: F14JunkGunpartsBarrel
+  result: F14JunkGunpartsBarrel
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 4
   materials:
-    N14Iron: 150
+    F14Iron: 150
 
 - type: latheRecipe
-  id: N14JunkGunpartsBolt
-  result: N14JunkGunpartsBolt
+  id: F14JunkGunpartsBolt
+  result: F14JunkGunpartsBolt
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 2
   materials:
-    N14Iron: 50
+    F14Iron: 50
 
 - type: latheRecipe
-  id: N14JunkGunpartsFrame
-  result: N14JunkGunpartsFrame
+  id: F14JunkGunpartsFrame
+  result: F14JunkGunpartsFrame
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 3
   materials:
     Steel: 100
 
 - type: latheRecipe
-  id: N14JunkGunpartsFramePistol
-  result: N14JunkGunpartsFramePistol
+  id: F14JunkGunpartsFramePistol
+  result: F14JunkGunpartsFramePistol
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 3
   materials:
     Steel: 100
 
 - type: latheRecipe
-  id: N14JunkGunpartsReceiver
-  result: N14JunkGunpartsReceiver
+  id: F14JunkGunpartsReceiver
+  result: F14JunkGunpartsReceiver
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 3
   materials:
     Steel: 50
 
 - type: latheRecipe
-  id: N14JunkGunpartsRecoilComp
-  result: N14JunkGunpartsRecoilComp
+  id: F14JunkGunpartsRecoilComp
+  result: F14JunkGunpartsRecoilComp
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 3
   materials:
     Steel: 50
 
 - type: latheRecipe
-  id: N14JunkGunpartsRifleFrame
-  result: N14JunkGunpartsRifleFrame
+  id: F14JunkGunpartsRifleFrame
+  result: F14JunkGunpartsRifleFrame
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 3
   materials:
-    N14Iron: 100
+    F14Iron: 100
 
 - type: latheRecipe
-  id: N14JunkGunpartsRifleStock
-  result: N14JunkGunpartsRifleStock
+  id: F14JunkGunpartsRifleStock
+  result: F14JunkGunpartsRifleStock
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 3
   materials:
     Wood: 200
 
 - type: latheRecipe
-  id: N14JunkGunpartsRifleScope
-  result: N14JunkGunpartsRifleScope
+  id: F14JunkGunpartsRifleScope
+  result: F14JunkGunpartsRifleScope
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 3
   materials:
     Steel: 50
     Glass: 50
 
 - type: latheRecipe
-  id: N14JunkGunpartsStock
-  result: N14JunkGunpartsStock
+  id: F14JunkGunpartsStock
+  result: F14JunkGunpartsStock
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 3
   materials:
     Steel: 200
 
 - type: latheRecipe
-  id: N14JunkGunpartsStockWood
-  result: N14JunkGunpartsStockWood
+  id: F14JunkGunpartsStockWood
+  result: F14JunkGunpartsStockWood
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 3
   materials:
     Wood: 200
 
 - type: latheRecipe
-  id: N14JunkGunpartsTrigger
-  result: N14JunkGunpartsTrigger
+  id: F14JunkGunpartsTrigger
+  result: F14JunkGunpartsTrigger
   categories:
-  - N14Parts
+  - F14Parts
   completetime: 3
   materials:
     Steel: 50

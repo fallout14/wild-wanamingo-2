@@ -2,13 +2,64 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Windows/windowcovers.yml
 
 - type: entity
-  id: N14WindowBars
+  id: F14BarricadeWindow
+  parent: BaseStructure
+  name: barricade
+  description: A makeshift barricade.
+  components:
+    - type: Sprite
+      netsync: false
+      drawdepth: Overdoors
+      sprite: Nuclear14/Structures/Furniture/barricades.rsi
+      state: boarded
+    - type: Icon
+      sprite: Nuclear14/Structures/Furniture/barricades.rsi
+      state: boarded
+    - type: Damageable
+      damageModifierSet: Wood
+    - type: Injurable
+      damageContainer: Inorganic
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+              bounds: "-0.5,-0.5,0.5,0.5"
+          layer:
+          - GlassLayer
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+              
+
+- type: entity
+  parent: F14BarricadeWindow
+  id: F14BarricadeDoor
+  name: locked door
+  description: A locked door. Might have to break it down.
+  components:
+    - type: Sprite
+      sprite: Nuclear14/Structures/Furniture/barricades.rsi
+      state: locked
+    - type: Icon
+      sprite: Nuclear14/Structures/Furniture/barricades.rsi
+      state: locked
+
+- type: entity
+  id: F14WindowBars
   parent: BaseStructure
   name: window bars
   description: Sturdy looking bars blocking access.
   components:
     - type: Construction
-      graph: N14WindowBars
+      graph: F14WindowBars
       node: bars
     - type: MeleeSound
       soundGroups:
@@ -54,8 +105,8 @@
               
 
 - type: entity
-  id: N14WindowBars2
-  parent: N14WindowBars
+  id: F14WindowBars2
+  parent: F14WindowBars
   components:
     - type: Sprite
       netsync: false

@@ -1,9 +1,9 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Kits/osi_loadoutkits.yml
 
 - type: entity
-  id: MisfitsOSIloadoutkits
+  id: F14OSIloadoutkits
   name: Undecided OSI Loadout Kit
-  parent: N14BaseLoadoutKit
+  parent: F14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi
@@ -25,7 +25,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: pointman
   content:
-  - MisfitsKitOSI_Mechanical
+  - F14KitOSIMechanical
 
 - type: thiefBackpackSet
   id: OSI_MedicalSet
@@ -35,7 +35,7 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: medic
   content:
-  - MisfitsKitOSI_Medical
+  - F14KitOSIMedical
 
 - type: thiefBackpackSet
   id: OSI_FieldSet
@@ -45,12 +45,12 @@
     sprite: Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   content:
-  - MisfitsKitOSI_Field
+  - F14KitOSIField
 
 - type: entity
-  id: MisfitsKitOSI_Mechanical
+  id: F14KitOSIMechanical
   name: mechanical OSI kit
-  parent: N14KitBase
+  parent: F14KitBase
   description: A crate containing tools and technical supplies for an OSI scientist assigned to mechanical and industrial work.
   components:
   - type: Sprite
@@ -62,16 +62,16 @@
       - id: ToolboxMechanicalFilled
       - id: ToolboxElectricalFilled
       - id: RadioHandheld
-      - id: N14Stimpak
-      - id: N14CleanGauze10
-      - id: N14Flare
+      - id: F14Stimpak
+      - id: F14CleanGauze10
+      - id: F14Flare
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  id: MisfitsKitOSI_Medical
+  id: F14KitOSIMedical
   name: medical OSI kit
-  parent: N14KitBase
+  parent: F14KitBase
   description: A crate containing trauma and radiation support for an OSI scientist assigned to medical duties.
   components:
   - type: Sprite
@@ -80,19 +80,19 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14MedkitCombatFilled
-      - id: N14SuperStimpak
-      - id: N14RadAwayBloodbag
-      - id: N14CleanGauze10
+      - id: F14MedkitCombatFilled
+      - id: F14SuperStimpak
+      - id: F14RadAwayBloodbag
+      - id: F14CleanGauze10
         amount: 2
       - id: RadioHandheld
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  id: MisfitsKitOSI_Field
+  id: F14KitOSIField
   name: field OSI kit
-  parent: N14KitBase
+  parent: F14KitBase
   description: A crate containing a radiation suit, survey gear, and a sidearm for an OSI scientist operating in the field.
   components:
   - type: Sprite
@@ -102,11 +102,11 @@
   - type: SpawnItemsOnUse
     items:
       - id: GeigerCounter
-      - id: N14MedkitRadiationFilled
-      - id: N14WeaponPistol9mm
-      - id: N14Stimpak
-      - id: N14CleanGauze10
-      - id: N14Flare
+      - id: F14MedkitRadiationFilled
+      - id: F14WeaponPistol9mm
+      - id: F14Stimpak
+      - id: F14CleanGauze10
+      - id: F14Flare
       - id: RadioHandheld
     sound:
       path: /Audio/Effects/unwrap.ogg

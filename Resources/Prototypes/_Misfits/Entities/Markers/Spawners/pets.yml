@@ -2,7 +2,7 @@
 
 - type: entity
   parent: MarkerBase
-  id: MisfitsSpawnerRabbitFollowersPet
+  id: F14SpawnerRabbitFollowersPet
   name: dr. thumper rabbit pet followers spawner
   components:
   - type: Sprite
@@ -13,11 +13,11 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - MisfitsMobRabbitFollowersPet
+    - F14MobRabbitFollowersPet
 
 - type: entity
   parent: MarkerBase
-  id: MisfitsSpawnerMobLizardBoSPet1
+  id: F14SpawnerMobLizardBoSPet1
   name: timmy bos pet spawner
   components:
   - type: Sprite
@@ -28,11 +28,11 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - MisfitsMobLizardBoSPet1
+    - F14MobLizardBoSPet1
 
 - type: entity
   parent: MarkerBase
-  id: MisfitsSpawnerMobLizardBoSPet2
+  id: F14SpawnerMobLizardBoSPet2
   name: jimmy bos pet spawner
   components:
   - type: Sprite
@@ -43,11 +43,11 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - MisfitsMobLizardBoSPet2
+    - F14MobLizardBoSPet2
 
 - type: entity
   parent: MarkerBase
-  id: MisfitsSpawnerMobPetDogLegion
+  id: F14SpawnerMobPetDogLegion
   name: legion dog spawner
   components:
   - type: Sprite
@@ -61,7 +61,7 @@
 
 - type: entity
   parent: MarkerBase
-  id: MisfitsSpawnerMobPetRadToad
+  id: F14SpawnerMobPetRadToad
   name: rad toad spawner
   components:
   - type: Sprite
@@ -72,4 +72,4 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - MisfitsMobRadtoad
+    - F14MobRadtoad

@@ -19,7 +19,7 @@ public sealed partial class FlamerAmmoProviderComponent : AmmoProviderComponent
     public float FireCost = 5f;
 
     [DataField]
-    public EntProtoId FireTilePrototype = "MisfitsTileFire";
+    public EntProtoId FireTilePrototype = "F14TileFire";
 
     /// <summary>
     /// Optional cosmetic projectile fired along with the fire line.

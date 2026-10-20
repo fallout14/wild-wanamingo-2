@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14WorkbenchBase
+  id: F14WorkbenchBase
   description: A workbench with metal working tools for crafting.
   name: workbench
   abstract: true
@@ -42,16 +42,16 @@
   - type: Rotatable
   - type: Tag
     tags:
-    - CorvaxWorkbench
+    - F14Workbench
 
 - type: entity
-  parent: N14WorkbenchBase
-  id: N14WorkbenchWeaponbench
+  parent: F14WorkbenchBase
+  id: F14WorkbenchWeaponbench
   description: A workbench with weapon working tools for crafting.
   name: weapon workbench
   components:
   - type: Construction
-    graph: N14WorkbenchWeaponbench
+    graph: F14WorkbenchWeaponbench
     node: WorkbenchWeaponbench
   - type: Sprite
     state: weaponbench
@@ -75,7 +75,7 @@
       - Sheet
       - RawMaterial
       - Ingot
-      - N14Scrap
+      - F14Scrap
   - type: Lathe
     idleState: icon
     runningState: icon # change this
@@ -83,13 +83,13 @@
     - F14WorkbenchWeaponbenchStatic
 
 - type: entity
-  parent: N14WorkbenchBase
-  id: N14WorkbenchAmmobench
+  parent: F14WorkbenchBase
+  id: F14WorkbenchAmmobench
   description: A workbench with ammo working tools for crafting.
   name: ammo workbench
   components:
   - type: Construction
-    graph: N14WorkbenchAmmobench
+    graph: F14WorkbenchAmmobench
     node: WorkbenchAmmobench
   - type: Sprite
     state: ammobench
@@ -122,8 +122,8 @@
 
 - type: entity
   categories: [ HideSpawnMenu ] # Forge-change
-  parent: N14WorkbenchBase
-  id: N14WorkbenchAmmobenchFrame
+  parent: F14WorkbenchBase
+  id: F14WorkbenchAmmobenchFrame
   description: A workbench with ammo working tools for crafting. This one is still being built!
   name: ammo workbench frame
   components:
@@ -146,18 +146,18 @@
           WorkbenchAmmobenchUnwrenched: { state: ammobenchframe4 }
           WorkbenchAmmobenchUnscrewed: { state: ammobenchframe5 }
   - type: Construction
-    graph: N14WorkbenchAmmobench
+    graph: F14WorkbenchAmmobench
     node: WorkbenchAmmobenchFrame
     defaultTarget: WorkbenchAmmobench
 
 - type: entity
-  parent: N14WorkbenchBase
-  id: N14WorkbenchArmorbench
+  parent: F14WorkbenchBase
+  id: F14WorkbenchArmorbench
   description: A workbench with armor working tools for crafting.
   name: armor workbench
   components:
   - type: Construction
-    graph: N14WorkbenchArmorbench
+    graph: F14WorkbenchArmorbench
     node: WorkbenchArmorbench
   - type: Sprite
     state: armorbench
@@ -192,7 +192,7 @@
       - Sheet
       - RawMaterial
       - Ingot
-      - N14RawLeather # move it to the tanning machine
+      - F14RawLeather # move it to the tanning machine
   - type: Lathe
     idleState: icon
     runningState: icon # change this
@@ -200,13 +200,13 @@
     - F14WorkbenchArmorbenchStatic
 
 - type: entity
-  parent: N14WorkbenchBase
-  id: N14WorkbenchTinkerbench
+  parent: F14WorkbenchBase
+  id: F14WorkbenchTinkerbenchBase
   description: A workbench with tinkering tools for crafting.
   name: tinker workbench
   components:
   - type: Construction
-    graph: N14WorkbenchTinkerbench
+    graph: F14WorkbenchTinkerbench
     node: WorkbenchTinkerbench
   - type: Sprite
     state: tinkerbench
@@ -239,12 +239,12 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14WorkbenchChemistryset
+  id: F14WorkbenchChemistryset
   description: A chemistry set for crafting drugs and compounds
   name: chemical set
   components:
   - type: Construction
-    graph: N14WorkbenchChemistryset
+    graph: F14WorkbenchChemistryset
     node: WorkbenchChemistryset
   - type: InteractionOutline
   - type: Sprite
@@ -290,7 +290,7 @@
       maxVol: 10000 # #Misfits Tweak - cap buffer to prevent unlimited super-chem stacking
   - type: SolutionManager
     solutions:
-    - N14WorkbenchChemistrysetSolutionPillBuffer
+    - F14WorkbenchChemistrysetSolutionPillBuffer
   - type: DumpableSolution
     solution: buffer
   - type: Anchorable
@@ -302,7 +302,7 @@
 
 - type: entity
   parent: Solution
-  id: N14WorkbenchChemistrysetSolutionPillBuffer
+  id: F14WorkbenchChemistrysetSolutionPillBuffer
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -312,7 +312,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: N14WorkbenchChemistrysetFrame
+  id: F14WorkbenchChemistrysetFrame
   categories: [ HideSpawnMenu ]
   description: A chemistry set for crafting drugs and compounds. This one is still being built!
   name: chemical set frame
@@ -335,18 +335,18 @@
           WorkbenchChemistrysetUnwelded: { state: chemicalsetframe4 }
           WorkbenchChemistrysetUnscrewed: { state: chemicalsetframe5 }
   - type: Construction
-    graph: N14WorkbenchChemistryset
+    graph: F14WorkbenchChemistryset
     node: WorkbenchChemistrysetFrame
     defaultTarget: WorkbenchChemistryset
 
 - type: entity
-  parent: N14WorkbenchBase
-  id: N14WorkbenchMetal
+  parent: F14WorkbenchBase
+  id: F14WorkbenchMetal
   description: A workbench with metal working tools for crafting.
   name: workbench
   components:
   - type: Construction
-    graph: N14WorkbenchMetal
+    graph: F14WorkbenchMetal
     node: WorkbenchMetal
   - type: MaterialStorage
     whitelist:
@@ -361,8 +361,8 @@
     - F14WorkbenchMetalStatic
 
 - type: entity
-  parent: N14WorkbenchBase
-  id: N14WorkbenchMetalFrame
+  parent: F14WorkbenchBase
+  id: F14WorkbenchMetalFrame
   description: A workbench with metal working tools for crafting. This one is still being built!
   name: workbench frame
   components:
@@ -384,18 +384,18 @@
           WorkbenchMetalUnwrenched: { state: workbenchframe3 }
           WorkbenchMetalUnscrewed: { state: workbenchframe4 }
   - type: Construction
-    graph: N14WorkbenchMetal
+    graph: F14WorkbenchMetal
     node: WorkbenchMetalFrame
     defaultTarget: WorkbenchMetal
 
 - type: entity
-  parent: N14WorkbenchBase
-  id: N14WorkbenchForge
+  parent: F14WorkbenchBase
+  id: F14WorkbenchForge
   description: A forge made from pieces of scrap. Looks hot.
   name: forge
   components:
   - type: Construction
-    graph: N14WorkbenchForge
+    graph: F14WorkbenchForge
     node: WorkbenchForge
   - type: Sprite
     sprite: Nuclear14/Structures/Misc/forgeworkbench.rsi
@@ -412,7 +412,7 @@
       - RawMaterial
       - Ingot
       - Ore
-      - N14Scrap
+      - F14Scrap
   - type: Lathe
     idleState: icon
     runningState: icon # change this
@@ -420,8 +420,8 @@
     - F14WorkbenchForgeStatic
 
 - type: entity
-  parent: N14WorkbenchBase
-  id: N14WorkbenchForgeFrame
+  parent: F14WorkbenchBase
+  id: F14WorkbenchForgeFrame
   description: A forge made from pieces of scrap. Looks hot. This one is still being built!
   name: forge frame
   components:
@@ -444,7 +444,7 @@
           WorkbenchForgeUnwrenched: { state: forgeframe4 }
           WorkbenchForgeUnwelded: { state: forge }
   - type: Construction
-    graph: N14WorkbenchForge
+    graph: F14WorkbenchForge
     node: WorkbenchForgeFrame
     defaultTarget: WorkbenchForge
 
@@ -452,7 +452,7 @@
 
 - type: entity
   parent: BaseLathe
-  id: N14WorkbenchIDPrinter # Circuit imprinter parent of this
+  id: F14WorkbenchIDPrinter # Circuit imprinter parent of this
   description: An ID printer.
   name: ID Printer
   abstract: true # Base off of this per faction.
@@ -480,8 +480,8 @@
     runningState: building
 
 - type: entity
-  parent: N14WorkbenchIDPrinter
-  id: N14WorkbenchIDPrinterTownspeople
+  parent: F14WorkbenchIDPrinter
+  id: F14WorkbenchIDPrinterTownspeople
   description: An ID printer for printing town passports
   suffix: townspeople
   components:
@@ -490,8 +490,8 @@
     - F14WorkbenchIDPrinterTownspeopleStatic
 
 - type: entity
-  parent: N14WorkbenchIDPrinter
-  id: N14WorkbenchIDPrinterBrotherhoodMidwest
+  parent: F14WorkbenchIDPrinter
+  id: F14WorkbenchIDPrinterBrotherhoodMidwest
   description: An ID printer for printing Brotherhood holotags.
   suffix: BOS
   components:
@@ -500,8 +500,8 @@
     - F14WorkbenchIDPrinterBrotherhoodMidwestStatic
 
 - type: entity
-  parent: N14WorkbenchIDPrinter
-  id: N14WorkbenchIDPrinterNCR
+  parent: F14WorkbenchIDPrinter
+  id: F14WorkbenchIDPrinterNCR
   description: An ID printer for printing NCR IDs.
   suffix: NCR
   components:
@@ -510,8 +510,8 @@
     - F14WorkbenchIDPrinterNCRStatic
 
 - type: entity
-  parent: N14WorkbenchIDPrinter
-  id: N14WorkbenchIDPrinterVault
+  parent: F14WorkbenchIDPrinter
+  id: F14WorkbenchIDPrinterVault
   description: An ID printer for printing Vault IDs.
   suffix: Vault
   components:

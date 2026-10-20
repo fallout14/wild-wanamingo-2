@@ -1,37 +1,37 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/_Misfits/rifle_shotgun_magazines.yml
 
 - type: entity
-  id: MisfitsMagazineRifle9mm
-  parent: N14MagazineSMG9mm
+  id: F14MagazineRifle9mm
+  parent: F14MagazineSMG9mm
   name: rifle magazine (9mm)
   components:
   - type: Tag
     tags:
-    - MisfitsMagazineRifle9mm
+    - F14MagazineRifle9mm
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - N14CartridgePistol9
-    proto: N14CartridgePistol9
+      - F14CartridgePistol9
+    proto: F14CartridgePistol9
     capacity: 24
 
 - type: entity
-  id: MisfitsMagazineCarbine5mm
-  parent: N14LongMagazine556Rifle
+  id: F14MagazineCarbine5mm
+  parent: F14LongMagazine556Rifle
   name: carbine magazine (5mm)
   components:
   - type: Tag
     tags:
-    - MisfitsMagazineCarbine5mm
+    - F14MagazineCarbine5mm
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - N14CartridgePistol5
-    proto: N14CartridgePistol5
+      - F14CartridgePistol5
+    proto: F14CartridgePistol5
     capacity: 35
 
 - type: Tag
-  id: MisfitsMagazineRifle9mm
+  id: F14MagazineRifle9mm
 
 - type: Tag
-  id: MisfitsMagazineCarbine5mm
+  id: F14MagazineCarbine5mm

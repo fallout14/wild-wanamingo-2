@@ -2,14 +2,14 @@
 
 - type: entity
   parent: SurveillanceCameraBase
-  id: MisfitsSurveillanceCameraBrotherhoodMidwest
+  id: F14SurveillanceCameraBrotherhoodMidwest
   name: camera
   suffix: BrotherhoodMidwest
   components:
   - type: DeviceNetwork
     deviceNetId: Wired
     receiveFrequencyId: SurveillanceCamera
-    transmitFrequencyId: N14SurveillanceCameraBrotherhoodMidwest
+    transmitFrequencyId: F14SurveillanceCameraBrotherhoodMidwest
   - type: SurveillanceCamera
     networkSet: true
   - type: Sprite
@@ -17,14 +17,14 @@
 
 - type: entity
   parent: SurveillanceCameraBase
-  id: MisfitsSurveillanceCameraNCR
+  id: F14SurveillanceCameraNCR
   name: camera
   suffix: NCR
   components:
   - type: DeviceNetwork
     deviceNetId: Wired
     receiveFrequencyId: SurveillanceCamera
-    transmitFrequencyId: N14SurveillanceCameraNCR
+    transmitFrequencyId: F14SurveillanceCameraNCR
   - type: SurveillanceCamera
     networkSet: true
   - type: Sprite
@@ -32,14 +32,14 @@
 
 - type: entity
   parent: SurveillanceCameraBase
-  id: MisfitsSurveillanceCameraTown
+  id: F14SurveillanceCameraTown
   name: camera
   suffix: Town
   components:
   - type: DeviceNetwork
     deviceNetId: Wired
     receiveFrequencyId: SurveillanceCamera
-    transmitFrequencyId: N14SurveillanceCameraTown
+    transmitFrequencyId: F14SurveillanceCameraTown
   - type: SurveillanceCamera
     networkSet: true
   - type: Sprite
@@ -47,14 +47,14 @@
 
 - type: entity
   parent: SurveillanceCameraBase
-  id: MisfitsSurveillanceCameraVault
+  id: F14SurveillanceCameraVault
   name: camera
   suffix: Vault
   components:
   - type: DeviceNetwork
     deviceNetId: Wired
     receiveFrequencyId: SurveillanceCamera
-    transmitFrequencyId: N14SurveillanceCameraVault
+    transmitFrequencyId: F14SurveillanceCameraVault
   - type: SurveillanceCamera
     networkSet: true
   - type: Sprite
@@ -62,14 +62,14 @@
 
 - type: entity
   parent: SurveillanceCameraBase
-  id: MisfitsSurveillanceCameraZAX
+  id: F14SurveillanceCameraZAX
   name: camera
   suffix: ZAX
   components:
   - type: DeviceNetwork
     deviceNetId: Wired
     receiveFrequencyId: SurveillanceCamera
-    transmitFrequencyId: MisfitsSurveillanceCameraZAX
+    transmitFrequencyId: F14SurveillanceCameraZAX
   - type: SurveillanceCamera
     networkSet: true
   - type: StationAiVision

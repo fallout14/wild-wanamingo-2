@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Vehicles/motorbike_keys.yml
 
 - type: entity
-  parent: GoobstationBaseKey
-  id: MisfitsVehicleKeyMotorbike
+  parent: F14BaseKey
+  id: F14VehicleKeyMotorbike
   name: motorbike keys
   description: Essential for starting a motorbike.
   components:
@@ -11,5 +11,5 @@
     state: keys
   - type: Tag
     tags:
-    - MisfitsVehicleKey
-    - MisfitsMotorbikeKeys
+    - F14VehicleKey
+    - F14MotorbikeKeys

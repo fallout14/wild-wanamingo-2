@@ -1,40 +1,40 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/TierNWeaponRef/TierNWeaponTables/TierNWeaponMelee/TierNMeleeBase.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTierN_MeleeAll
+  id: F14WeaponLootTierNMeleeAll
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_MeleeBlunt
+          tableId: F14WeaponLootTierNMeleeBlunt
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_MeleeSharp
+          tableId: F14WeaponLootTierNMeleeSharp
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_MeleeOther
+          tableId: F14WeaponLootTierNMeleeOther
 # stuff here
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTierN_MeleeBlunt
+  id: F14WeaponLootTierNMeleeBlunt
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_MeleeBluntOneHanded
+          tableId: F14WeaponLootTierNMeleeBluntOneHanded
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_MeleeBluntTwoHanded
+          tableId: F14WeaponLootTierNMeleeBluntTwoHanded
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTierN_MeleeSharp
+  id: F14WeaponLootTierNMeleeSharp
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_MeleeSharpOneHanded
+          tableId: F14WeaponLootTierNMeleeSharpOneHanded
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_MeleeSharpTwoHanded
+          tableId: F14WeaponLootTierNMeleeSharpTwoHanded
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTierN_MeleeOther
+  id: F14WeaponLootTierNMeleeOther
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_MeleeOtherOneHanded
+          tableId: F14WeaponLootTierNMeleeOtherOneHanded
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTierN_MeleeOtherTwoHanded
+          tableId: F14WeaponLootTierNMeleeOtherTwoHanded

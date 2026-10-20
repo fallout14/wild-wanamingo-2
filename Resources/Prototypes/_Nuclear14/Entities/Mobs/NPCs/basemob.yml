@@ -4,7 +4,7 @@
 - type: entity
   name: wasteland animal
   abstract: true
-  id: N14MobBaseSimple
+  id: F14MobBaseSimple
   parent: SimpleSpaceMobBase
   description: It's a dirty wasteland animal. Watch out for it's bite, it could be infectious.
   components:
@@ -15,7 +15,7 @@
   - type: MobMover
   - type: NpcFactionMember
     factions:
-    - N14WastelandAnimal
+    - F14WastelandAnimal
   - type: Sprite
     drawdepth: Mobs # Replace this with a mob error or something
   - type: Physics
@@ -51,17 +51,17 @@
         Base: dead
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadRaw
+    - id: F14FoodMeatRadRaw
       amount: 1
-    - id: N14MaterialRawLeather1
+    - id: F14MaterialRawLeather1
       amount: 1
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: N14WastelandBlood
+      - ReagentId: F14WastelandBlood
         Quantity: 50
   - type: Damageable
-    damageModifierSet: N14WastelandAnimal
+    damageModifierSet: F14WastelandAnimal
   - type: Injurable
     damageContainer: Biological
   - type: Puller
@@ -79,19 +79,19 @@
 
 - type: entity
   abstract: true
-  id: N14MobBaseHostile
-  parent: N14MobBaseSimple
+  id: F14MobBaseHostile
+  parent: F14MobBaseSimple
   description: It's a dirty wasteland animal. Watch out for it's bite, it could be infectious.
   components:
   - type: NPCRetaliation # Aggro on the attacker when damaged from any range
     attackMemoryLength: 30
   - type: NpcFactionMember
     factions:
-    - N14WastelandAnimal
+    - F14WastelandAnimal
   - type: ProximityNPC # Misfits Add — sleep distant NPCs to reduce tick load
   - type: HTN
     rootTask:
-      task: N14RangedHostileCompound
+      task: F14RangedHostileCompound
     blackboard:
       NavSmash: !type:Bool
         true
@@ -115,12 +115,12 @@
         Base: dead
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadRaw
+    - id: F14FoodMeatRadRaw
       amount: 1
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: N14WastelandBlood
+      - ReagentId: F14WastelandBlood
         Quantity: 50
   - type: CombatMode
   - type: MeleeWeapon
@@ -139,7 +139,7 @@
         Piercing: 0.666667
   - type: SolutionManager
     solutions:
-    - N14MobBaseHostileSolutionMelee
+    - F14MobBaseHostileSolutionMelee
   - type: MeleeChemicalInjector
     solution: melee
   - type: ReplacementAccent
@@ -147,7 +147,7 @@
 
 - type: entity
   parent: Solution
-  id: N14MobBaseHostileSolutionMelee
+  id: F14MobBaseHostileSolutionMelee
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -160,11 +160,11 @@
 - type: entity
   name: scaley wasteland animal
   abstract: true
-  id: N14MobBaseHostileScaley
-  parent: N14MobBaseHostile
+  id: F14MobBaseHostileScaley
+  parent: F14MobBaseHostile
   components:
   - type: Damageable
-    damageModifierSet: N14Scale
+    damageModifierSet: F14Scale
   - type: Injurable
     damageContainer: Biological
   - type: Speech
@@ -177,17 +177,17 @@
 - type: entity
   name: wasteland insect
   abstract: true
-  id: N14MobBaseHostileInsect
-  parent: N14MobBaseHostile
+  id: F14MobBaseHostileInsect
+  parent: F14MobBaseHostile
   components:
   - type: Damageable
-    damageModifierSet: N14Insect
+    damageModifierSet: F14Insect
   - type: Injurable
     damageContainer: Biological
   - type: NoSlip
   - type: NpcFactionMember
     factions:
-    - N14WastelandInsect
+    - F14WastelandInsect
   - type: Speech
     speechSounds: Squeak
   - type: ReplacementAccent
@@ -209,16 +209,16 @@
 - type: entity
   name: raider
   abstract: true
-  id: N14MobBaseHostileRaider
-  parent: N14MobBaseHostile
+  id: F14MobBaseHostileRaider
+  parent: F14MobBaseHostile
   components:
   - type: Damageable
   - type: Injurable
-    damageContainer: MisfitsNPCBiological # Misfits Change
+    damageContainer: F14NPCBiological # Misfits Change
   - type: NoSlip
   - type: NpcFactionMember
     factions:
-    - N14Raider
+    - F14Raider
   - type: Fixtures
     fixtures:
       fix1:
@@ -234,22 +234,22 @@
 - type: entity
   name: feral ghoul
   abstract: true
-  id: N14MobBaseHostileFeral
-  parent: N14MobBaseHostile
+  id: F14MobBaseHostileFeral
+  parent: F14MobBaseHostile
   description: A mean looking ghoul.
   components:
   - type: Damageable
-    damageModifierSet: N14GhoulNPC
+    damageModifierSet: F14GhoulNPC
   # - type: NoSlip
   - type: Injurable
-    damageContainer: MisfitsNPCBiological  # Misfits Change - no hunger/thirst damage for feral ghouls
+    damageContainer: F14NPCBiological  # Misfits Change - no hunger/thirst damage for feral ghouls
   - type: NpcFactionMember
     factions:
-    - N14Feral
+    - F14Feral
   #- type: MobGhoulAggro #Misfits Change — removed: NPC feral ghouls should be hostile to player ghouls, not neutral.
   - type: HTN
     rootTask:
-      task: N14HostileCompound
+      task: F14HostileCompound
     blackboard:
       NavClimb: !type:Bool
         true
@@ -294,13 +294,13 @@
 - type: entity
   name: wave attacker
   abstract: true
-  id: N14MobWave
+  id: F14MobWave
   components:
   - type: ProximityNPC # Misfits Tweak — wave mobs inherit ProximityNPC from their hostile parent; override to stay awake so they rush immediately
     startAsleep: false
   - type: HTN
     rootTask:
-      task: N14HostileCompound
+      task: F14HostileCompound
     blackboard:
       NavInteract: !type:Bool
         true
@@ -326,17 +326,17 @@
 
 - type: entity
   abstract: true
-  id: N14MobWaveAnimal
-  parent: N14MobWave
+  id: F14MobWaveAnimal
+  parent: F14MobWave
 
 - type: entity
   abstract: true
-  id: N14MobWaveInsect
-  parent: N14MobWave
+  id: F14MobWaveInsect
+  parent: F14MobWave
 
 - type: entity
   abstract: true
-  id: N14TameableMobBase
+  id: F14TameableMobBase
   parent: SimpleMobBase
   components:
 #  - type: NPCTamingOnTouchBehaviour
@@ -352,4 +352,4 @@
   - type: ProximityNPC # Misfits Add — sleep distant NPCs to reduce tick load
   - type: HTN
     rootTask:
-      task: SimpleFollowHostileCompound # HTN compound must include FollowCompound so pet can follow its owner
+      task: F14SimpleFollowHostileCompound # HTN compound must include FollowCompound so pet can follow its owner

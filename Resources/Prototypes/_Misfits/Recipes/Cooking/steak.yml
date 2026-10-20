@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Recipes/Cooking/steak.yml
 
 - type: constructionGraph
-  id: MisfitsMeatSteakRadchicken
+  id: F14MeatSteakRadchicken
   start: start
   graph:
   - node: start
@@ -13,10 +13,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: SteakCooked
-    entity: N14FoodMeatRadchickenCooked
+    entity: F14FoodMeatRadchickenCooked
 
 - type: constructionGraph # Corvax-Change
-  id: MisfitsFoodMeatRad
+  id: F14FoodMeatRad
   start: start
   graph:
   - node: start
@@ -28,4 +28,4 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: MeatCooked
-    entity: N14FoodMeatCooked
+    entity: F14FoodMeatCooked

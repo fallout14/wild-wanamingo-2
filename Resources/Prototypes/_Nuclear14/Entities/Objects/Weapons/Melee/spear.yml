@@ -4,7 +4,7 @@
 - type: entity
   name: throwing spear
   parent: BaseItem
-  id: N14BaseThrowingSpear
+  id: F14BaseThrowingSpear
   description: Definition of a classic. Keeping murder affordable since 200,000 BCE.
   components:
   - type: EmbeddableProjectile
@@ -87,7 +87,7 @@
 - type: entity
   name: spear
   parent: BaseItem
-  id: N14WastelandSpear
+  id: F14WastelandSpear
   description: Definition of a classic. Keeping murder affordable since 200,000 BCE.
   components:
   - type: Wieldable
@@ -173,8 +173,8 @@
 
 - type: entity
   name: NCR battle flag
-  parent: N14WastelandSpear
-  id: N14WastelandFlagSpear
+  parent: F14WastelandSpear
+  id: F14WastelandFlagSpear
   description: A long spear with an NCR flag tied on the end, only the most loyal soldiers carry these to boost the morale.
   components:
   - type: Clothing
@@ -193,8 +193,8 @@
 
 - type: entity
   name: tribal spear
-  parent: N14WastelandSpear
-  id: N14WastelandTribalSpear
+  parent: F14WastelandSpear
+  id: F14WastelandTribalSpear
   #Misfits Change /Fix:/ removed duplicate damage mapping key.
   description: Strong and with a devastating attack, these spears are commonly made and used by tribals.
   components:
@@ -221,8 +221,8 @@
 
 - type: entity
   name: poleaxe
-  parent: N14WastelandSpear
-  id: N14WastelandPolearm
+  parent: F14WastelandSpear
+  id: F14WastelandPolearm
   description: A heavy and long pole with an axe blade attached at its end, this basic weapon can be devastating.
   components:
   - type: Clothing

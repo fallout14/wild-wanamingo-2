@@ -2,7 +2,7 @@
 # Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
 
 - type: entity
-  parent: N14ShelfWood1
+  parent: F14ShelfWood1
   id: F14ShelfWood
   name: wooden shelf
   components:
@@ -19,7 +19,7 @@
     noRot: false
 
 - type: entity
-  parent: N14ShelfWood1
+  parent: F14ShelfWood1
   id: F14ShelfWoodAlt
   name: wooden shelf
   components:
@@ -36,7 +36,7 @@
     noRot: false
 
 - type: entity
-  parent: N14ShelfWood1
+  parent: F14ShelfMetalBase # WW: MS13 sprite on the merged N14 item
   id: F14ShelfMetal
   name: metal shelf
   components:
@@ -53,7 +53,7 @@
     noRot: false
 
 - type: entity
-  parent: N14ShelfWood1
+  parent: F14ShelfWood1
   id: F14ShelfStore
   name: store shelf
   components:
@@ -70,7 +70,7 @@
     noRot: false
 
 - type: entity
-  parent: N14ShelfWood1
+  parent: F14ShelfWood1
   id: F14ShelfStoreMetal
   name: store shelf
   components:
@@ -87,7 +87,7 @@
     noRot: false
 
 - type: entity
-  parent: N14BookshelfDirty
+  parent: F14BookshelfDirty # WW: not merged onto the N14 bookshelf (F14BookshelfRandom needs a sprite layer the MS13 sprite lacks)
   id: F14Bookshelf
   name: bookshelf
   components:
@@ -105,7 +105,7 @@
     noRot: false
 
 - type: entity
-  parent: N14JunkMirror
+  parent: F14JunkMirror
   id: F14Mirror
   name: mirror
   components:
@@ -122,7 +122,7 @@
     noRot: false
 
 - type: entity
-  parent: N14JunkMirror
+  parent: F14JunkMirror
   id: F14MirrorBroken
   name: broken mirror
   components:

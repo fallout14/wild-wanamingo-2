@@ -2,8 +2,8 @@
 
 - type: entity
   name: priestess of zealotry
-  parent: N14KitBase
-  id: MisfitsKitPriestessZealot
+  parent: F14KitBase
+  id: F14KitPriestessZealot
   description: "Inspire bloodlust in allies and terror in foes."
   components:
   - type: Sprite
@@ -13,26 +13,26 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: CorvaxLegionnaireShield
-      - id: MisfitsAmmoBox12gauge
+      - id: F14LegionnaireShield
+      - id: F14AmmoBox12gauge
         amount: 2
-      - id: N14ClothingBeltQuiverSpear
-      - id: CorvaxPilumSpear
+      - id: F14ClothingBeltQuiverSpear
+      - id: F14PilumSpear
         amount: 3
       - id: Bola
         amount: 2
-      - id: N14FoodCazadorAcidSac
+      - id: F14FoodCazadorAcidSac
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: priestess of restoration
-  parent: N14KitBase
-  id: MisfitsKitPriestessHealing
+  parent: F14KitBase
+  id: F14KitPriestessHealing
   description: "Keep Caesars finest ready for war."
   components:
   - type: Sprite
@@ -42,31 +42,31 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14CeremonialSword
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
-      - id: N14SmellingSalts
+      - id: F14CeremonialSword
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
+      - id: F14SmellingSalts
         amount: 4
-      - id: N14HandheldHealthAnalyzer
-      - id: N14Bitterdrink
+      - id: F14HandheldHealthAnalyzer
+      - id: F14Bitterdrink
         amount: 2
       - id: ClothingBeltMedical
-      - id: N14Bandage
+      - id: F14Bandage
         amount: 3
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 4
-      - id: N14HealingPowder
+      - id: F14HealingPowder
         amount: 4
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: priestess of purification
-  parent: N14KitBase
-  id: MisfitsKitPriestessPurifier
+  parent: F14KitBase
+  id: F14KitPriestessPurifier
   description: "Cleanse the enemies of Mars with flame."
   components:
   - type: Sprite
@@ -76,18 +76,18 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: CorvaxLegionnaireShield
+      - id: F14LegionnaireShield
       - id: GrenadeIncendiary
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
-      - id: N14Bandage
+      - id: F14JunkCeramicFlask
+      - id: F14Bandage
         amount: 1
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 1
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
     sound:
       path: /Audio/Effects/unwrap.ogg
@@ -96,8 +96,8 @@
 
 - type: entity
   name: Acolyte Zealot
-  parent: N14KitBase
-  id: MisfitsKitAcolyteZealot
+  parent: F14KitBase
+  id: F14KitAcolyteZealot
   description: "Inspire bloodlust in allies and terror in foes."
   components:
   - type: Sprite
@@ -107,22 +107,22 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14ClothingBeltQuiverSpear
-      - id: CorvaxPilumSpear
+      - id: F14ClothingBeltQuiverSpear
+      - id: F14PilumSpear
         amount: 3
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
-      - id: MisfitsWeaponRifle308SVT40 #
-      - id: N14MagazineBox308
+      - id: F14JunkCeramicFlask
+      - id: F14WeaponRifle308SVT40 #
+      - id: F14MagazineBox308
         amount: 1
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: Acolyte Healer
-  parent: N14KitBase
-  id: MisfitsKitAcolyteHealing
+  parent: F14KitBase
+  id: F14KitAcolyteHealing
   description: "Keep Caesars finest ready for war."
   components:
   - type: Sprite
@@ -132,31 +132,31 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14SmellingSalts
+      - id: F14SmellingSalts
         amount: 2
       - id: ClothingBeltMedical
-      - id: N14HandheldHealthAnalyzer
-      - id: N14Bitterdrink
+      - id: F14HandheldHealthAnalyzer
+      - id: F14Bitterdrink
         amount: 1
       - id: ClothingBeltMedical
-      - id: N14Bandage
+      - id: F14Bandage
         amount: 2
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 2
-      - id: N14HealingPowder
+      - id: F14HealingPowder
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
-      - id: CorvaxGladius
-      - id: N14WeaponPistol45Colt
+      - id: F14JunkCeramicFlask
+      - id: F14Gladius
+      - id: F14WeaponPistol45Colt
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: Acolyte Slaver
-  parent: N14KitBase
-  id: MisfitsKitAcolyteSlaver
+  parent: F14KitBase
+  id: F14KitAcolyteSlaver
   description: "Equipped with all a Priestess needs to catch and control slaves."
   components:
   - type: Sprite
@@ -166,20 +166,20 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponShotgunAuto
-      - id: MisfitsMagazineBox12GaugeBeanbag
+      - id: F14WeaponShotgunAuto
+      - id: F14MagazineBox12GaugeBeanbag
         amount: 3
-      - id: N14Bandage
+      - id: F14Bandage
         amount: 1
-      - id: N14HealingPoultice
+      - id: F14HealingPoultice
         amount: 1
-      - id: N14HealingPowder
+      - id: F14HealingPowder
         amount: 1
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
-      - id: N14PoliceBaton
-      - id: N14WeaponPistol45Colt
+      - id: F14JunkCeramicFlask
+      - id: F14PoliceBaton
+      - id: F14WeaponPistol45Colt
       - id: BoxHandcuff
       - id: Bola
         amount: 2
@@ -190,8 +190,8 @@
 
 - type: entity
   name: Temple Guard Protector
-  parent: N14KitBase
-  id: MisfitsKitTempleGuardProtector
+  parent: F14KitBase
+  id: F14KitTempleGuardProtector
   description: "Equipped with the proper weapons to defend the Priestess and her temple."
   components:
   - type: Sprite
@@ -201,25 +201,25 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WastelandPolearm
-      - id: CorvaxLegionnaireShield
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14WastelandPolearm
+      - id: F14LegionnaireShield
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
-      - id: N14Bandage
+      - id: F14Bandage
         amount: 1
-      - id: N14HealingPowder
+      - id: F14HealingPowder
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: Temple Guard Enforcer
-  parent: N14KitBase
-  id: MisfitsKitTempleGuardEnforcer
+  parent: F14KitBase
+  id: F14KitTempleGuardEnforcer
   description: "Equipped with weapons befitting one used to punish sinners and enforce the law of the Legion."
   components:
   - type: Sprite
@@ -229,24 +229,24 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponShotgunAuto
-      - id: CorvaxGladius
-      - id: N14MagazineBox12gauge
+      - id: F14WeaponShotgunAuto
+      - id: F14Gladius
+      - id: F14MagazineBox12gauge
         amount: 3
-      - id: N14Bandage
+      - id: F14Bandage
         amount: 1
-      - id: N14HealingPowder
+      - id: F14HealingPowder
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   name: Temple Guard Executor
-  parent: N14KitBase
-  id: MisfitsKitTempleGuardExecutor
+  parent: F14KitBase
+  id: F14KitTempleGuardExecutor
   description: "Equipped with weapons made to burn and punish profligates."
   components:
   - type: Sprite
@@ -256,15 +256,15 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
-      - id: N14MagazinePistol45
+      - id: F14WeaponPistol45Colt # #Misfits Change: .45 pistol Legion sidearm
+      - id: F14MagazinePistol45
         amount: 2
-      - id: N14Bandage
+      - id: F14Bandage
         amount: 1
-      - id: N14HealingPowder
+      - id: F14HealingPowder
         amount: 2
-      - id: N14FoodTinK
+      - id: F14FoodTinK
         amount: 2
-      - id: N14JunkCeramicFlask
+      - id: F14JunkCeramicFlask
     sound:
       path: /Audio/Effects/unwrap.ogg

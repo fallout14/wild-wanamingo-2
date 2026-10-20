@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Misc/holotapes.yml
 
 - type: entity
-  parent: N14HolotapeYellow
-  id: MisfitsHolotapeLoreProspector
+  parent: F14HolotapeYellow
+  id: F14HolotapeLoreProspector
   name: prospector's journal holotape
   description: A dusty holotape labelled "SURVEY NOTES - WENDOVER BASIN".
   components:
@@ -13,8 +13,8 @@
 # The Vault Overseer's final log before the vault door opened
 
 - type: entity
-  parent: N14HolotapeGreen
-  id: MisfitsHolotapeLoreOverseer
+  parent: F14HolotapeGreen
+  id: F14HolotapeLoreOverseer
   name: overseer's log holotape
   description: A green holotape with "OVERSEER - EYES ONLY" etched into the casing.
   components:
@@ -25,8 +25,8 @@
 # NCR scout reconnaissance report on the Wendover corridor
 
 - type: entity
-  parent: N14HolotapeRed
-  id: MisfitsHolotapeLoreNCRRecon
+  parent: F14HolotapeRed
+  id: F14HolotapeLoreNCRRecon
   name: NCR recon report holotape
   description: A red holotape stamped with the NCR bear insignia.
   components:
@@ -37,8 +37,8 @@
 # Legion centurion's marching orders for the I-80 push
 
 - type: entity
-  parent: N14Holotape
-  id: MisfitsHolotapeLoreLegionOrders
+  parent: F14Holotape
+  id: F14HolotapeLoreLegionOrders
   name: legion orders holotape
   description: A black holotape wrapped in leather cord with a bull brand mark.
   components:
@@ -49,8 +49,8 @@
 # Brotherhood of Steel field report on pre-war tech in the area
 
 - type: entity
-  parent: N14HolotapeBlue
-  id: MisfitsHolotapeLoreBOSField
+  parent: F14HolotapeBlue
+  id: F14HolotapeLoreBOSField
   name: Brotherhood field notes holotape
   description: A blue holotape with the Brotherhood of Steel gear symbol scratched into it.
   components:
@@ -61,8 +61,8 @@
 # Enclave classified directive regarding Wendover Airfield
 
 - type: entity
-  parent: N14HolotapeEnclave
-  id: MisfitsHolotapeLoreEnclaveDirective
+  parent: F14HolotapeEnclave
+  id: F14HolotapeLoreEnclaveDirective
   name: Enclave directive holotape
   description: A holotape with the Enclave seal. The label reads "CLASSIFIED - ALPHA CLEARANCE".
   components:
@@ -73,8 +73,8 @@
 # A settler family's personal diary entries about surviving in the wastes
 
 - type: entity
-  parent: N14HolotapeYellow
-  id: MisfitsHolotapeLoreSettlerDiary
+  parent: F14HolotapeYellow
+  id: F14HolotapeLoreSettlerDiary
   name: settler's diary holotape
   description: A worn holotape with a faded label that reads "FOR THE KIDS".
   components:
@@ -85,8 +85,8 @@
 # Pre-war military memo from Wendover Airfield operations
 
 - type: entity
-  parent: N14HolotapeYellow
-  id: MisfitsHolotapeLoreMilitaryMemo
+  parent: F14HolotapeYellow
+  id: F14HolotapeLoreMilitaryMemo
   name: military memo holotape
   description: A holotape in a cracked plastic case stamped "USAF - WENDOVER AFB".
   components:
@@ -97,8 +97,8 @@
 # A raider boss marking territory and warning rivals
 
 - type: entity
-  parent: N14Holotape
-  id: MisfitsHolotapeLoreRaiderBoss
+  parent: F14Holotape
+  id: F14HolotapeLoreRaiderBoss
   name: raider's warning holotape
   description: A scratched-up holotape with "KEEP OUT" carved into the casing.
   components:
@@ -109,8 +109,8 @@
 # A caravan trader's log of routes, prices, and dangers in the region
 
 - type: entity
-  parent: N14HolotapeYellow
-  id: MisfitsHolotapeLoreCaravanLedger
+  parent: F14HolotapeYellow
+  id: F14HolotapeLoreCaravanLedger
   name: caravan trader's ledger holotape
   description: A holotape with a price tag still stuck to it. Reads "2 CAPS - FIRM".
   components:
@@ -128,59 +128,59 @@
 # Black / generic holotape with random wanderer content
 
 - type: entity
-  parent: N14Holotape
-  id: MisfitsHolotapeRandom
+  parent: F14Holotape
+  id: F14HolotapeRandom
   name: holotape
   description: A scratched holotape of unknown origin. Somebody recorded something on it.
   components:
   - type: TerminalRandomContent
     contentPool:
-    - MisfitsHolotapeWanderer
+    - F14HolotapeWanderer
 
 # Blue holotape with random wanderer content
 
 - type: entity
-  parent: N14HolotapeBlue
-  id: MisfitsHolotapeRandomBlue
+  parent: F14HolotapeBlue
+  id: F14HolotapeRandomBlue
   name: blue holotape
   description: A blue holotape with no label. Whoever left it here did not expect to come back for it.
   components:
   - type: TerminalRandomContent
     contentPool:
-    - MisfitsHolotapeWanderer
+    - F14HolotapeWanderer
 
 # Green holotape with random wanderer content
 
 - type: entity
-  parent: N14HolotapeGreen
-  id: MisfitsHolotapeRandomGreen
+  parent: F14HolotapeGreen
+  id: F14HolotapeRandomGreen
   name: green holotape
   description: A green holotape. The case is cracked but the tape inside looks intact.
   components:
   - type: TerminalRandomContent
     contentPool:
-    - MisfitsHolotapeWanderer
+    - F14HolotapeWanderer
 
 # Red holotape with random wanderer content
 
 - type: entity
-  parent: N14HolotapeRed
-  id: MisfitsHolotapeRandomRed
+  parent: F14HolotapeRed
+  id: F14HolotapeRandomRed
   name: red holotape
   description: A red holotape with a faded handwritten label, too worn to read.
   components:
   - type: TerminalRandomContent
     contentPool:
-    - MisfitsHolotapeWanderer
+    - F14HolotapeWanderer
 
 # Yellow holotape with random wanderer content
 
 - type: entity
-  parent: N14HolotapeYellow
-  id: MisfitsHolotapeRandomYellow
+  parent: F14HolotapeYellow
+  id: F14HolotapeRandomYellow
   name: yellow holotape
   description: A yellow holotape. Someone scratched a tally of days into the casing.
   components:
   - type: TerminalRandomContent
     contentPool:
-    - MisfitsHolotapeWanderer
+    - F14HolotapeWanderer

@@ -1,19 +1,19 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier2Weapon/Tier2WeaponTables/Tier2WeaponBallistic/Tier2BallisticBase.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier2_GunsBulletAll
+  id: F14WeaponLootTier2GunsBulletAll
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier2_GunsBulletRifle
+          tableId: F14WeaponLootTier2GunsBulletRifle
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier2_GunsBulletShotgun
+          tableId: F14WeaponLootTier2GunsBulletShotgun
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier2_GunsBulletSMG
+          tableId: F14WeaponLootTier2GunsBulletSMG
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier2_GunsBulletPistol
+          tableId: F14WeaponLootTier2GunsBulletPistol
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier2_GunsBulletRevolver
+          tableId: F14WeaponLootTier2GunsBulletRevolver
 #      - !type:NestedSelector
 #          tableId: M14WeaponLootTier2_GunsBulletHeavy
 #      - !type:NestedSelector

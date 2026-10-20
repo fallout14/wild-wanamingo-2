@@ -4,7 +4,7 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
-  id: N14Bullet50
+  id: F14Bullet50
   name: bullet (.50 AP anti-materiel)
   components:
   - type: Projectile
@@ -21,8 +21,8 @@
 
 - type: entity
   categories: [ HideSpawnMenu ]
-  parent: N14BaseGrenadeProjectile
-  id: N14Bullet50HEIAP
+  parent: F14BaseGrenadeProjectile
+  id: F14Bullet50HEIAP
   name: bullet (.50 HEIAP anti-materiel)
   components:
   - type: IgniteOnCollide
@@ -40,7 +40,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 1
     intensitySlope: 6
     totalIntensity: 3

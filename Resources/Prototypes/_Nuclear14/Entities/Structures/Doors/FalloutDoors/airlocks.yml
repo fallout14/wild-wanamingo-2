@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Doors/FalloutDoors/airlocks.yml
 
 - type: entity
-  id: N14Airlock
+  id: F14Airlock
   parent: Airlock
   name: bunker door
   description: It opens, it closes, it might crush you, and there might be only radiation and monsters behind it. Has to be manually activated.
@@ -21,8 +21,8 @@
       path: /Audio/Machines/airlock_deny.ogg
 
 - type: entity
-  parent: N14Airlock
-  id: N14DoorBunkerVault
+  parent: F14Airlock
+  id: F14DoorBunkerVault
   suffix: Vault
   components:
   - type: Door
@@ -34,20 +34,20 @@
     sprite: Nuclear14/Structures/Doors/FalloutDoors/vaultdoor.rsi
 
 - type: entity
-  parent: N14Airlock
-  id: N14DoorBunker
+  parent: F14Airlock
+  id: F14DoorBunker
   components:
   - type: Sprite
     sprite: MojaveSun/Structures/Doors/Airlocks/mechanical.rsi # WW Change - Mojave Sun 13 mechanical door
   - type: Construction
-    graph: N14DoorBunker
+    graph: F14DoorBunker
     node: bunker
     containers:
     - board
 
 - type: entity
-  parent: N14Airlock
-  id: N14DoorBunkerGlass
+  parent: F14Airlock
+  id: F14DoorBunkerGlass
   components:
   - type: Door
     occludes: false
@@ -56,7 +56,7 @@
   - type: Sprite
     sprite: Nuclear14/Structures/Doors/FalloutDoors/glassbunkerdoor.rsi
   - type: Construction
-    graph: N14DoorBunker
+    graph: F14DoorBunker
     node: glassBunker
     containers:
     - board

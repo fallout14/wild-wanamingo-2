@@ -30,7 +30,7 @@ public sealed partial class BrahdoSpookSystem : EntitySystem
     [Dependency] private TagSystem _tag = default!;
     [Dependency] private IRobustRandom _random = default!;
 
-    private static readonly ProtoId<TagPrototype> BrahdoTag = "Brahdo";
+    private static readonly ProtoId<TagPrototype> BrahdoTag = "F14Brahdo";
 
     private EntityQuery<BrahdoSpookedComponent> _spookedQuery;
     private EntityQuery<MountableComponent> _mountableQuery;

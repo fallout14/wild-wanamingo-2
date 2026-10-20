@@ -14,8 +14,8 @@ namespace Content.Server._Misfits.SpecialStats;
 /// </summary>
 public sealed partial class SpecialLowCharismaSystem : EntitySystem
 {
-    private const string AwkwardOpenerDatasetId = "MisfitsSpecialLowCharismaOpeners";
-    private const string AwkwardCloserDatasetId = "MisfitsSpecialLowCharismaClosers";
+    private const string AwkwardOpenerDatasetId = "F14SpecialLowCharismaOpeners";
+    private const string AwkwardCloserDatasetId = "F14SpecialLowCharismaClosers";
 
     [Dependency] private IPrototypeManager _prototype = default!;
     [Dependency] private IRobustRandom _random = default!;

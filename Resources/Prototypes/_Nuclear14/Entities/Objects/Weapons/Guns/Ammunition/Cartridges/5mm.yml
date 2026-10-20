@@ -2,25 +2,25 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Cartridges/5mm.yml
 
 - type: entity
-  id: N14CartridgePistol5
+  id: F14CartridgePistol5
   name: cartridge (5mm)
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
-    proto: N14Bullet5mm
+    proto: F14Bullet5mm
     soundEject:
-      collection: N14PistolCasingEject
+      collection: F14PistolCasingEject
   - type: Tag
     tags:
       - Cartridge
-      - N14CartridgePistol5
+      - F14CartridgePistol5
   - type: EmitSoundOnLand
     sound:
-      collection: N14PistolCasingEject
+      collection: F14PistolCasingEject
       params:
         volume: -1
   - type: EmitSoundOnCollide
     sound:
-      collection: N14PistolCasingEject
+      collection: F14PistolCasingEject
       params:
         volume: -1

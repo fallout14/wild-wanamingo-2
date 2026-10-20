@@ -4,7 +4,7 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: N14IgnitableGrenadeBase
+  id: F14IgnitableGrenadeBase
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Grenades/Dynamite.rsi
@@ -44,13 +44,13 @@
 - type: entity
   name: dynamite
   description: A stick of dynamite that produces a broad, powerful pressure wave without fragmentation.
-  parent: N14IgnitableGrenadeBase
-  id: N14Dynamite
+  parent: F14IgnitableGrenadeBase
+  id: F14Dynamite
   components:
   - type: Explosive
     # #Misfits Change - broad pure blast: 6 intensity produces 60 blunt and 30
     # heat at the epicenter, with no piercing or spawned fragmentation.
-    explosionType: MisfitsDynamite
+    explosionType: F14Dynamite
     maxIntensity: 6
     intensitySlope: 5
     totalIntensity: 100
@@ -100,8 +100,8 @@
 - type: entity
   name: Baseball grenade
   description: A hollowed-out baseball filled with explosives. Prime it in hand before throwing to detonate on impact.
-  parent: MisfitsBaseImpactGrenade
-  id: N14BaseballNade
+  parent: F14BaseImpactGrenade
+  id: F14BaseballNade
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Grenades/Baseballnade.rsi
@@ -110,7 +110,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 2
     intensitySlope: 10
     totalIntensity: 20
@@ -122,7 +122,7 @@
   name: Tin-nade
   description: An improvised grenade whose thin casing scatters a small amount of weak shrapnel.
   parent: GrenadeBase
-  id: N14TinNade
+  id: F14TinNade
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Grenades/TincanNade.rsi
@@ -130,10 +130,10 @@
   # the offensive frag grenade's 20 x 45-piercing military fragmentation.
   - type: ProjectileGrenade
     triggerKey: trigger
-    fillPrototype: MisfitsPelletTinFragment
+    fillPrototype: F14PelletTinFragment
     capacity: 10
   - type: SpawnOnTrigger
-    proto: MisfitsGrenadeTinExplosion
+    proto: F14GrenadeTinExplosion
   - type: TriggerOnUse
     keyOut: prime
   - type: TimerTrigger
@@ -156,7 +156,7 @@
   name: Nuka-nade
   description: An improvised Nuka-Cola grenade that erupts in a compact burst of Quantum-blue caustic plasma.
   parent: GrenadeBase
-  id: N14NukaNade
+  id: F14NukaNade
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Grenades/NukaNade.rsi
@@ -164,7 +164,7 @@
   - type: Explosive
     # Misfits Change - lighter plasma: 5 x 15 = 75 maximum caustic damage,
     # with a smaller footprint than the standard plasma grenade. No ignition.
-    explosionType: MisfitsNukaPlasma
+    explosionType: F14NukaPlasma
     maxIntensity: 5
     intensitySlope: 4
     totalIntensity: 25
@@ -189,8 +189,8 @@
 - type: entity #should spawn fire only when it was activated and then thrown, but when its not activated it just breaks and spills welding fuel. 
   name: Nuka cocktail
   description: Nuka-Cola bottle filled with flammable fuel.
-  parent: N14IgnitableGrenadeBase
-  id: N14NukaCocktail
+  parent: F14IgnitableGrenadeBase
+  id: F14NukaCocktail
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Grenades/NukaCocktail.rsi  
@@ -266,7 +266,7 @@
 
 - type: entity
   parent: GrenadeBase
-  id: N14PlasmaGrenade
+  id: F14PlasmaGrenade
   name: plasma grenade
   description: Powerful plasma grenade.
   components:
@@ -277,7 +277,7 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ProjectileGrenade
     triggerKey: trigger
-    fillPrototype: N14BulletPlasma
+    fillPrototype: F14BulletPlasma
     capacity: 16
   - type: PacifismDangerousAttack
   - type: TriggerOnUse
@@ -300,7 +300,7 @@
 
 - type: entity
   parent: GrenadeBase
-  id: N14KettleBomb
+  id: F14KettleBomb
   name: kettle bomb
   description: Caution, hot!
   components:
@@ -311,7 +311,7 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ProjectileGrenade
     triggerKey: trigger
-    fillPrototype: N14BoilingWaterShot
+    fillPrototype: F14BoilingWaterShot
     capacity: 20
   - type: PacifismDangerousAttack
   - type: TriggerOnUse
@@ -334,7 +334,7 @@
 
 - type: entity
   parent: GrenadeBase
-  id: N14FirecrackerFull
+  id: F14FirecrackerFull
   name: firecrackers
   description: BIG POP POP!
   components:
@@ -345,7 +345,7 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ScatteringGrenade
     triggerKey: trigger
-    fillPrototype: N14FirecrackerHalf
+    fillPrototype: F14FirecrackerHalf
     capacity: 3
     distance: 15
     velocity: 3
@@ -368,7 +368,7 @@
 
 - type: entity
   parent: GrenadeBase
-  id: N14FirecrackerHalf
+  id: F14FirecrackerHalf
   name: firecrackers
   description: POP POP!
   components:
@@ -379,7 +379,7 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ScatteringGrenade
     triggerKey: trigger
-    fillPrototype: N14Firecracker
+    fillPrototype: F14Firecracker
     capacity: 4
     distance: 7
     velocity: 2
@@ -396,7 +396,7 @@
 
 - type: entity
   parent: GrenadeBase
-  id: N14Firecracker
+  id: F14Firecracker
   name: firecracker
   description: POP POP!
   components:
@@ -408,7 +408,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 1
     intensitySlope: 5
     totalIntensity: 5 # should be about 1 tile max very small damage
@@ -439,14 +439,14 @@
   name: cryo grenade
   description: B-brrr.
   parent: GrenadeBase
-  id: N14CryoGrenade
+  id: F14CryoGrenade
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Grenades/CryoGrenade.rsi
   - type: ExplodeOnTrigger
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 5
     intensitySlope: 1
     totalIntensity: 1

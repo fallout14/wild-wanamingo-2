@@ -5,7 +5,7 @@
   name: police baton
   description: STOP RESISTING!
   parent: BaseItem
-  id: N14PoliceBaton
+  id: F14PoliceBaton
   components:
   - type: StaminaDamageOnHit
     damage: 10
@@ -23,7 +23,7 @@
     size: Normal
   - type: Tag
     tags:
-    - N14PoliceBaton # #Cythisiax Added - tag so security belts can whitelist the baton
+    - F14PoliceBaton # #Cythisiax Added - tag so security belts can whitelist the baton
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Melee/policebaton.rsi
     quickEquip: false
@@ -36,7 +36,7 @@
 - type: entity
   name: tribal club
   parent: BaseItem
-  id: N14TribalClub
+  id: F14TribalClub
   components:
   - type: MeleeWeapon
     wideAnimationRotation: -135
@@ -61,7 +61,7 @@
   name: broken pipe
   description: "It's not intended to be a weapon but sturdy enough to give a good few whacks."
   parent: BaseItem
-  id: N14BrokenPipe
+  id: F14BrokenPipe
   components:
   - type: MeleeWeapon
     wideAnimationRotation: -135
@@ -86,7 +86,7 @@
   name: training sword
   description: A crude wooden sword used for training in melee combat.
   parent: BaseItem
-  id: N14TrainingSword
+  id: F14TrainingSword
   components:
   - type: StaminaDamageOnHit
     damage: 12
@@ -109,7 +109,7 @@
 - type: entity
   name: trench club
   parent: BaseItem
-  id: N14TrenchClub
+  id: F14TrenchClub
   components:
   - type: MeleeWeapon
     wideAnimationRotation: -135

@@ -14,7 +14,7 @@ namespace Content.Shared._Misfits.Special;
 
 public sealed partial class SharedSpecialSystem : EntitySystem
 {
-    private static readonly ProtoId<SpecialTuningPrototype> TuningPrototypeId = "MisfitsSpecialTuning";
+    private static readonly ProtoId<SpecialTuningPrototype> TuningPrototypeId = "F14SpecialTuning";
     private const int IntelligenceSolutionScanThreshold = 8;
 
     [Dependency] private IGameTiming _timing = default!;

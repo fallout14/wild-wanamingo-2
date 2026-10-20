@@ -1,135 +1,135 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/Materials/botanical.yml
 
 - type: entity
-  id: MisfitsSackBotanySeedsCulinary
+  id: F14SackBotanySeedsCulinary
   suffix: Filled, Botany, Seeds, Culinary
-  parent: N14Sack4
+  parent: F14Sack4
   components:
   - type: StorageFill
     contents:
-    - id: N14FloraWildTarberryClippingSeed
+    - id: F14FloraWildTarberryClippingSeed
       amount: 1
-    - id: N14FloraWildCabbageClippingSeed
+    - id: F14FloraWildCabbageClippingSeed
       amount: 1
-    - id: N14FloraWildWhiteHorsenettleClippingSeed
+    - id: F14FloraWildWhiteHorsenettleClippingSeed
       amount: 1
-    - id: N14FloraWildBananaYuccaClippingSeed
+    - id: F14FloraWildBananaYuccaClippingSeed
       amount: 1
-    - id: N14FloraWildBarrelCactusClippingSeed
+    - id: F14FloraWildBarrelCactusClippingSeed
       amount: 1
-    - id: N14FloraWildOnionClippingSeed
+    - id: F14FloraWildOnionClippingSeed
       amount: 1
-    - id: N14FloraWildTatoClippingSeed
+    - id: F14FloraWildTatoClippingSeed
       amount: 1
-    - id: N14FloraWildRazorgrainClippingSeed
+    - id: F14FloraWildRazorgrainClippingSeed
       amount: 1
-    - id: N14FloraWildCarrotClippingSeed
+    - id: F14FloraWildCarrotClippingSeed
       amount: 1
-    - id: N14FloraWildGlowpepperClippingSeed
+    - id: F14FloraWildGlowpepperClippingSeed
       amount: 1
-    - id: N14FloraWildCoyoteTobaccoClippingSeed
+    - id: F14FloraWildCoyoteTobaccoClippingSeed
       amount: 1
-    - id: MisfitsFloraWildCannabisClippingSeed
+    - id: F14FloraWildCannabisClippingSeed
       amount: 1
-    - id: N14FloraWildBlackberryClippingSeed
+    - id: F14FloraWildBlackberryClippingSeed
       amount: 1
-    - id: N14FloraWildBuffaloGourdClippingSeed
+    - id: F14FloraWildBuffaloGourdClippingSeed
       amount: 1
-    - id: N14FloraWildMaizeClippingSeed
+    - id: F14FloraWildMaizeClippingSeed
       amount: 1
-    - id: N14FloraWildHoneyMesquiteClippingSeed
+    - id: F14FloraWildHoneyMesquiteClippingSeed
       amount: 1
-    - id: N14FloraWildMutfruitClippingSeed
+    - id: F14FloraWildMutfruitClippingSeed
       amount: 1
-    - id: N14FloraWildPinyonClippingSeed
+    - id: F14FloraWildPinyonClippingSeed
       amount: 1
-    - id: N14FloraWildPricklyPearClippingSeed
+    - id: F14FloraWildPricklyPearClippingSeed
       amount: 1
 
 - type: entity
-  id: MisfitsSackBotanySeedsCulinaryRandom
+  id: F14SackBotanySeedsCulinaryRandom
   suffix: Filled, Botany, Seeds, Culinary, Random
-  parent: N14Sack4
+  parent: F14Sack4
   components:
   - type: StorageFill
     contents:
-    - id: N14FloraWildTarberryClippingSeed
+    - id: F14FloraWildTarberryClippingSeed
       amount: 1
-    - id: N14FloraWildCabbageClippingSeed
+    - id: F14FloraWildCabbageClippingSeed
       amount: 1
-    - id: N14FloraWildWhiteHorsenettleClippingSeed
-      amount: 1
-      prob: 0.5
-    - id: N14FloraWildBananaYuccaClippingSeed
+    - id: F14FloraWildWhiteHorsenettleClippingSeed
       amount: 1
       prob: 0.5
-    - id: N14FloraWildBarrelCactusClippingSeed
+    - id: F14FloraWildBananaYuccaClippingSeed
       amount: 1
       prob: 0.5
-    - id: N14FloraWildOnionClippingSeed
-      amount: 1
-    - id: N14FloraWildTatoClippingSeed
-      amount: 1
-    - id: N14FloraWildRazorgrainClippingSeed
-      amount: 1
-    - id: N14FloraWildCarrotClippingSeed
-      amount: 1
-    - id: N14FloraWildGlowpepperClippingSeed
+    - id: F14FloraWildBarrelCactusClippingSeed
       amount: 1
       prob: 0.5
-    - id: N14FloraWildCoyoteTobaccoClippingSeed
+    - id: F14FloraWildOnionClippingSeed
+      amount: 1
+    - id: F14FloraWildTatoClippingSeed
+      amount: 1
+    - id: F14FloraWildRazorgrainClippingSeed
+      amount: 1
+    - id: F14FloraWildCarrotClippingSeed
+      amount: 1
+    - id: F14FloraWildGlowpepperClippingSeed
       amount: 1
       prob: 0.5
-    - id: MisfitsFloraWildCannabisClippingSeed
+    - id: F14FloraWildCoyoteTobaccoClippingSeed
       amount: 1
       prob: 0.5
-    - id: N14FloraWildBlackberryClippingSeed
+    - id: F14FloraWildCannabisClippingSeed
       amount: 1
       prob: 0.5
-    - id: N14FloraWildBuffaloGourdClippingSeed
+    - id: F14FloraWildBlackberryClippingSeed
       amount: 1
       prob: 0.5
-    - id: N14FloraWildMaizeClippingSeed
-      amount: 1
-    - id: N14FloraWildHoneyMesquiteClippingSeed
+    - id: F14FloraWildBuffaloGourdClippingSeed
       amount: 1
       prob: 0.5
-    - id: N14FloraWildMutfruitClippingSeed
+    - id: F14FloraWildMaizeClippingSeed
+      amount: 1
+    - id: F14FloraWildHoneyMesquiteClippingSeed
       amount: 1
       prob: 0.5
-    - id: N14FloraWildPinyonClippingSeed
+    - id: F14FloraWildMutfruitClippingSeed
       amount: 1
       prob: 0.5
-    - id: N14FloraWildPricklyPearClippingSeed
+    - id: F14FloraWildPinyonClippingSeed
+      amount: 1
+      prob: 0.5
+    - id: F14FloraWildPricklyPearClippingSeed
       amount: 1
       prob: 0.5
 
 - type: entity
-  id: MisfitsSackBotanySeedsMedical
+  id: F14SackBotanySeedsMedical
   suffix: Filled, Botany, Seeds, Medical
-  parent: N14Sack4
+  parent: F14Sack4
   components:
   - type: StorageFill
     contents:
-    - id: N14FloraWildBrocFlowerClippingSeed
+    - id: F14FloraWildBrocFlowerClippingSeed
       amount: 2
-    - id: N14FloraWildXanderRootClippingSeed
+    - id: F14FloraWildXanderRootClippingSeed
       amount: 2
-    - id: N14FloraWildAgaveClippingSeed
+    - id: F14FloraWildAgaveClippingSeed
       amount: 2
-    - id: N14FloraWildWhiteHorsenettleClippingSeed
+    - id: F14FloraWildWhiteHorsenettleClippingSeed
       amount: 2
-    - id: N14FloraWildTarberryClippingSeed
+    - id: F14FloraWildTarberryClippingSeed
       amount: 2
-    - id: N14FloraWildGlowpepperClippingSeed
+    - id: F14FloraWildGlowpepperClippingSeed
       amount: 2
-    - id: N14FloraDaturaClippingSeed
+    - id: F14FloraDaturaClippingSeed
       amount: 2
-    - id: N14FloraWildNettleClippingSeed
+    - id: F14FloraWildNettleClippingSeed
       amount: 2
-    - id: N14FloraWildBarrelCactusClippingSeed
+    - id: F14FloraWildBarrelCactusClippingSeed
       amount: 1
-    - id: N14FloraWildBuffaloGourdClippingSeed
+    - id: F14FloraWildBuffaloGourdClippingSeed
       amount: 1
     - id: CottonSeeds
       amount: 2
@@ -139,21 +139,21 @@
       amount: 1
 
 - type: entity
-  id: MisfitsCrateBreakPlainDamagedBotanyTools
+  id: F14CrateBreakPlainDamagedBotanyTools
   suffix: Filled, Botany, Tools
-  parent: N14CrateBreakPlainDamaged
+  parent: F14CrateBreakPlainDamaged
   components:
   - type: StorageFill
     contents:
-    - id: N14SackFertilizerFull
-    - id: N14HydroponicsToolHoe
-    - id: N14HydroponicsToolShovel
-    - id: N14HydroponicsToolClippers
+    - id: F14SackFertilizerFull
+    - id: F14HydroponicsToolHoe
+    - id: F14HydroponicsToolShovel
+    - id: F14HydroponicsToolClippers
     - id: BoxMouthSwab
-    - id: N14HydroponicsToolHatchet
+    - id: F14HydroponicsToolHatchet
 
 - type: entity
-  id: MisfitsClothingOuterApronBotanistFilled
+  id: F14ClothingOuterApronBotanistFilled
   suffix: Filled, Botany, Clothing
   parent: ClothingOuterApronBotanist
   components:

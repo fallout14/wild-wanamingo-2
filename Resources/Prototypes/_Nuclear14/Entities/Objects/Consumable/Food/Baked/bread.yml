@@ -3,7 +3,7 @@
 
 - type: entity
   parent: FoodInjectableBase
-  id: N14CookedFoodBreadBase
+  id: F14CookedFoodBreadBase
   abstract: true
   components:
   - type: FlavorProfile
@@ -24,8 +24,8 @@
         Quantity: 20
 
 - type: entity
-  parent: N14CookedFoodBreadBase
-  id: N14CookedFoodBreadSliceBase
+  parent: F14CookedFoodBreadBase
+  id: F14CookedFoodBreadSliceBase
   abstract: true
   components:
   - type: Item
@@ -44,8 +44,8 @@
 
 - type: entity
   name: volcanic loaf
-  parent: [N14CookedFoodBreadBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodBreadVolcanic
+  parent: [F14CookedFoodBreadBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodBreadVolcanic
   description: A dark loaf. Resembles pumice.
   components:
   - type: Edible
@@ -58,13 +58,13 @@
       color: "#FF613F"
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodBreadVolcanicSlice
+    - id: F14CookedFoodBreadVolcanicSlice
       amount: 1
 
 - type: entity
   name: volcanic slice
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadVolcanicSlice
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadVolcanicSlice
   description: A slice of dark loaf. Resembles pumice.
   components:
   - type: Edible
@@ -80,8 +80,8 @@
 
 - type: entity
   name: banana bread
-  parent: [N14CookedFoodBreadBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodBreadBanana
+  parent: [F14CookedFoodBreadBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodBreadBanana
   description: A heavenly and filling treat.
   components:
   - type: FlavorProfile
@@ -95,7 +95,7 @@
     - state: banana
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodBreadBananaSlice
+    - id: F14CookedFoodBreadBananaSlice
       amount: 1
   - type: Tag
     tags:
@@ -105,8 +105,8 @@
 
 - type: entity
   name: banana bread slice
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadBananaSlice
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadBananaSlice
   description: A slice of delicious banana bread.
   components:
   - type: FlavorProfile
@@ -124,8 +124,8 @@
 
 - type: entity
   name: cornbread
-  parent: [N14CookedFoodBreadBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodBreadCorn
+  parent: [F14CookedFoodBreadBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodBreadCorn
   description: Some good down-home country-style, rootin'-tootin', revolver-shootin', dad-gum yeehaw cornbread.
   components:
   - type: FlavorProfile
@@ -139,7 +139,7 @@
     - state: cornbread
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodBreadCornSlice
+    - id: F14CookedFoodBreadCornSlice
       amount: 1
   - type: Solution
     solution:
@@ -150,8 +150,8 @@
 
 - type: entity
   name: cornbread slice
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadCornSlice
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadCornSlice
   description: A slice of cornbread.
   components:
   - type: FlavorProfile
@@ -172,8 +172,8 @@
 
 - type: entity
   name: cream cheese bread
-  parent: [N14CookedFoodBreadBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodBreadCreamcheese
+  parent: [F14CookedFoodBreadBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodBreadCreamcheese
   description: Yum yum yum!
   components:
   - type: FlavorProfile
@@ -188,7 +188,7 @@
     - state: creamcheese
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodBreadCreamcheeseSlice
+    - id: F14CookedFoodBreadCreamcheeseSlice
       amount: 1
   - type: Solution
     solution:
@@ -201,8 +201,8 @@
 
 - type: entity
   name: cream cheese bread slice
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadCreamcheeseSlice
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadCreamcheeseSlice
   description: A slice of yum!
   components:
   - type: FlavorProfile
@@ -226,8 +226,8 @@
 
 - type: entity
   name: meat bread
-  parent: [N14CookedFoodBreadBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodBreadMeat
+  parent: [F14CookedFoodBreadBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodBreadMeat
   description: Who came up with this. Tell me. #N14 change
   components:
   - type: FlavorProfile
@@ -241,7 +241,7 @@
     - state: meat
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodBreadMeatSlice
+    - id: F14CookedFoodBreadMeatSlice
       amount: 1
   - type: Solution
     solution:
@@ -259,8 +259,8 @@
 
 - type: entity
   name: meat bread slice
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadMeatSlice
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadMeatSlice
   description: A slice of delicious meatbread.
   components:
   - type: FlavorProfile
@@ -286,8 +286,8 @@
 
 - type: entity
   name: bread
-  parent: [N14CookedFoodBreadBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodBreadPlain
+  parent: [F14CookedFoodBreadBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodBreadPlain
   description: Some plain old earthen bread.
   components:
   - type: Edible
@@ -297,13 +297,13 @@
     - state: plain
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodBreadPlainSlice
+    - id: F14CookedFoodBreadPlainSlice
       amount: 1
 
 - type: entity
   name: bread slice
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadPlainSlice
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadPlainSlice
   description: A slice of home.
   components:
   - type: Edible
@@ -316,8 +316,8 @@
 
 - type: entity
   name: radroll
-  parent: [N14CookedFoodBreadBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodBreadRadroll
+  parent: [F14CookedFoodBreadBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodBreadRadroll
   description: Dont think too much about it.
   components:
   - type: FlavorProfile
@@ -331,7 +331,7 @@
     - state: sausage
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodBreadRadrollSlice
+    - id: F14CookedFoodBreadRadrollSlice
       amount: 1
   - type: Solution
     solution:
@@ -350,8 +350,8 @@
 
 - type: entity
   name: radroll slice
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadRadrollSlice
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadRadrollSlice
   description: Dont think too much about it.
   components:
   - type: FlavorProfile
@@ -379,8 +379,8 @@
 
 - type: entity
   name: scorpion roll #N14 change
-  parent: [N14CookedFoodBreadBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodBreadMeatRadscorp
+  parent: [F14CookedFoodBreadBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodBreadMeatRadscorp
   description: You're assured this will neither poison you nor give you food poisoning. #N14 change
   components:
   - type: FlavorProfile
@@ -394,7 +394,7 @@
     - state: spidermeat
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodBreadMeatRadscorpSlice
+    - id: F14CookedFoodBreadMeatRadscorpSlice
       amount: 1
   - type: Solution
     solution:
@@ -412,8 +412,8 @@
 
 - type: entity
   name: scorpion roll slice
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadMeatRadscorpSlice
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadMeatRadscorpSlice
   description: A slice of meatloaf made from an animal that most likely still wants you dead.
   components:
   - type: FlavorProfile
@@ -439,8 +439,8 @@
 
 - type: entity
   name: tofu bread
-  parent: [N14CookedFoodBreadBase, BaseSlicingRefinableFood]
-  id: N14CookedFoodBreadTofu
+  parent: [F14CookedFoodBreadBase, BaseSlicingRefinableFood]
+  id: F14CookedFoodBreadTofu
   description: Considering how hard tofu is to come by, this would be considered a delicacy if it tasted good.
   components:
   - type: FlavorProfile
@@ -454,7 +454,7 @@
     - state: tofu
   - type: ToolRefinable
     refineResult:
-    - id: N14CookedFoodBreadTofuSlice
+    - id: F14CookedFoodBreadTofuSlice
       amount: 1
   - type: Solution
     solution:
@@ -467,8 +467,8 @@
 
 - type: entity
   name: tofu bread slice
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadTofuSlice
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadTofuSlice
   description: A slice of questionably delicious tofu bread.
   components:
   - type: FlavorProfile
@@ -491,8 +491,8 @@
 
 - type: entity
   name: buttered toast
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadButteredToast
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadButteredToast
   description: Crunchy and warm, seeped with hard-to-come-by butter. #N14 change
   components:
   - type: FlavorProfile
@@ -512,8 +512,8 @@
 
 - type: entity
   name: french toast
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadFrenchToast
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadFrenchToast
   description: A favorite of pre-war scouts. #N14 change
   components:
   - type: FlavorProfile
@@ -533,8 +533,8 @@
 
 - type: entity
   name: garlic bread
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadGarlicSlice
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadGarlicSlice
   description: Alas, it is limited. #is this a joke/reference to something? shouldn't be a problem, garlic isn't in currently
   components:
   - type: FlavorProfile
@@ -555,8 +555,8 @@
 
 - type: entity
   name: moldy bread slice
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadMoldySlice
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadMoldySlice
   description: Don't... why would you... #N14 change
   components:
   - type: Sprite
@@ -573,8 +573,8 @@
 
 - type: entity
   name: two slice
-  parent: N14CookedFoodBreadSliceBase
-  id: N14CookedFoodBreadTwoSlice
+  parent: F14CookedFoodBreadSliceBase
+  id: F14CookedFoodBreadTwoSlice
   description: Classy.
   components:
   - type: Sprite

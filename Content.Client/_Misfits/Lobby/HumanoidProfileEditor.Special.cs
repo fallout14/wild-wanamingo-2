@@ -19,7 +19,7 @@ namespace Content.Client.Lobby.UI
 {
     public sealed partial class HumanoidProfileEditor
     {
-        private static readonly ProtoId<SpecialTuningPrototype> SpecialTuningPrototypeId = "MisfitsSpecialTuning";
+        private static readonly ProtoId<SpecialTuningPrototype> SpecialTuningPrototypeId = "F14SpecialTuning";
 
         // Pip-Boy terminal colours.
         private static readonly Color PipBoyGreen = Color.FromHex("#33FF66");

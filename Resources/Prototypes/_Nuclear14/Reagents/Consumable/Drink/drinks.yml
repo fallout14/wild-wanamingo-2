@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Reagents/Consumable/Drink/drinks.yml
 
 - type: reagent
-  id: N14MilkBrahmin
+  id: F14MilkBrahmin
   parent: Milk
   name: reagent-name-milk-brahmin
   desc: reagent-desc-milk-brahmin
@@ -15,13 +15,13 @@
             Radiation: -1
 
 - type: reagent
-  id: N14MilkBighorner
+  id: F14MilkBighorner
   parent: Milk
   name: reagent-name-milk-bighorner
   desc: reagent-desc-milk-bighorner
 
 - type: reagent
-  id: N14MilkRadstag
+  id: F14MilkRadstag
   parent: Milk
   name: reagent-name-milk-radstag
   desc: reagent-desc-milk-radstag
@@ -30,7 +30,7 @@
 ## Plant Teas
 
 - type: reagent
-  id: N14TeaAgave
+  id: F14TeaAgave
   parent: GreenTea
   name: reagent-name-tea-agave
   desc: reagent-desc-tea-agave
@@ -45,19 +45,19 @@
         factor: 4
 
 - type: reagent
-  id: N14TeaBlackberry
-  parent: N14TeaAgave
+  id: F14TeaBlackberry
+  parent: F14TeaAgave
   name: reagent-name-tea-blackberry
   desc: reagent-desc-tea-blackberry
 
 - type: reagent
-  id: N14TeaBarrelCactus
+  id: F14TeaBarrelCactus
   parent: GreenTea
   name: reagent-name-tea-barrelcactus
   desc: reagent-desc-tea-barrelcactus
 
 - type: reagent
-  id: N14TeaBroc
+  id: F14TeaBroc
   parent: GreenTea
   name: reagent-name-tea-broc
   desc: reagent-desc-tea-broc
@@ -81,7 +81,7 @@
             Piercing: -0.0833333
 
 - type: reagent
-  id: N14TeaDatura
+  id: F14TeaDatura
   parent: GreenTea
   name: reagent-name-tea-datura
   desc: reagent-desc-tea-datura
@@ -99,49 +99,49 @@
             Asphyxiation: 2.5
 
 - type: reagent
-  id: N14TeaHoneyMesquite
-  parent: N14TeaAgave
+  id: F14TeaHoneyMesquite
+  parent: F14TeaAgave
   name: reagent-name-tea-honeymesquite
   desc: reagent-desc-tea-honeymesquite
 
 - type: reagent
-  id: N14TeaMutfruit
+  id: F14TeaMutfruit
   parent: GreenTea
   name: reagent-name-tea-mutfruit
   desc: reagent-desc-tea-mutfruit
 
 - type: reagent
-  id: N14TeaNettle
+  id: F14TeaNettle
   parent: GreenTea
   name: reagent-name-tea-nettle
   desc: reagent-desc-tea-nettle
 
 - type: reagent
-  id: N14TeaPricklypear
-  parent: N14TeaAgave
+  id: F14TeaPricklypear
+  parent: F14TeaAgave
   name: reagent-name-tea-pricklypear
   desc: reagent-desc-tea-pricklypear
 
 - type: reagent
-  id: N14TeaStarlightberry
-  parent: N14TeaAgave
+  id: F14TeaStarlightberry
+  parent: F14TeaAgave
   name: reagent-name-tea-starlightberry
   desc: reagent-desc-tea-starlightberry
 
 - type: reagent
-  id: N14TeaTarberry
-  parent: N14TeaAgave
+  id: F14TeaTarberry
+  parent: F14TeaAgave
   name: reagent-name-tea-tarberry
   desc: reagent-desc-tea-tarberry
 
 - type: reagent
-  id: N14TeaWhiteHorsenettle
-  parent: N14TeaDatura
+  id: F14TeaWhiteHorsenettle
+  parent: F14TeaDatura
   name: reagent-name-tea-whitehorsenettle
   desc: reagent-desc-tea-whitehorsenettle
 
 - type: reagent
-  id: N14TeaXander
+  id: F14TeaXander
   parent: GreenTea
   name: reagent-name-tea-xander
   desc: reagent-desc-tea-xander
@@ -149,8 +149,8 @@
   ## Other Teas
 
 - type: reagent
-  parent: N14TeaAgave
-  id: N14TeaFireantNectar
+  parent: F14TeaAgave
+  id: F14TeaFireantNectar
   name: reagent-name-tea-fireantnectar
   desc: reagent-desc-tea-fireantnectar
   metabolisms:

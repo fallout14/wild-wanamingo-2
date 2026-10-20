@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Decoration/flags.yml
 
 - type: entity
-  id: N14DecorationFlagBearerEmpty
+  id: F14DecorationFlagBearerEmpty
   name: Empty Banner Standard
   description: A post for hanging banners of various cults, factions and nations. A challenge to everyone else to shoot at you.
   suffix: Mapping
@@ -40,8 +40,8 @@
   - type: SpriteFade
 
 - type: entity
-  parent: N14DecorationFlagBearerEmpty
-  id: N14DecorationFlagFlammable
+  parent: F14DecorationFlagBearerEmpty
+  id: F14DecorationFlagFlammable
   categories: [ HideSpawnMenu ]
   components:
   - type: Physics  # spawn state
@@ -84,13 +84,13 @@
         acts: [ "Destruction" ]
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14DecorationFlagBearerEmpty:
+          F14DecorationFlagBearerEmpty:
             min: 1
             max: 1
 
 - type: entity
-  parent: N14DecorationFlagFlammable
-  id: N14DecorationFlagNCR
+  parent: F14DecorationFlagFlammable
+  id: F14DecorationFlagNCR
   name: Flag of the New California Republic
   description: The banner of the New California Republic, a nation that despite enemies within and without, has done its best to provide comfort and equality to its citizens.
   components:
@@ -101,8 +101,8 @@
     state: ncrflag
 
 - type: entity
-  parent: N14DecorationFlagFlammable
-  id: N14DecorationFlagOasis
+  parent: F14DecorationFlagFlammable
+  id: F14DecorationFlagOasis
   name: Flag of the Oasis Tribe
   description: The banner of the Oasis Tribe, originating in the remains of Pahrump, Nevada. The tribe was incorporated into the New California Republic, yet its members still remember their roots as they settle new lands.
   components:
@@ -113,8 +113,8 @@
     state: oasisflag
 
 - type: entity
-  parent: N14DecorationFlagFlammable
-  id: N14DecorationFlagBrotherhoodWashington
+  parent: F14DecorationFlagFlammable
+  id: F14DecorationFlagBrotherhoodWashington
   name: Flag of the Washington Brotherhood of Steel
   description: The banner of the Washington Brotherhood of Steel, a chapter that split off from the Midwest Brotherhood and settled into Seattle, turning to conscription, slavery, and violent oppression of the locals under the rule of the Elder Immortal.
   components:
@@ -125,8 +125,8 @@
     state: wbosflag
 
 - type: entity
-  parent: N14DecorationFlagFlammable
-  id: N14DecorationFlagBrotherhoodMidwest
+  parent: F14DecorationFlagFlammable
+  id: F14DecorationFlagBrotherhoodMidwest
   name: Flag of the Brotherhood of Steel
   description: The banner of the Brotherhood of Steel, descendents of the United States military who now attempt to confiscate and safeguard dangerous technology to prevent another apocalypse.
   components:
@@ -137,8 +137,8 @@
     state: mbosflag
 
 - type: entity
-  parent: N14DecorationFlagFlammable
-  id: N14DecorationFlagFollowers
+  parent: F14DecorationFlagFlammable
+  id: F14DecorationFlagFollowers
   name: Flag of the Followers of the Apocalypse
   description: The banner of the Followers of the Apocalypse, a humanitarian organization with the goal of providing medical services to those in need and a distinct disinterest in taking power, they are rarely a target and often protected by others.
   components:
@@ -149,8 +149,8 @@
     state: followersflag
 
 - type: entity
-  parent: N14DecorationFlagFlammable
-  id: N14DecorationFlagEnclave
+  parent: F14DecorationFlagFlammable
+  id: F14DecorationFlagEnclave
   name: Flag of the U.S. Army
   description: The banner of the U.S. Army, the descendents of America's elite who claim to be the true inheritors of the United States federal government.
   components:
@@ -161,8 +161,8 @@
     state: enclaveflag
 
 - type: entity
-  parent: N14DecorationFlagFlammable
-  id: N14DecorationFlagGunner
+  parent: F14DecorationFlagFlammable
+  id: F14DecorationFlagGunner
   name: Flag of the Gunner Mercenary Corps
   description: The banner of the Gunners, a mercenary company from deeper in the unknown United States territory. They act without any moral limitations, but will not murder or pillage any more than the employer has ordered.
   components:
@@ -173,8 +173,8 @@
     state: gunnerflag
 
 - type: entity
-  parent: N14DecorationFlagFlammable
-  id: N14DecorationFlagLocust
+  parent: F14DecorationFlagFlammable
+  id: F14DecorationFlagLocust
   name: Flag of the Locust Tribe
   description: The banner of the Locusts, a tribe of raiders native to Wendover, Utah. When the bombs first dropped, Wendover split into three survivor communities, the Locusts, Vultures and Willowers. The Locust Tribe believed the survivors should raid outsiders and take what they could through strength. After the first few years, they turned on the two other tribes as well.
   components:
@@ -185,8 +185,8 @@
     state: locustflag
 
 - type: entity
-  parent: N14DecorationFlagFlammable
-  id: N14DecorationFlagHighvalleyhills
+  parent: F14DecorationFlagFlammable
+  id: F14DecorationFlagHighvalleyhills
   name: Flag of High Valley Hills
   description: The banner of High Valley Hills, a settlement that cropped up around Vault City in the New California Republic from those who were not permitted entry; it is a mix of a slum and work camp for the desperate.
   components:
@@ -197,8 +197,8 @@
     state: hvhflag
 
 - type: entity
-  parent: N14DecorationFlagFlammable
-  id: N14DecorationFlagVaultTecCityCoalition
+  parent: F14DecorationFlagFlammable
+  id: F14DecorationFlagVaultTecCityCoalition
   name: Flag of Vault City
   description: The banner of Vault City, a major settlement that evolved from Vault 8 in what remains of the west coast of the United States. They are a notable exporter of medical technology.
   components:
@@ -209,8 +209,8 @@
     state: vtccflag
 
 - type: entity
-  parent: N14DecorationFlagFlammable
-  id: N14DecorationFlagYuma
+  parent: F14DecorationFlagFlammable
+  id: F14DecorationFlagYuma
   name: Flag of Yuma City
   description: The banner of the city of Yuma, Arizona. It serves as both an important source of food for tributes to Caesar's Legion, and an important waterway between Arizona and California's southern edge.
   components:
@@ -224,8 +224,8 @@
 #    node: FlagYuma
 
 - type: entity
-  parent: N14DecorationFlagFlammable
-  id: N14DecorationFlagKhans
+  parent: F14DecorationFlagFlammable
+  id: F14DecorationFlagKhans
   name:  Flag of the Great Khans Tribe
   description: The banner of the Great Khans Tribe, weathered and worn from a long cherished history of raiding the helpless. The decorated skull smiles with mockery at those who would challenge it.
   components:
@@ -236,8 +236,8 @@
     state: khanflag
 
 - type: entity
-  parent: N14DecorationFlagFlammable
-  id: N14DecorationFlagChurch
+  parent: F14DecorationFlagFlammable
+  id: F14DecorationFlagChurch
   name: Flag of the Church of Renewal
   description: The banner of the Church of Renewal, a cult that believes the nuclear apocalypse was a gift of creation, and that forced evolution of humanity is not only our one path to survival, but our sacred destiny.
   components:

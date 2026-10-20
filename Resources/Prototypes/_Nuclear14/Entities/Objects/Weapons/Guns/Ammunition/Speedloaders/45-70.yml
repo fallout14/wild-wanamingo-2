@@ -2,19 +2,19 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Speedloaders/45-70.yml
 
 - type: entity
-  id: N14BaseSpeedLoader45-70
+  id: F14BaseSpeedLoader4570
   name: "speed loader (45-70 gov)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - N14SpeedLoader45-70
+      - F14SpeedLoader4570
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - N14Cartridge45-70
+        - F14Cartridge4570
     capacity: 6
   - type: Sprite
   - type: ContainerContainer
@@ -23,12 +23,12 @@
         ents: []
 
 - type: entity
-  id: N14SpeedLoader45-70
+  id: F14SpeedLoader4570
   name: "speed loader (45-70 gov)"
-  parent: N14BaseSpeedLoader45-70
+  parent: F14BaseSpeedLoader4570
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge45-70
+    proto: F14Cartridge4570
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Speedloaders/45_70loader.rsi
     layers:
@@ -45,19 +45,19 @@
 #TODO: Move this to a proper place, upstream it made by 'Cojoke' from Wizden
 
 - type: entity
-  id: N14BaseSpeedLoaderInternal4570
+  id: F14BaseSpeedLoaderInternal4570
   name: "speed loader internal"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-    - N14SpeedLoaderInternal
+    - F14SpeedLoaderInternal
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - N14Cartridge45-70
+      - F14Cartridge4570
     capacity: 10
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Speedloaders/45_70loadertube.rsi
@@ -67,12 +67,12 @@
         ents: []
 
 - type: entity
-  id: N14SpeedLoader45-70Tube
+  id: F14SpeedLoader4570Tube
   name: "speed loader tube (45-70 gov)"
-  parent: N14BaseSpeedLoaderInternal4570
+  parent: F14BaseSpeedLoaderInternal4570
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge45-70
+    proto: F14Cartridge4570
   - type: Sprite
     layers:
     - state: base

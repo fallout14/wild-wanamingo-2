@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Specific/Medical/healthanalyzer.yml
 
 - type: entity
-  id: N14HandheldHealthAnalyzerUnpowered
+  id: F14HandheldHealthAnalyzerUnpowered
   parent: HandheldHealthAnalyzerUnpowered
   name: health analyzer
   description: A hand-held body scanner capable of distinguishing vital signs of the subject.
@@ -20,8 +20,8 @@
         map: [ "enum.PowerDeviceVisualLayers.Powered" ]
 
 - type: entity
-  id: N14HandheldHealthAnalyzer
-  parent: [ N14HandheldHealthAnalyzerUnpowered, PowerCellSlotSmallItem]
+  id: F14HandheldHealthAnalyzer
+  parent: [ F14HandheldHealthAnalyzerUnpowered, PowerCellSlotSmallItem]
   suffix: Powered
   components:
   - type: PowerCellDraw
@@ -30,8 +30,8 @@
   - type: ActivatableUIRequiresPowerCell
 
 - type: entity
-  id: N14HandheldHealthAnalyzerAdmin
-  parent: [ N14HandheldHealthAnalyzerUnpowered, PowerCellSlotSmallItem]
+  id: F14HandheldHealthAnalyzerAdmin
+  parent: [ F14HandheldHealthAnalyzerUnpowered, PowerCellSlotSmallItem]
   suffix: Admin
   components:
   - type: PowerCellDraw

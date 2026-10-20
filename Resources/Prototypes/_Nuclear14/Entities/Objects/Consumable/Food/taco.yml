@@ -3,8 +3,8 @@
 
 - type: entity
   name: taco shell
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodTacoShell
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodTacoShell
   description: A taco shell, easy to hold, but falls on its side when put down.
   components:
   - type: Item
@@ -24,7 +24,7 @@
 
 - type: entity
   parent: FoodInjectableBase
-  id: N14CookedFoodTacoBase
+  id: F14CookedFoodTacoBase
   abstract: true
   components:
   - type: FlavorProfile
@@ -53,8 +53,8 @@
 
 - type: entity
   name: meat taco
-  parent: N14CookedFoodTacoBase
-  id: N14CookedFoodTacoMeat
+  parent: F14CookedFoodTacoBase
+  id: F14CookedFoodTacoMeat
   description: A crispy, cheesy taco. Fuck, imagine this with SPICE... #N14 change
   components:
   - type: Edible
@@ -64,8 +64,8 @@
 
 - type: entity
   name: chicken taco
-  parent: N14CookedFoodTacoBase
-  id: N14CookedFoodTacoChicken
+  parent: F14CookedFoodTacoBase
+  id: F14CookedFoodTacoChicken
   description: A flaky chicken taco, now with cheese! #N14 change
   components:
   - type: Edible
@@ -75,8 +75,8 @@
 
 - type: entity
   name: fish taco
-  parent: N14CookedFoodTacoBase
-  id: N14CookedFoodTacoFish
+  parent: F14CookedFoodTacoBase
+  id: F14CookedFoodTacoFish
   description: Once, there were no fish left in these waters.
   components:
   - type: FlavorProfile
@@ -98,8 +98,8 @@
 
 - type: entity
   name: rat taco
-  parent: N14CookedFoodTacoBase
-  id: N14CookedFoodTacoRat
+  parent: F14CookedFoodTacoBase
+  id: F14CookedFoodTacoRat
   description: Yeah, that looks about right...
   components:
   - type: Edible
@@ -117,8 +117,8 @@
 
 - type: entity
   name: meat taco supreme
-  parent: N14CookedFoodTacoBase
-  id: N14CookedFoodTacoMeatSupreme
+  parent: F14CookedFoodTacoBase
+  id: F14CookedFoodTacoMeatSupreme
   description: REJOICE, SCUM! #N14 change
   components:
   - type: Edible
@@ -136,8 +136,8 @@
 
 - type: entity
   name: chicken taco supreme
-  parent: N14CookedFoodTacoBase
-  id: N14CookedFoodTacoChickenSupreme
+  parent: F14CookedFoodTacoBase
+  id: F14CookedFoodTacoChickenSupreme
   description: Favorite food of Lord Humungous. #N14 change
   components:
   - type: Edible
@@ -155,8 +155,8 @@
 
 - type: entity
   name: soft taco
-  parent: N14CookedFoodMealBase
-  id: N14CookedFoodMealSoftTaco
+  parent: F14CookedFoodMealBase
+  id: F14CookedFoodMealSoftTaco
   description: Take a bite!
   components:
   - type: FlavorProfile

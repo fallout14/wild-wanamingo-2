@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Voice/deathclaw.yml
 
 - type: speechSounds
-  id: MisfitsDeathclaw
+  id: F14Deathclaw
   saySound:
     path: /Audio/Misfits/Mobs/Deathclaw/idle.ogg
   askSound:
@@ -10,17 +10,17 @@
     path: /Audio/Misfits/Mobs/Deathclaw/taunt.ogg
 
 - type: emoteSounds
-  id: MisfitsDeathclawEmotes
+  id: F14DeathclawEmotes
   params:
     variation: 0.08
   sounds:
-    MisfitsDeathclawGrowl:
+    F14DeathclawGrowl:
       path: /Audio/Misfits/Mobs/Deathclaw/aggro2.ogg
-    MisfitsDeathclawRoar:
+    F14DeathclawRoar:
       path: /Audio/Misfits/Mobs/Deathclaw/taunt.ogg
 
 - type: emote
-  id: MisfitsDeathclawGrowl
+  id: F14DeathclawGrowl
   name: misfits-emote-name-deathclaw-growl
   category: Vocal
   icon: Misfits/Interface/Emotes/growl.png
@@ -32,7 +32,7 @@
   - misfits-emote-message-deathclaw-growl
 
 - type: emote
-  id: MisfitsDeathclawRoar
+  id: F14DeathclawRoar
   name: misfits-emote-name-deathclaw-roar
   category: Vocal
   icon: Interface/Emotes/scream.png

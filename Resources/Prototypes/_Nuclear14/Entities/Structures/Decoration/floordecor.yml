@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Decoration/floordecor.yml
 
 - type: entity
-  id: N14DecorFloorBase
+  id: F14DecorFloorBase
   suffix: Mapping
   abstract: true
   placement:
@@ -39,296 +39,296 @@
 # Cave Decor
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard1
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard1
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard1
   - type: Sprite
     state: boards_drought_ns-1
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard2
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard2
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard2
   - type: Sprite
     state: boards_drought_ns-2
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard3
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard3
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard3
   - type: Sprite
     state: boards_drought_ns-3
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard4
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard4
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard4
   - type: Sprite
     state: boards_drought_ns-4
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard5
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard5
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard5
   - type: Sprite
     state: boards_drought_ns-5
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard6
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard6
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard6
   - type: Sprite
     state: boards_drought_ns-6
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard7
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard7
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard7
   - type: Sprite
     state: boards_drought_we-1
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard8
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard8
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard8
   - type: Sprite
     state: boards_drought_we-2
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard9
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard9
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard9
   - type: Sprite
     state: boards_drought_we-3
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard10
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard10
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard10
   - type: Sprite
     state: boards_drought_we-4
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard11
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard11
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard11
   - type: Sprite
     state: boards_drought_we-5
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard12
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard12
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard12
   - type: Sprite
     state: boards_drought_we-6
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard13
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard13
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard13
   - type: Sprite
     state: boards_mammoth_ns-1
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard14
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard14
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard14
   - type: Sprite
     state: boards_mammoth_ns-2
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard15
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard15
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard15
   - type: Sprite
     state: boards_mammoth_ns-3
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard16
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard16
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard16
   - type: Sprite
     state: boards_mammoth_ns-4
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard17
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard17
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard17
   - type: Sprite
     state: boards_mammoth_ns-5
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard18
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard18
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard18
   - type: Sprite
     state: boards_mammoth_ns-6
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard19
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard19
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard19
   - type: Sprite
     state: boards_mammoth_we-1
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard20
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard20
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard20
   - type: Sprite
     state: boards_mammoth_we-2
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard21
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard21
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard21
   - type: Sprite
     state: boards_mammoth_we-3
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard22
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard22
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard22
   - type: Sprite
     state: boards_mammoth_we-4
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard23
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard23
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard23
   - type: Sprite
     state: boards_mammoth_we-5
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorBoard24
+  parent: F14DecorFloorBase
+  id: F14DecorFloorBoard24
   name: floor board
   description: Keep the mud off your feet.
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBoards
+    graph: F14DecorFloorBoards
     node: floorboard24
   - type: Sprite
     state: boards_mammoth_we-6
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorStalagmite1
+  parent: F14DecorFloorBase
+  id: F14DecorStalagmite1
   name: stalagmite
   description: Pointy rocks, don't trip near them if you want to keep your guts intact.
   components:
@@ -347,43 +347,43 @@
         - MachineLayer
 
 - type: entity
-  parent: N14DecorStalagmite1
-  id: N14DecorStalagmite2
+  parent: F14DecorStalagmite1
+  id: F14DecorStalagmite2
   components:
   - type: Sprite
     state: stalagmite1
 
 - type: entity
-  parent: N14DecorStalagmite1
-  id: N14DecorStalagmite3
+  parent: F14DecorStalagmite1
+  id: F14DecorStalagmite3
   components:
   - type: Sprite
     state: stalagmite2
 
 - type: entity
-  parent: N14DecorStalagmite1
-  id: N14DecorStalagmite4
+  parent: F14DecorStalagmite1
+  id: F14DecorStalagmite4
   components:
   - type: Sprite
     state: stalagmite3
 
 - type: entity
-  parent: N14DecorStalagmite1
-  id: N14DecorStalagmite5
+  parent: F14DecorStalagmite1
+  id: F14DecorStalagmite5
   components:
   - type: Sprite
     state: stalagmite4
 
 - type: entity
-  parent: N14DecorStalagmite1
-  id: N14DecorStalagmite6
+  parent: F14DecorStalagmite1
+  id: F14DecorStalagmite6
   components:
   - type: Sprite
     state: stalagmite5
 
 - type: entity
-  parent: N14DecorStalagmite1
-  id: N14DecorMinecart
+  parent: F14DecorStalagmite1
+  id: F14DecorMinecart
   name: minecrart
   description: It collapsed under its burdens, as will you.
   components:
@@ -391,8 +391,8 @@
     state: minecart_fallen
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorSignLeftMine
+  parent: F14DecorFloorBase
+  id: F14DecorSignLeftMine
   name: sign
   description: It seems you should head this way.
   components:
@@ -400,8 +400,8 @@
     state: sign_left
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorSignRightMine
+  parent: F14DecorFloorBase
+  id: F14DecorSignRightMine
   name: sign
   description: It seems you should head this way.
   components:
@@ -411,8 +411,8 @@
 # World Decor
 
 - type: entity
-  parent: N14DecorFloorBase
-  id: N14DecorFloorWorldBase
+  parent: F14DecorFloorBase
+  id: F14DecorFloorWorldBase
   abstract: true
   components:
   - type: Sprite
@@ -420,8 +420,8 @@
     snapCardinals: false
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorFloorPaper
+  parent: F14DecorFloorWorldBase
+  id: F14DecorFloorPaper
   name: scattered paper
   description: Once this was information men would fight and die for, now its so much rubbish on the ground.
   suffix: 8 states
@@ -432,8 +432,8 @@
     # add destruction drop for materials
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorFloorPaper1
+  parent: F14DecorFloorWorldBase
+  id: F14DecorFloorPaper1
   suffix: 4 states
   name: scattered paper
   description: Important men schemed for this information in the past, killed other men for it. Its utterly useless now.
@@ -442,22 +442,22 @@
     state: papers_1
 
 - type: entity
-  parent: N14DecorFloorPaper1
-  id: N14DecorFloorPaper2
+  parent: F14DecorFloorPaper1
+  id: F14DecorFloorPaper2
   components:
   - type: Sprite
     state: papers_2
 
 - type: entity
-  parent: N14DecorFloorPaper1
-  id: N14DecorFloorPaper3
+  parent: F14DecorFloorPaper1
+  id: F14DecorFloorPaper3
   components:
   - type: Sprite
     state: papers_3
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorFloorScrapwood
+  parent: F14DecorFloorWorldBase
+  id: F14DecorFloorScrapwood
   name: wood scraps
   description: The best laid schemes of pigrats and men go oft awry.
   suffix: 6 states
@@ -467,21 +467,21 @@
     state: woodscrap
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorFloorBrickrubble
+  parent: F14DecorFloorWorldBase
+  id: F14DecorFloorBrickrubble
   name: brick rubble
   description: The great nations huffed, and puffed, and blew down the world.
   suffix: "6 states"
   components:
   - type: Construction
-    graph: MisfitsDecorFloorBrickrubble
+    graph: F14DecorFloorBrickrubble
     node: brickrubble
   - type: Sprite
     state: brickrubble
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorFloorCardboard
+  parent: F14DecorFloorWorldBase
+  id: F14DecorFloorCardboard
   name: cardboard boxes
   description: Just enough space to hold the last hope you had.
   suffix: "6 states"
@@ -491,28 +491,28 @@
     # add destruction drop for materials
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorFloorPallet
+  parent: F14DecorFloorWorldBase
+  id: F14DecorFloorPallet
   name: pallet
   description: An old wooden pallet, riddled with termites. Its beyond useless now.
   suffix: "2 states"
   components:
   - type: Construction
-    graph: MisfitsDecorFloorPallets
+    graph: F14DecorFloorPallets
     node: pallet
   - type: Sprite
     state: pallet
         # add destruction drop for materials
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorFloorPalletStack
+  parent: F14DecorFloorWorldBase
+  id: F14DecorFloorPalletStack
   name: pallet stack
   description: A stack of old wooden pallets, damp and moldy. Not even good enough to use as fuel.
   suffix: "2 states"
   components:
   - type: Construction
-    graph: MisfitsDecorFloorPallets
+    graph: F14DecorFloorPallets
     node: pallet_stack
   - type: Sprite
     state: pallet_stack
@@ -530,8 +530,8 @@
         - MachineLayer
 
 - type: entity
-  parent: N14DecorFloorPalletStack
-  id: N14DecorFloorBrickStack
+  parent: F14DecorFloorPalletStack
+  id: F14DecorFloorBrickStack
   name: brick stack
   description: With enough of these, you could rebuild your life.
   components:
@@ -539,8 +539,8 @@
     state: brickpile
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorFloorBookstack1
+  parent: F14DecorFloorWorldBase
+  id: F14DecorFloorBookstack1
   name: book stack
   description: So much knowledge, lost to time.
   components:
@@ -549,22 +549,22 @@
         # add destruction drop for materials
 
 - type: entity
-  parent: N14DecorFloorBookstack1
-  id: N14DecorFloorBookstack2
+  parent: F14DecorFloorBookstack1
+  id: F14DecorFloorBookstack2
   components:
   - type: Sprite
     state: bookstack_2
 
 - type: entity
-  parent: N14DecorFloorBookstack1
-  id: N14DecorFloorBookstack3
+  parent: F14DecorFloorBookstack1
+  id: F14DecorFloorBookstack3
   components:
   - type: Sprite
     state: bookstack_3
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorFloorBookPile1
+  parent: F14DecorFloorWorldBase
+  id: F14DecorFloorBookPile1
   name: book pile
   description: Once valuable, they now fall apart at the touch.
   components:
@@ -573,43 +573,43 @@
         # add destruction drop for materials
 
 - type: entity
-  parent: N14DecorFloorBookPile1
-  id: N14DecorFloorBookPile2
+  parent: F14DecorFloorBookPile1
+  id: F14DecorFloorBookPile2
   components:
   - type: Sprite
     state: bookpile_2
 
 - type: entity
-  parent: N14DecorFloorBookPile1
-  id: N14DecorFloorBookPile3
+  parent: F14DecorFloorBookPile1
+  id: F14DecorFloorBookPile3
   components:
   - type: Sprite
     state: bookpile_3
 
 - type: entity
-  parent: N14DecorFloorBookPile1
-  id: N14DecorFloorBookPile4
+  parent: F14DecorFloorBookPile1
+  id: F14DecorFloorBookPile4
   components:
   - type: Sprite
     state: bookpile_4
 
 - type: entity
-  parent: N14DecorFloorBookPile1
-  id: N14DecorFloorBookPile5
+  parent: F14DecorFloorBookPile1
+  id: F14DecorFloorBookPile5
   components:
   - type: Sprite
     state: bookpile_5
 
 - type: entity
-  parent: N14DecorFloorBookPile1
-  id: N14DecorFloorBookPile6
+  parent: F14DecorFloorBookPile1
+  id: F14DecorFloorBookPile6
   components:
   - type: Sprite
     state: bookpile_6
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorFloorFood1
+  parent: F14DecorFloorWorldBase
+  id: F14DecorFloorFood1
   name: old food debris
   description: There's nothing left to eat here, not even a morsel of hope.
   components:
@@ -617,43 +617,43 @@
     state: foodstuff_1
 
 - type: entity
-  parent: N14DecorFloorFood1
-  id: N14DecorFloorFood2
+  parent: F14DecorFloorFood1
+  id: F14DecorFloorFood2
   components:
   - type: Sprite
     state: foodstuff_2
 
 - type: entity
-  parent: N14DecorFloorFood1
-  id: N14DecorFloorFood3
+  parent: F14DecorFloorFood1
+  id: F14DecorFloorFood3
   components:
   - type: Sprite
     state: foodstuff_3
 
 - type: entity
-  parent: N14DecorFloorFood1
-  id: N14DecorFloorFood4
+  parent: F14DecorFloorFood1
+  id: F14DecorFloorFood4
   components:
   - type: Sprite
     state: foodstuff_4
 
 - type: entity
-  parent: N14DecorFloorFood1
-  id: N14DecorFloorFood5
+  parent: F14DecorFloorFood1
+  id: F14DecorFloorFood5
   components:
   - type: Sprite
     state: foodstuff_5
 
 - type: entity
-  parent: N14DecorFloorFood1
-  id: N14DecorFloorFood6
+  parent: F14DecorFloorFood1
+  id: F14DecorFloorFood6
   components:
   - type: Sprite
     state: foodstuff_6
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorFloorTrashbags1
+  parent: F14DecorFloorWorldBase
+  id: F14DecorFloorTrashbags1
   name: trash bags
   description: A good place to put your hopes and dreams if you had any left, and the future home of your corpse.
   components:
@@ -672,43 +672,43 @@
         - MachineLayer
 
 - type: entity
-  parent: N14DecorFloorTrashbags1
-  id: N14DecorFloorTrashbags2
+  parent: F14DecorFloorTrashbags1
+  id: F14DecorFloorTrashbags2
   components:
   - type: Sprite
     state: trashbags_2
 
 - type: entity
-  parent: N14DecorFloorTrashbags1
-  id: N14DecorFloorTrashbags3
+  parent: F14DecorFloorTrashbags1
+  id: F14DecorFloorTrashbags3
   components:
   - type: Sprite
     state: trashbags_3
 
 - type: entity
-  parent: N14DecorFloorTrashbags1
-  id: N14DecorFloorTrashbags4
+  parent: F14DecorFloorTrashbags1
+  id: F14DecorFloorTrashbags4
   components:
   - type: Sprite
     state: trashbags_4
 
 - type: entity
-  parent: N14DecorFloorTrashbags1
-  id: N14DecorFloorTrashbags5
+  parent: F14DecorFloorTrashbags1
+  id: F14DecorFloorTrashbags5
   components:
   - type: Sprite
     state: trashbags_5
 
 - type: entity
-  parent: N14DecorFloorTrashbags1
-  id: N14DecorFloorTrashbags6
+  parent: F14DecorFloorTrashbags1
+  id: F14DecorFloorTrashbags6
   components:
   - type: Sprite
     state: trashbags_6
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorFloorGlass1
+  parent: F14DecorFloorWorldBase
+  id: F14DecorFloorGlass1
   name: glass bottles
   description: Maybe the answer to your problems can be found at the bottom of a bottle?
   components:
@@ -717,43 +717,43 @@
     # add glass shard destruction
 
 - type: entity
-  parent: N14DecorFloorGlass1
-  id: N14DecorFloorGlass2
+  parent: F14DecorFloorGlass1
+  id: F14DecorFloorGlass2
   components:
   - type: Sprite
     state: glass_2
 
 - type: entity
-  parent: N14DecorFloorGlass1
-  id: N14DecorFloorGlass3
+  parent: F14DecorFloorGlass1
+  id: F14DecorFloorGlass3
   components:
   - type: Sprite
     state: glass_3
 
 - type: entity
-  parent: N14DecorFloorGlass1
-  id: N14DecorFloorGlass4
+  parent: F14DecorFloorGlass1
+  id: F14DecorFloorGlass4
   components:
   - type: Sprite
     state: glass_4
 
 - type: entity
-  parent: N14DecorFloorGlass1
-  id: N14DecorFloorGlass5
+  parent: F14DecorFloorGlass1
+  id: F14DecorFloorGlass5
   components:
   - type: Sprite
     state: glass_5
 
 - type: entity
-  parent: N14DecorFloorGlass1
-  id: N14DecorFloorGlass6
+  parent: F14DecorFloorGlass1
+  id: F14DecorFloorGlass6
   components:
   - type: Sprite
     state: glass_6
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorSignMines
+  parent: F14DecorFloorWorldBase
+  id: F14DecorSignMines
   name: mines
   description: Watch your step, as if that'll help.
   components:
@@ -761,8 +761,8 @@
     state: mine_sign
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorFloorSkeleton
+  parent: F14DecorFloorWorldBase
+  id: F14DecorFloorSkeleton
   name: skeleton
   description: Not even the carrion eaters are interested in this irradiated corpse.
   components:
@@ -770,8 +770,8 @@
     state: skeleton
 
 - type: entity
-  parent: N14DecorFloorWorldBase
-  id: N14DecorBarrels
+  parent: F14DecorFloorWorldBase
+  id: F14DecorBarrels
   name: barrels
   description: Broken and empty, just like you.
   components:
@@ -801,8 +801,8 @@
         - MachineLayer
 
 - type: entity
-  parent: N14DecorFloorSkeleton
-  id: N14DecorFloorSkeletonOver
+  parent: F14DecorFloorSkeleton
+  id: F14DecorFloorSkeletonOver
   suffix: draws over objects, mapping
   components:
   - type: Sprite

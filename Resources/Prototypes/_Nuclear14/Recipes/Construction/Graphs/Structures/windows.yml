@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/Structures/windows.yml
 
 - type: constructionGraph
-  id: N14WindowPane
+  id: F14WindowPane
   start: start
   graph:
     - node: start
@@ -19,7 +19,7 @@
               doAfter: 2
 
     - node: N14WindowSlanted
-      entity: MisfitsWindowSlanted
+      entity: F14WindowSlanted
       edges:
         - to: start
           completed:
@@ -32,7 +32,7 @@
               doAfter: 10
 
 - type: constructionGraph
-  id: N14WindowBars
+  id: F14WindowBars
   start: start
   graph:
     - node: start
@@ -47,7 +47,7 @@
               doAfter: 1
 
     - node: bars
-      entity: N14WindowBars
+      entity: F14WindowBars
       edges:
         - to: start
           completed:

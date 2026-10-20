@@ -1,115 +1,115 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/Factions/recruitment.yml
 
 - type: entity
-  id: MisfitsClosetSafeSpinnerVault
+  id: F14ClosetSafeSpinnerVault
   suffix: Filled, Vault
-  parent: N14ClosetSafeSpinner
+  parent: F14ClosetSafeSpinner
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsBoxIDVault
-    - id: MisfitsBoxHeadsetVault
-    - id: MisfitsBoxEncryptionKeyVault
+    - id: F14BoxIDVault
+    - id: F14BoxHeadsetVault
+    - id: F14BoxEncryptionKeyVault
     - id: SheetSteel10
     - id: MaterialCloth10
     - id: BoxFolderGrey
     - id: Pen
 
 - type: entity
-  id: MisfitsClosetSafeSpinnerLegion
+  id: F14ClosetSafeSpinnerLegion
   suffix: Filled, Legion
-  parent: N14ClosetSafeSpinner
+  parent: F14ClosetSafeSpinner
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsBoxIDLegion
-    - id: MisfitsBoxHeadsetLegion
-    - id: MisfitsBoxEncryptionKeyLegion
+    - id: F14BoxIDLegion
+    - id: F14BoxHeadsetLegion
+    - id: F14BoxEncryptionKeyLegion
     - id: SheetSteel10
     - id: MaterialCloth10
     - id: BoxFolderGrey
     - id: Pen
-    - id: N14Cartridge50
+    - id: F14Cartridge50
       amount: 4
 
 - type: entity
-  id: MisfitsClosetSafeSpinnerNCR
+  id: F14ClosetSafeSpinnerNCR
   suffix: Filled, NCR
-  parent: N14ClosetSafeSpinner
+  parent: F14ClosetSafeSpinner
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsBoxIDNCR
-    - id: MisfitsBriefcaseBrownNCRMedals
-    - id: MisfitsBoxHeadsetNCR
-    - id: MisfitsBoxEncryptionKeyNCR
+    - id: F14BoxIDNCR
+    - id: F14BriefcaseBrownNCRMedals
+    - id: F14BoxHeadsetNCR
+    - id: F14BoxEncryptionKeyNCR
     - id: SheetSteel10
     - id: MaterialCloth10
     - id: BoxFolderGrey
     - id: Pen
     - id: DrinkGlass
       amount: 2
-    - id: N14ClothingHeadHatNCRBeretRecon
-    - id: N14DrinkRoentgenRum
-    - id: N14DrinkWhisky
-    - id: N14DrinkWine
-    - id: N14IDNCRDogtagOfficer
-    - id: N14IDNCRDogtagNCO
+    - id: F14ClothingHeadHatNCRBeretRecon
+    - id: F14DrinkRoentgenRum
+    - id: F14DrinkWhisky
+    - id: F14DrinkWine
+    - id: F14IDNCRDogtagOfficer
+    - id: F14IDNCRDogtagNCO
       amount: 2
 
 - type: entity
-  id: MisfitsClosetSafeSpinnerBrotherhoodOfSteel
+  id: F14ClosetSafeSpinnerBrotherhoodOfSteel
   suffix: Filled, BoS
-  parent: N14ClosetSafeSpinner
+  parent: F14ClosetSafeSpinner
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsBoxIDBrotherhoodOfSteel
-    - id: MisfitsBoxHeadsetBrotherhoodOfSteel
-    - id: MisfitsBoxEncryptionKeyBrotherhoodOfSteel
+    - id: F14BoxIDBrotherhoodOfSteel
+    - id: F14BoxHeadsetBrotherhoodOfSteel
+    - id: F14BoxEncryptionKeyBrotherhoodOfSteel
     - id: SheetSteel10
     - id: MaterialCloth10
     - id: BoxFolderGrey
     - id: Pen
 
 - type: entity
-  id: MisfitsClosetSafeSpinnerTown
+  id: F14ClosetSafeSpinnerTown
   suffix: Filled, Town
-  parent: N14ClosetSafeSpinner
+  parent: F14ClosetSafeSpinner
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsBoxIDTown
-    - id: MisfitsBoxEncryptionKeyTown
+    - id: F14BoxIDTown
+    - id: F14BoxEncryptionKeyTown
     - id: SheetSteel10
     - id: MaterialCloth10
     - id: BoxFolderGrey
     - id: Pen
 
 - type: entity
-  id: MisfitsClosetSafeSpinnerFollowers
+  id: F14ClosetSafeSpinnerFollowers
   suffix: Filled, Followers
-  parent: N14ClosetSafeSpinner
+  parent: F14ClosetSafeSpinner
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsBoxIDFollowers
-    - id: MisfitsBoxHeadsetFollowers
-    - id: MisfitsBoxEncryptionKeyFollowers
+    - id: F14BoxIDFollowers
+    - id: F14BoxHeadsetFollowers
+    - id: F14BoxEncryptionKeyFollowers
     - id: SheetSteel10
     - id: MaterialCloth10
     - id: BoxFolderGrey
     - id: Pen
 
 - type: entity
-  id: MisfitsClosetSafeSpinnerEnclave
+  id: F14ClosetSafeSpinnerEnclave
   suffix: Filled, Enclave
-  parent: N14ClosetSafeSpinner
+  parent: F14ClosetSafeSpinner
   components:
   - type: StorageFill
     contents:
-    - id: MisfitsBoxHeadsetEnclave
-    - id: MisfitsBoxEncryptionKeyEnclave
+    - id: F14BoxHeadsetEnclave
+    - id: F14BoxEncryptionKeyEnclave
     - id: SheetSteel10
     - id: MaterialCloth10
     - id: BoxFolderGrey

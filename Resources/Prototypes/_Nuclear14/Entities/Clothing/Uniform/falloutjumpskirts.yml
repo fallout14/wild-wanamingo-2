@@ -3,8 +3,8 @@
 
 - type: entity
   abstract: true
-  parent: N14ClothingUniformBase
-  id: N14ClothingUniformSkirtBase
+  parent: F14ClothingUniformBase
+  id: F14ClothingUniformSkirtBase
   components:
   - type: Clothing
     slots: [innerclothing]
@@ -12,12 +12,12 @@
   - type: Tag # Needed for species with nonhuman legs/can only wear skirts
               # And for moths to be able to eat this.
     tags:
-    - DeltaVSkirt
+    - F14Skirt
     - ClothMade
 
 - type: entity
-  parent: N14ClothingUniformSkirtBase
-  id: N14ClothingUniformJumpskirtFalloutBlack
+  parent: F14ClothingUniformSkirtBase
+  id: F14ClothingUniformJumpskirtFalloutBlack
   name: black skirt
   description: It's a skirt. This one is black.
   components:
@@ -27,8 +27,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSkirts/blackskirt.rsi
 
 - type: entity
-  parent: N14ClothingUniformSkirtBase
-  id: N14ClothingUniformJumpskirtFalloutBlue
+  parent: F14ClothingUniformSkirtBase
+  id: F14ClothingUniformJumpskirtFalloutBlue
   name: blue skirt
   description: It's a skirt. This one is blue.
   components:
@@ -38,8 +38,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSkirts/blueskirt.rsi
 
 - type: entity
-  parent: N14ClothingUniformSkirtBase
-  id: N14ClothingUniformJumpskirtDressBlack
+  parent: F14ClothingUniformSkirtBase
+  id: F14ClothingUniformJumpskirtDressBlack
   name: black dress
   description: It's a dress. This one is black.
   components:
@@ -49,8 +49,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSkirts/blackdress.rsi
 
 - type: entity
-  parent: N14ClothingUniformSkirtBase
-  id: N14ClothingUniformJumpskirtDressBlue
+  parent: F14ClothingUniformSkirtBase
+  id: F14ClothingUniformJumpskirtDressBlue
   name: blue dress
   description: It's a dress. This one is blue.
   components:
@@ -60,8 +60,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSkirts/bluedress.rsi
 
 - type: entity
-  parent: N14ClothingUniformSkirtBase
-  id: N14ClothingUniformJumpskirtSundress
+  parent: F14ClothingUniformSkirtBase
+  id: F14ClothingUniformJumpskirtSundress
   name: sundress
   description: It's a pre-war sundress.
   components:
@@ -71,8 +71,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSkirts/sundress.rsi
 
 - type: entity
-  parent: N14ClothingUniformSkirtBase
-  id: N14ClothingUniformJumpskirtWastelandDoc
+  parent: F14ClothingUniformSkirtBase
+  id: F14ClothingUniformJumpskirtWastelandDoc
   name: wasteland doctor's apparel
   description: It's a uniform that post-war doctors wear. Perfect for shrapnel removal or bandaging bruises.
   components:
@@ -82,8 +82,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSkirts/medicaldoctor.rsi
 
 - type: entity
-  parent: N14ClothingUniformSkirtBase
-  id: N14ClothingUniformJumpskirtMerc
+  parent: F14ClothingUniformSkirtBase
+  id: F14ClothingUniformJumpskirtMerc
   name: mercenary uniform
   description: A uniform worn by your typical hirable-gun type.
   components:
@@ -93,8 +93,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSkirts/mercc.rsi
 
 - type: entity
-  parent: N14ClothingUniformSkirtBase
-  id: N14ClothingUniformJumpskirtTribal
+  parent: F14ClothingUniformSkirtBase
+  id: F14ClothingUniformJumpskirtTribal
   name: tribal apparel
   description: Fairly primitive clothing for fairly primitve people.
   components:
@@ -104,8 +104,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSkirts/tribal.rsi
 
 - type: entity
-  parent: N14ClothingUniformSkirtBase
-  id: N14ClothingUniformJumpskirtRDFormal
+  parent: F14ClothingUniformSkirtBase
+  id: F14ClothingUniformJumpskirtRDFormal
   name: formal brown dress
   description: Formal attire for office workers and research personnel alike, in the safe neutral tones of beige and brown, it even has a clip-on tie included. This outfit has achieved true neutrality.
   components:
@@ -115,8 +115,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSkirts/rdformal.rsi
 
 - type: entity
-  parent: N14ClothingUniformSkirtBase
-  id: N14ClothingUniformJumpskirtBOSBlack
+  parent: F14ClothingUniformSkirtBase
+  id: F14ClothingUniformJumpskirtBOSBlack
   name: Black Brotherhood of Steel Uniform
   description: A uniform worn by members of The Brotherhood of Steel. This one is black.
   components:
@@ -126,8 +126,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSkirts/Brotherhood/bosbasic.rsi
 
 - type: entity
-  parent: N14ClothingUniformSkirtBase
-  id: N14ClothingUniformJumpskirtBOSSilver
+  parent: F14ClothingUniformSkirtBase
+  id: F14ClothingUniformJumpskirtBOSSilver
   name: Brotherhood of Steel Uniform
   suffix: ranked silver
   description: A uniform worn by members of The Brotherhood of Steel. This one has silver rank-markings.
@@ -138,8 +138,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSkirts/Brotherhood/bossilver.rsi
 
 - type: entity
-  parent: N14ClothingUniformSkirtBase
-  id: N14ClothingUniformJumpskirtBOSGold
+  parent: F14ClothingUniformSkirtBase
+  id: F14ClothingUniformJumpskirtBOSGold
   name: Brotherhood of Steel Uniform
   suffix: ranked gold
   description: A uniform worn by members of The Brotherhood of Steel. This one has gold rank-markings.
@@ -150,8 +150,8 @@
     sprite: Nuclear14/Clothing/Uniforms/FalloutSkirts/Brotherhood/bosgold.rsi
 
 - type: entity
-  parent: N14ClothingUniformSkirtBase
-  id: N14ClothingUniformJumpskirtAsylumDress
+  parent: F14ClothingUniformSkirtBase
+  id: F14ClothingUniformJumpskirtAsylumDress
   name: Red asylum dress
   description: A red insane asylum nurse dress.
   components:

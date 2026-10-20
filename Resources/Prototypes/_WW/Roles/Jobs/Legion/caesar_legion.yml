@@ -1,0 +1,410 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Roles/Jobs/, _Nuclear14/Roles/Jobs/
+# Changed for Wild Wanamingo: Yuma's roster. Names, slots and whitelists from the server's roster; gear is
+# Misfits' (minus the wallet slot and the skirt/satchel/duffel choices, which are loadouts in Wizden).
+# Misfits' playtime and species requirements are left out for now.
+
+- type: job
+  id: F14CaesarLegionCenturion
+  name: job-name-caesar-legion-centurion
+  description: job-description-caesar-legion-centurion
+  playTimeTracker: F14CaesarLegionCenturion
+  startingGear: F14CaesarLegionCenturionGear
+  icon: F14JobIconlegionerCenturion
+  supervisors: job-name-caesar-legion
+  whitelisted: true
+  accessGroups:
+  - F14CaesarLegionCenturion
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14CaesarLegion
+      - type: ReplacementAccent
+        accent: F14Latin
+
+- type: startingGear
+  id: F14CaesarLegionCenturionGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitLegionnaire
+    ears: F14ClothingHeadsetLegion
+    eyes: F14ClothingEyesGlassesWelding
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingBootsCenturion
+    gloves: F14ClothingHandsGlovesCenturion
+    pocket1: F14KitSelectLegionCenturion
+    pocket2: F14LegionCenturionArmorloadoutkits
+    id: F14IDLegionaryMedalGold
+  storage:
+    back:
+    - F14IFAKLegion
+    - F14HealingPowder
+
+- type: job
+  id: F14CaesarLegionVexillarius
+  name: job-name-caesar-legion-vexillarius
+  description: job-description-caesar-legion-vexillarius
+  playTimeTracker: F14CaesarLegionVexillarius
+  startingGear: F14CaesarLegionVexillariusGear
+  icon: F14JobIconlegionerVenator
+  supervisors: job-name-caesar-legion-other
+  accessGroups:
+  - F14CaesarLegionVexillarius
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14CaesarLegion
+      - type: ReplacementAccent
+        accent: F14Latin
+
+- type: startingGear
+  id: F14CaesarLegionVexillariusGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitLegionnaire
+    ears: F14ClothingHeadsetLegion
+    neck: F14ClothingNeckCloakLegionWhite
+    mask: F14ClothingMaskBrownMask
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingShoesKaligi
+    head: F14ClothingHeadHatLegionHood
+    outerClothing: F14ClothingOuterLegionnaireVexillariusArmor
+    gloves: F14ClothingHandsGlovesTribal
+    pocket1: F14KitSelectLegionVexillarius
+    id: F14IDLegionaryMedalVexillarius
+  storage:
+    back:
+    - F14IFAKLegion
+    - F14HealingPowder
+
+- type: job
+  id: F14CaesarLegionExplorer
+  name: job-name-caesar-legion-explorer
+  description: job-description-caesar-legion-explorer
+  playTimeTracker: F14CaesarLegionExplorer
+  startingGear: F14CaesarLegionExplorerGear
+  icon: F14JobIconlegionerVenator
+  supervisors: job-name-caesar-legion-supervisors
+  accessGroups:
+  - F14CaesarLegionExplorer
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14CaesarLegion
+      - type: ReplacementAccent
+        accent: F14Latin
+
+- type: startingGear
+  id: F14CaesarLegionExplorerGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitLegionnaire
+    ears: F14ClothingHeadsetLegion
+    neck: F14ClothingNeckCloakLegionBlack
+    eyes: ClothingEyesNightVisionGoggles
+    mask: F14ClothingMaskBrownMask
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingShoesKaligi
+    head: F14ClothingHeadHatTribalOutcastHood
+    outerClothing: F14ClothingOuterLegionnaireExplorerArmor
+    gloves: F14ClothingHandsGlovesTribal
+    pocket1: F14KitLegionExplorer
+    id: F14IDLegionaryMedalExplorer
+  storage:
+    back:
+    - F14IFAKLegion
+    - F14HealingPowder
+    - F14Binoculars
+
+- type: job
+  id: F14CaesarLegionHoundmaster
+  name: job-name-caesar-legion-houndmaster
+  description: job-description-caesar-legion-houndmaster
+  playTimeTracker: F14CaesarLegionHoundmaster
+  startingGear: F14CaesarLegionHoundmasterGear
+  icon: F14JobIconlegionerWarrior
+  supervisors: job-name-caesar-legion-other
+  accessGroups:
+  - F14CaesarLegionHoundmaster
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14CaesarLegion
+      - type: ReplacementAccent
+        accent: F14Latin
+
+- type: startingGear
+  id: F14CaesarLegionHoundmasterGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitLegionnaire
+    ears: F14ClothingHeadsetLegion
+    neck: F14ClothingNeckCoyoteCloak
+    mask: F14ClothingMaskBrownMask
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingShoesKaligi
+    gloves: F14ClothingHandsGlovesTribal
+    outerClothing: F14ClothingLegionReconArmor
+    pocket1: F14KitLegionHoundmaster
+    id: F14IDLegionaryMedalHoundmaster
+  storage:
+    back:
+    - F14IFAKLegion
+    - F14HealingPowder
+
+- type: job
+  id: F14CaesarLegionForgemaster
+  name: job-name-caesar-legion-forgemaster
+  description: job-description-caesar-legion-forgemaster
+  playTimeTracker: F14CaesarLegionForgemaster
+  startingGear: F14CaesarLegionForgeMasterGear
+  icon: F14JobIconlegionerDean
+  supervisors: job-name-caesar-legion-supervisors
+  accessGroups:
+  - F14CaesarLegionDean
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14CaesarLegion
+      - type: ReplacementAccent
+        accent: F14Latin
+
+- type: startingGear
+  id: F14CaesarLegionForgeMasterGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitLegionnaire
+    ears: F14ClothingHeadsetLegion
+    neck: F14ClothingNeckRedScarf
+    eyes: F14ClothingEyesGlassesWelding
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingBootsCombatFilled
+    head: F14ClothingHeadHatDeanRecruitHelmet
+    outerClothing: F14ClothingOuterDeanLegionnairePrimeArmor
+    gloves: F14ClothingHandsGlovesTribal
+    pocket1: F14KitLegionForgemaster
+    id: F14IDLegionaryMedalForgemaster
+
+- type: job
+  id: F14CaesarLegionDean
+  name: job-name-caesar-legion-dean
+  description: job-description-caesar-legion-dean
+  playTimeTracker: F14CaesarLegionDean
+  startingGear: F14CaesarLegionDeanGear
+  icon: F14JobIconlegionerDean
+  supervisors: job-name-caesar-legion-supervisors
+  accessGroups:
+  - F14CaesarLegionDean
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14CaesarLegion
+      - type: ReplacementAccent
+        accent: F14Latin
+
+- type: startingGear
+  id: F14CaesarLegionDeanGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitLegionnaire
+    ears: F14ClothingHeadsetLegion
+    neck: F14ClothingNeckRedScarf
+    eyes: F14ClothingEyesGlassesWelding
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingBootsCombatFilled
+    head: F14ClothingHeadHatDeanRecruitHelmet
+    outerClothing: F14ClothingOuterDeanLegionnairePrimeArmor
+    gloves: F14ClothingHandsGlovesTribal
+    pocket1: F14KitSelectLegionDecanus
+    id: F14IDLegionaryMedalSilver3
+  storage:
+    back:
+    - F14IFAKLegion
+    - F14HealingPowder
+
+- type: job
+  id: F14CaesarLegionLegionnaireRecruit
+  name: job-name-caesar-legion-legionnaire-recruit
+  description: job-description-caesar-legionnaire-recruit
+  playTimeTracker: F14CaesarLegionLegionnaireRecruit
+  startingGear: F14CaesarLegionLegionnaireRecruitGear
+  icon: F14JobIconlegionerRecruit
+  supervisors: job-name-caesar-legion-other
+  accessGroups:
+  - F14CaesarLegionLegionnaireRecruit
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14CaesarLegion
+      - type: ReplacementAccent
+        accent: F14Latin
+
+- type: startingGear
+  id: F14CaesarLegionLegionnaireRecruitGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitLegionnaire
+    ears: F14ClothingHeadsetLegion
+    mask: F14ClothingMaskBrownMask
+    eyes: F14ClothingEyesGlassesWelding
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingShoesKaligi
+    head: F14ClothingHeadHatTribalOutcastHood
+    outerClothing: F14ClothingOuterLegionnaireRecruitArmor
+    gloves: F14ClothingHandsGlovesTribal
+    pocket1: F14KitLegionRecruit
+    id: F14IDLegionaryMedalLegionnaireRecruit
+  storage:
+    back:
+    - F14IFAKLegion
+    - F14HealingPowder
+    - BookLegionLaw
+
+- type: job
+  id: F14CaesarLegionLegionnaireWarrior
+  name: job-name-caesar-legion-legionnaire-warrior
+  description: job-description-caesar-legion-legionnaire-warrior
+  playTimeTracker: F14CaesarLegionLegionnaireWarrior
+  startingGear: F14CaesarLegionLegionnaireWarriorGear
+  icon: F14JobIconlegionerWarrior
+  supervisors: job-name-caesar-legion-other
+  accessGroups:
+  - F14CaesarLegionLegionnaireWarrior
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14CaesarLegion
+      - type: ReplacementAccent
+        accent: F14Latin
+
+- type: startingGear
+  id: F14CaesarLegionLegionnaireWarriorGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitLegionnaire
+    ears: F14ClothingHeadsetLegion
+    neck: F14ClothingNeckRedScarf
+    eyes: F14ClothingEyesGlassesWelding
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingShoesKaligi
+    head: F14ClothingHeadHatLightBaseballHelmet
+    outerClothing: F14LegionWarriorArmor
+    gloves: F14ClothingHandsGlovesTribal
+    pocket1: F14KitSelectLegionPrime
+    id: F14IDLegionaryMedalSilver
+  storage:
+    back:
+    - F14IFAKLegion
+    - F14HealingPowder
+
+- type: job
+  id: F14CaesarLegionLegionnaireVeteran
+  name: job-name-caesar-legion-legionnaire-veteran
+  description: job-description-caesar-legion-legionnaire-veteran
+  playTimeTracker: F14CaesarLegionLegionnaireVeteran
+  startingGear: F14CaesarLegionLegionnaireVeteranGear
+  icon: F14JobIconlegionerVeteran
+  supervisors: job-name-caesar-legion-other
+  accessGroups:
+  - F14CaesarLegionLegionnaireVeteran
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14CaesarLegion
+      - type: ReplacementAccent
+        accent: F14Latin
+
+- type: startingGear
+  id: F14CaesarLegionLegionnaireVeteranGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitLegionnaire
+    ears: F14ClothingHeadsetLegion
+    neck: F14ClothingNeckRedScarf
+    eyes: F14ClothingEyesGlassesWelding
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingBootsBlack
+    head: F14ClothingHeadHatBaseballHelmet
+    outerClothing: F14ClothingOuterLegionnaireVeteranArmor
+    gloves: F14ClothingHandsGlovesTribal
+    pocket1: F14KitSelectLegionVeteran
+    id: F14IDLegionaryMedalSilver2
+  storage:
+    back:
+    - F14IFAKLegion
+    - F14HealingPowder
+
+- type: job
+  id: F14CaesarLegionAuxilia
+  name: job-name-caesar-legion-auxilia
+  description: job-description-caesar-legion-auxilia
+  playTimeTracker: F14CaesarLegionAuxilia
+  startingGear: F14CaesarLegionAuxiliaGear
+  icon: F14JobIconlegionerRecruit
+  supervisors: job-name-caesar-legion-female
+  accessGroups:
+  - F14CaesarLegionRecruit
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14CaesarLegion
+      - type: ReplacementAccent
+        accent: F14Latin
+
+- type: startingGear
+  id: F14CaesarLegionAuxiliaGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitLegionnaire
+    ears: F14ClothingHeadsetLegion
+    mask: F14ClothingMaskBrownMask
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingBootsLeather
+    head: F14ClothingHeadHatTribalOutcastHood
+    gloves: F14ClothingHandsGlovesTribal
+    outerClothing: F14ClothingOuterLegionnaireRecruitArmor
+    pocket1: F14LegionAuxilialoadoutkits
+    id: F14IDLegionaryBadge
+  storage:
+    back:
+    - F14IFAKLegion
+    - F14HealingPowder
+    - F14HealingPowder
+    - F14HealingPoultice
+    - F14HealingPoultice
+    - F14Hydra
+    - BookLegionLaw
+
+- type: job
+  id: F14CaesarLegionSlave
+  name: job-name-caesar-legion-slave
+  description: job-description-caesar-legion-slave
+  playTimeTracker: F14CaesarLegionSlave
+  startingGear: F14CaesarLegionSlaveGear
+  icon: F14JobIconLegionSlave
+  supervisors: job-supervisors-caesar-legion-slave
+  accessGroups:
+  - F14CaesarLegionSlave
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14CaesarLegion
+      - type: ReplacementAccent
+        accent: F14Latin
+
+- type: startingGear
+  id: F14CaesarLegionSlaveGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitRags
+    id: F14IDLegionaryBadgeSlave

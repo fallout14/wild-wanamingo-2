@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14BaseToolSurgery
+  id: F14BaseToolSurgery
   abstract: true
   components:
   - type: Sprite
@@ -17,9 +17,9 @@
 
 - type: entity
   name: cautery
-  id: N14Cautery
+  id: F14Cautery
   suffix: N14, New
-  parent: N14BaseToolSurgery
+  parent: F14BaseToolSurgery
   description: A surgical tool used to cauterize open wounds.
   components:
   - type: Sprite
@@ -41,9 +41,9 @@
 
 - type: entity
   name: cautery
-  id: N14CauteryRust
+  id: F14CauteryRust
   suffix: N14, Old
-  parent: N14Cautery
+  parent: F14Cautery
   description: A surgical tool used to cauterize open wounds. It's covered in rust.
   components:
   - type: Sprite
@@ -59,9 +59,9 @@
 
 - type: entity
   name: drill
-  id: N14Drill
+  id: F14Drill
   suffix: N14, New
-  parent: N14BaseToolSurgery
+  parent: F14BaseToolSurgery
   description: A surgical drill for making holes into hard material.
   components:
   - type: Sprite
@@ -95,9 +95,9 @@
 
 - type: entity
   name: drill
-  id: N14DrillRusted
+  id: F14DrillRusted
   suffix: N14, Old
-  parent: N14Drill
+  parent: F14Drill
   description: A surgical drill for making holes into hard material. It's covered in rust.
   components:
   - type: Sprite
@@ -115,9 +115,9 @@
 
 - type: entity
   name: scalpel
-  id: N14Scalpel
+  id: F14Scalpel
   suffix: N14, New
-  parent: N14BaseToolSurgery
+  parent: F14BaseToolSurgery
   description: A surgical tool used to make incisions into flesh.
   components:
   - type: Tool
@@ -152,9 +152,9 @@
 
 - type: entity
   name: scalpel
-  id: N14ScalpelRusted
+  id: F14ScalpelRusted
   suffix: N14, Old
-  parent: N14Scalpel
+  parent: F14Scalpel
   description: A surgical tool used to make incisions into flesh. It's covered in rust.
   components:
   - type: Sprite
@@ -170,9 +170,9 @@
 
 - type: entity
   name: retractor
-  id: N14Retractor
+  id: F14Retractor
   suffix: N14, New
-  parent: N14BaseToolSurgery
+  parent: F14BaseToolSurgery
   description: A surgical tool used to hold open incisions.
   components:
   - type: Sprite
@@ -200,9 +200,9 @@
 
 - type: entity
   name: retractor
-  id: N14RetractorRusted
+  id: F14RetractorRusted
   suffix: N14, Old
-  parent: N14Retractor
+  parent: F14Retractor
   description: A surgical tool used to hold open incisions. It's covered in rust.
   components:
   - type: Sprite
@@ -217,8 +217,8 @@
 # Hemostat
 
 - type: entity
-  parent: N14BaseToolSurgery
-  id: N14Bonesetter
+  parent: F14BaseToolSurgery
+  id: F14Bonesetter
   suffix: N14, New
   name: bone setter
   description: Used for setting bones back into place.
@@ -232,8 +232,8 @@
     price: 35
 
 - type: entity
-  parent: N14Bonesetter
-  id: N14BonesetterRusted
+  parent: F14Bonesetter
+  id: F14BonesetterRusted
   suffix: N14, Old
   name: bone setter
   description: Used for setting bones back into place. It's covered in rust.
@@ -250,9 +250,9 @@
 
 - type: entity
   name: circular saw
-  id: N14SawElectric
+  id: F14SawElectric
   suffix: N14, New
-  parent: N14BaseToolSurgery
+  parent: F14BaseToolSurgery
   description: For heavy duty cutting.
   components:
   - type: Sprite
@@ -286,9 +286,9 @@
 
 - type: entity
   name: circular saw
-  id: N14SawElectricRusted
+  id: F14SawElectricRusted
   suffix: N14, Old
-  parent: N14SawElectric
+  parent: F14SawElectric
   description: For heavy duty cutting. It's covered in rust.
   components:
   - type: Sprite

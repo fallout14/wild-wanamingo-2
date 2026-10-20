@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Legion/CenturionArmor.yml
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsCenturionCinderCohort
+  parent: F14FalloutArmorBase
+  id: F14CenturionCinderCohort
   name: Cinder Cohort Armor
   description: "Armor forged in the ashes of fallen legionnaires."
   components:
@@ -27,7 +27,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: MisfitsCenturionCinderCohortHelmet
+  id: F14CenturionCinderCohortHelmet
   name: Cinder Cohort Helmet
   description: "A helmet forged in the ashes of fallen legionnaires."
   components:
@@ -52,8 +52,8 @@
 # Salt Column
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsCenturionSaltColumn
+  parent: F14FalloutArmorBase
+  id: F14CenturionSaltColumn
   name: Salt Column Armor
   description: "Armor made for the Centurion of the Salt Column."
   components:
@@ -78,7 +78,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: MisfitsCenturionSaltColumnHelmet
+  id: F14CenturionSaltColumnHelmet
   name: Salt Column Helmet
   description: "A helmet made for the Centurion of the Salt Column."
   components:
@@ -103,8 +103,8 @@
 # Unbroken set
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsCenturionUnbroken
+  parent: F14FalloutArmorBase
+  id: F14CenturionUnbroken
   name: Unbroken Centurion Armor
   description: "Armor for a Centurion who refuses to stay dead."
   components:
@@ -129,7 +129,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: MisfitsCenturionUnbrokenHelmet
+  id: F14CenturionUnbrokenHelmet
   name: Unbroken Centurion Helmet
   description: "A helmet for a Centurion who refuses to stay dead."
   components:
@@ -154,8 +154,8 @@
 # Warforged set
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsCenturionWarforged
+  parent: F14FalloutArmorBase
+  id: F14CenturionWarforged
   name: Warforged Centurion Armor
   description: "Armor used by Centurions who have seen countless battles, and lived to tell the tale."
   components:
@@ -180,7 +180,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: MisfitsCenturionWarforgedHelmet
+  id: F14CenturionWarforgedHelmet
   name: Warforged Centurion Helmet
   description: "A helmet used by Centurions who have seen countless battles, and lived to tell the tale."
   components:
@@ -205,8 +205,8 @@
 #Warlord set
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: MisfitsCenturionWarlord
+  parent: F14FalloutArmorBase
+  id: F14CenturionWarlord
   name: Warlord Centurion Armor
   description: "Armor for a Centurion who has single handendly won wars."
   components:
@@ -231,7 +231,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: MisfitsCenturionWarlordHelmet
+  id: F14CenturionWarlordHelmet
   name: Warlord Centurion Helmet
   description: "A helmet for a Centurion who has single handendly won wars."
   components:

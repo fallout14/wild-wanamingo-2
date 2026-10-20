@@ -1,39 +1,39 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3WeaponBallistic/OneHanded/Tier3WeaponBallisticPistolTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_GunsBulletPistol
+  id: F14WeaponLootTier3GunsBulletPistol
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: MisfitsWeaponPistolM1911
+      id: F14WeaponPistolM1911
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistol22lr
+      id: F14WeaponPistol22lr
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistol9mm
+      id: F14WeaponPistol9mm
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistol10mm
+      id: F14WeaponPistol10mm
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistol45Colt
+      id: F14WeaponPistol45Colt
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponPistolM1911 # .45acp
+      id: F14WeaponPistolM1911 # .45acp
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistol12mm
+      id: F14WeaponPistol12mm
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponPistol223
+      id: F14WeaponPistol223
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponPistolM1911Custom # .45acp fancy
+      id: F14WeaponPistolM1911Custom # .45acp fancy
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistol9mmSpy #stealth
+      id: F14WeaponPistol9mmSpy #stealth
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponPistol357Automag # #Misfits Add - .357 automag
+      id: F14WeaponPistol357Automag # #Misfits Add - .357 automag
       weight: 4

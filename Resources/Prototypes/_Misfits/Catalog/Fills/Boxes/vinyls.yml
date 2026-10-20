@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/Boxes/vinyls.yml
 
 - type: entity
-  id: MisfitsCrateRadioStationVinyls
+  id: F14CrateRadioStationVinyls
   parent: CrateGenericSteel
   name: vinyls crate
   description: A crate with 20 vinyls so you'll NEVER play the same song twice, they come in sleeves!
@@ -9,16 +9,16 @@
   - type: EntityTableContainerFill
     containers:
       entity_storage: !type:NestedSelector
-        tableId: MisfitsRandomVinylSleeve
+        tableId: F14RandomVinylSleeve
         rolls: !type:ConstantNumberSelector
           value: 20
 
 - type: entityTable
-  id: MisfitsRandomVinylDisk
+  id: F14RandomVinylDisk
   table: !type:GroupSelector
     children: []
 
 - type: entityTable
-  id: MisfitsRandomVinylSleeve
+  id: F14RandomVinylSleeve
   table: !type:GroupSelector
     children: []

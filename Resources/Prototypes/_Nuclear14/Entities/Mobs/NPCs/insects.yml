@@ -3,13 +3,13 @@
 
 - type: entity
   name: bloatfly
-  parent: N14MobBaseHostileInsect
-  id: N14MobBloatfly
+  parent: F14MobBaseHostileInsect
+  id: F14MobBloatfly
   description: A mutated floating bug with an infectious bite and parasitic stinger capable of launching larvae.
   components:
   - type: HTN
     rootTask:
-      task: N14RangedHostileCompound
+      task: F14RangedHostileCompound
     blackboard:
       NavSmash: !type:Bool
         true
@@ -50,7 +50,7 @@
   - type: ReplacementAccent
     accent: mouse
   - type: BallisticAmmoProvider
-    proto: N14BulletAcid
+    proto: F14BulletAcid
     capacity: 100
   - type: RechargeBasicEntityAmmo
     rechargeCooldown: 1
@@ -67,17 +67,17 @@
     useKey: false
   - type: Butcherable
     spawned:
-    - id: N14MaterialAntChitin1
+    - id: F14MaterialAntChitin1
       amount: 1
-    - id: N14FoodMeatRadRaw
+    - id: F14FoodMeatRadRaw
       amount: 1
       prob: 0.75
-    - id: N14FoodBloatflyAcidSac
+    - id: F14FoodBloatflyAcidSac
       amount: 1
       prob: 0.75
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsBloatflyAttack
+      collection: F14BloatflyAttack
       params:
         volume: -3
         maxDistance: 10
@@ -86,8 +86,8 @@
 
 - type: entity
   name: giant ant
-  parent: N14MobBaseHostileInsect
-  id: N14MobGiantAnt
+  parent: F14MobBaseHostileInsect
+  id: F14MobGiantAnt
   description: It's an ant...but giant. Watch for the nippers.
   components:
   - type: Sprite
@@ -121,9 +121,9 @@
         Base: dead
   - type: Butcherable
     spawned:
-    - id: N14MaterialAntChitin1
+    - id: F14MaterialAntChitin1
       amount: 2
-    - id: N14FoodMeatRadRaw
+    - id: F14FoodMeatRadRaw
       amount: 3
   - type: Bloodstream
     bloodReferenceSolution:
@@ -138,7 +138,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsRadscorpionAttack #Misfits Change
+      collection: F14RadscorpionAttack #Misfits Change
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw
@@ -149,7 +149,7 @@
         Piercing: 1.66667
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsRadroachAttack
+      collection: F14RadroachAttack
       params:
         volume: -3
         maxDistance: 10
@@ -158,8 +158,8 @@
 
 - type: entity
   name: giant fire ant
-  parent: N14MobGiantAnt
-  id: N14MobGiantFireAnt
+  parent: F14MobGiantAnt
+  id: F14MobGiantFireAnt
   description: It's an ant...but giant and red. Watch for the nippers and bring some ointment.
   components:
   - type: Sprite
@@ -178,25 +178,25 @@
         Base: dead
   - type: SolutionManager
     solutions:
-    - N14MobGiantFireAntSolutionMelee
+    - F14MobGiantFireAntSolutionMelee
   - type: NamedSolutionRegeneration
     solution: melee
     generated:
       reagents:
-      - ReagentId: N14FireToxin
+      - ReagentId: F14FireToxin
         Quantity: 0.1
   - type: Butcherable
     spawned:
-    - id: N14MaterialAntChitin
+    - id: F14MaterialAntChitin
       amount: 1
-    - id: N14FoodMeatRadRaw
+    - id: F14FoodMeatRadRaw
       amount: 3
-    - id: N14FoodFireantNectar
+    - id: F14FoodFireantNectar
       amount: 1
       prob: 0.75
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsRadroachAttack
+      collection: F14RadroachAttack
       params:
         volume: -3
         maxDistance: 10
@@ -205,20 +205,20 @@
 
 - type: entity
   parent: Solution
-  id: N14MobGiantFireAntSolutionMelee
+  id: F14MobGiantFireAntSolutionMelee
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
     id: melee
     solution:
       reagents:
-      - ReagentId: N14FireToxin
+      - ReagentId: F14FireToxin
         Quantity: 10
 
 - type: entity
   name: radroach
-  id: N14MobRadroach
-  parent: N14MobBaseHostileInsect
+  id: F14MobRadroach
+  parent: F14MobBaseHostileInsect
   description: Stinking roaches survived the bombs.
   components:
   - type: Sprite
@@ -260,7 +260,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsRadroachAttack #Misfits Change
+      collection: F14RadroachAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -274,27 +274,27 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsRadroachIdle
+      collection: F14RadroachIdle
       params:
         volume: -12
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsRadroachAttack
+      collection: F14RadroachAttack
       params:
         volume: -3
         maxDistance: 10
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadroachFillet
+    - id: F14FoodMeatRadroachFillet
       amount: 1
 
 #MARK: Radscorpion
 
 - type: entity
   name: radscorpion
-  parent: N14MobBaseHostileInsect
-  id: N14MobRadscorpion
+  parent: F14MobBaseHostileInsect
+  id: F14MobRadscorpion
   description: It's a giant radscorpion! Stingy sting.
   components:
   - type: Sprite
@@ -328,14 +328,14 @@
         Base: dead
   - type: Butcherable
     spawned:
-    - id: N14MaterialExoskeleton
+    - id: F14MaterialExoskeleton
       amount: 1
-    - id: N14FoodMeatRadscorpion
+    - id: F14FoodMeatRadscorpion
       amount: 1
-    - id: N14FoodMeatRadscorpionLeg
+    - id: F14FoodMeatRadscorpionLeg
       amount: 2
       prob: 0.8
-    - id: N14MaterialRadscorpionTail
+    - id: F14MaterialRadscorpionTail
       amount: 1
       prob: 0.8
   - type: Bloodstream
@@ -351,7 +351,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsRadscorpionAttack #Misfits Change
+      collection: F14RadscorpionAttack #Misfits Change
     angle: 60
     animation: WeaponArcClaw
     wideAnimation: WeaponArcClaw
@@ -364,19 +364,19 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsRadscorpionIdle
+      collection: F14RadscorpionIdle
       params:
         volume: -10
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsRadscorpionAttack
+      collection: F14RadscorpionAttack
       params:
         volume: -3
         maxDistance: 10
   - type: SolutionManager
     solutions:
-    - N14MobRadscorpionSolutionMelee
+    - F14MobRadscorpionSolutionMelee
   - type: NamedSolutionRegeneration
     solution: melee
     generated:
@@ -390,7 +390,7 @@
 
 - type: entity
   parent: Solution
-  id: N14MobRadscorpionSolutionMelee
+  id: F14MobRadscorpionSolutionMelee
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -405,8 +405,8 @@
 
 - type: entity
   name: barkscorpion
-  parent: N14MobRadscorpion
-  id: N14MobRadscorpionBark
+  parent: F14MobRadscorpion
+  id: F14MobRadscorpionBark
   description: It's a giant barkscorpion! Stingy sting.
   components:
   - type: Sprite
@@ -417,7 +417,7 @@
       sprite: Nuclear14/Mobs/Insects/radscorpionbark.rsi
   - type: SolutionManager
     solutions:
-    - N14MobRadscorpionBarkSolutionMelee
+    - F14MobRadscorpionBarkSolutionMelee
   - type: NamedSolutionRegeneration
     solution: melee
     generated:
@@ -426,7 +426,7 @@
         Quantity: 0.2
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsRadscorpionAttack
+      collection: F14RadscorpionAttack
       params:
         volume: -3
         maxDistance: 10
@@ -435,7 +435,7 @@
 
 - type: entity
   parent: Solution
-  id: N14MobRadscorpionBarkSolutionMelee
+  id: F14MobRadscorpionBarkSolutionMelee
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -448,8 +448,8 @@
 
 - type: entity
   name: cazador
-  parent: N14MobBaseHostileInsect
-  id: N14MobCazador
+  parent: F14MobBaseHostileInsect
+  id: F14MobCazador
   description: Pure hate with a stinger and wings. Don't get close.
   components:
   - type: MovementSpeedModifier
@@ -491,7 +491,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsCazadorAttack #Misfits Change
+      collection: F14CazadorAttack #Misfits Change
     angle: 30
     animation: WeaponArcThrust
     wideAnimation: WeaponArcThrust
@@ -503,27 +503,27 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsCazadorIdle
+      collection: F14CazadorIdle
       params:
         volume: -8
         maxDistance: 5
   - type: SolutionManager
     solutions:
-    - N14MobCazadorSolutionMelee
+    - F14MobCazadorSolutionMelee
   - type: NamedSolutionRegeneration
     solution: melee
     generated:
       reagents:
-      - ReagentId: N14CazadorVenom
+      - ReagentId: F14CazadorVenom
         Quantity: 0.25
   - type: MeleeChemicalInjector
     solution: melee
     transferAmount: 0.5 #Misfits Tweak - reduced from 1.5, less venom per sting
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadRaw
+    - id: F14FoodMeatRadRaw
       amount: 1
-    - id: N14FoodCazadorAcidSac
+    - id: F14FoodCazadorAcidSac
       amount: 1
       prob: 0.75
   - type: MobThresholds
@@ -532,14 +532,14 @@
       75: Dead #Misfits Tweak - reduced from 100, cazadors were too tanky
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsCazadorAttack
+      collection: F14CazadorAttack
       params:
         volume: -3
         maxDistance: 10
 
 - type: entity
   parent: Solution
-  id: N14MobCazadorSolutionMelee
+  id: F14MobCazadorSolutionMelee
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -547,5 +547,5 @@
     solution:
       maxVol: 10
       reagents:
-      - ReagentId: N14CazadorVenom
+      - ReagentId: F14CazadorVenom
         Quantity: 10

@@ -2,8 +2,8 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Wallmount/switch_autolink.yml
 
 - type: entity
-  id: N14ControlTerminalButtonExt1
-  parent: N14ControlTerminalButton
+  id: F14ControlTerminalButtonExt1
+  parent: F14ControlTerminalButton
   name: door terminal
   suffix: Autolink, Ext1
   components:
@@ -11,8 +11,8 @@
       channel: Ext1
 
 - type: entity
-  id: N14ControlTerminalButtonExt2
-  parent: N14ControlTerminalButton
+  id: F14ControlTerminalButtonExt2
+  parent: F14ControlTerminalButton
   name: door terminal
   suffix: Autolink, Ext2
   components:
@@ -20,8 +20,8 @@
       channel: Ext2
 
 - type: entity
-  id: N14ControlTerminalButtonExt3
-  parent: N14ControlTerminalButton
+  id: F14ControlTerminalButtonExt3
+  parent: F14ControlTerminalButton
   name: door terminal
   suffix: Autolink, Ext3
   components:
@@ -29,8 +29,8 @@
       channel: Ext3
 
 - type: entity
-  id: N14ControlTerminalButtonBos
-  parent: N14ControlTerminalButton
+  id: F14ControlTerminalButtonBos
+  parent: F14ControlTerminalButton
   name: BoS Door Terminal
   suffix: Autolink, BoS
   components:

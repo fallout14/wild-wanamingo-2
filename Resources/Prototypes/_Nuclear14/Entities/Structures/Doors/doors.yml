@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Doors/doors.yml
 
 - type: entity
-  id: N14BaseDoor # Metal Base
+  id: F14BaseDoor # Metal Base
   parent: BaseStructure
   name: door
   abstract: true
@@ -68,8 +68,8 @@
 # Wooden Doors
 
 - type: entity
-  parent: N14BaseDoor
-  id: N14DoorMakeshift # Base Door Wood
+  parent: F14BaseDoor
+  id: F14DoorMakeshift # Base Door Wood
   name: makeshift door
   description: It's a wooden door. It looks dirty and handmade.
   components:
@@ -96,18 +96,18 @@
           MaterialWoodPlank:
             min: 1
             max: 1
-          N14ScrapBrass1:
+          F14ScrapBrass1:
             min: 2
             max: 2
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Construction
-    graph: N14DoorGraph
+    graph: F14DoorGraph
     node: woodDoorMakeshift
 
 - type: entity
-  parent: N14DoorMakeshift
-  id: N14DoorWoodHouseWhite
+  parent: F14DoorMakeshift
+  id: F14DoorWoodHouseWhite
   name: wooden door
   description: It's a door. Looks like a front door to a home.
   components:
@@ -119,8 +119,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorMakeshift
-  id: N14DoorWoodHousePainted
+  parent: F14DoorMakeshift
+  id: F14DoorWoodHousePainted
   name: wooden door
   suffix: painted
   description: It's a painted door.
@@ -139,8 +139,8 @@
           paint: Rainbow
 
 - type: entity
-  parent: N14DoorMakeshift
-  id: N14DoorWoodHouseWhiteClean
+  parent: F14DoorMakeshift
+  id: F14DoorWoodHouseWhiteClean
   name: wooden door
   description: The cleanest door known to what remains of mankind.
   components:
@@ -152,8 +152,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorMakeshift
-  id: N14DoorWoodRoom
+  parent: F14DoorMakeshift
+  id: F14DoorWoodRoom
   name: wooden door
   description: A door used inside pre-war buildigs that section off rooms.
   components:
@@ -165,8 +165,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorMakeshift
-  id: N14DoorWoodInterior
+  parent: F14DoorMakeshift
+  id: F14DoorWoodInterior
   name: wooden door
   description: A door used inside pre-war buildings.
   components:
@@ -178,8 +178,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorMakeshift
-  id: N14DoorWoodRoomDamaged
+  parent: F14DoorMakeshift
+  id: F14DoorWoodRoomDamaged
   suffix: damaged
   name: wooden door
   description: A door used inside pre-war houses. Unsuprisingly, it looks like it'll fall apart at any moment.
@@ -193,7 +193,7 @@
 
 - type: entity
   parent: BaseMaterialDoor
-  id: N14DoorRoomRepaired
+  id: F14DoorRoomRepaired
   name: door
   suffix: repaired
   description: This door looks worse for wear, but fixed up a little.
@@ -206,8 +206,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorMakeshift
-  id: N14DoorWoodSecure
+  parent: F14DoorMakeshift
+  id: F14DoorWoodSecure
   name: secure door
   description: It's a secure door, made out of wood.
   components:
@@ -226,12 +226,12 @@
         acts: ["Destruction"]
   - type: AccessReader
   - type: Construction
-    graph: N14DoorGraph
+    graph: F14DoorGraph
     node: woodDoorlocked
 
 - type: entity
-  parent: N14DoorWoodSecure
-  id: N14DoorWoodSecureNCR
+  parent: F14DoorWoodSecure
+  id: F14DoorWoodSecureNCR
   name: secure door
   suffix: NCR
   description: A secure door made from wood and bearing an NCR emblem.
@@ -244,14 +244,14 @@
       map: ["enum.DoorVisualLayers.Base"]
   - type: AccessReader
   - type: Construction
-    graph: N14DoorGraph
+    graph: F14DoorGraph
     node: woodDoorSecureNCR
 
 # Metal Doors
 
 - type: entity
-  parent: N14BaseDoor
-  id: N14DoorMetalReinforced
+  parent: F14BaseDoor
+  id: F14DoorMetalReinforced
   name: metal reinforced door
   description: It's a door, reinforced with metal. Hope you brought you bobby pins.
   components:
@@ -262,8 +262,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorMetalReinforced
-  id: N14DoorMetalSecureBrotherhood
+  parent: F14DoorMetalReinforced
+  id: F14DoorMetalSecureBrotherhood
   name: Secure BoS Door
   description: It's secure, AND branded! What more could you want?
   components:
@@ -274,8 +274,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14BaseDoor
-  id: N14DoorCellMetal
+  parent: F14BaseDoor
+  id: F14DoorCellMetal
   name: cell door
   description: A door that bad guys are locked behind.
   components:
@@ -298,8 +298,8 @@
     damageContainer: StructuralInorganic
 
 - type: entity
-  parent: N14DoorCellMetal
-  id: N14DoorMetalBar
+  parent: F14DoorCellMetal
+  id: F14DoorMetalBar
   name: barred door
   description: A door made from metal bars.
   components:
@@ -315,8 +315,8 @@
       path: /Audio/Nuclear14/Effects/Doors/DRS_Metal_Jail_Swing_Close_01.ogg
 
 - type: entity
-  parent: N14DoorMetalReinforced
-  id: N14DoorMetalIron
+  parent: F14DoorMetalReinforced
+  id: F14DoorMetalIron
   name: iron door
   description: A door made of iron, secured with another block of iron.
   components:
@@ -327,8 +327,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorMetalReinforced
-  id: N14DoorMetalSecure
+  parent: F14DoorMetalReinforced
+  id: F14DoorMetalSecure
   name: secure door
   description: A secure door made from steel.
   components:
@@ -339,8 +339,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorCellMetal
-  id: N14DoorSpikedGate
+  parent: F14DoorCellMetal
+  id: F14DoorSpikedGate
   name: spiked gate
   description: A spiked gate to scare off the weak.
   components:
@@ -353,8 +353,8 @@
 # Glass Doors
 
 - type: entity
-  parent: N14DoorMakeshift
-  id: N14DoorGlass
+  parent: F14DoorMakeshift
+  id: F14DoorGlass
   name: glass door
   description: It's a door with panels made of clean glass.
   components:
@@ -386,7 +386,7 @@
       - !type:SpawnEntitiesBehavior
         offset: 0
         spawn:
-          N14DoorGlassBroken:
+          F14DoorGlassBroken:
             min: 1
             max: 1
       - !type:SpawnEntitiesBehavior
@@ -396,8 +396,8 @@
             max: 2
 
 - type: entity
-  parent: N14DoorGlass
-  id: N14DoorGlassDirty
+  parent: F14DoorGlass
+  id: F14DoorGlassDirty
   name: dirty glass door
   description: It's a glass door. You can barely make out what's behind it...
   components:
@@ -408,8 +408,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorGlass
-  id: N14DoorGlassBroken
+  parent: F14DoorGlass
+  id: F14DoorGlassBroken
   name: broken glass door
   description: Shattered, just like your marriage.
   components:
@@ -432,8 +432,8 @@
         acts: ["Destruction"]
 
 - type: entity
-  parent: N14DoorGlass
-  id: N14DoorGlassStore
+  parent: F14DoorGlass
+  id: F14DoorGlassStore
   name: store door
   description: It's a glass door found at pre-war stores. Hey, that rhymes!
   components:
@@ -460,7 +460,7 @@
       - !type:SpawnEntitiesBehavior
         offset: 0
         spawn:
-          N14DoorGlassStoreBroken:
+          F14DoorGlassStoreBroken:
             min: 1
             max: 1
       - !type:SpawnEntitiesBehavior
@@ -470,8 +470,8 @@
             max: 2
 
 - type: entity
-  parent: N14DoorGlassStore
-  id: N14DoorGlassStoreDirty
+  parent: F14DoorGlassStore
+  id: F14DoorGlassStoreDirty
   name: dirty store door
   description: It's a glass door used at pre-war stores. It doesn't seem like it's been washed recently.
   components:
@@ -482,8 +482,8 @@
       map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
-  parent: N14DoorGlassBroken
-  id: N14DoorGlassStoreBroken
+  parent: F14DoorGlassBroken
+  id: F14DoorGlassStoreBroken
   name: broken glass door
   description: Shattered, just like your marriage.
   components:
@@ -497,7 +497,7 @@
 
 - type: entity
   parent: BaseMaterialDoor
-  id: N14DoorTentflap
+  id: F14DoorTentflap
   name: tent flap
   suffix: smoothed tent
   description: A door for a tent.
@@ -544,8 +544,8 @@
     - ForceNoFixRotations
 
 - type: entity
-  parent: N14DoorTentflap
-  id: N14DoorTentLeatherflap
+  parent: F14DoorTentflap
+  id: F14DoorTentLeatherflap
   name: tent flap
   description: A door for a tent. Leathery.
   components:
@@ -560,8 +560,8 @@
     - ForceNoFixRotations
 
 - type: entity
-  parent: N14DoorTentflap
-  id: N14DoorTentClothflap
+  parent: F14DoorTentflap
+  id: F14DoorTentClothflap
   name: tent flap
   description: A door for a tent. Cloth.
   components:

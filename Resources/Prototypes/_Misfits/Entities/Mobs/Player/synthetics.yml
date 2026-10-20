@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Mobs/Player/synthetics.yml
 
 - type: entity
-  parent: N14BaseRobotChassis
-  id: MisfitsBasePlayerSynthetic
+  parent: F14BaseRobotChassis
+  id: F14BasePlayerSynthetic
   abstract: true
   components:
   - type: RobotWeaponPickupBlacklist # #Misfits Add: player robot species keep hands for utility items but cannot grab loose weapons.
@@ -38,7 +38,7 @@
     reflectProb: 0.1
     spread: 150
     reflects: [ Energy, NonEnergy ]
-  - type: CanEnterCryostorage # #Misfits Add: allow player robot species to enter N14CryoBunkerLadder and despawn like MobHuman
+  - type: CanEnterCryostorage # #Misfits Add: allow player robot species to enter F14CryoBunkerLadder and despawn like MobHuman
   # #Misfits Fix: override base chassis Destructible to exclude borg_brain from EmptyContainersBehaviour.
   # Without this the PositronicBrain (containing the player mind) drops as loot when a player robot is
   # destroyed. The brain should be consumed with the chassis, not left on the floor.
@@ -73,10 +73,10 @@
 #          PowerCellHyper:
 #            min: 1
 #            max: 1
-#          N14Scrap1:
+#          F14Scrap1:
 #            min: 2
 #            max: 4
-#          N14ScrapElectronic1:
+#          F14ScrapElectronic1:
 #            min: 1
 #            max: 3
 #      - !type:EmptyContainersBehaviour
@@ -88,18 +88,18 @@
 #        acts: [ "Destruction" ]
 
 - type: entity
-  parent: MisfitsBasePlayerSynthetic
-  id: MisfitsPlayerSyntheticMrHandy
+  parent: F14BasePlayerSynthetic
+  id: F14PlayerSyntheticMrHandy
   name: mr. handy
   suffix: player, synthetic
   description: A General Atomics Mr. Handy domestic servant robot, now guided by a living mind.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotMrHandy
+    species: F14RobotMrHandy
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/mrhandyclaw.rsi
     layers:
@@ -138,7 +138,7 @@
   #       maxDistance: 6
   - type: NpcFactionMember
     factions:
-    - N14Wastelander
+    - F14Wastelander
   - type: PassiveDamage # #Misfits Change: gradual self-repair, ~30 per type per minute
     allowedStates:
     - Alive
@@ -164,11 +164,11 @@
     useKey: false
   - type: SolutionManager
     solutions:
-    - N14PlayerSyntheticMrHandySolutionChamber
+    - F14PlayerSyntheticMrHandySolutionChamber
   - type: FlamerAmmoProvider
     solutionId: chamber
     fireCost: 5
-    fireTilePrototype: MisfitsTileFire
+    fireTilePrototype: F14TileFire
     range: 5
   - type: NamedSolutionRegeneration # #Misfits Change: slow fuel regen preserves the old recharge cadence
     solution: chamber
@@ -191,8 +191,8 @@
         - BorgModuleCleaning # #Misfits Add: Mr. Handy is a domestic servant — cleaning module is thematic
         - BorgModuleBotany
       key_slots:
-        - MisfitsEncryptionKeyWastelandGlobal
-        - N14EncryptionKeyVault
+        - F14EncryptionKeyWastelandGlobal
+        - F14EncryptionKeyVault
   - type: ItemSlots
     slots:
       cell_slot:
@@ -201,7 +201,7 @@
 
 - type: entity
   parent: Solution
-  id: N14PlayerSyntheticMrHandySolutionChamber
+  id: F14PlayerSyntheticMrHandySolutionChamber
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -213,15 +213,15 @@
         Quantity: 150
 
 - type: entity
-  parent: MisfitsBasePlayerSynthetic
-  id: MisfitsPlayerSyntheticProtectron
+  parent: F14BasePlayerSynthetic
+  id: F14PlayerSyntheticProtectron
   name: protectron
   suffix: player, synthetic
   description: A RobCo Industries Protectron civil service robot, now guided by a living mind. The baseline model — equipped with an integrated hand-laser for self-defense and a general utility toolkit. Functional but unremarkable; the jack-of-all-trades among Protectron chassis types.
   components:
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotProtectron
+    species: F14RobotProtectron
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/protectron.rsi
     layers:
@@ -269,7 +269,7 @@
     damageCoefficient: 0.75
   - type: NpcFactionMember
     factions:
-    - N14Wastelander
+    - F14Wastelander
   - type: PassiveDamage # #Misfits Change: gradual self-repair, ~30 per type per minute
     allowedStates:
     - Alive
@@ -291,7 +291,7 @@
     - FootstepSound
   - type: FootstepModifier # #Misfits Add: metal footsteps instead of human barefoot sounds
     footstepSoundCollection:
-      collection: N14FootstepMetalSolid
+      collection: F14FootstepMetalSolid
   - type: ContainerFill
     containers:
       borg_brain:
@@ -299,8 +299,8 @@
       borg_module: # #Misfits Add: civil-service general loadout — integrated laser for self-defense + basic utility toolkit
         - BorgModuleTool     # wrench/screwdriver/welder kit for general civil service tasks
       key_slots:
-        - MisfitsEncryptionKeyWastelandGlobal
-        - N14EncryptionKeyVault
+        - F14EncryptionKeyWastelandGlobal
+        - F14EncryptionKeyVault
   - type: ItemSlots
     slots:
       cell_slot:
@@ -308,18 +308,18 @@
         startingItem: PowerCellAntiqueProto
 
 - type: entity
-  parent: MisfitsBasePlayerSynthetic
-  id: MisfitsPlayerSyntheticMrGutsy
+  parent: F14BasePlayerSynthetic
+  id: F14PlayerSyntheticMrGutsy
   name: mr. gutsy
   suffix: player, synthetic
   description: A General Atomics Mr. Gutsy military combat robot, now guided by a living mind. Equipped with a plasma pistol and military programming.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotMrGutsy
+    species: F14RobotMrGutsy
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/mrhandygutsy.rsi
     layers:
@@ -356,7 +356,7 @@
   #       maxDistance: 6
   - type: NpcFactionMember
     factions:
-    - N14Wastelander
+    - F14Wastelander
   - type: PassiveDamage # #Misfits Change: gradual self-repair, ~30 per type per minute
     allowedStates:
     - Alive
@@ -374,13 +374,13 @@
   - type: Gun # #Misfits Add: built-in plasma caster — right-click in combat mode to fire
     fireRate: 2
     soundGunshot:
-      collection: N14PlasmaPistolGunshot
+      collection: F14PlasmaPistolGunshot
     useKey: false
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
   - type: BasicEntityAmmoProvider # #Misfits Add: limited plasma shots, auto-refills after cooldown
-    proto: N14BulletPlasma
+    proto: F14BulletPlasma
     capacity: 15
     count: 15
   - type: RechargeBasicEntityAmmo # #Misfits Add: recharge simulates internal capacitor cycling
@@ -397,8 +397,8 @@
       borg_module:
         - BorgModuleTool # #Misfits Add: military utility — field repair and maintenance tools
       key_slots:
-        - MisfitsEncryptionKeyWastelandGlobal
-        - N14EncryptionKeyVault
+        - F14EncryptionKeyWastelandGlobal
+        - F14EncryptionKeyVault
   - type: ItemSlots
     slots:
       cell_slot:
@@ -406,18 +406,18 @@
         startingItem: PowerCellAntiqueProto
 
 - type: entity
-  parent: MisfitsPlayerSyntheticProtectron
-  id: MisfitsPlayerSyntheticProtectronPolice
+  parent: F14PlayerSyntheticProtectron
+  id: F14PlayerSyntheticProtectronPolice
   name: protectron police
   suffix: player, synthetic, police
   description: A RobCo Industries Protectron police model specialising in close-quarters detainment. Equipped with a heavy electro-shock melee strike, a stun baton, and restraint tools. No ranged weapons — this unit subdues, not suppresses.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotProtectronPolice
+    species: F14RobotProtectronPolice
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/protectron-police.rsi
     layers:
@@ -439,7 +439,7 @@
   #   angleDecay: 4
   #   fireRate: 1
   #   soundGunshot:
-  #     collection: N14RechargerRifleGunshot
+  #     collection: F14RechargerRifleGunshot
   #   useKey: false
   #   selectedMode: SemiAuto
   #   availableModes:
@@ -468,21 +468,21 @@
       borg_brain:
         - PositronicBrain
       borg_module:
-        - MisfitsBorgModuleSecurity # stun baton, handcuffs, flashlight - lore-accurate detainment kit
+        - F14BorgModuleSecurity # stun baton, handcuffs, flashlight - lore-accurate detainment kit
       key_slots:
-        - MisfitsEncryptionKeyWastelandGlobal
-        - N14EncryptionKeyVault
+        - F14EncryptionKeyWastelandGlobal
+        - F14EncryptionKeyVault
 
 - type: entity
-  parent: MisfitsPlayerSyntheticProtectron
-  id: MisfitsPlayerSyntheticProtectronBuilder
+  parent: F14PlayerSyntheticProtectron
+  id: F14PlayerSyntheticProtectronBuilder
   name: protectron builder
   suffix: player, synthetic, builder
   description: A RobCo Industries Protectron builder model with integrated engineering and RCD utility modules.
   components:
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotProtectronBuilder
+    species: F14RobotProtectronBuilder
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/protectron-builder.rsi
     layers:
@@ -505,22 +505,22 @@
         - BorgModuleConstruction
         - BorgModuleRCD
       key_slots:
-        - MisfitsEncryptionKeyWastelandGlobal
-        - N14EncryptionKeyVault
+        - F14EncryptionKeyWastelandGlobal
+        - F14EncryptionKeyVault
 
 - type: entity
-  parent: MisfitsPlayerSyntheticProtectron
-  id: MisfitsPlayerSyntheticProtectronFire
+  parent: F14PlayerSyntheticProtectron
+  id: F14PlayerSyntheticProtectronFire
   name: protectron firefighter
   suffix: player, synthetic, firefighter
   description: A RobCo Industries Protectron firefighter model equipped for fire suppression and emergency response. Features an integrated cryo emitter — its signature cryogenic projector that freezes flames and slows targets — backed by a standard water extinguisher module.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotProtectronFire
+    species: F14RobotProtectronFire
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/protectron-fire.rsi
     layers:
@@ -547,7 +547,7 @@
     availableModes:
     - SemiAuto
   - type: BasicEntityAmmoProvider # cryo bursts: slower recharge than the laser — cryo emitter is a utility tool not a spam weapon
-    proto: MisfitsBulletCryo
+    proto: F14BulletCryo
     capacity: 6
     count: 6
   - type: RechargeBasicEntityAmmo
@@ -561,21 +561,21 @@
       borg_module:
         - BorgModuleFireExtinguisher # traditional water/CO2 extinguisher for structural fires
       key_slots:
-        - MisfitsEncryptionKeyWastelandGlobal
-        - N14EncryptionKeyVault
+        - F14EncryptionKeyWastelandGlobal
+        - F14EncryptionKeyVault
 
 # Tribal Protectron
 
 - type: entity
-  parent: MisfitsPlayerSyntheticProtectron
-  id: MisfitsPlayerSyntheticProtectronTribal
+  parent: F14PlayerSyntheticProtectron
+  id: F14PlayerSyntheticProtectronTribal
   name: protectron spirit-tender
   suffix: player, synthetic
   description: A RobCo Industries Protectron civil service robot, adopted and decorated by the local tribe. Years of rust have accumulated on its chassis, and rudimentary modifications by the tribals have led this unit to deviate severely from its original model.
   components:
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotProtectronTribal
+    species: F14RobotProtectronTribal
   - type: Sprite
     sprite: Misfits/Mobs/Robots/protectron-tribal.rsi
     layers:
@@ -591,30 +591,30 @@
       visible: false
   - type: NpcFactionMember
     factions:
-    - N14Wastelander
-    - N14Tribal
+    - F14Wastelander
+    - F14Tribal
   - type: ContainerFill
     containers:
       borg_brain:
       - PositronicBrain
       borg_module: # tribal modifications: mostly agricultural tools
-      - MisfitsBorgModuleTribalSpirit  # The spirit-tender "module"
-      - MisfitsBorgModuleTribalHarvest # Harvest module
+      - F14BorgModuleTribalSpirit  # The spirit-tender "module"
+      - F14BorgModuleTribalHarvest # Harvest module
       key_slots:
-      - MisfitsEncryptionKeyWastelandGlobal
+      - F14EncryptionKeyWastelandGlobal
   - type: BorgHands # this one only gets one functioning hand, it is decrepit
     handCount: 1
 
 - type: entity
-  parent: MisfitsPlayerSyntheticProtectron
-  id: MisfitsPlayerSyntheticSecuritronGray
+  parent: F14PlayerSyntheticProtectron
+  id: F14PlayerSyntheticSecuritronGray
   name: securitron
   suffix: player, synthetic
   description: A securitron chassis adapted for a living mind. This gray model uses the same general-purpose synthetic loadout as a baseline protectron.
   components:
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotSecuritron
+    species: F14RobotSecuritron
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/securitron-gray.rsi
     layers:
@@ -637,55 +637,55 @@
         state: icon
 
 - type: entity
-  parent: MisfitsPlayerSyntheticSecuritronGray
-  id: MisfitsPlayerSyntheticSecuritronBlue
+  parent: F14PlayerSyntheticSecuritronGray
+  id: F14PlayerSyntheticSecuritronBlue
   name: securitron
   suffix: player, synthetic, blue
   components:
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotSecuritronBlue
+    species: F14RobotSecuritronBlue
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/securitron-blue.rsi
 
 - type: entity
-  parent: MisfitsPlayerSyntheticSecuritronGray
-  id: MisfitsPlayerSyntheticSecuritronBrown
+  parent: F14PlayerSyntheticSecuritronGray
+  id: F14PlayerSyntheticSecuritronBrown
   name: securitron
   suffix: player, synthetic, brown
   components:
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotSecuritronBrown
+    species: F14RobotSecuritronBrown
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/securitron-brown.rsi
 
 - type: entity
-  parent: MisfitsPlayerSyntheticSecuritronGray
-  id: MisfitsPlayerSyntheticSecuritronRed
+  parent: F14PlayerSyntheticSecuritronGray
+  id: F14PlayerSyntheticSecuritronRed
   name: securitron
   suffix: player, synthetic, red
   components:
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotSecuritronRed
+    species: F14RobotSecuritronRed
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/securitron-red.rsi
 
 - type: entity
-  parent: MisfitsPlayerSyntheticSecuritronGray
-  id: MisfitsPlayerSyntheticSecuritronYellow
+  parent: F14PlayerSyntheticSecuritronGray
+  id: F14PlayerSyntheticSecuritronYellow
   name: securitron
   suffix: player, synthetic, yellow
   components:
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotSecuritronYellow
+    species: F14RobotSecuritronYellow
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/securitron-yellow.rsi
 
 - type: entity
-  id: MisfitsAssaultronHeadLaserActionGun
+  id: F14AssaultronHeadLaserActionGun
   name: integrated assaultron head laser
   categories: [ HideSpawnMenu ]
   components:
@@ -705,7 +705,7 @@
     chargeDuration: 2
     cooldownDuration: 45
   - type: BatteryAmmoProvider
-    proto: N14AssaultronHeadLaser
+    proto: F14AssaultronHeadLaser
     fireCost: 1
   - type: Battery
     maxCharge: 99999
@@ -714,7 +714,7 @@
     autoRechargeRate: 9999
 
 - type: entity
-  id: MisfitsAssaultronTeslaActionGun
+  id: F14AssaultronTeslaActionGun
   name: integrated assaultron tesla emitter
   categories: [ HideSpawnMenu ]
   components:
@@ -725,7 +725,7 @@
     angleDecay: 4
     fireRate: 2
     soundGunshot:
-      collection: N14LaserAutoRifleGunshot
+      collection: F14LaserAutoRifleGunshot
     useKey: false
     selectedMode: SemiAuto
     availableModes:
@@ -745,15 +745,15 @@
     autoRechargeRate: 9999
 
 - type: entity
-  parent: MisfitsBasePlayerSynthetic
-  id: MisfitsPlayerSyntheticAssaultron
+  parent: F14BasePlayerSynthetic
+  id: F14PlayerSyntheticAssaultron
   name: assaultron
   suffix: player, synthetic
   description: A RobCo Industries Assaultron combat robot, now guided by a living mind. Fast, deadly, and built for warfare.
   components:
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotAssaultron
+    species: F14RobotAssaultron
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/assaultron.rsi
     layers:
@@ -794,7 +794,7 @@
     hidden: true
     altDisarm: false
     soundHit:
-      collection: MisfitsAssaultronAttack
+      collection: F14AssaultronAttack
     angle: 60
     animation: WeaponArcPunch
     wideAnimation: WeaponArcClaw
@@ -808,12 +808,12 @@
     spread: 150
     reflects: [ NonEnergy ]
   - type: ActionGun
-    action: MisfitsActionAssaultronHeadLaser
-    gunProto: MisfitsAssaultronHeadLaserActionGun
+    action: F14ActionAssaultronHeadLaser
+    gunProto: F14AssaultronHeadLaserActionGun
   - type: WieldingBlocker
   - type: NpcFactionMember
     factions:
-    - N14Wastelander
+    - F14Wastelander
   - type: PassiveDamage # #Misfits Change: gradual self-repair, ~30 per type per minute
     allowedStates:
     - Alive
@@ -835,13 +835,13 @@
     - FootstepSound
   - type: FootstepModifier # #Misfits Add: metal footsteps instead of human barefoot sounds
     footstepSoundCollection:
-      collection: N14FootstepMetalSolid
+      collection: F14FootstepMetalSolid
   - type: ContainerFill
     containers:
       borg_brain:
         - PositronicBrain
       key_slots:
-        - MisfitsEncryptionKeyWastelandGlobal
+        - F14EncryptionKeyWastelandGlobal
   - type: ItemSlots
     slots:
       cell_slot:
@@ -855,18 +855,18 @@
 # ────────────────────────────────────────────────────────
 
 - type: entity
-  parent: MisfitsPlayerSyntheticAssaultron
-  id: MisfitsPlayerSyntheticAssaultronTesla
+  parent: F14PlayerSyntheticAssaultron
+  id: F14PlayerSyntheticAssaultronTesla
   name: assaultron
   suffix: player, synthetic, tesla
   description: A RobCo Industries Assaultron combat robot retrofitted with a Tesla discharge emitter. Fires arcing electrical orbs that chain-lightning nearby targets.
   components:
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotAssaultronTesla
+    species: F14RobotAssaultronTesla
   - type: ActionGun
-    action: MisfitsActionAssaultronTesla
-    gunProto: MisfitsAssaultronTeslaActionGun
+    action: F14ActionAssaultronTesla
+    gunProto: F14AssaultronTeslaActionGun
 # ────────────────────────────────────────────────────────
 # Sentry Bot — Minigun variant (base sentry bot species default)
 # Heavy assault platform with built-in 5mm minigun, missile launcher, and heavy armor.
@@ -874,18 +874,18 @@
 # ────────────────────────────────────────────────────────
 
 - type: entity
-  parent: MisfitsBasePlayerSynthetic
-  id: MisfitsPlayerSyntheticSentryBotMinigun
+  parent: F14BasePlayerSynthetic
+  id: F14PlayerSyntheticSentryBotMinigun
   name: sentry bot
   suffix: player, synthetic, minigun
   description: A pre-war military Sentry Bot armed with a 5mm minigun and missile launcher. Massively armored, terrifyingly slow, and built to annihilate everything in its path.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotSentryBot
+    species: F14RobotSentryBot
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/sentrybot.rsi
     scale: 2.0, 2.0
@@ -919,7 +919,7 @@
       350: Dead
     allowRevives: true
   - type: Damageable
-    damageModifierSet: N14HeavyRobot
+    damageModifierSet: F14HeavyRobot
   - type: Injurable
     damageContainer: Biological
   - type: Armor # #Misfits Add: innate heavy plating on top of HeavyRobot modifier set
@@ -949,20 +949,20 @@
     angleDecay: 8
     fireRate: 8
     soundGunshot:
-      collection: N14MinigunGunshot
+      collection: F14MinigunGunshot
     useKey: false
     selectedMode: FullAuto
     availableModes:
       - FullAuto
   - type: BasicEntityAmmoProvider # #Misfits Add: limited magazine — overheat system refills after cooldown
-    proto: N14Bullet5mm
+    proto: F14Bullet5mm
     capacity: 30
     count: 30
   - type: SentryBotChassis # #Misfits Add: enables overheat cooldown + missile launch action
     overheatDuration: 5
   - type: NpcFactionMember
     factions:
-    - N14Wastelander
+    - F14Wastelander
   - type: PassiveDamage # #Misfits Add: sentry bots self-repair slowly
     allowedStates:
     - Alive
@@ -988,7 +988,7 @@
       borg_module:
         - BorgModuleTool
       key_slots:
-        - MisfitsEncryptionKeyWastelandGlobal
+        - F14EncryptionKeyWastelandGlobal
   - type: ItemSlots
     slots:
       cell_slot:
@@ -1030,10 +1030,10 @@
           PowerCellHyper:
             min: 1
             max: 1
-          N14Scrap1:
+          F14Scrap1:
             min: 2
             max: 4
-          N14ScrapElectronic1:
+          F14ScrapElectronic1:
             min: 1
             max: 3
       - !type:EmptyContainersBehaviour
@@ -1060,7 +1060,7 @@
         volume: -2
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: MisfitsDefaultStructural
+    explosionType: F14DefaultStructural
     maxIntensity: 4
     intensitySlope: 4
     totalIntensity: 24
@@ -1072,18 +1072,18 @@
 # ────────────────────────────────────────────────────────
 
 - type: entity
-  parent: MisfitsPlayerSyntheticSentryBotMinigun
-  id: MisfitsPlayerSyntheticSentryBotLaser
+  parent: F14PlayerSyntheticSentryBotMinigun
+  id: F14PlayerSyntheticSentryBotLaser
   name: sentry bot
   suffix: player, synthetic, laser gatling
   description: A pre-war military Sentry Bot armed with a gatling laser and missile launcher. Massively armored, terrifyingly slow, and built to annihilate everything in its path.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotSentryBotLaser
+    species: F14RobotSentryBotLaser
   - type: Gun # #Misfits Add: built-in gatling laser — fires in bursts then overheats
     minAngle: 3
     maxAngle: 15
@@ -1091,7 +1091,7 @@
     angleDecay: 10
     fireRate: 6
     soundGunshot:
-      collection: N14LaserGatlingGunshot
+      collection: F14LaserGatlingGunshot
     useKey: false
     selectedMode: FullAuto
     availableModes:
@@ -1108,15 +1108,15 @@
 # ────────────────────────────────────────────────────────
 
 - type: entity
-  parent: MisfitsBasePlayerSynthetic
-  id: MisfitsPlayerSyntheticRobobrain
+  parent: F14BasePlayerSynthetic
+  id: F14PlayerSyntheticRobobrain
   name: robobrain
   suffix: player, synthetic
   description: A pre-war military Robobrain, now guided by a living mind. Slower but versatile, with integrated utility and medical systems.
   components:
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotRobobrain
+    species: F14RobotRobobrain
   - type: Sprite
     sprite: Nuclear14/Mobs/Robots/robobrain.rsi
     layers:
@@ -1145,7 +1145,7 @@
     baseSprintSpeed: 3.0
   - type: NpcFactionMember
     factions:
-    - N14Wastelander
+    - F14Wastelander
   - type: PassiveDamage
     allowedStates:
     - Alive
@@ -1166,7 +1166,7 @@
     - FootstepSound
   - type: FootstepModifier # #Misfits Add: metal footsteps for robobrain
     footstepSoundCollection:
-      collection: N14FootstepMetalSolid
+      collection: F14FootstepMetalSolid
   - type: ContainerFill
     containers:
       borg_brain:
@@ -1176,8 +1176,8 @@
         - BorgModuleTopicals
         - BorgModuleTool
       key_slots:
-        - MisfitsEncryptionKeyWastelandGlobal
-        - N14EncryptionKeyVault
+        - F14EncryptionKeyWastelandGlobal
+        - F14EncryptionKeyVault
   - type: ItemSlots
     slots:
       cell_slot:
@@ -1190,18 +1190,18 @@
 # ────────────────────────────────────────────────────────
 
 - type: entity
-  parent: MisfitsPlayerSyntheticRobobrain
-  id: MisfitsPlayerSyntheticRobobrainLaser
+  parent: F14PlayerSyntheticRobobrain
+  id: F14PlayerSyntheticRobobrainLaser
   name: robobrain
   suffix: player, synthetic, laser
   description: A pre-war military Robobrain fitted with an integrated laser emitter. Slower but armed, with utility support systems.
   components:
   - type: BatteryAmmoProvider
-    proto: N14MFLaserRed
+    proto: F14MFLaserRed
     fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
-    species: MisfitsRobotRobobrainLaser
+    species: F14RobotRobobrainLaser
   - type: Gun # #Misfits Add: built-in laser — same pattern as Police Protectron eyebot-class
     minAngle: 9
     maxAngle: 18
@@ -1209,7 +1209,7 @@
     angleDecay: 4
     fireRate: 1
     soundGunshot:
-      collection: N14RechargerRifleGunshot
+      collection: F14RechargerRifleGunshot
     useKey: false
     selectedMode: SemiAuto
     availableModes:
@@ -1230,5 +1230,5 @@
         - BorgModuleTool
         - BorgModuleDiagnosis
       key_slots:
-        - MisfitsEncryptionKeyWastelandGlobal
-        - N14EncryptionKeyVault
+        - F14EncryptionKeyWastelandGlobal
+        - F14EncryptionKeyVault

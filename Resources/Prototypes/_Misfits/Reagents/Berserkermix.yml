@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Reagents/Berserkermix.yml
 
 - type: reagent
-  id: MisfitsBerserkermix
+  id: F14Berserkermix
   name: reagent-name-Berserker-mixture
   group: Chems
   desc: reagent-desc-Berserker-mixture
@@ -43,19 +43,19 @@
         type: Remove
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsBerserkermix
+          reagent: F14Berserkermix
           min: 5
       - !type:ModifyKnockdown
         time: 5
         type: Remove
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsBerserkermix
+          reagent: F14Berserkermix
           min: 5
       - !type:HealthChange #Misfits Change /Add:/ Overdose — suffocates the player when stacking too much Berserker mix
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsBerserkermix
+          reagent: F14Berserkermix
           min: 26
         - !type:MobStateCondition #Misfits Tweak: OD can push to crit but never kill
         damage:

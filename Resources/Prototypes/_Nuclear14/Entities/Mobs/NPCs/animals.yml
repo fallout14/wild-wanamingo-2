@@ -3,8 +3,8 @@
 
 - type: entity
   name: molerat
-  id: N14MobMolerat
-  parent: N14MobBaseHostile
+  id: F14MobMolerat
+  parent: F14MobBaseHostile
   description: Eusocial creatures that prefer the underground. They are hostile to anything outside their colony.
   components:
   - type: Sprite
@@ -45,7 +45,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsMoleratAttack #Misfits Change
+      collection: F14MoleratAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -59,13 +59,13 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsMoleratIdle
+      collection: F14MoleratIdle
       params:
         volume: -10
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsMoleratAttack
+      collection: F14MoleratAttack
       params:
         volume: -3
         maxDistance: 10
@@ -77,7 +77,7 @@
      # tags:
     #  - Molerat
    #offspring:
-   #- id: N14MobMolerat
+   #- id: F14MobMolerat
      #maxAmount: 1
  #- type: ReproductivePartner
  # - type: Tag
@@ -96,8 +96,8 @@
 
 - type: entity
   name: pigrat
-  id: N14MobPigrat
-  parent: N14MobBaseHostile
+  id: F14MobPigrat
+  parent: F14MobBaseHostile
   description: Fast but weak pests that tend to join colonies of their cousins, the molerats and giant rats, instead of making their own nests.
   components:
   - type: Sprite
@@ -136,7 +136,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsMoleratAttack #Misfits Change - pigrats share molerat sounds
+      collection: F14MoleratAttack #Misfits Change - pigrats share molerat sounds
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -150,19 +150,19 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsMoleratIdle
+      collection: F14MoleratIdle
       params:
         volume: -10
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsMoleratAttack
+      collection: F14MoleratAttack
       params:
         volume: -3
         maxDistance: 10
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatPigrat
+    - id: F14FoodMeatPigrat
       amount: 3
  #- type: Reproductive
    #breedChance: 0.05
@@ -172,7 +172,7 @@
     #  tags:
     #  - Pigrat
    #offspring:
-  #- id: N14MobPigrat
+  #- id: F14MobPigrat
      #maxAmount: 1
  #- type: ReproductivePartner
  #- type: Tag
@@ -183,8 +183,8 @@
 
 - type: entity
   name: feral dog
-  id: N14MobDogFeral
-  parent: N14MobBaseHostile
+  id: F14MobDogFeral
+  parent: F14MobBaseHostile
   description: Starving and irradiated, these partially ghoulified mutts are not friendly.
   components:
   - type: Sprite
@@ -223,7 +223,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsDogAttack #Misfits Change
+      collection: F14DogAttack #Misfits Change
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -237,25 +237,25 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsDogIdle
+      collection: F14DogIdle
       params:
         volume: -8
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsDogBark
+      collection: F14DogBark
       params:
         volume: -3
         maxDistance: 10
 
 - type: entity
   name: Yao Guai
-  id: N14MobYaoguai
-  parent: N14MobBaseHostile
+  id: F14MobYaoguai
+  parent: F14MobBaseHostile
   description: Descended from the American black bears, their capacity for destruction is only matched by their massive appetite.
   components:
   - type: Damageable
-    damageModifierSet: N14ToughAnimal
+    damageModifierSet: F14ToughAnimal
   - type: Injurable
     damageContainer: Biological
   - type: Sprite
@@ -288,9 +288,9 @@
       400: 1.2
   - type: Butcherable
     spawned:
-    - id: N14MaterialYaoguaiHide
+    - id: F14MaterialYaoguaiHide
       amount: 1
-    - id: N14FoodMeatYaoguai
+    - id: F14FoodMeatYaoguai
       amount: 2
   - type: DamageStateVisuals
     states:
@@ -304,7 +304,7 @@
     altDisarm: false
     hidden: true
     soundHit:
-      collection: MisfitsDeathclawAttack #Misfits Change - Yao Guai reuses deathclaw roars
+      collection: F14DeathclawAttack #Misfits Change - Yao Guai reuses deathclaw roars
     angle: 60
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
@@ -321,13 +321,13 @@
     minInterval: 10
     maxInterval: 60
     sound:
-      collection: MisfitsDeathclawIdle
+      collection: F14DeathclawIdle
       params:
         volume: -7
         maxDistance: 5
   - type: AggroSound #Misfits Change
     sound:
-      collection: MisfitsDeathclawAttack
+      collection: F14DeathclawAttack
       params:
         volume: -3
         maxDistance: 10
@@ -340,7 +340,7 @@
   #    tags:
   #    - Yaoguai
    #offspring:
-   #- id: N14MobYaoguai
+   #- id: F14MobYaoguai
      #maxAmount: 1
  #- type: ReproductivePartner
  #- type: Tag
@@ -352,7 +352,7 @@
 - type: entity
   name: brahmin
   parent: MobCow
-  id: N14MobBrahmin
+  id: F14MobBrahmin
   description: The ultimate beast of burden, it can carry heavy packs, produces fertilizer for farms and milk, can be butchered for hide and meat, and you can ride it.
   components:
   - type: Sprite
@@ -380,7 +380,7 @@
     # #Misfits Fix - Super Mutants and Power Armor wearers are too heavy to ride brahmin
     blacklist:
       tags:
-      - MisfitsCannotRide
+      - F14CannotRide
       components:
       - PowerArmorWorn
     buckleSound:
@@ -416,32 +416,32 @@
   - type: Mountable
   - type: Tag
     tags:
-    - N14Brahmin
+    - F14Brahmin
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatBrahmin
+    - id: F14FoodMeatBrahmin
       amount: 4
-    - id: N14MaterialBrahminHide1
+    - id: F14MaterialBrahminHide1
       amount: 1
       prob: 0.95
-    - id: MisfitsMiscBrahminSkull
+    - id: F14MiscBrahminSkull
       amount: 1
       prob: 0.75
   - type: SolutionManager
     solutions:
-    - N14MobBrahminSolutionUdder
+    - F14MobBrahminSolutionUdder
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: N14WastelandBlood
+      - ReagentId: F14WastelandBlood
         Quantity: 1800
   - type: Damageable
-    damageModifierSet: N14WastelandAnimal
+    damageModifierSet: F14WastelandAnimal
   - type: Injurable
     damageContainer: Biological
   - type: WastelandSpawner
     prototypes:
-      - N14BrahminDung
+      - F14BrahminDung
     chance: 0.5
     intervalSeconds: 300
     minimumEntitiesSpawned: 1
@@ -453,9 +453,9 @@
     makeOffspringInfant: false
     partnerWhitelist:
       tags:
-      - N14Brahmin
+      - F14Brahmin
     offspring:
-    - id: N14MobBrahmin
+    - id: F14MobBrahmin
       maxAmount: 1
   - type: ReproductivePartner
   - type: MobPrice
@@ -464,9 +464,9 @@
     minVocalizeInterval: 120
     maxVocalizeInterval: 300
   - type: DatasetVocalizer
-    dataset: N14BrahminSays
+    dataset: F14BrahminSays
   - type: Inventory
-    templateId: MisfitsBrahmin
+    templateId: F14Brahmin
   - type: InventorySlots
   - type: Strippable
   - type: UserInterface
@@ -478,7 +478,7 @@
 
 - type: entity
   parent: Solution
-  id: N14MobBrahminSolutionUdder
+  id: F14MobBrahminSolutionUdder
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -486,13 +486,13 @@
     solution:
       maxVol: 100
       reagents:
-      - ReagentId: N14MilkBrahmin
+      - ReagentId: F14MilkBrahmin
         Quantity: 30
 
 - type: entity
   name: bighorner
-  parent: N14MobBrahmin
-  id: N14MobBighorner
+  parent: F14MobBrahmin
+  id: F14MobBighorner
   description: These ornery beasts are really only good for meat and hide. Try to put a pack or saddle on them and they'll just lay down and refuse to move.
   components:
   - type: Sprite
@@ -516,14 +516,14 @@
       - HumanoidProfile
   - type: Tag
     tags:
-    - N14Bighorner
+    - F14Bighorner
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatBighorner
+    - id: F14FoodMeatBighorner
       amount: 4
-    - id: N14MaterialRawLeather1
+    - id: F14MaterialRawLeather1
       amount: 4
-    - id: MisfitsMiscBighornerSkull
+    - id: F14MiscBighornerSkull
       amount: 1
       prob: 0.75
   - type: MeleeWeapon
@@ -548,10 +548,10 @@
        true
   - type: SolutionManager
     solutions:
-    - N14MobBighornerSolutionUdder
+    - F14MobBighornerSolutionUdder
   - type: WastelandSpawner
     prototypes:
-      - N14Dung
+      - F14Dung
     chance: 0.5
     ignoreSpawnBlock: true # Forge-Change
   - type: Reproductive
@@ -560,9 +560,9 @@
     makeOffspringInfant: false
     partnerWhitelist:
       tags:
-      - N14Bighorner
+      - F14Bighorner
     offspring:
-    - id: N14MobBighorner
+    - id: F14MobBighorner
       maxAmount: 1
   - type: ReproductivePartner
 
@@ -570,7 +570,7 @@
 
 - type: entity
   parent: Solution
-  id: N14MobBighornerSolutionUdder
+  id: F14MobBighornerSolutionUdder
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -578,13 +578,13 @@
     solution:
       maxVol: 250
       reagents:
-      - ReagentId: N14MilkBighorner
+      - ReagentId: F14MilkBighorner
         Quantity: 30
 
 - type: entity
   name: radstag
-  parent: N14MobBrahmin
-  id: N14MobRadstag
+  parent: F14MobBrahmin
+  id: F14MobRadstag
   description: These pathetic creatures prefer to flee rather than right, but if cornered they can do some real harm.
   components:
   - type: Sprite
@@ -609,14 +609,14 @@
       - HumanoidProfile
   - type: Tag
     tags:
-    - N14Radstag
+    - F14Radstag
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadstag
+    - id: F14FoodMeatRadstag
       amount: 4
-    - id: N14MaterialRawLeather1
+    - id: F14MaterialRawLeather1
       amount: 4
-    - id: MisfitsMiscRadstagSkull
+    - id: F14MiscRadstagSkull
       amount: 1
       prob: 0.75
   - type: MeleeWeapon
@@ -633,10 +633,10 @@
         Slash: 5
   - type: SolutionManager
     solutions:
-    - N14MobRadstagSolutionUdder
+    - F14MobRadstagSolutionUdder
   - type: WastelandSpawner
     prototypes:
-      - N14Dung
+      - F14Dung
     chance: 0.5
     ignoreSpawnBlock: true # Forge-Change
   - type: Reproductive
@@ -645,9 +645,9 @@
     makeOffspringInfant: false
     partnerWhitelist:
       tags:
-      - N14Radstag
+      - F14Radstag
     offspring:
-    - id: N14MobRadstag
+    - id: F14MobRadstag
       maxAmount: 1
   - type: ReproductivePartner
 
@@ -655,7 +655,7 @@
 
 - type: entity
   parent: Solution
-  id: N14MobRadstagSolutionUdder
+  id: F14MobRadstagSolutionUdder
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -663,13 +663,13 @@
     solution:
       maxVol: 150
       reagents:
-      - ReagentId: N14MilkRadstag
+      - ReagentId: F14MilkRadstag
         Quantity: 30
 
 - type: entity
   name: radhog
-  parent: N14MobBrahmin
-  id: N14MobRadhog
+  parent: F14MobBrahmin
+  id: F14MobRadhog
   description: Surprisingly intelligent creatures, their ancestors were feral hogs, and they've retained the attitude and knack for survival.
   components:
   - type: Sprite
@@ -691,10 +691,10 @@
       - HumanoidProfile
   - type: Tag
     tags:
-    - N14Radhog
+    - F14Radhog
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadstag
+    - id: F14FoodMeatRadstag
       amount: 4
   - type: MeleeWeapon
     range: 2
@@ -725,7 +725,7 @@
      # tags:
      # - Radhog
    #offspring:
-   #- id: N14MobRadhog
+   #- id: F14MobRadhog
      #maxAmount: 1
  #- type: ReproductivePartner
 
@@ -733,7 +733,7 @@
 
 - type: entity
   parent: MobChicken
-  id: N14MobChicken
+  id: F14MobChicken
   name: chicken
   description: Surviving the Great War relatively untouched, they've remained one of man's greatest domesticated food sources.
   components:
@@ -758,11 +758,11 @@
         Base: dead
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadchicken
+    - id: F14FoodMeatRadchicken
       amount: 1
       prob: 0.95
   - type: Damageable
-    damageModifierSet: N14WastelandAnimal
+    damageModifierSet: F14WastelandAnimal
   - type: Injurable
     damageContainer: Biological
   - type: Reproductive
@@ -773,15 +773,15 @@
       tags:
       - Chicken
     offspring:
-    - id: N14FoodEggChickenFertilized
+    - id: F14FoodEggChickenFertilized
       maxAmount: 3
   - type: ReproductivePartner
   - type: MobPrice
     price: 200
 
 - type: entity
-  parent: N14MobBaseSimple
-  id: N14MobIguana
+  parent: F14MobBaseSimple
+  id: F14MobIguana
   name: iguana
   description: Kept as pets and used as food, their stringy meat is served oven baked, as grilled bits, sandwiches, soups, and even whole on a stick.
   components:
@@ -801,11 +801,11 @@
     baseCritThreshold: 20
   # - type: Butcherable
     # spawned:
-    # - id: N14FoodMeatRadchicken
+    # - id: F14FoodMeatRadchicken
       # amount: 1
       # prob: 0.95
   - type: Damageable
-    damageModifierSet: N14WastelandAnimal
+    damageModifierSet: F14WastelandAnimal
   # - type: Reproductive
     # breedChance: 0.05
     # birthPopup: reproductive-laid-egg-popup
@@ -814,12 +814,12 @@
       # tags:
       # - Chicken
     # offspring:
-    # - id: N14FoodEggChickenFertilized
+    # - id: F14FoodEggChickenFertilized
       # maxAmount: 3
   # - type: ReproductivePartner
   # - type: EggLayer
     # eggSpawn:
-    # - id: N14FoodEggChicken
+    # - id: F14FoodEggChicken
   - type: Injurable
     damageContainer: Biological
   - type: Item
@@ -831,8 +831,8 @@
 #MARK: Beaver
 
 - type: entity
-  parent: N14MobBaseSimple
-  id: N14MobNuclearBeaver
+  parent: F14MobBaseSimple
+  id: F14MobNuclearBeaver
   name: nuclear beaver
   description: Often called nature's ecosystem engineers, they vastly outnumber actual ecosystem engineers since the Great War happened.
   components:
@@ -850,19 +850,19 @@
         Base: dead
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadRaw
+    - id: F14FoodMeatRadRaw
       amount: 1
       prob: 0.95
   - type: Damageable
-    damageModifierSet: N14WastelandAnimal
+    damageModifierSet: F14WastelandAnimal
 
 #MARK: Opossum
   - type: Injurable
     damageContainer: Biological
 
 - type: entity
-  parent: N14MobBaseSimple
-  id: N14MobNuclearOpossum
+  parent: F14MobBaseSimple
+  id: F14MobNuclearOpossum
   name: nuclear opossum
   description: They prefer to flee or play dead to putting up a real fight.
   components:
@@ -880,17 +880,17 @@
         Base: dead
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadRaw
+    - id: F14FoodMeatRadRaw
       amount: 1
       prob: 0.95
   - type: Damageable
-    damageModifierSet: N14WastelandAnimal
+    damageModifierSet: F14WastelandAnimal
   - type: Injurable
     damageContainer: Biological
 
 - type: entity
-  parent: N14MobBaseSimple
-  id: N14MobOpossum
+  parent: F14MobBaseSimple
+  id: F14MobOpossum
   name: opossum
   description: Popular as pets among certain frontier types, even more popular as a source of fat, gamey meat.
   components:
@@ -908,19 +908,19 @@
         Base: dead
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadRaw #At some point need their own meat
+    - id: F14FoodMeatRadRaw #At some point need their own meat
       amount: 1
       prob: 0.95
   - type: Damageable
-    damageModifierSet: N14WastelandAnimal
+    damageModifierSet: F14WastelandAnimal
 
 #MARK: Rabbit
   - type: Injurable
     damageContainer: Biological
 
 - type: entity
-  parent: N14MobBaseSimple
-  id: N14MobNuclearRabbit
+  parent: F14MobBaseSimple
+  id: F14MobNuclearRabbit
   name: nuclear rabbit
   description: Nearly identical to its pre-war ancestors, aside from most of its fur being lost. Settlers and tribals usually hunt them for easy meat.
   components:
@@ -938,17 +938,17 @@
         Base: dead
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadRaw
+    - id: F14FoodMeatRadRaw
       amount: 1
       prob: 0.95
   - type: Damageable
-    damageModifierSet: N14WastelandAnimal
+    damageModifierSet: F14WastelandAnimal
   - type: Injurable
     damageContainer: Biological
 
 - type: entity
-  parent: N14MobBaseSimple
-  id: N14MobRabbit
+  parent: F14MobBaseSimple
+  id: F14MobRabbit
   name: rabbit
   description: Timid and sweet natured, a good carrot will earn this cotton tail's heart.
   components:
@@ -966,10 +966,10 @@
         Base: dead
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadRaw #At some point need their own meat
+    - id: F14FoodMeatRadRaw #At some point need their own meat
       amount: 1
       prob: 0.95
   - type: Damageable
-    damageModifierSet: N14WastelandAnimal
+    damageModifierSet: F14WastelandAnimal
   - type: Injurable
     damageContainer: Biological

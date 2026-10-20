@@ -23,7 +23,7 @@ public sealed class SpawnWhenOpenedTest : GameTest
 
         await server.WaitPost(() =>
         {
-            bottle = entMan.SpawnEntity("N14DrinkNukaCola", map.GridCoords);
+            bottle = entMan.SpawnEntity("F14DrinkNukaCola", map.GridCoords);
             var openable = entMan.System<OpenableSystem>();
             Assert.That(openable.TryOpen(bottle), "the bottle should open");
             openable.TryClose(bottle);
@@ -33,7 +33,7 @@ public sealed class SpawnWhenOpenedTest : GameTest
 
         await server.WaitAssertion(() =>
         {
-            var caps = entMan.AllEntities<MetaDataComponent>().Count(e => e.Comp.EntityPrototype?.ID == "N14CurrencyCap");
+            var caps = entMan.AllEntities<MetaDataComponent>().Count(e => e.Comp.EntityPrototype?.ID == "F14CurrencyCap");
             Assert.That(caps, Is.EqualTo(1), "opening (even twice) should give exactly one cap");
         });
     }

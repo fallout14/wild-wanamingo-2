@@ -4,14 +4,14 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: N14BaseMagazineBox44
+  id: F14BaseMagazineBox44
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14Cartridge44Magnum
-    proto: N14Cartridge44Magnum
+        - F14Cartridge44Magnum
+    proto: F14Cartridge44Magnum
     capacity: 32
   - type: ContainerContainer
     containers:
@@ -27,12 +27,12 @@
   - type: FoldableAmmoBox #Misfits Change /Add/: Empty cardboard ammo boxes can fold back into one cardboard sheet.
 
 - type: entity
-  parent: N14BaseMagazineBox44
-  id: N14MagazineBox44
+  parent: F14BaseMagazineBox44
+  id: F14MagazineBox44
   name: ammunition box (.44)
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge44Magnum
+    proto: F14Cartridge44Magnum
   - type: Sprite
     layers:
     - state: base

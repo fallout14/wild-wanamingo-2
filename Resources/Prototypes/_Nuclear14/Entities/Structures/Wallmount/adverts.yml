@@ -2,8 +2,8 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Wallmount/adverts.yml
 
 - type: entity
-  parent: N14SignBase
-  id: N14SignNukaColaGirl
+  parent: F14SignBase
+  id: F14SignNukaColaGirl
   name: Nuka-Cola advert
   description: "A near pristine pre-war advert for Nuka-Cola."
   components:
@@ -20,14 +20,14 @@
         acts: [ "Destruction" ]
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14SignNukaColaGirlDamaged:
+          F14SignNukaColaGirlDamaged:
             min: 1
             max: 1
         offset: 0
 
 - type: entity
-  parent: N14SignBase
-  id: N14SignVaultTec
+  parent: F14SignBase
+  id: F14SignVaultTec
   name: Vault-Tec advert
   description: "A near pristine pre-war advert for Vault-Tec."
   components:
@@ -44,14 +44,14 @@
         acts: [ "Destruction" ]
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14SignVaultTecDamaged:
+          F14SignVaultTecDamaged:
             min: 1
             max: 1
         offset: 0
 
 - type: entity
-  parent: N14SignBase
-  id: N14SignMrHandy
+  parent: F14SignBase
+  id: F14SignMrHandy
   name: Mr Handy advert
   description: "A near pristine pre-war advert for a Mr. Handy service robot."
   components:
@@ -68,7 +68,7 @@
         acts: [ "Destruction" ]
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14SignMrHandyDamaged:
+          F14SignMrHandyDamaged:
             min: 1
             max: 1
         offset: 0
@@ -76,8 +76,8 @@
 # Worn Adverts
 
 - type: entity
-  parent: N14SignNukaColaGirl
-  id: N14SignNukaColaGirlWorn
+  parent: F14SignNukaColaGirl
+  id: F14SignNukaColaGirlWorn
   suffix: worn
   name: Nuka-Cola advert
   description: "A pre-war advert for Nuka-Cola."
@@ -87,8 +87,8 @@
     scale: 0.5, 0.5
 
 - type: entity
-  parent: N14SignVaultTec
-  id: N14SignVaultTecWorn
+  parent: F14SignVaultTec
+  id: F14SignVaultTecWorn
   suffix: worn
   name: Vault-Tec advert
   description: "A pre-war advert for Vault-Tec."
@@ -98,8 +98,8 @@
     scale: 0.5, 0.5
 
 - type: entity
-  parent: N14SignVaultTec
-  id: N14SignVaultTecWorn2
+  parent: F14SignVaultTec
+  id: F14SignVaultTecWorn2
   suffix: worn
   name: Vault-Tec advert
   description: "A pre-war advert for Vault-Tec."
@@ -109,8 +109,8 @@
     scale: 0.5, 0.5
 
 - type: entity
-  parent: N14SignMrHandy
-  id: N14SignMrHandyWorn
+  parent: F14SignMrHandy
+  id: F14SignMrHandyWorn
   suffix: worn
   name: Mr. Handy advert
   description: "A pre-war advert for Mr. Handy."
@@ -120,8 +120,8 @@
     scale: 0.5, 0.5
 
 - type: entity
-  parent: N14SignMrHandy
-  id: N14SignMrHandyWorn2
+  parent: F14SignMrHandy
+  id: F14SignMrHandyWorn2
   suffix: worn
   name: Mr. Handy advert
   description: "A pre-war advert for Mr. Handy."
@@ -133,8 +133,8 @@
 # Damaged Adverts
 
 - type: entity
-  parent: N14SignBase
-  id: N14SignNukaColaGirlDamaged
+  parent: F14SignBase
+  id: F14SignNukaColaGirlDamaged
   suffix: damaged
   name: Nuka-Cola advert
   description: "A destroyed pre-war advert for Nuka-Cola."
@@ -144,8 +144,8 @@
     scale: 0.5, 0.5
 
 - type: entity
-  parent: N14SignBase
-  id: N14SignMrHandyDamaged
+  parent: F14SignBase
+  id: F14SignMrHandyDamaged
   suffix: damaged
   name: Mr. Handy advert
   description: "A destroyed pre-war advert for Mr. Handy."
@@ -155,8 +155,8 @@
     scale: 0.5, 0.5
 
 - type: entity
-  parent: N14SignBase
-  id: N14SignMrHandyDamaged2
+  parent: F14SignBase
+  id: F14SignMrHandyDamaged2
   suffix: damaged
   name: Mr. Handy advert
   description: "A destroyed pre-war advert for Mr. Handy."
@@ -166,8 +166,8 @@
     scale: 0.5, 0.5
 
 - type: entity
-  parent: N14SignBase
-  id: N14SignVaultTecDamaged
+  parent: F14SignBase
+  id: F14SignVaultTecDamaged
   suffix: damaged
   name: Vault-Tec advert
   description: "A destroyed pre-war advert for Vault-Tec."

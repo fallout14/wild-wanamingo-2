@@ -2,8 +2,8 @@
 # Resources/Prototypes/Corvax/Entities/Clothing/OuterClothing/powerarmor.yml
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorAdvanced2
-  id: CorvaxClothingOuterPowerArmorAdvanced2Tesla
+  parent: F14ClothingOuterPowerArmorAdvanced2
+  id: F14ClothingOuterPowerArmorAdvanced2Tesla
   # #Misfits Change - Renamed X-02 -> APA MK II
   name: APA MK II tesla power armor
   description: A lightweight version of the APA with fewer protective coatings to facilitate repairs. The Tesla system provides electrical resistance.
@@ -17,7 +17,7 @@
     spread: 300
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: CorvaxClothingHeadHelmetPowerArmorX02Tesla
-      gloves: N14ClothingPAGauntletsDark
-      shoes: N14ClothingPABootsDark
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorX02Tesla
+      gloves: F14ClothingPAGauntletsDark
+      shoes: F14ClothingPABootsDark
+      back: F14ClothingPowerSystemsBack

@@ -2,14 +2,14 @@
 
 - type: entity
   parent: EncryptionKey
-  id: MisfitsEncryptionKeyBrotherhoodOfSteel
+  id: F14EncryptionKeyBrotherhoodOfSteel
   name: Brotherhood encryption key
   description: An encryption key used by the Brotherhood of Steel.
   components:
   - type: EncryptionKey
     channels:
-    - MisfitsBrotherhoodOfSteel
-    defaultChannel: MisfitsBrotherhoodOfSteel
+    - F14BrotherhoodOfSteel
+    defaultChannel: F14BrotherhoodOfSteel
   - type: Sprite
     layers:
     - state: crypt_silver
@@ -17,14 +17,14 @@
 
 - type: entity
   parent: EncryptionKey
-  id: MisfitsEncryptionKeyOSI
+  id: F14EncryptionKeyOSI
   name: OSI encryption key
   description: An encryption key for NCR Office of Science and Industry personnel.
   components:
   - type: EncryptionKey
     channels:
-    - MisfitsOSI
-    defaultChannel: MisfitsOSI
+    - F14OSI
+    defaultChannel: F14OSI
   - type: Sprite
     sprite: Misfits/Legacy/Objects/Devices/encryption_keys.rsi
     layers:
@@ -33,14 +33,14 @@
 
 - type: entity
   parent: EncryptionKey
-  id: MisfitsEncryptionKeyNCRRangers
+  id: F14EncryptionKeyNCRRangers
   name: NCR Ranger encryption key
   description: An encryption key for NCR Ranger field traffic.
   components:
   - type: EncryptionKey
     channels:
-    - MisfitsNCRRangers
-    defaultChannel: MisfitsNCRRangers
+    - F14NCRRangers
+    defaultChannel: F14NCRRangers
   - type: Sprite
     layers:
     - state: crypt_gray
@@ -48,14 +48,14 @@
 
 - type: entity
   parent: EncryptionKey
-  id: MisfitsEncryptionKeyLegion
+  id: F14EncryptionKeyLegion
   name: Legion encryption key
   description: An encryption key used by Caesar's Legion.
   components:
   - type: EncryptionKey
     channels:
-    - MisfitsLegion
-    defaultChannel: MisfitsLegion
+    - F14Legion
+    defaultChannel: F14Legion
   - type: Sprite
     layers:
     - state: crypt_red
@@ -65,14 +65,14 @@
 
 - type: entity
   parent: EncryptionKey
-  id: MisfitsEncryptionKeyEighties
+  id: F14EncryptionKeyEighties
   name: Eighties encryption key
   description: An encryption key used by the Eighties raiders.
   components:
   - type: EncryptionKey
     channels:
-    - MisfitsEighties
-    defaultChannel: MisfitsEighties
+    - F14Eighties
+    defaultChannel: F14Eighties
   - type: Sprite
     layers:
     - state: crypt_gray
@@ -80,14 +80,14 @@
 
 - type: entity
   parent: EncryptionKey
-  id: MisfitsEncryptionKeyWastelandGlobal
+  id: F14EncryptionKeyWastelandGlobal
   name: wasteland radio encryption key
   description: A common encryption key used across the wasteland.
   components:
   - type: EncryptionKey
     channels:
-    - MisfitsWastelandGlobal
-    defaultChannel: MisfitsWastelandGlobal
+    - F14WastelandGlobal
+    defaultChannel: F14WastelandGlobal
   - type: Sprite
     layers:
     - state: crypt_gray
@@ -97,14 +97,14 @@
 
 - type: entity
   parent: EncryptionKey
-  id: MisfitsEncryptionKeyFollowers
+  id: F14EncryptionKeyFollowers
   name: Followers encryption key
   description: An encryption key used by the Followers of the Apocalypse.
   components:
   - type: EncryptionKey
     channels:
-    - MisfitsFollowersOfApocalypse
-    defaultChannel: MisfitsFollowersOfApocalypse
+    - F14FollowersOfApocalypse
+    defaultChannel: F14FollowersOfApocalypse
   - type: Sprite
     layers:
     - state: crypt_gray
@@ -114,14 +114,14 @@
 
 - type: entity
   parent: EncryptionKey
-  id: MisfitsEncryptionKeyTown
+  id: F14EncryptionKeyTown
   name: Town encryption key
   description: An encryption key used by the Bazaar Townsfolk.
   components:
   - type: EncryptionKey
     channels:
-    - N14Townsfolk
-    defaultChannel: N14Townsfolk
+    - F14Townsfolk
+    defaultChannel: F14Townsfolk
   - type: Sprite
     layers:
     - state: crypt_gray

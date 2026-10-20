@@ -1,12 +1,12 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Reagents/Consumable/drinks.yml
 
 - type: reagent
-  id: MisfitsMilkZoy
+  id: F14MilkZoy
   parent: MilkOat
   name: reagent-name-milk-zoy
   desc: reagent-desc-milk-zoy
   physicalDesc: reagent-physical-desc-tangy
-  flavor: MisfitsZoy
+  flavor: F14Zoy
   color: "#cfc88e"
   metabolisms:
     Digestion:
@@ -16,10 +16,10 @@
         factor: 5 # slightly more thirst-quenching than soy milk
 
 - type: reagent
-  id: MisfitsMilkCondensed
+  id: F14MilkCondensed
   parent: Milk
   name: reagent-name-milk-condensed
   desc: reagent-desc-milk-condensed
   physicalDesc: reagent-physical-desc-thick
-  flavor: MisfitsCondensedMilk
+  flavor: F14CondensedMilk
   color: "#efe4c6"

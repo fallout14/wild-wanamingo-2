@@ -3,14 +3,14 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: CorvaxClothingNeckBlackScarf
+  id: F14ClothingNeckBlackScarf
   name: black scarf
   description: A short black scarf.
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Clothing/Neck/Bandanas/blackscarf.rsi
   - type: ToggleableClothing
-    clothingPrototype: CorvaxClothingMaskBlackMask
+    clothingPrototype: F14ClothingMaskBlackMask
     requiredSlot:
     - neck
     slot: mask

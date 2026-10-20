@@ -3,7 +3,7 @@
 
 - type: entity
   parent: FoodEggBase
-  id: N14FoodEggBase
+  id: F14FoodEggBase
   description: An egg!
   abstract: true
   components:
@@ -69,8 +69,8 @@
 # Egg
 
 - type: entity
-  parent: N14FoodEggBase
-  id: N14FoodEggChicken
+  parent: F14FoodEggBase
+  id: F14FoodEggChicken
   name: chicken egg
   components:
   - type: Sprite
@@ -82,13 +82,13 @@
     price: 1 # PH
 
 - type: entity
-  id: N14FoodEggChickenFertilized
-  parent: N14FoodEggChicken
+  id: F14FoodEggChickenFertilized
+  parent: F14FoodEggChicken
   suffix: Fertilized, Chicken
   components:
   - type: WastelandSpawner
     prototypes:
-    - N14MobChicken
+    - F14MobChicken
     - Eggshells
     intervalSeconds: 20
     minimumEntitiesSpawned: 2
@@ -100,8 +100,8 @@
     price: 1 # PH
 
 - type: entity
-  parent: N14FoodEggChicken
-  id: N14CookedFoodEggChickenBoiled
+  parent: F14FoodEggChicken
+  id: F14CookedFoodEggChickenBoiled
   name: boiled chicken egg
   description: A delicious hardboiled egg.
   components:
@@ -118,8 +118,8 @@
 # Deathclaw
 
 - type: entity
-  parent: N14FoodEggBase
-  id: N14FoodEggDeathclaw
+  parent: F14FoodEggBase
+  id: F14FoodEggDeathclaw
   name: deathclaw egg
   components:
   - type: Sprite
@@ -131,13 +131,13 @@
     price: 25
 
 - type: entity
-  id: N14FoodEggDeathclawFertilized
-  parent: N14FoodEggDeathclaw
+  id: F14FoodEggDeathclawFertilized
+  parent: F14FoodEggDeathclaw
   suffix: Fertilized, Deathclaw
   components:
   - type: WastelandSpawner
     prototypes:
-    - N14MobDeathclaw
+    - F14MobDeathclaw
     - Eggshells
     intervalSeconds: 60
     minimumEntitiesSpawned: 2
@@ -149,8 +149,8 @@
     price: 1 # PH
 
 - type: entity
-  parent: N14FoodEggDeathclaw
-  id: N14CookedFoodEggDeathclawBoiled
+  parent: F14FoodEggDeathclaw
+  id: F14CookedFoodEggDeathclawBoiled
   name: boiled deathclaw egg
   description: ARE YOU FUCKING NUTS?? YOU BOILED A DEATHCLAW EGG???
   components:
@@ -167,8 +167,8 @@
 # Gecko
 
 - type: entity
-  parent: N14FoodEggBase
-  id: N14FoodEggGecko
+  parent: F14FoodEggBase
+  id: F14FoodEggGecko
   name: gecko egg
   components:
   - type: Sprite
@@ -180,13 +180,13 @@
     price: 1 # PH
 
 - type: entity
-  id: N14FoodEggGeckoFertilized
-  parent: N14FoodEggGecko
+  id: F14FoodEggGeckoFertilized
+  parent: F14FoodEggGecko
   suffix: Fertilized, Gecko
   components:
   - type: WastelandSpawner
     prototypes:
-    - N14MobGecko
+    - F14MobGecko
     - Eggshells
     intervalSeconds: 60
     minimumEntitiesSpawned: 2
@@ -198,8 +198,8 @@
     price: 1 # PH
 
 - type: entity
-  parent: N14FoodEggGecko
-  id: N14CookedFoodEggGeckoBoiled
+  parent: F14FoodEggGecko
+  id: F14CookedFoodEggGeckoBoiled
   name: boiled gecko egg
   description: A delicious hardboiled egg.
   components:
@@ -216,8 +216,8 @@
 # Nightstalker
 
 - type: entity
-  parent: N14FoodEggBase
-  id: N14FoodEggNightstalker
+  parent: F14FoodEggBase
+  id: F14FoodEggNightstalker
   name: nightstalker egg
   components:
   - type: Sprite
@@ -229,13 +229,13 @@
     price: 1 # PH
 
 - type: entity
-  id: N14FoodEggNightstalkerFertilized
-  parent: N14FoodEggNightstalker
+  id: F14FoodEggNightstalkerFertilized
+  parent: F14FoodEggNightstalker
   suffix: Fertilized, Nightstalker
   components:
   - type: WastelandSpawner
     prototypes:
-    - N14MobNightstalkerCub
+    - F14MobNightstalkerCub
     - Eggshells
     intervalSeconds: 60
     minimumEntitiesSpawned: 2
@@ -247,8 +247,8 @@
     price: 1 # PH
 
 - type: entity
-  parent: N14FoodEggNightstalker
-  id: N14CookedFoodEggNightstalkerBoiled
+  parent: F14FoodEggNightstalker
+  id: F14CookedFoodEggNightstalkerBoiled
   name: boiled nightstalker egg
   description: A delicious hardboiled egg.
   components:

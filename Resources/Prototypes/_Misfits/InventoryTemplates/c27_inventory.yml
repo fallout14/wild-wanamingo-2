@@ -8,7 +8,7 @@
 # remain unrestricted so C-27 units can use ordinary clothing, helmets, masks, eyewear, etc.
 
 - type: inventoryTemplate
-  id: MisfitsC27
+  id: F14C27
   slots:
     - name: shoes
       slotTexture: shoes
@@ -33,7 +33,7 @@
       displayName: Suit
       whitelist:
         tags:
-          - MisfitsC27Wearable
+          - F14C27Wearable
     - name: gloves
       slotTexture: gloves
       slotFlags: GLOVES

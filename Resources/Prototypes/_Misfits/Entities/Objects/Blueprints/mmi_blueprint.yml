@@ -2,12 +2,12 @@
 
 - type: entity
   parent: MMI
-  id: MisfitsMMI
+  id: F14MMI
   suffix: N14
 
 - type: entity
-  parent: MisfitsBlueprintBase
-  id: MisfitsBlueprintMMI
+  parent: F14BlueprintBase
+  id: F14BlueprintMMI
   name: MMI Assembly Schematic
   description: >
     A Pre-War technical schematic for assembling a Man-Machine Interface unit —
@@ -16,4 +16,4 @@
   components:
   - type: Blueprint
     providedRecipes:
-    - MisfitsBPMMIRecipe
+    - F14BPMMIRecipe

@@ -3,8 +3,8 @@
 
 - type: reagent
   parent: BaseSoda
-  id: N14NukaCola
-  flavor: N14NukaCola
+  id: F14NukaCola
+  flavor: F14NukaCola
   name: reagent-name-nuka-cola
   desc: reagent-desc-nuka-cola
   physicalDesc: reagent-physical-desc-fizzy
@@ -25,11 +25,11 @@
 
 - type: reagent
   parent: BaseSoda
-  id: N14IrradiatedNukaCola
+  id: F14IrradiatedNukaCola
   name: reagent-name-irradiated-nuka-cola
   desc: reagent-desc-irradiated-nuka-cola
   physicalDesc: reagent-physical-desc-fizzy
-  flavor: N14NukaColaIrradiated
+  flavor: F14NukaColaIrradiated
   color: "#4a4a32"
   metabolisms:
     Digestion:
@@ -49,11 +49,11 @@
             Radiation: 0.1
 
 - type: reagent
-  parent: N14IrradiatedNukaCola
-  id: N14NukaColaQuantum
+  parent: F14IrradiatedNukaCola
+  id: F14NukaColaQuantum
   name: reagent-name-nuka-cola-quantum
   desc: reagent-desc-nuka-cola-quantum
-  flavor: N14NukaColaQuantum
+  flavor: F14NukaColaQuantum
   physicalDesc: reagent-physical-desc-fizzy
   color: "#ACE5F2"
   metabolisms:
@@ -82,57 +82,57 @@
             Bloodloss: -0.5
 
 - type: reagent
-  parent: N14NukaColaQuantum
-  id: N14NukaColaQuartz
+  parent: F14NukaColaQuantum
+  id: F14NukaColaQuartz
   name: reagent-name-nuka-cola-quartz
   desc: reagent-desc-nuka-cola-quartz
-  flavor: N14NukaColaQuartz
+  flavor: F14NukaColaQuartz
   physicalDesc: reagent-physical-desc-fizzy
   color: "#ACE5F2"
 
 - type: reagent
-  parent: N14IrradiatedNukaCola
-  id: N14NukaColaCherry
+  parent: F14IrradiatedNukaCola
+  id: F14NukaColaCherry
   name: reagent-name-nuka-cola-cherry
   desc: reagent-desc-nuka-cola-cherry
-  flavor: N14NukaColaCherry
+  flavor: F14NukaColaCherry
   physicalDesc: reagent-physical-desc-fizzy
   color: "#C02500"
 
 - type: reagent
-  parent: N14IrradiatedNukaCola
-  id: N14NukaColaGrape
+  parent: F14IrradiatedNukaCola
+  id: F14NukaColaGrape
   name: reagent-name-nuka-cola-grape
   desc: reagent-desc-nuka-cola-grape
-  flavor: N14NukaColaGrape
+  flavor: F14NukaColaGrape
   physicalDesc: reagent-physical-desc-fizzy
   color: "#543AC1"
 
 - type: reagent
-  parent: N14NukaCola
-  id: N14NukaColaWild
+  parent: F14NukaCola
+  id: F14NukaColaWild
   name: reagent-name-nuka-cola-wild
   desc: reagent-desc-nuka-cola-wild
-  flavor: N14NukaColaWild
+  flavor: F14NukaColaWild
   physicalDesc: reagent-physical-desc-fizzy
   color: "#150d01"
 
 - type: reagent
-  parent: N14IrradiatedNukaCola
-  id: N14NukaColaOrange
+  parent: F14IrradiatedNukaCola
+  id: F14NukaColaOrange
   name: reagent-name-nuka-cola-orange
   desc: reagent-desc-nuka-cola-orange
-  flavor: N14NukaColaOrange
+  flavor: F14NukaColaOrange
   physicalDesc: reagent-physical-desc-fizzy
   color: "#ff3c0e"
 
 - type: reagent
-  parent: N14IrradiatedNukaCola
-  id: N14NukaColaVictory
+  parent: F14IrradiatedNukaCola
+  id: F14NukaColaVictory
   name: reagent-name-nuka-cola-victory
   desc: reagent-desc-nuka-cola-victory
   physicalDesc: reagent-physical-desc-fizzy
-  flavor: N14NukaColaVictory
+  flavor: F14NukaColaVictory
   color: "#FF3E0E"
   metabolisms:
     Digestion:
@@ -160,12 +160,12 @@
             Bloodloss: -0.5
 
 - type: reagent
-  parent: N14IrradiatedNukaCola
-  id: N14NukaColaYellow
+  parent: F14IrradiatedNukaCola
+  id: F14NukaColaYellow
   name: reagent-name-nuka-cola-yellow
   desc: reagent-desc-nuka-cola-yellow
   physicalDesc: reagent-physical-desc-fizzy
-  flavor: N14NukaColaYellow
+  flavor: F14NukaColaYellow
   color: "#9E8743"
   metabolisms:
     Digestion:
@@ -185,37 +185,37 @@
 # Vim
 
 - type: reagent
-  parent: N14IrradiatedNukaCola
+  parent: F14IrradiatedNukaCola
   id: Vim
   name: reagent-name-vim
   desc: reagent-desc-vim
   physicalDesc: reagent-physical-desc-fizzy
-  flavor: N14Vim
+  flavor: F14Vim
   color: "#362d1d"
 
 - type: reagent
-  parent: N14NukaColaQuantum
-  id: N14VimCaptainsblend
+  parent: F14NukaColaQuantum
+  id: F14VimCaptainsblend
   name: reagent-name-vim-captainsblend
   desc: reagent-desc-vim-captainsblend
   physicalDesc: reagent-physical-desc-fizzy
-  flavor: N14VimCaptainsBlend
+  flavor: F14VimCaptainsBlend
   color: "#ACE5F2"
 
 - type: reagent
-  parent: N14NukaCola
-  id: N14VimRefresh
+  parent: F14NukaCola
+  id: F14VimRefresh
   name: reagent-name-vim-refresh
   desc: reagent-desc-vim-refresh
   physicalDesc: reagent-physical-desc-fizzy
-  flavor: N14VimRefresh
+  flavor: F14VimRefresh
   color: "#C2F2AC"
 
 - type: reagent
-  parent: N14NukaColaQuantum
-  id: N14VimQuartz
+  parent: F14NukaColaQuantum
+  id: F14VimQuartz
   name: reagent-name-vim-quartz
   desc: reagent-desc-vim-quartz
   physicalDesc: reagent-physical-desc-fizzy
-  flavor: N14VimQuartz
+  flavor: F14VimQuartz
   color: "#E5F2AC"

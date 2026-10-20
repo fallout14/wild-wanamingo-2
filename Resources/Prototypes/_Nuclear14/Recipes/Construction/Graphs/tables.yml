@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/tables.yml
 
 - type: constructionGraph
-  id: N14TableCounterBarRecipes
+  id: F14TableCounterBarRecipes
   start: start
   graph:
     - node: start
@@ -19,10 +19,10 @@
               doAfter: 2
 
     - node: TableCounterBar
-      entity: N14TableCounterBar
+      entity: F14TableCounterBar
 
 - type: constructionGraph
-  id: N14TableMetalGrateRecipes
+  id: F14TableMetalGrateRecipes
   start: start
   graph:
     - node: start
@@ -39,10 +39,10 @@
               doAfter: 2
 
     - node: TableMetalGrate
-      entity: N14TableMetalGrate
+      entity: F14TableMetalGrate
 
 - type: constructionGraph
-  id: N14TableRecipes
+  id: F14TableRecipes
   start: start
   graph:
     - node: start
@@ -59,4 +59,4 @@
               doAfter: 2
 
     - node: TableWoodSettler
-      entity: N14TableWoodSettler
+      entity: F14TableWoodSettler

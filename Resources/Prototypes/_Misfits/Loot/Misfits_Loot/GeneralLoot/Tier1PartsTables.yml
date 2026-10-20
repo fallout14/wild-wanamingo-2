@@ -1,37 +1,37 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/GeneralLoot/Tier1PartsTables.yml
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_ElectricComp
+  id: F14PartsLootTier1ElectricComp
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkComponentBoard1
+      id: F14JunkComponentBoard1
     - !type:EntSelector
-      id: N14JunkComponentBulb1
+      id: F14JunkComponentBulb1
     - !type:EntSelector
-      id: N14JunkComponentDiode1
+      id: F14JunkComponentDiode1
     - !type:EntSelector
-      id: N14JunkComponentFuse1
+      id: F14JunkComponentFuse1
     - !type:EntSelector
-      id: N14JunkComponentTransistor1
+      id: F14JunkComponentTransistor1
     - !type:EntSelector
-      id: N14JunkComponentResistor1
+      id: F14JunkComponentResistor1
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier0_EletricMisc
+  id: F14PartsLootTier0EletricMisc
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkComponentSensor
+      id: F14JunkComponentSensor
       weight: 5
     - !type:EntSelector
-      id: N14JunkComponentSensorModule
+      id: F14JunkComponentSensorModule
       weight: 5
     - !type:EntSelector
-      id: N14JunkComponentSwitch
+      id: F14JunkComponentSwitch
       weight: 5
     - !type:EntSelector
-      id: N14JunkComponentMainboard
+      id: F14JunkComponentMainboard
       weight: 5
     - !type:EntSelector
       id: PowerCellHigh
@@ -40,20 +40,20 @@
 # stuff like pistons and industrial kinda stuff here too
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_Machine
+  id: F14PartsLootTier1Machine
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkComponentGearLarge
+      id: F14JunkComponentGearLarge
       weight: 1
     - !type:EntSelector
-      id: N14JunkComponentGearSmall
+      id: F14JunkComponentGearSmall
       weight: 1
     - !type:EntSelector
-      id: N14JunkComponentIgniter
+      id: F14JunkComponentIgniter
       weight: 1
     - !type:EntSelector
-      id: N14JunkComponentScrew
+      id: F14JunkComponentScrew
       weight: 1
 
 # need metalscrap and electronic scrap for repair kit
@@ -61,91 +61,91 @@
 # get stuff like casings/shells too
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_RepairKitRecipe
+  id: F14PartsLootTier1RepairKitRecipe
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkDuctTape
+      id: F14JunkDuctTape
       weight: 1
     - !type:EntSelector
-      id: N14JunkComponentScrew
+      id: F14JunkComponentScrew
       weight: 1
     - !type:EntSelector
-      id: N14JunkComponentScrew
+      id: F14JunkComponentScrew
       weight: 1
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_Adhesives
+  id: F14PartsLootTier1Adhesives
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkDuctTape
+      id: F14JunkDuctTape
       weight: 1
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_Chemicals
+  id: F14PartsLootTier1Chemicals
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkTurpentine
+      id: F14JunkTurpentine
       weight: 1
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier1_GunParts
+  id: F14PartsLootTier1GunParts
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkGunpartsBarrel
+      id: F14JunkGunpartsBarrel
       weight: 5
     - !type:EntSelector
-      id: N14JunkGunpartsBolt
+      id: F14JunkGunpartsBolt
       weight: 8
     - !type:EntSelector
-      id: N14JunkGunpartsFramePistol
+      id: F14JunkGunpartsFramePistol
       weight: 3
     - !type:EntSelector
-      id: N14JunkGunpartsTrigger
+      id: F14JunkGunpartsTrigger
       weight: 10
     - !type:EntSelector
-      id: N14JunkGunpartsWeaponParts1
+      id: F14JunkGunpartsWeaponParts1
       weight: 1
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier2_GunParts
+  id: F14PartsLootTier2GunParts
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkGunpartsStock # craftable
+      id: F14JunkGunpartsStock # craftable
       weight: 2
     - !type:EntSelector
-      id: N14JunkGunpartsStockWood # craftable
+      id: F14JunkGunpartsStockWood # craftable
       weight: 2
     - !type:EntSelector
-      id: N14JunkGunpartsFrame # craftable
+      id: F14JunkGunpartsFrame # craftable
       weight: 8
     - !type:EntSelector
-      id: N14JunkGunpartsRifleFrame
+      id: F14JunkGunpartsRifleFrame
       weight: 4
     - !type:EntSelector
-      id: N14JunkGunpartsRifleScope
+      id: F14JunkGunpartsRifleScope
       weight: 4
     - !type:EntSelector
-      id: N14JunkGunpartsWeaponParts2
+      id: F14JunkGunpartsWeaponParts2
       weight: 1
 
 - type: entityTable
-  id: MisfitsM14PartsLootTier3_GunParts
+  id: F14PartsLootTier3GunParts
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14JunkGunpartsAdvancedFrame
+      id: F14JunkGunpartsAdvancedFrame
       weight: 10
     - !type:EntSelector
-      id: N14JunkGunpartsRecoilComp
+      id: F14JunkGunpartsRecoilComp
       weight: 10
     - !type:EntSelector
-      id: N14JunkGunpartsReceiver
+      id: F14JunkGunpartsReceiver
       weight: 10
     - !type:EntSelector
-      id: N14JunkGunpartsWeaponParts3
+      id: F14JunkGunpartsWeaponParts3
       weight: 1

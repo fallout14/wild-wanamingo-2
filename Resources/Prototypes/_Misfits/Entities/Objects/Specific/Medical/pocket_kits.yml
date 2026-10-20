@@ -4,7 +4,7 @@
   name: individual first aid kit
   description: An individual first aid kit. Small enough for a pocket, and only holds medical supplies.
   parent: BaseStorageItem
-  id: MisfitsIFAK
+  id: F14IFAK
   components:
   - type: Sprite
     sprite: Misfits/Objects/Specific/Medical/pocket_kits.rsi
@@ -22,8 +22,8 @@
       - Gauze
       - Ointment
       - PillCanister
-      - N14Bandage
-      - MisfitsTribalMedicine
+      - F14Bandage
+      - F14TribalMedicine
       components:
       - Healing
       - Injector
@@ -35,8 +35,8 @@
 - type: entity
   name: advanced first aid kit
   description: An advanced first aid kit. Still fits in a pocket, with room for proper field surgery supplies.
-  parent: MisfitsIFAK
-  id: MisfitsAFAK
+  parent: F14IFAK
+  id: F14AFAK
   components:
   - type: Storage
     grid:
@@ -48,7 +48,7 @@
   name: survival kit
   description: A pocket-sized tin for keeping a few essentials on hand.
   parent: BaseStorageItem
-  id: MisfitsSurvivalKit
+  id: F14SurvivalKit
   components:
   - type: Sprite
     sprite: Misfits/Objects/Specific/Medical/pocket_kits.rsi
@@ -65,82 +65,82 @@
 # Small items are listed first so the fill packs cleanly.
 # ============================================================================
 
-# Replaces N14BoxPlasticFilledWastelander.
+# Replaces F14BoxPlasticFilledWastelander.
 
 - type: entity
-  parent: MisfitsSurvivalKit
-  id: MisfitsSurvivalKitWastelander
+  parent: F14SurvivalKit
+  id: F14SurvivalKitWastelander
   suffix: Wastelander
   components:
   - type: StorageFill
     contents:
-    - id: N14DirtyGauze10
-    - id: N14Stimpak
+    - id: F14DirtyGauze10
+    - id: F14Stimpak
     - id: Flare
-    - id: N14RadXPill
+    - id: F14RadXPill
       amount: 3
 
 # Replaces N14BoxPlasticFilledRaider.
 
 - type: entity
-  parent: MisfitsSurvivalKit
-  id: MisfitsSurvivalKitRaider
+  parent: F14SurvivalKit
+  id: F14SurvivalKitRaider
   suffix: Raider
   components:
   - type: StorageFill
     contents:
-    - id: N14DirtyGauze10
-    - id: N14Med-X
-    - id: N14Jet
+    - id: F14DirtyGauze10
+    - id: F14MedX
+    - id: F14Jet
       prob: 0.5
       orGroup: RandomDrug
-    - id: N14StimpakDirty
+    - id: F14StimpakDirty
       prob: 0.5
       orGroup: RandomDrug
     - id: Flare
-    - id: N14RadXPill
+    - id: F14RadXPill
       amount: 3
 
-# Replaces N14BoxPlasticFilledMilitary and N14BoxPlasticFilledMilitaryNCR.
+# Replaces F14BoxPlasticFilledMilitary and F14BoxPlasticFilledMilitaryNCR.
 
 - type: entity
-  parent: MisfitsIFAK
-  id: MisfitsIFAKMilitary
+  parent: F14IFAK
+  id: F14IFAKMilitary
   suffix: Military
   components:
   - type: StorageFill
     contents:
-    - id: N14CleanGauze10
-    - id: N14Ointment10
-    - id: MisfitsSuture
-    - id: N14Stimpak
-    - id: N14RadXCanisterFilled
+    - id: F14CleanGauze10
+    - id: F14Ointment10
+    - id: F14Suture
+    - id: F14Stimpak
+    - id: F14RadXCanisterFilled
 
 # Replaces N14BoxPlasticFilledMilitaryLegion. Tribal medicine only, no stimpaks.
 
 - type: entity
-  parent: MisfitsIFAK
-  id: MisfitsIFAKLegion
+  parent: F14IFAK
+  id: F14IFAKLegion
   suffix: Legion
   components:
   - type: StorageFill
     contents:
-    - id: N14CleanGauze10
-    - id: N14HealingPowder
-    - id: N14HealingPoultice
-    - id: MisfitsCleansingPowder
+    - id: F14CleanGauze10
+    - id: F14HealingPowder
+    - id: F14HealingPoultice
+    - id: F14CleansingPowder
 
 - type: entity
-  parent: MisfitsAFAK
-  id: MisfitsAFAKFilled
+  parent: F14AFAK
+  id: F14AFAKFilled
   suffix: Filled
   components:
   - type: StorageFill
     contents:
-    - id: N14SuperStimpak
+    - id: F14SuperStimpak
     - id: RegenerativeMesh
     - id: MedicatedSuture
-    - id: N14CleanGauze10
-    - id: N14Med-X
-    - id: N14RadAwayInhaler
-    - id: N14RadXCanisterFilled
+    - id: F14CleanGauze10
+    - id: F14MedX
+    - id: F14RadAwayInhaler
+    - id: F14RadXCanisterFilled

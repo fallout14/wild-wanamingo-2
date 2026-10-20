@@ -1,0 +1,26 @@
+# Ported from Corvax content carried by Nuclear 14 / Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/Corvax/Entities/Structures/Decoration/floordecor.yml
+
+- type: entity
+  parent: F14DecorationFlagpoleNCR
+  id: F14DecorationFlagpoleNCR2
+  name: Small New California Republic Flag
+  description: The banner of the New California Republic, a nation that despite enemies within and without, has done its best to provide comfort and equality to its citizens. This one is a flag meant to be used as a desk paperweight.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/clutter.rsi
+    state: flagpole_ncr
+    noRot: true
+
+- type: entity
+  parent: F14DecorationFlagpoleNCR
+  id: F14DecorationFlagpoleLegion
+  name: Small Caesar's Legion Flag
+  description: The banner of Caesar's Legion, a slave army under the mighty warlord Caesar, whose monumental ego and sharp wit have seen the lawless east fall in line under his iron boot. This one is a flag meant to be used as a desk paperweight.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/clutter.rsi
+    state: flagpole_legion
+    noRot: true
+
+# Decormini

@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/PriestessOfMars/priestess_of_mars_clothing.yml
 
 - type: entity
-  parent: N14ClothingUniformJumpsuitBOSRed
-  id: MisfitsPriestessOfMarsRobes
+  parent: F14ClothingUniformJumpsuitBOSRed
+  id: F14PriestessOfMarsRobes
   name: Priestess of Mars Robes
   description: A deep crimson undersuit adorned with sacred iconography of the god of war. Worn by the holy women who bless Caesar's warriors before battle.
   components:
@@ -16,15 +16,15 @@
 
 - type: entity
   parent: ClothingNeckCloakGoliathCloak
-  id: MisfitsPriestessOfMarsCloak
+  id: F14PriestessOfMarsCloak
   name: Priestess of Mars Cloak
   description: A worn cloak of goliath hide draped across the shoulders of Mars's chosen. Its age only adds to its reverence.
 
 # Veil — worn in the mask slot; inherits the pullable toggle
 
 - type: entity
-  parent: N14ClothingMaskRedMask
-  id: MisfitsPriestessOfMarsVeil
+  parent: F14ClothingMaskRedMask
+  id: F14PriestessOfMarsVeil
   name: Priestess of Mars Veil
   description: A crimson veil that partially obscures the face of the priestess, marking her as set apart from the common women of the Legion.
 
@@ -34,7 +34,7 @@
 
 - type: entity
   parent: ClothingHandsBase
-  id: MisfitsPriestessOfMarsGloves
+  id: F14PriestessOfMarsGloves
   name: Priestess of Mars Gauntlets
   description: Ornate gauntlets worn by the Priestess of Mars during Holy War rites. The blessed blades lining their knuckles are not merely ceremonial.
   components:
@@ -63,8 +63,8 @@
 # Boots — worn in the shoes slot
 
 - type: entity
-  parent: N14ClothingBootsBlack
-  id: MisfitsPriestessOfMarsBoots
+  parent: F14ClothingBootsBlack
+  id: F14PriestessOfMarsBoots
   name: Priestess of Mars Boots
   description: Simple black boots suited for the dusty ground of the Legion's encampments.
 
@@ -72,7 +72,7 @@
 
 - type: entity
   parent: ClothingBeltStorageWaistbag
-  id: MisfitsPriestessOfMarsSatchel
+  id: F14PriestessOfMarsSatchel
   name: Priestess of Mars Satchel
   description: A worn leather satchel used to carry sacred texts, medicinal supplies, and whatever else the priestess might need during her duties.
   components:

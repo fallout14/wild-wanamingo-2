@@ -3,7 +3,7 @@
 
 - type: entity
   name: plasma
-  id: N14BulletPlasma
+  id: F14BulletPlasma
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -23,9 +23,9 @@
         - Impassable
         - BulletImpassable
   - type: Ammo
-    muzzleFlash: MisfitsPlasmaMuzzleFlashEffect
+    muzzleFlash: F14PlasmaMuzzleFlashEffect
   - type: Projectile
-    impactEffect: MisfitsBulletPlasmaImpactEffect
+    impactEffect: F14BulletPlasmaImpactEffect
     damage:
       types:
         Caustic: 18
@@ -36,14 +36,14 @@
 
 - type: entity
   name: plasma
-  id: N14BulletLightPlasma
-  parent: N14BulletPlasma
+  id: F14BulletLightPlasma
+  parent: F14BulletPlasma
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     scale: 0.5, 0.5
   - type: Projectile
-    impactEffect: MisfitsBulletPlasmaImpactEffect
+    impactEffect: F14BulletPlasmaImpactEffect
     damage:
       types:
         Caustic: 15
@@ -53,14 +53,14 @@
 
 - type: entity
   name: plasma
-  id: N14BulletBigPlasma
-  parent: N14BulletPlasma
+  id: F14BulletBigPlasma
+  parent: F14BulletPlasma
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     scale: 1.0, 1.0
   - type: Projectile
-    impactEffect: MisfitsBulletPlasmaImpactEffect
+    impactEffect: F14BulletPlasmaImpactEffect
     damage:
       types:
         Caustic: 35
@@ -71,7 +71,7 @@
 
 - type: entity
   name: recharger laser
-  id: N14BulletRechargerLaser
+  id: F14BulletRechargerLaser
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:

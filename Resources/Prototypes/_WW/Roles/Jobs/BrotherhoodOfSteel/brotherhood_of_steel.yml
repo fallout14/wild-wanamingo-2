@@ -1,0 +1,279 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Roles/Jobs/, _Nuclear14/Roles/Jobs/
+# Changed for Wild Wanamingo: Yuma's roster. Names, slots and whitelists from the server's roster; gear is
+# Misfits' (minus the wallet slot and the skirt/satchel/duffel choices, which are loadouts in Wizden).
+# Misfits' playtime and species requirements are left out for now.
+
+- type: job
+  id: F14BoSWestElderCommander
+  name: job-name-bos-west-elder-comm
+  description: job-description-bos-west-elder-comm
+  playTimeTracker: F14BoSWestElderCommander
+  startingGear: F14BoSWestElderCommanderGear
+  icon: F14JobIconBosMCommander
+  supervisors: job-supervisors-bos-west-elder
+  whitelisted: true
+  accessGroups:
+  - F14BOSElder
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14BrotherhoodOfSteel
+      - type: PowerArmorProficiency
+
+- type: startingGear
+  id: F14BoSWestElderCommanderGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpskirtBOSBlack
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingBootsLeatherFilled
+    outerClothing: F14ClothingOuterBrotherhoodElderCoat
+    hands: F14ClothingHandsGlovesCombat
+    pocket1: F14BoSBrotherhoodElderKits
+    id: F14IDBrotherhoodOfSteelHolotagElder
+    ears: F14ClothingHeadsetBrotherhoodOfSteel
+    belt: F14ClothingBeltBoSWebbing
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14BoSMidPaladinCommander
+  name: job-name-bos-mid-paladin-comm
+  description: job-description-bos-mid-paladin-comm
+  playTimeTracker: F14BoSMidPaladinCommander
+  startingGear: F14BoSMidPaladinCommanderGear
+  icon: F14JobIconBosMCommander
+  supervisors: job-supervisors-bos-mid-commander
+  accessGroups:
+  - F14BOSHeadPaladin
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14BrotherhoodOfSteel
+      - type: PowerArmorProficiency
+
+- type: startingGear
+  id: F14BoSMidPaladinCommanderGear
+  equipment:
+    jumpsuit: F14ClothingUniformBosRecon
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingBootsLeatherFilled
+    head: F14ClothingPaladinBeret
+    outerClothing: F14ClothingOuterPowerArmorWashT51Elite
+    hands: F14ClothingHandsGlovesCombat
+    pocket1: F14BoSBrotherhoodHeadPaladinKits
+    id: F14HeadPaladinPipBoy
+    ears: F14ClothingHeadsetBrotherhoodOfSteel
+    belt: F14ClothingBeltPaladinWebbing
+  storage:
+    back:
+    - F14IFAKMilitary
+    - F14GrenadePlasma
+    - GrenadeIncendiary
+
+- type: job
+  id: F14BoSHeadKnight
+  name: job-name-bos-headknight
+  description: job-description-bos-headknight
+  playTimeTracker: F14BoSHeadKnight
+  startingGear: F14BoSHeadKnightGear
+  icon: F14JobIconBosMKnight
+  supervisors: job-supervisors-bos-headknight
+  accessGroups:
+  - F14BOSHeadKnight
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14BrotherhoodOfSteel
+
+- type: startingGear
+  id: F14BoSHeadKnightGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpskirtBOSBlack
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingBootsLeatherFilled
+    head: F14ClothingHeadKnightBeret
+    outerClothing: F14BoSHeadKnightArmor
+    hands: F14ClothingHandsGlovesCombat
+    pocket1: F14BoSBrotherhoodHeadKnightKits
+    id: F14HeadKnightPipBoy
+    ears: F14ClothingHeadsetBrotherhoodOfSteel
+    belt: F14ClothingBeltBoSCarrier
+  storage:
+    back:
+    - F14ClothingHeadHatBrotherhoodHelmetPaladin
+    - F14IFAKMilitary
+
+- type: job
+  id: F14BoSWestScribe
+  name: job-name-bos-west-scribe
+  description: job-description-bos-west-scribe
+  playTimeTracker: F14BoSWestScribe
+  startingGear: F14BoSWestScribeGear
+  icon: F14JobIconBosMScriptor
+  supervisors: job-supervisors-bos-west
+  accessGroups:
+  - F14BOSHeadScribe
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14BrotherhoodOfSteel
+
+- type: startingGear
+  id: F14BoSWestScribeGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpskirtBOSBlack
+    back: F14ClothingBackpackSatchelMilitary
+    shoes: F14ClothingBootsLeatherFilled
+    head: F14ClothingScribeBeret
+    pocket1: F14BoSBrotherhoodHeadScribeKits
+    id: F14HeadScribePipBoy
+    ears: F14ClothingHeadsetBrotherhoodOfSteelScribe
+    belt: F14ClothingBeltMilitary
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14BoSScribe
+  name: job-name-bos-scribe
+  description: job-description-bos-scribe
+  playTimeTracker: F14BoSScribe
+  startingGear: F14BoSScribeGear
+  icon: F14JobIconBosMScriptor
+  supervisors: job-supervisors-bos-scribe
+  accessGroups:
+  - F14BOSScribe
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14BrotherhoodOfSteel
+
+- type: startingGear
+  id: F14BoSScribeGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpskirtBOSBlack
+    back: F14ClothingBackpackSatchelMilitary
+    shoes: F14ClothingBootsLeatherFilled
+    pocket1: F14BoSBrotherhoodScribeKits
+    id: F14IDBrotherhoodOfSteelHolotagScribe
+    ears: F14ClothingHeadsetBrotherhoodOfSteelScribe
+    belt: F14ClothingBeltMilitary
+  storage:
+    back:
+    - F14IFAKMilitary
+
+- type: job
+  id: F14BoSPaladin
+  name: job-name-bos-paladin
+  description: job-description-bos-paladin
+  playTimeTracker: F14BoSPaladin
+  startingGear: F14BoSPaladinGear
+  icon: F14JobIconBosMPaladin
+  supervisors: job-supervisors-bos-paladin
+  accessGroups:
+  - F14BOSPaladin
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14BrotherhoodOfSteel
+      - type: PowerArmorProficiency
+
+- type: startingGear
+  id: F14BoSPaladinGear
+  equipment:
+    jumpsuit: F14ClothingUniformBosRecon
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingBootsLeatherFilled
+    head: F14ClothingHeadHatCapkhighBoS
+    outerClothing: F14T45ClothingOuterPowerArmorBoS
+    hands: F14ClothingHandsGlovesCombat
+    pocket1: F14BoSBrotherhoodPaladinKits
+    id: F14IDBrotherhoodOfSteelHolotagPaladin
+    ears: F14ClothingHeadsetBrotherhoodOfSteel
+    belt: F14ClothingBeltPaladinWebbing
+  storage:
+    back:
+    - F14IFAKMilitary
+    - GrenadeShrapnel
+
+- type: job
+  id: F14BoSKnight
+  name: job-name-bos-knight
+  description: job-description-bos-knight
+  playTimeTracker: F14BoSKnight
+  startingGear: F14BoSKnightGear
+  icon: F14JobIconBosMKnight
+  supervisors: job-supervisors-bos-knight
+  accessGroups:
+  - F14BOSKnight
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14BrotherhoodOfSteel
+
+- type: startingGear
+  id: F14BoSKnightGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpskirtBOSBlack
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingBootsLeatherFilled
+    head: F14ClothingHeadHatCapkhighBoS
+    outerClothing: F14BoSKnightArmor
+    hands: F14ClothingHandsGlovesCombat
+    pocket1: F14BoSBrotherhoodKnightKits
+    id: F14IDBrotherhoodOfSteelHolotagKnight
+    ears: F14ClothingHeadsetBrotherhoodOfSteel
+    belt: F14ClothingBeltBoSCarrier
+  storage:
+    back:
+    - F14ClothingHeadHatBrotherhoodHelmetMK2
+    - F14IFAKMilitary
+    - F14Binoculars
+    - F14GrenadeFragDefensive
+
+- type: job
+  id: F14BoSInitiate
+  name: job-name-bos-initiate
+  description: job-description-bos-initiate
+  playTimeTracker: F14BoSInitiate
+  startingGear: F14BoSInitiateGear
+  icon: F14JobIconBosMSquire
+  supervisors: job-supervisors-bos-initiate
+  accessGroups:
+  - F14BOSInitiate
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14BrotherhoodOfSteel
+
+- type: startingGear
+  id: F14BoSInitiateGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpskirtBOSBlack
+    back: F14ClothingBackpackMilitary
+    shoes: F14ClothingBootsLeatherFilled
+    outerClothing: F14ClothingOuterMBoSInitiateArmor
+    pocket1: F14BoSBrotherhoodInitiateKits
+    id: F14IDBrotherhoodOfSteelHolotagInitiate
+    ears: F14ClothingHeadsetBrotherhoodOfSteel
+    belt: F14ClothingBeltMilitary
+  storage:
+    back:
+    - F14IFAKMilitary

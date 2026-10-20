@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Cooking/steak.yml
 
 - type: constructionGraph
-  id: N14MeatSteakBrahmin
+  id: F14MeatSteakBrahmin
   start: start
   graph:
   - node: start
@@ -14,10 +14,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: SteakCooked
-    entity: N14FoodMeatBrahminCooked
+    entity: F14FoodMeatBrahminCooked
 
 - type: constructionGraph
-  id: N14MeatSteakBighorner
+  id: F14MeatSteakBighorner
   start: start
   graph:
   - node: start
@@ -29,10 +29,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: SteakCooked
-    entity: N14FoodMeatBighornerCooked
+    entity: F14FoodMeatBighornerCooked
 
 - type: constructionGraph
-  id: N14MeatSteakGecko
+  id: F14MeatSteakGecko
   start: start
   graph:
   - node: start
@@ -44,10 +44,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: SteakCooked
-    entity: N14FoodMeatGeckoCooked
+    entity: F14FoodMeatGeckoCooked
 
 - type: constructionGraph
-  id: N14MeatSteakGeckoFire
+  id: F14MeatSteakGeckoFire
   start: start
   graph:
   - node: start
@@ -59,10 +59,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: SteakCooked
-    entity: N14FoodMeatGeckoFireCooked
+    entity: F14FoodMeatGeckoFireCooked
 
 - type: constructionGraph
-  id: N14MeatSteakGeckoGolden
+  id: F14MeatSteakGeckoGolden
   start: start
   graph:
   - node: start
@@ -74,10 +74,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: SteakCooked
-    entity: N14FoodMeatGeckoGoldenCooked
+    entity: F14FoodMeatGeckoGoldenCooked
 
 - type: constructionGraph
-  id: N14MeatSteakRadstag
+  id: F14MeatSteakRadstag
   start: start
   graph:
   - node: start
@@ -89,10 +89,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: SteakCooked
-    entity: N14FoodMeatRadstagCooked
+    entity: F14FoodMeatRadstagCooked
 
 - type: constructionGraph
-  id: N14MeatSteakRadhog
+  id: F14MeatSteakRadhog
   start: start
   graph:
   - node: start
@@ -104,10 +104,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: SteakCooked
-    entity: N14FoodMeatRadhogCooked
+    entity: F14FoodMeatRadhogCooked
 
 - type: constructionGraph
-  id: N14MeatSteakPigrat
+  id: F14MeatSteakPigrat
   start: start
   graph:
   - node: start
@@ -119,10 +119,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: SteakCooked
-    entity: N14FoodMeatPigratCooked
+    entity: F14FoodMeatPigratCooked
 
 - type: constructionGraph
-  id: N14MeatSteakRadscorpion
+  id: F14MeatSteakRadscorpion
   start: start
   graph:
   - node: start
@@ -134,10 +134,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: SteakCooked
-    entity: N14FoodMeatRadscorpionCooked
+    entity: F14FoodMeatRadscorpionCooked
 
 - type: constructionGraph
-  id: N14MeatSteakYaoguai
+  id: F14MeatSteakYaoguai
   start: start
   graph:
   - node: start
@@ -149,10 +149,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: SteakCooked
-    entity: N14FoodMeatYaoguaiCooked
+    entity: F14FoodMeatYaoguaiCooked
 
 - type: constructionGraph
-  id: N14MeatMorsels
+  id: F14MeatMorsels
   start: start
   graph:
   - node: start
@@ -164,10 +164,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: MeatCooked
-    entity: N14FoodMeatSquirrelCooked # Corvax-Change
+    entity: F14FoodMeatSquirrelCooked # Corvax-Change
 
 - type: constructionGraph
-  id: N14MeatMirelurkClaw
+  id: F14MeatMirelurkClaw
   start: start
   graph:
   - node: start
@@ -179,10 +179,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: MeatCooked
-    entity: N14FoodMeatMirelurkClawCooked
+    entity: F14FoodMeatMirelurkClawCooked
 
 - type: constructionGraph
-  id: N14MeatRadlurkClaw
+  id: F14MeatRadlurkClaw
   start: start
   graph:
   - node: start
@@ -194,10 +194,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: MeatCooked
-    entity: N14FoodMeatRadlurkClawCooked
+    entity: F14FoodMeatRadlurkClawCooked
 
 - type: constructionGraph
-  id: N14MeatIguana
+  id: F14MeatIguana
   start: start
   graph:
   - node: start
@@ -209,10 +209,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: MeatCooked
-    entity: N14FoodMeatIguanaCooked
+    entity: F14FoodMeatIguanaCooked
 
 - type: constructionGraph
-  id: N14MeatRadroach
+  id: F14MeatRadroach
   start: start
   graph:
   - node: start
@@ -224,10 +224,10 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: MeatCooked
-    entity: N14FoodMeatRadroachFilletCooked
+    entity: F14FoodMeatRadroachFilletCooked
 
 - type: constructionGraph
-  id: N14MeatRadscorpionLeg
+  id: F14MeatRadscorpionLeg
   start: start
   graph:
   - node: start
@@ -239,4 +239,4 @@
       steps:
       - minTemperature: 335 # WW: was 305 K (32 C), Wizden red meat temperature
   - node: MeatCooked
-    entity: N14FoodMeatRadscorpionLegBoiled
+    entity: F14FoodMeatRadscorpionLegBoiled

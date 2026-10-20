@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Reagents/medicine.yml, Resources/Prototypes/_Nuclear14/Reagents/medicine.yml
 
 - type: reagent
-  id: MisfitsAntibiotics
+  id: F14Antibiotics
   name: reagent-name-antibiotics
   group: Wasteland
   desc: reagent-desc-antibiotics
@@ -17,7 +17,7 @@
         probability: 0.01
 
 - type: reagent
-  id: MisfitsRadShield
+  id: F14RadShield
   name: reagent-name-radshield
   group: Wasteland
   desc: reagent-desc-radshield
@@ -37,14 +37,14 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsRadShield
+          reagent: F14RadShield
           min: 25
         damage:
           types:
             Poison: 0.4
 
 - type: reagent
-  id: MisfitsX111Compound
+  id: F14X111Compound
   name: reagent-name-x111-compound
   group: Wasteland
   desc: reagent-desc-x111-compound
@@ -62,7 +62,7 @@
             Radiation: -10
 
 - type: reagent
-  id: MisfitsRushingWater
+  id: F14RushingWater
   name: reagent-name-rushing-water
   group: Wasteland
   desc: reagent-desc-rushing-water
@@ -89,7 +89,7 @@
       - !type:Jitter
 
 - type: reagent
-  id: MisfitsAntidoteWeak
+  id: F14AntidoteWeak
   name: reagent-name-antidote-mixture
   group: Chems
   desc: reagent-desc-antidote-mixture
@@ -113,7 +113,7 @@
         probability: 0.01 # TODO: rework antidotes to heal rad/poison by vomitting
 
 - type: reagent
-  id: MisfitsBloodShield
+  id: F14BloodShield
   name: reagent-name-blood-shield
   group: Wasteland
   desc: reagent-desc-blood-shield
@@ -138,7 +138,7 @@
       # TODO: replace Poison healing with a proper temporary poison-resistance status
 
 - type: reagent
-  id: MisfitsDaturaHide
+  id: F14DaturaHide
   name: reagent-name-datura-hide
   group: Wasteland
   desc: reagent-desc-datura-hide
@@ -155,7 +155,7 @@
         time: 3
 
 - type: reagent
-  id: MisfitsSnakebiteTourniquet
+  id: F14SnakebiteTourniquet
   name: reagent-name-snakebite-tourniquet
   group: Wasteland
   desc: reagent-desc-snakebite-tourniquet
@@ -167,16 +167,16 @@
       metabolismRate: 0.5
       effects:
       - !type:AdjustReagent
-        reagent: N14CazadorVenom
+        reagent: F14CazadorVenom
         amount: -3
       - !type:AdjustReagent
-        reagent: N14NightstalkerVenom
+        reagent: F14NightstalkerVenom
         amount: -3
       - !type:AdjustReagent
-        reagent: MisfitsAshViperVenom
+        reagent: F14AshViperVenom
         amount: -3
       - !type:AdjustReagent
-        reagent: N14FireToxin
+        reagent: F14FireToxin
         amount: -2
       - !type:HealthChange
         damage:
@@ -186,7 +186,7 @@
         amount: -0.5
 
 - type: reagent
-  id: MisfitsFieryPurgative
+  id: F14FieryPurgative
   name: reagent-name-fiery-purgative
   group: Wasteland
   desc: reagent-desc-fiery-purgative
@@ -204,13 +204,13 @@
             Radiation: -2
             Heat: 0.2
       - !type:AdjustReagent
-        reagent: N14CazadorVenom
+        reagent: F14CazadorVenom
         amount: -1
       - !type:AdjustReagent
-        reagent: N14NightstalkerVenom
+        reagent: F14NightstalkerVenom
         amount: -1
       - !type:AdjustReagent
-        reagent: MisfitsAshViperVenom
+        reagent: F14AshViperVenom
         amount: -1
       - !type:MovementSpeedModifier
         walkSpeedModifier: 0.90
@@ -219,7 +219,7 @@
         probability: 0.08
 
 - type: reagent
-  id: MisfitsRefreshingBeverage
+  id: F14RefreshingBeverage
   name: reagent-name-refreshing-beverage
   group: Wasteland
   desc: reagent-desc-refreshing-beverage
@@ -250,7 +250,7 @@
         time: 600
 
 - type: reagent
-  id: MisfitsCleansingPowder
+  id: F14CleansingPowder
   name: reagent-name-cleansing-powder
   group: Chems
   desc: reagent-desc-cleansing-powder
@@ -276,7 +276,7 @@
         type: Add
 
 - type: reagent
-  id: MisfitsGlowingBloodPack
+  id: F14GlowingBloodPack
   name: reagent-name-glowing-blood-pack
   group: Wasteland
   desc: reagent-desc-glowing-blood-pack
@@ -299,7 +299,7 @@
             Caustic: -0.125
             Asphyxiation: -0.5
             Bloodloss: -1.5
-      # Same underlying component as MisfitsRadShield, but the faster metabolism makes
+      # Same underlying component as F14RadShield, but the faster metabolism makes
       # the protection considerably shorter-lived.
       - !type:ModifyStatusEffect
         effectProto: StatusEffectRadiationProtection
@@ -307,7 +307,7 @@
         time: 7
 
 - type: reagent
-  id: MisfitsHerbalAnodyne
+  id: F14HerbalAnodyne
   name: reagent-name-herbal-anodyne
   group: Wasteland
   desc: reagent-desc-herbal-anodyne
@@ -324,7 +324,7 @@
         type: Remove
 
 - type: reagent
-  id: MisfitsHerbalAntimicrobial
+  id: F14HerbalAntimicrobial
   name: reagent-name-herbal-antimicrobial
   group: Wasteland
   desc: reagent-desc-herbal-antimicrobial
@@ -341,7 +341,7 @@
             Poison: -0.15
 
 - type: reagent
-  id: MisfitsHerbalStimulant
+  id: F14HerbalStimulant
   name: reagent-name-herbal-stimulant
   group: Wasteland
   desc: reagent-desc-herbal-stimulant
@@ -361,7 +361,7 @@
         sprintSpeedModifier: 1.05
 
 - type: reagent
-  id: MisfitsSkeetoSpit
+  id: F14SkeetoSpit
   name: reagent-name-skeeto-spit
   group: Wasteland
   desc: reagent-desc-skeeto-spit
@@ -377,7 +377,7 @@
 # no idea if this actually works
 
 - type: reagent
-  id: MisfitsPenicillin
+  id: F14Penicillin
   name: reagent-name-penicillin
   group: Wasteland
   desc: reagent-desc-penicillin
@@ -388,12 +388,12 @@
     Bloodstream:
       metabolismRate: 0.15
       effects:
-      # Bacterial diseases should list MisfitsPenicillin under DiseaseReagentCure.
+      # Bacterial diseases should list F14Penicillin under DiseaseReagentCure.
       - !type:Vomit
         probability: 0.005
 
 - type: reagent
-  id: MisfitsPrussianBlue
+  id: F14PrussianBlue
   name: reagent-name-prussian-blue
   group: Wasteland
   desc: reagent-desc-prussian-blue
@@ -411,7 +411,7 @@
             Radiation: -1.5
 
 - type: reagent
-  id: MisfitsEpoetine
+  id: F14Epoetine
   group: Wasteland
   name: reagent-name-epoetine
   desc: reagent-desc-epoetine
@@ -428,7 +428,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsEpoetine
+          reagent: F14Epoetine
           min: 20
         damage:
           types:
@@ -436,7 +436,7 @@
             Cold: 1
 
 - type: reagent
-  id: MisfitsPilgrimsRemedy
+  id: F14PilgrimsRemedy
   name: reagent-name-pilgrims-remedy
   group: Wasteland
   desc: reagent-desc-pilgrims-remedy
@@ -463,7 +463,7 @@
         amount: 0.1
 
 - type: reagent
-  id: MisfitsBetaEpoetine
+  id: F14BetaEpoetine
   group: Wasteland
   name: reagent-name-beta-epoetine
   desc: reagent-desc-beta-epoetine
@@ -487,7 +487,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsBetaEpoetine
+          reagent: F14BetaEpoetine
           min: 25
         damage:
           types:
@@ -495,7 +495,7 @@
             Cold: 3
 
 - type: reagent
-  id: MisfitsHealingSalve
+  id: F14HealingSalve
   name: reagent-name-healing-salve
   group: Wasteland
   desc: reagent-desc-healing-salve
@@ -524,7 +524,7 @@
 # ============================================================================
 
 - type: reagent
-  id: MisfitsFury
+  id: F14Fury
   name: reagent-name-fury
   group: Chems
   desc: reagent-desc-fury
@@ -542,7 +542,7 @@
         type: Add
         time: 12
       - !type:Addicting
-        reagent: MisfitsFury
+        reagent: F14Fury
         time: 8
         withdrawalDamage:
           types:
@@ -556,14 +556,14 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsFury
+          reagent: F14Fury
           min: 6
         damage:
           types:
             Poison: 1.5
 
 - type: reagent
-  id: MisfitsCalmex
+  id: F14Calmex
   name: reagent-name-calmex
   group: Chems
   desc: reagent-desc-calmex
@@ -578,13 +578,13 @@
         perceptionBoost: 3
         agilityBoost: 3
       - !type:Addicting
-        reagent: MisfitsCalmex
+        reagent: F14Calmex
         time: 5
         withdrawalSpeedPenalty: 0.80
         withdrawalStaminaDrain: 3
 
 - type: reagent
-  id: MisfitsOverdrive
+  id: F14Overdrive
   name: reagent-name-overdrive
   group: Chems
   desc: reagent-desc-overdrive
@@ -599,7 +599,7 @@
         strengthBoost: 4
         luckBoost: 3
       - !type:Addicting
-        reagent: MisfitsOverdrive
+        reagent: F14Overdrive
         time: 8
         withdrawalStaminaDrain: 7
         withdrawalDamage:
@@ -609,14 +609,14 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsOverdrive
+          reagent: F14Overdrive
           min: 20
         damage:
           types:
             Poison: 2
 
 - type: reagent
-  id: MisfitsXCell
+  id: F14XCell
   name: reagent-name-x-cell
   group: Chems
   desc: reagent-desc-x-cell
@@ -636,7 +636,7 @@
         agilityBoost: 2
         luckBoost: 2
       - !type:Addicting
-        reagent: MisfitsXCell
+        reagent: F14XCell
         time: 10
         withdrawalSpeedPenalty: 0.85
         withdrawalStaminaDrain: 7
@@ -649,14 +649,14 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsXCell
+          reagent: F14XCell
           min: 6
         damage:
           types:
             Poison: 2
 
 - type: reagent
-  id: MisfitsCrank
+  id: F14Crank
   name: reagent-name-crank
   group: Chems
   desc: reagent-desc-crank
@@ -678,7 +678,7 @@
         type: Remove
       - !type:Jitter
       - !type:Addicting
-        reagent: MisfitsCrank
+        reagent: F14Crank
         time: 10
         withdrawalSpeedPenalty: 0.70
         withdrawalStaminaDrain: 9
@@ -692,7 +692,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsCrank
+          reagent: F14Crank
           min: 11
         damage:
           types:
@@ -704,7 +704,7 @@
 # ============================================================================
 
 - type: reagent
-  id: MisfitsGhostcapExtract
+  id: F14GhostcapExtract
   name: reagent-name-ghostcap-extract
   group: Wasteland
   desc: reagent-desc-ghostcap-extract
@@ -729,14 +729,14 @@
         time: 2
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsGhostcapExtract
+          reagent: F14GhostcapExtract
           min: 5
       - !type:MovementSpeedModifier
         walkSpeedModifier: 0.75
         sprintSpeedModifier: 0.75
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsGhostcapExtract
+          reagent: F14GhostcapExtract
           min: 10
       - !type:ModifyKnockdown
         type: Add
@@ -744,12 +744,12 @@
         probability: 0.12
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsGhostcapExtract
+          reagent: F14GhostcapExtract
           min: 15
       # TODO: wire this reagent into HallucinationsSystem for true phantom/audio events.
 
 - type: reagent
-  id: MisfitsWidowsMercy
+  id: F14WidowsMercy
   name: reagent-name-widows-mercy
   group: Wasteland
   desc: reagent-desc-widows-mercy
@@ -771,7 +771,7 @@
         sprintSpeedModifier: 0.85
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsWidowsMercy
+          reagent: F14WidowsMercy
           min: 8
       - !type:ModifyStatusEffect
         effectProto: StatusEffectDrowsiness
@@ -779,7 +779,7 @@
         time: 3
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsWidowsMercy
+          reagent: F14WidowsMercy
           min: 12
       - !type:ModifyKnockdown
         type: Add
@@ -787,11 +787,11 @@
         probability: 0.08
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsWidowsMercy
+          reagent: F14WidowsMercy
           min: 18
 
 - type: reagent
-  id: MisfitsRedBellPoison
+  id: F14RedBellPoison
   name: reagent-name-red-bell-poison
   group: Wasteland
   desc: reagent-desc-red-bell-poison
@@ -813,7 +813,7 @@
         sprintSpeedModifier: 0.80
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsRedBellPoison
+          reagent: F14RedBellPoison
           min: 10
       - !type:ModifyKnockdown
         type: Add
@@ -821,11 +821,11 @@
         probability: 0.10
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsRedBellPoison
+          reagent: F14RedBellPoison
           min: 15
 
 - type: reagent
-  id: MisfitsAshViperVenom
+  id: F14AshViperVenom
   name: reagent-name-ash-viper-venom
   group: Wasteland
   desc: reagent-desc-ash-viper-venom
@@ -851,7 +851,7 @@
         probability: 0.10
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsAshViperVenom
+          reagent: F14AshViperVenom
           min: 10
 
 # ============================================================================
@@ -859,7 +859,7 @@
 # ============================================================================
 
 - type: reagent
-  id: MisfitsLazarusCompound
+  id: F14LazarusCompound
   name: reagent-name-lazarus-compound
   group: Wasteland
   desc: reagent-desc-lazarus-compound
@@ -902,7 +902,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsLazarusCompound
+          reagent: F14LazarusCompound
           min: 12
         damage:
           types:
@@ -910,7 +910,7 @@
             Poison: 2
 
 - type: reagent
-  id: MisfitsClearwake
+  id: F14Clearwake
   name: reagent-name-clearwake
   group: Wasteland
   desc: reagent-desc-clearwake
@@ -941,7 +941,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsClearwake
+          reagent: F14Clearwake
           min: 11
         damage:
           types:
@@ -951,7 +951,7 @@
         TimerReset: 300
 
 - type: reagent
-  id: MisfitsWidowbane
+  id: F14Widowbane
   name: reagent-name-widowbane
   group: Wasteland
   desc: reagent-desc-widowbane
@@ -963,7 +963,7 @@
       metabolismRate: 0.5
       effects:
       - !type:AdjustReagent
-        reagent: MisfitsWidowsMercy
+        reagent: F14WidowsMercy
         amount: -2
       - !type:HealthChange
         damage:
@@ -975,7 +975,7 @@
         probability: 0.02
 
 - type: reagent
-  id: MisfitsCinderSerum
+  id: F14CinderSerum
   name: reagent-name-cinder-serum
   group: Wasteland
   desc: reagent-desc-cinder-serum
@@ -987,7 +987,7 @@
       metabolismRate: 0.5
       effects:
       - !type:AdjustReagent
-        reagent: MisfitsRedBellPoison
+        reagent: F14RedBellPoison
         amount: -2
       - !type:HealthChange
         damage:
@@ -998,7 +998,7 @@
         probability: 0.05
 
 - type: reagent
-  id: MisfitsGravesalt
+  id: F14Gravesalt
   name: reagent-name-gravesalt
   group: Wasteland
   desc: reagent-desc-gravesalt
@@ -1011,22 +1011,22 @@
       effects:
       # Emergency broad purge for the poison family.
       - !type:AdjustReagent
-        reagent: MisfitsGhostcapExtract
+        reagent: F14GhostcapExtract
         amount: -1.5
       - !type:AdjustReagent
-        reagent: MisfitsWidowsMercy
+        reagent: F14WidowsMercy
         amount: -1.5
       - !type:AdjustReagent
-        reagent: MisfitsRedBellPoison
+        reagent: F14RedBellPoison
         amount: -1.5
       - !type:AdjustReagent
-        reagent: MisfitsAshViperVenom
+        reagent: F14AshViperVenom
         amount: -1.5
       - !type:AdjustReagent
-        reagent: N14CazadorVenom
+        reagent: F14CazadorVenom
         amount: -1
       - !type:AdjustReagent
-        reagent: N14NightstalkerVenom
+        reagent: F14NightstalkerVenom
         amount: -1
       - !type:HealthChange
         damage:

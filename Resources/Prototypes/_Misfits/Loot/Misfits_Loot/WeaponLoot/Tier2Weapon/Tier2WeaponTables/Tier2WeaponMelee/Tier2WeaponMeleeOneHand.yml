@@ -1,44 +1,44 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier2Weapon/Tier2WeaponTables/Tier2WeaponMelee/Tier2WeaponMeleeOneHand.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier2_MeleeBluntOneHanded
+  id: F14WeaponLootTier2MeleeBluntOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14BrokenPipe
+      id: F14BrokenPipe
     - !type:EntSelector
-      id: N14PoliceBaton
+      id: F14PoliceBaton
     - !type:EntSelector
-      id: N14TribalClub
+      id: F14TribalClub
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier2_MeleeSharpOneHanded
+  id: F14WeaponLootTier2MeleeSharpOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14ScrapMachete
+      id: F14ScrapMachete
     - !type:EntSelector
-      id: N14Hatchet
+      id: F14Hatchet
     - !type:EntSelector
-      id: N14KitchenKnife
+      id: F14KitchenKnife
     - !type:EntSelector
-      id: N14TribalKnife
+      id: F14TribalKnife
     - !type:EntSelector
-      id: N14BrassKnife
+      id: F14BrassKnife
     - !type:EntSelector
-      id: N14ButchersCleaver
+      id: F14ButchersCleaver
     - !type:EntSelector
-      id: N14CombatKnife
+      id: F14CombatKnife
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier2_MeleeOtherOneHanded
+  id: F14WeaponLootTier2MeleeOtherOneHanded
   table: !type:GroupSelector
     children:
     - !type:EntSelector
       id: Error
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier2_Shield
+  id: F14WeaponLootTier2Shield
   table: !type:GroupSelector
     children:
     - !type:EntSelector

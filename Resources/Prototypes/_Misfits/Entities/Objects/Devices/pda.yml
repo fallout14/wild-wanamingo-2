@@ -1,29 +1,29 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Devices/pda.yml
 
 - type: entity
-  parent: N14BasePipboy
-  id: MisfitsNCRVeteranRangerPipboy
+  parent: F14BasePipboy
+  id: F14NCRVeteranRangerPipboy
   suffix: NCR Veteran Ranger
   components:
   - type: Pda
-    id: N14IDBadgeNCRDesertRangerElite
+    id: F14IDBadgeNCRDesertRangerElite
 
 - type: entity
-  parent: N14BasePipboy
-  id: MisfitsNCRCommanderPipboy
+  parent: F14BasePipboy
+  id: F14NCRCommanderPipboy
   suffix: NCR Captain
   components:
   - type: Pda
-    id: MisfitsIDNCRDogtagCaptain
+    id: F14IDNCRDogtagCaptain
 
 # #Misfits Add - Wastelander Pip-Boy with pre-inserted dogtags for PipBoy Hub networking.
 
 - type: entity
-  parent: N14BasePipboy
-  id: MisfitsWastelanderPipboy
+  parent: F14BasePipboy
+  id: F14WastelanderPipboy
   suffix: Wastelander
   components:
   - type: Pda
-    id: MisfitsClothingNeckDogtags
+    id: F14ClothingNeckDogtags
 
 #MARK: Vault

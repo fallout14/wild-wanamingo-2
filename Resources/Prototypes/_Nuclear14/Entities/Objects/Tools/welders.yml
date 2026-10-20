@@ -4,7 +4,7 @@
 - type: entity
   name: welding tool
   parent: Welder
-  id: N14Welder
+  id: F14Welder
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Tools/welder.rsi
@@ -23,12 +23,12 @@
     color: orange
   - type: Tag # Corvax-Change
     tags:
-      - N14Welder
+      - F14Welder
 
 - type: entity
   name: industrial welding tool
-  parent: N14Welder
-  id: N14WelderIndustrial
+  parent: F14Welder
+  id: F14WelderIndustrial
   description: "An industrial welder with over double the fuel capacity."
   components:
   - type: Sprite
@@ -45,8 +45,8 @@
 
 - type: entity
   name: advanced industrial welding tool
-  parent: N14WelderIndustrial
-  id: N14WelderIndustrialAdvanced
+  parent: F14WelderIndustrial
+  id: F14WelderIndustrialAdvanced
   description: "An advanced industrial welder with over double the fuel capacity and hotter flame."
   components:
   - type: Sprite
@@ -58,8 +58,8 @@
 
 - type: entity
   name: experimental welding tool
-  parent: N14Welder
-  id: N14WelderExperimental
+  parent: F14Welder
+  id: F14WelderExperimental
   description: "An experimental welder capable of self-fuel generation and less harmful to the eyes."
   components:
   - type: Sprite

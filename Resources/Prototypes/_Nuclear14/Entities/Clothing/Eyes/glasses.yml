@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClothingEyesBase
-  id: N14ClothingEyesGlassesWelding
+  id: F14ClothingEyesGlassesWelding
   name: welding goggles
   description: Goggles designed to protect the eyes against common work hazards, it has extra protection for welding.
   components:
@@ -14,11 +14,11 @@
   - type: EyeProtection
   - type: Tag
     tags:
-    - MisfitsWeldingGoggles # #Cythisiax Added - lets utility belts store the welding goggles
+    - F14WeldingGoggles # #Cythisiax Added - lets utility belts store the welding goggles
 
 - type: entity
   parent: ClothingEyesBase
-  id: N14ClothingEyesGlassesPilot
+  id: F14ClothingEyesGlassesPilot
   name: pilot goggles
   description: Goggles designed to cover the eyes, commonly used by pilots in their flying machines.
   components:
@@ -31,7 +31,7 @@
 
 - type: entity
   parent: ClothingEyesBase
-  id: N14ClothingEyesGlassesGoggles
+  id: F14ClothingEyesGlassesGoggles
   name: goggles
   description: A big pair of goggles that protect the eyes while keeping a good field of view.
   components:
@@ -42,7 +42,7 @@
 
 - type: entity
   parent: ClothingEyesBase
-  id: N14ClothingEyesGlasses
+  id: F14ClothingEyesGlasses
   name: glasses
   description: A pair of glasses that help correct the vision of those born unfortunate.
   components:
@@ -54,7 +54,7 @@
 
 - type: entity
   parent: ClothingEyesBase
-  id: N14ClothingEyesSunGlasses
+  id: F14ClothingEyesSunGlasses
   name: sun glasses
   description: A pair of black sunglasses, perfect to protect against the sun.
   components:
@@ -71,7 +71,7 @@
 
 - type: entity
   parent: ClothingEyesBase
-  id: N14ClothingEyesNCRNVGs
+  id: F14ClothingEyesNCRNVGs
   name: night vision goggles
   description: Goggles designed to see in the dark, but doesn't do much against flashing lights, are quite heavy and unbalanced.
   components:

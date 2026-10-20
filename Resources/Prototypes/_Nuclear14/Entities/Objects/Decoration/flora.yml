@@ -1,0 +1,104 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Decoration/flora.yml
+
+- type: entity
+  id: F14FloraLogBase
+  name: log
+  description: Once a tree, always a log.
+  suffix: Mapping
+  abstract: true
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    noRot: true
+    sprite: Nuclear14/Structures/Decoration/flora.rsi
+    state: tree_log
+    drawdepth: FloorObjects
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        density: 2000
+        mask:
+        - TableMask
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/Effects/chop.ogg
+        params:
+          variation: 0.05
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 8
+  - type: Pullable
+
+- type: entity
+  parent: F14FloraLogBase
+  id: F14FloraLogTimber
+  name: timber
+  suffix: item
+  components:
+  - type: Sprite
+    state: tree_timber
+  - type: Gatherable
+    toolWhitelist:
+      tags:
+        - Saw
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      # #Misfits Fix - Use OreVein-only drops to prevent stack-count roll multiplication on timber.
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Stack
+    stackType: F14Timber
+    count: 1
+  - type: Material
+  - type: Item
+    size: Huge

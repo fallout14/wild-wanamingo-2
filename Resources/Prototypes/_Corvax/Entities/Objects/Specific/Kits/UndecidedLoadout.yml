@@ -2,10 +2,10 @@
 # Resources/Prototypes/Corvax/Entities/Objects/Specific/Kits/UndecidedLoadout.yml
 
 - type: entity
-  id: CorvaxLegionLegateloadoutkits
+  id: F14LegionLegateloadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -20,7 +20,7 @@
     - LegateImperatorSet
 
 - type: entity
-  id: CorvaxLegionCenturionloadoutkits
+  id: F14LegionCenturionloadoutkits
   name: kit
   description: "please only take one."
   parent: BaseItem
@@ -47,10 +47,10 @@
 # Goes in pocket2 of CaesarLegionCenturionGear. Separate from the weapon/role kit in pocket1.
 
 - type: entity
-  id: CorvaxLegionCenturionArmorloadoutkits
+  id: F14LegionCenturionArmorloadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -68,10 +68,10 @@
     - CenturionArmorUnbrokenSet
 
 - type: entity
-  id: CorvaxLegionVenatorloadoutkits
+  id: F14LegionVenatorloadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -86,10 +86,10 @@
     - VenatorExecutionerSet
 
 - type: entity
-  id: CorvaxLegionVexillariusloadoutkits
+  id: F14LegionVexillariusloadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -104,10 +104,10 @@
     - VexillariusSkirmisherSet
 
 - type: entity
-  id: CorvaxLegionExplorerloadoutkits
+  id: F14LegionExplorerloadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -121,10 +121,10 @@
     - ExplorerRaiderSet
 
 - type: entity
-  id: CorvaxLegionOptioloadoutkits
+  id: F14LegionOptioloadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -139,10 +139,10 @@
     - OptioInquisitorSet
 
 - type: entity
-  id: CorvaxLegionHoundmasterloadoutkits
+  id: F14LegionHoundmasterloadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -157,10 +157,10 @@
     - HoundmasterMedicSet
 
 - type: entity
-  id: CorvaxLegionAuxilialoadoutkits
+  id: F14LegionAuxilialoadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -175,10 +175,10 @@
     - AuxiliaMedicSet
 
 - type: entity
-  id: CorvaxLegionRecruitDecanusloadoutkits
+  id: F14LegionRecruitDecanusloadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -193,10 +193,10 @@
     - RecruitDecanusCrusherSet
 
 - type: entity
-  id: CorvaxLegionDeanloadoutkits
+  id: F14LegionDeanloadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -213,10 +213,10 @@
     - DecanusDestroyerSet
 
 - type: entity
-  id: CorvaxLegionVeteranloadoutkits
+  id: F14LegionVeteranloadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -231,10 +231,10 @@
     - VeteranGoliathSet # #Misfits Change /Add/: Legion veterans get a dedicated powerfist option.
 
 - type: entity
-  id: CorvaxLegionWarriorloadoutkits
+  id: F14LegionWarriorloadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: ThiefUndeterminedBackpack
     maxSelectedSets: 1
@@ -246,10 +246,10 @@
     - WarriorShieldbearerSet
 
 - type: entity
-  id: CorvaxLegionLegionnaireRecruitloadoutkits
+  id: F14LegionLegionnaireRecruitloadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -264,10 +264,10 @@
     - LegionnaireRecruitMedicSet
 
 - type: entity
-  id: CorvaxLegionRecruitInitiateloadoutkits
+  id: F14LegionRecruitInitiateloadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
@@ -282,10 +282,10 @@
     - RecruitCampMedicSet
 
 - type: entity
-  id: CorvaxLegionRecruitloadoutkits
+  id: F14LegionRecruitloadoutkits
   name: kit
   description: "please only take one."
-  parent: CorvaxLegionCenturionloadoutkits
+  parent: F14LegionCenturionloadoutkits
   components:
   - type: ThiefUndeterminedBackpack
     maxSelectedSets: 1
@@ -457,8 +457,8 @@
 # NCRMP Investegator Kits
 
 - type: entity
-  id: CorvaxNCRMPinvestigatorKits
-  parent: N14BaseLoadoutKit
+  id: F14NCRMPinvestigatorKits
+  parent: F14BaseLoadoutKit
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/kits.rsi

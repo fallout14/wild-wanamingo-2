@@ -4,7 +4,7 @@
   name: suture
   description: A plain surgical suture. Closes wounds and treats blunt-force trauma, though not as well as a medicated one.
   parent: MedicatedSuture
-  id: MisfitsSuture
+  id: F14Suture
   suffix: Full
   components:
   - type: Sprite
@@ -27,7 +27,7 @@
     healingEndSound:
       path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
-    stackType: MisfitsSuture
+    stackType: F14Suture
     count: 10
     baseLayer: base
     layerStates:
@@ -46,19 +46,19 @@
     price: 2
 
 - type: entity
-  id: MisfitsSuture1
-  parent: MisfitsSuture
+  id: F14Suture1
+  parent: F14Suture
   suffix: Single
   components:
   - type: Stack
-    stackType: MisfitsSuture
+    stackType: F14Suture
     count: 1
 
 - type: entity
   name: improvised suture
   description: Thread and a bent needle. It'll close a wound, but it's hardly sterile.
   parent: MedicatedSuture
-  id: MisfitsImprovisedSuture
+  id: F14ImprovisedSuture
   suffix: Full
   components:
   - type: Sprite
@@ -82,7 +82,7 @@
     healingEndSound:
       path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
-    stackType: MisfitsImprovisedSuture
+    stackType: F14ImprovisedSuture
     count: 10
     baseLayer: base
     layerStates:
@@ -101,12 +101,12 @@
     price: 1
 
 - type: entity
-  id: MisfitsImprovisedSuture1
-  parent: MisfitsImprovisedSuture
+  id: F14ImprovisedSuture1
+  parent: F14ImprovisedSuture
   suffix: Single
   components:
   - type: Stack
-    stackType: MisfitsImprovisedSuture
+    stackType: F14ImprovisedSuture
     count: 1
 
 # ============================================================================
@@ -119,7 +119,7 @@
   name: aloe regenerative mesh
   description: A regenerative mesh soaked in aloe. Soothes burns, but not as well as the real thing.
   parent: RegenerativeMesh
-  id: MisfitsAloeMesh
+  id: F14AloeMesh
   suffix: Full
   components:
   - type: Sprite
@@ -142,7 +142,7 @@
     healingEndSound:
       path: "/Audio/Items/Medical/ointment_end.ogg"
   - type: Stack
-    stackType: MisfitsAloeMesh
+    stackType: F14AloeMesh
     count: 10
     baseLayer: base
     layerStates:
@@ -161,10 +161,10 @@
     price: 2
 
 - type: entity
-  id: MisfitsAloeMesh1
-  parent: MisfitsAloeMesh
+  id: F14AloeMesh1
+  parent: F14AloeMesh
   suffix: Single
   components:
   - type: Stack
-    stackType: MisfitsAloeMesh
+    stackType: F14AloeMesh
     count: 1

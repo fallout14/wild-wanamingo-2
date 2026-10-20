@@ -1,0 +1,105 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Roles/Jobs/factions.yml (Yuma departments)
+
+- type: department
+  id: F14NCR
+  name: department-NCR
+  description: department-NCR-description
+  color: "#c9a86b"
+  roles:
+  - F14NCRCommander
+  - F14NCRPlatoonLeader
+  - F14NCRDoctor
+  - F14NCRRO
+  - F14NCRNCO
+  - F14NCRWS
+  - F14NCRMedic
+  - F14NCRCadet
+  - F14NCRGarrisonTrooper
+
+- type: department
+  id: F14NCRRangers
+  name: department-NCRRangers
+  description: department-NCRRangers-description
+  color: "#8a6d3b"
+  roles:
+  - F14NCRVeteranRanger
+  - F14NCRPatrolRanger
+
+- type: department
+  id: F14CaesarLegion
+  name: department-CaesarLegion
+  description: department-CaesarLegion-description
+  color: "#a32020"
+  roles:
+  - F14CaesarLegionCenturion
+  - F14CaesarLegionVexillarius
+  - F14CaesarLegionExplorer
+  - F14CaesarLegionHoundmaster
+  - F14CaesarLegionForgemaster
+  - F14CaesarLegionDean
+  - F14CaesarLegionLegionnaireRecruit
+  - F14CaesarLegionLegionnaireWarrior
+  - F14CaesarLegionLegionnaireVeteran
+  - F14CaesarLegionAuxilia
+  - F14CaesarLegionSlave
+
+- type: department
+  id: F14BrotherhoodOfSteel
+  name: department-BrotherhoodOfSteel
+  description: department-BrotherhoodOfSteel-description
+  color: "#3d5a80"
+  roles:
+  - F14BoSWestElderCommander
+  - F14BoSMidPaladinCommander
+  - F14BoSHeadKnight
+  - F14BoSWestScribe
+  - F14BoSScribe
+  - F14BoSPaladin
+  - F14BoSKnight
+  - F14BoSInitiate
+
+- type: department
+  id: F14Townsfolk
+  name: department-Townsfolk
+  description: department-Townsfolk-description
+  color: "#5c733a"
+  roles:
+  - F14TownMayor
+  - F14TownSheriff
+  - F14TownDeputy
+  - F14WastelandBartender
+  - F14WastelandFarmer
+  - F14TownMechanic
+  - F14TownShopkeeper
+  - F14Townsperson
+
+- type: department
+  id: F14Tribe
+  name: department-Tribe
+  description: department-Tribe-description
+  color: "#7b5e3b"
+  roles:
+  - F14TribalElder
+  - F14Tribal
+  - F14TribalFarmer
+  - F14TribalShaman
+
+- type: department
+  id: F14FollowersOfTheApocalypse
+  name: department-FollowersOfTheApocalypse
+  description: department-FollowersOfTheApocalypse-description
+  color: "#6c8ebf"
+  roles:
+  - F14FollowerDirector
+  - F14FollowerHead
+  - F14FollowerDoctor
+  - F14FollowerGuard
+  - F14FollowerVolunteer
+
+- type: department
+  id: F14Wastelander
+  name: department-Wastelander
+  description: department-Wastelander-description
+  color: "#81c784"
+  roles:
+  - F14Wastelander

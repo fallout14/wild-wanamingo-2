@@ -2,19 +2,19 @@
 
 - type: entity
   abstract: true
-  id: MisfitsMobBaseHostileNoAccent
-  parent: N14MobBaseSimple
+  id: F14MobBaseHostileNoAccent
+  parent: F14MobBaseSimple
   description: It's a dirty wasteland animal. Watch out for it's bite, it could be infectious.
   components:
   - type: NPCRetaliation # Aggro on the attacker when damaged from any range
     attackMemoryLength: 30
   - type: NpcFactionMember
     factions:
-    - N14WastelandAnimal
+    - F14WastelandAnimal
   - type: ProximityNPC # Misfits Add — sleep distant NPCs to reduce tick load
   - type: HTN
     rootTask:
-      task: N14RangedHostileCompound
+      task: F14RangedHostileCompound
     blackboard:
       NavSmash: !type:Bool
         true
@@ -38,12 +38,12 @@
         Base: dead
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadRaw
+    - id: F14FoodMeatRadRaw
       amount: 1
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: N14WastelandBlood
+      - ReagentId: F14WastelandBlood
         Quantity: 50
   - type: CombatMode
   - type: MeleeWeapon
@@ -62,7 +62,7 @@
         Piercing: 0.666667
   - type: SolutionManager
     solutions:
-    - N14MobBaseHostileNoAccentSolutionMelee
+    - F14MobBaseHostileNoAccentSolutionMelee
   - type: MeleeChemicalInjector
     solution: melee
 
@@ -70,7 +70,7 @@
 
 - type: entity
   parent: Solution
-  id: N14MobBaseHostileNoAccentSolutionMelee
+  id: F14MobBaseHostileNoAccentSolutionMelee
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
@@ -83,20 +83,20 @@
 - type: entity
   name: super mutant
   abstract: true
-  id: MisfitsMobBaseHostileSuperMutant
-  parent: N14MobBaseHostile
+  id: F14MobBaseHostileSuperMutant
+  parent: F14MobBaseHostile
   description: A hulking post-human mutation, product of the FEV virus. Radiation resistant and brutally strong.
   components:
   - type: Damageable
-    damageModifierSet: MisfitsSuperMutantMob
+    damageModifierSet: F14SuperMutantMob
   - type: Injurable
-    damageContainer: MisfitsNPCBiological  # Misfits Change
+    damageContainer: F14NPCBiological  # Misfits Change
   - type: NpcFactionMember
     factions:
-    - MisfitsSuperMutant
+    - F14SuperMutant
   - type: HTN
     rootTask:
-      task: N14RangedHostileCompound
+      task: F14RangedHostileCompound
     blackboard:
       NavSmash: !type:Bool
         true
@@ -137,13 +137,13 @@
     minInterval: 15
     maxInterval: 60
     sound:
-      collection: MisfitsSuperMutantIdle
+      collection: F14SuperMutantIdle
       params:
         volume: -6
         maxDistance: 7
   - type: AggroSound #Misfits Change - separate aggro/alert vocalization on combat entry
     sound:
-      collection: MisfitsSuperMutantAlert
+      collection: F14SuperMutantAlert
       params:
         volume: -3
         maxDistance: 10

@@ -2,136 +2,136 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Lathes/misc.yml
 
 - type: latheRecipe
-  id: N14LightTube
+  id: F14LightTube
   result: LightTube
   categories:
-  - N14Lights
+  - F14Lights
   completetime: 2
   materials:
-    N14Copper: 50 #Misfits Change: Makes More sense
+    F14Copper: 50 #Misfits Change: Makes More sense
     Glass: 100 # Forge-Change
 
 - type: latheRecipe
-  id: N14LedLightTube
+  id: F14LedLightTube
   result: LedLightTube
   categories:
-  - N14Lights
+  - F14Lights
   completetime: 2
   materials:
-    N14Copper: 50 #Misfits Change: Makes More sense
+    F14Copper: 50 #Misfits Change: Makes More sense
     Glass: 100 # Forge-Change
 
 - type: latheRecipe
-  id: N14SodiumLightTube
+  id: F14SodiumLightTube
   result: SodiumLightTube
   categories:
-  - N14Lights
+  - F14Lights
   completetime: 2
   materials:
-    N14Copper: 50 #Misfits Change: Makes More sense
+    F14Copper: 50 #Misfits Change: Makes More sense
     Glass: 100 # Forge-Change
 
 - type: latheRecipe
-  id: N14ExteriorLightTube
+  id: F14ExteriorLightTube
   result: ExteriorLightTube
   categories:
-  - N14Lights
+  - F14Lights
   completetime: 2
   materials:
-    N14Copper: 50 #Misfits Change: Makes More sense
+    F14Copper: 50 #Misfits Change: Makes More sense
     Glass: 100 # Forge-Change
 
 - type: latheRecipe
-  id: N14LightBulb
+  id: F14LightBulb
   result: LightBulb
   categories:
-  - N14Lights
+  - F14Lights
   completetime: 2
   materials:
-    N14Copper: 50 #Misfits Change: Makes More sense
+    F14Copper: 50 #Misfits Change: Makes More sense
     Glass: 100 # Forge-Change
 
 - type: latheRecipe
-  id: N14LedLightBulb
+  id: F14LedLightBulb
   result: LedLightBulb
   categories:
-  - N14Lights
+  - F14Lights
   completetime: 2
   materials:
-    N14Copper: 50 #Misfits Change: Makes More sense
+    F14Copper: 50 #Misfits Change: Makes More sense
     Glass: 100 # Forge-Change
 
 - type: latheRecipe
-  id: N14GlowstickRed
+  id: F14GlowstickRed
   result: GlowstickRed
   categories:
-  - N14Lights
+  - F14Lights
   completetime: 2
   materials:
     Plastic: 50
 
 - type: latheRecipe
-  id: N14Flare
+  id: F14Flare
   result: Flare
   categories:
-  - N14Lights
+  - F14Lights
   completetime: 2
   materials:
     Plastic: 50
     Sulfur: 25
 
 - type: latheRecipe
-  id: N14FlashlightLantern
+  id: F14FlashlightLantern
   result: EmptyFlashlightLantern
   categories:
-  - N14Lights
+  - F14Lights
   completetime: 2
   materials:
     Steel: 50
-    N14Copper: 50 #Misfits Change: Makes More sense
+    F14Copper: 50 #Misfits Change: Makes More sense
     Glass: 100
     Plastic: 100
 
 - type: latheRecipe
-  id: N14Matchbox
+  id: F14Matchbox
   result: Matchbox
   categories:
-  - N14Misc
+  - F14Misc
   completetime: 1
   materials:
     Wood: 100
 
 - type: latheRecipe
-  id: N14ClothingBeltQuiverSpear
-  result: N14ClothingBeltQuiverSpear
+  id: F14ClothingBeltQuiverSpear
+  result: F14ClothingBeltQuiverSpear
   categories:
-  - N14Containers
+  - F14Containers
   completetime: 4
   materials:
     Steel: 100
-    N14Leather: 300
+    F14Leather: 300
     Cloth: 100
 
 - type: latheRecipe
   id: ClothingBeltQuiver
   result: ClothingBeltQuiver
   categories:
-  - N14Containers
+  - F14Containers
   completetime: 4
   materials:
-    N14Leather: 400
+    F14Leather: 400
     Cloth: 200
 
 - type: latheRecipe
   id: ArrowRegular
   result: ArrowRegular
   categories:
-  - N14Ammo
+  - F14Ammo
   completetime: 1
   materials:
     Steel: 10
     Wood: 20
-#   N14Paper: 10
+#   F14Paper: 10
 
 #Misfits Remove: Blueprint entities deleted with Stalker14 crafting system
 #- type: latheRecipe
@@ -140,7 +140,7 @@
 #  category: N14Blueprints
 #  completetime: 1
 #  materials:
-#    N14Paper: 100
+#    F14Paper: 100
 
 #- type: latheRecipe
 #  id: N14WeaponLaserRifleMakeshiftBlueprint
@@ -148,7 +148,7 @@
 #  category: N14Blueprints
 #  completetime: 1
 #  materials:
-#    N14Paper: 100
+#    F14Paper: 100
 
 #- type: latheRecipe
 #  id: N14WeaponRifle556PipeBlueprint
@@ -156,84 +156,84 @@
 #  category: N14Blueprints
 #  completetime: 1
 #  materials:
-#    N14Paper: 100
+#    F14Paper: 100
 
 - type: latheRecipe
-  id: N14JunkComponentScrew
-  result: N14JunkComponentScrew
+  id: F14JunkComponentScrew
+  result: F14JunkComponentScrew
   categories:
   - Parts
   completetime: 2
   materials:
-    N14Copper: 100 # Forge-Change
+    F14Copper: 100 # Forge-Change
 
 #Misfits Add: Recipes for some other useful junk.
 
 - type: latheRecipe
-  id: N14JunkComponentGearSmall
-  result: N14JunkComponentGearSmall
+  id: F14JunkComponentGearSmall
+  result: F14JunkComponentGearSmall
   categories:
   - Parts
   completetime: 2
   materials:
-    N14Copper: 150
+    F14Copper: 150
 
 - type: latheRecipe
-  id: N14JunkComponentGearLarge
-  result: N14JunkComponentGearLarge
+  id: F14JunkComponentGearLarge
+  result: F14JunkComponentGearLarge
   categories:
   - Parts
   completetime: 2
   materials:
-    N14Copper: 200
+    F14Copper: 200
 
 - type: latheRecipe
-  id: N14JunkComponentSensorModule
-  result: N14JunkComponentSensorModule
+  id: F14JunkComponentSensorModule
+  result: F14JunkComponentSensorModule
   categories:
   - Parts
   completetime: 2
   materials:
     Circuitry: 100
-    N14Copper: 50
+    F14Copper: 50
 
 - type: latheRecipe
-  id: N14JunkComponentDiode1
-  result: N14JunkComponentDiode1
+  id: F14JunkComponentDiode1
+  result: F14JunkComponentDiode1
   categories:
   - Parts
   completetime: 2
   materials:
     Circuitry: 50
-    N14Copper: 25
+    F14Copper: 25
 
 - type: latheRecipe
-  id: N14JunkComponentFuse1
-  result: N14JunkComponentFuse1
+  id: F14JunkComponentFuse1
+  result: F14JunkComponentFuse1
   categories:
   - Parts
   completetime: 2
   materials:
     Circuitry: 50
-    N14Copper: 25
+    F14Copper: 25
 
 - type: latheRecipe
-  id: N14JunkComponentSwitch
-  result: N14JunkComponentSwitch
+  id: F14JunkComponentSwitch
+  result: F14JunkComponentSwitch
   categories:
   - Parts
   completetime: 2
   materials:
     Circuitry: 100
     Plastic: 50
-    N14Copper: 25
+    F14Copper: 25
 
 - type: latheRecipe
-  id: N14JunkTimer
-  result: N14JunkTimer
+  id: F14JunkTimer
+  result: F14JunkTimer
   categories:
   - Parts
   completetime: 2
   materials:
     Circuitry: 50
-    N14Copper: 25
+    F14Copper: 25

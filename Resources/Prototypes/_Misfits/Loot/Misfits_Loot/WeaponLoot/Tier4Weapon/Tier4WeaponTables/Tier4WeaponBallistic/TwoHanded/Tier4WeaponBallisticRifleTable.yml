@@ -1,90 +1,90 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier4Weapon/Tier4WeaponTables/Tier4WeaponBallistic/TwoHanded/Tier4WeaponBallisticRifleTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_GunsBulletRifleAuto
+  id: F14WeaponLootTier4GunsBulletRifleAuto
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: MisfitsWeaponRifle5mmCarbine
+      id: F14WeaponRifle5mmCarbine
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556R91
+      id: F14WeaponRifle556R91
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponRifleInfiltrator # stealth R91
+      id: F14WeaponRifleInfiltrator # stealth R91
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556EM2
+      id: F14WeaponRifle556EM2
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponRifle308Fal
+      id: F14WeaponRifle308Fal
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle762Canadian
+      id: F14WeaponRifle762Canadian
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponRifle556Chinese
+      id: F14WeaponRifle556Chinese
       weight: 4
       #AK 5.45
     - !type:EntSelector
-      id: CorvaxWeaponRifleAk112 #BOS??
+      id: F14WeaponRifleAk112 #BOS??
       weight: 4
 
 
 #temp!!!
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier4_GunsBulletRifleSemi
+  id: F14WeaponLootTier4GunsBulletRifleSemi
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponSniper308PipeRifle
+      id: F14WeaponSniper308PipeRifle
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniper50Pipe
+      id: F14WeaponSniper50Pipe
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniper556Tribal
+      id: F14WeaponSniper556Tribal
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556Service
+      id: F14WeaponRifle556Service
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556ServiceScoped
+      id: F14WeaponRifle556ServiceScoped
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556Scout
+      id: F14WeaponRifle556Scout
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniper308Tribal
+      id: F14WeaponSniper308Tribal
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponRifle308SniperRifle
+      id: F14WeaponRifle308SniperRifle
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponRifle556Rangemaster # bayonet
+      id: F14WeaponRifle556Rangemaster # bayonet
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle762SKS
+      id: F14WeaponRifle762SKS
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniperHunting
+      id: F14WeaponSniperHunting
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniperEnfield
+      id: F14WeaponSniperEnfield
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponSniperCowboyRepeater #.357
+      id: F14WeaponSniperCowboyRepeater #.357
       weight: 4
     - !type:EntSelector
-      id: MisfitsWeaponSniperCowboyRepeater
+      id: F14WeaponSniperCowboyRepeater
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniper45-70BrushGun
+      id: F14WeaponSniper4570BrushGun
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniper45-70BrushGun
+      id: F14WeaponSniper4570BrushGun
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle308Battle
+      id: F14WeaponRifle308Battle
       weight: 4

@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Furniture/junk.yml
 
 - type: entity
-  id: N14JunkWoodBase
+  id: F14JunkWoodBase
   abstract: true
   placement:
     mode: SnapgridCenter
@@ -50,8 +50,8 @@
 # No fixture on this base, inherit from further down for fixture
 
 - type: entity
-  parent: N14JunkWoodBase
-  id: N14JunkMetalBase
+  parent: F14JunkWoodBase
+  id: F14JunkMetalBase
   abstract: true
   components:
   - type: Damageable
@@ -85,8 +85,8 @@
 # Wood Junk
 
 - type: entity
-  parent: N14JunkWoodBase
-  id: N14JunkDresser
+  parent: F14JunkWoodBase
+  id: F14JunkDresser
   name: broken dresser
   description: Once held underwear. Now it's junk.
   components:
@@ -106,8 +106,8 @@
         - LowImpassable
 
 - type: entity
-  parent: N14JunkDresser
-  id: N14JunkCabinet
+  parent: F14JunkDresser
+  id: F14JunkCabinet
   name: broken cabinet
   description: Once held clothes. Now it's junk.
   components:
@@ -115,8 +115,8 @@
     state: junk_cabinet
 
 - type: entity
-  parent: N14JunkDresser
-  id: N14JunkTable
+  parent: F14JunkDresser
+  id: F14JunkTable
   name: broken table
   description: Ate without table, now I'm angry. Junk.
   components:
@@ -124,8 +124,8 @@
     state: junk_table
 
 - type: entity
-  parent: N14JunkWoodBase
-  id: N14JunkBench
+  parent: F14JunkWoodBase
+  id: F14JunkBench
   name: broken bench
   description: If only I could have rested here. Junk.
   components:
@@ -139,8 +139,8 @@
 # Metal Junk
 
 - type: entity
-  parent: N14JunkMetalBase
-  id: N14JunkMachine
+  parent: F14JunkMetalBase
+  id: F14JunkMachine
   name: broken machine
   description: Rusty old machine. Now it's junk.
   components:
@@ -159,13 +159,13 @@
           collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14ScrapElectronic1:
+          F14ScrapElectronic1:
            min: 1
            max: 3
-          N14ScrapSteel1:
+          F14ScrapSteel1:
            min: 2
            max: 4
-          N14ScrapCopper1:
+          F14ScrapCopper1:
            min: 1
            max: 2
   - type: Fixtures
@@ -182,8 +182,8 @@
         - LowImpassable
 
 - type: entity
-  parent: N14JunkMachine
-  id: N14JunkMicrowave
+  parent: F14JunkMachine
+  id: F14JunkMicrowave
   name: broken microwave
   description: Dirty old microwave. Now it's junk.
   components:
@@ -191,8 +191,8 @@
     state: junk_micro
 
 - type: entity
-  parent: N14JunkMachine
-  id: N14JunkJukebox
+  parent: F14JunkMachine
+  id: F14JunkJukebox
   name: broken jukebox
   description: An old destroyed jukebox. Now it's junk.
   components:
@@ -200,8 +200,8 @@
     state: junk_jukebox
 
 - type: entity
-  parent: N14JunkMetalBase
-  id: N14JunkBed1
+  parent: F14JunkMetalBase
+  id: F14JunkBed1
   name: broken bed
   description: An old bed with a holey mattress. Now it's junk.
   components:
@@ -211,8 +211,8 @@
     state: junk_bed1
 
 - type: entity
-  parent: N14JunkMetalBase
-  id: N14JunkBed2
+  parent: F14JunkMetalBase
+  id: F14JunkBed2
   name: broken bed
   description: A rusty bed frame. Now it's junk.
   components:
@@ -222,8 +222,8 @@
     state: junk_bed2
 
 - type: entity
-  parent: N14JunkMachine
-  id: N14JunkTV
+  parent: F14JunkMachine
+  id: F14JunkTV
   name: broken TV
   description: An old television. Now it's junk.
   components:
@@ -231,8 +231,8 @@
     state: junk_tv
 
 - type: entity
-  parent: N14JunkMachine
-  id: N14JunkArcade
+  parent: F14JunkMachine
+  id: F14JunkArcade
   name: broken arcade game
   description: An old arcade machine. Now it's junk.
   components:
@@ -240,8 +240,8 @@
     state: junk_arcade
 
 - type: entity
-  parent: N14JunkMetalBase
-  id: N14JunkUrinal
+  parent: F14JunkMetalBase
+  id: F14JunkUrinal
   name: broken urinal
   description: A broken stinky urinal.
   components:
@@ -252,7 +252,7 @@
 
 - type: entity
   parent: SeatBase
-  id: N14JunkToilet
+  id: F14JunkToilet
   name: broken toilet
   description: Once a porcelain throne. Now it's junk.
   placement:
@@ -270,8 +270,8 @@
     secretStashName: secret-stash-toilet
 
 - type: entity
-  parent: N14JunkMetalBase
-  id: N14JunkShower
+  parent: F14JunkMetalBase
+  id: F14JunkShower
   name: broken shower
   description: No showering here, it's junk.
   components:
@@ -284,8 +284,8 @@
     drawdepth: Overdoors
 
 - type: entity
-  parent: N14JunkMetalBase
-  id: N14JunkSink
+  parent: F14JunkMetalBase
+  id: F14JunkSink
   name: broken sink
   description: This basin won't hold water anymore.
   components:
@@ -299,7 +299,7 @@
 
 - type: entity
   parent: Mirror
-  id: N14JunkMirror
+  id: F14JunkMirror
   name: broken mirror
   description: Mirror mirror... I hope I don't get bad luck.
   components:
@@ -309,8 +309,8 @@
     drawdepth: Overdoors
 
 - type: entity
-  parent: N14JunkMetalBase
-  id: N14JunkClock
+  parent: F14JunkMetalBase
+  id: F14JunkClock
   name: broken clock
   description: Out of time!
   components:
@@ -324,8 +324,8 @@
 #Tires
 
 - type: entity
-  parent: N14JunkMetalBase #for the moment
-  id: N14JunkTire1
+  parent: F14JunkMetalBase #for the moment
+  id: F14JunkTire1
   name: stack of tires
   description: A stack of old, unusable tires.
   components:
@@ -337,8 +337,8 @@
     snapCardinals: false
 
 - type: entity
-  parent: N14JunkMetalBase #for the moment
-  id: N14JunkTire2
+  parent: F14JunkMetalBase #for the moment
+  id: F14JunkTire2
   name: a pile of tires
   description: A pile of old, unusable tires spread on the ground.
   components:
@@ -350,8 +350,8 @@
     snapCardinals: false
 
 - type: entity
-  parent: N14JunkMetalBase #for the moment
-  id: N14JunkTire3
+  parent: F14JunkMetalBase #for the moment
+  id: F14JunkTire3
   name: a pile of tires
   description: A pile of old, unusable tires spread on the ground.
   components:
@@ -363,8 +363,8 @@
     snapCardinals: false
 
 - type: entity
-  parent: N14JunkMetalBase #for the moment
-  id: N14JunkTire4
+  parent: F14JunkMetalBase #for the moment
+  id: F14JunkTire4
   name: a pile of tires
   description: A pile of old, unusable tires spread on the ground.
   components:
@@ -376,8 +376,8 @@
     snapCardinals: false
 
 - type: entity
-  parent: N14JunkMetalBase #for the moment
-  id: N14JunkTire5
+  parent: F14JunkMetalBase #for the moment
+  id: F14JunkTire5
   name: a pile of tires
   description: A pile of old, unusable tires spread on the ground.
   components:

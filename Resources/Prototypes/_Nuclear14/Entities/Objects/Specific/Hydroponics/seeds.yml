@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseItem
-  id: N14SeedBase
+  id: F14SeedBase
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -15,241 +15,241 @@
       price: 1 # Corvax-Change
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildAgaveClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildAgaveClippingSeed
   name: wild agave clipping
   components:
     - type: Seed
-      plantId: N14WildAgave
+      plantId: F14WildAgave
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/agave.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildBananaYuccaClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildBananaYuccaClippingSeed
   name: wild banana yucca clipping
   components:
     - type: Seed
-      plantId: N14WildBananaYucca
+      plantId: F14WildBananaYucca
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/yucca.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildBarrelCactusClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildBarrelCactusClippingSeed
   name: wild barrel cactus clipping
   components:
     - type: Seed
-      plantId: N14WildBarrelCactus
+      plantId: F14WildBarrelCactus
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/barrelcactus.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildBlackberryClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildBlackberryClippingSeed
   name: wild blackberry clipping
   components:
     - type: Seed
-      plantId: N14WildBlackberry
+      plantId: F14WildBlackberry
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/blackberry.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildBrocFlowerClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildBrocFlowerClippingSeed
   name: broc flower clipping
   components:
     - type: Seed
-      plantId: N14WildBroc
+      plantId: F14WildBroc
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/broc.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildBuffaloGourdClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildBuffaloGourdClippingSeed
   name: wild buffalo gourd clipping
   components:
     - type: Seed
-      plantId: N14WildBuffaloGourd
+      plantId: F14WildBuffaloGourd
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/buffalogourd.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildCabbageClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildCabbageClippingSeed
   name: wild cabbage clipping
   components:
     - type: Seed
-      plantId: N14WildCabbage
+      plantId: F14WildCabbage
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/cabbage.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildCarrotClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildCarrotClippingSeed
   name: wild carrot clipping
   components:
     - type: Seed
-      plantId: N14WildCarrot
+      plantId: F14WildCarrot
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/carrot.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildCoyoteTobaccoClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildCoyoteTobaccoClippingSeed
   name: coyote tobacco clipping
   components:
     - type: Seed
-      plantId: N14CoyoteTobacco
+      plantId: F14CoyoteTobacco
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/coyotetobacco.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraDaturaClippingSeed
+  parent: F14SeedBase
+  id: F14FloraDaturaClippingSeed
   name: datura flower clipping
   components:
     - type: Seed
-      plantId: N14Datura
+      plantId: F14Datura
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/datura.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildGlowpepperClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildGlowpepperClippingSeed
   name: wild glowpepper clipping
   components:
     - type: Seed
-      plantId: N14WildGlowpepper
+      plantId: F14WildGlowpepper
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/jalapeno.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildMaizeClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildMaizeClippingSeed
   name: wild maize clipping
   components:
     - type: Seed
-      plantId: N14WildMaize
+      plantId: F14WildMaize
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/maize.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildHoneyMesquiteClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildHoneyMesquiteClippingSeed
   name: wild mesquite clipping
   components:
     - type: Seed
-      plantId: N14WildMesquite
+      plantId: F14WildMesquite
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/mesquite.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildMutfruitClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildMutfruitClippingSeed
   name: wild mutfuit clipping
   components:
     - type: Seed
-      plantId: N14WildMutfruit
+      plantId: F14WildMutfruit
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/mutfruit.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildNettleClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildNettleClippingSeed
   name: wild nettle clipping
   components:
     - type: Seed
-      plantId: N14WildNettle
+      plantId: F14WildNettle
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/nettle.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildOnionClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildOnionClippingSeed
   name: wild onion clipping
   components:
     - type: Seed
-      plantId: N14WildOnion
+      plantId: F14WildOnion
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/onion.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildPinyonClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildPinyonClippingSeed
   name: wild pinyon clipping
   components:
     - type: Seed
-      plantId: N14WildPinyon
+      plantId: F14WildPinyon
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/pinyon.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildPricklyPearClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildPricklyPearClippingSeed
   name: wild prickly pear clipping
   components:
     - type: Seed
-      plantId: N14WildPricklyPear
+      plantId: F14WildPricklyPear
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/pricklypear.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildRazorgrainClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildRazorgrainClippingSeed
   name: wild razorgrain clipping
   components:
     - type: Seed
-      plantId: N14WildRazorgrain
+      plantId: F14WildRazorgrain
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/razorgrain.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildStarlightBerryClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildStarlightBerryClippingSeed
   name: wild starlight clipping
   components:
     - type: Seed
-      plantId: N14Starlight
+      plantId: F14Starlight
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/starlight.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildTarberryClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildTarberryClippingSeed
   name: wild tarberry clipping
   components:
     - type: Seed
-      plantId: N14Tarberry
+      plantId: F14Tarberry
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/tarberry.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildTatoClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildTatoClippingSeed
   name: wild tato clipping
   components:
     - type: Seed
-      plantId: N14WildTato
+      plantId: F14WildTato
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/tato.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildWhiteHorsenettleClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildWhiteHorsenettleClippingSeed
   name: white horsenettle clipping
   components:
     - type: Seed
-      plantId: N14WildWhiteHorsenettle
+      plantId: F14WildWhiteHorsenettle
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/whitehorsenettle.rsi
 
 - type: entity
-  parent: N14SeedBase
-  id: N14FloraWildXanderRootClippingSeed
+  parent: F14SeedBase
+  id: F14FloraWildXanderRootClippingSeed
   name: wild xander root clipping
   components:
     - type: Seed
-      plantId: N14WildXander
+      plantId: F14WildXander
     - type: Sprite
       sprite: Nuclear14/Objects/Specific/Hydroponics/xander.rsi

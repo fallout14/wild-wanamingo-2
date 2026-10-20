@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/blueprint_recipes_enclave_ammo.yml
 
 - type: latheCategory
-  id: MisfitsBlueprintEnclaveAmmo
+  id: F14BlueprintEnclaveAmmo
   name: lathe-category-blueprint-enclave-ammo
 
 # =====================================================================
@@ -11,43 +11,43 @@
 # Plasma cartridge - feeds every plasma weapon in the Enclave set.
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveAmmoPlasmaCartridge
-  result: N14PlasmaCartridge
+  id: F14BPEnclaveAmmoPlasmaCartridge
+  result: F14PlasmaCartridge
   categories:
-  - MisfitsBlueprintEnclaveAmmo
+  - F14BlueprintEnclaveAmmo
   completetime: 10
   materials:
     Glass: 600
     Circuitry: 100
-    N14ScrapElectronic: 100
+    F14ScrapElectronic: 100
     Lead: 600
 
 # Microfusion cell - feeds the laser rifles and the magneto pistol.
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveAmmoMicrofusionCell
-  result: MisfitsMicrofusionCell
+  id: F14BPEnclaveAmmoMicrofusionCell
+  result: F14MicrofusionCell
   categories:
-  - MisfitsBlueprintEnclaveAmmo
+  - F14BlueprintEnclaveAmmo
   completetime: 4
   materials:
     Glass: 300
     Circuitry: 100
-    N14ScrapElectronic: 300
-    N14Gold: 200
-    N14Silver: 300
+    F14ScrapElectronic: 300
+    F14Gold: 200
+    F14Silver: 300
     Lead: 500
 
 # Pulse energy cell - feeds the pulse pistol.
 
 - type: latheRecipe
-  id: MisfitsBPEnclaveAmmoElectronChargePack
-  result: MisfitsElectronChargePack
+  id: F14BPEnclaveAmmoElectronChargePack
+  result: F14ElectronChargePack
   categories:
-  - MisfitsBlueprintEnclaveAmmo
+  - F14BlueprintEnclaveAmmo
   completetime: 4
   materials:
     Glass: 100
     Circuitry: 100
-    N14ScrapElectronic: 100
+    F14ScrapElectronic: 100
     Lead: 100

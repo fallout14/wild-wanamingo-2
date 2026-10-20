@@ -4,7 +4,7 @@
 - type: entity
   name: hatchet
   parent: BaseItem
-  id: N14Hatchet
+  id: F14Hatchet
   description: A tool that's just as useful as a weapon. Used for chopping things.
   components:
   - type: Clothing
@@ -14,7 +14,7 @@
   - type: Tag
     tags:
     - BotanyHatchet
-    - N14Axe
+    - F14Axe
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Melee/hatchet.rsi
     state: icon
@@ -42,7 +42,7 @@
 - type: entity
   name: tribal hatchet
   parent: BaseItem
-  id: N14TribalHatchet
+  id: F14TribalHatchet
   description: A tool that's just as useful as a weapon. Used for chopping things.
   components:
   - type: Clothing
@@ -52,7 +52,7 @@
   - type: Tag
     tags:
     - BotanyHatchet
-    - N14Axe
+    - F14Axe
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Melee/tribalhatchet.rsi
     state: icon
@@ -79,8 +79,8 @@
 
 - type: entity
   name: fireaxe
-  parent: N14BaseAxe
-  id: N14FireAxe
+  parent: F14BaseAxe
+  id: F14FireAxeBase
   description: Truly the weapon of a madman. Who would think to fight fire with an axe?
   components:
   - type: Sprite
@@ -107,7 +107,7 @@
 - type: entity
   name: axe
   parent: BaseItem
-  id: N14BaseAxe
+  id: F14BaseAxe
   description: A heavy wood axe, classic tool and weapon.
   components:
   - type: Tag

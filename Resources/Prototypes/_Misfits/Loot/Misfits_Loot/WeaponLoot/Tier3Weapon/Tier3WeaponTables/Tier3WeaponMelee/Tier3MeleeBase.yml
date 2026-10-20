@@ -1,40 +1,40 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3WeaponMelee/Tier3MeleeBase.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_MeleeAll
+  id: F14WeaponLootTier3MeleeAll
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier3_MeleeBlunt
+          tableId: F14WeaponLootTier3MeleeBlunt
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier3_MeleeSharp
+          tableId: F14WeaponLootTier3MeleeSharp
 #      - !type:NestedSelector
 #          tableId: M14WeaponLootTier3_MeleeOther
 # stuff here
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_MeleeBlunt
+  id: F14WeaponLootTier3MeleeBlunt
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier3_MeleeBluntOneHanded
+          tableId: F14WeaponLootTier3MeleeBluntOneHanded
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier3_MeleeBluntTwoHanded
+          tableId: F14WeaponLootTier3MeleeBluntTwoHanded
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_MeleeSharp
+  id: F14WeaponLootTier3MeleeSharp
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier3_MeleeSharpOneHanded
+          tableId: F14WeaponLootTier3MeleeSharpOneHanded
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier3_MeleeSharpTwoHanded
+          tableId: F14WeaponLootTier3MeleeSharpTwoHanded
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier3_MeleeOther
+  id: F14WeaponLootTier3MeleeOther
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier3_MeleeOtherOneHanded
+          tableId: F14WeaponLootTier3MeleeOtherOneHanded
       - !type:NestedSelector
-          tableId: MisfitsM14WeaponLootTier3_MeleeOtherTwoHanded
+          tableId: F14WeaponLootTier3MeleeOtherTwoHanded

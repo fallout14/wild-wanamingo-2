@@ -1,0 +1,269 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Roles/Jobs/, _Nuclear14/Roles/Jobs/
+# Changed for Wild Wanamingo: Yuma's roster. Names, slots and whitelists from the server's roster; gear is
+# Misfits' (minus the wallet slot and the skirt/satchel/duffel choices, which are loadouts in Wizden).
+# Misfits' playtime and species requirements are left out for now.
+
+- type: job
+  id: F14TownMayor
+  name: job-name-townmayor
+  description: job-description-townmayor
+  playTimeTracker: F14TownMayor
+  startingGear: F14TownMayorGear
+  icon: F14JobIconTownMayor
+  supervisors: job-supervisors-townsfolk
+  accessGroups:
+  - F14Townie
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Townsfolk
+
+- type: startingGear
+  id: F14TownMayorGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitCheckered
+    ears: F14ClothingHeadsetTown
+    back: F14ClothingBackpackExplorer
+    shoes: F14ClothingShoesBrown
+    id: F14IDBadgeTownMayor
+    pocket1: RadioHandheld
+  storage:
+    back:
+    - F14SurvivalKitWastelander
+
+- type: job
+  id: F14TownSheriff
+  name: job-name-townsheriff
+  description: job-description-townsheriff
+  playTimeTracker: F14TownSheriff
+  startingGear: F14TownSheriffGear
+  icon: F14JobIconTownSheriff
+  supervisors: job-supervisors-townsfolk
+  access:
+  - F14TownieLaw
+  - F14TownieMechanic
+  - F14TownieDoctor
+  - F14WastelandReporter
+  - F14TownsPerson
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Townsfolk
+
+- type: startingGear
+  id: F14TownSheriffGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitTownGuardLight
+    ears: F14ClothingHeadsetTown
+    back: F14ClothingBackpackSatchelMilitary
+    shoes: F14ClothingBootsLeatherFilled
+    id: F14IDBadgeTownSheriff
+    belt: F14ClothingBeltRevolverWildWhisper
+    pocket1: F14TownGuardKits
+    pocket2: Handcuffs
+  storage:
+    back:
+    - F14SurvivalKitWastelander
+
+- type: job
+  id: F14TownDeputy
+  name: job-name-towndeputy
+  description: job-description-towndeputy
+  playTimeTracker: F14TownDeputy
+  startingGear: F14TownDeputyGear
+  icon: F14JobIconTownDeputy
+  supervisors: job-supervisors-townsfolk
+  access:
+  - F14TownieLaw
+  - F14TownieMechanic
+  - F14TownsPerson
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Townsfolk
+
+- type: startingGear
+  id: F14TownDeputyGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitTownGuard
+    ears: F14ClothingHeadsetTown
+    back: F14ClothingBackpackSatchelMilitary
+    shoes: F14ClothingBootsLeatherFilled
+    id: F14IDBadgeTownDeputy
+    belt: F14ClothingBeltRevolverfilled
+    pocket1: F14TownGuardKits
+    pocket2: Handcuffs
+  storage:
+    back:
+    - F14SurvivalKitWastelander
+    - F14CombatKnife
+    - F14MagazineBox10mm
+    - F14MagazineBox44
+    - F14Binoculars
+
+- type: job
+  id: F14WastelandBartender
+  name: job-name-townbartender
+  description: job-description-townbartender
+  playTimeTracker: F14WastelandBartender
+  startingGear: F14WastelandBartenderGear
+  icon: JobIconBartender
+  supervisors: job-supervisors-townsfolk
+  access:
+  - F14WastelandBartender
+  - F14TownsPerson
+  - F14InnRoomOne
+  - F14InnRoomTwo
+  - F14InnRoomThree
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Townsfolk
+
+- type: startingGear
+  id: F14WastelandBartenderGear
+  equipment:
+    head: ClothingHeadHatTophat
+    jumpsuit: F14ClothingUniformJumpsuitBartenderAlt
+    ears: F14ClothingHeadsetTown
+    outerClothing: F14ClothingOuterLeatherArmor
+    back: F14ClothingBackpackExplorer
+    shoes: F14ClothingBootsLeather
+    id: F14IDBartenderTown
+    pocket1: DrinkShaker
+  storage:
+    back:
+    - F14SurvivalKitWastelander
+
+- type: job
+  id: F14WastelandFarmer
+  name: job-name-farmer
+  description: job-description-farmer
+  playTimeTracker: F14WastelandFarmer
+  startingGear: F14FarmerGear
+  icon: F14JobIconWastelandFarmer
+  supervisors: job-supervisors-wastelander
+  access:
+  - F14WastelandFarmer
+  - F14TownsPerson
+
+- type: startingGear
+  id: F14FarmerGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitBrahminFarmer
+    ears: F14ClothingHeadsetTown
+    back: F14ClothingBackpackExplorer
+    shoes: F14ClothingBootsLeather
+    outerClothing: ClothingOuterApronBotanist
+    belt: F14ClothingBeltFarmerFilled
+    id: F14IDPassportWasteFarmer
+  storage:
+    back:
+    - F14SurvivalKitWastelander
+
+- type: job
+  id: F14TownMechanic
+  name: job-name-townmechanic
+  description: job-description-townmechanic
+  playTimeTracker: F14TownMechanic
+  startingGear: F14TownMechanicGear
+  icon: F14JobIconTownMechanic
+  supervisors: job-supervisors-townsfolk
+  access:
+  - F14TownieMechanic
+  - F14TownsPerson
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Townsfolk
+
+- type: startingGear
+  id: F14TownMechanicGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitMechanic
+    ears: F14ClothingHeadsetTown
+    back: F14ClothingBackpackExplorer
+    shoes: F14ClothingShoesBlack
+    id: F14IDPassportTownMechanic
+    belt: F14ClothingBeltUtilityFilled
+    gloves: ClothingHandsGlovesColorYellow
+    eyes: F14ClothingEyesGlassesWelding
+  storage:
+    back:
+    - F14SurvivalKitWastelander
+
+- type: job
+  id: F14TownShopkeeper
+  name: job-name-townshopkeeper
+  description: job-description-townshopkeeper
+  playTimeTracker: F14TownShopkeeper
+  startingGear: F14TownShopkeeperGear
+  icon: F14JobIconTownShopKeeper
+  supervisors: job-supervisors-townsfolk
+  access:
+  - F14TownieShopkeeper
+  - F14TownsPerson
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Townsfolk
+
+- type: startingGear
+  id: F14TownShopkeeperGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitMerchant
+    ears: F14ClothingHeadsetTown
+    back: F14ClothingBackpackHiking
+    shoes: F14ClothingShoesBlack
+    id: F14IDShopkeeperTown
+  storage:
+    back:
+    - F14SurvivalKitWastelander
+
+- type: job
+  id: F14Townsperson
+  name: job-name-townsperson
+  description: job-description-townsperson
+  playTimeTracker: F14Townsperson
+  startingGear: F14TownspersonGear
+  icon: F14JobIconTownPerson
+  supervisors: job-supervisors-townsfolk
+  access:
+  - F14TownsPerson
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - F14Wastelander
+          - F14Townsfolk
+
+- type: startingGear
+  id: F14TownspersonGear
+  equipment:
+    jumpsuit: F14ClothingUniformJumpsuitSettlerRags
+    ears: F14ClothingHeadsetTown
+    back: F14ClothingBackpackExplorer
+    shoes: F14ClothingShoesBlack
+    id: F14IDPassportTownsfolk
+  storage:
+    back:
+    - F14SurvivalKitWastelander

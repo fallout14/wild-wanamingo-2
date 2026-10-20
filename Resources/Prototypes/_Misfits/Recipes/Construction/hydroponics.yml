@@ -1,0 +1,14 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Recipes/Construction/hydroponics.yml
+
+- type: construction
+  id: F14HydroponicsPlanter # Forge-Change
+  graph: F14Planter
+  startNode: start
+  targetNode: Planter
+  category: construction-category-utilities
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false

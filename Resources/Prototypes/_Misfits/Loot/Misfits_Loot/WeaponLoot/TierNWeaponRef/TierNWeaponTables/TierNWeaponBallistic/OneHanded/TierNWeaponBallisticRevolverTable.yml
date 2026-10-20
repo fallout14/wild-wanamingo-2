@@ -1,54 +1,54 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/TierNWeaponRef/TierNWeaponTables/TierNWeaponBallistic/OneHanded/TierNWeaponBallisticRevolverTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTierN_GunsBulletRevolver
+  id: F14WeaponLootTierNGunsBulletRevolver
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: MisfitsWeaponRevolver357Detective
+      id: F14WeaponRevolver357Detective
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver10mm
+      id: F14WeaponRevolver10mm
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponRevolver357Detective
+      id: F14WeaponRevolver357Detective
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver10mm
+      id: F14WeaponRevolver10mm
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolverWebley #.44
+      id: F14WeaponRevolverWebley #.44
       weight: 7
     - !type:EntSelector
-      id: MisfitsWeaponRevolver44Magnum
+      id: F14WeaponRevolver44Magnum
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver44MagnumCaptain
+      id: F14WeaponRevolver44MagnumCaptain
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver44Tribal
+      id: F14WeaponRevolver44Tribal
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver44TribalUpgraded
+      id: F14WeaponRevolver44TribalUpgraded
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver44TribalUpgradedExtra
+      id: F14WeaponRevolver44TribalUpgradedExtra
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver45-70Handcannon # tribal
+      id: F14WeaponRevolver4570Handcannon # tribal
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver45-70HandcannonUpgraded # tribal
+      id: F14WeaponRevolver4570HandcannonUpgraded # tribal
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver45-70Handcannon # tribal
+      id: F14WeaponRevolver4570Handcannon # tribal
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver45-70Hunter
+      id: F14WeaponRevolver4570Hunter
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver45-70WildWhisper # unique??
+      id: F14WeaponRevolver4570WildWhisper # unique??
       weight: 7
     - !type:EntSelector
-      id: N14WeaponRevolver45-70RangerSequoia
+      id: F14WeaponRevolver4570RangerSequoia
       weight: 7

@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Smokeables/packs.yml
 
 - type: entity
-  id: N14CigPackBase
+  id: F14CigPackBase
   parent: [ BaseStorageItem, BaseBagOpenClose ]
   name: cigarette pack
   abstract: true
@@ -91,14 +91,14 @@
     price: 5
 
 # - type: entity
-  # parent: N14CigPackBase
+  # parent: F14CigPackBase
   # id: N14CigarettePack
   # name: cigarette packet
   # description: A generic pack of cigarettes.
 
 - type: entity
-  parent: N14CigPackBase
-  id: N14CigarettePackSalem
+  parent: F14CigPackBase
+  id: F14CigarettePackSalem
   name: Salem cigs pack
   description: "A refined green cigarette packet. A label on the packaging reads: Salem. Refreshes your taste."
   components:
@@ -108,12 +108,12 @@
     sprite: Nuclear14/Objects/Consumable/Smokeables/Packs/salem.rsi
   - type: StorageFill
     contents:
-    - id: N14CigaretteSalem
+    - id: F14CigaretteSalem
       amount: 8
 
 - type: entity
-  parent: N14CigPackBase
-  id: N14CigarettePackKool
+  parent: F14CigPackBase
+  id: F14CigarettePackKool
   name: Kools cigs pack
   description: "A kool green cigarette packet. A label on the packaging reads: KOOL. So good, it's got to be KOOL!"
   components:
@@ -123,12 +123,12 @@
     sprite: Nuclear14/Objects/Consumable/Smokeables/Packs/kool.rsi
   - type: StorageFill
     contents:
-    - id: N14CigaretteKool
+    - id: F14CigaretteKool
       amount: 8
 
 - type: entity
-  parent: N14CigPackBase
-  id: N14CigarettePackMarlboro
+  parent: F14CigPackBase
+  id: F14CigarettePackMarlboro
   name: Marlboro cigs pack
   description: "A cool red cigarette packet. A label on the packaging reads: Marlboro. Where there's a man, there's a Marlboro."
   components:
@@ -138,12 +138,12 @@
     sprite: Nuclear14/Objects/Consumable/Smokeables/Packs/marlboro.rsi
   - type: StorageFill
     contents:
-    - id: N14CigaretteMarlboro
+    - id: F14CigaretteMarlboro
       amount: 8
 
 - type: entity
-  parent: N14CigPackBase
-  id: N14CigarettePackWinston
+  parent: F14CigPackBase
+  id: F14CigarettePackWinston
   name: Winston cigs pack
   description: "A refined red cigarette packet. A label on the packaging reads: Winston. Winston tastes good, like a cigarette should!"
   components:
@@ -153,12 +153,12 @@
     sprite: Nuclear14/Objects/Consumable/Smokeables/Packs/winston.rsi
   - type: StorageFill
     contents:
-    - id: N14CigaretteWinston
+    - id: F14CigaretteWinston
       amount: 8
 
 - type: entity
-  parent: N14CigPackBase
-  id: N14CigarettePackCustom
+  parent: F14CigPackBase
+  id: F14CigarettePackCustom
   suffix: custom
   name: cardboard cigs pack
   description: A simple hand-made cardboard cigarette pack.
@@ -169,12 +169,12 @@
     sprite: Nuclear14/Objects/Consumable/Smokeables/Packs/custom.rsi
   - type: StorageFill
     contents:
-    - id: N14CigaretteRollie
+    - id: F14CigaretteRollie
       amount: 8
 
 - type: entity
-  parent: N14CigPackBase
-  id: N14CigarettePackRepublics
+  parent: F14CigPackBase
+  id: F14CigarettePackRepublics
   name: Republics cig pack
   description: "A rustic cardboard cigarette pack with the flag of the New California Republic on it. A label on the packaging reads: Republics. Taste the freedom, feel the burn."
   components:
@@ -184,5 +184,5 @@
     sprite: Nuclear14/Objects/Consumable/Smokeables/Packs/republics.rsi
   - type: StorageFill
     contents:
-    - id: N14CigaretteRepublic
+    - id: F14CigaretteRepublic
       amount: 8

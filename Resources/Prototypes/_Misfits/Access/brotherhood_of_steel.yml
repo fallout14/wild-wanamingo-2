@@ -1,161 +1,161 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Access/brotherhood_of_steel.yml
 
 - type: accessLevel
-  id: MisfitsBOS
+  id: F14BOS
   name: id-card-access-level-bos
 
 - type: accessLevel
-  id: MisfitsBOSInitiate
+  id: F14BOSInitiate
   name: id-card-access-level-bos-initiate
 
 - type: accessLevel
-  id: MisfitsBOSSquire
+  id: F14BOSSquire
   name: id-card-access-level-bos-squire
 
 - type: accessLevel
-  id: MisfitsBOSScribe
+  id: F14BOSScribe
   name: id-card-access-level-bos-scribe
 
 - type: accessLevel
-  id: MisfitsBOSKnight
+  id: F14BOSKnight
   name: id-card-access-level-bos-knight
 
 - type: accessLevel
-  id: MisfitsBOSPaladin
+  id: F14BOSPaladin
   name: id-card-access-level-bos-paladin
 
 - type: accessLevel
-  id: MisfitsBOSSeniorScribe
+  id: F14BOSSeniorScribe
   name: id-card-access-level-bos-senior-scribe
 
 - type: accessLevel
-  id: MisfitsBOSSeniorKnight
+  id: F14BOSSeniorKnight
   name: id-card-access-level-bos-senior-knight
 
 - type: accessLevel
-  id: MisfitsBOSSeniorPaladin
+  id: F14BOSSeniorPaladin
   name: id-card-access-level-bos-senior-paladin
 
 - type: accessLevel
-  id: MisfitsBOSHeadScribe
+  id: F14BOSHeadScribe
   name: id-card-access-level-bos-head-scribe
 
 - type: accessLevel
-  id: MisfitsBOSHeadKnight
+  id: F14BOSHeadKnight
   name: id-card-access-level-bos-head-knight
 
 - type: accessLevel
-  id: MisfitsBOSHeadPaladin
+  id: F14BOSHeadPaladin
   name: id-card-access-level-bos-head-paladin
 
 - type: accessLevel
-  id: MisfitsBOSElder
+  id: F14BOSElder
   name: id-card-access-level-bos-elder
 
 - type: accessLevel
-  id: MisfitsBOSOffDuty
+  id: F14BOSOffDuty
   name: id-card-access-level-bos
 
 - type: accessGroup
-  id: MisfitsBOS
+  id: F14BOS
   tags:
-  - MisfitsBOS
+  - F14BOS
 
 - type: accessGroup
-  id: MisfitsBOSInitiate
+  id: F14BOSInitiate
   tags:
-  - MisfitsBOS
-  - MisfitsBOSInitiate
+  - F14BOS
+  - F14BOSInitiate
 
 - type: accessGroup
-  id: MisfitsBOSScribe
+  id: F14BOSScribe
   tags:
-  - MisfitsBOS
-  - MisfitsBOSInitiate
-  - MisfitsBOSScribe
-  - MisfitsBOSSeniorScribe  # #Misfits Change - unified faction: scribes open all scribe-wing doors
+  - F14BOS
+  - F14BOSInitiate
+  - F14BOSScribe
+  - F14BOSSeniorScribe  # #Misfits Change - unified faction: scribes open all scribe-wing doors
 
 - type: accessGroup
-  id: MisfitsBOSKnight
+  id: F14BOSKnight
   tags:
-  - MisfitsBOS
-  - MisfitsBOSInitiate
-  - MisfitsBOSKnight
-  - MisfitsBOSSeniorKnight  # #Misfits Change - unified faction: knights open all knight-wing doors
+  - F14BOS
+  - F14BOSInitiate
+  - F14BOSKnight
+  - F14BOSSeniorKnight  # #Misfits Change - unified faction: knights open all knight-wing doors
 
 - type: accessGroup
-  id: MisfitsBOSPaladin
+  id: F14BOSPaladin
   tags:
-  - MisfitsBOS
-  - MisfitsBOSInitiate
-  - MisfitsBOSScribe
-  - MisfitsBOSSeniorScribe  # #Misfits Change - unified faction
+  - F14BOS
+  - F14BOSInitiate
+  - F14BOSScribe
+  - F14BOSSeniorScribe  # #Misfits Change - unified faction
   #- BOSKnight
   #- BOSSeniorKnight  # #Misfits Change - disallow regular paladin into armory
-  - MisfitsBOSPaladin
-  - MisfitsBOSSeniorPaladin  # #Misfits Change - unified faction: paladins open all paladin-wing doors
+  - F14BOSPaladin
+  - F14BOSSeniorPaladin  # #Misfits Change - unified faction: paladins open all paladin-wing doors
 
 - type: accessGroup
-  id: MisfitsBOSHeadScribe
+  id: F14BOSHeadScribe
   tags:
-  - MisfitsBOS
-  - MisfitsBOSInitiate
-  - MisfitsBOSSquire
-  - MisfitsBOSScribe
-  - MisfitsBOSSeniorScribe
-  - MisfitsBOSHeadScribe
-  - MisfitsBOSKnight        # #Misfits Change - Head Scribe is command-level, full base access
-  - MisfitsBOSSeniorKnight
-  - MisfitsBOSHeadKnight
-  - MisfitsBOSPaladin
-  - MisfitsBOSSeniorPaladin
-  - MisfitsBOSHeadPaladin
+  - F14BOS
+  - F14BOSInitiate
+  - F14BOSSquire
+  - F14BOSScribe
+  - F14BOSSeniorScribe
+  - F14BOSHeadScribe
+  - F14BOSKnight        # #Misfits Change - Head Scribe is command-level, full base access
+  - F14BOSSeniorKnight
+  - F14BOSHeadKnight
+  - F14BOSPaladin
+  - F14BOSSeniorPaladin
+  - F14BOSHeadPaladin
 
 - type: accessGroup
-  id: MisfitsBOSHeadKnight
+  id: F14BOSHeadKnight
   tags:
-  - MisfitsBOS
-  - MisfitsBOSInitiate
-  - MisfitsBOSSquire
-  - MisfitsBOSScribe        # #Misfits Change - Head Knight is command-level, full base access
-  - MisfitsBOSSeniorScribe
-  - MisfitsBOSHeadScribe
-  - MisfitsBOSKnight
-  - MisfitsBOSSeniorKnight
-  - MisfitsBOSHeadKnight
-  - MisfitsBOSPaladin
-  - MisfitsBOSSeniorPaladin
-  - MisfitsBOSHeadPaladin
+  - F14BOS
+  - F14BOSInitiate
+  - F14BOSSquire
+  - F14BOSScribe        # #Misfits Change - Head Knight is command-level, full base access
+  - F14BOSSeniorScribe
+  - F14BOSHeadScribe
+  - F14BOSKnight
+  - F14BOSSeniorKnight
+  - F14BOSHeadKnight
+  - F14BOSPaladin
+  - F14BOSSeniorPaladin
+  - F14BOSHeadPaladin
 
 - type: accessGroup
-  id: MisfitsBOSHeadPaladin
+  id: F14BOSHeadPaladin
   tags:
-  - MisfitsBOS
-  - MisfitsBOSInitiate
-  - MisfitsBOSSquire
-  - MisfitsBOSScribe
-  - MisfitsBOSSeniorScribe
-  - MisfitsBOSHeadScribe
-  - MisfitsBOSKnight
-  - MisfitsBOSSeniorKnight
-  - MisfitsBOSHeadKnight
-  - MisfitsBOSPaladin
-  - MisfitsBOSSeniorPaladin
-  - MisfitsBOSHeadPaladin
+  - F14BOS
+  - F14BOSInitiate
+  - F14BOSSquire
+  - F14BOSScribe
+  - F14BOSSeniorScribe
+  - F14BOSHeadScribe
+  - F14BOSKnight
+  - F14BOSSeniorKnight
+  - F14BOSHeadKnight
+  - F14BOSPaladin
+  - F14BOSSeniorPaladin
+  - F14BOSHeadPaladin
 
 - type: accessGroup
-  id: MisfitsBOSElder
+  id: F14BOSElder
   tags:
-  - MisfitsBOS
-  - MisfitsBOSInitiate
-  - MisfitsBOSSquire
-  - MisfitsBOSScribe
-  - MisfitsBOSSeniorScribe
-  - MisfitsBOSHeadScribe
-  - MisfitsBOSKnight
-  - MisfitsBOSSeniorKnight
-  - MisfitsBOSHeadKnight
-  - MisfitsBOSPaladin
-  - MisfitsBOSSeniorPaladin
-  - MisfitsBOSHeadPaladin
-  - MisfitsBOSElder
+  - F14BOS
+  - F14BOSInitiate
+  - F14BOSSquire
+  - F14BOSScribe
+  - F14BOSSeniorScribe
+  - F14BOSHeadScribe
+  - F14BOSKnight
+  - F14BOSSeniorKnight
+  - F14BOSHeadKnight
+  - F14BOSPaladin
+  - F14BOSSeniorPaladin
+  - F14BOSHeadPaladin
+  - F14BOSElder

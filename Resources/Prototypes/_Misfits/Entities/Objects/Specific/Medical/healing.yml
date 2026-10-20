@@ -1,12 +1,12 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Objects/Specific/Medical/healing.yml
 
 - type: entity
-  id: MisfitsOintmentAdv10
+  id: F14OintmentAdv10
   parent: RegenerativeMesh
   suffix: full
   components:
   - type: Stack
-    stackType: MisfitsOintmentAdv10
+    stackType: F14OintmentAdv10
     count: 10
   - type: Healing
     damageContainers:
@@ -20,21 +20,21 @@
         Caustic: -5
 
 - type: entity
-  id: MisfitsOintmentAdv1
-  parent: MisfitsOintmentAdv10
+  id: F14OintmentAdv1
+  parent: F14OintmentAdv10
   suffix: Single
   components:
   - type: Stack
-    stackType: MisfitsOintmentAdv10
+    stackType: F14OintmentAdv10
     count: 1
 
 #misfit end
 
 - type: entity
   name: Malnutrition topical
-  id: MisfitsStarveThirstTopical
+  id: F14StarveThirstTopical
   description: For healing extreme cases of starvation/thirst.
-  parent: N14BaseHealingItem
+  parent: F14BaseHealingItem
   suffix: Admin
   components:
   - type: Tag
@@ -49,8 +49,8 @@
     - Biological
     damage:
       types:
-        MisfitsDehydration: -100
-        MisfitsStarvation: -100
+        F14Dehydration: -100
+        F14Starvation: -100
     healingBeginSound:
       path: "/Audio/Items/Medical/ointment_begin.ogg"
     healingEndSound:

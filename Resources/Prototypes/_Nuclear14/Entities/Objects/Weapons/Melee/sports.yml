@@ -4,7 +4,7 @@
 - type: entity
   name: baseball bat
   parent: BaseItem
-  id: N14BaseBallBat
+  id: F14BaseBallBat
   description: A robust baseball bat.
   components:
   - type: Sprite
@@ -46,7 +46,7 @@
 - type: entity
   name: pool cue
   parent: BaseItem
-  id: N14PoolCue
+  id: F14PoolCue
   description: A pool cue used for hitting balls, usually the ones on pool tables, but also occasionally your enemy's.
   components:
   - type: Sprite
@@ -96,7 +96,7 @@
 - type: entity
   name: golf club
   parent: BaseItem
-  id: N14GolfClub
+  id: F14GolfClub
   description: A tool used for a pointless old-world sport, now used as an instrument of destruction.
   components:
   - type: Sprite

@@ -1,9 +1,9 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/Materials/misc.yml
 
 - type: entity
-  id: MisfitsClosetGenericMechanic
+  id: F14ClosetGenericMechanic
   suffix: Filled, Mechanical
-  parent: N14ClosetGeneric
+  parent: F14ClosetGeneric
   components:
   - type: StorageFill
     contents:
@@ -13,14 +13,14 @@
     - id: ClothingOuterVestHazard
     - id: ClothingShoesBootsWork
     - id: ClothingHandsGlovesColorYellow
-    - id: N14FuelTankHandyRusty
+    - id: F14FuelTankHandyRusty
 
 # janitorial
 
 - type: entity
-  id: MisfitsN14ClosetDoubleJanitorial
+  id: F14ClosetDoubleJanitorial
   suffix: Filled, Janitorial
-  parent: N14ClosetDouble
+  parent: F14ClosetDouble
   components:
   - type: StorageFill
     contents:

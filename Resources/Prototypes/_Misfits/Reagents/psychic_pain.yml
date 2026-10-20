@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Reagents/psychic_pain.yml
 
 - type: reagent
-  id: MisfitsClearhead
+  id: F14Clearhead
   name: reagent-name-misfits-clearhead
   group: Wasteland
   desc: reagent-desc-misfits-clearhead
@@ -23,7 +23,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsClearhead
+          reagent: F14Clearhead
           min: 25
         damage:
           types:
@@ -32,13 +32,13 @@
         effectProto: StatusEffectDrowsiness
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsClearhead
+          reagent: F14Clearhead
           min: 25
         time: 2
         type: Add
 
 - type: reagent
-  id: MisfitsChlorpromazine
+  id: F14Chlorpromazine
   name: reagent-name-misfits-chlorpromazine
   group: Wasteland
   desc: reagent-desc-misfits-chlorpromazine
@@ -66,7 +66,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsChlorpromazine
+          reagent: F14Chlorpromazine
           min: 20
         damage:
           types:
@@ -75,13 +75,13 @@
         effectProto: StatusEffectDrowsiness
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsChlorpromazine
+          reagent: F14Chlorpromazine
           min: 20
         time: 6
         type: Add
 
 - type: reagent
-  id: MisfitsLucidine
+  id: F14Lucidine
   name: reagent-name-misfits-lucidine
   group: Wasteland
   desc: reagent-desc-misfits-lucidine
@@ -106,14 +106,14 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsLucidine
+          reagent: F14Lucidine
           min: 25
         damage:
           types:
             Poison: 0.5
 
 - type: reagent
-  id: MisfitsPsychocline
+  id: F14Psychocline
   name: reagent-name-misfits-psychocline
   group: Wasteland
   desc: reagent-desc-misfits-psychocline
@@ -141,21 +141,21 @@
       - !type:ModifyKnockdown
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsPsychocline
+          reagent: F14Psychocline
           min: 25
         time: 2
         type: Add
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsPsychocline
+          reagent: F14Psychocline
           min: 25
         damage:
           types:
             Poison: 0.75
 
 - type: reagent
-  id: MisfitsNeurostatic
+  id: F14Neurostatic
   name: reagent-name-misfits-neurostatic
   group: Wasteland
   desc: reagent-desc-misfits-neurostatic
@@ -177,7 +177,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsNeurostatic
+          reagent: F14Neurostatic
           min: 20
         damage:
           types:
@@ -189,7 +189,7 @@
 # ============================================================================
 
 - type: reagent
-  id: MisfitsWillowbark
+  id: F14Willowbark
   name: reagent-name-misfits-willowbark
   group: Wasteland
   desc: reagent-desc-misfits-willowbark
@@ -204,7 +204,7 @@
         probability: 0.03
 
 - type: reagent
-  id: MisfitsAnodyne
+  id: F14Anodyne
   name: reagent-name-misfits-anodyne
   group: Wasteland
   desc: reagent-desc-misfits-anodyne
@@ -221,7 +221,7 @@
         type: Add
 
 - type: reagent
-  id: MisfitsAnalgesine
+  id: F14Analgesine
   name: reagent-name-misfits-analgesine
   group: Wasteland
   desc: reagent-desc-misfits-analgesine
@@ -239,14 +239,14 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsAnalgesine
+          reagent: F14Analgesine
           min: 30
         damage:
           types:
             Poison: 0.4
 
 - type: reagent
-  id: MisfitsNerveblock
+  id: F14Nerveblock
   name: reagent-name-misfits-nerveblock
   group: Wasteland
   desc: reagent-desc-misfits-nerveblock
@@ -267,7 +267,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsNerveblock
+          reagent: F14Nerveblock
           min: 25
         damage:
           types:
@@ -275,7 +275,7 @@
             Poison: 0.4
 
 - type: reagent
-  id: MisfitsTraumadol
+  id: F14Traumadol
   name: reagent-name-misfits-traumadol
   group: Wasteland
   desc: reagent-desc-misfits-traumadol
@@ -301,14 +301,14 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsTraumadol
+          reagent: F14Traumadol
           min: 25
         damage:
           types:
             Poison: 1
 
 - type: reagent
-  id: MisfitsAnesthezine
+  id: F14Anesthezine
   name: reagent-name-misfits-anesthezine
   group: Wasteland
   desc: reagent-desc-misfits-anesthezine
@@ -329,14 +329,14 @@
       - !type:ModifyKnockdown
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsAnesthezine
+          reagent: F14Anesthezine
           min: 15
         time: 3
         type: Add
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsAnesthezine
+          reagent: F14Anesthezine
           min: 25
         damage:
           types:
@@ -344,7 +344,7 @@
             Poison: 0.5
 
 - type: reagent
-  id: MisfitsNeuroblock
+  id: F14Neuroblock
   name: reagent-name-misfits-neuroblock
   group: Wasteland
   desc: reagent-desc-misfits-neuroblock
@@ -359,7 +359,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsNeuroblock
+          reagent: F14Neuroblock
           min: 20
         damage:
           types:
@@ -371,7 +371,7 @@
 # ============================================================================
 
 - type: reagent
-  id: MisfitsNeuroreguline
+  id: F14Neuroreguline
   name: reagent-name-misfits-neuroreguline
   group: Wasteland
   desc: reagent-desc-misfits-neuroreguline
@@ -396,7 +396,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsNeuroreguline
+          reagent: F14Neuroreguline
           min: 15
         damage:
           types:
@@ -408,7 +408,7 @@
 # ============================================================================
 
 - type: reagent
-  id: MisfitsWakeguard
+  id: F14Wakeguard
   name: reagent-name-misfits-wakeguard
   group: Wasteland
   desc: reagent-desc-misfits-wakeguard
@@ -430,7 +430,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsWakeguard
+          reagent: F14Wakeguard
           min: 25
         damage:
           types:
@@ -442,7 +442,7 @@
 # ============================================================================
 
 - type: reagent
-  id: MisfitsSomnoreguline
+  id: F14Somnoreguline
   name: reagent-name-misfits-somnoreguline
   group: Wasteland
   desc: reagent-desc-misfits-somnoreguline
@@ -466,7 +466,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsSomnoreguline
+          reagent: F14Somnoreguline
           min: 20
         damage:
           types:
@@ -478,7 +478,7 @@
 # ============================================================================
 
 - type: reagent
-  id: MisfitsVigilazine
+  id: F14Vigilazine
   name: reagent-name-misfits-vigilazine
   group: Wasteland
   desc: reagent-desc-misfits-vigilazine
@@ -500,7 +500,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
-          reagent: MisfitsVigilazine
+          reagent: F14Vigilazine
           min: 20
         damage:
           types:

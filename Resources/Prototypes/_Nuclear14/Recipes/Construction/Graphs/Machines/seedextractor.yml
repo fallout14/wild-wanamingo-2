@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/Machines/seedextractor.yml
 
 - type: constructionGraph
-  id: N14SeedExtractor
+  id: F14SeedExtractor
   start: start
   graph:
     - node: start
@@ -19,11 +19,11 @@
     - node: seedextractorhalf
       actions:
       - !type:AppearanceChange
-      entity: N14SeedExtractorFrame
+      entity: F14SeedExtractorFrame
       edges:
         - to: seedextractorpot
           steps:
-          - tag: N14CookPot
+          - tag: F14CookPot
             icon:
               sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
               state: cookpot
@@ -32,7 +32,7 @@
     - node: seedextractorpot
       actions:
       - !type:AppearanceChange
-      entity: N14SeedExtractorFrame
+      entity: F14SeedExtractorFrame
       edges:
         - to: seedextractorreinforced
           steps: 
@@ -43,11 +43,11 @@
     - node: seedextractorreinforced
       actions:
       - !type:AppearanceChange
-      entity: N14SeedExtractorFrame
+      entity: F14SeedExtractorFrame
       edges:
         - to: seedextractorunscrewed
           steps:
-            - tag: N14DuctTape
+            - tag: F14DuctTape
               icon:
                 sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
                 state: duct_tape
@@ -56,7 +56,7 @@
     - node: seedextractorunscrewed
       actions:
       - !type:AppearanceChange
-      entity: N14SeedExtractorFrame
+      entity: F14SeedExtractorFrame
       edges:
         - to: seedextractor
           steps:
@@ -64,4 +64,4 @@
               doAfter: 2
 
     - node: seedextractor
-      entity: N14SeedExtractor
+      entity: F14SeedExtractor

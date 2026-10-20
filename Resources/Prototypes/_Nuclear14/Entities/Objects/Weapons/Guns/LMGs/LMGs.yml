@@ -4,7 +4,7 @@
 - type: entity
   name: automatic rifle
   parent: BaseWeaponRifle
-  id: N14WeaponLMGAutoRifle
+  id: F14WeaponLMGAutoRifle
   description: An M1918A1 Browning Automatic Rifle. A heavy, low-capacity automatic rifle of the pre-war, chambered in the powerful .308 ammunition.
   components:
   - type: Clothing
@@ -34,7 +34,7 @@
     angleDecay: 16
     fireRate: 3.5 # #Misfits Tweak - was 4; the M1918A2 and Colt Monitor are the upgrades
     soundGunshot:
-      collection: N14AutoRifleGunshot
+      collection: F14AutoRifleGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -42,20 +42,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine308Rifle
+        startingItem: F14Magazine308Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine308Rifle
+            - F14Magazine308Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge308Rifle
+        startingItem: F14Cartridge308Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge308Rifle
+            - F14Cartridge308Rifle
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
@@ -73,7 +73,7 @@
 - type: entity
   name: canadian HMG
   parent: BaseWeaponRifle
-  id: N14WeaponHMGcanadian
+  id: F14WeaponHMGcanadian
   description: A powerfull belt feed machine gun commonly used by the pre-war canadian army, chambered in 7.62mm ammunition.
   components:
   - type: Clothing
@@ -103,7 +103,7 @@
     angleDecay: 16
     fireRate: 6
     soundGunshot:
-      collection: N14AutoRifleGunshot
+      collection: F14AutoRifleGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -111,20 +111,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine762AmmoBelt
+        startingItem: F14Magazine762AmmoBelt
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine762Belt
+            - F14Magazine762Belt
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge762Rifle
+        startingItem: F14Cartridge762Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge762Rifle
+            - F14Cartridge762Rifle
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
@@ -142,7 +142,7 @@
 - type: entity
   name: chinese LMG
   parent: BaseWeaponRifle
-  id: N14WeaponLMGchinese
+  id: F14WeaponLMGchinese
   description: A pre-war chinese light machine gun, chambered in 7.62mm ammunition.
   components:
   - type: Clothing
@@ -172,7 +172,7 @@
     angleDecay: 16
     fireRate: 5
     soundGunshot:
-      collection: N14AutoRifleGunshot
+      collection: F14AutoRifleGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -180,20 +180,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine762AmmoBelt
+        startingItem: F14Magazine762AmmoBelt
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine762Belt
+            - F14Magazine762Belt
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge762Rifle
+        startingItem: F14Cartridge762Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge762Rifle
+            - F14Cartridge762Rifle
   - type: ClothingSpeedModifier # Corvax-Add
     walkModifier: 0.85
     sprintModifier: 0.85
@@ -211,7 +211,7 @@
 - type: entity
   name: light machine gun
   parent: BaseWeaponRifle
-  id: N14WeaponLMG
+  id: F14WeaponLMG
   description: A light machine gun designed by the NCR for their heavy troops, chambered in 5.56 ammo.
   components:
   - type: Clothing
@@ -241,7 +241,7 @@
     angleDecay: 16
     fireRate: 6
     soundGunshot:
-      collection: N14LMGGunshot
+      collection: F14LMGGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -249,20 +249,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14LMGMagazine556Rifle
+        startingItem: F14LMGMagazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14LMGMagazine556Rifle
+            - F14LMGMagazine556Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge556Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge556Rifle
+            - F14Cartridge556Rifle
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
@@ -280,7 +280,7 @@
 - type: entity
   name: bren machine gun
   parent: BaseWeaponRifle
-  id: N14WeaponLMGBren
+  id: F14WeaponLMGBren
   description: A high-caliber, high-damage, heavy machine gun mass-produced by the Canadians pre-war, chambered in .303 British ammunition.
   components:
   - type: Clothing
@@ -313,7 +313,7 @@
     angleDecay: 16
     fireRate: 3.5 # Corvax-Change
     soundGunshot:
-      collection: N14AutoRifleGunshot
+      collection: F14AutoRifleGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -321,20 +321,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MisfitsMagazine303Bren
+        startingItem: F14Magazine303Bren
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MisfitsMagazine303Bren
+            - F14Magazine303Bren
       gun_chamber:
         name: Chamber
-        startingItem: MisfitsCartridge303
+        startingItem: F14Cartridge303
         priority: 1
         whitelist:
           tags:
-            - MisfitsCartridge303Rifle
+            - F14Cartridge303Rifle
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -349,7 +349,7 @@
 - type: entity
   name: M60 GPMG
   parent: BaseWeaponRifle
-  id: N14WeaponM60GPMG
+  id: F14WeaponM60GPMG
   description: The M60 General Purpose Machine Gun is a pre-war machine gun that has a slow, chugging fire rate. Large, powerful, and loud - this old design was looted by legionnaires from old national guard warehouses.
   components:
   - type: Clothing
@@ -382,7 +382,7 @@
     angleDecay: 16
     fireRate: 4
     soundGunshot:
-      collection: N14AutoRifleGunshot
+      collection: F14AutoRifleGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -390,17 +390,17 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine308M60Box
+        startingItem: F14Magazine308M60Box
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine308M60Box
+            - F14Magazine308M60Box
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge308Rifle
+        startingItem: F14Cartridge308Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge308Rifle
+            - F14Cartridge308Rifle

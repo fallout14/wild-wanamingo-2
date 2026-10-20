@@ -4,13 +4,13 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: N14BaseMagazineBox762Rifle
+  id: F14BaseMagazineBox762Rifle
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14Cartridge762Rifle
+        - F14Cartridge762Rifle
     proto: N14Cartridge762ifle
     capacity: 60
   - type: ContainerContainer
@@ -27,12 +27,12 @@
   - type: FoldableAmmoBox #Misfits Change /Add/: Empty cardboard ammo boxes can fold back into one cardboard sheet.
 
 - type: entity
-  parent: N14BaseMagazineBox762Rifle
-  id: N14MagazineBox762
+  parent: F14BaseMagazineBox762Rifle
+  id: F14MagazineBox762
   name: ammunition box (7.62mm)
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge762Rifle
+    proto: F14Cartridge762Rifle
   - type: Sprite
     layers:
     - state: base

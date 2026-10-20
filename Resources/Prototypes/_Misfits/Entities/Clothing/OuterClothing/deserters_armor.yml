@@ -1,8 +1,8 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/OuterClothing/deserters_armor.yml
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: MisfitsM14ClothingOuterCombatDeserterBOSArmor
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterCombatDeserterBOSArmor
   name: modified deserter brotherhood of steel armor
   description: A modified detoriated armor kit consisting of brotherhood combat armor and scrap metal.
   components:
@@ -12,8 +12,8 @@
     sprite: Misfits/Clothing/OuterClothing/Armor/bos_exile_armor.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: MisfitsM14ClothingOuterCombatDeserterNCRArmor
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterCombatDeserterNCRArmor
   name: modified deserter NCR armor
   description: A modified detoriated armor kit consisting of NCR gear and scrap metal.
   components:
@@ -23,8 +23,8 @@
     sprite: Misfits/Clothing/OuterClothing/Armor/ncr_exile_armor.rsi
 
 - type: entity
-  parent: N14ClothingOuterCombatArmor
-  id: MisfitsM14ClothingOuterCombatDeserterLegionArmor
+  parent: F14ClothingOuterCombatArmor
+  id: F14ClothingOuterCombatDeserterLegionArmor
   name: modified deserter legion armor
   description: A modified detoriated armor kit consisting of Legion gear and scrap metal.
   components:

@@ -2,21 +2,21 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Magazines/50.yml
 
 - type: entity
-  id: N14BaseMagazine50AMR
+  id: F14BaseMagazine50AMR
   name: "magazine (.50 BMG)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - N14Magazine50AMR
+      - F14Magazine50AMR
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - N14Cartridge50
-        - N14Cartridge50HEIAP
-    proto: N14Cartridge50
+        - F14Cartridge50
+        - F14Cartridge50HEIAP
+    proto: F14Cartridge50
     capacity: 5
   - type: ContainerContainer
     containers:
@@ -38,18 +38,18 @@
   - type: Appearance
 
 - type: entity
-  id: N14Magazine50AMR
+  id: F14Magazine50AMR
   name: "magazine (.50 BMG)"
-  parent: N14BaseMagazine50AMR
+  parent: F14BaseMagazine50AMR
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge50
+    proto: F14Cartridge50
 
 - type: entity
-  id: N14Magazine50AMRHEIAP
+  id: F14Magazine50AMRHEIAP
   name: "magazine (.50 BMG HEIAP)"
-  parent: N14BaseMagazine50AMR
+  parent: F14BaseMagazine50AMR
   suffix: HEIAP
   components:
   - type: BallisticAmmoProvider
-    proto: N14Cartridge50HEIAP
+    proto: F14Cartridge50HEIAP

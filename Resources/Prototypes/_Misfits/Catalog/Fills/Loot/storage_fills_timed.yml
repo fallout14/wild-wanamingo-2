@@ -2,7 +2,7 @@
 
 - type: entity
   abstract: true
-  id: MisfitsFilingCabinetTimedStorageFill
+  id: F14FilingCabinetTimedStorageFill
   components:
     - type: TimedStorageFill
       contents:
@@ -14,26 +14,26 @@
           prob: 0.7
           amount: 1
           maxAmount: 5
-        - id: N14DirtyGauze10
+        - id: F14DirtyGauze10
           prob: 0.15
-        - id: N14SmellingSalts
+        - id: F14SmellingSalts
           prob: 0.1
-        - id: N14Stimpak
+        - id: F14Stimpak
           prob: 0.03
-        - id: N14RadAwayBloodbag
+        - id: F14RadAwayBloodbag
           prob: 0.15
-        - id: N14CurrencyCap
+        - id: F14CurrencyCap
           prob: 0.6
-          orGroup: N14Currency
+          orGroup: F14Currency
           amount: 1
           maxAmount: 10
-        - id: N14CurrencyPrewar
+        - id: F14CurrencyPrewar
           prob: 0.6
-          orGroup: N14Currency
+          orGroup: F14Currency
           amount: 1
           maxAmount: 10
-        - id: N14CurrencyNCRDollar
+        - id: F14CurrencyNCRDollar
           prob: 0.6
-          orGroup: N14Currency
+          orGroup: F14Currency
           amount: 1
           maxAmount: 10

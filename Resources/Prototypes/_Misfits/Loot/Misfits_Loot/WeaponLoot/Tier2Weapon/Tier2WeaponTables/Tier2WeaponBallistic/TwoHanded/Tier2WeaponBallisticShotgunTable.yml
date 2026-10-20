@@ -1,29 +1,29 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier2Weapon/Tier2WeaponTables/Tier2WeaponBallistic/TwoHanded/Tier2WeaponBallisticShotgunTable.yml
 
 - type: entityTable
-  id: MisfitsM14WeaponLootTier2_GunsBulletShotgun
+  id: F14WeaponLootTier2GunsBulletShotgun
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponShotgunPipe
+      id: F14WeaponShotgunPipe
       weight: 8
     - !type:EntSelector
-      id: N14WeaponShotgunSawedOff
+      id: F14WeaponShotgunSawedOff
       weight: 8
     - !type:EntSelector
-      id: N14WeaponShotgunCaravan
+      id: F14WeaponShotgunCaravan
       weight: 7
     - !type:EntSelector
-      id: N14WeaponShotgunDoubleBarrel
+      id: F14WeaponShotgunDoubleBarrel
       weight: 6
 
     - !type:EntSelector
-      id: N14WeaponShotgunBoomstick
+      id: F14WeaponShotgunBoomstick
       weight: 6
 
     - !type:EntSelector
-      id: N14WeaponShotgunLever
+      id: F14WeaponShotgunLever
       weight: 6
     - !type:EntSelector
-      id: N14WeaponShotgunShort
+      id: F14WeaponShotgunShort
       weight: 6

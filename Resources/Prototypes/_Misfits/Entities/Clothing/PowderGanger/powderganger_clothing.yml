@@ -2,7 +2,7 @@
 
 - type: entity
   parent: ClothingOuterBase
-  id: MisfitsClothingPowderGangerJacket
+  id: F14ClothingPowderGangerJacket
   name: powder ganger jacket
   description: A scuffed and stained canvas jacket worn by members of the Powder Gangers. Smells faintly of black powder and desperation.
   components:
@@ -14,8 +14,8 @@
 # --- Powder Ganger Outfit ---
 
 - type: entity
-  parent: N14ClothingUniformBase
-  id: MisfitsClothingPowderGangerOutfit
+  parent: F14ClothingUniformBase
+  id: F14ClothingPowderGangerOutfit
   name: powder ganger outfit
   description: The rough and patched clothing of a Powder Ganger — practical enough to work in, durable enough to run in.
   components:
@@ -28,7 +28,7 @@
 
 - type: entity
   parent: ClothingOuterBase
-  id: MisfitsClothingPowderGangerVest
+  id: F14ClothingPowderGangerVest
   name: powder ganger vest
   description: A reinforced vest common among Powder Gangers who prefer range of motion over extra protection.
   components:
@@ -41,7 +41,7 @@
 
 - type: entity
   parent: ClothingOuterBase
-  id: MisfitsClothingPowderGangerDuds
+  id: F14ClothingPowderGangerDuds
   name: powder ganger duds
   description: The worn outer layer of a Powder Ganger's typical kit — marked with grime, char, and old bloodstains.
   components:

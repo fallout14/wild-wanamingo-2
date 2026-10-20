@@ -1,0 +1,21 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Actions/robobrain.yml
+
+- type: entity
+  id: F14ActionRobobrainAcidifyBrain
+  parent: BaseAction
+  name: Acidify Brain
+  description: >
+    Flood the cranial cavity with acid, dissolving your brain and ejecting your
+    consciousness from the Robobrain. Warning: this permanently destroys your brain.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    useDelay: 5.0
+  - type: Sprite
+    layers:
+    - sprite: Interface/Actions/actions_borg.rsi
+      state: state-laws
+      map: [ "enum.ActionVisuals.Icon" ]
+  - type: InstantAction
+    event: !type:RobobrainAcidifyBrainEvent

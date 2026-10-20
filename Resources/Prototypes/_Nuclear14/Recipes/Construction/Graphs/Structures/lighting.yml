@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/Structures/lighting.yml
 
 - type: constructionGraph
-  id: N14Lightbulb
+  id: F14Lightbulb
   start: start
   graph:
     - node: start
@@ -38,7 +38,7 @@
               # amount: 2
             # - !type:DeleteEntity {}
     - node: bulbLight
-      entity: N14LightSmallEmptyNormie
+      entity: F14LightSmallEmptyNormie
       edges:
         - to: start
           conditions:

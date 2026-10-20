@@ -131,9 +131,9 @@ public sealed class SpecialSkillsTest : GameTest
         Assert.That(SharedSpecialSystem.GetCharismaLoadoutPointModifier(1), Is.LessThan(0));
     }
 
-    [TestCase("MisfitsHolotapeLoreProspector")]
-    [TestCase("MisfitsHolotapeRandomBlue")]
-    [TestCase("N14ComputerTerminal")]
+    [TestCase("F14HolotapeLoreProspector")]
+    [TestCase("F14HolotapeRandomBlue")]
+    [TestCase("F14ComputerTerminal")]
     public async Task HolotapesAndTerminalsHaveText(string proto)
     {
         var server = Pair.Server;
@@ -151,7 +151,7 @@ public sealed class SpecialSkillsTest : GameTest
         });
     }
 
-    private static readonly EntProtoId PipBoy = "N14Pipboy";
+    private static readonly EntProtoId PipBoy = "F14Pipboy";
 
     [Test]
     public async Task PipBoysPlayHolotapes()
@@ -163,8 +163,8 @@ public sealed class SpecialSkillsTest : GameTest
         });
     }
 
-    [TestCase("N14ClothingHeadHelmetPowerArmorX01")]
-    [TestCase("N14ClothingHeadHelmetPowerArmorMidwestCommander")]
+    [TestCase("F14ClothingHeadHelmetPowerArmorX01")]
+    [TestCase("F14ClothingHeadHelmetPowerArmorMidwestCommander")]
     public async Task PowerArmorHelmetsHaveThermalVision(string proto)
     {
         var protoMan = Pair.Server.ProtoMan;
@@ -176,10 +176,10 @@ public sealed class SpecialSkillsTest : GameTest
         });
     }
 
-    [TestCase("N14Sink", new[] { "drainBuffer", "tank" })]
-    [TestCase("N14SinkFilledWater", new[] { "drainBuffer", "tank" })]
-    [TestCase("N14MobNightstalker", new[] { "melee", "udder" })]
-    [TestCase("N14IngotIron", new[] { "iron" })]
+    [TestCase("F14Sink", new[] { "drainBuffer", "tank" })]
+    [TestCase("F14SinkFilledWater", new[] { "drainBuffer", "tank" })]
+    [TestCase("F14MobNightstalker", new[] { "melee", "udder" })]
+    [TestCase("F14IngotIron", new[] { "iron" })]
     public async Task OldSolutionsStillExist(string proto, string[] solutions)
     {
         var server = Pair.Server;

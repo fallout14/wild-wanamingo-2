@@ -3,7 +3,7 @@
 
 - type: entity
   parent: FlashlightLantern
-  id: N14Flashlight
+  id: F14FlashlightBase
   name: flashlight
   description: Brighten up your miserable life.
   components:
@@ -19,8 +19,8 @@
     sprite: Objects/Tools/flashlight.rsi  # N14TODO: SPRITE
 
 - type: entity
-  parent: N14Flashlight
-  id: N14FlashlightEmpty
+  parent: F14FlashlightBase
+  id: F14FlashlightEmpty
   suffix: Empty
   components:
   - type: ItemSlots
@@ -32,7 +32,7 @@
 
 - type: entity
   parent: Flare
-  id: N14Flare
+  id: F14Flare
   name: flare
   description: Creates light for a short period of time.
   components:

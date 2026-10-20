@@ -13,10 +13,10 @@ namespace Content.IntegrationTests.Tests._WW;
 /// </summary>
 public sealed class PipBoyTest : GameTest
 {
-    [TestCase("N14Pipboy")]
-    [TestCase("MisfitsNCRCommanderPipboy")]
-    [TestCase("MisfitsNCRVeteranRangerPipboy")]
-    [TestCase("MisfitsHeadPaladin_PipBoy")]
+    [TestCase("F14Pipboy")]
+    [TestCase("F14NCRCommanderPipboy")]
+    [TestCase("F14NCRVeteranRangerPipboy")]
+    [TestCase("F14HeadPaladinPipBoy")]
     public async Task PipBoyIsAPda(string proto)
     {
         var server = Pair.Server;

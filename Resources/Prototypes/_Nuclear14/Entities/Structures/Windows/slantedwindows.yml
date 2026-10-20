@@ -2,8 +2,8 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Windows/slantedwindows.yml
 
 - type: entity
-  parent: N14WindowSmoothBaseAirtight
-  id: MisfitsWindowSlanted
+  parent: F14WindowSmoothBaseAirtight
+  id: F14WindowSlanted
   description: A window for seeing into places.
   name: window
   components:
@@ -36,7 +36,7 @@
           collection: GlassBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          N14WindowSlantedBroken:
+          F14WindowSlantedBroken:
             min: 1
             max: 1
       - !type:DoActsBehavior
@@ -52,11 +52,11 @@
         layer:
         - WallLayer
   - type: Construction
-    graph: N14WindowPane
+    graph: F14WindowPane
     node: N14WindowSlanted
 
 - type: entity
-  id: N14WindowSlantedBroken
+  id: F14WindowSlantedBroken
   name: broken glass
   description: Broken remains of a window.
   categories: [ HideSpawnMenu ]

@@ -2,7 +2,7 @@
 
 - type: entity
   parent: BaseItem
-  id: MisfitsFirearmSuppressor
+  id: F14FirearmSuppressor
   name: firearm suppressor
   description: A detachable muzzle suppressor. It dampens a compatible firearm's report and conceals its muzzle flash.
   components:
@@ -14,13 +14,13 @@
   - type: SuppressorAttachment
   - type: Tag
     tags:
-    - MisfitsFirearmMuzzleAttachment
+    - F14FirearmMuzzleAttachment
   - type: StaticPrice
     price: 125
 
 - type: entity
-  parent: N14CombatKnife
-  id: MisfitsFirearmBayonet
+  parent: F14CombatKnife
+  id: F14FirearmBayonet
   name: rifle bayonet
   description: A combat knife fitted with a mounting ring for use as a rifle bayonet.
   components:
@@ -33,4 +33,4 @@
     tags:
     - CombatKnife
     - Knife
-    - MisfitsFirearmMuzzleAttachment
+    - F14FirearmMuzzleAttachment

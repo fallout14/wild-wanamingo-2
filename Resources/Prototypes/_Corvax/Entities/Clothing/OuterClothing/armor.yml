@@ -2,8 +2,8 @@
 # Resources/Prototypes/Corvax/Entities/Clothing/OuterClothing/armor.yml
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: CorvaxClothingOuterDeanLegionnaireVeteranArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterDeanLegionnaireVeteranArmor
   #Misfits Change /Fix:/ corrected malformed component list indentation.
   name: heavy legionary armor
   description: "The heavy version of legionary armor slows down the wearer, but gives good protection from external threats."
@@ -29,8 +29,8 @@
 #    strengthModifier: 2
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: CorvaxClothingOuterDeanLegionnairePrimeArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterDeanLegionnairePrimeArmor
   name: heavy legionary armor
   description: "Though this heavy plate offers no added mobility, it stands as the Forgemaster's most protective suit of armor."
   components:
@@ -51,8 +51,8 @@
 #    strengthModifier: 2
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: CorvaxClothingOuterLegionnaireVeteranArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterLegionnaireVeteranArmor
   name: armor of a legionnaire-veteran
   description: "Good armor for combat, does not slow down the wearer and makes it easy to maneuver."
   components:
@@ -74,8 +74,8 @@
     damageCoefficient: 0.8
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: CorvaxClothingOuterLegionnaireReconnaissanceArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterLegionnaireReconnaissanceArmor
   name: reconnaissance armor
   description: "Good durable armor that does not burden movement."
   components:
@@ -97,8 +97,8 @@
     damageCoefficient: 0.85
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: CorvaxClothingLegionReconArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingLegionReconArmor
   name: light reconnaissance armor
   description: "Incredibly light armor with not the best protection, but you feel faster."
   components:
@@ -120,8 +120,8 @@
     damageCoefficient: 0.85
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: CorvaxClothingOuterLegionnaireBaseArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterLegionnaireBaseArmor
   name: legionnaire armor
   description: "The most standard and common armor."
   components:
@@ -143,8 +143,8 @@
     damageCoefficient: 0.85
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: CorvaxClothingOuterLegionnaireRecruitArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterLegionnaireRecruitArmor
   name: light legionnaire armor
   description: "Not very reliable, but very light legionnaire armor."
   components:
@@ -166,8 +166,8 @@
     damageCoefficient: 0.95
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: CorvaxClothingOuterLegionnaireVexillariusArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterLegionnaireVexillariusArmor
   name: vexillarius armor
   description: "Reinforced armor worn by the Legion's Vexillarius standard bearer."
   components:
@@ -189,8 +189,8 @@
     damageCoefficient: 0.80
 
 - type: entity
-  parent: N14FalloutArmorBase
-  id: CorvaxClothingOuterLegionnaireExplorerArmor
+  parent: F14FalloutArmorBase
+  id: F14ClothingOuterLegionnaireExplorerArmor
   name: explorer armor
   description: "Light layered armor worn by Legion scouts and explorers."
   components:

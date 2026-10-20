@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClothingShoesBase
-  id: N14ClothingPABoots
+  id: F14ClothingPABoots
   name: power armor boots
   description: A pair of mechanical boots made from durable materials.
   categories: [ HideSpawnMenu ]
@@ -28,7 +28,7 @@
         Heat: 0.95
   - type: FootstepModifier
     footstepSoundCollection:
-      collection: N14FootstepPowerArmor
+      collection: F14FootstepPowerArmor
   - type: Matchbox
   - type: ItemSlots
     slots:
@@ -40,11 +40,11 @@
           - Sidearm
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingPABoots
-  id: N14ClothingPABootsDark
+  parent: F14ClothingPABoots
+  id: F14ClothingPABootsDark
   name: power armor boots
   description: A pair of mechanical boots made from durable materials.
   categories: [ HideSpawnMenu ]
@@ -56,11 +56,11 @@
     sprite: Nuclear14/Clothing/Shoes/PowerBoots/dark.rsi
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable
 
 - type: entity
-  parent: N14ClothingPABoots
-  id: N14ClothingPABootsMBoS
+  parent: F14ClothingPABoots
+  id: F14ClothingPABootsMBoS
   name: power armor boots
   description: A pair of mechanical boots made from durable materials.
   categories: [ HideSpawnMenu ]
@@ -79,4 +79,4 @@
         Heat: 0.945
   - type: Tag
     tags:
-    - MisfitsSuperMutantWearable
+    - F14SuperMutantWearable

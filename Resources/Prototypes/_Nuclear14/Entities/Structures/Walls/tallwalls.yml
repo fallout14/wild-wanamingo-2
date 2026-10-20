@@ -3,7 +3,7 @@
 
 - type: entity
   parent: BaseWall
-  id: N14BaseWallTall
+  id: F14BaseWallTall
   suffix: tall
   abstract: true
   components:
@@ -16,8 +16,8 @@
     damageContainer: Inorganic
 
 - type: entity
-  parent: N14BaseWallTall
-  id: N14BaseWallTallMetalWeak
+  parent: F14BaseWallTall
+  id: F14BaseWallTallMetalWeak
   abstract: true
   components:
   - type: Damageable
@@ -39,8 +39,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14BaseWallTall
-  id: N14BaseWallTallMetal
+  parent: F14BaseWallTall
+  id: F14BaseWallTallMetal
   abstract: true
   components:
   - type: Damageable
@@ -62,8 +62,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14BaseWallTall
-  id: N14BaseWallTallMetalStrong
+  parent: F14BaseWallTall
+  id: F14BaseWallTallMetalStrong
   abstract: true
   components:
   - type: Damageable
@@ -87,8 +87,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: N14BaseWallTall
-  id: N14BaseWallTallWood
+  parent: F14BaseWallTall
+  id: F14BaseWallTallWood
   abstract: true
   components:
   - type: Damageable
@@ -113,13 +113,13 @@
           collection: WoodDestroyHeavy
 
 - type: entity
-  parent: N14BaseWallTall
-  id: N14WallAdobeTall
+  parent: F14BaseWallTall
+  id: F14WallAdobeTall
   name: adobe wall
   suffix: tall
   components:
   - type: Construction
-    graph: MisfitsAdobeWall
+    graph: F14AdobeWall
     node: AdobeWallTall
   - type: Sprite
     sprite: Nuclear14/Structures/Walls/ms13/tall/adobe.rsi
@@ -133,8 +133,8 @@
       base: talladobe
 
 - type: entity
-  parent: N14BaseWallTall
-  id: N14WallBrickTall
+  parent: F14BaseWallTall
+  id: F14WallBrickTall
   name: brick wall
   suffix: tall
   components:
@@ -150,8 +150,8 @@
       base: tallbrick
 
 - type: entity
-  parent: N14BaseWallTall
-  id: N14WallBrickAltTall
+  parent: F14BaseWallTall
+  id: F14WallBrickAltTall
   name: brick wall
   suffix: tall
   components:
@@ -167,8 +167,8 @@
       base: tallbrickalt
 
 - type: entity
-  parent: N14BaseWallTall
-  id: N14WallBrickGrayTall
+  parent: F14BaseWallTall
+  id: F14WallBrickGrayTall
   name: brick wall
   suffix: tall
   components:
@@ -184,8 +184,8 @@
       base: tallbrickgray
 
 - type: entity
-  parent: N14BaseWallTallMetalStrong
-  id: N14WallBunkerTall
+  parent: F14BaseWallTallMetalStrong
+  id: F14WallBunkerTall
   name: bunker wall
   suffix: tall
   components:
@@ -201,8 +201,8 @@
       base: tallbunker
 
 - type: entity
-  parent: N14BaseWallTall
-  id: N14WallCombTall
+  parent: F14BaseWallTall
+  id: F14WallCombTall
   name: comb wall
   suffix: tall
   components:
@@ -218,8 +218,8 @@
       base: tallcomb
 
 - type: entity
-  parent: N14BaseWallTall
-  id: N14WallConcreteTall
+  parent: F14BaseWallTall
+  id: F14WallConcreteTall
   name: concrete wall
   suffix: tall
   components:
@@ -241,8 +241,8 @@
       base: tallconcrete
 
 - type: entity
-  parent: N14BaseWallTall
-  id: N14WallConcreteAltTall
+  parent: F14BaseWallTall
+  id: F14WallConcreteAltTall
   name: concrete wall
   suffix: tall
   components:
@@ -258,8 +258,8 @@
       base: tallconcretealt
 
 - type: entity
-  parent: N14BaseWallTall
-  id: N14WallDungeonTall
+  parent: F14BaseWallTall
+  id: F14WallDungeonTall
   name: dungeon wall
   suffix: tall
   components:
@@ -275,8 +275,8 @@
       base: talldungeon
 
 - type: entity
-  parent: N14BaseWallTall
-  id: N14WallDungeonAltTall
+  parent: F14BaseWallTall
+  id: F14WallDungeonAltTall
   name: dungeon wall
   suffix: tall
   components:
@@ -292,8 +292,8 @@
       base: talldungeonalt
 
 - type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallMetalTall
+  parent: F14BaseWallTallMetal
+  id: F14WallMetalTall
   name: metal wall
   suffix: tall
   components:
@@ -309,8 +309,8 @@
       base: tallmetal
 
 - type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallPrisonTall
+  parent: F14BaseWallTallMetal
+  id: F14WallPrisonTall
   name: prison wall
   suffix: tall
   components:
@@ -326,8 +326,8 @@
       base: tallprison
 
 - type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallReinfMetalTall
+  parent: F14BaseWallTallMetal
+  id: F14WallReinfMetalTall
   name: reinforced metal wall
   suffix: tall
   components:
@@ -343,8 +343,8 @@
       base: tallreinfmetal
 
 - type: entity
-  parent: N14BaseWallTall
-  id: N14WallRockTall
+  parent: F14BaseWallTall
+  id: F14WallRockTall
   name: rock wall
   suffix: tall
   components:
@@ -377,8 +377,8 @@
             acts: ["Destruction"]
 
 - type: entity
-  parent: N14WallRockTall
-  id: N14WallRockDroughtTall
+  parent: F14WallRockTall
+  id: F14WallRockDroughtTall
   name: drought rock wall
   suffix: tall
   components:
@@ -394,8 +394,8 @@
       base: tallrockdrought
 
 - type: entity
-  parent: N14WallRockTall
-  id: N14WallRockMammothTall
+  parent: F14WallRockTall
+  id: F14WallRockMammothTall
   name: mammoth rock wall
   suffix: tall
   components:
@@ -411,8 +411,8 @@
       base: tallrockmammoth
 
 - type: entity
-  parent: N14BaseWallTallMetalWeak
-  id: N14WallRoughScrapTall
+  parent: F14BaseWallTallMetalWeak
+  id: F14WallRoughScrapTall
   name: tall rough scrap wall
   suffix: tall
   components:
@@ -427,12 +427,12 @@
       mask: [ walls, windows, grilles, marble, doors ]
       base: tallroughscrap
   - type: Construction
-    graph: N14ScrapWall
+    graph: F14ScrapWall
     node: RoughScrapWallTall
 
 - type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallIndustrialRustTall
+  parent: F14BaseWallTallMetal
+  id: F14WallIndustrialRustTall
   name: industrial rust wall
   suffix: tall
   components:
@@ -448,8 +448,8 @@
       base: tallrustindustrial
 
 - type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallMetalRustTall
+  parent: F14BaseWallTallMetal
+  id: F14WallMetalRustTall
   name: metal rust wall
   suffix: tall
   components:
@@ -465,8 +465,8 @@
       base: tallrustmetal
 
 - type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallReinfMetalRustTall
+  parent: F14BaseWallTallMetal
+  id: F14WallReinfMetalRustTall
   name: reinforced metal rust wall
   suffix: tall
   components:
@@ -482,8 +482,8 @@
       base: tallrustreinfmetal
 
 - type: entity
-  parent: N14BaseWallTallMetalStrong
-  id: N14WallVaultRustTall
+  parent: F14BaseWallTallMetalStrong
+  id: F14WallVaultRustTall
   name: vault rust wall
   suffix: tall
   components:
@@ -499,8 +499,8 @@
       base: tallrustvault
 
 - type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallVaultVentsRustTall
+  parent: F14BaseWallTallMetal
+  id: F14WallVaultVentsRustTall
   name: vault vents rust wall
   suffix: tall
   components:
@@ -516,8 +516,8 @@
       base: tallrustvaultvent
 
 - type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallScrapTall
+  parent: F14BaseWallTallMetal
+  id: F14WallScrapTall
   name: tall sheet metal wall
   suffix: tall
   components:
@@ -532,12 +532,12 @@
       mask: [ walls, windows, grilles, marble, doors ]
       base: tallscrap
   - type: Construction
-    graph: N14ScrapWall
+    graph: F14ScrapWall
     node: SheetScrapWallTall
 
 - type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallScrapBlueTall
+  parent: F14BaseWallTallMetal
+  id: F14WallScrapBlueTall
   name: tall blue sheet metal wall
   suffix: tall
   components:
@@ -552,12 +552,12 @@
       mask: [ walls, windows, grilles, marble, doors ]
       base: tallscrapblue
   - type: Construction
-    graph: N14ScrapWall
+    graph: F14ScrapWall
     node: BlueScrapWallTall
 
 - type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallScrapRedTall
+  parent: F14BaseWallTallMetal
+  id: F14WallScrapRedTall
   name: tall red sheet metal wall
   suffix: tall
   components:
@@ -572,12 +572,12 @@
       mask: [ walls, windows, grilles, marble, doors ]
       base: tallscrapred
   - type: Construction
-    graph: N14ScrapWall
+    graph: F14ScrapWall
     node: RedScrapWallTall
 
 - type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallScrapWhiteTall
+  parent: F14BaseWallTallMetal
+  id: F14WallScrapWhiteTall
   name: tall white sheet metal wall
   suffix: tall
   components:
@@ -592,12 +592,12 @@
       mask: [ walls, windows, grilles, marble, doors ]
       base: tallscrapwhite
   - type: Construction
-    graph: N14ScrapWall
+    graph: F14ScrapWall
     node: WhiteScrapWallTall
 
 - type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallSewerTall
+  parent: F14BaseWallTallMetal
+  id: F14WallSewerTall
   name: sewer wall
   suffix: tall
   components:
@@ -613,8 +613,8 @@
       base: tallsewer
 
 - type: entity
-  parent: N14BaseWallTallWood
-  id: N14WallSidingTall
+  parent: F14BaseWallTallWood
+  id: F14WallSidingTall
   name: siding wall
   suffix: tall
   components:
@@ -630,8 +630,8 @@
       base: tallsiding
 
 - type: entity
-  parent: N14BaseWallTallWood
-  id: N14WallSidingBlueTall
+  parent: F14BaseWallTallWood
+  id: F14WallSidingBlueTall
   name: blue siding wall
   suffix: tall
   components:
@@ -647,8 +647,8 @@
       base: tallsidingblue
 
 - type: entity
-  parent: N14BaseWallTallWood
-  id: N14WallSidingRedTall
+  parent: F14BaseWallTallWood
+  id: F14WallSidingRedTall
   name: red siding wall
   suffix: tall
   components:
@@ -664,8 +664,8 @@
       base: tallsidingred
 
 - type: entity
-  parent: N14BaseWallTallWood
-  id: N14WallSidingGreenTall
+  parent: F14BaseWallTallWood
+  id: F14WallSidingGreenTall
   name: green siding wall
   suffix: tall
   components:
@@ -681,8 +681,8 @@
       base: tallsidinggreen
 
 - type: entity
-  parent: N14BaseWallTallMetalStrong
-  id: N14WallVaultTall
+  parent: F14BaseWallTallMetalStrong
+  id: F14WallVaultTall
   name: vault wall
   suffix: tall
   components:
@@ -698,8 +698,8 @@
       base: tallvault
 
 - type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallVaultVentTall
+  parent: F14BaseWallTallMetal
+  id: F14WallVaultVentTall
   name: vault vent wall
   suffix: tall
   components:
@@ -715,8 +715,8 @@
       base: tallvaultvent
 
 - type: entity
-  parent: N14BaseWallTallWood
-  id: N14WallWoodTall
+  parent: F14BaseWallTallWood
+  id: F14WallWoodTall
   name: tall wood wall
   suffix: tall
   components:
@@ -731,12 +731,12 @@
       mask: [ walls, windows, grilles, marble, doors ]
       base: tallwood
   - type: Construction
-    graph: N14WoodWall
+    graph: F14WoodWall
     node: WallWoodTall
 
 - type: entity
-  parent: N14BaseWallTallWood
-  id: N14WallWoodAltTall
+  parent: F14BaseWallTallWood
+  id: F14WallWoodAltTall
   name: wood wall
   suffix: tall
   components:

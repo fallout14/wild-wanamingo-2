@@ -3,7 +3,7 @@
 
 - type: entity
   parent: F14ClothingOuterPowerArmorBase
-  id: N14ClothingOuterPowerArmorT45
+  id: F14ClothingOuterPowerArmorT45
   name: T-45 Power Armor
   description: An old suit of T-45 power armor. It's amazing these still exist, given how many have been mangled and destroyed in combat both before and after the bombs dropped.
   components:
@@ -54,10 +54,10 @@
     blockUnequipWhenAttached: true
     replaceCurrentClothing: false
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorT45 # #Misfits Change - BOS has its own PA so not everyone gets the tacmap.
-      gloves: N14ClothingPAGauntlets
-      shoes: N14ClothingPABoots
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorT45 # #Misfits Change - BOS has its own PA so not everyone gets the tacmap.
+      gloves: F14ClothingPAGauntlets
+      shoes: F14ClothingPABoots
+      back: F14ClothingPowerSystemsBack
   - type: TemperatureProtection
     coefficient: 0.25
   - type: FireProtection
@@ -81,7 +81,7 @@
         Piercing: 0.85
   - type: EmitsSoundOnMove # Corvax-Change
     soundCollection:
-      collection: N14FootstepPowerArmor
+      collection: F14FootstepPowerArmor
       params:
         volume: -6
     requiresWorn: true
@@ -89,8 +89,8 @@
     distanceSprinting: 3
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT45
-  id: N14ClothingOuterPowerArmorT51
+  parent: F14ClothingOuterPowerArmorT45
+  id: F14ClothingOuterPowerArmorT51
   name: T-51 Power Armor
   description: An old T-51 Power Armor suit. Before the world ended, these were the pride of the US military, and proved essential against the People's Liberation Army.
   components:
@@ -118,16 +118,16 @@
         type: MultiToggleableClothingBoundUserInterface
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorT51
-      gloves: N14ClothingPAGauntlets
-      shoes: N14ClothingPABoots
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorT51
+      gloves: F14ClothingPAGauntlets
+      shoes: F14ClothingPABoots
+      back: F14ClothingPowerSystemsBack
   - type: ExplosionResistance
     damageCoefficient: 0.12 # #Misfits Tweak: T-51 blast resistance — ~14 HP at ground zero
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT51
-  id: N14ClothingOuterPowerArmorT60
+  parent: F14ClothingOuterPowerArmorT51
+  id: F14ClothingOuterPowerArmorT60
   name: T-60 Power Armor
   description: An old T-60 power armor suit. It was used by the US military in the last few months before the bombs dropped, and was considered a replacement for the T-45.
   components:
@@ -155,18 +155,18 @@
         type: MultiToggleableClothingBoundUserInterface
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorT60
-      gloves: N14ClothingPAGauntlets
-      shoes: N14ClothingPABoots
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorT60
+      gloves: F14ClothingPAGauntlets
+      shoes: F14ClothingPABoots
+      back: F14ClothingPowerSystemsBack
 
 # #Misfits Add - BOS-variant T60 that equips the Brotherhood tactical-HUD helmet.
 # Senior Paladins wear this so they can access the shared BOS map feed.
-# The plain N14ClothingOuterPowerArmorT60 is intentionally left alone (NCR crafting ingredient).
+# The plain F14ClothingOuterPowerArmorT60 is intentionally left alone (NCR crafting ingredient).
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT60
-  id: N14ClothingOuterPowerArmorT60Tesla
+  parent: F14ClothingOuterPowerArmorT60
+  id: F14ClothingOuterPowerArmorT60Tesla
   name: T-60 Tesla Power Armor
   description: A suit of T-60 power armor, with tesla coils mounted on the pauldrons, forearms, and the back of the suit. An experimental post-war modification recovered from the east, it is particularly resistant to energy weapons.
   components:
@@ -184,14 +184,14 @@
         type: MultiToggleableClothingBoundUserInterface
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorT60
-      gloves: N14ClothingPAGauntletsTesla
-      shoes: N14ClothingPABoots
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorT60
+      gloves: F14ClothingPAGauntletsTesla
+      shoes: F14ClothingPABoots
+      back: F14ClothingPowerSystemsBack
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT45
-  id: N14ClothingOuterPowerArmorAdvanced1
+  parent: F14ClothingOuterPowerArmorT45
+  id: F14ClothingOuterPowerArmorAdvanced1
   # #Misfits Change - Renamed X-01 -> APA MK I
   name: APA MK I Power Armor
   description: The standard issue model of power armor for U.S. Army infantry personnel. It offers an advanced sensors suite and improved defensive capabilities compared to standard pre-war models.
@@ -222,18 +222,18 @@
         type: MultiToggleableClothingBoundUserInterface
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorX01
-      gloves: N14ClothingPAGauntletsDark
-      shoes: N14ClothingPABootsDark
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorX01
+      gloves: F14ClothingPAGauntletsDark
+      shoes: F14ClothingPABootsDark
+      back: F14ClothingPowerSystemsBack
   - type: Reflect # #Misfits Change Tweak: Small-caliber rounds (sub-5.56mm) ricochet off power armor at 35% chance. Innate - always active regardless of movement.
     reflects: [ NonEnergy ]
     reflectProb: 0.35
     spread: 90
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorAdvanced1
-  id: N14ClothingOuterPowerArmorAdvanced2
+  parent: F14ClothingOuterPowerArmorAdvanced1
+  id: F14ClothingOuterPowerArmorAdvanced2
   # #Misfits Change - Renamed X-02 -> APA MK II
   name: APA MK II Power Armor
   description: The next generation in power armor technology. The APA MK II is a more lightweight and sleek design than the APA MK I, offering the wearer unparalleled mobility compared to its alternatives.
@@ -268,17 +268,17 @@
   # #Misfits Change - Enclave tactical map HUD; action fires from helmet (HEAD slot), not suit
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorX02
-      gloves: N14ClothingPAGauntletsDark
-      shoes: N14ClothingPABootsDark
-      back: MisfitsClothingPowerSystemsBackX02 # Misfits Change add: This is for X-02, gives it the increased movespeed. Regular PA is 90% the wearer's speed, X-02 is 95%.
+      head: F14ClothingHeadHelmetPowerArmorX02
+      gloves: F14ClothingPAGauntletsDark
+      shoes: F14ClothingPABootsDark
+      back: F14ClothingPowerSystemsBackX02 # Misfits Change add: This is for X-02, gives it the increased movespeed. Regular PA is 90% the wearer's speed, X-02 is 95%.
   - type: Reflect # #Misfits Change Tweak: X-02 has improved movespeed and resistances over the X-02 but less reflect chance
     reflects: [ NonEnergy ]
     reflectProb: 0.3
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorAdvanced2
-  id: N14ClothingOuterPowerArmorAdvanced2Hellfire
+  parent: F14ClothingOuterPowerArmorAdvanced2
+  id: F14ClothingOuterPowerArmorAdvanced2Hellfire
   name: Hellfire Power Armor
   description: A deep black suit of U.S. Army-manufactured heavy power armor based on pre-war designs such as the T-51, and improving off of data gathered by post-war designs such as the APA MK I. Most commonly fielded on the East Coast, no suit can rival its strength.
   components:
@@ -307,18 +307,18 @@
         type: MultiToggleableClothingBoundUserInterface
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorHellfire
-      gloves: N14ClothingPAGauntletsDark
-      shoes: N14ClothingPABootsDark
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorHellfire
+      gloves: F14ClothingPAGauntletsDark
+      shoes: F14ClothingPABootsDark
+      back: F14ClothingPowerSystemsBack
   - type: Reflect # #Misfits Change Tweak: Small-caliber rounds (sub-5.56mm) ricochet off power armor at 40% chance. Innate - always active regardless of movement.
     reflects: [ NonEnergy ]
     reflectProb: 0.4
     spread: 90
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT45
-  id: N14ClothingOuterPowerArmorRaider
+  parent: F14ClothingOuterPowerArmorT45
+  id: F14ClothingOuterPowerArmorRaider
   name: Raider Power Armor
   description: An old T-45 Power Armor suit. It shows signs of rust and aesthetic spikes for pure intimidation. It has not been properly maintained, but is still functional.
   components:
@@ -348,10 +348,10 @@
         type: MultiToggleableClothingBoundUserInterface
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorT45 # Forge-Change
-      gloves: N14ClothingPAGauntletsDark
-      shoes: N14ClothingPABootsDark
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorT45 # Forge-Change
+      gloves: F14ClothingPAGauntletsDark
+      shoes: F14ClothingPABootsDark
+      back: F14ClothingPowerSystemsBack
   - type: Reflect # #Misfits Change Tweak: Raider power armor ricochets small-caliber rounds at 30% (innate).
     reflects: [ NonEnergy ]
     reflectProb: 0.35
@@ -361,8 +361,8 @@
     sprintModifier: 0.15
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT45 # #Misfits Add - Midwest PA are loadout options for Paladins/Senior Paladins/Head Paladins. Each parents off of the PA that role usually gets - they're drip, identical statwise.
-  id: N14ClothingOuterPowerArmorMidwest
+  parent: F14ClothingOuterPowerArmorT45 # #Misfits Add - Midwest PA are loadout options for Paladins/Senior Paladins/Head Paladins. Each parents off of the PA that role usually gets - they're drip, identical statwise.
+  id: F14ClothingOuterPowerArmorMidwest
   name: Midwest Power Armor
   description: An unknown model of power armor manufactured by the Brotherhood of Steel. It supports a lighter plating than power armor usually maintains but is more ergonomic as a result, allowing easier movement.
   components:
@@ -372,16 +372,16 @@
     sprite: Nuclear14/Clothing/OuterClothing/PowerArmor/midwest.rsi
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorMidwest
-      gloves: N14ClothingPAGauntletsMBoS
-      shoes: N14ClothingPABootsMBoS
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorMidwest
+      gloves: F14ClothingPAGauntletsMBoS
+      shoes: F14ClothingPABootsMBoS
+      back: F14ClothingPowerSystemsBack
 
 #Misfit
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorWashT51Elite # #Misfits Add - Midwest PA are loadout options for Paladins/Senior Paladins/Head Paladins. Each parents off of the PA that role usually gets - they're drip, identical statwise.
-  id: N14ClothingOuterPowerArmorMidwestCommander
+  parent: F14ClothingOuterPowerArmorWashT51Elite # #Misfits Add - Midwest PA are loadout options for Paladins/Senior Paladins/Head Paladins. Each parents off of the PA that role usually gets - they're drip, identical statwise.
+  id: F14ClothingOuterPowerArmorMidwestCommander
   name: Midwest Commander Power Armor
   description: An unknown model of power armor manufactured by the Brotherhood of Steel. This modified version is commonly used by high-ranking Brotherhood of Steel Paladins, and is a highly coveted reward.
   components:
@@ -391,14 +391,14 @@
     sprite: Nuclear14/Clothing/OuterClothing/PowerArmor/midwestcommander.rsi
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorMidwestCommander
-      gloves: N14ClothingPAGauntletsMBoS
-      shoes: N14ClothingPABootsMBoS
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorMidwestCommander
+      gloves: F14ClothingPAGauntletsMBoS
+      shoes: F14ClothingPABootsMBoS
+      back: F14ClothingPowerSystemsBack
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT45
-  id: N14ClothingOuterPowerArmorT51BC
+  parent: F14ClothingOuterPowerArmorT45
+  id: F14ClothingOuterPowerArmorT51BC
   name: T-51bc Paladin Commander Power Armor
   description: The pinnacle of pre-war technology, heroically appropriated by the Brotherhood of Steel. Commonly worn by Paladin Commanders, to have earned this armor is proof one has done their service, tenfold.
   components:
@@ -430,18 +430,18 @@
         type: MultiToggleableClothingBoundUserInterface
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorT51BC
-      gloves: N14ClothingPAGauntletsDark
-      shoes: N14ClothingPABootsDark
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorT51BC
+      gloves: F14ClothingPAGauntletsDark
+      shoes: F14ClothingPABootsDark
+      back: F14ClothingPowerSystemsBack
   - type: Reflect # #Misfits Change Tweak: T-51BC ricochets small-caliber rounds at 30% (innate).
     reflects: [ NonEnergy ]
     reflectProb: 0.55
     spread: 90
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT45
-  id: N14ClothingOuterPowerArmorT45NCR
+  parent: F14ClothingOuterPowerArmorT45
+  id: F14ClothingOuterPowerArmorT45NCR
   abstract: true # #Misfits Disable - misleading legacy intermediate; use N14ClothingOuterPowerArmorT45NCRSalvaged instead.
   categories: [ HideSpawnMenu ]
   name: NCR T-45 Salvaged Power Armor
@@ -475,18 +475,18 @@
         type: MultiToggleableClothingBoundUserInterface
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorT45NCR
-      gloves: N14ClothingPAGauntlets
-      shoes: N14ClothingPABoots
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorT45NCR
+      gloves: F14ClothingPAGauntlets
+      shoes: F14ClothingPABoots
+      back: F14ClothingPowerSystemsBack
   - type: Reflect # #Misfits Change Tweak: Salvaged NCR T-45 ricochets small-caliber rounds at 30% (innate).
     reflects: [ NonEnergy ]
     reflectProb: 0.4
     spread: 90
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT51
-  id: N14ClothingOuterPowerArmorT51Canadian
+  parent: F14ClothingOuterPowerArmorT51
+  id: F14ClothingOuterPowerArmorT51Canadian
   name: T-51bc "The Canadian Shield" Power Armor
   description: The pinnacle of pre-war technology used to brutalize Canadian rebels during the northern occupation, this set was liberated by the locals and modified to be used against their American oppressors.
   components:
@@ -511,8 +511,8 @@
     spread: 90
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorT45
-  id: N14ClothingOuterPowerArmorWashT51
+  parent: F14ClothingOuterPowerArmorT45
+  id: F14ClothingOuterPowerArmorWashT51
   name: Modified T-51 Power Armor
   description: A modified set of T-51 power armor, it seems to have some slight upgrades over the pre-war model and is in the colours of the Washington Brotherhood. These suits bring a feeling of terror to those local to Seattle.
   components:
@@ -542,18 +542,18 @@
         type: MultiToggleableClothingBoundUserInterface
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorT51Wash
-      gloves: N14ClothingPAGauntlets
-      shoes: N14ClothingPABoots
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorT51Wash
+      gloves: F14ClothingPAGauntlets
+      shoes: F14ClothingPABoots
+      back: F14ClothingPowerSystemsBack
   - type: Reflect # #Misfits Change Tweak: Washington BoS T-51 ricochets small-caliber rounds at 30% (innate).
     reflects: [ NonEnergy ]
     reflectProb: 0.3
     spread: 90
 
 - type: entity
-  parent: N14ClothingOuterPowerArmorWashT51
-  id: N14ClothingOuterPowerArmorWashT51Elite
+  parent: F14ClothingOuterPowerArmorWashT51
+  id: F14ClothingOuterPowerArmorWashT51Elite
   name: T-51b Power Armor #Misfits Tweak: Renamed from "elite T-51" to lore-accurate T-51b designation
   description: The pinnacle of pre-war military engineering, the T-51b was standard issue for front-line infantry units during the Sino-American conflict. This suit's fusion-powered servos and composite plating have withstood the test of time.
   components:
@@ -581,7 +581,7 @@
         type: MultiToggleableClothingBoundUserInterface
   - type: MultiToggleableClothing
     clothingPrototypes:
-      head: N14ClothingHeadHelmetPowerArmorT51WashElite
-      gloves: N14ClothingPAGauntlets
-      shoes: N14ClothingPABoots
-      back: N14ClothingPowerSystemsBack
+      head: F14ClothingHeadHelmetPowerArmorT51WashElite
+      gloves: F14ClothingPAGauntlets
+      shoes: F14ClothingPABoots
+      back: F14ClothingPowerSystemsBack

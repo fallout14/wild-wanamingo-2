@@ -2,16 +2,16 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Explosives/40mm.yml
 
 - type: entity
-  id: N1440mmGrenadeFrag
+  id: F1440mmGrenadeFrag
   name: 40mm HE grenade
   description: A high-explosive 40mm round with a broad concussive blast and no fragmentation.
   parent: BaseGrenade
   components:
   - type: Tag
     tags:
-    - N14Grenade
+    - F14Grenade
   - type: CartridgeAmmo
-    proto: N14GrenadeProjectile
+    proto: F14GrenadeProjectile
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
@@ -23,15 +23,15 @@
     suffix: false
 
 - type: entity
-  id: N1440mmGrenadeFire
+  id: F1440mmGrenadeFire
   name: 40mm fire grenade
   parent: BaseGrenade
   components:
   - type: Tag
     tags:
-    - N14Grenade
+    - F14Grenade
   - type: CartridgeAmmo
-    proto: N14FireGrenadeProjectile
+    proto: F14FireGrenadeProjectile
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:

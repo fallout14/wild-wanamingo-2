@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Construction/Graphs/Structures/halfwall.yml
 
 - type: constructionGraph
-  id: N14HalfWall
+  id: F14HalfWall
   start: start
   graph:
     - node: start
@@ -30,7 +30,7 @@
               doAfter: 2
               
     - node: Wood
-      entity: N14WallWoodHalf
+      entity: F14WallWoodHalf
       edges:
         - to: start
           completed:
@@ -43,7 +43,7 @@
               doAfter: 10
 
     - node: Metal
-      entity: N14WallMetalHalf
+      entity: F14WallMetalHalf
       edges:
         - to: start
           completed:
