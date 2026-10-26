@@ -38,8 +38,7 @@
         - state: mopbucket
         - state: mopbucket_water-3
           map: [ "enum.SolutionContainerLayers.Fill" ]
-    - type: Solution
-      id: bucket
+    - type: Solution # WW: keeps Wizden's mop bucket solution (tank); 'bucket' left the water out of reach
       solution:
         maxVol: 600
         reagents:

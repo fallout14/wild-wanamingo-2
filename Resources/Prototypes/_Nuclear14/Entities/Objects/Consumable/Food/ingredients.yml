@@ -9,6 +9,7 @@
   - type: Sprite
     sprite: Objects/Consumable/Food/ingredients.rsi
   - type: Solution
+    id: food
     solution:
       maxVol: 50
   - type: SolutionTransfer
@@ -74,6 +75,7 @@
   - type: Sprite
     state: flour-big
   - type: Solution
+    id: food
     solution:
       maxVol: 50
       reagents:
@@ -89,6 +91,7 @@
   - type: Sprite
     state: flour-small
   - type: Solution
+    id: food
     solution:
       maxVol: 20
       reagents:
@@ -104,6 +107,7 @@
   - type: Sprite
     state: cornmeal-big
   - type: Solution
+    id: food
     solution:
       reagents:
       - ReagentId: F14ExtractMaize
@@ -118,6 +122,7 @@
   - type: Sprite
     state: cornmeal
   - type: Solution
+    id: food
     solution:
       maxVol: 20
       reagents:
@@ -133,6 +138,7 @@
   - type: Sprite
     state: rice-big
   - type: Solution
+    id: food
     solution:
       reagents:
       - ReagentId: Rice
@@ -147,6 +153,7 @@
   - type: Sprite
     state: rice-small
   - type: Solution
+    id: food
     solution:
       maxVol: 20
       reagents:
@@ -162,6 +169,7 @@
   - type: Sprite
     state: sugar-big
   - type: Solution
+    id: food
     solution:
       reagents:
       - ReagentId: Sugar
@@ -176,6 +184,7 @@
   - type: Sprite
     state: sugar-small
   - type: Solution
+    id: food
     solution:
       maxVol: 20
       reagents:
@@ -191,6 +200,7 @@
   - type: Sprite
     state: oliveoil
   - type: Solution
+    id: food
     solution:
       maxVol: 20
       reagents:
@@ -206,6 +216,7 @@
   - type: Sprite
     state: mayo
   - type: Solution
+    id: food
     solution:
       maxVol: 50 # you always need more mayo
       reagents:
@@ -632,6 +643,7 @@
   description: Contains 10u of powdered protein. Mix with 20u of water
   components:
   - type: Solution
+    id: food
     solution:
       maxVol: 10
       reagents:

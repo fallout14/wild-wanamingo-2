@@ -116,9 +116,9 @@
     fuelConsumption: 1
     fuelLitCost: 0.5
   - type: RefillableSolution
-    solution: Welder
+    solution: welder # WW: Wizden's welder fuel solution name
   - type: Solution
-    id: Welder
+    id: welder
     solution:
       reagents:
       - ReagentId: WeldingFuel

@@ -36,7 +36,7 @@
 # 100-damage epicenter and crowd-control knockdown on the surrounding tiles.
 
 - type: explosion
-  id: F1440mmHE
+  id: F14Ammo40mmHE
   damagePerIntensity:
     types:
       Heat: 6.25
@@ -53,7 +53,7 @@
 # Its intensity is kept below the explosion system's knockdown threshold.
 
 - type: explosion
-  id: F1440mmIncendiary
+  id: F14Ammo40mmIncendiary
   damagePerIntensity:
     types: {}
   fireStacks: 4

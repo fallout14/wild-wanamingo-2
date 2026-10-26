@@ -186,25 +186,15 @@
   - type: ContainerContainer
     containers:
       stash: !type:ContainerSlot {}
-  - type: Solution
-    id: drainBuffer
-    solution:
-      maxVol: 500
-  - type: SolutionManager
-    solutions:
-    - F14ToiletSolutionToilet
-  - type: DumpableSolution
-    solution: drainBuffer
-
-- type: entity
-  parent: Solution
-  id: F14ToiletSolutionToilet
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Solution
+  - type: Solution # WW: the toilet holds its water itself; the drain buffer is a child solution, as in Wizden's toilet
     id: toilet
     solution:
       maxVol: 250
+  - type: SolutionManager
+    solutions:
+    - SolutionDrainNormal
+  - type: DumpableSolution
+    solution: drainBuffer
 
 - type: entity
   parent: F14Toilet
@@ -214,11 +204,10 @@
   - type: Solution
     id: toilet
     solution:
+      maxVol: 250
       reagents:
       - ReagentId: Water
         Quantity: 200
-  - type: SolutionManager
-    solutions: []
   - type: NamedSolutionRegeneration
     solution: toilet
     generated:
@@ -234,13 +223,12 @@
   - type: Solution
     id: toilet
     solution:
+      maxVol: 250
       reagents:
       - ReagentId: F14WaterDirty
         Quantity: 180
       - ReagentId: GastroToxin
         Quantity: 20
-  - type: SolutionManager
-    solutions: []
   - type: NamedSolutionRegeneration
     solution: toilet
     generated:
@@ -258,6 +246,7 @@
   - type: Solution
     id: toilet
     solution:
+      maxVol: 250
       reagents:
       - ReagentId: F14WaterIrradiated
         Quantity: 180

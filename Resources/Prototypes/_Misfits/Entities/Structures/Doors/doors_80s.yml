@@ -6,7 +6,7 @@
   suffix: 80s, Locked, Head
   components:
   - type: AccessReader
-    access: [["F1480sHead"]]
+    access: [["F14Gang80sHead"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -18,7 +18,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -28,7 +28,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -38,7 +38,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -48,7 +48,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -58,7 +58,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -68,7 +68,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -78,7 +78,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -88,7 +88,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -98,7 +98,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -108,7 +108,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -118,7 +118,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -128,14 +128,14 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
 # garage door
 
 - type: entity
-  id: F1480sGarageDoor
+  id: F14Gang80sGarageDoor
   parent: BaseShutter
   name: 80s garage door
   description: fancy paint mate.
@@ -196,7 +196,7 @@
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["F1480sSlave"]]
+    access: [["F14Gang80sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -206,7 +206,7 @@
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["F1480sSlave"]]
+    access: [["F14Gang80sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -216,7 +216,7 @@
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["F1480sSlave"]]
+    access: [["F14Gang80sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -226,7 +226,7 @@
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["F1480sSlave"]]
+    access: [["F14Gang80sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -236,7 +236,7 @@
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["F1480sSlave"]]
+    access: [["F14Gang80sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -246,7 +246,7 @@
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["F1480sSlave"]]
+    access: [["F14Gang80sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -256,7 +256,7 @@
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["F1480sSlave"]]
+    access: [["F14Gang80sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -266,7 +266,7 @@
   suffix: 80s, Slave, Locked
   components:
   - type: AccessReader
-    access: [["F1480sSlave"]]
+    access: [["F14Gang80sSlave"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -279,7 +279,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -289,7 +289,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -299,7 +299,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -309,7 +309,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -319,7 +319,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -329,7 +329,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -339,7 +339,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -349,7 +349,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -359,7 +359,7 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo
 
@@ -369,6 +369,6 @@
   suffix: 80s, Locked
   components:
   - type: AccessReader
-    access: [["F1480s"]]
+    access: [["F14Gang80s"]]
   - type: Wires
     layoutId: AirlockCargo

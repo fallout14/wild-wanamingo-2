@@ -1,13 +1,13 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/40mm_cartridges.yml
 
 - type: entity
-  id: F1440mmGrenadeHEDP
-  parent: F1440mmGrenadeFrag
+  id: F14Ammo40mmGrenadeHEDP
+  parent: F14Ammo40mmGrenadeFrag
   name: 40mm HEDP grenade
   description: A 40mm round combining a compact explosive blast with lethal fragmentation. Use from cover.
   components:
   - type: CartridgeAmmo
-    proto: F1440mmHEDPProjectile
+    proto: F14Ammo40mmHEDPProjectile
   - type: Sprite
     sprite: Misfits/Legacy/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
@@ -17,13 +17,13 @@
     state: he
 
 - type: entity
-  id: F1440mmGrenadePulse
-  parent: F1440mmGrenadeFrag
+  id: F14Ammo40mmGrenadePulse
+  parent: F14Ammo40mmGrenadeFrag
   name: 40mm pulse grenade
   description: A 40mm round that releases an electromagnetic pulse and a blue energy burst. Effective against robots and powered armor.
   components:
   - type: CartridgeAmmo
-    proto: F1440mmPulseProjectile
+    proto: F14Ammo40mmPulseProjectile
   - type: Sprite
     layers:
     - state: emp
@@ -32,22 +32,22 @@
     state: emp
 
 - type: entity
-  id: F1440mmGrenadePlasma
-  parent: F1440mmGrenadeFrag
+  id: F14Ammo40mmGrenadePlasma
+  parent: F14Ammo40mmGrenadeFrag
   name: 40mm plasma grenade
   description: A 40mm round that releases a compact burst of caustic green plasma.
   components:
   - type: CartridgeAmmo
-    proto: F1440mmPlasmaProjectile
+    proto: F14Ammo40mmPlasmaProjectile
 
 - type: entity
-  id: F1440mmGrenadeBuckshot
-  parent: F1440mmGrenadeFrag
+  id: F14Ammo40mmGrenadeBuckshot
+  parent: F14Ammo40mmGrenadeFrag
   name: 40mm buckshot round
   description: A 40mm shell containing twenty small buckshot pellets. Fires directly from the launcher without an explosion.
   components:
   - type: CartridgeAmmo
-    proto: F1440mmBuckshotSpread
+    proto: F14Ammo40mmBuckshotSpread
   - type: Sprite
     sprite: Misfits/Legacy/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
@@ -57,31 +57,31 @@
     state: buckshot
 
 - type: entity
-  id: F1440mmGrenadeSmoke
-  parent: F1440mmGrenadeFrag
+  id: F14Ammo40mmGrenadeSmoke
+  parent: F14Ammo40mmGrenadeFrag
   name: 40mm smoke round
   description: A 40mm round that releases screening smoke on impact.
   components:
   - type: CartridgeAmmo
-    proto: F1440mmSmokeProjectile
+    proto: F14Ammo40mmSmokeProjectile
 
 - type: entity
-  id: F1440mmGrenadeWhitePhosphorus
-  parent: F1440mmGrenadeFrag
+  id: F14Ammo40mmGrenadeWhitePhosphorus
+  parent: F14Ammo40mmGrenadeFrag
   name: 40mm white phosphorus round
   description: A 40mm round that releases pale, caustic screening smoke without igniting its targets.
   components:
   - type: CartridgeAmmo
-    proto: F1440mmWhitePhosphorusProjectile
+    proto: F14Ammo40mmWhitePhosphorusProjectile
 
 - type: entity
-  id: F1440mmGrenadeFlashbang
-  parent: F1440mmGrenadeFrag
+  id: F14Ammo40mmGrenadeFlashbang
+  parent: F14Ammo40mmGrenadeFrag
   name: 40mm flashbang round
   description: A 40mm round that produces a blinding flash and loud bang on impact.
   components:
   - type: CartridgeAmmo
-    proto: F1440mmFlashbangProjectile
+    proto: F14Ammo40mmFlashbangProjectile
   - type: Sprite
     sprite: Misfits/Legacy/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
@@ -91,10 +91,10 @@
     state: flashbang
 
 - type: entity
-  id: F1440mmGrenadeTearGas
-  parent: F1440mmGrenadeFrag
+  id: F14Ammo40mmGrenadeTearGas
+  parent: F14Ammo40mmGrenadeFrag
   name: 40mm tear gas round
   description: A 40mm riot-control round that releases irritating tear gas on impact.
   components:
   - type: CartridgeAmmo
-    proto: F1440mmTearGasProjectile
+    proto: F14Ammo40mmTearGasProjectile
