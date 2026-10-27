@@ -8,6 +8,8 @@
   abstract: true
   parent: SeatBase
   description: Multiple seats spanning a single object. Truly a marvel of science.
+  placement: # WW: SeatBase places freely; benches and sofas snap to the tile like Wizden's
+    mode: SnapgridCenter
   components:
   - type: Physics
     bodyType: Static

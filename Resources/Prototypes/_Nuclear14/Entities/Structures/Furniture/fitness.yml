@@ -6,6 +6,8 @@
   id: F14FitnessWeightsBench1
   name: weights bench
   description: A bench for pumping iron.
+  placement: # WW: snap to the tile
+    mode: SnapgridCenter
   components:
   - type: Transform
     anchored: true

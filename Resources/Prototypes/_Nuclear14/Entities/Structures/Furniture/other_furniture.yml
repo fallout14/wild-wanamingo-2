@@ -143,6 +143,8 @@
   id: F14Toilet
   name: toilet
   description: Waste not, want not
+  placement: # WW: snap to the tile
+    mode: SnapgridCenter
   components:
   - type: Sprite
     sprite: Nuclear14/Structures/Decoration/world.rsi

@@ -255,7 +255,7 @@
 - type: rcd
   id: F14RCDTribalWallTorch
   category: TribalLighting
-  sprite: { sprite: Nuclear14/Structures/Decoration/torches.rsi, state: wall_torch_unlit }
+  sprite: { sprite: MojaveSun/Structures/Lighting/torches.rsi, state: wall_torch_lite } # WW Change - Mojave Sun 13 sprite, like the torch it builds
   mode: ConstructObject
   prototype: F14TorchWall
   cost: 1

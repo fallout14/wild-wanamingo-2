@@ -7,6 +7,8 @@
   name: Caravan Network Terminal
   description: Trade terminal of the Caravan Network, their reach goes from the West Coast to the Midwest. Buy, sell, take contracts and grow your legend.
   suffix: vendor, normal
+  placement: # WW: snap to the tile
+    mode: SnapgridCenter
   components:
   - type: UserInterface
     interfaces:
