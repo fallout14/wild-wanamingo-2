@@ -122,7 +122,7 @@ public sealed class WeaponAttachmentRevisionTest
         {
             var em = pair.Server.ResolveDependency<IEntityManager>();
             var slots = em.System<ItemSlotsSystem>();
-            foreach (var (attachment, allowed) in new[] { ("F14FirearmBayonet", bayonet), ("F14FirearmSuppressor", suppressor) })
+            foreach (var (attachment, allowed) in new[] { ("F14KnifeBayonet", bayonet), ("F14FirearmSuppressor", suppressor) })
             {
                 var gun = em.SpawnEntity(prototype, map.GridCoords);
                 var scope = em.SpawnEntity("F14WeaponScopeAttachment", map.GridCoords);

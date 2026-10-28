@@ -51,6 +51,8 @@
   - type: ApcPowerReceiver
     powerLoad: 0
     needsPower: false
+  - type: EntityHeater # WW Change - the setting draws no grid power; UnpoweredHeater does the heating
+    power: 0
   - type: UnpoweredHeater
   # #Misfits Change /Add/ - Keep the stove audible while it is actively heating.
   - type: SpamEmitSound
@@ -104,6 +106,7 @@
     powerLoad: 0
     needsPower: false
   - type: EntityHeater
+    power: 0 # WW Change - no grid power, as the stove
   - type: SpamEmitSound
     enabled: false
     minInterval: 20

@@ -260,7 +260,7 @@
   id: F14WeaponSniper50NCRRifle
   description: An attempt by the NCR to mass-produce .50 ammo weapons for normal infantry, very cheap but still deals a lot of damage. Uses .50 anti-material ammo.
   components:
-  - type: ManualAction
+  # WW Change - no ManualAction: a single-shot breechloader, loaded one round at a time, needs no racking
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/50ncrrifle.rsi
   - type: Clothing
@@ -554,7 +554,7 @@
   id: F14WeaponSniper50Pipe
   description: A bunch of scrap and pipe held together in a desperate attemp of countering power armor. Uses .50 anti-material ammo.
   components:
-  - type: ManualAction
+  # WW Change - no ManualAction: a single-shot breechloader, loaded one round at a time, needs no racking
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/50piperifle.rsi
   - type: Clothing

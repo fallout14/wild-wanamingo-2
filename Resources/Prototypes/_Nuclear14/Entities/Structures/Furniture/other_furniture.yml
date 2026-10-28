@@ -197,6 +197,12 @@
     - SolutionDrainNormal
   - type: DumpableSolution
     solution: drainBuffer
+  # WW Change - as Wizden's toilet: draw water with a container, and what's dumped in drains away
+  - type: DrainableSolution
+    solution: toilet
+  - type: ReagentTank
+  - type: Drain
+    autoDrain: false
 
 - type: entity
   parent: F14Toilet

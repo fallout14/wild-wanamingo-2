@@ -66,7 +66,19 @@
   parent: CombatKnife
   id: F14KnifeBayonet
   name: bayonet
+  description: A combat knife with a mounting ring. Fix it to a rifle's muzzle, or fight with it on its own.
   components:
+  # WW Change - replaces the Misfits rifle bayonet (F14FirearmBayonet) as the bayonet attachment
+  - type: BayonetAttachment
+    damage:
+      types:
+        Piercing: 12
+        Slash: 6
+  - type: Tag
+    tags:
+    - CombatKnife
+    - Knife
+    - F14FirearmMuzzleAttachment
   - type: Sprite
     sprite: MojaveSun/Objects/Weapons/Melee/knife_bayonet.rsi
     state: icon

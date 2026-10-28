@@ -24,7 +24,7 @@ public sealed class YumaNcrKitTest : GameTest
         ("F14KitNCRWSGunner", new[] { "F14WeaponLMG", "F14WeaponPistol9mm" }),
         ("F14KitNCRWSHeavyTrooper", new[] { "F14WeaponFlamer", "F14WeaponPistol9mm" }),
         ("F14KitNCRFieldMedic", new[] { "F14WeaponRifle556Service", "F14WeaponPistol9mm" }),
-        ("F14KitNCRTrooper", new[] { "F14WeaponRifle556Service", "F14FirearmBayonet" }),
+        ("F14KitNCRTrooper", new[] { "F14WeaponRifle556Service", "F14KnifeBayonet" }),
         ("F14KitNCRGarrisonTechnician", new[] { "F14WeaponPistol9mm", "F14ToolboxMechanical" }),
         ("F14KitNCRGarrisonInfantry", new[] { "F14WeaponRifle10mmM1Carbine" }),
         ("F14KitNCRGarrisonMedic", new[] { "F14WeaponPistol9mm", "F14MedkitFilled" }),

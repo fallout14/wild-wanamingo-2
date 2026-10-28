@@ -40,8 +40,8 @@
     waveWarningSeconds: 0
     waveMinMobCount: 1
     waveMaxMobCount: 3
-    waveSpawnMinDistance: 8
-    waveSpawnMaxDistance: 14
+    waveSpawnMinDistance: 18 # WW Change - was 8-14, all inside the operator's view (half PVS 12.5 + buffer 3), so no wave could spawn
+    waveSpawnMaxDistance: 28
     waveSpawnAttempts: 40
     waveSpawnPvsBuffer: 3
     waveMobWeights:
