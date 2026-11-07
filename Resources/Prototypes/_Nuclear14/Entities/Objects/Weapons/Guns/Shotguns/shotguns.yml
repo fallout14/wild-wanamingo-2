@@ -21,6 +21,9 @@
     - Back
     - suitStorage
   - type: AmmoCounter
+  - type: CustomSpriteAmmoCounter # WW Change - shell icons in the ammo counter, as Wizden's Bulldog
+    loadedAmmoSprite: Interface/ItemStatus/Shotgun_Shells/not_spent.png
+    spentAmmoSprite: Interface/ItemStatus/Shotgun_Shells/spent.png
   - type: Gun
     fireRate: 2
     selectedMode: SemiAuto

@@ -57,6 +57,10 @@ public sealed partial class GunSystem
 
     private void OnChamberMagazineCounter(Entity<ChamberMagazineAmmoProviderComponent> ent, ref AmmoCounterControlEvent args)
     {
+        // WW Change - a gun with custom ammo icons keeps them; this handler can run after the custom counter's
+        if (HasComp<CustomSpriteAmmoCounterComponent>(ent))
+            return;
+
         args.Control = new ChamberMagazineStatusControl();
     }
 

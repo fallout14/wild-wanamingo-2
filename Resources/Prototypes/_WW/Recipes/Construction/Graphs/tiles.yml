@@ -1,0 +1,18 @@
+# The generic metal floor: one iron makes two MS13 steel tiles, as at the workbench (50 iron each).
+
+- type: constructionGraph
+  id: F14TileMetalMS13
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: metaltile
+          completed:
+            - !type:SetStackCount
+              amount: 2
+          steps:
+            - material: F14Iron
+              amount: 1
+              doAfter: 1
+    - node: metaltile
+      entity: F14FloorTileItemMetalMS13

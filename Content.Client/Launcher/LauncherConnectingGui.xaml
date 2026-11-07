@@ -2,8 +2,10 @@
          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
          xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
          xmlns:parallax="clr-namespace:Content.Client.Parallax"
+         xmlns:ww="clr-namespace:Content.Client._WW.Menu"
          xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls">
-    <parallax:ParallaxControl SpeedX="20"/>
+    <!-- WW Change - Mojave desert with passing storms instead of the space parallax -->
+    <ww:WastelandBackgroundControl/>
     <Control HorizontalAlignment="Center" VerticalAlignment="Center">
         <PanelContainer StyleClasses="BackgroundPanel" />
         <BoxContainer Orientation="Vertical" MinSize="300 200">

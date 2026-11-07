@@ -1,11 +1,16 @@
 #nullable enable
+using System.Linq;
+using Content.Client.Items;
+using Content.Client.Weapons.Ranged.Systems;
 using Content.IntegrationTests.Fixtures;
 using Content.Shared._Misfits.Weapons.Ranged;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared.Construction.Prototypes;
 using Content.Shared.Fluids.Components;
 using Content.Shared.Temperature.Components;
 using Robust.Shared.GameObjects;
+using Robust.Shared.Map;
 
 namespace Content.IntegrationTests.Tests._WW;
 
@@ -54,6 +59,60 @@ public sealed class PlaytestFixesTest : GameTest
             {
                 Assert.That(entMan.HasComponent<AppearanceComponent>(entMan.SpawnEntity(proto, map.GridCoords)), proto);
             }
+        });
+    }
+
+    /// <summary>
+    /// Shotguns show shell icons and the .50 rifles cartridge icons in the ammo counter, as the Bulldog and the Hristov.
+    /// The blowback and the anti-materiel rifle have a chamber and magazine, whose own counter used to win.
+    /// </summary>
+    [Test]
+    public async Task ShotgunsAndFiftiesShowAmmoIcons()
+    {
+        var client = Pair.Client;
+
+        await client.WaitAssertion(() =>
+        {
+            foreach (var proto in new[]
+                     {
+                         "F14WeaponShotgun", "F14WeaponShotgunDoubleBarrel", "F14WeaponShotgunSawedOff", "F14WeaponShotgunAuto",
+                         "F14WeaponShotgunCaravan", "F14WeaponShotgunLever", "F14WeaponShotgunRiot", "F14WeaponShotgunShort",
+                         "F14WeaponShotgunChinese", "F14WeaponShotgunCanadian", "F14WeaponShotgunBoomstick",
+                         "F14WeaponShotgunBloodyStick", "F14WeaponShotgunPipe", "F14WeaponShotgunBlowback", "F14WeaponShotgunTrench",
+                         "F14WeaponSniper50AntiMateriel", "F14WeaponSniper50NCRRifle", "F14WeaponSniper50Pipe",
+                     })
+            {
+                var gun = client.EntMan.SpawnEntity(proto, MapCoordinates.Nullspace);
+                var status = new ItemStatusCollectMessage();
+                client.EntMan.EventBus.RaiseLocalEvent(gun, status);
+                Assert.That(status.Controls.OfType<GunSystem.CustomIconStatusControl>(), Is.Not.Empty, proto);
+                client.EntMan.DeleteEntity(gun);
+            }
+        });
+    }
+
+    /// <summary>
+    /// Crafting menu pass (2026-10-28): floor tiles crafted by hand are the MS13 ones only, metal floor included.
+    /// </summary>
+    [Test]
+    public async Task OnlyMS13TilesAreCraftable()
+    {
+        var server = Pair.Server;
+
+        await server.WaitAssertion(() =>
+        {
+            var tiles = server.ProtoMan.EnumeratePrototypes<ConstructionPrototype>()
+                .Where(c => !c.Abstract && !c.Hide && c.Category == "construction-category-tiles")
+                .Select(c => c.ID);
+
+            Assert.That(tiles, Is.EquivalentTo(new[]
+            {
+                "F14FloorTileItemMetalMS13",
+                "F14FloorTilesItemMS13WoodCommon",
+                "F14FloorTilesItemMS13WoodFancy",
+                "F14FloorTilesItemMS13WoodMosaic",
+                "F14FloorTilesItemMS13WoodWide",
+            }));
         });
     }
 }

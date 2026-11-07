@@ -1,13 +1,10 @@
 ﻿<Control xmlns="https://spacestation14.io"
          xmlns:pllax="clr-namespace:Content.Client.Parallax"
+         xmlns:ww="clr-namespace:Content.Client._WW.Menu"
          xmlns:clog="clr-namespace:Content.Client.Changelog"
          xmlns:system="clr-namespace:System;assembly=System.Runtime">
-    <pllax:ParallaxControl
-        Name="BackgroundParallax"
-        SpeedX="5"
-        SpeedY="20"
-        ScaleX="3"
-        ScaleY="3" />
+    <!-- WW Change - Mojave desert with passing storms instead of a random space parallax -->
+    <ww:WastelandBackgroundControl Name="BackgroundParallax" />
     <BoxContainer Name="VBox"
                   Orientation="Vertical"
                   HorizontalAlignment="Center"

@@ -50,7 +50,8 @@ public sealed partial class MainMenuControl : Control
 
         // I don't just enumerate them all as there's some hideous parallaxes, and it's easier
         // to update an allowlist than to randomly get an ugly one to fix a blocklist.
-        BackgroundParallax.ParallaxPrototype = _random.Pick(Parallaxes).Id;
+        // WW Change - the background is the wasteland, not a random parallax
+        // BackgroundParallax.ParallaxPrototype = _random.Pick(Parallaxes).Id;
 
         var logoTexture = resCache.GetResource<TextureResource>("/Textures/Logo/logo.png");
         Logo.Texture = logoTexture;

@@ -194,6 +194,9 @@
   - type: GunWieldBonus
     minAngle: -23
     maxAngle: -104
+  - type: CustomSpriteAmmoCounter # WW Change - cartridge icons in the ammo counter, as Wizden's Hristov
+    loadedAmmoSprite: Interface/ItemStatus/Sniper_Cartriges/not_spent.png
+    spentAmmoSprite: Interface/ItemStatus/Sniper_Cartriges/spent.png
   - type: Gun
     minAngle: 24
     maxAngle: 105
@@ -282,6 +285,9 @@
   - type: GunWieldBonus
     minAngle: -23
     maxAngle: -104
+  - type: CustomSpriteAmmoCounter # WW Change - cartridge icons in the ammo counter, as Wizden's Hristov
+    loadedAmmoSprite: Interface/ItemStatus/Sniper_Cartriges/not_spent.png
+    spentAmmoSprite: Interface/ItemStatus/Sniper_Cartriges/spent.png
   - type: Gun
     minAngle: 24
     maxAngle: 105
@@ -576,6 +582,9 @@
   - type: GunWieldBonus
     minAngle: -23
     maxAngle: -104
+  - type: CustomSpriteAmmoCounter # WW Change - cartridge icons in the ammo counter, as Wizden's Hristov
+    loadedAmmoSprite: Interface/ItemStatus/Sniper_Cartriges/not_spent.png
+    spentAmmoSprite: Interface/ItemStatus/Sniper_Cartriges/spent.png
   - type: Gun
     minAngle: 24
     maxAngle: 105
