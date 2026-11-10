@@ -1,0 +1,14 @@
+# Build a roof over an open tile (1 wood plank). Only on grids that track roofs, like Yuma. Use a saw on a roofed
+# floor to take it off again.
+
+- type: construction
+  parent: BaseStructure
+  id: WWRoofWood
+  graph: WWRoof
+  startNode: start
+  targetNode: roof
+  canRotate: false
+  canBuildInImpassable: true
+  conditions:
+  - !type:TileRoofed
+    roofed: false

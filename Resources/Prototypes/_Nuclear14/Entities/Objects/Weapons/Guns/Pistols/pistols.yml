@@ -156,6 +156,9 @@
       whitelist:
         components:
         - SuppressorAttachment
+    # WW Change - attachment overlay placement
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 0.6875, 0.625
   - type: Tag
     tags:
     - Sidearm
@@ -221,6 +224,9 @@
       whitelist:
         components:
         - SuppressorAttachment
+    # WW Change - attachment overlay placement
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 0.6875, 0.59375
   - type: Tag
     tags:
     - Sidearm
@@ -272,6 +278,9 @@
       whitelist:
         components:
         - SuppressorAttachment
+    # WW Change - attachment overlay placement
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 0.75, 0.59375
   - type: Tag
     tags:
     - Sidearm
@@ -340,6 +349,9 @@
       whitelist:
         components:
         - SuppressorAttachment
+    # WW Change - attachment overlay placement
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 0.6875, 0.625
   - type: Tag
     tags:
     - Sidearm
@@ -643,9 +655,9 @@
     tags:
     - Sidearm
   - type: Sprite
-    sprite: Nuclear14/Objects/Weapons/Guns/Pistols/deserteagle.rsi
+    sprite: MojaveSun/Objects/Weapons/Guns/Pistols/deagle.rsi # WW Change - MS13 sprite
   - type: Item
-    sprite: Nuclear14/Objects/Weapons/Guns/Pistols/deserteagle.rsi
+    sprite: MojaveSun/Objects/Weapons/Guns/Pistols/deagle.rsi
   - type: Gun
     fireRate: 2.5
     soundGunshot:

@@ -4,7 +4,7 @@
 - type: entity
   name: Molerat Timed Spawner
   id: F14TimedSpawnerMolerat
-  parent: MarkerBase
+  parent: WWTimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   components:
     - type: Sprite
       layers:
@@ -15,17 +15,11 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobMolerat
-      chance: 0.65
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 3
-      activationRange: 60 # #Misfits Add - Only spawn when a living player is within 60 tiles
-      maxAlivePerPrototype: 12 # #Misfits Add - Cap alive mobs of this type per map to prevent accumulation
 
 - type: entity
   name: Pigrat Timed Spawner
   id: F14TimedSpawnerPigrat
-  parent: MarkerBase
+  parent: WWTimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   components:
     - type: Sprite
       layers:
@@ -36,17 +30,11 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobPigrat
-      chance: 0.65
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 3
-      activationRange: 60 # #Misfits Add - Only spawn when a living player is within 60 tiles
-      maxAlivePerPrototype: 12 # #Misfits Add - Cap alive mobs of this type per map
 
 - type: entity
   name: Radhog Timed Spawner
   id: F14TimedSpawnerRadhog
-  parent: MarkerBase
+  parent: WWTimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   components:
     - type: Sprite
       layers:
@@ -57,15 +45,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobRadhog
-      chance: 0.65
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 3
-      activationRange: 60 # #Misfits Add - Only spawn when a living player is within 60 tiles
-      maxAlivePerPrototype: 12 # #Misfits Add - Cap alive mobs of this type per map
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerDogFeral
   name: Feral Dog Timed Spawner
   components:
@@ -78,13 +60,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobDogFeral
-      chance: 0.65
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerGecko
   name: Gecko Timed Spawner
   components:
@@ -97,13 +75,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobGecko
-      chance: 0.65
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerGeckoFire
   name: Fire Gecko Timed Spawner
   components:
@@ -116,13 +90,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobGeckoFire
-      chance: 0.65
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerGeckoGolden
   name: Golden Gecko Timed Spawner
   components:
@@ -135,13 +105,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobGeckoGolden
-      chance: 0.65
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerNightstalkerCub
   name: Nightstalker Cub Timed Spawner
   components:
@@ -154,13 +120,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobNightstalkerCub
-      chance: 0.65
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 2
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerNightstalker
   name: Nightstalker Timed Spawner
   components:
@@ -173,13 +135,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobNightstalker
-      chance: 0.65
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 2
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerYaoguai
   name: Yao Guai Timed Spawner
   components:
@@ -192,15 +150,11 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobYaoguai
-      chance: 0.75
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 1
 
 #MARK: Scaley Animals
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerDeathclaw
   name: Deathclaw Timed Spawner
   components:
@@ -213,13 +167,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobDeathclaw
-      chance: 0.75
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 1
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerDeathclawAlbino
   name: Deathclaw Albino Timed Spawner
   components:
@@ -232,13 +182,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobDeathclawAlbino
-      chance: 0.75
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 1
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerDeathclawMetal
   name: Deathclaw Metal Timed Spawner
   components:
@@ -251,15 +197,11 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobDeathclawMetal
-      chance: 0.65
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 1
 
 #MARK: Insects
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerBloatfly
   name: Bloatfly Timed Spawner
   components:
@@ -272,13 +214,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobBloatfly
-      chance: 0.75
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 4
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerAnt
   name: Ant Timed Spawner
   components:
@@ -291,13 +229,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobGiantAnt
-      chance: 0.75
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 2
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerFireant
   name: Fire Ant Timed Spawner
   components:
@@ -310,13 +244,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobGiantFireAnt
-      chance: 0.75
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 2
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerRadroach
   name: Radroach Timed Spawner
   components:
@@ -329,13 +259,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobRadroach
-      chance: 0.75
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 4
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerRadscorpion
   name: Radscorpion Timed Spawner
   components:
@@ -348,13 +274,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobRadscorpion
-      chance: 0.75
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 2
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerRadscorpionBark
   name: Radscorpion Bark Timed Spawner
   components:
@@ -367,13 +289,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobRadscorpionBark
-      chance: 0.75
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 2
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerCazador
   name: Cazador Timed Spawner
   components:
@@ -386,17 +304,13 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobCazador
-      chance: 0.75
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 2
 
 # Ranged Raider Variants
 
 - type: entity
   name: Raider Ranged Psycho Timed Spawner
   id: F14TimedSpawnerMobRaiderPsychoRanged
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerHostile # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   components:
   - type: Sprite
     layers:
@@ -407,15 +321,11 @@
   - type: WastelandSpawner
     prototypes:
       - F14MobRaiderPsychoRanged
-    chance: 0.95
-    intervalSeconds: 2400
-    minimumEntitiesSpawned: 1
-    maximumEntitiesSpawned: 2
 
 - type: entity
   name: Raider Psycho Boss Timed Spawner
   id: F14TimedSpawnerMobRaiderBoss
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   components:
   - type: Sprite
     layers:
@@ -426,15 +336,11 @@
   - type: WastelandSpawner
     prototypes:
       - F14MobRaiderBoss
-    chance: 0.95
-    intervalSeconds: 2400
-    minimumEntitiesSpawned: 1
-    maximumEntitiesSpawned: 1
 
 - type: entity
   name: Raider Psycho Timed Spawner
   id: F14TimedSpawnerMobRaiderPsycho
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerHostile # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   components:
   - type: Sprite
     layers:
@@ -445,13 +351,9 @@
   - type: WastelandSpawner
     prototypes:
       - F14MobRaiderPsycho
-    chance: 0.95
-    intervalSeconds: 2400
-    minimumEntitiesSpawned: 1
-    maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerRadstag
   name: Radstag Timed Spawner
   components:
@@ -464,13 +366,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobRadstag
-      chance: 0.95
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerChicken
   name: Chicken Timed Spawner
   components:
@@ -483,13 +381,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobChicken
-      chance: 0.95
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerBighorner
   name: Bighorner Timed Spawner
   components:
@@ -502,13 +396,9 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobBighorner
-      chance: 0.95
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 3
 
 - type: entity
-  parent: F14TimedSpawnerMolerat
+  parent: WWTimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerBrahmin
   name: Brahmin Timed Spawner
   components:
@@ -521,7 +411,3 @@
     - type: WastelandSpawner
       prototypes:
         - F14MobBrahmin
-      chance: 0.95
-      intervalSeconds: 2400
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 3

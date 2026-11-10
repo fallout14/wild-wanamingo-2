@@ -105,9 +105,9 @@
     slots:
     - Belt
     - suitStorage
-  - type: Sprite
-    sprite: Nuclear14/Objects/Weapons/Melee/ripper.rsi
-    state: icon
+  - type: Sprite # WW Change - MS13 sprite (always running, so the "on" one); N14 belt sprite kept
+    sprite: MojaveSun/Objects/Weapons/Melee/ripper.rsi
+    state: on-icon
   - type: EmbeddableProjectile
     sound: /Audio/Nuclear14/Weapons/Melee/Swing/ripper.ogg
   - type: DamageOtherOnHit
@@ -129,7 +129,8 @@
       path: /Audio/Nuclear14/Weapons/Melee/Swing/ripper.ogg
   - type: Item
     size: Large
-    sprite: Nuclear14/Objects/Weapons/Melee/ripper.rsi
+    sprite: MojaveSun/Objects/Weapons/Melee/ripper.rsi
+    heldPrefix: on
   - type: DisarmMalus
   - type: RefillableSolution
     solution: Welder

@@ -213,6 +213,9 @@
   id: F14Katana
   name: katana
   components:
+  - type: Tag # fits the MS13 katana sheath
+    tags:
+    - F14KatanaBlack
   - type: Sprite
     sprite: MojaveSun/Objects/Weapons/Melee/katana.rsi
     state: icon
@@ -232,6 +235,9 @@
   name: katana
   suffix: red
   components:
+  - type: Tag # fits the MS13 katana sheath
+    tags:
+    - F14KatanaRed
   - type: Sprite
     sprite: MojaveSun/Objects/Weapons/Melee/katana_red.rsi
     state: icon
@@ -246,6 +252,8 @@
   id: F14Pickaxe
   name: pickaxe
   components:
+  - type: Wieldable # MS13 has no wielded pickaxe sprite; keep the one-handed one
+    wieldedInhandPrefix: null
   - type: Sprite
     sprite: MojaveSun/Objects/Weapons/Melee/pickaxe.rsi
     state: icon

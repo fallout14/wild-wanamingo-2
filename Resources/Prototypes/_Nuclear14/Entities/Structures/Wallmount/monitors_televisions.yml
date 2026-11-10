@@ -11,12 +11,19 @@
     drawdepth: Overdoors
     sprite: Nuclear14/Structures/Wallmounts/vdu.rsi
     layers:
-      - map: ["computerLayerBody"]
+      - map: ["enum.ComputerVisualLayers.Frame"]
         state: VDU
-      - map: ["computerLayerKeyboard"]
+      - map: ["enum.ComputerVisualLayers.Keyboard"]
         state: keyboard
-      - map: ["computerLayerScreen"]
+      - map: ["enum.ComputerVisualLayers.Screen"]
         state: screen
+  # WW Change - states for Wizden's computer visualizer; the VDU has no keys or panel sprite
+  - type: ComputerVisuals
+    stateFrame: VDU
+    stateKeyboard: keyboard
+    stateScreen: screen
+    stateKeys: null
+    statePanel: null
   - type: Fixtures
     fixtures:
       fix1:

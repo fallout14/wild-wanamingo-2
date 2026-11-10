@@ -58,6 +58,9 @@
       tags:
         - F14CartridgePistol45
     capacity: 10
+    # WW Change - Wizden inserts anything on the gun's whitelist as one round, so the tube now feeds the gun cartridge by cartridge (use the tube on the gun)
+    mayTransfer: true
+    fillDelay: 0.2
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Speedloaders/45_70loadertube.rsi
   - type: ContainerContainer

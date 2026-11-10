@@ -1,0 +1,199 @@
+# Vendortron catalogues (buy tab only). Items, prices and stock ranges from MS13 vendortrons.dm
+# (gunrunner, medtek, armor, tools, robco), matched to our items; MS13 prices are used as caps.
+# MS13 items with no match here were left out (5.56 revolver, splints, Day Tripper, flight/eyebot helmets,
+# claw hammer, Wattz pistol, Stealth Boy, vacuum tube, fishing rod...). The prewar-money exchange was left out too.
+# Prices below what any trade terminal pays back were raised to ~25% over that buy-back (no buy-low-sell-high loop);
+# VendortronTest checks this.
+# countMin..count = starting stock, rolled per vendortron.
+
+# Gun Runners
+- type: storeCategoryStructured
+  id: WWVendortronGunRunnersHandguns
+  name: "Handguns"
+  entries:
+  - { proto: F14WeaponPistol22lr, price: 35, countMin: 2, count: 4 }
+  - { proto: F14WeaponPistol9mm, price: 50, countMin: 2, count: 4 }
+  - { proto: F14WeaponRevolver10mm, price: 50, countMin: 2, count: 4 }
+  - { proto: F14WeaponPistol45Colt, price: 95, countMin: 1, count: 3 }
+  - { proto: F14WeaponPistol10mm, price: 95, countMin: 1, count: 3 }
+  - { proto: F14WeaponRevolver357Police, price: 105, countMin: 0, count: 3 }
+  - { proto: F14WeaponRevolver357SingleAction, price: 105, countMin: 0, count: 3 }
+  - { proto: F14WeaponRevolver44Magnum, price: 175, countMin: 0, count: 2 }
+
+- type: storeCategoryStructured
+  id: WWVendortronGunRunnersLongguns
+  name: "Long guns"
+  entries:
+  - { proto: F14WeaponShotgun, price: 60, countMin: 2, count: 4 }
+  - { proto: F14WeaponSniper556VarmintRifle, price: 50, countMin: 2, count: 4 }
+  - { proto: F14WeaponShotgunCaravan, price: 60, countMin: 2, count: 3 }
+  - { proto: F14WeaponSniperCowboyRepeater, price: 160, countMin: 0, count: 3 }
+  - { proto: F14WeaponShotgunLever, price: 195, countMin: 0, count: 2 }
+  - { proto: F14WeaponRifle556Service, price: 200, countMin: 0, count: 3 }
+  - { proto: F14WeaponSMGUzi, price: 205, countMin: 0, count: 2 }
+  - { proto: F14WeaponSniper357TrailCarbine, price: 255, countMin: 0, count: 1 }
+  - { proto: F14WeaponSniperHunting, price: 275, countMin: 0, count: 1 }
+  - { proto: F14WeaponSMG10mm, price: 300, countMin: 0, count: 1 }
+  - { proto: F14WeaponSMGAmerican180, price: 380, countMin: 0, count: 1 }
+
+- type: storeCategoryStructured
+  id: WWVendortronGunRunnersAmmo
+  name: "Ammo"
+  entries:
+  - { proto: F14AmmoBox12gauge, price: 125, countMin: 0, count: 4 }
+  - { proto: F14AmmoBox45, price: 125, countMin: 0, count: 2 }
+  - { proto: F14AmmoBox10mm, price: 135, countMin: 0, count: 2 }
+  - { proto: F14AmmoBox22lr, price: 140, countMin: 0, count: 3 }
+  - { proto: F14AmmoBox9mm, price: 140, countMin: 0, count: 3 }
+  - { proto: F14AmmoBox357, price: 140, countMin: 0, count: 2 }
+  - { proto: F14AmmoBox4570, price: 175, countMin: 0, count: 2 }
+  - { proto: F14AmmoBox44Magnum, price: 180, countMin: 0, count: 2 }
+  - { proto: F14AmmoBox308, price: 180, countMin: 0, count: 2 }
+  - { proto: F14AmmoBox762, price: 180, countMin: 0, count: 2 }
+  - { proto: F14AmmoBox127, price: 210, countMin: 0, count: 1 }
+  - { proto: F14AmmoBox556, price: 225, countMin: 0, count: 2 }
+  - { proto: F14AmmoBox50, price: 260, countMin: 0, count: 1 }
+
+- type: storePresetStructured
+  id: WWVendortronGunRunners
+  currency: F14Caps
+  categories:
+  - WWVendortronGunRunnersHandguns
+  - WWVendortronGunRunnersLongguns
+  - WWVendortronGunRunnersAmmo
+
+# Med-Tek
+- type: storeCategoryStructured
+  id: WWVendortronMedTekFirstAid
+  name: "First aid"
+  entries:
+  - { proto: F14CleanGauze10, amount: 5, price: 35, countMin: 4, count: 6 }
+  - { proto: F14Suture, amount: 4, price: 35, countMin: 3, count: 6 }
+  - { proto: F14Ointment10, amount: 5, price: 35, countMin: 3, count: 6 }
+  - { proto: Bloodpack, price: 40, countMin: 0, count: 3 }
+  - { proto: F14RadAwayBloodbag, price: 65, countMin: 0, count: 3 }
+  - { proto: F14Stimpak, price: 110, countMin: 0, count: 2 }
+  - { proto: F14MedkitFilled, price: 140, countMin: 0, count: 1 }
+
+- type: storeCategoryStructured
+  id: WWVendortronMedTekChems
+  name: "Chems"
+  entries:
+  - { proto: F14PillCanisterCalmex, price: 60, countMin: 1, count: 4 }
+  - { proto: F14MedX, price: 315, countMin: 0, count: 3 }
+  - { proto: F14CateyeCanisterFilled, price: 190, countMin: 0, count: 2 }
+  - { proto: F14RadXCanisterFilled, price: 200, countMin: 0, count: 2 }
+  - { proto: F14MentatsCanisterFilled, price: 200, countMin: 0, count: 2 }
+  - { proto: F14BuffoutCanisterFilled, price: 260, countMin: 0, count: 1 }
+  - { proto: F14AddictolInhaler, price: 360, countMin: 0, count: 1 }
+
+- type: storePresetStructured
+  id: WWVendortronMedTek
+  currency: F14Caps
+  categories:
+  - WWVendortronMedTekFirstAid
+  - WWVendortronMedTekChems
+
+# Arcata Armorers
+- type: storeCategoryStructured
+  id: WWVendortronArcataClothing
+  name: "Jackets and coats"
+  entries:
+  - { proto: F14ClothingOuterCoatLeatherJacket, price: 25, countMin: 1, count: 4 }
+  - { proto: F14ClothingOuterCoatLeatherCoat, price: 25, countMin: 1, count: 4 }
+  - { proto: F14ClothingOuterCoatDuster, price: 25, countMin: 1, count: 4 }
+  - { proto: F14ClothingOuterJacketBomber, price: 25, countMin: 1, count: 4 }
+  - { proto: F14ClothingOuterTownCoat, price: 25, countMin: 1, count: 4 }
+  - { proto: F14ClothingOuterVestLeather, price: 35, countMin: 0, count: 3 }
+  - { proto: F14ClothingOuterCoatLeatherDuster, price: 85, countMin: 0, count: 3 }
+  - { proto: F14ClothingOuterTownMediumCoat, price: 85, countMin: 0, count: 3 }
+
+- type: storeCategoryStructured
+  id: WWVendortronArcataArmor
+  name: "Armor"
+  entries:
+  - { proto: F14ClothingOuterLeatherArmor, price: 85, countMin: 0, count: 3 }
+  - { proto: F14ClothingOuterMetalArmor, price: 100, countMin: 0, count: 2 }
+  - { proto: F14ClothingOuterPoliceVest, price: 140, countMin: 0, count: 2 }
+  - { proto: F14ClothingOuterReinforcedLeatherArmor, price: 215, countMin: 0, count: 1 }
+  - { proto: F14ClothingOuterCombatArmor, price: 250, countMin: 0, count: 1 }
+  - { proto: F14ClothingHeadHatCombatHelmet, price: 95, countMin: 0, count: 1 }
+
+- type: storeCategoryStructured
+  id: WWVendortronArcataMaterials
+  name: "Materials"
+  entries:
+  - { proto: MaterialCloth, amount: 5, price: 40, countMin: 4, count: 6 }
+  - { proto: F14MaterialLeather, amount: 5, price: 15, countMin: 4, count: 6 }
+  - { proto: F14MaterialThread, amount: 6, price: 60, countMin: 2, count: 5 }
+
+- type: storePresetStructured
+  id: WWVendortronArcata
+  currency: F14Caps
+  categories:
+  - WWVendortronArcataClothing
+  - WWVendortronArcataArmor
+  - WWVendortronArcataMaterials
+
+# H&H Tools
+- type: storeCategoryStructured
+  id: WWVendortronToolsTools
+  name: "Tools"
+  entries:
+  - { proto: F14Wrench, price: 30, countMin: 2, count: 4 }
+  - { proto: F14Wirecutter, price: 30, countMin: 2, count: 4 }
+  - { proto: F14Screwdriver, price: 30, countMin: 2, count: 4 }
+  - { proto: F14Drill, price: 50, countMin: 1, count: 3 }
+  - { proto: F14Shovel, price: 60, countMin: 1, count: 3 }
+  - { proto: F14Crowbar, price: 60, countMin: 1, count: 3 }
+  - { proto: F14Handsaw, price: 60, countMin: 1, count: 3 }
+  - { proto: F14Welder, price: 80, countMin: 1, count: 2 }
+  - { proto: F14ClothingEyesGlassesWelding, price: 50, countMin: 1, count: 2 }
+  - { proto: F14Flare, price: 20, countMin: 2, count: 4 }
+  - { proto: F14Flashlight, price: 80, countMin: 1, count: 2 }
+  - { proto: F14Seclite, price: 160, countMin: 0, count: 2 }
+  - { proto: F14Sledgehammer, price: 350, countMin: 0, count: 1 }
+
+- type: storeCategoryStructured
+  id: WWVendortronToolsMaterials
+  name: "Materials"
+  entries:
+  - { proto: F14Scrap, amount: 5, price: 25, countMin: 4, count: 6 }
+  - { proto: F14ScrapSteel, amount: 5, price: 25, countMin: 4, count: 6 }
+  - { proto: F14ScrapLead, amount: 5, price: 25, countMin: 4, count: 6 }
+  - { proto: F14ScrapBrass, amount: 5, price: 25, countMin: 4, count: 6 }
+  - { proto: F14ScrapAluminum, amount: 5, price: 25, countMin: 4, count: 6 }
+  - { proto: MaterialWoodPlank, amount: 4, price: 25, countMin: 3, count: 5 }
+
+- type: storePresetStructured
+  id: WWVendortronTools
+  currency: F14Caps
+  categories:
+  - WWVendortronToolsTools
+  - WWVendortronToolsMaterials
+
+# RobCo
+- type: storeCategoryStructured
+  id: WWVendortronRobCoElectronics
+  name: "Electronics"
+  entries:
+  - { proto: F14ScrapElectronic, amount: 5, price: 80, countMin: 4, count: 6 }
+  - { proto: F14ScrapCopper, amount: 5, price: 25, countMin: 4, count: 6 }
+  - { proto: F14MaterialCircuitry, amount: 2, price: 60, countMin: 0, count: 4 }
+  - { proto: F14RadioHandheld, price: 90, countMin: 1, count: 3 }
+
+- type: storeCategoryStructured
+  id: WWVendortronRobCoEnergy
+  name: "Energy weapons"
+  entries:
+  - { proto: F14PowerCellSmall, price: 160, countMin: 1, count: 3 }
+  - { proto: F14MicrofusionCell, price: 220, countMin: 1, count: 2 }
+  - { proto: F14ElectronChargePack, price: 190, countMin: 0, count: 2 }
+  - { proto: F14WeaponLaserRifleWattz2000, price: 130, countMin: 0, count: 2 }
+
+- type: storePresetStructured
+  id: WWVendortronRobCo
+  currency: F14Caps
+  categories:
+  - WWVendortronRobCoElectronics
+  - WWVendortronRobCoEnergy

@@ -1,0 +1,358 @@
+# New guns with Mojave Sun 13 sprites (Resources/Textures/MojaveSun/Objects/Weapons/Guns, CC-BY-NC-SA-3.0).
+# Names and descriptions from MS13 (mojave/items/guns/weapons). Stats come from the parent gun unless set here;
+# they're a first pass for tuning. Not in loot, vendors or recipes yet.
+# MS13 has no belt/holster sprites for pistols, so pistols keep their parent's belt/suit-storage sprite.
+
+- type: Tag
+  id: F14Nail
+
+- type: Tag
+  id: F14CartridgeNeedle
+
+# MARK: 10mm pistols
+
+- type: entity
+  parent: F14WeaponPistol10mm
+  id: F14WeaponPistol10mmPolice
+  name: police 10mm pistol
+  description: A pre-war 10mm pistol normally seen in the hands of law enforcement.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Guns/Pistols/police10mm.rsi
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Guns/Pistols/police10mm.rsi
+  - type: FirearmAttachmentHost
+    muzzleVisualOffset: 0.78125, 0.625
+
+- type: entity
+  parent: F14WeaponPistol10mm
+  id: F14WeaponPistol10mmMilitary
+  name: military 10mm pistol
+  description: A 10mm pistol typically used as a side arm by the pre-war US military.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Guns/Pistols/mil10mm.rsi
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Guns/Pistols/mil10mm.rsi
+  - type: FirearmAttachmentHost
+    muzzleVisualOffset: 0.84375, 0.65625
+
+# MARK: Derringers
+
+- type: entity
+  parent: F14WeaponRevolverBase
+  id: F14WeaponDerringer
+  name: derringer
+  description: A small and sneaky 2 shot pistol that is often concealed. Chambered for .357, and will also chamber .38 special.
+  components:
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Guns/Revolvers/derringer.rsi
+    state: base
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Guns/Revolvers/derringer.rsi
+    size: Tiny
+  - type: Clothing
+    sprite: Misfits/Legacy/DeltaV/Objects/Weapons/Guns/Revolvers/k38master.rsi # MS13 has no worn sprite; this one only has a belt sprite
+    slots:
+    - Belt
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - F14CartridgePistol357
+    proto: F14CartridgePistol357
+    capacity: 2
+    chambers: [true, true]
+    ammoSlots: [null, null]
+  - type: Gun
+    minAngle: 2
+    maxAngle: 10
+    angleIncrease: 1
+    angleDecay: 5
+    fireRate: 2.5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: F14RevolverMagnunGunshot
+  - type: StaticPrice
+    price: 60
+
+- type: entity
+  parent: F14WeaponDerringer
+  id: F14WeaponDerringerGold
+  name: gold trimmed derringer
+  description: A small and sneaky 2 shot pistol that is often concealed. This one has some gold trim.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Guns/Revolvers/derringer_t.rsi
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Guns/Revolvers/derringer_t.rsi
+  - type: StaticPrice
+    price: 150
+
+# MARK: Wattz 1000 laser pistol
+
+- type: entity
+  parent: F14MFLaserRed
+  id: F14WattzPistolLaser
+  name: wattz pistol laser
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 19 # AEP-7 is 24; MS13: "lasers are not very concentrated"
+
+- type: entity
+  parent: F14WeaponLaserPistol
+  id: F14WeaponLaserPistolWattz
+  name: Wattz 1000 laser pistol
+  description: A civilian grade laser pistol. Its lasers are not very concentrated as a result.
+  components:
+  - type: BatteryAmmoProvider
+    proto: F14WattzPistolLaser
+    fireCost: 40
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Guns/Battery/wattzpistol.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Guns/Battery/wattzpistol.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Battery/taser.rsi # MS13 has no worn sprite for it
+  - type: StaticPrice
+    price: 60
+
+# MARK: Nail gun
+
+- type: entity
+  parent: BaseBullet
+  id: F14BulletNail
+  name: nail
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 9
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 3.0
+    maxFalloffTiles: 7.0
+    minDamageMultiplier: 0.4
+
+- type: entity
+  parent: BaseCartridgePistol
+  id: F14Nail
+  name: nail
+  description: A long steel nail. Nail guns fire them; so does anything else desperate enough.
+  components:
+  - type: CartridgeAmmo
+    proto: F14BulletNail
+    deleteOnSpawn: true # no casing
+  - type: Tag
+    tags:
+    - Cartridge
+    - F14Nail
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Guns/Ammunition/nail.rsi
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+
+- type: entity
+  parent: BaseItem
+  id: F14MagazineBoxNails
+  name: box of nails
+  description: A box of nails for a nail gun.
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+      - F14Nail
+    proto: F14Nail
+    capacity: 60
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Guns/Ammunition/nail.rsi # placeholder: MS13 has no nail box
+    state: base
+    scale: 1.25, 1.25
+  - type: Item
+    size: Small
+  - type: StaticPrice
+    price: 30
+
+- type: entity
+  parent: BaseItem
+  id: F14WeaponNailgun
+  name: nail gun
+  description: A pre-war construction nail gun, modified to fire its nails hard enough to hurt.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Guns/SMGs/nailgun.rsi
+    layers:
+    - state: icon
+      map: [ "enum.GunVisualLayers.Base" ]
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Guns/SMGs/nailgun.rsi
+    size: Normal
+  - type: Clothing
+    sprite: MojaveSun/Objects/Weapons/Guns/SMGs/nailgun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    - Belt
+  - type: Wieldable
+  - type: AmmoCounter
+  - type: Gun
+    minAngle: 4
+    maxAngle: 16
+    angleIncrease: 1.5
+    angleDecay: 6
+    fireRate: 5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/harpoon.ogg
+      params:
+        volume: -4
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - F14Nail
+    proto: F14Nail
+    capacity: 30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: Appearance
+  - type: StaticPrice
+    price: 80
+
+# MARK: Needler
+
+- type: entity
+  parent: BaseBullet
+  id: F14BulletNeedle
+  name: needle
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 14
+        Poison: 6
+
+- type: entity
+  parent: BaseCartridgePistol
+  id: F14CartridgeNeedle
+  name: needler cartridge
+  description: A hollow steel needle for a needler pistol.
+  components:
+  - type: CartridgeAmmo
+    proto: F14BulletNeedle
+    deleteOnSpawn: true # caseless
+  - type: Tag
+    tags:
+    - Cartridge
+    - F14CartridgeNeedle
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Guns/Ammunition/nail.rsi # placeholder: MS13 has no needle sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+      color: "#8fe08f"
+
+- type: entity
+  parent: BaseItem
+  id: F14MagazineBoxNeedler
+  name: box of needler cartridges
+  description: A box of needler cartridges.
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+      - F14CartridgeNeedle
+    proto: F14CartridgeNeedle
+    capacity: 30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Guns/Ammunition/nail.rsi # placeholder
+    state: base
+    color: "#8fe08f"
+    scale: 1.25, 1.25
+  - type: Item
+    size: Small
+  - type: StaticPrice
+    price: 60
+
+- type: entity
+  parent: BaseItem
+  id: F14WeaponNeedler
+  name: needler pistol
+  description: A pre-war pistol that fires hollow steel needles. Quiet, nasty, and hard to find ammunition for.
+  components:
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Guns/Pistols/needler.rsi
+    layers:
+    - state: icon
+      map: [ "enum.GunVisualLayers.Base" ]
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Guns/Pistols/needler.rsi
+    size: Small
+    shape:
+    - 0,0,1,1
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Pistols/viper.rsi # MS13 has no worn sprite for it
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Belt
+  - type: AmmoCounter
+  - type: Gun
+    minAngle: 1
+    maxAngle: 7
+    angleIncrease: 0.5
+    angleDecay: 4
+    fireRate: 3
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/hushpup.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - F14CartridgeNeedle
+    proto: F14CartridgeNeedle
+    capacity: 10
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: Appearance
+  - type: EyeCursorOffset
+    maxOffset: 2
+    pvsIncrease: 0.2
+  - type: StaticPrice
+    price: 250

@@ -46,6 +46,10 @@ public partial class NanotrasenStylesheet : CommonStylesheet
             [
                 // Declare the default font.
                 Element().Prop(Label.StylePropertyFont, BaseFont.GetFont(PrimaryFontSize)),
+                // WW Change - New Vegas amber default text
+                .. (Content.Client._WW.Stylesheets.VegasPalettes.Enabled
+                    ? new[] { Element<Label>().Prop(Label.StylePropertyFontColor, Content.Client._WW.Stylesheets.VegasPalettes.Text) }
+                    : []),
                 // Branding.
                 Element<TextureRect>()
                     .Class("NTLogoDark")

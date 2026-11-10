@@ -34,6 +34,10 @@ public sealed partial class StoreCatalogEntry
     [DataField("price", required: true)] public int Price;
     [DataField("proto", required: true)] public string Proto = string.Empty;
     [DataField("count")] public int? Count { get; set; }
+
+    // WW Change: with countMin, the starting stock is rolled between countMin and count when the store loads.
+    [DataField("countMin")] public int? CountMin { get; set; }
+
     [DataField("amount")] public int Amount { get; set; } = 1;
 }
 

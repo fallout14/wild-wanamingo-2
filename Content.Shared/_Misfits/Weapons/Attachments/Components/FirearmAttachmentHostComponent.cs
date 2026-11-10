@@ -111,6 +111,11 @@ public sealed partial class FirearmAttachmentHostComponent : Component
 
     [DataField, AutoNetworkedField]
     public Vector2 OpticVisualOffset = Vector2.Zero;
+
+    // WW Change - like ShowMuzzleVisual, for guns whose sprite already shows a scope
+    /// <summary>Disable the optic overlay when the gun's sprite already has a scope drawn on it.</summary>
+    [DataField, AutoNetworkedField]
+    public bool ShowOpticVisual = true;
 }
 
 public enum FirearmAttachmentVisualOrientation : byte

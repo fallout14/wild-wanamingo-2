@@ -17,10 +17,11 @@
       types:
         Blunt: 8
   - type: Sprite
-    sprite: Nuclear14/Objects/Weapons/Melee/policebaton.rsi
+    sprite: MojaveSun/Objects/Weapons/Melee/tonfa.rsi # WW Change - MS13 police baton (tonfa); N14 belt sprite kept, MS13 has none
     state: icon
   - type: Item
     size: Normal
+    sprite: MojaveSun/Objects/Weapons/Melee/tonfa.rsi
   - type: Tag
     tags:
     - F14PoliceBaton # #Cythisiax Added - tag so security belts can whitelist the baton

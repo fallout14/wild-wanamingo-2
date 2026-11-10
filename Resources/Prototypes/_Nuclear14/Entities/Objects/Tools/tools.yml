@@ -142,6 +142,8 @@
         Slash: 10
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
+  # WW Change - use on a roofed floor tile to take the roof off (choppa and advanced saw inherit it; tool speed applies)
+  - type: RoofRemover
 
 - type: entity
   name: choppa

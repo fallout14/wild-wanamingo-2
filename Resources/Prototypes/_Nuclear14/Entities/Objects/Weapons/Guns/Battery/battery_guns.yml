@@ -890,11 +890,11 @@
   name: plasma caster
   parent: F14BaseWeaponPowerCellMedium
   id: F14WeaponPlasmaCaster
-  description: A massive plasma gun with a pretty sharp barrel, this gun is fed with plasma shells.
+  description: A massive plasma gun with a pretty sharp barrel, this gun is fed with microfusion cells.
   components:
   - type: BatteryAmmoProvider
     proto: F14BulletPlasma
-    fireCost: 100
+    fireCost: 40 # WW Change - runs on microfusion cells like the other plasma rifles; 1200 / 40 = 30 shots (was 75 from a 7500 plasma shell)
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Battery/plasma_caster.rsi
     layers:
@@ -919,12 +919,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: F14PlasmaShell
+        startingItem: F14MicrofusionCellGreen # WW Change - was F14PlasmaShell
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - F14PlasmaShell
+            - F14MicrofusionCell
   - type: Gun
     minAngle: 2
     maxAngle: 12

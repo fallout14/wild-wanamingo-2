@@ -59,7 +59,7 @@ public sealed partial class FirearmAttachmentVisualizerSystem : EntitySystem
         // Refresh independently: an optic can be mounted without a muzzle attachment.
         var opticLayer = _sprite.LayerMapReserve((uid, sprite), FirearmAttachmentVisualLayers.Optic);
         _sprite.LayerSetVisible((uid, sprite), opticLayer, false);
-        if (host.EnableOpticSlot && host.OpticVisualState != null &&
+        if (host.EnableOpticSlot && host.ShowOpticVisual && host.OpticVisualState != null && // WW Change - ShowOpticVisual
             _itemSlots.TryGetSlot(uid, host.OpticSlotId, out var opticSlot) &&
             opticSlot.Item != null)
         {

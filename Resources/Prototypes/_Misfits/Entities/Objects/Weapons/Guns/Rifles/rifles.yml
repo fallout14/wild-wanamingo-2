@@ -64,6 +64,9 @@
             - F14Cartridge556Rifle
   - type: StaticPrice
     price: 20
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    muzzleVisualOffset: 0.8125, 0.78125
+    bayonetVisualOffset: 0.78125, 0.59375
 
 - type: entity
   name: M72 rifle
@@ -198,6 +201,9 @@
             - F14Cartridge556Rifle
   - type: StaticPrice
     price: 125
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    muzzleVisualOffset: 0.90625, 0.84375
+    bayonetVisualOffset: 0.875, 0.65625
 
 - type: entity
   name: heavy assault rifle
@@ -261,6 +267,10 @@
             - F14Cartridge556Rifle
   - type: StaticPrice
     price: 150
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 1.09375, 0.40625
+    bayonetVisualOffset: 1.0625, 0.375
 
 - type: entity
   name: assault carbine
@@ -389,6 +399,8 @@
   - type: FirearmAttachmentHost
     visualOrientation: Diagonal
     muzzleVisualOffset: 0.78125, 0.84375
+    # WW Change - attachment overlay placement
+    bayonetVisualOffset: 0.78125, 0.6875
   - type: GunDamageModifier
     damage:
       types:
@@ -516,6 +528,8 @@
             - F14CartridgePistol10
   - type: FirearmAttachmentHost
     bayonetVisualOffset: 0.71875, 0.75
+    # WW Change - attachment overlay placement
+    muzzleVisualOffset: 0.75, 0.9375
   - type: StaticPrice
     price: 100
 
@@ -584,6 +598,9 @@
             - F14Cartridge308Rifle
   - type: StaticPrice
     price: 175
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    muzzleVisualOffset: 0.90625, 0.90625
+    bayonetVisualOffset: 0.875, 0.71875
 
 - type: entity
   name: M14 rifle
@@ -635,6 +652,11 @@
         components:
         - BayonetAttachment
         - SuppressorAttachment
+    # WW Change - attachment overlay placement
+    muzzleVisualOffset: 0.78125, 0.9375
+    bayonetVisualOffset: 0.75, 0.75
+    opticVisualState: battlerifle_scope
+    opticVisualOffset: 0.125, 0.375
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Rifles/m14.rsi
     quickEquip: false
@@ -979,6 +1001,9 @@
       doAfter: 1.0
 
 # Republic's Demise — UNIQUE, Legion-looted scoped M1C. The NCR star replaced with a bull.
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    muzzleVisualOffset: 0.75, 0.9375
+    bayonetVisualOffset: 0.71875, 0.75
 
 - type: entity
   name: Republic's Demise
@@ -1035,6 +1060,9 @@
       doAfter: 1.0
 
 # SVT-40 — Legion semi-auto battle rifle with ten internal rounds.
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    muzzleVisualOffset: 0.75, 0.9375
+    bayonetVisualOffset: 0.71875, 0.75
 
 - type: entity
   name: SVT-40

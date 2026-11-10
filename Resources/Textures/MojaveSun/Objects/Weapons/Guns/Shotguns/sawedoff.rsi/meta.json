@@ -1,0 +1,48 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/mob/inhands/weapons/guns_inhand_left.dmi, mojave/icons/mob/inhands/weapons/guns_inhand_right.dmi, mojave/icons/mob/worn_guns.dmi, mojave/icons/objects/guns/guns_inventory.dmi); base is the magazine-out icon, mag-0 the full icon",
+    "size": {
+        "x": 40,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "base"
+        },
+        {
+            "name": "bolt-open"
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "wielded-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "wielded-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "equipped-BACKPACK",
+            "directions": 4
+        },
+        {
+            "name": "equipped-SUITSTORAGE",
+            "directions": 4
+        },
+        {
+            "name": "equipped-BELT",
+            "directions": 4
+        }
+    ]
+}

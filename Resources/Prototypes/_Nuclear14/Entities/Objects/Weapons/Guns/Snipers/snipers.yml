@@ -36,6 +36,9 @@
         - F14RifleScope
     muzzleSlot:
       locked: true
+    # WW Change - attachment overlay placement
+    opticVisualState: battlerifle_scope
+    opticVisualOffset: 0.15625, 0.375
   - type: ManualAction
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/hunting.rsi
@@ -172,6 +175,9 @@
   description: "An anti-materiel rifle with an ergonomic, sleek, skeletonized design. Simply looking at it can you tell it'll rip some limbs apart. Uses .50 anti-material ammo."
   components:
   - type: ManualAction
+  - type: ChamberMagazineAmmoProvider
+    # WW Change - bolt action: firing leaves the spent casing chambered, cycling (ManualAction) ejects it and chambers the next round. Auto-cycle made cycling throw away a live round.
+    autoCycle: false
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/antimateriel.rsi
     quickEquip: false
@@ -355,7 +361,6 @@
     whitelist:
       tags:
       - F14Cartridge4570
-      - F14SpeedLoaderInternal
     capacity: 10
     proto: F14Cartridge4570
   - type: EyeCursorOffset
@@ -415,6 +420,9 @@
     damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
       types:
         Piercing: 0
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    opticVisualState: battlerifle_scope
+    opticVisualOffset: 0.15625, 0.375
 
 - type: entity
   name: varmint rifle
@@ -468,6 +476,8 @@
     soundGunshot:
       collection: F14SniperVarmintGunshot
   - type: ChamberMagazineAmmoProvider
+    # WW Change - bolt action: firing leaves the spent casing chambered, cycling (ManualAction) ejects it and chambers the next round. Auto-cycle made cycling throw away a live round.
+    autoCycle: false
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -553,6 +563,9 @@
     damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
       types:
         Piercing: 0
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    opticVisualState: leveraction_scope
+    opticVisualOffset: 0.21875, 0.40625
 
 - type: entity
   name: .50 pipe rifle
@@ -636,7 +649,6 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - F14SpeedLoaderInternal
       - F14Cartridge308Rifle
   - type: FirearmAttachmentHost
     opticVisualState: leveraction_scope
@@ -705,8 +717,9 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - F14SpeedLoaderInternal
       - F14Cartridge308Rifle
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    enableOpticSlot: false # integral scope, already drawn on the sprite
 
 - type: entity
   name: F1 sniper rifle
@@ -764,3 +777,5 @@
     damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
       types:
         Piercing: 0
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    enableOpticSlot: false # integral scope, already drawn on the sprite

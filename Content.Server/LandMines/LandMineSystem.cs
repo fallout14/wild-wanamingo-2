@@ -58,5 +58,9 @@ public sealed partial class LandMineSystem : EntitySystem
 
         if (HasComp<ArmableComponent>(uid) && TryComp<ItemToggleComponent>(uid, out var itemToggle))
             args.Continue = itemToggle.Activated;
+
+        // WW Change - Light Step (trait) never sets off mines
+        if (HasComp<Content.Shared._WW.Traps.LightStepComponent>(args.Tripper))
+            args.Cancelled = true;
     }
 }

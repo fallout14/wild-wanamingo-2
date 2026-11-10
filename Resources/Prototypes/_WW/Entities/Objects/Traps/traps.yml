@@ -1,0 +1,127 @@
+# Wasteland traps (WWTrap). Set one on the ground, alt-click "Arm"; alt-click "Disarm" to make it safe to pick up.
+# An armed trap is anchored and goes off when someone steps on it; the trigger effects below hit whoever did.
+# Light Step (trait) never sets traps off. Perception/Agility checks for spotting and disarming come later.
+# Sprites: MS13 (mojave/icons/objects/ms_traps.dmi, icons/obj/restraints.dmi).
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: WWBaseTrap
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    drawdepth: Items
+  - type: Appearance
+  - type: WWTrap
+  - type: StepTrigger
+    requiredTriggeredSpeed: 0
+    stepOn: true
+  # Items stop colliding while they lie still; a trap has to keep its trigger fixture live.
+  - type: CollisionWake
+    enabled: false
+  - type: Fixtures
+    fixtures:
+      trap:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        layer:
+        - LowImpassable
+
+- type: entity
+  parent: WWBaseTrap
+  id: WWBearTrap
+  name: bear trap
+  description: Spring-loaded steel jaws. Step in it and you're not going anywhere until you pry it off.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Misc/beartrap.rsi
+    layers:
+    - state: beartrap0
+      map: [ "enum.WWTrapVisuals.Armed" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.WWTrapVisuals.Armed:
+        enum.WWTrapVisuals.Armed:
+          True: { state: beartrap1 }
+          False: { state: beartrap0 }
+  - type: WWTrap
+    armDelay: 3
+    disarmDelay: 4
+    ensnareVictim: true
+  # Clamped: can't walk until someone frees you (4 s) or you work yourself loose (8 s).
+  - type: Ensnaring
+    freeTime: 4
+    breakoutTime: 8
+    walkSpeed: 0
+    sprintSpeed: 0
+    staminaDamage: 0
+    canMoveBreakout: false
+  - type: DamageOnTrigger
+    targetUser: true
+    damage:
+      types:
+        Piercing: 15
+        Blunt: 5
+
+- type: entity
+  parent: WWBaseTrap
+  id: WWTripwire
+  name: tripwire
+  description: A length of wire strung low between two stakes, with tin cans tied on to raise the alarm.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: MojaveSun/Objects/Misc/traps.rsi
+    layers:
+    - state: tripwire
+      map: [ "enum.WWTrapVisuals.Armed" ]
+  - type: WWTrap
+    armDelay: 2
+    disarmDelay: 2
+  - type: KnockdownOnTrigger
+    targetUser: true
+    knockdownAmount: 2
+  - type: EmitSoundOnTrigger
+    positional: true
+    sound:
+      path: /Audio/Effects/fence_rattle1.ogg
+      params:
+        maxDistance: 12
+  - type: PopupOnTrigger
+    text: ww-trap-tripwire-triggered
+    popupType: MediumCaution
+
+- type: entity
+  parent: WWBaseTrap
+  id: WWFragMine
+  name: frag mine
+  description: A pressure-triggered fragmentation mine. Looks incredibly dangerous...
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Misc/traps.rsi
+    layers:
+    - state: frag_armed
+      map: [ "enum.WWTrapVisuals.Armed" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.WWTrapVisuals.Armed:
+        enum.WWTrapVisuals.Armed:
+          True: { state: frag_primed }
+          False: { state: frag_armed }
+  - type: WWTrap
+    armDelay: 5
+    disarmDelay: 6
+    rearmable: false
+    armSound:
+      path: /Audio/MojaveSun/Effects/frag_mine_arm.ogg
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 10
+    intensitySlope: 3
+    totalIntensity: 60 # about a 3 tile radius (Wizden explosive mine is 120)
+    canCreateVacuum: false

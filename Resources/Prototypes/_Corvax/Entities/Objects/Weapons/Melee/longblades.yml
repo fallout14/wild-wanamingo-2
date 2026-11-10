@@ -37,25 +37,20 @@
   name: thermic lance
   description: "A long two-handed thermic lance. Fuel is needed for use."
   components:
-  - type: Sprite
-    sprite: Misfits/Legacy/Corvax/Objects/Weapons/Melee/thermospear.rsi
+  - type: Sprite # WW Change - MS13 sprites, off/on states
+    sprite: MojaveSun/Objects/Weapons/Melee/thermiclance.rsi
     layers:
-    - state: icon
-    - state: welder_flame
-      visible: false
-      shader: unshaded
+    - state: off-icon
       map: ["enum.ToggleableVisuals.Layer"]
   - type: Item
-    sprite: Misfits/Legacy/Corvax/Objects/Weapons/Melee/thermospear.rsi
+    sprite: MojaveSun/Objects/Weapons/Melee/thermiclance.rsi
     size: Huge
-    # Misfits Fix - explicit inhand visuals so the weapon sprite shows correctly when held
-    inhandVisuals:
-      left:
-      - state: inhand-left
-      right:
-      - state: inhand-right
+    heldPrefix: off
+  - type: ItemTogglePrefix
+    prefixOn: on
+    prefixOff: off
   - type: Clothing
-    sprite: Misfits/Legacy/Corvax/Objects/Weapons/Melee/thermospear.rsi
+    sprite: MojaveSun/Objects/Weapons/Melee/thermiclance.rsi
     quickEquip: false
     slots:
     - Back
@@ -64,8 +59,8 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: { visible: true }
-          False: { visible: false }
+          True: { state: on-icon }
+          False: { state: off-icon }
   - type: ItemToggleSize
     activatedSize: Large
   - type: ItemToggleHot

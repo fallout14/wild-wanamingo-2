@@ -2,6 +2,7 @@
 
 using Content.Shared._Forge.Trade;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random; // WW Change
 
 
 namespace Content.Server._Forge.Trade;
@@ -16,6 +17,7 @@ public sealed partial class StoreSystemStructuredLoader : EntitySystem
     private readonly HashSet<EntityUid> _contractsInitialized = new();
     private readonly HashSet<EntityUid> _loadedStores = new();
     [Dependency] private IPrototypeManager _prototypes = default!;
+    [Dependency] private IRobustRandom _random = default!; // WW Change
 
     public override void Initialize()
     {
@@ -144,7 +146,7 @@ public sealed partial class StoreSystemStructuredLoader : EntitySystem
                     Mode = mode,
                     Categories = new List<string> { categoryName },
                     Conditions = new List<ListingConditionPrototype>(),
-                    RemainingCount = entry.Count ?? -1,
+                    RemainingCount = RollStock(entry), // WW Change: optional random starting stock
                     UnitsPerPurchase = Math.Max(1, entry.Amount),
                     Cost = new()
                 };
@@ -158,6 +160,18 @@ public sealed partial class StoreSystemStructuredLoader : EntitySystem
         }
 
         return count;
+    }
+
+    // WW Change: countMin..count rolls a random starting stock (MS13 vendortrons), count alone is fixed, neither is unlimited.
+    private int RollStock(StoreCatalogEntry entry)
+    {
+        if (entry.Count is not { } max)
+            return -1;
+
+        if (entry.CountMin is not { } min || min >= max)
+            return max;
+
+        return _random.Next(Math.Max(0, min), max + 1);
     }
 
     private static string AllocateDeterministicId(string baseId, LoadContext ctx)

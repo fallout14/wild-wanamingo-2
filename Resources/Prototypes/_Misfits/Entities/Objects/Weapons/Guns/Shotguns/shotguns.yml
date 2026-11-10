@@ -119,6 +119,20 @@
     price: 90
   - type: FirearmAttachmentHost
     bayonetVisualOffset: 0.75, 0.71875
+    # WW Change - bayonet lug only; the slot had no whitelist and took any item
+    muzzleSlot:
+      name: Muzzle attachment
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      ejectVerbText: Remove muzzle attachment
+      insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+      ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+      whitelist:
+        components:
+        - BayonetAttachment
 
 - type: entity
   id: F14NeosteadMagazineTube

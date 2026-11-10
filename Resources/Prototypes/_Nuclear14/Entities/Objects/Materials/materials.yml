@@ -149,6 +149,15 @@
     layers:
     - state: paper
       map: ["base"]
+    # WW Change - Wizden's paper visualizer needs its writing and stamp layers
+    - sprite: Objects/Misc/bureaucracy.rsi
+      state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      visible: false
+    - sprite: Objects/Misc/bureaucracy.rsi
+      state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
   - type: Item
     heldPrefix: paper
   - type: Flammable

@@ -44,6 +44,7 @@ public sealed partial class MiscTab : Control
         DropDownHudTheme.Visible = false;
         Control.AddOptionDropDown(CCVars.UILayout, DropDownHudLayout, layoutEntries);
 
+        Control.AddOptionCheckBox(Content.Shared._WW.CCVar.WWCVars.VegasUiColors, VegasUiColorsCheckBox); // WW Change
         Control.AddOptionCheckBox(CVars.DiscordEnabled, DiscordRich);
         Control.AddOptionCheckBox(CCVars.ShowOocPatronColor, ShowOocPatronColor);
         Control.AddOptionCheckBox(CCVars.LoocAboveHeadShow, ShowLoocAboveHeadCheckBox);

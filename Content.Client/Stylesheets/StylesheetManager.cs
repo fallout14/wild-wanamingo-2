@@ -2,7 +2,10 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Client.Stylesheets.Stylesheets;
+using Content.Client._WW.Stylesheets;
+using Content.Shared._WW.CCVar;
 using Robust.Client.UserInterface;
+using Robust.Shared.Configuration;
 using Robust.Shared.Reflection;
 
 namespace Content.Client.Stylesheets
@@ -12,6 +15,7 @@ namespace Content.Client.Stylesheets
         [Dependency] private ILogManager _logManager = default!;
         [Dependency] private IUserInterfaceManager _userInterfaceManager = default!;
         [Dependency] private IReflectionManager _reflection = default!;
+        [Dependency] private IConfigurationManager _cfg = default!; // WW Change
 
         public Stylesheet SheetNanotrasen { get; private set; } = default!;
         public Stylesheet SheetSystem { get; private set; } = default!;
@@ -36,6 +40,7 @@ namespace Content.Client.Stylesheets
             UnusedSheetlets = [..tys];
 
             Stylesheets = new Dictionary<string, Stylesheet>();
+            VegasPalettes.Enabled = _cfg.GetCVar(WWCVars.VegasUiColors); // WW Change
             SheetNanotrasen = Init(new NanotrasenStylesheet(new BaseStylesheet.NoConfig(), this));
             SheetSystem = Init(new SystemStylesheet(new BaseStylesheet.NoConfig(), this));
 
@@ -52,6 +57,22 @@ namespace Content.Client.Stylesheets
             }
 
             sawmill.Debug($"Initialized {_styleRuleCount} style rules in {sw.Elapsed}");
+
+            // WW Change - rebuild the main stylesheet when the New Vegas colours option is toggled
+            _cfg.OnValueChanged(WWCVars.VegasUiColors, RebuildForVegasColors);
+        }
+
+        // WW Change
+        private void RebuildForVegasColors(bool enabled)
+        {
+            if (VegasPalettes.Enabled == enabled)
+                return;
+
+            VegasPalettes.Enabled = enabled;
+            var sheet = new NanotrasenStylesheet(new BaseStylesheet.NoConfig(), this);
+            Stylesheets[sheet.StylesheetName] = sheet.Stylesheet;
+            SheetNanotrasen = sheet.Stylesheet;
+            _userInterfaceManager.Stylesheet = SheetNanotrasen;
         }
 
         private int _styleRuleCount;

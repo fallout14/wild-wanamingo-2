@@ -8,9 +8,9 @@
   description: Definition of a classic. Keeping murder affordable since 200,000 BCE.
   components:
   - type: EmbeddableProjectile
-    offset: 0.15,0.15
+    offset: -0.15,-0.15 # WW Change - MS13 spear art points down-left (N14 pointed up-right)
   - type: ThrowingAngle
-    angle: 225
+    angle: 45 # WW Change - MS13 art faces the other way
   - type: Tag
     tags:
     - Spear
@@ -28,15 +28,12 @@
         - ItemMask
         restitution: 0.3
         friction: 0.2
-  - type: Sprite
-    sprite: Nuclear14/Objects/Weapons/Melee/spear.rsi
+  - type: Sprite # WW Change - MS13 sprites (no poison fill overlay in MS13 art)
+    sprite: MojaveSun/Objects/Weapons/Melee/spear_throwing.rsi
     layers:
-    - state: spear
-    - state: spear1
-      map: ["enum.SolutionContainerLayers.Fill"]
-      visible: false
+    - state: icon
   - type: MeleeWeapon
-    wideAnimationRotation: -135
+    wideAnimationRotation: 45 # WW Change - MS13 art faces the other way
     damage:
       types:
         Piercing: 10
@@ -52,6 +49,7 @@
         Slash: 7
   - type: Item
     size: Large
+    sprite: MojaveSun/Objects/Weapons/Melee/spear_throwing.rsi
   - type: Clothing
     quickEquip: false
     slots:
@@ -97,9 +95,9 @@
         Piercing: 3
         Slash: 3
   - type: EmbeddableProjectile
-    offset: 0.15,0.15
+    offset: -0.15,-0.15 # WW Change - MS13 spear art points down-left (N14 pointed up-right)
   - type: ThrowingAngle
-    angle: 225
+    angle: 45 # WW Change - MS13 art faces the other way
   - type: Tag
     tags:
     - Spear
@@ -117,15 +115,12 @@
         - ItemMask
         restitution: 0.3
         friction: 0.2
-  - type: Sprite
-    sprite: Nuclear14/Objects/Weapons/Melee/spear.rsi
+  - type: Sprite # WW Change - MS13 sprites (no poison fill overlay in MS13 art)
+    sprite: MojaveSun/Objects/Weapons/Melee/spear.rsi
     layers:
-    - state: spear
-    - state: spear1
-      map: ["enum.SolutionContainerLayers.Fill"]
-      visible: false
+    - state: icon
   - type: MeleeWeapon
-    wideAnimationRotation: -135
+    wideAnimationRotation: 45 # WW Change - MS13 art faces the other way
     damage:
       types:
         Piercing: 24
@@ -141,6 +136,7 @@
         Slash: 5
   - type: Item
     size: Large
+    sprite: MojaveSun/Objects/Weapons/Melee/spear.rsi
   - type: Clothing
     quickEquip: false
     slots:
@@ -189,7 +185,18 @@
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Melee/flagspear.rsi
     netsync: false
-    state: spear
+    layers: # WW Change - own layers/in-hands; the parent spear now uses the MS13 sprite
+    - state: spear
+  - type: Item
+    size: Large
+    sprite: Nuclear14/Objects/Weapons/Melee/flagspear.rsi
+  # WW Change - N14 art points up-right; the parent spear now uses MS13 art, which points the other way
+  - type: ThrowingAngle
+    angle: 225
+  - type: EmbeddableProjectile
+    offset: 0.15,0.15
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
 
 - type: entity
   name: tribal spear
@@ -207,8 +214,13 @@
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Melee/tribalspear.rsi
     netsync: false
-    state: spear
+    layers: # WW Change - own layers/in-hands; the parent spear now uses the MS13 sprite
+    - state: spear
+  - type: Item
+    size: Large
+    sprite: Nuclear14/Objects/Weapons/Melee/tribalspear.rsi
   - type: MeleeWeapon
+    wideAnimationRotation: -135
     damage:
       types:
         Piercing: 28
@@ -218,6 +230,11 @@
       types:
         Piercing: 20
         Slash: 22
+  # WW Change - N14 art points up-right; the parent spear now uses MS13 art, which points the other way
+  - type: ThrowingAngle
+    angle: 225
+  - type: EmbeddableProjectile
+    offset: 0.15,0.15
 
 - type: entity
   name: poleaxe
@@ -234,8 +251,13 @@
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Melee/polearm.rsi
     netsync: false
-    state: spear
+    layers: # WW Change - own layers/in-hands; the parent spear now uses the MS13 sprite
+    - state: spear
+  - type: Item
+    size: Large
+    sprite: Nuclear14/Objects/Weapons/Melee/polearm.rsi
   - type: MeleeWeapon
+    wideAnimationRotation: -135
     damage:
       types:
         Piercing: 26
@@ -247,3 +269,8 @@
         Slash: 18
   - type: StaticPrice
     price: 30
+  # WW Change - N14 art points up-right; the parent spear now uses MS13 art, which points the other way
+  - type: ThrowingAngle
+    angle: 225
+  - type: EmbeddableProjectile
+    offset: 0.15,0.15

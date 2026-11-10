@@ -54,6 +54,26 @@ public sealed partial class WastelandSpawnerComponent : Component
     [DataField]
     public int MaxAlivePerPrototype;
 
+    /// <summary>
+    /// Stop while this many of the mobs this spawner made are still alive, so a den only refills after its own
+    /// critters die. 0 = unlimited (only <see cref="MaxAlivePerPrototype"/> applies).
+    /// </summary>
+    [DataField]
+    public int MaxAliveFromSpawner;
+
+    /// <summary>
+    /// When a spawn is due but no player is in <see cref="ActivationRange"/>, or one is inside
+    /// <see cref="SpawnBlockRange"/>, check again after this many seconds instead of waiting a whole interval.
+    /// </summary>
+    [DataField]
+    public int RetrySeconds = 30;
+
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
     public TimeSpan NextFire;
+
+    /// <summary>
+    /// Mobs this spawner made, for <see cref="MaxAliveFromSpawner"/>.
+    /// </summary>
+    [ViewVariables]
+    public HashSet<EntityUid> Spawned = new();
 }

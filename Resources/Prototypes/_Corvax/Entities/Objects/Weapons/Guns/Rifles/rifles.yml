@@ -58,6 +58,9 @@
             - F14CartridgePistol5
   - type: StaticPrice
     price: 100
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    muzzleVisualOffset: 0.875, 0.90625
+    bayonetVisualOffset: 0.84375, 0.71875
 
 - type: entity
   name: Bozar
@@ -123,3 +126,6 @@
       offset: 15
       allowMovement: false
       doAfter: 0.8
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    muzzleVisualOffset: 0.90625, 0.90625
+    bayonetVisualOffset: 0.875, 0.71875

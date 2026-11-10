@@ -1,0 +1,17 @@
+# Player-built roof. Roofs aren't entities, they're a flag on the tile (Wizden RoofComponent: blocks weather and
+# sunlight). Finishing the construction spawns this, which sets the flag and deletes itself.
+# A saw used on a roofed floor tile takes the roof back off (RoofRemoverComponent).
+
+- type: entity
+  id: WWRoofWood
+  name: wooden roof
+  description: Planks laid over the beams. Keeps the sun and the rain off.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/roof_wood.rsi
+    state: icon
+  - type: Construction
+    graph: WWRoof
+    node: roof
+  - type: SetRoof
+    value: true

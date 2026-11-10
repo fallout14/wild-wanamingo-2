@@ -6,13 +6,12 @@
   name: goliath power fist
   description: A captured Legion shock gauntlet built around a piston-assisted ram that hurls targets backward.
   components:
-  - type: Sprite
-    sprite: Nuclear14/Clothing/Hands/PowerGauntlets/basic.rsi
+  - type: Sprite # WW Change - MS13 icon and in-hands; Misfits worn-on-hand sprite kept
+    sprite: MojaveSun/Objects/Weapons/Melee/powerfist.rsi
     state: icon
-    scale: 0.75, 0.75
   - type: Item
     size: Normal
-    sprite: Nuclear14/Clothing/Hands/PowerGauntlets/basic.rsi
+    sprite: MojaveSun/Objects/Weapons/Melee/powerfist.rsi
   - type: Clothing
     sprite: Misfits/Objects/Weapons/Melee/powerfist.rsi
     slots: [gloves]

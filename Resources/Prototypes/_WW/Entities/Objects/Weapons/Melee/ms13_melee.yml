@@ -1,0 +1,459 @@
+# New melee weapons for the Mojave Sun 13 melee sprites that had no item (Resources/Textures/MojaveSun, CC-BY-NC-SA-3.0).
+# Names and descriptions follow MS13 (mojave/items/melee). Damage comes from the parent unless set here, and is a
+# first pass for tuning. Not in loot or recipes yet.
+
+- type: Tag
+  id: F14KatanaBlack
+
+- type: Tag
+  id: F14KatanaRed
+
+# MARK: Powered
+
+- type: entity
+  parent: F14Ripper
+  id: F14RipperAdvanced
+  name: advanced ripper
+  description: A ripper with a reinforced housing and a meaner chain. Still a chainsaw you hold in one hand.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/ripper_legend.rsi
+    state: on-icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/ripper_legend.rsi
+    heldPrefix: on
+  - type: MeleeWeapon
+    autoAttack: true
+    angle: 0
+    wideAnimationRotation: -135
+    attackRate: 0.25
+    damage:
+      types:
+        Slash: 8
+        Piercing: 4
+        Structural: 22
+    soundHit:
+      path: /Audio/Nuclear14/Weapons/Melee/Swing/ripper.ogg
+  - type: StaticPrice
+    price: 150
+
+- type: entity
+  parent: F14MacheteBase
+  id: F14Shishkebab
+  name: shishkebab
+  description: A sword with a fuel line and a pilot light. Light it to set the blade on fire.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/shishkebab.rsi
+    layers:
+    - state: off-icon
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/shishkebab.rsi
+    size: Large
+    heldPrefix: off
+  - type: Clothing
+    sprite: MojaveSun/Objects/Weapons/Melee/shishkebab.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: ItemToggle
+    soundActivate:
+      collection: WelderOn
+      params:
+        volume: -5
+    soundDeactivate:
+      collection: WelderOff
+      params:
+        volume: -5
+  - type: ItemTogglePrefix
+    prefixOn: on
+    prefixOff: off
+  - type: ItemToggleHot
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Slash: 20
+        Heat: 14
+  - type: ItemToggleExaminableStatus
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: { state: on-icon, shader: unshaded }
+          False: { state: off-icon, shader: shaded }
+  - type: StaticPrice
+    price: 250
+
+- type: entity
+  parent: F14FireAxe
+  id: F14AutoAxe
+  name: auto axe
+  description: A motorised axe head with spinning blades. Start it up and it chews through flesh, wood and doors alike.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/auto_axe.rsi
+    layers:
+    - state: off-icon
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/auto_axe.rsi
+    storedSprite: null
+    heldPrefix: off
+  - type: Clothing
+    sprite: MojaveSun/Objects/Weapons/Melee/auto_axe.rsi
+    slots:
+    - back
+    - suitStorage
+  - type: Wieldable
+    wieldedInhandPrefix: null # MS13 has no wielded sprites; keep the on/off ones
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/Nuclear14/Weapons/Melee/Swing/ripper.ogg
+    soundDeactivate:
+      path: /Audio/Machines/button.ogg
+  - type: ItemTogglePrefix
+    prefixOn: on
+    prefixOff: off
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Slash: 24
+        Piercing: 6
+        Structural: 30
+  - type: ItemToggleExaminableStatus
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: { state: on-icon }
+          False: { state: off-icon }
+  - type: StaticPrice
+    price: 300
+
+# MARK: Spears
+
+- type: entity
+  parent: F14WastelandSpear
+  id: F14SpearKnife
+  name: knife spear
+  description: A kitchen knife lashed to a pole. Better than nothing, and easier to make than a real spear.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/spear_knife.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/spear_knife.rsi
+  - type: Clothing
+    sprite: MojaveSun/Objects/Weapons/Melee/spear_knife.rsi
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Piercing: 16
+        Slash: 6
+    angle: 0
+    animation: WeaponArcThrust
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: StaticPrice
+    price: 15
+
+- type: entity
+  parent: F14WastelandSpear
+  id: F14ThunderStick
+  name: thunder stick
+  description: A spear with an explosive charge for a tip. It goes off on the first thing it hits, and the spear goes with it.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/spear_thunder.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/spear_thunder.rsi
+  - type: Clothing
+    slots: NONE # MS13: no back sprite, so it can't be stowed
+  - type: TriggerOnMeleeHit
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 8
+    intensitySlope: 4
+    totalIntensity: 30 # a small blast around the target
+    canCreateVacuum: false
+  - type: StaticPrice
+    price: 60
+
+# MARK: Axes, swords, clubs
+
+- type: entity
+  parent: F14FireAxeBase
+  id: F14DryAxe
+  name: Drylander axe
+  description: A rough, heavy axe made by the Drylanders.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/dry_axe.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/dry_axe.rsi
+  - type: Clothing
+    sprite: MojaveSun/Objects/Weapons/Melee/dry_axe.rsi
+
+- type: entity
+  parent: F14MacheteBase
+  id: F14BumperSword
+  name: bumper sword
+  description: A car bumper hammered into a long, heavy blade. Best swung with both hands.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/bumper_sword.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/bumper_sword.rsi
+    size: Large
+  - type: Clothing
+    sprite: MojaveSun/Objects/Weapons/Melee/bumper_sword.rsi
+    slots:
+    - Belt
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 10
+        Blunt: 6
+  - type: StaticPrice
+    price: 60
+
+- type: entity
+  parent: F14TribalBigClub
+  id: F14RebarClub
+  name: rebar club
+  description: A lump of concrete still stuck on its rebar. Crude, heavy and very effective.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/rebar_club.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/rebar_club.rsi
+  - type: Clothing
+    sprite: MojaveSun/Objects/Weapons/Melee/rebar_club.rsi
+
+- type: entity
+  parent: F14BrokenPipe
+  id: F14LeadPipe
+  name: lead pipe
+  description: A length of heavy lead pipe. Simple and dependable.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/lead_pipe.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/lead_pipe.rsi
+    size: Normal
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 20
+
+- type: entity
+  parent: F14LeadPipe
+  id: F14HumbleCudgel
+  name: Humble Cudgel
+  description: A lead pipe with a little extra weight on the end, and a reputation.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/lead_pipe_alt.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/lead_pipe_alt.rsi
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 26
+  - type: StaticPrice
+    price: 120
+
+- type: entity
+  parent: F14LeadPipe
+  id: F14TireIron
+  name: tire iron
+  description: A pre-war lug wrench with a prying end. Good for wheels, doors and heads.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/tire_iron.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/tire_iron.rsi
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 16
+  - type: Tool
+    qualities:
+    - Prying
+    speedModifier: 0.75
+  - type: Prying
+
+# MARK: Small blades
+
+- type: entity
+  parent: F14CombatKnife
+  id: F14IcePick
+  name: ice pick
+  description: A short steel spike with a handle. Goes through things it really shouldn't.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/ice_pick.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/ice_pick.rsi
+    storedSprite: null
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Piercing: 18
+    angle: 0
+    animation: WeaponArcThrust
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+
+- type: entity
+  parent: F14Hatchet
+  id: F14Tomahawk
+  name: tomahawk
+  description: A light hatchet balanced for throwing.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/tomahawk.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/tomahawk.rsi
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 20
+        Piercing: 8
+  - type: EmbeddableProjectile
+  - type: ThrowingAngle
+    angle: 225
+
+- type: entity
+  parent: BaseItem
+  id: F14StraightRazor
+  name: straight razor
+  description: A folding barber's razor. Open it before you use it.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/knife_razor.rsi
+    layers:
+    - state: closed-icon
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/knife_razor.rsi
+    size: Tiny
+    heldPrefix: closed
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/Items/unsheath.ogg
+    soundDeactivate:
+      path: /Audio/Items/sheath.ogg
+  - type: ItemTogglePrefix
+    prefixOn: open
+    prefixOff: closed
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 2
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Slash: 12
+  - type: ItemToggleExaminableStatus
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: { state: open-icon }
+          False: { state: closed-icon }
+  - type: StaticPrice
+    price: 15
+
+- type: entity
+  parent: F14StraightRazor
+  id: F14Switchblade
+  name: switchblade
+  description: A spring-loaded folding knife. Flick it open and stab.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/knife_switch.rsi
+    layers:
+    - state: closed-icon
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/knife_switch.rsi
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Piercing: 10
+        Slash: 4
+  - type: StaticPrice
+    price: 20
+
+# MARK: Sheath
+
+- type: entity
+  parent: BaseItem
+  id: F14KatanaSheath
+  name: katana sheath
+  description: A lacquered sheath for a katana.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/katana_sheath.rsi
+    layers:
+    - state: sheath
+    - state: sheath-katana
+      map: [ "sheath-katana" ]
+      visible: false
+    - state: sheath-katana-red
+      map: [ "sheath-katana-red" ]
+      visible: false
+  - type: Item
+    size: Large
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - Belt # MS13 has no worn sprite for it, so it doesn't show on the belt
+  - type: ItemSlots
+    slots:
+      item:
+        name: Katana
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/Items/sheath.ogg
+        ejectSound: /Audio/Items/unsheath.ogg
+        ejectOnBreak: true
+        whitelist:
+          tags:
+          - F14KatanaBlack
+          - F14KatanaRed
+  - type: ItemMapper
+    mapLayers:
+      sheath-katana:
+        whitelist:
+          tags:
+          - F14KatanaBlack
+      sheath-katana-red:
+        whitelist:
+          tags:
+          - F14KatanaRed
+  - type: Appearance
+  - type: StaticPrice
+    price: 20

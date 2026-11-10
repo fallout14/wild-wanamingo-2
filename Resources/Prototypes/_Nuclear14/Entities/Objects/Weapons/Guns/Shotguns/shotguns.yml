@@ -122,15 +122,16 @@
   description: A portable and brutal handheld shotgun. Uses 12 gauge shells.
   components:
   - type: Clothing
-    sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/sawed_off.rsi
+    sprite: MojaveSun/Objects/Weapons/Guns/Shotguns/sawedoff.rsi # WW Change - MS13 sprites; MS13 lets it go in suit storage too
     quickEquip: false
     slots:
     - Belt
+    - suitStorage
   - type: Sprite
-    sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/sawed_off.rsi
+    sprite: MojaveSun/Objects/Weapons/Guns/Shotguns/sawedoff.rsi
   - type: Item
     size: Normal # Forge-Change
-    sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/sawed_off.rsi
+    sprite: MojaveSun/Objects/Weapons/Guns/Shotguns/sawedoff.rsi
   - type: Gun
     fireRate: 3
     soundGunshot:

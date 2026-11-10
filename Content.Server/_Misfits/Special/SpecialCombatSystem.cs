@@ -2,6 +2,7 @@
 
 using Content.Shared._Misfits.Special;
 using Content.Shared._Misfits.Special.Components;
+using Content.Shared._WW.Weapons;
 using Content.Shared.Damage;
 using Content.Shared.Item;
 using Content.Shared.Projectiles;
@@ -69,7 +70,8 @@ public sealed partial class SpecialCombatSystem : EntitySystem
             ApplyStrengthUnarmedModifier(args.User, ref damage, special);
 
         // Melee weapons use the same Luck outcome curve as ranged weapons.
-        TryApplyLuckDamageOutcome(args.User, ref damage, special);
+        // WW Change - pass the weapon so its CriticalHitBonus counts (innate mob melee has none)
+        TryApplyLuckDamageOutcome(args.User, ref damage, special, uid == args.User ? null : uid);
 
         // Preserve the original event damage and apply only the SPECIAL delta.
         args.BonusDamage += damage - args.BaseDamage;
@@ -125,7 +127,8 @@ public sealed partial class SpecialCombatSystem : EntitySystem
 
         if (critChance > 0f && _random.Prob(critChance))
         {
-            damage *= tuning.LuckCriticalDamageMultiplier;
+            // WW Change - a weapon's CriticalHitBonus can set its own crit multiplier
+            damage *= GetCriticalDamageMultiplier(weapon);
             return true;
         }
 
@@ -137,7 +140,7 @@ public sealed partial class SpecialCombatSystem : EntitySystem
         return true;
     }
 
-    private float GetLuckCriticalChance(EntityUid user, SpecialComponent special, EntityUid? weapon)
+    public float GetLuckCriticalChance(EntityUid user, SpecialComponent special, EntityUid? weapon)
     {
         var tuning = _special.GetTuning();
 
@@ -149,7 +152,25 @@ public sealed partial class SpecialCombatSystem : EntitySystem
         if (weapon != null && HasComp<RevolverAmmoProviderComponent>(weapon.Value))
             shotChance *= 2f;
 
+        // WW Change - per-weapon crit bonus, added after Luck (and the revolver doubling) so it works at any Luck
+        if (weapon != null && TryComp<CriticalHitBonusComponent>(weapon.Value, out var bonus))
+            shotChance = MathF.Max(shotChance, 0f) + bonus.Chance;
+
         return Math.Clamp(shotChance, 0f, 1f);
+    }
+
+    /// <summary>
+    /// WW Change - crit damage multiplier: the weapon's own if its CriticalHitBonus sets one, else the SPECIAL tuning's.
+    /// </summary>
+    public float GetCriticalDamageMultiplier(EntityUid? weapon)
+    {
+        if (weapon != null && TryComp<CriticalHitBonusComponent>(weapon.Value, out var bonus) &&
+            bonus.DamageMultiplier is { } multiplier)
+        {
+            return multiplier;
+        }
+
+        return _special.GetTuning().LuckCriticalDamageMultiplier;
     }
 
     private float GetLuckUnluckyChance(EntityUid user, SpecialComponent special)

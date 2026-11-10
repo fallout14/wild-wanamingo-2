@@ -57,6 +57,9 @@
       whitelist:
         components:
         - SuppressorAttachment
+    # WW Change - attachment overlay placement
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 0.71875, 0.53125
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/SMGs/10mmSMG.rsi
     quickEquip: false
@@ -438,6 +441,9 @@
       whitelist:
         components:
         - SuppressorAttachment
+    # WW Change - attachment overlay placement
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 0.75, 0.5
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/SMGs/advance12mm.rsi
     quickEquip: false
@@ -695,6 +701,9 @@
       whitelist:
         components:
         - SuppressorAttachment
+    # WW Change - attachment overlay placement
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 0.8125, 0.46875
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/SMGs/chineseadvanceSMG.rsi
     quickEquip: false

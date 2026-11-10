@@ -7,6 +7,14 @@
   name: Bed
   description: A clean mattress for sleeping on.
   components:
+  # WW Change - bed tier "proper" (proper clean bed): heals per second while buckled, x3 while asleep
+  - type: HealOnBuckle
+    damage:
+      types:
+        Blunt: -0.1
+        Slash: -0.1
+        Piercing: -0.1
+        Poison: -0.1
   - type: Sprite
     noRot: false
     sprite: Nuclear14/Structures/Furniture/bedsandchairs.rsi
@@ -38,6 +46,14 @@
   name: "Dirty Bed"
   description: A bed that looks like it's seen better days.
   components:
+  # WW Change - bed tier "frame" (cheap or worn bed): heals per second while buckled, x3 while asleep
+  - type: HealOnBuckle
+    damage:
+      types:
+        Blunt: -0.07
+        Slash: -0.07
+        Piercing: -0.07
+        Poison: -0.07
   - type: Sprite
     state: bed_dirty
     snapCardinals: true
@@ -79,11 +95,14 @@
   name: bedroll
   description: A bedroll for sleeping on the road. Not very comfy.
   components:
+    # WW Change - bed tier "rough" (bedroll, sleeping bag or bare mattress): heals per second while buckled, x3 while asleep
     - type: HealOnBuckle
       damage:
         types:
-          Poison: -0.05
-          Blunt: -0.05
+          Blunt: -0.04
+          Slash: -0.04
+          Piercing: -0.04
+          Poison: -0.04
     - type: Sprite
       sprite: Nuclear14/Structures/Furniture/bedsandchairs.rsi
       noRot: true
@@ -144,6 +163,14 @@
   name: Mattress
   description: A mattress on the floor. Better than nothing.
   components:
+  # WW Change - bed tier "frame" (cheap or worn bed): heals per second while buckled, x3 while asleep
+  - type: HealOnBuckle
+    damage:
+      types:
+        Blunt: -0.07
+        Slash: -0.07
+        Piercing: -0.07
+        Poison: -0.07
   - type: Sprite
     state: mattress0
   - type: Construction
@@ -169,6 +196,14 @@
   name: Mattress
   description: A mattress on the floor. A little rough.
   components:
+  # WW Change - bed tier "rough" (bedroll, sleeping bag or bare mattress): heals per second while buckled, x3 while asleep
+  - type: HealOnBuckle
+    damage:
+      types:
+        Blunt: -0.04
+        Slash: -0.04
+        Piercing: -0.04
+        Poison: -0.04
   - type: Sprite
     state: mattress1
     snapCardinals: true

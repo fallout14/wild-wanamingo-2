@@ -10,14 +10,21 @@
   - type: Sprite
     sprite: Nuclear14/Structures/Machines/computer.rsi
     layers:
-    - map: ["computerLayerBody"]
+    - map: ["enum.ComputerVisualLayers.Frame"]
       state: computer
-    - map: ["computerLayerKeyboard"]
+    - map: ["enum.ComputerVisualLayers.Keyboard"]
       state: keyboard
-    - map: ["computerLayerScreen"]
+    - map: ["enum.ComputerVisualLayers.Screen"]
       state: screens
-    - map: ["computerLayerKeys"]
+    - map: ["enum.ComputerVisualLayers.Keys"]
       state: keys
+  # WW Change - Wizden's computer visualizer sets these states on the layers above; no maintenance panel sprite
+  - type: ComputerVisuals
+    stateFrame: computer
+    stateKeyboard: keyboard
+    stateScreen: screens
+    stateKeys: keys
+    statePanel: null
   # #Misfits Change - Legion tactical map access was moved to N14ChalkboardFloor11
   # to better match Legion theming and avoid console-based access inheritance.
 

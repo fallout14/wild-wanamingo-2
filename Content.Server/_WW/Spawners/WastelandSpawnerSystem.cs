@@ -9,7 +9,8 @@ namespace Content.Server._WW.Spawners;
 
 /// <summary>
 /// Runs <see cref="WastelandSpawnerComponent"/>. Missed intervals aren't made up: a spawner that sat dormant for
-/// an hour fires once when a player shows up, not once per interval.
+/// an hour fires once when a player shows up, not once per interval. A spawn blocked only by where players are
+/// is retried after <see cref="WastelandSpawnerComponent.RetrySeconds"/>; anything else waits a full interval.
 /// </summary>
 public sealed partial class WastelandSpawnerSystem : EntitySystem
 {
@@ -44,36 +45,58 @@ public sealed partial class WastelandSpawnerSystem : EntitySystem
             if (spawner.NextFire > now)
                 continue;
 
-            spawner.NextFire = now + TimeSpan.FromSeconds(spawner.IntervalSeconds);
-            TrySpawn((uid, spawner, xform));
+            var delay = TrySpawn((uid, spawner, xform)) ? spawner.IntervalSeconds : spawner.RetrySeconds;
+            spawner.NextFire = now + TimeSpan.FromSeconds(Math.Max(1, delay));
         }
     }
 
-    private void TrySpawn(Entity<WastelandSpawnerComponent, TransformComponent> ent)
+    /// <summary>
+    /// Returns false when the spawn was blocked only by where players are (retry soon), true otherwise.
+    /// </summary>
+    private bool TrySpawn(Entity<WastelandSpawnerComponent, TransformComponent> ent)
     {
         var (uid, spawner, xform) = ent;
         if (spawner.Prototypes.Count == 0)
-            return;
+            return true;
 
         var coords = _transform.GetMapCoordinates(uid, xform);
 
         if (spawner.ActivationRange > 0 && !LivingPlayerWithin(coords, spawner.ActivationRange))
-            return;
+            return false;
 
         if (!spawner.IgnoreSpawnBlock && spawner.SpawnBlockRange > 0 && LivingPlayerWithin(coords, spawner.SpawnBlockRange))
-            return;
+            return false;
 
         if (spawner.MaxAlivePerPrototype > 0 && CountAlive(spawner, xform.MapUid) >= spawner.MaxAlivePerPrototype)
-            return;
+            return true;
+
+        var room = int.MaxValue;
+        if (spawner.MaxAliveFromSpawner > 0)
+        {
+            spawner.Spawned.RemoveWhere(e => TerminatingOrDeleted(e) || _mobState.IsDead(e));
+            room = spawner.MaxAliveFromSpawner - spawner.Spawned.Count;
+            if (room <= 0)
+                return true;
+        }
 
         if (!_random.Prob(spawner.Chance))
-            return;
+            return true;
 
-        var count = _random.Next(spawner.MinimumEntitiesSpawned, spawner.MaximumEntitiesSpawned + 1);
+        var count = Math.Min(room, _random.Next(spawner.MinimumEntitiesSpawned, spawner.MaximumEntitiesSpawned + 1));
         for (var i = 0; i < count; i++)
         {
-            SpawnAtPosition(_random.Pick(spawner.Prototypes), xform.Coordinates);
+            spawner.Spawned.Add(SpawnAtPosition(_random.Pick(spawner.Prototypes), xform.Coordinates));
         }
+
+        return true;
+    }
+
+    /// <summary>
+    /// Fires the spawner now, ignoring its timer (tests, admin use). Returns false if it was blocked by players.
+    /// </summary>
+    public bool ForceFire(Entity<WastelandSpawnerComponent> ent)
+    {
+        return TrySpawn((ent, ent.Comp, Transform(ent)));
     }
 
     private bool LivingPlayerWithin(Robust.Shared.Map.MapCoordinates coords, float range)

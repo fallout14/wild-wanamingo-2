@@ -1,0 +1,16 @@
+# Roofing a tile costs 1 wood plank. The roof entity sets the tile's roof flag and deletes itself; a saw takes it off.
+
+- type: constructionGraph
+  id: WWRoof
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: roof
+      steps:
+      - material: WoodPlank
+        amount: 1
+        doAfter: 2
+
+  - node: roof
+    entity: WWRoofWood

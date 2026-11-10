@@ -43,7 +43,6 @@
     whitelist:
       tags:
       - F14CartridgePistol357
-      - F14SpeedLoaderTube357
     capacity: 10 # #Misfits Tweak - entry-level, was 12
     proto: F14CartridgePistol357
   - type: EyeCursorOffset
@@ -55,6 +54,9 @@
     damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
       types:
         Piercing: 0
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    opticVisualState: leveraction_scope
+    opticVisualOffset: 0.28125, 0.5
 
 - type: entity
   name: lever action rifle
@@ -261,6 +263,10 @@
       allowMovement: false
       doAfter: 1.0
 # Forge-add-end
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 0.84375, 0.5
+    bayonetVisualOffset: 0.8125, 0.46875
 
 # #Misfits Add — Cowboy Repeater, Paciencia, Ratslayer, M1 Carbine, Rangemaster
 # Ported from Fortune13/LoneStar (https://github.com/Cythisiax/LoneStar/), a SS13 Fallout fork.
@@ -316,7 +322,6 @@
     whitelist:
       tags:
       - F14CartridgePistol357
-      - F14SpeedLoaderTube357 # #Misfits Add
     capacity: 12
     proto: F14CartridgePistol357
   - type: EyeCursorOffset
@@ -390,6 +395,8 @@
     damage: # #Misfits Tweak - potent three-shot hunting rifle: .308 38 + 20 = 58 (2-hit crit)
       types:
         Piercing: 20
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    showOpticVisual: false # sprite already shows a scope
 
 - type: entity
   name: Ratslayer
@@ -415,6 +422,11 @@
     - SemiAuto
     soundGunshot:
       collection: F14SniperVarmintGunshot
+  # WW Change - the inherited bonus (-23/-104) gave a wielded max spread of -24 degrees, below the minimum,
+  # which trips Wizden's recoil assert on some shots. Wielded it's now 0-4 degrees: still pin-accurate.
+  - type: GunWieldBonus
+    minAngle: -18
+    maxAngle: -76
   - type: StaticPrice
     price: 500
 
@@ -506,6 +518,8 @@
     price: 80
   - type: FirearmAttachmentHost
     bayonetVisualOffset: 0.71875, 0.75
+    # WW Change - attachment overlay placement
+    muzzleVisualOffset: 0.75, 0.9375
 
 - type: entity
   name: Colt Rangemaster
@@ -554,6 +568,9 @@
       whitelist:
         tags:
         - F14RifleScope
+    # WW Change - attachment overlay placement
+    muzzleVisualOffset: 0.875, 0.9375
+    bayonetVisualOffset: 0.84375, 0.75
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Rifles/rangemaster.rsi
     quickEquip: false

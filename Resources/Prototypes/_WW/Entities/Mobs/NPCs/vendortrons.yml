@@ -1,0 +1,217 @@
+# Vendortrons: MS13 robot shopkeepers (mojave/code/modules/mob/robots/vendortrons.dm). They stand in one spot,
+# sell through the Caravan trade store UI (buy tab only, like MS13's), and shoot back if attacked.
+# Stock is rolled per vendortron at round start (countMin..count) and does not restock.
+
+- type: entity
+  abstract: true
+  parent: MobRobotic
+  id: WWMobVendortronBase
+  name: vendortron
+  description: A robot shopkeeper. Click it to browse its wares.
+  suffix: vendor
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: MojaveSun/Mobs/Robots/vendortron.rsi
+    offset: 0,0.25
+    layers:
+    - state: blue
+  - type: InteractionOutline
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 0
+    baseSprintSpeed: 0
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.4
+        density: 1000
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      350: Dead
+    stateAlertDict:
+      Alive: BorgHealth
+      Dead: BorgDead
+    showOverlays: false
+  - type: Damageable
+    damageModifierSet: F14WastelandAnimal
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 350
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          F14Scrap1:
+            min: 2
+            max: 2
+          F14ScrapElectronic1:
+            min: 1
+            max: 2
+          F14ScrapGlass1:
+            min: 1
+            max: 1
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Misfits/Legacy/Machines/AI/borg_death.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  # Leaves people alone until they attack it, then shoots them (MS13: retaliate trader, 15 melee, protectron laser).
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: NPCRetaliation
+    attackMemoryLength: 30
+  - type: FactionException
+  - type: HTN
+    rootTask:
+      task: F14TurretCompound
+  - type: CombatMode
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Effects/metal_thud1.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Blunt: 15
+  - type: Gun
+    fireRate: 0.4
+    useKey: false
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: BasicEntityAmmoProvider
+    proto: BulletLaser
+    capacity: 6
+    count: 6
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2.5
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Pai
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: NcStoreStructuredBoundUi
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: WWVendortron
+
+- type: entity
+  parent: WWMobVendortronBase
+  id: WWMobVendortronGunRunners
+  name: Gun Runners vendortron
+  description: A vendortron used by the Gun Runners for sale of firearms far and wide.
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+  - type: NcStore
+    buyPresets:
+    - WWVendortronGunRunners
+  - type: WWVendortron
+    lines:
+    - ww-vendortron-gunrunner-1
+    - ww-vendortron-gunrunner-2
+    - ww-vendortron-gunrunner-3
+
+- type: entity
+  parent: WWMobVendortronBase
+  id: WWMobVendortronMedTek
+  name: Med-Tek vendortron
+  description: A pre-war vendortron that provides medical supplies. Probably outlived everyone it was supposed to help treat.
+  components:
+  - type: Sprite
+    layers:
+    - state: white
+  - type: NcStore
+    buyPresets:
+    - WWVendortronMedTek
+  - type: WWVendortron
+    lines:
+    - ww-vendortron-medtek-1
+    - ww-vendortron-medtek-2
+    - ww-vendortron-medtek-3
+
+- type: entity
+  parent: WWMobVendortronBase
+  id: WWMobVendortronArcata
+  name: Arcata Armorers vendortron
+  description: A vendortron used by a small armoring company for distribution and sale of their products.
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+  - type: NcStore
+    buyPresets:
+    - WWVendortronArcata
+  - type: WWVendortron
+    lines:
+    - ww-vendortron-armor-1
+    - ww-vendortron-armor-2
+
+- type: entity
+  parent: WWMobVendortronBase
+  id: WWMobVendortronTools
+  name: H&H Tools vendortron
+  description: A pre-war vendortron that provides tools and construction supplies.
+  components:
+  - type: Sprite
+    layers:
+    - state: yellow
+  - type: NcStore
+    buyPresets:
+    - WWVendortronTools
+  - type: WWVendortron
+    lines:
+    - ww-vendortron-tools-1
+    - ww-vendortron-tools-2
+    - ww-vendortron-tools-3
+
+- type: entity
+  parent: WWMobVendortronBase
+  id: WWMobVendortronRobCo
+  name: RobCo vendortron
+  description: A pre-war vendortron that provides electronics and electronics related supplies.
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: NcStore
+    buyPresets:
+    - WWVendortronRobCo
+  - type: WWVendortron
+    lines:
+    - ww-vendortron-robco-1
+    - ww-vendortron-robco-2
+    - ww-vendortron-robco-3
+
+# Mapper marker: spawns one random vendortron (MS13: "shouldn't be more than three of these on the map").
+- type: entity
+  parent: MarkerBase
+  id: WWSpawnerVendortronRandom
+  name: random vendortron spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: MojaveSun/Mobs/Robots/vendortron.rsi
+      state: blue
+  - type: ConditionalSpawner
+    prototypes:
+    - WWMobVendortronGunRunners
+    - WWMobVendortronMedTek
+    - WWMobVendortronArcata
+    - WWMobVendortronTools
+    - WWMobVendortronRobCo

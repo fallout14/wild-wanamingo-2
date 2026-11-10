@@ -45,7 +45,7 @@
   description: A bigger, heavier, and more destructive sledgehammer. You really need some strong arms to swing it.
   components:
   - type: Sprite
-    sprite: Nuclear14/Objects/Weapons/Melee/supersledge.rsi
+    sprite: MojaveSun/Objects/Weapons/Melee/hammer_power.rsi # WW Change - MS13 "super sledge" sprites
     state: icon
   - type: MeleeWeapon
     damage:
@@ -62,8 +62,9 @@
     distance: 0.25
   - type: Item
     size: Large
+    sprite: MojaveSun/Objects/Weapons/Melee/hammer_power.rsi
   - type: Clothing
-    sprite: Nuclear14/Objects/Weapons/Melee/supersledge.rsi
+    sprite: MojaveSun/Objects/Weapons/Melee/hammer_power.rsi
     quickEquip: false
     slots:
     - back

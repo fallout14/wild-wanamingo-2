@@ -1,0 +1,280 @@
+# Timed spawners for wasteland critters that had none. Tier parents (interval, chance, caps) are in timed_tiers.yml.
+# Mappers place these; nothing spawns until a living player is within 60 tiles, and never within 15.
+
+# Vermin
+
+- type: entity
+  parent: WWTimedSpawnerVermin
+  id: WWTimedSpawnerIguana
+  name: Iguana Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/Animals/iguana.rsi
+      state: iguana
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobIguana
+
+- type: entity
+  parent: WWTimedSpawnerVermin
+  id: WWTimedSpawnerRabbit
+  name: Rabbit Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/Animals/rabbit.rsi
+      state: normrabbit
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobRabbit
+
+- type: entity
+  parent: WWTimedSpawnerVermin
+  id: WWTimedSpawnerNuclearRabbit
+  name: Nuclear Rabbit Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/Animals/rabbit.rsi
+      state: rabbit
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobNuclearRabbit
+
+- type: entity
+  parent: WWTimedSpawnerVermin
+  id: WWTimedSpawnerOpossum
+  name: Opossum Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/Animals/opossum.rsi
+      state: normopossum
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobOpossum
+
+- type: entity
+  parent: WWTimedSpawnerVermin
+  id: WWTimedSpawnerNuclearBeaver
+  name: Nuclear Beaver Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/Animals/beaver.rsi
+      state: beaver
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobNuclearBeaver
+
+# Predator
+
+- type: entity
+  parent: WWTimedSpawnerPredator
+  id: WWTimedSpawnerMirelurk
+  name: Mirelurk Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Misfits/Legacy/Corvax/Mobs/Animals/mirelurk.rsi
+      state: mirelurk
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobMirelurk
+
+- type: entity
+  parent: WWTimedSpawnerPredator
+  id: WWTimedSpawnerRadMirelurk
+  name: Rad Mirelurk Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Misfits/Legacy/Corvax/Mobs/Animals/radmirelurk.rsi
+      state: radmirelurk
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobRadMirelurk
+
+- type: entity
+  parent: WWTimedSpawnerPredator
+  id: WWTimedSpawnerCentaur
+  name: Centaur Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/Animals/centaur.rsi
+      state: alive
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobCentaur
+
+# Hostile
+
+- type: entity
+  parent: WWTimedSpawnerHostile
+  id: WWTimedSpawnerSuperMutantMelee
+  name: Super Mutant (Melee) Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/SuperMutants/supermutant.rsi
+      state: melee
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobSuperMutantMelee
+
+- type: entity
+  parent: WWTimedSpawnerHostile
+  id: WWTimedSpawnerSuperMutantRanged
+  name: Super Mutant (Ranged) Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/SuperMutants/supermutant.rsi
+      state: ranged
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobSuperMutantRanged
+
+- type: entity
+  parent: WWTimedSpawnerHostile
+  id: WWTimedSpawnerSuperMutantArmored
+  name: Super Mutant (Armored) Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/SuperMutants/supermutant.rsi
+      state: armored
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobSuperMutantArmored
+
+- type: entity
+  parent: WWTimedSpawnerHostile
+  id: WWTimedSpawnerNightkin
+  name: Nightkin Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/SuperMutants/supermutant.rsi
+      state: nightkin
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobNightkin
+
+- type: entity
+  parent: WWTimedSpawnerHostile
+  id: WWTimedSpawnerNightkinVeteran
+  name: Nightkin Veteran Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/SuperMutants/supermutant.rsi
+      state: nightkin_ranged
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobNightkinVeteran
+
+- type: entity
+  parent: WWTimedSpawnerHostile
+  id: WWTimedSpawnerSecuritron
+  name: Securitron Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/Robots/securitron-gray.rsi
+      state: icon
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobRobotSecuritronHostile
+
+# Apex
+
+- type: entity
+  parent: WWTimedSpawnerApex
+  id: WWTimedSpawnerRadLurker
+  name: Rad Lurker Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/Animals/lurker.rsi
+      state: lurker
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobRadLurker
+
+- type: entity
+  parent: WWTimedSpawnerApex
+  id: WWTimedSpawnerNightkinElite
+  name: Nightkin Elite Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/SuperMutants/supermutant.rsi
+      state: nightkin_boss
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobNightkinElite
+
+- type: entity
+  parent: WWTimedSpawnerApex
+  id: WWTimedSpawnerBehemoth
+  name: Behemoth Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Misfits/Mobs/NPCs/behemoth.rsi
+      state: behemoth
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobBehemoth
+
+- type: entity
+  parent: WWTimedSpawnerApex
+  id: WWTimedSpawnerSentryBot
+  name: Sentry Bot Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Nuclear14/Mobs/Robots/sentrybot.rsi
+      state: icon
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - F14MobRobotSentryBot

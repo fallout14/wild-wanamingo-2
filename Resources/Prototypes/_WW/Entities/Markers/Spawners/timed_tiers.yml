@@ -1,0 +1,93 @@
+# Danger tiers for wasteland critter spawners (WastelandSpawner). Each timed spawner parents one of these and only
+# lists its mob, so a whole tier is retuned here.
+#   intervalSeconds        how often it tries to spawn
+#   chance                 chance each try actually spawns
+#   min/maximumEntitiesSpawned  pack size
+#   maxAlivePerPrototype   stop while this many of the mob are alive on the whole map
+#   maxAliveFromSpawner    stop while this many of THIS spawner's mobs are alive (a den refills after its critters die)
+#   activationRange        dormant unless a living player is within this many tiles
+# Spawners never spawn with a living player within 15 tiles (spawnBlockRange); that try is retried after 30 s.
+
+- type: entity
+  abstract: true
+  parent: MarkerBase
+  id: WWTimedSpawnerBase
+  components:
+  - type: WastelandSpawner
+    prototypes: [] # set by each spawner
+    activationRange: 60
+
+# Small critters: molerats, roaches, geckos, rabbits...
+- type: entity
+  abstract: true
+  parent: WWTimedSpawnerBase
+  id: WWTimedSpawnerVermin
+  components:
+  - type: WastelandSpawner
+    prototypes: []
+    intervalSeconds: 900
+    chance: 0.75
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 3
+    maxAlivePerPrototype: 12
+    maxAliveFromSpawner: 4
+
+# Herd and game animals: brahmin, bighorner, radstag, chickens.
+- type: entity
+  abstract: true
+  parent: WWTimedSpawnerBase
+  id: WWTimedSpawnerGame
+  components:
+  - type: WastelandSpawner
+    prototypes: []
+    intervalSeconds: 1800
+    chance: 0.75
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 3
+    maxAlivePerPrototype: 8
+    maxAliveFromSpawner: 3
+
+# Dangerous wildlife and ferals: nightstalkers, radscorpions, cazadores, mirelurks, feral ghouls...
+- type: entity
+  abstract: true
+  parent: WWTimedSpawnerBase
+  id: WWTimedSpawnerPredator
+  components:
+  - type: WastelandSpawner
+    prototypes: []
+    intervalSeconds: 1500
+    chance: 0.65
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 2
+    maxAlivePerPrototype: 8
+    maxAliveFromSpawner: 3
+
+# Armed hostiles: raiders, fiends, enforcers, hostile robots, super mutants.
+- type: entity
+  abstract: true
+  parent: WWTimedSpawnerBase
+  id: WWTimedSpawnerHostile
+  components:
+  - type: WastelandSpawner
+    prototypes: []
+    intervalSeconds: 1800
+    chance: 0.65
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 3
+    maxAlivePerPrototype: 6
+    maxAliveFromSpawner: 3
+
+# Bosses and apex predators: deathclaws, yao guai, raider boss, assaultron, sentry bot, behemoth...
+- type: entity
+  abstract: true
+  parent: WWTimedSpawnerBase
+  id: WWTimedSpawnerApex
+  components:
+  - type: WastelandSpawner
+    prototypes: []
+    intervalSeconds: 3600
+    chance: 0.5
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 1
+    maxAlivePerPrototype: 2
+    maxAliveFromSpawner: 1

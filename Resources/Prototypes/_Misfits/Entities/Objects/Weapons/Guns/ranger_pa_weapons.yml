@@ -49,3 +49,6 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     sprite: Misfits/Objects/Weapons/Guns/Pistols/ranger_pistol.rsi
+  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 0.75, 0.5625

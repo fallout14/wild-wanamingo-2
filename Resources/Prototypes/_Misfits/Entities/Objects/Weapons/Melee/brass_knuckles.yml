@@ -33,8 +33,8 @@
   name: spiked brass knuckle
   description: A spiked variant of a brass knuckle, seems more lethal.
   components:
-  - type: Sprite
-    sprite: Misfits/Objects/Weapons/Melee/spikedbrassknuckles.rsi
+  - type: Sprite # WW Change - MS13 icon and in-hands; Misfits worn-on-hand sprite kept
+    sprite: MojaveSun/Objects/Weapons/Melee/knuckles_spike.rsi
     state: icon
   - type: Clothing
     sprite: Misfits/Objects/Weapons/Melee/spikedbrassknuckles.rsi
