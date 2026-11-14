@@ -4,8 +4,8 @@ meta:
   engineVersion: 295.0.2
   forkId: ""
   forkVersion: ""
-  time: 11/10/2026 06:23:44
-  entityCount: 20585
+  time: 11/14/2026 14:43:23
+  entityCount: 20586
 maps:
 - 2
 grids:
@@ -8257,6 +8257,11 @@ entities:
           moles:
             Oxygen: 21.824879
             Nitrogen: 82.10312
+        - temperature: 293.1495
+          volume: 2500
+          moles:
+            Oxygen: 21.824879
+            Nitrogen: 82.10312
         tiles:
           -4,-12:
             0: 65535
@@ -14315,11 +14320,13 @@ entities:
           48,-7:
             0: 65535
           47,-7:
-            0: 65535
+            0: 65519
+            1: 16
           48,-6:
             0: 53503
           47,-6:
-            0: 20735
+            0: 20703
+            2: 32
           47,-5:
             0: 4081
           49,-7:
@@ -95442,7 +95449,10 @@ entities:
     components:
     - type: Transform
       parent: 2
-      pos: 189.5,-22.5
+      pos: 189.50838,-22.515306
+      anchored: False
+    - type: Physics
+      bodyType: Dynamic
 - proto: F14LootClosetFridge
   entities:
   - uid: 1897
@@ -95637,6 +95647,32 @@ entities:
     - type: Transform
       parent: 2
       pos: 188.5,-26.5
+    - type: EntityStorage
+      removedMasks: 20
+      open: True
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            vertices:
+            - -0.4,-0.4
+            - 0.4,-0.4
+            - 0.4,0.29
+            - -0.4,0.29
+            radius: 0.01
+          restitution: 0
+          hard: True
+          friction: 0.4
+          density: 50
+          mask:
+          - Impassable
+          - HighImpassable
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+    - type: PlaceableSurface
+      isPlaceable: True
   - uid: 18754
     components:
     - type: Transform
@@ -95740,6 +95776,13 @@ entities:
     - type: Transform
       parent: 2
       pos: 193.5,-7.5
+- proto: F14MachineComputerMainframe
+  entities:
+  - uid: 20198
+    components:
+    - type: Transform
+      parent: 2
+      pos: 342.5,-351.5
 - proto: F14MachineFrameTallDestroyed
   entities:
   - uid: 3842
@@ -99649,6 +99692,7 @@ entities:
     - type: Transform
       parent: 2
       pos: 279.5,-337.5
+    - type: SpecialLatheOperator
 - proto: F14SpawnPointAuxilia
   entities:
   - uid: 15825
@@ -103641,16 +103685,16 @@ entities:
     - type: Transform
       parent: 2
       pos: 297.5,-368.5
-  - uid: 20198
-    components:
-    - type: Transform
-      parent: 2
-      pos: 278.5,-340.5
   - uid: 20209
     components:
     - type: Transform
       parent: 2
-      pos: 277.5,-340.5
+      pos: 277.5,-339.5
+  - uid: 20210
+    components:
+    - type: Transform
+      parent: 2
+      pos: 278.5,-339.5
   - uid: 20234
     components:
     - type: Transform
@@ -176335,13 +176379,6 @@ entities:
       pos: 299.5,-177.5
     - type: Fixtures
       fixtures: {}
-- proto: F14WeaponPistol10mm
-  entities:
-  - uid: 18778
-    components:
-    - type: Transform
-      parent: 2
-      pos: 190.72267,-24.29903
 - proto: F14WeaponPistol10mmPipe
   entities:
   - uid: 4979
@@ -176349,6 +176386,13 @@ entities:
     - type: Transform
       parent: 2
       pos: 144.52309,-91.54559
+- proto: F14WeaponPistol10mmPolice
+  entities:
+  - uid: 19559
+    components:
+    - type: Transform
+      parent: 2
+      pos: 190.63405,-24.346224
 - proto: F14WeaponPistol12mm
   entities:
   - uid: 3147
@@ -179881,6 +179925,11 @@ entities:
     - type: Transform
       parent: 2
       pos: 64.5,-38.5
+  - uid: 18778
+    components:
+    - type: Transform
+      parent: 2
+      pos: 277.5,-340.5
 - proto: F14WorkbenchArmorbench
   entities:
   - uid: 10509
@@ -182375,7 +182424,7 @@ entities:
     components:
     - type: Transform
       parent: 2
-      pos: 148.03047,1.7623525
+      pos: 147.54645,3.240309
     - type: Paper
       content: >-
         Ideas for:
@@ -182571,16 +182620,6 @@ entities:
     - type: Transform
       parent: 2
       pos: 372.5,29.5
-- proto: PlayerStationAiEmpty
-  entities:
-  - uid: 19559
-    components:
-    - type: Transform
-      parent: 2
-      pos: 342.50003,-350.93716
-      anchored: False
-    - type: Physics
-      bodyType: Dynamic
 - proto: Railing
   entities:
   - uid: 2129
@@ -183832,11 +183871,11 @@ entities:
       pos: 256.31097,55.615772
 - proto: TurboItemRecharger
   entities:
-  - uid: 20210
+  - uid: 20586
     components:
     - type: Transform
       parent: 2
-      pos: 277.5,-340.5
+      pos: 277.5,-339.5
 - proto: UnfinishedMachineFrame
   entities:
   - uid: 18377
@@ -183862,7 +183901,7 @@ entities:
     components:
     - type: Transform
       parent: 2
-      pos: 278.5,-340.5
+      pos: 278.5,-339.5
   - uid: 20251
     components:
     - type: Transform
