@@ -5,19 +5,10 @@
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: F14WeaponPistolM1911
-      weight: 7
-    - !type:EntSelector
-      id: F14WeaponRangerPowerArmorPistol
-      weight: 7
-    - !type:EntSelector
       id: F14WeaponDesertEagle44
       weight: 7
     - !type:EntSelector
       id: F14WeaponPistolT60
-      weight: 7
-    - !type:EntSelector
-      id: F14WeaponRangerPowerArmorPistol
       weight: 7
 
     - !type:EntSelector
@@ -31,9 +22,6 @@
       weight: 7
     - !type:EntSelector
       id: F14WeaponPistol45Colt
-      weight: 7
-    - !type:EntSelector
-      id: F14WeaponPistolM1911 # .45acp
       weight: 7
     - !type:EntSelector
       id: F14WeaponPistol12mm
@@ -57,9 +45,6 @@
       id: F14WeaponLaserdotDesertEagle44 # laser sight deagle
       weight: 7
 
-    - !type:EntSelector
-      id: F14WeaponPistolM1911Custom # .45acp fancy
-      weight: 7
 
     - !type:EntSelector
       id: F14WeaponPistol9mmSpy #stealth

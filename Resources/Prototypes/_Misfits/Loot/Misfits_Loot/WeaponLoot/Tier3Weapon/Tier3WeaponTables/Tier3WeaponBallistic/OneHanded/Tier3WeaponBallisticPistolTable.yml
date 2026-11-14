@@ -5,9 +5,6 @@
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: F14WeaponPistolM1911
-      weight: 7
-    - !type:EntSelector
       id: F14WeaponPistol22lr
       weight: 7
     - !type:EntSelector
@@ -20,16 +17,10 @@
       id: F14WeaponPistol45Colt
       weight: 7
     - !type:EntSelector
-      id: F14WeaponPistolM1911 # .45acp
-      weight: 7
-    - !type:EntSelector
       id: F14WeaponPistol12mm
       weight: 7
     - !type:EntSelector
       id: F14WeaponPistol223
-      weight: 7
-    - !type:EntSelector
-      id: F14WeaponPistolM1911Custom # .45acp fancy
       weight: 7
     - !type:EntSelector
       id: F14WeaponPistol9mmSpy #stealth

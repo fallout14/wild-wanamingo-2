@@ -261,14 +261,8 @@
   - type: FirearmAttachmentHost
     visualOrientation: Horizontal
     muzzleVisualOffset: 0.96875, 0.46875
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 4 ]
   - type: FirearmSearCompatible
     allowBurst: true
     allowFullAuto: true
@@ -566,14 +560,8 @@
             - F14Cartridge762Rifle
   - type: StaticPrice
     price: 175
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 4 ]
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
     muzzleVisualOffset: 0.84375, 0.90625
     bayonetVisualOffset: 0.8125, 0.71875
@@ -650,8 +638,8 @@
 - type: entity
   name: F2 marksman rifle
   parent: F14WeaponRifleBase
-  id: F14WeaponRifle762MarksmanCanadian
-  description: A pre-war canadian marksman rifle chambered in 7.62mm.
+  id: F14WeaponRifle303MarksmanCanadian
+  description: A pre-war canadian marksman rifle, rechambered for .303 British.
   components:
   - type: ContainerContainer  # spawn state
     containers:
@@ -698,20 +686,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: F14Magazine762AmmoShort
+        startingItem: F14Magazine303Short # WW Change - rechambered to .303
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - F14Magazine762Short
+            - F14Magazine303Short
       gun_chamber:
         name: Chamber
-        startingItem: F14Cartridge762Rifle
+        startingItem: F14Cartridge303
         priority: 1
         whitelist:
           tags:
-            - F14Cartridge762Rifle
+            - F14Cartridge303Rifle
   - type: StaticPrice
     price: 175
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
@@ -719,7 +707,7 @@
     bayonetVisualOffset: 0.8125, 0.71875
 
 - type: entity
-  name: SKS chinese carbine
+  name: Chinese carbine # WW Change - was "SKS chinese carbine"
   parent: BaseWeaponSniper
   id: F14WeaponRifle762SKS
   description: A pre-war chinese rifle chambered in 7.62mm with a fixed internal 10-round magazine. Cheap, simple and easy to use, perfect to arm commie militias from around the world.
@@ -851,9 +839,10 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
+    cameraRecoilScalar: 3 # WW Change - pipe guns kick hard
+    angleIncrease: 8 # WW Change - was 4
     minAngle: 21
     maxAngle: 45
-    angleIncrease: 4
     angleDecay: 16
     fireRate: 3
     soundGunshot:
@@ -1060,6 +1049,10 @@
         ent: null
         showEnts: False
         occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Rifles/butcheredrifle.rsi
     quickEquip: false
@@ -1107,6 +1100,22 @@
             - F14Cartridge556Rifle
   - type: StaticPrice
     price: 40
+  - type: FirearmAttachmentHost # WW Change - too hacked-up for a suppressor or bayonet, but takes a scope
+    muzzleSlot:
+      locked: true
+    enableOpticSlot: true
+    opticSlot:
+      name: Optic
+      priority: 4
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        tags:
+        - F14RifleScope
+    opticVisualState: carbine_scope
+    opticVisualOffset: 0.1875, 0.5
 
 # ============================================================
 # Misfits Add — M1 Garand family
@@ -1119,6 +1128,3 @@
 # ============================================================
 
 # Old Glory — unique M1 Garand variant.
-  - type: FirearmAttachmentHost # WW Change - attachment overlay placement
-    muzzleVisualOffset: 0.75, 0.78125
-    bayonetVisualOffset: 0.71875, 0.59375

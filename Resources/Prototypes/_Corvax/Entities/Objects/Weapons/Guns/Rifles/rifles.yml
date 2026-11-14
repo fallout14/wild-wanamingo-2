@@ -118,14 +118,8 @@
     sprintModifier: 0.90
   - type: StaticPrice
     price: 500
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 4 ]
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
     muzzleVisualOffset: 0.90625, 0.90625
     bayonetVisualOffset: 0.875, 0.71875

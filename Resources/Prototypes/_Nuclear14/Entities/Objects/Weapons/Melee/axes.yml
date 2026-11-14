@@ -81,8 +81,12 @@
   name: fireaxe
   parent: F14BaseAxe
   id: F14FireAxeBase
+  abstract: true # WW Change - F14FireAxe is the only fire axe; this is just its parent
   description: Truly the weapon of a madman. Who would think to fight fire with an axe?
   components:
+  - type: Tag # WW Change - the FireAxe tag moved here from the wood axe
+    tags:
+    - FireAxe
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Melee/fireaxe.rsi
     state: icon
@@ -105,14 +109,11 @@
     price: 30
 
 - type: entity
-  name: axe
+  name: wood axe # WW Change - was "axe"
   parent: BaseItem
   id: F14BaseAxe
   description: A heavy wood axe, classic tool and weapon.
   components:
-  - type: Tag
-    tags:
-    - FireAxe
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Melee/axe.rsi
     state: icon

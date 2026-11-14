@@ -274,6 +274,8 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
+    cameraRecoilScalar: 3 # WW Change - pipe guns kick hard
+    angleIncrease: 8 # WW Change - was 4
     fireRate: 3 # #Misfits Tweak - was 4
     soundGunshot:
       collection: F14Pistol12mmGunshot
@@ -282,7 +284,6 @@
     - Fullauto
     minAngle: 12
     maxAngle: 38
-    angleIncrease: 4
     angleDecay: 16
   - type: ChamberMagazineAmmoProvider
     soundRack:
@@ -353,6 +354,8 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
+    cameraRecoilScalar: 3 # WW Change - pipe guns kick hard
+    angleIncrease: 8 # WW Change - was 4
     fireRate: 6
     soundGunshot:
       collection: F14Pistol10mmGunshot
@@ -361,7 +364,6 @@
     - Fullauto
     minAngle: 8
     maxAngle: 38
-    angleIncrease: 4
     angleDecay: 16
   - type: ChamberMagazineAmmoProvider
     soundRack:
@@ -495,62 +497,7 @@
   - type: StaticPrice
     price: 175
 
-- type: entity
-  name: infiltrator
-  parent: F14WeaponSMGBase
-  id: F14WeaponSMG9mminfiltrator
-  description: A simple metallic pre-war submachine gun modified with a integrated suppressor, chambered in 9mm ammo.
-  components:
-  - type: Clothing
-    sprite: Nuclear14/Objects/Weapons/Guns/SMGs/infiltrator.rsi
-    quickEquip: false
-    slots:
-    - Back
-    - suitStorage
-  - type: Sprite
-    scale: 0.8, 0.8
-    sprite: Nuclear14/Objects/Weapons/Guns/SMGs/infiltrator.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: Gun
-    fireRate: 8.5
-    soundGunshot:
-      collection: F14PistolSpyGunshot
-    selectedMode: Fullauto
-    availableModes:
-    - Fullauto
-    minAngle: 8
-    maxAngle: 24
-    angleIncrease: 4
-    angleDecay: 16
-  - type: ChamberMagazineAmmoProvider
-    soundRack:
-      path: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_cock.ogg
-  - type: GunWieldBonus
-    minAngle: -7
-    maxAngle: -17
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: F14MagazineSMG9mm
-        insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
-        ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
-        whitelist:
-          tags:
-            - F14MagazineSMG9mm
-      gun_chamber:
-        name: Chamber
-        startingItem: F14CartridgePistol9
-        priority: 1
-        whitelist:
-          tags:
-            - F14CartridgePistol9
-  - type: StaticPrice
-    price: 50
+# WW Change - the infiltrator moved to _WW/Entities/Objects/Weapons/Guns/infiltrator.yml as F14WeaponRifle556Infiltrator
 
 - type: entity
   name: sten SMG

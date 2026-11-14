@@ -74,7 +74,7 @@
   name: canadian HMG
   parent: BaseWeaponRifle
   id: F14WeaponHMGcanadian
-  description: A powerfull belt feed machine gun commonly used by the pre-war canadian army, chambered in 7.62mm ammunition.
+  description: A powerfull belt feed machine gun commonly used by the pre-war canadian army, rechambered for .303 British. # WW Change - was 7.62mm
   components:
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/LMGs/canadianhmg.rsi
@@ -111,20 +111,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: F14Magazine762AmmoBelt
+        startingItem: F14Magazine303Belt
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - F14Magazine762Belt
+            - F14Magazine303Belt
       gun_chamber:
         name: Chamber
-        startingItem: F14Cartridge762Rifle
+        startingItem: F14Cartridge303
         priority: 1
         whitelist:
           tags:
-            - F14Cartridge762Rifle
+            - F14Cartridge303Rifle
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
@@ -350,7 +350,7 @@
   name: M60 GPMG
   parent: BaseWeaponRifle
   id: F14WeaponM60GPMG
-  description: The M60 General Purpose Machine Gun is a pre-war machine gun that has a slow, chugging fire rate. Large, powerful, and loud - this old design was looted by legionnaires from old national guard warehouses.
+  description: The M60 General Purpose Machine Gun is a pre-war machine gun that has a slow, chugging fire rate. Large, powerful, and loud. # WW Change - Legion mention removed
   components:
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/LMGs/m60.rsi
@@ -404,3 +404,9 @@
         whitelist:
           tags:
             - F14Cartridge308Rifle
+  # WW Change - M60 icon states now follow the belt box
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance

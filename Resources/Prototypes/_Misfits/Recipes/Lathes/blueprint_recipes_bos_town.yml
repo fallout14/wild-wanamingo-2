@@ -53,16 +53,6 @@
     F14Scrap: 50
 
 - type: latheRecipe
-  id: F14BPBoSWeaponPistolM1911
-  result: F14WeaponPistolM1911
-  categories:
-  - F14BlueprintBoSWeaponsT1
-  completetime: 6
-  materials:
-    Steel: 2500
-    F14Iron: 500
-
-- type: latheRecipe
   id: F14BPBoSWeaponShotgunSawedOff
   result: F14WeaponShotgunSawedOff
   categories:
@@ -1031,16 +1021,6 @@
     F14Scrap: 50
 
 - type: latheRecipe
-  id: F14BPTownWeaponPistolM1911
-  result: F14WeaponPistolM1911
-  categories:
-  - F14BlueprintTownWeaponsT1
-  completetime: 6
-  materials:
-    Steel: 2500
-    F14Iron: 500
-
-- type: latheRecipe
   id: F14BPTownWeaponPistol12mm
   result: F14WeaponPistol12mm
   categories:
@@ -1387,7 +1367,7 @@
 
 - type: latheRecipe
   id: F14BPTownWeaponSledgeHammer
-  result: F14SledgeHammer
+  result: F14Sledgehammer
   categories:
   - F14BlueprintTownWeaponsT3
   completetime: 8

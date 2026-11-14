@@ -69,6 +69,15 @@ public sealed partial class ProjectileComponent : Component
     [DataField]
     public bool IgnoreResistances = false;
 
+    // WW Change start - armour penetration (from Misfits)
+    /// <summary>
+    ///     How much of the target's armour this projectile ignores, from -1 to 1.
+    ///     Positive for AP rounds (0.35), negative for hollow points (-0.3), which armour stops more of.
+    /// </summary>
+    [DataField]
+    public float ArmorPenetration = 0f;
+    // WW Change end
+
     /// <summary>
     ///     Get that juicy FPS hit sound.
     /// </summary>

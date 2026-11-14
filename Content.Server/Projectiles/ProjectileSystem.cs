@@ -59,7 +59,7 @@ public sealed partial class ProjectileSystem : SharedProjectileSystem
             damageRequired = FixedPoint2.Max(damageRequired, FixedPoint2.Zero);
         }
 
-        if (_damageableSystem.TryChangeDamage((target, damageableComponent), ev.Damage, out var damage, component.IgnoreResistances, origin: component.Shooter))
+        if (_damageableSystem.TryChangeDamage((target, damageableComponent), ev.Damage, out var damage, component.IgnoreResistances, origin: component.Shooter, armorPenetration: component.ArmorPenetration)) // WW Change - armour penetration
         {
             if (!Deleted(target))
             {

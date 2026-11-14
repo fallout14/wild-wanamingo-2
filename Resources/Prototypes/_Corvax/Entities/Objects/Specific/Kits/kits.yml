@@ -749,7 +749,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-    - id: F14WeaponUSHMG
+    - id: F14WeaponM240B
     - id: F14Magazine762AmmoBelt
       amount: 2
     - id: SmokeGrenade
@@ -1863,8 +1863,8 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: F14WeaponSniper308Canadian
-      - id: F14AmmoBox308
+      - id: F14WeaponSniper303Canadian
+      - id: F14MagazineBox303 # WW Change - rechambered to .303
         amount: 2
       - id: F14WeaponPistol45Colt # #Misfits Change: standardised to .45 pistol Legion sidearm
       - id: F14MagazinePistol45

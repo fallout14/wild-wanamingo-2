@@ -450,15 +450,8 @@
             - F14Cartridge556Rifle
   - type: StaticPrice
     price: 125
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
-
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 4 ]
 - type: entity
   name: skirmisher carbine
   parent: F14WeaponRifleBase
@@ -788,14 +781,8 @@
             - F14CartridgePistol9
   - type: StaticPrice
     price: 175
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 4 ]
   - type: GunDamageFalloffOverride
     falloffStartTiles: 7 # full damage out to medium range
     maxFalloffTiles: 14
@@ -981,29 +968,13 @@
     - SemiAuto
   - type: StaticPrice
     price: 1200
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - name: 2x
-      zoom: 1.2
-      offset: 11
-      allowMovement: false
-      doAfter: 0.6
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
-    - name: 6x
-      zoom: 0.8
-      offset: 21
-      allowMovement: false
-      doAfter: 1.0
-
-# Republic's Demise — UNIQUE, Legion-looted scoped M1C. The NCR star replaced with a bull.
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 2, 4, 6 ]
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
     muzzleVisualOffset: 0.75, 0.9375
     bayonetVisualOffset: 0.71875, 0.75
+
+# Republic's Demise — UNIQUE, Legion-looted scoped M1C. The NCR star replaced with a bull.
 
 - type: entity
   name: Republic's Demise
@@ -1040,29 +1011,13 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: StaticPrice
     price: 1000
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - name: 2x
-      zoom: 1.2
-      offset: 11
-      allowMovement: false
-      doAfter: 0.6
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
-    - name: 6x
-      zoom: 0.8
-      offset: 21
-      allowMovement: false
-      doAfter: 1.0
-
-# SVT-40 — Legion semi-auto battle rifle with ten internal rounds.
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 2, 4, 6 ]
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
     muzzleVisualOffset: 0.75, 0.9375
     bayonetVisualOffset: 0.71875, 0.75
+
+# SVT-40 — Legion semi-auto battle rifle with ten internal rounds.
 
 - type: entity
   name: SVT-40
@@ -1206,11 +1161,5 @@
       ejectOnInteract: false
       ejectOnUse: false
       disableEject: true
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 4 ]

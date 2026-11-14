@@ -258,7 +258,7 @@ public record struct BeforeDamageChangedEvent(DamageSpecifier Damage, EntityUid?
 ///
 ///     For example, armor.
 /// </summary>
-public sealed class DamageModifyEvent(DamageSpecifier damage, EntityUid? origin = null)
+public sealed class DamageModifyEvent(DamageSpecifier damage, EntityUid? origin = null, float armorPenetration = 0f) // WW Change - armour penetration
     : EntityEventArgs, IInventoryRelayEvent
 {
     /// <inheritdoc/>
@@ -282,6 +282,14 @@ public sealed class DamageModifyEvent(DamageSpecifier damage, EntityUid? origin 
     ///     Contains the entity which caused the damage, if any was responsible.
     /// </summary>
     public readonly EntityUid? Origin = origin;
+
+    // WW Change start - armour penetration
+    /// <summary>
+    ///     How much of the target's armour the attack ignores, from -1 to 1. Positive values (AP) weaken armour,
+    ///     negative values (hollow points) strengthen it. See <see cref="Content.Shared._WW.Armor.ArmorPenetrationHelper"/>.
+    /// </summary>
+    public readonly float ArmorPenetration = armorPenetration;
+    // WW Change end
 }
 
 /// <summary>

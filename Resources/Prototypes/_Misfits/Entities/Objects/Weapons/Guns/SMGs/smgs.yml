@@ -176,13 +176,13 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: F14Magazine45SubMachineGun
+        startingItem: F14Magazine45SubMachineGun20 # WW Change - Reising takes only the 20 round magazine
         insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
         ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
         priority: 2 # eject beats the fire-mode toggle on alt-click; with no magazine, alt-click switches fire mode
         whitelist:
           tags:
-            - F14Magazine45SubMachineGun
+            - F14Magazine45SubMachineGun20
       gun_chamber:
         name: Chamber
         startingItem: F14CartridgePistol45
@@ -333,6 +333,7 @@
         whitelist:
           tags:
             - F14Magazine45SubMachineGun
+            - F14Magazine45SubMachineGun20 # WW Change
       gun_chamber:
         name: Chamber
         startingItem: F14CartridgePistol45

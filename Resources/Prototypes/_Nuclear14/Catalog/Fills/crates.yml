@@ -278,7 +278,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: F14WeaponRifle762MarksmanCanadian
+      - id: F14WeaponRifle303MarksmanCanadian
         amount: 3
   - type: Storage
     grid:
@@ -292,7 +292,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: F14WeaponSniper308Canadian
+      - id: F14WeaponSniper303Canadian
         amount: 2
 
 - type: entity
@@ -343,13 +343,13 @@
   parent: F14CrateBreakPlain
   id: F14CrateBreakPlainFilledHMG
   name: HMG crate
-  description: Crate containing 1 7.62mm HMG, let the good times roll.
+  description: Crate containing 1 .303 HMG, let the good times roll.
   components:
   - type: StorageFill
     contents:
       - id: F14WeaponHMGcanadian
         amount: 1
-      - id: F14Magazine762AmmoBelt # Corvax-Add
+      - id: F14Magazine303Belt # Corvax-Add; WW Change - HMG is .303 now
         amount: 1
 
 - type: entity

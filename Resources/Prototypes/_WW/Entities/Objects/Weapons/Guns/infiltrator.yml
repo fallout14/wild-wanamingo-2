@@ -1,0 +1,97 @@
+# The infiltrator, rebuilt after the Fallout 3 (The Pitt) weapon: a cut-down R91 with an integral suppressor and a
+# fixed 4x scope. Semi-auto 5.56mm, fed from the standard 5.56mm rifle magazine. Neither attachment can be removed.
+# Sprite: Resources/Textures/WildWanamingo/Objects/Weapons/Guns/infiltrator.rsi (Fortune13, CC-BY-NC-SA-3.0).
+
+- type: entity
+  name: infiltrator
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle556Infiltrator
+  description: A pre-war R91 assault rifle cut down for close work, with an integral suppressor and a fixed 4x scope. The conversion left it semi-automatic only, but every 5.56mm round hits harder and quieter than the rifle it came from.
+  components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/infiltrator.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Large
+    sprite: WildWanamingo/Objects/Weapons/Guns/infiltrator.rsi
+  - type: Clothing
+    sprite: WildWanamingo/Objects/Weapons/Guns/infiltrator.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  # Integral suppressor: a locked suppressor in the muzzle slot. It's part of the sprite, so no overlay.
+  - type: FirearmAttachmentHost
+    showMuzzleVisual: false
+    enableOpticSlot: false # the scope is built in (WWScope below)
+    muzzleSlot:
+      name: Integral suppressor
+      startingItem: F14FirearmSuppressor
+      locked: true
+      insertOnInteract: false
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+  - type: WWScope
+    magnifications: [ 4 ]
+  - type: GunDamageModifier
+    damage: # 5.56mm 20 + 8 = 28 a shot, between the service rifle (20) and .308 (38)
+      types:
+        Piercing: 8
+  - type: CriticalHitBonus
+    chance: 0.05 # the Pitt infiltrator's doubled crit chance, as a flat +5%
+  - type: Gun
+    minAngle: 20
+    maxAngle: 40
+    angleIncrease: 3
+    angleDecay: 16
+    fireRate: 3
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: F14RifleR91Gunshot
+  - type: GunWieldBonus
+    minAngle: -19
+    maxAngle: -37
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: F14Magazine556Rifle
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - F14Magazine556Rifle
+      gun_chamber:
+        name: Chamber
+        startingItem: F14Cartridge556Rifle
+        priority: 1
+        whitelist:
+          tags:
+          - F14Cartridge556Rifle
+  - type: StaticPrice
+    price: 400

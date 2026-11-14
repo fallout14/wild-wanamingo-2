@@ -1,3 +1,4 @@
+using Content.Shared._WW.Armor; // WW Change - armour penetration
 using Content.Shared.Clothing.Components;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Systems;
@@ -48,7 +49,7 @@ public abstract partial class SharedArmorSystem : EntitySystem
         if (TryComp<MaskComponent>(uid, out var mask) && mask.IsToggled)
             return;
 
-        args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, component.Modifiers);
+        args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, ArmorPenetrationHelper.Apply(component.Modifiers, args.Args.ArmorPenetration)); // WW Change - armour penetration
     }
 
     private void OnBorgDamageModify(EntityUid uid, ArmorComponent component,
@@ -57,7 +58,7 @@ public abstract partial class SharedArmorSystem : EntitySystem
         if (TryComp<MaskComponent>(uid, out var mask) && mask.IsToggled)
             return;
 
-        args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, component.Modifiers);
+        args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, ArmorPenetrationHelper.Apply(component.Modifiers, args.Args.ArmorPenetration)); // WW Change - armour penetration
     }
 
     private void OnArmorVerbExamine(EntityUid uid, ArmorComponent component, GetVerbsEvent<ExamineVerb> args)

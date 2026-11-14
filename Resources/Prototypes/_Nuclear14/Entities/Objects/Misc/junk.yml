@@ -662,6 +662,8 @@
   components:
   - type: Sprite
     state: scope
+  - type: WWScope # WW Change - a rough 2x; it already fit optic slots but did nothing
+    magnifications: [ 2 ]
   - type: Tag
     tags:
     - F14RifleScope

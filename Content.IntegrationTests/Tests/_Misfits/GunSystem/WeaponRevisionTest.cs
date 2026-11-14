@@ -180,7 +180,8 @@ public sealed class WeaponRevisionTest
             Assert.That(entMan.System<SharedHandsSystem>().TryPickupAnyHand(user, svt), Is.True);
             var optic = entMan.SpawnEntity("F14WeaponScopeVariable", map.GridCoords);
             Assert.That(entMan.System<ItemSlotsSystem>().TryInsert(svt, "weapon_optic", optic, null), Is.True);
-            Assert.That(entMan.GetComponent<FirearmAttachmentHostComponent>(svt).OpticToggleActionEntity, Is.Not.Null);
+            // WW Change - scopes are Wizden-style (wield to look ahead) now, not a toggle action
+            Assert.That(entMan.System<Content.Shared._WW.Weapons.Scopes.WWScopeSystem>().TryGetScope(svt, out _), Is.True);
             Assert.That(entMan.HasComponent<ChamberMagazineAmmoProviderComponent>(svt), Is.False);
             Assert.That(TakeAmmo(entMan, svt, 11), Has.Count.EqualTo(10));
             var rifle = entMan.SpawnEntity("F14WeaponRifle9mmMarksmanChinese", map.GridCoords);

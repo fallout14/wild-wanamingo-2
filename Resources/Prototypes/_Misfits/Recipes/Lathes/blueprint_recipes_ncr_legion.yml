@@ -280,16 +280,6 @@
 # #Misfits Add - mediocre surplus kinetic rifles/SMGs (T2)
 
 - type: latheRecipe
-  id: F14BPNCRWeaponPistolM1911
-  result: F14WeaponPistolM1911
-  categories:
-  - F14BlueprintNCRWeaponsT2
-  completetime: 7
-  materials:
-    Steel: 3000
-    F14Iron: 700
-
-- type: latheRecipe
   id: F14BPNCRWeaponRifle10mmM1Carbine
   result: F14WeaponRifle10mmM1Carbine
   categories:
@@ -1483,7 +1473,7 @@
 
 - type: latheRecipe
   id: F14BPLegionWeaponSledgeHammer
-  result: F14SledgeHammer
+  result: F14Sledgehammer
   categories:
   - F14BlueprintLegionWeaponsT2
   completetime: 10
@@ -1521,16 +1511,6 @@
     F14Leather: 200
 
 # #Misfits Add - mediocre scavenged kinetic guns (T2)
-
-- type: latheRecipe
-  id: F14BPLegionWeaponPistolM1911
-  result: F14WeaponPistolM1911
-  categories:
-  - F14BlueprintLegionWeaponsT2
-  completetime: 7
-  materials:
-    Steel: 3000
-    F14Iron: 700
 
 - type: latheRecipe
   id: F14BPLegionWeaponSMGPPSh41

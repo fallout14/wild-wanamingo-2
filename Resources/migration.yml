@@ -3584,16 +3584,16 @@ MisfitsWeaponLaserRifleWattz2000Extended: F14WeaponLaserRifleWattz2000Extended
 MisfitsWeaponLegionScorcher: F14WeaponLegionScorcher
 MisfitsWeaponPistol223: F14WeaponPistol223
 MisfitsWeaponPistol357Automag: F14WeaponPistol357Automag
-MisfitsWeaponPistolM1911: F14WeaponPistolM1911
-MisfitsWeaponPistolM1911Custom: F14WeaponPistolM1911Custom
+MisfitsWeaponPistolM1911: F14WeaponPistol45Colt
+MisfitsWeaponPistolM1911Custom: F14WeaponPistol45Colt
 MisfitsWeaponPistolMaria: F14WeaponPistolMaria
 MisfitsWeaponPistolT60: F14WeaponPistolT60
 MisfitsWeaponPlasmaMultiplas: F14WeaponPlasmaMultiplas
 MisfitsWeaponPulseCarbine: F14WeaponPulseCarbine
 MisfitsWeaponPulsePistol: F14WeaponPulsePistol
 MisfitsWeaponPulseRifle: F14WeaponPulseRifle
-MisfitsWeaponRangerPowerArmorLMG: F14WeaponRangerPowerArmorLMG
-MisfitsWeaponRangerPowerArmorPistol: F14WeaponRangerPowerArmorPistol
+MisfitsWeaponRangerPowerArmorLMG: F14WeaponM60GPMG
+MisfitsWeaponRangerPowerArmorPistol: F14WeaponPistol45Colt
 MisfitsWeaponRevolver357Detective: F14WeaponRevolver357Detective
 MisfitsWeaponRevolver357Lucky: F14WeaponRevolver357Lucky
 MisfitsWeaponRevolver357Police: F14WeaponRevolver357Police
@@ -3641,7 +3641,7 @@ MisfitsWeaponSniperCowboyRepeater: F14WeaponSniperCowboyRepeater
 MisfitsWeaponSniperPaciencia: F14WeaponSniperPaciencia
 MisfitsWeaponSniperRatslayer: F14WeaponSniperRatslayer
 MisfitsWeaponTeslaCannon: F14WeaponTeslaCannon
-MisfitsWeaponUSHMG: F14WeaponUSHMG
+MisfitsWeaponUSHMG: F14WeaponM240B
 MisfitsWeaponZAXPulseRifle: F14WeaponZAXPulseRifle
 MisfitsWidowbaneChemistryBottle: F14WidowbaneChemistryBottle
 MisfitsWillowbark: F14Willowbark
@@ -6429,7 +6429,7 @@ N14SinkFilledWaterIrradiated: F14SinkFilledWaterIrradiated
 N14SinkFilledWaterIrradiatedSolutionTank: F14SinkFilledWaterIrradiatedSolutionTank
 N14SinkFilledWaterSolutionTank: F14SinkFilledWaterSolutionTank
 N14SinkSolutionTank: F14SinkSolutionTank
-N14SledgeHammer: F14SledgeHammer
+N14SledgeHammer: F14Sledgehammer
 N14SmellingSalts: F14SmellingSalts
 N14Soil: F14Soil
 N14SpawnMobAssaultron: F14SpawnMobAssaultron
@@ -6960,7 +6960,7 @@ N14WeaponRifle556Scout: F14WeaponRifle556Scout
 N14WeaponRifle556Service: F14WeaponRifle556Service
 N14WeaponRifle556ServiceScoped: F14WeaponRifle556ServiceScoped
 N14WeaponRifle762Canadian: F14WeaponRifle762Canadian
-N14WeaponRifle762MarksmanCanadian: F14WeaponRifle762MarksmanCanadian
+N14WeaponRifle762MarksmanCanadian: F14WeaponRifle303MarksmanCanadian
 N14WeaponRifle762SKS: F14WeaponRifle762SKS
 N14WeaponRifleGrenade: F14WeaponRifleGrenade
 N14WeaponSMG10mm: F14WeaponSMG10mm
@@ -6975,7 +6975,7 @@ N14WeaponSMG12mmAdvancedChinese: F14WeaponSMG12mmAdvancedChinese
 N14WeaponSMG12mmPipe: F14WeaponSMG12mmPipe
 N14WeaponSMG12mmPipeEmpty: F14WeaponSMG12mmPipeEmpty
 N14WeaponSMG9mmCanadian: F14WeaponSMG9mmCanadian
-N14WeaponSMG9mminfiltrator: F14WeaponSMG9mminfiltrator
+N14WeaponSMG9mminfiltrator: F14WeaponRifle556Infiltrator
 N14WeaponShotgun: F14WeaponShotgun
 N14WeaponShotgunAuto: F14WeaponShotgunAuto
 N14WeaponShotgunBloodyStick: F14WeaponShotgunBloodyStick
@@ -6990,7 +6990,7 @@ N14WeaponShotgunRiot: F14WeaponShotgunRiot
 N14WeaponShotgunSawedOff: F14WeaponShotgunSawedOff
 N14WeaponShotgunSawedOffEmpty: F14WeaponShotgunSawedOffEmpty
 N14WeaponShotgunShort: F14WeaponShotgunShort
-N14WeaponSniper308Canadian: F14WeaponSniper308Canadian
+N14WeaponSniper308Canadian: F14WeaponSniper303Canadian
 N14WeaponSniper308PipeRifle: F14WeaponSniper308PipeRifle
 N14WeaponSniper308Tribal: F14WeaponSniper308Tribal
 N14WeaponSniper308TribalUpgraded: F14WeaponSniper308TribalUpgraded
@@ -7164,3 +7164,17 @@ F1480sGarageDoor: F14Gang80sGarageDoor
 
 # WW: the rifle bayonet merged into the MS13 bayonet (2026-10-26)
 F14FirearmBayonet: F14KnifeBayonet
+
+# WW: weapon pass (2026-11-10): renames and removals
+F14WeaponSniper308Canadian: F14WeaponSniper303Canadian
+F14WeaponRifle762MarksmanCanadian: F14WeaponRifle303MarksmanCanadian
+F14WeaponUSHMG: F14WeaponM240B
+F14WeaponPistolM1911: F14WeaponPistol45Colt
+F14WeaponPistolM1911Custom: F14WeaponPistol45Colt
+F14WeaponRangerPowerArmorLMG: F14WeaponM60GPMG
+F14WeaponRangerPowerArmorPistol: F14WeaponPistol45Colt
+
+# WW: melee merge (2026-11-12)
+F14SledgeHammer: F14Sledgehammer
+F14FireAxeBase: F14FireAxe
+F14WeaponSMG9mminfiltrator: F14WeaponRifle556Infiltrator

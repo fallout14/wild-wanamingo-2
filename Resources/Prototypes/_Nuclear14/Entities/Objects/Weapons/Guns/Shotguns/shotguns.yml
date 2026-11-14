@@ -589,6 +589,8 @@
     sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/pipe_shotgun.rsi
   - type: GunRequiresWield
   - type: Gun
+    cameraRecoilScalar: 3 # WW Change - pipe guns kick hard
+    angleIncrease: 6 # WW Change - was 0
     fireRate: 2
     soundGunshot:
       collection: F14DoubleBarrelShotgunGunshot

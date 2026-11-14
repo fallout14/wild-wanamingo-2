@@ -7,6 +7,10 @@ using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Toggleable;
 using Content.Shared.Weapons.Melee.Events;
+using Content.Shared.Weapons.Melee.Components; // WW Change - bayonet stab
+using Content.Shared.Damage; // WW Change
+using Content.Shared.Damage.Prototypes; // WW Change
+using Content.Shared.Wieldable.Components; // WW Change - bayonet stab
 using Content.Shared.Weapons.Melee;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
@@ -28,6 +32,8 @@ public sealed partial class SharedFirearmAttachmentSystem : EntitySystem
     [Dependency] private SharedActionsSystem _actions = default!;
     [Dependency] private ActionContainerSystem _actionContainer = default!;
     [Dependency] private SharedHandsSystem _hands = default!;
+    [Dependency] private Robust.Shared.Network.INetManager _net = default!; // WW Change
+    [Dependency] private Robust.Shared.Prototypes.IPrototypeManager _proto = default!; // WW Change
 
     private readonly HashSet<EntityUid> _pendingRefresh = new();
     private readonly Dictionary<EntityUid, Angle> _baseMeleeAnimationRotations = new();
@@ -50,6 +56,7 @@ public sealed partial class SharedFirearmAttachmentSystem : EntitySystem
         SubscribeLocalEvent<FirearmAttachmentHostComponent, ToggleActionEvent>(OnToggleOpticAction);
         SubscribeLocalEvent<FirearmAttachmentHostComponent, ScopeCycleZoomLevelEvent>(OnCycleOpticAction);
         SubscribeLocalEvent<FirearmAttachmentHostComponent, ComponentShutdown>(OnHostShutdown);
+        SubscribeLocalEvent<FirearmAttachmentHostComponent, AttemptMeleeEvent>(OnMeleeAttempt); // WW Change - bayonet stab
     }
 
     private void OnHostInit(Entity<FirearmAttachmentHostComponent> ent, ref ComponentInit args)
@@ -61,6 +68,63 @@ public sealed partial class SharedFirearmAttachmentSystem : EntitySystem
 
         if (TryComp<MeleeWeaponComponent>(ent, out var melee))
             _baseMeleeAnimationRotations[ent] = melee.WideAnimationRotation;
+    }
+
+    // WW Change - bayonet stab, like Wizden's Kardashev-Mosin: right-click (AltFireMelee) with the gun wielded.
+    // Our guns have no melee of their own, so mounting a bayonet gives the gun a melee weapon and right-click melee,
+    // and taking it off removes what it added. Server only; both components are networked.
+    private void AddBayonetMelee(EntityUid gun)
+    {
+        if (_net.IsClient)
+            return;
+
+        var marker = EnsureComp<WWBayonetMeleeComponent>(gun);
+        if (!HasComp<MeleeWeaponComponent>(gun))
+        {
+            var melee = new MeleeWeaponComponent
+            {
+                Damage = new DamageSpecifier(_proto.Index<DamageTypePrototype>("Blunt"), 5), // replaced by the bayonet's damage
+                Angle = Angle.Zero,
+                Animation = "WeaponArcThrust",
+                WideAnimation = "WeaponArcThrust",
+            };
+            AddComp(gun, melee);
+            marker.AddedMelee = true;
+        }
+
+        if (!HasComp<AltFireMeleeComponent>(gun))
+        {
+            AddComp<AltFireMeleeComponent>(gun);
+            marker.AddedAltFire = true;
+        }
+    }
+
+    private void RemoveBayonetMelee(EntityUid gun)
+    {
+        if (_net.IsClient || !TryComp<WWBayonetMeleeComponent>(gun, out var marker))
+            return;
+
+        if (marker.AddedMelee)
+            RemComp<MeleeWeaponComponent>(gun);
+        if (marker.AddedAltFire)
+            RemComp<AltFireMeleeComponent>(gun);
+        RemComp<WWBayonetMeleeComponent>(gun);
+    }
+
+    // WW Change - bayonet stab: needs a bayonet, and the gun wielded (like the Mosin's MeleeRequiresWield).
+    private void OnMeleeAttempt(Entity<FirearmAttachmentHostComponent> ent, ref AttemptMeleeEvent args)
+    {
+        if (!TryGetMuzzleAttachment(ent, out var attachment) || !HasComp<BayonetAttachmentComponent>(attachment))
+        {
+            args.Cancelled = true;
+            return;
+        }
+
+        if (TryComp<WieldableComponent>(ent, out var wieldable) && !wieldable.Wielded)
+        {
+            args.Cancelled = true;
+            args.Message = Loc.GetString("wieldable-component-requires", ("item", ent.Owner));
+        }
     }
 
     public override void Update(float frameTime)
@@ -86,6 +150,9 @@ public sealed partial class SharedFirearmAttachmentSystem : EntitySystem
 
         if (args.Container.ID == ent.Comp.OpticSlotId)
             RefreshOpticActions(ent);
+
+        if (args.Container.ID == ent.Comp.MuzzleSlotId && HasComp<BayonetAttachmentComponent>(args.Entity)) // WW Change
+            AddBayonetMelee(ent);
     }
 
     private void OnContainerModified(
@@ -94,18 +161,22 @@ public sealed partial class SharedFirearmAttachmentSystem : EntitySystem
     {
         RefreshGunIfAttachmentChanged(ent, args.Container.ID);
 
+        if (args.Container.ID == ent.Comp.MuzzleSlotId && HasComp<BayonetAttachmentComponent>(args.Entity)) // WW Change
+            RemoveBayonetMelee(ent);
+
         if (args.Container.ID == ent.Comp.OpticSlotId)
             RefreshOpticActions(ent, removing: true);
     }
 
     private void OnGetItemActions(Entity<FirearmAttachmentHostComponent> ent, ref GetItemActionsEvent args)
     {
-        if (!TryGetOptic(ent, out var optic))
+        // WW Change - the optic action also drives WW scopes (WWScopeSystem handles the forwarded event)
+        if (!TryGetOptic(ent, out var optic) || !IsScope(optic))
             return;
 
         args.AddAction(ref ent.Comp.OpticToggleActionEntity, ent.Comp.OpticToggleAction);
 
-        if (TryComp<ScopeComponent>(optic, out var scope) && scope.ZoomLevels.Count > 1)
+        if (HasZoomLevels(optic))
             args.AddAction(ref ent.Comp.OpticCycleActionEntity, ent.Comp.OpticCycleAction);
 
         Dirty(ent);
@@ -143,7 +214,7 @@ public sealed partial class SharedFirearmAttachmentSystem : EntitySystem
         // The gun is the action provider, so removing or replacing its optic can refresh
         // the granted action without forcing the player to drop and pick the rifle up.
         _actions.RemoveProvidedActions(user, ent);
-        if (removing || !TryGetOptic(ent, out var optic))
+        if (removing || !TryGetOptic(ent, out var optic) || !IsScope(optic)) // WW Change
             return;
 
         if (!_actionContainer.EnsureAction(
@@ -156,7 +227,7 @@ public sealed partial class SharedFirearmAttachmentSystem : EntitySystem
 
         var actions = new List<EntityUid> { ent.Comp.OpticToggleActionEntity.Value };
 
-        if (TryComp<ScopeComponent>(optic, out var scope) && scope.ZoomLevels.Count > 1 &&
+        if (HasZoomLevels(optic) && // WW Change
             _actionContainer.EnsureAction(
                 ent,
                 ref ent.Comp.OpticCycleActionEntity,
@@ -326,6 +397,14 @@ public sealed partial class SharedFirearmAttachmentSystem : EntitySystem
         attachment = item;
         return true;
     }
+
+    // WW Change - Misfits scopes and WW scopes both get the optic actions
+    private bool IsScope(EntityUid optic) =>
+        HasComp<ScopeComponent>(optic) || HasComp<Content.Shared._WW.Weapons.Scopes.WWScopeComponent>(optic);
+
+    private bool HasZoomLevels(EntityUid optic) =>
+        TryComp<ScopeComponent>(optic, out var scope) && scope.ZoomLevels.Count > 1 ||
+        TryComp<Content.Shared._WW.Weapons.Scopes.WWScopeComponent>(optic, out var ww) && ww.Magnifications.Count > 1;
 
     private bool TryGetOptic(Entity<FirearmAttachmentHostComponent> ent, out EntityUid optic)
     {

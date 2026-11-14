@@ -234,24 +234,8 @@
           tags:
             - F14Cartridge50
             - F14Cartridge50HEIAP
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - name: 2x
-      zoom: 1.2
-      offset: 11
-      allowMovement: false
-      doAfter: 0.6
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
-    - name: 6x
-      zoom: 0.8
-      offset: 21
-      allowMovement: false
-      doAfter: 1.0
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 2, 4, 6 ]
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -307,27 +291,8 @@
     pvsIncrease: 0.4
   - type: StaticPrice
     price: 175
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - name: 2x
-      zoom: 1.2
-      offset: 11
-      allowMovement: false
-      doAfter: 0.6
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
-    - name: 6x
-      zoom: 0.8
-      offset: 21
-      allowMovement: false
-      doAfter: 1.0
-
-# #Misfits Change - renamed to trail carbine and rechambered from .44 to .357 magnum (accepts .38 special)
-
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 2, 4, 6 ]
 - type: entity
   name: brush gun
   parent: F14WeaponSniperHunting
@@ -409,6 +374,8 @@
     capacity: 1
     proto: F14Cartridge308Rifle
   - type: Gun
+    cameraRecoilScalar: 3 # WW Change - pipe guns kick hard
+    angleIncrease: 8 # WW Change - was 4
     soundGunshot:
       collection: F14PipeRifleGunshot
   - type: EyeCursorOffset
@@ -599,9 +566,10 @@
     loadedAmmoSprite: Interface/ItemStatus/Sniper_Cartriges/not_spent.png
     spentAmmoSprite: Interface/ItemStatus/Sniper_Cartriges/spent.png
   - type: Gun
+    cameraRecoilScalar: 3 # WW Change - pipe guns kick hard
+    angleIncrease: 8 # WW Change - was 4
     minAngle: 24
     maxAngle: 105
-    angleIncrease: 4
     angleDecay: 16
     fireRate: 1.2
     soundGunshot:
@@ -683,24 +651,8 @@
     damage:
       types:
         Piercing: 1
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - name: 2x
-      zoom: 1.2
-      offset: 11
-      allowMovement: false
-      doAfter: 0.6
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
-    - name: 6x
-      zoom: 0.8
-      offset: 21
-      allowMovement: false
-      doAfter: 1.0
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 2, 4, 6 ]
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/tribalhuntstick2.rsi
   - type: Sprite
@@ -724,8 +676,8 @@
 - type: entity
   name: F1 sniper rifle
   parent: F14WeaponSniperHunting
-  id: F14WeaponSniper308Canadian
-  description: A pre-war bolt action canadian sniper rifle. Uses .308 ammo.
+  id: F14WeaponSniper303Canadian
+  description: A pre-war bolt action canadian sniper rifle, rechambered for .303 British.
   components:
   - type: ItemSlots  # spawn state
   - type: ContainerContainer  # spawn state
@@ -755,27 +707,17 @@
     pvsIncrease: 0.4
   - type: StaticPrice
     price: 150
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - name: 2x
-      zoom: 1.2
-      offset: 11
-      allowMovement: false
-      doAfter: 0.6
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
-    - name: 6x
-      zoom: 0.8
-      offset: 21
-      allowMovement: false
-      doAfter: 1.0
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 2, 4, 6 ]
   - type: GunDamageModifier
     damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
       types:
         Piercing: 0
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
     enableOpticSlot: false # integral scope, already drawn on the sprite
+  - type: BallisticAmmoProvider # WW Change - rechambered from .308 to .303
+    whitelist:
+      tags:
+      - F14Cartridge303Rifle
+    capacity: 8
+    proto: F14Cartridge303

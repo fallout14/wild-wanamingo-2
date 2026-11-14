@@ -437,7 +437,7 @@
         - id: F14BaseBallBat
           prob: 0.4
           orGroup: Weapon
-        - id: FireAxe
+        - id: F14FireAxe # WW Change - was the Wizden FireAxe
           prob: 0.04
           orGroup: Weapon
         - id: F14WastelandSpear
@@ -449,7 +449,7 @@
         - id: F14Hatchet
           prob: 0.3
           orGroup: Weapon
-        - id: F14SledgeHammer
+        - id: F14Sledgehammer
           prob: 0.2
           orGroup: Weapon
         - id: F14CombatKnife
@@ -949,6 +949,20 @@
           prob: 0.03
         - id: F14JunkGunpartsRifleScope
           prob: 0.03
+        - id: F14WeaponScope2x # WW: scopes in loot
+          prob: 0.015
+        - id: F14WeaponScope2_5x # WW: scopes in loot
+          prob: 0.012
+        - id: F14WeaponScope3x # WW: scopes in loot
+          prob: 0.01
+        - id: F14WeaponScopeAttachment # WW: scopes in loot
+          prob: 0.008
+        - id: F14WeaponScope6x # WW: scopes in loot
+          prob: 0.004
+        - id: F14WeaponScopeVariable # WW: scopes in loot
+          prob: 0.002
+        - id: F14WeaponScope8x # WW: scopes in loot
+          prob: 0.002
         - id: F14JunkGunpartsRifleStock
           prob: 0.03
         - id: F14JunkGunpartsStock
@@ -1390,6 +1404,20 @@
           prob: 0.03
         - id: F14JunkGunpartsRifleScope
           prob: 0.03
+        - id: F14WeaponScope2x # WW: scopes in loot
+          prob: 0.015
+        - id: F14WeaponScope2_5x # WW: scopes in loot
+          prob: 0.012
+        - id: F14WeaponScope3x # WW: scopes in loot
+          prob: 0.01
+        - id: F14WeaponScopeAttachment # WW: scopes in loot
+          prob: 0.008
+        - id: F14WeaponScope6x # WW: scopes in loot
+          prob: 0.004
+        - id: F14WeaponScopeVariable # WW: scopes in loot
+          prob: 0.002
+        - id: F14WeaponScope8x # WW: scopes in loot
+          prob: 0.002
         - id: F14JunkGunpartsRifleStock
           prob: 0.03
         - id: F14JunkGunpartsStock
@@ -1590,6 +1618,20 @@
           prob: 0.05
         - id: F14JunkGunpartsRifleScope
           prob: 0.05
+        - id: F14WeaponScope2x # WW: scopes in loot
+          prob: 0.015
+        - id: F14WeaponScope2_5x # WW: scopes in loot
+          prob: 0.012
+        - id: F14WeaponScope3x # WW: scopes in loot
+          prob: 0.01
+        - id: F14WeaponScopeAttachment # WW: scopes in loot
+          prob: 0.008
+        - id: F14WeaponScope6x # WW: scopes in loot
+          prob: 0.004
+        - id: F14WeaponScopeVariable # WW: scopes in loot
+          prob: 0.002
+        - id: F14WeaponScope8x # WW: scopes in loot
+          prob: 0.002
         - id: F14JunkGunpartsRifleStock
           prob: 0.05
         - id: F14JunkGunpartsStock
@@ -1747,7 +1789,7 @@
         - id: F14BaseBallBat
           prob: 0.04
           orGroup: Weapon
-        - id: FireAxe
+        - id: F14FireAxe # WW Change - was the Wizden FireAxe
           prob: 0.04
           orGroup: Weapon
         - id: F14WastelandSpear
@@ -1759,7 +1801,7 @@
         - id: F14Hatchet
           prob: 0.04
           orGroup: Weapon
-        - id: F14SledgeHammer
+        - id: F14Sledgehammer
           prob: 0.1
           orGroup: Weapon
         - id: F14CombatKnife

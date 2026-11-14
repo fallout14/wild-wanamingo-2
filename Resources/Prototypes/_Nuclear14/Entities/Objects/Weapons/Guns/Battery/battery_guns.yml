@@ -933,9 +933,9 @@
     fireRate: 2
     soundGunshot:
       collection: F14PlasmaCasterGunshot
-    selectedMode: FullAuto
+    selectedMode: SemiAuto # WW Change - semi-auto; the turbo plasma caster is the automatic one
     availableModes:
-    - FullAuto
+    - SemiAuto
   - type: Appearance
   - type: MultiHandedItem
   - type: ClothingSpeedModifier

@@ -546,7 +546,8 @@
       - id: F14ClothingBeltNCR
       - id: F14ClothingMaskBlackBalaclava
       - id: F14ClothingEyesNCRNVGs
-      - id: F14WeaponSMG9mminfiltrator
+      - id: F14WeaponSMGUzi # WW Change - replaces the deprecated infiltrator; suppressor keeps it a stealth kit
+      - id: F14FirearmSuppressor
       - id: F14MagazineSMG9mm
         amount: 4
       - id: F14BoxCardboardMREBoxCFilled
@@ -1458,7 +1459,7 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: F14WeaponRifle762MarksmanCanadian
+#      - id: F14WeaponRifle303MarksmanCanadian
 #      - id: Magazine762AmmoShort
 #        amount: 3
 #      - id: F14WeaponLaserPistol
@@ -1693,7 +1694,7 @@
       - id: F14ClothingHeadTownGuardBrodie
       - id: F14ClothingOuterTownGuardLight
       - id: F14WeaponHMGcanadian
-      - id: F14Magazine762AmmoBelt
+      - id: F14Magazine303Belt # WW Change - HMG is .303 now
       - id: F14CleanGauze10
       - id: F14JunkCeramicFlask
       - id: F14FoodTinC1

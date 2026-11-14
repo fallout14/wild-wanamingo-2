@@ -3,14 +3,14 @@
 - type: entity
   name: M240B
   parent: BaseWeaponRifle
-  id: F14WeaponUSHMG
+  id: F14WeaponM240B
   # #Misfits Add - US M240B GPMG, clone of F14WeaponHMGcanadian with Legion crafting hook
-  description: A reliable American general-purpose machine gun chambered in 7.62mm ammunition. Considered modern before the bombs, it now bears a brass bull on its handguard. Looted from national guard depots, it now serves legion.
+  description: A reliable American general-purpose machine gun chambered in 7.62mm ammunition. Considered modern before the bombs. # WW Change - M240B, black furniture
   components:
   - type: Clothing
-    sprite: Nuclear14/Objects/Weapons/Guns/LMGs/canadianhmg.rsi
+    sprite: Nuclear14/Objects/Weapons/Guns/LMGs/m240b.rsi
   - type: Sprite
-    sprite: Nuclear14/Objects/Weapons/Guns/LMGs/canadianhmg.rsi
+    sprite: Nuclear14/Objects/Weapons/Guns/LMGs/m240b.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -18,7 +18,7 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     size: Huge
-    sprite: Nuclear14/Objects/Weapons/Guns/LMGs/canadianhmg.rsi
+    sprite: Nuclear14/Objects/Weapons/Guns/LMGs/m240b.rsi
   - type: Wieldable
   - type: SpeedModifiedOnWield
     walkModifier: 0.75

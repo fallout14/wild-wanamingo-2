@@ -118,7 +118,7 @@ public sealed partial class PowerArmorBraceSystem : EntitySystem
         if (!component.IsBraced)
             return;
 
-        args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, component.ActiveModifiers);
+        args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, Content.Shared._WW.Armor.ArmorPenetrationHelper.Apply(component.ActiveModifiers, args.Args.ArmorPenetration)); // WW Change - armour penetration
     }
 
     private void Brace(EntityUid uid, PowerArmorBraceComponent component, EntityUid user)

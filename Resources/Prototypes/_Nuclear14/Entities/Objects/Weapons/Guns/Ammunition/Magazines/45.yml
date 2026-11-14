@@ -44,6 +44,7 @@
 - type: entity
   id: F14Magazine45SubMachineGun
   name: SMG magazine (45. auto)
+  description: A 30 round .45 SMG magazine.
   parent: BaseItem
   components:
   - type: Tag
@@ -54,7 +55,7 @@
     whitelist:
       tags:
         - F14CartridgePistol45
-    capacity: 25
+    capacity: 30 # WW Change - was 25
     proto: F14CartridgePistol45
   - type: ContainerContainer
     containers:
@@ -72,3 +73,16 @@
     steps: 2
     zeroVisible: false
   - type: Appearance
+
+# WW Change - short .45 SMG magazine (Reising takes only this; Thompson takes both)
+- type: entity
+  id: F14Magazine45SubMachineGun20
+  name: short SMG magazine (45. auto)
+  description: A 20 round .45 SMG magazine.
+  parent: F14Magazine45SubMachineGun
+  components:
+  - type: Tag
+    tags:
+      - F14Magazine45SubMachineGun20
+  - type: BallisticAmmoProvider
+    capacity: 20

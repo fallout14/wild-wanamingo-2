@@ -4,11 +4,11 @@
 - type: entity
   name: sledgehammer
   parent: BaseItem
-  id: F14SledgeHammer
+  id: F14Sledgehammer # WW Change - merged with the MS13 F14Sledgehammer; was F14SledgeHammer
   description: A robust sledgehammer that requires considerable strength to be wielded.
   components:
   - type: Sprite
-    sprite: Nuclear14/Objects/Weapons/Melee/sledgehammer.rsi
+    sprite: MojaveSun/Objects/Weapons/Melee/sledgehammer.rsi # WW Change - MS13 sprite
     state: icon
   - type: MeleeWeapon
     wideAnimationRotation: -135
@@ -16,6 +16,8 @@
     damage:
       types:
         Blunt: 15
+    soundHit:
+      collection: MetalThud
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
@@ -23,9 +25,9 @@
         Blunt: 45
         Structural: 60 #This is for utility and resource harvesting! -Bill
   - type: Item
-    size: Large
+    size: Large # in-hands come from the Sprite's RSI, so the clubs below keep their own
   - type: Clothing
-    sprite: Nuclear14/Objects/Weapons/Melee/sledgehammer.rsi
+    sprite: MojaveSun/Objects/Weapons/Melee/sledgehammer.rsi
     quickEquip: false
     slots:
     - back
@@ -40,7 +42,7 @@
 
 - type: entity
   name: super sledgehammer
-  parent: F14SledgeHammer
+  parent: F14Sledgehammer
   id: F14SuperSledgeHammer
   description: A bigger, heavier, and more destructive sledgehammer. You really need some strong arms to swing it.
   components:
@@ -74,7 +76,7 @@
 
 - type: entity
   name: tribal heavy club
-  parent: F14SledgeHammer
+  parent: F14Sledgehammer
   id: F14TribalBigClub
   description: A big and heavy tribal club that requires considerable strength to be wielded.
   components:
@@ -102,7 +104,7 @@
 
 - type: entity
   name: tribal decorated heavy club
-  parent: F14SledgeHammer
+  parent: F14Sledgehammer
   id: F14TribalBigClubDecorated
   description: A big and heavy tribal hammer that requires considerable strength to be wielded, animal teeth have been added to this one.
   components:

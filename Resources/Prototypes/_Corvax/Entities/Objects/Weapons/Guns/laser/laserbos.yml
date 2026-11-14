@@ -9,7 +9,7 @@
   components:
   - type: BatteryAmmoProvider
     proto: F14MFLaserRed
-    fireCost: 50
+    fireCost: 50 # WW Change - 12 shots per small energy cell (600)
   - type: Sprite # WW Change - MS13 Wattz Magneto sprite (no charge overlay)
     sprite: MojaveSun/Objects/Weapons/Guns/Battery/wattz1000mag.rsi
     layers:
@@ -25,12 +25,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: F14MicrofusionCellRed
+        startingItem: F14PowerCellSmall # WW Change - small energy cells, was microfusion
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - F14MicrofusionCell
+            - F14PowerCellSmall
   - type: Item
     sprite: MojaveSun/Objects/Weapons/Guns/Battery/wattz1000mag.rsi # WW Change - MS13 in-hands
     size: Small

@@ -17,15 +17,12 @@
     slots:
     - Belt
     - suitstorage
-  - type: Scope
-    useInHand: true
-    requireWielding: true
-    zoomLevels:
-    - name: 5x
-      zoom: 1.2
-      offset: 17
-      allowMovement: false
-      doAfter: 0.3
+  - type: Wieldable # WW Change - Wizden binoculars
+    wieldedInhandPrefix: binoculars # the RSI only has the binoculars in-hands: wield and the view follows your cursor (was the Misfits scope toggle)
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.4
   - type: StaticPrice
     price: 100
   # #Misfits Removed - Binoculars TagPrototype not defined in Nuclear-14
@@ -33,30 +30,22 @@
   #   tags:
   #   - Binoculars
 
-# N14 Rifle Scope Attachment — attach to a gun's ItemSlot to gain a scope action.
-# Uses ScopeComponent with attachment: true so it only activates from inside a container.
+# Rifle scopes: put one in a gun's optic slot, wield the gun, and the view follows your cursor. Higher magnification
+# reaches further (2 tiles per 1x). WW Change - was the Misfits toggle-and-zoom scope action.
 
 - type: entity
   parent: BaseItem
   id: F14WeaponScopeAttachment
   name: 4x rifle scope
-  description: A fixed-magnification rifle optic. Attach it to a compatible weapon to gain a 4x directional scope action.
+  description: A fixed-magnification rifle optic. Attach it to a compatible weapon and wield it to look further ahead.
   components:
   - type: Item
     size: Small
   - type: Sprite
     sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
     state: scope
-  - type: Scope
-    attachment: true
-    useInHand: true
-    requireWielding: true
-    zoomLevels:
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 4 ]
   - type: Tag
     tags:
     - F14RifleScope
@@ -67,28 +56,10 @@
   parent: F14WeaponScopeAttachment
   id: F14WeaponScopeVariable
   name: variable rifle scope
-  description: A variable-power rifle optic. Use the mouse wheel while scoped to adjust between 2x, 4x, and 6x magnification.
+  description: A variable-power rifle optic. Alt-click (or right-click the gun) to switch between 2x, 4x and 6x.
   components:
-  - type: Scope
-    attachment: true
-    useInHand: true
-    requireWielding: true
-    zoomLevels:
-    - name: 2x
-      zoom: 1.2
-      offset: 11
-      allowMovement: false
-      doAfter: 0.6
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
-    - name: 6x
-      zoom: 0.8
-      offset: 21
-      allowMovement: false
-      doAfter: 1.0
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 2, 4, 6 ]
   - type: StaticPrice
     price: 200
 
@@ -109,3 +80,59 @@
   components:
   - type: StaticPrice
     price: 600
+
+# WW: fixed scopes in more magnifications (2026-11-10). The 4x is F14WeaponScopeAttachment above.
+- type: entity
+  parent: F14WeaponScopeAttachment
+  id: F14WeaponScope2x
+  name: 2x rifle scope
+  description: A low-power rifle optic. Wield the gun to look a little further ahead.
+  components:
+  - type: WWScope
+    magnifications: [ 2 ]
+  - type: StaticPrice
+    price: 50
+
+- type: entity
+  parent: F14WeaponScopeAttachment
+  id: F14WeaponScope2_5x
+  name: 2.5x rifle scope
+  description: A low-power rifle optic. Wield the gun to look further ahead.
+  components:
+  - type: WWScope
+    magnifications: [ 2.5 ]
+  - type: StaticPrice
+    price: 65
+
+- type: entity
+  parent: F14WeaponScopeAttachment
+  id: F14WeaponScope3x
+  name: 3x rifle scope
+  description: A medium-power rifle optic. Wield the gun to look further ahead.
+  components:
+  - type: WWScope
+    magnifications: [ 3 ]
+  - type: StaticPrice
+    price: 80
+
+- type: entity
+  parent: F14WeaponScopeAttachment
+  id: F14WeaponScope6x
+  name: 6x rifle scope
+  description: A high-power rifle optic. Wield the gun to look far ahead.
+  components:
+  - type: WWScope
+    magnifications: [ 6 ]
+  - type: StaticPrice
+    price: 175
+
+- type: entity
+  parent: F14WeaponScopeAttachment
+  id: F14WeaponScope8x
+  name: 8x rifle scope
+  description: A sniper's optic. Wield the gun to look very far ahead.
+  components:
+  - type: WWScope
+    magnifications: [ 8 ]
+  - type: StaticPrice
+    price: 250

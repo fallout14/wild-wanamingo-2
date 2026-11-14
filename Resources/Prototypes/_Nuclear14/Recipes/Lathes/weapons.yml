@@ -192,3 +192,55 @@
 
 # MARK: Explosives
 # Misfits Add - anti-personnel landmine recipe; high cost reflecting real-world materials (steel body, large powder charge, lead shrapnel)
+
+# WW: craftable rifle scopes (2026-11-10). 8x and variable scopes are loot only.
+
+- type: latheRecipe
+  id: F14WeaponScope2x
+  result: F14WeaponScope2x
+  categories:
+  - F14Parts
+  completetime: 4
+  materials:
+    Steel: 100
+    Glass: 100
+
+- type: latheRecipe
+  id: F14WeaponScope2_5x
+  result: F14WeaponScope2_5x
+  categories:
+  - F14Parts
+  completetime: 5
+  materials:
+    Steel: 150
+    Glass: 120
+
+- type: latheRecipe
+  id: F14WeaponScope3x
+  result: F14WeaponScope3x
+  categories:
+  - F14Parts
+  completetime: 6
+  materials:
+    Steel: 200
+    Glass: 150
+
+- type: latheRecipe
+  id: F14WeaponScopeAttachment
+  result: F14WeaponScopeAttachment
+  categories:
+  - F14Parts
+  completetime: 8
+  materials:
+    Steel: 300
+    Glass: 200
+
+- type: latheRecipe
+  id: F14WeaponScope6x
+  result: F14WeaponScope6x
+  categories:
+  - F14Parts
+  completetime: 10
+  materials:
+    Steel: 450
+    Glass: 300

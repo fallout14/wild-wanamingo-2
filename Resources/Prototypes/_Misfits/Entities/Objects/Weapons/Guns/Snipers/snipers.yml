@@ -244,25 +244,8 @@
     pvsIncrease: 0.4
   - type: StaticPrice
     price: 175
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - name: 2x
-      zoom: 1.2
-      offset: 11
-      allowMovement: false
-      doAfter: 0.6
-    - name: 4x
-      zoom: 1.0
-      offset: 15
-      allowMovement: false
-      doAfter: 0.8
-    - name: 6x
-      zoom: 0.8
-      offset: 21
-      allowMovement: false
-      doAfter: 1.0
-# Forge-add-end
+  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
+    magnifications: [ 2, 4, 6 ]
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
     visualOrientation: Horizontal
     muzzleVisualOffset: 0.84375, 0.5

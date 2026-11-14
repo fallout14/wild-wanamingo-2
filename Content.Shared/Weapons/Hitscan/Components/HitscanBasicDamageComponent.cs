@@ -14,4 +14,12 @@ public sealed partial class HitscanBasicDamageComponent : Component
     /// </summary>
     [DataField(required: true)]
     public DamageSpecifier Damage;
+
+    // WW Change start - armour penetration
+    /// <summary>
+    /// How much of the target's armour this hitscan ignores, from -1 to 1. See ProjectileComponent.ArmorPenetration.
+    /// </summary>
+    [DataField]
+    public float ArmorPenetration;
+    // WW Change end
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using Content.IntegrationTests.Fixtures;
-using Content.Shared._Misfits.Scope;
+using Content.Shared._WW.Weapons.Scopes;
 using Content.Shared._Misfits.Weapons.Attachments.Components;
 using Content.Shared.Containers.ItemSlots;
 using Robust.Shared.ContentPack;
@@ -90,7 +90,7 @@ public sealed class AttachmentOverlayTest : GameTest
                             Assert.That(host.OpticVisualOffset, Is.Not.EqualTo(Vector2.Zero), $"{proto.ID}: scope has no position");
                     }
 
-                    Assert.That(takesScope && entMan.HasComponent<ScopeComponent>(gun), Is.False,
+                    Assert.That(takesScope && entMan.HasComponent<WWScopeComponent>(gun), Is.False,
                         $"{proto.ID}: has a built-in scope and a scope slot");
 
                     entMan.DeleteEntity(gun);

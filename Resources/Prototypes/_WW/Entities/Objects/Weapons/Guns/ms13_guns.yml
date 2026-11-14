@@ -19,6 +19,11 @@
   components:
   - type: Sprite
     sprite: MojaveSun/Objects/Weapons/Guns/Pistols/police10mm.rsi
+    layers: # WW Change - base is the gun without its magazine, mag-0 the magazine
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     sprite: MojaveSun/Objects/Weapons/Guns/Pistols/police10mm.rsi
   - type: FirearmAttachmentHost
@@ -32,6 +37,11 @@
   components:
   - type: Sprite
     sprite: MojaveSun/Objects/Weapons/Guns/Pistols/mil10mm.rsi
+    layers: # WW Change - base is the gun without its magazine, mag-0 the magazine
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     sprite: MojaveSun/Objects/Weapons/Guns/Pistols/mil10mm.rsi
   - type: FirearmAttachmentHost
@@ -43,7 +53,7 @@
   parent: F14WeaponRevolverBase
   id: F14WeaponDerringer
   name: derringer
-  description: A small and sneaky 2 shot pistol that is often concealed. Chambered for .357, and will also chamber .38 special.
+  description: A small and sneaky 2 shot pistol that is often concealed. This one is chambered for .45-70.
   components:
   - type: Tag
     tags:
@@ -61,8 +71,8 @@
   - type: RevolverAmmoProvider
     whitelist:
       tags:
-        - F14CartridgePistol357
-    proto: F14CartridgePistol357
+        - F14Cartridge4570
+    proto: F14Cartridge4570
     capacity: 2
     chambers: [true, true]
     ammoSlots: [null, null]
@@ -114,7 +124,7 @@
   components:
   - type: BatteryAmmoProvider
     proto: F14WattzPistolLaser
-    fireCost: 40
+    fireCost: 50 # 12 shots per small energy cell (600)
   - type: Sprite
     sprite: MojaveSun/Objects/Weapons/Guns/Battery/wattzpistol.rsi
     layers:
@@ -138,11 +148,15 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 9
-  - type: BallisticDamageFalloff
-    falloffStartTiles: 3.0
-    maxFalloffTiles: 7.0
-    minDamageMultiplier: 0.4
+        Piercing: 6
+  - type: Sprite # the nail itself flies, not a bullet
+    sprite: MojaveSun/Objects/Weapons/Guns/Ammunition/nail.rsi
+    layers:
+    - state: base
+  - type: BallisticDamageFalloff # brutal falloff: full damage up close, almost nothing past 5 tiles
+    falloffStartTiles: 1.5
+    maxFalloffTiles: 5.0
+    minDamageMultiplier: 0.15
 
 - type: entity
   parent: BaseCartridgePistol
@@ -216,11 +230,11 @@
     maxAngle: 16
     angleIncrease: 1.5
     angleDecay: 6
-    fireRate: 5
-    selectedMode: SemiAuto
+    fireRate: 10
+    selectedMode: FullAuto
     availableModes:
-    - SemiAuto
     - FullAuto
+    - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/harpoon.ogg
       params:
@@ -356,3 +370,33 @@
     pvsIncrease: 0.2
   - type: StaticPrice
     price: 250
+
+# MARK: Turbo plasma caster (2026-11-10)
+
+- type: entity
+  parent: F14WeaponPlasmaCaster
+  id: F14WeaponPlasmaCasterTurbo
+  name: turbo plasma caster
+  description: A plasma caster with its cycling rails reworked for automatic fire. It empties a microfusion cell in seconds and gets very hard to keep on target.
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      color: "#c8ffd0"
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Gun
+    minAngle: 4
+    maxAngle: 22
+    angleIncrease: 2
+    angleDecay: 10
+    fireRate: 6 # the plasma caster fires 2 a second
+    soundGunshot:
+      collection: F14PlasmaCasterGunshot
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+  - type: StaticPrice
+    price: 900

@@ -69,11 +69,13 @@
   description: A combat knife with a mounting ring. Fix it to a rifle's muzzle, or fight with it on its own.
   components:
   # WW Change - replaces the Misfits rifle bayonet (F14FirearmBayonet) as the bayonet attachment
+  # Mounted: right-click stab with the rifle wielded does a wielded spear's damage (F14WastelandSpear 24/10 + 3/3).
+  # Off the rifle it's a combat knife (CombatKnife's melee).
   - type: BayonetAttachment
     damage:
       types:
-        Piercing: 12
-        Slash: 6
+        Piercing: 27
+        Slash: 13
   - type: Tag
     tags:
     - CombatKnife
@@ -261,20 +263,6 @@
     sprite: MojaveSun/Objects/Weapons/Melee/pickaxe.rsi
     storedSprite:
       sprite: MojaveSun/Objects/Weapons/Melee/pickaxe.rsi
-      state: icon
-
-- type: entity
-  parent: Sledgehammer
-  id: F14Sledgehammer
-  name: sledgehammer
-  components:
-  - type: Sprite
-    sprite: MojaveSun/Objects/Weapons/Melee/sledgehammer.rsi
-    state: icon
-  - type: Item
-    sprite: MojaveSun/Objects/Weapons/Melee/sledgehammer.rsi
-    storedSprite:
-      sprite: MojaveSun/Objects/Weapons/Melee/sledgehammer.rsi
       state: icon
 
 - type: entity
