@@ -499,7 +499,7 @@
   name: C70 rifle
   parent: F14WeaponRifleBase
   id: F14WeaponRifle762Canadian
-  description: A pre-war canadian assault rifle chambered in 7.62mm, surprisingly in good state for being 200 a years old rifle
+  description: A pre-war Canadian assault rifle, rechambered for 5.56mm but still hitting as hard as the 7.62 original. Surprisingly well kept for a 200-year-old rifle. Takes a scope.
   components:
   - type: ContainerContainer  # spawn state
     containers:
@@ -512,6 +512,10 @@
         showEnts: False
         occludes: True
       weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
         ent: null
         showEnts: False
         occludes: True
@@ -540,31 +544,49 @@
     availableModes:
     - SemiAuto
     - FullAuto # Corvax-Change
+  # WW Change (2026-11-14) - rechambered from 7.62 to 5.56; the extra damage keeps it at the 7.62's 24 a shot
+  - type: GunDamageModifier
+    damage:
+      types:
+        Piercing: 4 # 5.56mm 20 + 4
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: F14Magazine762Rifle
+        startingItem: F14Magazine556Rifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - F14Magazine762Rifle
+            - F14Magazine556Rifle
+            - F14LongMagazine556Rifle
       gun_chamber:
         name: Chamber
-        startingItem: F14Cartridge762Rifle
+        startingItem: F14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-            - F14Cartridge762Rifle
+            - F14Cartridge556Rifle
   - type: StaticPrice
     price: 175
-  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
-    magnifications: [ 4 ]
+  # WW Change (2026-11-14) - takes a scope instead of a built-in 4x
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
     muzzleVisualOffset: 0.84375, 0.90625
     bayonetVisualOffset: 0.8125, 0.71875
+    enableOpticSlot: true
+    opticVisualState: battlerifle_scope
+    opticVisualOffset: 0.15625, 0.375
+    opticSlot:
+      name: Optic
+      priority: 4
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        tags:
+        - F14RifleScope
 
 - type: entity
   name: EM2 rifle
@@ -702,9 +724,12 @@
             - F14Cartridge303Rifle
   - type: StaticPrice
     price: 175
+  - type: WWScope # WW Change (2026-11-14) - integrated 6x scope
+    magnifications: [ 6 ]
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
     muzzleVisualOffset: 0.84375, 0.90625
     bayonetVisualOffset: 0.8125, 0.71875
+    enableOpticSlot: false # the 6x scope is built in
 
 - type: entity
   name: Chinese carbine # WW Change - was "SKS chinese carbine"

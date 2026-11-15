@@ -33,6 +33,7 @@ public sealed partial class WWScopeSystem : EntitySystem
     [Dependency] private SharedDoAfterSystem _doAfter = default!;
     [Dependency] private SharedSpecialSystem _special = default!;
     [Dependency] private SharedContainerSystem _container = default!;
+    [Dependency] private MovementSpeedModifierSystem _movement = default!;
 
     /// <summary>The scope toggle action (the gun provides it; for attached scopes the attachment system forwards it).</summary>
     public const string ScopeAction = "F14ActionToggleScope";
@@ -43,6 +44,7 @@ public sealed partial class WWScopeSystem : EntitySystem
         SubscribeLocalEvent<GunComponent, ItemWieldedEvent>(OnWielded);
         SubscribeLocalEvent<GunComponent, ItemUnwieldedEvent>(OnUnwielded);
         SubscribeLocalEvent<GunComponent, HeldRelayedEvent<GetEyePvsScaleRelayedEvent>>(OnGetPvsScale);
+        SubscribeLocalEvent<GunComponent, HeldRelayedEvent<RefreshMovementSpeedModifiersEvent>>(OnRefreshSpeed);
         SubscribeLocalEvent<WWScopeComponent, GetVerbsEvent<AlternativeVerb>>(OnScopeVerbs);
         SubscribeLocalEvent<FirearmAttachmentHostComponent, GetVerbsEvent<AlternativeVerb>>(OnHostVerbs);
         SubscribeLocalEvent<WWScopeComponent, ExaminedEvent>(OnExamined);
@@ -168,6 +170,10 @@ public sealed partial class WWScopeSystem : EntitySystem
         scope.Comp.Active = active;
         Dirty(scope);
 
+        // Looking through a scope slows you down (less with higher Perception).
+        if (GetGun(scope) is { } gun && _container.TryGetContainingContainer((gun, null, null), out var holder))
+            _movement.RefreshMovementSpeedModifiers(holder.Owner);
+
         if (user == null)
             return;
 
@@ -203,6 +209,30 @@ public sealed partial class WWScopeSystem : EntitySystem
     {
         if (TryGetActiveScope(ent, out var scope))
             args.Args.Scale += scope.Value.Comp.PvsIncrease;
+    }
+
+    /// <summary>
+    /// Walk and sprint multiplier while scoped in: <see cref="WWScopeComponent.ScopedSpeedAtMinPerception"/> at
+    /// Perception 1, rising evenly to <see cref="WWScopeComponent.ScopedSpeedAtMaxPerception"/> at 10.
+    /// </summary>
+    public float GetScopedSpeedMultiplier(Entity<WWScopeComponent> scope, EntityUid user)
+    {
+        var perception = _special.GetEffective(user, SpecialStat.Perception);
+        var t = (float) (perception - SpecialProfile.Minimum) / (SpecialProfile.Maximum - SpecialProfile.Minimum);
+        return scope.Comp.ScopedSpeedAtMinPerception +
+               (scope.Comp.ScopedSpeedAtMaxPerception - scope.Comp.ScopedSpeedAtMinPerception) * Math.Clamp(t, 0f, 1f);
+    }
+
+    private void OnRefreshSpeed(Entity<GunComponent> ent, ref HeldRelayedEvent<RefreshMovementSpeedModifiersEvent> args)
+    {
+        if (!TryGetActiveScope(ent, out var scope) ||
+            !_container.TryGetContainingContainer((ent.Owner, null, null), out var holder))
+        {
+            return;
+        }
+
+        var speed = GetScopedSpeedMultiplier(scope.Value, holder.Owner);
+        args.Args.ModifySpeed(speed, speed);
     }
 
     private void OnScopeVerbs(Entity<WWScopeComponent> ent, ref GetVerbsEvent<AlternativeVerb> args)

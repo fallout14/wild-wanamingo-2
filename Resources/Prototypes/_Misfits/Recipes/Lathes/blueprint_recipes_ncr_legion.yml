@@ -1799,6 +1799,17 @@
 # #Misfits Add - T4 firearm additions: Bren LMG (.308 FullAuto) and Neostead for DPS parity with NCR T4
 
 - type: latheRecipe
+  id: F14BPLegionWeaponShotgunNeostead # WW: restored 2026-11-14
+  result: F14WeaponShotgunNeostead
+  categories:
+  - F14BlueprintLegionWeaponsT4
+  completetime: 12
+  materials:
+    Steel: 8500
+    F14Iron: 500
+    F14Leather: 100
+
+- type: latheRecipe
   id: F14BPLegionWeaponBren
   result: F14WeaponLMGBren
   categories:

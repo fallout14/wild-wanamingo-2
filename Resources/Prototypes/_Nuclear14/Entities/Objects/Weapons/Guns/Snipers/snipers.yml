@@ -707,8 +707,8 @@
     pvsIncrease: 0.4
   - type: StaticPrice
     price: 150
-  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
-    magnifications: [ 2, 4, 6 ]
+  - type: WWScope # WW Change - integrated 8x scope (2026-11-14; was variable 2/4/6x)
+    magnifications: [ 8 ]
   - type: GunDamageModifier
     damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
       types:

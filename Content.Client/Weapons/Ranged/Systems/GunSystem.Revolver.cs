@@ -34,6 +34,10 @@ public sealed partial class GunSystem
 
     private void OnRevolverCounter(Entity<RevolverAmmoProviderComponent> ent, ref AmmoCounterControlEvent args)
     {
+        // WW Change - a revolver with custom ammo icons (the shotgun revolver's shells) keeps them
+        if (HasComp<CustomSpriteAmmoCounterComponent>(ent))
+            return;
+
         args.Control = new RevolverStatusControl();
     }
 }

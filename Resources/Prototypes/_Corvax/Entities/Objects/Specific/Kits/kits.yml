@@ -650,6 +650,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: F14ClothingHandsPowerFistGoliath
+      - id: F14WeaponShotgunNeostead # WW: restored 2026-11-14 (deferred in the rebase until the twin-tube code came across)
       - id: F14AmmoBox12gauge
         amount: 2
       - id: SmokeGrenade
@@ -1923,6 +1924,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
+      - id: F14WeaponShotgunNeostead # what kind of preacher doesn't have a shotgun? (WW: restored 2026-11-14)
       - id: F14MagazineBox12gauge
         amount: 2
       - id: F14ClothingBeltRope

@@ -1,0 +1,1191 @@
+# Guns built on the 2026-11-14 sprite port (Desert Rose projectile.dmi, plus the AUG/L85/M249 drawn for WW).
+# Sprites: Resources/Textures/WildWanamingo/Objects/Weapons/Guns/<name>.rsi. Stats are a first pass.
+# Muzzle overlay offsets follow the rule worked out in the attachment pass: x = (muzzle pixel - 4) / 32,
+# y = (29 - top barrel row) / 32 for horizontal guns; diagonal guns use the top-right barrel pixel the same way.
+
+- type: Tag
+  id: F14MagazinePistol9mmDoublestack
+
+- type: Tag
+  id: F14MagazineP90
+
+# ---------------------------------------------------------------------------------------------------------
+# Magazines
+
+- type: entity
+  id: F14MagazinePistol9mmDoublestack
+  name: doublestack magazine (9mm)
+  parent: F14BaseMagazine9mmPistol
+  description: A 15-round double-stack 9mm pistol magazine, made for the Beretta M92 and M93R.
+  components:
+  - type: Tag
+    tags:
+    - F14MagazinePistol9mmDoublestack
+  - type: BallisticAmmoProvider
+    proto: F14CartridgePistol9
+    capacity: 15
+
+- type: entity
+  id: F14MagazineP90
+  name: P90 magazine (10mm)
+  parent: F14BaseMagazine10mmSubMachineGun
+  description: A 50-round translucent top-loading magazine for the P90, rebored for 10mm.
+  components:
+  - type: Tag
+    tags:
+    - F14MagazineP90
+  - type: BallisticAmmoProvider
+    proto: F14CartridgePistol10
+    capacity: 50
+
+# ---------------------------------------------------------------------------------------------------------
+# Pistols
+
+- type: entity
+  name: Beretta M92
+  parent: F14BaseWeaponPistol
+  id: F14WeaponPistol9mmBerettaM92
+  description: An Italian service pistol with a 15-round double-stack magazine. Reliable, accurate and easy to find ammunition for. Takes doublestack and standard 9mm pistol magazines.
+  components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: FirearmAttachmentHost
+    muzzleSlot:
+      name: Suppressor
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        components:
+        - SuppressorAttachment
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 0.8125, 0.625
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/beretta_m92.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: WildWanamingo/Objects/Weapons/Guns/beretta_m92.rsi
+  - type: Gun
+    minAngle: 1
+    maxAngle: 6
+    fireRate: 5.5
+    soundGunshot:
+      collection: F14Pistol9mmGunshot
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: F14MagazinePistol9mmDoublestack
+        whitelist:
+          tags:
+          - F14MagazinePistol9mmDoublestack
+          - F14MagazinePistol9mm
+      gun_chamber:
+        name: Chamber
+        startingItem: F14CartridgePistol9
+        priority: 1
+        whitelist:
+          tags:
+          - F14CartridgePistol9
+  - type: StaticPrice
+    price: 30
+
+- type: entity
+  name: Beretta M93R
+  parent: F14WeaponPistol9mmBerettaM92
+  id: F14WeaponPistol9mmBerettaM93R
+  description: A machine pistol built on the Beretta frame, with a fold-down foregrip and a three-round burst. Takes doublestack and standard 9mm pistol magazines.
+  components:
+  - type: FirearmAttachmentHost
+    muzzleSlot:
+      name: Suppressor
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        components:
+        - SuppressorAttachment
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 0.84375, 0.625
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/beretta_m93r.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: WildWanamingo/Objects/Weapons/Guns/beretta_m93r.rsi
+  - type: Gun
+    minAngle: 2
+    maxAngle: 12
+    angleIncrease: 1.5
+    angleDecay: 6
+    fireRate: 5.5
+    selectedMode: Burst
+    availableModes:
+    - SemiAuto
+    - Burst
+    shotsPerBurst: 3
+    burstFireRate: 14
+    burstCooldown: 0.4
+    soundGunshot:
+      collection: F14Pistol9mmGunshot
+  - type: StaticPrice
+    price: 90
+
+- type: entity
+  name: SIG P220
+  parent: F14BaseWeaponPistol
+  id: F14WeaponPistol9mmSigP220
+  description: A Swiss-made 9mm service pistol, beautifully finished, with a crisp trigger and a well-fitted barrel that hits a little harder than most. Uses 9mm pistol magazines.
+  components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: FirearmAttachmentHost
+    muzzleSlot:
+      name: Suppressor
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        components:
+        - SuppressorAttachment
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 0.75, 0.625
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/sig_p220.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: WildWanamingo/Objects/Weapons/Guns/sig_p220.rsi
+  - type: Gun
+    minAngle: 1
+    maxAngle: 5
+    fireRate: 5
+    soundGunshot:
+      collection: F14Pistol9mmGunshot
+  - type: GunDamageModifier
+    damage: # one more point a shot than other 9mm pistols
+      types:
+        Piercing: 1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: F14MagazinePistol9mm
+        whitelist:
+          tags:
+          - F14MagazinePistol9mm
+      gun_chamber:
+        name: Chamber
+        startingItem: F14CartridgePistol9
+        priority: 1
+        whitelist:
+          tags:
+          - F14CartridgePistol9
+  - type: StaticPrice
+    price: 35
+
+- type: entity
+  name: shotgun revolver
+  parent: F14WeaponRevolverBase
+  id: F14WeaponRevolver20gaJudge
+  description: A heavy five-shot revolver with a cylinder long enough for 20 gauge shells. A shotgun you can wear on your belt.
+  components:
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/judge.rsi
+  - type: CustomSpriteAmmoCounter # shell icons in the ammo counter, as the other shotguns
+    loadedAmmoSprite: Interface/ItemStatus/Shotgun_Shells/not_spent.png
+    spentAmmoSprite: Interface/ItemStatus/Shotgun_Shells/spent.png
+  - type: Clothing
+    sprite: WildWanamingo/Objects/Weapons/Guns/judge.rsi
+  - type: Item
+    size: Normal
+    sprite: WildWanamingo/Objects/Weapons/Guns/judge.rsi
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+      - F14ShellShotgun20
+    proto: F14ShellShotgun20
+    capacity: 5 # under 6, so the slot lists must be given too
+    chambers: [true, true, true, true, true]
+    ammoSlots: [null, null, null, null, null]
+  - type: Gun
+    minAngle: 4
+    maxAngle: 16
+    angleIncrease: 4
+    angleDecay: 8
+    fireRate: 1.5
+    soundGunshot:
+      collection: F14DoubleBarrelShotgunGunshot
+  - type: StaticPrice
+    price: 120
+
+# ---------------------------------------------------------------------------------------------------------
+# SMGs
+
+- type: entity
+  name: P90
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG10mmP90
+  description: A compact bullpup personal defence weapon with a 50-round magazine lying along the top. This one was rebored for 10mm. Takes P90 magazines only.
+  components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: FirearmAttachmentHost
+    muzzleSlot:
+      name: Suppressor
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        components:
+        - SuppressorAttachment
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 0.78125, 0.46875
+  - type: Clothing
+    sprite: WildWanamingo/Objects/Weapons/Guns/p90.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    - Belt
+  - type: Item
+    size: Normal
+    sprite: WildWanamingo/Objects/Weapons/Guns/p90.rsi
+    shape:
+    - 0,0,1,1
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/p90.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 9.5
+    soundGunshot:
+      collection: F14Pistol10mmGunshot
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    minAngle: 6
+    maxAngle: 22
+    angleIncrease: 3
+    angleDecay: 16
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_cock.ogg
+  - type: GunWieldBonus
+    minAngle: -5
+    maxAngle: -12
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: F14MagazineP90
+        insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
+        ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
+        whitelist:
+          tags:
+          - F14MagazineP90
+      gun_chamber:
+        name: Chamber
+        startingItem: F14CartridgePistol10
+        priority: 1
+        whitelist:
+          tags:
+          - F14CartridgePistol10
+  - type: StaticPrice
+    price: 300
+
+- type: entity
+  name: Carl Gustav m/45
+  parent: F14WeaponSMGBase
+  id: F14WeaponSMG9mmCarlGustav
+  description: A Swedish 9mm submachine gun, plain stamped steel with a folding stock. Slow-firing and easy to control. Uses 9mm SMG magazines.
+  components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: FirearmAttachmentHost
+    muzzleSlot:
+      name: Suppressor
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        components:
+        - SuppressorAttachment
+    visualOrientation: Horizontal
+    muzzleVisualOffset: 0.84375, 0.625
+  - type: Clothing
+    sprite: WildWanamingo/Objects/Weapons/Guns/cg45.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Item
+    size: Large
+    sprite: WildWanamingo/Objects/Weapons/Guns/cg45.rsi
+    shape:
+    - 0,0,2,1
+    - 0,1,0,1
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/cg45.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 7
+    soundGunshot:
+      collection: F14Pistol9mmGunshot
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    minAngle: 6
+    maxAngle: 22
+    angleIncrease: 3
+    angleDecay: 16
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_cock.ogg
+  - type: GunWieldBonus
+    minAngle: -5
+    maxAngle: -12
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: F14MagazineSMG9mm
+        insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
+        ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
+        whitelist:
+          tags:
+          - F14MagazineSMG9mm
+      gun_chamber:
+        name: Chamber
+        startingItem: F14CartridgePistol9
+        priority: 1
+        whitelist:
+          tags:
+          - F14CartridgePistol9
+  - type: StaticPrice
+    price: 90
+
+# ---------------------------------------------------------------------------------------------------------
+# Rifles
+
+- type: entity
+  name: commando carbine
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle45Commando
+  description: A bolt-action carbine with an enormous integral suppressor, built around .45 ACP pistol magazines. Nearly silent, and every round hits harder than it would from a pistol. Takes a scope. Uses .45 pistol magazines only.
+  components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/commando.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Large
+    sprite: WildWanamingo/Objects/Weapons/Guns/commando.rsi
+  - type: Clothing
+    sprite: WildWanamingo/Objects/Weapons/Guns/commando.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  # Integral suppressor: a locked suppressor in the muzzle slot, part of the sprite, so no overlay. Takes a scope.
+  - type: FirearmAttachmentHost
+    showMuzzleVisual: false
+    enableOpticSlot: true
+    opticVisualState: leveraction_scope
+    opticVisualOffset: 0.25, 0.46875
+    opticSlot:
+      name: Optic
+      priority: 4
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        tags:
+        - F14RifleScope
+    muzzleSlot:
+      name: Integral suppressor
+      startingItem: F14FirearmSuppressor
+      locked: true
+      insertOnInteract: false
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+  # Bolt action, as the AMR: firing leaves the round's casing chambered; cycling ejects it and chambers the next.
+  - type: ManualAction
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: GunDamageModifier
+    damage: # .45 ACP 17 + 8 = 25 a shot
+      types:
+        Piercing: 8
+  - type: Gun
+    minAngle: 10
+    maxAngle: 30
+    angleIncrease: 6
+    angleDecay: 16
+    fireRate: 1.5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: F14Gunshot45SMG
+  - type: GunWieldBonus
+    minAngle: -9
+    maxAngle: -27
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: F14MagazinePistol45
+        insertSound: /Audio/Nuclear14/Weapons/Effects/Reload/Pistols/pistol_magin.ogg
+        ejectSound: /Audio/Nuclear14/Weapons/Effects/Reload/Pistols/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - F14MagazinePistol45
+      gun_chamber:
+        name: Chamber
+        startingItem: F14CartridgePistol45
+        priority: 1
+        whitelist:
+          tags:
+          - F14CartridgePistol45
+  - type: StaticPrice
+    price: 250
+
+- type: entity
+  name: G11
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle473G11
+  description: A pre-war caseless bullpup rifle with a fixed 4x scope. Its three-round hyperburst leaves the barrel before the recoil reaches your shoulder. Fires 4.73mm caseless only.
+  components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/g11.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Large
+    sprite: WildWanamingo/Objects/Weapons/Guns/g11.rsi
+  - type: Clothing
+    sprite: WildWanamingo/Objects/Weapons/Guns/g11.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: FirearmAttachmentHost
+    enableOpticSlot: false # the 4x scope is built in (WWScope below)
+    muzzleSlot:
+      name: Muzzle
+      locked: true # takes no muzzle attachments
+  - type: WWScope
+    magnifications: [ 4 ]
+  - type: Gun
+    minAngle: 16
+    maxAngle: 36
+    angleIncrease: 2
+    angleDecay: 16
+    fireRate: 7
+    selectedMode: Burst
+    availableModes:
+    - SemiAuto
+    - Burst
+    - FullAuto
+    shotsPerBurst: 3
+    burstFireRate: 20 # the hyperburst: three rounds almost at once
+    burstCooldown: 0.35
+    soundGunshot:
+      collection: F14MarksmanGunshot
+  - type: GunWieldBonus
+    minAngle: -15
+    maxAngle: -33
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: F14Magazine473
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - F14Magazine473
+      gun_chamber:
+        name: Chamber
+        startingItem: F14Cartridge473Caseless
+        priority: 1
+        whitelist:
+          tags:
+          - F14Cartridge473Caseless
+  - type: StaticPrice
+    price: 1000
+
+# The G11E: the improved model. Same caseless round and magazine; a better barrel and fire control.
+# +4 damage a shot, tighter spread, a faster hyperburst and full auto, a small crit bonus.
+- type: entity
+  name: G11E
+  parent: F14WeaponRifle473G11
+  id: F14WeaponRifle473G11E
+  description: The improved G11, with a heavier barrel, an illuminated 4x scope and refined fire control. Hits harder, groups tighter and bursts faster than the original. Fires 4.73mm caseless only.
+  components:
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/g11e.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Large
+    sprite: WildWanamingo/Objects/Weapons/Guns/g11e.rsi
+  - type: Clothing
+    sprite: WildWanamingo/Objects/Weapons/Guns/g11e.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: GunDamageModifier
+    damage: # 4.73mm 18 + 4 = 22 a shot
+      types:
+        Piercing: 4
+  - type: CriticalHitBonus
+    chance: 0.03
+  - type: Gun
+    minAngle: 12
+    maxAngle: 30
+    angleIncrease: 1.5
+    angleDecay: 18
+    fireRate: 8
+    selectedMode: Burst
+    availableModes:
+    - SemiAuto
+    - Burst
+    - FullAuto
+    shotsPerBurst: 3
+    burstFireRate: 25
+    burstCooldown: 0.3
+    soundGunshot:
+      collection: F14MarksmanGunshot
+  - type: GunWieldBonus
+    minAngle: -11
+    maxAngle: -27
+  - type: StaticPrice
+    price: 1600
+
+- type: entity
+  name: Steyr AUG
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle556AUG
+  description: An Austrian bullpup assault rifle with a fixed 4x optic in its carry handle and a threaded muzzle. Short, light and quick to bring to bear. Uses 5.56mm rifle magazines.
+  components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/aug.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Large
+    sprite: WildWanamingo/Objects/Weapons/Guns/aug.rsi
+  - type: Clothing
+    sprite: WildWanamingo/Objects/Weapons/Guns/aug.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: FirearmAttachmentHost
+    enableOpticSlot: false # the 4x scope is built in (WWScope below)
+    muzzleVisualOffset: 0.78125, 0.90625
+    bayonetVisualOffset: 0.75, 0.71875
+    muzzleSlot:
+      name: Muzzle attachment
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      ejectVerbText: Remove muzzle attachment
+      insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+      ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+      whitelist:
+        tags:
+        - F14FirearmMuzzleAttachment
+  - type: WWScope
+    magnifications: [ 4 ]
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Gun
+    minAngle: 18
+    maxAngle: 40
+    angleIncrease: 3
+    angleDecay: 16
+    fireRate: 6.5
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      collection: F14ServiceGunshot
+  - type: GunWieldBonus
+    minAngle: -17
+    maxAngle: -36
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: F14Magazine556Rifle
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - F14Magazine556Rifle
+          - F14LongMagazine556Rifle
+      gun_chamber:
+        name: Chamber
+        startingItem: F14Cartridge556Rifle
+        priority: 1
+        whitelist:
+          tags:
+          - F14Cartridge556Rifle
+  - type: StaticPrice
+    price: 600
+
+# The L85 (XL70E3 in game): heavier and slower-firing than the AUG, but the steadiest 5.56 rifle here.
+- type: entity
+  name: XL70E3
+  parent: F14WeaponRifle556AUG
+  id: F14WeaponRifle556XL70E3
+  description: A British bullpup rifle with a fixed 4x optic and a bayonet lug. Heavy for its size and slower-firing than other 5.56 rifles, but it holds very steady. Uses 5.56mm rifle magazines.
+  components:
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/l85.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Large
+    sprite: WildWanamingo/Objects/Weapons/Guns/l85.rsi
+  - type: Clothing
+    sprite: WildWanamingo/Objects/Weapons/Guns/l85.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: FirearmAttachmentHost
+    enableOpticSlot: false # the 4x scope is built in (WWScope below)
+    muzzleVisualOffset: 0.84375, 0.90625
+    bayonetVisualOffset: 0.8125, 0.71875
+    muzzleSlot:
+      name: Muzzle attachment
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      ejectVerbText: Remove muzzle attachment
+      insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+      ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+      whitelist:
+        tags:
+        - F14FirearmMuzzleAttachment
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: Gun
+    minAngle: 14
+    maxAngle: 34
+    angleIncrease: 2.5
+    angleDecay: 16
+    fireRate: 5.5
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      collection: F14RifleR91Gunshot
+  - type: GunWieldBonus
+    minAngle: -13
+    maxAngle: -31
+  - type: StaticPrice
+    price: 550
+
+# ---------------------------------------------------------------------------------------------------------
+# Machine guns
+
+- type: entity
+  name: M1919
+  parent: BaseWeaponRifle
+  id: F14WeaponLMG308M1919
+  description: A pre-war Browning belt-fed machine gun, heavy and slow-firing, with .308 belts in a box under the receiver. Uses .308 ammo boxes.
+  components:
+  - type: Clothing
+    sprite: WildWanamingo/Objects/Weapons/Guns/m1919.rsi
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/m1919.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+    sprite: WildWanamingo/Objects/Weapons/Guns/m1919.rsi
+  - type: Wieldable
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.75
+    sprintModifier: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: GunRequiresWield
+  - type: GunWieldBonus
+    minAngle: -21
+    maxAngle: -45
+  - type: Gun
+    minAngle: 24
+    maxAngle: 55
+    angleIncrease: 4
+    angleDecay: 16
+    fireRate: 4.5
+    soundGunshot:
+      collection: F14AutoRifleGunshot
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: F14Magazine308M60Box
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - F14Magazine308M60Box
+      gun_chamber:
+        name: Chamber
+        startingItem: F14Cartridge308Rifle
+        priority: 1
+        whitelist:
+          tags:
+          - F14Cartridge308Rifle
+  # mag-0 is the empty belt box, mag-4 the full belt
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: EyeCursorOffset
+    maxOffset: 2
+    pvsIncrease: 0.2
+  - type: StaticPrice
+    price: 550
+
+# The M2 Browning: a .50 heavy machine gun. Desert Rose kept it admin-spawn only; so does WW for now (no loot,
+# vendors or recipes). Slow-firing, very heavy, and needs both hands.
+- type: Tag
+  id: F14Magazine50Belt
+
+- type: entity
+  id: F14Magazine50Belt
+  name: ammo belt box (.50 BMG)
+  parent: F14Magazine308M60Box
+  description: A 50-round box of linked .50 BMG for the M2 Browning.
+  components:
+  - type: Tag
+    tags:
+    - F14Magazine50Belt
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - F14Cartridge50
+      - F14Cartridge50HEIAP
+    proto: F14Cartridge50
+    capacity: 50
+  - type: StaticPrice
+    price: 150
+
+- type: entity
+  name: M2 Browning
+  parent: BaseWeaponRifle
+  id: F14WeaponHMG50M2Browning
+  description: A pre-war .50 calibre heavy machine gun, meant for a tripod or a vehicle mount. Carrying it is a feat; firing it from the hip is something else. Uses .50 BMG belt boxes.
+  components:
+  - type: Clothing
+    sprite: WildWanamingo/Objects/Weapons/Guns/m2a1.rsi
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/m2a1.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+    sprite: WildWanamingo/Objects/Weapons/Guns/m2a1.rsi
+  - type: Wieldable
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.6
+    sprintModifier: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.75
+    sprintModifier: 0.75
+  - type: GunRequiresWield
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -40
+  - type: Gun
+    minAngle: 30
+    maxAngle: 65
+    angleIncrease: 6
+    angleDecay: 12
+    fireRate: 3.5
+    soundGunshot:
+      collection: F14AntiMaterielGunshot
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: F14Magazine50Belt
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - F14Magazine50Belt
+      gun_chamber:
+        name: Chamber
+        startingItem: F14Cartridge50
+        priority: 1
+        whitelist:
+          tags:
+          - F14Cartridge50
+          - F14Cartridge50HEIAP
+  # mag-0 is the empty belt box, mag-4 the full belt
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: EyeCursorOffset
+    maxOffset: 2
+    pvsIncrease: 0.2
+  - type: StaticPrice
+    price: 2500
+
+# The M249: the NCR light machine gun's pre-war original. Slightly more damage per shot, and it feeds from
+# 5.56 rifle magazines as well as its own box. Takes a suppressor and a scope; no bayonet.
+- type: entity
+  name: M249 SAW
+  parent: F14WeaponLMG
+  id: F14WeaponLMG556M249
+  description: A pre-war squad automatic weapon. Feeds from its 55-round box or from standard 5.56mm rifle magazines in a pinch, and has rails for a scope and a thread for a suppressor.
+  components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Clothing
+    sprite: WildWanamingo/Objects/Weapons/Guns/m249.rsi
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/m249.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+    sprite: WildWanamingo/Objects/Weapons/Guns/m249.rsi
+  - type: FirearmAttachmentHost
+    visualOrientation: Diagonal
+    muzzleVisualOffset: 0.78125, 0.90625
+    enableOpticSlot: true
+    opticVisualState: carbine_scope
+    opticVisualRsi: /Textures/Misfits/Objects/Weapons/Guns/Attachments/firearm_attachments.rsi
+    opticVisualOffset: 0.15625, 0.46875
+    opticSlot:
+      name: Optic
+      priority: 4
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        tags:
+        - F14RifleScope
+    muzzleSlot:
+      name: Suppressor
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        components:
+        - SuppressorAttachment # no bayonet
+  - type: GunDamageModifier
+    damage: # 5.56mm 20 + 3 = 23 a shot
+      types:
+        Piercing: 3
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: F14LMGMagazine556Rifle
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - F14LMGMagazine556Rifle
+          - F14Magazine556Rifle
+          - F14LongMagazine556Rifle
+      gun_chamber:
+        name: Chamber
+        startingItem: F14Cartridge556Rifle
+        priority: 1
+        whitelist:
+          tags:
+          - F14Cartridge556Rifle
+  - type: StaticPrice
+    price: 700
+
+# ---------------------------------------------------------------------------------------------------------
+# Shotguns
+
+# The Neostead 2000: ported from Misfits (N14WeaponShotgunNeostead), deferred in the rebase until the twin-tube code
+# came across. Pump action; two six-shell tubes plus one in the chamber (6+6+1). Alt-click switches tubes; when the
+# selected tube runs dry, firing moves to the other one by itself. Loading fills the selected tube, then the chamber.
+- type: entity
+  name: Neostead 2000
+  parent: F14WeaponShotgunBase
+  id: F14WeaponShotgunNeostead
+  description: A two-handed pump-action shotgun with two independently selectable six-shell magazine tubes above the barrel, plus one in the chamber. Alt-click to switch tubes; it changes over by itself when one runs dry.
+  components:
+  - type: ManualAction
+    cycleSound:
+      path: /Audio/Weapons/Guns/Cock/shotgun_close.ogg
+  - type: GunRequiresWield
+  - type: TwinTubeAmmoProvider
+  - type: ContainerContainer
+    containers:
+      left_tube: !type:ContainerSlot
+      right_tube: !type:ContainerSlot
+      chamber_tube: !type:ContainerSlot
+  - type: ContainerFill
+    containers:
+      left_tube: [ F14NeosteadMagazineTube ]
+      right_tube: [ F14NeosteadMagazineTube ]
+      chamber_tube: [ F14NeosteadChamber ]
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/neostead.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/neostead.rsi
+  - type: Item
+    size: Large
+    sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/neostead.rsi
+  - type: GunWieldBonus
+    minAngle: -14
+    maxAngle: -38
+  - type: Gun
+    minAngle: 14
+    maxAngle: 50
+    angleIncrease: 4
+    angleDecay: 14
+    fireRate: 2.5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: F14ShotgunGunshot
+  - type: StaticPrice
+    price: 350
+
+# The Neostead's chamber: one shell, fired before either tube.
+- type: entity
+  id: F14NeosteadChamber
+  name: Neostead chamber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - F14ShellShotgun12
+    capacity: 1
+    proto: F14ShellShotgun12
+    mayTransfer: false
+    soundInsert:
+      path: /Audio/Nuclear14/Weapons/Effects/Reload/Shotguns/shotgun_insert.ogg
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container

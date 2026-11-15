@@ -57,6 +57,16 @@ public sealed partial class GunSystem
 
     protected override void UpdateAmmoCount(EntityUid uid, bool prediction = true)
     {
+        // WW: a twin-tube shotgun's tubes have no counter of their own; refresh the gun they sit in instead,
+        // including when a server correction changes a tube's predicted ammunition count.
+        if (!HasComp<AmmoCounterComponent>(uid) &&
+            Containers.TryGetContainingContainer(uid, out var container) &&
+            HasComp<Content.Shared._Misfits.Weapons.TwinTube.TwinTubeAmmoProviderComponent>(container.Owner))
+        {
+            UpdateAmmoCount(container.Owner, prediction);
+            return;
+        }
+
         // Don't use resolves because the method is shared and there's no compref and I'm trying to
         // share as much code as possible
         if (prediction && !Timing.IsFirstTimePredicted ||

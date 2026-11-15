@@ -196,6 +196,16 @@
 # WW: craftable rifle scopes (2026-11-10). 8x and variable scopes are loot only.
 
 - type: latheRecipe
+  id: F14WeaponScopeReflex # WW: 2026-11-14
+  result: F14WeaponScopeReflex
+  categories:
+  - F14Parts
+  completetime: 4
+  materials:
+    Steel: 100
+    Glass: 75
+
+- type: latheRecipe
   id: F14WeaponScope2x
   result: F14WeaponScope2x
   categories:

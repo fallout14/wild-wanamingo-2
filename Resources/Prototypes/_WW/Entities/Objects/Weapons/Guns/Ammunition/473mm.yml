@@ -1,0 +1,107 @@
+# 4.73mm caseless, for the G11 and G11E. One ammo type only: no variants.
+# Caseless: the round leaves nothing behind (CartridgeAmmo deleteOnSpawn), so the G11 ejects no casings.
+# Small-to-medium armour penetration (0.2): between standard (0) and AP (0.35).
+# Magazine sprite: Desert Rose (CC-BY-SA-3.0). Box: the N14 5mm/5.56 box art, as Desert Rose also reused.
+
+- type: Tag
+  id: F14Cartridge473Caseless
+
+- type: Tag
+  id: F14Magazine473
+
+- type: entity
+  id: F14Bullet473Caseless
+  name: bullet (4.73mm caseless)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 18
+    armorPenetration: 0.2
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 9.0
+    maxFalloffTiles: 18.0
+    minDamageMultiplier: 0.6
+
+- type: entity
+  id: F14Cartridge473Caseless
+  name: cartridge (4.73mm caseless)
+  parent: BaseCartridgeCaselessRifle
+  description: A pre-war 4.73mm caseless rifle round, a block of propellant with the bullet set inside. Only the G11 family fires it.
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - F14Cartridge473Caseless
+  - type: CartridgeAmmo
+    proto: F14Bullet473Caseless
+    deleteOnSpawn: true
+  - type: StaticPrice
+    price: 4
+
+- type: entity
+  id: F14Magazine473
+  name: G11 magazine (4.73mm caseless)
+  parent: BaseItem
+  description: A long 50-round magazine for the G11. It slides in above the barrel.
+  components:
+  - type: Tag
+    tags:
+    - F14Magazine473
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+      - F14Cartridge473Caseless
+    proto: F14Cartridge473Caseless
+    capacity: 50
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/473mm_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: Item
+    size: Small
+  - type: StaticPrice
+    price: 40
+
+- type: entity
+  id: F14MagazineBox473
+  name: ammunition box (4.73mm caseless)
+  parent: BaseItem
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+      - F14Cartridge473Caseless
+    proto: F14Cartridge473Caseless
+    capacity: 100
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Boxes/5-56.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-3
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: FoldableAmmoBox

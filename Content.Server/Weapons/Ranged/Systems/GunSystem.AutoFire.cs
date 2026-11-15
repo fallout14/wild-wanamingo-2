@@ -33,7 +33,7 @@ public sealed partial class GunSystem
             {
                 var parent = TransformSystem.GetParentUid(uid);
                 if (HasComp<DamageableComponent>(parent))
-                    AttemptShoot(parent, (uid, gun), gun.ShootCoordinates ?? new EntityCoordinates(uid, gun.DefaultDirection));
+                    ContinueBurst(parent, (uid, gun)); // WW: was AttemptShoot(parent, ...), which reset ShotCounter
                 else
                     AttemptShoot((uid, gun));
             }

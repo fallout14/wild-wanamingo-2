@@ -249,6 +249,24 @@ public abstract partial class SharedGunSystem : EntitySystem
         return result;
     }
 
+    // WW: keeps a burst going without resetting ShotCounter. The server's burst loop used the public
+    // AttemptShoot overload, which zeroes ShotCounter after every shot; the player's next shoot request then
+    // counted as a fresh trigger pull and started a second burst (or, on fast guns, bursts until empty).
+    // With ShotCounter kept, one trigger pull gives one burst until the client sends RequestStopShootEvent.
+    public bool ContinueBurst(EntityUid user, Entity<GunComponent> gun, EntityCoordinates? toCoordinates = null)
+    {
+        if (toCoordinates != null)
+            gun.Comp.ShootCoordinates = toCoordinates;
+        gun.Comp.ShootCoordinates ??= new EntityCoordinates(gun, gun.Comp.DefaultDirection);
+        return AttemptShoot(user, gun);
+    }
+
+    private void DirtyBurst(Entity<GunComponent> gun)
+    {
+        DirtyField(gun.AsNullable(), nameof(GunComponent.BurstActivated));
+        DirtyField(gun.AsNullable(), nameof(GunComponent.BurstShotsCount));
+    }
+
     private bool AttemptShoot(EntityUid user, Entity<GunComponent> gun)
     {
         if (gun.Comp.FireRateModified <= 0f ||
@@ -340,6 +358,7 @@ public abstract partial class SharedGunSystem : EntitySystem
             }
             gun.Comp.BurstActivated = false;
             gun.Comp.BurstShotsCount = 0;
+            DirtyBurst(gun); // WW: burst state must reach the client, or it keeps requesting shots
             gun.Comp.NextFire = TimeSpan.FromSeconds(Math.Max(lastFire.TotalSeconds + SafetyNextFire, gun.Comp.NextFire.TotalSeconds));
             return false;
         }
@@ -369,6 +388,7 @@ public abstract partial class SharedGunSystem : EntitySystem
 
             gun.Comp.BurstActivated = false;
             gun.Comp.BurstShotsCount = 0;
+            DirtyBurst(gun); // WW
             gun.Comp.NextFire += TimeSpan.FromSeconds(gun.Comp.BurstCooldown);
 
             // Play empty gun sounds if relevant
@@ -401,6 +421,8 @@ public abstract partial class SharedGunSystem : EntitySystem
                 gun.Comp.BurstActivated = false;
                 gun.Comp.BurstShotsCount = 0;
             }
+
+            DirtyBurst(gun); // WW
         }
 
         // Shoot confirmed - sounds also played here in case it's invalid (e.g. cartridge already spent).
@@ -467,6 +489,11 @@ public abstract partial class SharedGunSystem : EntitySystem
     /// Call this whenever the ammo count for a gun changes.
     /// </summary>
     protected virtual void UpdateAmmoCount(EntityUid uid, bool prediction = true) { }
+
+    /// <summary>
+    /// WW: lets other systems (the twin-tube shotgun) refresh a gun's ammo counter after changing its ammo.
+    /// </summary>
+    public void RefreshAmmoCounter(EntityUid uid) => UpdateAmmoCount(uid);
 
     protected void SetCartridgeSpent(EntityUid uid, CartridgeAmmoComponent cartridge, bool spent)
     {

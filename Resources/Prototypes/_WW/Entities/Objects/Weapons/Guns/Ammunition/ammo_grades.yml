@@ -1,0 +1,1681 @@
+# WW: ammo grades (2026-11-14). Generated from the plan in D:\GitHub\Reports\AMMO_REPORT.md: hollow point, AP, +P,
+# surplus and incendiary rounds on the ammo bench, the shotgun shells, and the hand loads behind the hand loader's notebook.
+# Every variant uses its caliber's standard cartridge as the parent, so it fits the same magazines and guns.
+# Box labels: red hollow point, green AP, yellow +P, grey surplus, orange incendiary, blue hand load.
+
+- type: entity
+  id: F14Bullet22JHP
+  parent: F14Bullet22
+  name: bullet (.22 LR JHP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 12
+    armorPenetration: -0.3
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 4
+    maxFalloffTiles: 8
+    minDamageMultiplier: 0.35
+
+- type: entity
+  id: F14Cartridge22JHP
+  parent: F14CartridgePistol22
+  name: cartridge (.22 LR JHP)
+  description: "Hollow-point rounds: about 20% more damage against unarmoured targets, but armour stops more of each hit and they lose power sooner at range."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet22JHP
+
+- type: entity
+  id: F14MagazineBox22JHP
+  parent: F14MagazineBox22
+  name: ammunition box (.22 LR JHP)
+  description: "Hollow-point rounds: about 20% more damage against unarmoured targets, but armour stops more of each hit and they lose power sooner at range."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge22JHP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 22lr-jhp
+
+- type: entity
+  id: F14Bullet22Surplus
+  parent: F14Bullet22
+  name: bullet (.22 LR plinking)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 9
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 4
+    maxFalloffTiles: 8
+    minDamageMultiplier: 0.45
+
+- type: entity
+  id: F14Cartridge22Surplus
+  parent: F14CartridgePistol22
+  name: cartridge (.22 LR plinking)
+  description: "Cheap .22 plinking rounds made from scrap: about 10% less damage and they lose power a little sooner at range."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet22Surplus
+
+- type: entity
+  id: F14MagazineBox22Surplus
+  parent: F14MagazineBox22
+  name: ammunition box (.22 LR plinking)
+  description: "Cheap .22 plinking rounds made from scrap: about 10% less damage and they lose power a little sooner at range."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge22Surplus
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 22lr-surplus
+
+- type: entity
+  id: F14Bullet5mmAP
+  parent: F14Bullet5mm
+  name: bullet (5mm AP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+    armorPenetration: 0.35
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 6.0
+    maxFalloffTiles: 12.0
+    minDamageMultiplier: 0.5
+
+- type: entity
+  id: F14Cartridge5mmAP
+  parent: F14CartridgePistol5
+  name: cartridge (5mm AP)
+  description: "Armour-piercing rounds: a little less damage, but armour stops much less of each hit."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet5mmAP
+
+- type: entity
+  id: F14MagazineBox5mmAP
+  parent: F14MagazineBox5mm
+  name: ammunition box (5mm AP)
+  description: "Armour-piercing rounds: a little less damage, but armour stops much less of each hit."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge5mmAP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 5-45box-ap
+
+- type: entity
+  id: F14Bullet9mmJHP
+  parent: F14Bullet9mm
+  name: bullet (9mm JHP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 16
+    armorPenetration: -0.3
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 5
+    maxFalloffTiles: 10
+    minDamageMultiplier: 0.35
+
+- type: entity
+  id: F14Cartridge9mmJHP
+  parent: F14CartridgePistol9
+  name: cartridge (9mm JHP)
+  description: "Hollow-point rounds: about 20% more damage against unarmoured targets, but armour stops more of each hit and they lose power sooner at range."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet9mmJHP
+
+- type: entity
+  id: F14MagazineBox9mmJHP
+  parent: F14MagazineBox9mm
+  name: ammunition box (9mm JHP)
+  description: "Hollow-point rounds: about 20% more damage against unarmoured targets, but armour stops more of each hit and they lose power sooner at range."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge9mmJHP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 9mm-jhp
+
+- type: entity
+  id: F14Bullet9mmPlusP
+  parent: F14Bullet9mm
+  name: bullet (9mm +P)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 15
+    armorPenetration: 0.1
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 6.0
+    maxFalloffTiles: 12.0
+    minDamageMultiplier: 0.45
+
+- type: entity
+  id: F14Cartridge9mmPlusP
+  parent: F14CartridgePistol9
+  name: cartridge (9mm +P)
+  description: "Overpressure +P rounds: about 15% more damage and slightly better against armour."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet9mmPlusP
+
+- type: entity
+  id: F14MagazineBox9mmPlusP
+  parent: F14MagazineBox9mm
+  name: ammunition box (9mm +P)
+  description: "Overpressure +P rounds: about 15% more damage and slightly better against armour."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge9mmPlusP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 9mm-plusp
+
+- type: entity
+  id: F14Bullet38JHP
+  parent: F14Bullet38
+  name: bullet (.38 special JHP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 19
+    armorPenetration: -0.3
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 5
+    maxFalloffTiles: 10
+    minDamageMultiplier: 0.4
+
+- type: entity
+  id: F14Cartridge38JHP
+  parent: F14CartridgePistol38
+  name: cartridge (.38 special JHP)
+  description: "Hollow-point rounds: about 20% more damage against unarmoured targets, but armour stops more of each hit and they lose power sooner at range."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet38JHP
+
+- type: entity
+  id: F14MagazineBox38JHP
+  parent: F14AmmoBox38
+  name: ammunition box (.38 special JHP)
+  description: "Hollow-point rounds: about 20% more damage against unarmoured targets, but armour stops more of each hit and they lose power sooner at range."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge38JHP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 44-jhp
+
+- type: entity
+  id: F14Bullet10mmJHP
+  parent: F14Bullet10mm
+  name: bullet (10mm JHP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 18
+    armorPenetration: -0.3
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 6
+    maxFalloffTiles: 11
+    minDamageMultiplier: 0.4
+
+- type: entity
+  id: F14Cartridge10mmJHP
+  parent: F14CartridgePistol10
+  name: cartridge (10mm JHP)
+  description: "Hollow-point rounds: about 20% more damage against unarmoured targets, but armour stops more of each hit and they lose power sooner at range."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet10mmJHP
+
+- type: entity
+  id: F14MagazineBox10mmJHP
+  parent: F14MagazineBox10mm
+  name: ammunition box (10mm JHP)
+  description: "Hollow-point rounds: about 20% more damage against unarmoured targets, but armour stops more of each hit and they lose power sooner at range."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge10mmJHP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 10mm-jhp
+
+- type: entity
+  id: F14Bullet10mmPlusP
+  parent: F14Bullet10mm
+  name: bullet (10mm +P)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 17
+    armorPenetration: 0.1
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 7.0
+    maxFalloffTiles: 14.0
+    minDamageMultiplier: 0.5
+
+- type: entity
+  id: F14Cartridge10mmPlusP
+  parent: F14CartridgePistol10
+  name: cartridge (10mm +P)
+  description: "Overpressure +P rounds: about 15% more damage and slightly better against armour."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet10mmPlusP
+
+- type: entity
+  id: F14MagazineBox10mmPlusP
+  parent: F14MagazineBox10mm
+  name: ammunition box (10mm +P)
+  description: "Overpressure +P rounds: about 15% more damage and slightly better against armour."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge10mmPlusP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 10mm-plusp
+
+- type: entity
+  id: F14Bullet45JHP
+  parent: F14Bullet45
+  name: bullet (.45 auto JHP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+    armorPenetration: -0.3
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 5
+    maxFalloffTiles: 10
+    minDamageMultiplier: 0.35
+
+- type: entity
+  id: F14Cartridge45JHP
+  parent: F14CartridgePistol45
+  name: cartridge (.45 auto JHP)
+  description: "Hollow-point rounds: about 20% more damage against unarmoured targets, but armour stops more of each hit and they lose power sooner at range."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet45JHP
+
+- type: entity
+  id: F14MagazineBox45JHP
+  parent: F14MagazineBox45
+  name: ammunition box (.45 auto JHP)
+  description: "Hollow-point rounds: about 20% more damage against unarmoured targets, but armour stops more of each hit and they lose power sooner at range."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge45JHP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 45-auto-jhp
+
+- type: entity
+  id: F14Bullet45PlusP
+  parent: F14Bullet45
+  name: bullet (.45 auto +P)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+    armorPenetration: 0.1
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 6.0
+    maxFalloffTiles: 12.0
+    minDamageMultiplier: 0.45
+
+- type: entity
+  id: F14Cartridge45PlusP
+  parent: F14CartridgePistol45
+  name: cartridge (.45 auto +P)
+  description: "Overpressure +P rounds: about 15% more damage and slightly better against armour."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet45PlusP
+
+- type: entity
+  id: F14MagazineBox45PlusP
+  parent: F14MagazineBox45
+  name: ammunition box (.45 auto +P)
+  description: "Overpressure +P rounds: about 15% more damage and slightly better against armour."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge45PlusP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 45-auto-plusp
+
+- type: entity
+  id: F14Bullet357PlusP
+  parent: F14Bullet357
+  name: bullet (.357 magnum +P)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+    armorPenetration: 0.1
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 6.0
+    maxFalloffTiles: 12.0
+    minDamageMultiplier: 0.5
+
+- type: entity
+  id: F14Cartridge357PlusP
+  parent: F14CartridgePistol357
+  name: cartridge (.357 magnum +P)
+  description: "Overpressure +P rounds: about 15% more damage and slightly better against armour."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet357PlusP
+
+- type: entity
+  id: F14MagazineBox357PlusP
+  parent: F14AmmoBox357
+  name: ammunition box (.357 magnum +P)
+  description: "Overpressure +P rounds: about 15% more damage and slightly better against armour."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge357PlusP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 44-plusp
+
+- type: entity
+  id: F14Bullet127JHP
+  parent: F14Bullet127
+  name: bullet (12.7mm JHP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 24
+        Blunt: 5
+    armorPenetration: -0.3
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 7
+    maxFalloffTiles: 16
+    minDamageMultiplier: 0.6
+
+- type: entity
+  id: F14Cartridge127JHP
+  parent: F14CartridgePistol127
+  name: cartridge (12.7mm JHP)
+  description: "Hollow-point rounds: about 20% more damage against unarmoured targets, but armour stops more of each hit and they lose power sooner at range."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet127JHP
+
+- type: entity
+  id: F14MagazineBox127JHP
+  parent: F14MagazineBox12
+  name: ammunition box (12.7mm JHP)
+  description: "Hollow-point rounds: about 20% more damage against unarmoured targets, but armour stops more of each hit and they lose power sooner at range."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge127JHP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 12-7mm-jhp
+
+- type: entity
+  id: F14Bullet556Surplus
+  parent: F14Bullet556
+  name: bullet (5.56mm surplus)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 18
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 8
+    maxFalloffTiles: 15
+    minDamageMultiplier: 0.57
+
+- type: entity
+  id: F14Cartridge556Surplus
+  parent: F14Cartridge556Rifle
+  name: cartridge (5.56mm surplus)
+  description: "Cheap surplus rounds made from scrap: about 10% less damage and they lose power a little sooner at range."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet556Surplus
+
+- type: entity
+  id: F14MagazineBox556Surplus
+  parent: F14MagazineBox556
+  name: ammunition box (5.56mm surplus)
+  description: "Cheap surplus rounds made from scrap: about 10% less damage and they lose power a little sooner at range."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge556Surplus
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-3
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 5-56-surplus
+
+- type: entity
+  id: F14Bullet762Surplus
+  parent: F14Bullet762
+  name: bullet (7.62mm surplus)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 22
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 8
+    maxFalloffTiles: 17
+    minDamageMultiplier: 0.62
+
+- type: entity
+  id: F14Cartridge762Surplus
+  parent: F14Cartridge762Rifle
+  name: cartridge (7.62mm surplus)
+  description: "Cheap surplus rounds made from scrap: about 10% less damage and they lose power a little sooner at range."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet762Surplus
+
+- type: entity
+  id: F14MagazineBox762Surplus
+  parent: F14MagazineBox762
+  name: ammunition box (7.62mm surplus)
+  description: "Cheap surplus rounds made from scrap: about 10% less damage and they lose power a little sooner at range."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge762Surplus
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 7-62-surplus
+
+- type: entity
+  id: F14Bullet762AP
+  parent: F14Bullet762
+  name: bullet (7.62mm AP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+    armorPenetration: 0.35
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 10.0
+    maxFalloffTiles: 20.0
+    minDamageMultiplier: 0.62
+
+- type: entity
+  id: F14Cartridge762AP
+  parent: F14Cartridge762Rifle
+  name: cartridge (7.62mm AP)
+  description: "Armour-piercing rounds: a little less damage, but armour stops much less of each hit."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet762AP
+
+- type: entity
+  id: F14MagazineBox762AP
+  parent: F14MagazineBox762
+  name: ammunition box (7.62mm AP)
+  description: "Armour-piercing rounds: a little less damage, but armour stops much less of each hit."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge762AP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 7-62-ap
+
+- type: entity
+  id: F14Bullet762Incendiary
+  parent: F14Bullet762
+  name: bullet (7.62mm incendiary)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 18
+        Heat: 7
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 10.0
+    maxFalloffTiles: 20.0
+    minDamageMultiplier: 0.62
+  - type: IgniteOnCollide
+    fireStacks: 0.25
+  - type: PointLight
+    enabled: true
+    color: "#ff4300"
+    radius: 2.0
+    energy: 7.0
+
+- type: entity
+  id: F14Cartridge762Incendiary
+  parent: F14Cartridge762Rifle
+  name: cartridge (7.62mm incendiary)
+  description: "Incendiary rounds: part of the damage is fire, and a hit can set the target alight."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet762Incendiary
+
+- type: entity
+  id: F14MagazineBox762Incendiary
+  parent: F14MagazineBox762
+  name: ammunition box (7.62mm incendiary)
+  description: "Incendiary rounds: part of the damage is fire, and a hit can set the target alight."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge762Incendiary
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 7-62-inc
+
+- type: entity
+  id: F14Bullet303JHP
+  parent: F14Bullet303
+  name: bullet (.303 JHP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 43
+    armorPenetration: -0.3
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 9
+    maxFalloffTiles: 18
+    minDamageMultiplier: 0.5
+
+- type: entity
+  id: F14Cartridge303JHP
+  parent: F14Cartridge303
+  name: cartridge (.303 JHP)
+  description: "Hollow-point rounds: about 20% more damage against unarmoured targets, but armour stops more of each hit and they lose power sooner at range."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet303JHP
+
+- type: entity
+  id: F14MagazineBox303JHP
+  parent: F14MagazineBox303
+  name: ammunition box (.303 JHP)
+  description: "Hollow-point rounds: about 20% more damage against unarmoured targets, but armour stops more of each hit and they lose power sooner at range."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge303JHP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 308-jhp
+
+- type: entity
+  id: F14Bullet308Incendiary
+  parent: F14Bullet308
+  name: bullet (.308 incendiary)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 28
+        Heat: 11
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 11.0
+    maxFalloffTiles: 22.0
+    minDamageMultiplier: 0.65
+  - type: IgniteOnCollide
+    fireStacks: 0.25
+  - type: PointLight
+    enabled: true
+    color: "#ff4300"
+    radius: 2.0
+    energy: 7.0
+
+- type: entity
+  id: F14Cartridge308Incendiary
+  parent: F14Cartridge308Rifle
+  name: cartridge (.308 incendiary)
+  description: "Incendiary rounds: part of the damage is fire, and a hit can set the target alight."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet308Incendiary
+
+- type: entity
+  id: F14MagazineBox308Incendiary
+  parent: F14MagazineBox308
+  name: ammunition box (.308 incendiary)
+  description: "Incendiary rounds: part of the damage is fire, and a hit can set the target alight."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge308Incendiary
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 308-inc
+
+- type: entity
+  id: F14Bullet50Incendiary
+  parent: F14Bullet50
+  name: bullet (.50 BMG incendiary)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 22
+        Blunt: 15
+        Heat: 9
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 12.0
+    maxFalloffTiles: 35.0
+    minDamageMultiplier: 0.82
+  - type: IgniteOnCollide
+    fireStacks: 0.25
+  - type: PointLight
+    enabled: true
+    color: "#ff4300"
+    radius: 2.0
+    energy: 7.0
+
+- type: entity
+  id: F14Cartridge50Incendiary
+  parent: F14Cartridge50
+  name: cartridge (.50 BMG incendiary)
+  description: "Incendiary rounds: part of the damage is fire, and a hit can set the target alight."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet50Incendiary
+
+- type: entity
+  id: F14MagazineBox50Incendiary
+  parent: F14MagazineBox50
+  name: ammunition box (.50 BMG incendiary)
+  description: "Incendiary rounds: part of the damage is fire, and a hit can set the target alight."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge50Incendiary
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 50anti-material-inc
+
+- type: entity
+  id: F14Bullet5mmJSP
+  parent: F14Bullet5mm
+  name: bullet (5mm JSP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 16
+    armorPenetration: 0.4
+
+- type: entity
+  id: F14Cartridge5mmJSP
+  parent: F14CartridgePistol5
+  name: cartridge (5mm JSP)
+  description: "Hand-loaded jacketed soft points: more damage, and armour stops much less of each hit."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet5mmJSP
+
+- type: entity
+  id: F14MagazineBox5mmJSP
+  parent: F14MagazineBox5mm
+  name: ammunition box (5mm JSP)
+  description: "Hand-loaded jacketed soft points: more damage, and armour stops much less of each hit. Hand load."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge5mmJSP
+    capacity: 37
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 5-45box-hand
+
+- type: entity
+  id: F14Bullet45Super
+  parent: F14Bullet45
+  name: bullet (.45 auto Super)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 22
+    armorPenetration: 0.15
+
+- type: entity
+  id: F14Cartridge45Super
+  parent: F14CartridgePistol45
+  name: cartridge (.45 auto Super)
+  description: "Hand-loaded .45 Super: hotter than +P, with a little armour-piercing."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet45Super
+
+- type: entity
+  id: F14MagazineBox45Super
+  parent: F14MagazineBox45
+  name: ammunition box (.45 auto Super)
+  description: "Hand-loaded .45 Super: hotter than +P, with a little armour-piercing. Hand load."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge45Super
+    capacity: 37
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 45-auto-hand
+
+- type: entity
+  id: F14Bullet357JFP
+  parent: F14Bullet357
+  name: bullet (.357 magnum JFP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 27
+    armorPenetration: 0.1
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 7
+    maxFalloffTiles: 14
+    minDamageMultiplier: 0.5
+
+- type: entity
+  id: F14Cartridge357JFP
+  parent: F14CartridgePistol357
+  name: cartridge (.357 magnum JFP)
+  description: "Hand-loaded jacketed flat points: more damage and range, slightly better against armour."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet357JFP
+
+- type: entity
+  id: F14MagazineBox357JFP
+  parent: F14AmmoBox357
+  name: ammunition box (.357 magnum JFP)
+  description: "Hand-loaded jacketed flat points: more damage and range, slightly better against armour. Hand load."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge357JFP
+    capacity: 15
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 44-hand
+
+- type: entity
+  id: F14Bullet44SWC
+  parent: F14Bullet44
+  name: bullet (.44 magnum SWC)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 36
+        Blunt: 5
+    armorPenetration: 0.25
+
+- type: entity
+  id: F14Cartridge44SWC
+  parent: F14Cartridge44Magnum
+  name: cartridge (.44 magnum SWC)
+  description: "Hand-loaded semi-wadcutters: more damage, and armour stops less of each hit."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet44SWC
+
+- type: entity
+  id: F14MagazineBox44SWC
+  parent: F14MagazineBox44
+  name: ammunition box (.44 magnum SWC)
+  description: "Hand-loaded semi-wadcutters: more damage, and armour stops less of each hit. Hand load."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge44SWC
+    capacity: 16
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 44-hand
+
+- type: entity
+  id: F14Bullet4570SWC
+  parent: F14Bullet4570
+  name: bullet (.45-70 gov't SWC)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 42
+        Blunt: 5
+    armorPenetration: 0.25
+
+- type: entity
+  id: F14Cartridge4570SWC
+  parent: F14Cartridge4570
+  name: cartridge (.45-70 gov't SWC)
+  description: "Hand-loaded semi-wadcutters: more damage, and armour stops less of each hit."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet4570SWC
+
+- type: entity
+  id: F14MagazineBox4570SWC
+  parent: F14MagazineBox4570
+  name: ammunition box (.45-70 gov't SWC)
+  description: "Hand-loaded semi-wadcutters: more damage, and armour stops less of each hit. Hand load."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge4570SWC
+    capacity: 15
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 45-70-hand
+
+- type: entity
+  id: F14Bullet556Match
+  parent: F14Bullet556
+  name: bullet (5.56mm match)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 23
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 12
+    maxFalloffTiles: 22
+    minDamageMultiplier: 0.8
+
+- type: entity
+  id: F14Cartridge556Match
+  parent: F14Cartridge556Rifle
+  name: cartridge (5.56mm match)
+  description: "Hand-loaded match rounds: a little more damage and much better at range."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet556Match
+
+- type: entity
+  id: F14MagazineBox556Match
+  parent: F14MagazineBox556
+  name: ammunition box (5.56mm match)
+  description: "Hand-loaded match rounds: a little more damage and much better at range. Hand load."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge556Match
+    capacity: 37
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-3
+      map: ["enum.GunVisualLayers.Mag"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 5-56-hand
+
+- type: entity
+  id: F14Bullet50Match
+  parent: F14Bullet50
+  name: bullet (.50 BMG match)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 35
+        Blunt: 20
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 15
+    maxFalloffTiles: 40
+    minDamageMultiplier: 0.85
+
+- type: entity
+  id: F14Cartridge50Match
+  parent: F14Cartridge50
+  name: cartridge (.50 BMG match)
+  description: "Hand-loaded match rounds: more damage and much better at range."
+  components:
+  - type: CartridgeAmmo
+    proto: F14Bullet50Match
+
+- type: entity
+  id: F14MagazineBox50Match
+  parent: F14MagazineBox50
+  name: ammunition box (.50 BMG match)
+  description: "Hand-loaded match rounds: more damage and much better at range. Hand load."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14Cartridge50Match
+    capacity: 15
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 50anti-material-hand
+
+- type: entity
+  id: F14PelletShotgun12Magnum
+  parent: F14PelletShotgun12
+  name: pellet (12 gauge magnum buckshot)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 4
+    maxFalloffTiles: 8
+    minDamageMultiplier: 0.3
+
+- type: entity
+  id: F14PelletShotgun12MagnumSpread
+  parent: F14PelletShotgun12Magnum
+  categories: [HideSpawnMenu]
+  components:
+  - type: ProjectileSpread
+    proto: F14PelletShotgun12Magnum
+    count: 8
+    spread: 20
+
+- type: entity
+  id: F14ShellShotgun12Magnum
+  parent: F14ShellShotgun12
+  name: magnum buckshot shell (12 gauge)
+  description: "Magnum buckshot: eight pellets instead of six, in a wider spread."
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    color: "#ffd27f"
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: base
+  - type: CartridgeAmmo
+    proto: F14PelletShotgun12MagnumSpread
+
+- type: entity
+  id: F14MagazineBox12gaugeMagnum
+  parent: F14MagazineBox12gauge
+  name: ammunition box (12 gauge magnum buckshot)
+  description: "Magnum buckshot: eight pellets instead of six, in a wider spread."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14ShellShotgun12Magnum
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 12-gauge-magnum
+
+- type: entity
+  id: F14PelletShotgun12Slug
+  parent: F14PelletShotgun12
+  name: pellet (12 gauge slug)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 45
+        Structural: 20
+    armorPenetration: 0.3
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 8
+    maxFalloffTiles: 16
+    minDamageMultiplier: 0.7
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+
+- type: entity
+  id: F14ShellShotgun12Slug
+  parent: F14ShellShotgun12
+  name: slug shell (12 gauge)
+  description: "A single heavy slug: hits hard at range, punches through armour and breaks doors."
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+    - state: slug
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: slug
+  - type: CartridgeAmmo
+    proto: F14PelletShotgun12Slug
+
+- type: entity
+  id: F14MagazineBox12gaugeSlug
+  parent: F14MagazineBox12gauge
+  name: ammunition box (12 gauge slug)
+  description: "A single heavy slug: hits hard at range, punches through armour and breaks doors."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14ShellShotgun12Slug
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 12-gauge-slug
+
+- type: entity
+  id: F14PelletShotgun12Coin
+  parent: F14PelletShotgun12
+  name: pellet (12 gauge coin shot)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 4
+        Slash: 3
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 3
+    maxFalloffTiles: 7
+    minDamageMultiplier: 0.25
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: shard
+      shader: unshaded
+
+- type: entity
+  id: F14PelletShotgun12CoinSpread
+  parent: F14PelletShotgun12Coin
+  categories: [HideSpawnMenu]
+  components:
+  - type: ProjectileSpread
+    proto: F14PelletShotgun12Coin
+    count: 10
+    spread: 30
+
+- type: entity
+  id: F14ShellShotgun12Coin
+  parent: F14ShellShotgun12
+  name: coin shot shell (12 gauge)
+  description: "Coin shot: ten bits of scrap and bottle caps. Cheap, wide and weak."
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+    - state: improvised
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: improvised
+  - type: CartridgeAmmo
+    proto: F14PelletShotgun12CoinSpread
+
+- type: entity
+  id: F14MagazineBox12gaugeCoin
+  parent: F14MagazineBox12gauge
+  name: ammunition box (12 gauge coin shot)
+  description: "Coin shot: ten bits of scrap and bottle caps. Cheap, wide and weak."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14ShellShotgun12Coin
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 12-gauge-coin
+
+- type: entity
+  id: F14PelletShotgun12DragonsBreath
+  parent: F14PelletShotgun12
+  name: pellet (12 gauge dragon's breath)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 3
+        Heat: 6
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 2
+    maxFalloffTiles: 6
+    minDamageMultiplier: 0.2
+  - type: IgniteOnCollide
+    fireStacks: 0.5
+  - type: IgnitionSource
+    ignited: true
+  - type: PointLight
+    enabled: true
+    color: "#ff4300"
+    radius: 1.5
+    energy: 5.0
+
+- type: entity
+  id: F14PelletShotgun12DragonsBreathSpread
+  parent: F14PelletShotgun12DragonsBreath
+  categories: [HideSpawnMenu]
+  components:
+  - type: ProjectileSpread
+    proto: F14PelletShotgun12DragonsBreath
+    count: 6
+    spread: 25
+
+- type: entity
+  id: F14ShellShotgun12DragonsBreath
+  parent: F14ShellShotgun12
+  name: dragon's breath shell (12 gauge)
+  description: "Dragon's breath: a short-ranged spray of burning pellets that sets targets alight. Can light fuel and gas."
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+    - state: incendiary
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: incendiary
+  - type: CartridgeAmmo
+    proto: F14PelletShotgun12DragonsBreathSpread
+
+- type: entity
+  id: F14MagazineBox12gaugeDragonsBreath
+  parent: F14MagazineBox12gauge
+  name: ammunition box (12 gauge dragon's breath)
+  description: "Dragon's breath: a short-ranged spray of burning pellets that sets targets alight. Can light fuel and gas."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14ShellShotgun12DragonsBreath
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 12-gauge-dragon
+
+- type: entity
+  id: F14PelletShotgun12BuckMagnum
+  parent: F14PelletShotgun12
+  name: pellet (12 gauge 4/0 buck magnum)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 16
+    armorPenetration: 0.1
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 5
+    maxFalloffTiles: 9
+    minDamageMultiplier: 0.35
+
+- type: entity
+  id: F14PelletShotgun12BuckMagnumSpread
+  parent: F14PelletShotgun12BuckMagnum
+  categories: [HideSpawnMenu]
+  components:
+  - type: ProjectileSpread
+    proto: F14PelletShotgun12BuckMagnum
+    count: 4
+    spread: 15
+
+- type: entity
+  id: F14ShellShotgun12BuckMagnum
+  parent: F14ShellShotgun12
+  name: 4/0 buck magnum shell (12 gauge)
+  description: "Hand-loaded 4/0 buck magnum: four heavy pellets that hit hard and push through armour a little."
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    color: "#c9a23a"
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: base
+  - type: CartridgeAmmo
+    proto: F14PelletShotgun12BuckMagnumSpread
+
+- type: entity
+  id: F14MagazineBox12gaugeBuckMagnum
+  parent: F14MagazineBox12gauge
+  name: ammunition box (12 gauge 4/0 buck magnum)
+  description: "Hand-loaded 4/0 buck magnum: four heavy pellets that hit hard and push through armour a little. Hand load."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14ShellShotgun12BuckMagnum
+    capacity: 15
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 12-gauge-hand
+
+- type: entity
+  id: F14PelletShotgun20Magnum
+  parent: F14PelletShotgun20
+  name: pellet (20 gauge magnum buckshot)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 8
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 4
+    maxFalloffTiles: 8
+    minDamageMultiplier: 0.3
+
+- type: entity
+  id: F14PelletShotgun20MagnumSpread
+  parent: F14PelletShotgun20Magnum
+  categories: [HideSpawnMenu]
+  components:
+  - type: ProjectileSpread
+    proto: F14PelletShotgun20Magnum
+    count: 8
+    spread: 20
+
+- type: entity
+  id: F14ShellShotgun20Magnum
+  parent: F14ShellShotgun20
+  name: magnum buckshot shell (20 gauge)
+  description: "Magnum buckshot: eight pellets instead of six, in a wider spread."
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    color: "#ffd27f"
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: base
+  - type: CartridgeAmmo
+    proto: F14PelletShotgun20MagnumSpread
+
+- type: entity
+  id: F14MagazineBox20gaugeMagnum
+  parent: F14MagazineBox20gauge
+  name: ammunition box (20 gauge magnum buckshot)
+  description: "Magnum buckshot: eight pellets instead of six, in a wider spread."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14ShellShotgun20Magnum
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 20-gauge-magnum
+
+- type: entity
+  id: F14PelletShotgun20Slug
+  parent: F14PelletShotgun20
+  name: pellet (20 gauge slug)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 36
+        Structural: 15
+    armorPenetration: 0.3
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 8
+    maxFalloffTiles: 16
+    minDamageMultiplier: 0.7
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+
+- type: entity
+  id: F14ShellShotgun20Slug
+  parent: F14ShellShotgun20
+  name: slug shell (20 gauge)
+  description: "A single heavy slug: hits hard at range, punches through armour and breaks doors."
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+    - state: slug
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: slug
+  - type: CartridgeAmmo
+    proto: F14PelletShotgun20Slug
+
+- type: entity
+  id: F14MagazineBox20gaugeSlug
+  parent: F14MagazineBox20gauge
+  name: ammunition box (20 gauge slug)
+  description: "A single heavy slug: hits hard at range, punches through armour and breaks doors."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14ShellShotgun20Slug
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 20-gauge-slug
+
+- type: entity
+  id: F14PelletShotgun20Coin
+  parent: F14PelletShotgun20
+  name: pellet (20 gauge coin shot)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 3
+        Slash: 3
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 3
+    maxFalloffTiles: 7
+    minDamageMultiplier: 0.25
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: shard
+      shader: unshaded
+
+- type: entity
+  id: F14PelletShotgun20CoinSpread
+  parent: F14PelletShotgun20Coin
+  categories: [HideSpawnMenu]
+  components:
+  - type: ProjectileSpread
+    proto: F14PelletShotgun20Coin
+    count: 8
+    spread: 30
+
+- type: entity
+  id: F14ShellShotgun20Coin
+  parent: F14ShellShotgun20
+  name: coin shot shell (20 gauge)
+  description: "Coin shot: eight bits of scrap and bottle caps. Cheap, wide and weak."
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+    - state: improvised
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: improvised
+  - type: CartridgeAmmo
+    proto: F14PelletShotgun20CoinSpread
+
+- type: entity
+  id: F14MagazineBox20gaugeCoin
+  parent: F14MagazineBox20gauge
+  name: ammunition box (20 gauge coin shot)
+  description: "Coin shot: eight bits of scrap and bottle caps. Cheap, wide and weak."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14ShellShotgun20Coin
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 20-gauge-coin
+
+- type: entity
+  id: F14PelletShotgun20BuckMagnum
+  parent: F14PelletShotgun20
+  name: pellet (20 gauge 3/0 buck magnum)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 13
+    armorPenetration: 0.1
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 5
+    maxFalloffTiles: 9
+    minDamageMultiplier: 0.35
+
+- type: entity
+  id: F14PelletShotgun20BuckMagnumSpread
+  parent: F14PelletShotgun20BuckMagnum
+  categories: [HideSpawnMenu]
+  components:
+  - type: ProjectileSpread
+    proto: F14PelletShotgun20BuckMagnum
+    count: 4
+    spread: 15
+
+- type: entity
+  id: F14ShellShotgun20BuckMagnum
+  parent: F14ShellShotgun20
+  name: 3/0 buck magnum shell (20 gauge)
+  description: "Hand-loaded 3/0 buck magnum: four heavy pellets that hit hard and push through armour a little."
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    color: "#c9a23a"
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: base
+  - type: CartridgeAmmo
+    proto: F14PelletShotgun20BuckMagnumSpread
+
+- type: entity
+  id: F14MagazineBox20gaugeBuckMagnum
+  parent: F14MagazineBox20gauge
+  name: ammunition box (20 gauge 3/0 buck magnum)
+  description: "Hand-loaded 3/0 buck magnum: four heavy pellets that hit hard and push through armour a little. Hand load."
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14ShellShotgun20BuckMagnum
+    capacity: 15
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 20-gauge-hand
+
+- type: entity
+  id: F14ShellShotgun12Flare
+  parent: F14ShellShotgun12
+  name: flare shell (12 gauge)
+  description: A single brightly burning flare for signalling and lighting up the area. It sticks in what it hits and can set it alight.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+    - state: flare
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: flare
+  - type: CartridgeAmmo
+    proto: PelletShotgunFlare
+
+- type: entity
+  id: F14MagazineBox12gaugeFlare
+  parent: F14MagazineBox12gauge
+  name: ammunition box (12 gauge flare)
+  description: Flare shells for signalling and lighting up the area.
+  components:
+  - type: BallisticAmmoProvider
+    proto: F14ShellShotgun12Flare
+    capacity: 15
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - sprite: WildWanamingo/Objects/Weapons/Guns/Ammunition/grade_labels.rsi
+      state: 12-gauge-flare
+
+- type: entity
+  parent: F14BlueprintBase
+  id: F14BlueprintHandLoads
+  name: hand loader's notebook
+  description: A battered notebook of hand-loading recipes, with charge weights scribbled in the margins. Keep it in an ammo workbench to make hand loads there.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    state: paper_words
+  - type: Blueprint
+    providedRecipes:
+    - F14MagazineBox5mmJSP
+    - F14MagazineBox45Super
+    - F14MagazineBox357JFP
+    - F14MagazineBox44SWC
+    - F14MagazineBox4570SWC
+    - F14MagazineBox556Match
+    - F14MagazineBox50Match
+    - F14MagazineBox12gaugeBuckMagnum
+    - F14MagazineBox20gaugeBuckMagnum
+  - type: StaticPrice
+    price: 750

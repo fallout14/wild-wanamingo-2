@@ -61,9 +61,11 @@
   - type: Sprite
     sprite: MojaveSun/Objects/Weapons/Guns/Revolvers/derringer.rsi
     state: base
-  - type: Item
+  - type: Item # WW Change (2026-11-14) - two cells (was three, inherited from the revolver shape); fits in a pocket
     sprite: MojaveSun/Objects/Weapons/Guns/Revolvers/derringer.rsi
-    size: Tiny
+    size: Small
+    shape:
+    - 0,0,1,0
   - type: Clothing
     sprite: Misfits/Legacy/DeltaV/Objects/Weapons/Guns/Revolvers/k38master.rsi # MS13 has no worn sprite; this one only has a belt sprite
     slots:

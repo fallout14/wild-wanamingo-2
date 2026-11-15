@@ -35,6 +35,14 @@ public sealed partial class WWScopeComponent : Component
     [DataField]
     public float DelayPerMagnification = 0.1f;
 
+    /// <summary>Movement multiplier while scoped in at Perception 1 (the worst).</summary>
+    [DataField]
+    public float ScopedSpeedAtMinPerception = 0.6f;
+
+    /// <summary>Movement multiplier while scoped in at Perception 10 (the least slowdown).</summary>
+    [DataField]
+    public float ScopedSpeedAtMaxPerception = 0.9f;
+
     /// <summary>How far ahead (in tiles) the view can go per 1x of magnification.</summary>
     [DataField]
     public float TilesPerMagnification = 2f;

@@ -136,3 +136,15 @@
     magnifications: [ 8 ]
   - type: StaticPrice
     price: 250
+
+# WW: a 1.5x reflex sight (2026-11-14). Fits any optic slot. Sprite: the scope item art until a reflex sight is drawn.
+- type: entity
+  parent: F14WeaponScopeAttachment
+  id: F14WeaponScopeReflex
+  name: 1.5x reflex sight
+  description: A compact red-dot sight with slight magnification. Wield the gun to look a little further ahead, without losing sight of what's close.
+  components:
+  - type: WWScope
+    magnifications: [ 1.5 ]
+  - type: StaticPrice
+    price: 60

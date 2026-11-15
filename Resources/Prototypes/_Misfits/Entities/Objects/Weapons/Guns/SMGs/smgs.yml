@@ -33,9 +33,9 @@
         - SuppressorAttachment
     # WW Change - attachment overlay placement
     visualOrientation: Horizontal
-    muzzleVisualOffset: 0.78125, 0.5
+    muzzleVisualOffset: 0.84375, 0.46875 # WW Change - moved for the Desert Rose sprite (muzzle at x 31, barrel top row 14)
   - type: Clothing
-    sprite: Nuclear14/Objects/Weapons/Guns/SMGs/9mmSMG.rsi
+    sprite: WildWanamingo/Objects/Weapons/Guns/uzi.rsi # WW Change - Desert Rose mini-Uzi sprite; was the shared 9mmSMG.rsi
     quickEquip: false
     slots:
     - Back
@@ -46,7 +46,7 @@
     - 0,0,2,1
     - 0,1,0,1
   - type: Sprite
-    sprite: Nuclear14/Objects/Weapons/Guns/SMGs/9mmSMG.rsi
+    sprite: WildWanamingo/Objects/Weapons/Guns/uzi.rsi # WW Change - Desert Rose mini-Uzi sprite; was the shared 9mmSMG.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -89,8 +89,6 @@
   - type: StaticPrice
     price: 50
 
-# Temporary artwork inherited from the Uzi; replace with dedicated MP5SD sprites.
-
 - type: entity
   parent: F14WeaponSMGUzi
   id: F14WeaponSMGMP5SD
@@ -111,6 +109,21 @@
         ent: null
         showEnts: False
         occludes: True
+  # WW Change start - Desert Rose MP5SD sprite (was the Uzi's)
+  - type: Clothing
+    sprite: WildWanamingo/Objects/Weapons/Guns/mp5sd.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/mp5sd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  # WW Change end
   - type: FirearmAttachmentHost
     showMuzzleVisual: false
     muzzleSlot:
