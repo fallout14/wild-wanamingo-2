@@ -368,7 +368,9 @@ entities:
       ambientLightColor: '#E8CD92FF'
     - type: LightCycle
       originalColor: '#E8CD92FF'
-      offset: 450
+      offset: 600
+      initialOffset: False
+      minLightLevel: 1.5
     - type: SunShadow
     - type: SunShadowCycle
       offset: 450
