@@ -1,0 +1,64 @@
+# WW (2026-11-14): the private test map, a cut of Yuma (Resources/Maps/_WW/test_map.yml). A planet with Yuma's day/night
+# cycle. Five factions: NCR, Legion, Town, Brotherhood of Steel and Tribe, with Yuma's slot counts.
+# Run it with the server cvar `game.map WWTestMap` (or `forcemap WWTestMap` in game), or the WWTestMapPool pool.
+
+- type: gameMapPool
+  id: WWTestMapPool
+  maps:
+  - WWTestMap
+
+- type: gameMap
+  id: WWTestMap
+  mapName: WW test map
+  mapPath: /Maps/_WW/test_map.yml
+  minPlayers: 0
+  stations:
+    WWTestMap:
+      stationProto: F14WastelandStation
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: WW test map
+      - type: StationJobs
+        availableJobs:
+          F14NCRCommander: [ 1, 1 ]
+          F14NCRPlatoonLeader: [ 1, 1 ]
+          F14NCRDoctor: [ 1, 1 ]
+          F14NCRRO: [ 1, 1 ]
+          F14NCRNCO: [ 2, 2 ]
+          F14NCRWS: [ 2, 2 ]
+          F14NCRMedic: [ 4, 4 ]
+          F14NCRCadet: [ 18, 18 ]
+          F14NCRGarrisonTrooper: [ 7, 7 ]
+          F14NCRVeteranRanger: [ 1, 1 ]
+          F14NCRPatrolRanger: [ 8, 8 ]
+          F14CaesarLegionCenturion: [ 1, 1 ]
+          F14CaesarLegionVexillarius: [ 1, 1 ]
+          F14CaesarLegionExplorer: [ 4, 4 ]
+          F14CaesarLegionHoundmaster: [ 1, 1 ]
+          F14CaesarLegionForgemaster: [ 1, 1 ]
+          F14CaesarLegionDean: [ 3, 3 ]
+          F14CaesarLegionLegionnaireRecruit: [ 16, 16 ]
+          F14CaesarLegionLegionnaireWarrior: [ 8, 8 ]
+          F14CaesarLegionLegionnaireVeteran: [ 6, 6 ]
+          F14CaesarLegionAuxilia: [ 4, 4 ]
+          F14CaesarLegionSlave: [ 6, 6 ]
+          F14BoSWestElderCommander: [ 1, 1 ]
+          F14BoSMidPaladinCommander: [ 1, 1 ]
+          F14BoSHeadKnight: [ 1, 1 ]
+          F14BoSWestScribe: [ 1, 1 ]
+          F14BoSScribe: [ 3, 3 ]
+          F14BoSPaladin: [ 3, 3 ]
+          F14BoSKnight: [ 3, 3 ]
+          F14BoSInitiate: [ 3, 3 ]
+          F14TownMayor: [ 1, 1 ]
+          F14TownSheriff: [ 1, 1 ]
+          F14TownDeputy: [ 8, 8 ]
+          F14WastelandBartender: [ 1, 1 ]
+          F14WastelandFarmer: [ 2, 2 ]
+          F14TownMechanic: [ 2, 2 ]
+          F14TownShopkeeper: [ 1, 1 ]
+          F14Townsperson: [ -1, -1 ]
+          F14TribalElder: [ 1, 1 ]
+          F14Tribal: [ 8, 8 ]
+          F14TribalFarmer: [ 4, 4 ]
+          F14TribalShaman: [ 3, 3 ]

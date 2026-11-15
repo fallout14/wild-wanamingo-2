@@ -1,0 +1,18 @@
+# WW (2026-11-14): admin/test workbench. Makes every F14/WW weapon, attachment, magazine, ammo box, cartridge and
+# energy cell for free and almost instantly (recipes in _WW/Recipes/Lathes/admin_arms.yml). Admin spawn only: there is
+# no construction graph, so players can't build one.
+
+- type: entity
+  parent: F14WorkbenchBase
+  id: WWWorkbenchAdminArms
+  name: admin arms workbench
+  suffix: Admin, test maps only
+  description: Makes any weapon, magazine or ammunition for free. For admins and test maps.
+  components:
+  - type: Sprite
+    state: weaponbench
+    color: "#ffb0b0"
+  - type: Lathe
+    timeMultiplier: 0.1
+    staticPacks:
+    - WWWorkbenchAdminArmsStatic

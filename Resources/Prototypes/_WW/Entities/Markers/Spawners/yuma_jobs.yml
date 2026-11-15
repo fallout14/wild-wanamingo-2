@@ -13,3 +13,318 @@
     - state: green
     - state: soldier
 
+
+# WW (2026-11-14): spawners for the NCR jobs in ncr_leftover_jobs.yml. Those jobs have no department or slots yet,
+# so these only matter once a map enables them.
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRChiefRanger
+  name: n c r chief ranger spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRChiefRanger
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/rangers.rsi
+    layers:
+    - state: green
+    - state: veteran
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRCitizen
+  name: n c r citizen spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRCitizen
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/caravan.rsi
+    layers:
+    - state: green
+    - state: trader
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCREngineer
+  name: n c r engineer spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCREngineer
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: engineer
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRExecutiveOfficer
+  name: n c r executive officer spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRExecutiveOfficer
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: lt
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRFieldRanger
+  name: n c r field ranger spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRFieldRanger
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/rangers.rsi
+    layers:
+    - state: green
+    - state: ranger
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRFirstSergeant
+  name: n c r first sergeant spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRFirstSergeant
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: sgt
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRHeavyTrooper
+  name: n c r heavy trooper spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRHeavyTrooper
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: soldier
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRHeavyTrooperLead
+  name: n c r heavy trooper lead spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRHeavyTrooperLead
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: sgt
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRLTCol
+  name: n c r lieutenant colonel spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRLTCol
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: lt
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRMPInvestigator
+  name: n c r m p investigator spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRMPinvestigator
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: ws
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRMajor
+  name: n c r major spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRMajor
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: lt
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRMilitaryPoliceCaptain
+  name: n c r military police captain spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRMilitaryPoliceCaptain
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: lt
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRMilitaryPoliceRecruit
+  name: n c r military police recruit spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRMilitaryPoliceRecruit
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: cadet
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRMilitaryPoliceSergeant
+  name: n c r military police sergeant spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRMilitaryPoliceSergeant
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: sgt
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRPrisoner
+  name: n c r prisoner spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRPrisoner
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: cadet
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRPrivateFirstClass
+  name: n c r private first class spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRPrivateFirstClass
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: soldier
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRProvost
+  name: n c r provost spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRProvost
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: lt
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRRanger
+  name: n c r ranger spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRRanger
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/rangers.rsi
+    layers:
+    - state: green
+    - state: ranger
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRRangerRecruitLeftover
+  name: n c r ranger recruit spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRRangerRecruit
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/rangers.rsi
+    layers:
+    - state: green
+    - state: recruit
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRSoldier
+  name: n c r private spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRSoldier
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: soldier
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRStaffSergeant
+  name: n c r staff sergeant spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRStaffSergeant
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: sgt
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRTrader
+  name: n c r trader spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRTrader
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/caravan.rsi
+    layers:
+    - state: green
+    - state: trader
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRVertibirdPilot
+  name: n c r vertibird pilot spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRVertibirdPilot
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: engineer
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointRangerChief
+  name: ranger chief spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14RangerChief
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/rangers.rsi
+    layers:
+    - state: green
+    - state: veteran
