@@ -16,7 +16,7 @@ namespace Content.Shared._Misfits.Weapons.TwinTube;
 /// <summary>
 /// Routes ammunition operations to the chamber and one of two contained ballistic providers.
 /// </summary>
-public sealed class TwinTubeAmmoProviderSystem : EntitySystem
+public sealed partial class TwinTubeAmmoProviderSystem : EntitySystem
 {
     [Dependency] private SharedContainerSystem _containers = default!;
     [Dependency] private SharedGunSystem _gun = default!;

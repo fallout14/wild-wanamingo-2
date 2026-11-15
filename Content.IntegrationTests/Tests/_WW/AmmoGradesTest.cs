@@ -17,6 +17,9 @@ namespace Content.IntegrationTests.Tests._WW;
 /// </summary>
 public sealed class AmmoGradesTest : GameTest
 {
+    private static readonly ProtoId<LatheRecipePackPrototype> AmmoBenchPack = "F14WorkbenchAmmobenchStatic";
+    private static readonly EntProtoId HandLoadNotebook = "F14BlueprintHandLoads";
+
     private static readonly string[] BenchBoxes =
     {
         "F14MagazineBox22JHP", "F14MagazineBox22Surplus", "F14MagazineBox5mmAP", "F14MagazineBox9mmJHP",
@@ -79,8 +82,8 @@ public sealed class AmmoGradesTest : GameTest
         var factory = Pair.Server.EntMan.ComponentFactory;
         await Pair.Server.WaitAssertion(() =>
         {
-            var bench = protos.Index<LatheRecipePackPrototype>("F14WorkbenchAmmobenchStatic").Recipes.Select(r => r.Id).ToHashSet();
-            Assert.That(protos.Index<EntityPrototype>("F14BlueprintHandLoads").TryGetComponent<BlueprintComponent>(out var notebook, factory));
+            var bench = protos.Index(AmmoBenchPack).Recipes.Select(r => r.Id).ToHashSet();
+            Assert.That(protos.Index(HandLoadNotebook).TryGetComponent<BlueprintComponent>(out var notebook, factory));
             var provided = notebook!.ProvidedRecipes.Select(r => r.Id).ToHashSet();
             Assert.Multiple(() =>
             {

@@ -35,6 +35,8 @@ public sealed partial class SharedFirearmAttachmentSystem : EntitySystem
     [Dependency] private Robust.Shared.Network.INetManager _net = default!; // WW Change
     [Dependency] private Robust.Shared.Prototypes.IPrototypeManager _proto = default!; // WW Change
 
+    private static readonly Robust.Shared.Prototypes.ProtoId<DamageTypePrototype> BluntDamage = "Blunt"; // WW Change
+
     private readonly HashSet<EntityUid> _pendingRefresh = new();
     private readonly Dictionary<EntityUid, Angle> _baseMeleeAnimationRotations = new();
 
@@ -83,7 +85,7 @@ public sealed partial class SharedFirearmAttachmentSystem : EntitySystem
         {
             var melee = new MeleeWeaponComponent
             {
-                Damage = new DamageSpecifier(_proto.Index<DamageTypePrototype>("Blunt"), 5), // replaced by the bayonet's damage
+                Damage = new DamageSpecifier(_proto.Index(BluntDamage), 5), // replaced by the bayonet's damage
                 Angle = Angle.Zero,
                 Animation = "WeaponArcThrust",
                 WideAnimation = "WeaponArcThrust",

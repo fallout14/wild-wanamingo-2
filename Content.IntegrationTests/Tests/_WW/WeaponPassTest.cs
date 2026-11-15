@@ -26,6 +26,11 @@ namespace Content.IntegrationTests.Tests._WW;
 /// </summary>
 public sealed class WeaponPassTest : GameTest
 {
+    private static readonly EntProtoId M240B = "F14WeaponM240B";
+    private static readonly EntProtoId M60 = "F14WeaponM60GPMG";
+    private static readonly EntProtoId Sks = "F14WeaponRifle762SKS";
+    private static readonly string OldInfiltrator = "F14WeaponSMG9mminfiltrator"; // removed ID: a plain string
+
     [Test]
     public async Task MagazinesAndChamberings()
     {
@@ -93,11 +98,11 @@ public sealed class WeaponPassTest : GameTest
             foreach (var gone in new[] { "F14WeaponPistolM1911", "F14WeaponPistolM1911Custom", "F14WeaponRangerPowerArmorLMG",
                          "F14WeaponRangerPowerArmorPistol", "F14WeaponUSHMG", "F14WeaponSniper308Canadian", "F14WeaponRifle762MarksmanCanadian" })
                 Assert.That(protos.HasIndex<EntityPrototype>(gone), Is.False, gone);
-            Assert.That(protos.Index<EntityPrototype>("F14WeaponM240B").Name, Is.EqualTo("M240B"));
-            Assert.That(protos.Index<EntityPrototype>("F14WeaponM240B").Description, Does.Not.Contain("egion"));
-            Assert.That(protos.Index<EntityPrototype>("F14WeaponM60GPMG").Description, Does.Not.Contain("egion"));
-            Assert.That(protos.Index<EntityPrototype>("F14WeaponRifle762SKS").Name, Is.EqualTo("Chinese carbine"));
-            Assert.That(protos.HasIndex<EntityPrototype>("F14WeaponSMG9mminfiltrator"), Is.False, "the infiltrator is now F14WeaponRifle556Infiltrator");
+            Assert.That(protos.Index(M240B).Name, Is.EqualTo("M240B"));
+            Assert.That(protos.Index(M240B).Description, Does.Not.Contain("egion"));
+            Assert.That(protos.Index(M60).Description, Does.Not.Contain("egion"));
+            Assert.That(protos.Index(Sks).Name, Is.EqualTo("Chinese carbine"));
+            Assert.That(protos.HasIndex<EntityPrototype>(OldInfiltrator), Is.False, "the infiltrator is now F14WeaponRifle556Infiltrator");
         });
     }
 

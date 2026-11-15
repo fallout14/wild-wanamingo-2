@@ -19,6 +19,11 @@ namespace Content.IntegrationTests.Tests._WW;
 /// </summary>
 public sealed class WeaponPass2Test : GameTest
 {
+    private static readonly string OldSledgeHammer = "F14SledgeHammer"; // removed ID: a plain string, not an EntProtoId
+    private static readonly EntProtoId Sledgehammer = "F14Sledgehammer";
+    private static readonly string FireAxeBase = "F14FireAxeBase"; // abstract: a plain string, not an EntProtoId
+    private static readonly EntProtoId BaseAxe = "F14BaseAxe";
+
     [Test]
     public async Task MeleeMerge()
     {
@@ -28,16 +33,16 @@ public sealed class WeaponPass2Test : GameTest
         {
             Assert.Multiple(() =>
             {
-                Assert.That(protos.HasIndex<EntityPrototype>("F14SledgeHammer"), Is.False);
-                var sledge = protos.Index<EntityPrototype>("F14Sledgehammer");
+                Assert.That(protos.HasIndex<EntityPrototype>(OldSledgeHammer), Is.False);
+                var sledge = protos.Index(Sledgehammer);
                 Assert.That(sledge.TryGetComponent<MeleeWeaponComponent>(out var melee, factory), Is.True);
                 Assert.That(melee!.Damage.DamageDict["Blunt"].Float(), Is.EqualTo(15f));
                 Assert.That(melee.AttackRate, Is.EqualTo(1.35f));
                 Assert.That(sledge.TryGetComponent<IncreaseDamageOnWieldComponent>(out var wield, factory), Is.True);
                 Assert.That(wield!.BonusDamage.DamageDict["Blunt"].Float(), Is.EqualTo(45f));
 
-                Assert.That(protos.HasIndex<EntityPrototype>("F14FireAxeBase"), Is.False, "abstract: F14FireAxe is the only fire axe");
-                Assert.That(protos.Index<EntityPrototype>("F14BaseAxe").Name, Is.EqualTo("wood axe"));
+                Assert.That(protos.HasIndex<EntityPrototype>(FireAxeBase), Is.False, "abstract: F14FireAxe is the only fire axe");
+                Assert.That(protos.Index(BaseAxe).Name, Is.EqualTo("wood axe"));
             });
         });
     }

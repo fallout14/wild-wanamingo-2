@@ -32,6 +32,10 @@ namespace Content.IntegrationTests.Tests._WW;
 /// </summary>
 public sealed class DesertRoseGunsTest : GameTest
 {
+    private static readonly EntProtoId Cartridge473 = "F14Cartridge473Caseless";
+    private static readonly EntProtoId Bullet473 = "F14Bullet473Caseless";
+    private static readonly EntProtoId Bullet303 = "F14Bullet303";
+
     private static readonly string[] Guns =
     {
         "F14WeaponPistol9mmBerettaM92", "F14WeaponPistol9mmBerettaM93R", "F14WeaponPistol9mmSigP220",
@@ -166,9 +170,9 @@ public sealed class DesertRoseGunsTest : GameTest
         var factory = Pair.Server.EntMan.ComponentFactory;
         await Pair.Server.WaitAssertion(() =>
         {
-            Assert.That(protos.Index<EntityPrototype>("F14Cartridge473Caseless").TryGetComponent<CartridgeAmmoComponent>(out var cart, factory));
+            Assert.That(protos.Index(Cartridge473).TryGetComponent<CartridgeAmmoComponent>(out var cart, factory));
             Assert.That(cart!.DeleteOnSpawn, Is.True, "caseless: no casing left behind");
-            Assert.That(protos.Index<EntityPrototype>("F14Bullet473Caseless").TryGetComponent<ProjectileComponent>(out var proj, factory));
+            Assert.That(protos.Index(Bullet473).TryGetComponent<ProjectileComponent>(out var proj, factory));
             Assert.That(proj!.ArmorPenetration, Is.EqualTo(0.2f));
         });
     }
@@ -343,7 +347,7 @@ public sealed class DesertRoseGunsTest : GameTest
         var factory = Pair.Server.EntMan.ComponentFactory;
         await Pair.Server.WaitAssertion(() =>
         {
-            Assert.That(protos.Index<EntityPrototype>("F14Bullet303").TryGetComponent<ProjectileComponent>(out var p303, factory));
+            Assert.That(protos.Index(Bullet303).TryGetComponent<ProjectileComponent>(out var p303, factory));
             Assert.That(p303!.Damage.DamageDict["Piercing"].Float(), Is.EqualTo(36f));
         });
     }
