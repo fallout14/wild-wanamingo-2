@@ -135,15 +135,43 @@
     offset: 0.5, 0
     layers:
     - state: fusion_generator
-    - state: fusion_generator_buttons # TODO: Tie to visualiser for lit and core status?
+    - state: fusion_generator_buttons
       shader: unshaded
+      map: [ "buttons" ]
     - state: fusion_generator_core
       shader: unshaded
+      map: [ "core" ]
+  # WW: actually runs on fusion cores now (see F14GeneratorLarge in _WW/Entities/Structures/Machines/generators.yml).
+  - type: FusionCoreGenerator
+    supplyRate: 5000
+  - type: ItemSlots
+    slots:
+      fusion_core:
+        name: fusion-core-generator-slot
+        startingItem: F14FusionCore
+        whitelist:
+          tags:
+          - F14FusionCore
+  - type: ContainerContainer
+    containers:
+      fusion_core: !type:ContainerSlot
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.FusionCoreGeneratorVisuals.State:
+        core:
+          NoCore: { visible: false }
+          Idle: { visible: true }
+          Running: { visible: true }
+        buttons:
+          NoCore: { visible: false }
+          Idle: { visible: true }
+          Running: { visible: true }
 
 - type: entity
   parent: F14BaseGeneratorPortable
   id: F14GeneratorFusionMini
-  description: A generator that uses heavy water for fusion power.
+  description: A sealed pre-war fusion generator. Still running on its original charge, and it'll outlast you.
   name: mini fusion generator
   components:
   - type: Fixtures
@@ -196,7 +224,7 @@
 - type: entity
   parent: F14GeneratorFusionMini
   id: F14GeneratorFusionEnclave
-  description: A generator that uses heavy water for fusion power.
+  description: A sealed U.S. Army fusion generator. Still running on its original charge.
   name: U.S. Army fusion generator
   components:
   - type: Fixtures
@@ -226,7 +254,7 @@
 - type: entity
   parent: F14GeneratorFusionMini
   id: F14GeneratorFusionMiniRusted
-  description: A generator that uses heavy water for fusion power. This ones rusted.
+  description: A sealed pre-war fusion generator, rusted over. Somehow still running on its original charge.
   name: mini fusion generator
   components:
   - type: Sprite
@@ -438,7 +466,7 @@
   name: gas powered generator
   description: |-
     A small generator capable of powering individual rooms.
-    Runs off welding fuel and is rated for up to 8 kW.
+    Runs off welding fuel and is rated for up to 8 kW. Outputs LV, MV or HV.
     Beware exhaust fumes.
   parent: PortableGeneratorBase
   id: F14PortableGeneratorWeldingFuel
@@ -504,15 +532,48 @@
     - type: PortableGenerator
       # Unreliable bugger
       startChance: 0.5
+    # WW: switchable between LV (default), MV and HV like Wizden's P.A.C.M.A.N., so it can feed a substation or
+    # breaker as well as lights directly. Use it empty-handed (alt verb) to cycle the output.
+    - type: PowerSwitchable
+      examineText: power-switchable-generator-examine
+      switchText: power-switchable-generator-switched
+      cables:
+      - voltage: LV
+        node: output_lv
+      - voltage: MV
+        node: output_mv
+      - voltage: HV
+        node: output_hv
+    - type: UseDelay
+      delay: 1
     - type: NodeContainer
       examinable: true
       nodes:
-        output:
+        output_lv:
           !type:CableDeviceNode
           nodeGroupID: Apc
+        output_mv:
+          !type:CableDeviceNode
+          nodeGroupID: MVPower
+          enabled: false
+        output_hv:
+          !type:CableDeviceNode
+          nodeGroupID: HVPower
+          enabled: false
+    - type: Electrified
+      onHandInteract: false
+      onInteractUsing: false
+      onBump: false
+      requirePower: true
+      highVoltageNode: output_hv
+      mediumVoltageNode: output_mv
+      lowVoltageNode: output_lv
     - type: PowerMonitoringDevice
       group: Generator
-      loadNode: output
+      loadNodes:
+      - output_lv
+      - output_mv
+      - output_hv
       sprite: Nuclear14/Structures/Power/power.rsi
       state: diesel-off
     - type: PowerSupplier

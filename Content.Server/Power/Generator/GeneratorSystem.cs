@@ -47,7 +47,9 @@ public sealed partial class GeneratorSystem : SharedGeneratorSystem
     {
         // Turn off generator if unanchored while running.
 
-        if (!component.On)
+        // WW: only on unanchoring. Spawning anchored raises this too, which turned off every generator mapped
+        // with `on: true` (the Misfits "running at round start" generators) before the round began.
+        if (!component.On || args.Anchored)
             return;
 
         SetFuelGeneratorOn(uid, false, component);

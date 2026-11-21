@@ -1,0 +1,35 @@
+# WW (2026-11-16): solar panels for the wasteland. Wizden's panels track a space "sun" and need a solar control
+# console; these sit fixed and follow the map's day/night cycle instead (WastelandSolarPanel): full output at
+# midday, nothing at night or under a roof. Wizden glass panel sprite (MS13 has no solar panel art).
+# HV output, like Wizden's: run red cable to a substation.
+
+- type: entity
+  parent: [ SolarPanelBasePhysSprite, StructureHealthMachineWeak ]
+  id: WWSolarPanel
+  name: solar panel
+  description: A pre-war photovoltaic panel. Makes power in daylight, nothing at night, and nothing under a roof.
+  components:
+  - type: PowerSupplier
+    supplyRate: 0 # set by WastelandSolarPanel
+    supplyRampTolerance: 500
+    supplyRampRate: 500
+  - type: WastelandSolarPanel
+    maxSupply: 1000
+  - type: Damageable
+    damageModifierSet: GlassMod
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ShardGlass:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

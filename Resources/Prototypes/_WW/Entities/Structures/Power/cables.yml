@@ -67,6 +67,7 @@
   description: A green low voltage power cable.
   components:
   - type: Sprite
+    color: "#FFFFFF" # Wizden's LV cable tints itself green; the MS13 sprite is already green
     sprite: MojaveSun/Structures/Power/Cables/lv_cable.rsi
     layers:
     - state: cable_0

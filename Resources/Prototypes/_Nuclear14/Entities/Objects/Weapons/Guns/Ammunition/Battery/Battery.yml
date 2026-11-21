@@ -49,46 +49,60 @@
 
 - type: entity
   name: fusion core
-  description: A heavy fusion core containing concentrated fusion fuel. Provides massive charge reserves for heavy energy weapons. Beam characteristics are determined by the weapon's optics.
+  # WW: Mojave Sun 13 sprite. Feeds the fusion core generators (FusionCoreGenerator); power armor later.
+  description: A heavy pre-war fusion core. Slots into fusion core generators and heavy energy weapons. Once it's spent, it's spent.
   id: F14FusionCore
   suffix: Full
   parent: F14BasePowerCell
   components:
   - type: Sprite
-    sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/fusion.rsi
+    sprite: MojaveSun/Objects/Power/fusion_core.rsi
     layers:
-      - map: [ "enum.PowerCellVisualLayers.Base" ]
-        state: empty
-      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
-        state: o2
-        shader: unshaded
+    - state: icon
+      map: [ "enum.PowerCellVisualLayers.Base" ]
+  - type: Item
+    size: Normal
+    sprite: MojaveSun/Objects/Power/fusion_core.rsi
+  - type: GenericVisualizer
+    visuals:
+      enum.BatteryVisuals.State:
+        enum.PowerCellVisualLayers.Base:
+          Full: { state: icon }
+          Neither: { state: icon }
+          Empty: { state: icon-dead }
   - type: Tag
     tags:
       - F14FusionCore
       - F14AmmoCell
-  - type: Item
-    size: Normal
   - type: Battery
     maxCharge: 5000
     startingCharge: 5000
 
 - type: entity
+  id: F14FusionCoreEmpty
+  parent: F14FusionCore
+  suffix: Empty
+  components:
+  - type: Battery
+    maxCharge: 5000
+    startingCharge: 0
+
+- type: entity
   name: energy cell
+  # WW: Mojave Sun 13 sprite. The only small energy cell; pulse pistols take it too.
   description: An energy cell, typically used as ammunition for small-arms energy weapons.
   id: F14PowerCellSmall
   suffix: Full
   parent: F14BasePowerCell
   components:
   - type: Sprite
-    sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/EC.rsi
+    sprite: MojaveSun/Objects/Weapons/Guns/Ammunition/energy_cell.rsi
     layers:
-      - map: [ "enum.PowerCellVisualLayers.Base" ]
-        state: empty
-        scale: 0.5, 0.5
-      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
-        state: o2
-        shader: unshaded
-        scale: 0.5, 0.5
+    - state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Guns/Ammunition/energy_cell.rsi
+  - type: GenericVisualizer # the MS13 sprite has no charge overlay
+    visuals: {}
   - type: Tag
     tags:
       - F14PowerCellSmall

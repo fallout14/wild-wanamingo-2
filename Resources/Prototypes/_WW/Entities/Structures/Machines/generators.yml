@@ -1,18 +1,75 @@
 # Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
 # Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
 
+# WW (2026-11-16): runs on fusion cores (FusionCoreGenerator) instead of welding fuel.
+# MS13's sprite has three states, used as: generator_off (red lamps) no core or a spent one,
+# generator_idle (green lamps) charged core but nothing drawing power, generator_on running.
 - type: entity
-  parent: F14GeneratorPrewar
+  parent: F14BaseGeneratorPortable
   id: F14GeneratorLarge
-  name: large generator
-  description: A big old generator that uses fuel to run.
+  name: fusion core generator
+  description: A big pre-war generator built around a single fusion core. Swap the core when it's spent.
   components:
   - type: Sprite
     sprite: MojaveSun/Structures/Machines/machinery_64x64.rsi
     offset: 0.5, 0.5
     layers:
     - state: generator_off
-      map: [ "enum.GeneratorVisualLayers.Body" ]
+      map: [ "enum.FusionCoreGeneratorVisuals.State" ]
   - type: Icon
     sprite: MojaveSun/Structures/Machines/machinery_64x64.rsi
-    state: generator_off
+    state: generator_idle
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,1.4,0.6"
+        density: 3000
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: PowerSupplier
+    supplyRate: 0 # set by FusionCoreGenerator
+    supplyRampRate: 1000
+    supplyRampTolerance: 1000
+  - type: FusionCoreGenerator
+    supplyRate: 10000
+  - type: ItemSlots
+    slots:
+      fusion_core:
+        name: fusion-core-generator-slot
+        startingItem: F14FusionCore
+        whitelist:
+          tags:
+          - F14FusionCore
+  - type: ContainerContainer
+    containers:
+      fusion_core: !type:ContainerSlot
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.FusionCoreGeneratorVisuals.State:
+        enum.FusionCoreGeneratorVisuals.State:
+          NoCore: { state: generator_off }
+          Idle: { state: generator_idle }
+          Running: { state: generator_on }
+  - type: PointLight
+    radius: 1.5
+    energy: 1
+    color: "#9cff8a"
+
+# Empty for mapping: bring your own core.
+- type: entity
+  parent: F14GeneratorLarge
+  id: F14GeneratorLargeEmpty
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      fusion_core:
+        name: fusion-core-generator-slot
+        whitelist:
+          tags:
+          - F14FusionCore

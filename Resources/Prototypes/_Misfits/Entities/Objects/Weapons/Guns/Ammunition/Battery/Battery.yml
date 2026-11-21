@@ -2,75 +2,23 @@
 
 - type: entity
   name: microfusion cell
-  description: A standard microfusion cell used as ammunition for energy weapons. The weapon's internal optics determine beam color and output — the cell simply provides charge.
+  # WW: Mojave Sun 13 sprite. The only microfusion cell: the red/green/blue/violet and pulse variants were folded into it.
+  description: A standard microfusion cell used as ammunition for energy weapons. The weapon's internal optics determine beam color and output; the cell simply provides charge.
   id: F14MicrofusionCell
   suffix: Full
   parent: F14BasePowerCell
   components:
   - type: Sprite
-    sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/microfusion.rsi
+    sprite: MojaveSun/Objects/Weapons/Guns/Ammunition/microfusion_cell.rsi
     layers:
-      - map: [ "enum.PowerCellVisualLayers.Base" ]
-        state: empty
-      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
-        state: o2
-        shader: unshaded
+    - state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Guns/Ammunition/microfusion_cell.rsi
+  - type: GenericVisualizer # the MS13 sprite has no charge overlay
+    visuals: {}
   - type: Battery
     maxCharge: 1200
     startingCharge: 1200
-
-- type: entity
-  name: microfusion cell (red)
-  description: A standard microfusion cell calibrated to emit a red laser beam.
-  id: F14MicrofusionCellRed
-  parent: F14MicrofusionCell
-  suffix: Full
-
-- type: entity
-  name: microfusion cell (green)
-  description: A tuned microfusion cell calibrated to emit a green laser beam.
-  id: F14MicrofusionCellGreen
-  parent: F14MicrofusionCell
-  suffix: Full
-
-- type: entity
-  name: microfusion cell (blue)
-  description: An advanced microfusion cell calibrated to emit a blue laser beam.
-  id: F14MicrofusionCellBlue
-  parent: F14MicrofusionCell
-  suffix: Full
-
-- type: entity
-  name: microfusion cell (violet)
-  description: An experimental microfusion cell calibrated to emit a violet laser beam.
-  id: F14MicrofusionCellViolet
-  parent: F14MicrofusionCell
-  suffix: Full
-
-#MARK: Fusion Core — single consolidated type
-# #Misfits Change - Consolidated from 4 colored variants into one generic fusion core.
-# Only the Laser Gatling accepts these (F14FusionCore tag). Weapon controls beam via override.
-# 5000 charge / 50 fireCost = 100 shots. Intended for heavy sustained-fire weapons.
-
-- type: entity
-  id: F14FusionCoreRed
-  parent: F14FusionCore
-  suffix: Full
-
-- type: entity
-  id: F14FusionCoreGreen
-  parent: F14FusionCore
-  suffix: Full
-
-- type: entity
-  id: F14FusionCoreBlue
-  parent: F14FusionCore
-  suffix: Full
-
-- type: entity
-  id: F14FusionCoreViolet
-  parent: F14FusionCore
-  suffix: Full
 
 #MARK: Electron Charge Pack — single player-facing type
 # The pack only provides charge. Weapon profiles determine damage and beam color.
