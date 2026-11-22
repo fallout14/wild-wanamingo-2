@@ -13,6 +13,10 @@
   - type: Clothing
     sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/PowerArmor/advanced2Tesla.rsi
   - type: Reflect
+    reflects: [ Energy, SmallCaliber, MediumCaliber ] # WW Change - Misfits caliber classes
+    reflectProbByType:
+      MediumCaliber: 0.1
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.325
     spread: 300
   - type: MultiToggleableClothing

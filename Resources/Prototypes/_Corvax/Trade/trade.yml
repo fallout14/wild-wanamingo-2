@@ -46,7 +46,7 @@
     radius: 2.5
     energy: 1
     color: "#b34747"
-    mask: /Textures/Effects/LightMasks/cone.png
+    lightMask: ConeSingle # WW Change - was the removed mask field
     autoRot: true
 
 - type: entity

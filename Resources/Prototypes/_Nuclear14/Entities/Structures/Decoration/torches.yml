@@ -19,8 +19,8 @@
   - type: Sprite
     netsync: false
     noRot: true
-    sprite: MojaveSun/Structures/Lighting/torches.rsi   # WW Change - Mojave Sun 13 sprites
-    state: torch_lit                                   # WW Change - Mojave Sun 13 sprites
+    sprite: Corvax/Structures/Decoration/torches.rsi   # WW Change - Wild Wanamingo's old wooden torch sprites
+    state: torch_lit                                   # WW Change - Wild Wanamingo's old wooden torch sprites
   - type: Appearance
   - type: Reactive
     groups:
@@ -44,7 +44,7 @@
       types:
         Heat: 0.1
   - type: FireVisuals
-    sprite: MojaveSun/Structures/Lighting/torches.rsi     # WW Change - Mojave Sun 13 sprites
+    sprite: Corvax/Structures/Decoration/torches.rsi     # WW Change - Wild Wanamingo's old wooden torch sprites
     normalState: torch_lit                               # Forge-Change
   - type: Damageable
     damageModifierSet: Wood
@@ -70,7 +70,7 @@
   components:
   - type: Sprite
     noRot: false
-    state: wall_torch_lite # WW Change - Mojave Sun 13 sprites
+    state: wall_torch_lite # WW Change - Wild Wanamingo's old wooden torch sprites
   - type: FireVisuals
-    sprite: MojaveSun/Structures/Lighting/torches.rsi # WW Change - Mojave Sun 13 sprites
+    sprite: Corvax/Structures/Decoration/torches.rsi # WW Change - Wild Wanamingo's old wooden torch sprites
     normalState: wall_torch_lite # Forge-Change

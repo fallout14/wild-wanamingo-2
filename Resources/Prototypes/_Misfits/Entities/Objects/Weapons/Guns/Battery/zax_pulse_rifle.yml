@@ -45,5 +45,6 @@
     maxAngle: 55
     angleIncrease: 2
     angleDecay: 14
-    soundGunshot:
-      collection: F14LaserAutoRifleGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotPulse
+  - type: GunRequiresWield # WW Change - two-handed only

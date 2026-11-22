@@ -167,7 +167,7 @@
   - type: Stamina
     baseCritThreshold: 120
   - type: Reflect # bare chassis ricochets 10% of bullets (Misfits: small/medium calibers; Wizden only splits energy/non-energy)
-    reflects: NonEnergy
+    reflects: [ SmallCaliber, MediumCaliber ] # WW Change - Misfits caliber classes
     reflectProb: 0.1
     spread: 90
     soundOnReflect:

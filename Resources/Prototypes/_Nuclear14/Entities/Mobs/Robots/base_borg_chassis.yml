@@ -228,7 +228,7 @@
     spriteLayer: light # old component defaulted to this
   - type: PointLight
     enabled: false
-    mask: /Textures/Effects/LightMasks/cone.png
+    lightMask: ConeSingle # WW Change - was the removed mask field
     autoRot: true
     radius: 4
     netsync: false
@@ -263,3 +263,4 @@
         - BorgModuleBotany
         - BorgModuleFireExtinguisher
         - BorgModuleTool
+  - type: ItemTogglePointLight # WW Change - HandheldLight needs this to light up on the client (point light is not net-synced)

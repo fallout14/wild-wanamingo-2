@@ -14,6 +14,8 @@
     size: Large
   - type: AmmoCounter
   - type: Gun
+    soundEmpty: # WW Change - Desert Rose energy weapon empty click
+      path: /Audio/WildWanamingo/DesertRose/Weapons/noammoenergy.ogg
     minAngle: 25
     maxAngle: 60
     angleIncrease: 4
@@ -179,8 +181,8 @@
     - 0,0,1,1
   - type: Gun
     fireRate: 2.0
-    soundGunshot:
-      collection: F14LaserPistolGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotAEP7
   - type: EyeCursorOffset
     maxOffset: 2
     pvsIncrease: 0.2
@@ -224,8 +226,8 @@
     steps: 5
     zeroVisible: true
   - type: Gun
-    soundGunshot:
-      collection: F14PlasmaPistolGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotPlasmaPistol
     fireRate: 1
   - type: EyeCursorOffset
     maxOffset: 2
@@ -267,8 +269,8 @@
     steps: 5
     zeroVisible: true
   - type: Gun
-    soundGunshot:
-      collection: F14PlasmaDefenderGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotPlasmaPistol
     fireRate: 1.5
   - type: EyeCursorOffset
     maxOffset: 2
@@ -299,6 +301,8 @@
   - type: BatterySelfRecharger
     autoRechargeRate: 25
   - type: Gun
+    soundEmpty: # WW Change - Desert Rose energy weapon empty click
+      path: /Audio/WildWanamingo/DesertRose/Weapons/noammoenergy.ogg
     minAngle: 25 # Corvax-Change
     maxAngle: 60 # Corvax-Change
     angleIncrease: 4 # Corvax-Change
@@ -334,8 +338,10 @@
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Battery/recharger_pistol.rsi
   - type: Gun
-    soundGunshot:
-      collection: F14RechargerPistolGunshot
+    soundEmpty: # WW Change - Desert Rose energy weapon empty click
+      path: /Audio/WildWanamingo/DesertRose/Weapons/noammoenergy.ogg
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotLaserPistol
   - type: BatteryAmmoProvider
     proto: RedLaser
     fireCost: 50
@@ -451,8 +457,8 @@
     zeroVisible: true
   - type: Gun
     fireRate: 3.5
-    soundGunshot:
-      collection: F14PlasmaAutoRifleGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotPlasmaRifle
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -710,8 +716,8 @@
     zeroVisible: true
   - type: Gun
     fireRate: 2
-    soundGunshot:
-      collection: F14PlasmaAutoRifleGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotPlasmaRifle
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -764,8 +770,8 @@
             - F14MicrofusionCell
   - type: Gun
     fireRate: 1.5
-    soundGunshot:
-      collection: F14PlasmaAutoRifleGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotPlasmaRifle
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -819,8 +825,8 @@
     zeroVisible: true
   - type: Gun
     fireRate: 2.5
-    soundGunshot:
-      collection: F14PlasmaAutoRifleGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotPlasmaRifle
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -965,21 +971,15 @@
     - state: mag-unshaded-4
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
-  - type: ItemToggle
-    onUse: false
-    soundActivate:
-      path: /Audio/Misfits/Legacy/Weapons/spinon.ogg
-      params:
-        volume: 1
-    soundDeactivate:
-      path: /Audio/Misfits/Legacy/Weapons/spinoff.ogg
-      params:
-        volume: 1
-  - type: ItemToggleActiveSound
-    activeSound:
-      path: /Audio/Misfits/Legacy/Weapons/spinloop.ogg
-  - type: UseDelay
-    delay: 1.5
+  # WW Change start - hold the trigger: a short spin-up, then fire; heavy to carry, far heavier while spinning
+  # (was Misfits' MinigunToggle: switch the spin on by hand, one shot a second without it)
+  - type: SpinUpGun
+  - type: HeldSpeedModifier
+    walkModifier: 0.65
+    sprintModifier: 0.65
+    mirrorClothingModifier: false
+  - type: MultiHandedItem
+  # WW Change end
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Battery/laser_gatling.rsi
     quickEquip: false
@@ -1002,17 +1002,14 @@
         whitelist:
           tags:
             - F14FusionCore # #Misfits Change - Gatling now only accepts fusion cores, not standard MFCs
-  - type: MinigunToggle
-    ActivatedFireRate: 8
-    InactiveWeaponFireRate: 1
   - type: Gun
     minAngle: 2
     maxAngle: 12
     angleIncrease: 4
     angleDecay: 12
     fireRate: 8
-    soundGunshot:
-      collection: F14LaserGatlingGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotGatling
     selectedMode: FullAuto
     availableModes:
     - FullAuto

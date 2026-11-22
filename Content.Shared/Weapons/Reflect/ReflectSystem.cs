@@ -103,7 +103,7 @@ public sealed partial class ReflectSystem : EntitySystem
         if (!TryComp<ReflectiveComponent>(projectile, out var reflective) ||
             (reflector.Comp.Reflects & reflective.Reflective) == 0x0 ||
             !_toggle.IsActivated(reflector.Owner) ||
-            !_random.Prob(reflector.Comp.ReflectProb) ||
+            !_random.Prob(GetReflectProb(reflector.Comp, reflective.Reflective)) || // WW Change - per-type chance
             !TryComp<PhysicsComponent>(projectile, out var physics))
         {
             return false;
@@ -151,7 +151,7 @@ public sealed partial class ReflectSystem : EntitySystem
     {
         if ((reflector.Comp.Reflects & hitscanReflectType) == 0x0 ||
             !_toggle.IsActivated(reflector.Owner) ||
-            !_random.Prob(reflector.Comp.ReflectProb))
+            !_random.Prob(GetReflectProb(reflector.Comp, hitscanReflectType))) // WW Change - per-type chance
         {
             newDirection = null;
             return false;
@@ -169,6 +169,20 @@ public sealed partial class ReflectSystem : EntitySystem
 
         return true;
     }
+
+    // WW Change start - Misfits' per-type chance: the first matching type with its own chance wins.
+    public static float GetReflectProb(ReflectComponent reflect, ReflectType shot)
+    {
+        var matched = shot & reflect.Reflects;
+        foreach (var (type, prob) in reflect.ReflectProbByType)
+        {
+            if ((matched & type) != 0)
+                return prob;
+        }
+
+        return reflect.ReflectProb;
+    }
+    // WW Change end
 
     private void PlayAudioAndPopup(ReflectComponent reflect, EntityUid user)
     {

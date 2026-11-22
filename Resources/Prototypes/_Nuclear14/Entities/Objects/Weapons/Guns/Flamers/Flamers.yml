@@ -66,6 +66,8 @@
   description: A light flamethrower designed for close quarters combat, perfect for your wasteland BBQ.
   components:
   - type: Gun
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotFlamer
     cameraRecoilScalar: 0 #no recoil
     fireRate: 20
     selectedMode: FullAuto

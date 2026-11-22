@@ -8,7 +8,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Reflective # #Misfits Change Add: .22lr is sub-5.56mm class; ricochets off power armor.
-    reflective: [ NonEnergy ]
+    reflective: [ SmallCaliber, NonEnergy ] # WW Change - Misfits caliber classes
   - type: Projectile
     damage:
       types:

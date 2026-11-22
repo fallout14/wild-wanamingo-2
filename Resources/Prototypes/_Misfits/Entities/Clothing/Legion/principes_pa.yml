@@ -61,7 +61,10 @@
   - type: ExplosionResistance
     damageCoefficient: 0.12 # equal to T51. considering 1 PA role vs NCR's 2 PA roles plus salvaged T60???
   - type: Reflect
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber, MediumCaliber ] # WW Change - Misfits caliber classes
+    reflectProbByType:
+      MediumCaliber: 0.15
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.4
     spread: 90
   - type: EmitsSoundOnMove # Corvax-Change

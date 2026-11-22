@@ -264,7 +264,7 @@
         Bloodloss: -1.0
         Radiation: -1.0
   - type: Reflect # half of all bullets glance off its hide
-    reflects: NonEnergy
+    reflects: [ SmallCaliber, MediumCaliber ] # WW Change - Misfits caliber classes
     reflectProb: 0.5
     soundOnReflect:
       collection: MetalBulletImpact

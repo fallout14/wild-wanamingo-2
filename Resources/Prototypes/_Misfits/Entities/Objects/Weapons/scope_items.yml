@@ -69,6 +69,12 @@
   name: night vision rifle scope
   description: An amplified-light optic that automatically engages night vision while scoped.
   components:
+  - type: NightVision # WW Change - seen through while scoped in (Content.Client/_WW/Weapons/Scopes/WWScopeVisionSystem)
+    relayOverlay: true
+    lightingColor: "#7CFF7C80"
+    overlayColor: "#1F7F1F30"
+    noiseAmount: 0.1
+    noiseMultiplier: 1
   - type: StaticPrice
     price: 350
 
@@ -78,6 +84,10 @@
   name: thermal rifle scope
   description: An advanced heat-detecting optic that automatically engages thermal vision while scoped.
   components:
+  - type: ThermalVision # WW Change - seen through while scoped in (Content.Client/_WW/Weapons/Scopes/WWScopeVisionSystem)
+    isEquipment: true
+    isActive: true
+    toggleAction: null
   - type: StaticPrice
     price: 600
 

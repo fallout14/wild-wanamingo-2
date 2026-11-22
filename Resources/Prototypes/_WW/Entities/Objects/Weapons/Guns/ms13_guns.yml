@@ -28,6 +28,9 @@
     sprite: MojaveSun/Objects/Weapons/Guns/Pistols/police10mm.rsi
   - type: FirearmAttachmentHost
     muzzleVisualOffset: 0.78125, 0.625
+  - type: Gun
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot10mm
 
 - type: entity
   parent: F14WeaponPistol10mm
@@ -46,6 +49,9 @@
     sprite: MojaveSun/Objects/Weapons/Guns/Pistols/mil10mm.rsi
   - type: FirearmAttachmentHost
     muzzleVisualOffset: 0.84375, 0.65625
+  - type: Gun
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot10mm
 
 # MARK: Derringers
 
@@ -87,8 +93,8 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot357
   - type: StaticPrice
     price: 60
 
@@ -104,6 +110,9 @@
     sprite: MojaveSun/Objects/Weapons/Guns/Revolvers/derringer_t.rsi
   - type: StaticPrice
     price: 150
+  - type: Gun
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot357
 
 # MARK: Wattz 1000 laser pistol
 
@@ -138,6 +147,9 @@
     sprite: Objects/Weapons/Guns/Battery/taser.rsi # MS13 has no worn sprite for it
   - type: StaticPrice
     price: 60
+  - type: Gun
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotAEP7
 
 # MARK: Nail gun
 
@@ -151,10 +163,10 @@
     damage:
       types:
         Piercing: 6
-  - type: Sprite # the nail itself flies, not a bullet
+  - type: Sprite # the nail itself flies, not a bullet; 'projectile' points up so it flies point first
     sprite: MojaveSun/Objects/Weapons/Guns/Ammunition/nail.rsi
     layers:
-    - state: base
+    - state: projectile
   - type: BallisticDamageFalloff # brutal falloff: full damage up close, almost nothing past 5 tiles
     falloffStartTiles: 1.5
     maxFalloffTiles: 5.0

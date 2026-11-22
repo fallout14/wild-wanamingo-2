@@ -1,0 +1,165 @@
+# Desert Rose 2 ambience (Reports/porter/desertrose/import_sounds.py). Ambient music is global, so these play
+# by where the player is: anywhere on the planet, indoors (half the nearby floor is an indoor floor) and
+# underground (cave dirt, basalt, tunnels). Priorities sit above Wizden's station rules (Maintenance 2,
+# Mining 1) so those don't play on the wasteland.
+
+- type: soundCollection
+  id: WWAmbienceWasteland
+  files:
+  - /Audio/WildWanamingo/DesertRose/Ambience/wasteland.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_1.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_2.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/bird_1.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/bird_2.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/bird_3.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/bird_4.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/bird_5.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/bird_6.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/bird_7.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/bird_8.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/dog_distant_1.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/dog_distant_2.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/dog_distant_3.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/rattlesnake_1.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/rattlesnake_2.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/rattlesnake_3.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/battle_1.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/battle_2.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/battle_3.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/artillery.ogg
+
+- type: soundCollection
+  id: WWAmbienceIndoors
+  files:
+  - /Audio/WildWanamingo/DesertRose/Ambience/building.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/shack.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/warehouse.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_3.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_4.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_5.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_6.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_7.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_8.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_10.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_11.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_12.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_13.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_14.ogg
+
+- type: soundCollection
+  id: WWAmbienceUnderground
+  files:
+  - /Audio/WildWanamingo/DesertRose/Ambience/cave.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/drops.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/sewer.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/vaulttec_vault.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/enclave_vault.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_9.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_15.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_16.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_17.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_18.ogg
+  - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_19.ogg
+
+- type: ambientMusic
+  id: WWWasteland
+  sound:
+    params:
+      volume: -10
+    collection: WWAmbienceWasteland
+  fadeIn: true
+  interruptable: true
+  priority: 3
+  conditions:
+  - !type:OnMapGridCondition
+  - !type:IsGhostCondition
+    inverted: true
+
+- type: ambientMusic
+  id: WWIndoors
+  sound:
+    params:
+      volume: -10
+    collection: WWAmbienceIndoors
+  fadeIn: true
+  interruptable: true
+  priority: 4
+  conditions:
+  - !type:NearbyTilesPercentCondition
+    ignoreAnchored: true
+    percent: 0.5
+    range: 3
+    tiles:
+    - F14FloorMS13WoodCommon
+    - F14FloorMS13WoodCommonDamaged
+    - F14FloorMS13WoodFancy
+    - F14FloorMS13WoodFancyDamaged
+    - F14FloorMS13WoodMosaic
+    - F14FloorMS13WoodMosaicDamaged
+    - F14FloorMS13WoodWide
+    - F14FloorMS13WoodWideDamaged
+    - FloorWoodTile
+    - FloorBrokenWood
+    - F14FloorMS13CarpetBlue
+    - F14FloorMS13CarpetFancyBlue
+    - F14FloorMS13CarpetFancyGreen
+    - F14FloorMS13CarpetFancyRed
+    - F14FloorMS13CarpetGreen
+    - F14FloorMS13CarpetRed
+    - F14FloorMS13CarpetViolet
+    - F14FloorMS13TileBlack
+    - F14FloorMS13TileBlackFull
+    - F14FloorMS13TileBlackLarge
+    - F14FloorMS13TileBrown
+    - F14FloorMS13TileCafe
+    - F14FloorMS13TileCeramic
+    - F14FloorMS13TileCeramicBroken
+    - F14FloorMS13TileCheck
+    - F14FloorMS13TileConcreteSmall
+    - F14FloorMS13TileFancy
+    - F14FloorMS13TileGreen
+    - F14FloorMS13TileGreenFull
+    - F14FloorMS13TileGrey
+    - F14FloorMS13TileGreyLarge
+    - F14FloorMS13TileGreyLong
+    - F14FloorMS13TileLongBlue
+    - F14FloorMS13TileNavy
+    - F14FloorMS13TileNavyFull
+    - F14FloorMS13TileNavyLarge
+    - F14FloorMS13TileOrnate
+    - F14FloorMS13TileSierra
+    - F14FloorMS13TileSierraBroken
+    - F14FloorMS13TileWhiteFull
+    - F14FloorMS13TileWhiteLarge
+    - F14FloorMS13MetalGrate
+    - F14FloorMS13MetalIndustrial
+    - F14FloorMS13MetalSolid
+    - F14FloorMS13MetalTile
+    - F14FloorMS13ConcreteIndustrial
+    - F14FloorMS13ConcreteIndustrialAlt
+    - F14FloorMS13ConcreteIndustrialSplit
+    - F14FloorRubbleIndoors
+  - !type:IsGhostCondition
+    inverted: true
+
+- type: ambientMusic
+  id: WWUnderground
+  sound:
+    params:
+      volume: -10
+    collection: WWAmbienceUnderground
+  fadeIn: true
+  interruptable: true
+  priority: 6
+  conditions:
+  - !type:NearbyTilesPercentCondition
+    ignoreAnchored: true
+    percent: 0.4
+    range: 3
+    tiles:
+    - F14FloorDirtIndoors
+    - FloorCave
+    - FloorBasalt
+    - F14FloorMetalTunnelRusty
+  - !type:IsGhostCondition
+    inverted: true

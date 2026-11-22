@@ -204,11 +204,15 @@
 
 # New Soda
 
+# WW Change - not parented to Wizden's glass bottle (DrinkBottleGlassBase): Destructible thresholds stack through
+# inheritance, so its BrokenBottle spawn came along with the Nuka-Cola one and a bottle broke into two. The
+# components it gave are copied here instead. The glass material base still supplies the break sound and spill.
 - type: entity
-  parent: F14DrinkBottleBaseEmpty50
+  parent: [ DrinkBaseMaterialGlass, SolutionNormal, DrinkBase, DrinkBaseOpenable, DrinkBaseEmptyTrash ]
   id: F14DrinkNukaColaEmpty
   name: Nuka-Cola bottle
   description: The leading cola since 2044.
+  suffix: empty
   components:
   - type: Tag
     tags:
@@ -216,9 +220,15 @@
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola_new.rsi
     state: empty
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 50
   - type: Openable # Forge-Change
+    sound:
+      collection: bottleOpenSounds
     closeable: false
-  - type: SpawnWhenOpened # Forge-Add
+  - type: SpawnWhenOpened # Forge-Add; also gives the cap if the bottle breaks unopened
     prototypes:
     - id: F14CurrencyCap
       amount: 1
@@ -228,24 +238,18 @@
         !type:DamageTrigger
         damage: 5
       behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-      - !type:SpillBehavior { }
       - !type:SpawnEntitiesBehavior
         spawn:
           F14DrinkNukaColaBroken:
             min: 1
             max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        transferForensics: true
+  - type: Tool
+    qualities:
+    - Rolling
+    speedModifier: 0.75
   - type: Item
     size: Small
-  - type: DamageOnLand
-    ignoreResistances: true
-    damage:
-      types:
-        Blunt: 5
   - type: MolotovConvertible
     wickOffset: "0,-0.15625" # Five pixels down for the short empty-bottle sprite.
 

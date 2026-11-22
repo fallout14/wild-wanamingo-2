@@ -58,7 +58,10 @@ public sealed partial class MultiToggleableClothingRadialMenu : RadialMenu
                 AttachedClothingId = attached.Key
             };
 
-            var spriteView = new SpriteView()
+            // WW Change start - draw the piece from its prototype. The live piece draws nothing once it is deployed
+            // (worn items are hidden), which left an empty, unfindable button for every piece you had out.
+            // Stowed pieces are dimmed so you can tell at a glance which ones are deployed.
+            var spriteView = new EntityPrototypeView()
             {
                 SetSize = new Vector2(48, 48),
                 VerticalAlignment = VAlignment.Center,
@@ -66,7 +69,10 @@ public sealed partial class MultiToggleableClothingRadialMenu : RadialMenu
                 Stretch = SpriteView.StretchMode.Fill
             };
 
-            spriteView.SetEntity(attached.Key);
+            spriteView.SetPrototype(_entityManager.GetComponentOrNull<MetaDataComponent>(attached.Key)?.EntityPrototype?.ID);
+            if (clothingContainer.Contains(attached.Key))
+                spriteView.Modulate = Color.White.WithAlpha(0.5f);
+            // WW Change end
 
             button.AddChild(spriteView);
             main.AddChild(button);

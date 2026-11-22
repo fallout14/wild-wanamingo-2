@@ -91,7 +91,7 @@
     color: red
     radius: 5
     softness: 2
-    mask: /Textures/Effects/LightMasks/cone.png
+    lightMask: ConeSingle # WW Change - was the removed mask field
     autoRot: true
     # Misfits Change /Fix: netsync must be enabled so clients can see the light toggle during overload flash.
 

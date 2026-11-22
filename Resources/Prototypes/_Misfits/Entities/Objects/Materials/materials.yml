@@ -438,8 +438,7 @@
       F14Brick: 100
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi
-    state: adobe_brick
-    color: "#8b4513"
+    state: adobe_brick # WW Change - no brown tint: tinted, the clay brick read as wood
   - type: Item
     size: Small
   - type: Tag

@@ -17,8 +17,8 @@
     availableModes:
     - FullAuto
     - SemiAuto
-    soundGunshot:
-      collection: F14ShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotAuto5
   - type: GunRequiresWield
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/blowback.rsi
@@ -102,8 +102,8 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    soundGunshot:
-      collection: F14ShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotShotgun
   - type: BallisticAmmoProvider
     whitelist:
       tags:

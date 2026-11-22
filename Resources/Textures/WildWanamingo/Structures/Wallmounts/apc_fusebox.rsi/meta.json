@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Fusebox by INFRARED_BARON for MS13 (Nuclear14/Structures/Wallmounts/fuseboxes.rsi); rearranged into APC states with indicator lamps for Wild Wanamingo",
+  "size": {
+    "x": 32,
+    "y": 48
+  },
+  "states": [
+    {
+      "name": "base",
+      "directions": 4
+    },
+    {
+      "name": "panel",
+      "directions": 4
+    },
+    {
+      "name": "frame",
+      "directions": 4
+    },
+    {
+      "name": "broken",
+      "directions": 4
+    },
+    {
+      "name": "display-lack",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "display-charging",
+      "directions": 4,
+      "delays": [
+        [
+          0.4,
+          0.4
+        ],
+        [
+          0.4,
+          0.4
+        ],
+        [
+          0.4,
+          0.4
+        ],
+        [
+          0.4,
+          0.4
+        ]
+      ]
+    },
+    {
+      "name": "display-full",
+      "directions": 4
+    },
+    {
+      "name": "display-remote",
+      "directions": 4
+    },
+    {
+      "name": "display-tripped",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "emag-unlit",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "channel-on",
+      "directions": 4
+    },
+    {
+      "name": "channel-disconnected",
+      "directions": 4
+    },
+    {
+      "name": "channel-tripped",
+      "directions": 4
+    },
+    {
+      "name": "static"
+    }
+  ]
+}

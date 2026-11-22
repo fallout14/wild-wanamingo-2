@@ -81,8 +81,8 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     fireRate: 8
-    soundGunshot:
-      collection: F14Pistol10mmGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot10mm
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -218,8 +218,8 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     fireRate: 4 # #Misfits Tweak - entry 12.7mm SMG, was 6
-    soundGunshot:
-      collection: F14Pistol12mmGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotMagnum
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -277,8 +277,8 @@
     cameraRecoilScalar: 3 # WW Change - pipe guns kick hard
     angleIncrease: 8 # WW Change - was 4
     fireRate: 3 # #Misfits Tweak - was 4
-    soundGunshot:
-      collection: F14Pistol12mmGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotMagnum
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -357,8 +357,8 @@
     cameraRecoilScalar: 3 # WW Change - pipe guns kick hard
     angleIncrease: 8 # WW Change - was 4
     fireRate: 6
-    soundGunshot:
-      collection: F14Pistol10mmGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot10mm
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -461,8 +461,8 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     fireRate: 5 # #Misfits Tweak - was 7; 12.7mm now hits for 25
-    soundGunshot:
-      collection: F14Pistol12mmGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotMagnum
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -525,8 +525,8 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     fireRate: 8.5
-    soundGunshot:
-      collection: F14Pistol9mmGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot9mm
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -581,8 +581,8 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     fireRate: 5 # #Misfits Tweak - was 7; 12.7mm now hits for 25
-    soundGunshot:
-      collection: F14Pistol12mmGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotMagnum
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -666,8 +666,8 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     fireRate: 5 # #Misfits Tweak - was 7; 12.7mm now hits for 25
-    soundGunshot:
-      collection: F14Pistol12mmGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotMagnum
     selectedMode: FullAuto
     availableModes:
     - FullAuto

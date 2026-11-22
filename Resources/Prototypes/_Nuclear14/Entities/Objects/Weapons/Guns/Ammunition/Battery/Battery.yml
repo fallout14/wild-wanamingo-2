@@ -70,6 +70,7 @@
           Full: { state: icon }
           Neither: { state: icon }
           Empty: { state: icon-dead }
+  - type: BatterySpentVisuals # WW Change - looks spent below 1% (a gun can't drain it to exactly zero)
   - type: Tag
     tags:
       - F14FusionCore

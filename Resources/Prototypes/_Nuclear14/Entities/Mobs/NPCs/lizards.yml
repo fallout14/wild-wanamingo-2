@@ -758,7 +758,10 @@
       500: Critical
       750: Dead
   - type: Reflect
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber, MediumCaliber ] # WW Change - Misfits caliber classes
+    reflectProbByType:
+      SmallCaliber: 0.4
+      MediumCaliber: 0.2
     reflectProb: 0.3
   - type: SlowOnDamage
     speedModifierThresholds:

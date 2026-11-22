@@ -37,8 +37,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 2
-    soundGunshot:
-      collection: F14LeverCarbineGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot44
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -89,8 +89,8 @@
         Piercing: 7
   - type: Gun
     fireRate: 2.5 # #Misfits Tweak - mid-tier lever action, was 1.2
-    soundGunshot:
-      collection: F14LeverRifleGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotCowboyRepeater
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4
@@ -153,6 +153,8 @@
     minAngle: -23
     maxAngle: -104
   - type: Gun
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotBolt
     fireRate: 1.5
   - type: BallisticAmmoProvider
     whitelist:
@@ -213,8 +215,8 @@
     maxAngle: 45
     angleIncrease: 4
     angleDecay: 16
-    soundGunshot:
-      collection: F14MarksmanGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotHunting
     fireRate: 1
     selectedMode: SemiAuto
     availableModes:
@@ -299,8 +301,8 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    soundGunshot:
-      collection: F14LeverCarbineGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotCowboyRepeater
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -361,8 +363,8 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    soundGunshot:
-      collection: F14SniperHuntingGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotHunting
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -403,8 +405,8 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    soundGunshot:
-      collection: F14SniperVarmintGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotVarmint
   # WW Change - the inherited bonus (-23/-104) gave a wielded max spread of -24 degrees, below the minimum,
   # which trips Wizden's recoil assert on some shots. Wielded it's now 0-4 degrees: still pin-accurate.
   - type: GunWieldBonus
@@ -473,8 +475,8 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    soundGunshot:
-      collection: F14OldCarbineGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotVarmint
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -583,8 +585,8 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    soundGunshot:
-      collection: F14BattleRifleGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotHunting
   - type: ItemSlots
     slots:
       gun_magazine:

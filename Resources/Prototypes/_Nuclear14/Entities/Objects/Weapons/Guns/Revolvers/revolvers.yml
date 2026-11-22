@@ -44,8 +44,8 @@
     angleIncrease: 0.5
     angleDecay: 4
     fireRate: 3
-    soundGunshot:
-      collection: F14Revolver9mmGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotNinemil
   - type: StaticPrice
     price: 15
 
@@ -70,8 +70,8 @@
     capacity: 8
   - type: Gun
     fireRate: 3
-    soundGunshot:
-      collection: F14Revolver10mmGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot10mm
   - type: StaticPrice
     price: 25
 
@@ -96,8 +96,8 @@
     proto: F14CartridgePistol45
   - type: Gun
     fireRate: 3
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot45
   - type: StaticPrice
     price: 75
 
@@ -131,8 +131,8 @@
   - type: Gun
     fireRate: 2
     resetOnHandSelected: false
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot44
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Revolvers/captainmagnum.rsi
   - type: Clothing
@@ -185,8 +185,8 @@
     opticVisualState: revolver_scope
     opticVisualOffset: 0.1875, 0.6875
   - type: Gun
-    soundGunshot:
-      collection: F14HunterRevolverGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotSequoia
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Revolvers/hunt_revolver.rsi
   - type: Clothing
@@ -209,8 +209,8 @@
   - type: Gun
     fireRate: 2
     resetOnHandSelected: false
-    soundGunshot:
-      collection: F14HunterRevolverGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotSequoia
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Revolvers/wild_whisper.rsi
   - type: Clothing
@@ -245,8 +245,8 @@
   - type: Gun
     fireRate: 2
     resetOnHandSelected: false
-    soundGunshot:
-      collection: F14HunterRevolverGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotSequoia
   - type: RevolverAmmoProvider
     whitelist:
       tags:
@@ -276,8 +276,8 @@
     ammoSlots: [null, null, null, null]
     capacity: 4
   - type: Gun
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot44Revolver
     fireRate: 1
   - type: StaticPrice
     price: 40
@@ -300,8 +300,8 @@
     proto: F14Cartridge44Magnum
     capacity: 6
   - type: Gun
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot44Revolver
     fireRate: 1.5
   - type: StaticPrice
     price: 50
@@ -326,8 +326,8 @@
     ammoSlots: [null, null, null, null, null, null, null, null]
     capacity: 8
   - type: Gun
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot44Revolver
     fireRate: 2
   - type: StaticPrice
     price: 60
@@ -345,8 +345,8 @@
   - type: Gun
     fireRate: 1
     resetOnHandSelected: false
-    soundGunshot:
-      collection: F14HunterRevolverGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotSequoia
   - type: RevolverAmmoProvider
     whitelist:
       tags:
@@ -372,8 +372,8 @@
   - type: Gun
     fireRate: 2
     resetOnHandSelected: false
-    soundGunshot:
-      collection: F14HunterRevolverGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotSequoia
   - type: RevolverAmmoProvider
     whitelist:
       tags:

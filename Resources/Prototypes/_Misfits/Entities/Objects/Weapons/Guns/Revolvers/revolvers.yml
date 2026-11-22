@@ -30,8 +30,8 @@
     angleIncrease: 1.5
     angleDecay: 5
     fireRate: 2
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot44
   - type: GunDamageFalloffOverride # short barrel
     falloffStartTiles: 5
     maxFalloffTiles: 10
@@ -63,8 +63,8 @@
     angleIncrease: 1
     angleDecay: 5
     fireRate: 2
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot357
   - type: StaticPrice
     price: 30
 
@@ -92,8 +92,8 @@
     angleIncrease: 1.5
     angleDecay: 5
     fireRate: 1.5
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot44
   - type: StaticPrice
     price: 40
 
@@ -121,8 +121,8 @@
     angleIncrease: 1
     angleDecay: 5
     fireRate: 2
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot45
   - type: StaticPrice
     price: 25
 
@@ -175,8 +175,8 @@
         - F14SpeedLoader44
     proto: F14Cartridge44Magnum
   - type: Gun
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot44
   - type: StaticPrice
     price: 50
 
@@ -211,8 +211,8 @@
     angleIncrease: 0.5
     angleDecay: 5
     fireRate: 3
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot357
   - type: StaticPrice
     price: 40
 
@@ -232,8 +232,8 @@
     angleIncrease: 0.5
     angleDecay: 6
     fireRate: 4
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot357
   - type: StaticPrice
     price: 600
 
@@ -268,8 +268,8 @@
     angleIncrease: 2
     angleDecay: 6
     fireRate: 5
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot44
   - type: StaticPrice
     price: 500
 
@@ -314,7 +314,7 @@
     angleIncrease: 0.5
     angleDecay: 5
     fireRate: 3.5
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotPolice
   - type: StaticPrice
     price: 150

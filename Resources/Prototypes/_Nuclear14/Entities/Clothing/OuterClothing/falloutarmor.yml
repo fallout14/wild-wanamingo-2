@@ -160,6 +160,7 @@
   - type: ExplosionResistance
     damageCoefficient: 0.85
   - type: Reflect
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.05
     spread: 150
   - type: ClothingSpeedModifier
@@ -657,6 +658,7 @@
     walkModifier: 1.2
     sprintModifier: 1.2
   - type: Reflect
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.2 # Forge-Change
     spread: 150
 
@@ -830,6 +832,7 @@
   - type: ExplosionResistance
     damageCoefficient: 0.75
   - type: Reflect
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.05
     spread: 150
   - type: ClothingSpeedModifier
@@ -857,6 +860,7 @@
   - type: ExplosionResistance
     damageCoefficient: 0.75
   - type: Reflect
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.05
     spread: 150
   - type: ClothingSpeedModifier

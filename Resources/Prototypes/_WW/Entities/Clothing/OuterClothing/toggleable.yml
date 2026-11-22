@@ -1,0 +1,23 @@
+# Outer clothing that can be worn open or closed (2026-11-21). Alt-click, or the "Open"/"Close" verb, switches it,
+# worn or not. Built on Wizden's foldable clothing (the lab coat zip).
+#
+# To make a piece toggleable: add this as a parent (first, so its sprite layers win), and give its RSI the open
+# states next to the closed ones: icon-open and open-equipped-OUTERCLOTHING.
+- type: entity
+  abstract: true
+  parent: BaseFoldable
+  id: WWClothingOuterToggleable
+  components:
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: ww-toggle-clothing-close-verb
+    foldVerbText: ww-toggle-clothing-open-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: open
+  - type: Sprite
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: [ "foldedLayer" ]
+      visible: false

@@ -335,7 +335,14 @@
   - type: Tag
     tags:
     - F14SuperMutantWearable
-  - type: NightVision
+  - type: NightVision # WW Change - reaches the wearer and toggles (it did neither before)
+    relayOverlay: true
+    enabled: false
+    action: ActionToggleNightVision
+    lightingColor: "#7CFF7C80"
+    overlayColor: "#1F7F1F30"
+    noiseAmount: 0.1
+    noiseMultiplier: 1
 
 - type: entity
   parent: F14ClothingSuperRangerGasmask

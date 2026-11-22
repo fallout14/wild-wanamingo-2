@@ -2,6 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Power/apc.yml
 # Lock and lighting/environment status layers removed: Wizden APCs only drive ChargeState and Equipment.
 # Construction (graph N14APC) removed until its parts are ported.
+# WW (2026-11-22): sprite is the MS13 fuse box instead of Peptide90's breaker box.
 - type: entity
   id: F14APCBreaker
   name: Electrical Breaker
@@ -27,7 +28,8 @@
     anchored: true
   - type: Sprite
     drawdepth: Overdoors
-    sprite: Nuclear14/Structures/Power/breakerbox.rsi
+    # WW: MS13 fuse box (porter/apc_fusebox/make_rsi.py). Its states use Wizden's APC names, which ApcVisuals sets.
+    sprite: WildWanamingo/Structures/Wallmounts/apc_fusebox.rsi
     layers:
     - state: base
     - state: panel
@@ -36,7 +38,7 @@
     - state: display-charging
       shader: unshaded
       map: ["enum.ApcVisualLayers.ChargeState"]
-    - state: channel1-auto_on
+    - state: channel-on
       shader: unshaded
       map: ["enum.ApcVisualLayers.Equipment"]
   - type: Appearance
@@ -130,7 +132,7 @@
     anchored: true
   - type: Sprite
     drawdepth: Overdoors
-    sprite: Nuclear14/Structures/Power/breakerbox.rsi
+    sprite: WildWanamingo/Structures/Wallmounts/apc_fusebox.rsi # WW: MS13 fuse box
     state: frame
   - type: WallMount
   - type: Damageable

@@ -62,7 +62,10 @@
     sprintModifier: 0.7
   - type: MultiHandedItem
   - type: Reflect # #Misfits Change Tweak: Small-caliber rounds (sub-5.56mm) ricochet off power armor at 30% chance. Innate - always active regardless of movement.
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber, MediumCaliber ] # WW Change - Misfits caliber classes
+    reflectProbByType:
+      MediumCaliber: 0.1
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.35
     spread: 90
   - type: EmitsSoundOnMove # Corvax-Change

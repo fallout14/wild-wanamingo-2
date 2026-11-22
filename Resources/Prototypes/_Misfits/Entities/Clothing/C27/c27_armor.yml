@@ -42,7 +42,8 @@
         Piercing: 0.65
         Heat: 0.70     # slightly weaker heat resist than physical — chassis cooling limits
   - type: Reflect # #Misfits Add - 30% ricochet on medium plating; stacks on top of bare chassis 10% (outermost check wins)
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber ] # WW Change - Misfits caliber classes
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.20
     spread: 90
   - type: ClothingSpeedModifier
@@ -73,7 +74,8 @@
     doAfterDelay: 30
     qualityNeeded: Welding
   - type: Reflect # #Misfits Add - 20% ricochet on heavy plating; hardened combat chassis deflects most small/medium rounds. .50 bypasses via ignoreResistances:true ALSO BECAUSE OF SHITCODE I CANT REMOVE ENERGY DEFLECT BY ITSELF THE AI THEY HAD CODE REFLECT DECIDED REFLECT IN ITSELF DOES ENERGY DEFLECT
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber, MediumCaliber ] # WW Change - Misfits caliber classes
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.20
     spread: 90
   - type: ClothingSpeedModifier
@@ -95,7 +97,8 @@
         Piercing: 0.50
         Heat: 0.85
   - type: Reflect
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber, MediumCaliber ] # WW Change - Misfits caliber classes
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.20
     spread: 90
   - type: ClothingSpeedModifier

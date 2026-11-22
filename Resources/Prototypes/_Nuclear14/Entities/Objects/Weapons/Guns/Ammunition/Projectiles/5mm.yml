@@ -8,7 +8,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Reflective # #Misfits Change Add: 5mm is sub-5.56mm; ricochets off power armor.
-    reflective: [ NonEnergy ]
+    reflective: [ MediumCaliber ] # WW Change - Misfits caliber classes
   - type: Projectile
     damage:
       types:

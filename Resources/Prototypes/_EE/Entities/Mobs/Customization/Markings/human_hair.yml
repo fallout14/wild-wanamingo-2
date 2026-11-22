@@ -1,0 +1,94 @@
+# WW Change (2026-11-22): hair styles Wild Wanamingo 1 had, ported by Reports/porter/ww1_hair/port_hair.py.
+# From WW1 _EE/Entities/Mobs/Customization/Markings/human_hair.yml.
+# IDs carry the F14 prefix (the old id follows the prefix).
+
+- type: marking
+  id: F14HumanHairArabicGathered
+  bodyPart: Hair
+  sprites:
+    - sprite: ADT/Mobs/Customization/Human/custom.rsi
+      state: hair-arabicgatheredhair
+
+- type: marking
+  id: F14HumanHairClassicHair
+  bodyPart: Hair
+  sprites:
+    - sprite: ADT/Mobs/Customization/Human/custom.rsi
+      state: hair-classichairmale
+
+- type: marking
+  id: F14HumanHairSideComb
+  bodyPart: Hair
+  sprites:
+    - sprite: ADT/Mobs/Customization/Human/custom.rsi
+      state: hair-combedfromside
+
+- type: marking
+  id: F14HumanHairLong4
+  bodyPart: Hair
+  sprites:
+    - sprite: ADT/Mobs/Customization/Human/custom.rsi
+      state: hair-longhair
+
+- type: marking
+  id: F14HumanHairManbun2
+  bodyPart: Hair
+  sprites:
+    - sprite: ADT/Mobs/Customization/Human/custom.rsi
+      state: hair-manbunold
+
+- type: marking
+  id: F14HumanHairPigtailTajaran
+  bodyPart: Hair
+  sprites:
+    - sprite: ADT/Mobs/Customization/Human/custom.rsi
+      state: hair-pigtailtajaran
+
+- type: marking
+  id: F14HumanHairShavedSide
+  bodyPart: Hair
+  sprites:
+    - sprite: ADT/Mobs/Customization/Human/custom.rsi
+      state: hair-shavedside
+
+- type: marking
+  id: F14HumanHairShorthair8
+  bodyPart: Hair
+  sprites:
+    - sprite: ADT/Mobs/Customization/Human/custom.rsi
+      state: hair-shorthaired
+
+- type: marking
+  id: F14HairHumanFembun
+  bodyPart: Hair
+  sprites:
+    - sprite: ADT/Mobs/Customization/Human/custom.rsi
+      state: hair-womenbun
+
+- type: marking
+  id: F14HumanHairAfricanPigtails
+  bodyPart: Hair
+  sprites:
+    - sprite: Corvax/Mobs/Customization/human_hair.rsi
+      state: africanpigtails
+
+- type: marking
+  id: F14HumanHairAfropuffDouble
+  bodyPart: Hair
+  sprites:
+    - sprite: Corvax/Mobs/Customization/human_hair.rsi
+      state: afropuffdouble
+
+- type: marking
+  id: F14HumanHairAfropuffLeft
+  bodyPart: Hair
+  sprites:
+    - sprite: Corvax/Mobs/Customization/human_hair.rsi
+      state: afropuffleft
+
+- type: marking
+  id: F14HumanHairAfropuffRight
+  bodyPart: Hair
+  sprites:
+    - sprite: Corvax/Mobs/Customization/human_hair.rsi
+      state: afropuffright

@@ -17,7 +17,7 @@
     equippedPrefix: off
   - type: PointLight
     enabled: false
-    mask: /Textures/Effects/LightMasks/cone.png
+    lightMask: ConeSingle # WW Change - was the removed mask field
     autoRot: true
     radius: 3
     netsync: false
@@ -64,6 +64,7 @@
   - type: ContainerContainer
     containers:
       cell_slot: !type:ContainerSlot
+  - type: ItemTogglePointLight # WW Change - HandheldLight needs this to light up on the client (point light is not net-synced)
 
 - type: entity
   parent: ClothingHeadBase
@@ -315,6 +316,9 @@
   id: F14ClothingHeadHatNCRHelmetMetalSnow
   name: NCR winter metal helmet
   description: A rounded NCR helmet offering some protection. This one is covered on snow-white camo.
+  components:
+  - type: HideLayerClothing # WW Change - open NCR helmets show the hair underneath
+    slots: []
 
 - type: entity
   parent: F14ClothingHeadHatBaseHelmetMetal
@@ -326,6 +330,8 @@
     sprite: Nuclear14/Clothing/Head/FalloutHelmets/ncrhelmet2.rsi
   - type: Clothing
     sprite: Nuclear14/Clothing/Head/FalloutHelmets/ncrhelmet2.rsi
+  - type: HideLayerClothing # WW Change - open NCR helmets show the hair underneath
+    slots: []
 
 - type: entity
   parent: F14ClothingHeadHatBaseHelmetMetal
@@ -337,6 +343,8 @@
     sprite: Nuclear14/Clothing/Head/FalloutHelmets/ncrhelmet3.rsi
   - type: Clothing
     sprite: Nuclear14/Clothing/Head/FalloutHelmets/ncrhelmet3.rsi
+  - type: HideLayerClothing # WW Change - open NCR helmets show the hair underneath
+    slots: []
 
 - type: entity
   parent: F14ClothingHeadHatBaseHelmetMetal
@@ -360,6 +368,8 @@
       - F14EncryptionKeyNCR
   - type: EncryptionKeyHolder
     keySlots: 4
+  - type: HideLayerClothing # WW Change - open NCR helmets show the hair underneath
+    slots: []
 
 - type: entity
   parent: F14ClothingHeadHatNCRHelmetMetalRadioWood
@@ -382,6 +392,8 @@
     sprite: Nuclear14/Clothing/Head/FalloutHelmets/ncrhelmetghillie.rsi
   - type: Clothing
     sprite: Nuclear14/Clothing/Head/FalloutHelmets/ncrhelmetghillie.rsi
+  - type: HideLayerClothing # WW Change - open NCR helmets show the hair underneath
+    slots: []
 
 - type: entity
   parent: F14ClothingHeadHatBaseHelmetMetal
@@ -393,6 +405,8 @@
     sprite: Nuclear14/Clothing/Head/FalloutHelmets/ncrhelmetmp.rsi
   - type: Clothing
     sprite: Nuclear14/Clothing/Head/FalloutHelmets/ncrhelmetmp.rsi
+  - type: HideLayerClothing # WW Change - open NCR helmets show the hair underneath
+    slots: []
 
 - type: entity
   parent: F14ClothingHeadHatBaseHelmetMetal
@@ -404,6 +418,8 @@
     sprite: Nuclear14/Clothing/Head/FalloutHelmets/ncrhelmetmedic.rsi
   - type: Clothing
     sprite: Nuclear14/Clothing/Head/FalloutHelmets/ncrhelmetmedic.rsi
+  - type: HideLayerClothing # WW Change - open NCR helmets show the hair underneath
+    slots: []
 
 - type: entity
   parent: F14ClothingHeadHatBaseHelmetMK2

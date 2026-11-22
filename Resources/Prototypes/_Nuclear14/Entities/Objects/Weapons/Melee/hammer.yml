@@ -73,6 +73,14 @@
     - suitStorage
   - type: StaticPrice
     price: 100
+  # WW Change start - heavy: slows you while held, more while wielded (2026-11-22 playtest)
+  - type: HeldSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  # WW Change end
 
 - type: entity
   name: tribal heavy club

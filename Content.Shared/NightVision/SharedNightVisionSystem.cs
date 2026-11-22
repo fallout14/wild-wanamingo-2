@@ -109,6 +109,10 @@ public abstract partial class SharedNightVisionSystem : EntitySystem
     }
 
     protected virtual void RefreshOverlay(EntityUid entity) { }
+
+    // WW Change - lets night vision scopes (Content.Client/_WW/Weapons/Scopes/WWScopeVisionSystem) refresh the view
+    /// <summary>Re-checks which night vision sources this viewer has.</summary>
+    public void RefreshViewer(EntityUid viewer) => RefreshOverlay(viewer);
 }
 
 [ByRefEvent]

@@ -8,15 +8,19 @@ using Content.Shared.Damage;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Damage.Components;
+using Content.Shared.DoAfter; // WW Change - welding a worn suit
 using Content.Shared.Examine;
 using Content.Shared.FixedPoint;
 using Content.Shared.Interaction;
 using Content.Shared.Inventory;
 using Content.Shared.Popups;
+using Content.Shared.Repairable; // WW Change - welding a worn suit
 using Content.Shared.Rounding;
+using Content.Shared.Tools.Systems; // WW Change - welding a worn suit
 using Content.Shared.Verbs;
 using Robust.Shared.Containers;
 using Robust.Shared.Network;
+using Robust.Shared.Serialization; // WW Change - welding a worn suit
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
@@ -61,6 +65,7 @@ public sealed partial class PowerArmorIntegritySystem : EntitySystem
     [Dependency] private AlertsSystem _alerts = default!;
     [Dependency] private SharedContainerSystem _container = default!;
     [Dependency] private MovementSpeedModifierSystem _movementSpeed = default!; // #Misfits Add - speed debuff for broken armor
+    [Dependency] private SharedToolSystem _tool = default!; // WW Change - welding a worn suit
 
     public override void Initialize()
     {
@@ -87,6 +92,7 @@ public sealed partial class PowerArmorIntegritySystem : EntitySystem
         // Forward welder interactions on the wearer to the armor entity so
         // RepairableSystem can handle them (InteractUsingEvent is not inventory-relayed).
         SubscribeLocalEvent<PowerArmorWornComponent, InteractUsingEvent>(OnWearerInteractUsing, before: new[] { typeof(SharedArmorSystem) });
+        SubscribeLocalEvent<PowerArmorWornComponent, PowerArmorWornRepairDoAfterEvent>(OnWornRepairDoAfter); // WW Change
 
         // A suited power armor wearer acts as an immovable wall to other mobs.
         // Cancelling AttemptMobTargetCollideEvent prevents the mob collision system
@@ -318,9 +324,65 @@ public sealed partial class PowerArmorIntegritySystem : EntitySystem
         if (!Exists(worn.Armor))
             return;
 
-        // Re-raise the event on the armor entity so RepairableSystem can pick it up.
-        RaiseLocalEvent(worn.Armor, args);
+        // WW Change start - re-raising InteractUsing on the suit started a do-after targeting the suit itself, which
+        // sits in the wearer's inventory and so is never "accessible": the weld cancelled at once. Weld the wearer
+        // instead and repair their suit when it finishes (OnWornRepairDoAfter), with the suit's Repairable settings.
+        if (!TryComp<RepairableComponent>(worn.Armor, out var repairable) ||
+            !_tool.HasQuality(args.Used, repairable.QualityNeeded))
+        {
+            return;
+        }
+
+        if (args.User == uid)
+        {
+            // Self-repair is blocked, as before (the suit's own InteractUsing handler used to say so).
+            RaiseLocalEvent(worn.Armor, args);
+            return;
+        }
+
+        if (_damageable.GetTotalDamage(worn.Armor) <= FixedPoint2.Zero)
+            return;
+
+        args.Handled = _tool.UseTool(args.Used,
+            args.User,
+            uid,
+            repairable.DoAfterDelay,
+            repairable.QualityNeeded,
+            new PowerArmorWornRepairDoAfterEvent(),
+            repairable.FuelCost);
+        // WW Change end
     }
+
+    // WW Change start - finishes a weld started on the wearer: repairs their suit like RepairableSystem would.
+    private void OnWornRepairDoAfter(EntityUid uid, PowerArmorWornComponent worn, PowerArmorWornRepairDoAfterEvent args)
+    {
+        if (args.Cancelled || args.Handled ||
+            !Exists(worn.Armor) ||
+            !TryComp<RepairableComponent>(worn.Armor, out var repairable) ||
+            !TryComp<DamageableComponent>(worn.Armor, out var damageable))
+        {
+            return;
+        }
+
+        if (repairable.DamageValue != null)
+            _damageable.HealEvenly(worn.Armor, repairable.DamageValue.Value, origin: args.User);
+        else if (repairable.Damage != null)
+            _damageable.ChangeDamage(worn.Armor, repairable.Damage, true, false, origin: args.User);
+        else
+            _damageable.ClearAllDamage((worn.Armor, damageable));
+
+        var left = _damageable.GetTotalDamage(worn.Armor);
+        args.Repeat = repairable.AutoDoAfter && left > FixedPoint2.Zero;
+        args.Args.Event.Repeat = args.Repeat;
+        args.Handled = true;
+
+        if (!args.Repeat && _net.IsServer)
+        {
+            _popup.PopupEntity(Loc.GetString("comp-repairable-repair", ("target", worn.Armor), ("tool", args.Used!)),
+                uid, args.User);
+        }
+    }
+    // WW Change end
 
     /// <summary>
     ///     Prevents other mobs from displacing a power armor wearer via the mob
@@ -480,3 +542,7 @@ public sealed partial class PowerArmorIntegritySystem : EntitySystem
         _alerts.ShowAlert(wearer, comp.IntegrityAlert, severity);
     }
 }
+
+// WW Change - do-after for welding a suit someone is wearing (started on the wearer, repairs their suit).
+[Serializable, NetSerializable]
+public sealed partial class PowerArmorWornRepairDoAfterEvent : SimpleDoAfterEvent;

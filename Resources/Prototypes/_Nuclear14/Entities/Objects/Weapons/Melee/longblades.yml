@@ -119,7 +119,7 @@
     autoAttack: true
     angle: 0
     wideAnimationRotation: -135
-    attackRate: 0.25
+    attackRate: 4 # WW Change - was 0.25 (one swing every 4 s); a chainsaw, like Wizden's
     damage:
       types:
         Slash: 6

@@ -1,5 +1,5 @@
-# Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
-# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+# Torches on copies of Misfits/N14 prototypes. WW Change (2026-11-22): back to Wild Wanamingo's old wooden torch
+# sprites (Resources/Textures/Corvax/Structures/Decoration/torches.rsi, CC-BY-NC-SA-3.0, ported from Nukapop-13).
 
 - type: entity
   parent: F14TorchWallBase
@@ -7,14 +7,14 @@
   name: wall torch
   components:
   - type: Sprite
-    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
-    state: wall_torch_lit
+    sprite: Corvax/Structures/Decoration/torches.rsi
+    state: wall_torch_lite
   - type: Icon
-    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
-    state: wall_torch_lit
+    sprite: Corvax/Structures/Decoration/torches.rsi
+    state: wall_torch_lite
   - type: FireVisuals
-    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
-    normalState: wall_torch_lit
+    sprite: Corvax/Structures/Decoration/torches.rsi
+    normalState: wall_torch_lite
 
 - type: entity
   parent: F14TorchBase
@@ -22,11 +22,11 @@
   name: torch
   components:
   - type: Sprite
-    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    sprite: Corvax/Structures/Decoration/torches.rsi
     state: torch_lit
   - type: Icon
-    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    sprite: Corvax/Structures/Decoration/torches.rsi
     state: torch_lit
   - type: FireVisuals
-    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    sprite: Corvax/Structures/Decoration/torches.rsi
     normalState: torch_lit

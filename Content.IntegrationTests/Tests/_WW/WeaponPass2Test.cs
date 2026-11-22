@@ -81,8 +81,15 @@ public sealed class WeaponPass2Test : GameTest
             Assert.Multiple(() =>
             {
                 var gunComp = entMan.GetComponent<GunComponent>(gun);
-                Assert.That(gunComp.SelectedMode, Is.EqualTo(SelectiveFire.SemiAuto));
-                Assert.That(gunComp.AvailableModes, Is.EqualTo(SelectiveFire.SemiAuto));
+                // Full auto at the Pitt's 8 rounds a second, or semi.
+                Assert.That(gunComp.SelectedMode, Is.EqualTo(SelectiveFire.FullAuto));
+                Assert.That(gunComp.AvailableModes, Is.EqualTo(SelectiveFire.FullAuto | SelectiveFire.SemiAuto));
+                Assert.That(gunComp.FireRate, Is.EqualTo(8f));
+
+                // Both fixed attachments are drawn: the suppressor through the attachment visualizer.
+                var host = entMan.GetComponent<FirearmAttachmentHostComponent>(gun);
+                Assert.That(host.ShowMuzzleVisual, Is.True);
+                Assert.That(host.SuppressorVisualOffset, Is.Not.Null);
 
                 // Integral suppressor: present and can't come off.
                 Assert.That(slots.TryGetSlot(gun, FirearmAttachmentHostComponent.DefaultMuzzleSlot, out var muzzle), Is.True);

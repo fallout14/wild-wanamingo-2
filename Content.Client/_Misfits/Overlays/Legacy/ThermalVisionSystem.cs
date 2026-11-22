@@ -49,6 +49,10 @@ public sealed partial class ThermalVisionSystem : EquipmentHudSystem<ThermalVisi
         RefreshOverlay();
     }
 
+    // WW Change - for thermal scopes (Content.Client/_WW/Weapons/Scopes/WWScopeVisionSystem)
+    /// <summary>Re-checks the local player's thermal vision sources.</summary>
+    public void Refresh() => RefreshOverlay();
+
     protected override void UpdateInternal(RefreshEquipmentHudEvent<ThermalVisionComponent> args)
     {
         base.UpdateInternal(args);

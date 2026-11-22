@@ -1,12 +1,13 @@
 # The infiltrator, rebuilt after the Fallout 3 (The Pitt) weapon: a cut-down R91 with an integral suppressor and a
-# fixed 4x scope. Semi-auto 5.56mm, fed from the standard 5.56mm rifle magazine. Neither attachment can be removed.
+# fixed 4x scope. Full auto (8 rounds a second, the Pitt's rate) or semi, 5.56mm from the standard rifle magazine.
+# Neither attachment can be removed; both are drawn as overlays from the Misfits attachment RSI.
 # Sprite: Resources/Textures/WildWanamingo/Objects/Weapons/Guns/infiltrator.rsi (Fortune13, CC-BY-NC-SA-3.0).
 
 - type: entity
   name: infiltrator
   parent: F14WeaponRifleBase
   id: F14WeaponRifle556Infiltrator
-  description: A pre-war R91 assault rifle cut down for close work, with an integral suppressor and a fixed 4x scope. The conversion left it semi-automatic only, but every 5.56mm round hits harder and quieter than the rifle it came from.
+  description: A pre-war R91 assault rifle cut down for close work, with an integral suppressor and a fixed 4x scope. It keeps the R91's full-auto sear, and every 5.56mm round hits harder and quieter than the rifle it came from.
   components:
   - type: ContainerContainer  # spawn state
     containers:
@@ -29,6 +30,10 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
+    # Fixed 4x scope, part of the gun: a plain layer rather than an optic slot.
+    - sprite: Misfits/Objects/Weapons/Guns/Attachments/firearm_attachments.rsi
+      state: rangemaster_scope
+      offset: 0.09375, 0.3125 # over the receiver, like Fallout 3's infiltrator
   - type: Item
     size: Large
     sprite: WildWanamingo/Objects/Weapons/Guns/infiltrator.rsi
@@ -38,9 +43,9 @@
     slots:
     - Back
     - suitStorage
-  # Integral suppressor: a locked suppressor in the muzzle slot. It's part of the sprite, so no overlay.
+  # Integral suppressor: a locked suppressor in the muzzle slot, drawn by the attachment visualizer.
   - type: FirearmAttachmentHost
-    showMuzzleVisual: false
+    suppressorVisualOffset: 0.6875, 0.75
     enableOpticSlot: false # the scope is built in (WWScope below)
     muzzleSlot:
       name: Integral suppressor
@@ -63,12 +68,13 @@
     maxAngle: 40
     angleIncrease: 3
     angleDecay: 16
-    fireRate: 3
-    selectedMode: SemiAuto
+    fireRate: 8 # Fallout 3 (The Pitt): 8 shots a second
+    selectedMode: FullAuto
     availableModes:
+    - FullAuto
     - SemiAuto
-    soundGunshot:
-      collection: F14RifleR91Gunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotAssaultRifle
   - type: GunWieldBonus
     minAngle: -19
     maxAngle: -37

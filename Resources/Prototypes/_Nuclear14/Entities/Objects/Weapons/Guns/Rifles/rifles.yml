@@ -88,8 +88,8 @@
     maxAngle: 45
     angleIncrease: 4
     angleDecay: 16
-    soundGunshot:
-      collection: F14RifleR91Gunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotAssaultRifle
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -196,8 +196,8 @@
     fireRate: 5
     shotsPerBurst: 3 # Corvax-Add
     burstFireRate: 4 # Corvax-Add
-    soundGunshot:
-      collection: F14ServiceGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotVarmint
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -272,8 +272,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 4 # Corvax-Change
-    soundGunshot:
-      collection: F14ServiceGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotVarmint
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -300,7 +300,7 @@
   #   eyeOffset: 5
 
 - type: entity
-  name: scout rifle
+  name: scout carbine # WW Change - renamed from scout rifle
   parent: F14WeaponRifleBase
   id: F14WeaponRifle556Scout
   description: A modified version of the service rifle made by Rangers in the field. It is capable of using larger 5.56 magazines than its predecessor.
@@ -466,8 +466,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 3
-    soundGunshot:
-      collection: F14BattleRifleGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotHunting
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -537,8 +537,8 @@
     maxAngle: 46 # Corvax-Change
     angleIncrease: 5 # Corvax-Change
     angleDecay: 16
-    soundGunshot:
-      collection: F14MarksmanGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotM14
     fireRate: 4
     selectedMode: SemiAuto
     availableModes:
@@ -627,8 +627,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 4
-    soundGunshot:
-      collection: F14CarbineGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotAssaultCarbine
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -698,8 +698,8 @@
     maxAngle: 45
     angleIncrease: 4
     angleDecay: 16
-    soundGunshot:
-      collection: F14MarksmanGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotMarksman
     fireRate: 3
     selectedMode: SemiAuto
     availableModes:
@@ -797,8 +797,8 @@
     maxAngle: 40 # Corvax-Change
     angleIncrease: 4
     angleDecay: 16
-    soundGunshot:
-      collection: F14MarksmanGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotMarksman
     fireRate: 2.5 # Corvax-Change
     selectedMode: SemiAuto
     availableModes:
@@ -870,8 +870,8 @@
     maxAngle: 45
     angleDecay: 16
     fireRate: 3
-    soundGunshot:
-      collection: F14ServiceGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotServiceRifle
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -946,8 +946,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 3
-    soundGunshot:
-      collection: F14SniperVarmintGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotVarmint
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -1024,8 +1024,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 4
-    soundGunshot:
-      collection: F14SniperVarmintGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotVarmint
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -1097,8 +1097,8 @@
     angleIncrease: 6
     angleDecay: 16
     fireRate: 4
-    soundGunshot:
-      collection: F14ServiceGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotVarmint
     selectedMode: FullAuto
     availableModes:
     - FullAuto

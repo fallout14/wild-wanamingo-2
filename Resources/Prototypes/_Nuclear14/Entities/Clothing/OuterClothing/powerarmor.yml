@@ -70,7 +70,10 @@
     sprintModifier: 0.5
   - type: MultiHandedItem
   - type: Reflect # #Misfits Change Tweak: Small-caliber rounds (sub-5.56mm) ricochet off power armor at 30% chance. Innate - always active regardless of movement.
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber, MediumCaliber ] # WW Change - Misfits caliber classes
+    reflectProbByType:
+      MediumCaliber: 0.15
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.4
     spread: 90
   - type: PowerArmorBrace # #Misfits Change Add: Grants wearer a hotkey to brace (anchor in place, immobile but can fire, slight damage resistance). 5-second cooldown between stance changes.
@@ -175,7 +178,8 @@
   - type: Clothing
     sprite: Nuclear14/Clothing/OuterClothing/PowerArmor/t60tesla.rsi
   - type: Reflect # #Misfits Change Tweak: Tesla coils deflect energy and small-caliber rounds at 30% (innate). Heavy rounds still penetrate.
-    reflects: [ Energy, NonEnergy ]
+    reflects: [ Energy, SmallCaliber ] # WW Change - Misfits caliber classes
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.40
     spread: 90
   - type: UserInterface
@@ -227,7 +231,10 @@
       shoes: F14ClothingPABootsDark
       back: F14ClothingPowerSystemsBack
   - type: Reflect # #Misfits Change Tweak: Small-caliber rounds (sub-5.56mm) ricochet off power armor at 35% chance. Innate - always active regardless of movement.
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber, MediumCaliber ] # WW Change - Misfits caliber classes
+    reflectProbByType:
+      MediumCaliber: 0.15
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.35
     spread: 90
 
@@ -273,7 +280,10 @@
       shoes: F14ClothingPABootsDark
       back: F14ClothingPowerSystemsBackX02 # Misfits Change add: This is for X-02, gives it the increased movespeed. Regular PA is 90% the wearer's speed, X-02 is 95%.
   - type: Reflect # #Misfits Change Tweak: X-02 has improved movespeed and resistances over the X-02 but less reflect chance
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber, MediumCaliber ] # WW Change - Misfits caliber classes
+    reflectProbByType:
+      MediumCaliber: 0.1
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.3
 
 - type: entity
@@ -312,7 +322,10 @@
       shoes: F14ClothingPABootsDark
       back: F14ClothingPowerSystemsBack
   - type: Reflect # #Misfits Change Tweak: Small-caliber rounds (sub-5.56mm) ricochet off power armor at 40% chance. Innate - always active regardless of movement.
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber, MediumCaliber ] # WW Change - Misfits caliber classes
+    reflectProbByType:
+      MediumCaliber: 0.2
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.4
     spread: 90
 
@@ -353,7 +366,8 @@
       shoes: F14ClothingPABootsDark
       back: F14ClothingPowerSystemsBack
   - type: Reflect # #Misfits Change Tweak: Raider power armor ricochets small-caliber rounds at 30% (innate).
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber ] # WW Change - Misfits caliber classes
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.35
     spread: 90
   - type: ClothingSpeedModifier # Forge-Change
@@ -435,7 +449,8 @@
       shoes: F14ClothingPABootsDark
       back: F14ClothingPowerSystemsBack
   - type: Reflect # #Misfits Change Tweak: T-51BC ricochets small-caliber rounds at 30% (innate).
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber ] # WW Change - Misfits caliber classes
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.55
     spread: 90
 
@@ -480,7 +495,8 @@
       shoes: F14ClothingPABoots
       back: F14ClothingPowerSystemsBack
   - type: Reflect # #Misfits Change Tweak: Salvaged NCR T-45 ricochets small-caliber rounds at 30% (innate).
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber ] # WW Change - Misfits caliber classes
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.4
     spread: 90
 
@@ -506,7 +522,8 @@
   - type: ExplosionResistance
     damageCoefficient: 0.12 # #Misfits Tweak: Canadian Shield blast resistance — ~14 HP at ground zero
   - type: Reflect # #Misfits Change Tweak: T-51bc "Canadian Shield" ricochets small-caliber rounds at 30% (innate).
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber ] # WW Change - Misfits caliber classes
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.3
     spread: 90
 
@@ -547,7 +564,8 @@
       shoes: F14ClothingPABoots
       back: F14ClothingPowerSystemsBack
   - type: Reflect # #Misfits Change Tweak: Washington BoS T-51 ricochets small-caliber rounds at 30% (innate).
-    reflects: [ NonEnergy ]
+    reflects: [ SmallCaliber ] # WW Change - Misfits caliber classes
+    reflectingInHands: false # WW Change - armor deflects only when worn
     reflectProb: 0.3
     spread: 90
 

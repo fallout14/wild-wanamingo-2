@@ -18,6 +18,8 @@
     falloffStartTiles: 12.0
     maxFalloffTiles: 35.0
     minDamageMultiplier: 0.82
+  - type: Reflective # WW Change - Misfits caliber classes
+    reflective: None # WW Change - anti-materiel rounds never deflect
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -37,6 +39,8 @@
     falloffStartTiles: 12.0
     maxFalloffTiles: 35.0
     minDamageMultiplier: 0.82
+  - type: Reflective # WW Change - anti-materiel rounds never deflect
+    reflective: None
   - type: ExplodeOnTrigger
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.

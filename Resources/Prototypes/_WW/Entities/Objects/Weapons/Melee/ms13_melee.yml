@@ -26,7 +26,7 @@
     autoAttack: true
     angle: 0
     wideAnimationRotation: -135
-    attackRate: 0.25
+    attackRate: 4 # WW Change - was 0.25 (one swing every 4 s); a chainsaw, like Wizden's
     damage:
       types:
         Slash: 8
@@ -167,7 +167,7 @@
   parent: F14WastelandSpear
   id: F14ThunderStick
   name: thunder stick
-  description: A spear with an explosive charge for a tip. It goes off on the first thing it hits, and the spear goes with it.
+  description: A spear with an explosive charge for a tip. It goes off on the first thing it hits, stabbed or thrown, and the spear goes with it.
   components:
   - type: Sprite
     sprite: MojaveSun/Objects/Weapons/Melee/spear_thunder.rsi
@@ -178,6 +178,8 @@
   - type: Clothing
     slots: NONE # MS13: no back sprite, so it can't be stowed
   - type: TriggerOnMeleeHit
+  - type: TriggerOnThrowDoHit # thrown into someone or something (2026-11-22 playtest: didn't go off when thrown)
+  - type: TriggerOnLand # thrown and missed: goes off where it lands
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default

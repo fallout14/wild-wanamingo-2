@@ -57,8 +57,8 @@
   - type: ManualAction
   - type: Gun
     fireRate: 1
-    soundGunshot:
-      collection: F14ShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotShotgun
   - type: GunRequiresWield
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/pump.rsi
@@ -102,8 +102,8 @@
   - type: GunRequiresWield
   - type: Gun
     fireRate: 6
-    soundGunshot:
-      collection: F14DoubleBarrelShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotCaravan
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -134,8 +134,8 @@
     sprite: MojaveSun/Objects/Weapons/Guns/Shotguns/sawedoff.rsi
   - type: Gun
     fireRate: 3
-    soundGunshot:
-      collection: F14DoubleBarrelShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotSawnOff
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -190,8 +190,8 @@
     selectedMode: FullAuto
     availableModes:
     - FullAuto
-    soundGunshot:
-      collection: F14AutoShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotAuto5
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
   - type: ItemSlots
@@ -237,8 +237,8 @@
     sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/caravan_shotgun.rsi
   - type: Gun
     fireRate: 6
-    soundGunshot:
-      collection: F14CaravanShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotCaravan
   - type: GunRequiresWield
   - type: BallisticAmmoProvider
     whitelist:
@@ -288,8 +288,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 1
-    soundGunshot:
-      collection: F14LeverShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotShotgun
   - type: StaticPrice
     price: 45
 
@@ -327,8 +327,8 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    soundGunshot:
-      collection: F14RiotShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotRiot
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
   - type: ItemSlots
@@ -364,8 +364,8 @@
   - type: ManualAction
   - type: Gun
     fireRate: 1
-    soundGunshot:
-      collection: F14ShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotShotgun
   - type: GunRequiresWield
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/shortpump.rsi
@@ -399,8 +399,8 @@
   - type: ManualAction
   - type: Gun
     fireRate: 3
-    soundGunshot:
-      collection: F14ShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotShotgun
   - type: GunRequiresWield
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/chinese_shotgun.rsi
@@ -432,8 +432,8 @@
   components:
   - type: Gun
     fireRate: 3
-    soundGunshot:
-      collection: F14ShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotShotgun
   - type: GunRequiresWield
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Shotguns/canadian_shotgun.rsi
@@ -477,8 +477,8 @@
   - type: GunRequiresWield
   - type: Gun
     fireRate: 6
-    soundGunshot:
-      collection: F14DoubleBarrelShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotCaravan
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -531,8 +531,8 @@
   - type: GunRequiresWield
   - type: Gun
     fireRate: 6
-    soundGunshot:
-      collection: F14DoubleBarrelShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotCaravan
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -592,8 +592,8 @@
     cameraRecoilScalar: 3 # WW Change - pipe guns kick hard
     angleIncrease: 6 # WW Change - was 0
     fireRate: 2
-    soundGunshot:
-      collection: F14DoubleBarrelShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotCaravan
   - type: BallisticAmmoProvider
     whitelist:
       tags:

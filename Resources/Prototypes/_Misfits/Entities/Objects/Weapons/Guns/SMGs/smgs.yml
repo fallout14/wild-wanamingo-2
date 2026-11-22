@@ -54,8 +54,8 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     fireRate: 8.5
-    soundGunshot:
-      collection: F14Pistol9mmGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot9mm
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -169,8 +169,8 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     fireRate: 9 # ~540 rpm
-    soundGunshot:
-      collection: F14Gunshot45SMG
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotGreaseGun
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -260,8 +260,8 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     fireRate: 7.5 # #Misfits Tweak - M3 ~450 rpm
-    soundGunshot:
-      collection: F14Gunshot45SMG
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotGreaseGun
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -321,8 +321,8 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     fireRate: 11.5 # #Misfits Tweak - M1928A1 ~700 rpm
-    soundGunshot:
-      collection: F14Gunshot45SMG
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotGreaseGun
     selectedMode: Fullauto
     availableModes:
     - Fullauto
@@ -390,8 +390,8 @@
     selectedMode: Fullauto
     availableModes:
     - Fullauto
-    soundGunshot:
-      collection: F14Pistol9mmGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshot9mm
   - type: GunWieldBonus
     minAngle: -10
     maxAngle: -25
@@ -448,8 +448,8 @@
     selectedMode: Fullauto
     availableModes:
     - Fullauto
-    soundGunshot:
-      collection: F14Pistol22lrGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotAmerican180
   - type: GunWieldBonus
     minAngle: -3
     maxAngle: -12

@@ -145,8 +145,8 @@
     zeroVisible: true
   - type: Gun
     fireRate: 1 # #Misfits Tweak - reduced from 6; shotgun pacing (1 spread burst per 0.5s) THIS THING EATS PEOPLE ALIVE
-    soundGunshot:
-      collection: F14MultiplasGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotMultiplas
     selectedMode: SemiAuto # #Misfits Fix - was Burst; Multiplas fires multiple bolts simultaneously like a shotgun
     availableModes:
      - SemiAuto
@@ -315,8 +315,8 @@
     maxAngle: 12
     angleIncrease: 1
     angleDecay: 8
-    soundGunshot:
-      collection: F14LaserPistolGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotPulsePistol
   - type: EyeCursorOffset
     maxOffset: 2.5
     pvsIncrease: 0.25
@@ -375,13 +375,14 @@
     maxAngle: 50
     angleIncrease: 2
     angleDecay: 12
-    soundGunshot:
-      collection: F14LaserAutoRifleGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotPulse
   - type: EyeCursorOffset
     maxOffset: 2.5
     pvsIncrease: 0.25
   - type: StaticPrice
     price: 350
+  - type: GunRequiresWield # WW Change - two-handed only
 
 - type: entity
   name: pulse rifle (YK42b)
@@ -435,13 +436,14 @@
     maxAngle: 65
     angleIncrease: 2
     angleDecay: 14
-    soundGunshot:
-      collection: F14LaserAutoRifleGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotPulse
   - type: EyeCursorOffset
     maxOffset: 2.5
     pvsIncrease: 0.25
   - type: StaticPrice
     price: 500
+  - type: GunRequiresWield # WW Change - two-handed only
 
 - type: entity
   name: Tesla Cannon

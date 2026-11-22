@@ -8,8 +8,7 @@
   description: He had seen worse battles.
   components:
     - type: Reflect # #Misfits Change Add: Metal heater shield deflects sub-5.56mm pistol rounds at 30%; degrades while moving.
-      reflects:
-        - NonEnergy
+      reflects: [ SmallCaliber ] # WW Change - Misfits caliber classes
       reflectProb: 0.20 # Turned into a BP and increased in price significantly.
       spread: 90
     - type: Sprite

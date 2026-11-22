@@ -34,7 +34,7 @@
     radius: 8
     energy: 1
     offset: 0, .75
-    mask: /Textures/Effects/LightMasks/cone.png
+    lightMask: ConeSingle # WW Change - was the removed mask field
     autoRot: true
     netsync: false
     color: "#ff0000" #Misfits Change: Your ride's over, mutie. Time to die.
@@ -63,7 +63,14 @@
         Radiation: 0.6
   - type: ExplosionResistance
     damageCoefficient: 0.85
-  - type: NightVision
+  - type: NightVision # WW Change - reaches the wearer and toggles (it did neither before)
+    relayOverlay: true
+    enabled: false
+    action: ActionToggleNightVision
+    lightingColor: "#7CFF7C80"
+    overlayColor: "#1F7F1F30"
+    noiseAmount: 0.1
+    noiseMultiplier: 1
   - type: ThermalVision
     isEquipment: true
     pulseTime: 2

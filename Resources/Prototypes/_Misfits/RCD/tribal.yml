@@ -243,7 +243,7 @@
 - type: rcd
   id: F14RCDTribalFloorTorch
   category: TribalLighting
-  sprite: { sprite: MojaveSun/Structures/Lighting/torches.rsi, state: torch_lit }
+  sprite: { sprite: Corvax/Structures/Decoration/torches.rsi, state: torch_lit }
   mode: ConstructObject
   prototype: F14Torch
   cost: 1
@@ -255,7 +255,7 @@
 - type: rcd
   id: F14RCDTribalWallTorch
   category: TribalLighting
-  sprite: { sprite: MojaveSun/Structures/Lighting/torches.rsi, state: wall_torch_lite } # WW Change - Mojave Sun 13 sprite, like the torch it builds
+  sprite: { sprite: Corvax/Structures/Decoration/torches.rsi, state: wall_torch_lite } # WW Change - old wooden torch sprite, like the torch it builds
   mode: ConstructObject
   prototype: F14TorchWall
   cost: 1

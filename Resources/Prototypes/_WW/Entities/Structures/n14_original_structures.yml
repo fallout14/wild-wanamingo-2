@@ -1,0 +1,251 @@
+# WW (2026-11-22): entities for Nuclear 14 sprites that were already in the repo but had nothing using them.
+# Sprites: Resources/Textures/Nuclear14/Structures (Nuclear 14, https://github.com/Vault-Overseers/nuclear-14), same
+# files as nuclear-14-original's Textures/_Nuclear14/Structures. The slanted doors, tall windows, wrecks, vent and
+# cigarette vendor from those textures already exist as F14 entities.
+
+#MARK: Fire hose cabinet (Wallmounts/fuseboxes.rsi)
+# The fuse box sprites from the same file are the APC now (WildWanamingo/Structures/Wallmounts/apc_fusebox.rsi).
+
+- type: entity
+  parent: BaseWallmount
+  id: F14WallmountFireHoseCabinet
+  name: fire hose cabinet
+  description: A pre-war fire hose cabinet. Whatever was inside rotted away long ago.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Structures/Wallmounts/fuseboxes.rsi
+    state: firehouse
+
+#MARK: Storage (Storage/storage.rsi)
+
+- type: entity
+  parent: F14ClosetFridgeDirty
+  id: F14FridgeOld
+  suffix: Nuclear 14
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Structures/Storage/storage.rsi
+    layers:
+    - state: fridge
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: fridge_door
+      map: ["enum.StorageVisualLayers.Door"]
+    - sprite: Nuclear14/Structures/Storage/Closets/closet.rsi
+      state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: Icon
+    sprite: Nuclear14/Structures/Storage/storage.rsi
+    state: fridge
+  - type: EntityStorageVisuals
+    stateBaseClosed: fridge
+    stateDoorOpen: fridge_open
+    stateDoorClosed: fridge_door
+
+- type: entity
+  parent: [ F14FridgeOld, F14ClosetFridgeFill ]
+  id: F14LootFridgeOld
+  suffix: Nuclear 14, Loot, Random
+
+- type: entity
+  parent: F14ClosetBaseW
+  id: F14LockerOld
+  name: locker
+  description: A dented pre-war locker.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Structures/Storage/storage.rsi
+    layers:
+    - state: locker
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: locker_door
+      map: ["enum.StorageVisualLayers.Door"]
+    - sprite: Nuclear14/Structures/Storage/Closets/closet.rsi
+      state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: Icon
+    sprite: Nuclear14/Structures/Storage/storage.rsi
+    state: locker
+  - type: EntityStorageVisuals
+    stateBaseClosed: locker
+    stateDoorOpen: locker_open
+    stateDoorClosed: locker_door
+
+- type: entity
+  parent: [ F14LockerOld, F14BaseLockerStorageFill ]
+  id: F14LootLockerOld
+  suffix: Loot, Generic, Random
+  components:
+  - type: EntityStorage
+    capacity: 40 # the generic locker fill can roll up to 40 items
+
+- type: entity
+  parent: F14ClosetBaseW
+  id: F14ToolChest
+  name: tool chest
+  description: A big rusty tool chest.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Structures/Storage/storage.rsi
+    layers:
+    - state: toolbox
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: toolbox
+      map: ["enum.StorageVisualLayers.Door"]
+    - sprite: Nuclear14/Structures/Storage/Closets/closet.rsi
+      state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: Icon
+    sprite: Nuclear14/Structures/Storage/storage.rsi
+    state: toolbox
+  - type: EntityStorageVisuals
+    stateBaseClosed: toolbox
+    stateDoorOpen: toolbox_open
+    stateDoorClosed: toolbox
+
+- type: entity
+  parent: [ F14ToolChest, F14BaseSmallLockerStorageFill ]
+  id: F14LootToolChest
+  suffix: Loot, Random
+
+# Wall-mounted ones (Wizden's wall closet base: mounts on walls, opens like a closet).
+- type: entity
+  parent: BaseWallCloset
+  id: F14WallSafe
+  name: wall safe
+  description: A small safe set into the wall.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Structures/Storage/storage.rsi
+    layers:
+    - state: safe_wall
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: safe_wall
+      map: ["enum.StorageVisualLayers.Door"]
+    - sprite: Structures/Storage/wall_locker.rsi
+      state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: Icon
+    sprite: Nuclear14/Structures/Storage/storage.rsi
+    state: safe_wall
+  - type: EntityStorageVisuals
+    stateBaseClosed: safe_wall
+    stateDoorOpen: safe_wall-open
+    stateDoorClosed: safe_wall
+
+- type: entity
+  parent: [ F14WallSafe, F14StorageFillSafePrewarFill ]
+  id: F14LootWallSafe
+  suffix: Loot, Prewar, Random
+
+- type: entity
+  parent: BaseWallCloset
+  id: F14WallFirstAidCabinet
+  name: first aid cabinet
+  description: A wall-mounted first aid cabinet.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Structures/Storage/storage.rsi
+    layers:
+    - state: firstaid
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: firstaid_door
+      map: ["enum.StorageVisualLayers.Door"]
+    - sprite: Structures/Storage/wall_locker.rsi
+      state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: Icon
+    sprite: Nuclear14/Structures/Storage/storage.rsi
+    state: firstaid
+  - type: EntityStorageVisuals
+    stateBaseClosed: firstaid
+    stateDoorOpen: firstaid_open
+    stateDoorClosed: firstaid_door
+
+- type: entity
+  parent: [ F14WallFirstAidCabinet, F14StorageFillMedical ]
+  id: F14LootWallFirstAidCabinet
+  suffix: Loot, Medical, Random
+
+#MARK: Vendors (Machines/VendingMachines/vendors.rsi), storage-only like the cigarette vendor
+
+- type: entity
+  parent: F14VendingMachineCigarette
+  id: F14VendingMachineNukaColaClassic
+  suffix: storage, empty
+  name: Nuka-Cola vendor
+  description: An old Nuka-Cola vending machine, long since unplugged.
+  components:
+  - type: Sprite
+    layers:
+    - state: nuka_old
+  - type: Storage
+    grid:
+    - 0,0,6,3
+    maxItemSize: Small
+
+- type: entity
+  parent: F14VendingMachineNukaColaClassic
+  id: F14VendingMachineNukaColaRound
+  description: A rounded Nuka-Cola vending machine, long since unplugged.
+  components:
+  - type: Sprite
+    layers:
+    - state: nuka_new
+
+- type: entity
+  parent: F14VendingMachineNukaColaClassic
+  id: F14VendingMachineSarsaparilla
+  name: Sunset Sarsaparilla vendor
+  description: An old Sunset Sarsaparilla vending machine, long since unplugged.
+  components:
+  - type: Sprite
+    layers:
+    - state: sarsaparilla
+
+- type: entity
+  abstract: true
+  id: F14VendingMachineNukaColaFill
+  components:
+  - type: StorageFill
+    contents:
+    - id: F14DrinkNukaColaEmpty
+      prob: 0.3
+    - id: F14DrinkNukaColaBroken
+      prob: 0.3
+    - id: F14DrinkNukaCola
+      prob: 0.3
+    - id: F14DrinkNukaCola
+      prob: 0.3
+    - id: F14DrinkNukaCola
+      prob: 0.2
+    - id: F14DrinkNukaColaCherry
+      prob: 0.1
+    - id: F14DrinkNukaColaGrape
+      prob: 0.1
+    - id: F14DrinkNukaColaOrange
+      prob: 0.1
+    - id: F14DrinkNukaColaYellow
+      prob: 0.05
+    - id: F14DrinkNukaColaQuantum
+      prob: 0.05
+    - id: F14DrinkNukaColaQuartz
+      prob: 0.05
+    - id: F14DrinkNukaColaVictory
+      prob: 0.05
+    - id: F14DrinkNukaColaWild
+      prob: 0.05
+
+- type: entity
+  parent: [ F14VendingMachineNukaColaClassic, F14VendingMachineNukaColaFill ]
+  id: F14VendingMachineNukaColaClassicFilled
+  suffix: storage, random
+
+- type: entity
+  parent: [ F14VendingMachineNukaColaRound, F14VendingMachineNukaColaFill ]
+  id: F14VendingMachineNukaColaRoundFilled
+  suffix: storage, random

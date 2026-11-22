@@ -10,6 +10,9 @@
     sprite: Misfits/Objects/Weapons/Guns/Pistols/enclavedeagle.rsi
   - type: Item
     sprite: Misfits/Objects/Weapons/Guns/Pistols/enclavedeagle.rsi
+  - type: Gun
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotDeagle
 
 - type: entity
   name: PPK12
@@ -35,8 +38,8 @@
     selectedMode: FullAuto
     availableModes:
     - FullAuto
-    soundGunshot:
-      collection: F14AutoShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotGauss
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
   - type: ItemSlots
@@ -88,8 +91,8 @@
     maxAngle: 4
     angleIncrease: 0.3
     angleDecay: 8
-    soundGunshot:
-      collection: F14PistolDesertEagleGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotDeagle
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -145,8 +148,8 @@
     maxAngle: 5
     angleIncrease: 1.5
     angleDecay: 6
-    soundGunshot:
-      collection: F14PistolDesertEagleGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotDeagle
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -196,8 +199,8 @@
     maxAngle: 8
     angleIncrease: 1
     angleDecay: 12
-    soundGunshot:
-      collection: F14Pistol9mmGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotNinemil
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -259,8 +262,8 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    soundGunshot:
-      collection: F14RevolverMagnunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotMagnum
   - type: RevolverAmmoProvider
     whitelist:
       tags:

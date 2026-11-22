@@ -17,17 +17,14 @@
   - type: Item
     sprite: Nuclear14/Objects/Weapons/Guns/Heavy/minigun.rsi
     size: Ginormous
-  - type: ItemToggle
-    onUse: false
-    soundActivate:
-      path: /Audio/Misfits/Legacy/Weapons/spinon.ogg
-    soundDeactivate:
-      path: /Audio/Misfits/Legacy/Weapons/spinoff.ogg
-  - type: ItemToggleActiveSound
-    activeSound:
-      path: /Audio/Misfits/Legacy/Weapons/spinloop.ogg
-  - type: UseDelay
-    delay: 1.5
+  # WW Change start - hold the trigger: a short spin-up, then fire; heavy to carry, far heavier while spinning
+  # (was Misfits' MinigunToggle: switch the spin on by hand, one shot a second without it)
+  - type: SpinUpGun
+  - type: HeldSpeedModifier
+    walkModifier: 0.65
+    sprintModifier: 0.65
+    mirrorClothingModifier: false # the back-slot ClothingSpeedModifier is lighter
+  # WW Change end
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Heavy/minigun.rsi
     quickEquip: false
@@ -77,7 +74,6 @@
     zeroVisible: true
   - type: Appearance
   - type: MultiHandedItem
-  - type: HeldSpeedModifier
   - type: EyeCursorOffset
     maxOffset: 2
     pvsIncrease: 0.2
@@ -105,19 +101,17 @@
   id: F14WeaponMinigun
   description: An extremely heavy minigun with 3 barrels, it uses 5mm ammo. # TODO: Need to create projectiles, magazines and boxes for 5.56.
   components:
-  - type: MinigunToggle
-    ActivatedFireRate: 15
-    InactiveWeaponFireRate: 1
   - type: Gun
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotAssaultRifle
     minAngle: 7 # #Burger - nerfed spread vs pre-buff (was 4); wider cone to make up for higher ROF
     maxAngle: 30 # #Burger - nerfed spread vs pre-buff (was 12)
     angleIncrease: 6 # # - nerfed spread vs pre-buff (was 2)
     angleDecay: 12
     fireRate: 15 # #Burger - prior proposed ROF (was 6)
-  - type: ClothingSpeedModifier
+  - type: ClothingSpeedModifier # on your back
     walkModifier: 0.9
     sprintModifier: 0.9
-  - type: HeldSpeedModifier
   - type: StaticPrice
     price: 800
 
@@ -127,9 +121,6 @@
   id: F14WeaponMinigunAvenger
   description: An extremely heavy advanced minigun with multiple barrels, it uses 5mm ammo. # TODO: Need to create projectiles, magazines and boxes for 5.56.
   components:
-  - type: MinigunToggle
-    ActivatedFireRate: 15
-    InactiveWeaponFireRate: 1
   - type: Sprite
     sprite: Nuclear14/Objects/Weapons/Guns/Heavy/avengerminigun.rsi
     layers:
@@ -140,13 +131,15 @@
   - type: Item
     sprite: Nuclear14/Objects/Weapons/Guns/Heavy/avengerminigun.rsi
   - type: Gun
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotAssaultRifle
     minAngle: 5
     maxAngle: 14
     angleIncrease: 5 # #Burger - makes the steady spread slightly less predictable (was 3)
     angleDecay: 8
     fireRate: 15 # #Burger - ROF to match buffed base minigun (was 8)
-  - type: HeldSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+  - type: HeldSpeedModifier # WW Change - was 0.8; lighter than the base minigun's 0.65 but still heavy
+    walkModifier: 0.7
+    sprintModifier: 0.7
   - type: StaticPrice
     price: 850

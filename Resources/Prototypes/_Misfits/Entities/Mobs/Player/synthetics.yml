@@ -804,9 +804,9 @@
         Slash: 25
         Piercing: 25
   - type: Reflect
+    reflects: [ SmallCaliber, MediumCaliber ] # WW Change - Misfits caliber classes
     reflectProb: 0.1
     spread: 150
-    reflects: [ NonEnergy ]
   - type: ActionGun
     action: F14ActionAssaultronHeadLaser
     gunProto: F14AssaultronHeadLaserActionGun

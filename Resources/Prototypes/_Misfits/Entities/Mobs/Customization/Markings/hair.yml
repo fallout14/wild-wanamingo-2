@@ -1,0 +1,31 @@
+# WW Change (2026-11-22): hair styles Wild Wanamingo 1 had, ported by Reports/porter/ww1_hair/port_hair.py.
+# From WW1 _Misfits/Entities/Mobs/Customization/Markings/hair.yml.
+# IDs carry the F14 prefix (the old id follows the prefix).
+
+- type: marking
+  id: F14HairGloomy
+  bodyPart: Hair
+  sprites:
+    - sprite: Misfits/Mobs/Customization/hair.rsi
+      state: gloomy
+
+- type: marking
+  id: F14HairGloomylong
+  bodyPart: Hair
+  sprites:
+    - sprite: Misfits/Mobs/Customization/hair.rsi
+      state: gloomylong
+
+- type: marking
+  id: F14HairNewyou
+  bodyPart: Hair
+  sprites:
+    - sprite: Misfits/Mobs/Customization/hair.rsi
+      state: newyou
+
+- type: marking
+  id: F14HairDoublebunM14
+  bodyPart: Hair
+  sprites:
+    - sprite: Misfits/Mobs/Customization/hair.rsi
+      state: doublebunM14

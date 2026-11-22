@@ -39,8 +39,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 3
-    soundGunshot:
-      collection: F14ServiceGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotServiceRifle
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -102,8 +102,8 @@
     selectedMode: FullAuto
     availableModes:
     - FullAuto
-    soundGunshot:
-      collection: F14AutoShotgunGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotGauss
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
   - type: ItemSlots
@@ -179,8 +179,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 4
-    soundGunshot:
-      collection: F14ChineseRifleGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotAssaultRifle
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -245,8 +245,8 @@
     maxAngle: 45
     angleIncrease: 4
     angleDecay: 16
-    soundGunshot:
-      collection: F14RifleR91Gunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotAssaultRifle
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -349,8 +349,8 @@
     maxAngle: 45
     angleIncrease: 4
     angleDecay: 16
-    soundGunshot:
-      collection: F14CarbineGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotAssaultCarbine
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -423,8 +423,8 @@
     maxAngle: 45
     angleIncrease: 4
     angleDecay: 16
-    soundGunshot:
-      collection: F14MarksmanGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotMarksman
     fireRate: 4
     selectedMode: SemiAuto
     availableModes:
@@ -495,8 +495,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 4
-    soundGunshot:
-      collection: F14OldCarbineGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotVarmint
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -564,8 +564,8 @@
     maxAngle: 50
     angleIncrease: 6 # #Misfits Tweak - full-power .308 on full auto kicks hard
     angleDecay: 16
-    soundGunshot:
-      collection: F14MarksmanGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotM14
     fireRate: 3.5
     selectedMode: FullAuto
     availableModes:
@@ -668,8 +668,8 @@
     maxAngle: 40 # #Misfits Tweak - DMR: tighter than the FAL, near-perfect when wielded
     angleIncrease: 4
     angleDecay: 16
-    soundGunshot:
-      collection: F14MarksmanGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotM14
     fireRate: 2.5
     selectedMode: SemiAuto
     availableModes:
@@ -754,8 +754,8 @@
     maxAngle: 45
     angleIncrease: 4
     angleDecay: 16
-    soundGunshot:
-      collection: F14MarksmanGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotMarksman
     fireRate: 4 # #Misfits Tweak - was 5
     selectedMode: FullAuto
     availableModes:
@@ -816,10 +816,8 @@
     soundAutoEject:
       path: /Audio/Nuclear14/Weapons/Guns/Rifles/N14WeaponM1Garand/garand_ping.ogg
   - type: Gun
-    soundGunshot:
-      collection: F14GarandGunshot
-      params:
-        volume: -4
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotHunting
     minAngle: 20
     maxAngle: 50
   - type: Clothing
@@ -872,10 +870,8 @@
     soundAutoEject:
       path: /Audio/Nuclear14/Weapons/Guns/Rifles/N14WeaponM1Garand/garand_ping.ogg
   - type: Gun
-    soundGunshot:
-      collection: F14GarandGunshot
-      params:
-        volume: -4
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotHunting
     minAngle: 20
     maxAngle: 50
   - type: Clothing
@@ -961,8 +957,8 @@
     angleIncrease: 3
     angleDecay: 18
     fireRate: 3
-    soundGunshot:
-      collection: F14GarandGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotHunting
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -1016,6 +1012,9 @@
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
     muzzleVisualOffset: 0.75, 0.9375
     bayonetVisualOffset: 0.71875, 0.75
+  - type: Gun
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotHunting
 
 # SVT-40 — Legion semi-auto battle rifle with ten internal rounds.
 
@@ -1098,8 +1097,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 2.5 # #Misfits Tweak - DMR pace, was 3
-    soundGunshot:
-      collection: F14GarandGunshot
+    soundGunshot: # WW Change - Desert Rose sound
+      collection: WWDRGunshotHunting
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -1116,50 +1115,5 @@
       types:
         Piercing: 5
 
-# #Misfits Add — Infiltrator (suppressed R91 variant)
-# Ported from Fortune13/LoneStar (https://github.com/Cythisiax/LoneStar/), a SS13 Fallout fork.
-
-- type: entity
-  name: Infiltrator
-  parent: F14WeaponRifle556R91
-  id: F14WeaponRifleInfiltrator
-  description: A heavily modified R91 assault rifle with an integrated suppressor, a fixed scope and polymer furniture. It has no official designation; whoever built it just started calling it the Infiltrator.
-  components:
-  - type: ContainerContainer  # spawn state
-    containers:
-      gun_magazine: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
-      gun_chamber: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
-      weapon_muzzle: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
-  - type: Gun
-    fireRate: 5 # #Misfits Tweak - R91 rate; was 8 with a wield bonus that zeroed spread
-    angleIncrease: 3
-    angleDecay: 16
-    selectedMode: FullAuto
-    availableModes:
-    - FullAuto
-    - SemiAuto
-    soundGunshot:
-      collection: F14RifleR91Gunshot
-  - type: StaticPrice
-    price: 500
-  - type: FirearmAttachmentHost
-    showMuzzleVisual: false
-    muzzleSlot:
-      name: Integral suppressor
-      startingItem: F14FirearmSuppressor
-      locked: true
-      insertOnInteract: false
-      ejectOnInteract: false
-      ejectOnUse: false
-      disableEject: true
-  - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
-    magnifications: [ 4 ]
+# WW Change - the Misfits infiltrator (R91 sprite, wood furniture) was removed; the infiltrator is
+# F14WeaponRifle556Infiltrator in _WW/Entities/Objects/Weapons/Guns/infiltrator.yml (black, no stock).

@@ -40,7 +40,7 @@
     enabled: false
     radius: 4.5
     energy: 1
-    mask: /Textures/Effects/LightMasks/cone.png
+    lightMask: ConeSingle # WW Change - was the removed mask field
     autoRot: true
     netsync: false
   - type: HandheldLight
@@ -80,6 +80,7 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
+  - type: ItemTogglePointLight # WW Change - HandheldLight needs this to light up on the client (point light is not net-synced)
 
 
 #Misfits Change /Comment-out/: Duplicate BoS light scribe headsets removed — consolidated into Misfits/Entities/Clothing/Ears/bos_headsets.yml.

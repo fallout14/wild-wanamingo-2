@@ -46,27 +46,17 @@
   - type: ExplosionResistance
     damageCoefficient: 0.60
 
+# WW Change - the open flak vest is no longer its own item: this one opens and closes (alt-click).
 - type: entity
-  parent: F14ClothingOuterNCRCombatArmor
+  parent: [ WWClothingOuterToggleable, F14ClothingOuterNCRCombatArmor ]
   id: F14ClothingOuterNCRFlakVest
   name: NCR flak vest
-  description: A sidegrade NCR flak vest often seen on lighter patrol assignments.
+  description: A sidegrade NCR flak vest often seen on lighter patrol assignments. It can be worn open for comfort in desert heat.
   components:
   - type: Sprite
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrflakvest.rsi
   - type: Clothing
     sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrflakvest.rsi
-
-- type: entity
-  parent: F14ClothingOuterNCRCombatArmor
-  id: F14ClothingOuterNCRFlakVestOpen
-  name: open NCR flak vest
-  description: A sidegrade NCR flak vest worn open for comfort in desert heat.
-  components:
-  - type: Sprite
-    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrflakvestopen.rsi
-  - type: Clothing
-    sprite: Nuclear14/Clothing/OuterClothing/Armor/falloutncrflakvestopen.rsi
 
 - type: entity
   parent: F14ClothingOuterNCRCombatArmor
