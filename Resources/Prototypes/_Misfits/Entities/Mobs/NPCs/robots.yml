@@ -274,6 +274,7 @@
           path: /Audio/Machines/warning_buzzer.ogg
           params:
             volume: 2
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
   # Misfits Add - robot/broadcast languages when player-controlled.
 
 - type: entity
@@ -454,4 +455,5 @@
           path: /Audio/Machines/warning_buzzer.ogg
           params:
             volume: 2
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
   # Misfits Add - robot/broadcast languages when player-controlled.

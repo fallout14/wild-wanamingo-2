@@ -12,7 +12,7 @@ namespace Content.Shared._Misfits.Weapons.Attachments.Components;
 public sealed partial class SuppressorAttachmentComponent : Component
 {
     [DataField, AutoNetworkedField]
-    public SoundSpecifier? SoundGunshot = new SoundPathSpecifier("/Audio/Weapons/Guns/Gunshots/silenced.ogg");
+    public SoundSpecifier? SoundGunshot = new SoundPathSpecifier("/Audio/WildWanamingo/DesertRose/Weapons/silenced.ogg"); // WW Change - Desert Rose suppressed shot
 
     [DataField, AutoNetworkedField]
     public bool HideMuzzleFlash = true;

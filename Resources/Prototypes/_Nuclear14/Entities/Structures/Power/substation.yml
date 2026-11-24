@@ -231,6 +231,7 @@
           F14ScrapSteel1:
            min: 4
            max: 7
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
 
 - type: entity
   parent: F14SubstationDestroyed

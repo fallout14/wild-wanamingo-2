@@ -254,6 +254,7 @@
             max: 2
       - !type:DoActsBehavior
         acts: ["Destruction"]
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
 
 - type: entity
   parent: F14DoorWoodTall

@@ -10,6 +10,8 @@ using Content.Shared.Verbs;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.Audio.Systems;
+using Robust.Shared.Containers;
+using Robust.Shared.Network;
 
 namespace Content.Shared._Misfits.Weapons.Ranged;
 
@@ -19,6 +21,8 @@ public sealed partial class ManualActionSystem : EntitySystem
     [Dependency] private SharedHandsSystem _hands = default!;
     [Dependency] private SharedGunSystem _guns = default!;
     [Dependency] private SharedAudioSystem _audio = default!;
+    [Dependency] private SharedContainerSystem _containers = default!;
+    [Dependency] private INetManager _net = default!;
 
     public override void Initialize()
     {
@@ -29,7 +33,42 @@ public sealed partial class ManualActionSystem : EntitySystem
         // Before Wizden's gun system so an uncycled gun cycles instead of doing its default use action.
         SubscribeLocalEvent<ManualActionComponent, UseInHandEvent>(OnUseInHand, before: [typeof(SharedGunSystem)]);
         SubscribeLocalEvent<GunComponent, GetVerbsEvent<Verb>>(OnCycleVerb);
+        SubscribeLocalEvent<ManualActionComponent, EntInsertedIntoContainerMessage>(OnInserted); // WW Change
     }
+
+    // WW Change start - a magazine's rounds start out "unspawned" (just a count). The client can't predict a
+    // server entity out of that count, so after a quick cycle it saw an empty chamber, clicked, and the shooter
+    // never heard the server's shot. Real rounds in the magazine can be predicted into the chamber.
+    private void OnInserted(Entity<ManualActionComponent> ent, ref EntInsertedIntoContainerMessage args)
+    {
+        if (args.Container.ID == SharedGunSystem.MagazineSlot)
+            SpawnMagazineRounds(ent);
+    }
+
+    private void SpawnMagazineRounds(EntityUid gun)
+    {
+        if (!_net.IsServer ||
+            !HasComp<ChamberMagazineAmmoProviderComponent>(gun) ||
+            !_containers.TryGetContainer(gun, SharedGunSystem.MagazineSlot, out var slot) ||
+            slot.ContainedEntities.Count == 0 ||
+            !TryComp<BallisticAmmoProviderComponent>(slot.ContainedEntities[0], out var mag) ||
+            mag.UnspawnedCount <= 0 || mag.Proto == null)
+        {
+            return;
+        }
+
+        var magEnt = slot.ContainedEntities[0];
+        var count = mag.UnspawnedCount;
+        _guns.SetBallisticUnspawned((magEnt, mag), 0);
+        var coords = Transform(magEnt).Coordinates;
+        for (var i = 0; i < count; i++)
+        {
+            var round = Spawn(mag.Proto.Value, coords);
+            if (!_guns.TryBallisticInsert((magEnt, mag), round, null, suppressInsertionSound: true))
+                Del(round);
+        }
+    }
+    // WW Change end
 
     private void OnAttemptShoot(Entity<ManualActionComponent> ent, ref AttemptShootEvent args)
     {
@@ -44,6 +83,7 @@ public sealed partial class ManualActionSystem : EntitySystem
     {
         ent.Comp.NeedsCycle = true;
         Dirty(ent);
+        SpawnMagazineRounds(ent); // WW Change - in case the magazine refilled itself
     }
 
     private void OnUseInHand(Entity<ManualActionComponent> ent, ref UseInHandEvent args)

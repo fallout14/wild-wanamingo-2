@@ -1,15 +1,13 @@
 # Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
 # Resources/Prototypes/_Nuclear14/Entities/Structures/Furniture/barricades.yml
 
+# WW Change (2026-11-23): the sandbags became MS13's smoothing sandbags (below). What the other barricades
+# inherited from the old directional sandbag now lives in F14BarricadeBase, unchanged.
 - type: entity
-  id: F14BarricadeSandbagSingle
+  abstract: true
+  id: F14BarricadeBase
   parent: BaseStructure
-  name: sandbags
-  description: A sandbag fortification.
   components:
-  - type: Construction # #Misfits Add: constructable via (G) menu using sand + thread
-    graph: F14SandbagBarricade
-    node: sandbag
   - type: Sprite
     sprite: Nuclear14/Structures/Furniture/barricades.rsi
     netsync: false
@@ -42,9 +40,64 @@
         layer:
         - TableLayer
 
+# WW Change: MS13 sandbags (WildWanamingo/Structures/Furniture/sandbags.rsi, built by
+# Reports/porter/sprite_team/make_ms13_tables_sandbags.py). They join up into walls, fill the whole tile and can be
+# climbed over. Bullets still pass, as with the old sandbags.
+- type: entity
+  id: F14BarricadeSandbagSingle
+  parent: BaseStructure
+  name: sandbags
+  description: Stacked bags of sand, piled up to keep the lead off you.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Construction # #Misfits Add: constructable via (G) menu using sand + thread
+    graph: F14SandbagBarricade
+    node: sandbag
+  - type: Sprite
+    sprite: WildWanamingo/Structures/Furniture/sandbags.rsi
+    drawdepth: Mobs
+    noRot: true # mapped sandbags are rotated from when they were directional
+  - type: Icon
+    sprite: WildWanamingo/Structures/Furniture/sandbags.rsi
+    state: full
+  - type: IconSmooth
+    key: sandbags
+    states:
+    - !type:DirectionSpriteSmoothing
+      mask: [ sandbags ]
+      base: sandbags
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+  - type: Climbable
+
 - type: entity
   id: F14BarricadeTanktrap
-  parent: F14BarricadeSandbagSingle
+  parent: F14BarricadeBase # WW Change
   name: tank trap
   description: A metal fabricated spike for blocking vehicles.
   components:
@@ -71,6 +124,7 @@
           collection: MetalBreak
       - !type:DoActsBehavior
         acts: ["Destruction"]
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
   - type: Fixtures
     fixtures:
       fix1:
@@ -165,7 +219,7 @@
       knockdownTime: 0
 
 - type: entity
-  parent: F14BarricadeSandbagSingle
+  parent: F14BarricadeBase # WW Change
   id: F14BarricadeMetal
   name: metal barricade
   description: A metal fortification.
@@ -211,6 +265,7 @@
             max: 2
       - !type:DoActsBehavior
         acts: ["Destruction"]
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
 
 - type: entity
   parent: F14BarricadeMetal
@@ -224,7 +279,7 @@
     node:  Green
 
 - type: entity
-  parent: F14BarricadeSandbagSingle
+  parent: F14BarricadeBase # WW Change
   id: F14DecorConcreteBarrier
   name: concrete barrier
   description: A concrete barrier for stopping traffic.

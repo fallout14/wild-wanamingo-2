@@ -1,0 +1,103 @@
+# WW (2026-11-23): MS13 metal tables from the sprite team's contribution.
+# Sprites: WildWanamingo/Structures/Furniture/table_metal*.rsi, built by
+# Reports/porter/sprite_team/make_ms13_tables_sandbags.py (corner smoothing, like Wizden's tables).
+# The plain MS13 metal table replaces the look of Wizden's Table (Entities/Structures/Furniture/Tables/tables.yml).
+
+# Rounded-edge variant. Joins only with itself; the edges don't line up with the square table.
+- type: entity
+  parent: Table
+  id: WWTableMetalAlt
+  name: metal table
+  description: A rounded piece of metal standing on a set of metal legs.
+  components:
+  - type: Sprite
+    sprite: WildWanamingo/Structures/Furniture/table_metal_alt.rsi
+  - type: Icon
+    sprite: WildWanamingo/Structures/Furniture/table_metal_alt.rsi
+  - type: IconSmooth
+    key: wwtablemetalalt
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ wwtablemetalalt ]
+      base: state_
+
+# Player-made table out of scrap (MS13's "crude metal table"). Weaker than a proper table.
+- type: entity
+  parent: [ TableBase, StructureHealthFurnitureWeak ]
+  id: WWTableMetalCrude
+  name: crude metal table
+  description: A crude table made of scrap metal plates. Not too bad, as far as post-apocalyptic furniture goes.
+  components:
+  - type: Sprite
+    sprite: WildWanamingo/Structures/Furniture/table_metal_crude.rsi
+  - type: Icon
+    sprite: WildWanamingo/Structures/Furniture/table_metal_crude.rsi
+  - type: IconSmooth
+    key: wwtablemetalcrude
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ wwtablemetalcrude ]
+      base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          F14Scrap1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - replaceInherited
+  - type: Construction
+    graph: WWTableMetalCrude
+    node: table
+
+- type: constructionGraph
+  id: WWTableMetalCrude
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: table
+      completed:
+      - !type:SnapToGrid
+        southRotation: true
+      steps:
+      - material: F14Scrap
+        amount: 4
+        doAfter: 3
+  - node: table
+    entity: WWTableMetalCrude
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: F14Scrap1
+        amount: 3
+      - !type:DeleteEntity
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: construction
+  id: WWTableMetalCrude
+  graph: WWTableMetalCrude
+  startNode: start
+  targetNode: table
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+  - !type:TileNotBlocked

@@ -42,6 +42,10 @@ public sealed partial class StoreStructuredSystem : EntitySystem
     [Dependency] private NcStoreLogicSystem _logic = default!;
     private readonly List<EntityUid> _openStoresScratch = new();
     private readonly HashSet<EntityUid> _openStoreUids = new();
+
+    // WW Change: stores this system is opening right now. Wizden's ActivatableUI re-checks direct opens (#46045),
+    // which raised the open attempt again from inside our own OpenUi call and recursed until the stack overflowed.
+    private readonly HashSet<EntityUid> _openingStores = new();
     private readonly HashSet<EntityUid> _pendingRefreshEntities = new();
     [Dependency] private PopupSystem _popups = default!;
     private readonly Dictionary<EntityUid, HashSet<EntityUid>> _storesByWatchedRoot = new();
@@ -422,6 +426,10 @@ public sealed partial class StoreStructuredSystem : EntitySystem
 
     private void OnUiOpenAttempt(EntityUid uid, NcStoreComponent comp, ref ActivatableUIOpenAttemptEvent ev)
     {
+        // WW Change: this is our own OpenUi below being validated; the checks already passed.
+        if (_openingStores.Contains(uid))
+            return;
+
         ev.Cancel();
         var user = ev.User;
 
@@ -472,7 +480,17 @@ public sealed partial class StoreStructuredSystem : EntitySystem
         _openStoreUids.Add(uid);
 
         if (!_ui.IsUiOpen(uid, StoreUiKey.Key, user))
-            _ui.OpenUi(uid, StoreUiKey.Key, user);
+        {
+            _openingStores.Add(uid); // WW Change
+            try
+            {
+                _ui.OpenUi(uid, StoreUiKey.Key, user);
+            }
+            finally
+            {
+                _openingStores.Remove(uid);
+            }
+        }
 
         EnsureCrateWatchUpToDate(uid, user);
 

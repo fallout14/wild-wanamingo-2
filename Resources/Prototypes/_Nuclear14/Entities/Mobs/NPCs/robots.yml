@@ -190,6 +190,7 @@
           path: /Audio/Misfits/Legacy/Machines/AI/borg_death.ogg
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
   - type: MovementSpeedModifier
     baseWalkSpeed : 3
     baseSprintSpeed : 6

@@ -292,6 +292,7 @@
           collection: MetalBreak
       - !type:DoActsBehavior
         acts: ["Destruction"]
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
     # TODO - fill with some sort of radioactive waste reagent.
 
 # Burning Barrels

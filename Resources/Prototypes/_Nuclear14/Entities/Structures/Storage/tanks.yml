@@ -31,24 +31,24 @@
       behaviors:
       - !type:SolutionExplosionBehavior
         solution: tank
+    # WW Change: was 5 piercing to blow up and 10 damage to spill and break, so one thrown knife (25) wrecked a
+    # big metal tank. Now it takes sustained fire to blow, it springs a leak at 50 and only breaks at 100.
     - trigger:
         !type:DamageTypeTrigger
         damageType: Piercing
-        damage: 5
+        damage: 30
       behaviors:
       - !type:SolutionExplosionBehavior
         solution: tank
     - trigger:
         !type:DamageTrigger
-        damage: 10
+        damage: 50
       behaviors:
       - !type:SpillBehavior
         solution: tank
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Solution
     id: tank
     solution:

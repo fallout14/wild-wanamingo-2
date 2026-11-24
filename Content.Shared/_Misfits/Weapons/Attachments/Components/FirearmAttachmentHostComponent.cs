@@ -1,6 +1,7 @@
 // Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Content.Shared/_Misfits/Weapons/Attachments/Components/FirearmAttachmentHostComponent.cs
 
 using System.Numerics;
+using Robust.Shared.Audio; // WW Change
 using Content.Shared.Containers.ItemSlots;
 using Robust.Shared.GameStates;
 using Robust.Shared.Maths;
@@ -83,6 +84,15 @@ public sealed partial class FirearmAttachmentHostComponent : Component
 
     [DataField, AutoNetworkedField]
     public Vector2? SuppressorVisualOffset;
+
+    // WW Change start
+    /// <summary>
+    /// The report this gun makes with a suppressor fitted, instead of the suppressor's own (e.g. Desert Rose's
+    /// heavier suppressed shot for rifles). Null uses the suppressor's.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public SoundSpecifier? SuppressedSoundGunshot;
+    // WW Change end
 
     [DataField, AutoNetworkedField]
     public Vector2? BayonetVisualOffset;

@@ -262,7 +262,7 @@ public sealed partial class SharedFirearmAttachmentSystem : EntitySystem
         if (TryGetMuzzleAttachment(ent, out var attachment) &&
             TryComp<SuppressorAttachmentComponent>(attachment, out var suppressor))
         {
-            args.SoundGunshot = suppressor.SoundGunshot;
+            args.SoundGunshot = ent.Comp.SuppressedSoundGunshot ?? suppressor.SoundGunshot; // WW Change - per-gun suppressed report
         }
     }
 

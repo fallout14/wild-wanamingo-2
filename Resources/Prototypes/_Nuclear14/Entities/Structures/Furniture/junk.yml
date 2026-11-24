@@ -78,6 +78,7 @@
             max: 1
       - !type:DoActsBehavior
         acts: ["Destruction"]
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
   - type: Tag
     tags:
     - Metal
@@ -168,6 +169,7 @@
           F14ScrapCopper1:
            min: 1
            max: 2
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
   - type: Fixtures
     fixtures:
       fix1:

@@ -46,6 +46,8 @@
   # Integral suppressor: a locked suppressor in the muzzle slot, drawn by the attachment visualizer.
   - type: FirearmAttachmentHost
     suppressorVisualOffset: 0.6875, 0.75
+    suppressedSoundGunshot: # Desert Rose's suppressed rifle shot, as on its Infiltrator
+      path: /Audio/WildWanamingo/DesertRose/Weapons/silenced_large.ogg
     enableOpticSlot: false # the scope is built in (WWScope below)
     muzzleSlot:
       name: Integral suppressor

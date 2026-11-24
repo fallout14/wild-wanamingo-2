@@ -1,0 +1,66 @@
+# WW (2026-11-22): wooden palisade from the sprite team's contribution.
+# Sprite: WildWanamingo/Structures/Walls/palisade.rsi, built by Reports/porter/sprite_team/make_stove_palisade.py.
+# Joins to other palisades only; states palisade0..15 are DirectionFlag masks (S=1, E=2, N=4, W=8).
+
+- type: entity
+  parent: F14BaseWallTallWood
+  id: WWWallPalisade
+  name: palisade
+  description: A wall of sharpened stakes driven into the ground.
+  components:
+  - type: Sprite
+    sprite: WildWanamingo/Structures/Walls/palisade.rsi
+    offset: 0, 0.25 # 48-tall frames: puts the stakes' feet on the bottom of the tile, like the MS13 tall walls
+  - type: Icon
+    sprite: WildWanamingo/Structures/Walls/palisade.rsi
+    state: full
+  - type: IconSmooth
+    key: palisade
+    states:
+    - !type:DirectionSpriteSmoothing
+      mask: [ palisade ]
+      base: palisade
+  - type: Construction
+    graph: WWPalisade
+    node: palisade
+
+- type: constructionGraph
+  id: WWPalisade
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: palisade
+      completed:
+      - !type:SnapToGrid
+        southRotation: true
+      steps:
+      - material: WoodPlank
+        amount: 4
+        doAfter: 4
+  - node: palisade
+    entity: WWWallPalisade
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 4
+      - !type:DeleteEntity
+      steps:
+      - tool: Prying
+        doAfter: 4
+
+- type: construction
+  id: WWWallPalisade
+  graph: WWPalisade
+  startNode: start
+  targetNode: palisade
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+  - !type:TileNotBlocked

@@ -296,6 +296,7 @@
             max: 1
       - !type:DoActsBehavior
         acts: ["Destruction"]
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
   - type: Construction
     graph: F14Planter
     node: Planter

@@ -23,6 +23,7 @@ namespace Content.Server.Weapons.Ranged.Systems;
 public sealed partial class GunSystem : SharedGunSystem
 {
     [Dependency] private PricingSystem _pricing = default!;
+    [Dependency] private Content.Shared._WW.Weapons.Ranged.GunshotAudioSystem _gunshotAudio = default!; // WW Change
     [Dependency] private SharedMapSystem _map = default!;
 
     private const float DamagePitchVariation = 0.05f;
@@ -155,7 +156,7 @@ public sealed partial class GunSystem : SharedGunSystem
 
                     Del(ent);
 
-                    Audio.PlayPredicted(gun.Comp.SoundGunshotModified, gun, user);
+                    _gunshotAudio.PlayGunshot(gun, gun.Comp.SoundGunshotModified, user); // WW Change - caps overlapping shots
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -194,7 +195,7 @@ public sealed partial class GunSystem : SharedGunSystem
             }
 
             MuzzleFlash(gun, ammoComp, mapDirection.ToAngle(), user);
-            Audio.PlayPredicted(gun.Comp.SoundGunshotModified, gun, user);
+            _gunshotAudio.PlayGunshot(gun, gun.Comp.SoundGunshotModified, user); // WW Change - caps overlapping shots
         }
     }
 

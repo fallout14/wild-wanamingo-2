@@ -1,0 +1,225 @@
+# WW (2026-11-22): barbed wire from the sprite team's contribution.
+# Sprites: WildWanamingo/Structures/Walls/barbedwire_loose.rsi and barbedwire_fence.rsi, built by
+# Reports/porter/sprite_team/make_barbed_wire.py. Each joins only its own kind (DirectionSpriteSmoothing,
+# states <base>0..15, S=1 E=2 N=4 W=8).
+
+# Loose coils on the ground: you can wade through, slowly, and it cuts you every step (like the razorwire barricade).
+- type: entity
+  parent: BaseStructure
+  id: WWBarbedWireLoose
+  name: barbed wire
+  description: Coils of rusty barbed wire. You could wade through it, if you don't mind the bleeding.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: WildWanamingo/Structures/Walls/barbedwire_loose.rsi
+    drawdepth: Objects
+  - type: Icon
+    sprite: WildWanamingo/Structures/Walls/barbedwire_loose.rsi
+    state: full
+  - type: IconSmooth
+    key: barbedwire_loose
+    states:
+    - !type:DirectionSpriteSmoothing
+      mask: [ barbedwire_loose ]
+      base: barbedwire_loose
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PartRodMetal1:
+            min: 0
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: StepTrigger
+    intersectRatio: 0.2
+    requiredTriggeredSpeed: 0
+  - type: TriggerOnStepTrigger
+  - type: DamageOnTrigger
+    targetUser: true
+    damage:
+      types:
+        Piercing: 5
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.5
+    sprintSpeedModifier: 0.5
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      wire:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        hard: false
+        layer:
+        - LowImpassable
+  - type: Construction
+    graph: WWBarbedWire
+    node: loose
+
+# Wire strung between wooden posts: a fence. Bullets and sight go through, people don't.
+- type: entity
+  parent: BaseStructure
+  id: WWBarbedWireFence
+  name: barbed wire fence
+  description: Barbed wire strung between wooden posts. Keeps people out; doesn't do much about bullets.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: WildWanamingo/Structures/Walls/barbedwire_fence.rsi
+    drawdepth: Walls
+  - type: Icon
+    sprite: WildWanamingo/Structures/Walls/barbedwire_fence.rsi
+    state: full
+  - type: IconSmooth
+    key: barbedwire_fence
+    states:
+    - !type:DirectionSpriteSmoothing
+      mask: [ barbedwire_fence ]
+      base: barbedwire_fence
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 0
+            max: 1
+          PartRodMetal1:
+            min: 0
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer: # like the chainlink fence: blocks movement, not bullets or sight
+        - Impassable
+        - HighImpassable
+        - MidImpassable
+        - LowImpassable
+        - InteractImpassable
+        density: 100
+  - type: InteractionPopup
+    interactSuccessString: fence-rattle-success
+    messagePerceivedByOthers: fence-rattle-success
+    interactSuccessSound:
+      collection: FenceRattle
+  - type: Construction
+    graph: WWBarbedWire
+    node: fence
+
+- type: constructionGraph
+  id: WWBarbedWire
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: loose
+      completed:
+      - !type:SnapToGrid
+        southRotation: true
+      steps:
+      - material: MetalRod
+        amount: 2
+        doAfter: 3
+    - to: fence
+      completed:
+      - !type:SnapToGrid
+        southRotation: true
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+      - material: MetalRod
+        amount: 2
+        doAfter: 3
+  - node: loose
+    entity: WWBarbedWireLoose
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: PartRodMetal1
+        amount: 2
+      - !type:DeleteEntity
+      steps:
+      - tool: Cutting
+        doAfter: 3
+  - node: fence
+    entity: WWBarbedWireFence
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: PartRodMetal1
+        amount: 2
+      - !type:DeleteEntity
+      steps:
+      - tool: Cutting
+        doAfter: 4
+
+- type: construction
+  id: WWBarbedWireLoose
+  graph: WWBarbedWire
+  startNode: start
+  targetNode: loose
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
+  id: WWBarbedWireFence
+  graph: WWBarbedWire
+  startNode: start
+  targetNode: fence
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+  - !type:TileNotBlocked

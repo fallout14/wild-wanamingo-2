@@ -150,6 +150,7 @@
       - !type:PlaySoundBehavior
         sound:
           collection: WoodDestroyHeavy
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
 
 - type: entity
   parent: BaseWall
@@ -317,6 +318,7 @@
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
 
 - type: entity
   id: F14BlastDoorExteriorIndestructibleOpen
@@ -331,3 +333,4 @@
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)

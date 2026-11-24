@@ -22,10 +22,17 @@ namespace Content.Client.Lobby.UI
         private static readonly ProtoId<SpecialTuningPrototype> SpecialTuningPrototypeId = "F14SpecialTuning";
 
         // Pip-Boy terminal colours.
-        private static readonly Color PipBoyGreen = Color.FromHex("#33FF66");
-        private static readonly Color PipBoyGreenDim = Color.FromHex("#1E9C3D");
-        private static readonly Color PipBoyPanelBg = Color.FromHex("#0C1F0E");
-        private static readonly Color PipBoyBtnDefault = Color.FromHex("#163E1E");
+        // WW Change start: New Vegas amber to match the rest of the UI while ww.ui_vegas_colors is on (the default);
+        // the original Misfits green otherwise. Properties so a toggle of the option shows on the next rebuild.
+        private static Color PipBoyGreen => Content.Client._WW.Stylesheets.VegasPalettes.Enabled
+            ? Content.Client._WW.Stylesheets.VegasPalettes.Amber : Color.FromHex("#33FF66");
+        private static Color PipBoyGreenDim => Content.Client._WW.Stylesheets.VegasPalettes.Enabled
+            ? Color.FromHex("#A0701F") : Color.FromHex("#1E9C3D");
+        private static Color PipBoyPanelBg => Content.Client._WW.Stylesheets.VegasPalettes.Enabled
+            ? Color.FromHex("#1C150B") : Color.FromHex("#0C1F0E");
+        private static Color PipBoyBtnDefault => Content.Client._WW.Stylesheets.VegasPalettes.Enabled
+            ? Color.FromHex("#4A3415") : Color.FromHex("#163E1E");
+        // WW Change end
 
         private BoxContainer? _specialTab;
         private BoxContainer? _specialRows;

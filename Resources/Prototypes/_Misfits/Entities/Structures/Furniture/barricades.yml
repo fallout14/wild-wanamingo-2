@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Structures/Furniture/barricades.yml
 
 - type: entity
-  parent: F14BarricadeSandbagSingle # Corvax-Change
+  parent: F14BarricadeBase # Corvax-Change, WW Change - the old sandbag base
   id: F14BarricadeConcreteBarrier
   name: concrete barricade
   description: A concrete fortification barrier for stopping traffic.
@@ -46,3 +46,4 @@
             max: 2
       - !type:DoActsBehavior
         acts: ["Destruction"]
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)

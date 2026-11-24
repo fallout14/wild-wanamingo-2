@@ -156,9 +156,9 @@
   description: A square piece of metal standing on four metal legs.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/generic.rsi
+    sprite: WildWanamingo/Structures/Furniture/table_metal.rsi # WW Change - MS13 metal table (was Structures/Furniture/Tables/generic.rsi)
   - type: Icon
-    sprite: Structures/Furniture/Tables/generic.rsi
+    sprite: WildWanamingo/Structures/Furniture/table_metal.rsi # WW Change
   - type: Damageable
     damageModifierSet: SteelMod
   - type: Destructible

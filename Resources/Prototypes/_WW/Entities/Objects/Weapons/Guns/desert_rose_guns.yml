@@ -493,6 +493,8 @@
   # Integral suppressor: a locked suppressor in the muzzle slot, part of the sprite, so no overlay. Takes a scope.
   - type: FirearmAttachmentHost
     showMuzzleVisual: false
+    suppressedSoundGunshot: # Desert Rose's suppressed rifle shot, as on its commando carbine
+      path: /Audio/WildWanamingo/DesertRose/Weapons/silenced_large.ogg
     enableOpticSlot: true
     opticVisualState: leveraction_scope
     opticVisualOffset: 0.25, 0.46875

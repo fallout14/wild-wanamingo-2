@@ -1,0 +1,113 @@
+# WW (2026-11-22): giant mantis from the sprite team's contribution (WildWanamingo/Mobs/Insects/mantis.rsi).
+# A mid-tier wasteland bug between the radroach and the radscorpion. No mantis sounds yet: it borrows the radroach's.
+
+- type: entity
+  name: giant mantis
+  id: WWMobGiantMantis
+  parent: F14MobBaseHostileInsect
+  description: A mantis the size of a dog. It holds its forelegs folded like it's praying, right up until it isn't.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: mantis
+      sprite: WildWanamingo/Mobs/Insects/mantis.rsi
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3
+    baseSprintSpeed: 4.5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.3
+        density: 80
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: Stamina
+    baseCritThreshold: 60
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: mantis
+      Critical:
+        Base: mantis
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: F14RadroachAttack # placeholder until there are mantis sounds
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    attackRate: 1.2
+    damage:
+      types:
+        Slash: 6
+        Piercing: 2
+  - type: IdleSound
+  - type: SpamEmitSound
+    minInterval: 10
+    maxInterval: 60
+    sound:
+      collection: F14RadroachIdle # placeholder until there are mantis sounds
+      params:
+        volume: -10
+        maxDistance: 5
+  - type: AggroSound
+    sound:
+      collection: F14RadroachAttack # placeholder until there are mantis sounds
+      params:
+        volume: -3
+        maxDistance: 10
+  - type: Butcherable
+    spawned:
+    - id: F14MaterialExoskeleton
+      amount: 1
+      prob: 0.5
+    - id: F14FoodMeatRadroachFillet
+      amount: 2
+
+- type: entity
+  parent: [ WWMobGiantMantis, F14MobDespawning ]
+  id: WWMobGiantMantisDespawning
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  name: Giant Mantis Spawner
+  id: WWSpawnMobGiantMantis
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: WildWanamingo/Mobs/Insects/mantis.rsi
+      state: mantis
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+    - WWMobGiantMantis
+
+- type: entity
+  parent: WWTimedSpawnerPredator # danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  id: WWTimedSpawnerGiantMantis
+  name: Giant Mantis Timed Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: WildWanamingo/Mobs/Insects/mantis.rsi
+      state: mantis
+    - state: timed
+  - type: WastelandSpawner
+    prototypes:
+    - WWMobGiantMantis

@@ -39,6 +39,7 @@ namespace Content.Client.Weapons.Ranged.Systems;
 public sealed partial class GunSystem : SharedGunSystem
 {
     [Dependency] private IEyeManager _eyeManager = default!;
+    [Dependency] private Content.Shared._WW.Weapons.Ranged.GunshotAudioSystem _gunshotAudio = default!; // WW Change
     [Dependency] private IInputManager _inputManager = default!;
     [Dependency] private InputSystem _inputSystem = default!;
     [Dependency] private IOverlayManager _overlayManager = default!;
@@ -255,7 +256,7 @@ public sealed partial class GunSystem : SharedGunSystem
                     {
                         SetCartridgeSpent(ent!.Value, cartridge, true);
                         MuzzleFlash(gun, cartridge, worldAngle, user);
-                        Audio.PlayPredicted(gun.Comp.SoundGunshotModified, gun, user);
+                        _gunshotAudio.PlayGunshot(gun, gun.Comp.SoundGunshotModified, user); // WW Change - caps overlapping shots
                         Recoil(user, direction, gun.Comp.CameraRecoilScalarModified);
                         // TODO: Can't predict entity deletions.
                         //if (cartridge.DeleteOnSpawn)
@@ -273,7 +274,7 @@ public sealed partial class GunSystem : SharedGunSystem
                     break;
                 case AmmoComponent newAmmo:
                     MuzzleFlash(gun, newAmmo, worldAngle, user);
-                    Audio.PlayPredicted(gun.Comp.SoundGunshotModified, gun, user);
+                    _gunshotAudio.PlayGunshot(gun, gun.Comp.SoundGunshotModified, user); // WW Change - caps overlapping shots
                     Recoil(user, direction, gun.Comp.CameraRecoilScalarModified);
                     if (IsClientSide(ent!.Value))
                         Del(ent.Value);
@@ -281,7 +282,7 @@ public sealed partial class GunSystem : SharedGunSystem
                         RemoveShootable(ent.Value);
                     break;
                 case HitscanAmmoComponent:
-                    Audio.PlayPredicted(gun.Comp.SoundGunshotModified, gun, user);
+                    _gunshotAudio.PlayGunshot(gun, gun.Comp.SoundGunshotModified, user); // WW Change - caps overlapping shots
                     Recoil(user, direction, gun.Comp.CameraRecoilScalarModified);
                     break;
             }

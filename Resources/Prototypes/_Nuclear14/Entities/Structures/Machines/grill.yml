@@ -28,7 +28,7 @@
         - HalfWallLayer
   - type: Sprite
     netsync: false
-    sprite: Nuclear14/Structures/Decoration/crafting_junk.rsi
+    sprite: WildWanamingo/Structures/Machines/stove.rsi # WW Change: sprite team's four-way stove (porter/sprite_team)
     snapCardinals: false
     drawdepth: Objects
     noRot: true
@@ -68,25 +68,7 @@
     startSound:
       path: /Audio/Misfits/Machines/grill.ogg
 
-- type: entity
-  id: F14CookingStoveWide
-  parent: F14CookingStove
-  suffix: wide
-  components:
-  - type: Sprite
-    layers:
-    - state: stove_wide
-    - map: ["enum.EntityHeaterVisuals.Setting"]
-      shader: unshaded
-      visible: false
-  - type: GenericVisualizer
-    visuals:
-      enum.EntityHeaterVisuals.Setting:
-        enum.EntityHeaterVisuals.Setting:
-          Off: { visible: false }
-          Low: { visible: true, state: stove_wide_on }
-          Medium: { visible: true, state: stove_wide_on }
-          High: { visible: true, state: stove_wide_on }
+# WW (2026-11-22): F14CookingStoveWide removed; every stove is the sprite team's stove now (migration.yml).
 
 - type: entity
   parent: F14CookingStove

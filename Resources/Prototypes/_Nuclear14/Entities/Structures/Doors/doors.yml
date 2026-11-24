@@ -430,6 +430,7 @@
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
 
 - type: entity
   parent: F14DoorGlass
@@ -468,6 +469,7 @@
           ShardGlass:
             min: 1
             max: 2
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
 
 - type: entity
   parent: F14DoorGlassStore

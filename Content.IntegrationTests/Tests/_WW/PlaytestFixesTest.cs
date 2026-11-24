@@ -42,7 +42,7 @@ public sealed class PlaytestFixesTest : GameTest
             }
 
             // Stoves and grills heat on their own; their setting must not draw grid power.
-            foreach (var proto in new[] { "F14CookingStove", "F14CookingStoveWide", "F14KitchenGrill", "F14KitchenGrillWide" })
+            foreach (var proto in new[] { "F14CookingStove", "F14KitchenGrill", "F14KitchenGrillWide" })
             {
                 var heater = entMan.SpawnEntity(proto, map.GridCoords);
                 Assert.That(entMan.GetComponent<EntityHeaterComponent>(heater).Power, Is.Zero, proto);

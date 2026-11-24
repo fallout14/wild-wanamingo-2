@@ -60,6 +60,7 @@
             - 0 # nitrogen
             - 340.5701689 # carbon dioxide
           temperature: 373.15
+    - replaceInherited # WW: ignore the parents' thresholds (N14/Misfits were written for replace)
   - type: Explosive
     #Misfits Change - use the structural-capable N14 explosion profile.
     explosionType: F14DefaultStructural
