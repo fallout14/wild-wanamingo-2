@@ -8,6 +8,10 @@
   name: job-name-bos-west-elder-comm
   description: job-description-bos-west-elder-comm
   playTimeTracker: F14BoSWestElderCommander
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14BoSWestElderCommanderGear
   icon: F14JobIconBosMCommander
   supervisors: job-supervisors-bos-west-elder
@@ -43,6 +47,10 @@
   name: job-name-bos-mid-paladin-comm
   description: job-description-bos-mid-paladin-comm
   playTimeTracker: F14BoSMidPaladinCommander
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14BoSMidPaladinCommanderGear
   icon: F14JobIconBosMCommander
   supervisors: job-supervisors-bos-mid-commander
@@ -80,6 +88,10 @@
   name: job-name-bos-headknight
   description: job-description-bos-headknight
   playTimeTracker: F14BoSHeadKnight
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14BoSHeadKnightGear
   icon: F14JobIconBosMKnight
   supervisors: job-supervisors-bos-headknight
@@ -115,6 +127,10 @@
   name: job-name-bos-west-scribe
   description: job-description-bos-west-scribe
   playTimeTracker: F14BoSWestScribe
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14BoSWestScribeGear
   icon: F14JobIconBosMScriptor
   supervisors: job-supervisors-bos-west
@@ -147,6 +163,10 @@
   name: job-name-bos-scribe
   description: job-description-bos-scribe
   playTimeTracker: F14BoSScribe
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14BoSScribeGear
   icon: F14JobIconBosMScriptor
   supervisors: job-supervisors-bos-scribe
@@ -178,6 +198,10 @@
   name: job-name-bos-paladin
   description: job-description-bos-paladin
   playTimeTracker: F14BoSPaladin
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14BoSPaladinGear
   icon: F14JobIconBosMPaladin
   supervisors: job-supervisors-bos-paladin
@@ -214,6 +238,10 @@
   name: job-name-bos-knight
   description: job-description-bos-knight
   playTimeTracker: F14BoSKnight
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14BoSKnightGear
   icon: F14JobIconBosMKnight
   supervisors: job-supervisors-bos-knight
@@ -251,6 +279,10 @@
   name: job-name-bos-initiate
   description: job-description-bos-initiate
   playTimeTracker: F14BoSInitiate
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14BoSInitiateGear
   icon: F14JobIconBosMSquire
   supervisors: job-supervisors-bos-initiate

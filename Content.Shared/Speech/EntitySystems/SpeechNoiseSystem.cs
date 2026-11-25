@@ -1,7 +1,10 @@
+using Content.Shared._Forge.Barks;
+using Content.Shared._WW.CCVar;
 using Content.Shared.Chat;
 using Content.Shared.Random.Helpers;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
+using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
@@ -10,6 +13,7 @@ namespace Content.Shared.Speech.EntitySystems;
 
 public sealed partial class SpeechSoundSystem : EntitySystem
 {
+    [Dependency] private IConfigurationManager _cfg = default!; // WW Change
     [Dependency] private IGameTiming _gameTiming = default!;
     [Dependency] private INetManager _net = default!;
     [Dependency] private SharedAudioSystem _audio = default!;
@@ -19,6 +23,14 @@ public sealed partial class SpeechSoundSystem : EntitySystem
     {
         if (ent.Comp.SpeechSounds == null)
             return;
+
+        // WW Change - a character with a bark voice only plays the bark, not this sound as well
+        if (TryComp<SpeechSynthesisComponent>(ent, out var bark) &&
+            bark.VoicePrototypeId != null &&
+            _cfg.GetCVar(WWCVars.BarksEnabled))
+        {
+            return;
+        }
 
         var currentTime = _gameTiming.CurTime;
         var cooldown = TimeSpan.FromSeconds(ent.Comp.SoundCooldownTime);

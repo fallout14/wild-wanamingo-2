@@ -1,0 +1,126 @@
+# WW: the player robots' tool modules with the F14 (Mojave Sun 13 / N14) tools in place of Wizden's station tools.
+# Same module art and slots as the Wizden modules they copy.
+
+- type: entity
+  parent: BorgModuleTool
+  id: F14BorgModuleTool
+  name: robot tool module
+  components:
+  - type: ItemBorgModule
+    hands:
+    - item: F14Crowbar
+    - item: F14Wrench
+    - item: F14Screwdriver
+    - item: F14Wirecutter
+    - item: F14WelderIndustrial
+    - item: F14Multitool
+
+- type: entity
+  parent: BorgModuleAdvancedTool
+  id: F14BorgModuleAdvancedTool
+  name: robot advanced tool module
+  components:
+  - type: ItemBorgModule
+    hands:
+    - item: JawsOfLife
+    - item: F14PowerDrill
+    - item: F14WelderExperimental
+    - item: F14Multitool
+    - item: RemoteSignallerAdvanced
+
+- type: entity
+  parent: BorgModuleCleaning
+  id: F14BorgModuleCleaning
+  name: robot cleaning module
+  components:
+  - type: ItemBorgModule
+    hands:
+    - item: F14Mop
+    - item: WireBrush
+    - item: BorgBucket
+    - item: BorgSprayBottle
+    - item: HoloprojectorBorg
+
+- type: entity
+  parent: BorgModuleBotany
+  id: F14BorgModuleBotany
+  name: robot botany module
+  components:
+  - type: ItemBorgModule
+    hands:
+    - hand:
+        emptyLabel: borg-slot-gardening-tools-empty
+        emptyRepresentative: F14HydroponicsToolHoe
+        whitelist:
+          tags:
+          - BotanyTool
+    - hand:
+        emptyLabel: borg-slot-gardening-tools-empty
+        emptyRepresentative: F14HydroponicsToolClippers
+        whitelist:
+          tags:
+          - BotanyTool
+    - item: BorgDropper
+    - item: BorgBucket
+    - item: PlantBag
+    - hand:
+        emptyLabel: borg-slot-seed-produce-empty
+        emptyRepresentative: BorgModuleSeedProducePlaceholder
+        whitelist:
+          components:
+          - Produce
+          - Seed
+
+# The firefighter Protectron's cryo emitter (Misfits had it on the chassis; it moved here so the chassis keeps the
+# Protectron laser). Same shots as before: 6 cryo bursts, one back every 3 seconds.
+
+- type: entity
+  parent: BaseItem
+  id: F14BorgWeaponCryoEmitter
+  name: integrated cryo emitter
+  description: A cryogenic projector built into a firefighter Protectron. Freezes flames and slows whatever it hits.
+  suffix: borg, integrated
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/fire_extinguisher.rsi
+    state: fire_extinguisher_open
+  - type: Item
+    sprite: Objects/Misc/fire_extinguisher.rsi
+    size: Normal
+  - type: Gun
+    minAngle: 9
+    maxAngle: 18
+    angleIncrease: 3
+    angleDecay: 4
+    fireRate: 1.5
+    soundGunshot:
+      path: /Audio/Effects/extinguish.ogg
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: BasicEntityAmmoProvider
+    proto: F14BulletCryo
+    capacity: 6
+    count: 6
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 3
+    rechargeSound:
+      path: /Audio/Effects/extinguish.ogg
+  - type: AmmoCounter
+
+- type: entity
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  id: F14BorgModuleCryoEmitter
+  name: cryo emitter module
+  description: The firefighter Protectron's built-in cryo emitter.
+  components:
+  - type: Sprite
+    layers:
+    - state: generic
+    - state: icon-fire-extinguisher
+  - type: ItemBorgModule
+    hands:
+    - item: F14BorgWeaponCryoEmitter
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: extinguisher-module }

@@ -50,6 +50,21 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField]
     public bool Whitelisted { get; private set; }
 
+    // WW Change - robots have no eye colour to pick
+    /// <summary>
+    ///     Whether the character editor offers an eye colour for this species.
+    /// </summary>
+    [DataField("eyeColor")]
+    public bool HasEyeColor { get; private set; } = true;
+
+    // WW Change - robots keep their robot speech sound instead of a bark voice
+    /// <summary>
+    ///     Whether characters of this species speak with the bark voice picked in the character editor. When false the
+    ///     editor hides the bark picker and the species' own speech sounds play.
+    /// </summary>
+    [DataField]
+    public bool Barks { get; private set; } = true;
+
     // WW Change start - body size sliders (from Misfits/Einstein Engines)
     /// <summary>
     ///     Whether the character editor offers height/width sliders for this species (off for robots and deathclaws).

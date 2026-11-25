@@ -8,6 +8,30 @@
   name: job-name-wastelander
   description: job-description-wastelander
   playTimeTracker: F14Wastelander
+  requirements: # WW Change - robots may join as this for now (user, 2026-11-25)
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
+    - F14GhoulGlowing
+    - F14RobotAssaultron
+    - F14RobotAssaultronTesla
+    - F14RobotMrGutsy
+    - F14RobotMrHandy
+    - F14RobotProtectron
+    - F14RobotProtectronBuilder
+    - F14RobotProtectronFire
+    - F14RobotProtectronPolice
+    - F14RobotProtectronTribal
+    - F14RobotRobobrain
+    - F14RobotRobobrainLaser
+    - F14RobotSecuritron
+    - F14RobotSecuritronBlue
+    - F14RobotSecuritronBrown
+    - F14RobotSecuritronRed
+    - F14RobotSecuritronYellow
+    - F14RobotSentryBot
+    - F14RobotSentryBotLaser
   startingGear: F14WastelanderGear
   icon: F14JobIconWastelander
   supervisors: job-supervisors-wastelander

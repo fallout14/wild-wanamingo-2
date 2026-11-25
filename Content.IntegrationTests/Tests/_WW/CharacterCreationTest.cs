@@ -7,10 +7,13 @@ using Content.Server.Preferences.Managers;
 using Content.Shared._Forge.Barks;
 using Content.Shared._WW.Species;
 using Content.Shared._WW.Traits;
+using Content.Shared.Body;
+using Content.Shared.CCVar;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Content.Shared.Traits;
+using Content.Shared.Weapons.Ranged.Components;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Robust.Shared.Configuration;
@@ -27,11 +30,14 @@ using Robust.UnitTesting;
 namespace Content.IntegrationTests.Tests._WW;
 
 /// <summary>
-/// 2026-11-23 character creation changes: lobby species, special roles, bark voice / body size / vocal style on the
+/// 2026-11-23/25 character creation changes: lobby species, special roles, bark voice / body size / vocal style on the
 /// profile, the talent tree rules and the Protectron module choice.
 /// </summary>
 public sealed class CharacterCreationTest : GameTest
 {
+    private static readonly ProtoId<SpeciesPrototype> HumanSpecies = "Human";
+    private static readonly ProtoId<SpeciesPrototype> MrHandySpecies = "F14RobotMrHandy";
+
     [Test]
     public void LobbySpecies()
     {
@@ -150,7 +156,11 @@ public sealed class CharacterCreationTest : GameTest
         var map = await Pair.CreateTestMap();
 
         EntityUid bot = default;
-        await server.WaitPost(() => bot = entMan.SpawnEntity("F14PlayerSyntheticProtectronUnassigned", map.GridCoords));
+        await server.WaitPost(() =>
+        {
+            bot = entMan.SpawnEntity("F14PlayerSyntheticProtectronUnassigned", map.GridCoords);
+            entMan.System<SharedSkinTintedSpriteSystem>().SetColor(bot, Color.Red);
+        });
         await Pair.RunTicksSync(5);
 
         await server.WaitPost(() =>
@@ -177,6 +187,114 @@ public sealed class CharacterCreationTest : GameTest
             Assert.That(fire, Has.Count.EqualTo(1), "the Protectron should have become the fire model");
             Assert.That(entMan.HasComponent<ProtectronModuleComponent>(fire[0]), Is.False,
                 "the new body shouldn't offer modules again");
+            Assert.That(entMan.GetComponent<SkinTintedSpriteComponent>(fire[0]).Color, Is.EqualTo(Color.Red),
+                "the paint job should carry over");
         });
+    }
+
+    [Test]
+    public void JobSpeciesRequirements()
+    {
+        var protos = Pair.Server.ProtoMan;
+        var roles = Pair.Server.EntMan.System<SharedRoleSystem>();
+
+        HashSet<string>? Allowed(string job)
+        {
+            return roles.GetRoleRequirements(new ProtoId<JobPrototype>(job))?.OfType<SpeciesRequirement>()
+                .SingleOrDefault()?.Species.Select(s => s.Id).ToHashSet();
+        }
+
+        Assert.Multiple(() =>
+        {
+            Assert.That(Allowed("F14BoSKnight"), Is.EquivalentTo(new[] { "Human" }));
+            Assert.That(Allowed("F14NCRSoldier"), Is.EquivalentTo(new[] { "Human", "F14Ghoul" }));
+            foreach (var job in new[] { "F14Townsperson", "F14Wastelander" })
+            {
+                Assert.That(Allowed(job), Does.Contain("F14RobotProtectron").And.Contain("F14RobotMrHandy").And.Contain("F14GhoulGlowing"), job);
+            }
+
+            // Every species requirement names real species.
+            foreach (var job in protos.EnumeratePrototypes<JobPrototype>())
+            {
+                foreach (var req in roles.GetRoleRequirements(job)?.OfType<SpeciesRequirement>() ?? [])
+                {
+                    foreach (var species in req.Species)
+                    {
+                        Assert.That(protos.HasIndex(species), $"{job.ID}: unknown species {species}");
+                    }
+                }
+            }
+        });
+    }
+
+    [Test]
+    public async Task RobotBuiltInWeapons()
+    {
+        var server = Pair.Server;
+        var entMan = server.EntMan;
+        var map = await Pair.CreateTestMap();
+
+        await server.WaitAssertion(() =>
+        {
+            (string Proto, float FireRate)? Gun(string robot)
+            {
+                var uid = entMan.SpawnEntity(robot, map.GridCoords);
+                Assert.That(entMan.HasComponent<BatteryAmmoProviderComponent>(uid), Is.False,
+                    $"{robot}: a second ammo provider doubles every shot");
+                var result = entMan.TryGetComponent<GunComponent>(uid, out var gun) &&
+                             entMan.TryGetComponent<BasicEntityAmmoProviderComponent>(uid, out var ammo)
+                    ? (ammo.Proto.Id, gun.FireRate)
+                    : ((string, float)?) null;
+                entMan.DeleteEntity(uid);
+                return result;
+            }
+
+            Assert.That(Gun("F14PlayerSyntheticProtectron"), Is.EqualTo(("F14MFLaserRed", 2f)));
+            Assert.That(Gun("F14PlayerSyntheticProtectronUnassigned"), Is.EqualTo(("F14MFLaserRed", 2f)));
+            Assert.That(Gun("F14PlayerSyntheticProtectronBuilder"), Is.EqualTo(("F14MFLaserRed", 2f)));
+            Assert.That(Gun("F14PlayerSyntheticProtectronFire"), Is.EqualTo(("F14MFLaserRed", 2f)));
+            Assert.That(Gun("F14PlayerSyntheticProtectronTribal"), Is.EqualTo(("F14MFLaserRed", 2f)));
+            Assert.That(Gun("F14PlayerSyntheticProtectronPolice"), Is.EqualTo(("F14MFLaserRed", 1.5f)));
+            Assert.That(Gun("F14PlayerSyntheticMrGutsy"), Is.EqualTo(("F14BulletPlasma", 1f)));
+            Gun("F14PlayerSyntheticMrHandy");
+            Gun("F14PlayerSyntheticSentryBotMinigun");
+            Gun("F14PlayerSyntheticSentryBotLaser");
+            Gun("F14PlayerSyntheticRobobrainLaser");
+        });
+    }
+
+    [Test]
+    public async Task RobotSkinColour()
+    {
+        var server = Pair.Server;
+        var entMan = server.EntMan;
+        var protos = server.ProtoMan;
+        var map = await Pair.CreateTestMap();
+
+        await server.WaitAssertion(() =>
+        {
+            var robot = protos.Index(MrHandySpecies);
+            Assert.That(robot.HasEyeColor, Is.False);
+            Assert.That(robot.Barks, Is.False);
+            Assert.That(protos.Index(HumanSpecies).HasEyeColor);
+
+            var uid = entMan.SpawnEntity("F14PlayerSyntheticMrHandy", map.GridCoords);
+            var profile = new HumanoidCharacterProfile { Species = "F14RobotMrHandy" }
+                .WithCharacterAppearance(new(Color.White, Color.Lime, new()));
+            entMan.System<SharedVisualBodySystem>().ApplyProfileTo(uid, profile);
+            Assert.That(entMan.GetComponent<SkinTintedSpriteComponent>(uid).Color, Is.EqualTo(Color.Lime));
+            entMan.DeleteEntity(uid);
+
+            var doll = entMan.SpawnEntity(robot.DollPrototype, map.GridCoords);
+            entMan.System<SharedVisualBodySystem>().ApplyProfileTo(doll, profile);
+            Assert.That(entMan.GetComponent<SkinTintedSpriteComponent>(doll).Color, Is.EqualTo(Color.Lime));
+            entMan.DeleteEntity(doll);
+        });
+    }
+
+    [Test]
+    public void NoContrabandNotices()
+    {
+        Assert.That(Pair.Server.CfgMan.GetCVar(CCVars.ContrabandExamine), Is.False);
     }
 }

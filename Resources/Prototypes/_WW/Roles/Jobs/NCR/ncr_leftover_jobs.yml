@@ -8,6 +8,11 @@
   name: job-name-chief-ranger
   description: job-description-chief-ranger
   playTimeTracker: F14NCRChiefRanger
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRChiefRangerGear
   icon: JobIconHeadOfSecurity
   supervisors: job-supervisors-chief-ranger
@@ -47,6 +52,12 @@
   name: job-name-ncr-citizen
   description: job-description-ncr-citizen
   playTimeTracker: F14NCRCitizen
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
+    - F14GhoulGlowing
   startingGear: F14NCRCitizenGear
   icon: F14JobIconNcrCadet
   supervisors: job-supervisors-ncr-prisoners
@@ -75,6 +86,11 @@
   name: job-name-ncr-engineer
   description: job-description-ncr-engineer
   playTimeTracker: F14NCREngineer
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCREngineerGear
   icon: JobIconWarden
   supervisors: job-supervisors-ncr-nco
@@ -111,6 +127,11 @@
   name: job-name-ncr-executive-officer
   description: job-description-ncr-executive-officer
   playTimeTracker: F14NCRExecutiveOfficer
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRExecutiveOfficerGear
   icon: F14JobIconNcrLeader
   supervisors: job-supervisors-ncr-commander
@@ -150,6 +171,11 @@
   name: job-name-ranger-field
   description: job-description-ranger-field
   playTimeTracker: F14NCRFieldRanger
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRFieldRangerGear
   icon: JobIconSecurityOfficer
   supervisors: job-supervisors-ranger-veteran
@@ -190,6 +216,11 @@
   name: job-name-ncr-first-sergeant
   description: job-description-ncr-first-sergeant
   playTimeTracker: F14NCRFirstSergeant
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRFirstSergeantGear
   icon: F14JobIconNcrSerg
   supervisors: job-supervisors-ncr-lt
@@ -227,6 +258,11 @@
   name: job-name-ncr-heavy-trooper
   description: job-description-ncr-heavy-trooper
   playTimeTracker: F14NCRHeavyTrooper
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRHeavyTrooperGear
   icon: F14JobIconNcrSpec
   supervisors: job-supervisors-ncr-sergeant
@@ -261,6 +297,11 @@
   name: job-name-ncr-heavy-trooper-lead
   description: job-description-ncr-heavy-trooper-lead
   playTimeTracker: F14NCRHeavyTrooperLead
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRHeavyTrooperLeadGear
   icon: F14JobIconNcrSpec
   supervisors: job-supervisors-ncr-sergeant
@@ -296,6 +337,11 @@
   name: job-name-lieutenant-colonel
   description: job-description-ltcol
   playTimeTracker: F14NCRLTCol
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRLTColGear
   icon: F14JobIconNcrLeader
   supervisors: job-supervisors-ncr-ltcol
@@ -338,6 +384,11 @@
   name: job-name-ncr-mp-investigator
   description: job-description-ncr-mp-investegator
   playTimeTracker: F14NCRMPinvestigator
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRMPinvestigatorGear
   icon: F14JobIconNCRMPInvestegator
   supervisors: job-supervisors-ncr-mp
@@ -371,6 +422,11 @@
   name: job-name-ncr-major
   description: job-description-ncr-major
   playTimeTracker: F14NCRMajor
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRMajorGear
   icon: F14JobIconNcrLeader
   supervisors: job-supervisors-ncr-major
@@ -413,6 +469,11 @@
   name: job-name-ncr-military-police-captain
   description: job-description-ncr-military-police-captain
   playTimeTracker: F14NCRMilitaryPoliceCaptain
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRMilitaryPoliceCaptainGear
   icon: F14JobIconNcrLeader
   supervisors: job-supervisors-ncr-militarypolice-captain
@@ -452,6 +513,11 @@
   name: job-name-ncr-military-police-recruit
   description: job-description-ncr-military-police-recruit
   playTimeTracker: F14NCRMilitaryPoliceRecruit
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRMilitaryPoliceRecruitGear
   icon: F14JobIconNcrLeader
   supervisors: job-supervisors-ncr-militarypolice-recruit
@@ -492,6 +558,11 @@
   name: job-name-ncr-military-police-sergeant
   description: job-description-ncr-military-police-sergeant
   playTimeTracker: F14NCRMilitaryPoliceSergeant
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRMilitaryPoliceSergeantGear
   icon: F14JobIconNcrLeader
   supervisors: job-supervisors-ncr-militarypolice-sergeant
@@ -531,6 +602,11 @@
   name: job-name-ncr-prisoner
   description: job-description-ncr-prisoner
   playTimeTracker: F14NCRPrisoner
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRPrisonerGear
   icon: F14JobIconNCRPrisoner
   supervisors: job-supervisors-ncr-prisoners
@@ -556,6 +632,11 @@
   name: job-name-ncr-private-first-class
   description: job-description-ncr-private-first-class
   playTimeTracker: F14NCRPrivateFirstClass
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRPrivateFirstClassGear
   icon: F14JobIconNcrSoldier
   supervisors: job-supervisors-ncr-sergeant
@@ -591,6 +672,11 @@
   name: job-name-ncr-provost
   description: job-description-ncr-provost
   playTimeTracker: F14NCRProvost
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRProvostGear
   icon: F14JobIconNcrLeader
   supervisors: job-supervisors-ncr-provost
@@ -631,6 +717,11 @@
   name: job-name-ncr-ranger
   description: job-description-ncr-ranger
   playTimeTracker: F14NCRRanger
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRRangerGear
   icon: F14JobIconNcrRanger
   supervisors: job-supervisors-ncr-ranger
@@ -672,6 +763,11 @@
   name: job-name-ncr-ranger-recruit
   description: job-description-ncr-ranger-recruit
   playTimeTracker: F14NCRRangerRecruit
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRRangerRecruitGear
   icon: JobIconSecurityCadet
   supervisors: job-supervisors-ncr-ranger-recruit
@@ -707,6 +803,11 @@
   name: job-name-ncr-private
   description: job-description-ncr-private
   playTimeTracker: F14NCRSoldier
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRSoldierGear
   icon: F14JobIconNcrSoldier
   supervisors: job-supervisors-ncr
@@ -742,6 +843,11 @@
   name: job-name-ncr-staff-sergeant
   description: job-description-ncr-staff-sergeant
   playTimeTracker: F14NCRStaffSergeant
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRStaffSergeantGear
   icon: F14JobIconNcrSerg
   supervisors: job-supervisors-ncr-first-sergeant
@@ -779,6 +885,12 @@
   name: job-name-ncr-trader
   description: job-description-ncr-trader
   playTimeTracker: F14NCRTrader
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
+    - F14GhoulGlowing
   startingGear: F14NCRTraderGear
   icon: F14JobIconNcrCadet
   supervisors: job-supervisors-ncr-prisoners
@@ -810,6 +922,11 @@
   name: job-name-ncr-vertibird-pilot
   description: job-description-ncr-vertibird-pilot
   playTimeTracker: F14NCRVertibirdPilot
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14NCRVertibirdPilotGear
   icon: F14JobIconNcrLeader
   supervisors: job-supervisors-ncr-vertibird-pilot
@@ -849,6 +966,11 @@
   name: job-name-ranger-chief
   description: job-description-ranger-chief
   playTimeTracker: F14RangerChief
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14RangerChiefGear
   icon: JobIconCaptain
   accessGroups:

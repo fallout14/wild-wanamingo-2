@@ -1,9 +1,11 @@
 using System.Numerics;
 using Content.Shared._Forge.Barks;
 using Content.Shared.GameTicking;
+using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
 using Content.Shared.Speech;
 using Content.Shared.Sprite;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server._WW.Humanoid;
 
@@ -13,6 +15,7 @@ namespace Content.Server._WW.Humanoid;
 /// </summary>
 public sealed partial class CharacterExtrasSpawnSystem : EntitySystem
 {
+    [Dependency] private IPrototypeManager _proto = default!;
     [Dependency] private SharedScaleVisualsSystem _scale = default!;
 
     public override void Initialize()
@@ -28,8 +31,16 @@ public sealed partial class CharacterExtrasSpawnSystem : EntitySystem
 
     public void Apply(EntityUid mob, HumanoidCharacterProfile profile)
     {
-        var bark = EnsureComp<SpeechSynthesisComponent>(mob);
-        bark.VoicePrototypeId = profile.BarkVoice;
+        // Species without barks (robots) keep their own speech sound.
+        if (!_proto.TryIndex<SpeciesPrototype>(profile.Species, out var species) || species.Barks)
+        {
+            var bark = EnsureComp<SpeechSynthesisComponent>(mob);
+            bark.VoicePrototypeId = profile.BarkVoice;
+        }
+        else
+        {
+            RemComp<SpeechSynthesisComponent>(mob);
+        }
 
         if (profile.SpeechVerb != HumanoidCharacterProfile.DefaultSpeechVerb && TryComp<SpeechComponent>(mob, out var speech))
         {

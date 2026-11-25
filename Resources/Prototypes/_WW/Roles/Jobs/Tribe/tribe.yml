@@ -8,6 +8,11 @@
   name: job-name-tribal-elder
   description: job-description-tribal-elder
   playTimeTracker: F14TribalElder
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14TribalElderGear
   icon: F14JobIconTribalLeader
   supervisors: job-supervisors-tribal-elder
@@ -49,6 +54,11 @@
   name: job-name-tribal
   description: job-description-tribal
   playTimeTracker: F14Tribal
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14TribalGear
   icon: F14JobIconTribal
   supervisors: job-supervisors-tribal
@@ -87,6 +97,11 @@
   name: job-name-tribal-farmer
   description: job-description-tribal-farmer
   playTimeTracker: F14TribalFarmer
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14TribalFarmerGear
   icon: F14JobIconTribalFarmer
   supervisors: job-supervisors-tribal
@@ -125,6 +140,11 @@
   name: job-name-tribal-shaman
   description: job-description-tribal-shaman
   playTimeTracker: F14TribalShaman
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14TribalShamanGear
   icon: F14JobIconTribalMedic
   supervisors: job-supervisors-tribal

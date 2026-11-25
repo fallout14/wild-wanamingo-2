@@ -39,6 +39,9 @@
     spread: 150
     reflects: [ Energy, NonEnergy ]
   - type: CanEnterCryostorage # #Misfits Add: allow player robot species to enter F14CryoBunkerLadder and despawn like MobHuman
+  - type: SkinTintedSprite # WW Add: the character's skin colour tints the chassis
+    layers:
+    - movement
   # #Misfits Fix: override base chassis Destructible to exclude borg_brain from EmptyContainersBehaviour.
   # Without this the PositronicBrain (containing the player mind) drops as loot when a player robot is
   # destroyed. The brain should be consumed with the chassis, not left on the floor.
@@ -94,9 +97,6 @@
   suffix: player, synthetic
   description: A General Atomics Mr. Handy domestic servant robot, now guided by a living mind.
   components:
-  - type: BatteryAmmoProvider
-    proto: F14MFLaserRed
-    fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
     species: F14RobotMrHandy
@@ -123,7 +123,7 @@
         state: icon
   - type: Speech
     speechVerb: Robotic
-    speechSounds: Pai
+    speechSounds: F14Robot # WW Change - Misfits robot voice
   - type: BorgHands # #Misfits Change: Mr. Handy gets a third usable item slot
     handCount: 3
   # #Misfits Change: Disabled idle/aggro auto-sounds for player-controlled robots — sounds fire uncontrollably while the player is present
@@ -188,8 +188,8 @@
       borg_module:
         - BorgModuleDiagnosis
         - BorgModuleTopicals
-        - BorgModuleCleaning # #Misfits Add: Mr. Handy is a domestic servant — cleaning module is thematic
-        - BorgModuleBotany
+        - F14BorgModuleCleaning # #Misfits Add: Mr. Handy is a domestic servant — cleaning module is thematic
+        - F14BorgModuleBotany
       key_slots:
         - F14EncryptionKeyWastelandGlobal
         - F14EncryptionKeyVault
@@ -244,7 +244,7 @@
         state: icon
   - type: Speech
     speechVerb: Robotic
-    speechSounds: Pai
+    speechSounds: F14Robot # WW Change - Misfits robot voice
   # #Misfits Change: Disabled idle/aggro auto-sounds for player-controlled robots — sounds fire uncontrollably while the player is present
   # - type: IdleSound
   # - type: SpamEmitSound
@@ -283,6 +283,29 @@
         Shock: -0.5
         Caustic: -0.5
   - type: RobotSelfRepairAnnouncer # #Misfits Change: hull integrity warnings + self-repair popups
+  # WW Change start - every Protectron has a built-in laser that shoots like an AEP-7 laser pistol (F14WeaponLaserPistol).
+  # Right-click in combat mode. 12 shots like a small energy cell, one shot back every 2 seconds.
+  - type: Gun
+    minAngle: 1
+    maxAngle: 9
+    angleIncrease: 0.5
+    angleDecay: 4
+    fireRate: 2
+    useKey: false
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: F14LaserPistolGunshot
+    soundEmpty:
+      path: /Audio/WildWanamingo/DesertRose/Weapons/noammoenergy.ogg
+  - type: BasicEntityAmmoProvider
+    proto: F14MFLaserRed
+    capacity: 12
+    count: 12
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2
+  # WW Change end
 
   - type: Tag # #Misfits Change: Protectron walks, so it should have footstep sounds
     tags:
@@ -297,7 +320,7 @@
       borg_brain:
         - PositronicBrain
       borg_module: # #Misfits Add: civil-service general loadout — integrated laser for self-defense + basic utility toolkit
-        - BorgModuleTool     # wrench/screwdriver/welder kit for general civil service tasks
+        - F14BorgModuleTool     # wrench/screwdriver/welder kit for general civil service tasks
       key_slots:
         - F14EncryptionKeyWastelandGlobal
         - F14EncryptionKeyVault
@@ -312,11 +335,8 @@
   id: F14PlayerSyntheticMrGutsy
   name: mr. gutsy
   suffix: player, synthetic
-  description: A General Atomics Mr. Gutsy military combat robot, now guided by a living mind. Equipped with a plasma pistol and military programming.
+  description: A General Atomics Mr. Gutsy military combat robot, now guided by a living mind. Equipped with an integrated plasma pistol and military programming.
   components:
-  - type: BatteryAmmoProvider
-    proto: F14MFLaserRed
-    fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
     species: F14RobotMrGutsy
@@ -343,7 +363,7 @@
         state: icon
   - type: Speech
     speechVerb: Robotic
-    speechSounds: Pai
+    speechSounds: F14Robot # WW Change - Misfits robot voice
   # #Misfits Change: Disabled idle/aggro auto-sounds for player-controlled robots — sounds fire uncontrollably while the player is present
   # - type: IdleSound
   # - type: SpamEmitSound
@@ -371,18 +391,26 @@
         Caustic: -0.5
   - type: RobotSelfRepairAnnouncer # #Misfits Change: hull integrity warnings + self-repair popups
 
+  # WW Change - the built-in plasma gun shoots like a plasma pistol (F14WeaponPlasmaPistol): same bolt, rate and
+  # sound, 18 shots like a small energy cell. Right-click in combat mode.
   - type: Gun # #Misfits Add: built-in plasma caster — right-click in combat mode to fire
-    fireRate: 2
+    minAngle: 1
+    maxAngle: 9
+    angleIncrease: 0.5
+    angleDecay: 4
+    fireRate: 1
     soundGunshot:
-      collection: F14PlasmaPistolGunshot
+      collection: WWDRGunshotPlasmaPistol
+    soundEmpty:
+      path: /Audio/WildWanamingo/DesertRose/Weapons/noammoenergy.ogg
     useKey: false
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
   - type: BasicEntityAmmoProvider # #Misfits Add: limited plasma shots, auto-refills after cooldown
     proto: F14BulletPlasma
-    capacity: 15
-    count: 15
+    capacity: 18
+    count: 18
   - type: RechargeBasicEntityAmmo # #Misfits Add: recharge simulates internal capacitor cycling
     rechargeCooldown: 2
   # #Misfits Fix - Removed RobotGunPowerDrain: the plasma blaster shared the chassis cell_slot with
@@ -395,7 +423,7 @@
       borg_brain:
         - PositronicBrain
       borg_module:
-        - BorgModuleTool # #Misfits Add: military utility — field repair and maintenance tools
+        - F14BorgModuleTool # #Misfits Add: military utility — field repair and maintenance tools
       key_slots:
         - F14EncryptionKeyWastelandGlobal
         - F14EncryptionKeyVault
@@ -410,11 +438,8 @@
   id: F14PlayerSyntheticProtectronPolice
   name: protectron police
   suffix: player, synthetic, police
-  description: A RobCo Industries Protectron police model specialising in close-quarters detainment. Equipped with a heavy electro-shock melee strike, a stun baton, and restraint tools. No ranged weapons — this unit subdues, not suppresses.
+  description: A RobCo Industries Protectron police model specialising in close-quarters detainment. Equipped with a heavy electro-shock melee strike, a stun baton, restraint tools and an integrated magneto-laser.
   components:
-  - type: BatteryAmmoProvider
-    proto: F14MFLaserRed
-    fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
     species: F14RobotProtectronPolice
@@ -431,27 +456,12 @@
       shader: unshaded
       map: ["light"]
       visible: false
-  # #Misfits Removed - Police Protectrons are melee-only per Fallout lore; no ranged weapons
-  # - type: Gun
-  #   minAngle: 9
-  #   maxAngle: 18
-  #   angleIncrease: 3
-  #   angleDecay: 4
-  #   fireRate: 1
-  #   soundGunshot:
-  #     collection: F14RechargerRifleGunshot
-  #   useKey: false
-  #   selectedMode: SemiAuto
-  #   availableModes:
-  #     - SemiAuto
-  # - type: BasicEntityAmmoProvider
-  #   proto: BulletLaser
-  #   capacity: 9
-  #   count: 9
-  # - type: RechargeBasicEntityAmmo
-  #   rechargeCooldown: 2
-  #   rechargeSound:
-  #     path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  # WW Change - the police model's built-in laser shoots like the magneto-laser pistol (F14WeaponLaserMagnetoPistol).
+  # The rest of the gun (12 shots, 2 s recharge) comes from the base Protectron.
+  - type: Gun
+    fireRate: 1.5
+    soundGunshot:
+      collection: WWDRGunshotAEP7
   - type: MeleeWeapon # #Misfits Add: electro-shock close combat — Fallout Police Protectron uses powerful melee strikes and painful electric shock
     hidden: true
     soundHit:
@@ -501,7 +511,7 @@
       borg_brain:
         - PositronicBrain
       borg_module:
-        - BorgModuleAdvancedTool
+        - F14BorgModuleAdvancedTool
         - BorgModuleConstruction
         - BorgModuleRCD
       key_slots:
@@ -515,9 +525,6 @@
   suffix: player, synthetic, firefighter
   description: A RobCo Industries Protectron firefighter model equipped for fire suppression and emergency response. Features an integrated cryo emitter — its signature cryogenic projector that freezes flames and slows targets — backed by a standard water extinguisher module.
   components:
-  - type: BatteryAmmoProvider
-    proto: F14MFLaserRed
-    fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
     species: F14RobotProtectronFire
@@ -534,31 +541,14 @@
       shader: unshaded
       map: ["light"]
       visible: false
-  - type: Gun # #Misfits Add: integrated cryo emitter — Fallout canon firefighter Protectrons carry an internal cryo gun
-    minAngle: 9
-    maxAngle: 18
-    angleIncrease: 3
-    angleDecay: 4
-    fireRate: 1.5
-    soundGunshot:
-      path: /Audio/Effects/extinguish.ogg
-    useKey: false
-    selectedMode: SemiAuto
-    availableModes:
-    - SemiAuto
-  - type: BasicEntityAmmoProvider # cryo bursts: slower recharge than the laser — cryo emitter is a utility tool not a spam weapon
-    proto: F14BulletCryo
-    capacity: 6
-    count: 6
-  - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 3
-    rechargeSound:
-      path: /Audio/Effects/extinguish.ogg
+  # WW Change - the cryo emitter moved into a held module (F14BorgModuleCryoEmitter) so the chassis keeps the
+  # Protectron laser.
   - type: ContainerFill # #Misfits Change: cryo + extinguisher loadout; water extinguisher kept for traditional fire suppression
     containers:
       borg_brain:
         - PositronicBrain
       borg_module:
+        - F14BorgModuleCryoEmitter # WW Change - the cryo emitter, held like a tool
         - BorgModuleFireExtinguisher # traditional water/CO2 extinguisher for structural fires
       key_slots:
         - F14EncryptionKeyWastelandGlobal
@@ -776,7 +766,7 @@
         state: icon
   - type: Speech
     speechVerb: Robotic
-    speechSounds: Pai
+    speechSounds: F14Robot # WW Change - Misfits robot voice
   # #Misfits Change: Disabled idle/aggro auto-sounds for player-controlled robots — sounds fire uncontrollably while the player is present
   # - type: IdleSound
   # - type: SpamEmitSound
@@ -880,9 +870,6 @@
   suffix: player, synthetic, minigun
   description: A pre-war military Sentry Bot armed with a 5mm minigun and missile launcher. Massively armored, terrifyingly slow, and built to annihilate everything in its path.
   components:
-  - type: BatteryAmmoProvider
-    proto: F14MFLaserRed
-    fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
     species: F14RobotSentryBot
@@ -909,7 +896,7 @@
         state: icon
   - type: Speech
     speechVerb: Robotic
-    speechSounds: Pai
+    speechSounds: F14Robot # WW Change - Misfits robot voice
   - type: MovementSpeedModifier # Sentry bots are extremely slow
     baseWalkSpeed: 1.0
     baseSprintSpeed: 1.5
@@ -986,7 +973,7 @@
       borg_brain:
         - PositronicBrain
       borg_module:
-        - BorgModuleTool
+        - F14BorgModuleTool
       key_slots:
         - F14EncryptionKeyWastelandGlobal
   - type: ItemSlots
@@ -1078,9 +1065,6 @@
   suffix: player, synthetic, laser gatling
   description: A pre-war military Sentry Bot armed with a gatling laser and missile launcher. Massively armored, terrifyingly slow, and built to annihilate everything in its path.
   components:
-  - type: BatteryAmmoProvider
-    proto: F14MFLaserRed
-    fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
     species: F14RobotSentryBotLaser
@@ -1139,7 +1123,7 @@
         state: icon
   - type: Speech
     speechVerb: Robotic
-    speechSounds: Pai
+    speechSounds: F14Robot # WW Change - Misfits robot voice
   - type: MovementSpeedModifier # Robobrains are slower than most robots
     baseWalkSpeed: 1.5
     baseSprintSpeed: 3.0
@@ -1174,7 +1158,7 @@
       borg_module:
         - BorgModuleDiagnosis
         - BorgModuleTopicals
-        - BorgModuleTool
+        - F14BorgModuleTool
       key_slots:
         - F14EncryptionKeyWastelandGlobal
         - F14EncryptionKeyVault
@@ -1196,9 +1180,6 @@
   suffix: player, synthetic, laser
   description: A pre-war military Robobrain fitted with an integrated laser emitter. Slower but armed, with utility support systems.
   components:
-  - type: BatteryAmmoProvider
-    proto: F14MFLaserRed
-    fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
     species: F14RobotRobobrainLaser
@@ -1227,7 +1208,7 @@
       borg_brain:
         - PositronicBrain
       borg_module:
-        - BorgModuleTool
+        - F14BorgModuleTool
         - BorgModuleDiagnosis
       key_slots:
         - F14EncryptionKeyWastelandGlobal

@@ -8,6 +8,11 @@
   name: job-name-follower-director
   description: job-description-follower-director
   playTimeTracker: F14FollowerDirector
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14FollowerDirectorGear
   icon: JobIconPassenger
   supervisors: job-supervisors-follower-director
@@ -43,6 +48,11 @@
   name: job-name-follower-head
   description: job-description-follower-head
   playTimeTracker: F14FollowerHead
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14FollowerHeadGear
   icon: JobIconPassenger
   supervisors: job-supervisors-follower-head
@@ -78,6 +88,11 @@
   name: job-name-follower-doctor
   description: job-description-follower-doctor
   playTimeTracker: F14FollowerDoctor
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14FollowerDoctorGear
   icon: JobIconPassenger
   supervisors: job-supervisors-follower-doctor
@@ -111,6 +126,11 @@
   name: job-name-follower-guard
   description: job-description-follower-guard
   playTimeTracker: F14FollowerGuard
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14FollowerGuardGear
   icon: JobIconPassenger
   supervisors: job-supervisors-follower-guard
@@ -150,6 +170,11 @@
   name: job-name-follower-volunteer
   description: job-description-follower-volunteer
   playTimeTracker: F14FollowerVolunteer
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
   startingGear: F14FollowerVolunteerGear
   icon: JobIconPassenger
   supervisors: job-supervisors-follower-volunteer

@@ -60,7 +60,6 @@ public sealed partial class HumanoidProfileEditor
         if (Profile == null)
             return;
 
-        BarkContainer.Visible = _cfgManager.GetCVar(WWCVars.BarksEnabled) && _barkVoices.Count > 0;
         BarkVoiceButton.Clear();
         for (var i = 0; i < _barkVoices.Count; i++)
         {
@@ -89,6 +88,9 @@ public sealed partial class HumanoidProfileEditor
         if (Profile == null || !_prototypeManager.TryIndex<SpeciesPrototype>(Profile.Species, out var species))
             return;
 
+        EyesContainer.Visible = species.HasEyeColor;
+        // Robots speak with their own speech sound, not a bark.
+        BarkContainer.Visible = species.Barks && _cfgManager.GetCVar(WWCVars.BarksEnabled) && _barkVoices.Count > 0;
         HeightContainer.Visible = species.SizeAdjustable;
         WidthContainer.Visible = species.SizeAdjustable;
 

@@ -1,0 +1,11 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): the robot species spoke with the "Pai" speech
+# sounds there, which are older recordings than Wizden's current pAI voice. The files are kept under Audio/Misfits.
+
+- type: speechSounds
+  id: F14Robot
+  saySound:
+    path: /Audio/Misfits/Voice/Robot/robot.ogg
+  askSound:
+    path: /Audio/Misfits/Voice/Robot/robot_ask.ogg
+  exclaimSound:
+    path: /Audio/Misfits/Voice/Robot/robot_exclaim.ogg

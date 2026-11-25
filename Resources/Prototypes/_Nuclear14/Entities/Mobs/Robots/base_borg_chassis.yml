@@ -152,7 +152,7 @@
     proto: robot
   - type: Speech
     speechVerb: Robotic
-    speechSounds: Pai
+    speechSounds: F14Robot # WW Change - Misfits robot voice
   - type: Vocal # #Misfits Change: fallback robot emotes for chassis that do not override a model-specific profile
     emoteSounds: UnisexSilicon
   - type: UnblockableSpeech
@@ -260,7 +260,7 @@
       borg_module:
         - BorgModuleService
         - BorgModuleMusique
-        - BorgModuleBotany
+        - F14BorgModuleBotany
         - BorgModuleFireExtinguisher
-        - BorgModuleTool
+        - F14BorgModuleTool
   - type: ItemTogglePointLight # WW Change - HandheldLight needs this to light up on the client (point light is not net-synced)

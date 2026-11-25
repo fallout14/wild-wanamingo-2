@@ -8,6 +8,10 @@
   name: job-name-caesar-legion-centurion
   description: job-description-caesar-legion-centurion
   playTimeTracker: F14CaesarLegionCenturion
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14CaesarLegionCenturionGear
   icon: F14JobIconlegionerCenturion
   supervisors: job-name-caesar-legion
@@ -45,6 +49,10 @@
   name: job-name-caesar-legion-vexillarius
   description: job-description-caesar-legion-vexillarius
   playTimeTracker: F14CaesarLegionVexillarius
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14CaesarLegionVexillariusGear
   icon: F14JobIconlegionerVenator
   supervisors: job-name-caesar-legion-other
@@ -83,6 +91,10 @@
   name: job-name-caesar-legion-explorer
   description: job-description-caesar-legion-explorer
   playTimeTracker: F14CaesarLegionExplorer
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14CaesarLegionExplorerGear
   icon: F14JobIconlegionerVenator
   supervisors: job-name-caesar-legion-supervisors
@@ -123,6 +135,10 @@
   name: job-name-caesar-legion-houndmaster
   description: job-description-caesar-legion-houndmaster
   playTimeTracker: F14CaesarLegionHoundmaster
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14CaesarLegionHoundmasterGear
   icon: F14JobIconlegionerWarrior
   supervisors: job-name-caesar-legion-other
@@ -160,6 +176,10 @@
   name: job-name-caesar-legion-forgemaster
   description: job-description-caesar-legion-forgemaster
   playTimeTracker: F14CaesarLegionForgemaster
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14CaesarLegionForgeMasterGear
   icon: F14JobIconlegionerDean
   supervisors: job-name-caesar-legion-supervisors
@@ -194,6 +214,10 @@
   name: job-name-caesar-legion-dean
   description: job-description-caesar-legion-dean
   playTimeTracker: F14CaesarLegionDean
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14CaesarLegionDeanGear
   icon: F14JobIconlegionerDean
   supervisors: job-name-caesar-legion-supervisors
@@ -232,6 +256,10 @@
   name: job-name-caesar-legion-legionnaire-recruit
   description: job-description-caesar-legionnaire-recruit
   playTimeTracker: F14CaesarLegionLegionnaireRecruit
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14CaesarLegionLegionnaireRecruitGear
   icon: F14JobIconlegionerRecruit
   supervisors: job-name-caesar-legion-other
@@ -271,6 +299,10 @@
   name: job-name-caesar-legion-legionnaire-warrior
   description: job-description-caesar-legion-legionnaire-warrior
   playTimeTracker: F14CaesarLegionLegionnaireWarrior
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14CaesarLegionLegionnaireWarriorGear
   icon: F14JobIconlegionerWarrior
   supervisors: job-name-caesar-legion-other
@@ -309,6 +341,10 @@
   name: job-name-caesar-legion-legionnaire-veteran
   description: job-description-caesar-legion-legionnaire-veteran
   playTimeTracker: F14CaesarLegionLegionnaireVeteran
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14CaesarLegionLegionnaireVeteranGear
   icon: F14JobIconlegionerVeteran
   supervisors: job-name-caesar-legion-other
@@ -347,6 +383,10 @@
   name: job-name-caesar-legion-auxilia
   description: job-description-caesar-legion-auxilia
   playTimeTracker: F14CaesarLegionAuxilia
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14CaesarLegionAuxiliaGear
   icon: F14JobIconlegionerRecruit
   supervisors: job-name-caesar-legion-female
@@ -389,6 +429,10 @@
   name: job-name-caesar-legion-slave
   description: job-description-caesar-legion-slave
   playTimeTracker: F14CaesarLegionSlave
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
   startingGear: F14CaesarLegionSlaveGear
   icon: F14JobIconLegionSlave
   supervisors: job-supervisors-caesar-legion-slave

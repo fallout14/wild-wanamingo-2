@@ -8,6 +8,12 @@
   name: job-name-townmayor
   description: job-description-townmayor
   playTimeTracker: F14TownMayor
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
+    - F14GhoulGlowing
   startingGear: F14TownMayorGear
   icon: F14JobIconTownMayor
   supervisors: job-supervisors-townsfolk
@@ -39,6 +45,12 @@
   name: job-name-townsheriff
   description: job-description-townsheriff
   playTimeTracker: F14TownSheriff
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
+    - F14GhoulGlowing
   startingGear: F14TownSheriffGear
   icon: F14JobIconTownSheriff
   supervisors: job-supervisors-townsfolk
@@ -76,6 +88,12 @@
   name: job-name-towndeputy
   description: job-description-towndeputy
   playTimeTracker: F14TownDeputy
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
+    - F14GhoulGlowing
   startingGear: F14TownDeputyGear
   icon: F14JobIconTownDeputy
   supervisors: job-supervisors-townsfolk
@@ -115,6 +133,12 @@
   name: job-name-townbartender
   description: job-description-townbartender
   playTimeTracker: F14WastelandBartender
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
+    - F14GhoulGlowing
   startingGear: F14WastelandBartenderGear
   icon: JobIconBartender
   supervisors: job-supervisors-townsfolk
@@ -152,6 +176,12 @@
   name: job-name-farmer
   description: job-description-farmer
   playTimeTracker: F14WastelandFarmer
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
+    - F14GhoulGlowing
   startingGear: F14FarmerGear
   icon: F14JobIconWastelandFarmer
   supervisors: job-supervisors-wastelander
@@ -178,6 +208,12 @@
   name: job-name-townmechanic
   description: job-description-townmechanic
   playTimeTracker: F14TownMechanic
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
+    - F14GhoulGlowing
   startingGear: F14TownMechanicGear
   icon: F14JobIconTownMechanic
   supervisors: job-supervisors-townsfolk
@@ -212,6 +248,12 @@
   name: job-name-townshopkeeper
   description: job-description-townshopkeeper
   playTimeTracker: F14TownShopkeeper
+  requirements: # WW Change - species as in Misfits
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
+    - F14GhoulGlowing
   startingGear: F14TownShopkeeperGear
   icon: F14JobIconTownShopKeeper
   supervisors: job-supervisors-townsfolk
@@ -243,6 +285,30 @@
   name: job-name-townsperson
   description: job-description-townsperson
   playTimeTracker: F14Townsperson
+  requirements: # WW Change - robots may join as this for now (user, 2026-11-25)
+  - !type:SpeciesRequirement
+    species:
+    - Human
+    - F14Ghoul
+    - F14GhoulGlowing
+    - F14RobotAssaultron
+    - F14RobotAssaultronTesla
+    - F14RobotMrGutsy
+    - F14RobotMrHandy
+    - F14RobotProtectron
+    - F14RobotProtectronBuilder
+    - F14RobotProtectronFire
+    - F14RobotProtectronPolice
+    - F14RobotProtectronTribal
+    - F14RobotRobobrain
+    - F14RobotRobobrainLaser
+    - F14RobotSecuritron
+    - F14RobotSecuritronBlue
+    - F14RobotSecuritronBrown
+    - F14RobotSecuritronRed
+    - F14RobotSecuritronYellow
+    - F14RobotSentryBot
+    - F14RobotSentryBotLaser
   startingGear: F14TownspersonGear
   icon: F14JobIconTownPerson
   supervisors: job-supervisors-townsfolk

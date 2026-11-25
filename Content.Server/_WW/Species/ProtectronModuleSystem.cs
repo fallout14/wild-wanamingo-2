@@ -11,6 +11,7 @@ public sealed partial class ProtectronModuleSystem : EntitySystem
 {
     [Dependency] private SharedActionsSystem _actions = default!;
     [Dependency] private PolymorphSystem _polymorph = default!;
+    [Dependency] private SkinTintedSpriteSystem _tint = default!;
 
     public override void Initialize()
     {
@@ -45,6 +46,10 @@ public sealed partial class ProtectronModuleSystem : EntitySystem
             return;
 
         args.Handled = true;
-        _polymorph.PolymorphEntity(ent, args.Polymorph);
+        // Keep the paint job (read before the old body goes away).
+        Color? paint = TryComp<SkinTintedSpriteComponent>(ent, out var tint) ? tint.Color : null;
+        var newBody = _polymorph.PolymorphEntity(ent, args.Polymorph);
+        if (newBody != null && paint != null)
+            _tint.SetColor(newBody.Value, paint.Value);
     }
 }
