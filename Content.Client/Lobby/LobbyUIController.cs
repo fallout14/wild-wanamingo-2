@@ -82,6 +82,7 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
         {
             _profileEditor.RefreshAntags();
             _profileEditor.RefreshJobs();
+            _profileEditor.RefreshSpecies(); // WW Change - species whitelists arrive with the job whitelists
         }
     }
 

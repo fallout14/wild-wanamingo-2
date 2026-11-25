@@ -1,0 +1,74 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Traits/talents.yml
+# Changed for Wild Wanamingo: Wizden trait format (cost = points spent from the shared pool, prerequisite + tier for the
+# talent tree, see Content.Shared/_WW/Traits/TraitTree.cs); F14 IDs. Effects: Content.Shared/_WW/Talents/TalentPerkSystem.cs.
+
+- type: traitCategory
+  id: F14Perks
+  name: trait-category-f14-perks
+
+# Scholar branch: Swift Learner -> Scrounger -> Educated / Junker Finder; Educated -> Nerd Rage! -> Fortune's Favor
+
+- type: trait
+  id: F14PerkSwiftLearner
+  name: trait-name-TraitSwiftLearner
+  description: trait-description-TraitSwiftLearner
+  category: F14Perks
+  cost: 2
+  tier: 1
+  components:
+  - type: TraitSwiftLearner
+
+- type: trait
+  id: F14PerkScrounger
+  name: trait-name-TraitScrounger
+  description: trait-description-TraitScrounger
+  category: F14Perks
+  cost: 3
+  tier: 2
+  prerequisite: F14PerkSwiftLearner
+  components:
+  - type: TraitScrounger
+
+- type: trait
+  id: F14PerkEducated
+  name: trait-name-TraitEducated
+  description: trait-description-TraitEducated
+  category: F14Perks
+  cost: 4
+  tier: 3
+  prerequisite: F14PerkScrounger
+  components:
+  - type: TraitEducated
+
+- type: trait
+  id: F14PerkJunkerFinder
+  name: trait-name-TraitJunkerFinder
+  description: trait-description-TraitJunkerFinder
+  category: F14Perks
+  cost: 3
+  tier: 3
+  prerequisite: F14PerkScrounger
+  components:
+  - type: TraitJunkerFinder
+
+- type: trait
+  id: F14PerkNerdRage
+  name: trait-name-TraitNerdRage
+  description: trait-description-TraitNerdRage
+  category: F14Perks
+  cost: 5
+  tier: 4
+  prerequisite: F14PerkEducated
+  components:
+  - type: TraitNerdRage
+
+- type: trait
+  id: F14PerkFortunesFavor
+  name: trait-name-TraitFortunesFavor
+  description: trait-description-TraitFortunesFavor
+  category: F14Perks
+  cost: 8
+  tier: 5
+  prerequisite: F14PerkNerdRage
+  components:
+  - type: TraitFortunesFavor

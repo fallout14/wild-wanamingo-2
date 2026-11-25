@@ -6,6 +6,7 @@
   id: F14SuperMutant
   name: species-name-supermutant
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
   prototype: F14MobSuperMutant
   dollPrototype: AppearanceSuperMutant
@@ -26,6 +27,7 @@
   id: F14Nightkin
   name: species-name-nightkin
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
   prototype: F14MobNightkinPlayer
   dollPrototype: AppearanceNightkin

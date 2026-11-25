@@ -42,6 +42,34 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField]
     public bool RandomSelectable { get; private set; } = true;
 
+    // WW Change - whitelisted species
+    /// <summary>
+    ///     Only players on this species' whitelist can pick it (admin command specieswhitelistadd; stored with the
+    ///     job whitelists). Ignored while game.role_whitelist is off.
+    /// </summary>
+    [DataField]
+    public bool Whitelisted { get; private set; }
+
+    // WW Change start - body size sliders (from Misfits/Einstein Engines)
+    /// <summary>
+    ///     Whether the character editor offers height/width sliders for this species (off for robots and deathclaws).
+    /// </summary>
+    [DataField]
+    public bool SizeAdjustable { get; private set; } = true;
+
+    [DataField]
+    public float MinHeight { get; private set; } = 0.85f;
+
+    [DataField]
+    public float MaxHeight { get; private set; } = 1.15f;
+
+    [DataField]
+    public float MinWidth { get; private set; } = 0.85f;
+
+    [DataField]
+    public float MaxWidth { get; private set; } = 1.15f;
+    // WW Change end
+
     /// <summary>
     ///     Default skin tone for this species. This applies for non-human skin tones.
     /// </summary>

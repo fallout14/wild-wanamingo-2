@@ -229,6 +229,12 @@ namespace Content.Server.Database
             profile.SpecialIntelligence = special.Intelligence;
             profile.SpecialAgility = special.Agility;
             profile.SpecialLuck = special.Luck;
+            // WW Change start - bark voice, body size, vocal style
+            profile.BarkVoice = humanoid.BarkVoice;
+            profile.Height = humanoid.Height;
+            profile.Width = humanoid.Width;
+            profile.SpeechVerb = humanoid.SpeechVerb;
+            // WW Change end
             profile.OrganMarkings = JsonSerializer.SerializeToDocument(dataNode.ToJsonNode());
 
             // support for downgrades - at some point this should be removed

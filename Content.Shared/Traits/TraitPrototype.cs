@@ -69,4 +69,18 @@ public sealed partial class TraitPrototype : IPrototype
     /// </summary>
     [DataField]
     public ProtoId<TraitCategoryPrototype>? Category;
+
+    // WW Change start - Misfits talent tree
+    /// <summary>
+    /// Row of the talent tree this trait sits in (1 = top).
+    /// </summary>
+    [DataField]
+    public int Tier = 1;
+
+    /// <summary>
+    /// Trait that must be taken before this one. Dropping it drops this too.
+    /// </summary>
+    [DataField]
+    public ProtoId<TraitPrototype>? Prerequisite;
+    // WW Change end
 }

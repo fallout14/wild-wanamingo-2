@@ -7,6 +7,7 @@
   name: species-name-robot-mr-handy
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticMrHandy
   dollPrototype: AppearanceRobotMrHandy
   skinColoration: Hues
@@ -27,7 +28,8 @@
   name: species-name-robot-protectron
   roundStart: true
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
-  prototype: F14PlayerSyntheticProtectron
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
+  prototype: F14PlayerSyntheticProtectronUnassigned # WW Change - picks its module in game
   dollPrototype: AppearanceRobotProtectron
   skinColoration: Hues
   sexes:
@@ -45,8 +47,9 @@
 - type: species
   id: F14RobotProtectronPolice
   name: species-name-robot-protectron-police
-  roundStart: true
+  roundStart: false # WW Change - picked in game as a Protectron module, not in the lobby
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticProtectronPolice
   dollPrototype: AppearanceRobotProtectronPolice
   skinColoration: Hues
@@ -65,8 +68,9 @@
 - type: species
   id: F14RobotProtectronBuilder
   name: species-name-robot-protectron-builder
-  roundStart: true
+  roundStart: false # WW Change - picked in game as a Protectron module, not in the lobby
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticProtectronBuilder
   dollPrototype: AppearanceRobotProtectronBuilder
   skinColoration: Hues
@@ -85,8 +89,9 @@
 - type: species
   id: F14RobotProtectronFire
   name: species-name-robot-protectron-fire
-  roundStart: true
+  roundStart: false # WW Change - picked in game as a Protectron module, not in the lobby
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticProtectronFire
   dollPrototype: AppearanceRobotProtectronFire
   skinColoration: Hues
@@ -105,8 +110,9 @@
 - type: species
   id: F14RobotProtectronTribal
   name: species-name-robot-protectron-tribal
-  roundStart: true
+  roundStart: false # WW Change - picked in game as a Protectron module, not in the lobby
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticProtectronTribal
   dollPrototype: AppearanceRobotProtectronTribal
   skinColoration: Hues
@@ -126,7 +132,9 @@
   id: F14RobotSecuritron
   name: species-name-robot-securitron-gray
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticSecuritronGray
   dollPrototype: AppearanceRobotSecuritron
   skinColoration: Hues
@@ -146,7 +154,9 @@
   id: F14RobotSecuritronBlue
   name: species-name-robot-securitron-blue
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticSecuritronBlue
   dollPrototype: AppearanceRobotSecuritronBlue
   skinColoration: Hues
@@ -166,7 +176,9 @@
   id: F14RobotSecuritronBrown
   name: species-name-robot-securitron-brown
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticSecuritronBrown
   dollPrototype: AppearanceRobotSecuritronBrown
   skinColoration: Hues
@@ -186,7 +198,9 @@
   id: F14RobotSecuritronRed
   name: species-name-robot-securitron-red
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticSecuritronRed
   dollPrototype: AppearanceRobotSecuritronRed
   skinColoration: Hues
@@ -206,7 +220,9 @@
   id: F14RobotSecuritronYellow
   name: species-name-robot-securitron-yellow
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticSecuritronYellow
   dollPrototype: AppearanceRobotSecuritronYellow
   skinColoration: Hues
@@ -226,7 +242,9 @@
   id: F14RobotMrGutsy
   name: species-name-robot-mr-gutsy
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticMrGutsy
   dollPrototype: AppearanceRobotMrGutsy
   skinColoration: Hues
@@ -246,7 +264,9 @@
   id: F14RobotAssaultron
   name: species-name-robot-assaultron
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticAssaultron
   dollPrototype: AppearanceRobotAssaultron
   skinColoration: Hues
@@ -266,7 +286,9 @@
   id: F14RobotAssaultronTesla
   name: species-name-robot-assaultron-tesla
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticAssaultronTesla
   dollPrototype: AppearanceRobotAssaultronTesla
   skinColoration: Hues
@@ -286,7 +308,9 @@
   id: F14RobotSentryBot
   name: species-name-robot-sentrybot
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticSentryBotMinigun
   dollPrototype: AppearanceRobotSentryBot
   skinColoration: Hues
@@ -306,7 +330,9 @@
   id: F14RobotSentryBotLaser
   name: species-name-robot-sentrybot-laser
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticSentryBotLaser
   dollPrototype: AppearanceRobotSentryBotLaser
   skinColoration: Hues
@@ -326,7 +352,9 @@
   id: F14RobotRobobrain
   name: species-name-robot-robobrain
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticRobobrain
   dollPrototype: AppearanceRobotRobobrain
   skinColoration: Hues
@@ -346,7 +374,9 @@
   id: F14RobotRobobrainLaser
   name: species-name-robot-robobrain-laser
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14PlayerSyntheticRobobrainLaser
   dollPrototype: AppearanceRobotRobobrainLaser
   skinColoration: Hues

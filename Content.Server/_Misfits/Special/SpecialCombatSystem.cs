@@ -65,6 +65,10 @@ public sealed partial class SpecialCombatSystem : EntitySystem
 
         var damage = args.BaseDamage;
 
+        // WW Change - Nerd Rage! perk: 20% more damage below 25% health
+        if (Content.Shared._WW.Talents.TalentPerkSystem.IsEnraged(EntityManager, args.User))
+            damage *= Content.Shared._WW.Talents.TalentPerkSystem.NerdRageDamageMultiplier;
+
         // Innate mob melee is unarmed. Use gentler Strength scaling than held weapons.
         if (uid == args.User)
             ApplyStrengthUnarmedModifier(args.User, ref damage, special);
@@ -103,8 +107,14 @@ public sealed partial class SpecialCombatSystem : EntitySystem
 
     private void OnProjectileHit(Entity<ProjectileComponent> ent, ref ProjectileHitEvent args)
     {
-        if (args.Shooter == null ||
-            !TryComp<SpecialComponent>(args.Shooter.Value, out var special))
+        if (args.Shooter == null)
+            return;
+
+        // WW Change - Nerd Rage! perk: 20% more damage below 25% health
+        if (Content.Shared._WW.Talents.TalentPerkSystem.IsEnraged(EntityManager, args.Shooter.Value))
+            args.Damage *= Content.Shared._WW.Talents.TalentPerkSystem.NerdRageDamageMultiplier;
+
+        if (!TryComp<SpecialComponent>(args.Shooter.Value, out var special))
             return;
 
         // Projectile damage is mutable on the hit event, so write back only on Luck outcomes.
@@ -115,6 +125,10 @@ public sealed partial class SpecialCombatSystem : EntitySystem
 
     private void OnModifyHitscanDamage(Entity<SpecialComponent> ent, ref SpecialModifyHitscanDamageEvent args)
     {
+        // WW Change - Nerd Rage! perk: 20% more damage below 25% health
+        if (Content.Shared._WW.Talents.TalentPerkSystem.IsEnraged(EntityManager, ent.Owner))
+            args.Damage *= Content.Shared._WW.Talents.TalentPerkSystem.NerdRageDamageMultiplier;
+
         var damage = args.Damage;
         if (TryApplyLuckDamageOutcome(ent.Owner, ref damage, ent.Comp, args.Weapon))
             args.Damage = damage;
@@ -151,6 +165,8 @@ public sealed partial class SpecialCombatSystem : EntitySystem
 
         if (weapon != null && HasComp<RevolverAmmoProviderComponent>(weapon.Value))
             shotChance *= 2f;
+
+        shotChance = _special.ApplyFortunesFavor(user, shotChance); // WW Change - Fortune's Favor perk
 
         // WW Change - per-weapon crit bonus, added after Luck (and the revolver doubling) so it works at any Luck
         if (weapon != null && TryComp<CriticalHitBonusComponent>(weapon.Value, out var bonus))

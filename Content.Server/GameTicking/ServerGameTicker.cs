@@ -46,6 +46,7 @@ namespace Content.Server.GameTicking
         [Dependency] private ServerStationJobsSystem _stationJobs = default!;
         [Dependency] private StationSpawningSystem _stationSpawning = default!;
         [Dependency] private UserDbDataManager _userDb = default!;
+        [Dependency] private Content.Server.Players.JobWhitelist.JobWhitelistManager _jobWhitelist = default!; // WW Change
 
         [ViewVariables] private bool _initialized;
         [ViewVariables] private bool _postInitialized;

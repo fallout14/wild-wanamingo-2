@@ -1,6 +1,6 @@
 // Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Content.Shared/_Misfits/Scavenging/JunkPileSearchableComponent.cs
 // Changed for Wild Wanamingo: the loot list lives here (Misfits read a StorageFill that skipped map init, which
-// Wizden's StorageFill can't do); the Junker Finder talent's extra search isn't ported (no talents yet).
+// Wizden's StorageFill can't do).
 
 using Content.Shared.Storage;
 using Robust.Shared.Serialization;
@@ -26,6 +26,11 @@ public sealed partial class JunkPileSearchableComponent : Component
     public List<EntitySpawnEntry> Contents = new();
 
     public TimeSpan CooldownEnd = TimeSpan.Zero;
+
+    /// <summary>
+    /// A Junker Finder already took the extra search of this depleted pile.
+    /// </summary>
+    public bool FinderSearchUsed;
 }
 
 [Serializable, NetSerializable]

@@ -23,28 +23,7 @@
                         </BoxContainer>
                     </ui:HighlightedContainer>
                 </BoxContainer>
-                <!-- Randomizer -->
-                <BoxContainer Orientation="Vertical">
-                    <ui:HighlightedContainer>
-                        <BoxContainer Orientation="Vertical">
-                            <Label Text="{Loc 'humanoid-profile-editor-randomize'}" HorizontalAlignment="Center"/>
-                            <controls:Separator StyleClasses="LowDivider" Margin="0 10"/>
-                            <GridContainer Columns="2" MinWidth="250" HorizontalExpand="True">
-                                <ui:RandomizeLockButton For="Name" LabelText="{Loc 'humanoid-profile-editor-randomize-name-button'}"/>
-                                <ui:RandomizeLockButton For="Species" LabelText="{Loc 'humanoid-profile-editor-randomize-species-button'}"/>
-                                <ui:RandomizeLockButton For="Age" LabelText="{Loc 'humanoid-profile-editor-randomize-age-button'}"/>
-                                <ui:RandomizeLockButton For="Sex" LabelText="{Loc 'humanoid-profile-editor-randomize-sex-button'}"/>
-                                <ui:RandomizeLockButton For="Skin" LabelText="{Loc 'humanoid-profile-editor-randomize-skin-button'}"/>
-                                <ui:RandomizeLockButton For="Eyes" LabelText="{Loc 'humanoid-profile-editor-randomize-eye-button'}"/>
-                                <ui:RandomizeLockButton For="Markings" LabelText="{Loc 'humanoid-profile-editor-randomize-markings-button'}"/>
-                            </GridContainer>
-                            <Button
-                                Name="RandomizeUnlockedButton"
-                                MaxWidth="256"
-                                Text="{Loc 'humanoid-profile-editor-randomize-unlocked-button'}"/>
-                        </BoxContainer>
-                    </ui:HighlightedContainer>
-                </BoxContainer>
+                <!-- WW Change: Wizden's randomizer section removed -->
                 <!-- Import/Export -->
                 <BoxContainer Orientation="Vertical" MinSize="60 0" HorizontalExpand="True" HorizontalAlignment="Right">
                     <ui:HighlightedContainer Name="ProfileHighlight">
@@ -94,6 +73,29 @@
                                     <Control HorizontalExpand="True" />
                                     <OptionButton Name="VoiceButton" HorizontalAlignment="Right" />
                                 </BoxContainer>
+                                <!-- WW Change start: bark voice, vocal style, body size (from Misfits) -->
+                                <BoxContainer Name="BarkContainer" HorizontalExpand="True">
+                                    <Label Text="{Loc 'humanoid-profile-editor-bark-label'}" />
+                                    <Control HorizontalExpand="True" />
+                                    <OptionButton Name="BarkVoiceButton" HorizontalAlignment="Right" />
+                                    <Button Name="BarkVoicePlayButton" Text="{Loc 'humanoid-profile-editor-bark-play'}" Margin="4 0 0 0" />
+                                </BoxContainer>
+                                <BoxContainer HorizontalExpand="True">
+                                    <Label Text="{Loc 'humanoid-profile-editor-speech-verb-label'}" />
+                                    <Control HorizontalExpand="True" />
+                                    <OptionButton Name="SpeechVerbButton" HorizontalAlignment="Right" />
+                                </BoxContainer>
+                                <BoxContainer Name="HeightContainer" HorizontalExpand="True">
+                                    <Label Name="HeightLabel" MinWidth="130" />
+                                    <Slider Name="HeightSlider" HorizontalExpand="True" MinValue="0.85" MaxValue="1.15" Value="1" Margin="5 0 5 0" />
+                                    <Button Name="HeightReset" Text="{Loc 'humanoid-profile-editor-size-reset'}" />
+                                </BoxContainer>
+                                <BoxContainer Name="WidthContainer" HorizontalExpand="True">
+                                    <Label Name="WidthLabel" MinWidth="130" />
+                                    <Slider Name="WidthSlider" HorizontalExpand="True" MinValue="0.85" MaxValue="1.15" Value="1" Margin="5 0 5 0" />
+                                    <Button Name="WidthReset" Text="{Loc 'humanoid-profile-editor-size-reset'}" />
+                                </BoxContainer>
+                                <!-- WW Change end -->
                                 <!-- Pronouns -->
                                 <BoxContainer HorizontalExpand="True">
                                     <Label Text="{Loc 'humanoid-profile-editor-pronouns-label'}" />
@@ -129,6 +131,13 @@
                 </BoxContainer>
                 <BoxContainer Orientation="Vertical">
                     <!-- Jobs -->
+                    <!-- WW Change: Misfits job tabs by faction -->
+                    <BoxContainer Name="JobTabStrip" Orientation="Horizontal" HorizontalExpand="True" Margin="0 0 0 4">
+                        <Button Name="JobTabNoFaction" Text="{Loc 'job-tab-no-faction'}" HorizontalExpand="True" ToggleMode="True" StyleClasses="OpenRight" />
+                        <Button Name="JobTabMinorFactions" Text="{Loc 'job-tab-minor-factions'}" HorizontalExpand="True" ToggleMode="True" StyleClasses="OpenBoth" />
+                        <Button Name="JobTabMajorFactions" Text="{Loc 'job-tab-major-factions'}" HorizontalExpand="True" ToggleMode="True" StyleClasses="OpenBoth" />
+                        <Button Name="JobTabWhitelist" Text="{Loc 'job-tab-whitelist'}" HorizontalExpand="True" ToggleMode="True" StyleClasses="OpenLeft" />
+                    </BoxContainer>
                     <OptionButton Name="PreferenceUnavailableButton" />
                     <ScrollContainer VerticalExpand="True">
                         <BoxContainer Name="JobList" Orientation="Vertical" />
@@ -141,9 +150,13 @@
                     </ScrollContainer>
                 </BoxContainer>
                 <BoxContainer Orientation="Vertical" Margin="10">
-                    <!-- Traits -->
-                    <ScrollContainer VerticalExpand="True">
-                        <BoxContainer Name="TraitsList" Orientation="Vertical" />
+                    <!-- Traits: WW Change - Misfits talent tree with one shared point pool -->
+                    <Label Name="TraitPointsLabel" HorizontalAlignment="Stretch" Align="Center" />
+                    <ProgressBar Name="TraitPointsBar" MinValue="0" MaxValue="1" Value="1" MinHeight="8" Margin="0 5" />
+                    <ScrollContainer VerticalExpand="True" HorizontalExpand="True">
+                        <BoxContainer Name="TraitsList" Orientation="Vertical" HorizontalExpand="True">
+                            <ui:TalentTreeView Name="TalentTree" HorizontalExpand="True" />
+                        </BoxContainer>
                     </ScrollContainer>
                 </BoxContainer>
                 <BoxContainer Name="MarkingsTab" Orientation="Vertical" Margin="10">

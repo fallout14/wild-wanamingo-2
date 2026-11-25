@@ -2,6 +2,15 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Roles;
 
+// WW Change - Misfits job tabs
+public enum DepartmentUICategory : byte
+{
+    NoFaction = 0,
+    MinorFaction = 1,
+    MajorFaction = 2,
+    Whitelist = 3,
+}
+
 [Prototype]
 public sealed partial class DepartmentPrototype : IPrototype
 {
@@ -55,6 +64,14 @@ public sealed partial class DepartmentPrototype : IPrototype
     /// </summary>
     [DataField]
     public bool EditorHidden;
+
+    // WW Change - Misfits job tabs
+    /// <summary>
+    /// Which Jobs-tab page lists this department (No Faction, Minor/Major Factions). Whitelisted jobs always go on
+    /// the Whitelist page instead.
+    /// </summary>
+    [DataField]
+    public DepartmentUICategory UiCategory = DepartmentUICategory.NoFaction;
 }
 
 /// <summary>

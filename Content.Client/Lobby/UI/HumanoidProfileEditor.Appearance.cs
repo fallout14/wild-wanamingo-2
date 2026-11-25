@@ -183,7 +183,7 @@ public sealed partial class HumanoidProfileEditor
         SpeciesButton.Clear();
         _species.Clear();
 
-        _species.AddRange(_prototypeManager.EnumeratePrototypes<SpeciesPrototype>().Where(o => o.RoundStart));
+        _species.AddRange(_prototypeManager.EnumeratePrototypes<SpeciesPrototype>().Where(o => o.RoundStart && _requirements.IsSpeciesAllowed(o))); // WW Change - whitelisted species
         _species.Sort((a, b) => string.Compare(a.Name, b.Name, StringComparison.CurrentCultureIgnoreCase));
         var speciesIds = _species.Select(o => o.ID).ToList();
 
@@ -220,6 +220,7 @@ public sealed partial class HumanoidProfileEditor
         RefreshLoadouts();
         UpdateSexControls(); // update sex for new species
         UpdateVoiceControls();
+        UpdateSizeSliders(); // WW Change - size range depends on species
         UpdateSpeciesGuidebookIcon();
         ReloadPreview();
     }

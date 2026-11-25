@@ -144,7 +144,6 @@ namespace Content.Client.Lobby.UI
 
             NameEdit.OnTextChanged += args => { SetName(args.Text); };
             NameEdit.IsValid = args => args.Length <= _maxNameLength;
-            RandomizeUnlockedButton.OnPressed += args => { RandomizeProfile(); };
             WarningLabel.SetMarkup($"[color=red]{Loc.GetString("humanoid-profile-editor-naming-rules-warning")}[/color]");
 
             #endregion Name
@@ -296,6 +295,7 @@ namespace Content.Client.Lobby.UI
             #endregion Markings
 
             InitializeSpecialTab(); // Misfits Change - S.P.E.C.I.A.L. tab
+            InitializeCharacterExtras(); // WW Change - bark voice, vocal style, body size
 
             RefreshFlavorText();
 
@@ -396,6 +396,7 @@ namespace Content.Client.Lobby.UI
             RefreshTraits();
             RefreshFlavorText();
             UpdateSpecialControls(); // Misfits Change
+            UpdateCharacterExtrasControls(); // WW Change
             ReloadPreview();
 
             if (Profile != null)

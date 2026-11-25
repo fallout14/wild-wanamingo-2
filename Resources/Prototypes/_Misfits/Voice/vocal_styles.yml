@@ -1,0 +1,51 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Voice/speech_verbs.yml
+# (the vocal style preferences). Changed for Wild Wanamingo: F14 IDs; "bellows" has its own string (Wizden dropped oni).
+
+- type: speechVerb
+  id: F14VocalRasp
+  name: chat-speech-verb-name-misfits-rasp
+  speechVerbStrings:
+  - chat-speech-verb-misfits-rasp
+  vocalStyleSelectable: true
+
+- type: speechVerb
+  id: F14VocalSqueak
+  name: chat-speech-verb-name-misfits-squeak
+  speechVerbStrings:
+  - chat-speech-verb-small-mob-1
+  vocalStyleSelectable: true
+
+- type: speechVerb
+  id: F14VocalMumble
+  name: chat-speech-verb-name-misfits-mumble
+  speechVerbStrings:
+  - chat-speech-verb-mumble
+  vocalStyleSelectable: true
+
+- type: speechVerb
+  id: F14VocalSlur
+  name: chat-speech-verb-name-misfits-slur
+  speechVerbStrings:
+  - chat-speech-verb-misfits-slur
+  vocalStyleSelectable: true
+
+- type: speechVerb
+  id: F14VocalStutter
+  name: chat-speech-verb-name-misfits-stutter
+  speechVerbStrings:
+  - chat-speech-verb-stutter
+  vocalStyleSelectable: true
+
+- type: speechVerb
+  id: F14VocalBellow
+  name: chat-speech-verb-name-misfits-bellow
+  speechVerbStrings:
+  - chat-speech-verb-misfits-bellow
+  vocalStyleSelectable: true
+
+- type: speechVerb
+  id: F14VocalCroak
+  name: chat-speech-verb-name-misfits-croak
+  speechVerbStrings:
+  - chat-speech-verb-vox-3
+  vocalStyleSelectable: true

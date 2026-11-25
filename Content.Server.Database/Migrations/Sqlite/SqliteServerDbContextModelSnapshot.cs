@@ -1141,6 +1141,22 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("special_luck");
 
+                    b.Property<string>("BarkVoice")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("bark_voice");
+
+                    b.Property<float>("Height")
+                        .HasColumnType("REAL")
+                        .HasColumnName("height");
+
+                    b.Property<string>("SpeechVerb")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("speech_verb");
+
+                    b.Property<float>("Width")
+                        .HasColumnType("REAL")
+                        .HasColumnName("width");
+
                     b.Property<int>("SpecialPerception")
                         .HasColumnType("INTEGER")
                         .HasColumnName("special_perception");

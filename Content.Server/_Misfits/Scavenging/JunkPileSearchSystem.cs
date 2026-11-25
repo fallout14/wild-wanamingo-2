@@ -1,7 +1,9 @@
 // Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Content.Server/_Misfits/Scavenging/JunkPileSearchSystem.cs
-// Changed for Wild Wanamingo: loot comes from the component's own list; no Junker Finder talent (talents aren't ported).
+// Changed for Wild Wanamingo: loot comes from the component's own list; the Scrounger perk's extra ammo is new.
 
 using Content.Server._Misfits.SpecialStats;
+using Content.Shared._Misfits.Talents.Components;
+using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared._Misfits.Scavenging;
 using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
@@ -56,16 +58,22 @@ public sealed partial class JunkPileSearchSystem : EntitySystem
 
         args.Handled = true;
 
+        var finderSearch = false;
         if (ent.Comp.CooldownEnd > _timing.CurTime)
         {
-            var remaining = (int) Math.Ceiling((ent.Comp.CooldownEnd - _timing.CurTime).TotalMinutes);
-            _popup.PopupEntity(Loc.GetString("junk-pile-search-cooldown", ("minutes", remaining)), ent, args.User,
-                PopupType.SmallCaution);
-            return;
+            // Junker Finder (WW Change): one extra search of a depleted pile per refresh.
+            finderSearch = HasComp<TraitJunkerFinderComponent>(args.User) && !ent.Comp.FinderSearchUsed;
+            if (!finderSearch)
+            {
+                var remaining = (int) Math.Ceiling((ent.Comp.CooldownEnd - _timing.CurTime).TotalMinutes);
+                _popup.PopupEntity(Loc.GetString("junk-pile-search-cooldown", ("minutes", remaining)), ent, args.User,
+                    PopupType.SmallCaution);
+                return;
+            }
         }
 
         _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, args.User, ent.Comp.SearchDuration,
-            new JunkPileSearchDoAfterEvent(), ent, ent)
+            new JunkPileSearchDoAfterEvent { FinderSearch = finderSearch }, ent, ent)
         {
             BlockDuplicate = true,
             BreakOnDamage = true,
@@ -76,22 +84,48 @@ public sealed partial class JunkPileSearchSystem : EntitySystem
 
     private void OnSearchComplete(Entity<JunkPileSearchableComponent> ent, ref JunkPileSearchDoAfterEvent args)
     {
-        if (args.Cancelled || ent.Comp.CooldownEnd > _timing.CurTime || ent.Comp.Contents.Count == 0)
+        if (args.Cancelled || ent.Comp.Contents.Count == 0)
             return;
 
-        ent.Comp.CooldownEnd = _timing.CurTime + TimeSpan.FromSeconds(ent.Comp.CooldownSeconds);
-        UpdateAppearance(ent, true);
+        var onCooldown = ent.Comp.CooldownEnd > _timing.CurTime;
+        if (onCooldown && (!args.FinderSearch || ent.Comp.FinderSearchUsed))
+            return;
+
+        if (onCooldown)
+        {
+            ent.Comp.FinderSearchUsed = true;
+        }
+        else
+        {
+            ent.Comp.CooldownEnd = _timing.CurTime + TimeSpan.FromSeconds(ent.Comp.CooldownSeconds);
+            ent.Comp.FinderSearchUsed = false;
+            UpdateAppearance(ent, true);
+        }
 
         var coordinates = Transform(ent).Coordinates;
+        var scrounger = HasComp<TraitScroungerComponent>(args.User);
         foreach (var prototype in EntitySpawnCollection.GetSpawns(ent.Comp.Contents, _random))
         {
-            Spawn(prototype, coordinates);
+            var spawned = Spawn(prototype, coordinates);
+
+            // Scrounger: ammunition turns up 40% more often.
+            if (scrounger && IsAmmo(spawned) && _random.Prob(ScroungerExtraAmmoChance))
+                Spawn(prototype, coordinates);
         }
 
         if (TryComp<LuckJunkBonusComponent>(ent, out var luck))
             _luck.TryGrantJunkBonus((ent, luck), args.User);
 
-        _popup.PopupEntity(Loc.GetString("junk-pile-search-complete"), ent, args.User);
+        _popup.PopupEntity(Loc.GetString(args.FinderSearch
+            ? "junk-pile-search-finder-complete"
+            : "junk-pile-search-complete"), ent, args.User);
+    }
+
+    private const float ScroungerExtraAmmoChance = 0.4f;
+
+    private bool IsAmmo(EntityUid uid)
+    {
+        return HasComp<CartridgeAmmoComponent>(uid) || HasComp<BallisticAmmoProviderComponent>(uid) && !HasComp<GunComponent>(uid);
     }
 
     private void UpdateAppearance(Entity<JunkPileSearchableComponent> ent, bool depleted)

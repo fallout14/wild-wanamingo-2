@@ -1,0 +1,132 @@
+# WW (2026-11-23): the lobby offers one Protectron. In game it picks a module once (police, builder, fire or tribal)
+# and becomes that model for good. See Content.Server/_WW/Species/ProtectronModuleSystem.cs.
+
+- type: entity
+  parent: F14PlayerSyntheticProtectron
+  id: F14PlayerSyntheticProtectronUnassigned
+  suffix: player, synthetic, module not picked
+  components:
+  - type: ProtectronModule
+    actions:
+    - ActionF14ProtectronModulePolice
+    - ActionF14ProtectronModuleBuilder
+    - ActionF14ProtectronModuleFire
+    - ActionF14ProtectronModuleTribal
+
+# Actions
+
+- type: entity
+  abstract: true
+  parent: BaseAction
+  id: BaseActionF14ProtectronModule
+  components:
+  - type: Action
+    checkCanInteract: false
+    checkConsciousness: true
+    priority: -20
+
+- type: entity
+  parent: BaseActionF14ProtectronModule
+  id: ActionF14ProtectronModulePolice
+  name: Install police module
+  description: Become a police Protectron for good. Shock strikes and restraints, no guns. You only get to pick one module.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/protectron-police.rsi
+    layers:
+    - state: icon
+  - type: InstantAction
+    event: !type:ProtectronModuleActionEvent
+      polymorph: F14ProtectronModulePolice
+
+- type: entity
+  parent: BaseActionF14ProtectronModule
+  id: ActionF14ProtectronModuleBuilder
+  name: Install builder module
+  description: Become a builder Protectron for good, with engineering tools built in. You only get to pick one module.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/protectron-builder.rsi
+    layers:
+    - state: icon
+  - type: InstantAction
+    event: !type:ProtectronModuleActionEvent
+      polymorph: F14ProtectronModuleBuilder
+
+- type: entity
+  parent: BaseActionF14ProtectronModule
+  id: ActionF14ProtectronModuleFire
+  name: Install fire module
+  description: Become a firefighter Protectron for good, with a cryo emitter and extinguisher built in. You only get to pick one module.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/protectron-fire.rsi
+    layers:
+    - state: icon
+  - type: InstantAction
+    event: !type:ProtectronModuleActionEvent
+      polymorph: F14ProtectronModuleFire
+
+- type: entity
+  parent: BaseActionF14ProtectronModule
+  id: ActionF14ProtectronModuleTribal
+  name: Install tribal module
+  description: Become a tribal Protectron for good, rusted and rebuilt by the tribes. You only get to pick one module.
+  components:
+  - type: Sprite
+    sprite: Misfits/Mobs/Robots/protectron-tribal.rsi
+    layers:
+    - state: icon
+  - type: InstantAction
+    event: !type:ProtectronModuleActionEvent
+      polymorph: F14ProtectronModuleTribal
+
+# Permanent polymorphs: forced (no way back), keep name, damage and everything carried.
+
+- type: polymorph
+  id: F14ProtectronModulePolice
+  configuration:
+    entity: F14PlayerSyntheticProtectronPolice
+    forced: true
+    transferName: true
+    transferDamage: true
+    inventory: Transfer
+    revertOnCrit: false
+    revertOnDeath: false
+    revertOnDelete: false
+
+- type: polymorph
+  id: F14ProtectronModuleBuilder
+  configuration:
+    entity: F14PlayerSyntheticProtectronBuilder
+    forced: true
+    transferName: true
+    transferDamage: true
+    inventory: Transfer
+    revertOnCrit: false
+    revertOnDeath: false
+    revertOnDelete: false
+
+- type: polymorph
+  id: F14ProtectronModuleFire
+  configuration:
+    entity: F14PlayerSyntheticProtectronFire
+    forced: true
+    transferName: true
+    transferDamage: true
+    inventory: Transfer
+    revertOnCrit: false
+    revertOnDeath: false
+    revertOnDelete: false
+
+- type: polymorph
+  id: F14ProtectronModuleTribal
+  configuration:
+    entity: F14PlayerSyntheticProtectronTribal
+    forced: true
+    transferName: true
+    transferDamage: true
+    inventory: Transfer
+    revertOnCrit: false
+    revertOnDeath: false
+    revertOnDelete: false

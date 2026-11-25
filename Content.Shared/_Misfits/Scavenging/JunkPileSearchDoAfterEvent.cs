@@ -9,4 +9,11 @@ namespace Content.Shared._Misfits.Scavenging;
 /// Completes a player's search of a junk pile.
 /// </summary>
 [Serializable, NetSerializable]
-public sealed partial class JunkPileSearchDoAfterEvent : SimpleDoAfterEvent;
+public sealed partial class JunkPileSearchDoAfterEvent : SimpleDoAfterEvent
+{
+    /// <summary>
+    /// WW Change - a Junker Finder's extra search of a depleted pile.
+    /// </summary>
+    [DataField]
+    public bool FinderSearch;
+}

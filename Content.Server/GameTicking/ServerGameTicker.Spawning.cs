@@ -7,6 +7,7 @@ using Content.Server.GameTicking.Events;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
+using Content.Shared.Humanoid; // WW Change
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Mind;
 using Content.Shared.Players;
@@ -214,6 +215,15 @@ namespace Content.Server.GameTicking
                 // This does not utilize overflow job slots, so if the character profile
                 // had no available job priorities (ie Captain on Dev) set, then the player will spawn as a ghost
             }
+
+            // WW Change start - a whitelisted species needs the player on its whitelist; otherwise spawn as the default species
+            if (!_jobWhitelist.IsSpeciesAllowed(player.UserId, character.Species))
+            {
+                character = character
+                    .WithSpecies(HumanoidCharacterProfile.DefaultSpecies)
+                    .WithCharacterAppearance(HumanoidCharacterAppearance.DefaultWithSpecies(HumanoidCharacterProfile.DefaultSpecies, character.Sex));
+            }
+            // WW Change end
 
             // We raise this event to allow other systems to handle spawning this player themselves. (e.g. late-join wizard, etc)
             var bev = new PlayerBeforeSpawnEvent(player, character, jobId, lateJoin, station);

@@ -210,7 +210,13 @@ namespace Content.Server.Preferences.Managers
                 antags.ToHashSet(),
                 traits.ToHashSet(),
                 loadouts
-            ).WithSpecial(special); // Misfits Change
+            ).WithSpecial(special) // Misfits Change
+                // WW Change start - bark voice, body size, vocal style
+                .WithBarkVoice(profile.BarkVoice ?? Content.Shared._Forge.Barks.BarkPrototype.DefaultBarkVoice)
+                .WithHeight(profile.Height)
+                .WithWidth(profile.Width)
+                .WithSpeechVerb(profile.SpeechVerb ?? HumanoidCharacterProfile.DefaultSpeechVerb);
+                // WW Change end
         }
 
         private async void HandleSelectCharacterMessage(MsgSelectCharacter message)

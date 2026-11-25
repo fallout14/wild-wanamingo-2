@@ -17,5 +17,11 @@ namespace Content.Shared._Misfits.Talents.Components;
 [RegisterComponent, NetworkedComponent] public sealed partial class TraitEducatedComponent : Component { }
 [RegisterComponent, NetworkedComponent] public sealed partial class TraitScroungerComponent : Component { }
 [RegisterComponent, NetworkedComponent] public sealed partial class TraitJunkerFinderComponent : Component { }
-[RegisterComponent, NetworkedComponent] public sealed partial class TraitNerdRageComponent : Component { }
+// WW Change - Nerd Rage! tracks whether it's active (below 25% health) so the client predicts the faster attacks.
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+public sealed partial class TraitNerdRageComponent : Component
+{
+    [DataField, AutoNetworkedField]
+    public bool Enraged;
+}
 [RegisterComponent, NetworkedComponent] public sealed partial class TraitFortunesFavorComponent : Component { }

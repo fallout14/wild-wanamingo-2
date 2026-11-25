@@ -23,6 +23,10 @@ public sealed partial class SpecialAgilitySystem : EntitySystem
 
     private void OnMeleeAttackRate(EntityUid uid, MeleeWeaponComponent component, ref GetMeleeAttackRateEvent args)
     {
+        // WW Change - Nerd Rage! perk: attacks 15% faster below 25% health
+        if (Content.Shared._WW.Talents.TalentPerkSystem.IsEnraged(EntityManager, args.User))
+            args.Multipliers *= Content.Shared._WW.Talents.TalentPerkSystem.NerdRageSpeedMultiplier;
+
         if (!TryComp<SpecialComponent>(args.User, out var special))
             return;
 

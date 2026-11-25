@@ -300,6 +300,10 @@ public sealed partial class SharedSpecialSystem : EntitySystem
     /// </summary>
     public float GetIntelligenceConstructionDelay(EntityUid user, float baseDelay)
     {
+        // WW Change - Swift Learner perk: hand crafting takes 15% less time
+        if (HasComp<Content.Shared._Misfits.Talents.Components.TraitSwiftLearnerComponent>(user))
+            baseDelay *= SwiftLearnerTimeMultiplier;
+
         if (baseDelay <= 0f || !UsesSpecialStats(user))
             return baseDelay;
 
@@ -335,6 +339,10 @@ public sealed partial class SharedSpecialSystem : EntitySystem
     /// </summary>
     public TimeSpan GetIntelligenceLatheProductionTime(EntityUid user, TimeSpan baseTime)
     {
+        // WW Change - Swift Learner perk: lathe work takes 15% less time
+        if (HasComp<Content.Shared._Misfits.Talents.Components.TraitSwiftLearnerComponent>(user))
+            baseTime *= SwiftLearnerTimeMultiplier;
+
         if (baseTime <= TimeSpan.Zero || !TryComp<SpecialComponent>(user, out var special))
             return baseTime;
 
@@ -506,8 +514,23 @@ public sealed partial class SharedSpecialSystem : EntitySystem
         // Luck rolls share the same curved scale as other SPECIAL effects and
         // clamp at probability bounds to keep callers simple.
         var delta = GetCurvedEffectDelta(uid, SpecialStat.Luck, component);
-        return Math.Clamp(baseChance + delta * chancePerPoint, 0f, 1f);
+        return Math.Clamp(ApplyFortunesFavor(uid, baseChance + delta * chancePerPoint), 0f, 1f); // WW Change
     }
+
+    // WW Change start - talent perks
+    public const float SwiftLearnerTimeMultiplier = 0.85f;
+    public const float FortunesFavorChanceMultiplier = 1.25f;
+
+    /// <summary>
+    /// Fortune's Favor perk: luck-driven chances are 25% better.
+    /// </summary>
+    public float ApplyFortunesFavor(EntityUid uid, float chance)
+    {
+        return chance > 0f && HasComp<Content.Shared._Misfits.Talents.Components.TraitFortunesFavorComponent>(uid)
+            ? chance * FortunesFavorChanceMultiplier
+            : chance;
+    }
+    // WW Change end
 
     public SpecialProfile ToProfile(EntityUid uid, SpecialComponent? component = null)
     {

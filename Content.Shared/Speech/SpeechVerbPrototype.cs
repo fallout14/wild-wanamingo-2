@@ -49,4 +49,11 @@ public sealed partial class SpeechVerbPrototype : IPrototype
     /// </summary>
     [DataField(required: true)]
     public LocId Name = string.Empty;
+
+    // WW Change - Misfits vocal styles
+    /// <summary>
+    ///     Offered as a vocal style in the character editor.
+    /// </summary>
+    [DataField]
+    public bool VocalStyleSelectable;
 }

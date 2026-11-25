@@ -25,7 +25,16 @@ public sealed partial class ProfilePreviewSpriteView
             return;
 
         EntMan.System<SharedVisualBodySystem>().ApplyProfileTo(PreviewDummy, humanoid);
+        ApplyPreviewScale(humanoid); // WW Change
     }
+
+    // WW Change start - body size sliders
+    private void ApplyPreviewScale(HumanoidCharacterProfile humanoid)
+    {
+        if (EntMan.TryGetComponent<Robust.Client.GameObjects.SpriteComponent>(PreviewDummy, out var sprite))
+            EntMan.System<Robust.Client.GameObjects.SpriteSystem>().SetScale((PreviewDummy, sprite), new System.Numerics.Vector2(humanoid.Width, humanoid.Height));
+    }
+    // WW Change end
 
     /// <summary>
     /// Loads the profile onto a dummy entity.
@@ -50,6 +59,7 @@ public sealed partial class ProfilePreviewSpriteView
             var dummy = _prototypeManager.Index(humanoid.Species).DollPrototype;
             PreviewDummy = EntMan.SpawnEntity(dummy, MapCoordinates.Nullspace);
             EntMan.System<SharedVisualBodySystem>().ApplyProfileTo(PreviewDummy, humanoid);
+            ApplyPreviewScale(humanoid); // WW Change
         }
         else
         {

@@ -1206,6 +1206,22 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("integer")
                         .HasColumnName("special_luck");
 
+                    b.Property<string>("BarkVoice")
+                        .HasColumnType("text")
+                        .HasColumnName("bark_voice");
+
+                    b.Property<float>("Height")
+                        .HasColumnType("real")
+                        .HasColumnName("height");
+
+                    b.Property<string>("SpeechVerb")
+                        .HasColumnType("text")
+                        .HasColumnName("speech_verb");
+
+                    b.Property<float>("Width")
+                        .HasColumnType("real")
+                        .HasColumnName("width");
+
                     b.Property<int>("SpecialPerception")
                         .HasColumnType("integer")
                         .HasColumnName("special_perception");

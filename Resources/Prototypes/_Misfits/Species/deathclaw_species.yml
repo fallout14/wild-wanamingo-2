@@ -7,7 +7,9 @@
   id: F14Deathclaw
   name: species-name-deathclaw
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14MobDeathclawSentient
   dollPrototype: AppearanceDeathclaw
   skinColoration: Hues
@@ -25,7 +27,9 @@
   id: F14DeathclawAdolescent
   name: species-name-deathclaw-adolescent
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14MobDeathclawSentientAdolescent
   dollPrototype: AppearanceDeathclawAdolescent
   skinColoration: Hues
@@ -43,7 +47,9 @@
   id: F14DeathclawHatchling
   name: species-name-deathclaw-hatchling
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14MobDeathclawSentientHatchling
   dollPrototype: AppearanceDeathclawHatchling
   skinColoration: Hues
@@ -62,7 +68,9 @@
   id: F14BwonsamdiDeathclaw
   name: species-name-bwonsamdi-deathclaw
   roundStart: true
+  whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   prototype: F14MobDeathclawPlayer
   dollPrototype: AppearanceBwonsamdi
   skinColoration: Hues

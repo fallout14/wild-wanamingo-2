@@ -1,0 +1,43 @@
+# WW (2026-11-23): Wasteland special roles (antags). Placeholders: they show in the Special Roles tab so players can
+# set a preference, but no game rule picks them yet. Details (objectives, gear, how they're rolled) come later.
+# The Special Roles tab only lists antags tagged F14SpecialRole (WW Change in HumanoidProfileEditor.Roles.cs), so
+# Wizden's station antags stay out of it.
+
+- type: antagTag
+  id: F14SpecialRole
+
+- type: antag
+  id: F14Frumentarii
+  name: roles-antag-f14-frumentarii-name
+  antagonist: true
+  setPreference: true
+  objective: roles-antag-f14-frumentarii-objective
+  tags:
+  - F14SpecialRole
+
+- type: antag
+  id: F14EnclavePatrol
+  name: roles-antag-f14-enclave-patrol-name
+  antagonist: true
+  setPreference: true
+  objective: roles-antag-f14-enclave-patrol-objective
+  tags:
+  - F14SpecialRole
+
+- type: antag
+  id: F14CircleOfSteelAgent
+  name: roles-antag-f14-circle-of-steel-agent-name
+  antagonist: true
+  setPreference: true
+  objective: roles-antag-f14-circle-of-steel-agent-objective
+  tags:
+  - F14SpecialRole
+
+- type: antag
+  id: F14OSIScientist
+  name: roles-antag-f14-osi-scientist-name
+  antagonist: true
+  setPreference: true
+  objective: roles-antag-f14-osi-scientist-objective
+  tags:
+  - F14SpecialRole

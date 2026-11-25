@@ -354,6 +354,12 @@ namespace Content.Server.Database
         public int SpecialAgility { get; set; } = 5;
         public int SpecialLuck { get; set; } = 5;
 
+        // WW Change - character extras from Misfits
+        public string? BarkVoice { get; set; }
+        public float Height { get; set; } = 1f;
+        public float Width { get; set; } = 1f;
+        public string? SpeechVerb { get; set; }
+
         public List<Job> Jobs { get; } = new();
         public List<Antag> Antags { get; } = new();
         public List<Trait> Traits { get; } = new();

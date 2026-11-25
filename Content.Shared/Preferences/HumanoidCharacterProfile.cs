@@ -2,6 +2,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using Content.Shared._Misfits.Special; // Misfits Change
+using Content.Shared.Speech; // WW Change
 using Content.Shared.CCVar;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.EntityEffects.Effects;
@@ -110,6 +111,34 @@ namespace Content.Shared.Preferences
         [DataField]
         public SpecialProfile Special { get; private set; } = SpecialProfile.Default();
 
+        // WW Change start - character extras from Misfits: bark voice, body size, vocal style
+        /// <summary>
+        /// Bark (speech blip) voice, a <see cref="Content.Shared._Forge.Barks.BarkPrototype"/> ID.
+        /// </summary>
+        [DataField]
+        public string BarkVoice { get; private set; } = Content.Shared._Forge.Barks.BarkPrototype.DefaultBarkVoice;
+
+        /// <summary>
+        /// Sprite height scale, within the species' range.
+        /// </summary>
+        [DataField]
+        public float Height { get; private set; } = 1f;
+
+        /// <summary>
+        /// Sprite width scale, within the species' range.
+        /// </summary>
+        [DataField]
+        public float Width { get; private set; } = 1f;
+
+        /// <summary>
+        /// Vocal style (speech verb, "says"/"rasps"/...). "Default" keeps the species' own verb.
+        /// </summary>
+        [DataField]
+        public ProtoId<SpeechVerbPrototype> SpeechVerb { get; private set; } = DefaultSpeechVerb;
+
+        public static readonly ProtoId<SpeechVerbPrototype> DefaultSpeechVerb = "Default";
+        // WW Change end
+
         /// <summary>
         /// When spawning into a round what's the preferred spot to spawn.
         /// </summary>
@@ -202,6 +231,12 @@ namespace Content.Shared.Preferences
                 new Dictionary<string, RoleLoadout>(other.Loadouts))
         {
             Special = SpecialProfile.EnsureValid(other.Special); // Misfits Change
+            // WW Change start
+            BarkVoice = other.BarkVoice;
+            Height = other.Height;
+            Width = other.Width;
+            SpeechVerb = other.SpeechVerb;
+            // WW Change end
         }
 
         /// <summary>
@@ -560,6 +595,13 @@ namespace Content.Shared.Preferences
             return new(this) { Special = SpecialProfile.EnsureValid(special) };
         }
 
+        // WW Change start
+        public HumanoidCharacterProfile WithBarkVoice(string barkVoice) => new(this) { BarkVoice = barkVoice };
+        public HumanoidCharacterProfile WithHeight(float height) => new(this) { Height = height };
+        public HumanoidCharacterProfile WithWidth(float width) => new(this) { Width = width };
+        public HumanoidCharacterProfile WithSpeechVerb(ProtoId<SpeechVerbPrototype> verb) => new(this) { SpeechVerb = verb };
+        // WW Change end
+
         public HumanoidCharacterProfile WithTraitPreference(ProtoId<TraitPrototype> traitId, IPrototypeManager protoManager)
         {
             // null category is assumed to be default.
@@ -573,6 +615,13 @@ namespace Content.Shared.Preferences
 
             if (category != null && !protoManager.Resolve(category, out traitCategory))
                 return new(this);
+
+            // WW Change - talent tree: needs its prerequisite and must fit the point pool
+            if (!_traitPreferences.Contains(traitId) &&
+                !Content.Shared._WW.Traits.TraitTree.CanTake(_traitPreferences, traitProto, protoManager))
+            {
+                return new(this);
+            }
 
             var list = new HashSet<ProtoId<TraitPrototype>>(_traitPreferences) { traitId };
 
@@ -611,7 +660,7 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile WithoutTraitPreference(ProtoId<TraitPrototype> traitId, IPrototypeManager protoManager)
         {
             var list = new HashSet<ProtoId<TraitPrototype>>(_traitPreferences);
-            list.Remove(traitId);
+            list.ExceptWith(Content.Shared._WW.Traits.TraitTree.WithDependents(list, traitId, protoManager)); // WW Change - drop dependents too
 
             return new(this)
             {
@@ -643,6 +692,11 @@ namespace Content.Shared.Preferences
             if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
             if (FlavorText != other.FlavorText) return false;
             if (!Special.Equals(other.Special)) return false; // Misfits Change
+            // WW Change start
+            if (BarkVoice != other.BarkVoice) return false;
+            if (!Height.Equals(other.Height) || !Width.Equals(other.Width)) return false;
+            if (SpeechVerb != other.SpeechVerb) return false;
+            // WW Change end
             return Appearance.Equals(other.Appearance);
         }
 
@@ -800,6 +854,25 @@ namespace Content.Shared.Preferences
 
             Special = SpecialProfile.EnsureValid(Special); // Misfits Change - over-budget or out-of-range stats reset
 
+            // WW Change start - bark voice, body size, vocal style
+            if (!prototypeManager.TryIndex<Content.Shared._Forge.Barks.BarkPrototype>(BarkVoice, out var bark) || !bark.RoundStart)
+                BarkVoice = Content.Shared._Forge.Barks.BarkPrototype.DefaultBarkVoice;
+
+            if (speciesPrototype.SizeAdjustable)
+            {
+                Height = Math.Clamp(float.IsFinite(Height) ? Height : 1f, speciesPrototype.MinHeight, speciesPrototype.MaxHeight);
+                Width = Math.Clamp(float.IsFinite(Width) ? Width : 1f, speciesPrototype.MinWidth, speciesPrototype.MaxWidth);
+            }
+            else
+            {
+                Height = 1f;
+                Width = 1f;
+            }
+
+            if (!prototypeManager.TryIndex(SpeechVerb, out var speechVerb) || !speechVerb.VocalStyleSelectable)
+                SpeechVerb = DefaultSpeechVerb;
+            // WW Change end
+
             // Checks prototypes exist for all loadouts and dump / set to default if not.
             var toRemove = new ValueList<string>();
 
@@ -859,7 +932,7 @@ namespace Content.Shared.Preferences
                 result.Add(trait);
             }
 
-            return result;
+            return Content.Shared._WW.Traits.TraitTree.Prune(result, protoManager); // WW Change - talent tree prerequisites and point pool
         }
 
         public HumanoidCharacterProfile Validated(ICommonSession session, IDependencyCollection collection)
@@ -897,6 +970,10 @@ namespace Content.Shared.Preferences
             hashCode.Add(_traitPreferences);
             hashCode.Add(_loadouts);
             hashCode.Add(Special); // Misfits Change
+            hashCode.Add(BarkVoice); // WW Change
+            hashCode.Add(Height); // WW Change
+            hashCode.Add(Width); // WW Change
+            hashCode.Add(SpeechVerb); // WW Change
             hashCode.Add(Name);
             hashCode.Add(FlavorText);
             hashCode.Add(Species);

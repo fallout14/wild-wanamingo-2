@@ -15,6 +15,7 @@ namespace Content.Client.Lobby.UI;
 
 public sealed partial class HumanoidProfileEditor
 {
+    private static readonly ProtoId<AntagTagPrototype> SpecialRoleTag = "F14SpecialRole"; // WW Change
 
     /// <summary>
     /// Temporary override of their selected job, used to preview roles.
@@ -112,6 +113,7 @@ public sealed partial class HumanoidProfileEditor
     /// </summary>
     public void RefreshJobs()
     {
+        InitializeJobTabs(); // WW Change
         JobList.RemoveAllChildren();
         _jobCategories.Clear();
         _jobPriorities.Clear();
@@ -140,6 +142,15 @@ public sealed partial class HumanoidProfileEditor
         foreach (var department in departments)
         {
             var departmentName = Loc.GetString(department.Name);
+
+            // WW Change start - only this tab's jobs (whitelisted jobs all live on the Whitelist tab)
+            var jobs = department.Roles.Select(jobId => _prototypeManager.Index(jobId))
+                .Where(job => job.SetPreference && IsOnCurrentJobTab(department, job))
+                .ToArray();
+
+            if (jobs.Length == 0)
+                continue;
+            // WW Change end
 
             if (!_jobCategories.TryGetValue(department.ID, out var category))
             {
@@ -181,10 +192,6 @@ public sealed partial class HumanoidProfileEditor
                 JobList.AddChild(category);
             }
 
-            var jobs = department.Roles.Select(jobId => _prototypeManager.Index(jobId))
-                .Where(job => job.SetPreference)
-                .ToArray();
-
             if (JobUIComparer.TryCreate(_prototypeManager, null, out var comparer))
                 Array.Sort(jobs, comparer);
 
@@ -222,6 +229,17 @@ public sealed partial class HumanoidProfileEditor
                 selector.OnSelected += selectedPrio =>
                 {
                     var selectedJobPrio = (JobPriority)selectedPrio;
+
+                    // WW Change - a High job on another tab drops to Medium too
+                    if (selectedJobPrio == JobPriority.High && Profile != null)
+                    {
+                        foreach (var (otherJob, otherPrio) in Profile.JobPriorities.ToList())
+                        {
+                            if (otherJob != job.ID && otherPrio == JobPriority.High)
+                                Profile = Profile.WithJobPriority(otherJob, JobPriority.Medium);
+                        }
+                    }
+
                     Profile = Profile?.WithJobPriority(job.ID, selectedJobPrio);
 
                     foreach (var (jobId, other) in _jobPriorities)
@@ -307,6 +325,10 @@ public sealed partial class HumanoidProfileEditor
         foreach (var antag in _prototypeManager.EnumeratePrototypes<AntagPrototype>().OrderBy(a => Loc.GetString(a.Name)))
         {
             if (!antag.SetPreference)
+                continue;
+
+            // WW Change: the Special Roles tab only lists the wasteland roles, not Wizden's station antags.
+            if (!antag.Tags.Contains(SpecialRoleTag))
                 continue;
 
             var antagContainer = new BoxContainer()
