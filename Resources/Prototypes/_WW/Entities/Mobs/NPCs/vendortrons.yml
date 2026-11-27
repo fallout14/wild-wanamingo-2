@@ -1,6 +1,8 @@
 # Vendortrons: MS13 robot shopkeepers (mojave/code/modules/mob/robots/vendortrons.dm). They stand in one spot,
-# sell through the Caravan trade store UI (buy tab only, like MS13's), and shoot back if attacked.
+# trade through the Caravan trade store UI, and shoot back if attacked.
 # Stock is rolled per vendortron at round start (countMin..count) and does not restock.
+# WW Change (2026-11-26): each one also buys (a sell tab made of the trade terminals' own sell lists), and they hit
+# back hard enough to put people off robbing them: a laser rifle's worth of laser (Gun Runners: fast 5mm bursts).
 
 - type: entity
   abstract: true
@@ -34,7 +36,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      350: Dead
+      500: Dead # WW Change - was 350
     stateAlertDict:
       Alive: BorgHealth
       Dead: BorgDead
@@ -45,7 +47,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 350
+        damage: 500 # WW Change - was 350
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -63,7 +65,8 @@
           path: /Audio/Misfits/Legacy/Machines/AI/borg_death.ogg
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  # Leaves people alone until they attack it, then shoots them (MS13: retaliate trader, 15 melee, protectron laser).
+  # Leaves people alone until they attack it, then shoots them (MS13: retaliate trader, 15 melee, protectron laser;
+  # WW: 25 melee and a laser that fires like a laser rifle).
   - type: NpcFactionMember
     factions:
     - Passive
@@ -82,21 +85,26 @@
     animation: WeaponArcPunch
     damage:
       types:
-        Blunt: 15
+        Blunt: 25
   - type: Gun
-    fireRate: 0.4
+    minAngle: 1
+    maxAngle: 8
+    angleIncrease: 1
+    angleDecay: 6
+    fireRate: 3.5
     useKey: false
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+      collection: F14LaserAutoRifleGunshot
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
   - type: BasicEntityAmmoProvider
-    proto: BulletLaser
-    capacity: 6
-    count: 6
+    proto: F14MFLaserRed
+    capacity: 20
+    count: 20
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 2.5
+    rechargeCooldown: 1
+    rechargeSound: null
   - type: Speech
     speechVerb: Robotic
     speechSounds: Pai
@@ -120,6 +128,30 @@
   - type: NcStore
     buyPresets:
     - WWVendortronGunRunners
+    sellPresets:
+    - WWVendortronGunRunnersSell
+  - type: Gun # fast three-round 5mm bursts
+    minAngle: 2
+    maxAngle: 10
+    angleIncrease: 1
+    angleDecay: 6
+    fireRate: 2
+    burstFireRate: 12
+    shotsPerBurst: 3
+    burstCooldown: 0.25
+    useKey: false
+    soundGunshot:
+      collection: F14MinigunGunshot
+    selectedMode: Burst
+    availableModes:
+    - Burst
+  - type: BasicEntityAmmoProvider
+    proto: F14Bullet5mm
+    capacity: 30
+    count: 30
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.5
+    rechargeSound: null
   - type: WWVendortron
     lines:
     - ww-vendortron-gunrunner-1
@@ -138,28 +170,34 @@
   - type: NcStore
     buyPresets:
     - WWVendortronMedTek
+    sellPresets:
+    - WWVendortronMedTekSell
   - type: WWVendortron
     lines:
     - ww-vendortron-medtek-1
     - ww-vendortron-medtek-2
     - ww-vendortron-medtek-3
 
+# WW Change (2026-11-26): was MS13's Arcata Armorers vendortron; now the Crimson Caravan's, with armor and general goods.
 - type: entity
   parent: WWMobVendortronBase
-  id: WWMobVendortronArcata
-  name: Arcata Armorers vendortron
-  description: A vendortron used by a small armoring company for distribution and sale of their products.
+  id: WWMobVendortronCrimsonCaravan
+  name: Crimson Caravan vendortron
+  description: A vendortron run by the Crimson Caravan Company, selling armor, clothing and supplies for the road.
   components:
   - type: Sprite
     layers:
     - state: red
   - type: NcStore
     buyPresets:
-    - WWVendortronArcata
+    - WWVendortronCrimsonCaravan
+    sellPresets:
+    - WWVendortronCrimsonCaravanSell
   - type: WWVendortron
     lines:
-    - ww-vendortron-armor-1
-    - ww-vendortron-armor-2
+    - ww-vendortron-crimson-1
+    - ww-vendortron-crimson-2
+    - ww-vendortron-crimson-3
 
 - type: entity
   parent: WWMobVendortronBase
@@ -173,6 +211,8 @@
   - type: NcStore
     buyPresets:
     - WWVendortronTools
+    sellPresets:
+    - WWVendortronToolsSell
   - type: WWVendortron
     lines:
     - ww-vendortron-tools-1
@@ -191,6 +231,8 @@
   - type: NcStore
     buyPresets:
     - WWVendortronRobCo
+    sellPresets:
+    - WWVendortronRobCoSell
   - type: WWVendortron
     lines:
     - ww-vendortron-robco-1
@@ -212,6 +254,6 @@
     prototypes:
     - WWMobVendortronGunRunners
     - WWMobVendortronMedTek
-    - WWMobVendortronArcata
+    - WWMobVendortronCrimsonCaravan
     - WWMobVendortronTools
     - WWMobVendortronRobCo

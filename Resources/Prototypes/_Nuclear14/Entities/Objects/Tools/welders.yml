@@ -1,13 +1,16 @@
 # Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Tools/welders.yml
 
+# WW Change (2026-11-26): the standard welding tool is MS13's blowtorch (MojaveSun/Objects/Tools/blowtorch.rsi,
+# built by Reports/porter/sprite_team/make_stealthboy_blowtorch_sentry.py). The industrial/experimental welders
+# below keep their own sprites.
 - type: entity
-  name: welding tool
+  name: blowtorch
   parent: Welder
   id: F14Welder
   components:
   - type: Sprite
-    sprite: Nuclear14/Objects/Tools/welder.rsi
+    sprite: MojaveSun/Objects/Tools/blowtorch.rsi
     layers:
     - state: icon
     - state: welder_flame
@@ -15,12 +18,12 @@
       shader: unshaded
       map: ["enum.ToggleableVisuals.Layer"]
   - type: Item
-    sprite: Nuclear14/Objects/Tools/welder.rsi
+    sprite: MojaveSun/Objects/Tools/blowtorch.rsi
   - type: PointLight
     netsync: false
     enabled: false
     radius: 1.5
-    color: orange
+    color: "#7c84a7"
   - type: Tag # Corvax-Change
     tags:
       - F14Welder

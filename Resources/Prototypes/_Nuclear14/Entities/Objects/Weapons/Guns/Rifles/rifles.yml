@@ -155,6 +155,7 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: FirearmAttachmentHost
+    suppressorVisualOffset: 1.15625, 0.46875 # WW Change - per-gun suppressor art
     visualOrientation: Horizontal
     enableOpticSlot: true
     # The attachment art uses its lower-left pixel as the mounting origin.
@@ -259,6 +260,7 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: FirearmAttachmentHost
+    suppressorVisualOffset: 1.15625, 0.46875 # WW Change - per-gun suppressor art
     visualOrientation: Horizontal
     muzzleVisualOffset: 0.96875, 0.46875
   - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)

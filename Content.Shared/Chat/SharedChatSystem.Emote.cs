@@ -145,6 +145,10 @@ public abstract partial class SharedChatSystem
         if (proto == null)
             return false;
 
+        // WW Change - a robot that switched its sounds off makes none (counts as handled so nothing else plays)
+        if (TryComp<Content.Shared._WW.Robots.RobotSoundMuteComponent>(uid, out var mute) && mute.Muted)
+            return true;
+
         // try to get specific sound for this emote
         if (!proto.Sounds.TryGetValue(emoteId, out var sound))
         {

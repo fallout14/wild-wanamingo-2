@@ -227,6 +227,8 @@
         showEnts: False
         occludes: True
   - type: FirearmAttachmentHost
+    suppressorVisualState: uzi_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 0.78125, 0.46875
     muzzleSlot:
       name: Suppressor
       priority: 3

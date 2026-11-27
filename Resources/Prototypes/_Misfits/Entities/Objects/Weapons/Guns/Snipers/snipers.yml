@@ -55,7 +55,7 @@
       types:
         Piercing: 0
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
-    opticVisualState: leveraction_scope
+    opticVisualState: smallrifle_scope # WW Change - Desert Rose 2 scope
     opticVisualOffset: 0.28125, 0.5
 
 - type: entity
@@ -102,7 +102,7 @@
       - F14CartridgePistol10
     proto: F14CartridgePistol10
   - type: FirearmAttachmentHost
-    opticVisualState: leveraction_scope
+    opticVisualState: smallrifle_scope # WW Change - Desert Rose 2 scope
     opticVisualOffset: 0.21875, 0.4375
 
 - type: entity
@@ -142,7 +142,7 @@
         requireAll: false
         components:
         - BayonetAttachment
-    opticVisualState: battlerifle_scope
+    opticVisualState: mosin_scope # WW Change - Desert Rose 2 scope
     opticVisualOffset: 0.125, 0.375
   - type: Clothing
     sprite: Nuclear14/Objects/Weapons/Guns/Snipers/ross.rsi
@@ -249,6 +249,7 @@
   - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
     magnifications: [ 2, 4, 6 ]
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    suppressorVisualOffset: 1, 0.5 # WW Change - per-gun suppressor art
     visualOrientation: Horizontal
     muzzleVisualOffset: 0.84375, 0.5
     bayonetVisualOffset: 0.8125, 0.46875
@@ -315,7 +316,7 @@
   - type: StaticPrice
     price: 80
   - type: FirearmAttachmentHost
-    opticVisualState: leveraction_scope
+    opticVisualState: smallrifle_scope # WW Change - Desert Rose 2 scope
     opticVisualOffset: 0.25, 0.46875
   - type: GunDamageModifier
     damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
@@ -502,6 +503,21 @@
   - type: StaticPrice
     price: 80
   - type: FirearmAttachmentHost
+    # WW Change - bayonet only, no suppressor
+    muzzleSlot:
+      name: Muzzle attachment
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      ejectVerbText: Remove muzzle attachment
+      insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+      ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+      whitelist:
+        tags: [] # the base rifle's muzzle tag would also let suppressors in
+        components:
+        - BayonetAttachment
     bayonetVisualOffset: 0.71875, 0.75
     # WW Change - attachment overlay placement
     muzzleVisualOffset: 0.75, 0.9375

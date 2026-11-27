@@ -27,4 +27,8 @@ public sealed partial class IconSmoothComponent : Component
     /// </summary>
     [DataField]
     public ISpriteSmoothState[] States { get; private set; } = [];
+
+    // WW Change - for noRot sprites: the sprite never turns, so the neighbour lookup mustn't turn with the entity either
+    [DataField]
+    public bool IgnoreRotation;
 }

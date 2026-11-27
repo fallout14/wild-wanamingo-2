@@ -39,21 +39,8 @@
       movement:
         state: icon
 
-  # Built-in laser weapon — hardwired into the chassis, not a swappable module
-  - type: Gun
-    minAngle: 6
-    maxAngle: 12
-    angleIncrease: 2
-    angleDecay: 4
-    fireRate: 1
-
-  - type: BasicEntityAmmoProvider
-    proto: BulletLaser
-    capacity: 9
-    count: 9
-
-  - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 2
+  # WW Change - the built-in laser pistol is held in its combat module (F14BorgModuleCombatLaserPistol), like the
+  # other player robots' weapons. Robobrains may also pick up and use other weapons.
 
   # Slightly higher draw rate than standard borg to account for laser recharge
   - type: PowerCellDraw
@@ -79,7 +66,8 @@
   - type: ContainerFill
     containers:
       borg_brain: []
-      borg_module: []
+      borg_module:
+      - F14BorgModuleCombatLaserPistol # WW Change - built-in laser pistol
 
   # #Misfits Fix: The Machine construction graph requires the final entity to have
   # Construction (graph: Machine, node: machine) and explicit container declarations

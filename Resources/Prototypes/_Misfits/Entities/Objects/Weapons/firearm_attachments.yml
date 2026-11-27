@@ -8,9 +8,9 @@
   components:
   - type: Item
     size: Small
-  - type: Sprite
-    sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
-    state: recoilcomp
+  - type: Sprite # WW Change - Desert Rose 2 suppressor icon
+    sprite: WildWanamingo/Objects/Weapons/Guns/Attachments.rsi
+    state: suppressor
   - type: SuppressorAttachment
   - type: Tag
     tags:

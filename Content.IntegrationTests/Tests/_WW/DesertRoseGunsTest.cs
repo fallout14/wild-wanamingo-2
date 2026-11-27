@@ -40,7 +40,7 @@ public sealed class DesertRoseGunsTest : GameTest
     {
         "F14WeaponPistol9mmBerettaM92", "F14WeaponPistol9mmBerettaM93R", "F14WeaponPistol9mmSigP220",
         "F14WeaponRevolver20gaJudge", "F14WeaponSMG10mmP90", "F14WeaponSMG9mmCarlGustav", "F14WeaponRifle45Commando",
-        "F14WeaponRifle473G11", "F14WeaponRifle473G11E", "F14WeaponRifle556AUG", "F14WeaponRifle556XL70E3",
+        "F14WeaponRifle473G11", "F14WeaponRifle473G11E", "F14WeaponRifle556AUG", "F14WeaponRifle5mmXL70E3",
         "F14WeaponLMG308M1919", "F14WeaponLMG556M249", "F14WeaponHMG50M2Browning",
     };
 
@@ -113,7 +113,7 @@ public sealed class DesertRoseGunsTest : GameTest
 
                 // Fixed 4x scopes, no optic slot. The G11s take no muzzle attachments; the AUG and XL70E3 take a
                 // suppressor or a bayonet.
-                foreach (var id in new[] { "F14WeaponRifle473G11", "F14WeaponRifle473G11E", "F14WeaponRifle556AUG", "F14WeaponRifle556XL70E3" })
+                foreach (var id in new[] { "F14WeaponRifle473G11", "F14WeaponRifle473G11E", "F14WeaponRifle556AUG", "F14WeaponRifle5mmXL70E3" })
                 {
                     var gun = Spawn(id);
                     var takesMuzzle = !id.Contains("G11");
@@ -121,6 +121,21 @@ public sealed class DesertRoseGunsTest : GameTest
                     Assert.That(slots.TryGetSlot(gun, FirearmAttachmentHostComponent.DefaultOpticSlot, out _), Is.False, id);
                     Assert.That(Takes(gun, FirearmAttachmentHostComponent.DefaultMuzzleSlot, "F14FirearmSuppressor"), Is.EqualTo(takesMuzzle), id);
                     Assert.That(Takes(gun, FirearmAttachmentHostComponent.DefaultMuzzleSlot, "F14KnifeBayonet"), Is.EqualTo(takesMuzzle), id);
+                }
+
+                // XL70E3: rechambered for 5mm, fed from assault carbine magazines.
+                var xl70 = Spawn("F14WeaponRifle5mmXL70E3");
+                Assert.That(Takes(xl70, "gun_magazine", "F14MagazineCarbine5mm"));
+                Assert.That(Takes(xl70, "gun_magazine", "F14Magazine556Rifle"), Is.False, "no longer 5.56");
+                Assert.That(Takes(xl70, "gun_chamber", "F14CartridgePistol5"));
+
+                // The M1 carbines and Republic's Pride/Demise take a bayonet but no suppressor.
+                foreach (var id in new[] { "F14WeaponRifle10mmM1Carbine", "F14WeaponRifle10mmSkirmisher",
+                             "F14WeaponRifleM1GarandRepublicsPride", "F14WeaponRifleM1GarandRepublicsDemise" })
+                {
+                    var gun = Spawn(id);
+                    Assert.That(Takes(gun, FirearmAttachmentHostComponent.DefaultMuzzleSlot, "F14FirearmSuppressor"), Is.False, id);
+                    Assert.That(Takes(gun, FirearmAttachmentHostComponent.DefaultMuzzleSlot, "F14KnifeBayonet"), id);
                 }
 
                 // SIG P220: 9mm pistol magazines, one extra damage.

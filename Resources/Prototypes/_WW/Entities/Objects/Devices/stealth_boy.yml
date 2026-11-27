@@ -1,0 +1,67 @@
+# WW (2026-11-26): Stealth Boys, MS13 sprite (MojaveSun/Objects/Devices/stealthboy.rsi). Use one in hand to cloak
+# like the Chinese stealth suit does, for 30 seconds. It's spent after one use; a screwdriver takes the spent one
+# apart for parts. See Content.Server/_WW/Stealth/StealthBoySystem.cs.
+
+- type: entity
+  parent: BaseItem
+  id: F14StealthBoy
+  name: Stealth Boy
+  description: A RobCo Stealth Boy 3001. Switch it on to bend light around yourself and all but vanish for half a minute. Burns itself out doing it.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Devices/stealthboy.rsi
+    state: icon
+    scale: 0.75, 0.75
+  - type: Item
+    size: Small
+  - type: StealthBoy
+    usedPrototype: F14StealthBoyUsed
+  - type: StaticPrice
+    price: 400
+
+- type: entity
+  parent: BaseItem
+  id: F14StealthBoyUsed
+  name: burnt-out Stealth Boy
+  description: A spent Stealth Boy. It won't cloak anyone again, but a screwdriver could get some parts out of it.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Devices/stealthboy.rsi
+    state: used
+    scale: 0.75, 0.75
+  - type: Item
+    size: Small
+  - type: ToolRefinable
+    qualityNeeded: Screwing
+    refineResult:
+    - id: F14ScrapElectronic1
+      amount: 2
+    - id: F14MaterialCircuitry1
+    - id: F14ScrapCopper1
+    - id: F14Scrap1
+  - type: StaticPrice
+    price: 25
+
+# The Assaultron Dominator's built-in one: switch it on and off at will. Its battery (the charge indicator) holds
+# 20 seconds of cloak and drains while on; while off it refills, full again in about 2 minutes.
+- type: entity
+  parent: BaseItem
+  id: F14BorgStealthBoy
+  name: integrated Stealth Boy
+  description: A Stealth Boy wired into the Assaultron's chassis. Switch it on and off as you like; it recharges while off.
+  suffix: borg, integrated
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Devices/stealthboy.rsi
+    state: icon
+    scale: 0.75, 0.75
+  - type: Item
+    size: Small
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 100
+  - type: StealthBoy
+    drainRate: 5
+    regenRate: 0.85
+    minCharge: 10

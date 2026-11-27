@@ -47,6 +47,8 @@
         showEnts: False
         occludes: True
   - type: FirearmAttachmentHost
+    suppressorVisualState: sleepytyme_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 0.8125, 0.4375
     muzzleSlot:
       name: Suppressor
       priority: 3
@@ -433,6 +435,8 @@
         showEnts: False
         occludes: True
   - type: FirearmAttachmentHost
+    suppressorVisualState: uzi_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 0.75, 0.46875
     muzzleSlot:
       name: Suppressor
       priority: 3
@@ -638,6 +642,8 @@
         showEnts: False
         occludes: True
   - type: FirearmAttachmentHost
+    suppressorVisualState: uzi_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 0.90625, 0.4375
     muzzleSlot:
       name: Suppressor
       priority: 3

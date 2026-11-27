@@ -62,6 +62,8 @@
         showEnts: False
         occludes: True
   - type: FirearmAttachmentHost
+    suppressorVisualState: pistol_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 0.875, 0.59375
     muzzleSlot:
       name: Suppressor
       priority: 3
@@ -118,6 +120,8 @@
   description: A machine pistol built on the Beretta frame, with a fold-down foregrip and a three-round burst. Takes doublestack and standard 9mm pistol magazines.
   components:
   - type: FirearmAttachmentHost
+    suppressorVisualState: pistol_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 0.9375, 0.59375
     muzzleSlot:
       name: Suppressor
       priority: 3
@@ -178,6 +182,8 @@
         showEnts: False
         occludes: True
   - type: FirearmAttachmentHost
+    suppressorVisualState: pistol_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 0.90625, 0.59375
     muzzleSlot:
       name: Suppressor
       priority: 3
@@ -289,6 +295,8 @@
         showEnts: False
         occludes: True
   - type: FirearmAttachmentHost
+    suppressorVisualState: uzi_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 0.84375, 0.4375
     muzzleSlot:
       name: Suppressor
       priority: 3
@@ -379,6 +387,8 @@
         showEnts: False
         occludes: True
   - type: FirearmAttachmentHost
+    suppressorVisualState: uzi_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 1, 0.5625
     muzzleSlot:
       name: Suppressor
       priority: 3
@@ -496,7 +506,7 @@
     suppressedSoundGunshot: # Desert Rose's suppressed rifle shot, as on its commando carbine
       path: /Audio/WildWanamingo/DesertRose/Weapons/silenced_large.ogg
     enableOpticSlot: true
-    opticVisualState: leveraction_scope
+    opticVisualState: smallrifle_scope # WW Change - Desert Rose 2 scope
     opticVisualOffset: 0.25, 0.46875
     opticSlot:
       name: Optic
@@ -736,6 +746,7 @@
     - Back
     - suitStorage
   - type: FirearmAttachmentHost
+    suppressorVisualOffset: 0.8125, 0.875 # WW: suppressor art 1 px right, 1 px down from the muzzle point
     enableOpticSlot: false # the 4x scope is built in (WWScope below)
     muzzleVisualOffset: 0.78125, 0.90625
     bayonetVisualOffset: 0.75, 0.71875
@@ -797,12 +808,13 @@
   - type: StaticPrice
     price: 600
 
-# The L85 (XL70E3 in game): heavier and slower-firing than the AUG, but the steadiest 5.56 rifle here.
+# The L85 (XL70E3 in game): heavier and slower-firing than the AUG, but very steady. WW (2026-11-26): rechambered for
+# 5mm and fed from the assault carbine's magazines.
 - type: entity
   name: XL70E3
   parent: F14WeaponRifle556AUG
-  id: F14WeaponRifle556XL70E3
-  description: A British bullpup rifle with a fixed 4x optic and a bayonet lug. Heavy for its size and slower-firing than other 5.56 rifles, but it holds very steady. Uses 5.56mm rifle magazines.
+  id: F14WeaponRifle5mmXL70E3
+  description: A British bullpup rifle with a fixed 4x optic and a bayonet lug. Heavy for its size and slower-firing than most assault rifles, but it holds very steady. Rechambered for 5mm; takes assault carbine magazines.
   components:
   - type: Sprite
     sprite: WildWanamingo/Objects/Weapons/Guns/l85.rsi
@@ -821,6 +833,7 @@
     - Back
     - suitStorage
   - type: FirearmAttachmentHost
+    suppressorVisualOffset: 0.875, 0.875 # WW: suppressor art 1 px right, 1 px down from the muzzle point
     enableOpticSlot: false # the 4x scope is built in (WWScope below)
     muzzleVisualOffset: 0.84375, 0.90625
     bayonetVisualOffset: 0.8125, 0.71875
@@ -855,6 +868,24 @@
   - type: GunWieldBonus
     minAngle: -13
     maxAngle: -31
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: F14MagazineCarbine5mm
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - F14MagazineCarbine5mm
+      gun_chamber:
+        name: Chamber
+        startingItem: F14CartridgePistol5
+        priority: 1
+        whitelist:
+          tags:
+          - F14CartridgePistol5
   - type: StaticPrice
     price: 550
 

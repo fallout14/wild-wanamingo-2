@@ -63,6 +63,7 @@
     state: full
   - type: IconSmooth
     key: sandbags
+    ignoreRotation: true # WW Change - noRot sprite; rotated (spawned/mapped) sandbags joined the wrong way
     states:
     - !type:DirectionSpriteSmoothing
       mask: [ sandbags ]

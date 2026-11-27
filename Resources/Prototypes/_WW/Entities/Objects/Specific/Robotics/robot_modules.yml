@@ -1,5 +1,374 @@
-# WW: the player robots' tool modules with the F14 (Mojave Sun 13 / N14) tools in place of Wizden's station tools.
-# Same module art and slots as the Wizden modules they copy.
+# WW: the player robots' modules. Tools are the F14 (Mojave Sun 13 / N14) ones; the welder is the MS13 blowtorch.
+# Each robot's weapon lives in its general tool module (or a combat module for the war machines), held in a module
+# hand like any borg tool, so it can't be dropped (user, 2026-11-26):
+#   Protectron, securitrons, firefighter: laser pistol   police: magneto-laser pistol   builder: nail gun
+#   Mr. Handy: flamer + circular saw                      Mr. Gutsy: plasma pistol + auto axe
+#   Robobrain: laser pistol (combat module)               Sentry Bot: minigun or gatling laser + missile launcher
+#   (2026-11-26: sentry guns regenerate instead of overheating; the laser Sentry's pod holds 4)
+#   Assaultron: laser eye (Dominator: + Stealth Boy)
+
+# MARK: Built-in weapons
+# Like the guns they copy, minus the power cell: a few shots that come back on their own, silently (the default
+# recharge sound was the odd noise after every laser shot).
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: F14BorgWeaponBase
+  suffix: borg, integrated
+  components:
+  - type: Item
+    size: Normal
+  - type: AmmoCounter
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2
+    rechargeSound: null
+
+- type: entity
+  parent: F14BorgWeaponBase
+  id: F14BorgWeaponLaserPistol
+  name: integrated laser pistol
+  description: A laser emitter built into the robot, wired like an AEP-7 laser pistol. Recharges itself.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Battery/laser_pistol.rsi
+    state: icon
+  - type: Gun
+    minAngle: 1
+    maxAngle: 9
+    angleIncrease: 0.5
+    angleDecay: 4
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: F14LaserPistolGunshot
+    soundEmpty:
+      path: /Audio/WildWanamingo/DesertRose/Weapons/noammoenergy.ogg
+  - type: BasicEntityAmmoProvider
+    proto: F14MFLaserRed
+    capacity: 12
+    count: 12
+
+- type: entity
+  parent: F14BorgWeaponLaserPistol
+  id: F14BorgWeaponMagnetoLaser
+  name: integrated magneto-laser pistol
+  description: The police Protectron's built-in magneto-laser, wired like the Wattz magneto-laser pistol. Recharges itself.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Guns/Battery/wattz1000mag.rsi
+    state: icon
+  - type: Gun
+    minAngle: 1
+    maxAngle: 9
+    angleIncrease: 0.5
+    angleDecay: 4
+    fireRate: 1.5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: WWDRGunshotAEP7
+    soundEmpty:
+      path: /Audio/WildWanamingo/DesertRose/Weapons/noammoenergy.ogg
+
+- type: entity
+  parent: F14BorgWeaponBase
+  id: F14BorgWeaponPlasmaPistol
+  name: integrated plasma pistol
+  description: Mr. Gutsy's built-in plasma pistol. Fires much faster than the hand-held one and recharges itself.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Battery/plasma_pistol.rsi
+    state: icon
+  - type: Gun
+    minAngle: 1
+    maxAngle: 9
+    angleIncrease: 0.5
+    angleDecay: 4
+    fireRate: 2.5 # WW: well above the hand-held pistol's 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: WWDRGunshotPlasmaPistol
+    soundEmpty:
+      path: /Audio/WildWanamingo/DesertRose/Weapons/noammoenergy.ogg
+  - type: BasicEntityAmmoProvider
+    proto: F14BulletPlasma
+    capacity: 18
+    count: 18
+
+- type: entity
+  parent: F14BorgWeaponBase
+  id: F14BorgWeaponNailgun
+  name: integrated nail gun
+  description: The builder Protectron's nail gun, fed from an internal nail press. Hurts about as much as you'd think.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Guns/SMGs/nailgun.rsi
+    state: icon
+  - type: Gun
+    minAngle: 4
+    maxAngle: 16
+    angleIncrease: 1.5
+    angleDecay: 6
+    fireRate: 6
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/harpoon.ogg
+      params:
+        volume: -4
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BasicEntityAmmoProvider
+    proto: F14BulletNail
+    capacity: 20
+    count: 20
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 1
+    rechargeSound: null
+
+# Mr. Handy's flamer, at the strength it had on the chassis (150 fuel, 5 back every 3 seconds, 5 tiles).
+- type: entity
+  parent: F14BorgWeaponFlamer
+  id: F14BorgWeaponFlamerHandy
+  name: integrated flamer
+  description: Mr. Handy's built-in flamer. Slowly refills from the chassis' fuel reserve.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: chamber
+    solution:
+      maxVol: 150
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 150
+  - type: FlamerAmmoProvider
+    solutionId: chamber
+    fireCost: 5
+    fireTilePrototype: F14TileFire
+    range: 5
+  - type: NamedSolutionRegeneration
+    solution: chamber
+    generated:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 5
+    duration: 3
+
+- type: entity
+  parent: F14BorgWeaponLaserPistol
+  id: F14BorgWeaponRobobrainLaser
+  name: integrated laser emitter
+  description: The Robobrain's heavy built-in laser. Slow, but it hits hard. Recharges itself.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Battery/laser_rifle.rsi
+    state: icon
+  - type: Gun
+    minAngle: 1
+    maxAngle: 9
+    angleIncrease: 1
+    angleDecay: 4
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: F14RechargerRifleGunshot
+    soundEmpty:
+      path: /Audio/WildWanamingo/DesertRose/Weapons/noammoenergy.ogg
+  - type: BasicEntityAmmoProvider
+    proto: F14MFLaserRed
+    capacity: 9
+    count: 9
+
+# The Sentry Bot's guns (user, 2026-11-26): no overheating; their ammo slowly comes back on its own.
+# Minigun: an extended 240-round belt, a round back every half second.
+- type: entity
+  parent: F14BorgWeaponBase
+  id: F14BorgWeaponSentryMinigun
+  name: integrated 5mm minigun
+  description: The Sentry Bot's arm-mounted 5mm minigun, fed from an extended internal belt that its ammo press slowly refills.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Heavy/minigun.rsi
+    state: icon
+  - type: Item
+    size: Huge
+  - type: Gun
+    minAngle: 5
+    maxAngle: 20
+    angleIncrease: 5
+    angleDecay: 8
+    fireRate: 8
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      collection: F14MinigunGunshot
+  - type: BasicEntityAmmoProvider
+    proto: F14Bullet5mm
+    capacity: 240
+    count: 240
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.5
+    rechargeSound: null
+
+# Gatling laser: as many shots as the human one gets from a fusion core (5000 / 50 = 100), but it recharges from the
+# chassis instead of a core, two shots a second.
+- type: entity
+  parent: F14BorgWeaponSentryMinigun
+  id: F14BorgWeaponSentryGatlingLaser
+  name: integrated gatling laser
+  description: The Sentry Bot's arm-mounted gatling laser. It doesn't take a fusion core; its charge slowly comes back on its own.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Battery/laser_gatling.rsi
+    state: icon
+  - type: Gun
+    minAngle: 2
+    maxAngle: 12
+    angleIncrease: 4
+    angleDecay: 10
+    fireRate: 8
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      collection: WWDRGunshotGatling
+  - type: BasicEntityAmmoProvider
+    proto: F14MFLaserRed
+    capacity: 100
+    count: 100
+
+# Missile pods: the minigun Sentry's holds 2 and reloads one every 30 seconds; the gatling laser Sentry's holds 4 and
+# reloads one every 12 seconds.
+- type: entity
+  parent: F14BorgWeaponBase
+  id: F14BorgWeaponSentryMissileLauncher
+  name: integrated missile launcher
+  description: The Sentry Bot's shoulder missile pod. Two missiles; the autoloader slowly brings them back.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Heavy/missilelauncher.rsi
+    state: icon
+  - type: Item
+    size: Huge
+  - type: Gun
+    minAngle: 2
+    maxAngle: 10
+    fireRate: 0.5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: F14LauncherMissileGunshot
+  - type: BasicEntityAmmoProvider
+    proto: F14ProjectileMissile
+    capacity: 2
+    count: 2
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 30
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+
+- type: entity
+  parent: F14BorgWeaponSentryMissileLauncher
+  id: F14BorgWeaponSentryMissileLauncherQuad
+  name: integrated quad missile launcher
+  description: The laser Sentry Bot's four-missile pod. Its autoloader brings missiles back quickly.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: BasicEntityAmmoProvider
+    proto: F14ProjectileMissile
+    capacity: 4
+    count: 4
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 12
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+
+# The Assaultron's head laser. Its battery is the charge indicator: empty until you use it in hand to charge
+# (6.5 s, the cell fills), then firing beams for up to 2.5 s (25 pulses drain it) while the Assaultron can't move.
+# The beam follows your cursor. See Content.Server/_WW/Robots/LaserEyeSystem.cs.
+- type: entity
+  parent: BaseItem
+  id: F14BorgWeaponLaserEye
+  name: laser eye
+  description: The Assaultron's head laser. Use it to charge, then fire a sustained beam that follows your aim. You can't move while it fires.
+  suffix: borg, integrated
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: icon-xenoborg-laser
+  - type: Item
+    size: Normal
+  - type: AmmoCounter
+  - type: Gun
+    minAngle: 0
+    maxAngle: 2
+    fireRate: 10
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: F14LaserPistolGunshot
+      params:
+        volume: -8
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
+  - type: BatteryAmmoProvider
+    proto: F14AssaultronEyeBeam
+    fireCost: 4
+  - type: LaserEye
+
+# MARK: Tools
+
+# Mr. Gutsy's auto axe: always running (MS13 auto axe sprite, its running damage), no wielding.
+- type: entity
+  parent: BaseItem
+  id: F14BorgAutoAxe
+  name: integrated auto axe
+  description: A motorised axe head built into Mr. Gutsy's arm. Chews through flesh, wood and doors alike.
+  suffix: borg, integrated
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/auto_axe.rsi
+    state: on-icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/auto_axe.rsi
+    heldPrefix: on
+    size: Large
+  - type: MeleeWeapon
+    attackRate: 1
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Slash: 24
+        Piercing: 6
+        Structural: 30
+    soundHit:
+      path: /Audio/Nuclear14/Weapons/Melee/Swing/ripper.ogg
+
+# MARK: Tool modules
 
 - type: entity
   parent: BorgModuleTool
@@ -12,7 +381,73 @@
     - item: F14Wrench
     - item: F14Screwdriver
     - item: F14Wirecutter
-    - item: F14WelderIndustrial
+    - item: F14Welder
+    - item: F14Multitool
+
+- type: entity
+  parent: F14BorgModuleTool
+  id: F14BorgModuleToolProtectron
+  name: Protectron tool module
+  description: The Protectron's tools and its built-in laser pistol.
+  components:
+  - type: ItemBorgModule
+    hands:
+    - item: F14BorgWeaponLaserPistol
+    - item: F14Crowbar
+    - item: F14Wrench
+    - item: F14Screwdriver
+    - item: F14Wirecutter
+    - item: F14Welder
+    - item: F14Multitool
+
+- type: entity
+  parent: F14BorgModuleTool
+  id: F14BorgModuleToolProtectronPolice
+  name: police Protectron tool module
+  description: The police Protectron's tools and its built-in magneto-laser pistol.
+  components:
+  - type: ItemBorgModule
+    hands:
+    - item: F14BorgWeaponMagnetoLaser
+    - item: F14Crowbar
+    - item: F14Wrench
+    - item: F14Screwdriver
+    - item: F14Wirecutter
+    - item: F14Welder
+    - item: F14Multitool
+
+- type: entity
+  parent: F14BorgModuleTool
+  id: F14BorgModuleToolMrHandy
+  name: Mr. Handy tool module
+  description: Mr. Handy's tools, circular saw and built-in flamer.
+  components:
+  - type: ItemBorgModule
+    hands:
+    - item: F14BorgWeaponFlamerHandy
+    - item: F14SawAdvanced
+    - item: F14Crowbar
+    - item: F14Wrench
+    - item: F14Screwdriver
+    - item: F14Wirecutter
+    - item: F14Welder
+    - item: F14Multitool
+
+- type: entity
+  parent: F14BorgModuleTool
+  id: F14BorgModuleToolMrGutsy
+  name: Mr. Gutsy tool module
+  description: Mr. Gutsy's field tools, auto axe and built-in plasma pistol.
+  components:
+  - type: ItemBorgModule
+    hands:
+    - item: F14BorgWeaponPlasmaPistol
+    - item: F14BorgAutoAxe
+    - item: F14Crowbar
+    - item: F14Wrench
+    - item: F14Screwdriver
+    - item: F14Wirecutter
+    - item: F14Welder
     - item: F14Multitool
 
 - type: entity
@@ -27,6 +462,73 @@
     - item: F14WelderExperimental
     - item: F14Multitool
     - item: RemoteSignallerAdvanced
+
+- type: entity
+  parent: F14BorgModuleAdvancedTool
+  id: F14BorgModuleAdvancedToolBuilder
+  name: builder Protectron tool module
+  description: The builder Protectron's power tools and its nail gun.
+  components:
+  - type: ItemBorgModule
+    hands:
+    - item: F14BorgWeaponNailgun
+    - item: JawsOfLife
+    - item: F14PowerDrill
+    - item: F14Welder
+    - item: F14Multitool
+    - item: RemoteSignallerAdvanced
+
+# The builder's material hands. They come stocked with Fallout building materials (a stack each of scrap metal,
+# planks, concrete, metal floor tiles and wood floor tiles) and take any construction material or tiles to refill.
+- type: entity
+  parent: BorgModuleConstruction
+  id: F14BorgModuleConstruction
+  name: wasteland construction module
+  description: Holds building materials and floor tiles for a builder Protectron. Comes stocked with scrap, planks, concrete and floor tiles.
+  components:
+  - type: ItemBorgModule
+    hands:
+    - item: F14Scrap
+      hand:
+        emptyRepresentative: F14Scrap
+        emptyLabel: borg-slot-construction-empty
+        whitelist:
+          tags:
+          - ConstructionMaterial
+          - F14Scrap
+          - Concrete
+    - item: MaterialWoodPlank
+      hand:
+        emptyRepresentative: MaterialWoodPlank
+        emptyLabel: borg-slot-construction-empty
+        whitelist:
+          tags:
+          - ConstructionMaterial
+          - F14Scrap
+          - Concrete
+    - item: F14MaterialConcrete
+      hand:
+        emptyRepresentative: F14MaterialConcrete
+        emptyLabel: borg-slot-construction-empty
+        whitelist:
+          tags:
+          - ConstructionMaterial
+          - F14Scrap
+          - Concrete
+    - item: F14FloorTileItemMetalGrey
+      hand:
+        emptyRepresentative: F14FloorTileItemMetalGrey
+        emptyLabel: borg-slot-tiles-empty
+        whitelist:
+          components:
+          - FloorTile
+    - item: F14FloorTilesItemMS13WoodCommon
+      hand:
+        emptyRepresentative: F14FloorTilesItemMS13WoodCommon
+        emptyLabel: borg-slot-tiles-empty
+        whitelist:
+          components:
+          - FloorTile
 
 - type: entity
   parent: BorgModuleCleaning
@@ -71,8 +573,95 @@
           - Produce
           - Seed
 
-# The firefighter Protectron's cryo emitter (Misfits had it on the chassis; it moved here so the chassis keeps the
-# Protectron laser). Same shots as before: 6 cryo bursts, one back every 3 seconds.
+# MARK: Combat modules
+
+- type: entity
+  abstract: true
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  id: F14BorgModuleCombatBase
+  components:
+  - type: Sprite
+    layers:
+    - state: security
+    - state: icon-xenoborg-laser
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-laser-module }
+
+- type: entity
+  parent: F14BorgModuleCombatBase
+  id: F14BorgModuleCombatLaserPistol
+  name: laser pistol module
+  description: A laser pistol built into the chassis.
+  components:
+  - type: ItemBorgModule
+    hands:
+    - item: F14BorgWeaponLaserPistol
+
+- type: entity
+  parent: F14BorgModuleCombatBase
+  id: F14BorgModuleCombatRobobrainLaser
+  name: Robobrain laser module
+  description: The Robobrain's heavy laser emitter.
+  components:
+  - type: ItemBorgModule
+    hands:
+    - item: F14BorgWeaponRobobrainLaser
+
+- type: entity
+  parent: F14BorgModuleCombatBase
+  id: F14BorgModuleCombatSentryMinigun
+  name: Sentry Bot combat module
+  description: The Sentry Bot's 5mm minigun and missile launcher.
+  components:
+  - type: Sprite
+    layers:
+    - state: security
+    - state: icon-xenoborg-rocket
+  - type: ItemBorgModule
+    hands:
+    - item: F14BorgWeaponSentryMinigun
+    - item: F14BorgWeaponSentryMissileLauncher
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-rocket-module }
+
+- type: entity
+  parent: F14BorgModuleCombatSentryMinigun
+  id: F14BorgModuleCombatSentryLaser
+  name: Sentry Bot laser combat module
+  description: The Sentry Bot's gatling laser and missile launcher.
+  components:
+  - type: ItemBorgModule
+    hands:
+    - item: F14BorgWeaponSentryGatlingLaser
+    - item: F14BorgWeaponSentryMissileLauncherQuad
+
+- type: entity
+  parent: F14BorgModuleCombatBase
+  id: F14BorgModuleCombatAssaultron
+  name: Assaultron combat module
+  description: The Assaultron's laser eye.
+  components:
+  - type: ItemBorgModule
+    hands:
+    - item: F14BorgWeaponLaserEye
+
+- type: entity
+  parent: F14BorgModuleCombatBase
+  id: F14BorgModuleCombatAssaultronDominator
+  name: Dominator combat module
+  description: The Assaultron Dominator's laser eye and built-in Stealth Boy.
+  components:
+  - type: Sprite
+    layers:
+    - state: security
+    - state: icon-xenoborg-cloak
+  - type: ItemBorgModule
+    hands:
+    - item: F14BorgWeaponLaserEye
+    - item: F14BorgStealthBoy
+
+# MARK: Firefighter cryo emitter
+# The firefighter Protectron's cryo emitter (Misfits had it on the chassis). 6 cryo bursts, one back every 3 seconds.
 
 - type: entity
   parent: BaseItem
@@ -124,3 +713,16 @@
     - item: F14BorgWeaponCryoEmitter
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: extinguisher-module }
+
+# MARK: Laser eye beam
+# One pulse of the Assaultron's beam. The beam fires 10 a second for 2.5 seconds: up to 150 heat if it all lands.
+- type: entity
+  parent: F14AssaultronHeadLaser
+  id: F14AssaultronEyeBeam
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 6
+        Structural: 2

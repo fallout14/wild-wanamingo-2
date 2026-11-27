@@ -139,7 +139,8 @@ public sealed class FlamerTest : GameTest
         var timing = server.ResolveDependency<IGameTiming>();
         EntityUid handy = default;
 
-        await server.WaitPost(() => handy = entMan.SpawnEntity("F14PlayerSyntheticMrHandy", map.GridCoords));
+        // Mr. Handy's flamer lives in its tool module now (WW, 2026-11-26).
+        await server.WaitPost(() => handy = entMan.SpawnEntity("F14BorgWeaponFlamerHandy", map.GridCoords));
         await server.WaitRunTicks(2);
 
         var solution = entMan.System<SharedSolutionContainerSystem>();

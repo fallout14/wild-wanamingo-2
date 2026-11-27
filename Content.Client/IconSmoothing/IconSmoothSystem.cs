@@ -91,7 +91,7 @@ public sealed partial class IconSmoothSystem : EntitySystem
         }
 
         var tile = _map.TileIndicesFor(grid, mapGrid, xform.Coordinates);
-        PopulateAdjacentKeys((grid, iconGrid, mapGrid), xform.LocalRotation, tile);
+        PopulateAdjacentKeys((grid, iconGrid, mapGrid), entity.Comp.IgnoreRotation ? Angle.Zero : xform.LocalRotation, tile); // WW Change
         ApplyStates((entity, entity.Comp, sprite));
     }
 

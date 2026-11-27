@@ -146,6 +146,8 @@
         showEnts: False
         occludes: True
   - type: FirearmAttachmentHost
+    suppressorVisualState: pistol_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 0.84375, 0.59375
     muzzleSlot:
       name: Suppressor
       priority: 3
@@ -214,6 +216,8 @@
         showEnts: False
         occludes: True
   - type: FirearmAttachmentHost
+    suppressorVisualState: n99_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 0.8125, 0.5625
     muzzleSlot:
       name: Suppressor
       priority: 3
@@ -268,6 +272,8 @@
   description: A rugged handgun chambered in .45.
   components:
   - type: FirearmAttachmentHost
+    suppressorVisualState: pistol_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 0.875, 0.59375
     muzzleSlot:
       name: Suppressor
       priority: 3
@@ -339,6 +345,8 @@
   description: A rugged and robust handgun chambered in 12.7mm ammo. # TODO: Need to create projectiles, magazines and boxes for 12mm.
   components:
   - type: FirearmAttachmentHost
+    suppressorVisualState: n99_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 0.84375, 0.53125
     muzzleSlot:
       name: Suppressor
       priority: 3

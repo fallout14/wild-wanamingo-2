@@ -185,9 +185,9 @@
     species: F14RobotAssaultron
 
 - type: entity
-  id: AppearanceRobotAssaultronTesla
+  id: AppearanceRobotAssaultronInvader
   categories: [ HideSpawnMenu ]
-  name: RobotAssaultronTesla appearance
+  name: RobotAssaultronInvader appearance
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -196,7 +196,21 @@
   - type: VisualBody
   - type: SkinTintedSprite # WW Add: preview shows the skin colour
   - type: HumanoidProfile
-    species: F14RobotAssaultronTesla
+    species: F14RobotAssaultronInvader
+
+- type: entity
+  id: AppearanceRobotAssaultronDominator
+  categories: [ HideSpawnMenu ]
+  name: RobotAssaultronDominator appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/assaultron.rsi
+    state: icon
+  - type: VisualBody
+  - type: SkinTintedSprite # WW Add: preview shows the skin colour
+  - type: HumanoidProfile
+    species: F14RobotAssaultronDominator
 
 - type: entity
   id: AppearanceRobotSentryBot
@@ -205,9 +219,9 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Nuclear14/Mobs/Robots/sentrybot.rsi
+    sprite: MojaveSun/Mobs/Robots/sentrybot_ballistic.rsi # WW Change - MS13 sprite
     state: icon
-    scale: 2.0, 2.0
+    scale: 1.25, 1.25
   - type: VisualBody
   - type: SkinTintedSprite # WW Add: preview shows the skin colour
   - type: HumanoidProfile
@@ -220,9 +234,9 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Nuclear14/Mobs/Robots/sentrybot.rsi
+    sprite: MojaveSun/Mobs/Robots/sentrybot.rsi # WW Change - MS13 sprite
     state: icon
-    scale: 2.0, 2.0
+    scale: 1.25, 1.25
   - type: VisualBody
   - type: SkinTintedSprite # WW Add: preview shows the skin colour
   - type: HumanoidProfile

@@ -1,0 +1,37 @@
+# WW (2026-11-26): robot actions. Systems: Content.Shared/_WW/Robots/RobotSoundMuteSystem.cs,
+# Content.Server/_WW/Robots/FusionCoreDetonatorSystem.cs.
+
+# Every robot: switch its speech beeps and emote sounds off and on.
+- type: entity
+  parent: BaseAction
+  id: ActionF14RobotToggleSounds
+  name: Toggle speaker
+  description: Switch your speaker off or on. While it's off you make no speech or emote sounds.
+  components:
+  - type: Action
+    checkCanInteract: false
+    checkConsciousness: false
+    priority: -15
+  - type: Sprite
+    sprite: Interface/Actions/actions_borg.rsi
+    state: no-action
+  - type: InstantAction
+    event: !type:ToggleRobotSoundsEvent
+
+# Sentry Bots: blow the fusion core (starts the 8-second self-destruct fuse).
+- type: entity
+  parent: BaseAction
+  id: ActionF14DetonateFusionCore
+  name: Detonate fusion core
+  description: Overload your fusion core. You explode 8 seconds later, taking everything nearby with you. There's no stopping it.
+  components:
+  - type: Action
+    checkCanInteract: false
+    checkConsciousness: false
+    useDelay: 30
+    itemIconStyle: BigAction
+  - type: Sprite
+    sprite: MojaveSun/Objects/Power/fusion_core.rsi
+    state: icon
+  - type: InstantAction
+    event: !type:DetonateFusionCoreEvent

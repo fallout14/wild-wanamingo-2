@@ -14,8 +14,8 @@ using Robust.Shared.Prototypes;
 namespace Content.IntegrationTests.Tests._WW;
 
 /// <summary>
-/// Vendortrons (MS13 robot shopkeepers): buy-only stores with rolled stock, never cheaper than what any trade
-/// terminal pays back for the same item, and bolted in place.
+/// Vendortrons (MS13 robot shopkeepers): stores with rolled stock, never cheaper than what any trade terminal pays
+/// back for the same item, a sell tab that only reuses the terminals' sell lists, and bolted in place.
 /// </summary>
 [TestOf(typeof(WWVendortronSystem))]
 public sealed class VendortronTest : GameTest
@@ -24,7 +24,7 @@ public sealed class VendortronTest : GameTest
     [
         "WWMobVendortronGunRunners",
         "WWMobVendortronMedTek",
-        "WWMobVendortronArcata",
+        "WWMobVendortronCrimsonCaravan",
         "WWMobVendortronTools",
         "WWMobVendortronRobCo",
     ];
@@ -76,7 +76,15 @@ public sealed class VendortronTest : GameTest
                 {
                     var store = protos.Index(id).Components["NcStore"].Component as NcStoreComponent;
                     Assert.That(store, Is.Not.Null);
-                    Assert.That(store!.SellPresets, Is.Empty, $"{id}: vendortrons only sell, like MS13's");
+                    Assert.That(store!.SellPresets, Is.Not.Empty, $"{id}: vendortrons should buy things too");
+                    foreach (var presetId in store.SellPresets)
+                    {
+                        // Only the terminals' own sell lists, so a vendortron never pays more than a terminal.
+                        foreach (var cat in protos.Index<StorePresetStructuredPrototype>(presetId).Categories)
+                        {
+                            Assert.That(cat, Does.StartWith("F14"), $"{id}: sell tab {presetId} uses its own list {cat}");
+                        }
+                    }
                     foreach (var presetId in store.BuyPresets)
                     {
                         var preset = protos.Index<StorePresetStructuredPrototype>(presetId);
@@ -119,10 +127,10 @@ public sealed class VendortronTest : GameTest
                 var store = entMan.GetComponent<NcStoreComponent>(vendor);
                 loader.EnsureLoaded(vendor, store, "test");
                 Assert.That(store.Listings, Is.Not.Empty, id.ToString());
-                Assert.That(store.Listings.All(l => l.Mode == StoreMode.Buy), id.ToString());
+                Assert.That(store.Listings.Any(l => l.Mode == StoreMode.Sell), $"{id} has no sell tab");
 
                 // Listing ids are preset:mode:category:proto; stock must land inside the entry's countMin..count.
-                foreach (var listing in store.Listings)
+                foreach (var listing in store.Listings.Where(l => l.Mode == StoreMode.Buy))
                 {
                     var parts = listing.Id.Split(':');
                     var entry = protos.Index<StoreCategoryStructuredPrototype>(parts[2]).Entries.First(e => e.Proto == parts[3]);
@@ -130,7 +138,7 @@ public sealed class VendortronTest : GameTest
                 }
 
                 // Buy the cheapest thing in stock.
-                var buy = store.Listings.Where(l => l.RemainingCount > 0).MinBy(l => l.Cost["F14Caps"]);
+                var buy = store.Listings.Where(l => l.Mode == StoreMode.Buy && l.RemainingCount > 0).MinBy(l => l.Cost["F14Caps"]);
                 Assert.That(buy, Is.Not.Null, $"{id} rolled no stock at all");
                 var user = entMan.SpawnEntity("MobHuman", map.GridCoords);
                 var caps = entMan.SpawnEntity("F14CurrencyCap500", map.GridCoords);

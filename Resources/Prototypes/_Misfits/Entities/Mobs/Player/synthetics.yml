@@ -153,34 +153,7 @@
         Caustic: -0.5
   - type: RobotSelfRepairAnnouncer # #Misfits Change: hull integrity warnings + self-repair popups
 
-  - type: Gun # #Misfits Add: built-in flamer — right-click in combat mode to fire
-    cameraRecoilScalar: 0
-    fireRate: 10
-    selectedMode: FullAuto
-    availableModes:
-    - FullAuto
-    soundGunshot:
-      path: /Audio/Nuclear14/Weapons/Guns/Flames/flamer.ogg
-    useKey: false
-  - type: SolutionManager
-    solutions:
-    - F14PlayerSyntheticMrHandySolutionChamber
-  - type: FlamerAmmoProvider
-    solutionId: chamber
-    fireCost: 5
-    fireTilePrototype: F14TileFire
-    range: 5
-  - type: NamedSolutionRegeneration # #Misfits Change: slow fuel regen preserves the old recharge cadence
-    solution: chamber
-    generated:
-      reagents:
-      - ReagentId: WeldingFuel
-        Quantity: 5
-    duration: 3
-  # #Misfits Fix - Removed RobotGunPowerDrain: the flamer drained the same chassis cell_slot that
-  # powers the built-in flashlight (HandheldLight). Spraying killed the light and it could not be
-  # re-enabled until the cell recharged — the reported "flashlight breaks when using blaster" bug.
-  # The flamer is already fuel/ammo-limited, so this doesn't make it free.
+  # WW Change - the flamer moved into Mr. Handy's tool module (F14BorgModuleToolMrHandy) with the circular saw.
   - type: ContainerFill
     containers:
       borg_brain:
@@ -190,6 +163,7 @@
         - BorgModuleTopicals
         - F14BorgModuleCleaning # #Misfits Add: Mr. Handy is a domestic servant — cleaning module is thematic
         - F14BorgModuleBotany
+        - F14BorgModuleToolMrHandy # WW Change - tools, circular saw and flamer
       key_slots:
         - F14EncryptionKeyWastelandGlobal
         - F14EncryptionKeyVault
@@ -198,19 +172,6 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellAntiqueProto
-
-- type: entity
-  parent: Solution
-  id: F14PlayerSyntheticMrHandySolutionChamber
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Solution
-    id: chamber
-    solution:
-      maxVol: 150
-      reagents:
-      - ReagentId: WeldingFuel
-        Quantity: 150
 
 - type: entity
   parent: F14BasePlayerSynthetic
@@ -283,29 +244,8 @@
         Shock: -0.5
         Caustic: -0.5
   - type: RobotSelfRepairAnnouncer # #Misfits Change: hull integrity warnings + self-repair popups
-  # WW Change start - every Protectron has a built-in laser that shoots like an AEP-7 laser pistol (F14WeaponLaserPistol).
-  # Right-click in combat mode. 12 shots like a small energy cell, one shot back every 2 seconds.
-  - type: Gun
-    minAngle: 1
-    maxAngle: 9
-    angleIncrease: 0.5
-    angleDecay: 4
-    fireRate: 2
-    useKey: false
-    selectedMode: SemiAuto
-    availableModes:
-    - SemiAuto
-    soundGunshot:
-      collection: F14LaserPistolGunshot
-    soundEmpty:
-      path: /Audio/WildWanamingo/DesertRose/Weapons/noammoenergy.ogg
-  - type: BasicEntityAmmoProvider
-    proto: F14MFLaserRed
-    capacity: 12
-    count: 12
-  - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 2
-  # WW Change end
+  # WW Change - the built-in laser pistol is held in the Protectron tool module (F14BorgModuleToolProtectron), so it
+  # can't be dropped.
 
   - type: Tag # #Misfits Change: Protectron walks, so it should have footstep sounds
     tags:
@@ -320,7 +260,7 @@
       borg_brain:
         - PositronicBrain
       borg_module: # #Misfits Add: civil-service general loadout — integrated laser for self-defense + basic utility toolkit
-        - F14BorgModuleTool     # wrench/screwdriver/welder kit for general civil service tasks
+        - F14BorgModuleToolProtectron # WW Change - tools + built-in laser pistol
       key_slots:
         - F14EncryptionKeyWastelandGlobal
         - F14EncryptionKeyVault
@@ -391,39 +331,21 @@
         Caustic: -0.5
   - type: RobotSelfRepairAnnouncer # #Misfits Change: hull integrity warnings + self-repair popups
 
-  # WW Change - the built-in plasma gun shoots like a plasma pistol (F14WeaponPlasmaPistol): same bolt, rate and
-  # sound, 18 shots like a small energy cell. Right-click in combat mode.
-  - type: Gun # #Misfits Add: built-in plasma caster — right-click in combat mode to fire
-    minAngle: 1
-    maxAngle: 9
-    angleIncrease: 0.5
-    angleDecay: 4
-    fireRate: 1
-    soundGunshot:
-      collection: WWDRGunshotPlasmaPistol
-    soundEmpty:
-      path: /Audio/WildWanamingo/DesertRose/Weapons/noammoenergy.ogg
-    useKey: false
-    selectedMode: SemiAuto
-    availableModes:
-    - SemiAuto
-  - type: BasicEntityAmmoProvider # #Misfits Add: limited plasma shots, auto-refills after cooldown
-    proto: F14BulletPlasma
-    capacity: 18
-    count: 18
-  - type: RechargeBasicEntityAmmo # #Misfits Add: recharge simulates internal capacitor cycling
-    rechargeCooldown: 2
-  # #Misfits Fix - Removed RobotGunPowerDrain: the plasma blaster shared the chassis cell_slot with
-  # the built-in flashlight (HandheldLight). Each shot drained 50 charge, dropping the cell below the
-  # light's 0.2 wattage threshold -> HandheldLightSystem force-turned the light off and blocked
-  # re-enable ("cell-dead") until recharge. That's the reported "flashlight breaks when I use my
-  # blaster" bug. The blaster is already ammo-limited, so this doesn't make it free.
+  # WW Change - the plasma pistol and an auto axe are held in Mr. Gutsy's tool module (F14BorgModuleToolMrGutsy).
+  # Tougher than a Mr. Handy: military plating.
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.8
+        Heat: 0.8
   - type: ContainerFill
     containers:
       borg_brain:
         - PositronicBrain
       borg_module:
-        - F14BorgModuleTool # #Misfits Add: military utility — field repair and maintenance tools
+        - F14BorgModuleToolMrGutsy # WW Change - field tools, auto axe and plasma pistol
       key_slots:
         - F14EncryptionKeyWastelandGlobal
         - F14EncryptionKeyVault
@@ -456,12 +378,7 @@
       shader: unshaded
       map: ["light"]
       visible: false
-  # WW Change - the police model's built-in laser shoots like the magneto-laser pistol (F14WeaponLaserMagnetoPistol).
-  # The rest of the gun (12 shots, 2 s recharge) comes from the base Protectron.
-  - type: Gun
-    fireRate: 1.5
-    soundGunshot:
-      collection: WWDRGunshotAEP7
+  # WW Change - its built-in magneto-laser pistol is in its tool module (F14BorgModuleToolProtectronPolice).
   - type: MeleeWeapon # #Misfits Add: electro-shock close combat — Fallout Police Protectron uses powerful melee strikes and painful electric shock
     hidden: true
     soundHit:
@@ -478,6 +395,7 @@
       borg_brain:
         - PositronicBrain
       borg_module:
+        - F14BorgModuleToolProtectronPolice # WW Change - tools + built-in magneto-laser pistol
         - F14BorgModuleSecurity # stun baton, handcuffs, flashlight - lore-accurate detainment kit
       key_slots:
         - F14EncryptionKeyWastelandGlobal
@@ -488,7 +406,7 @@
   id: F14PlayerSyntheticProtectronBuilder
   name: protectron builder
   suffix: player, synthetic, builder
-  description: A RobCo Industries Protectron builder model with integrated engineering and RCD utility modules.
+  description: A RobCo Industries Protectron builder model with power tools, a nail gun and a wasteland construction RCD built in.
   components:
   - type: VisualBody
   - type: HumanoidProfile
@@ -511,9 +429,9 @@
       borg_brain:
         - PositronicBrain
       borg_module:
-        - F14BorgModuleAdvancedTool
-        - BorgModuleConstruction
-        - BorgModuleRCD
+        - F14BorgModuleAdvancedToolBuilder # WW Change - power tools + nail gun
+        - F14BorgModuleConstruction # WW Change - Fallout materials and tiles
+        - F14BorgModuleBuilderRCD # WW Change - Misfits' wasteland RCD (Fallout walls/doors/floors) instead of Wizden's
       key_slots:
         - F14EncryptionKeyWastelandGlobal
         - F14EncryptionKeyVault
@@ -541,13 +459,13 @@
       shader: unshaded
       map: ["light"]
       visible: false
-  # WW Change - the cryo emitter moved into a held module (F14BorgModuleCryoEmitter) so the chassis keeps the
-  # Protectron laser.
+  # WW Change - the cryo emitter moved into a held module (F14BorgModuleCryoEmitter).
   - type: ContainerFill # #Misfits Change: cryo + extinguisher loadout; water extinguisher kept for traditional fire suppression
     containers:
       borg_brain:
         - PositronicBrain
       borg_module:
+        - F14BorgModuleToolProtectron # WW Change - tools + built-in laser pistol
         - F14BorgModuleCryoEmitter # WW Change - the cryo emitter, held like a tool
         - BorgModuleFireExtinguisher # traditional water/CO2 extinguisher for structural fires
       key_slots:
@@ -590,6 +508,7 @@
       borg_module: # tribal modifications: mostly agricultural tools
       - F14BorgModuleTribalSpirit  # The spirit-tender "module"
       - F14BorgModuleTribalHarvest # Harvest module
+      - F14BorgModuleCombatLaserPistol # WW Change - every Protectron keeps its laser pistol
       key_slots:
       - F14EncryptionKeyWastelandGlobal
   - type: BorgHands # this one only gets one functioning hand, it is decrepit
@@ -675,66 +594,6 @@
     sprite: Nuclear14/Mobs/Robots/securitron-yellow.rsi
 
 - type: entity
-  id: F14AssaultronHeadLaserActionGun
-  name: integrated assaultron head laser
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Gun
-    minAngle: 1
-    maxAngle: 6
-    angleIncrease: 2
-    angleDecay: 4
-    fireRate: 2
-    soundGunshot:
-      path: /Audio/Misfits/Weapons/Guns/assaultron_beam.ogg
-    useKey: false
-    selectedMode: SemiAuto
-    availableModes:
-      - SemiAuto
-  - type: AssaultronBeamCharge
-    chargeDuration: 2
-    cooldownDuration: 45
-  - type: BatteryAmmoProvider
-    proto: F14AssaultronHeadLaser
-    fireCost: 1
-  - type: Battery
-    maxCharge: 99999
-    startingCharge: 99999
-  - type: BatterySelfRecharger
-    autoRechargeRate: 9999
-
-- type: entity
-  id: F14AssaultronTeslaActionGun
-  name: integrated assaultron tesla emitter
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Gun
-    minAngle: 1
-    maxAngle: 6
-    angleIncrease: 2
-    angleDecay: 4
-    fireRate: 2
-    soundGunshot:
-      collection: F14LaserAutoRifleGunshot
-    useKey: false
-    selectedMode: SemiAuto
-    availableModes:
-      - SemiAuto
-  - type: AssaultronBeamCharge
-    chargeDuration: 2
-    cooldownDuration: 180
-    chargeEmoteLocale: assaultron-tesla-charge-emote
-    fireEmoteLocale: assaultron-tesla-fire-emote
-  - type: BatteryAmmoProvider
-    proto: TeslaGunBullet
-    fireCost: 1
-  - type: Battery
-    maxCharge: 99999
-    startingCharge: 99999
-  - type: BatterySelfRecharger
-    autoRechargeRate: 9999
-
-- type: entity
   parent: F14BasePlayerSynthetic
   id: F14PlayerSyntheticAssaultron
   name: assaultron
@@ -797,9 +656,8 @@
     reflects: [ SmallCaliber, MediumCaliber ] # WW Change - Misfits caliber classes
     reflectProb: 0.1
     spread: 150
-  - type: ActionGun
-    action: F14ActionAssaultronHeadLaser
-    gunProto: F14AssaultronHeadLaserActionGun
+  # WW Change - the head laser is now the laser eye in its combat module (F14BorgModuleCombatAssaultron): charge
+  # 6.5 s, then a 2.5 s beam that roots the Assaultron.
   - type: WieldingBlocker
   - type: NpcFactionMember
     factions:
@@ -830,6 +688,8 @@
     containers:
       borg_brain:
         - PositronicBrain
+      borg_module:
+        - F14BorgModuleCombatAssaultron # WW Change - laser eye
       key_slots:
         - F14EncryptionKeyWastelandGlobal
   - type: ItemSlots
@@ -838,25 +698,66 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellAntiqueProto
 
-# ────────────────────────────────────────────────────────
-# Assaultron — Tesla variant (model picker variant of RobotAssaultron)
-# Same chassis and speed as the beam variant, but fires a tesla energy ball
-# with chain-lightning arcs instead of a focused heat beam.
-# ────────────────────────────────────────────────────────
+# WW Change (2026-11-26): the three Fallout 4 Assaultrons replace Misfits' Tesla variant. All three carry the laser
+# eye; the Invader's claws are electrified, the Dominator has blades and a built-in Stealth Boy.
 
 - type: entity
   parent: F14PlayerSyntheticAssaultron
-  id: F14PlayerSyntheticAssaultronTesla
-  name: assaultron
-  suffix: player, synthetic, tesla
-  description: A RobCo Industries Assaultron combat robot retrofitted with a Tesla discharge emitter. Fires arcing electrical orbs that chain-lightning nearby targets.
+  id: F14PlayerSyntheticAssaultronInvader
+  name: assaultron invader
+  suffix: player, synthetic, invader
+  description: A RobCo Industries Assaultron Invader. Its claws carry a crippling electrical charge.
   components:
   - type: VisualBody
   - type: HumanoidProfile
-    species: F14RobotAssaultronTesla
-  - type: ActionGun
-    action: F14ActionAssaultronTesla
-    gunProto: F14AssaultronTeslaActionGun
+    species: F14RobotAssaultronInvader
+  - type: MeleeWeapon
+    hidden: true
+    altDisarm: false
+    soundHit:
+      path: /Audio/Effects/sparks4.ogg
+    angle: 60
+    animation: WeaponArcPunch
+    wideAnimation: WeaponArcClaw
+    range: 1.5
+    damage:
+      types:
+        Slash: 15
+        Piercing: 15
+        Shock: 20
+
+- type: entity
+  parent: F14PlayerSyntheticAssaultron
+  id: F14PlayerSyntheticAssaultronDominator
+  name: assaultron dominator
+  suffix: player, synthetic, dominator
+  description: A RobCo Industries Assaultron Dominator, the elite of the line. Bladed arms, a laser eye and a built-in Stealth Boy.
+  components:
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: F14RobotAssaultronDominator
+  - type: MeleeWeapon
+    hidden: true
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+    angle: 60
+    animation: WeaponArcSlash
+    wideAnimation: WeaponArcClaw
+    range: 1.5
+    damage:
+      types:
+        Slash: 40
+        Piercing: 15
+  - type: ContainerFill
+    containers:
+      borg_brain:
+        - PositronicBrain
+      borg_module:
+        - F14BorgModuleCombatAssaultronDominator # laser eye + Stealth Boy
+      key_slots:
+        - F14EncryptionKeyWastelandGlobal
+
 # ────────────────────────────────────────────────────────
 # Sentry Bot — Minigun variant (base sentry bot species default)
 # Heavy assault platform with built-in 5mm minigun, missile launcher, and heavy armor.
@@ -873,9 +774,9 @@
   - type: VisualBody
   - type: HumanoidProfile
     species: F14RobotSentryBot
-  - type: Sprite
-    sprite: Nuclear14/Mobs/Robots/sentrybot.rsi
-    scale: 2.0, 2.0
+  - type: Sprite # WW Change - MS13 sentry bot (the ballistic one, with the minigun arm)
+    sprite: MojaveSun/Mobs/Robots/sentrybot_ballistic.rsi
+    scale: 1.25, 1.25
     layers:
     - state: icon
       map: ["enum.DamageStateVisualLayers.Base", "movement"]
@@ -929,24 +830,8 @@
     enabled: false
     radius: 0
     softness: 0
-  - type: Gun # #Misfits Add: built-in 5mm minigun — fires in bursts, then overheats
-    minAngle: 5
-    maxAngle: 20
-    angleIncrease: 5
-    angleDecay: 8
-    fireRate: 8
-    soundGunshot:
-      collection: F14MinigunGunshot
-    useKey: false
-    selectedMode: FullAuto
-    availableModes:
-      - FullAuto
-  - type: BasicEntityAmmoProvider # #Misfits Add: limited magazine — overheat system refills after cooldown
-    proto: F14Bullet5mm
-    capacity: 30
-    count: 30
-  - type: SentryBotChassis # #Misfits Add: enables overheat cooldown + missile launch action
-    overheatDuration: 5
+  # WW Change - the minigun (overheats when dry) and the missile launcher are held in its combat module
+  # (F14BorgModuleCombatSentryMinigun); the missile action and chassis gun are gone.
   - type: NpcFactionMember
     factions:
     - F14Wastelander
@@ -974,13 +859,18 @@
         - PositronicBrain
       borg_module:
         - F14BorgModuleTool
+        - F14BorgModuleCombatSentryMinigun # WW Change - minigun + missile launcher
       key_slots:
         - F14EncryptionKeyWastelandGlobal
-  - type: ItemSlots
+  - type: ItemSlots # WW Change - a Sentry Bot only runs on a fusion core
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellHyper
+        startingItem: F14FusionCore
+        whitelist:
+          tags:
+          - F14FusionCore
+  - type: FusionCoreDetonator # WW Add - action to blow its own fusion core (starts the self-destruct fuse below)
   # #Misfits Fix: override base chassis Destructible so the player SentryBot behaves like
   # the NPC variants — the chassis stays in Dead state after the damage threshold fires,
   # then the TriggerOnMobstateChange explosion below destroys it 8 seconds later.
@@ -1014,7 +904,7 @@
           collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          PowerCellHyper:
+          F14FusionCoreEmpty: # WW Change - it runs on a fusion core now
             min: 1
             max: 1
           F14Scrap1:
@@ -1068,22 +958,18 @@
   - type: VisualBody
   - type: HumanoidProfile
     species: F14RobotSentryBotLaser
-  - type: Gun # #Misfits Add: built-in gatling laser — fires in bursts then overheats
-    minAngle: 3
-    maxAngle: 15
-    angleIncrease: 4
-    angleDecay: 10
-    fireRate: 6
-    soundGunshot:
-      collection: F14LaserGatlingGunshot
-    useKey: false
-    selectedMode: FullAuto
-    availableModes:
-      - FullAuto
-  - type: BasicEntityAmmoProvider # #Misfits Add: laser variant uses energy bolts, same overheat system
-    proto: BulletLaser
-    capacity: 20
-    count: 20
+  - type: Sprite # WW Change - MS13 sentry bot (the laser-armed one)
+    sprite: MojaveSun/Mobs/Robots/sentrybot.rsi
+  # WW Change - gatling laser + missile launcher in its combat module.
+  - type: ContainerFill
+    containers:
+      borg_brain:
+        - PositronicBrain
+      borg_module:
+        - F14BorgModuleTool
+        - F14BorgModuleCombatSentryLaser
+      key_slots:
+        - F14EncryptionKeyWastelandGlobal
 
 # ────────────────────────────────────────────────────────
 # Robobrain — Standard variant (base robobrain species default)
@@ -1098,6 +984,8 @@
   suffix: player, synthetic
   description: A pre-war military Robobrain, now guided by a living mind. Slower but versatile, with integrated utility and medical systems.
   components:
+  - type: RobotWeaponPickupBlacklist # WW Change - Robobrains are the only robots that can pick up and use weapons
+    enabled: false
   - type: VisualBody
   - type: HumanoidProfile
     species: F14RobotRobobrain
@@ -1159,6 +1047,7 @@
         - BorgModuleDiagnosis
         - BorgModuleTopicals
         - F14BorgModuleTool
+        - F14BorgModuleCombatLaserPistol # WW Change - built-in laser pistol
       key_slots:
         - F14EncryptionKeyWastelandGlobal
         - F14EncryptionKeyVault
@@ -1183,26 +1072,7 @@
   - type: VisualBody
   - type: HumanoidProfile
     species: F14RobotRobobrainLaser
-  - type: Gun # #Misfits Add: built-in laser — same pattern as Police Protectron eyebot-class
-    minAngle: 9
-    maxAngle: 18
-    angleIncrease: 3
-    angleDecay: 4
-    fireRate: 1
-    soundGunshot:
-      collection: F14RechargerRifleGunshot
-    useKey: false
-    selectedMode: SemiAuto
-    availableModes:
-      - SemiAuto
-  - type: BasicEntityAmmoProvider
-    proto: BulletLaser
-    capacity: 9
-    count: 9
-  - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 2
-    rechargeSound:
-      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  # WW Change - its heavy laser is held in a combat module (F14BorgModuleCombatRobobrainLaser).
   - type: ContainerFill # #Misfits Add: laser variant keeps utility modules but trades medical for combat focus
     containers:
       borg_brain:
@@ -1210,6 +1080,7 @@
       borg_module:
         - F14BorgModuleTool
         - BorgModuleDiagnosis
+        - F14BorgModuleCombatRobobrainLaser # WW Change
       key_slots:
         - F14EncryptionKeyWastelandGlobal
         - F14EncryptionKeyVault

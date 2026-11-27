@@ -1,0 +1,31 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/mob/48x48.dmi: sentrybot, sentrybot_dead), laid out as the player robot states for Wild Wanamingo",
+    "size": {
+        "x": 48,
+        "y": 48
+    },
+    "states": [
+        {
+            "name": "icon",
+            "directions": 4
+        },
+        {
+            "name": "walking",
+            "directions": 4
+        },
+        {
+            "name": "dead",
+            "directions": 4
+        },
+        {
+            "name": "on",
+            "directions": 4
+        },
+        {
+            "name": "off",
+            "directions": 4
+        }
+    ]
+}

@@ -12,4 +12,10 @@ public sealed partial class RobotWeaponPickupBlacklistComponent : Component
 {
     [DataField]
     public EntityWhitelist? Blacklist;
+
+    /// <summary>
+    /// WW Change - off for chassis that are allowed weapons (Robobrains).
+    /// </summary>
+    [DataField]
+    public bool Enabled = true;
 }

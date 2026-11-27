@@ -24,6 +24,10 @@ public sealed partial class SpeechSoundSystem : EntitySystem
         if (ent.Comp.SpeechSounds == null)
             return;
 
+        // WW Change - a robot that switched its sounds off
+        if (TryComp<Content.Shared._WW.Robots.RobotSoundMuteComponent>(ent, out var mute) && mute.Muted)
+            return;
+
         // WW Change - a character with a bark voice only plays the bark, not this sound as well
         if (TryComp<SpeechSynthesisComponent>(ent, out var bark) &&
             bark.VoicePrototypeId != null &&

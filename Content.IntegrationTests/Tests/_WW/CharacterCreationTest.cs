@@ -5,10 +5,13 @@ using Content.IntegrationTests.Fixtures;
 using Content.Server.Database;
 using Content.Server.Preferences.Managers;
 using Content.Shared._Forge.Barks;
+using Content.Shared._Misfits.Silicon;
 using Content.Shared._WW.Species;
 using Content.Shared._WW.Traits;
 using Content.Shared.Body;
 using Content.Shared.CCVar;
+using Content.Shared.Containers;
+using Content.Shared.Silicons.Borgs.Components;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
@@ -30,7 +33,7 @@ using Robust.UnitTesting;
 namespace Content.IntegrationTests.Tests._WW;
 
 /// <summary>
-/// 2026-11-23/25 character creation changes: lobby species, special roles, bark voice / body size / vocal style on the
+/// 2026-11-23/26 character creation and robot changes: lobby species, special roles, bark voice / body size / vocal style on the
 /// profile, the talent tree rules and the Protectron module choice.
 /// </summary>
 public sealed class CharacterCreationTest : GameTest
@@ -166,11 +169,12 @@ public sealed class CharacterCreationTest : GameTest
         await server.WaitPost(() =>
         {
             var module = entMan.GetComponent<ProtectronModuleComponent>(bot);
-            Assert.That(module.GrantedActions, Has.Count.EqualTo(4));
+            Assert.That(module.Modules, Has.Count.EqualTo(4));
+            Assert.That(module.SelectActionEntity, Is.Not.Null, "it should get the select-module action");
 
-            var ev = new ProtectronModuleActionEvent { Polymorph = "F14ProtectronModuleFire", Performer = bot };
-            entMan.EventBus.RaiseLocalEvent(bot, (object) ev);
-            Assert.That(ev.Handled);
+            // Option 2 is the fire module.
+            var msg = new ProtectronModuleSelectMessage(2) { Actor = bot, UiKey = ProtectronModuleUiKey.Key };
+            entMan.EventBus.RaiseLocalEvent(bot, (object) msg);
         });
         await Pair.RunTicksSync(5);
 
@@ -189,6 +193,39 @@ public sealed class CharacterCreationTest : GameTest
                 "the new body shouldn't offer modules again");
             Assert.That(entMan.GetComponent<SkinTintedSpriteComponent>(fire[0]).Color, Is.EqualTo(Color.Red),
                 "the paint job should carry over");
+        });
+    }
+
+    [Test]
+    public async Task ProtectronPicksFromTheMenu()
+    {
+        var server = Pair.Server;
+        var entMan = server.EntMan;
+        var map = await Pair.CreateTestMap();
+
+        EntityUid bot = default;
+        await server.WaitPost(() => bot = entMan.SpawnEntity("F14PlayerSyntheticProtectronUnassigned", map.GridCoords));
+        await Pair.RunTicksSync(5);
+
+        // Option 1 is the builder module (menu order).
+        await server.WaitPost(() =>
+        {
+            var msg = new ProtectronModuleSelectMessage(1) { Actor = bot, UiKey = ProtectronModuleUiKey.Key };
+            entMan.EventBus.RaiseLocalEvent(bot, (object) msg);
+        });
+        await Pair.RunTicksSync(5);
+
+        await server.WaitAssertion(() =>
+        {
+            var builders = 0;
+            var query = entMan.AllEntityQueryEnumerator<MetaDataComponent>();
+            while (query.MoveNext(out _, out var meta))
+            {
+                if (meta.EntityPrototype?.ID == "F14PlayerSyntheticProtectronBuilder")
+                    builders++;
+            }
+
+            Assert.That(builders, Is.EqualTo(1), "picking from the menu should install the builder module");
         });
     }
 
@@ -228,38 +265,91 @@ public sealed class CharacterCreationTest : GameTest
     }
 
     [Test]
-    public async Task RobotBuiltInWeapons()
+    public void RobotModuleWeapons()
     {
-        var server = Pair.Server;
-        var entMan = server.EntMan;
-        var map = await Pair.CreateTestMap();
+        var protos = Pair.Server.ProtoMan;
+        var factory = Pair.Server.EntMan.ComponentFactory;
 
-        await server.WaitAssertion(() =>
+        // The guns a robot gets from its modules, as (ammo, fire rate); the chassis itself has no gun any more.
+        HashSet<(string, float)> Guns(string robot)
         {
-            (string Proto, float FireRate)? Gun(string robot)
+            var proto = protos.Index(robot);
+            Assert.That(proto.TryGetComponent<GunComponent>(out _, factory), Is.False, $"{robot}: weapons belong in its modules");
+            var guns = new HashSet<(string, float)>();
+            if (!proto.TryGetComponent<ContainerFillComponent>(out var fill, factory)
+                || !fill.Containers.TryGetValue("borg_module", out var modules))
+                return guns;
+
+            foreach (var module in modules)
             {
-                var uid = entMan.SpawnEntity(robot, map.GridCoords);
-                Assert.That(entMan.HasComponent<BatteryAmmoProviderComponent>(uid), Is.False,
-                    $"{robot}: a second ammo provider doubles every shot");
-                var result = entMan.TryGetComponent<GunComponent>(uid, out var gun) &&
-                             entMan.TryGetComponent<BasicEntityAmmoProviderComponent>(uid, out var ammo)
-                    ? (ammo.Proto.Id, gun.FireRate)
-                    : ((string, float)?) null;
-                entMan.DeleteEntity(uid);
-                return result;
+                if (!protos.Index(module).TryGetComponent<ItemBorgModuleComponent>(out var items, factory))
+                    continue;
+
+                foreach (var hand in items.Hands)
+                {
+                    if (hand.Item is not { } item)
+                        continue;
+
+                    var itemProto = protos.Index(item);
+                    if (!itemProto.TryGetComponent<GunComponent>(out var gun, factory))
+                        continue;
+
+                    if (itemProto.TryGetComponent<BasicEntityAmmoProviderComponent>(out var ammo, factory))
+                        guns.Add((ammo.Proto.Id, gun.FireRate));
+                    else if (itemProto.TryGetComponent<BatteryAmmoProviderComponent>(out var battery, factory))
+                        guns.Add((battery.Prototype.Id, gun.FireRate));
+                }
             }
 
-            Assert.That(Gun("F14PlayerSyntheticProtectron"), Is.EqualTo(("F14MFLaserRed", 2f)));
-            Assert.That(Gun("F14PlayerSyntheticProtectronUnassigned"), Is.EqualTo(("F14MFLaserRed", 2f)));
-            Assert.That(Gun("F14PlayerSyntheticProtectronBuilder"), Is.EqualTo(("F14MFLaserRed", 2f)));
-            Assert.That(Gun("F14PlayerSyntheticProtectronFire"), Is.EqualTo(("F14MFLaserRed", 2f)));
-            Assert.That(Gun("F14PlayerSyntheticProtectronTribal"), Is.EqualTo(("F14MFLaserRed", 2f)));
-            Assert.That(Gun("F14PlayerSyntheticProtectronPolice"), Is.EqualTo(("F14MFLaserRed", 1.5f)));
-            Assert.That(Gun("F14PlayerSyntheticMrGutsy"), Is.EqualTo(("F14BulletPlasma", 1f)));
-            Gun("F14PlayerSyntheticMrHandy");
-            Gun("F14PlayerSyntheticSentryBotMinigun");
-            Gun("F14PlayerSyntheticSentryBotLaser");
-            Gun("F14PlayerSyntheticRobobrainLaser");
+            return guns;
+        }
+
+        Assert.Multiple(() =>
+        {
+            var laser = ("F14MFLaserRed", 2f);
+            foreach (var robot in new[] { "F14PlayerSyntheticProtectron", "F14PlayerSyntheticProtectronUnassigned",
+                         "F14PlayerSyntheticProtectronFire", "F14PlayerSyntheticProtectronTribal",
+                         "F14PlayerSyntheticSecuritronGray", "F14PlayerSyntheticRobobrain" })
+            {
+                Assert.That(Guns(robot), Does.Contain(laser), robot);
+            }
+
+            Assert.That(Guns("F14PlayerSyntheticProtectronPolice"), Does.Contain(("F14MFLaserRed", 1.5f)));
+            Assert.That(Guns("F14PlayerSyntheticProtectronBuilder"), Does.Contain(("F14BulletNail", 6f)));
+            Assert.That(Guns("F14PlayerSyntheticMrGutsy"), Does.Contain(("F14BulletPlasma", 2.5f)));
+            Assert.That(Guns("F14PlayerSyntheticSentryBotMinigun"), Does.Contain(("F14Bullet5mm", 8f)).And.Contain(("F14ProjectileMissile", 0.5f)));
+            Assert.That(Guns("F14PlayerSyntheticSentryBotLaser"), Does.Contain(("F14MFLaserRed", 8f)).And.Contain(("F14ProjectileMissile", 0.5f)));
+            foreach (var robot in new[] { "F14PlayerSyntheticAssaultron", "F14PlayerSyntheticAssaultronInvader", "F14PlayerSyntheticAssaultronDominator" })
+            {
+                Assert.That(Guns(robot), Does.Contain(("F14AssaultronEyeBeam", 10f)), robot);
+            }
+
+            // Only Robobrains may pick up and fire other weapons.
+            foreach (var robot in new[] { "F14PlayerSyntheticProtectron", "F14PlayerSyntheticMrGutsy", "F14PlayerSyntheticRobobrain" })
+            {
+                var blacklist = (RobotWeaponPickupBlacklistComponent) protos.Index(robot).Components["RobotWeaponPickupBlacklist"].Component;
+                Assert.That(blacklist.Enabled, Is.EqualTo(robot != "F14PlayerSyntheticRobobrain"), robot);
+            }
+
+            // The old N14/Misfits borg chassis that duplicated the player robots are gone.
+            foreach (var old in new[] { "F14RobotProtectron", "F14RobotProtectronBuilder", "F14RobotMrHandy", "F14RobotMrGutsy", "F14RobotSecuritron" })
+            {
+                Assert.That(protos.HasIndex<EntityPrototype>(old), Is.False, $"{old} duplicates a player robot");
+            }
+
+            // Every robot can mute itself; Sentry Bots can blow their fusion core.
+            foreach (var robot in new[] { "F14PlayerSyntheticProtectron", "F14PlayerSyntheticSentryBotLaser", "F14MobPlayerRobobrain" })
+            {
+                Assert.That(protos.Index(robot).Components.ContainsKey("RobotSoundMute"), robot);
+            }
+            Assert.That(protos.Index(new EntProtoId("F14PlayerSyntheticSentryBotMinigun")).Components.ContainsKey("FusionCoreDetonator"));
+
+            // Mr. Gutsy lost the botany module.
+            foreach (var robot in new[] { "F14PlayerSyntheticMrGutsy" })
+            {
+                var fill = (ContainerFillComponent) protos.Index(robot).Components["ContainerFill"].Component;
+                Assert.That(fill.Containers["borg_module"], Does.Not.Contain(new EntProtoId("F14BorgModuleBotany")), robot);
+            }
         });
     }
 

@@ -53,7 +53,7 @@ public sealed class WastelandBiomeTest : GameTest
             }
 
             var plants = entMan.AllEntities<MetaDataComponent>().Count(e =>
-                e.Comp.EntityPrototype?.ID.StartsWith("N14WastelandFloraWild") == true &&
+                e.Comp.EntityPrototype?.ID.StartsWith("F14WastelandFloraWild") == true &&
                 entMan.GetComponent<TransformComponent>(e).MapID == map);
             Assert.That(plants, Is.GreaterThan(0), "no wild Fallout plants generated");
 

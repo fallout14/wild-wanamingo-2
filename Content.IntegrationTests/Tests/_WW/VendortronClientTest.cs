@@ -13,7 +13,7 @@ public sealed class VendortronClientTest : InteractionTest
 {
     [TestCase("WWMobVendortronGunRunners")]
     [TestCase("WWMobVendortronMedTek")]
-    [TestCase("WWMobVendortronArcata")]
+    [TestCase("WWMobVendortronCrimsonCaravan")]
     [TestCase("WWMobVendortronTools")]
     [TestCase("WWMobVendortronRobCo")]
     public async Task SpawnAndOpenStore(string proto)

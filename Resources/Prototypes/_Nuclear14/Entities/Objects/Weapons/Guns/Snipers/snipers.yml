@@ -37,7 +37,7 @@
     muzzleSlot:
       locked: true
     # WW Change - attachment overlay placement
-    opticVisualState: battlerifle_scope
+    opticVisualState: thick_scope # WW Change - Desert Rose 2 scope
     opticVisualOffset: 0.15625, 0.375
   - type: ManualAction
   - type: Clothing
@@ -335,7 +335,7 @@
   - type: StaticPrice
     price: 100
   - type: FirearmAttachmentHost
-    opticVisualState: leveraction_scope
+    opticVisualState: smallrifle_scope # WW Change - Desert Rose 2 scope
     opticVisualOffset: 0.25, 0.46875
   - type: GunDamageModifier
     damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
@@ -389,7 +389,7 @@
       types:
         Piercing: 0
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
-    opticVisualState: battlerifle_scope
+    opticVisualState: thick_scope # WW Change - Desert Rose 2 scope
     opticVisualOffset: 0.15625, 0.375
 
 - type: entity
@@ -532,7 +532,7 @@
       types:
         Piercing: 0
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
-    opticVisualState: leveraction_scope
+    opticVisualState: smallrifle_scope # WW Change - Desert Rose 2 scope
     opticVisualOffset: 0.21875, 0.40625
 
 - type: entity
@@ -620,7 +620,7 @@
       tags:
       - F14Cartridge308Rifle
   - type: FirearmAttachmentHost
-    opticVisualState: leveraction_scope
+    opticVisualState: smallrifle_scope # WW Change - Desert Rose 2 scope
     opticVisualOffset: 0.21875, 0.46875
   - type: GunDamageModifier
     damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus

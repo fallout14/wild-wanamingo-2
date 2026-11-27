@@ -27,6 +27,8 @@
   - type: Item
     sprite: MojaveSun/Objects/Weapons/Guns/Pistols/police10mm.rsi
   - type: FirearmAttachmentHost
+    suppressorVisualState: n99_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 1.0625, 0.5625
     muzzleVisualOffset: 0.78125, 0.625
   - type: Gun
     soundGunshot: # WW Change - Desert Rose sound
@@ -48,6 +50,8 @@
   - type: Item
     sprite: MojaveSun/Objects/Weapons/Guns/Pistols/mil10mm.rsi
   - type: FirearmAttachmentHost
+    suppressorVisualState: n99_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 1.125, 0.59375
     muzzleVisualOffset: 0.84375, 0.65625
   - type: Gun
     soundGunshot: # WW Change - Desert Rose sound

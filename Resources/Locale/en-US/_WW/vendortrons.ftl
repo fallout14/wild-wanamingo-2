@@ -7,8 +7,9 @@ ww-vendortron-medtek-1 = Need help studying? Can't focus? Just want a little edg
 ww-vendortron-medtek-2 = When you think healthy, think Med-Tek.
 ww-vendortron-medtek-3 = Join the cutting edge Med-Tek team today at our nearest office in.... Error, locational data not found.
 
-ww-vendortron-armor-1 = Providing quality, life saving armor since 2245!
-ww-vendortron-armor-2 = Choose Arcata Armorers today! You never know when we might save your life!
+ww-vendortron-crimson-1 = Crimson Caravan Company. Keeping the roads open since 2271!
+ww-vendortron-crimson-2 = Armor, clothing and supplies. Everything a traveler needs, at fair prices!
+ww-vendortron-crimson-3 = Thank you for choosing the Crimson Caravan. Safe travels, customer!
 
 ww-vendortron-tools-1 = Choose H&H Tools for your next home improvement project!
 ww-vendortron-tools-2 = Notice: This unit is still processing a change in security protocols. Customers are advised to exercise caution.

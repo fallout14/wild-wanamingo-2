@@ -268,6 +268,8 @@
   - type: StaticPrice
     price: 150
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    suppressorVisualState: n99_suppressor # WW Change - per-gun suppressor art
+    suppressorVisualOffset: 1.34375, 0.375
     visualOrientation: Horizontal
     muzzleVisualOffset: 1.09375, 0.40625
     bayonetVisualOffset: 1.0625, 0.375
@@ -520,6 +522,21 @@
           tags:
             - F14CartridgePistol10
   - type: FirearmAttachmentHost
+    # WW Change - bayonet only, no suppressor
+    muzzleSlot:
+      name: Muzzle attachment
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      ejectVerbText: Remove muzzle attachment
+      insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+      ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+      whitelist:
+        tags: [] # the base rifle's muzzle tag would also let suppressors in
+        components:
+        - BayonetAttachment
     bayonetVisualOffset: 0.71875, 0.75
     # WW Change - attachment overlay placement
     muzzleVisualOffset: 0.75, 0.9375
@@ -841,6 +858,8 @@
         Piercing: 4
 
 # Pawolski's Retribution — UNIQUE, NCR heirloom.
+  - type: FirearmAttachmentHost # WW Change - Desert Rose 2 scope
+    opticVisualState: thick_scope
 
 - type: entity
   name: Pawolski's Retribution
@@ -895,6 +914,8 @@
         Piercing: 4
 
 # Republic's Pride — UNIQUE, scoped M1C variant issued to NCR Scout Captains.
+  - type: FirearmAttachmentHost # WW Change - Desert Rose 2 scope
+    opticVisualState: thick_scope
 
 - type: entity
   name: Republic's Pride
@@ -967,6 +988,21 @@
   - type: WWScope # WW Change - Wizden-style wield-to-look-ahead (was the Misfits scope toggle)
     magnifications: [ 2, 4, 6 ]
   - type: FirearmAttachmentHost # WW Change - attachment overlay placement
+    # WW Change - bayonet only, no suppressor
+    muzzleSlot:
+      name: Muzzle attachment
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      ejectVerbText: Remove muzzle attachment
+      insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+      ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+      whitelist:
+        tags: [] # the base rifle's muzzle tag would also let suppressors in
+        components:
+        - BayonetAttachment
     muzzleVisualOffset: 0.75, 0.9375
     bayonetVisualOffset: 0.71875, 0.75
 

@@ -1,5 +1,7 @@
 # WW (2026-11-23): the lobby offers one Protectron. In game it picks a module once (police, builder, fire or tribal)
-# and becomes that model for good. See Content.Server/_WW/Species/ProtectronModuleSystem.cs.
+# and becomes that model for good, from a chassis-selection window (like the cyborg type picker) that opens when the
+# player takes over the body; the select-module action reopens it.
+# See Content.Server/_WW/Species/ProtectronModuleSystem.cs.
 
 - type: entity
   parent: F14PlayerSyntheticProtectron
@@ -7,79 +9,53 @@
   suffix: player, synthetic, module not picked
   components:
   - type: ProtectronModule
-    actions:
-    - ActionF14ProtectronModulePolice
-    - ActionF14ProtectronModuleBuilder
-    - ActionF14ProtectronModuleFire
-    - ActionF14ProtectronModuleTribal
-
-# Actions
+    modules:
+    - name: protectron-module-police-name
+      description: protectron-module-police-desc
+      dummy: F14PlayerSyntheticProtectronPolice
+      polymorph: F14ProtectronModulePolice
+    - name: protectron-module-builder-name
+      description: protectron-module-builder-desc
+      dummy: F14PlayerSyntheticProtectronBuilder
+      polymorph: F14ProtectronModuleBuilder
+    - name: protectron-module-fire-name
+      description: protectron-module-fire-desc
+      dummy: F14PlayerSyntheticProtectronFire
+      polymorph: F14ProtectronModuleFire
+    - name: protectron-module-tribal-name
+      description: protectron-module-tribal-desc
+      dummy: F14PlayerSyntheticProtectronTribal
+      polymorph: F14ProtectronModuleTribal
+  # The module picker (the base chassis' interfaces are repeated because this list replaces the parent's).
+  - type: UserInterface
+    interfaces:
+      enum.SiliconLawsUiKey.Key:
+        type: SiliconLawBoundUserInterface
+      enum.BorgUiKey.Key:
+        type: BorgBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+      enum.ProtectronModuleUiKey.Key:
+        type: ProtectronModuleBoundUserInterface
 
 - type: entity
-  abstract: true
   parent: BaseAction
-  id: BaseActionF14ProtectronModule
+  id: ActionF14ProtectronSelectModule
+  name: Select Protectron module
+  description: Pick the module this Protectron is built around. The choice is permanent.
   components:
   - type: Action
+    itemIconStyle: NoItem
+    useDelay: 0.5
     checkCanInteract: false
     checkConsciousness: true
     priority: -20
-
-- type: entity
-  parent: BaseActionF14ProtectronModule
-  id: ActionF14ProtectronModulePolice
-  name: Install police module
-  description: Become a police Protectron for good. Shock strikes and restraints, no guns. You only get to pick one module.
-  components:
   - type: Sprite
-    sprite: Nuclear14/Mobs/Robots/protectron-police.rsi
+    sprite: Interface/Actions/actions_borg.rsi
     layers:
-    - state: icon
+    - state: select-type
   - type: InstantAction
-    event: !type:ProtectronModuleActionEvent
-      polymorph: F14ProtectronModulePolice
-
-- type: entity
-  parent: BaseActionF14ProtectronModule
-  id: ActionF14ProtectronModuleBuilder
-  name: Install builder module
-  description: Become a builder Protectron for good, with engineering tools built in. You only get to pick one module.
-  components:
-  - type: Sprite
-    sprite: Nuclear14/Mobs/Robots/protectron-builder.rsi
-    layers:
-    - state: icon
-  - type: InstantAction
-    event: !type:ProtectronModuleActionEvent
-      polymorph: F14ProtectronModuleBuilder
-
-- type: entity
-  parent: BaseActionF14ProtectronModule
-  id: ActionF14ProtectronModuleFire
-  name: Install fire module
-  description: Become a firefighter Protectron for good, with a cryo emitter and extinguisher built in. You only get to pick one module.
-  components:
-  - type: Sprite
-    sprite: Nuclear14/Mobs/Robots/protectron-fire.rsi
-    layers:
-    - state: icon
-  - type: InstantAction
-    event: !type:ProtectronModuleActionEvent
-      polymorph: F14ProtectronModuleFire
-
-- type: entity
-  parent: BaseActionF14ProtectronModule
-  id: ActionF14ProtectronModuleTribal
-  name: Install tribal module
-  description: Become a tribal Protectron for good, rusted and rebuilt by the tribes. You only get to pick one module.
-  components:
-  - type: Sprite
-    sprite: Misfits/Mobs/Robots/protectron-tribal.rsi
-    layers:
-    - state: icon
-  - type: InstantAction
-    event: !type:ProtectronModuleActionEvent
-      polymorph: F14ProtectronModuleTribal
+    event: !type:ProtectronSelectModuleEvent
 
 # Permanent polymorphs: forced (no way back), keep name, damage and everything carried.
 

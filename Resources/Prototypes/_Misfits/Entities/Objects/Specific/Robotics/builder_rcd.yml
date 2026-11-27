@@ -7,21 +7,8 @@
   description: A Protectron-integrated construction device programmed with wasteland settlement and bunker plans.
   components:
   - type: RCD
+    # WW Change - Fallout walls, doors and floors only (the Wizden station walls, windows, airlocks and lights are gone)
     availablePrototypes:
-    - WallSolid
-    - FloorSteel
-    - Plating
-    - Catwalk
-    - Grille
-    - Window
-    - WindowDirectional
-    - WindowReinforcedDirectional
-    - ReinforcedWindow
-    - Airlock
-    - AirlockGlass
-    - Firelock
-    - TubeLight
-    - BulbLight
     - LVCable
     - MVCable
     - HVCable

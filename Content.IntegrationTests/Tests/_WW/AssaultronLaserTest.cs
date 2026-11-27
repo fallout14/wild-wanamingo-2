@@ -1,8 +1,10 @@
 #nullable enable
 using Content.IntegrationTests.Fixtures;
-using Content.Shared._Misfits.Robot;
-using Content.Shared._Misfits.Weapons.Legacy;
-using Content.Shared.Actions.Components;
+using Content.Shared._WW.Robots;
+using Content.Shared.Interaction.Events;
+using Content.Shared.Power.EntitySystems;
+using Content.Shared.Weapons.Ranged.Components;
+using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Timing;
@@ -10,13 +12,14 @@ using Robust.Shared.Timing;
 namespace Content.IntegrationTests.Tests._WW;
 
 /// <summary>
-/// The assaultron head laser: the first use charges, the next use once charged fires, then it cools down.
+/// The Assaultron laser eye: won't fire uncharged; use fills its battery (the charge indicator); the first charged
+/// shot starts a beam that roots the shooter and keeps firing until the battery is drained, then it cools down.
 /// </summary>
-[TestOf(typeof(ActionGunComponent))]
+[TestOf(typeof(LaserEyeComponent))]
 public sealed class AssaultronLaserTest : GameTest
 {
     [Test]
-    public async Task ChargesThenFires()
+    public async Task ChargesThenBeams()
     {
         var pair = Pair;
         var server = pair.Server;
@@ -24,50 +27,56 @@ public sealed class AssaultronLaserTest : GameTest
         var timing = server.ResolveDependency<IGameTiming>();
         var map = await pair.CreateTestMap();
         EntityUid robot = default;
+        EntityUid eye = default;
+        LaserEyeComponent comp = default!;
+        var target = new EntityCoordinates(map.Grid, 5, 0);
+        var battery = entMan.System<SharedBatterySystem>();
 
-        await server.WaitPost(() => robot = entMan.SpawnEntity("F14PlayerSyntheticAssaultron", map.GridCoords));
-        await server.WaitRunTicks(2);
-
-        ActionGunComponent gunAction = default!;
-        AssaultronBeamChargeComponent charge = default!;
-        await server.WaitAssertion(() =>
+        await server.WaitPost(() =>
         {
-            gunAction = entMan.GetComponent<ActionGunComponent>(robot);
-            Assert.That(gunAction.ActionEntity, Is.Not.Null, "the assaultron should get its head laser action");
-            Assert.That(gunAction.Gun, Is.Not.Null, "the integrated gun should exist");
-            charge = entMan.GetComponent<AssaultronBeamChargeComponent>(gunAction.Gun!.Value);
+            robot = entMan.SpawnEntity("MobHuman", map.GridCoords);
+            eye = entMan.SpawnEntity("F14BorgWeaponLaserEye", map.GridCoords);
+            comp = entMan.GetComponent<LaserEyeComponent>(eye);
         });
 
-        await Shoot();
         await server.WaitAssertion(() =>
         {
-            Assert.That(charge.IsCharging, "the first use should start the charge-up");
-            Assert.That(charge.CooldownEndTime, Is.EqualTo(TimeSpan.Zero), "nothing fired yet");
+            Assert.That(battery.GetCharge((eye, null)), Is.Zero, "it starts uncharged");
+            Assert.That(Shoot(), Is.False, "an uncharged laser eye can't fire");
+            entMan.EventBus.RaiseLocalEvent(eye, new UseInHandEvent(robot));
+            Assert.That(comp.State, Is.EqualTo(LaserEyeState.Charging));
         });
 
-        // Wait out the charge, then fire.
-        await server.WaitRunTicks((int) Math.Ceiling(charge.ChargeDuration * timing.TickRate) + 2);
-        await Shoot();
+        // Halfway through, the cell shows about half charge.
+        await server.WaitRunTicks((int) Math.Ceiling(comp.ChargeDuration.TotalSeconds / 2 * timing.TickRate));
         await server.WaitAssertion(() =>
         {
-            Assert.That(charge.IsCharging, Is.False);
-            Assert.That(charge.CooldownEndTime, Is.GreaterThan(timing.CurTime), "firing should start the cooldown");
+            Assert.That(battery.GetChargeLevel((eye, null)), Is.InRange(0.3f, 0.7f), "the battery fills while charging");
         });
 
-        async Task Shoot()
+        await server.WaitRunTicks((int) Math.Ceiling(comp.ChargeDuration.TotalSeconds / 2 * timing.TickRate) + 4);
+        await server.WaitAssertion(() =>
         {
-            await server.WaitPost(() =>
-            {
-                var actionUid = gunAction.ActionEntity!.Value;
-                var ev = new ActionGunShootEvent
-                {
-                    Performer = robot,
-                    Action = (actionUid, entMan.GetComponent<ActionComponent>(actionUid)),
-                    Target = new EntityCoordinates(map.Grid, 5, 0),
-                };
-                entMan.EventBus.RaiseLocalEvent(robot, ev);
-            });
-            await server.WaitRunTicks(1);
+            Assert.That(comp.State, Is.EqualTo(LaserEyeState.Charged));
+            Assert.That(battery.IsFull((eye, null)));
+            Assert.That(Shoot(), "a charged laser eye should fire");
+            Assert.That(comp.State, Is.EqualTo(LaserEyeState.Firing));
+            Assert.That(entMan.HasComponent<LaserEyeFiringComponent>(robot), "the shooter is rooted while the beam fires");
+        });
+
+        // The beam keeps pulsing on its own until the battery is drained.
+        await server.WaitRunTicks((int) Math.Ceiling(comp.BeamDuration.TotalSeconds * timing.TickRate) + 4);
+        await server.WaitAssertion(() =>
+        {
+            Assert.That(comp.State, Is.EqualTo(LaserEyeState.Cooldown));
+            Assert.That(entMan.HasComponent<LaserEyeFiringComponent>(robot), Is.False, "free to move once it ends");
+            Assert.That(battery.GetCharge((eye, null)), Is.Zero, "the beam uses up the charge");
+        });
+
+        bool Shoot()
+        {
+            var gun = entMan.GetComponent<GunComponent>(eye);
+            return entMan.System<SharedGunSystem>().AttemptShoot(robot, (eye, gun), target);
         }
     }
 }

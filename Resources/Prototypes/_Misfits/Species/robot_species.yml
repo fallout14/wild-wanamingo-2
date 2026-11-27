@@ -308,17 +308,42 @@
   femaleFirstNames: RobotAssaultronFirst
   naming: First
 
+# WW Change (2026-11-26): the Fallout 4 Invader and Dominator replace Misfits' Tesla Assaultron.
 - type: species
-  id: F14RobotAssaultronTesla
-  name: species-name-robot-assaultron-tesla
+  id: F14RobotAssaultronInvader
+  name: species-name-robot-assaultron-invader
   roundStart: true
   whitelisted: true # WW Change - whitelisted species
   randomSelectable: false # picked on purpose (Misfits whitelisted it)
   sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
   barks: false # WW Change - robots keep the Misfits robot speech sound
   eyeColor: false # WW Change - no eye colour on robots
-  prototype: F14PlayerSyntheticAssaultronTesla
-  dollPrototype: AppearanceRobotAssaultronTesla
+  prototype: F14PlayerSyntheticAssaultronInvader
+  dollPrototype: AppearanceRobotAssaultronInvader
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotAssaultronFirst
+  femaleFirstNames: RobotAssaultronFirst
+  naming: First
+
+- type: species
+  id: F14RobotAssaultronDominator
+  name: species-name-robot-assaultron-dominator
+  roundStart: true
+  whitelisted: true # WW Change - whitelisted species
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  sizeAdjustable: false # WW Change - fixed-size sprites, no body size sliders
+  barks: false # WW Change - robots keep the Misfits robot speech sound
+  eyeColor: false # WW Change - no eye colour on robots
+  prototype: F14PlayerSyntheticAssaultronDominator
+  dollPrototype: AppearanceRobotAssaultronDominator
   skinColoration: Hues
   sexes:
   - Unsexed

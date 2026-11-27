@@ -1363,12 +1363,12 @@ Misfits40mmWhitePhosphorusProjectile: F14Ammo40mmWhitePhosphorusProjectile
 Misfits80sGarageDoor: F14Gang80sGarageDoor
 MisfitsAFAK: F14AFAK
 MisfitsAFAKFilled: F14AFAKFilled
-MisfitsActionAssaultronHeadLaser: F14ActionAssaultronHeadLaser
-MisfitsActionAssaultronTesla: F14ActionAssaultronTesla
+MisfitsActionAssaultronHeadLaser: null # WW (2026-11-26): replaced by the laser eye
+MisfitsActionAssaultronTesla: null # WW (2026-11-26): Tesla Assaultron removed
 MisfitsActionCycleZoomLevel: F14ActionCycleZoomLevel
 MisfitsActionMeleeCharge: F14ActionMeleeCharge
 MisfitsActionRobobrainAcidifyBrain: F14ActionRobobrainAcidifyBrain
-MisfitsActionSentryBotMissileLaunch: F14ActionSentryBotMissileLaunch
+MisfitsActionSentryBotMissileLaunch: null # WW (2026-11-26): now a module missile launcher
 MisfitsActionTogglePowerArmorBrace: F14ActionTogglePowerArmorBrace
 MisfitsActionToggleScope: F14ActionToggleScope
 MisfitsActionToggleSpecialMedicalHud: F14ActionToggleSpecialMedicalHud
@@ -1399,8 +1399,8 @@ MisfitsAntibioticsChemistryBottle: F14AntibioticsChemistryBottle
 MisfitsAntidoteEmpty: F14AntidoteEmpty
 MisfitsArrowBroadHead: F14ArrowBroadHead
 MisfitsArrowTribal: F14ArrowTribal
-MisfitsAssaultronHeadLaserActionGun: F14AssaultronHeadLaserActionGun
-MisfitsAssaultronTeslaActionGun: F14AssaultronTeslaActionGun
+MisfitsAssaultronHeadLaserActionGun: null # WW (2026-11-26): replaced by the laser eye
+MisfitsAssaultronTeslaActionGun: null # WW (2026-11-26): Tesla Assaultron removed
 MisfitsBandage1: F14Bandage1
 MisfitsBannerChildrenOfAtom: F14BannerChildrenOfAtom
 MisfitsBarricadeConcreteBarrier: F14BarricadeConcreteBarrier
@@ -3327,7 +3327,7 @@ MisfitsPipBoySettingsCartridge: F14PipBoySettingsCartridge
 MisfitsPlasmaCartridgeMultiplas: F14PlasmaCartridgeMultiplas
 MisfitsPlasmaMuzzleFlashEffect: F14PlasmaMuzzleFlashEffect
 MisfitsPlayerSyntheticAssaultron: F14PlayerSyntheticAssaultron
-MisfitsPlayerSyntheticAssaultronTesla: F14PlayerSyntheticAssaultronTesla
+MisfitsPlayerSyntheticAssaultronTesla: F14PlayerSyntheticAssaultronInvader # WW (2026-11-26): Tesla became the Invader
 MisfitsPlayerSyntheticMrGutsy: F14PlayerSyntheticMrGutsy
 MisfitsPlayerSyntheticMrHandy: F14PlayerSyntheticMrHandy
 MisfitsPlayerSyntheticProtectron: F14PlayerSyntheticProtectron
@@ -3360,16 +3360,16 @@ MisfitsRadShieldChemistryBottle: F14RadShieldChemistryBottle
 MisfitsRefreshingBeverageChemistryBottle: F14RefreshingBeverageChemistryBottle
 MisfitsRippersword: F14Rippersword
 MisfitsRobobrainMachineCircuitboard: F14RobobrainMachineCircuitboard
-MisfitsRobotSecuritron: F14RobotSecuritron
-MisfitsRobotSecuritronBlue: F14RobotSecuritronBlue
-MisfitsRobotSecuritronBlueRusted: F14RobotSecuritronBlueRusted
-MisfitsRobotSecuritronBrown: F14RobotSecuritronBrown
-MisfitsRobotSecuritronBrownRusted: F14RobotSecuritronBrownRusted
-MisfitsRobotSecuritronGrayRusted: F14RobotSecuritronGrayRusted
-MisfitsRobotSecuritronRed: F14RobotSecuritronRed
-MisfitsRobotSecuritronRedRusted: F14RobotSecuritronRedRusted
-MisfitsRobotSecuritronYellow: F14RobotSecuritronYellow
-MisfitsRobotSecuritronYellowRusted: F14RobotSecuritronYellowRusted
+MisfitsRobotSecuritron: F14PlayerSyntheticSecuritronGray # WW (2026-11-26): old borg chassis removed
+MisfitsRobotSecuritronBlue: F14PlayerSyntheticSecuritronBlue # WW (2026-11-26): old borg chassis removed
+MisfitsRobotSecuritronBlueRusted: F14PlayerSyntheticSecuritronBlue # WW (2026-11-26): old borg chassis removed
+MisfitsRobotSecuritronBrown: F14PlayerSyntheticSecuritronBrown # WW (2026-11-26): old borg chassis removed
+MisfitsRobotSecuritronBrownRusted: F14PlayerSyntheticSecuritronBrown # WW (2026-11-26): old borg chassis removed
+MisfitsRobotSecuritronGrayRusted: F14PlayerSyntheticSecuritronGray # WW (2026-11-26): old borg chassis removed
+MisfitsRobotSecuritronRed: F14PlayerSyntheticSecuritronRed # WW (2026-11-26): old borg chassis removed
+MisfitsRobotSecuritronRedRusted: F14PlayerSyntheticSecuritronRed # WW (2026-11-26): old borg chassis removed
+MisfitsRobotSecuritronYellow: F14PlayerSyntheticSecuritronYellow # WW (2026-11-26): old borg chassis removed
+MisfitsRobotSecuritronYellowRusted: F14PlayerSyntheticSecuritronYellow # WW (2026-11-26): old borg chassis removed
 MisfitsRushingWaterChemistryBottle: F14RushingWaterChemistryBottle
 MisfitsSKSEnbloc308: F14SKSEnbloc308
 MisfitsSackBotanySeedsCulinary: F14SackBotanySeedsCulinary
@@ -6142,7 +6142,7 @@ N14PlantpotDirty4: F14PlantpotDirty4
 N14PlasmaCartridge: F14PlasmaCartridge
 N14PlasmaGrenade: F14PlasmaGrenade
 N14PlasmaShell: F14PlasmaShell
-N14PlayerSyntheticMrHandySolutionChamber: F14PlayerSyntheticMrHandySolutionChamber
+N14PlayerSyntheticMrHandySolutionChamber: null # WW (2026-11-26): the flamer moved into a module
 N14PoliceBaton: F14PoliceBaton
 N14PoolCue: F14PoolCue
 N14PortableGeneratorWeldingFuel: F14PortableGeneratorWeldingFuel
@@ -6261,22 +6261,22 @@ N14Retractor: F14Retractor
 N14RetractorRusted: F14RetractorRusted
 N14RiceBushel: F14RiceBushel
 N14Ripper: F14Ripper
-N14RobotMrGutsy: F14RobotMrGutsy
-N14RobotMrGutsyBOSMidwest: F14RobotMrGutsyBOSMidwest
-N14RobotMrGutsyBOSWashington: F14RobotMrGutsyBOSWashington
-N14RobotMrHandy: F14RobotMrHandy
-N14RobotMrHandyBOSMidwest: F14RobotMrHandyBOSMidwest
-N14RobotMrHandyBOSWashington: F14RobotMrHandyBOSWashington
-N14RobotMrHandyGun: F14RobotMrHandyGun
-N14RobotMrHandySaw: F14RobotMrHandySaw
-N14RobotMrHandySawBOSMidwest: F14RobotMrHandySawBOSMidwest
-N14RobotMrHandySawBOSWashington: F14RobotMrHandySawBOSWashington
-N14RobotMrHandySawVault: F14RobotMrHandySawVault
-N14RobotMrHandyVault: F14RobotMrHandyVault
-N14RobotProtectron: F14RobotProtectron
-N14RobotProtectronBuilder: F14RobotProtectronBuilder
-N14RobotProtectronFire: F14RobotProtectronFire
-N14RobotProtectronPolice: F14RobotProtectronPolice
+N14RobotMrGutsy: F14PlayerSyntheticMrGutsy # WW (2026-11-26): old borg chassis removed
+N14RobotMrGutsyBOSMidwest: F14PlayerSyntheticMrGutsy # WW (2026-11-26): old borg chassis removed
+N14RobotMrGutsyBOSWashington: F14PlayerSyntheticMrGutsy # WW (2026-11-26): old borg chassis removed
+N14RobotMrHandy: F14PlayerSyntheticMrHandy # WW (2026-11-26): old borg chassis removed
+N14RobotMrHandyBOSMidwest: F14PlayerSyntheticMrHandy # WW (2026-11-26): old borg chassis removed
+N14RobotMrHandyBOSWashington: F14PlayerSyntheticMrHandy # WW (2026-11-26): old borg chassis removed
+N14RobotMrHandyGun: F14PlayerSyntheticMrHandy # WW (2026-11-26): old borg chassis removed
+N14RobotMrHandySaw: F14PlayerSyntheticMrHandy # WW (2026-11-26): old borg chassis removed
+N14RobotMrHandySawBOSMidwest: F14PlayerSyntheticMrHandy # WW (2026-11-26): old borg chassis removed
+N14RobotMrHandySawBOSWashington: F14PlayerSyntheticMrHandy # WW (2026-11-26): old borg chassis removed
+N14RobotMrHandySawVault: F14PlayerSyntheticMrHandy # WW (2026-11-26): old borg chassis removed
+N14RobotMrHandyVault: F14PlayerSyntheticMrHandy # WW (2026-11-26): old borg chassis removed
+N14RobotProtectron: F14PlayerSyntheticProtectron # WW (2026-11-26): old borg chassis removed
+N14RobotProtectronBuilder: F14PlayerSyntheticProtectronBuilder # WW (2026-11-26): old borg chassis removed
+N14RobotProtectronFire: F14PlayerSyntheticProtectronFire # WW (2026-11-26): old borg chassis removed
+N14RobotProtectronPolice: F14PlayerSyntheticProtectronPolice # WW (2026-11-26): old borg chassis removed
 N14RockGrey: F14RockGrey
 N14RockGreyCoal: F14RockGreyCoal
 N14RockGreyGold: F14RockGreyGold
@@ -7195,3 +7195,39 @@ F14PulseMicrofusionCell: F14MicrofusionCell
 
 # WW (2026-11-22): one stove sprite (the sprite team's); the wide N14 stove is retired.
 F14CookingStoveWide: F14CookingStove
+
+# WW (2026-11-26): the Arcata Armorers vendortron became the Crimson Caravan one.
+WWMobVendortronArcata: WWMobVendortronCrimsonCaravan
+
+# WW (2026-11-26): the old N14/Misfits borg-chassis robots duplicated the player robots; removed.
+F14RobotProtectron: F14PlayerSyntheticProtectron
+F14RobotProtectronBuilder: F14PlayerSyntheticProtectronBuilder
+F14RobotProtectronFire: F14PlayerSyntheticProtectronFire
+F14RobotProtectronPolice: F14PlayerSyntheticProtectronPolice
+F14RobotMrHandy: F14PlayerSyntheticMrHandy
+F14RobotMrHandySaw: F14PlayerSyntheticMrHandy
+F14RobotMrHandyGun: F14PlayerSyntheticMrHandy
+F14RobotMrGutsy: F14PlayerSyntheticMrGutsy
+F14RobotMrHandyVault: F14PlayerSyntheticMrHandy
+F14RobotMrHandySawVault: F14PlayerSyntheticMrHandy
+F14RobotBOSMidwestBase: null
+F14RobotMrHandyBOSMidwest: F14PlayerSyntheticMrHandy
+F14RobotMrHandySawBOSMidwest: F14PlayerSyntheticMrHandy
+F14RobotMrGutsyBOSMidwest: F14PlayerSyntheticMrGutsy
+F14RobotBOSWashingtonBase: null
+F14RobotMrHandyBOSWashington: F14PlayerSyntheticMrHandy
+F14RobotMrHandySawBOSWashington: F14PlayerSyntheticMrHandy
+F14RobotMrGutsyBOSWashington: F14PlayerSyntheticMrGutsy
+F14RobotSecuritron: F14PlayerSyntheticSecuritronGray
+F14RobotSecuritronBlue: F14PlayerSyntheticSecuritronBlue
+F14RobotSecuritronBrown: F14PlayerSyntheticSecuritronBrown
+F14RobotSecuritronRed: F14PlayerSyntheticSecuritronRed
+F14RobotSecuritronYellow: F14PlayerSyntheticSecuritronYellow
+F14RobotSecuritronGrayRusted: F14PlayerSyntheticSecuritronGray
+F14RobotSecuritronBlueRusted: F14PlayerSyntheticSecuritronBlue
+F14RobotSecuritronBrownRusted: F14PlayerSyntheticSecuritronBrown
+F14RobotSecuritronRedRusted: F14PlayerSyntheticSecuritronRed
+F14RobotSecuritronYellowRusted: F14PlayerSyntheticSecuritronYellow
+
+# WW (2026-11-26): XL70E3 rechambered for 5mm
+F14WeaponRifle556XL70E3: F14WeaponRifle5mmXL70E3
