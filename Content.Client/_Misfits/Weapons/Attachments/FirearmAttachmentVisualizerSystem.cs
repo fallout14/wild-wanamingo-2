@@ -2,6 +2,7 @@
 
 using Content.Shared._Misfits.Weapons.Attachments;
 using Content.Shared._Misfits.Weapons.Attachments.Components;
+using Content.Shared._WW.Weapons.Attachments; // WW Change - recoil compensator
 using Content.Shared.Containers.ItemSlots;
 using Robust.Client.GameObjects;
 using Robust.Shared.Utility;
@@ -84,6 +85,8 @@ public sealed partial class FirearmAttachmentVisualizerSystem : EntitySystem
             attachmentName = "suppressor";
         else if (HasComp<BayonetAttachmentComponent>(attachment))
             attachmentName = "bayonet";
+        else if (HasComp<RecoilCompensatorAttachmentComponent>(attachment)) // WW Change - recoil compensator
+            attachmentName = "compensator";
 
         if (attachmentName == null)
             return;
@@ -91,6 +94,20 @@ public sealed partial class FirearmAttachmentVisualizerSystem : EntitySystem
         var orientation = host.VisualOrientation == FirearmAttachmentVisualOrientation.Horizontal
             ? "horizontal"
             : "diagonal";
+
+        // WW Change start - recoil compensator: its own art, at the gun's tuned muzzle point
+        if (attachmentName == "compensator")
+        {
+            _sprite.LayerSetSprite((uid, sprite), layer,
+                new SpriteSpecifier.Rsi(host.MuzzleVisualRsi, host.CompensatorVisualState ?? $"compensator-{orientation}"));
+            _sprite.LayerSetOffset((uid, sprite), layer,
+                host.CompensatorVisualOffset ?? host.SuppressorVisualOffset ?? host.MuzzleVisualOffset);
+            _sprite.LayerSetRotation((uid, sprite), layer, Angle.Zero);
+            _sprite.LayerSetVisible((uid, sprite), layer, true);
+            return;
+        }
+        // WW Change end
+
         var suppressor = attachmentName == "suppressor";
         var state = (suppressor ? host.SuppressorVisualState : host.BayonetVisualState)
             ?? $"{attachmentName}-{orientation}";

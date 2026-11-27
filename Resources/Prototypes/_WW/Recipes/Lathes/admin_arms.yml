@@ -10,6 +10,13 @@
   completetime: 0.5
 
 - type: latheRecipe
+  id: WWAdminF14FirearmRecoilCompensator
+  result: F14FirearmRecoilCompensator
+  categories:
+  - F14Weapons
+  completetime: 0.5
+
+- type: latheRecipe
   id: WWAdminF14FirearmSuppressor
   result: F14FirearmSuppressor
   categories:
@@ -915,6 +922,20 @@
 - type: latheRecipe
   id: WWAdminF14WeaponRifle556ServiceScoped
   result: F14WeaponRifle556ServiceScoped
+  categories:
+  - F14Weapons
+  completetime: 0.5
+
+- type: latheRecipe
+  id: WWAdminF14WeaponRifle556Mini14
+  result: F14WeaponRifle556Mini14
+  categories:
+  - F14Weapons
+  completetime: 0.5
+
+- type: latheRecipe
+  id: WWAdminF14WeaponRifle556AC556F
+  result: F14WeaponRifle556AC556F
   categories:
   - F14Weapons
   completetime: 0.5
@@ -3744,6 +3765,7 @@
   id: WWWorkbenchAdminArmsStatic
   recipes:
   - WWAdminF14BaseBow
+  - WWAdminF14FirearmRecoilCompensator
   - WWAdminF14FirearmSuppressor
   - WWAdminF14Glock
   - WWAdminF14JunkGunpartsRifleScope
@@ -3874,6 +3896,8 @@
   - WWAdminF14WeaponRifle556Scout
   - WWAdminF14WeaponRifle556Service
   - WWAdminF14WeaponRifle556ServiceScoped
+  - WWAdminF14WeaponRifle556Mini14
+  - WWAdminF14WeaponRifle556AC556F
   - WWAdminF14WeaponRifle5mmXL70E3
   - WWAdminF14WeaponRifle5mmCarbine
   - WWAdminF14WeaponRifle762Canadian

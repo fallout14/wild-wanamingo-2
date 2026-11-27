@@ -97,6 +97,19 @@ public sealed partial class FirearmAttachmentHostComponent : Component
     [DataField, AutoNetworkedField]
     public Vector2? BayonetVisualOffset;
 
+    // WW Change start - recoil compensator overlay
+    /// <summary>Compensator art; null uses "compensator-{orientation}".</summary>
+    [DataField, AutoNetworkedField]
+    public string? CompensatorVisualState;
+
+    /// <summary>
+    /// Where the compensator art goes. Null uses <see cref="SuppressorVisualOffset"/> (the tuned muzzle point;
+    /// both arts are anchored at the muzzle), then <see cref="MuzzleVisualOffset"/>.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public Vector2? CompensatorVisualOffset;
+    // WW Change end
+
     [DataField, AutoNetworkedField]
     public Angle SuppressorVisualRotation = Angle.Zero;
 

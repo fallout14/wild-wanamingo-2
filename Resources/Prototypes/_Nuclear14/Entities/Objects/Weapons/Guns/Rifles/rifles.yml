@@ -665,6 +665,9 @@
   id: F14WeaponRifle303MarksmanCanadian
   description: A pre-war canadian marksman rifle, rechambered for .303 British.
   components:
+  - type: FirearmSearCompatible # WW Change - takes sears: FAL family; the C2 is the full-auto version
+    allowBurst: false
+    allowFullAuto: true
   - type: ContainerContainer  # spawn state
     containers:
       gun_magazine: !type:ContainerSlot
@@ -907,6 +910,9 @@
   id: F14WeaponSniper556Tribal
   description: A surprisingly decent piece of a gun for being made by tribals, this rustic but trusty rifle accepts detachable 25-round 5.56mm magazines.
   components:
+  - type: FirearmSearCompatible # WW Change - takes sears: the tribal assault rifle is the automatic version of it
+    allowBurst: false
+    allowFullAuto: true
   - type: ContainerContainer  # spawn state
     containers:
       gun_magazine: !type:ContainerSlot

@@ -47,6 +47,9 @@
   id: F14WeaponPistol9mmBerettaM92
   description: An Italian service pistol with a 15-round double-stack magazine. Reliable, accurate and easy to find ammunition for. Takes doublestack and standard 9mm pistol magazines.
   components:
+  - type: FirearmSearCompatible # WW Change - takes sears: the M93R is the burst-fire M92
+    allowBurst: true
+    allowFullAuto: false
   - type: ContainerContainer  # spawn state
     containers:
       gun_magazine: !type:ContainerSlot

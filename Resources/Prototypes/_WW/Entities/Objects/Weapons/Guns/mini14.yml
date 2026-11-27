@@ -1,0 +1,183 @@
+# WW: the Ruger Mini-14 and its select-fire, folding-stock cousin the AC556F. Both take the 5.56mm rifle magazines.
+
+# Mini-14: a light semi-automatic ranch rifle. A little tighter than the service rifle; takes a scope, suppressor or bayonet.
+- type: entity
+  name: Mini-14
+  parent: F14WeaponRifleBase
+  id: F14WeaponRifle556Mini14
+  description: A light, handy semi-automatic ranch rifle in 5.56mm. Pre-war farmers swore by them, and so do their grandchildren. Takes 5.56mm rifle magazines, and has mounts for a scope.
+  components:
+  - type: FirearmSearCompatible # WW Change - takes sears: the AC556 is the select-fire Mini-14
+    allowBurst: true
+    allowFullAuto: true
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_optic: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Rifles/mini14.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Large
+    sprite: Nuclear14/Objects/Weapons/Guns/Rifles/mini14.rsi
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Guns/Rifles/mini14.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: FirearmAttachmentHost
+    muzzleVisualOffset: 0.75, 0.90625
+    bayonetVisualOffset: 0.71875, 0.71875
+    enableOpticSlot: true
+    opticVisualState: rangemaster_scope
+    opticVisualOffset: 0.03125, 0.3125
+    opticSlot:
+      name: Optic
+      priority: 4
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        tags:
+        - F14RifleScope
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Gun
+    minAngle: 18
+    maxAngle: 40
+    angleIncrease: 3.5
+    angleDecay: 16
+    fireRate: 5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: WWDRGunshotVarmint
+  - type: GunWieldBonus
+    minAngle: -17
+    maxAngle: -36
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: F14Magazine556Rifle
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - F14Magazine556Rifle
+          - F14LongMagazine556Rifle
+      gun_chamber:
+        name: Chamber
+        startingItem: F14Cartridge556Rifle
+        priority: 1
+        whitelist:
+          tags:
+          - F14Cartridge556Rifle
+  - type: StaticPrice
+    price: 450
+
+# AC556F: the select-fire Mini-14 (semi, 3-round burst, full auto) with a side-folding stock and a built-in 1.5x
+# reflex sight. Fold the stock to fit it in a bag. No optic slot (the reflex is fixed); takes a suppressor only.
+- type: entity
+  name: AC556F
+  parent: F14WeaponRifle556Mini14
+  id: F14WeaponRifle556AC556F
+  description: The select-fire Mini-14, built for police and security teams, with a pistol grip, a side-folding stock and a fixed 1.5x reflex sight. Fires single shots, three-round bursts or full auto. Fold the stock to carry it in a bag. Takes 5.56mm rifle magazines.
+  components:
+  - type: ContainerContainer  # spawn state
+    containers:
+      gun_magazine: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      gun_chamber: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      weapon_muzzle: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: Sprite
+    sprite: WildWanamingo/Objects/Weapons/Guns/ac556f.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Large
+    sprite: WildWanamingo/Objects/Weapons/Guns/ac556f.rsi
+  - type: Clothing
+    sprite: WildWanamingo/Objects/Weapons/Guns/ac556f.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: FirearmAttachmentHost
+    muzzleVisualOffset: 0.75, 0.90625
+    enableOpticSlot: false # the fixed 1.5x reflex is built in (WWScope below)
+    showOpticVisual: false
+    muzzleSlot: # suppressor only: no bayonet lug, no compensator
+      name: Muzzle attachment
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      ejectVerbText: Remove muzzle attachment
+      insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+      ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+      whitelist:
+        tags: [] # the base rifle's muzzle tag would also let bayonets and compensators in
+        components:
+        - SuppressorAttachment
+  - type: WWScope # fixed 1.5x reflex
+    magnifications: [ 1.5 ]
+  - type: FoldingStock
+    foldedSize: Normal
+    unfoldedSize: Large
+  - type: Gun
+    minAngle: 19
+    maxAngle: 42
+    angleIncrease: 3.5
+    angleDecay: 16
+    fireRate: 7
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - Burst
+    - FullAuto
+    shotsPerBurst: 3
+    burstFireRate: 12
+    burstCooldown: 0.3
+    soundGunshot:
+      collection: WWDRGunshotServiceRifle
+  - type: StaticPrice
+    price: 1000

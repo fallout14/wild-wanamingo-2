@@ -1,0 +1,22 @@
+# WW: muzzle attachments added on top of the Misfits set (firearm_attachments.yml).
+
+# Recoil compensator: fits any muzzle slot that takes suppressors (the shared F14FirearmMuzzleAttachment tag). Spread
+# grows 40% more slowly shot to shot and the camera kicks 40% less (RecoilCompensatorAttachment); it doesn't change
+# the gun's minimum or maximum spread. One muzzle slot, so it's this, a suppressor or a bayonet.
+- type: entity
+  parent: BaseItem
+  id: F14FirearmRecoilCompensator
+  name: recoil compensator
+  description: A ported muzzle device that vents gas upward to fight muzzle climb. Keeps follow-up shots and automatic fire on target, but it's loud and does nothing to hide the flash.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Misfits/Objects/Weapons/Guns/Attachments/firearm_attachments.rsi
+    state: compensator
+  - type: RecoilCompensatorAttachment
+  - type: Tag
+    tags:
+    - F14FirearmMuzzleAttachment
+  - type: StaticPrice
+    price: 150

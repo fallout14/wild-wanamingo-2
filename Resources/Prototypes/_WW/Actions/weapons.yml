@@ -1,0 +1,17 @@
+# WW: fold or extend a held gun's folding stock (FoldingStockComponent).
+- type: entity
+  id: ActionF14ToggleFoldingStock
+  parent: BaseAction
+  name: Fold or extend stock
+  description: Fold the stock to make the gun compact enough for a bag (less accurate), or extend it again.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    checkCanInteract: true
+    itemIconStyle: BigItem
+  - type: Sprite
+    layers:
+    - texture: Interface/VerbIcons/fold.svg.192dpi.png
+      map: [ "enum.ActionVisuals.Icon" ]
+  - type: InstantAction
+    event: !type:ToggleFoldingStockEvent {}

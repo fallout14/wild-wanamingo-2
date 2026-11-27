@@ -420,8 +420,11 @@
   name: paratrooper carbine
   parent: F14WeaponRifleBase
   id: F14WeaponRifle10mmM1Carbine
-  description: A lightweight semi-automatic 10mm carbine with a skeletonized folding stock and detachable magazines. Fold the stock for compact storage and reduced recoil.
+  description: A lightweight semi-automatic 10mm carbine with a skeletonized folding stock and detachable magazines. Fold the stock to fit it in a bag, at some cost to accuracy.
   components:
+  - type: FirearmSearCompatible # WW Change - takes sears: M1 carbine; the M2 carbine is the full-auto version
+    allowBurst: false
+    allowFullAuto: true
   - type: ContainerContainer  # spawn state
     containers:
       gun_magazine: !type:ContainerSlot
@@ -436,14 +439,7 @@
         ent: null
         showEnts: False
         occludes: True
-  - type: Foldable
-    canFoldInsideContainer: true
-    foldVerbText: gun-fold-stock
-    unfoldVerbText: gun-unfold-stock
-  - type: FoldableStock
-    foldedSize: Normal
-    unfoldedSize: Large
-    foldedRecoilMultiplier: 0.8
+  - type: FoldingStock # WW Change - WW folding stock (own action/verb, folded sprite, folded = less accurate)
   - type: GunDamageModifier
     damage:
       types:
@@ -528,6 +524,9 @@
   id: F14WeaponRifle556Rangemaster
   description: 'A Colt Rangemaster semi-automatic hunting rifle in .223 with a long barrel and a mount for an optional scope. The classic wasteland hunting rifle: slow and deliberate, but it reaches out and holds its punch at range.'
   components:
+  - type: FirearmSearCompatible # WW Change - takes sears: AR-180 style; the AR-18 is the select-fire version
+    allowBurst: true
+    allowFullAuto: true
   - type: ContainerContainer  # spawn state
     containers:
       gun_magazine: !type:ContainerSlot

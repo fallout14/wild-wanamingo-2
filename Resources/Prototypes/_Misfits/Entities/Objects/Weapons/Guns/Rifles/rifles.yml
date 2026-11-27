@@ -384,6 +384,9 @@
   id: F14WeaponRifle556Marksman
   description: A heavy semiautomatic rifle with a scope, uses 5.56 ammo.
   components:
+  - type: FirearmSearCompatible # WW Change - takes sears: AR-15 pattern carbine; M16/M4 are its select-fire versions
+    allowBurst: true
+    allowFullAuto: true
   - type: ContainerContainer  # spawn state
     containers:
       gun_magazine: !type:ContainerSlot
@@ -460,6 +463,9 @@
   id: F14WeaponRifle10mmSkirmisher
   description: A compact pre-war M1 carbine with a fixed stock, rechambered for detachable 10mm magazines. A handy personal defense weapon for skirmishers.
   components:
+  - type: FirearmSearCompatible # WW Change - takes sears: M1 carbine; the M2 carbine is the full-auto version
+    allowBurst: false
+    allowFullAuto: true
   - type: ContainerContainer  # spawn state
     containers:
       gun_magazine: !type:ContainerSlot
@@ -618,6 +624,9 @@
   id: F14WeaponRifle308M14
   description: A pre-war designated marksman rifle chambered in .308. Built to replace the M1 Garand, it was soon superseded by the R91 in general service, but it stayed on as a precise semi-automatic marksman's rifle.
   components:
+  - type: FirearmSearCompatible # WW Change - takes sears: the M14 was issued select-fire
+    allowBurst: false
+    allowFullAuto: true
   - type: ContainerContainer  # spawn state
     containers:
       gun_magazine: !type:ContainerSlot

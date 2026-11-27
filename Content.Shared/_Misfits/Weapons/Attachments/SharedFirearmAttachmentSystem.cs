@@ -2,6 +2,7 @@
 
 using Content.Shared._Misfits.Weapons.Attachments.Components;
 using Content.Shared._Misfits.Scope;
+using Content.Shared._WW.Weapons.Attachments; // WW Change - recoil compensator
 using Content.Shared.Actions;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Hands.EntitySystems;
@@ -264,6 +265,15 @@ public sealed partial class SharedFirearmAttachmentSystem : EntitySystem
         {
             args.SoundGunshot = ent.Comp.SuppressedSoundGunshot ?? suppressor.SoundGunshot; // WW Change - per-gun suppressed report
         }
+
+        // WW Change start - recoil compensator: spread grows more slowly per shot, and less camera kick
+        if (TryGetMuzzleAttachment(ent, out var muzzle) &&
+            TryComp<RecoilCompensatorAttachmentComponent>(muzzle, out var compensator))
+        {
+            args.AngleIncrease *= compensator.AngleIncreaseMultiplier;
+            args.CameraRecoilScalar *= compensator.CameraRecoilMultiplier;
+        }
+        // WW Change end
     }
 
     private void OnMuzzleFlashAttempt(

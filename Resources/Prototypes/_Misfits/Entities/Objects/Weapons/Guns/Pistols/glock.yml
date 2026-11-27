@@ -7,6 +7,9 @@
   suffix: Admin Only
   description: An exceedingly rare Glock chambered in .45 Magnum. Its unusual caliber and limited production make it a true collector's piece if you are pro.
   components:
+  - type: FirearmSearCompatible # WW Change - takes sears: the Glock 18 is the select-fire Glock
+    allowBurst: false
+    allowFullAuto: true
   - type: Tag
     tags:
     - Sidearm

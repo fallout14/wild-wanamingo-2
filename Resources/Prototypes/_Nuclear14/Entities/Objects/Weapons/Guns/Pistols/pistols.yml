@@ -417,6 +417,9 @@
   id: F14WeaponPistol10mmPipe
   description: A shoddy makeshift 10mm pistol, the grip is incredibly uncomfortable. Uses 10mm ammo.
   components:
+  - type: FirearmSearCompatible # WW Change - takes sears: pipe guns are built to be modified (the pipe SMG is the automatic one)
+    allowBurst: false
+    allowFullAuto: true
   - type: Tag
     tags:
     - Sidearm

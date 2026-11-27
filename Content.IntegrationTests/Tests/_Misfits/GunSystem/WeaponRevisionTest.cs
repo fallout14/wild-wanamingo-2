@@ -5,7 +5,7 @@ using Content.Shared._Misfits.Weapons.Attachments;
 using Content.Shared._Misfits.Weapons.Ranged;
 using Content.Shared._Misfits.Weapons.Attachments.Components;
 using Content.Shared.Containers.ItemSlots;
-using Content.Shared.Foldable;
+using Content.Shared._WW.Weapons.Ranged; // WW Change - FoldingStock
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Item;
 using Content.Shared.Interaction;
@@ -86,8 +86,11 @@ public sealed class WeaponRevisionTest
         await server.WaitAssertion(() =>
         {
             var gun = entMan.SpawnEntity("F14WeaponRifle10mmM1Carbine", map.GridCoords);
-            var fold = entMan.GetComponent<FoldableComponent>(gun);
-            var folding = entMan.System<FoldableSystem>();
+            // WW Change - the paratrooper's stock is a WW FoldingStock now (folded = less accurate, not more)
+            var fold = entMan.GetComponent<FoldingStockComponent>(gun);
+            var folding = entMan.System<FoldingStockSystem>();
+            var spread = fold.FoldedSpreadMultiplier;
+            var kick = fold.FoldedRecoilMultiplier;
             var item = entMan.GetComponent<ItemComponent>(gun);
             var firearm = entMan.GetComponent<GunComponent>(gun);
             var guns = entMan.System<SharedGunSystem>();
@@ -99,24 +102,24 @@ public sealed class WeaponRevisionTest
 
             for (var i = 0; i < 3; i++)
             {
-                Assert.That(folding.TrySetFolded(gun, fold, true), Is.True);
+                Assert.That(folding.TrySetFolded((gun, fold), true), Is.True);
                 Assert.That(item.Size.Id, Is.EqualTo("Normal"));
-                Assert.That(firearm.AngleIncreaseModified.Degrees, Is.EqualTo(recoil * 0.8).Within(0.001));
-                Assert.That(firearm.CameraRecoilScalarModified, Is.EqualTo(camera * 0.8).Within(0.001));
+                Assert.That(firearm.AngleIncreaseModified.Degrees, Is.EqualTo(recoil * spread).Within(0.001));
+                Assert.That(firearm.CameraRecoilScalarModified, Is.EqualTo(camera * kick).Within(0.001));
                 guns.RefreshModifiers((gun, firearm));
-                Assert.That(firearm.AngleIncreaseModified.Degrees, Is.EqualTo(recoil * 0.8).Within(0.001));
-                Assert.That(folding.TrySetFolded(gun, fold, false), Is.True);
+                Assert.That(firearm.AngleIncreaseModified.Degrees, Is.EqualTo(recoil * spread).Within(0.001));
+                Assert.That(folding.TrySetFolded((gun, fold), false), Is.True);
                 Assert.That(item.Size.Id, Is.EqualTo("Large"));
                 Assert.That(firearm.AngleIncreaseModified.Degrees, Is.EqualTo(recoil).Within(0.001));
                 Assert.That(slots.Slots["gun_magazine"].Item, Is.EqualTo(magazine));
             }
 
-            folding.TrySetFolded(gun, fold, true);
+            folding.TrySetFolded((gun, fold), true);
             var holder = entMan.SpawnEntity(null, map.GridCoords);
             var containers = entMan.System<SharedContainerSystem>();
             var storage = containers.EnsureContainer<ContainerSlot>(holder, "test-storage");
             Assert.That(containers.Insert(gun, storage), Is.True);
-            Assert.That(folding.TrySetFolded(gun, fold, false), Is.False);
+            Assert.That(folding.TrySetFolded((gun, fold), false), Is.False);
             Assert.That(item.Size.Id, Is.EqualTo("Normal"));
         });
         await pair.CleanReturnAsync();
