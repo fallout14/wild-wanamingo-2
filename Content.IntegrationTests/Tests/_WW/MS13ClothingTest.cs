@@ -14,7 +14,7 @@ using Robust.Shared.Utility;
 namespace Content.IntegrationTests.Tests._WW;
 
 /// <summary>
-/// MS13 clothing import (2026-11-20, Reports/porter/ms13/import_clothing.py): every WWClothing*MS13* item has an
+/// MS13 clothing import (2026-11-20, Reports/porter/ms13/import_clothing.py): every F14Clothing*MS13* item (WWClothing* until the 2026-11-28 F14 rename) has an
 /// icon and the worn sprite for each slot it fits, and can be put on a human in that slot.
 /// </summary>
 public sealed class MS13ClothingTest : GameTest
@@ -34,7 +34,7 @@ public sealed class MS13ClothingTest : GameTest
     ];
 
     private static bool IsMS13Clothing(EntityPrototype p) =>
-        !p.Abstract && p.ID.StartsWith("WWClothing") && p.ID.Contains("MS13");
+        !p.Abstract && p.ID.StartsWith("F14Clothing") && p.ID.Contains("MS13");
 
     [Test]
     public async Task MS13ClothingHasSprites()

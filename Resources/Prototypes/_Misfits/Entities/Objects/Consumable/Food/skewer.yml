@@ -33,6 +33,33 @@
     tags:
     - Meat
 
+# Merged 2026-11-28 from the Misfits Legacy copy of Wizden's snake kebab (was F14FoodMeatSnakeKebabLegacy).
 - type: entity
-  parent: F14FoodMeatSnakeKebabLegacy
+  name: snake kebab
+  parent: FoodKebabSkewer
   id: F14FoodMeatSnakeKebab
+  description: Snake meat on a stick. It's a little tough.
+  components:
+  - type: Edible
+    edible: Food
+    trash:
+    - FoodKebabSkewer # Misfits Change /Fix/: eating a cooked kebab should leave a reusable plain skewer behind.
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Consumable/Food/skewer.rsi
+    layers:
+      - state: skewer
+      - state: skewer-snake
+      - map: ["foodSequenceLayers"] # Misfits Change: added layer map so dynamically added food elements display their sprites
+  - type: Solution
+    solution:
+      canReact: false # Dont want cause reactions inside skewers after merging ingredients
+      maxVol: 0
+  - type: FoodSequenceStartPoint
+    key: Skewer
+    maxLayers: 4
+    startPosition: -0.27, -0.19
+    inverseLayers: true 
+    offset: 0.2, 0.1
+    nameGeneration: food-sequence-skewer-gen
+    contentSeparator: ", "
+    allowHorizontalFlip: false

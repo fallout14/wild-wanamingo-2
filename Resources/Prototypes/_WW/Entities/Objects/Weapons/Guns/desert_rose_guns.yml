@@ -96,7 +96,7 @@
     maxAngle: 6
     fireRate: 5.5
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshot9mm
+      collection: F14DRGunshot9mm
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -160,7 +160,7 @@
     burstFireRate: 14
     burstCooldown: 0.4
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshot9mm
+      collection: F14DRGunshot9mm
   - type: StaticPrice
     price: 90
 
@@ -216,7 +216,7 @@
     maxAngle: 5
     fireRate: 5
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotNinemil
+      collection: F14DRGunshotNinemil
   - type: GunDamageModifier
     damage: # one more point a shot than other 9mm pistols
       types:
@@ -270,7 +270,7 @@
     angleDecay: 8
     fireRate: 1.5
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotCaravan
+      collection: F14DRGunshotCaravan
   - type: StaticPrice
     price: 120
 
@@ -334,7 +334,7 @@
   - type: Gun
     fireRate: 9.5
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshot10mm
+      collection: F14DRGunshot10mm
     selectedMode: FullAuto
     availableModes:
     - SemiAuto
@@ -426,7 +426,7 @@
   - type: Gun
     fireRate: 7
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshot9mm
+      collection: F14DRGunshot9mm
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -549,7 +549,7 @@
     availableModes:
     - SemiAuto
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotCombatRifle
+      collection: F14DRGunshotCombatRifle
   - type: GunWieldBonus
     minAngle: -9
     maxAngle: -27
@@ -632,7 +632,7 @@
     burstFireRate: 20 # the hyperburst: three rounds almost at once
     burstCooldown: 0.35
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotMarksman
+      collection: F14DRGunshotMarksman
   - type: GunWieldBonus
     minAngle: -15
     maxAngle: -33
@@ -705,7 +705,7 @@
     burstFireRate: 25
     burstCooldown: 0.3
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotMarksman
+      collection: F14DRGunshotMarksman
   - type: GunWieldBonus
     minAngle: -11
     maxAngle: -27
@@ -782,7 +782,7 @@
     - SemiAuto
     - FullAuto
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotServiceRifle
+      collection: F14DRGunshotServiceRifle
   - type: GunWieldBonus
     minAngle: -17
     maxAngle: -36
@@ -867,7 +867,7 @@
     - SemiAuto
     - FullAuto
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotAssaultRifle
+      collection: F14DRGunshotAssaultRifle
   - type: GunWieldBonus
     minAngle: -13
     maxAngle: -31
@@ -931,7 +931,7 @@
     angleDecay: 16
     fireRate: 4.5
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotBAR
+      collection: F14DRGunshotBAR
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -1025,7 +1025,7 @@
     angleDecay: 12
     fireRate: 3.5
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotAntiMateriel
+      collection: F14DRGunshotAntiMateriel
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -1153,7 +1153,7 @@
     price: 700
   - type: Gun
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotAssaultRifle
+      collection: F14DRGunshotAssaultRifle
 
 # ---------------------------------------------------------------------------------------------------------
 # Shotguns
@@ -1206,7 +1206,7 @@
     availableModes:
     - SemiAuto
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotShotgun
+      collection: F14DRGunshotShotgun
   - type: StaticPrice
     price: 350
 

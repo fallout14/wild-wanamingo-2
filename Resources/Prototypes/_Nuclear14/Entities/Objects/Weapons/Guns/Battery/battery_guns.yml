@@ -182,7 +182,7 @@
   - type: Gun
     fireRate: 2.0
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotAEP7
+      collection: F14DRGunshotAEP7
   - type: EyeCursorOffset
     maxOffset: 2
     pvsIncrease: 0.2
@@ -227,7 +227,7 @@
     zeroVisible: true
   - type: Gun
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotPlasmaPistol
+      collection: F14DRGunshotPlasmaPistol
     fireRate: 1
   - type: EyeCursorOffset
     maxOffset: 2
@@ -270,7 +270,7 @@
     zeroVisible: true
   - type: Gun
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotPlasmaPistol
+      collection: F14DRGunshotPlasmaPistol
     fireRate: 1.5
   - type: EyeCursorOffset
     maxOffset: 2
@@ -341,7 +341,7 @@
     soundEmpty: # WW Change - Desert Rose energy weapon empty click
       path: /Audio/WildWanamingo/DesertRose/Weapons/noammoenergy.ogg
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotLaserPistol
+      collection: F14DRGunshotLaserPistol
   - type: BatteryAmmoProvider
     proto: RedLaser
     fireCost: 50
@@ -458,7 +458,7 @@
   - type: Gun
     fireRate: 3.5
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotPlasmaRifle
+      collection: F14DRGunshotPlasmaRifle
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -717,7 +717,7 @@
   - type: Gun
     fireRate: 2
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotPlasmaRifle
+      collection: F14DRGunshotPlasmaRifle
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -771,7 +771,7 @@
   - type: Gun
     fireRate: 1.5
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotPlasmaRifle
+      collection: F14DRGunshotPlasmaRifle
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -826,7 +826,7 @@
   - type: Gun
     fireRate: 2.5
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotPlasmaRifle
+      collection: F14DRGunshotPlasmaRifle
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -1009,7 +1009,7 @@
     angleDecay: 12
     fireRate: 8
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotGatling
+      collection: F14DRGunshotGatling
     selectedMode: FullAuto
     availableModes:
     - FullAuto

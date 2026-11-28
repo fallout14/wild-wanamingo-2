@@ -3,7 +3,7 @@
 
 - type: entity
   id: F14HandheldHealthAnalyzerUnpowered
-  parent: F14HandheldHealthAnalyzerUnpoweredLegacy
+  parent: BaseItem
   name: health analyzer
   description: A hand-held body scanner capable of distinguishing vital signs of the subject.
   categories: [ HideSpawnMenu ]
@@ -18,6 +18,35 @@
         shader: unshaded
         visible: true
         map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+  # Merged 2026-11-28 from the Misfits Legacy unpowered analyzer (was F14HandheldHealthAnalyzerUnpoweredLegacy).
+  - type: Item
+    storedRotation: -90
+  - type: ActivatableUI
+    key: enum.HealthAnalyzerUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.HealthAnalyzerUiKey.Key:
+        type: HealthAnalyzerBoundUserInterface
+  - type: ItemToggle
+    onUse: false
+  - type: HealthAnalyzer
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
+  - type: Tag
+    tags:
+      - DiscreteHealthAnalyzer
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
+  # #Misfits Removed - GuideHelp: guide entries not present in Nuclear-14 (MedicalDoctor)
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 5
 
 - type: entity
   id: F14HandheldHealthAnalyzer

@@ -103,7 +103,7 @@
   components:
   - type: Gun
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotAssaultRifle
+      collection: F14DRGunshotAssaultRifle
     minAngle: 7 # #Burger - nerfed spread vs pre-buff (was 4); wider cone to make up for higher ROF
     maxAngle: 30 # #Burger - nerfed spread vs pre-buff (was 12)
     angleIncrease: 6 # # - nerfed spread vs pre-buff (was 2)
@@ -132,7 +132,7 @@
     sprite: Nuclear14/Objects/Weapons/Guns/Heavy/avengerminigun.rsi
   - type: Gun
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotAssaultRifle
+      collection: F14DRGunshotAssaultRifle
     minAngle: 5
     maxAngle: 14
     angleIncrease: 5 # #Burger - makes the steady spread slightly less predictable (was 3)

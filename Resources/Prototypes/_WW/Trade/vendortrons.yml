@@ -11,7 +11,7 @@
 
 # Gun Runners
 - type: storeCategoryStructured
-  id: WWVendortronGunRunnersHandguns
+  id: F14VendortronGunRunnersHandguns
   name: "Handguns"
   entries:
   - { proto: F14WeaponPistol22lr, price: 35, countMin: 2, count: 4 }
@@ -24,7 +24,7 @@
   - { proto: F14WeaponRevolver44Magnum, price: 175, countMin: 0, count: 2 }
 
 - type: storeCategoryStructured
-  id: WWVendortronGunRunnersLongguns
+  id: F14VendortronGunRunnersLongguns
   name: "Long guns"
   entries:
   - { proto: F14WeaponShotgun, price: 60, countMin: 2, count: 4 }
@@ -40,7 +40,7 @@
   - { proto: F14WeaponSMGAmerican180, price: 380, countMin: 0, count: 1 }
 
 - type: storeCategoryStructured
-  id: WWVendortronGunRunnersAmmo
+  id: F14VendortronGunRunnersAmmo
   name: "Ammo"
   entries:
   - { proto: F14AmmoBox12gauge, price: 125, countMin: 0, count: 4 }
@@ -58,15 +58,15 @@
   - { proto: F14AmmoBox50, price: 260, countMin: 0, count: 1 }
 
 - type: storePresetStructured
-  id: WWVendortronGunRunners
+  id: F14VendortronGunRunners
   currency: F14Caps
   categories:
-  - WWVendortronGunRunnersHandguns
-  - WWVendortronGunRunnersLongguns
-  - WWVendortronGunRunnersAmmo
+  - F14VendortronGunRunnersHandguns
+  - F14VendortronGunRunnersLongguns
+  - F14VendortronGunRunnersAmmo
 
 - type: storePresetStructured
-  id: WWVendortronGunRunnersSell
+  id: F14VendortronGunRunnersSell
   currency: F14Caps
   categories:
   - F14CaravanSell2Revolvers
@@ -80,7 +80,7 @@
 
 # Med-Tek
 - type: storeCategoryStructured
-  id: WWVendortronMedTekFirstAid
+  id: F14VendortronMedTekFirstAid
   name: "First aid"
   entries:
   - { proto: F14CleanGauze10, amount: 5, price: 35, countMin: 4, count: 6 }
@@ -94,7 +94,7 @@
   - { proto: F14SuperStimpak, price: 380, countMin: 0, count: 2 }
 
 - type: storeCategoryStructured
-  id: WWVendortronMedTekClothing
+  id: F14VendortronMedTekClothing
   name: "Doctor's clothing"
   entries:
   - { proto: F14ClothingHandsMS13Nitrile, price: 30, countMin: 2, count: 4 }
@@ -105,7 +105,7 @@
   - { proto: F14ClothingOuterMS13Vaultlab, price: 90, countMin: 0, count: 1 }
 
 - type: storeCategoryStructured
-  id: WWVendortronMedTekChems
+  id: F14VendortronMedTekChems
   name: "Chems"
   entries:
   - { proto: F14PillCanisterCalmex, price: 60, countMin: 1, count: 4 }
@@ -117,22 +117,22 @@
   - { proto: F14AddictolInhaler, price: 360, countMin: 0, count: 1 }
 
 - type: storePresetStructured
-  id: WWVendortronMedTek
+  id: F14VendortronMedTek
   currency: F14Caps
   categories:
-  - WWVendortronMedTekFirstAid
-  - WWVendortronMedTekChems
-  - WWVendortronMedTekClothing
+  - F14VendortronMedTekFirstAid
+  - F14VendortronMedTekChems
+  - F14VendortronMedTekClothing
 
 - type: storePresetStructured
-  id: WWVendortronMedTekSell
+  id: F14VendortronMedTekSell
   currency: F14Caps
   categories:
   - F14WasterSell2Medicine
 
 # Crimson Caravan (was MS13's Arcata Armorers: the same jackets, armor and materials, plus general goods)
 - type: storeCategoryStructured
-  id: WWVendortronCrimsonCaravanClothing
+  id: F14VendortronCrimsonCaravanClothing
   name: "Jackets and coats"
   entries:
   - { proto: F14ClothingOuterCoatLeatherJacket, price: 25, countMin: 1, count: 4 }
@@ -145,7 +145,7 @@
   - { proto: F14ClothingOuterTownMediumCoat, price: 85, countMin: 0, count: 3 }
 
 - type: storeCategoryStructured
-  id: WWVendortronCrimsonCaravanArmor
+  id: F14VendortronCrimsonCaravanArmor
   name: "Armor"
   entries:
   - { proto: F14ClothingOuterLeatherArmor, price: 85, countMin: 0, count: 3 }
@@ -156,7 +156,7 @@
   - { proto: F14ClothingHeadHatCombatHelmet, price: 95, countMin: 0, count: 1 }
 
 - type: storeCategoryStructured
-  id: WWVendortronCrimsonCaravanMaterials
+  id: F14VendortronCrimsonCaravanMaterials
   name: "Materials"
   entries:
   - { proto: MaterialCloth, amount: 5, price: 40, countMin: 4, count: 6 }
@@ -164,7 +164,7 @@
   - { proto: F14MaterialThread, amount: 6, price: 60, countMin: 2, count: 5 }
 
 - type: storeCategoryStructured
-  id: WWVendortronCrimsonCaravanGoods
+  id: F14VendortronCrimsonCaravanGoods
   name: "General goods"
   entries:
   - { proto: DrinkWaterBottleFull, price: 35, countMin: 3, count: 6 }
@@ -181,16 +181,16 @@
   - { proto: ClothingBackpackDuffel, price: 140, countMin: 0, count: 1 }
 
 - type: storePresetStructured
-  id: WWVendortronCrimsonCaravan
+  id: F14VendortronCrimsonCaravan
   currency: F14Caps
   categories:
-  - WWVendortronCrimsonCaravanClothing
-  - WWVendortronCrimsonCaravanArmor
-  - WWVendortronCrimsonCaravanGoods
-  - WWVendortronCrimsonCaravanMaterials
+  - F14VendortronCrimsonCaravanClothing
+  - F14VendortronCrimsonCaravanArmor
+  - F14VendortronCrimsonCaravanGoods
+  - F14VendortronCrimsonCaravanMaterials
 
 - type: storePresetStructured
-  id: WWVendortronCrimsonCaravanSell
+  id: F14VendortronCrimsonCaravanSell
   currency: F14Caps
   categories:
   - F14WasterSell2Armor
@@ -203,7 +203,7 @@
 
 # H&H Tools
 - type: storeCategoryStructured
-  id: WWVendortronToolsTools
+  id: F14VendortronToolsTools
   name: "Tools"
   entries:
   - { proto: F14Wrench, price: 30, countMin: 2, count: 4 }
@@ -226,7 +226,7 @@
   - { proto: F14MagazineBoxNails, price: 45, countMin: 1, count: 4 }
 
 - type: storeCategoryStructured
-  id: WWVendortronToolsGear
+  id: F14VendortronToolsGear
   name: "Work gear"
   entries:
   - { proto: F14ClothingHandsMS13Leather, price: 30, countMin: 2, count: 4 }
@@ -242,7 +242,7 @@
   - { proto: F14ClothingMaskMS13Modern, price: 180, countMin: 0, count: 1 }
 
 - type: storeCategoryStructured
-  id: WWVendortronToolsMaterials
+  id: F14VendortronToolsMaterials
   name: "Materials"
   entries:
   - { proto: F14Scrap, amount: 5, price: 25, countMin: 4, count: 6 }
@@ -253,15 +253,15 @@
   - { proto: MaterialWoodPlank, amount: 4, price: 25, countMin: 3, count: 5 }
 
 - type: storePresetStructured
-  id: WWVendortronTools
+  id: F14VendortronTools
   currency: F14Caps
   categories:
-  - WWVendortronToolsTools
-  - WWVendortronToolsGear
-  - WWVendortronToolsMaterials
+  - F14VendortronToolsTools
+  - F14VendortronToolsGear
+  - F14VendortronToolsMaterials
 
 - type: storePresetStructured
-  id: WWVendortronToolsSell
+  id: F14VendortronToolsSell
   currency: F14Caps
   categories:
   - F14WasterSell2Materials
@@ -269,7 +269,7 @@
 
 # RobCo
 - type: storeCategoryStructured
-  id: WWVendortronRobCoElectronics
+  id: F14VendortronRobCoElectronics
   name: "Electronics"
   entries:
   - { proto: F14ScrapElectronic, amount: 5, price: 80, countMin: 4, count: 6 }
@@ -278,7 +278,7 @@
   - { proto: F14RadioHandheld, price: 90, countMin: 1, count: 3 }
 
 - type: storeCategoryStructured
-  id: WWVendortronRobCoEnergy
+  id: F14VendortronRobCoEnergy
   name: "Energy weapons"
   entries:
   - { proto: F14PowerCellSmall, price: 160, countMin: 1, count: 3 }
@@ -287,22 +287,22 @@
   - { proto: F14WeaponLaserRifleWattz2000, price: 130, countMin: 0, count: 2 }
 
 - type: storeCategoryStructured
-  id: WWVendortronRobCoDevices
+  id: F14VendortronRobCoDevices
   name: "Devices"
   entries:
   - { proto: F14StealthBoy, price: 650, countMin: 0, count: 1 } # MS13 RobCo price and stock
   - { proto: F14Pipboy, price: 1500, countMin: 0, count: 1 } # expensive and rare (user)
 
 - type: storePresetStructured
-  id: WWVendortronRobCo
+  id: F14VendortronRobCo
   currency: F14Caps
   categories:
-  - WWVendortronRobCoElectronics
-  - WWVendortronRobCoEnergy
-  - WWVendortronRobCoDevices
+  - F14VendortronRobCoElectronics
+  - F14VendortronRobCoEnergy
+  - F14VendortronRobCoDevices
 
 - type: storePresetStructured
-  id: WWVendortronRobCoSell
+  id: F14VendortronRobCoSell
   currency: F14Caps
   categories:
   - F14CaravanSell2EnergyWeapons

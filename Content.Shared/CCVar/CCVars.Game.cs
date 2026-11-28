@@ -116,7 +116,7 @@ public sealed partial class CCVars
     ///     Prototype to use for map pool.
     /// </summary>
     public static readonly CVarDef<string>
-        GameMapPool = CVarDef.Create("game.map_pool", "WWTestMapPool", CVar.SERVERONLY); // WW Change - was DefaultMapPool (Wizden maps); the private test map for now
+        GameMapPool = CVarDef.Create("game.map_pool", "F14TestMapPool", CVar.SERVERONLY); // WW Change - was DefaultMapPool (Wizden maps); the private test map for now
 
     /// <summary>
     ///     The depth of the queue used to calculate which map is next in rotation.

@@ -21,11 +21,11 @@
       mask: [ palisade ]
       base: palisade
   - type: Construction
-    graph: WWPalisade
+    graph: F14Palisade
     node: palisade
 
 - type: constructionGraph
-  id: WWPalisade
+  id: F14Palisade
   start: start
   graph:
   - node: start
@@ -53,7 +53,7 @@
 
 - type: construction
   id: F14WallPalisade
-  graph: WWPalisade
+  graph: F14Palisade
   startNode: start
   targetNode: palisade
   category: construction-category-structures

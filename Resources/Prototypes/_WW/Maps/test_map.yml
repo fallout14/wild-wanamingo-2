@@ -1,19 +1,19 @@
 # WW (2026-11-14): the private test map, a cut of Yuma (Resources/Maps/_WW/test_map.yml). A planet with Yuma's day/night
 # cycle. Five factions: NCR, Legion, Town, Brotherhood of Steel and Tribe, with Yuma's slot counts.
-# Run it with the server cvar `game.map WWTestMap` (or `forcemap WWTestMap` in game), or the WWTestMapPool pool.
+# Run it with the server cvar `game.map F14TestMap` (or `forcemap F14TestMap` in game), or the F14TestMapPool pool.
 
 - type: gameMapPool
-  id: WWTestMapPool
+  id: F14TestMapPool
   maps:
-  - WWTestMap
+  - F14TestMap
 
 - type: gameMap
-  id: WWTestMap
+  id: F14TestMap
   mapName: WW test map
   mapPath: /Maps/_WW/test_map.yml
   minPlayers: 0
   stations:
-    WWTestMap:
+    F14TestMap:
       stationProto: F14WastelandStation
       components:
       - type: StationNameSetup

@@ -476,7 +476,7 @@ entities:
           Nitrogen: 82.10312
         immutable: True
     - type: BecomesStation
-      id: WWTestMap
+      id: F14TestMap
     - type: PlanetFloor
 - proto: F14DecorationFlagLocust
   entities:
@@ -12358,7 +12358,7 @@ entities:
     - type: Transform
       parent: 1
       pos: 75.5,107.5
-- proto: F14ClosetFridgeWideDirtyLegacy
+- proto: F14ClosetFridgeWideDirty
   entities:
   - uid: 1650
     components:

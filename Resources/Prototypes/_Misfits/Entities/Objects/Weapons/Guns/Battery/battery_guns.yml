@@ -146,7 +146,7 @@
   - type: Gun
     fireRate: 1 # #Misfits Tweak - reduced from 6; shotgun pacing (1 spread burst per 0.5s) THIS THING EATS PEOPLE ALIVE
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotMultiplas
+      collection: F14DRGunshotMultiplas
     selectedMode: SemiAuto # #Misfits Fix - was Burst; Multiplas fires multiple bolts simultaneously like a shotgun
     availableModes:
      - SemiAuto
@@ -316,7 +316,7 @@
     angleIncrease: 1
     angleDecay: 8
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotPulsePistol
+      collection: F14DRGunshotPulsePistol
   - type: EyeCursorOffset
     maxOffset: 2.5
     pvsIncrease: 0.25
@@ -376,7 +376,7 @@
     angleIncrease: 2
     angleDecay: 12
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotPulse
+      collection: F14DRGunshotPulse
   - type: EyeCursorOffset
     maxOffset: 2.5
     pvsIncrease: 0.25
@@ -437,7 +437,7 @@
     angleIncrease: 2
     angleDecay: 14
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotPulse
+      collection: F14DRGunshotPulse
   - type: EyeCursorOffset
     maxOffset: 2.5
     pvsIncrease: 0.25

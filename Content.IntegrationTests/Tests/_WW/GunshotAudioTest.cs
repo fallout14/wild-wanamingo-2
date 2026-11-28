@@ -72,7 +72,7 @@ public sealed class GunshotAudioTest : GameTest
         await server.WaitPost(() => endAmmo = guns.GetAmmoCount(gun));
         Assert.That(startAmmo - endAmmo, Is.GreaterThan(20), "the minigun should have kept firing");
         Assert.That(most, Is.InRange(2, GunshotAudioSystem.MaxOverlap), "shots playing at once");
-        Assert.That(shotFile, Is.EqualTo("WWDRGunshotAssaultRifle"), "the minigun's shot sound changed; update the file this test counts");
+        Assert.That(shotFile, Is.EqualTo("F14DRGunshotAssaultRifle"), "the minigun's shot sound changed; update the file this test counts");
     }
 }
 

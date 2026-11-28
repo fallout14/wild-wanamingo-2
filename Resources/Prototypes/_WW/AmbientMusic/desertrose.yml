@@ -4,7 +4,7 @@
 # Mining 1) so those don't play on the wasteland.
 
 - type: soundCollection
-  id: WWAmbienceWasteland
+  id: F14AmbienceWasteland
   files:
   - /Audio/WildWanamingo/DesertRose/Ambience/wasteland.ogg
   - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_1.ogg
@@ -29,7 +29,7 @@
   - /Audio/WildWanamingo/DesertRose/Ambience/artillery.ogg
 
 - type: soundCollection
-  id: WWAmbienceIndoors
+  id: F14AmbienceIndoors
   files:
   - /Audio/WildWanamingo/DesertRose/Ambience/building.ogg
   - /Audio/WildWanamingo/DesertRose/Ambience/shack.ogg
@@ -47,7 +47,7 @@
   - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_14.ogg
 
 - type: soundCollection
-  id: WWAmbienceUnderground
+  id: F14AmbienceUnderground
   files:
   - /Audio/WildWanamingo/DesertRose/Ambience/cave.ogg
   - /Audio/WildWanamingo/DesertRose/Ambience/drops.ogg
@@ -62,11 +62,11 @@
   - /Audio/WildWanamingo/DesertRose/Ambience/ambigen_19.ogg
 
 - type: ambientMusic
-  id: WWWasteland
+  id: F14Wasteland
   sound:
     params:
       volume: -10
-    collection: WWAmbienceWasteland
+    collection: F14AmbienceWasteland
   fadeIn: true
   interruptable: true
   priority: 3
@@ -76,11 +76,11 @@
     inverted: true
 
 - type: ambientMusic
-  id: WWIndoors
+  id: F14Indoors
   sound:
     params:
       volume: -10
-    collection: WWAmbienceIndoors
+    collection: F14AmbienceIndoors
   fadeIn: true
   interruptable: true
   priority: 4
@@ -143,11 +143,11 @@
     inverted: true
 
 - type: ambientMusic
-  id: WWUnderground
+  id: F14Underground
   sound:
     params:
       volume: -10
-    collection: WWAmbienceUnderground
+    collection: F14AmbienceUnderground
   fadeIn: true
   interruptable: true
   priority: 6

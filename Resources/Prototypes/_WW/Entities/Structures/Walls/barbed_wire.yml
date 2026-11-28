@@ -68,7 +68,7 @@
         layer:
         - LowImpassable
   - type: Construction
-    graph: WWBarbedWire
+    graph: F14BarbedWire
     node: loose
 
 # Wire strung between wooden posts: a fence. Bullets and sight go through, people don't.
@@ -140,11 +140,11 @@
     interactSuccessSound:
       collection: FenceRattle
   - type: Construction
-    graph: WWBarbedWire
+    graph: F14BarbedWire
     node: fence
 
 - type: constructionGraph
-  id: WWBarbedWire
+  id: F14BarbedWire
   start: start
   graph:
   - node: start
@@ -198,7 +198,7 @@
 
 - type: construction
   id: F14BarbedWireLoose
-  graph: WWBarbedWire
+  graph: F14BarbedWire
   startNode: start
   targetNode: loose
   category: construction-category-structures
@@ -212,7 +212,7 @@
 
 - type: construction
   id: F14BarbedWireFence
-  graph: WWBarbedWire
+  graph: F14BarbedWire
   startNode: start
   targetNode: fence
   category: construction-category-structures

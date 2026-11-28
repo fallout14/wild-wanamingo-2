@@ -28,7 +28,7 @@ public sealed class F14PowerTest : GameTest
     [TestPrototypes]
     private const string Prototypes = @"
 - type: entity
-  id: WWTestHVLoad
+  id: F14TestHVLoad
   components:
   - type: Transform
     anchored: true
@@ -42,7 +42,7 @@ public sealed class F14PowerTest : GameTest
 
 # LV loads draw through an extension cable, like lights and machines.
 - type: entity
-  id: WWTestLVLoad
+  id: F14TestLVLoad
   components:
   - type: Transform
     anchored: true
@@ -69,16 +69,16 @@ public sealed class F14PowerTest : GameTest
     /// </summary>
     private static readonly object[] Generators =
     {
-        new object[] { "F14GeneratorLarge", "F14CableHV", "WWTestHVLoad", false },
-        new object[] { "F14GeneratorFusioncore", "F14CableHV", "WWTestHVLoad", false },
-        new object[] { "F14GeneratorFusionMini", "F14CableHV", "WWTestHVLoad", false },
-        new object[] { "F14GeneratorFusionMiniRusted", "F14CableHV", "WWTestHVLoad", false },
-        new object[] { "F14GeneratorFusionEnclave", "F14CableHV", "WWTestHVLoad", false },
-        new object[] { "F14GeneratorVaultTecReactor", "F14CableHV", "WWTestHVLoad", false },
-        new object[] { "F14GeneratorPrewar", "F14CableHV", "WWTestHVLoad", true },
-        new object[] { "F14GeneratorPrewarUranium", "F14CableHV", "WWTestHVLoad", true },
-        new object[] { "F14PortableGeneratorWeldingFuel", "F14CableLV", "WWTestLVLoad", false },
-        new object[] { "F14SolarPanel", "F14CableHV", "WWTestHVLoad", false },
+        new object[] { "F14GeneratorLarge", "F14CableHV", "F14TestHVLoad", false },
+        new object[] { "F14GeneratorFusioncore", "F14CableHV", "F14TestHVLoad", false },
+        new object[] { "F14GeneratorFusionMini", "F14CableHV", "F14TestHVLoad", false },
+        new object[] { "F14GeneratorFusionMiniRusted", "F14CableHV", "F14TestHVLoad", false },
+        new object[] { "F14GeneratorFusionEnclave", "F14CableHV", "F14TestHVLoad", false },
+        new object[] { "F14GeneratorVaultTecReactor", "F14CableHV", "F14TestHVLoad", false },
+        new object[] { "F14GeneratorPrewar", "F14CableHV", "F14TestHVLoad", true },
+        new object[] { "F14GeneratorPrewarUranium", "F14CableHV", "F14TestHVLoad", true },
+        new object[] { "F14PortableGeneratorWeldingFuel", "F14CableLV", "F14TestLVLoad", false },
+        new object[] { "F14SolarPanel", "F14CableHV", "F14TestHVLoad", false },
     };
 
     [Test, TestCaseSource(nameof(Generators))]
@@ -153,7 +153,7 @@ public sealed class F14PowerTest : GameTest
             }
 
             gen = entMan.SpawnAttachedTo(LargeGenerator, grid.Owner.ToCoordinates(0, 0));
-            var consumer = entMan.SpawnAttachedTo("WWTestHVLoad", grid.Owner.ToCoordinates(0, 2));
+            var consumer = entMan.SpawnAttachedTo("F14TestHVLoad", grid.Owner.ToCoordinates(0, 2));
             entMan.GetComponent<PowerConsumerComponent>(consumer).DrawRate = 10000; // full output
             supplier = entMan.GetComponent<PowerSupplierComponent>(gen);
 

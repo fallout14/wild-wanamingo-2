@@ -58,7 +58,7 @@
     angleDecay: 16
     fireRate: 1.5
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotHunting
+      collection: F14DRGunshotHunting
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -151,7 +151,7 @@
     angleDecay: 16
     fireRate: 1.5
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotBolt
+      collection: F14DRGunshotBolt
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -210,7 +210,7 @@
     angleDecay: 16
     fireRate: 0.9
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotAntiMateriel
+      collection: F14DRGunshotAntiMateriel
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -286,7 +286,7 @@
     angleDecay: 16
     fireRate: 1.2
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotAntiMateriel
+      collection: F14DRGunshotAntiMateriel
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4
@@ -322,7 +322,7 @@
   - type: Gun
     fireRate: 2.5 # Forge-Change
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotBrushGun
+      collection: F14DRGunshotBrushGun
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -442,7 +442,7 @@
     availableModes:
     - SemiAuto
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotVarmint
+      collection: F14DRGunshotVarmint
   - type: ChamberMagazineAmmoProvider
     # WW Change - bolt action: firing leaves the spent casing chambered, cycling (ManualAction) ejects it and chambers the next round. Auto-cycle made cycling throw away a live round.
     autoCycle: false
@@ -515,7 +515,7 @@
     angleDecay: 16
     fireRate: 2
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshot44
+      collection: F14DRGunshot44
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -574,7 +574,7 @@
     angleDecay: 16
     fireRate: 1.2
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotAntiMateriel
+      collection: F14DRGunshotAntiMateriel
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4
@@ -609,7 +609,7 @@
   - type: Gun
     fireRate: 1.2
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotHunting
+      collection: F14DRGunshotHunting
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4
@@ -661,7 +661,7 @@
   - type: Gun
     fireRate: 2
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotHunting
+      collection: F14DRGunshotHunting
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4
@@ -702,7 +702,7 @@
   - type: Gun
     fireRate: 2
     soundGunshot: # WW Change - Desert Rose sound
-      collection: WWDRGunshotBolt
+      collection: F14DRGunshotBolt
   - type: EyeCursorOffset
     maxOffset: 4
     pvsIncrease: 0.4
