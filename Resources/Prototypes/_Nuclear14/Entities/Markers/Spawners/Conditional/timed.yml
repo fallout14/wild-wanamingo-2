@@ -4,7 +4,7 @@
 - type: entity
   name: Molerat Timed Spawner
   id: F14TimedSpawnerMolerat
-  parent: WWTimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   components:
     - type: Sprite
       layers:
@@ -19,7 +19,7 @@
 - type: entity
   name: Pigrat Timed Spawner
   id: F14TimedSpawnerPigrat
-  parent: WWTimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   components:
     - type: Sprite
       layers:
@@ -34,7 +34,7 @@
 - type: entity
   name: Radhog Timed Spawner
   id: F14TimedSpawnerRadhog
-  parent: WWTimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   components:
     - type: Sprite
       layers:
@@ -47,7 +47,7 @@
         - F14MobRadhog
 
 - type: entity
-  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerDogFeral
   name: Feral Dog Timed Spawner
   components:
@@ -62,7 +62,7 @@
         - F14MobDogFeral
 
 - type: entity
-  parent: WWTimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerGecko
   name: Gecko Timed Spawner
   components:
@@ -77,7 +77,7 @@
         - F14MobGecko
 
 - type: entity
-  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerGeckoFire
   name: Fire Gecko Timed Spawner
   components:
@@ -92,7 +92,7 @@
         - F14MobGeckoFire
 
 - type: entity
-  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerGeckoGolden
   name: Golden Gecko Timed Spawner
   components:
@@ -107,7 +107,7 @@
         - F14MobGeckoGolden
 
 - type: entity
-  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerNightstalkerCub
   name: Nightstalker Cub Timed Spawner
   components:
@@ -122,7 +122,7 @@
         - F14MobNightstalkerCub
 
 - type: entity
-  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerNightstalker
   name: Nightstalker Timed Spawner
   components:
@@ -137,7 +137,7 @@
         - F14MobNightstalker
 
 - type: entity
-  parent: WWTimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerYaoguai
   name: Yao Guai Timed Spawner
   components:
@@ -154,7 +154,7 @@
 #MARK: Scaley Animals
 
 - type: entity
-  parent: WWTimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerDeathclaw
   name: Deathclaw Timed Spawner
   components:
@@ -169,7 +169,7 @@
         - F14MobDeathclaw
 
 - type: entity
-  parent: WWTimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerDeathclawAlbino
   name: Deathclaw Albino Timed Spawner
   components:
@@ -184,7 +184,7 @@
         - F14MobDeathclawAlbino
 
 - type: entity
-  parent: WWTimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerDeathclawMetal
   name: Deathclaw Metal Timed Spawner
   components:
@@ -201,7 +201,7 @@
 #MARK: Insects
 
 - type: entity
-  parent: WWTimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerBloatfly
   name: Bloatfly Timed Spawner
   components:
@@ -216,7 +216,7 @@
         - F14MobBloatfly
 
 - type: entity
-  parent: WWTimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerAnt
   name: Ant Timed Spawner
   components:
@@ -231,7 +231,7 @@
         - F14MobGiantAnt
 
 - type: entity
-  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerFireant
   name: Fire Ant Timed Spawner
   components:
@@ -246,7 +246,7 @@
         - F14MobGiantFireAnt
 
 - type: entity
-  parent: WWTimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerVermin # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerRadroach
   name: Radroach Timed Spawner
   components:
@@ -261,7 +261,7 @@
         - F14MobRadroach
 
 - type: entity
-  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerRadscorpion
   name: Radscorpion Timed Spawner
   components:
@@ -276,7 +276,7 @@
         - F14MobRadscorpion
 
 - type: entity
-  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerRadscorpionBark
   name: Radscorpion Bark Timed Spawner
   components:
@@ -291,7 +291,7 @@
         - F14MobRadscorpionBark
 
 - type: entity
-  parent: WWTimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerPredator # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerCazador
   name: Cazador Timed Spawner
   components:
@@ -310,7 +310,7 @@
 - type: entity
   name: Raider Ranged Psycho Timed Spawner
   id: F14TimedSpawnerMobRaiderPsychoRanged
-  parent: WWTimedSpawnerHostile # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerHostile # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   components:
   - type: Sprite
     layers:
@@ -325,7 +325,7 @@
 - type: entity
   name: Raider Psycho Boss Timed Spawner
   id: F14TimedSpawnerMobRaiderBoss
-  parent: WWTimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerApex # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   components:
   - type: Sprite
     layers:
@@ -340,7 +340,7 @@
 - type: entity
   name: Raider Psycho Timed Spawner
   id: F14TimedSpawnerMobRaiderPsycho
-  parent: WWTimedSpawnerHostile # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerHostile # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   components:
   - type: Sprite
     layers:
@@ -353,7 +353,7 @@
       - F14MobRaiderPsycho
 
 - type: entity
-  parent: WWTimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerRadstag
   name: Radstag Timed Spawner
   components:
@@ -368,7 +368,7 @@
         - F14MobRadstag
 
 - type: entity
-  parent: WWTimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerChicken
   name: Chicken Timed Spawner
   components:
@@ -383,7 +383,7 @@
         - F14MobChicken
 
 - type: entity
-  parent: WWTimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerBighorner
   name: Bighorner Timed Spawner
   components:
@@ -398,7 +398,7 @@
         - F14MobBighorner
 
 - type: entity
-  parent: WWTimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  parent: F14TimedSpawnerGame # WW Change - danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
   id: F14TimedSpawnerBrahmin
   name: Brahmin Timed Spawner
   components:

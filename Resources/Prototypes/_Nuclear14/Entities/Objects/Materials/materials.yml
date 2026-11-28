@@ -220,7 +220,7 @@
 
 - type: entity
   parent: F14MaterialBasePowder
-  id: Charcoal
+  id: F14Charcoal
   name: charcoal
   categories: [ HideSpawnMenu ]
   components:
@@ -250,7 +250,7 @@
     price: 0
 
 - type: entity
-  parent: Charcoal
+  parent: F14Charcoal
   id: F14Charcoal10
   suffix: 10
   components:
@@ -258,7 +258,7 @@
     count: 10
 
 - type: entity
-  parent: Charcoal
+  parent: F14Charcoal
   id: F14Charcoal1
   suffix: Single
   components:

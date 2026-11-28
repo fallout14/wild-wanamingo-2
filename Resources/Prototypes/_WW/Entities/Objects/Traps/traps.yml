@@ -6,7 +6,7 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: WWBaseTrap
+  id: F14BaseTrap
   components:
   - type: Item
     size: Normal
@@ -31,8 +31,8 @@
         - LowImpassable
 
 - type: entity
-  parent: WWBaseTrap
-  id: WWBearTrap
+  parent: F14BaseTrap
+  id: F14BearTrap
   name: bear trap
   description: Spring-loaded steel jaws. Step in it and you're not going anywhere until you pry it off.
   components:
@@ -67,8 +67,8 @@
         Blunt: 5
 
 - type: entity
-  parent: WWBaseTrap
-  id: WWTripwire
+  parent: F14BaseTrap
+  id: F14Tripwire
   name: tripwire
   description: A length of wire strung low between two stakes, with tin cans tied on to raise the alarm.
   components:
@@ -96,8 +96,8 @@
     popupType: MediumCaution
 
 - type: entity
-  parent: WWBaseTrap
-  id: WWFragMine
+  parent: F14BaseTrap
+  id: F14FragMine
   name: frag mine
   description: A pressure-triggered fragmentation mine. Looks incredibly dangerous...
   components:

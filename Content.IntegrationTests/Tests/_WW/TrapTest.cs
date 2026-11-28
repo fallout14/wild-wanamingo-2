@@ -43,7 +43,7 @@ public sealed class TrapTest
         await server.WaitAssertion(() =>
         {
             user = entMan.SpawnEntity("MobHuman", map.GridCoords);
-            trap = entMan.SpawnEntity("WWBearTrap", map.GridCoords);
+            trap = entMan.SpawnEntity("F14BearTrap", map.GridCoords);
             Assert.That(entMan.System<WWTrapSystem>().StartArming((trap, entMan.GetComponent<WWTrapComponent>(trap)), user, true));
         });
         await WaitSeconds(server, 3);
@@ -82,7 +82,7 @@ public sealed class TrapTest
         await server.WaitAssertion(() =>
         {
             EnableGravity(entMan, map);
-            trap = entMan.SpawnEntity("WWBearTrap", map.GridCoords);
+            trap = entMan.SpawnEntity("F14BearTrap", map.GridCoords);
             entMan.System<WWTrapSystem>().SetArmed((trap, entMan.GetComponent<WWTrapComponent>(trap)), true);
             victim = entMan.SpawnEntity("MobHuman", entMan.GetComponent<TransformComponent>(trap).Coordinates);
             if (lightStep)
@@ -124,7 +124,7 @@ public sealed class TrapTest
         await server.WaitAssertion(() =>
         {
             EnableGravity(entMan, map);
-            trap = entMan.SpawnEntity("WWTripwire", map.GridCoords);
+            trap = entMan.SpawnEntity("F14Tripwire", map.GridCoords);
             entMan.System<WWTrapSystem>().SetArmed((trap, entMan.GetComponent<WWTrapComponent>(trap)), true);
             victim = entMan.SpawnEntity("MobHuman", entMan.GetComponent<TransformComponent>(trap).Coordinates);
         });
@@ -151,7 +151,7 @@ public sealed class TrapTest
         await server.WaitAssertion(() =>
         {
             EnableGravity(entMan, map);
-            trap = entMan.SpawnEntity("WWFragMine", map.GridCoords);
+            trap = entMan.SpawnEntity("F14FragMine", map.GridCoords);
             var comp = entMan.GetComponent<WWTrapComponent>(trap);
             Assert.That(comp.Rearmable, Is.False);
             entMan.System<WWTrapSystem>().SetArmed((trap, comp), true);

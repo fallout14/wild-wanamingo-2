@@ -6,7 +6,7 @@
 # Rounded-edge variant. Joins only with itself; the edges don't line up with the square table.
 - type: entity
   parent: Table
-  id: WWTableMetalAlt
+  id: F14TableMetalAlt
   name: metal table
   description: A rounded piece of metal standing on a set of metal legs.
   components:
@@ -24,7 +24,7 @@
 # Player-made table out of scrap (MS13's "crude metal table"). Weaker than a proper table.
 - type: entity
   parent: [ TableBase, StructureHealthFurnitureWeak ]
-  id: WWTableMetalCrude
+  id: F14TableMetalCrude
   name: crude metal table
   description: A crude table made of scrap metal plates. Not too bad, as far as post-apocalyptic furniture goes.
   components:
@@ -58,11 +58,11 @@
         acts: ["Destruction"]
     - replaceInherited
   - type: Construction
-    graph: WWTableMetalCrude
+    graph: F14TableMetalCrude
     node: table
 
 - type: constructionGraph
-  id: WWTableMetalCrude
+  id: F14TableMetalCrude
   start: start
   graph:
   - node: start
@@ -76,7 +76,7 @@
         amount: 4
         doAfter: 3
   - node: table
-    entity: WWTableMetalCrude
+    entity: F14TableMetalCrude
     edges:
     - to: start
       completed:
@@ -89,8 +89,8 @@
         doAfter: 2
 
 - type: construction
-  id: WWTableMetalCrude
-  graph: WWTableMetalCrude
+  id: F14TableMetalCrude
+  graph: F14TableMetalCrude
   startNode: start
   targetNode: table
   category: construction-category-furniture

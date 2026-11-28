@@ -6,7 +6,7 @@
 # Loose coils on the ground: you can wade through, slowly, and it cuts you every step (like the razorwire barricade).
 - type: entity
   parent: BaseStructure
-  id: WWBarbedWireLoose
+  id: F14BarbedWireLoose
   name: barbed wire
   description: Coils of rusty barbed wire. You could wade through it, if you don't mind the bleeding.
   placement:
@@ -74,7 +74,7 @@
 # Wire strung between wooden posts: a fence. Bullets and sight go through, people don't.
 - type: entity
   parent: BaseStructure
-  id: WWBarbedWireFence
+  id: F14BarbedWireFence
   name: barbed wire fence
   description: Barbed wire strung between wooden posts. Keeps people out; doesn't do much about bullets.
   placement:
@@ -169,7 +169,7 @@
         amount: 2
         doAfter: 3
   - node: loose
-    entity: WWBarbedWireLoose
+    entity: F14BarbedWireLoose
     edges:
     - to: start
       completed:
@@ -181,7 +181,7 @@
       - tool: Cutting
         doAfter: 3
   - node: fence
-    entity: WWBarbedWireFence
+    entity: F14BarbedWireFence
     edges:
     - to: start
       completed:
@@ -197,7 +197,7 @@
         doAfter: 4
 
 - type: construction
-  id: WWBarbedWireLoose
+  id: F14BarbedWireLoose
   graph: WWBarbedWire
   startNode: start
   targetNode: loose
@@ -211,7 +211,7 @@
   - !type:TileNotBlocked
 
 - type: construction
-  id: WWBarbedWireFence
+  id: F14BarbedWireFence
   graph: WWBarbedWire
   startNode: start
   targetNode: fence

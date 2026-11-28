@@ -21,7 +21,7 @@ namespace Content.IntegrationTests.Tests._WW;
 [TestFixture]
 public sealed class RoofTest
 {
-    private static readonly ProtoId<ConstructionPrototype> Recipe = "WWRoofWood";
+    private static readonly ProtoId<ConstructionPrototype> Recipe = "F14RoofWood";
 
     [Test]
     public async Task RoofRecipeCostsOnePlank()
@@ -65,7 +65,7 @@ public sealed class RoofTest
             Assert.That(roofed.Condition(EntityUid.Invalid, map.GridCoords, Direction.South), Is.False);
 
             // What the construction spawns when finished.
-            roofEnt = entMan.SpawnEntity("WWRoofWood", map.GridCoords);
+            roofEnt = entMan.SpawnEntity("F14RoofWood", map.GridCoords);
         });
         await server.WaitRunTicks(2);
 

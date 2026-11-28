@@ -24,9 +24,9 @@
   - type: Item
     heldPrefix: produce
   - type: Produce
-    plantId: Lemonade
+    plantId: F14Lemonade
   - type: Seed
-    plantId: Lemonade
+    plantId: F14Lemonade
   - type: Extractable
     juiceSolution:
       reagents:
@@ -101,9 +101,9 @@
     proto: F14BulletCoconut # lol
     deleteOnSpawn: true
   - type: Produce
-    plantId: CoconutPlant
+    plantId: F14CoconutPlant
   - type: Seed
-    plantId: CoconutPlant
+    plantId: F14CoconutPlant
   - type: Tag
     tags:
     - Fruit
@@ -143,9 +143,9 @@
       - ReagentId: CoconutWater
         Quantity: 15
   - type: Produce
-    plantId: CoconutPlant
+    plantId: F14CoconutPlant
   - type: Seed
-    plantId: CoconutPlant
+    plantId: F14CoconutPlant
   - type: Sprite
     sprite: Misfits/Objects/Specific/Hydroponics/coconut.rsi
     state: half
@@ -201,9 +201,9 @@
   - type: Sprite
     sprite: Misfits/Objects/Specific/Hydroponics/cherry.rsi
   - type: Produce
-    plantId: CherryBomb
+    plantId: F14CherryBomb
   - type: Seed
-    plantId: CherryBomb
+    plantId: F14CherryBomb
   - type: Extractable
     juiceSolution:
       reagents:
@@ -268,9 +268,9 @@
       - ReagentId: Nutriment
         Quantity: 4
   - type: Produce
-    plantId: zoybean
+    plantId: F14Zoybean
   - type: Seed
-    plantId: zoybean
+    plantId: F14Zoybean
   - type: Extractable
     juiceSolution:
       reagents:

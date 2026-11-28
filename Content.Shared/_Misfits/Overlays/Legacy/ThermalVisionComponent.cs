@@ -50,7 +50,7 @@ public sealed partial class ThermalVisionComponent : Component
     public SoundSpecifier? DeactivateSound = new SoundPathSpecifier("/Audio/Misfits/Legacy/Items/Goggles/deactivate.ogg");
 
     [DataField]
-    public EntProtoId? ToggleAction = "ToggleThermalVision";
+    public EntProtoId? ToggleAction = "F14ToggleThermalVision";
 
     [ViewVariables]
     public EntityUid? ToggleActionEntity;

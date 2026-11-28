@@ -53,7 +53,7 @@ public sealed class F14PowerTest : GameTest
 
     private static readonly EntProtoId FusionCore = "F14FusionCore";
     private static readonly EntProtoId LargeGenerator = "F14GeneratorLarge";
-    private static readonly EntProtoId Terminal = "WWComputerTerminalPowerMonitor";
+    private static readonly EntProtoId Terminal = "F14ComputerTerminalPowerMonitor";
 
     // Removed 2026-11-16, so plain strings rather than EntProtoIds.
     private static readonly string[] Removed =
@@ -78,7 +78,7 @@ public sealed class F14PowerTest : GameTest
         new object[] { "F14GeneratorPrewar", "F14CableHV", "WWTestHVLoad", true },
         new object[] { "F14GeneratorPrewarUranium", "F14CableHV", "WWTestHVLoad", true },
         new object[] { "F14PortableGeneratorWeldingFuel", "F14CableLV", "WWTestLVLoad", false },
-        new object[] { "WWSolarPanel", "F14CableHV", "WWTestHVLoad", false },
+        new object[] { "F14SolarPanel", "F14CableHV", "WWTestHVLoad", false },
     };
 
     [Test, TestCaseSource(nameof(Generators))]

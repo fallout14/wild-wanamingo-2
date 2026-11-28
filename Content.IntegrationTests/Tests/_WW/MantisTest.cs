@@ -21,7 +21,7 @@ public sealed class MantisTest : GameTest
         var entMan = server.EntMan;
         var map = await Pair.CreateTestMap();
         EntityUid mantis = default;
-        await server.WaitPost(() => mantis = entMan.SpawnEntity("WWMobGiantMantis", map.GridCoords));
+        await server.WaitPost(() => mantis = entMan.SpawnEntity("F14MobGiantMantis", map.GridCoords));
         await Pair.RunTicksSync(5);
         await server.WaitAssertion(() =>
         {

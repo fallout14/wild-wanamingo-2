@@ -3,7 +3,7 @@
 
 - type: entity
   name: giant mantis
-  id: WWMobGiantMantis
+  id: F14MobGiantMantis
   parent: F14MobBaseHostileInsect
   description: A mantis the size of a dog. It holds its forelegs folded like it's praying, right up until it isn't.
   components:
@@ -78,13 +78,13 @@
       amount: 2
 
 - type: entity
-  parent: [ WWMobGiantMantis, F14MobDespawning ]
-  id: WWMobGiantMantisDespawning
+  parent: [ F14MobGiantMantis, F14MobDespawning ]
+  id: F14MobGiantMantisDespawning
   categories: [ HideSpawnMenu ]
 
 - type: entity
   name: Giant Mantis Spawner
-  id: WWSpawnMobGiantMantis
+  id: F14SpawnMobGiantMantis
   parent: MarkerBase
   components:
   - type: Sprite
@@ -95,11 +95,11 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - WWMobGiantMantis
+    - F14MobGiantMantis
 
 - type: entity
-  parent: WWTimedSpawnerPredator # danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
-  id: WWTimedSpawnerGiantMantis
+  parent: F14TimedSpawnerPredator # danger tier sets interval/chance/caps (_WW/.../Spawners/timed_tiers.yml)
+  id: F14TimedSpawnerGiantMantis
   name: Giant Mantis Timed Spawner
   components:
   - type: Sprite
@@ -110,4 +110,4 @@
     - state: timed
   - type: WastelandSpawner
     prototypes:
-    - WWMobGiantMantis
+    - F14MobGiantMantis

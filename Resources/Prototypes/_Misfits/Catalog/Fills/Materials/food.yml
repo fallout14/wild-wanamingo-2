@@ -128,7 +128,7 @@
 - type: entity
   id: F14FridgeCookSuppliesEssential
   suffix: Filled, Fridge, Cook Supplies
-  parent: ClosetFridgeWideDirty
+  parent: F14ClosetFridgeWideDirtyLegacy
   components:
   - type: StorageFill
     contents:
@@ -160,7 +160,7 @@
 - type: entity
   id: F14FridgeCookSuppliesMeat
   suffix: Filled, Fridge, Meat
-  parent: ClosetFridgeWideDirty
+  parent: F14ClosetFridgeWideDirtyLegacy
   components:
   - type: StorageFill
     contents:
@@ -194,7 +194,7 @@
 - type: entity
   id: F14FridgeCookSuppliesMeatExotic
   suffix: Filled, Fridge, Meat, Exotic
-  parent: ClosetFridgeWideDirty
+  parent: F14ClosetFridgeWideDirtyLegacy
   components:
   - type: StorageFill
     contents:

@@ -14,8 +14,8 @@ namespace Content.IntegrationTests.Tests._WW;
 /// </summary>
 public sealed class BarbedWireTest : InteractionTest
 {
-    [TestCase("WWBarbedWireLoose", "barbedwire_loose")]
-    [TestCase("WWBarbedWireFence", "barbedwire_fence")]
+    [TestCase("F14BarbedWireLoose", "barbedwire_loose")]
+    [TestCase("F14BarbedWireFence", "barbedwire_fence")]
     public async Task WireJoins(string proto, string baseState)
     {
         // Next to the target tile so the new tiles stay connected to the test grid.
@@ -54,7 +54,7 @@ public sealed class BarbedWireTest : InteractionTest
         await Server.WaitAssertion(() =>
         {
             var hard = SEntMan.GetComponent<FixturesComponent>(sCorner).Fixtures.Values.Any(f => f.Hard);
-            Assert.That(hard, Is.EqualTo(proto == "WWBarbedWireFence"), $"{proto} hard fixture: {hard}");
+            Assert.That(hard, Is.EqualTo(proto == "F14BarbedWireFence"), $"{proto} hard fixture: {hard}");
         });
     }
 }

@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Clothing/Head/powerarmorhelmet.yml
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: F14ClothingHeadHardsuitWithLightBase
   id: F14ClothingHeadHelmetPowerArmorT45
   name: t-45 power armor helmet
   description: An old helmet used with T-45 Power Armor suits. It's amazing these still exist.
@@ -70,7 +70,7 @@
     - HidesBeard
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: F14ClothingHeadHardsuitWithLightBase
   id: F14ClothingHeadHelmetPowerArmorT51
   name: T-51 Power Armor Helmet
   description: An old helmet used with suits of T-51 Power Armor. The gaze of these visors became commonplace in pre-war victory footage across television sets nationwide.
@@ -138,7 +138,7 @@
     - HidesBeard
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: F14ClothingHeadHardsuitWithLightBase
   id: F14ClothingHeadHelmetPowerArmorT60
   name: T-60 Power Armor Helmet
   description: An old helmet used with T-60 Power Armor suits, nearly identical to the T-45 variant. These helmets saw more use on the domestic front, issed only months before the bombs dropped.
@@ -209,7 +209,7 @@
 # Used by N14ClothingOuterPowerArmorT60BOS so Senior Paladins can access the shared map feed.
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: F14ClothingHeadHardsuitWithLightBase
   id: F14ClothingHeadHelmetPowerArmorX01
   # #Misfits Change - Renamed X-01 -> APA MK I
   name: APA MK I power armor helmet
@@ -280,7 +280,7 @@
   - type: ThermalVision
     isEquipment: true
     pulseTime: 2
-    toggleAction: PulseThermalVision
+    toggleAction: F14PulseThermalVision
   - type: BreathMask # Misfits Change
   - type: GasFilterMask # Misfits Change
   - type: IngestionBlocker # Misfits Change
@@ -353,7 +353,7 @@
   # End Misfits Change
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: F14ClothingHeadHardsuitWithLightBase
   id: F14ClothingHeadHelmetPowerArmorT51BC
   name: t-51bc power armor helmet
   description: The pinnacle of pre-war technology appropriated by the Brotherhood of Steel. Commonly worn by Paladin Commanders.
@@ -417,7 +417,7 @@
   - type: IngestionBlocker # Misfits Change
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: F14ClothingHeadHardsuitWithLightBase
   id: F14ClothingHeadHelmetPowerArmorT45NCR
   name: t-45 NCR power armor helmet
   description: Originally existing as T-45d power armor that was recovered by and repurposed for the use within NCR.
@@ -540,7 +540,7 @@
   - type: ThermalVision
     isEquipment: true
     pulseTime: 2
-    toggleAction: PulseThermalVision
+    toggleAction: F14PulseThermalVision
 
 - type: entity
   parent: F14ClothingHeadHelmetPowerArmorT51
@@ -578,4 +578,4 @@
   - type: ThermalVision
     isEquipment: true
     pulseTime: 2
-    toggleAction: PulseThermalVision
+    toggleAction: F14PulseThermalVision

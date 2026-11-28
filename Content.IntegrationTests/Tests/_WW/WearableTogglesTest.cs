@@ -79,7 +79,7 @@ public sealed class WearableTogglesTest : GameTest
 
     [TestCase("F14ClothingHeadHelmetPowerArmorX01")]
     [TestCase("F14ClothingEyesNCRNVGs")]
-    [TestCase("ClothingEyesNightVisionGoggles")]
+    [TestCase("F14ClothingEyesNightVisionGoggles")]
     public async Task NightVisionGearReachesTheWearer(string id)
     {
         var server = Pair.Server;

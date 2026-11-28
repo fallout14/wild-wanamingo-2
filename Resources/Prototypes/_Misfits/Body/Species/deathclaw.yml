@@ -8,7 +8,7 @@
 # --- Lobby dolls (sprite only)
 
 - type: entity
-  id: AppearanceDeathclaw
+  id: F14AppearanceDeathclaw
   categories: [ HideSpawnMenu ]
   name: deathclaw appearance
   components:
@@ -21,8 +21,8 @@
     species: F14Deathclaw
 
 - type: entity
-  parent: AppearanceDeathclaw
-  id: AppearanceDeathclawAdolescent
+  parent: F14AppearanceDeathclaw
+  id: F14AppearanceDeathclawAdolescent
   categories: [ HideSpawnMenu ]
   name: adolescent deathclaw appearance
   components:
@@ -32,8 +32,8 @@
     species: F14DeathclawAdolescent
 
 - type: entity
-  parent: AppearanceDeathclaw
-  id: AppearanceDeathclawHatchling
+  parent: F14AppearanceDeathclaw
+  id: F14AppearanceDeathclawHatchling
   categories: [ HideSpawnMenu ]
   name: hatchling deathclaw appearance
   components:
@@ -43,8 +43,8 @@
     species: F14DeathclawHatchling
 
 - type: entity
-  parent: AppearanceDeathclaw
-  id: AppearanceBwonsamdi
+  parent: F14AppearanceDeathclaw
+  id: F14AppearanceBwonsamdi
   categories: [ HideSpawnMenu ]
   name: bwonsamdi appearance
   components:

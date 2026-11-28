@@ -2,7 +2,7 @@
 # (Misfits' copy of a Space Station 14 or other-fork file.)
 
 - type: entity
-  id: ToggleThermalVision
+  id: F14ToggleThermalVision
   parent: BaseAction
   name: Switch Thermal vision
   description: Switches Thermal vision.
@@ -20,8 +20,8 @@
     event: !type:ToggleThermalVisionEvent
 
 - type: entity
-  id: PulseThermalVision
-  parent: ToggleThermalVision
+  id: F14PulseThermalVision
+  parent: F14ToggleThermalVision
   name: Pulse Thermal Vision
   description: Activate thermal vision temporarily.
   categories: [ HideSpawnMenu ]

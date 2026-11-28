@@ -4,8 +4,8 @@
 # Vermin
 
 - type: entity
-  parent: WWTimedSpawnerVermin
-  id: WWTimedSpawnerIguana
+  parent: F14TimedSpawnerVermin
+  id: F14TimedSpawnerIguana
   name: Iguana Timed Spawner
   components:
   - type: Sprite
@@ -19,8 +19,8 @@
     - F14MobIguana
 
 - type: entity
-  parent: WWTimedSpawnerVermin
-  id: WWTimedSpawnerRabbit
+  parent: F14TimedSpawnerVermin
+  id: F14TimedSpawnerRabbit
   name: Rabbit Timed Spawner
   components:
   - type: Sprite
@@ -34,8 +34,8 @@
     - F14MobRabbit
 
 - type: entity
-  parent: WWTimedSpawnerVermin
-  id: WWTimedSpawnerNuclearRabbit
+  parent: F14TimedSpawnerVermin
+  id: F14TimedSpawnerNuclearRabbit
   name: Nuclear Rabbit Timed Spawner
   components:
   - type: Sprite
@@ -49,8 +49,8 @@
     - F14MobNuclearRabbit
 
 - type: entity
-  parent: WWTimedSpawnerVermin
-  id: WWTimedSpawnerOpossum
+  parent: F14TimedSpawnerVermin
+  id: F14TimedSpawnerOpossum
   name: Opossum Timed Spawner
   components:
   - type: Sprite
@@ -64,8 +64,8 @@
     - F14MobOpossum
 
 - type: entity
-  parent: WWTimedSpawnerVermin
-  id: WWTimedSpawnerNuclearBeaver
+  parent: F14TimedSpawnerVermin
+  id: F14TimedSpawnerNuclearBeaver
   name: Nuclear Beaver Timed Spawner
   components:
   - type: Sprite
@@ -81,8 +81,8 @@
 # Predator
 
 - type: entity
-  parent: WWTimedSpawnerPredator
-  id: WWTimedSpawnerMirelurk
+  parent: F14TimedSpawnerPredator
+  id: F14TimedSpawnerMirelurk
   name: Mirelurk Timed Spawner
   components:
   - type: Sprite
@@ -96,8 +96,8 @@
     - F14MobMirelurk
 
 - type: entity
-  parent: WWTimedSpawnerPredator
-  id: WWTimedSpawnerRadMirelurk
+  parent: F14TimedSpawnerPredator
+  id: F14TimedSpawnerRadMirelurk
   name: Rad Mirelurk Timed Spawner
   components:
   - type: Sprite
@@ -111,8 +111,8 @@
     - F14MobRadMirelurk
 
 - type: entity
-  parent: WWTimedSpawnerPredator
-  id: WWTimedSpawnerCentaur
+  parent: F14TimedSpawnerPredator
+  id: F14TimedSpawnerCentaur
   name: Centaur Timed Spawner
   components:
   - type: Sprite
@@ -128,8 +128,8 @@
 # Hostile
 
 - type: entity
-  parent: WWTimedSpawnerHostile
-  id: WWTimedSpawnerSuperMutantMelee
+  parent: F14TimedSpawnerHostile
+  id: F14TimedSpawnerSuperMutantMelee
   name: Super Mutant (Melee) Timed Spawner
   components:
   - type: Sprite
@@ -143,8 +143,8 @@
     - F14MobSuperMutantMelee
 
 - type: entity
-  parent: WWTimedSpawnerHostile
-  id: WWTimedSpawnerSuperMutantRanged
+  parent: F14TimedSpawnerHostile
+  id: F14TimedSpawnerSuperMutantRanged
   name: Super Mutant (Ranged) Timed Spawner
   components:
   - type: Sprite
@@ -158,8 +158,8 @@
     - F14MobSuperMutantRanged
 
 - type: entity
-  parent: WWTimedSpawnerHostile
-  id: WWTimedSpawnerSuperMutantArmored
+  parent: F14TimedSpawnerHostile
+  id: F14TimedSpawnerSuperMutantArmored
   name: Super Mutant (Armored) Timed Spawner
   components:
   - type: Sprite
@@ -173,8 +173,8 @@
     - F14MobSuperMutantArmored
 
 - type: entity
-  parent: WWTimedSpawnerHostile
-  id: WWTimedSpawnerNightkin
+  parent: F14TimedSpawnerHostile
+  id: F14TimedSpawnerNightkin
   name: Nightkin Timed Spawner
   components:
   - type: Sprite
@@ -188,8 +188,8 @@
     - F14MobNightkin
 
 - type: entity
-  parent: WWTimedSpawnerHostile
-  id: WWTimedSpawnerNightkinVeteran
+  parent: F14TimedSpawnerHostile
+  id: F14TimedSpawnerNightkinVeteran
   name: Nightkin Veteran Timed Spawner
   components:
   - type: Sprite
@@ -203,8 +203,8 @@
     - F14MobNightkinVeteran
 
 - type: entity
-  parent: WWTimedSpawnerHostile
-  id: WWTimedSpawnerSecuritron
+  parent: F14TimedSpawnerHostile
+  id: F14TimedSpawnerSecuritron
   name: Securitron Timed Spawner
   components:
   - type: Sprite
@@ -220,8 +220,8 @@
 # Apex
 
 - type: entity
-  parent: WWTimedSpawnerApex
-  id: WWTimedSpawnerRadLurker
+  parent: F14TimedSpawnerApex
+  id: F14TimedSpawnerRadLurker
   name: Rad Lurker Timed Spawner
   components:
   - type: Sprite
@@ -235,8 +235,8 @@
     - F14MobRadLurker
 
 - type: entity
-  parent: WWTimedSpawnerApex
-  id: WWTimedSpawnerNightkinElite
+  parent: F14TimedSpawnerApex
+  id: F14TimedSpawnerNightkinElite
   name: Nightkin Elite Timed Spawner
   components:
   - type: Sprite
@@ -250,8 +250,8 @@
     - F14MobNightkinElite
 
 - type: entity
-  parent: WWTimedSpawnerApex
-  id: WWTimedSpawnerBehemoth
+  parent: F14TimedSpawnerApex
+  id: F14TimedSpawnerBehemoth
   name: Behemoth Timed Spawner
   components:
   - type: Sprite
@@ -265,8 +265,8 @@
     - F14MobBehemoth
 
 - type: entity
-  parent: WWTimedSpawnerApex
-  id: WWTimedSpawnerSentryBot
+  parent: F14TimedSpawnerApex
+  id: F14TimedSpawnerSentryBot
   name: Sentry Bot Timed Spawner
   components:
   - type: Sprite

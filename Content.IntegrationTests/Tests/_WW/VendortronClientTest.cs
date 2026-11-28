@@ -11,11 +11,11 @@ namespace Content.IntegrationTests.Tests._WW;
 /// </summary>
 public sealed class VendortronClientTest : InteractionTest
 {
-    [TestCase("WWMobVendortronGunRunners")]
-    [TestCase("WWMobVendortronMedTek")]
-    [TestCase("WWMobVendortronCrimsonCaravan")]
-    [TestCase("WWMobVendortronTools")]
-    [TestCase("WWMobVendortronRobCo")]
+    [TestCase("F14MobVendortronGunRunners")]
+    [TestCase("F14MobVendortronMedTek")]
+    [TestCase("F14MobVendortronCrimsonCaravan")]
+    [TestCase("F14MobVendortronTools")]
+    [TestCase("F14MobVendortronRobCo")]
     public async Task SpawnAndOpenStore(string proto)
     {
         await SpawnTarget(proto);

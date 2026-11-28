@@ -1,7 +1,7 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Nuclear14/Entities/Clothing/Head/powerarmorhelmet.yml
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: F14ClothingHeadHardsuitWithLightBase
   id: F14EnclavePowerArmorHelmet
   # #Misfits Change - Renamed to APA MK I (removed 'Experimental' prefix per rebalance)
   name: APA MK I Power Armor Helmet
@@ -74,7 +74,7 @@
   - type: ThermalVision
     isEquipment: true
     pulseTime: 2
-    toggleAction: PulseThermalVision
+    toggleAction: F14PulseThermalVision
   - type: BreathMask # Misfits Change
   - type: GasFilterMask # Misfits Change
   - type: IngestionBlocker # Misfits Change

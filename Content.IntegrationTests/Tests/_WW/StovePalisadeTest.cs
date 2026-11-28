@@ -27,9 +27,9 @@ public sealed class StovePalisadeTest : InteractionTest
         EntityUid sCorner = default, sEast = default;
         await Server.WaitPost(() =>
         {
-            sCorner = SEntMan.SpawnAtPosition("WWWallPalisade", corner);
-            sEast = SEntMan.SpawnAtPosition("WWWallPalisade", east);
-            SEntMan.SpawnAtPosition("WWWallPalisade", north);
+            sCorner = SEntMan.SpawnAtPosition("F14WallPalisade", corner);
+            sEast = SEntMan.SpawnAtPosition("F14WallPalisade", east);
+            SEntMan.SpawnAtPosition("F14WallPalisade", north);
         });
         await RunTicks(15);
         // Smoothing is applied in the client's frame update, which a headless test client doesn't run by itself.

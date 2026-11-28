@@ -15,22 +15,22 @@
 
 - type: entity
   parent: AppearanceHuman
-  id: AppearanceGhoul
+  id: F14AppearanceGhoul
   categories: [ HideSpawnMenu ]
   name: ghoul appearance
   components:
   - type: InitialBody
     organs:
-      Torso: OrganGhoulTorso
-      Head: OrganGhoulHead
-      ArmLeft: OrganGhoulArmLeft
-      ArmRight: OrganGhoulArmRight
-      HandRight: OrganGhoulHandRight
-      HandLeft: OrganGhoulHandLeft
-      LegLeft: OrganGhoulLegLeft
-      LegRight: OrganGhoulLegRight
-      FootLeft: OrganGhoulFootLeft
-      FootRight: OrganGhoulFootRight
+      Torso: F14OrganGhoulTorso
+      Head: F14OrganGhoulHead
+      ArmLeft: F14OrganGhoulArmLeft
+      ArmRight: F14OrganGhoulArmRight
+      HandRight: F14OrganGhoulHandRight
+      HandLeft: F14OrganGhoulHandLeft
+      LegLeft: F14OrganGhoulLegLeft
+      LegRight: F14OrganGhoulLegRight
+      FootLeft: F14OrganGhoulFootLeft
+      FootRight: F14OrganGhoulFootRight
       Brain: OrganHumanBrain
       Eyes: OrganHumanEyes
       Tongue: OrganHumanTongue
@@ -46,7 +46,7 @@
 
 - type: entity
   parent:
-  - AppearanceGhoul
+  - F14AppearanceGhoul
   - BaseSpeciesMobOrganic
   id: F14MobGhoul
   name: Urist McGhoul
@@ -68,7 +68,7 @@
 
 - type: entity
   parent: OrganHuman
-  id: OrganGhoulExternal
+  id: F14OrganGhoulExternal
   abstract: true
   components:
   - type: Sprite
@@ -81,12 +81,12 @@
       group: F14Ghoul
 
 - type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganGhoulExternal ]
-  id: OrganGhoulTorso
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, F14OrganGhoulExternal ]
+  id: F14OrganGhoulTorso
 
 - type: entity
-  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganGhoulExternal ]
-  id: OrganGhoulHead
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, F14OrganGhoulExternal ]
+  id: F14OrganGhoulHead
   components:
   - type: VisualOrganMarkings
     hideableLayers:
@@ -95,57 +95,57 @@
     - enum.HumanoidVisualLayers.FacialHair
 
 - type: entity
-  parent: [ OrganBaseArmLeft, OrganGhoulExternal ]
-  id: OrganGhoulArmLeft
+  parent: [ OrganBaseArmLeft, F14OrganGhoulExternal ]
+  id: F14OrganGhoulArmLeft
 
 - type: entity
-  parent: [ OrganBaseArmRight, OrganGhoulExternal ]
-  id: OrganGhoulArmRight
+  parent: [ OrganBaseArmRight, F14OrganGhoulExternal ]
+  id: F14OrganGhoulArmRight
 
 - type: entity
-  parent: [ OrganBaseHandLeft, OrganGhoulExternal ]
-  id: OrganGhoulHandLeft
+  parent: [ OrganBaseHandLeft, F14OrganGhoulExternal ]
+  id: F14OrganGhoulHandLeft
 
 - type: entity
-  parent: [ OrganBaseHandRight, OrganGhoulExternal ]
-  id: OrganGhoulHandRight
+  parent: [ OrganBaseHandRight, F14OrganGhoulExternal ]
+  id: F14OrganGhoulHandRight
 
 - type: entity
-  parent: [ OrganBaseLegLeft, OrganGhoulExternal ]
-  id: OrganGhoulLegLeft
+  parent: [ OrganBaseLegLeft, F14OrganGhoulExternal ]
+  id: F14OrganGhoulLegLeft
 
 - type: entity
-  parent: [ OrganBaseLegRight, OrganGhoulExternal ]
-  id: OrganGhoulLegRight
+  parent: [ OrganBaseLegRight, F14OrganGhoulExternal ]
+  id: F14OrganGhoulLegRight
 
 - type: entity
-  parent: [ OrganBaseFootLeft, OrganGhoulExternal ]
-  id: OrganGhoulFootLeft
+  parent: [ OrganBaseFootLeft, F14OrganGhoulExternal ]
+  id: F14OrganGhoulFootLeft
 
 - type: entity
-  parent: [ OrganBaseFootRight, OrganGhoulExternal ]
-  id: OrganGhoulFootRight
+  parent: [ OrganBaseFootRight, F14OrganGhoulExternal ]
+  id: F14OrganGhoulFootRight
 
 # --- Glowing ghoul: glows, emits a little radiation, resists gamma, and is frailer.
 
 - type: entity
   parent: AppearanceHuman
-  id: AppearanceGhoulGlowing
+  id: F14AppearanceGhoulGlowing
   categories: [ HideSpawnMenu ]
   name: glowing ghoul appearance
   components:
   - type: InitialBody
     organs:
-      Torso: OrganGhoulGlowingTorso
-      Head: OrganGhoulGlowingHead
-      ArmLeft: OrganGhoulGlowingArmLeft
-      ArmRight: OrganGhoulGlowingArmRight
-      HandRight: OrganGhoulGlowingHandRight
-      HandLeft: OrganGhoulGlowingHandLeft
-      LegLeft: OrganGhoulGlowingLegLeft
-      LegRight: OrganGhoulGlowingLegRight
-      FootLeft: OrganGhoulGlowingFootLeft
-      FootRight: OrganGhoulGlowingFootRight
+      Torso: F14OrganGhoulGlowingTorso
+      Head: F14OrganGhoulGlowingHead
+      ArmLeft: F14OrganGhoulGlowingArmLeft
+      ArmRight: F14OrganGhoulGlowingArmRight
+      HandRight: F14OrganGhoulGlowingHandRight
+      HandLeft: F14OrganGhoulGlowingHandLeft
+      LegLeft: F14OrganGhoulGlowingLegLeft
+      LegRight: F14OrganGhoulGlowingLegRight
+      FootLeft: F14OrganGhoulGlowingFootLeft
+      FootRight: F14OrganGhoulGlowingFootRight
       Brain: OrganHumanBrain
       Eyes: OrganHumanEyes
       Tongue: OrganHumanTongue
@@ -161,7 +161,7 @@
 
 - type: entity
   parent:
-  - AppearanceGhoulGlowing
+  - F14AppearanceGhoulGlowing
   - BaseSpeciesMobOrganic
   id: F14MobGhoulGlowing
   name: Urist McGlow
@@ -189,7 +189,7 @@
 
 - type: entity
   parent: OrganHuman
-  id: OrganGhoulGlowingExternal
+  id: F14OrganGhoulGlowingExternal
   abstract: true
   components:
   - type: Sprite
@@ -202,12 +202,12 @@
       group: F14Ghoul
 
 - type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganGhoulGlowingExternal ]
-  id: OrganGhoulGlowingTorso
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, F14OrganGhoulGlowingExternal ]
+  id: F14OrganGhoulGlowingTorso
 
 - type: entity
-  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganGhoulGlowingExternal ]
-  id: OrganGhoulGlowingHead
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, F14OrganGhoulGlowingExternal ]
+  id: F14OrganGhoulGlowingHead
   components:
   - type: VisualOrganMarkings
     hideableLayers:
@@ -216,33 +216,33 @@
     - enum.HumanoidVisualLayers.FacialHair
 
 - type: entity
-  parent: [ OrganBaseArmLeft, OrganGhoulGlowingExternal ]
-  id: OrganGhoulGlowingArmLeft
+  parent: [ OrganBaseArmLeft, F14OrganGhoulGlowingExternal ]
+  id: F14OrganGhoulGlowingArmLeft
 
 - type: entity
-  parent: [ OrganBaseArmRight, OrganGhoulGlowingExternal ]
-  id: OrganGhoulGlowingArmRight
+  parent: [ OrganBaseArmRight, F14OrganGhoulGlowingExternal ]
+  id: F14OrganGhoulGlowingArmRight
 
 - type: entity
-  parent: [ OrganBaseHandLeft, OrganGhoulGlowingExternal ]
-  id: OrganGhoulGlowingHandLeft
+  parent: [ OrganBaseHandLeft, F14OrganGhoulGlowingExternal ]
+  id: F14OrganGhoulGlowingHandLeft
 
 - type: entity
-  parent: [ OrganBaseHandRight, OrganGhoulGlowingExternal ]
-  id: OrganGhoulGlowingHandRight
+  parent: [ OrganBaseHandRight, F14OrganGhoulGlowingExternal ]
+  id: F14OrganGhoulGlowingHandRight
 
 - type: entity
-  parent: [ OrganBaseLegLeft, OrganGhoulGlowingExternal ]
-  id: OrganGhoulGlowingLegLeft
+  parent: [ OrganBaseLegLeft, F14OrganGhoulGlowingExternal ]
+  id: F14OrganGhoulGlowingLegLeft
 
 - type: entity
-  parent: [ OrganBaseLegRight, OrganGhoulGlowingExternal ]
-  id: OrganGhoulGlowingLegRight
+  parent: [ OrganBaseLegRight, F14OrganGhoulGlowingExternal ]
+  id: F14OrganGhoulGlowingLegRight
 
 - type: entity
-  parent: [ OrganBaseFootLeft, OrganGhoulGlowingExternal ]
-  id: OrganGhoulGlowingFootLeft
+  parent: [ OrganBaseFootLeft, F14OrganGhoulGlowingExternal ]
+  id: F14OrganGhoulGlowingFootLeft
 
 - type: entity
-  parent: [ OrganBaseFootRight, OrganGhoulGlowingExternal ]
-  id: OrganGhoulGlowingFootRight
+  parent: [ OrganBaseFootRight, F14OrganGhoulGlowingExternal ]
+  id: F14OrganGhoulGlowingFootRight

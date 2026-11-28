@@ -22,11 +22,11 @@ public sealed class VendortronTest : GameTest
 {
     private static readonly EntProtoId[] Vendortrons =
     [
-        "WWMobVendortronGunRunners",
-        "WWMobVendortronMedTek",
-        "WWMobVendortronCrimsonCaravan",
-        "WWMobVendortronTools",
-        "WWMobVendortronRobCo",
+        "F14MobVendortronGunRunners",
+        "F14MobVendortronMedTek",
+        "F14MobVendortronCrimsonCaravan",
+        "F14MobVendortronTools",
+        "F14MobVendortronRobCo",
     ];
 
     // Caps per unit of each store currency, from the terminals' currency exchange listings
@@ -164,7 +164,7 @@ public sealed class VendortronTest : GameTest
 
         await server.WaitAssertion(() =>
         {
-            var vendor = entMan.SpawnEntity("WWMobVendortronRobCo", map.GridCoords);
+            var vendor = entMan.SpawnEntity("F14MobVendortronRobCo", map.GridCoords);
             var user = entMan.SpawnEntity("MobHuman", map.GridCoords);
             Assert.That(entMan.System<PullingSystem>().TryStartPull(user, vendor), Is.False);
         });

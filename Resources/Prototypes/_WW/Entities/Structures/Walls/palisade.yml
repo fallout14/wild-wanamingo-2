@@ -4,7 +4,7 @@
 
 - type: entity
   parent: F14BaseWallTallWood
-  id: WWWallPalisade
+  id: F14WallPalisade
   name: palisade
   description: A wall of sharpened stakes driven into the ground.
   components:
@@ -39,7 +39,7 @@
         amount: 4
         doAfter: 4
   - node: palisade
-    entity: WWWallPalisade
+    entity: F14WallPalisade
     edges:
     - to: start
       completed:
@@ -52,7 +52,7 @@
         doAfter: 4
 
 - type: construction
-  id: WWWallPalisade
+  id: F14WallPalisade
   graph: WWPalisade
   startNode: start
   targetNode: palisade

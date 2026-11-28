@@ -11,7 +11,7 @@
 - type: entity
   abstract: true
   parent: MarkerBase
-  id: WWTimedSpawnerBase
+  id: F14TimedSpawnerBase
   components:
   - type: WastelandSpawner
     prototypes: [] # set by each spawner
@@ -20,8 +20,8 @@
 # Small critters: molerats, roaches, geckos, rabbits...
 - type: entity
   abstract: true
-  parent: WWTimedSpawnerBase
-  id: WWTimedSpawnerVermin
+  parent: F14TimedSpawnerBase
+  id: F14TimedSpawnerVermin
   components:
   - type: WastelandSpawner
     prototypes: []
@@ -35,8 +35,8 @@
 # Herd and game animals: brahmin, bighorner, radstag, chickens.
 - type: entity
   abstract: true
-  parent: WWTimedSpawnerBase
-  id: WWTimedSpawnerGame
+  parent: F14TimedSpawnerBase
+  id: F14TimedSpawnerGame
   components:
   - type: WastelandSpawner
     prototypes: []
@@ -50,8 +50,8 @@
 # Dangerous wildlife and ferals: nightstalkers, radscorpions, cazadores, mirelurks, feral ghouls...
 - type: entity
   abstract: true
-  parent: WWTimedSpawnerBase
-  id: WWTimedSpawnerPredator
+  parent: F14TimedSpawnerBase
+  id: F14TimedSpawnerPredator
   components:
   - type: WastelandSpawner
     prototypes: []
@@ -65,8 +65,8 @@
 # Armed hostiles: raiders, fiends, enforcers, hostile robots, super mutants.
 - type: entity
   abstract: true
-  parent: WWTimedSpawnerBase
-  id: WWTimedSpawnerHostile
+  parent: F14TimedSpawnerBase
+  id: F14TimedSpawnerHostile
   components:
   - type: WastelandSpawner
     prototypes: []
@@ -80,8 +80,8 @@
 # Bosses and apex predators: deathclaws, yao guai, raider boss, assaultron, sentry bot, behemoth...
 - type: entity
   abstract: true
-  parent: WWTimedSpawnerBase
-  id: WWTimedSpawnerApex
+  parent: F14TimedSpawnerBase
+  id: F14TimedSpawnerApex
   components:
   - type: WastelandSpawner
     prototypes: []

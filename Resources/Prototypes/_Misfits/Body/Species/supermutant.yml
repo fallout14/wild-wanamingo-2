@@ -47,7 +47,7 @@
 
 - type: entity
   parent: AppearanceHuman
-  id: AppearanceSuperMutant
+  id: F14AppearanceSuperMutant
   categories: [ HideSpawnMenu ]
   name: super mutant appearance
   components:
@@ -56,16 +56,16 @@
     speciesId: F14Supermutant
   - type: InitialBody
     organs:
-      Torso: OrganSuperMutantTorso
-      Head: OrganSuperMutantHead
-      ArmLeft: OrganSuperMutantArmLeft
-      ArmRight: OrganSuperMutantArmRight
-      HandRight: OrganSuperMutantHandRight
-      HandLeft: OrganSuperMutantHandLeft
-      LegLeft: OrganSuperMutantLegLeft
-      LegRight: OrganSuperMutantLegRight
-      FootLeft: OrganSuperMutantFootLeft
-      FootRight: OrganSuperMutantFootRight
+      Torso: F14OrganSuperMutantTorso
+      Head: F14OrganSuperMutantHead
+      ArmLeft: F14OrganSuperMutantArmLeft
+      ArmRight: F14OrganSuperMutantArmRight
+      HandRight: F14OrganSuperMutantHandRight
+      HandLeft: F14OrganSuperMutantHandLeft
+      LegLeft: F14OrganSuperMutantLegLeft
+      LegRight: F14OrganSuperMutantLegRight
+      FootLeft: F14OrganSuperMutantFootLeft
+      FootRight: F14OrganSuperMutantFootRight
       Brain: OrganHumanBrain
       Eyes: OrganHumanEyes
       Tongue: OrganHumanTongue
@@ -135,7 +135,7 @@
 
 - type: entity
   parent:
-  - AppearanceSuperMutant
+  - F14AppearanceSuperMutant
   - BaseSpeciesMobOrganic
   - F14BaseMobSuperMutantStats
   id: F14MobSuperMutant
@@ -143,7 +143,7 @@
 
 - type: entity
   parent: OrganHuman
-  id: OrganSuperMutantExternal
+  id: F14OrganSuperMutantExternal
   abstract: true
   components:
   - type: Sprite
@@ -156,50 +156,50 @@
       group: F14SuperMutant
 
 - type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganSuperMutantExternal ]
-  id: OrganSuperMutantTorso
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, F14OrganSuperMutantExternal ]
+  id: F14OrganSuperMutantTorso
 
 - type: entity
-  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganSuperMutantExternal ]
-  id: OrganSuperMutantHead
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, F14OrganSuperMutantExternal ]
+  id: F14OrganSuperMutantHead
 
 - type: entity
-  parent: [ OrganBaseArmLeft, OrganSuperMutantExternal ]
-  id: OrganSuperMutantArmLeft
+  parent: [ OrganBaseArmLeft, F14OrganSuperMutantExternal ]
+  id: F14OrganSuperMutantArmLeft
 
 - type: entity
-  parent: [ OrganBaseArmRight, OrganSuperMutantExternal ]
-  id: OrganSuperMutantArmRight
+  parent: [ OrganBaseArmRight, F14OrganSuperMutantExternal ]
+  id: F14OrganSuperMutantArmRight
 
 - type: entity
-  parent: [ OrganBaseHandLeft, OrganSuperMutantExternal ]
-  id: OrganSuperMutantHandLeft
+  parent: [ OrganBaseHandLeft, F14OrganSuperMutantExternal ]
+  id: F14OrganSuperMutantHandLeft
 
 - type: entity
-  parent: [ OrganBaseHandRight, OrganSuperMutantExternal ]
-  id: OrganSuperMutantHandRight
+  parent: [ OrganBaseHandRight, F14OrganSuperMutantExternal ]
+  id: F14OrganSuperMutantHandRight
 
 - type: entity
-  parent: [ OrganBaseLegLeft, OrganSuperMutantExternal ]
-  id: OrganSuperMutantLegLeft
+  parent: [ OrganBaseLegLeft, F14OrganSuperMutantExternal ]
+  id: F14OrganSuperMutantLegLeft
 
 - type: entity
-  parent: [ OrganBaseLegRight, OrganSuperMutantExternal ]
-  id: OrganSuperMutantLegRight
+  parent: [ OrganBaseLegRight, F14OrganSuperMutantExternal ]
+  id: F14OrganSuperMutantLegRight
 
 - type: entity
-  parent: [ OrganBaseFootLeft, OrganSuperMutantExternal ]
-  id: OrganSuperMutantFootLeft
+  parent: [ OrganBaseFootLeft, F14OrganSuperMutantExternal ]
+  id: F14OrganSuperMutantFootLeft
 
 - type: entity
-  parent: [ OrganBaseFootRight, OrganSuperMutantExternal ]
-  id: OrganSuperMutantFootRight
+  parent: [ OrganBaseFootRight, F14OrganSuperMutantExternal ]
+  id: F14OrganSuperMutantFootRight
 
 # --- Nightkin: super mutant body (skin tone gives the blue-purple), lighter on their feet.
 
 - type: entity
-  parent: AppearanceSuperMutant
-  id: AppearanceNightkin
+  parent: F14AppearanceSuperMutant
+  id: F14AppearanceNightkin
   categories: [ HideSpawnMenu ]
   name: nightkin appearance
   components:
@@ -208,7 +208,7 @@
 
 - type: entity
   parent:
-  - AppearanceNightkin
+  - F14AppearanceNightkin
   - BaseSpeciesMobOrganic
   - F14BaseMobSuperMutantStats
   id: F14MobNightkinPlayer

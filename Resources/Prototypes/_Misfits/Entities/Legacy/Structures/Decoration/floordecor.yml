@@ -2,7 +2,7 @@
 # (Misfits' copy of a Space Station 14 or other-fork file.)
 
 - type: entity
-  id: DecorFloorBase
+  id: F14DecorFloorBaseLegacy
   abstract: true
   placement:
     mode: SnapgridCenter
@@ -39,8 +39,8 @@
 # Cave Decor
 
 - type: entity
-  parent: DecorFloorBase
-  id: DecorFloorWorldBase
+  parent: F14DecorFloorBaseLegacy
+  id: F14DecorFloorWorldBaseLegacy
   abstract: true
   components:
   - type: Sprite

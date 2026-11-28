@@ -7,7 +7,7 @@
 - type: entity
   abstract: true
   parent: MobRobotic
-  id: WWMobVendortronBase
+  id: F14MobVendortronBase
   name: vendortron
   description: A robot shopkeeper. Click it to browse its wares.
   suffix: vendor
@@ -117,8 +117,8 @@
   - type: WWVendortron
 
 - type: entity
-  parent: WWMobVendortronBase
-  id: WWMobVendortronGunRunners
+  parent: F14MobVendortronBase
+  id: F14MobVendortronGunRunners
   name: Gun Runners vendortron
   description: A vendortron used by the Gun Runners for sale of firearms far and wide.
   components:
@@ -159,8 +159,8 @@
     - ww-vendortron-gunrunner-3
 
 - type: entity
-  parent: WWMobVendortronBase
-  id: WWMobVendortronMedTek
+  parent: F14MobVendortronBase
+  id: F14MobVendortronMedTek
   name: Med-Tek vendortron
   description: A pre-war vendortron that provides medical supplies. Probably outlived everyone it was supposed to help treat.
   components:
@@ -180,8 +180,8 @@
 
 # WW Change (2026-11-26): was MS13's Arcata Armorers vendortron; now the Crimson Caravan's, with armor and general goods.
 - type: entity
-  parent: WWMobVendortronBase
-  id: WWMobVendortronCrimsonCaravan
+  parent: F14MobVendortronBase
+  id: F14MobVendortronCrimsonCaravan
   name: Crimson Caravan vendortron
   description: A vendortron run by the Crimson Caravan Company, selling armor, clothing and supplies for the road.
   components:
@@ -200,8 +200,8 @@
     - ww-vendortron-crimson-3
 
 - type: entity
-  parent: WWMobVendortronBase
-  id: WWMobVendortronTools
+  parent: F14MobVendortronBase
+  id: F14MobVendortronTools
   name: H&H Tools vendortron
   description: A pre-war vendortron that provides tools and construction supplies.
   components:
@@ -220,8 +220,8 @@
     - ww-vendortron-tools-3
 
 - type: entity
-  parent: WWMobVendortronBase
-  id: WWMobVendortronRobCo
+  parent: F14MobVendortronBase
+  id: F14MobVendortronRobCo
   name: RobCo vendortron
   description: A pre-war vendortron that provides electronics and electronics related supplies.
   components:
@@ -242,7 +242,7 @@
 # Mapper marker: spawns one random vendortron (MS13: "shouldn't be more than three of these on the map").
 - type: entity
   parent: MarkerBase
-  id: WWSpawnerVendortronRandom
+  id: F14SpawnerVendortronRandom
   name: random vendortron spawner
   components:
   - type: Sprite
@@ -252,8 +252,8 @@
       state: blue
   - type: ConditionalSpawner
     prototypes:
-    - WWMobVendortronGunRunners
-    - WWMobVendortronMedTek
-    - WWMobVendortronCrimsonCaravan
-    - WWMobVendortronTools
-    - WWMobVendortronRobCo
+    - F14MobVendortronGunRunners
+    - F14MobVendortronMedTek
+    - F14MobVendortronCrimsonCaravan
+    - F14MobVendortronTools
+    - F14MobVendortronRobCo

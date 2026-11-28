@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClosetBase
-  id: ClosetBase2
+  id: F14ClosetBase2
   abstract: true
   components:
   - type: Sprite
@@ -26,8 +26,8 @@
     delay: 3600
 
 - type: entity
-  parent: ClosetBase2
-  id: ClosetBaseW
+  parent: F14ClosetBase2
+  id: F14ClosetBaseWLegacy
   name: closet
   description: A basic closet for storing things.
   components:
@@ -50,8 +50,8 @@
     stateDoorClosed: closet_door
 
 - type: entity
-  parent: ClosetBaseW
-  id: ClosetRusty
+  parent: F14ClosetBaseWLegacy
+  id: F14ClosetRustyLegacy
   name: rusty closet
   description: A rusty old closet for storing things.
   components:
@@ -59,8 +59,8 @@
     sprite: Misfits/Legacy/Structures/Storage/Closets/closetold.rsi
 
 - type: entity
-  parent: ClosetBaseW
-  id: ClosetFridgeWideDirty
+  parent: F14ClosetBaseWLegacy
+  id: F14ClosetFridgeWideDirtyLegacy
   name: fridge
   description: A dirty old fridge for keeping food fresh
   components:

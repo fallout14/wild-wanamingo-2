@@ -84,7 +84,7 @@
 
 - type: entity
   parent: BaseSpeciesAppearance
-  id: AppearanceC27
+  id: F14AppearanceC27
   categories: [ HideSpawnMenu ]
   name: c-27 appearance
   components:
@@ -93,40 +93,40 @@
     speciesId: F14C27
   - type: InitialBody
     organs:
-      Torso: OrganC27Torso
-      Head: OrganC27Head
-      ArmLeft: OrganC27ArmLeft
-      ArmRight: OrganC27ArmRight
-      HandRight: OrganC27HandRight
-      HandLeft: OrganC27HandLeft
-      LegLeft: OrganC27LegLeft
-      LegRight: OrganC27LegRight
-      FootLeft: OrganC27FootLeft
-      FootRight: OrganC27FootRight
+      Torso: F14OrganC27Torso
+      Head: F14OrganC27Head
+      ArmLeft: F14OrganC27ArmLeft
+      ArmRight: F14OrganC27ArmRight
+      HandRight: F14OrganC27HandRight
+      HandLeft: F14OrganC27HandLeft
+      LegLeft: F14OrganC27LegLeft
+      LegRight: F14OrganC27LegRight
+      FootLeft: F14OrganC27FootLeft
+      FootRight: F14OrganC27FootRight
   - type: HumanoidProfile
     species: F14C27
 
 - type: entity
-  parent: AppearanceC27
-  id: AppearanceC27NCR
+  parent: F14AppearanceC27
+  id: F14AppearanceC27NCR
   categories: [ HideSpawnMenu ]
   name: c-27 NCR appearance
   components:
   - type: InitialBody
     organs:
-      Torso: OrganC27TorsoNCR
+      Torso: F14OrganC27TorsoNCR
   - type: HumanoidProfile
     species: F14C27NCR
 
 - type: entity
-  parent: AppearanceC27
-  id: AppearanceC27BoS
+  parent: F14AppearanceC27
+  id: F14AppearanceC27BoS
   categories: [ HideSpawnMenu ]
   name: c-27 BoS appearance
   components:
   - type: InitialBody
     organs:
-      Torso: OrganC27TorsoBoS
+      Torso: F14OrganC27TorsoBoS
   - type: HumanoidProfile
     species: F14C27BoS
 
@@ -181,17 +181,17 @@
     proto: robot
 
 - type: entity
-  parent: [ AppearanceC27, BaseSpeciesMob, F14BaseMobC27Stats ]
+  parent: [ F14AppearanceC27, BaseSpeciesMob, F14BaseMobC27Stats ]
   id: F14MobC27
   name: c-27 humanoid robot
 
 - type: entity
-  parent: [ AppearanceC27NCR, BaseSpeciesMob, F14BaseMobC27Stats ]
+  parent: [ F14AppearanceC27NCR, BaseSpeciesMob, F14BaseMobC27Stats ]
   id: F14MobC27NCR
   name: c-27 humanoid robot
 
 - type: entity
-  parent: [ AppearanceC27BoS, BaseSpeciesMob, F14BaseMobC27Stats ]
+  parent: [ F14AppearanceC27BoS, BaseSpeciesMob, F14BaseMobC27Stats ]
   id: F14MobC27BoS
   name: c-27 humanoid robot
 
@@ -199,7 +199,7 @@
 
 - type: entity
   parent: OrganBase
-  id: OrganC27External
+  id: F14OrganC27External
   abstract: true
   components:
   - type: Sprite
@@ -212,56 +212,56 @@
       group: F14C27
 
 - type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganC27External ]
-  id: OrganC27Torso
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, F14OrganC27External ]
+  id: F14OrganC27Torso
 
 - type: entity
-  parent: OrganC27Torso
-  id: OrganC27TorsoNCR
+  parent: F14OrganC27Torso
+  id: F14OrganC27TorsoNCR
   components:
   - type: VisualOrganMarkings
     markingData:
       group: F14C27NCR
 
 - type: entity
-  parent: OrganC27Torso
-  id: OrganC27TorsoBoS
+  parent: F14OrganC27Torso
+  id: F14OrganC27TorsoBoS
   components:
   - type: VisualOrganMarkings
     markingData:
       group: F14C27BoS
 
 - type: entity
-  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganC27External ]
-  id: OrganC27Head
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, F14OrganC27External ]
+  id: F14OrganC27Head
 
 - type: entity
-  parent: [ OrganBaseArmLeft, OrganC27External ]
-  id: OrganC27ArmLeft
+  parent: [ OrganBaseArmLeft, F14OrganC27External ]
+  id: F14OrganC27ArmLeft
 
 - type: entity
-  parent: [ OrganBaseArmRight, OrganC27External ]
-  id: OrganC27ArmRight
+  parent: [ OrganBaseArmRight, F14OrganC27External ]
+  id: F14OrganC27ArmRight
 
 - type: entity
-  parent: [ OrganBaseHandLeft, OrganC27External ]
-  id: OrganC27HandLeft
+  parent: [ OrganBaseHandLeft, F14OrganC27External ]
+  id: F14OrganC27HandLeft
 
 - type: entity
-  parent: [ OrganBaseHandRight, OrganC27External ]
-  id: OrganC27HandRight
+  parent: [ OrganBaseHandRight, F14OrganC27External ]
+  id: F14OrganC27HandRight
 
 - type: entity
-  parent: [ OrganBaseLegLeft, OrganC27External ]
-  id: OrganC27LegLeft
+  parent: [ OrganBaseLegLeft, F14OrganC27External ]
+  id: F14OrganC27LegLeft
 
 - type: entity
-  parent: [ OrganBaseLegRight, OrganC27External ]
-  id: OrganC27LegRight
+  parent: [ OrganBaseLegRight, F14OrganC27External ]
+  id: F14OrganC27LegRight
 
 - type: entity
-  parent: [ OrganBaseFootLeft, OrganC27External ]
-  id: OrganC27FootLeft
+  parent: [ OrganBaseFootLeft, F14OrganC27External ]
+  id: F14OrganC27FootLeft
   components:
   - type: Sprite
     state: l_leg
@@ -270,8 +270,8 @@
       state: l_leg
 
 - type: entity
-  parent: [ OrganBaseFootRight, OrganC27External ]
-  id: OrganC27FootRight
+  parent: [ OrganBaseFootRight, F14OrganC27External ]
+  id: F14OrganC27FootRight
   components:
   - type: Sprite
     state: r_leg

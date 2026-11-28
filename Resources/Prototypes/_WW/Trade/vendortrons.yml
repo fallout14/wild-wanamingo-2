@@ -97,12 +97,12 @@
   id: WWVendortronMedTekClothing
   name: "Doctor's clothing"
   entries:
-  - { proto: WWClothingHandsMS13Nitrile, price: 30, countMin: 2, count: 4 }
-  - { proto: WWClothingMaskMS13BandanaSurgical, price: 20, countMin: 1, count: 3 }
-  - { proto: WWClothingUniformMS13WastelandDoctor, price: 60, countMin: 1, count: 2 }
-  - { proto: WWClothingUniformMS13WastelandSnowcrestMedical, price: 60, countMin: 0, count: 2 }
-  - { proto: WWClothingOuterMS13Labcoat, price: 70, countMin: 1, count: 2 }
-  - { proto: WWClothingOuterMS13Vaultlab, price: 90, countMin: 0, count: 1 }
+  - { proto: F14ClothingHandsMS13Nitrile, price: 30, countMin: 2, count: 4 }
+  - { proto: F14ClothingMaskMS13BandanaSurgical, price: 20, countMin: 1, count: 3 }
+  - { proto: F14ClothingUniformMS13WastelandDoctor, price: 60, countMin: 1, count: 2 }
+  - { proto: F14ClothingUniformMS13WastelandSnowcrestMedical, price: 60, countMin: 0, count: 2 }
+  - { proto: F14ClothingOuterMS13Labcoat, price: 70, countMin: 1, count: 2 }
+  - { proto: F14ClothingOuterMS13Vaultlab, price: 90, countMin: 0, count: 1 }
 
 - type: storeCategoryStructured
   id: WWVendortronMedTekChems
@@ -229,17 +229,17 @@
   id: WWVendortronToolsGear
   name: "Work gear"
   entries:
-  - { proto: WWClothingHandsMS13Leather, price: 30, countMin: 2, count: 4 }
-  - { proto: WWClothingShoesMS13MilitaryLegionTanboots, price: 45, countMin: 1, count: 3 }
-  - { proto: WWClothingShoesMS13MilitaryLegionDarkboots, price: 45, countMin: 1, count: 3 }
-  - { proto: WWClothingHeadMS13Hardhat, price: 40, countMin: 1, count: 3 }
-  - { proto: WWClothingHeadMS13HardhatMining, price: 60, countMin: 0, count: 2 }
-  - { proto: WWClothingHeadMS13Welding, price: 60, countMin: 0, count: 2 }
-  - { proto: WWClothingMaskMS13MonCityPointer, price: 80, countMin: 1, count: 2 }
-  - { proto: WWClothingMaskMS13MonCity, price: 120, countMin: 1, count: 2 }
-  - { proto: WWClothingMaskMS13MonCityFull, price: 140, countMin: 0, count: 2 }
-  - { proto: WWClothingMaskMS13Gas, price: 150, countMin: 0, count: 2 }
-  - { proto: WWClothingMaskMS13Modern, price: 180, countMin: 0, count: 1 }
+  - { proto: F14ClothingHandsMS13Leather, price: 30, countMin: 2, count: 4 }
+  - { proto: F14ClothingShoesMS13MilitaryLegionTanboots, price: 45, countMin: 1, count: 3 }
+  - { proto: F14ClothingShoesMS13MilitaryLegionDarkboots, price: 45, countMin: 1, count: 3 }
+  - { proto: F14ClothingHeadMS13Hardhat, price: 40, countMin: 1, count: 3 }
+  - { proto: F14ClothingHeadMS13HardhatMining, price: 60, countMin: 0, count: 2 }
+  - { proto: F14ClothingHeadMS13Welding, price: 60, countMin: 0, count: 2 }
+  - { proto: F14ClothingMaskMS13MonCityPointer, price: 80, countMin: 1, count: 2 }
+  - { proto: F14ClothingMaskMS13MonCity, price: 120, countMin: 1, count: 2 }
+  - { proto: F14ClothingMaskMS13MonCityFull, price: 140, countMin: 0, count: 2 }
+  - { proto: F14ClothingMaskMS13Gas, price: 150, countMin: 0, count: 2 }
+  - { proto: F14ClothingMaskMS13Modern, price: 180, countMin: 0, count: 1 }
 
 - type: storeCategoryStructured
   id: WWVendortronToolsMaterials
