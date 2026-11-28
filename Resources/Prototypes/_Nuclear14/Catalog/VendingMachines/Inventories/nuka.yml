@@ -3,19 +3,27 @@
 
 - type: vendingMachineInventory
   id: F14NukaRadInventory
-  startingInventory:
-    F14DrinkIrradiatedNukaColaBottleFull: 8
+  # WW Change (2026-11-28): Wizden moved inventories into categories.
+  categories:
+  - name: vending-machine-category-soft-drinks
+    icon: { entity: F14DrinkIrradiatedNukaColaBottleFull }
+    startingInventory:
+      F14DrinkIrradiatedNukaColaBottleFull: 8
 
 - type: vendingMachineInventory
   id: F14NukaInventory
-  startingInventory:
-    F14DrinkNukaCola: 6
-    F14DrinkNukaColaCherry: 4
-    F14DrinkNukaColaGrape: 3
-    F14DrinkNukaColaOrange: 3
-    F14DrinkNukaColaQuantum: 2
-    F14DrinkNukaColaQuartz: 2
-    F14DrinkNukaColaVictory: 2
-    F14DrinkNukaColaWild: 2
+  # WW Change (2026-11-28): Wizden moved inventories into categories.
+  categories:
+  - name: vending-machine-category-soft-drinks
+    icon: { entity: F14DrinkNukaCola }
+    startingInventory:
+      F14DrinkNukaCola: 6
+      F14DrinkNukaColaCherry: 4
+      F14DrinkNukaColaGrape: 3
+      F14DrinkNukaColaOrange: 3
+      F14DrinkNukaColaQuantum: 2
+      F14DrinkNukaColaQuartz: 2
+      F14DrinkNukaColaVictory: 2
+      F14DrinkNukaColaWild: 2
 
 # higher number higher chances (also maximum amount)
